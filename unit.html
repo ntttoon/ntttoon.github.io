@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Brave Frontier</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<script>
+function getURLParameter(name) {
+  return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null
+}
+myvar = getURLParameter('id');
+//alert(myvar);
+</script>
+</head>
+
+<body>
+<header class="w3-container w3-teal w3-card-2">
+  <h5>Brave Frontier 7* units - Slim ver</h5>
+</header>
+<ul class="w3-ul">
+<script>
+	var xmlhttp, xmlDoc;
+	xmlhttp = new XMLHttpRequest();
+	xmlhttp.open("GET", "data.xml", false);
+	xmlhttp.send();
+	xmlDoc = xmlhttp.responseXML;
+	
+	total = xmlDoc.getElementsByTagName("unit").length;
+	for(i=0;i<total;i++)
+	{
+		id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
+		if(id==myvar)
+		{
+			name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
+			element = xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
+			cost = xmlDoc.getElementsByTagName("cost")[i].childNodes[0].nodeValue;
+			rarity = xmlDoc.getElementsByTagName("rarity")[i].childNodes[0].nodeValue;
+			ls = xmlDoc.getElementsByTagName("ls")[i].childNodes[0].nodeValue;
+			normalhit = xmlDoc.getElementsByTagName("ls")[i].getAttribute("hit");
+			normaldc = xmlDoc.getElementsByTagName("ls")[i].getAttribute("dc");
+			bb = xmlDoc.getElementsByTagName("bb")[i].childNodes[0].nodeValue;
+			bbhit = xmlDoc.getElementsByTagName("bb")[i].getAttribute("hit");
+			bbdc = xmlDoc.getElementsByTagName("bb")[i].getAttribute("dc");
+			bbcost = xmlDoc.getElementsByTagName("bb")[i].getAttribute("cost");
+			sbb = xmlDoc.getElementsByTagName("sbb")[i].childNodes[0].nodeValue;
+			sbbhit = xmlDoc.getElementsByTagName("sbb")[i].getAttribute("hit");
+			sbbdc = xmlDoc.getElementsByTagName("sbb")[i].getAttribute("dc");
+			sbbcost = xmlDoc.getElementsByTagName("sbb")[i].getAttribute("cost");
+			ubb = xmlDoc.getElementsByTagName("ubb")[i].childNodes[0].nodeValue;
+			ubbhit = xmlDoc.getElementsByTagName("ubb")[i].getAttribute("hit");
+			ubbdc = xmlDoc.getElementsByTagName("ubb")[i].getAttribute("dc");
+			ubbcost = xmlDoc.getElementsByTagName("ubb")[i].getAttribute("cost");
+			escondition = xmlDoc.getElementsByTagName("es")[i].getAttribute("condtion");
+			eseffect = xmlDoc.getElementsByTagName("es")[i].childNodes[0].nodeValue;
+			
+			document.write('<li><h3>' + name + '</h3></li>');
+			document.write('<li>' + "ID: " + id + " - Element: " + element + "<br>Rarity: " + rarity + "*" + " - Cost: " + cost + '</li>');
+			document.write('<li><strong>LS: </strong>' + 'hit: ' + normalhit + ' - dc: ' + normaldc + '<br>' + ls + '</li>');
+			document.write('<li><strong>BB: </strong>' + 'hit: ' + bbhit + ' - dc: ' + bbdc + ' - cost: ' + bbcost + '<br>' + bb + '</li>');
+			document.write('<li><strong>SBB: </strong>' + 'hit: ' + sbbhit + ' - dc: ' + sbbdc + ' - cost: ' + sbbcost + '<br>' + sbb + '</li>');
+			document.write('<li><strong>UBB: </strong>' + 'hit: ' + ubbhit + ' - dc: ' + ubbdc + ' - cost: ' + ubbcost + '<br>' + ubb + '</li>');
+			document.write('<li><strong>ES: </strong>' + '<br>' + 'Condition: ' + escondition + '<br>' + 'Effect: ' + eseffect + '</li>');
+		}
+	}
+</script>
+</ul>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<brave>
+	<unit>
+		<id>852</id>
+		<name>Brimstone Emperor Alpha</name>
+		<role>Nuker, convert HP to ATK buff</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="8" dc="24" >100% Chance Drain 3-8% HP (ALL) / 80% ATK (ALL)</ls>
+		<bb hit="15" dc="30" cost="18" >560% Fire (TGT) / Gradual Heal 3Turns</bb>
+		<sbb hit="18" dc="18" cost="25" >620% Fire (AOE) / Convert 10% HP to ATK (SELF) 3Turns</sbb>
+		<ubb hit="1" dc="1" cost="30" >1000% Fire (AOE) / Convert 30% HP to ATK (ALL) 3Turns</ubb>
+		<es condtion="Full HP SELF" >80% ATK+ SELF (Stacks with all other ATK buffs)</es>
+	</unit>
+	<unit>
+		<id>867</id>
+		<name>Cataclysm Empress Feeva</name>
+		<role>Sparker, BC/HC drop buff, stats buff</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="13" dc="26" >50% BC Fill+ (ALL) / 70% Spark BC+ (ALL)</ls>
+		<bb hit="28" dc="28" cost="24" >280% Dark (AOE) / 70% ATK+ 70% DEF+ 70% REC+ (ALL) 3Turns</bb>
+		<sbb hit="36" dc="36" cost="20" >500% Dark (AOE) / 35% BC+ 35% HC+ (ALL) 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="15" >1000% Dark (AOE) / 170% ATK+ 170% DEF+ 170% REC+ (ALL) 3Turns</ubb>
+		<es condtion="Attacking / Attacked" >100% Chance Drain 5-8% HP (SELF) / 20% Chance Heal 20% DMG when ATKed (SELF)</es>
+	</unit>
+	<unit>
+		<id>861</id>
+		<name>Heavenly Emperor Kanon</name>
+		<role>Cure Ails, Null Ails, DEF buff</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="11" dc="22" >30% HP 30% DEF (ALL) / Null Ails (ALL)</ls>
+		<bb hit="15" dc="15" cost="24" >280% Thunder (AOE) / Cure Ails / Null Ails 3Turns</bb>
+		<sbb hit="19" dc="19" cost="25" >500% Thunder (AOE) / Cure Ails / 140% DEF+ (ALL) 3Turns</sbb>
+		<ubb hit="23" dc="23" cost="25" >1000% Thunder (AOE) / Reduce DMG (50%) 3Turns / 150% DEF+ (ALL) 3Turns</ubb>
+		<es condtion="None" >Nulls Ails (SELF)</es>
+	</unit>
+	<unit>
+		<id>864</id>
+		<name>Frolic Emperor Kira</name>
+		<role>Nuker, CRIT buff, ATK/DEF down</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="8" dc="24" >150% CRIT DMG+ (ALL) / 125% Element Weakness DMG+ (light,dark)</ls>
+		<bb hit="14" dc="14" cost="24" >280% Light,dark (AOE) / Ignore DEF (ALL) 2Turns / 60% CRIT+ (ALL) 3Turns</bb>
+		<sbb hit="17" dc="17" cost="20" >500% Light,dark (AOE) / 60% CRIT+ (ALL) 3Turns / 30% Chance -30% Enemy ATK 1Turns / 30% Chance -30% Enemy DEF 1Turns</sbb>
+		<ubb hit="21" dc="21" cost="20" >1200% Light (AOE) / 60% CRIT+ (ALL) 3Turns / 200% ATK+ (ALL) 3Turns</ubb>
+		<es condtion="Attacked" >25% Chance Reflect DMG 15% (SELF)</es>
+	</unit>
+	<unit>
+		<id>855</id>
+		<name>Cyclone Emperor Tazer</name>
+		<role>USBB, SPARK buff</role>
+		<element>Water</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="11" dc="22" >75% Spark DMG+ (ALL) / 15% BC+ 15% HC+ (ALL)</ls>
+		<bb hit="15" dc="15" cost="23" >280% Water (AOE) / 70% Spark DMG+ (ALL) 3Turns</bb>
+		<sbb hit="19" dc="38" cost="30" >640% Water (TGT) / 100% BB Fill (SELF) / 100% Spark DMG+ (SELF) 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="20" >1000% Water (AOE) / Ignore DEF (ALL) 2Turns / 120% Spark DMG+ (ALL) 3Turns</ubb>
+		<es condtion="Full BB Gauge SELF" >80% ATK+ SELF (Stacks with other ATK buffs)</es>
+	</unit>
+	<unit>
+		<id>858</id>
+		<name>Rose Empress Tora</name>
+		<role>Inflict Ails</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="13" dc="26" >100% Chance Drain 3-8% HP (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison (ALL) / 10% Para 10% Curse (ALL)</ls>
+		<bb hit="15" dc="15" cost="24" >280% Earth (AOE) / Add 10% Weak 7% Poison 7% Para 7% Curse to ATK (ALL) 3Turns</bb>
+		<sbb hit="18" dc="18" cost="22" >500% Earth (AOE) / Drain 30-35% HP (SELF) / Add 15% Weak 10% Poison 10% Para 10% Curse to ATK (ALL) 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="20" >1000% Earth (AOE) / 5-10BC Fill when ATKed (100%) (ALL) 3Turns / Add 100% Injury 100% Weak 100% Sick to ATK (ALL) 3Turns / Add 100% Poison 100% Para 100% Curse to ATK (ALL) 3Turns</ubb>
+		<es condtion="Attacking" >8% Chance Inflict Curse Para Poison (SELF) / 10% Chance Inflict Weak Injury Sick (SELF)</es>
+	</unit>
+</brave>
