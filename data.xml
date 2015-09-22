@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <brave>
+	<!--Kira batch-->
 	<unit>
 		<id>852</id>
 		<name>Brimstone Emperor Alpha</name>
@@ -29,7 +30,7 @@
 	<unit>
 		<id>861</id>
 		<name>Heavenly Emperor Kanon</name>
-		<role>Cure Ails, Null Ails, DEF buff</role>
+		<role>Cure Ails, Null Ails, DEF buff, Miti (UBB)</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -42,7 +43,7 @@
 	<unit>
 		<id>864</id>
 		<name>Frolic Emperor Kira</name>
-		<role>Nuker, CRIT buff, ATK/DEF down</role>
+		<role>Nuker, CRIT buff, ATK/DEF down, ATK buff (UBB)</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -77,5 +78,19 @@
 		<sbb hit="18" dc="18" cost="22" >500% Earth (AOE) / Drain 30-35% HP (SELF) / Add 15% Weak 10% Poison 10% Para 10% Curse to ATK (ALL) 3Turns</sbb>
 		<ubb hit="22" dc="22" cost="20" >1000% Earth (AOE) / 5-10BC Fill when ATKed (100%) (ALL) 3Turns / Add 100% Injury 100% Weak 100% Sick to ATK (ALL) 3Turns / Add 100% Poison 100% Para 100% Curse to ATK (ALL) 3Turns</ubb>
 		<es condtion="Attacking" >8% Chance Inflict Curse Para Poison (SELF) / 10% Chance Inflict Weak Injury Sick (SELF)</es>
+	</unit>
+	<!--Diana batch-->
+	<unit>
+		<id>885</id>
+		<name>Magma Twin-Pike Claire</name>
+		<role>Sparker, SPARK buff, BC drop buff, ATK buff (UBB)</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="8" dc="24" >75% Spark DMG+ (ALL) / 30% ATK 30% DEF (ALL)</ls>
+		<bb hit="20" dc="20" cost="24" >280% Fire (AOE) / 70% Spark DMG+ (ALL) 3Turns</bb>
+		<sbb hit="30" dc="30" cost="25" >500% Fire (AOE) / 80% Spark DMG+ (ALL) 3Turns / 30% BC+ (ALL) 3Turns</sbb>
+		<ubb hit="40" dc="40" cost="25" >1000% Fire (AOE) / 130% Spark DMG+ (ALL) 3Turns / 200% ATK+ (ALL) 3Turns</ubb>
+		<es condtion="Kurt in squad or Blaze Lance sphere equipped)" >30% ALL Stats SELF</es>
 	</unit>
 </brave>
