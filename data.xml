@@ -30,7 +30,7 @@
 	<unit>
 		<id>861</id>
 		<name>Heavenly Emperor Kanon</name>
-		<role>Cure Ails, Null Ails, DEF buff, Miti (UBB)</role>
+		<role>Leader 30% HP/DEF, Cure Ails, Null Ails, DEF buff, Miti (UBB)</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -43,7 +43,7 @@
 	<unit>
 		<id>864</id>
 		<name>Frolic Emperor Kira</name>
-		<role>Nuker, CRIT buff, ATK/DEF down, ATK buff (UBB)</role>
+		<role>Leader Nuker, CRIT buff, ATK/DEF down, ATK buff (UBB)</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -56,7 +56,7 @@
 	<unit>
 		<id>855</id>
 		<name>Cyclone Emperor Tazer</name>
-		<role>USBB, SPARK buff</role>
+		<role>Nuker USBB, SPARK buff</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -83,7 +83,7 @@
 	<unit>
 		<id>885</id>
 		<name>Magma Twin-Pike Claire</name>
-		<role>Sparker, SPARK buff, BC drop buff, ATK buff (UBB)</role>
+		<role>Leader 30% ATK/DEF, Sparker, SPARK buff, BC drop buff, ATK buff (UBB)</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -91,6 +91,150 @@
 		<bb hit="20" dc="20" cost="24" >280% Fire (AOE) / 70% Spark DMG+ (ALL) 3Turns</bb>
 		<sbb hit="30" dc="30" cost="25" >500% Fire (AOE) / 80% Spark DMG+ (ALL) 3Turns / 30% BC+ (ALL) 3Turns</sbb>
 		<ubb hit="40" dc="40" cost="25" >1000% Fire (AOE) / 130% Spark DMG+ (ALL) 3Turns / 200% ATK+ (ALL) 3Turns</ubb>
-		<es condtion="Kurt in squad or Blaze Lance sphere equipped)" >30% ALL Stats SELF</es>
+		<es condtion="Kurt in squad or Blaze Lance sphere equipped" >30% ALL Stats SELF</es>
+	</unit>
+	<unit>
+		<id>888</id>
+		<name>Glacier Twin-Blade Colt</name>
+		<role>Leader 30% HP/REC, Nuker, BB regen buff, ATK buff (UBB)</role>
+		<element>Water</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="8" dc="24" >150% CRIT DMG+ (ALL) / 30% HP 30% REC (ALL)</ls>
+		<bb hit="17" dc="17" cost="24" >280% Water (AOE) / 3BC Fill 3Turns / 60% CRIT+ (ALL) 3Turns</bb>
+		<sbb hit="19" dc="19" cost="25" >500% Water (AOE) / 5BC Fill 3Turns / 60% CRIT+ (ALL) 3Turns</sbb>
+		<ubb hit="21" dc="21" cost="25" >1000% Water (AOE) / 70% CRIT+ (ALL) 3Turns / 200% ATK+ (ALL) 3Turns</ubb>
+		<es condtion="Claire in squad or Ice Blade sphere equipped" >30% ALL Stats SELF</es>
+	</unit>
+	<unit>
+		<id>894</id>
+		<name>Thunderbird Sabre Diana</name>
+		<role>BB Supporter, BB Atked buff, BB Regen buff, HC/BC drop buff, BB ATK% buff (UBB)</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="11" dc="22" >75% HC Fill+ (ALL) / 100% Chance 4-6BC Fill when ATKed (ALL)</ls>
+		<bb hit="" dc="" cost="23" >4BC Fill 3Turns / 4-5BC Fill when ATKed (100%) (ALL) 3Turns / 20% HC+ (ALL) 3Turns</bb>
+		<sbb hit="18" dc="18" cost="25" >500% Thunder (AOE) / 5BC Fill 3Turns / 4-5BC Fill when ATKed (100%) (ALL) 3Turns / 20% BC+ (ALL) 3Turns</sbb>
+		<ubb hit="20" dc="20" cost="25" >1000% Thunder (AOE) / 500% BB ATK%+ (ALL) 3Turns / 50-50BC Fill when ATKed (130%) (ALL) 3Turns</ubb>
+		<es condtion="None" >BB Fill Each Turn (4BC)</es>
+	</unit>
+	<unit>
+		<id>897</id>
+		<name>Radiant Virtue Fadahl</name>
+		<role>ATK/DEF down debuff, Inflict Ails, add Ails to atk</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="7" dc="21" >100% Chance Reduce 25-40% BB Gauge Used (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison (ALL) / 10% Para 10% Curse (ALL)</ls>
+		<bb hit="14" dc="14" cost="24" >280% Light (AOE) / 40% Chance -30% Enemy ATK 1Turns / 40% Chance -30% Enemy DEF 1Turns / Add 10% Weak 8% Curse to ATK (ALL) 3Turns</bb>
+		<sbb hit="17" dc="17" cost="24" >500% Light (AOE) / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns / Add 10% Injury 8% Poison to ATK (ALL) 3Turns</sbb>
+		<ubb hit="20" dc="20" cost="25" >1300% Light (AOE) / 100% Chance -80% Enemy ATK 1Turns / 100% Chance -80% Enemy DEF 1Turns / 100% Injury 100% Poison 100% Para 100% Curse</ubb>
+		<es condtion="None" >100% Chance 2-3BC Fill when ATKed (SELF)</es>
+	</unit>
+	<unit>
+		<id>900</id>
+		<name>Galactic Treasure Ivris</name>
+		<role>Healer, Cure Ails, Null Ails, BB fill, Angel Idol (UBB)</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="13" dc="26" >4BC Fill Each Turn (ALL) / Heal Each Turn (ALL) / Null Ails (ALL)</ls>
+		<bb hit="18" dc="18" cost="24" >250% Dark (AOE) / Heal (ALL) / Cure Ails</bb>
+		<sbb hit="" dc="" cost="25" >8BC Fill 1Turn / Heal (ALL) / Cure Ails / Null Ails 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="25" >1000% Dark (AOE) / Angel Idol (2 Random Units) / Cure Ails</ubb>
+		<es condtion="None" >Angel Idol when HP &lt; 20% (SELF)</es>
+	</unit>
+	<unit>
+		<id>891</id>
+		<name>Sylvan Excalibur Quaid</name>
+		<role>Nuker, 4 Elements buff, x3 hit (UBB)</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="12" dc="24" >Reduce 20% BB Cost (ALL) / 30% BC Fill+ (ALL) / 100% ATK (5 elements required) (ALL)</ls>
+		<bb hit="15" dc="15" cost="24" >240% Fire,water,earth,thunder (AOE)</bb>
+		<sbb hit="17" dc="17" cost="24" >420% Earth,light,dark (AOE) / Add Fire,water,earth,thunder to ATK (ALL) 2Turns</sbb>
+		<ubb hit="20" dc="20" cost="25" >1000% Earth (AOE) / Add Fire,water,earth,thunder,light,dark to ATK (ALL) 2Turns / Normal HitCount +200% (110% DMG) 2Turns</ubb>
+		<es condtion="None" >Higher ATK+ DEF+ REC+ w/ Lower HP Left (150% - 0% Buff)</es>
+	</unit>
+	<!--Aaron batch-->
+	<unit>
+		<id>925</id>
+		<name>Grave Carver Aaron</name>
+		<role>Mitigator, BB fill</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="10" dc="20" >4BC Fill Each Turn (ALL) / 10% Chance Reduce DMG (20%) (ALL) / 40% DEF (ALL)</ls>
+		<bb hit="15" dc="30" cost="24" >480% Dark (TGT) / 5BC Fill 1Turn / Reduce DMG (50%) 1Turns</bb>
+		<sbb hit="18" dc="18" cost="23" >400% Dark (AOE) / 8BC Fill 1Turn / Reduce DMG (50%) 1Turns / 80% DEF+ (ALL) 3Turns</sbb>
+		<ubb hit="20" dc="20" cost="20" >1000% Dark (AOE) / 15BC Fill 1Turn / 15BC Fill 3Turns / Reduce DMG (75%) 3Turns</ubb>
+		<es condtion="None" >100% Chance 2-3BC Fill when ATKed</es>
+	</unit>
+	<unit>
+		<id>910</id>
+		<name>Inferno Wings Magnazorda</name>
+		<role>Leader miti, Nuker, add Ails to atk buff, BB fill, DoT debuff</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="12" dc="24" >15% Injury 15% Weak (ALL) / Reduce DMG (15%) from (Fire,earth) Enemy</ls>
+		<bb hit="15" dc="15" cost="24" >280% Fire (AOE) / Add 10% Injury 10% Weak to ATK (ALL) 3Turns</bb>
+		<sbb hit="17" dc="17" cost="24" >500% Fire (AOE) / 8BC Fill 1Turn / 400% DMG Each Turn 3Turns / Add 10% Injury 10% Weak to ATK (ALL) 3Turns</sbb>
+		<ubb hit="20" dc="20" cost="20" >1000% Fire (AOE) / 2000% DMG Each Turn 1Turn / 50BC Fill (ALL) 3Turns</ubb>
+		<es condtion="None" >25% Chance Reflect 15% DMG to other random Enemy</es>
+	</unit>
+	<unit>
+		<id>916</id>
+		<name>Gaia Sennin Oguro</name>
+		<role>Leader 30% HP/DEF, Nuker USBB, BB fill, </role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="8" dc="16" >100% Chance 3-6BC Fill when ATKed (ALL) / 30% HP 30% DEF (ALL)</ls>
+		<bb hit="14" dc="14" cost="26" >280% Earth (AOE) / 4BC Fill 3Turns</bb>
+		<sbb hit="17" dc="34" cost="25" >640% Earth (TGT) / 100% BB Fill (SELF) / 100% ATK+ (SELF) 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="30" >1500% Earth (AOE) / 200% ATK+ to Earth 3Turns / Ignore DEF (ALL) 3Turns</ubb>
+		<es condtion="None" >80% ATK+ on Full BB</es>
+	</unit>
+	<unit>
+		<id>922</id>
+		<name>Demon Champion Raaga</name>
+		<role>Leader BB SPARK fill, Nuker, BC/HC drop buff, Stats buff and BB ATK% buff (UBB) </role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="11" dc="22" >100% Chance 1-2BC Fill on Spark (ALL) / 100% Spark DMG+ (ALL)</ls>
+		<bb hit="26" dc="26" cost="25" >280% Light (AOE) / 20% BC+ 20% HC+ (ALL) 3Turns</bb>
+		<sbb hit="21" dc="21" cost="30" >500% Light (AOE) / 90% Spark DMG+ (ALL) 3Turns</sbb>
+		<ubb hit="23" dc="23" cost="25" >1000% Light (AOE) / 150% ATK+ 150% DEF+ 150% REC+ (ALL) 3Turns / 400% BB ATK%+ (ALL) 3Turns</ubb>
+		<es condtion="None" >Normal HitCount +100% (100% DMG)</es>
+	</unit>
+	<unit>
+		<id>919</id>
+		<name>Flaring Massacre Rize</name>
+		<role>Nuker, HoT, Ignore DEF buff</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="10" dc="20" >20% HC+ (ALL) / 80% ATK (ALL)</ls>
+		<bb hit="17" dc="34" cost="18" >560% Thunder (TGT) / Gradual Heal 3Turns</bb>
+		<sbb hit="19" dc="19" cost="28" >Thunder (AOE) 200%-850% BB ATK% Based on HP LEFT / Ignore DEF (ALL) 2Turns</sbb>
+		<ubb hit="22" dc="22" cost="20" >Thunder (AOE) 1500%-2500% BB ATK% Based on HP LEFT</ubb>
+		<es condtion="None" >80% ATK+ on Full HP</es>
+	</unit>
+	<unit>
+		<id>913</id>
+		<name>Tundra Scales Zerafalgar</name>
+		<role>Leader Miti, Sparker, BB fill, BC drop buff</role>
+		<element>Water</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="8" dc="16" >70% Spark BC+ (ALL) / Reduce DMG (15%) from (Water,fire) Enemy</ls>
+		<bb hit="28" dc="28" cost="23" >280% Water (AOE) / 25% BC+ (ALL) 3Turns</bb>
+		<sbb hit="32" dc="32" cost="24" >500% Water (AOE) / 5BC Fill 3Turns / 30% BC+ (ALL) 3Turns</sbb>
+		<ubb hit="40" dc="40" cost="28" >1000% Water (AOE) / 100% Chance -50% Enemy ATK 1Turns / Add 20% Chance -50% Enemy ATK to ATK (ALL) 3Turns</ubb>
+		<es condtion="None" >100% Chance 7BC Fill on ATK</es>
 	</unit>
 </brave>
