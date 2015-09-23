@@ -188,7 +188,7 @@
 	<unit>
 		<id>916</id>
 		<name>Gaia Sennin Oguro</name>
-		<role>Leader 30% HP/DEF, Nuker USBB, BB fill, </role>
+		<role>Leader 30% HP/DEF, Nuker USBB</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -227,7 +227,7 @@
 	<unit>
 		<id>913</id>
 		<name>Tundra Scales Zerafalgar</name>
-		<role>Leader Miti, Sparker, BB fill, BC drop buff</role>
+		<role>Leader miti, Sparker, BB fill, BC drop buff</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -236,5 +236,84 @@
 		<sbb hit="32" dc="32" cost="24" >500% Water (AOE) / 5BC Fill 3Turns / 30% BC+ (ALL) 3Turns</sbb>
 		<ubb hit="40" dc="40" cost="28" >1000% Water (AOE) / 100% Chance -50% Enemy ATK 1Turns / Add 20% Chance -50% Enemy ATK to ATK (ALL) 3Turns</ubb>
 		<es condtion="None" >100% Chance 7BC Fill on ATK</es>
+	</unit>
+	<!--Oracle batch-->
+	<unit>
+		<id>962</id>
+		<name>Roaring Crash Balgran</name>
+		<role>Leader Tanker, Inflict Ails, add Ails to atk, convert ATK to DEF, convert DEF to ATK (UBB)</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="9" dc="18" >5BC Fill when ATKed on Guard (ALL) / Reduce DMG (10%) on Guard (ALL) / 30% DEF (ALL)</ls>
+		<bb hit="12" dc="12" cost="24" >280% Thunder (AOE) / 45% Poison 45% Para 45% Curse / 45% Injury 45% Weak 45% Sick</bb>
+		<sbb hit="17" dc="17" cost="25" >500% Thunder (AOE) / Convert 30% ATK to DEF (ALL) 3Turns / Add 15% Injury 15% Weak 15% Sick to ATK (ALL) 3Turns / Add 10% Poison 10% Para 10% Curse to ATK (ALL) 3Turns</sbb>
+		<ubb hit="20" dc="20" cost="25" >1000% Thunder (AOE) / Convert 100% DEF to ATK (ALL) 3Turns / Reduce DMG (100%) from (Water) Enemy 2Turns</ubb>
+		<es condtion="None" >20% Chance Reduce DMG (20%) (SELF) / 30% DEF+ (SELF)</es>
+	</unit>
+	<unit>
+		<id>959</id>
+		<name>Cyclonic Blades Dion</name>
+		<role>Leader Nuker, CRIT buff, BB ATK% buff, SPARK buff (UBB)</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="12" dc="24" >150% CRIT DMG+ (ALL) / 125% Element Weakness DMG+ (earth,thunder)</ls>
+		<bb hit="15" dc="15" cost="22" >280% Earth (AOE) / 60% CRIT+ (ALL) 3Turns</bb>
+		<sbb hit="17" dc="17" cost="20" >500% Earth (AOE) / 200% BB ATK%+ (ALL) 3Turns</sbb>
+		<ubb hit="20" dc="20" cost="25" >1200% Earth (AOE) / 150% Spark DMG+ (ALL) 3Turns</ubb>
+		<es condtion="None" >100% CRIT DMG+ (SELF)</es>
+	</unit>
+	<unit>
+		<id>956</id>
+		<name>Tidal Nacre Medina</name>
+		<role>BB fill, BB ATKed buff, BB ATK% (UBB)</role>
+		<element>Water</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="9" dc="27" >3BC Fill Each Turn (ALL) / 50% BC Fill+ (ALL)</ls>
+		<bb hit="16" dc="16" cost="28" >280% Water (AOE) / 8BC Fill 1Turn</bb>
+		<sbb hit="18" dc="18" cost="22" >500% Water (AOE) / 10BC Fill 1Turn / 3-6BC Fill when ATKed (100%) (ALL) 3Turns</sbb>
+		<ubb hit="20" dc="20" cost="25" >1000% Water (AOE) / Reduce DMG (75%) 1Turns / 500% BB ATK%+ (ALL) 2Turns</ubb>
+		<es condtion="None" >4BC Fill Each Turn (SELF)</es>
+	</unit>
+	<unit>
+		<id>965</id>
+		<name>Resplendent Queen Rinon</name>
+		<role>Healer, Cure Ails, Null Ails, buff 2 Elements, BB fill rate buff + HoT (UBB)</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="10" dc="20" >25% Chance Heal 20-20% DMG when ATKed (ALL) / Heal Each Turn (ALL) / Null Ails (ALL)</ls>
+		<bb hit="" dc="" cost="20" >Heal (ALL) / Cure Ails / Null Ails 3Turns</bb>
+		<sbb hit="17" dc="17" cost="28" >500% Light (AOE) / Cure Ails / Null Ails 3Turns / Add Light,dark to ATK (ALL) 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="30" >1000% Light (AOE) / 50% BC Fill+ (ALL) 3Turns / Gradual Heal Full 3Turns</ubb>
+		<es condtion="None" >Nulls Ails (SELF)</es>
+	</unit>
+	<unit>
+		<id>953</id>
+		<name>Phoenix Torque Ruby</name>
+		<role>Leader BB SPARK fill, Sparker, x3 hit + convert REC to ATK (UBB)</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="13" dc="39" >70% Spark BC+ (ALL) / 100% Chance 1-2BC Fill on Spark (ALL)</ls>
+		<bb hit="20" dc="20" cost="24" >280% Fire (AOE) / Add 10% Chance -20% Enemy ATK to ATK (ALL) 1Turns</bb>
+		<sbb hit="40" dc="40" cost="24" >500% Fire (AOE) / Add 10% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 30% Chance -30% Enemy ATK 1Turns</sbb>
+		<ubb hit="34" dc="34" cost="25" >1000% Fire (AOE) / Normal HitCount +200% (100% DMG) 3Turns / Convert 100% REC to ATK (ALL) 3Turns</ubb>
+		<es condtion="None" >15% BC+ 15% HC+ (SELF)</es>
+	</unit>
+	<unit>
+		<id>968</id>
+		<name>Grand Malediction Yuura</name>
+		<role>Nuker, DoT, BB ATKed buff, CRIT DMG buff (UBB)</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="10" dc="20" >100% Chance Drain 3-8% HP (ALL) / 80% ATK (ALL)</ls>
+		<bb hit="15" dc="15" cost="22" >480% Dark (AOE) / 3-5BC Fill when ATKed (100%) (ALL) 3Turns</bb>
+		<sbb hit="20" dc="40" cost="27" >640% Dark (TGT) / 100% BB Fill (SELF) / 500% DMG Each Turn 3Turns</sbb>
+		<ubb hit="24" dc="48" cost="20" >2000% Dark (TGT) / 450% CRIT DMG+ (ALL) 3Turns</ubb>
+		<es condtion="None" >80% ATK+ on Full BB</es>
 	</unit>
 </brave>
