@@ -43,7 +43,7 @@
 	<unit>
 		<id>864</id>
 		<name>Frolic Emperor Kira</name>
-		<role>Leader Nuker, CRIT buff, ATK/DEF down, ATK buff (UBB)</role>
+		<role>Leader Nuker, CRIT buff, ATK/DEF down debuff, ATK buff (UBB)</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -315,5 +315,242 @@
 		<sbb hit="20" dc="40" cost="27" >640% Dark (TGT) / 100% BB Fill (SELF) / 500% DMG Each Turn 3Turns</sbb>
 		<ubb hit="24" dc="48" cost="20" >2000% Dark (TGT) / 450% CRIT DMG+ (ALL) 3Turns</ubb>
 		<es condtion="None" >80% ATK+ on Full BB</es>
+	</unit>
+	<!--Bestie batch-->
+	<unit>
+		<id>980</id>
+		<name>Inferno Rifle Bestie</name>
+		<role>BB supporter, Leader 30% HP/DEF, BB ATKed buff, BB fill, BB regen buff</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="18" dc="36" >Reduce 25% BB Cost (ALL) / 100% Chance Reduce 15-20% BB Gauge Used (ALL) / 30% HP 30% DEF (ALL)</ls>
+		<bb hit="20" dc="20" cost="25" >280% Fire (AOE) / 6BC Fill 1Turn / 4BC Fill 3Turns</bb>
+		<sbb hit="22" dc="22" cost="25" >500% Fire (AOE) / 30% BC Fill+ (ALL) 3Turns / 4-7BC Fill when ATKed (100%) (ALL) 3Turns</sbb>
+		<ubb hit="24" dc="24" cost="25" >1000% Fire (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 200% ATK+ 200% DEF+ (ALL) 3Turns</ubb>
+		<es condtion="None" >Normal HitCount +100% (100% DMG)</es>
+	</unit>
+	<unit>
+		<id>989</id>
+		<name>Dragon Scroll Kagura</name>
+		<role>ATK down debuff, add ATK down to atk, Element Weakness DMG buff , x3 hit (UBB)</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="6" dc="30" >100% Spark DMG+ (ALL) / 125% Element Weakness DMG+ (water,thunder)</ls>
+		<bb hit="17" dc="17" cost="26" >280% Thunder (AOE) / 30% Chance -50% Enemy ATK 1Turns / 75% Element Weakness DMG+ (water,thunder)</bb>
+		<sbb hit="17" dc="17" cost="20" >500% Thunder (AOE) / Add 10% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 75% Element Weakness DMG+ (water,thunder)</sbb>
+		<ubb hit="20" dc="20" cost="25" >1000% Thunder (AOE) / Add 50% Chance -60% Enemy ATK to ATK (ALL)1Turns / Normal HitCount +200% (100% DMG) 2Turns</ubb>
+		<es condtion="None" >Nulls Elemental Weakness (SELF)</es>
+	</unit>
+	<unit>
+		<id>992</id>
+		<name>Turbo Wings Nemethgear</name>
+		<role>Nuker, BB fill rate buff, CRIT DMG buff + SPARK buff (UBB)</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="15" dc="30" >50% BC Fill+ (ALL) / 150% BB ATK%+ (ALL)</ls>
+		<bb hit="18" dc="18" cost="25" >280% Light (AOE) / 6BC Fill 1Turn / 30% BC Fill+ (ALL) 3Turns</bb>
+		<sbb hit="21" dc="21" cost="28" >500% Light (AOE) / 100% BB Fill (SELF) / 30% BC Fill+ (ALL) 3Turns</sbb>
+		<ubb hit="45" dc="45" cost="25" >1000% Light (AOE) / 300% CRIT DMG+ 3Turns / 120% Spark DMG+ (ALL) 3Turns</ubb>
+		<es condtion="None" >80% ATK+ when Full BB (SELF)</es>
+	</unit>
+	<unit>
+		<id>995</id>
+		<name>Hellion Armor Reis</name>
+		<role>Nuker, Leader 30% HP/ATK, CRIT buff, CRIT DMG buff, BB ATK% (UBB)</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="11" dc="33" >6-8BC Fill on CRIT (ALL) / 150% CRIT DMG+ (ALL) / 30% HP 30% ATK (ALL)</ls>
+		<bb hit="15" dc="15" cost="24" >280% Dark (AOE) / 60% CRIT+ (ALL) 3Turns</bb>
+		<sbb hit="17" dc="17" cost="22" >500% Dark (AOE) / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns</sbb>
+		<ubb hit="20" dc="20" cost="20" >1200% Dark (AOE) / 70% CRIT+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 2Turns</ubb>
+		<es condtion="None" >100% CRIT DMG+ (SELF)</es>
+	</unit>
+	<unit>
+		<id>986</id>
+		<name>Feral Katana Toutetsu</name>
+		<role>ATK buff, DoT debuff</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="10" dc="30" >80% ATK (ALL) / 50% ATK on Full HP (ALL)</ls>
+		<bb hit="15" dc="15" cost="22" >280% Earth (AOE) / 300% DMG Each Turn 3Turns</bb>
+		<sbb hit="18" dc="18" cost="24" >500% Earth (AOE) / 140% ATK+ (ALL) 3Turns / 300% DMG Each Turn 3Turns</sbb>
+		<ubb hit="20" dc="20" cost="25" >1000% Earth (AOE) / Ignore DEF (ALL) 2Turns / 250% ATK+ (ALL) 3Turns / 2000% DMG Each Turn 1Turns</ubb>
+		<es condtion="None" >100% Chance 1BC Fill on Spark (SELF)</es>
+	</unit>
+	<unit>
+		<id>983</id>
+		<name>Lance Champion Vernil</name>
+		<role>Inflict Ails, Inflict Ails on ATKed buff, BB ATK% buff, SPARK buff (UBB)</role>
+		<element>Water</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="10" dc="30" >75% Spark DMG+ (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison (ALL) / 10% Para 10% Curse (ALL)</ls>
+		<bb hit="20" dc="20" cost="24" >280% Water (AOE) / Inflict 10% Para 10% Curse 10% Poison 15% Injury 15% Sick 15% Weak on ATKed (ALL) 3Turns</bb>
+		<sbb hit="3" dc="18" cost="32" >650% Water (AOE) / 200% BB ATK%+ (ALL) 3Turns / Inflict 10% Para 10% Curse 10% Poison 15% Injury 15% Sick 15% Weak on ATKed (ALL) 3Turns</sbb>
+		<ubb hit="1" dc="40" cost="20" >2000% Water (AOE) / 200% Spark DMG+ (SELF) 1Turns / Inflict 100% Para 100% Curse 100% Poison 100% Injury 100% Sick 100% Weak on ATKed (ALL) 3Turns</ubb>
+		<es condtion="None" >50% Spark DMG+ (SELF)</es>
+	</unit>
+	<!--Libera batch-->
+	<unit>
+		<id>1007</id>
+		<name>Indomitable Flare Griff</name>
+		<role>Nuker, Leader 30% HP/ATK, buff 2 Elements, CRIT DMG buff, BB fill rate buff, convert HP to ATK(UBB)</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="12" dc="36" >6-8BC Fill on CRIT (ALL) / 150% CRIT DMG+ (ALL) / 30% HP 30% ATK (ALL)</ls>
+		<bb hit="14" dc="14" cost="25" >300% Fire (AOE) / Add Fire,water to ATK (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns</bb>
+		<sbb hit="17" dc="17" cost="24" >540% Fire (AOE) / 30% BC Fill+ (ALL) 3Turns / Add Fire,water to ATK (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns</sbb>
+		<ubb hit="21" dc="21" cost="20" >1200% Fire (AOE) / 300% CRIT DMG+ (ALL) 3Turns / Convert 20% HP to ATK (ALL) 3Turns</ubb>
+		<es condtion="None" >4BC Fill on CRIT (SELF) / Add 60% CRIT+ (ALL) effect to BB/SBB (SELF)</es>
+	</unit>
+	<unit>
+		<id>1010</id>
+		<name>Indigo Soul Iris</name>
+		<role>Leader Tanker, buff 2 Elements, miti Element dmg, add ATK/DEF down to atk</role>
+		<element>Water</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="8" dc="32" >20% Chance Reduce DMG (20%) (ALL) / 5BC Fill when ATKed on Guard (ALL) / Reduce DMG (15%) on Guard (ALL)</ls>
+		<bb hit="12" dc="12" cost="25" >300% Water (AOE) / Add Fire,water to ATK (ALL) 3Turns / Reduce DMG (10%) from (fire,earth) Enemy (ALL) 2Turns</bb>
+		<sbb hit="15" dc="15" cost="28" >540% Water (AOE) / Add Fire,water to ATK (ALL) 3Turns / Add 10% Chance -20% Enemy ATK to ATK (ALL) 3Turns / Add 10% Chance -20% Enemy DEF to ATK (ALL) 3Turns / Reduce DMG (10%) from (fire,earth) Enemy (ALL) 2Turns</sbb>
+		<ubb hit="20" dc="20" cost="25" >1200% Water (AOE) / 400% Element Weakness DMG+ (fire,water) (ALL) 3Turns / Reduce DMG (100%) from (fire,earth) Enemy (ALL) 2Turns</ubb>
+		<es condtion="None" >Normal HitCount +100% (100% DMG)</es>
+	</unit>
+	<unit>
+		<id>1022</id>
+		<name>Sinister Basilisk Kafka</name>
+		<role>Inflict Ails on ATKed buff, Inflict Ails to atk buff, buff 2 Elements, convert 10% HP to ATK</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="11" dc="33" >100% Chance 2-5BC Fill when ATKed (ALL) / 80% ATK (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison (ALL) / 10% Para 10% Curse (ALL)</ls>
+		<bb hit="15" dc="15" cost="25" >300% Dark (AOE) / Add Light,dark to ATK (ALL) 3Turns / Inflict 10% Injury 10% Weak 10% Sick 7% Poison 7% Para 7% Curse on ATKed (ALL) 3Turns</bb>
+		<sbb hit="18" dc="18" cost="25" >540% Dark (AOE) / Add Light,dark to ATK (ALL) 3Turns / Convert 10% HP to ATK (ALL) 3Turns / Add 10% Weak 7% Poison 7% Para 7% Curse to ATK (ALL) 3Turns / Add 10% Injury 10% Sick to ATK (ALL) 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="25" >1200% Dark (AOE) / Inflict 100% Injury 100% Weak 100% Sick 100% Poison 100% Para 100% Curse on ATKed (ALL) 3Turns / Add 100% Injury 100% Weak 100% Sick to ATK (ALL) 3Turns / Add 100% Poison 100% Para 100% Curse to ATK (ALL) 3Turns</ubb>
+		<es condtion="None" >Normal HitCount +100% (100% DMG)</es>
+	</unit>
+	<unit>
+		<id>1019</id>
+		<name>Virtuous Champion Krantz</name>
+		<role>Mitigator, Leader 30% HP, heal,Cure Ails, buff 2 Elements, convert DEF to ATK (UBB)</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="9" dc="36" >12% BC+ 12% HC+ (ALL) / 30% HP 100% ATK (5 elements required) (ALL)</ls>
+		<bb hit="12" dc="12" cost="28" >280% Light (AOE) / Reduce DMG (50%) 1Turns / Cure Ails / Add Light,dark to ATK (ALL) 3Turns</bb>
+		<sbb hit="16" dc="16" cost="20" >480% Light (AOE) / Reduce DMG (50%) 1Turns / Heal (ALL) / Add Light,dark to ATK (ALL) 3Turns</sbb>
+		<ubb hit="20" dc="20" cost="25" >1000% Light (AOE) / Reduce DMG (75%) 2Turns / Convert 100% DEF to ATK (ALL) 3Turns</ubb>
+		<es condtion="None" >20% Chance Reduce DMG (20%) (SELF) / Reduce 20% BB Cost (SELF)</es>
+	</unit>
+	<unit>
+		<id>1013</id>
+		<name>Emerald Radiance Libera</name>
+		<role>Hybrid, buff 2 Elements, DEF/REC buff, BC/HC drop buff, BB ATKed buff, convert REC to ATK buff, BB ATK% (UBB)</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="12" dc="36" >50% BC Fill+ (ALL) / 100% BB ATK%+ (ALL) / 12% BC+ 12% HC+ (ALL)</ls>
+		<bb hit="15" dc="15" cost="28" >300% Earth (AOE) / Add Earth,thunder to ATK (ALL) 3Turns / 120% DEF+ 120% REC+ (ALL) 3Turns / 20% BC+ 20% HC+ (ALL) 3Turns</bb>
+		<sbb hit="18" dc="18" cost="26" >540% Earth (AOE) / 4-7BC Fill when ATKed (100%) (ALL) 3Turns / Add Earth,thunder to ATK (ALL) 3Turns / Convert 50% REC to ATK (ALL) 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="25" >1000% Earth (AOE) / 500% BB ATK%+ (ALL) 2Turns / Convert 100% REC to ATK (ALL) 3Turns</ubb>
+		<es condtion="None" >25% Chance Heal 20% DMG when ATKed (SELF) / Gradual Heal (SELF)</es>
+	</unit>
+	<unit>
+		<id>1016</id>
+		<name>Roaring Staff Rhoa</name>
+		<role>Leader 30% HP/ATK, buff 2 Elements, BB SPARK fill, SPARK buff, SPARK debuff</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="13" dc="39" >100% Chance 1-2BC Fill on Spark (ALL) / 50% Spark DMG+ (ALL) / 30% HP 30% ATK (ALL)</ls>
+		<bb hit="15" dc="15" cost="24" >300% Thunder (AOE) / Add Earth,thunder to ATK (ALL) 3Turns / 25% Chance Enemy receives 25% Spark DMG+ 1Turns</bb>
+		<sbb hit="19" dc="19" cost="23" >540% Thunder (AOE) / Add Earth,thunder to ATK (ALL) 3Turns / 70% Spark DMG+ (ALL) 3Turns / 25% Chance Enemy receives 25% Spark DMG+ 1Turns</sbb>
+		<ubb hit="23" dc="23" cost="30" >1200% Thunder (AOE) / 130% Spark DMG+ (ALL) 3Turns / 100% Chance Enemy receives 50% Spark DMG+ 1Turns</ubb>
+		<es condtion="None" >100% Chance 1BC Fill on Spark (SELF) / Add Ignore DEF (ALL) 2Turns effect to BB/SBB (SELF)</es>
+	</unit>
+	<!--Mahalum batch-->
+	<unit>
+		<id>1056</id>
+		<name>Soul Covenant Charis</name>
+		<role>Normal ATK buffer, BC/HC drop buff, convert DEF to ATK buff</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="8" dc="24" >Normal HitCount +100% (-50% DMG) (ALL) / 15% BC+ 15% HC+ (ALL)</ls>
+		<bb hit="13" dc="13" cost="25" >300% Dark (AOE) / Normal HitCount +100% (100% DMG) (ALL) 3Turns / 35% BC+ 35% HC+ (ALL) 3Turns</bb>
+		<sbb hit="18" dc="18" cost="25" >540% Dark (AOE) / Normal HitCount +100% (100% DMG) (ALL) 3Turns / Convert 60% DEF to ATK (ALL) 3Turns</sbb>
+		<ubb hit="21" dc="21" cost="25" >1200% Dark (AOE) / Normal HitCount +200% (100% DMG) (ALL) 3Turns / 100% BC+ 100% HC+ (ALL) 3Turns</ubb>
+		<es condtion="None" >15% HC+ 15% BC+ (SELF) / 100% Spark DMG+ 2Turns on >100k DMG Dealt (SELF)</es>
+	</unit>
+	<unit>
+		<id>1047</id>
+		<name>Quatre Marinus Duran</name>
+		<role>BB fill, ATK down debuff, add ATK down to atk, stats buff (UBB)</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="11" dc="33" >50% BC Fill+ (ALL) / 80% ATK 80% DEF 80% REC (BB >= 50%) (ALL)</ls>
+		<bb hit="13" dc="13" cost="30" >300% Earth (AOE) / 8BC Fill 1Turn / 30% Chance -50% Enemy ATK 1Turns</bb>
+		<sbb hit="17" dc="17" cost="24" >540% Earth (AOE) / 10BC Fill 1Turn / Add 10% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns</sbb>
+		<ubb hit="20" dc="20" cost="30" >1200% Earth (AOE) / 999BC Fill 1Turn / 200% ATK+ 200% DEF+ 200% REC+ (ALL) 3Turns</ubb>
+		<es condtion="None" >50% ATK 50% DEF 50% REC when Full BB (SELF)</es>
+	</unit>
+	<unit>
+		<id>1044</id>
+		<name>Wave Breaker Quartz</name>
+		<role>Buff HP permanent, DoT, HoT, convert HP to ATK, Chance Revive buff (UBB)</role>
+		<element>Water</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="8" dc="16" >50% Chance Drain 5-10% HP (ALL) / Heal Each Turn (ALL) / 40% HP (ALL)</ls>
+		<bb hit="14" dc="14" cost="27" >300% Water (AOE) / 10% Max HP+ till Death/Battle End / 250% DMG Each Turn 3Turns / Gradual Heal (ALL) 3Turns</bb>
+		<sbb hit="18" dc="18" cost="29" >Water (AOE) 240%-740% BB ATK% Based on HP LEFT / 250% DMG Each Turn 3Turns / Convert 10% HP to ATK (ALL) 3Turns / Gradual Heal (ALL) 3Turns</sbb>
+		<ubb hit="" dc="" cost="25" >20% Max HP+ till Death/Battle End / Gradual Heal FULL (ALL) 3Turns / 50% Chance Revive 100% HP (ALL) 70Turns</ubb>
+		<es condtion="None" >40% Chance Revive 40% HP (SELF) Max 2x</es>
+	</unit>
+	<unit>
+		<id>1050</id>
+		<name>Storm Chieftess Mahalu</name>
+		<role>Nuker, ATK buff, SPARK buff, HC/BC drop buff</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="12" dc="36" >100% Spark DMG+ (ALL) / 100% BB ATK%+ 2Turns on >25 Sparks</ls>
+		<bb hit="15" dc="15" cost="24" >300% Thunder (AOE) / 50% Spark DMG+ (ALL) 3Turns / 25% BC+ 25% HC+ (ALL) 3Turns</bb>
+		<sbb hit="17" dc="17" cost="30" >540% Thunder (AOE) / 70% Spark DMG+ (ALL) 3Turns / 130% ATK+ (ALL) 3Turns / 25% BC+ 25% HC+ (ALL) 3Turns</sbb>
+		<ubb hit="21" dc="21" cost="25" >1200% Thunder (AOE) / 130% Spark DMG+ (ALL) 3Turns / 200% ATK+ (ALL) 3Turns</ubb>
+		<es condtion="None" >100% Chance 1BC Fill on Spark (SELF) / 40% Spark DMG+ (SELF)</es>
+	</unit>
+	<unit>
+		<id>1053</id>
+		<name>Angelic Champion Nadore</name>
+		<role>Nuker, Element Weakness buff, stats buff, BB ATKed buff</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="12" dc="24" >0-100% ATK+ Based on HP LEFT (ALL) / 0-100% DEF+ Based on HP LOST (ALL) / 30% HP (ALL)</ls>
+		<bb hit="15" dc="15" cost="24" >280% Light (AOE) / 100% ATK+ 100% DEF+ 100% REC+ (ALL) 3Turns / 75% Element Weakness DMG+ (light) (ALL) 3Turns</bb>
+		<sbb hit="18" dc="18" cost="31" >480% Light (AOE) / 4-7BC Fill when ATKed (100%) (ALL) 3Turns / 120% ATK+ 120% DEF+ 120% REC+ (ALL) 3Turns / 75% Element Weakness DMG+ (light) (ALL) 3Turns</sbb>
+		<ubb hit="20" dc="20" cost="25" >Light (AOE) 1200%-2200% BB ATK% Based on HP LEFT / Reduce DMG (100%) 1Turns / Full Heal (ALL)</ubb>
+		<es condtion="None" >50% Elemental Weakness DMG+ (SELF) / 50% ATK+ 50% DEF+ 2Turns (SELF) on > 10k DMG Received</es>
+	</unit>
+	<unit>
+		<id>1041</id>
+		<name>Phosphor Crystal Rineth</name>
+		<role>Nuker, Element Weakness buff, BB regen buff, DEF down debuff</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="10" dc="30" >6BC Fill Each Turn (ALL) / 125% Element Weakness DMG+ (fire,earth)</ls>
+		<bb hit="13" dc="13" cost="26" >300% Fire (AOE) / 4BC Fill 3Turns / 75% Element Weakness DMG+ (fire,earth) (ALL) 3Turns</bb>
+		<sbb hit="16" dc="16" cost="23" >540% Fire (AOE) / 7BC Fill 3Turns / 30% Chance -50% Enemy DEF 1Turns / 75% Element Weakness DMG+ (fire,earth) (ALL) 3Turns</sbb>
+		<ubb hit="21" dc="21" cost="30" >1200% Fire (AOE) / 50BC Fill 5Turns / 300% BB ATK%+ (ALL) 3Turns / 300% Element Weakness DMG+ (fire,earth) (ALL) 3Turns</ubb>
+		<es condtion="None" >Reduce DMG (10%) from (earth,thunder) Enemy (SELF)</es>
 	</unit>
 </brave>
