@@ -474,7 +474,7 @@
 		<ubb hit="23" dc="23" cost="30" >1200% Thunder (AOE) / 130% Spark DMG+ (ALL) 3Turns / 100% Chance Enemy receives 50% Spark DMG+ 1Turns</ubb>
 		<es condtion="None" >100% Chance 1BC Fill on Spark (SELF) / Add Ignore DEF (ALL) 2Turns effect to BB/SBB (SELF)</es>
 	</unit>
-	<!--Mahalum batch-->
+	<!--Mahalu batch-->
 	<unit>
 		<id>1056</id>
 		<name>Soul Covenant Charis</name>
@@ -552,5 +552,285 @@
 		<sbb hit="16" dc="16" cost="23" >540% Fire (AOE) / 7BC Fill 3Turns / 30% Chance -50% Enemy DEF 1Turns / 75% Element Weakness DMG+ (fire,earth) (ALL) 3Turns</sbb>
 		<ubb hit="21" dc="21" cost="30" >1200% Fire (AOE) / 50BC Fill 5Turns / 300% BB ATK%+ (ALL) 3Turns / 300% Element Weakness DMG+ (fire,earth) (ALL) 3Turns</ubb>
 		<es condtion="None" >Reduce DMG (10%) from (earth,thunder) Enemy (SELF)</es>
+	</unit>
+	<!--Starters batch-->
+	<unit>
+		<id>801</id>
+		<name>Flame Legend Vargas</name>
+		<role>Leader 30% HP 100% ATK for Fire units, ATK buff, ATK down debuff (UBB)</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>38</cost>
+		<ls hit="10" dc="30" >30% HP 100% ATK (Fire)</ls>
+		<bb hit="12" dc="12" cost="25" >250% Fire (AOE)</bb>
+		<sbb hit="14" dc="14" cost="20" >500% Fire (AOE) / 110% ATK+ (ALL) 3Turns</sbb>
+		<ubb hit="24" dc="24" cost="25" >1000% Fire (AOE) / 100% Chance -80% Enemy ATK 2Turns / 150% ATK+ (ALL) 3Turns</ubb>
+		<es condtion="Dandelga Sphere equipped" >20% ALL Stats SELF / 50% DMG+ to Weak Element SELF</es>
+	</unit>
+	<unit>
+		<id>802</id>
+		<name>Ice Legend Selena</name>
+		<role>Leader 30% HP 100% ATK for Water units, HoT, x3 hit (UBB)</role>
+		<element>Water</element>
+		<rarity>7</rarity>
+		<cost>38</cost>
+		<ls hit="9" dc="36" >30% HP 100% ATK (Water)</ls>
+		<bb hit="12" dc="12" cost="25" >250% Water (AOE)</bb>
+		<sbb hit="16" dc="16" cost="20" >500% Water (AOE) / Gradual Heal 3Turns</sbb>
+		<ubb hit="25" dc="25" cost="20" >1000% Water (AOE) / Gradual Heal FULL 3Turns / Normal HitCount +200% (100% DMG) 3Turns</ubb>
+		<es condtion="Lexida Sphere equipped" >20% ALL Stats SELF / Angel Idol when HP &lt; 20% (SELF)</es>
+	</unit>
+	<unit>
+		<id>803</id>
+		<name>Earth Legend Lance</name>
+		<role>Leader 30% HP 100% ATK for Earth units, DEF buff, convert DEF to ATK buff (UBB)</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>38</cost>
+		<ls hit="8" dc="40" >30% HP 100% ATK (Earth)</ls>
+		<bb hit="12" dc="12" cost="25" >250% Earth (AOE)</bb>
+		<sbb hit="16" dc="16" cost="20" >500% Earth (AOE) / 110% DEF+ (ALL) 3Turns</sbb>
+		<ubb hit="21" dc="35" cost="25" >1000% Earth (AOE) / Convert 150% DEF to ATK (ALL) 3Turns</ubb>
+		<es condtion="Drevas Sphere equipped" >20% ALL Stats SELF / 20% Chance Reduce DMG 20% SELF</es>
+	</unit>
+	<unit>
+		<id>804</id>
+		<name>Thunder Legend Eze</name>
+		<role>Leader 30% HP 100% ATK for Thunder units, ATK buff, SPARK buff (UBB)</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>38</cost>
+		<ls hit="8" dc="40" >30% HP 100% ATK (Thunder)</ls>
+		<bb hit="12" dc="12" cost="25" >250% Thunder (AOE)</bb>
+		<sbb hit="16" dc="16" cost="20" >500% Thunder (AOE) / 110% ATK+ (ALL) 3Turns</sbb>
+		<ubb hit="21" dc="35" cost="25" >1000% Thunder (AOE) / 150% Spark DMG+ (ALL) 3Turns</ubb>
+		<es condtion="Bathoota Sphere equipped" >20% ALL Stats SELF / 50% CRIT DMG+ SELF</es>
+	</unit>
+	<unit>
+		<id>805</id>
+		<name>Light Legend Atro</name>
+		<role>Leader 30% HP 100% ATK for Light units, ATK/DEF buff, BB fill + stats buff (UBB)</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>38</cost>
+		<ls hit="8" dc="48" >30% HP 100% ATK (Light)</ls>
+		<bb hit="13" dc="13" cost="25" >250% Light (AOE)</bb>
+		<sbb hit="18" dc="18" cost="20" >500% Light (AOE) / 100% ATK+ 100% DEF+ (ALL) 3Turns</sbb>
+		<ubb hit="23" dc="23" cost="40" >1000% Light (AOE) / 50BC Fill 3Turns / 150% ATK+ 150% DEF+ (ALL) 3Turns</ubb>
+		<es condtion="Urias Sphere equipped" >20% ALL Stats SELF / 20% Reduce BB Gauge Used SELF</es>
+	</unit>
+	<unit>
+		<id>806</id>
+		<name>Dark Legend Magress</name>
+		<role>Leader 30% HP 100% ATK for Dark units, DEF buff, Miti 100% (UBB)</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>38</cost>
+		<ls hit="7" dc="42" >30% HP 100% ATK (Dark)</ls>
+		<bb hit="10" dc="10" cost="25" >250% Dark (AOE)</bb>
+		<sbb hit="12" dc="12" cost="20" >500% Dark (AOE) / 110% DEF+ (ALL) 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="15" >1000% Dark (AOE) / Reduce DMG (100%) 1Turns / 200% DEF+ (ALL) 3Turns</ubb>
+		<es condtion="Leomurg Sphere equipped" >20% ALL Stats SELF / 50% Chance Ignore DEF SELF</es>
+	</unit>
+	<!--Kikuri batch-->
+	<unit>
+		<id>880</id>
+		<name>Angelic Blades Sefia</name>
+		<role>Inflict Para, add Para to ATK, BC drop buff, x3 hit + ATK down debuff (UBB)</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="14" dc="42" >50% BC Fill+ (ALL) / 100% ATK (Light)</ls>
+		<bb hit="17" dc="17" cost="25" >280% Light (AOE) / 45% Para / Add 10% Para to ATK (ALL) 3Turns</bb>
+		<sbb hit="12" dc="12" cost="20" >550% Light (AOE) / 35% BC+ (ALL) 3Turns / Add 10% Para to ATK (ALL) 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="15" >1000% Light (AOE) / Normal HitCount +200% (130% DMG) 3Turns / 100% Chance -80% Enemy ATK 1Turns</ubb>
+		<es condtion="Holy Eight Sphere equipped" >20% ALL Stats SELF / 100% BB ATK%+ (SELF)</es>
+	</unit>
+	<unit>
+		<id>881</id>
+		<name>Demonic Idol Kikuri</name>
+		<role>Inflict Curse, add Curse to ATK, BB ATKed buff, ATK buff + DoT debuff (UBB)</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="16" dc="48" >50% BC Fill+ (ALL) / 100% ATK (Dark)</ls>
+		<bb hit="18" dc="18" cost="25" >280% Dark (AOE) / 45% Curse / Add 10% Curse to ATK (ALL) 3Turns</bb>
+		<sbb hit="22" dc="44" cost="24" >550% Dark (AOE) / 4-7BC Fill when ATKed (100%) (ALL) 3Turns / Add 10% Curse to ATK (ALL) 3Turns</sbb>
+		<ubb hit="25" dc="50" cost="25" >1000% Dark (AOE) / 200% ATK+ (ALL) 3Turns / 800% DMG Each Turn 3Turns</ubb>
+		<es condtion="Scarlet Pin Sphere equipped" >20% ALL Stats SELF / 8% Chance Inflict Curse Para Poison SELF / 10% Chance Inflict Weak Injury Sick SELF</es>
+	</unit>
+	<!--Elimo batch-->
+	<unit>
+		<id>901</id>
+		<name>Phoenix Wings Lava</name>
+		<role>Nuker, Ignore DEF buff, BB ATK% buff, ATK buff (UBB)</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="10" dc="30" >4BC Fill Each Turn (ALL) / 100% ATK (Fire)</ls>
+		<bb hit="15" dc="15" cost="25" >260% Fire (AOE) / Ignore DEF (ALL) 2Turn</bb>
+		<sbb hit="18" dc="18" cost="20" >500% Fire (AOE) / Ignore DEF (ALL) 2Turns / 200% BB ATK%+ (ALL) 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="20" >1000% Fire (AOE) / 200% ATK+ to Fire 3Turns / 500% BB ATK%+ (ALL) 2Turns</ubb>
+		<es condtion="None" >25% Chance Heal 20% DMG when ATKed (SELF) / 50% Chance 2-3BC Fill when ATKed (SELF)</es>
+	</unit>
+	<unit>
+		<id>903</id>
+		<name>Valkyrie Archangel Griel</name>
+		<role>Leader 30% HP + Null Ails, BC/HC drop buff, ATK/DEF down debuff</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="11" dc="33" >10% BC+ 10% HC+ (ALL) / 30% HP (ALL) / Null Ails (ALL)</ls>
+		<bb hit="16" dc="16" cost="25" >280% Thunder (AOE) / 25% BC+ 25% HC+ (ALL) 3Turns</bb>
+		<sbb hit="18" dc="18" cost="22" >540% Thunder (AOE) / 30% BC+ 30% HC+ (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns</sbb>
+		<ubb hit="23" dc="23" cost="15" >1000% Thunder (AOE) / 15BC Fill 3Turns / 30% Chance -80% Enemy ATK 1Turns / 30% Chance -80% Enemy DEF 1Turns</ubb>
+		<es condtion="None" >15% BC+ 15% HC+ (SELF)</es>
+	</unit>
+	<unit>
+		<id>902</id>
+		<name>Leviathan Sage Elimo</name>
+		<role>Mitigator, Healer, Cure/Null Ails, DEF buff, HoT</role>
+		<element>Water</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="8" dc="24" >10% Chance Reduce DMG (20%) (ALL) / 75% HC Fill+ (ALL) / 25% HC+ (ALL)</ls>
+		<bb hit="" dc="" cost="20" >Reduce DMG (50%) 1Turns / Heal (ALL) / Cure Ails</bb>
+		<sbb hit="" dc="" cost="20" >Reduce DMG (50%) 1Turns / Heal (ALL) / 140% DEF+ (ALL) 3Turns</sbb>
+		<ubb hit="" dc="" cost="25" >Reduce DMG (75%) 3Turns / 3-5BC Fill when ATKed (100%) (ALL) 3Turns / Gradual Heal Full 3Turns / Null Ails 3Turns</ubb>
+		<es condtion="None" >20% Chance Reduce DMG (20%) (SELF) / Reduce 20% BB Cost (SELF)</es>
+	</unit>
+	<!--Edea batch-->
+	<unit>
+		<id>948</id>
+		<name>Flora Aegis Edea</name>
+		<role>Mitigator, add Ails to atk buff</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="12" dc="36" >Nulls CRIT (ALL) / 100% ATK 30% DEF (Earth)</ls>
+		<bb hit="15" dc="30" cost="25" >500% Earth (TGT) / Reduce DMG (50%) 1Turns / Add 10% Injury 10% Weak 10% Sick 7% Poison to ATK (ALL) 3Turns</bb>
+		<sbb hit="18" dc="18" cost="22" >450% Earth (AOE) / Reduce DMG (50%) 1Turns / Add 15% Injury 15% Weak 15% Sick 10% Poison to ATK (ALL) 3Turns</sbb>
+		<ubb hit="21" dc="21" cost="25" >1000% Earth (AOE) / Reduce DMG (75%) 1Turns / Add 10% Chance -50% Enemy ATK to ATK (ALL) 2Turns</ubb>
+		<es condtion="20% ALL Stats (SELF) (Lafdranya Sphere equipped)" >Add Cure Ails (ALL) effect to BB/SBB (SELF)</es>
+	</unit>
+	<unit>
+		<id>949</id>
+		<name>Celestial Archer Loch</name>
+		<role>Nuker, SPARK buff</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="9" dc="36" >50% Spark DMG+ (ALL) / 100% ATK 30% DEF (Thunder)</ls>
+		<bb hit="28" dc="28" cost="25" >260% Thunder (AOE) / 70% Spark DMG+ (ALL) 3Turns</bb>
+		<sbb hit="1" dc="28" cost="35" >850% Thunder (AOE) / 25% CRIT+ 50% BC+ (SELF) / 70% Spark DMG+ (ALL) 3Turns / 100% BB ATK%+ (ALL) 3Turns</sbb>
+		<ubb hit="1" dc="40" cost="30" >2000% Thunder (AOE) / 50% BC+ (SELF) / Ignore DEF (ALL) 2Turns / 200% Spark DMG+ (SELF) 1Turns</ubb>
+		<es condtion="20% ALL Stats (SELF) (Eshuon Sphere equipped)" >50% Spark DMG+ (SELF)</es>
+	</unit>
+	<unit>
+		<id>950</id>
+		<name>Inferno Princess Alice</name>
+		<role>Hybrid, Heal, inflict Curse, convert REC to ATK buff, BB fill rate buff, HoT + REC buff (UBB) </role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="10" dc="40" >4BC Fill Each Turn (ALL) / 100% ATK (Dark)</ls>
+		<bb hit="13" dc="13" cost="25" >260% Dark (AOE) / Heal (ALL) / 45% Curse</bb>
+		<sbb hit="19" dc="19" cost="23" >500% Dark (AOE) / Convert 80% REC to ATK (ALL) 3Turns / 30% BC Fill+ (ALL) 3Turns</sbb>
+		<ubb hit="23" dc="23" cost="20" >1000% Dark (AOE) / Heal (ALL) / Gradual Heal 3Turns / 350% REC+ (ALL) 3Turns</ubb>
+		<es condtion="None" >100% Chance Drain 5%-10% HP on ATK (SELF) / 100% Chance 7 BC Fill on ATK (SELF)</es>
+	</unit>
+	<!--Will batch-->
+	<unit>
+		<id>975</id>
+		<name>Ice Bastion Zeldeus</name>
+		<role>Mitigator, Leader 30% HP/DEF ,DEF buff, conver DEF to ATK buff</role>
+		<element>Water</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="10" dc="40" >20% Chance Reduce DMG (20%) (ALL) / 30% HP 30% DEF (ALL)</ls>
+		<bb hit="1" dc="20" cost="25" >260% Water (AOE) / 50% BC+ (SELF) / Reduce DMG (50%) 1Turns</bb>
+		<sbb hit="1" dc="25" cost="20" >450% Water (AOE) / 50% BC+ (SELF) / Reduce DMG (50%) 1Turns / 140% DEF+ (ALL) 3Turns</sbb>
+		<ubb hit="20" dc="20" cost="40" >1000% Water (AOE) / Reduce DMG (75%) 2Turns / 150% DEF+ (ALL) 3Turns / Convert 100% DEF to ATK (ALL) 3Turns</ubb>
+		<es condtion="20% All STATS (SELF) when (Golem Core sphere equipped)" >Add 100% BB ATK%+ (ALL) 3Turns effect to BB/SBB (SELF)</es>
+	</unit>
+	<unit>
+		<id>976</id>
+		<name>Gaia Tree Vertri</name>
+		<role>Healer, Cure Ails / Null Ails buff, BB fill, BB fill rate buff, HoT + Chance Revive buff (UBB)</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="8" dc="32" >75% HC Fill+ (ALL) / Nulls CRIT (ALL) / Nulls Elemental Weakness (ALL)</ls>
+		<bb hit="" dc="" cost="20" >Heal (ALL) / Cure Ails / Null Ails 3Turns</bb>
+		<sbb hit="" dc="" cost="10" >8BC Fill 1Turn / 30% BC Fill+ (ALL) 3Turns / Heal (ALL) / Cure Ails</sbb>
+		<ubb hit="" dc="" cost="20" >Cure Ails / Gradual Heal FULL (ALL) 3Turns / 50% Chance Revive 100% HP (ALL) 140Turns</ubb>
+		<es condtion="None" >10% Chance Reduce DMG to 1 (SELF) / Nulls Elemental Weakness (SELF)</es>
+	</unit>
+	<unit>
+		<id>977</id>
+		<name>Angelic Paladin Will</name>
+		<role>Hybrid, Sparker(SBB), heal, HoT, BC/HC drop buff, BB ATK% buff, buff Light element, miti 100% (Dark) + ATK/DEF down debuff (UBB)</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="12" dc="48" >4BC Fill Each Turn (ALL) / 100% ATK (Light)</ls>
+		<bb hit="14" dc="14" cost="25" >260% Light (AOE) / Heal (ALL) / 25% BC+ 25% HC+ (ALL) 3Turns</bb>
+		<sbb hit="35" dc="35" cost="25" >500% Light (AOE) / 180% BB ATK%+ (ALL) 3Turns / Gradual Heal (ALL) 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="30" >Light (AOE) 1000%-2500% BB ATK% Based on HP LEFT / Reduce DMG (100%) from (DARK) Enemy 2Turns / 100% Chance -80% Enemy ATK 1Turns / 100% Chance -80% Enemy DEF 1Turns</ubb>
+		<es condtion="20% All STATS (SELF) when [God Devices spheres] equipped" >Add Light to ATK (3Turns) effect to BB/SBB</es>
+	</unit>
+	<!--Michele batch-->
+	<unit>
+		<id>1002</id>
+		<name>Wildfire Lotus Michele</name>
+		<role>Nuker, Leader 30% HP 100% ATK, buff 2 Elements, ATK buff, CRIT buff, CRIT DMG buff</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="18" dc="36" >40% BC Fill+ (ALL) / 30% HP 100% ATK (5 elements required) (ALL)</ls>
+		<bb hit="20" dc="20" cost="22" >260% Fire (AOE) / Add Fire to ATK (ALL) 3Turns / 115% ATK+ (ALL) 3Turns</bb>
+		<sbb hit="24" dc="24" cost="16" >500% Fire (AOE) / Add Fire to ATK (ALL) 3Turns / 40% CRIT+ (ALL) 3Turns / 140% ATK+ (ALL) 3Turns</sbb>
+		<ubb hit="34" dc="34" cost="20" >1000% Fire (AOE) / 300% CRIT DMG+ (ALL) 3Turns / 220% ATK+ (ALL) 3Turns</ubb>
+		<es condtion="20% All STATS (SELF) when DUEL Fragment sphere equipped" >Add Dark to ATK (ALL) Effect to BB/SBB (SELF)</es>
+	</unit>
+	<unit>
+		<id>1003</id>
+		<name>Immortal Beast Sargavel</name>
+		<role>Leader 40% HP, Cure Ails / Null Ails, buff HP permanent, BB fill rate buff, convert HP to ATK + SPARK debuff (UBB)</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="12" dc="36" >40% Chance Heal 20-20% DMG when ATKed (ALL) / Heal Each Turn (ALL) / 40% HP (ALL)</ls>
+		<bb hit="" dc="" cost="15" >Heal (ALL) / Cure Ails / Null Ails 3Turns / 10% Max HP+ till Death/Battle End</bb>
+		<sbb hit="28" dc="28" cost="30" >500% Thunder (AOE) / 30% BC Fill+ (ALL) 3Turns / Cure Ails / Null Ails 3Turns</sbb>
+		<ubb hit="32" dc="32" cost="25" >1000% Thunder (AOE) / Convert 20% HP to ATK (ALL) 3Turns / 100% Chance Enemy receives 100% Spark DMG+ 2Turns</ubb>
+		<es condtion="None" >Nulls Ails (SELF)</es>
+	</unit>
+	<unit>
+		<id>1004</id>
+		<name>Invictus Xeno Melchio</name>
+		<role>5 Elements dmg, Cure/Null Ails, buff Light element, convert ATK to DEF buff</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="16" dc="48" >100% Chance 7-7BC Fill on ATK (ALL) / 15% Chance Ignore DEF (ALL) / 80% ATK (ALL)</ls>
+		<bb hit="18" dc="18" cost="22" >240% Fire,water,earth,thunder,light (AOE) / Null Ails 3Turns / Add Light to ATK (ALL) 3Turns</bb>
+		<sbb hit="20" dc="20" cost="20" >450% Fire,water,earth,thunder,light (AOE) / Null Ails 3Turns / Add Light to ATK (ALL) 3Turns / Convert 30% attack to DEF (ALL) 3Turns</sbb>
+		<ubb hit="24" dc="24" cost="20" >1000% Fire,water,earth,thunder,light (AOE) / Reduce DMG (75%) 1Turns / Cure Ails / Null Ails 3Turns</ubb>
+		<es condtion="20% All STATS (SELF) when White Armor sphere equipped" >Add Cure Ails (ALL) effect to BB/SBB (SELF)</es>
+	</unit>
+	<!--Ark batch-->
+	<unit>
+		<id>997</id>
+		<name>Oracle Knight Ark</name>
+		<role>Leader 35% stats, x3 hit buff, ATK buff, 6 Elements buff + BB ATK% (UBB)</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="20" dc="40" >70% Spark BC+ (ALL) / 75% Spark DMG+ (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL)</ls>
+		<bb hit="22" dc="22" cost="26" >300% Light (AOE) / Normal HitCount +200% (ALL) 3Turns</bb>
+		<sbb hit="32" dc="32" cost="24" >Light (AOE) 250%-750% BB ATK% Based on HP LEFT / 140% ATK+ (ALL) 3Turns</sbb>
+		<ubb hit="26" dc="26" cost="25" >1200% Light (AOE) / Add Fire,water,earth,thunder,light,dark to ATK (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns</ubb>
+		<es condtion="None" >25% Chance Heal 20% DMG when ATKed (SELF) / 50% Chance 2-3BC Fill when ATKed (SELF)</es>
 	</unit>
 </brave>
