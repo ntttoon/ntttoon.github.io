@@ -293,7 +293,7 @@
 	<unit>
 		<id>953</id>
 		<name>Phoenix Torque Ruby</name>
-		<role>Leader BB SPARK fill, Sparker, x3 hit + convert REC to ATK (UBB)</role>
+		<role>Leader BB SPARK fill, Sparker, add ATK down to atk buff, x3 hit + convert REC to ATK (UBB)</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -833,7 +833,7 @@
 		<ubb hit="26" dc="26" cost="25" >1200% Light (AOE) / Add Fire,water,earth,thunder,light,dark to ATK (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns</ubb>
 		<es condtion="None" >25% Chance Heal 20% DMG when ATKed (SELF) / 50% Chance 2-3BC Fill when ATKed (SELF)</es>
 	</unit>
-	<!--SBS batch-->
+	<!--GB exclusive batch-->
 	<unit>
 		<id>8198</id>
 		<name>Deathless Hadaron</name>
@@ -963,5 +963,58 @@
 		<sbb hit="28" dc="28" cost="26" >500% Earth (AOE) / 7BC Fill 3Turns / 30% BC Fill+ (ALL) 3Turns / Null Ails 3Turns</sbb>
 		<ubb hit="35" dc="35" cost="26" >1200% Earth (AOE) / 50BC Fill 3Turns / Cure Ails / Null Ails 3Turns</ubb>
 		<es condtion="Bow of Andaria sphere equipped" >40% HP 40% ATK (SELF) / Add 100% Chance 2-3 BC Fill when ATKed (ALL) 3Turns effect to BB/SBB (SELF)</es>
+	</unit>
+	<!--Lunaris batch-->
+	<unit>
+		<id>1038</id>
+		<name>Lunaris 7</name>
+		<role>Cure Ails / Null Ails, inflict Ails, add ATK/DEF down to atk buff, Element Weakness DMG buff + OverDrive Gauge Fill (UBB)</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="14" dc="42" >100% Chance 2-4BC Fill when ATKed (ALL) / 30% Chance Heal 20-20% DMG when ATKed (ALL) / 120% ATK (Dark)</ls>
+		<bb hit="16" dc="16" cost="25" >270% Dark (AOE) / Cure Ails / Null Ails 3Turns / 45% Weak 45% Sick</bb>
+		<sbb hit="19" dc="19" cost="20" >520% Dark (AOE) / Cure Ails / Null Ails 3Turns / Add 10% Chance -20% Enemy ATK to ATK (ALL) 3Turns / Add 10% Chance -20% Enemy DEF to ATK (ALL) 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="25" >1200% Dark (AOE) / 300% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns / 25% OverDrive Gauge Fill</ubb>
+		<es condtion="None" >Nulls ATK/DEF/REC Down debuffs (SELF)</es>
+	</unit>
+	<unit>
+		<id>1037</id>
+		<name>Alyut 7</name>
+		<role>BB regen buff, inflict Ails, HoT, convert DEF to ATK</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="12" dc="36" >4BC Fill Each Turn (ALL) / Heal Each Turn (ALL) / 120% ATK (Light)</ls>
+		<bb hit="14" dc="14" cost="25" >270% Light (AOE) / 4BC Fill 3Turns / 45% Injury 45% Para / Gradual Heal (ALL) 3Turns</bb>
+		<sbb hit="18" dc="18" cost="20" >520% Light (AOE) / 7BC Fill 3Turns / Convert 60% DEF to ATK (ALL) 3Turns / Gradual Heal (ALL) 3Turns</sbb>
+		<ubb hit="21" dc="21" cost="20" >1200% Light (AOE) / Reduce DMG (75%) 1Turns / Convert 100% DEF to ATK (ALL) 3Turns</ubb>
+		<es condtion="None" >0-50% ATK+ (SELF) Based on HP Left / 0-100% DEF+ (SELF) Based on HP Lost</es>
+	</unit>
+	<unit>
+		<id>1036</id>
+		<name>Signas 7</name>
+		<role>Nuker, CRIT buff, CRIT DMG buff, miti 100% (Fire) (UBB)</role>
+		<element>Water</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="11" dc="33" >15% Fire Resist (ALL) / 100% CRIT DMG+ (ALL) / 150% Element Weakness DMG+ (water)</ls>
+		<bb hit="13" dc="13" cost="25" >270% Water (AOE) / 40% CRIT+ (ALL) 3Turns / 45% Injury 45% Poison</bb>
+		<sbb hit="16" dc="16" cost="20" >520% Water (AOE) / 60% ATK+ to Water 3Turns / 40% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="20" >1200% Water (AOE) / 300% CRIT DMG+ (ALL) 3Turns / Reduce DMG (100%) from (Fire) Enemy 2Turns</ubb>
+		<es condtion="None" >4BC Fill on CRIT (SELF)</es>
+	</unit>
+	<unit>
+		<id>1035</id>
+		<name>Farlon 7</name>
+		<role>Nuker</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="10" dc="30" >100% BB ATK%+ (ALL) / 120% ATK (Fire)</ls>
+		<bb hit="12" dc="12" cost="15" >250% Fire (AOE) / 100% BB ATK%+ (ALL) 3Turns</bb>
+		<sbb hit="16" dc="16" cost="40" >400% Fire (AOE) / 100% BB Fill (SELF) / -50% DEF (SELF) 3Turns / 300% ATK+ (SELF) 3Turns / 100% BB ATK%+ (ALL) 3Turns</sbb>
+		<ubb hit="21" dc="21" cost="20" >Fire (AOE) 1200%-2000% BB ATK% Based on HP LEFT / 300% BB ATK%+ (ALL) 2Turns</ubb>
+		<es condtion="None" >150% ATK+ 1Turn (SELF) on > 10k DMG Received</es>
 	</unit>
 </brave>
