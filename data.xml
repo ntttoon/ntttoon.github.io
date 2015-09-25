@@ -122,7 +122,7 @@
 	<unit>
 		<id>897</id>
 		<name>Radiant Virtue Fadahl</name>
-		<role>ATK/DEF down debuff, Inflict Ails, add Ails to atk</role>
+		<role>ATK/DEF down debuff, Inflict Ails, add Ails to atk buff</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -241,7 +241,7 @@
 	<unit>
 		<id>962</id>
 		<name>Roaring Crash Balgran</name>
-		<role>Leader Tanker, Inflict Ails, add Ails to atk, convert ATK to DEF, convert DEF to ATK (UBB)</role>
+		<role>Leader Tanker, Inflict Ails, add Ails to atk buff, convert ATK to DEF buff, convert DEF to ATK (UBB)</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -819,7 +819,7 @@
 		<ubb hit="24" dc="24" cost="20" >1000% Fire,water,earth,thunder,light (AOE) / Reduce DMG (75%) 1Turns / Cure Ails / Null Ails 3Turns</ubb>
 		<es condtion="20% All STATS (SELF) when White Armor sphere equipped" >Add Cure Ails (ALL) effect to BB/SBB (SELF)</es>
 	</unit>
-	<!--Ark-->
+	<!--Mock units-->
 	<unit>
 		<id>997</id>
 		<name>Oracle Knight Ark</name>
@@ -832,6 +832,32 @@
 		<sbb hit="32" dc="32" cost="24" >Light (AOE) 250%-750% BB ATK% Based on HP LEFT / 140% ATK+ (ALL) 3Turns</sbb>
 		<ubb hit="26" dc="26" cost="25" >1200% Light (AOE) / Add Fire,water,earth,thunder,light,dark to ATK (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns</ubb>
 		<es condtion="None" >25% Chance Heal 20% DMG when ATKed (SELF) / 50% Chance 2-3BC Fill when ATKed (SELF)</es>
+	</unit>
+	<unit>
+		<id>1078</id>
+		<name>Lucius</name>
+		<role>Buff HP permanent, BC/HC drop buff, BB fill rate buff, convert HP to ATK, HP Barrier buff (UBB)</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>45</cost>
+		<ls hit="13" dc="52" >Null Ails (ALL) / 20% OverDrive Fill+ / 140% ATK+ 2Turns on >20k DMG Dealt / 100% Spark DMG+ on >15 Sparks</ls>
+		<bb hit="20" dc="20" cost="26" >350% Light (AOE) / 15% Max HP+ till Death/Battle End / 35% BC+ 35% HC+ (ALL) 3Turns</bb>
+		<sbb hit="35" dc="35" cost="28" >600% Light (AOE) / 40% BC Fill+ (ALL) 3Turns / Convert 23% HP to ATK (ALL) 3Turns</sbb>
+		<ubb hit="70" dc="70" cost="25" >1200%-4000% BB ATK% based on Avg Allies BB Gauge (Drains ALL Allies BB) / 999BC Fill 1Turn / 10k HP Barrier (Light)</ubb>
+		<es condtion="None" >Nulls Elemental Weakness (SELF) / Nulls CRIT (SELF) / Add 4BC Fill 1Turn to BB/SBB</es>
+	</unit>
+	<unit>
+		<id>1121</id>
+		<name>Mifa</name>
+		<role>Leader 40% HP, inflict Ails, DoT</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="8" dc="32" >40% HP (ALL) / 50% ATK (ALL) / 100% ATK (HP &lt; 50%) (ALL)</ls>
+		<bb hit="12" dc="12" cost="24" >280% Dark (AOE) / 65% Sick 65% Curse / 110% DMG+ to Ailed Enemy (ALL) 3Turns</bb>
+		<sbb hit="16" dc="16" cost="25" >500% Dark (AOE) / Inflict 20% Sick 15% Curse on ATKed (ALL) 3Turns / 160% DMG+ to Ailed Enemy (ALL) 3Turns</sbb>
+		<ubb hit="20" dc="20" cost="25" >1000% Dark (AOE) / 800% DMG Each Turn 3Turns / 100% Injury 100% Weak 100% Sick 100% Poison / 100% Para 100% Curse / 300% DMG+ to Ailed Enemy (ALL) 3Turns</ubb>
+		<es condtion="None" >20% OverDrive Fill+ (SELF)</es>
 	</unit>
 	<!--GB exclusive batch-->
 	<unit>
@@ -1016,5 +1042,98 @@
 		<sbb hit="16" dc="16" cost="40" >400% Fire (AOE) / 100% BB Fill (SELF) / -50% DEF (SELF) 3Turns / 300% ATK+ (SELF) 3Turns / 100% BB ATK%+ (ALL) 3Turns</sbb>
 		<ubb hit="21" dc="21" cost="20" >Fire (AOE) 1200%-2000% BB ATK% Based on HP LEFT / 300% BB ATK%+ (ALL) 2Turns</ubb>
 		<es condtion="None" >150% ATK+ 1Turn (SELF) on > 10k DMG Received</es>
+	</unit>
+	<!--Shera batch-->
+	<unit>
+		<id>1085</id>
+		<name>Reeze 7</name>
+		<role>Cure/Null Ails ,inflict Ails, add Ails to atk buff, convert REC to DEF buff, Chance Revive buff (UBB)</role>
+		<element>Water</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="14" dc="42" >100% Chance 3-4BC Fill when ATKed (ALL) / Heal Each Turn (ALL) / Null Ails (ALL)</ls>
+		<bb hit="16" dc="16" cost="25" >260% Water (AOE) / Cure Ails / 45% Sick 45% Para / Add 15% Sick 10% Para to ATK (ALL) 3Turns</bb>
+		<sbb hit="18" dc="18" cost="20" >500% Water (AOE) / Cure Ails / 200% ATK+ 200% DEF+ 200% REC+ (SELF) 3Turns / Convert 40% REC to DEF (ALL) 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="20" >1000% Water (AOE) / Cure Ails / 50% Chance Revive 100% HP (ALL) 140Turns</ubb>
+		<es condtion="20% ALL Stats (SELF) when 「氷輝天鎧レーゼ」 sphere equipped" >Add Null Ails effect to BB/SBB</es>
+	</unit>
+	<unit>
+		<id>1086</id>
+		<name>Ragshelm 7</name>
+		<role>Leader 30% HP/ATK, Ignore DEF buff, ATK/DEF down debuff, add Injury to atk buff, SPARK debuff</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="14" dc="42" >15% Chance Ignore DEF (ALL) / Reduce DMG (10%) on Guard (ALL) / 30% HP 30% ATK (ALL)</ls>
+		<bb hit="17" dc="17" cost="25" >260% Earth (AOE) / 30% Chance -30% Enemy ATK 1Turns / 30% Chance -30% Enemy DEF 1Turns / Add 18% Injury to ATK (ALL) 3Turns</bb>
+		<sbb hit="19" dc="19" cost="23" >500% Earth (AOE) / 25% Chance Enemy receives 30% Spark DMG+ 1Turns / 30% Chance -30% Enemy ATK 2Turns / 30% Chance -30% Enemy DEF 2Turns / Add 18% Injury to ATK (ALL) 3Turns</sbb>
+		<ubb hit="21" dc="21" cost="25" >1000% Earth (AOE) / 100% Chance Enemy receives 100% Spark DMG+ 1Turns / Add 10% Chance -60% Enemy ATK to ATK (ALL) 2Turns</ubb>
+		<es condtion="Noned" >Add Ignore DEF (ALL) 2Turns effect to BB/SBB / 100% DMG+ to Ailed Enemy</es>
+	</unit>
+	<unit>
+		<id>1087</id>
+		<name>Shera 7</name>
+		<role>Mitigator, ATK buff, BB regen</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="10" dc="40" >Reduce 25% BB Cost (ALL) / 10% Chance Reduce DMG (20%) (ALL) / 30% BC Fill+ (ALL)</ls>
+		<bb hit="15" dc="30" cost="22" >500% Thunder (TGT) / Reduce DMG (50%) 1Turns / 110% ATK+ (ALL) 3Turns</bb>
+		<sbb hit="30" dc="30" cost="23" >450% Thunder (AOE) / 7BC Fill 3Turns / Reduce DMG (50%) 1Turns / 130% ATK+ (ALL) 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="20" >1000% Thunder (AOE) / Reduce DMG (75%) 2Turns / 250% ATK+ (ALL) 3Turns</ubb>
+		<es condtion="Noned" >Null Ignore DEF ATKs (SELF) / 4BC Fill on Guard (SELF)</es>
+	</unit>
+	<!--Vishra batch-->
+	<unit>
+		<id>1134</id>
+		<name>Vishra 7</name>
+		<role>Nuker, inflict Ails on ATKed buff, BB ATKed buff</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="10" dc="40" >150% CRIT DMG+ (ALL) / 80% ATK (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison (ALL) / 10% Para 10% Curse (ALL)</ls>
+		<bb hit="14" dc="14" cost="25" >260% Fire (AOE) / Inflict 15% Injury 15% Weak 15% Sick 10% Poison 10% Para 10% Curse on ATKed (ALL) 3Turns</bb>
+		<sbb hit="16" dc="16" cost="15" >500% Fire (AOE) / 4-7BC Fill when ATKed (100%) (ALL) 3Turns / Inflict 15% Injury 15% Weak 15% Sick 10% Poison 10% Para 10% Curse on ATKed (ALL) 3Turns</sbb>
+		<ubb hit="21" dc="21" cost="20" >1000% Fire (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 200% ATK+ (ALL) 3Turns / Inflict 100% Injury 100% Weak 100% Sick 100% Poison 100% Para 100% Curse on ATKed (ALL) 3Turns</ubb>
+		<es condtion="None" >100% Chance 2-3BC Fill when ATKed (SELF) / 100% DMG+ to Ailed Enemy (SELF)</es>
+	</unit>
+	<unit>
+		<id>1135</id>
+		<name>Luly 7</name>
+		<role>HC/BC drop buff, convert REC to DEF buff, BB ATK% buff (UBB)</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="9" dc="36" >15% Thunder Resist (ALL) / 100% BB ATK%+ (ALL) / 150% Element Weakness DMG+ (earth)</ls>
+		<bb hit="13" dc="13" cost="20" >270% Earth (AOE) / 25% BC+ 25% HC+ (ALL) 3Turns</bb>
+		<sbb hit="17" dc="17" cost="24" >520% Earth (AOE) / 60% ATK+ to Earth 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns / Convert 50% REC to DEF (ALL) 3Turns</sbb>
+		<ubb hit="1" dc="50" cost="20" >Earth (AOE) 1300-2500% BB ATK% based on HP Left / 500% BB ATK%+ (ALL) 3Turns</ubb>
+		<es condtion="None" >200% BB ATK%+ (SELF) 2Turns on > 10k DMG Received</es>
+	</unit>
+	<unit>
+		<id>1136</id>
+		<name>Grybe 7</name>
+		<role>USBB, add ATK down to atk buff, HP Barrier buff (UBB)</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="11" dc="44" >15% Water Resist (ALL) / Nulls CRIT (ALL) / 150% Element Weakness DMG+ (thunder)</ls>
+		<bb hit="15" dc="15" cost="20" >270% Thunder (AOE) / Add 10% Chance -20% Enemy ATK to ATK (ALL) 3Turns</bb>
+		<sbb hit="18" dc="18" cost="30" >520% Thunder (AOE) / 100% BB Fill (SELF) / 60% ATK+ to Thunder 3Turns / Add 10% Chance -20% Enemy ATK to ATK (ALL) 3Turns</sbb>
+		<ubb hit="20" dc="20" cost="20" >1200% Thunder (AOE) / 100% Chance -80% Enemy ATK 2Turns / 10k HP Barrier (Thunder)</ubb>
+		<es condtion="None" >Reduce DMG (25%) (SELF) 1Turn on > 10k DMG Received</es>
+	</unit>
+	<unit>
+		<id>1137</id>
+		<name>Logan 7</name>
+		<role>Leader 30% HP 100% ATK (5 elements required), inflict Ails, BB ATKed buff, buff HP permanent + Convert HP to ATK buff (UBB)</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="10" dc="40" >30% HP 100% ATK (5 elements required) (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison (ALL) / 10% Para 10% Curse (ALL)</ls>
+		<bb hit="14" dc="14" cost="14" >260% Dark (AOE) / 40% Injury 40% Weak 40% Sick 30% Poison / 30% Para 30% Curse</bb>
+		<sbb hit="18" dc="18" cost="20" >500% Dark (AOE) / 4-7BC Fill when ATKed (100%) (ALL) 3Turns / -50% DEF (SELF) 3Turns / 300% ATK+ (SELF) 3Turns</sbb>
+		<ubb hit="21" dc="21" cost="20" >1000% Dark (AOE) / 20% Max HP+ till Death/Battle End / Convert 20% HP to ATK (ALL) 3Turns</ubb>
+		<es condtion="None" >25% Chance Heal 20% DMG when ATKed (SELF) / 100% Chance Drain 5-8% HP (SELF)</es>
 	</unit>
 </brave>
