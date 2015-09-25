@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Brave Frontier</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<script>
+function getURLParameter(name) {
+  return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null
+}
+myvar = getURLParameter('myvar');
+//alert(myvar);
+</script>
+</head>
+
+<body>
+<header class="w3-container w3-teal w3-card-2">
+  <h5>BESTIE BATCH</h5>
+</header>
+<ul class="w3-ul">
+<script>
+	var ex_id = ["980", "989", "992", "995", "986", "983"];
+	var xmlhttp, xmlDoc;
+	xmlhttp = new XMLHttpRequest();
+	xmlhttp.open("GET", "data.xml", false);
+	xmlhttp.send();
+	xmlDoc = xmlhttp.responseXML;
+	
+	total = xmlDoc.getElementsByTagName("unit").length;
+	function nameColor(element) {
+		switch(element)
+		{
+			case "Fire":
+				return "#FF0000";
+				break;
+			case "Water":
+				return "#0000FF";
+				break;
+			case "Thunder":
+				return "#FFCC00";
+				break;
+			case "Earth":
+				return "#00FF00";
+				break;
+			case "Dark":
+				return "#660099";
+				break;
+			case "Light":
+				return "#CCCCCC";
+				break;
+		}
+	}
+	for(i=0;i<total;i++)
+	{
+		id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
+		for(j=0;j<ex_id.length;j++)
+		{
+			if(id == ex_id[j])
+			{
+				name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
+				role =  xmlDoc.getElementsByTagName("role")[i].childNodes[0].nodeValue;
+				element =  xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
+				document.write('<li><h3><strong><a style="text-decoration:none;color:' + nameColor(element) +  '" href="unitinfo.html?id=' + id + '">' + name + '</a></strong></h3><em>' + role + '</em></li>');
+			}
+		}
+	}
+</script>
+</ul>
+<footer class="w3-container w3-teal w3-text-white-opacity">
+  <p>Data by DeathMax and BFPros<br>Dev and XML by ntttoon</p>
+</footer>
+</body>
+</html>

@@ -819,7 +819,7 @@
 		<ubb hit="24" dc="24" cost="20" >1000% Fire,water,earth,thunder,light (AOE) / Reduce DMG (75%) 1Turns / Cure Ails / Null Ails 3Turns</ubb>
 		<es condtion="20% All STATS (SELF) when White Armor sphere equipped" >Add Cure Ails (ALL) effect to BB/SBB (SELF)</es>
 	</unit>
-	<!--Ark batch-->
+	<!--Ark-->
 	<unit>
 		<id>997</id>
 		<name>Oracle Knight Ark</name>
@@ -832,5 +832,136 @@
 		<sbb hit="32" dc="32" cost="24" >Light (AOE) 250%-750% BB ATK% Based on HP LEFT / 140% ATK+ (ALL) 3Turns</sbb>
 		<ubb hit="26" dc="26" cost="25" >1200% Light (AOE) / Add Fire,water,earth,thunder,light,dark to ATK (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns</ubb>
 		<es condtion="None" >25% Chance Heal 20% DMG when ATKed (SELF) / 50% Chance 2-3BC Fill when ATKed (SELF)</es>
+	</unit>
+	<!--SBS batch-->
+	<unit>
+		<id>8198</id>
+		<name>Deathless Hadaron</name>
+		<role>NUKER!, inflict Ails, CRIT buff, CRIT DMG buff, Stealth, DEF buff, ATK/DEF down debuff</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="13" dc="26" >20% Chance Ignore DEF (ALL) / 50-400% ATK+ Based on HP LOST (ALL) / 50-50% DEF+ Based on HP LOST (ALL) / 80% ATK (ALL)</ls>
+		<bb hit="15" dc="15" cost="25" >350% Dark (AOE) / 50% Poison 50% Curse / Add 25% Weak 25% Poison to ATK (ALL) 3Turns</bb>
+		<sbb hit="17" dc="34" cost="26" >1000% Dark (TGT) / 60% CRIT+ (ALL) 2Turns / 150% CRIT DMG+ (SELF) 1Turns / Stealth (400% ATK+ 70% CRIT+) (SELF) 2Turns / 120% DEF+ (ALL) 2Turns</sbb>
+		<ubb hit="19" dc="19" cost="26" >2000% Dark (AOE) / 75% Chance -75% Enemy ATK 3Turns / 75% Chance -75% Enemy DEF 3Turns / Add 100% Injury 100% Weak 100% Sick 100% Poison to ATK (ALL) 3Turns / Angel Idol (SELF)</ubb>
+		<es condtion="Axe of Hadaron Sphere equipped" >50% HP (SELF) / 75% CRIT DMG+ (SELF)</es>
+	</unit>
+	<unit>
+		<id>8197</id>
+		<name>Archangel Aurelia</name>
+		<role>Supporter, Cure Ails / Null Ails, DoT, HoT, BB regen, convert REC to DEF, Chance Revive buff (UBB)</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="12" dc="24" >25% BC+ 25% HC+ (ALL) / 40% DEF 40% REC (ALL) / Null Ails (ALL)</ls>
+		<bb hit="" dc="" cost="21" >Cure Ails / Null Ails 3Turns / 200% DMG Each Turn 3Turns / Gradual Heal (ALL) 3Turns</bb>
+		<sbb hit="16" dc="16" cost="26" >500% Light (AOE) / 4BC Fill 3Turns / Heal (ALL) / Convert 80% REC to DEF (ALL) 3Turns</sbb>
+		<ubb hit="21" dc="21" cost="20" >1000% Light (AOE) / 50% Chance Revive 100% HP (ALL) 140Turns / Gradual Heal FULL (ALL) 3Turns</ubb>
+		<es condtion="Harp of Aurelia Sphere equipped" >40% DEF 40% REC (SELF) / 50% Chance 2-3 BC Fill when ATKed (SELF)</es>
+	</unit>
+	<unit>
+		<id>8196</id>
+		<name>Neptunian Tridon</name>
+		<role>Hybrid, Leader 40% HP 50% REC 10% miti all, Shield buff, HoT, DEF buff, BC/HC drop buff, BB regen, ATK/DEF down debuff</role>
+		<element>Water</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="12" dc="24" >Reduce DMG (10%) (ALL) / 40% HP 50% REC 20% CRIT (ALL)</ls>
+		<bb hit="16" dc="16" cost="33" >280% Water (AOE) / Shield (earth, 2500HP 3000DEF) (ALL) 2Turns / Gradual Heal (ALL) 3Turns</bb>
+		<sbb hit="20" dc="20" cost="26" >500% Water (AOE) / Shield (earth, 3000HP 3000DEF) (ALL) 2Turns / 140% DEF+ (ALL) 3Turns / 30% BC+ 30% HC+ (ALL) 2Turns</sbb>
+		<ubb hit="25" dc="25" cost="30" >1000% Water (AOE) / 50% BC Fill+ (ALL) 3Turns / Shield (all, 20000HP 3500DEF) (ALL) 2Turns / 30% Chance -80% Enemy ATK 1Turns / 30% Chance -80% Enemy DEF 1Turns</ubb>
+		<es condtion="Tridon's Trident sphere equipped" >40% HP 40% DEF (SELF) / 3BC Fill Each Turn (SELF)</es>
+	</unit>
+	<unit>
+		<id>8195</id>
+		<name>Herculean Ultor</name>
+		<role>Nuker, Taunt, DoT, CRIT DMG buff, ATK buff</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="11" dc="22" >100% Element Weakness DMG+ (ALL) / 80% ATK 50% DEF 20% CRIT (ALL)</ls>
+		<bb hit="16" dc="32" cost="26" >600% Fire (TGT) / Taunt (250% DEF+) (SELF) 1Turns / 500% DMG Each Turn 1Turns</bb>
+		<sbb hit="20" dc="20" cost="28" >600% Fire (AOE) / 50% CRIT DMG+ (ALL) 3Turns / Taunt (250% DEF+) (SELF) 1Turns / 200% ATK+ (ALL) 1Turns</sbb>
+		<ubb hit="3" dc="18" cost="28" >1200% Fire (AOE) / Reduce DMG (75%) 1Turns / 70% CRIT+ (SELF) 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 300% ATK+ 300% DEF+ 300% REC+ (SELF) 3Turns</ubb>
+		<es condtion="Blades of Ultor sphere is equipped" >40% ATK 40% DEF (SELF) / Angel Idol (Revives with 100% HP) when HP &lt; 20% (SELF)</es>
+	</unit>
+	<unit>
+		<id>8194</id>
+		<name>Obsidian Seraph Zenia</name>
+		<role>Nuker, Leader BB SPARK fill, BB fill, Ignore DEF buff, SPARK buff, BB ATK% buff, x3 hit buff + ATK buff (UBB)</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="13" dc="39" >100% Chance 1-2BC Fill on Spark (ALL) / 150% BB ATK%+ (ALL) / 80% ATK (ALL)</ls>
+		<bb hit="20" dc="20" cost="20" >560% Dark (TGT) / 9BC Fill 1Turn / Ignore DEF (ALL) 2Turns</bb>
+		<sbb hit="24" dc="24" cost="26" >620% Dark (AOE) / 80% Spark DMG+ (ALL) 3Turns / 200% BB ATK%+ (ALL) 3Turns</sbb>
+		<ubb hit="30" dc="30" cost="25" >1200% Dark (AOE) / Normal HitCount +200% (100% DMG) (ALL) 3Turns / 250% ATK+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 2Turns</ubb>
+		<es condtion="Obsidian Core Amplifer sphere equipped" >20% ALL Stats (SELF) / Normal HitCount +100% (100% DMG)</es>
+	</unit>
+	<unit>
+		<id>8191</id>
+		<name>Deimos Thunderborn</name>
+		<role>Leader 40% HP + Null Ails + BB ATKed, Taunt, stats buff, BB fill, Miti (UBB)</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="12" dc="36" >100% Chance 3-5BC Fill when ATKed (ALL) / 40% HP (ALL) / Null Ails (ALL)</ls>
+		<bb hit="14" dc="14" cost="23" >Thunder (AOE) / Taunt (250% DEF+) (SELF) 1Turns</bb>
+		<sbb hit="16" dc="16" cost="27" >Thunder (AOE) / Taunt (250% DEF+) (SELF) 1Turns / 100% ATK+ 100% DEF+ 100% REC+ (ALL) 3Turns</sbb>
+		<ubb hit="18" dc="18" cost="25" >1000% Thunder (AOE) / 500BC Fill 1Turn (ALL) / Reduce DMG (50%) 3Turns / 200% ATK+ 200% DEF+ 200% REC+ (ALL) 3Turns</ubb>
+		<es condtion="Forgebreaker sphere equipped" >40% HP 40% DEF (SELF) / Nulls Elemental Weakness (SELF)</es>
+	</unit>
+	<unit>
+		<id>8180</id>
+		<name>Chrono Mage Elaina</name>
+		<role>BB regen buff, HoT, Cure Ails / Null Ails</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="10" dc="10" >Reduce DMG (10%) (ALL) / Null Ails (ALL)</ls>
+		<bb hit="" dc="" cost="25" >4BC Fill 3Turns / Gradual Heal 3Turns / Cure Ails</bb>
+		<sbb hit="23" dc="23" cost="21" >Earth,light,dark (AOE) / 5BC Fill 3Turns / Null Ails 3Turns</sbb>
+		<ubb hit="33" dc="33" cost="25" >Earth,light,dark (AOE) / Reduce DMG (50%) 3Turns / Gradual Heal 3Turns</ubb>
+		<es condtion="None" >15% Chance Reduce DMG to 1 (SELF)</es>
+	</unit>
+	<unit>
+		<id>8177</id>
+		<name>Slayer Grandt</name>
+		<role>Nuker, Ignore DEF buff, ATK down debuff, convert HP to ATK</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="4" dc="12" >150% CRIT DMG+ (ALL) / 30% HP 30% ATK (ALL)</ls>
+		<bb hit="6" dc="12" cost="22" >560% Fire (TGT) / Ignore DEF (ALL) 2Turns / 50% Chance -50% Enemy ATK 1Turns</bb>
+		<sbb hit="12" dc="24" cost="26" >620% Fire (AOE) / Convert 10% HP to ATK (SELF) 3Turns / 30% Chance -50% Enemy ATK 1Turns</sbb>
+		<ubb hit="18" dc="36" cost="25" >1000% Fire (AOE) / 50% Chance -50% Enemy ATK 2Turns</ubb>
+		<es condtion="None" >125% Element Weakness DMG+ (SELF)</es>
+	</unit>
+	<unit>
+		<id>8139.8</id>
+		<name>Imperator Zedus</name>
+		<role>NUKER!, SPARK buff, Element Weakness DMG buff, CRIT buff, CRIT DMG buff</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="8" dc="24" >80% Spark DMG+ (ALL) / 150% CRIT DMG+ (ALL) / 20% CRIT (ALL)</ls>
+		<bb hit="11" dc="22" cost="24" >350% Thunder, light (AOE) / 70% Spark DMG+ (ALL) 3Turns / 50% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns</bb>
+		<sbb hit="12" dc="24" cost="30" >600% Thunder, light (AOE) / 50% CRIT DMG+ (ALL) 3Turns / 80% Spark DMG+ (ALL) 3Turns / 50% Chance -50% Enemy ATK 1Turns / 50% Chance -50% Enemy DEF 1Turns</sbb>
+		<ubb hit="14" dc="28" cost="30" >1200% Thunder, light (AOE) / 300% CRIT DMG+ (ALL) 3Turns / 120% Spark DMG+ (ALL) 3Turns / 150% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns</ubb>
+		<es condtion="Spear of Zedus sphere equipped" >20% ALL Stats (SELF) / Add 60% CRIT+ (ALL) 3Turns effect to BB/SBB (SELF)</es>
+	</unit>
+	<unit>
+		<id>8138.8</id>
+		<name>Ruinous Andaria</name>
+		<role>Hybrid, Cure Ails / Null Ails, inflict Ails, BB regen buff, BB fill rate buff</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="14" dc="28" >Reduce 20% BB Cost (ALL) / 100% Chance Reduce 15-20% BB Gauge Used (ALL) / 20% CRIT (ALL)</ls>
+		<bb hit="25" dc="25" cost="27" >280% Earth (AOE) / Cure Ails / Null Ails 3Turns / 70% Poison 50% Para</bb>
+		<sbb hit="28" dc="28" cost="26" >500% Earth (AOE) / 7BC Fill 3Turns / 30% BC Fill+ (ALL) 3Turns / Null Ails 3Turns</sbb>
+		<ubb hit="35" dc="35" cost="26" >1200% Earth (AOE) / 50BC Fill 3Turns / Cure Ails / Null Ails 3Turns</ubb>
+		<es condtion="Bow of Andaria sphere equipped" >40% HP 40% ATK (SELF) / Add 100% Chance 2-3 BC Fill when ATKed (ALL) 3Turns effect to BB/SBB (SELF)</es>
 	</unit>
 </brave>
