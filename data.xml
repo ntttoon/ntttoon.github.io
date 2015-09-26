@@ -1136,4 +1136,162 @@
 		<ubb hit="21" dc="21" cost="20" >1000% Dark (AOE) / 20% Max HP+ till Death/Battle End / Convert 20% HP to ATK (ALL) 3Turns</ubb>
 		<es condtion="None" >25% Chance Heal 20% DMG when ATKed (SELF) / 100% Chance Drain 5-8% HP (SELF)</es>
 	</unit>
+	<!--Adele 7 batch-->
+	<unit>
+		<id>1092</id>
+		<name>Adele 7</name>
+		<role>Mitigator, leader 30% HP/DEF, SPARK buff, HoT</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="10" dc="30" >10% Chance Reduce DMG (20%) (ALL) / 30% BC Fill+ (ALL) / 30% HP 30% DEF (ALL)</ls>
+		<bb hit="13" dc="13" cost="25" >280% Fire (AOE) / Reduce DMG (50%) 1Turns / 70% Spark DMG+ (ALL) 3Turns</bb>
+		<sbb hit="16" dc="16" cost="20" >480% Fire (AOE) / Reduce DMG (50%) 1Turns / 70% Spark DMG+ (ALL) 3Turns / Gradual Heal (ALL) 3Turns</sbb>
+		<ubb hit="21" dc="21" cost="25" >1000% Fire (AOE) / Reduce DMG (75%) 2Turns / 120% Spark DMG+ (ALL) 3Turns</ubb>
+		<es condtion="None" >100% Chance 2-3 BC Fill on ATKed (SELF)</es>
+	</unit>
+	<unit>
+		<id>1098</id>
+		<name>Cyan 7</name>
+		<role>SPARK buff, BB SPARK fill buff</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="9" dc="27" >75% Spark DMG+ (ALL) / 30% ATK (ALL) / Null Ails (ALL)</ls>
+		<bb hit="13" dc="13" cost="25" >300% Earth (AOE) / 70% Spark DMG+ (ALL) 3Turns</bb>
+		<sbb hit="17" dc="17" cost="30" >540% Earth (AOE) / 70% Spark DMG+ (ALL) 3Turns / 80% Chance 1-2BC Fill on Spark (ALL) 3Turns</sbb>
+		<ubb hit="21" dc="21" cost="25" >1200% Earth (AOE) / 80% Chance 3-6BC Fill on Spark (ALL) 3Turns / 130% Spark DMG+ (ALL) 3Turns</ubb>
+		<es condtion="None" >4BC Fill Each Turn (SELF)</es>
+	</unit>
+	<unit>
+		<id>1101</id>
+		<name>Erudora 7</name>
+		<role>Leader 30% HP + 10% miti, BB fill, CRIT buff, CRIT DMG buff, convert HP to ATK (UBB)</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="11" dc="33" >6-8BC Fill on CRIT (ALL) / 30% HP (ALL) / Reduce DMG (15%) from (Water,thunder) Enemy (ALL)</ls>
+		<bb hit="15" dc="15" cost="27" >300% Thunder (AOE) / 8BC Fill 1Turn / 40% CRIT+ (ALL) 3Turns</bb>
+		<sbb hit="18" dc="18" cost="24" >540% Thunder (AOE) / 8BC Fill 1Turn / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns</sbb>
+		<ubb hit="20" dc="20" cost="20" >1200% Thunder (AOE) / 300% CRIT DMG+ (ALL) 3Turns / Convert 20% HP to ATK (ALL) 3Turns</ubb>
+		<es condtion="None" >50% ATK+ when Full BB (SELF)</es>
+	</unit>
+	<unit>
+		<id>1104</id>
+		<name>Jedo 7</name>
+		<role>BC/HP drop buff, add ATK down to atk buff</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="9" dc="27" >50% BC Fill+ (ALL) / 4BC Fill 2Turns on > 30 BC Received (ALL) / Gradual Heal 2Turns on > 30 HC Received (ALL)</ls>
+		<bb hit="14" dc="14" cost="25" >300% Light (AOE) / 35% BC+ 35% HC+ (ALL) 3Turns</bb>
+		<sbb hit="18" dc="18" cost="25" >540% Light (AOE) / Add 10% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 35% BC+ 35% HC+ (ALL) 3Turns</sbb>
+		<ubb hit="21" dc="21" cost="25" >1200% Light (AOE) / 100% BC Fill+ (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns</ubb>
+		<es condtion="None" >Add 5BC Fill 3Turns (ALL) effect to BB/SBB (SELF)</es>
+	</unit>
+	<unit>
+		<id>1107</id>
+		<name>Les Viola 7</name>
+		<role>Nuker, leader 30% HP, BB ATKed buff, BB ATKed buff</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="8" dc="24" >30% HP (ALL) / Reduce DMG (15%) from (Light,dark) Enemy (ALL) / 10BC Fill on > 10k DMG Received (ALL)</ls>
+		<bb hit="12" dc="12" cost="24" >300% Dark (AOE) / 4-5BC Fill when ATKed (100%) (ALL) 3Turns</bb>
+		<sbb hit="19" dc="19" cost="22" >480% Dark (AOE) 100% BB ATK%+ on Consecutive SBB (Max 5x / SELF) / 40% BC Fill+ (ALL) 3Turns</sbb>
+		<ubb hit="21" dc="21" cost="25" >1200% Dark (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns</ubb>
+		<es condtion="None" >100% Chance Drain 5-8% HP (SELF)</es>
+	</unit>
+	<unit>
+		<id>1095</id>
+		<name>Savriya 7</name>
+		<role>Leader 30% HP 30% ATK, SPARK DMG debuff, BB regen, ATK buff, x3 hit buff (UBB)</role>
+		<element>Water</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="12" dc="36" >30% HP 30% ATK (ALL) / 50% ATK 50% DEF 50% REC (BB >= 50%) (ALL)</ls>
+		<bb hit="15" dc="15" cost="25" >300% Water (AOE) / 4BC Fill 3Turns / 25% Chance Enemy receives 25% Spark DMG+ 1Turns</bb>
+		<sbb hit="18" dc="18" cost="27" >540% Water (AOE) / 25% Chance Enemy receives 25% Spark DMG+ 1Turns / 140% ATK+ (ALL) 3Turns</sbb>
+		<ubb hit="23" dc="23" cost="25" >1200% Water (AOE) / 100% Chance Enemy receives 50% Spark DMG+ / Normal HitCount +200% (120% DMG) (ALL) 3Turns</ubb>
+		<es condtion="None" >150% BB ATK%+ (SELF)</es>
+	</unit>
+	<!--Doruku 7 batch-->
+	<unit>
+		<id>1140</id>
+		<name>Avante 7</name>
+		<role>Nuker, CRIT buff, ATK buff, SPARK DMG debuff, BB ATK% buff, Convert HP to ATK buff, CRIT DMG buff, SPARK buff</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="10" dc="40" >70% Spark DMG+ (ALL) / 150% CRIT DMG+ (ALL) / 100% BB ATK%+ (ALL) / 30% HP (ALL)</ls>
+		<bb hit="13" dc="13" cost="24" >300% Fire (AOE) / 60% CRIT+ (ALL) 3Turns / 130% ATK+ (ALL) 3Turns</bb>
+		<sbb hit="17" dc="17" cost="28" >540% Fire (AOE) / 25% Chance Enemy receives 25% Spark DMG+ 1Turns / 200% BB ATK%+ (ALL) 3Turns / Convert 15% HP to ATK (ALL) 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="25" >Fire (AOE) 1200 - 2000% BB ATK% Based on HP LEFT / 300% CRIT DMG+ (ALL) 3Turns / 100% Spark DMG+ (ALL) 3Turns / 300% BB ATK%+ (ALL) 3Turns</ubb>
+		<es condtion="20% ALL Stats when Dandelga Sphere is Equipped" >0-50% ATK+ based on HP LEFT (SELF) / 50% ATK+ on Full BB (SELF)</es>
+	</unit>
+	<unit>
+		<id>1152</id>
+		<name>Charlotte 7</name>
+		<role>Supporter, BB fill, BB regen, Heal, Cure Ails, HoT buff, BB SPARK fill buff, CRIT buff, CRIT DMG buff, SPARK buff, miti + Chance Revive buff (UBB)</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="10" dc="40" >30% BC Fill+ (ALL) / 100% Chance 2-4BC Fill when ATKed (ALL) / 15% BC+ (ALL) / 40% HP 40% DEF (ALL)</ls>
+		<bb hit="" dc="" cost="22" >4BC Fill 1Turn / 7BC Fill 3Turns / Heal (ALL) / Cure Ails / Gradual Heal (ALL) 3Turns</bb>
+		<sbb hit="" dc="" cost="18" >6BC Fill 1Turn / 80% Chance 1-3BC Fill on Spark (ALL) 3Turns / 60% CRIT+ (ALL) 3Turns / 75% CRIT DMG+ (ALL) 3Turns / 100% Spark DMG+ (ALL) 3Turns</sbb>
+		<ubb hit="" dc="" cost="20" >50BC Fill 3Turns / Reduce DMG (50%) 3Turns / 50% Chance Revive 100% HP (ALL) 90Turns / Gradual Heal FULL (ALL) 3Turns</ubb>
+		<es condtion="None" >Nulls Ails (SELF) / Angel Idol when HP &lt; 20% (SELF)</es>
+	</unit>
+	<unit>
+		<id>1155</id>
+		<name>Chrome 7</name>
+		<role>BB SPARK fill buff, SPARK DMG debuff, Element Weakness DMG buff, SPARK buff, BB ATK% buff</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="12" dc="36" >100% Chance 1-2BC Fill on Spark (ALL) / 100% Spark DMG+ (ALL) / 30% HP (ALL)</ls>
+		<bb hit="14" dc="14" cost="28" >300% Dark (AOE) / 50% Chance 1-2BC Fill on Spark (ALL) 3Turns / 70% Spark DMG+ (ALL) 3Turns / 75% Element Weakness DMG+ (dark) (ALL) 3Turns</bb>
+		<sbb hit="18" dc="18" cost="24" >540% Dark (AOE) / 50% Chance 1-2BC Fill on Spark (ALL) 3Turns / 80% Spark DMG+ (ALL) 3Turns / 25% Chance Enemy receives 25% Spark DMG+ 1Turns / 75% Element Weakness DMG+ (dark) (ALL) 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="25" >1200% Dark (AOE) / 130% Spark DMG+ (ALL) 3Turns / 100% Chance Enemy receives 100% Spark DMG+ 1Turns / 300% BB ATK%+ (ALL) 3Turns</ubb>
+		<es condtion="None" >70% Spark DMG+ on >15 Sparks (SELF) / 100% Chance 1BC Fill on Spark (SELF)</es>
+	</unit>
+	<unit>
+		<id>1146</id>
+		<name>Doruku 7</name>
+		<role>MITIGATOR!, LEADER 30% stats, Cure Ails, DEF buff, convert ATK to DEF buff, Nulls stats down debuff, BC/HC drop buff</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="10" dc="40" >Nulls Elemental Weakness (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL)</ls>
+		<bb hit="12" dc="12" cost="28" >280% Earth (AOE) / Reduce DMG (50%) 1Turns / Cure Ails / 130% DEF+ (ALL) 3Turns</bb>
+		<sbb hit="17" dc="17" cost="20" >480% Earth (AOE) / Reduce DMG (50%) 1Turns / Convert 35% attack to DEF (ALL) / Nulls ATK/DEF/REC Down debuffs (ALL) 1Turns</sbb>
+		<ubb hit="21" dc="21" cost="25" >1000% Earth (AOE) / Reduce DMG (75%) 3Turns / 200% ATK+ 200% DEF+ 200% REC+ (ALL) 3Turns</ubb>
+		<es condtion="None" >Nulls CRIT (SELF) / Nulls Elemental Weakness (SELF) / Add 30% HC+ 30% BC+ (ALL) 3Turns effect to BB/SBB (SELF)</es>
+	</unit>
+	<unit>
+		<id>1149</id>
+		<name>Lagan 7</name>
+		<role>x2 hit buff, DoT, Cconvert DEF to ATK buff</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="8" dc="32" >100% Chance 7-7BC Fill on ATK (ALL) / Normal HitCount +100% (-50% DMG) (ALL) / 80% ATK (ALL)</ls>
+		<bb hit="12" dc="12" cost="24" >300% Thunder (AOE) / Normal HitCount +100% (100% DMG) (ALL) 3Turns / 300% DMG Each Turn 3Turns</bb>
+		<sbb hit="15" dc="15" cost="26" >500% Thunder (AOE) 100% BB ATK+ on Consecutive SBB (Max 3x / SELF) / Normal HitCount +100% (100% DMG) (ALL) 3Turns / 300% DMG Each Turn 3Turns / Convert 60% DEF to ATK (ALL) 3Turns</sbb>
+		<ubb hit="20" dc="20" cost="25" >1200% Thunder (AOE) / Normal HitCount +200% (100% DMG) (ALL) 3Turns / 200% ATK+ (ALL) 3Turns / 800% DMG Each Turn 3Turns</ubb>
+		<es condtion="None" >Normal HitCount +100% (100% DMG) (ALL) / Add Ignore DEF (ALL) effect to BB/SBB (SELF)</es>
+	</unit>
+	<unit>
+		<id>1143</id>
+		<name>Rune 7</name>
+		<role>Ignore DEF buff, Element Weakness DMG buff, SPARK buff, BB ATKed buff (UBB)</role>
+		<element>Water</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="13" dc="39" >125% Element Weakness DMG+ (fire,water) / 80% ATK (ALL) / 100% BB ATK%+ on >10k DMG Dealt (ALL)</ls>
+		<bb hit="16" dc="16" cost="24" >300% Water (AOE) / Ignore DEF (ALL) 2Turns / 75% Element Weakness DMG+ (fire,water) (ALL) 3Turns</bb>
+		<sbb hit="20" dc="20" cost="24" >540% Water (AOE) / Ignore DEF (ALL) 2Turns / 70% Spark DMG+ (ALL) 3Turns / 125% Element Weakness DMG+ (fire,water) (ALL) 3Turns</sbb>
+		<ubb hit="25" dc="25" cost="25" >1200% Water (AOE) / 500% BB ATK%+ (ALL) 2Turns / 400% Element Weakness DMG+ (fire,water) (ALL) 3Turns</ubb>
+		<es condtion="None" >50% Element Weakness DMG+ (Water) (SELF) / Add 50% BC Fill+ (ALL) 3Turns effect to BB/SBB (SELF)</es>
+	</unit>
 </brave>
