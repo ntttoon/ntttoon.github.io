@@ -1258,7 +1258,7 @@
 	<unit>
 		<id>1146</id>
 		<name>Doruku 7</name>
-		<role>MITIGATOR!, LEADER 30% stats, Cure Ails, DEF buff, convert ATK to DEF buff, Nulls stats down debuff, BC/HC drop buff</role>
+		<role>MITIGATOR!, LEADER 35% stats, Cure Ails, DEF buff, convert ATK to DEF buff, Nulls stats down debuff, BC/HC drop buff</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
