@@ -859,6 +859,32 @@
 		<ubb hit="20" dc="20" cost="25" >1000% Dark (AOE) / 800% DMG Each Turn 3Turns / 100% Injury 100% Weak 100% Sick 100% Poison / 100% Para 100% Curse / 300% DMG+ to Ailed Enemy (ALL) 3Turns</ubb>
 		<es condtion="None" >20% OverDrive Fill+ (SELF)</es>
 	</unit>
+	<unit>
+		<id>1156</id>
+		<name>Lugina 7</name>
+		<role>Nuker, USBB, BB fill, ATK buff (BB:120%), DEF buff (SBB:150%), Ignore DEF buff</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="14" dc="42" >Reduce 25% BB Cost (ALL) / 10% Chance Reduce DMG (25%) (ALL) / 120% ATK 120% DEF 2Turns (ALL)</ls>
+		<bb hit="18" dc="18" cost="22" >270% Earth (AOE) / 10BC Fill 1Turn / 120% ATK+ (ALL) 3Turns</bb>
+		<sbb hit="23" dc="23" cost="28" >510% Earth (AOE) / 100% BB Fill (SELF) / Ignore DEF (ALL) 2Turns / 150% DEF+ (ALL) 3Turns</sbb>
+		<ubb hit="5" dc="75" cost="25" >3500% Earth (TGT) / 400% ATK+ to Earth 1Turns / 600% BB ATK%+ (ALL) 1Turns</ubb>
+		<es condtion="20% ALL Stats (SELF) when Sky Harbinger sphere equipped" >50% ATK+ on Full BB (SELF)</es>
+	</unit>
+	<unit>
+		<id>1157</id>
+		<name>Paris 7</name>
+		<role>Hybrid, leader 40%HP ,heal, Null Ails, BC/HC drop buff (BB:30%), BB ATKed buff, stats buff (SBB:130%), Miti (100%) + Hot (UBB)</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="11" dc="33" >15% Chance Reduce DMG to 1 (ALL) / 100% Chance 3-5BC Fill when ATKed (ALL) / 40% HP (ALL)</ls>
+		<bb hit="17" dc="17" cost="25" >270% Thunder (AOE) / Heal (ALL) / Null Ails 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns</bb>
+		<sbb hit="23" dc="23" cost="22" >510% Thunder (AOE) / 4-7BC Fill when ATKed (100%) (ALL) 3Turns / 130% ATK+ 130% DEF+ 130% REC+ (ALL) 3Turns</sbb>
+		<ubb hit="25" dc="25" cost="20" >1000% Thunder (AOE) / Reduce DMG (100%) 1Turns / 200% ATK+ 200% DEF+ 200% REC+ (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns</ubb>
+		<es condtion="20% ALL Stats (SELF) when Honor Armor sphere equipped" >50% DEF+ when HP > 50% (SELF)</es>
+	</unit>
 	<!--GB exclusive batch-->
 	<unit>
 		<id>8198</id>
