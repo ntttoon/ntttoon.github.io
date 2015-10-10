@@ -834,6 +834,19 @@
 		<es condtion="None" >25% Chance Heal 20% DMG when ATKed (SELF) / 50% Chance 2-3BC Fill when ATKed (SELF)</es>
 	</unit>
 	<unit>
+		<id>8143</id>
+		<name>Mad Heretic Gazia</name>
+		<role>Mitigator, Leader 35% stats / 10% miti + Hot on guard, convert ATK to DEF buff (BB,SBB:60%), BB ATK% buff (SBB:300%)</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>45</cost>
+		<ls hit="16" dc="48" >Reduce DMG (10%) (ALL) / Reduce DMG (10%) on Guard (ALL) / Heal on Guard (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL)</ls>
+		<bb hit="22" dc="22" cost="25" >300% Light (AOE) / Reduce DMG (50%) 1Turns / Convert 60% ATK to DEF (ALL) 3Turns / 4BC Fill on Guard (ALL) 3Turns</bb>
+		<sbb hit="32" dc="32" cost="30" >Light (AOE) 300%-850% BB ATK% Based on HP LEFT / Reduce DMG (50%) 1Turns / 300% BB ATK%+ (ALL) 3Turns / Convert 60% DEF to ATK (ALL) 3Turns</sbb>
+		<ubb hit="40" dc="40" cost="30" >Light (AOE) 1000%-3000% BB ATK% Based on HP LEFT / Reduce DMG (75%) 2Turns / 10k HP Barrier (Dark)</ubb>
+		<es condtion="None" >Reduce DMG (5%) from ALL Elements (SELF) / Add 4BC Fill 1Turn (ALL) effect to BB/SBB (SELF)</es>
+	</unit>
+	<unit>
 		<id>1078</id>
 		<name>Lucius</name>
 		<role>Buff HP permanent, BC/HC drop buff (BB:35%), BB fill rate buff (SBB:40%), convert HP to ATK (SBB:23%), HP Barrier buff (UBB)</role>
