@@ -1333,4 +1333,44 @@
 		<ubb hit="25" dc="25" cost="25" >1200% Water (AOE) / 500% BB ATK%+ (ALL) 2Turns / 400% Element Weakness DMG+ (fire,water) (ALL) 3Turns</ubb>
 		<es condtion="None" >50% Element Weakness DMG+ (Water) (SELF) / Add 50% BC Fill+ (ALL) 3Turns effect to BB/SBB (SELF)</es>
 	</unit>
+	<!--Raydn 7 batch-->
+	<unit>
+		<id>1173</id>
+		<name>Raydn 7</name>
+		<role>Ignore DEF buff, SPARK buff, convert DEF to ATK buff</role>
+		<element>Water</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="10" dc="40" >100% Spark DMG+ (ALL) / 120% ATK (Water) / 10% Chance Enemy receives 20% Spark DMG+ 2Turns</ls>
+		<bb hit="16" dc="16" cost="25" >270% Water (AOE) / Ignore DEF (ALL) 2Turns / 70% Spark DMG+ (ALL) 3Turns </bb>
+		<sbb hit="18" dc="18" cost="20" >520% Water (AOE) / Ignore DEF (ALL) 2Turns / 70% Spark DMG+ (ALL) 3Turns / Convert 60% DEF to ATK (ALL) 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="20" >1200% Water (AOE) / Ignore DEF (ALL) 2Turns / 120% Spark DMG+ (ALL) 3Turns / Convert 100% DEF to ATK (ALL) 3Turns</ubb>
+		<es condtion="None" >5BC Fill on >10k DMG Dealt (SELF)</es>
+	</unit>
+	<unit>
+		<id>1174</id>
+		<name>Golem 7</name>
+		<role>NUKER, leader 40% HP/40% DEF, CRIT buff</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="10" dc="40" >15% Chance Reduce DMG (25%) (ALL) / 40% HP 40% DEF (ALL)</ls>
+		<bb hit="13" dc="13" cost="35" >400% Earth (AOE) / 80% BC Fill+ (SELF) 1Turns / 60% CRIT+ (ALL) 3Turns</bb>
+		<sbb hit="17" dc="17" cost="40" >1000% Earth (AOE) / 100% BC Fill+ (SELF) 1Turns / 50% CRIT DMG+ (ALL) 3Turns / 70% Chance -50% Enemy ATK 1Turns</sbb>
+		<ubb hit="20" dc="20" cost="25" >1500% Earth (AOE) / 500% BB ATK%+ (ALL) 2Turns / 100% Chance -80% Enemy ATK 2Turns</ubb>
+		<es condtion="20% ALL Stats (SELF) / Reduce 20% BB Cost (SELF) when Golem Core sphere equipped" >20% Chance Reduce DMG (20%) (SELF)</es>
+	</unit>
+	<unit>
+		<id>1175</id>
+		<name>Rina 7</name>
+		<role>HoT buff, BB ATKed buff, inflict Ails on ATKed</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="8" dc="40" >50% BC Fill+ (ALL) / 15% BC+ 15% HC+ (ALL) / 120% ATK (Thunder)</ls>
+		<bb hit="11" dc="11" cost="25" >270% Thunder (AOE) / 70% Para 70% Curse / Gradual Heal (ALL) 3Turns</bb>
+		<sbb hit="16" dc="16" cost="22" >520% Thunder (AOE) / 4-7BC Fill when ATKed (100%) (ALL) 3Turns / Inflict 15% Injury 15% Weak 15% Sick 10% Poison 10% Para 10% Curse on ATKed (ALL) 3Turns / Gradual Heal (ALL) 3Turns</sbb>
+		<ubb hit="20" dc="20" cost="30" >1200% Thunder (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 5Turns / Inflict 100% Injury 100% Weak 100% Sick 100% Poison 100% Para 100% Curse on ATKed (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns</ubb>
+		<es condtion="None" >100% Chance 2-3BC Fill when ATKed (SELF) / 25% Chance Heal 20% DMG when ATKed (ALL)</es>
+	</unit>
 </brave>
