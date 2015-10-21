@@ -1257,7 +1257,7 @@
 	<!--Doruku 7 batch-->
 	<unit>
 		<id>1140</id>
-		<name>Avante 7</name>
+		<name>Ardent Dawn Avant</name>
 		<role>Nuker, CRIT buff (BB:60%), ATK buff (BB:130%), SPARK DMG debuff, BB ATK% buff (SBB:200%, UBB:300%), Convert HP to ATK buff (SBB:15%), CRIT DMG buff, SPARK buff</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
@@ -1270,7 +1270,7 @@
 	</unit>
 	<unit>
 		<id>1152</id>
-		<name>Charlotte 7</name>
+		<name>Merciful Beacon Charla</name>
 		<role>Supporter, BB fill (SBB:6BC), BB regen (BB:7BC), Heal, Cure Ails, HoT buff, BB SPARK fill buff, CRIT buff (SBB:60%), CRIT DMG buff (SBB:75%), SPARK buff (SBB:100%), miti + Chance Revive buff (UBB)</role>
 		<element>Light</element>
 		<rarity>7</rarity>
@@ -1283,7 +1283,7 @@
 	</unit>
 	<unit>
 		<id>1155</id>
-		<name>Chrome 7</name>
+		<name>Calamity Steel Chrome</name>
 		<role>BB SPARK fill buff, SPARK DMG debuff, Element Weakness DMG buff, SPARK buff (SBB:80%, UBB:130%), BB ATK% buff (UBB:300%)</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
@@ -1296,7 +1296,7 @@
 	</unit>
 	<unit>
 		<id>1146</id>
-		<name>Doruku 7</name>
+		<name>Heavenly Claymore Dolk</name>
 		<role>MITIGATOR!, LEADER 35% stats, Cure Ails, DEF buff (BB:130%), convert ATK to DEF buff (SBB:35%), Nulls stats down debuff, BC/HC drop buff (ES:30%)</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
@@ -1309,7 +1309,7 @@
 	</unit>
 	<unit>
 		<id>1149</id>
-		<name>Lagan 7</name>
+		<name>Thunder Champion Rahgan</name>
 		<role>x2 hit buff (BB/SBB), DoT, convert DEF to ATK buff (SBB:60%)</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
@@ -1322,7 +1322,7 @@
 	</unit>
 	<unit>
 		<id>1143</id>
-		<name>Rune 7</name>
+		<name>Icicle Mirror Lune</name>
 		<role>Ignore DEF buff, Element Weakness DMG buff, SPARK buff (SBB:70%), BB fill rate buff (ES:50%), BB ATK% buff (UBB:500%)</role>
 		<element>Water</element>
 		<rarity>7</rarity>
