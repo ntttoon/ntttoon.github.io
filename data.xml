@@ -1373,4 +1373,83 @@
 		<ubb hit="20" dc="20" cost="30" >1200% Thunder (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 5Turns / Inflict 100% Injury 100% Weak 100% Sick 100% Poison 100% Para 100% Curse on ATKed (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns</ubb>
 		<es condtion="None" >100% Chance 2-3BC Fill when ATKed (SELF) / 25% Chance Heal 20% DMG when ATKed (ALL)</es>
 	</unit>
+	<!--Drevas 7 batch-->
+	<unit>
+		<id>1178</id>
+		<name>Vermillion 7</name>
+		<role>BB fill, BB regen buff, HoT buff, BB ATKed buff</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="11" dc="44" >4BC Fill Each Turn (ALL) / 100% Chance 3-6BC Fill when ATKed (ALL) / 40% Chance Heal 25-25% DMG when ATKed (ALL) / Heal Each Turn (ALL)</ls>
+		<bb hit="15" dc="15" cost="27" >300% Fire (AOE) / 6BC Fill 1Turn / 5BC Fill 3Turns / Gradual Heal (ALL) 3Turns</bb>
+		<sbb hit="18" dc="18" cost="30" >Fire (AOE) 240%-740% BB ATK% Based on HP LEFT / 7BC Fill 3Turns / 4-7BC Fill when ATKed (100%) (ALL) 3Turns / Gradual Heal (ALL) 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="30" >1200% Fire (AOE) / 50BC Fill 3Turns / Gradual Heal FULL (ALL) 3Turns / 33% Chance Revive Dead Ally 100% HP (ALL)</ubb>
+		<es condtion="None" >40% Chance Revive 40% HP (SELF) Max 2x</es>
+	</unit>
+	<unit>
+		<id>1181</id>
+		<name>Piany 7</name>
+		<role>BB Fill on SPARK buff, cure Ails, DEF + REC buff (BB: 130%), BB ATK% buff (SBB:200%,UBB:500%), Nulls STATS Debuff, SPARK buff (UBB:120%)</role>
+		<element>Water</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="10" dc="40" >100% Chance 2-3BC Fill on Spark (ALL) / 100% Chance Heal on Spark (ALL) / 40% HP (ALL) / Null Ails (ALL)</ls>
+		<bb hit="13" dc="13" cost="28" >300% Water (AOE) / 100% Chance 1-2BC Fill on Spark (ALL) 3Turns / Cure Ails / 130% DEF+ 130% REC+ (ALL) 3Turns</bb>
+		<sbb hit="15" dc="15" cost="26" >540% Water (AOE) / 200% BB ATK%+ (ALL) 3Turns / Convert 80% REC to ATK (ALL) 3Turns / Nulls STATS Debuff (ALL) 1Turns</sbb>
+		<ubb hit="22" dc="22" cost="30" >1200% Water (AOE) / 100% Chance 5-8BC Fill on Spark (ALL) 3Turns / 120% Spark DMG+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns</ubb>
+		<es condtion="None" >Nulls Ails (SELF) / 50% Chance 1-3BC Fill on Spark (SELF)</es>
+	</unit>
+	<unit>
+		<id>1184</id>
+		<name>Drevas 7</name>
+		<role>Leader 30% HP 30% DEF / 15% miti Fire Earth, inflict Ails on ATKed buff, 10% miti Fire Earth buff, DMG+ to Ailed Enemy buff, convert HP to ATK buff (UBB:50%)</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="10" dc="40" >15% Fire Resist (ALL) / 15% Earth Resist (ALL) / 30% HP 30% DEF (ALL) / Null Ails (ALL)</ls>
+		<bb hit="13" dc="13" cost="26" > 300% Earth (AOE) / Null Ails 3Turns / Inflict 15% Injury 15% Weak 15% Sick 10% Poison 10% Para 10% Curse on ATKed (ALL) 3Turns / Reduce DMG (10%) from (water, thunder) Enemy (ALL) 2Turns</bb>
+		<sbb hit="17" dc="17" cost="22" >540% Earth (AOE) / Inflict 15% Injury 15% Weak 15% Sick 10% Poison 10% Para 10% Curse on ATKed (ALL) 3Turns / Reduce DMG (10%) from (water, thunder) Enemy (ALL) 2Turns / 160% DMG+ to Ailed Enemy (ALL) 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="25" >1200% Earth (AOE) / Convert 50% HP to ATK (ALL) 3Turns / Inflict 100% Injury 100% Weak 100% Sick 100% Poison 100% Para 100% Curse on ATKed (ALL) 3Turns / 300% DMG+ to Ailed Enemy (ALL) 3Turns</ubb>
+		<es condtion="None" >Nulls Ails (SELF) / Add Cure Ails (ALL) effect to BB/SBB (SELF)</es>
+	</unit>
+	<unit>
+		<id>1187</id>
+		<name>Ryudo 7</name>
+		<role>Leader 35% stats, BB ATKed buff, HoT buff, BB fill rate buff, convert HP to ATK</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="12" dc="48" >100% Chance 3-5BC Fill when ATKed (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL)</ls>
+		<bb hit="15" dc="15" cost="24" >300% Thunder (AOE) / 4-7BC Fill when ATKed (100%) (ALL) 3Turns / Gradual Heal (ALL) 3Turns</bb>
+		<sbb hit="43" dc="43" cost="27" >540% Thunder (AOE) / 50% BC Fill+ (ALL) 3Turns / 4-7BC Fill when ATKed (100%) (ALL) 3Turns / Convert 15% HP to ATK (ALL) 3Turns</sbb>
+		<ubb hit="21" dc="21" cost="25" >1200% Thunder (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / Convert 30% HP to ATK (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns</ubb>
+		<es condtion="None" >25% Chance Heal 20% DMG when ATKed (SELF) / 50% Chance 2-3BC Fill when ATKed (SELF)</es>
+	</unit>
+	<unit>
+		<id>1190</id>
+		<name>Kiraveru 7</name>
+		<role>SPARK buff, SPARK DMG debuff, ATK DOWN debuff</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="11" dc="44" >100% Chance 1-2BC Fill on Spark (ALL) / 100% Spark DMG+ (ALL) / 120% ATK 120% DEF 2Turns (ALL)</ls>
+		<bb hit="15" dc="15" cost="24" >300% Light (AOE) / 70% Spark DMG+ (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns</bb>
+		<sbb hit="18" dc="18" cost="26" >540% Light (AOE) / 80% Spark DMG+ (ALL) 3Turns / 25% Chance Enemy receives 25% Spark DMG+ 1Turns / 30% Chance -50% Enemy ATK 1Turns</sbb>
+		<ubb hit="23" dc="23" cost="20" >1200% Light (AOE) / Reduce DMG (50%) 3Turns / Reduce DMG (100%) from (dark, light) Enemy (ALL) 1Turns</ubb>
+		<es condtion="None" >100% Chance 2-3 BC Fill on Spark (SELF)</es>
+	</unit>
+	<unit>
+		<id>1193</id>
+		<name>Fabrio 7</name>
+		<role>Leader 40% HP / 40% ATK, ATK buff, BC/HC drop buff, BB fill, convert ATK to DEF, BB ATK% (UBb:500%)</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="9" dc="45" >18% BC+ 18% HC+ (ALL) / 40% HP 40% ATK (ALL)</ls>
+		<bb hit="12" dc="12" cost="26" >300% Dark (AOE) / 8BC Fill 1Turn / 100% ATK+ (ALL) 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns</bb>
+		<sbb hit="16" dc="16" cost="22" >540% Dark (AOE) / 10BC Fill 1Turn / 130% ATK+ (ALL) 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns / Convert 30% attack to DEF (ALL) 3Turns</sbb>
+		<ubb hit="21" dc="21" cost="30" >1200% Dark (AOE) / 999BC Fill (ALL) 1Turn / 250% ATK+ 250% DEF+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns</ubb>
+		<es condtion="None" >20% HC Fill+ BF Fill+ (SELF)</es>
+	</unit>
 </brave>
