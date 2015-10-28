@@ -1032,7 +1032,7 @@
 	<!--Lunaris batch-->
 	<unit>
 		<id>1038</id>
-		<name>Lunaris 7</name>
+		<name>Midnight Allure Lunaris</name>
 		<role>Cure Ails / Null Ails, inflict Ails, add ATK/DEF down to atk buff, Element Weakness DMG buff + OverDrive Gauge Fill (UBB)</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
@@ -1045,7 +1045,7 @@
 	</unit>
 	<unit>
 		<id>1037</id>
-		<name>Alyut 7</name>
+		<name>Glorious Crusader Alyut</name>
 		<role>BB regen buff (SBB:7BC), inflict Ails, HoT, convert DEF to ATK (SBB:60%)</role>
 		<element>Light</element>
 		<rarity>7</rarity>
@@ -1058,7 +1058,7 @@
 	</unit>
 	<unit>
 		<id>1036</id>
-		<name>Signas 7</name>
+		<name>Blizzard Fang Signas</name>
 		<role>Nuker, CRIT buff, CRIT DMG buff, miti 100% (Fire) (UBB)</role>
 		<element>Water</element>
 		<rarity>7</rarity>
@@ -1071,7 +1071,7 @@
 	</unit>
 	<unit>
 		<id>1035</id>
-		<name>Farlon 7</name>
+		<name>Crimson Phoenix Farlon</name>
 		<role>Nuker</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
