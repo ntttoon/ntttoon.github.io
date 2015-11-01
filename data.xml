@@ -1452,4 +1452,31 @@
 		<ubb hit="21" dc="21" cost="30" >1200% Dark (AOE) / 999BC Fill (ALL) 1Turn / 250% ATK+ 250% DEF+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns</ubb>
 		<es condtion="None" >20% HC Fill+ BF Fill+ (SELF)</es>
 	</unit>
+	<!--Halloween -->
+	<unit>
+		<id>8148</id>
+		<name>Sanguine Hood Ciara</name>
+		<role>ATK buff (BB:115%, SBB:140%), add Fire Water Earth Thunder buff, Ignore DEF buff, BB ATK% buff (UBB:500%)</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="12" dc="24" >100% BB ATK%+ (ALL) / 100% Element Weakness DMG+ (ALL) / 120% ATK (Fire,water) / 120% ATK (Earth,thunder)</ls>
+		<bb hit="15" dc="15" cost="24" >300% Fire, Dark (AOE) / 115% ATK+ (ALL) 3Turns</bb>
+		<sbb hit="18" dc="18" cost="22" >500% Fire, Dark (AOE) / Add Fire,water,earth,thunder to ATK (ALL) 3Turns / 140% ATK+ (ALL) 3Turns</sbb>
+		<ubb hit="21" dc="21" cost="20" >1200% Fire, Dark (AOE) / 250% ATK+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns</ubb>
+		<es condtion="None" >100% Chance Drain 5-10% HP (SELF) / Add Ignore DEF 2Turns (ALL) effect to BB/SBB (SELF)</es>
+	</unit>
+	<unit>
+		<id>8149</id>
+		<name>Pumleficent Semira</name>
+		<role>Null Ails/Cure Ails, inflict Weak Poison Para Curse, BC/HC drop buff</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="9" dc="27" >100% ATK (Light,dark) / Null Ails (ALL) / 25% DMG+ to Ailed Enemy (ALL)</ls>
+		<bb hit="12" dc="12" cost="24" >280% Dark (AOE) / Null Ails 3Turns / 75% Weak 75% Poison 75% Para 75% Curse</bb>
+		<sbb hit="15" dc="15" cost="20" >480% Dark (AOE) / Null Ails 3Turns / 35% BC+ 35% HC+ (ALL) 3Turns / 80% Weak 80% Poison 80% Para 80% Curse</sbb>
+		<ubb hit="17" dc="17" cost="20" >1000% Dark (AOE) / Add 100% Injury 100% Weak 100% Sick to ATK (ALL) 3Turns / Add 100% Poison 100% Para 100% Curse to ATK (ALL) 3Turns / 25% OverDrive Gauge Fill</ubb>
+		<es condtion="None" >100% DMG+ to Ailed Enemy (SELF) / Add Cure Ails (ALL) effect to BB/SBB (SELF)</es>
+	</unit>
 </brave>
