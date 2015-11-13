@@ -1085,7 +1085,7 @@
 	<!--Shera batch-->
 	<unit>
 		<id>1085</id>
-		<name>Reeze 7</name>
+		<name>Hailstorm Armor Reeze</name>
 		<role>Cure/Null Ails ,inflict Ails, add Ails to atk buff, convert REC to DEF buff (SBb:40%), Chance Revive buff (UBB)</role>
 		<element>Water</element>
 		<rarity>7</rarity>
@@ -1094,11 +1094,11 @@
 		<bb hit="16" dc="16" cost="25" >260% Water (AOE) / Cure Ails / 45% Sick 45% Para / Add 15% Sick 10% Para to ATK (ALL) 3Turns</bb>
 		<sbb hit="18" dc="18" cost="20" >500% Water (AOE) / Cure Ails / 200% ATK+ 200% DEF+ 200% REC+ (SELF) 3Turns / Convert 40% REC to DEF (ALL) 3Turns</sbb>
 		<ubb hit="22" dc="22" cost="20" >1000% Water (AOE) / Cure Ails / 50% Chance Revive 100% HP (ALL) 140Turns</ubb>
-		<es condtion="20% ALL Stats (SELF) when 「氷輝天鎧レーゼ」 sphere equipped" >Add Null Ails effect to BB/SBB</es>
+		<es condtion="20% ALL Stats (SELF) when Reeze's Armor sphere equipped" >Add Null Ails effect to BB/SBB</es>
 	</unit>
 	<unit>
 		<id>1086</id>
-		<name>Ragshelm 7</name>
+		<name>Immortal Dragon Ragshelm</name>
 		<role>Leader 30% HP/ATK, Ignore DEF buff, ATK/DEF down debuff, add Injury to atk buff, SPARK debuff</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
@@ -1111,7 +1111,7 @@
 	</unit>
 	<unit>
 		<id>1087</id>
-		<name>Shera 7</name>
+		<name>Fulgor Heroine Shera</name>
 		<role>Mitigator, ATK buff (SBB:130%), BB regen (SBB:7BC)</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
