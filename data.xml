@@ -1479,4 +1479,57 @@
 		<ubb hit="17" dc="17" cost="20" >1000% Dark (AOE) / Add 100% Injury 100% Weak 100% Sick to ATK (ALL) 3Turns / Add 100% Poison 100% Para 100% Curse to ATK (ALL) 3Turns / 25% OverDrive Gauge Fill</ubb>
 		<es condtion="None" >100% DMG+ to Ailed Enemy (SELF) / Add Cure Ails (ALL) effect to BB/SBB (SELF)</es>
 	</unit>
+	<!--Elza 7* -->
+	<unit>
+		<id>1196</id>
+		<name>Ramna 7</name>
+		<role>Heal, Cure Ails, DEF + REC buff (BB:120%, SBB:130%), Miti(-50%) buff + Element Weakness DMG+ buff (UBB:300%)</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="10" dc="40" >15% Earth Resist (ALL) / 150% Element Weakness DMG+ (fire) / Null Ails (ALL)</ls>
+		<bb hit="13" dc="13" cost="24" >270% Fire (AOE) / Heal (ALL) / 120% DEF+ 120% REC+ (ALL) 3Turns</bb>
+		<sbb hit="17" dc="17" cost="22" >520% Fire (AOE) / Heal (ALL) / 60% ATK+ to Fire 3Turns / 130% DEF+ 130% REC+ (ALL) 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="20" >1200% Fire (AOE) / Reduce DMG (50%) 3Turns / 300% Element Weakness DMG+ (fire) (ALL) 3Turns</ubb>
+		<es condtion="None" >Add Cure Ails (ALL) effect to BB/SBB (SELF)</es>
+	</unit>
+	<unit>
+		<id>1197</id>
+		<name>Ophelia 7</name>
+		<role>BB FILLER, Low BB cost, BB fill, BB regen buff, BC fill rate buff, +20% HP permanent + convert 30% HP to ATK buff + HoT (UBB)</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="9" dc="36" >4BC Fill Each Turn (ALL) / Reduce 25% BB Cost (ALL) / 120% ATK (Earth)</ls>
+		<bb hit="14" dc="14" cost="13" >210% Earth (AOE) / 10BC Fill 1Turn</bb>
+		<sbb hit="19" dc="19" cost="20" >450% Earth (AOE) / 10BC Fill 1Turn / 7BC Fill 3Turns / 30% BC Fill+ (ALL) 3Turns</sbb>
+		<ubb hit="23" dc="23" cost="20" >1200% Earth (AOE) / 20% Max HP+ till Death/Battle End / Convert 30% HP to ATK (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns</ubb>
+		<es condtion="None" >100% Chance 3-5BC Fill when ATKed (SELF)</es>
+	</unit>
+	<unit>
+		<id>1198</id>
+		<name>Lilith 7</name>
+		<role>Leader 30% HP + 100% ATK, NUKER with AOE dmg + TGT dmg in one (UBB) </role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="13" dc="39" >50% Spark DMG+ (ALL) / 30% HP 100% ATK (5 elements required) (ALL)</ls>
+		<bb hit="18" dc="36" cost="20" >500% Light (TGT) / 100% BB Fill (SELF) / 150% ATK+ 150% DEF+ 150% REC+ (SELF) 3Turns</bb>
+		<sbb hit="24" dc="48" cost="29" >Light (TGT) 300%-1000% BB ATK% Based on HP LEFT / 100% BB Fill (SELF) / 4% OverDrive Gauge Fill </sbb>
+		<ubb hit="7" dc="14" cost="25" >1500% Light (TGT) 1500% BB ATK% / Light (AOE) 1000% BB ATK% / 999BC Fill (ALL) 1Turn / 100% BB Fill (SELF) / 200% ATK+ 200% DEF+ 200% REC+ (ALL) 3Turns </ubb>
+		<es condtion="20% ALL STATS (SELF) when Reeze's sphere is equipped" >Add 4BC Fill (ALL) Effect to BB/SBB</es>
+	</unit>
+	<unit>
+		<id>1199</id>
+		<name>Elza 7</name>
+		<role>SPARKER (BB:30 hits, SBB: 40 hits), SPARK buff (BB:80%, SBB:90%, UBB:130%), HoT, add Injury Curse to ATK buff, Miti (100%) Light </role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="12" dc="48" >50% BC Fill+ (ALL) / 100% Chance 1-2BC Fill on Spark (ALL) / 100% Chance Heal on Spark (ALL) / 80% ATK (ALL)</ls>
+		<bb hit="30" dc="30" cost="26" >260% Dark (AOE) / 6BC Fill 1Turn / 80% Spark DMG+ (ALL) 3Turns / 45% Injury 45% Curse</bb>
+		<sbb hit="40" dc="40" cost="25" >500% Dark (AOE) / 7BC Fill 3Turns / 90% Spark DMG+ (ALL) 3Turns / Gradual Heal (ALL) 3Turns / Add 18% Injury 10% Curse to ATK (ALL) 3Turns </sbb>
+		<ubb hit="44" dc="44" cost="25" >1000% Dark (AOE) / 130% Spark DMG+ (ALL) 3Turns / 50% Weak 50% Sick 50% Poison / 50% Injury 50% Para 50% Curse / Reduce DMG (100%) from (Light) Enemy 2Turns</ubb>
+		<es condtion="None" >100% Chance Drain 5-10% HP (SELF) / Add Ignore DEF (ALL) 2Turns Effect to BB/SBB</es>
+	</unit>
 </brave>
