@@ -1178,7 +1178,7 @@
 	<!--Adele 7 batch-->
 	<unit>
 		<id>1092</id>
-		<name>Adele 7</name>
+		<name>Pyro Archfiend Adel</name>
 		<role>Mitigator, leader 30% HP/DEF, SPARK buff (BB/SBB:70%, UBB:120%), HoT</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
@@ -1191,7 +1191,7 @@
 	</unit>
 	<unit>
 		<id>1098</id>
-		<name>Cyan 7</name>
+		<name>Gracious Madam Cyan</name>
 		<role>SPARK buff (BB/SBB:70%), BB SPARK fill buff</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
@@ -1243,7 +1243,7 @@
 	</unit>
 	<unit>
 		<id>1095</id>
-		<name>Savriya 7</name>
+		<name>Glamorous Peril Savia</name>
 		<role>Leader 30% HP 30% ATK, SPARK DMG debuff, BB regen, ATK buff, x3 hit buff (UBB)</role>
 		<element>Water</element>
 		<rarity>7</rarity>
