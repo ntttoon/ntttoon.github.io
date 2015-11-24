@@ -1509,7 +1509,7 @@
 	<unit>
 		<id>1198</id>
 		<name>Lilith 7</name>
-		<role>Unlimited BB + SBB ,Leader 30% HP + 100% ATK, NUKER with AOE dmg + TGT dmg in one (UBB) </role>
+		<role>Unlimited BB + SBB, Leader 30% HP + 100% ATK, NUKER with AOE dmg + TGT dmg in one (UBB) </role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1531,5 +1531,84 @@
 		<sbb hit="40" dc="40" cost="25" >500% Dark (AOE) / 7BC Fill 3Turns / 90% Spark DMG+ (ALL) 3Turns / Gradual Heal (ALL) 3Turns / Add 18% Injury 10% Curse to ATK (ALL) 3Turns </sbb>
 		<ubb hit="44" dc="44" cost="25" >1000% Dark (AOE) / 130% Spark DMG+ (ALL) 3Turns / 50% Weak 50% Sick 50% Poison / 50% Injury 50% Para 50% Curse / Reduce DMG (100%) from (Light) Enemy 2Turns</ubb>
 		<es condtion="None" >100% Chance Drain 5-10% HP (SELF) / Add Ignore DEF (ALL) 2Turns Effect to BB/SBB</es>
+	</unit>
+	<!--Descendents of Elgaia -->
+	<unit>
+		<id>1202</id>
+		<name>Limera 7</name>
+		<role>Leader, Heal, BB fill rate buff, Miti 10% (Fire,water,earth,thunder), convert REC to DEF buff </role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="8" dc="32" >50% BC Fill+ (ALL) / 40% HP (ALL) / 20% Chance Angel Idol 1x (ALL)</ls>
+		<bb hit="13" dc="13" cost="24" >300% Fire (AOE) / 30% BC Fill+ (ALL) 3Turns / Heal (ALL) / Cure Ails</bb>
+		<sbb hit="19" dc="19" cost="28" >540% Fire (AOE) / Heal (ALL) / Convert 50% REC to DEF (ALL) 3Turns / Reduce DMG (10%) from (Fire,water,earth,thunder) Enemy</sbb>
+		<ubb hit="23" dc="23" cost="25" >1200% Fire (AOE) / Convert 100% REC to DEF (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns / Reduce DMG (75%) from (Fire,water,earth,thunder) Enemy</ubb>
+		<es condtion="None" >Null Ails (SELF) / Reduce 20% BB Cost (SELF) / 50% Chance 3-5BC Fill when ATKed (SELF)</es>
+	</unit>
+	<unit>
+		<id>1205</id>
+		<name>Farzen 7</name>
+		<role>NUKER, SPARK buff, CRIT buff, CRIT DMG+ buff, SPARK DMG debuff, BB ATK% (UBB)</role>
+		<element>Water</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="10" dc="40" >6-8BC Fill on CRIT (ALL) / 150% CRIT DMG+ (ALL) / 80% ATK (ALL) / 50% ATK Next Turn on CRIT (ALL)</ls>
+		<bb hit="13" dc="13" cost="26" >300% Water (AOE) / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns</bb>
+		<sbb hit="18" dc="18" cost="24" >540% Water (AOE) / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / 25% Chance Enemy receives 25% Spark DMG+ 1Turns</sbb>
+		<ubb hit="22" dc="22" cost="25" >1200% Water (AOE) / 300% CRIT DMG+ (ALL) 3Turns / 100% Chance Enemy receives 100% Spark DMG+ 1Turns / 300% BB ATK%+ (ALL) 3Turns</ubb>
+		<es condtion="None" >Add 90% Spark DMG+ (ALL) 3Turns Effect to BB/SBB (SELF)</es>
+	</unit>
+	<unit>
+		<id>1208</id>
+		<name>Ester 7</name>
+		<role>Leader, OD fill, BB fill, HoT, BB fill rate buff, + 25% HP permanent / 200% stats (UBB)</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="12" dc="36" >5BC Fill Each Turn (ALL) / 40% HP 40% DEF (ALL) / 20% OverDrive Fill+ (ALL)</ls>
+		<bb hit="15" dc="15" cost="26" >300% Earth (AOE) / 6BC Fill 3Turns / 5% OverDrive Gauge Fill </bb>
+		<sbb hit="19" dc="19" cost="24" >540% Earth (AOE) / 6BC Fill 3Turns / 6% OverDrive Gauge Fill / 30% BC Fill+ (ALL) 3Turns</sbb>
+		<ubb hit="21" dc="21" cost="25" >1200% Earth (AOE) / 50BC Fill 3Turns / 25% Max HP+ till Death/Battle End / 200% ATK+ 200% DEF+ 200% REC+ (ALL) 3Turns</ubb>
+		<es condtion="None" >Add Gradual Heal (ALL) 3Turns Effect to BB/SBB (SELF)</es>
+	</unit>
+	<unit>
+		<id>1211</id>
+		<name>Jilias 7</name>
+		<role>Leader, ATK buff, BB ATK% buff, BC/HC drop buff, add Injury Para to ATK buff</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="15" dc="45" >18% BC+ 18% HC+ 3% Item+ 10% Karma+ 15% Zel+ (ALL) / 30% HP 30% ATK 30% DEF 30% REC (ALL)</ls>
+		<bb hit="17" dc="17" cost="24" >300% Thunder (AOE) / 130% ATK+ (ALL) 3Turns / 85% Injury 85% Para</bb>
+		<sbb hit="19" dc="19" cost="23" >540% Thunder (AOE) / 130% ATK+ (ALL) 3Turns / 200% BB ATK%+ (ALL) 3Turns / 25% BC+ 25% HC+ 2% Item+ (ALL) 3Turns</sbb>
+		<ubb hit="20" dc="20" cost="20" >1200% Thunder (AOE) / 500% BB ATK%+ (ALL) 3Turns / 50% BC+ 50% HC+ 3% Item+ (ALL) 3Turns / Add 100% Injury 100% Para to ATK (ALL) 3Turns</ubb>
+		<es condtion="None" >0-50% ATK+ based on HP LEFT (SELF) / 50% ATK+ on Full BB (SELF)</es>
+	</unit>
+	<unit>
+		<id>1214</id>
+		<name>Luce 7</name>
+		<role>Leader, CRIT buff, CRIT DMG+ buff, DoT, Add Fire,water,earth,thunder to ATK, SPARK buff</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="9" dc="36" >Reduce 20% BB Cost (ALL) / 150% CRIT DMG+ (ALL) / 40% HP 40% ATK (ALL)</ls>
+		<bb hit="2" dc="30" cost="24" >300% Light (AOE) / 50% CRIT DMG+ (ALL) 3Turns / 300% DMG Each Turn 3Turns</bb>
+		<sbb hit="1" dc="1309" cost="29" >Light (AOE) / 100% BB ATK+ on Consecutive SBB (Max 5x / SELF) / Add Fire,water,earth,thunder to ATK (ALL) 2Turns / 50% CRIT DMG+ (ALL) 3Turns / 300% DMG Each Turn 3Turns</sbb>
+		<ubb hit="1" dc="40" cost="30" >1500% Light (AOE) / Add Fire,water,earth,thunder,light,dark to ATK (ALL) 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 130% Spark DMG+ (ALL) 3Turns</ubb>
+		<es condtion="20% ALL Stats (SELF) / 100% Chance 10BC Fill on Spark (SELF) when Guiding Light Sphere Equipped" >Add 60% CRIT+ (ALL) 3Turns Effect to BB/SBB (SELF)</es>
+	</unit>
+	<unit>
+		<id>1217</id>
+		<name>Laberd 7</name>
+		<role>MITIGATOR, Leader, BB ATKed buff, DEF buff, ATK DOWN debuff</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="11" dc="44" >100% Chance 3-6BC Fill when ATKed (ALL) / 40% HP 40% DEF (ALL) / Reduce DMG (20%) 1Turn on > 5k DMG Received (ALL)</ls>
+		<bb hit="15" dc="15" cost="28" >280% Dark (AOE) / Reduce DMG (50%) 1Turns / 4-7BC Fill when ATKed (100%) (ALL) 3Turns / 130% DEF+ (ALL) 3Turns</bb>
+		<sbb hit="17" dc="17" cost="20" >480% Dark (AOE) / Reduce DMG (50%) 1Turns / 4-7BC Fill when ATKed (100%) (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns</sbb>
+		<ubb hit="22" dc="22" cost="25" >1000% Dark (AOE) / Reduce DMG (75%) 3Turns / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns</ubb>
+		<es condtion="None" >100% Chance 2-3BC Fill when ATKed (SELF) / Null Ignore DEF (SELF)</es>
 	</unit>
 </brave>
