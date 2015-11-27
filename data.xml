@@ -1175,7 +1175,7 @@
 		<ubb hit="21" dc="21" cost="20" >1000% Dark (AOE) / 20% Max HP+ till Death/Battle End / Convert 20% HP to ATK (ALL) 3Turns</ubb>
 		<es condtion="None" >25% Chance Heal 20% DMG when ATKed (SELF) / 100% Chance Drain 5-8% HP (SELF)</es>
 	</unit>
-	<!--Adele 7 batch-->
+	<!--Adel 7 batch-->
 	<unit>
 		<id>1092</id>
 		<name>Pyro Archfiend Adel</name>
@@ -1217,8 +1217,8 @@
 	</unit>
 	<unit>
 		<id>1104</id>
-		<name>Jedo 7</name>
-		<role>BC/HP drop buff (BB/SBB:35%), add ATK down to atk buff</role>
+		<name>Refulgent Savage Jed</name>
+		<role>BC/HP drop buff (BB/SBB:35%), add ATK down to atk buff, BB regen buff</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1230,7 +1230,7 @@
 	</unit>
 	<unit>
 		<id>1107</id>
-		<name>Les Viola 7</name>
+		<name>Tenebrous Wings Reviora</name>
 		<role>Nuker, leader 30% HP, BB ATKed buff, BB fill rate buff (SBB:40%)</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
