@@ -1611,4 +1611,31 @@
 		<ubb hit="22" dc="22" cost="25" >1000% Dark (AOE) / Reduce DMG (75%) 3Turns / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns</ubb>
 		<es condtion="None" >100% Chance 2-3BC Fill when ATKed (SELF) / Null Ignore DEF (SELF)</es>
 	</unit>
+	<!--Morokai Deva batch -->
+	<unit>
+		<id>8154</id>
+		<name>Infernal Ravager Korzan</name>
+		<role>NUKER, Leader, Heal, BB fill rate buff, Ignore DEF buff, CRIT buff, ATK buff, CRIT DMG+ buff, +10% HP permanent buff, convert HP to ATK buff</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="13" dc="39" >100% Chance 3-6BC Fill when ATKed (ALL) / 175% CRIT DMG+ (ALL) / 40% HP 40% ATK (ALL) / 50% ATK (BB >= 100%) (ALL)</ls>
+		<bb hit="16" dc="16" cost="26" >Fire (TGT) 250%-500% BB ATK% Based on HP LOST / 40% BB Fill (SELF) / Ignore DEF (ALL) 2Turns / 60% CRIT+ (ALL) 3Turns / 150% ATK+ (ALL) 3Turns</bb>
+		<sbb hit="19" dc="19" cost="27" >Fire (AOE) 400%-800% BB ATK% Based on HP LOST / 75% CRIT DMG+ (ALL) 3Turns / 10% Max HP+ till Death/Battle End / Convert 20% HP to ATK (ALL) 3Turns</sbb>
+		<ubb hit="2" dc="30" cost="25" >Fire (AOE) 1200%-4000% BB ATK% Based on HP LOST / 300% CRIT DMG+ (ALL) 3Turns / 100% Max HP+ till Death/Battle End / Convert 50% HP to ATK (ALL) 3Turns</ubb>
+		<es condtion="When Vulcan Axe is Equipped" >Null CRIT (SELF) / Null Elemental Weakness (SELF) / 200% BB ATK%+ (SELF)</es>
+	</unit>
+	<unit>
+		<id>8157</id>
+		<name>Boreal Tempest Haile</name>
+		<role>Leader, BB regen buff, BB fill rate buff, STATS buff (BB:130%), BB ATK% (SBB:200%), ATK/DEF DOWN debuff,</role>
+		<element>Water</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="16" dc="48" >50% BC Fill+ (ALL) / 150% BB ATK%+ (ALL) / 25% BC+ 25% HC+ (ALL) / 25% HP 30% ATK 30% DEF 30% REC (ALL)</ls>
+		<bb hit="18" dc="18" cost="30" >290% Water (AOE) / 6BC Fill 3Turns / 50% BC Fill+ (ALL) 3Turns / 130% ATK+ 130% DEF+ 130% REC+ (ALL) 3Turns</bb>
+		<sbb hit="20" dc="20" cost="26" >540% Water (AOE) / 8BC Fill (ALL) 1Turn / 200% BB ATK%+ (ALL) 3Turns / 50% Chance -50% Enemy ATK 1Turns / 50% Chance -50% Enemy DEF 1Turns</sbb>
+		<ubb hit="22" dc="22" cost="25" >1200% Water (AOE) / 50BC Fill 3Turns / 200% ATK+ 200% DEF+ 200% REC+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 2Turns</ubb>
+		<es condtion="When Glacies Staff is Equipped" >20% ALL Stats (SELF) / 100% Chance 8BC Fill when ATKed (SELF)</es>
+	</unit>
 </brave>
