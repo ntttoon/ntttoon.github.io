@@ -898,6 +898,32 @@
 		<ubb hit="25" dc="25" cost="20" >1000% Thunder (AOE) / Reduce DMG (100%) 1Turns / 200% ATK+ 200% DEF+ 200% REC+ (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns</ubb>
 		<es condtion="20% ALL Stats (SELF) when Honor Armor sphere equipped" >50% DEF+ when HP > 50% (SELF)</es>
 	</unit>
+	<unit>
+		<id>1218</id>
+		<name>Seria 7</name>
+		<role>SPARK buff, DoT, fill on SPARK buff</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="12" dc="48" >100% Chance Reduce 25-30% BB Gauge Used (ALL) / 80% HC Fill+ (ALL) / 30% Chance Heal 25-25% DMG when ATKed (ALL) / 40% ATK 40% DEF (ALL)</ls>
+		<bb hit="19" dc="19" cost="25" >270% Fire (AOE) / 70% Spark DMG+ (ALL) 3Turns / 300% DMG Each Turn 3Turns / 140% ATK+ 140% DEF+ 140% REC+ (SELF) 3Turns</bb>
+		<sbb hit="23" dc="23" cost="22" >510% Fire (AOE) / 25% HC+ (SELF) / 80% Chance 1-2BC Fill on Spark (ALL) 3Turns / 80% Spark DMG+ (ALL) 3Turns / 300% DMG Each Turn 3Turns</sbb>
+		<ubb hit="27" dc="27" cost="20" >1000% Fire (AOE) / 25% HC+ (SELF) / 200% ATK+ 200% DEF+ 200% REC+ (ALL) 3Turns / 1000% DMG Each Turn 3Turns / 100% Chance -80% Enemy ATK 2Turns</ubb>
+		<es condtion="None" >50% ATK 50% DEF 50% REC (SELF) when BB Gauge > 50% / Add 25% Chance Enemy receives 25% Spark DMG+ 1Turns Effect to BB/SBB</es>
+	</unit>
+	<unit>
+		<id>1219</id>
+		<name>Karl 7</name>
+		<role>Leader, BB ATK% buff, OverDrive Gauge Fil, convert HP to ATK, BB fill rate buff (ES:30%)</role>
+		<element>Water</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="16" dc="64" >5BC Fill Each Turn (ALL) / 100% Chance 7-7BC Fill on ATK (ALL) / 100% Chance 1-2BC Fill on Spark (ALL) / 40% HP 40% ATK (ALL)</ls>
+		<bb hit="18" dc="18" cost="25" >270% Water (AOE) / 200% BB ATK%+ (ALL) 3Turns / 140% ATK+ 140% DEF+ 140% REC+ (SELF) 3Turns</bb>
+		<sbb hit="26" dc="26" cost="22" >480% Water (AOE) / 100% BB ATK+ on Consecutive SBB (Max 5x / SELF) / 30% BC+ (SELF) / 5% OverDrive Gauge Fill / 200% BB ATK%+ (ALL) 3Turns / Convert 15% HP to ATK (ALL) 3Turns</sbb>
+		<ubb hit="28" dc="28" cost="20" >2500% Water (AOE) 1000%-2500% BB ATK% Based on HP LEFT / 999BC Fill 2Turns / 250% ATK+ 250% DEF+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns</ubb>
+		<es condtion="None" >50% ATK 50% DEF 50% REC (SELF) when BB Gauge > 50% / Add 30% BC Fill+ (ALL) 3Turns Effect to BB/SBB</es>
+	</unit>
 	<!--GB exclusive batch-->
 	<unit>
 		<id>8198</id>
