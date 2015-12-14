@@ -5,13 +5,7 @@
 <title>Brave Frontier</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<script>
-function getURLParameter(name) {
-  return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null
-}
-myvar = getURLParameter('id');
-//alert(myvar);
-</script>
+<script src="js/libs.js"></script>
 </head>
 
 <body>
@@ -24,10 +18,12 @@ myvar = getURLParameter('id');
 	xmlDoc = xmlhttp.responseXML;
 	
 	total = xmlDoc.getElementsByTagName("unit").length;
+	var s = getURLParameter('id');
+	
 	for(i=0;i<total;i++)
 	{
 		id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
-		if(id==myvar)
+		if(id==s)
 		{
 			name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
 			element = xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
