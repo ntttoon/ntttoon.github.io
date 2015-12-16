@@ -1794,7 +1794,7 @@
 	<unit>
 		<id>1232</id>
 		<name>Phoenix 7</name>
-		<role>Leader, Heal, HoT, Chance Heal whwn ATKed buff, Chance Angel Idol buff, DoT, Convert HP to DEF buff, +25% Max HP permanent, Fire Barrier</role>
+		<role>Leader, Heal, HoT, Chance Heal when ATKed buff, Chance Angel Idol buff, DoT, Convert HP to DEF buff, +25% Max HP permanent, Fire Barrier</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
