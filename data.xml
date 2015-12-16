@@ -1173,7 +1173,7 @@
 		<cost>40</cost>
 		<ls hit="11" dc="33" >15% Fire Resist (ALL) / 100% CRIT DMG+ (ALL) / 150% Element Weakness DMG+ (water)</ls>
 		<bb hit="13" dc="13" cost="25" >270% Water (AOE) / 40% CRIT+ (ALL) 3Turns / 45% Injury 45% Poison</bb>
-		<sbb hit="16" dc="16" cost="20" >520% Water (AOE) / 60% ATK+ to Water 3Turns / 40% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns</sbb>
+		<sbb hit="16" dc="16" cost="20" >520% Water (AOE) / 120% ATK+ to Water 3Turns / 40% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns</sbb>
 		<ubb hit="22" dc="22" cost="20" >1200% Water (AOE) / 300% CRIT DMG+ (ALL) 3Turns / Reduce DMG (100%) from (Fire) Enemy 2Turns</ubb>
 		<es condtion="None" >4BC Fill on CRIT (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20326.png"></art>
@@ -1259,7 +1259,7 @@
 		<cost>40</cost>
 		<ls hit="9" dc="36" >15% Thunder Resist (ALL) / 100% BB ATK%+ (ALL) / 150% Element Weakness DMG+ (earth)</ls>
 		<bb hit="13" dc="13" cost="20" >270% Earth (AOE) / 25% BC+ 25% HC+ (ALL) 3Turns</bb>
-		<sbb hit="17" dc="17" cost="24" >520% Earth (AOE) / 60% ATK+ to Earth 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns / Convert 50% REC to DEF (ALL) 3Turns</sbb>
+		<sbb hit="17" dc="17" cost="24" >520% Earth (AOE) / 120% ATK+ to Earth 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns / Convert 50% REC to DEF (ALL) 3Turns</sbb>
 		<ubb hit="1" dc="50" cost="20" >Earth (AOE) 1300-2500% BB ATK% based on HP Left / 500% BB ATK%+ (ALL) 3Turns</ubb>
 		<es condtion="None" >200% BB ATK%+ (SELF) 2Turns on > 10k DMG Received</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30316.png"></art>
@@ -1273,7 +1273,7 @@
 		<cost>40</cost>
 		<ls hit="11" dc="44" >15% Water Resist (ALL) / Nulls CRIT (ALL) / 150% Element Weakness DMG+ (thunder)</ls>
 		<bb hit="15" dc="15" cost="20" >270% Thunder (AOE) / Add 10% Chance -20% Enemy ATK to ATK (ALL) 3Turns</bb>
-		<sbb hit="18" dc="18" cost="30" >520% Thunder (AOE) / 100% BB Fill (SELF) / 60% ATK+ to Thunder 3Turns / Add 10% Chance -20% Enemy ATK to ATK (ALL) 3Turns</sbb>
+		<sbb hit="18" dc="18" cost="30" >520% Thunder (AOE) / 100% BB Fill (SELF) / 120% ATK+ to Thunder 3Turns / Add 10% Chance -20% Enemy ATK to ATK (ALL) 3Turns</sbb>
 		<ubb hit="20" dc="20" cost="20" >1200% Thunder (AOE) / 100% Chance -80% Enemy ATK 2Turns / 10k HP Barrier (Thunder)</ubb>
 		<es condtion="None" >Reduce DMG (25%) (SELF) 1Turn on > 10k DMG Received</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40346.png"></art>
@@ -1629,7 +1629,7 @@
 		<cost>40</cost>
 		<ls hit="10" dc="40" >15% Earth Resist (ALL) / 150% Element Weakness DMG+ (fire) / Null Ails (ALL)</ls>
 		<bb hit="13" dc="13" cost="24" >270% Fire (AOE) / Heal (ALL) / 120% DEF+ 120% REC+ (ALL) 3Turns</bb>
-		<sbb hit="17" dc="17" cost="22" >520% Fire (AOE) / Heal (ALL) / 60% ATK+ to Fire 3Turns / 130% DEF+ 130% REC+ (ALL) 3Turns</sbb>
+		<sbb hit="17" dc="17" cost="22" >520% Fire (AOE) / Heal (ALL) / 120% ATK+ to Fire 3Turns / 130% DEF+ 130% REC+ (ALL) 3Turns</sbb>
 		<ubb hit="22" dc="22" cost="20" >1200% Fire (AOE) / Reduce DMG (50%) 3Turns / 300% Element Weakness DMG+ (fire) (ALL) 3Turns</ubb>
 		<es condtion="None" >Add Cure Ails (ALL) effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10366.png"></art>
@@ -1789,5 +1789,62 @@
 		<ubb hit="22" dc="22" cost="25" >1200% Water (AOE) / 50BC Fill 3Turns / 200% ATK+ 200% DEF+ 200% REC+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 2Turns</ubb>
 		<es condtion="When Glacies Staff is Equipped" >20% ALL Stats (SELF) / 100% Chance 8BC Fill when ATKed (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_820317.png"></art>
+	</unit>
+	<!--Phoenix 7 -->
+	<unit>
+		<id>1232</id>
+		<name>Phoenix 7</name>
+		<role>Leader, Heal, HoT, Chance Heal whwn ATKed buff, Chance Angel Idol buff, DoT, Convert HP to DEF buff, +25% Max HP permanent, Fire Barrier</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="11" dc="44" >80% HC Fill+ (ALL) / Heal Each Turn (ALL) / 40% HP 40% DEF (ALL) / 100% Chance Heal on Spark (ALL)</ls>
+		<bb hit="13" dc="13" cost="25" >260% Fire (AOE) / 10% Chance Angel Idol (ALL) 999Turns / Gradual Heal (ALL) 3Turns / 20% Chance Heal 20-25% DMG when ATKed (ALL) 3Turns </bb>
+		<sbb hit="17" dc="17" cost="20" >500% Fire (AOE) / Heal (ALL) / 300% DMG Each Turn 3Turns / Convert 15% HP to DEF (ALL) 3Turns</sbb>
+		<ubb hit="" dc="" cost="35" >Full Heal (ALL) / 25% Max HP+ till Death/Battle End / 20k HP Barrier (fire) / 66% Chance Revive Dead Ally 100% HP (ALL) </ubb>
+		<es condtion="None" >Angel Idol when HP &lt; 20% (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10116.png"></art>
+	</unit>
+	<unit>
+		<id>1233</id>
+		<name>Mega 7</name>
+		<role>HoT, HC/BC drop buff, Heal, ATK buff, Convert DEF to ATK buff</role>
+		<element>Water</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="10" dc="40" >4BC Fill Each Turn (ALL) / 100% ATK (Water)</ls>
+		<bb hit="15" dc="15" cost="25" >260% Water (AOE) / 30% BC+ 30% HC+ (ALL) 3Turns / Gradual Heal (ALL) 3Turns</bb>
+		<sbb hit="2" dc="50" cost="29" >760% Water (AOE) / 75% BC+ (SELF) / Heal (ALL) / 130% ATK+ (ALL) 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns</sbb>
+		<ubb hit="21" dc="21" cost="25" >1500% Water (AOE) / 300% ATK+ (ALL) 3Turns / 75% BC+ 75% HC+ (ALL) 3Turns / Convert 200% DEF to ATK (ALL) 3Turns / -100% DEF (ALL) 3Turns </ubb>
+		<es condtion="None" >100% Chance 2-3BC Fill on Spark (SELF) / 50% Spark DMG+ (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20126.png"></art>
+	</unit>
+	<unit>
+		<id>1234</id>
+		<name>Sodis 7</name>
+		<role>BB fill rate buff, SPARK buff, ATK to Light buff, BB ATK% buff, ES: miti or SPARK debuff</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="11" dc="44" >15% Dark Resist (ALL) / 100% Spark DMG+ (ALL) / 150% Element Weakness DMG+ (light)</ls>
+		<bb hit="13" dc="13" cost="27" >270% Light (AOE) / 30% BC Fill+ (ALL) 3Turns / 90% Spark DMG+ (ALL) 3Turns</bb>
+		<sbb hit="19" dc="19" cost="22" >520% Light (AOE) / 120% ATK+ to Light 3Turns / 90% Spark DMG+ (ALL) 3Turns / 150% BB ATK%+ (ALL) 3Turns</sbb>
+		<ubb hit="24" dc="24" cost="30" >1200% Light (AOE) / 200% ATK+ to Light 3Turns / 130% Spark DMG+ (ALL) 3Turns / 300% BB ATK%+ (ALL) 3Turns</ubb>
+		<es condtion="[Condition 1] 20% HP 20% ATK (SELF) / Add Reduce DMG (50%) (ALL) 1Turns Effect to BB/SBB (SELF) when [Guardian Shard] is equipped. [Condition 2] 20% HP 20% DEF (SELF) / Add 25% Chance Enemy receives 25% Spark DMG+ 1Turns Effect to BB/SBB (SELF) when [Guardian Sliver] is equipped." >100% Chance 1-2BC Fill on Spark (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50386.png"></art>
+	</unit>
+	<unit>
+		<id>1235</id>
+		<name>Zephyr 7</name>
+		<role>OverDrive Fill, ATK to Dark buff, STATS buff (SBB:130%), x4 hit buff, Dark Barrier</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="12" dc="48" >15% Light Resist (ALL) / 150% Element Weakness DMG+ (dark) / 20% OverDrive Fill+</ls>
+		<bb hit="15" dc="15" cost="20" >270% Dark (AOE) / 6% OverDrive Fill / 120% ATK+ to Dark 3Turns </bb>
+		<sbb hit="19" dc="19" cost="20" >520% Dark (AOE) / 8% OverDrive Fill / 130% ATK+ 130% DEF+ 130% REC+ (ALL) 3Turns </sbb>
+		<ubb hit="23" dc="23" cost="30" >1200% Dark (AOE) / 25% OverDrive Fill / Normal HitCount +300% (100% DMG) (ALL) 3Turns / 10k HP Barrier (dark) </ubb>
+		<es condtion="None" >Add Ignore DEF (ALL) 2Turns effect to BB/SBB / Normal HitCount +100% (100% DMG) (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60356.png"></art>
 	</unit>
 </brave>
