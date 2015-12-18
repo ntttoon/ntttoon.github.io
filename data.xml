@@ -1238,7 +1238,7 @@
 	<!--Vishra batch-->
 	<unit>
 		<id>1134</id>
-		<name>Vishra 7</name>
+		<name>Unleashed Ravana Vishra</name>
 		<role>Nuker, inflict Ails on ATKed buff, BB ATKed buff</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
@@ -1252,7 +1252,7 @@
 	</unit>
 	<unit>
 		<id>1135</id>
-		<name>Luly 7</name>
+		<name>Mayhem Empress Luly</name>
 		<role>HC/BC drop buff (SBB:30%), convert REC to DEF buff (SBB:50%), BB ATK% buff (UBB:500%)</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
@@ -1266,7 +1266,7 @@
 	</unit>
 	<unit>
 		<id>1136</id>
-		<name>Grybe 7</name>
+		<name>Optimum Mecha Grybe</name>
 		<role>USBB, add ATK down to atk buff, HP Barrier buff (UBB)</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
@@ -1280,7 +1280,7 @@
 	</unit>
 	<unit>
 		<id>1137</id>
-		<name>Logan 7</name>
+		<name>Vicious Twin-Edge Logan</name>
 		<role>Leader 30% HP 100% ATK (5 elements required), inflict Ails, BB ATKed buff, buff HP permanent + Convert HP to ATK buff (UBB)</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
