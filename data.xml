@@ -1522,7 +1522,7 @@
 	</unit>
 	<unit>
 		<id>1181</id>
-		<name>Piany 7</name>
+		<name>Sacred Lotus Piany</name>
 		<role>BB Fill on SPARK buff, cure Ails, DEF + REC buff (BB: 130%), BB ATK% buff (SBB:200%,UBB:500%), Nulls STATS Debuff, SPARK buff (UBB:120%)</role>
 		<element>Water</element>
 		<rarity>7</rarity>
@@ -1536,7 +1536,7 @@
 	</unit>
 	<unit>
 		<id>1184</id>
-		<name>Drevas 7</name>
+		<name>Malachite Pike Drevas</name>
 		<role>Leader 30% HP 30% DEF / 15% miti Fire Earth, inflict Ails on ATKed buff, 10% miti Fire Earth buff, DMG+ to Ailed Enemy buff, convert HP to ATK buff (UBB:50%)</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
@@ -1550,7 +1550,7 @@
 	</unit>
 	<unit>
 		<id>1187</id>
-		<name>Ryudo 7</name>
+		<name>Prism Lightning Reud</name>
 		<role>Leader 35% stats, BB ATKed buff, HoT buff, BB fill rate buff, convert HP to ATK</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
