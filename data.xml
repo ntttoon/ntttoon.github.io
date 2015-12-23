@@ -1847,4 +1847,19 @@
 		<es condtion="None" >Add Ignore DEF (ALL) 2Turns effect to BB/SBB / Normal HitCount +100% (100% DMG) (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60356.png"></art>
 	</unit>
+	<!--Zeruiah - Limited unit -->
+	<unit>
+		<id>8162</id>
+		<name>Eternal Guardian Zeruiah</name>
+		<role>Heal, Cure Ails, HC/BC drop buff, add All Elements buff, Miti 75% (UBB:75%), buff HP permanent (UBB:25%), convert REC to DEF buff (UBB:100%)</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="10" dc="50" >60% BC Fill+ (ALL) / 12% EXP+ (ALL) / 24% BC+ 24% HC+ 7% Item+ 15% Karma+ 20% Zel+ (ALL)</ls>
+		<bb hit="30" dc="30" cost="25" >300% Earth, Water (AOE) / Heal (ALL) / Cure Ails / 35% BC+ 35% HC+ (ALL) 3Turns</bb>
+		<sbb hit="40" dc="40" cost="40" >540% Earth, Water (AOE) / 100% BB Fill (SELF) / Add Fire,water,earth,thunder,light,dark to ATK (ALL) 2Turns / 35% BC+ 35% HC+ 5% Item+ (ALL) 3Turns</sbb>
+		<ubb hit="" dc="" cost="30" >Reduce DMG (75%) 3Turns / 25% Max HP+ till Death/Battle End / 100% BC+ 100% HC+ 7% Item+ (ALL) 3Turns / Convert 100% REC to DEF (ALL) 3Turns</ubb>
+		<es condtion="None" >30% Chance Heal 25% when ATKed (SELF) / 25% Chance Reduce DMG (25%) (SELF)</es>
+		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830117.png"></art>
+	</unit>
 </brave>
