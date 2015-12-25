@@ -1866,7 +1866,7 @@
 	<unit>
 		<id>1238</id>
 		<name>Gyrodorf 7</name>
-		<role>Null</role>
+		<role>SPARK buff, BC/HC drop buff, USBB</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1880,7 +1880,7 @@
 	<unit>
 		<id>1241</id>
 		<name>Klaus 7</name>
-		<role>Null</role>
+		<role>ATK/DEF DOWN debuff, BB regen buff, BB ATKed buff, add ATK DOWN to atk, convert ATK to DEF buff</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1894,7 +1894,7 @@
 	<unit>
 		<id>1244</id>
 		<name>Isuterio 7</name>
-		<role>Null</role>
+		<role>buff HP permanent, inflict all Ails, BB ATK% buff, convert HP to ATK buff, add all Ails to atk buff</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1908,7 +1908,7 @@
 	<unit>
 		<id>1247</id>
 		<name>Raphyr 7</name>
-		<role>Null</role>
+		<role>Mitigator, BB fill on SPARK buff, BB ATKed buff</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1922,7 +1922,7 @@
 	<unit>
 		<id>1250</id>
 		<name>Reinhart 7</name>
-		<role>Null</role>
+		<role>Leader 35% stats, Cure Ails / Null Ails 3Turns / Null STATS Debuff, BB fill, convert HP to DEF buff, Reduce DMG (SBB: 10%, UBB: 100%) from (Fire,water,earth,thunder) buff</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1936,7 +1936,7 @@
 	<unit>
 		<id>1253</id>
 		<name>Marybelle 7</name>
-		<role>Null</role>
+		<role>BB fill, Chance CRIT on SPARK buff, USBB, DoT debuff, BB ATK% buff</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1951,7 +1951,7 @@
 	<unit>
 		<id>1254</id>
 		<name>Owen 7</name>
-		<role>Null</role>
+		<role>Leader 50% STATS, CRIT buff, ATK + DEF buff, convert DEF to ATK buff, CRIT DMG+ buff, DoT, BB ATK% buff</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>45</cost>
@@ -1959,13 +1959,13 @@
 		<bb hit="19" dc="19" cost="24" >350% Fire (AOE) / 60% CRIT+ (ALL) 3Turns / 80% Injury 80% Weak</bb>
 		<sbb hit="26" dc="26" cost="26" >100% BB ATK+ on Consecutive SBB (Max 3x / SELF) / 140% ATK+ 140% DEF+ (ALL) 3Turns / Convert 80% DEF to ATK (ALL) 3Turns</sbb>
 		<ubb hit="29" dc="29" cost="30" >1500% Fire (AOE) / 300% CRIT DMG+ (ALL) 3Turns / 250% ATK+ 250% DEF+ 250% REC+ (ALL) 3Turns / 1000% DMG Each Turn 3Turns / 500% BB ATK%+ (ALL) 3Turns</ubb>
-		<es condtion="20% ALL STATS (SELF) when ??????????? sphere equipped" >Add 160% DMG+ to Ailed Enemy (ALL) 3Turns Effect to BB/SBB (SELF)</es>
+		<es condtion="20% ALL STATS (SELF) when 羅獄焔燼メドブレア sphere equipped" >Add 160% DMG+ to Ailed Enemy (ALL) 3Turns Effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10516.png"></art>
 	</unit>
 	<unit>
 		<id>1255</id>
 		<name>Grahdens 7</name>
-		<role>Null</role>
+		<role>Leader 50% STATS, Null Ails buff / Null STATS Debuff, buff LIGHT / DARK to atk, HP Barrier (Dark), 20% OD Fill+ buff, BB regen buff, HoT</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>45</cost>
@@ -1973,7 +1973,7 @@
 		<bb hit="18" dc="18" cost="28" >350% Light,dark (AOE) / Null Ails 3Turns / Null STATS Debuff 1Turns / Add Light,dark to ATK (ALL) 3Turns</bb>
 		<sbb hit="26" dc="26" cost="32" >750% Light,dark (AOE) / Add Light,dark to ATK (ALL) 3Turns / 10k HP Barrier (dark) / 20% OD Fill+ 3Turns</sbb>
 		<ubb hit="28" dc="28" cost="30" >1500% Light,dark (AOE) / 999BC Fill 3Turns / Gradual Heal FULL (ALL) 3Turns / Reduce DMG (100%) from (Light,dark) Enemy</ubb>
-		<es condtion="20% ALL STATS (SELF) when ???????????? sphere equipped" >Add 8BC Fill (ALL) 3Turns Effect to BB/SBB (SELF)</es>
+		<es condtion="20% ALL STATS (SELF) when Ishrion sphere equipped" >Add 8BC Fill (ALL) 3Turns Effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60326.png"></art>
 	</unit>
 </brave>
