@@ -1508,7 +1508,7 @@
 	<!--Drevas 7 batch-->
 	<unit>
 		<id>1178</id>
-		<name>Vermillion 7</name>
+		<name>Rider Empress Vermilion</name>
 		<role>BB fill, BB regen buff, HoT buff, BB ATKed buff</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
@@ -1564,7 +1564,7 @@
 	</unit>
 	<unit>
 		<id>1190</id>
-		<name>Kiraveru 7</name>
+		<name>Seraph Wings Kiravel</name>
 		<role>SPARK buff, SPARK DMG debuff, ATK DOWN debuff</role>
 		<element>Light</element>
 		<rarity>7</rarity>
@@ -1578,7 +1578,7 @@
 	</unit>
 	<unit>
 		<id>1193</id>
-		<name>Fabrio 7</name>
+		<name>Sacred Kinnara Febros</name>
 		<role>Leader 40% HP / 40% ATK, ATK buff, BC/HC drop buff, BB fill, convert ATK to DEF, BB ATK% (UBb:500%)</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
