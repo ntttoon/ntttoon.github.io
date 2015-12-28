@@ -1218,7 +1218,7 @@
 		<bb hit="17" dc="17" cost="25" >260% Earth (AOE) / 30% Chance -30% Enemy ATK 1Turns / 30% Chance -30% Enemy DEF 1Turns / Add 18% Injury to ATK (ALL) 3Turns</bb>
 		<sbb hit="19" dc="19" cost="23" >500% Earth (AOE) / 25% Chance Enemy receives 30% Spark DMG+ 1Turns / 30% Chance -30% Enemy ATK 2Turns / 30% Chance -30% Enemy DEF 2Turns / Add 18% Injury to ATK (ALL) 3Turns</sbb>
 		<ubb hit="21" dc="21" cost="25" >1000% Earth (AOE) / 100% Chance Enemy receives 100% Spark DMG+ 1Turns / Add 10% Chance -60% Enemy ATK to ATK (ALL) 2Turns</ubb>
-		<es condtion="Noned" >Add Ignore DEF (ALL) 2Turns effect to BB/SBB / 100% DMG+ to Ailed Enemy</es>
+		<es condtion="None" >Add Ignore DEF (ALL) 2Turns effect to BB/SBB / 100% DMG+ to Ailed Enemy</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30516.png"></art>
 	</unit>
 	<unit>
@@ -1232,7 +1232,7 @@
 		<bb hit="15" dc="30" cost="22" >500% Thunder (TGT) / Reduce DMG (50%) 1Turns / 110% ATK+ (ALL) 3Turns</bb>
 		<sbb hit="30" dc="30" cost="23" >450% Thunder (AOE) / 7BC Fill 3Turns / Reduce DMG (50%) 1Turns / 130% ATK+ (ALL) 3Turns</sbb>
 		<ubb hit="22" dc="22" cost="20" >1000% Thunder (AOE) / Reduce DMG (75%) 2Turns / 250% ATK+ (ALL) 3Turns</ubb>
-		<es condtion="Noned" >Null Ignore DEF ATKs (SELF) / 4BC Fill on Guard (SELF)</es>
+		<es condtion="None" >Null Ignore DEF ATKs (SELF) / 4BC Fill on Guard (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40506.png"></art>
 	</unit>
 	<!--Vishra batch-->

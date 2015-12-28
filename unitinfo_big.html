@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BF unit info - made by ntttoon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="css/animate.css">
+<script src="js/wow.min.js"></script>
+<script src="js/libs.js"></script>
+<script>
+	new WOW().init();
+</script>
+<style type="text/css">
+body, html {
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+.full {
+	width: 1280px;
+	height: 720px;
+	background: url(images/ntttoon_bg.jpg) no-repeat;
+	overflow: hidden;
+	position: absolute;
+	z-index: 1;
+}
+.art {
+	position: absolute;
+	left: 500px;
+	top: 0px;
+	z-index: 2;
+}
+.art img {
+	height: 720px;
+	width: auto;
+}
+.unit_ele {
+	position: absolute;
+	top: 40px;
+	left: 30px;
+}
+.unit_name {
+	font-size: 48px;
+	font-style: italic;
+	font-weight: bold;
+	color: #000;
+	position: absolute;
+	top: 20px;
+	left: 80px;
+	text-shadow: 0 0 1px #000, 0 0 10px #FFCC00,0 0 15px #FFCC00,0 0 20px #FFCC00;
+	z-index: 3;
+}
+.box {
+	position: absolute;
+	left: 30px;
+	z-index: 3;
+}
+.box_subinfo {
+	position: absolute;
+	left: 300px;
+	color: #ffdb9c;
+	font-size: 16px;
+	top: 8px;
+	text-shadow: 1px 1px #000000;
+}
+.box_name {
+	color: #a08f59;
+	font-size: 24px;
+	font-style: italic;
+	font-weight: bold;
+	text-shadow: 1px 1px #000000;
+}
+.box_info {
+	width: 650px;
+	background-color: #322713;
+	opacity: 0.9;
+	border: #a08f59 solid 1px;
+	border-radius: 6px;
+	padding: 5px;
+	font-size: 16px;
+	color: #FFFFFF;
+	font-style: normal;
+	font-weight: normal;
+	text-shadow: 1px 1px #000000;
+}
+.box_copyright {
+	position: absolute;
+	left: 30px;
+	top: 5px;
+	color: #ffffff;
+	font-size: 12px;
+	opacity:0.5;
+}
+</style>
+</head>
+
+<body>
+<div class="full">
+<script>
+	var xmlhttp, xmlDoc;
+	xmlhttp = new XMLHttpRequest();
+	xmlhttp.open("GET", "data.xml", false);
+	xmlhttp.send();
+	xmlDoc = xmlhttp.responseXML;
+	
+	total = xmlDoc.getElementsByTagName("unit").length;
+	var s = getURLParameter('id');
+	
+	for(i=0;i<total;i++)
+	{
+		id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
+		if(id==s)
+		{
+			name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
+			element = xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
+			cost = xmlDoc.getElementsByTagName("cost")[i].childNodes[0].nodeValue;
+			rarity = xmlDoc.getElementsByTagName("rarity")[i].childNodes[0].nodeValue;
+			ls = xmlDoc.getElementsByTagName("ls")[i].childNodes[0].nodeValue;
+			normalhit = xmlDoc.getElementsByTagName("ls")[i].getAttribute("hit");
+			normaldc = xmlDoc.getElementsByTagName("ls")[i].getAttribute("dc");
+			bb = xmlDoc.getElementsByTagName("bb")[i].childNodes[0].nodeValue;
+			bbhit = xmlDoc.getElementsByTagName("bb")[i].getAttribute("hit");
+			bbdc = xmlDoc.getElementsByTagName("bb")[i].getAttribute("dc");
+			bbcost = xmlDoc.getElementsByTagName("bb")[i].getAttribute("cost");
+			sbb = xmlDoc.getElementsByTagName("sbb")[i].childNodes[0].nodeValue;
+			sbbhit = xmlDoc.getElementsByTagName("sbb")[i].getAttribute("hit");
+			sbbdc = xmlDoc.getElementsByTagName("sbb")[i].getAttribute("dc");
+			sbbcost = xmlDoc.getElementsByTagName("sbb")[i].getAttribute("cost");
+			ubb = xmlDoc.getElementsByTagName("ubb")[i].childNodes[0].nodeValue;
+			ubbhit = xmlDoc.getElementsByTagName("ubb")[i].getAttribute("hit");
+			ubbdc = xmlDoc.getElementsByTagName("ubb")[i].getAttribute("dc");
+			ubbcost = xmlDoc.getElementsByTagName("ubb")[i].getAttribute("cost");
+			escondition = xmlDoc.getElementsByTagName("es")[i].getAttribute("condtion");
+			eseffect = xmlDoc.getElementsByTagName("es")[i].childNodes[0].nodeValue;
+			art = xmlDoc.getElementsByTagName("art")[i].getAttribute("path");
+			
+			document.write("<div class='unit_ele wow fadeIn' data-wow-duration='1s' data-wow-delay='0.5s'><img src=images/" + nameElement(element) + " width='40' height='40'></div>");
+			document.write("<div class='unit_name wow fadeIn' data-wow-duration='1s' data-wow-delay='0.5s'>" + name + "</div>");
+			//Leader skill
+			document.write("<div class='box wow fadeInLeft' data-wow-duration='1s' data-wow-delay='1s' style='top:100px;'>");
+				document.write("<div class='box_subinfo'>" + normalhit + " hits / " + normaldc + " DC</div>");
+				document.write("<div class='box_name'>Leader Skill</div>");
+				document.write("<div class='box_info'>" + ls + "</div>");
+			document.write("</div>");
+			//BB
+			document.write("<div class='box wow fadeInLeft' data-wow-duration='1s' data-wow-delay='1.1s' style='top:220px;'>");
+				document.write("<div class='box_subinfo'>" + bbhit + " hits / " + bbdc + " DC / Cost: " + bbcost + " BC</div>");
+				document.write("<div class='box_name'>Brave Burst</div>");
+				document.write("<div class='box_info'>" + bb + "</div>");
+			document.write("</div>");
+			//SBB
+			document.write("<div class='box wow fadeInLeft' data-wow-duration='1s' data-wow-delay='1.2s' style='top:340px;'>");
+				document.write("<div class='box_subinfo'>" + sbbhit + " hits / " + sbbdc + " DC / Cost: " + sbbcost + " BC</div>");
+				document.write("<div class='box_name'>Super Brave Burst</div>");
+				document.write("<div class='box_info'>" + sbb + "</div>");
+			document.write("</div>");
+			//UBB
+			document.write("<div class='box wow fadeInLeft' data-wow-duration='1s' data-wow-delay='1.3s' style='top:460px;'>");
+				document.write("<div class='box_subinfo'>" + ubbhit + " hits / " + ubbdc + " DC / Cost: " + ubbcost + " BC</div>");
+				document.write("<div class='box_name'>Ultimate Brave Burst</div>");
+				document.write("<div class='box_info'>" + ubb + "</div>");
+			document.write("</div>");
+			//ES
+			document.write("<div class='box wow fadeInLeft' data-wow-duration='1s' data-wow-delay='1.4s' style='top:580px;'>");
+				document.write("<div class='box_name'>Extra Skill</div>");
+				document.write("<div class='box_info'><u>Condition</u>: " + escondition + "<br/><u>Effect</u>: " + eseffect + "</div>");
+			document.write("</div>");
+			//
+			document.write("<div class='box_copyright'>Copyright by Alim/Gumi - Datamine: Deathmax/bravefrontierpros - Design & Dev: ntttoon</div>");
+			document.write("<div class='art wow fadeInRight' data-wow-duration='1s' data-wow-delay='0'><img src=" + art + "></div>");
+		}
+	}
+</script>
+</div>
+<!--
+<div class="full">
+  <div class="unit_ele"><img src="images/Element_Light.png" width="40" height="40"></div>
+  <div class="unit_name">Grave Carver Aaron</div>
+  <div class="box" style="top:100px;">
+    <div class="box_subinfo">10 hits / 20 DC</div>
+    <div class="box_name">Leader Skill</div>
+    <div class="box_info">100% Chance Drain 3-8% HP (ALL) / 80% ATK (ALL)</div>
+  </div>
+  <div class="box" style="top:220px;">
+    <div class="box_subinfo">20 hits / 20 DC / Cost: 20 BC</div>
+    <div class="box_name">Brave Burst</div>
+    <div class="box_info">560% Fire (TGT) / Gradual Heal 3Turns</div>
+  </div>
+  <div class="box" style="top:340px;">
+    <div class="box_subinfo">20 hits / 20 DC / Cost: 20 BC</div>
+    <div class="box_name">Super Brave Burst</div>
+    <div class="box_info">620% Fire (AOE) / Convert 10% HP to ATK (SELF) 3Turns</div>
+  </div>
+  <div class="box" style="top:460px;">
+    <div class="box_subinfo">20 hits / 20 DC / Cost: 20 BC</div>
+    <div class="box_name">Ultimate Brave Burst</div>
+    <div class="box_info">1200% Dark (AOE) / Inflict 100% Injury 100% Weak 100% Sick 100% Poison 100% Para 100% Curse on ATKed (ALL) 3Turns / Add 100% Injury 100% Weak 100% Sick to ATK (ALL) 3Turns / Add 100% Poison 100% Para 100% Curse to ATK (ALL) 3Turns</div>
+  </div>
+  <div class="box" style="top:580px;">
+    <div class="box_name">Extra Skill</div>
+    <div class="box_info">Condition: Full HP SELF Effect: 80% ATK+ SELF (Stacks with all other ATK buffs)</div>
+  </div>
+  <div class="box_copyright">Copyright by Alim/Gumi - Datamine: Deathmax/bravefrontierpros - Design: ntttoon</div>
+  <div class="art"><img src="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10116.png"></div>
+</div>
+-->
+</body>
+</html>

@@ -10,6 +10,7 @@
 
 <body>
 <div class="w3-image" id="artbox"></div>
+<div id="big_btn"></div>
 <ul class="w3-ul">
 <script>
 	var xmlhttp, xmlDoc;
@@ -49,7 +50,8 @@
 			eseffect = xmlDoc.getElementsByTagName("es")[i].childNodes[0].nodeValue;
 			art = xmlDoc.getElementsByTagName("art")[i].getAttribute("path");
 
-			document.getElementById('artbox').innerHTML = "<img src=" + art + " />"
+			document.getElementById('artbox').innerHTML = "<img src=" + art + " />";
+			document.getElementById('big_btn').innerHTML = "<a class='w3-btn w3-teal' style='width:100%'" + 'href="unitinfo_big.html?id=' + id + '">View big size (for PC only)</a>';
 			document.write('<li><h3>' + name + '</h3></li>');
 			document.write('<li>' + "ID: " + id + " - Element: " + element + "<br>Rarity: " + rarity + "*" + " - Cost: " + cost + '</li>');
 			document.write('<li><strong>LS: </strong>' + 'hit: ' + normalhit + ' - dc: ' + normaldc + '<br>' + ls + '</li>');
