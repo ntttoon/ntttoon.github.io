@@ -1073,8 +1073,8 @@
 		<rarity>7</rarity>
 		<cost>40</cost>
 		<ls hit="12" dc="36" >100% Chance 3-5BC Fill when ATKed (ALL) / 40% HP (ALL) / Null Ails (ALL)</ls>
-		<bb hit="14" dc="14" cost="23" >Thunder (AOE) / Taunt (250% DEF+) (SELF) 1Turns</bb>
-		<sbb hit="16" dc="16" cost="27" >Thunder (AOE) / Taunt (250% DEF+) (SELF) 1Turns / 100% ATK+ 100% DEF+ 100% REC+ (ALL) 3Turns</sbb>
+		<bb hit="14" dc="14" cost="23" >280% Thunder (AOE) / Taunt (250% DEF+) (SELF) 1Turns</bb>
+		<sbb hit="16" dc="16" cost="27" >500% Thunder (AOE) / Taunt (250% DEF+) (SELF) 1Turns / 100% ATK+ 100% DEF+ 100% REC+ (ALL) 3Turns</sbb>
 		<ubb hit="18" dc="18" cost="25" >1000% Thunder (AOE) / 500BC Fill 1Turn (ALL) / Reduce DMG (50%) 3Turns / 200% ATK+ 200% DEF+ 200% REC+ (ALL) 3Turns</ubb>
 		<es condtion="Forgebreaker sphere equipped" >40% HP 40% DEF (SELF) / Nulls Elemental Weakness (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840257.png"></art>
@@ -1086,10 +1086,10 @@
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
-		<ls hit="10" dc="10" >Reduce DMG (10%) (ALL) / Null Ails (ALL)</ls>
-		<bb hit="" dc="" cost="25" >4BC Fill 3Turns / Gradual Heal 3Turns / Cure Ails</bb>
-		<sbb hit="23" dc="23" cost="21" >Earth,light,dark (AOE) / 5BC Fill 3Turns / Null Ails 3Turns</sbb>
-		<ubb hit="33" dc="33" cost="25" >Earth,light,dark (AOE) / Reduce DMG (50%) 3Turns / Gradual Heal 3Turns</ubb>
+		<ls hit="10" dc="20" >Reduce DMG (10%) (ALL) / Null Ails (ALL)</ls>
+		<bb hit="" dc="" cost="25" >6BC Fill 3Turns / Gradual Heal 3Turns / Cure Ails</bb>
+		<sbb hit="23" dc="23" cost="21" >500% Earth,light,dark (AOE) / 6BC Fill 3Turns / Null Ails 3Turns</sbb>
+		<ubb hit="33" dc="33" cost="25" >1000% Earth,light,dark (AOE) / Reduce DMG (50%) 3Turns / Gradual Heal 3Turns</ubb>
 		<es condtion="None" >15% Chance Reduce DMG to 1 (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830527.png"></art>
 	</unit>
@@ -1100,8 +1100,8 @@
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
-		<ls hit="4" dc="12" >150% CRIT DMG+ (ALL) / 30% HP 30% ATK (ALL)</ls>
-		<bb hit="6" dc="12" cost="22" >560% Fire (TGT) / Ignore DEF (ALL) 2Turns / 50% Chance -50% Enemy ATK 1Turns</bb>
+		<ls hit="4" dc="32" >150% CRIT DMG+ (ALL) / 30% HP 30% ATK (ALL)</ls>
+		<bb hit="6" dc="48" cost="22" >560% Fire (TGT) / Ignore DEF (ALL) 2Turns / 50% Chance -50% Enemy ATK 1Turns</bb>
 		<sbb hit="12" dc="24" cost="26" >620% Fire (AOE) / Convert 10% HP to ATK (SELF) 3Turns / 30% Chance -50% Enemy ATK 1Turns</sbb>
 		<ubb hit="18" dc="36" cost="25" >1000% Fire (AOE) / 50% Chance -50% Enemy ATK 2Turns</ubb>
 		<es condtion="None" >125% Element Weakness DMG+ (SELF)</es>
