@@ -1517,7 +1517,7 @@
 		<bb hit="15" dc="15" cost="27" >300% Fire (AOE) / 6BC Fill 1Turn / 5BC Fill 3Turns / Gradual Heal (ALL) 3Turns</bb>
 		<sbb hit="18" dc="18" cost="30" >Fire (AOE) 240%-740% BB ATK% Based on HP LEFT / 7BC Fill 3Turns / 4-7BC Fill when ATKed (100%) (ALL) 3Turns / Gradual Heal (ALL) 3Turns</sbb>
 		<ubb hit="22" dc="22" cost="30" >1200% Fire (AOE) / 50BC Fill 3Turns / Gradual Heal FULL (ALL) 3Turns / 33% Chance Revive Dead Ally 100% HP (ALL)</ubb>
-		<es condtion="None" >40% Chance Revive 40% HP (SELF) Max 2x</es>
+		<es condtion="None" >25% Chance Heal 20% DMG when ATKed (SELF) / 50% Chance 3-5BC Fill when ATKed (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10776.png"></art>
 	</unit>
 	<unit>
