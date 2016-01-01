@@ -6,22 +6,22 @@ function nameColor(element) {
 		switch(element)
 		{
 			case "Fire":
-				return "#FF0000";
+				return "#e74c3c";
 				break;
 			case "Water":
-				return "#0000FF";
+				return "#4aa3df";
 				break;
 			case "Thunder":
-				return "#FFCC00";
+				return "#f39c12";
 				break;
 			case "Earth":
-				return "#00FF00";
+				return "#2ecc71";
 				break;
 			case "Dark":
-				return "#660099";
+				return "#9b59b6";
 				break;
 			case "Light":
-				return "#CCCCCC";
+				return "#95a5a6";
 				break;
 		}
 }

@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Brave Frontier</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<script src="js/libs.js"></script>
+<script>
+	function loadOption()
+	{
+		var xmlhttp, xmlDoc;
+		xmlhttp = new XMLHttpRequest();
+		xmlhttp.open("GET", "data.xml", false);
+		xmlhttp.send();
+		xmlDoc = xmlhttp.responseXML;
+		
+		total = xmlDoc.getElementsByTagName("unit").length;
+		//
+		for(i=0;i<total;i++)
+		{
+			id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
+			name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
+			ele =  xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
+			document.write("<option value=" + id + " style=color:" + nameColor(ele) + ">" + name + "</option>");
+		}
+	}
+	function writeOption(id_html,id_ls_out,id_bb_out,id_sbb_out,id_ubb_out,id_es_out)
+	{
+		var xmlhttp, xmlDoc;
+		xmlhttp = new XMLHttpRequest();
+		xmlhttp.open("GET", "data.xml", false);
+		xmlhttp.send();
+		xmlDoc = xmlhttp.responseXML;
+		//
+		total = xmlDoc.getElementsByTagName("unit").length;
+		//
+		var e = document.getElementById(id_html);
+    	var strSel = e.options[e.selectedIndex].value;
+    	//alert(strSel);
+		for(i=0;i<total;i++)
+		{
+			id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
+			ele =  xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
+			ls =  xmlDoc.getElementsByTagName("ls")[i].childNodes[0].nodeValue;
+			bb =  xmlDoc.getElementsByTagName("bb")[i].childNodes[0].nodeValue;
+			sbb =  xmlDoc.getElementsByTagName("sbb")[i].childNodes[0].nodeValue;
+			ubb =  xmlDoc.getElementsByTagName("ubb")[i].childNodes[0].nodeValue;
+			es =  xmlDoc.getElementsByTagName("es")[i].childNodes[0].nodeValue;
+			if(id==strSel)
+			{
+				document.getElementById(id_ls_out).innerHTML = ls;
+				document.getElementById(id_bb_out).innerHTML = "BB: <span style='color:" + nameColor(ele) + "'>" + bb + "</span>";
+				document.getElementById(id_sbb_out).innerHTML = "SBB: <span style='color:" + nameColor(ele) + "'>" + sbb + "</span>";
+				document.getElementById(id_ubb_out).innerHTML = "UBB: <span style='color:" + nameColor(ele) + "'>" + ubb + "</span>";
+				document.getElementById(id_es_out).innerHTML = "ES: <span style='color:" + nameColor(ele) + "'>" + es + "</span>";
+			}
+		}
+	}
+</script>
+</head>
+
+<body>
+<header class="w3-container w3-teal w3-card-2">
+  <h5>BUILD TEAM</h5>
+</header>
+<div class="w3-container">
+  <h5>Leader</h5>
+  <select class="w3-select" name="leader" id="leader" onChange='writeOption("leader","ls1","bb1","sbb1","ubb1","es1")'>
+    <option value="" disabled selected>Choose your option</option>
+    <script>
+        loadOption();
+    </script>
+  </select>
+  <h5>Friend</h5>
+  <select class="w3-select" name="friend" id="friend" onChange='writeOption("friend","ls2","bb2","sbb2","ubb2","es2")'>
+    <option value="" disabled selected>Choose your option</option>
+    <script>
+        loadOption();
+    </script>
+  </select>
+  <h5>Unit 3 in team</h5>
+  <select class="w3-select" name="unit3" id="unit3" onChange='writeOption("unit3","ls3","bb3","sbb3","ubb3","es3")'>
+    <option value="" disabled selected>Choose your option</option>
+    <script>
+        loadOption();
+    </script>
+  </select>
+  <h5>Unit 4 in team</h5>
+  <select class="w3-select" name="unit4" id="unit4" onChange='writeOption("unit4","ls4","bb4","sbb4","ubb4","es4")'>
+    <option value="" disabled selected>Choose your option</option>
+    <script>
+        loadOption();
+    </script>
+  </select>
+  <h5>Unit 5 in team</h5>
+  <select class="w3-select" name="unit5" id="unit5" onChange='writeOption("unit5","ls5","bb5","sbb5","ubb5","es5")'>
+    <option value="" disabled selected>Choose your option</option>
+    <script>
+        loadOption();
+    </script>
+  </select>
+  <h5>Unit 6 in team</h5>
+  <select class="w3-select" name="unit6" id="unit6" onChange='writeOption("unit6","ls6","bb6","sbb6","ubb6","es6")'>
+    <option value="" disabled selected>Choose your option</option>
+    <script>
+        loadOption();
+    </script>
+  </select>
+</div>
+<br>
+<button onclick="document.getElementById('id01').style.display='block'" class="w3-btn w3-red" style="width:100%">Build Your Team</button>
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-8">
+    <header class="w3-container w3-red"> <span onclick="document.getElementById('id01').style.display='none'" 
+      class="w3-closebtn">×</span>
+      <h5>Your Team</h5>
+    </header>
+    <div class="w3-container" style="font-size:x-small">
+      <h5 style="font-style:italic;text-decoration:underline">Leader Skill</h5>
+      <p id="ls1"></p>
+      <p id="ls2"></p>
+      <p id="ls3" style="display:none"></p>
+      <p id="ls4" style="display:none"></p>
+      <p id="ls5" style="display:none"></p>
+      <p id="ls6" style="display:none"></p>
+      <hr>
+      <h5 style="font-style:italic;text-decoration:underline">BB Skills</h5>
+      <div style="background-color:#eeeeee;padding:5px">
+          <div id="bb1"></div>
+          <div id="sbb1"></div>
+          <div id="ubb1"></div>
+          <div id="es1"></div>
+      </div>
+      <div style="padding:5px">
+          <div id="bb2"></div>
+          <div id="sbb2"></div>
+          <div id="ubb2"></div>
+          <div id="es2"></div>
+      </div>
+      
+      <div style="background-color:#eeeeee;padding:5px">
+          <div id="bb3"></div>
+          <div id="sbb3"></div>
+          <div id="ubb3"></div>
+          <div id="es3"></div>
+      </div>
+      
+      <div style="padding:5px">
+          <div id="bb4"></div>
+          <div id="sbb4"></div>
+          <div id="ubb4"></div>
+          <div id="es4"></div>
+      </div>
+      
+      <div style="background-color:#eeeeee;padding:5px">
+          <div id="bb5"></div>
+          <div id="sbb5"></div>
+          <div id="ubb5"></div>
+          <div id="es5"></div>
+      </div>
+      
+      <div style="padding:5px">
+          <div id="bb6"></div>
+          <div id="sbb6"></div>
+          <div id="ubb6"></div>
+          <div id="es6"></div>
+      </div>
+      
+      <p></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
