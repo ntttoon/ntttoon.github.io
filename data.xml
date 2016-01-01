@@ -1196,7 +1196,7 @@
 	<unit>
 		<id>1085</id>
 		<name>Hailstorm Armor Reeze</name>
-		<role>Cure/Null Ails ,inflict Ails, add Ails to atk buff, convert REC to DEF buff (SBb:40%), Chance Revive buff (UBB)</role>
+		<role>Cure/Null Ails ,inflict Ails, add Ails to atk buff, convert REC to DEF buff (SBB:40%), Chance Revive buff (UBB)</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1783,7 +1783,7 @@
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
-		<ls hit="16" dc="48" >50% BC Fill+ (ALL) / 150% BB ATK%+ (ALL) / 25% BC+ 25% HC+ (ALL) / 25% HP 30% ATK 30% DEF 30% REC (ALL)</ls>
+		<ls hit="16" dc="48" >50% BC Fill+ (ALL) / 150% BB ATK%+ (ALL) / 25% BC+ 25% HC+ (ALL) / 30% HP 30% ATK 30% DEF 30% REC (ALL)</ls>
 		<bb hit="18" dc="18" cost="30" >290% Water (AOE) / 6BC Fill 3Turns / 50% BC Fill+ (ALL) 3Turns / 130% ATK+ 130% DEF+ 130% REC+ (ALL) 3Turns</bb>
 		<sbb hit="20" dc="20" cost="26" >540% Water (AOE) / 8BC Fill (ALL) 1Turn / 200% BB ATK%+ (ALL) 3Turns / 50% Chance -50% Enemy ATK 1Turns / 50% Chance -50% Enemy DEF 1Turns</sbb>
 		<ubb hit="22" dc="22" cost="25" >1200% Water (AOE) / 50BC Fill 3Turns / 200% ATK+ 200% DEF+ 200% REC+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 2Turns</ubb>
