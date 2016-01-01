@@ -4,7 +4,6 @@
 	<unit>
 		<id>852</id>
 		<name>Brimstone Emperor Alpha</name>
-		<role>Nuker, convert HP to ATK buff</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -18,7 +17,6 @@
 	<unit>
 		<id>867</id>
 		<name>Cataclysm Empress Feeva</name>
-		<role>Sparker (SBB:35 hits), BC/HC drop buff (SBB:35%), stats buff</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -32,7 +30,6 @@
 	<unit>
 		<id>861</id>
 		<name>Heavenly Emperor Kanon</name>
-		<role>Leader 30% HP/DEF, Cure Ails, Null Ails, DEF buff (SBB:140%), Miti (UBB)</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -46,7 +43,6 @@
 	<unit>
 		<id>864</id>
 		<name>Frolic Emperor Kira</name>
-		<role>Leader Nuker (150% CRIT DMG, 125% Element Weakness DMG (light,dark)), CRIT buff (60%), ATK/DEF down debuff</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -60,7 +56,6 @@
 	<unit>
 		<id>855</id>
 		<name>Cyclone Emperor Tazer</name>
-		<role>Nuker USBB, SPARK buff</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -74,7 +69,6 @@
 	<unit>
 		<id>858</id>
 		<name>Rose Empress Tora</name>
-		<role>Inflict Ails</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -89,7 +83,6 @@
 	<unit>
 		<id>885</id>
 		<name>Magma Twin-Pike Claire</name>
-		<role>Leader 30% ATK/DEF, Sparker (SBB:30 hits), SPARK buff (SBB:80%), BC drop buff (SBB:30%)</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -103,7 +96,6 @@
 	<unit>
 		<id>888</id>
 		<name>Glacier Twin-Blade Colt</name>
-		<role>Leader 30% HP/REC, Nuker, BB regen buff (SBB:5BC), CRIT buff (SBB:60%)</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -117,7 +109,6 @@
 	<unit>
 		<id>894</id>
 		<name>Thunderbird Sabre Diana</name>
-		<role>BB Supporter, BB Atked buff, BB Regen buff, HC/BC drop buff (20%), BB ATK% buff (UBB:500%)</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -131,7 +122,6 @@
 	<unit>
 		<id>897</id>
 		<name>Radiant Virtue Fadahl</name>
-		<role>ATK/DEF down debuff, Inflict Ails, add Ails to atk buff</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -145,7 +135,6 @@
 	<unit>
 		<id>900</id>
 		<name>Galactic Treasure Ivris</name>
-		<role>Healer, Cure Ails, Null Ails, BB fill (SBB:8BC), Angel Idol 2 Random Units (UBB)</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -159,7 +148,6 @@
 	<unit>
 		<id>891</id>
 		<name>Sylvan Excalibur Quaid</name>
-		<role>Nuker, 4 Elements buff, x3 hit (UBB)</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -174,7 +162,6 @@
 	<unit>
 		<id>925</id>
 		<name>Grave Carver Aaron</name>
-		<role>Mitigator, BB fill (SBB:8BC), DEF buff (SBB:80%)</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -188,7 +175,6 @@
 	<unit>
 		<id>910</id>
 		<name>Inferno Wings Magnazorda</name>
-		<role>Leader miti (-15% Fire,earth), Nuker, add Ails to atk buff, BB fill (SBB:8BC), DoT debuff</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -202,7 +188,6 @@
 	<unit>
 		<id>916</id>
 		<name>Gaia Sennin Oguro</name>
-		<role>Leader 30% HP/DEF, Nuker USBB</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -216,7 +201,6 @@
 	<unit>
 		<id>922</id>
 		<name>Demon Champion Raaga</name>
-		<role>Leader BB SPARK fill + 100% SPARK, Nuker, BC/HC drop buff (BB:20%), SPARK buff (SBB:90%), Stats buff and BB ATK% buff (UBB) </role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -230,7 +214,6 @@
 	<unit>
 		<id>919</id>
 		<name>Flaring Massacre Rize</name>
-		<role>Nuker, HoT, Ignore DEF buff</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -244,7 +227,6 @@
 	<unit>
 		<id>913</id>
 		<name>Tundra Scales Zerafalgar</name>
-		<role>Leader miti (-15% Water,fire), Sparker (SBB:32 hits), BB fill (SBB:5BC), BC drop buff (SBB:30%)</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -259,7 +241,6 @@
 	<unit>
 		<id>962</id>
 		<name>Roaring Crash Balgran</name>
-		<role>Leader Tanker, Inflict Ails, add Ails to atk buff, convert ATK to DEF buff, convert DEF to ATK (UBB)</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -273,7 +254,6 @@
 	<unit>
 		<id>959</id>
 		<name>Cyclonic Blades Dion</name>
-		<role>Leader Nuker (150% CRIT DMG + 125% Element Weakness DMG (earth,thunder)), CRIT buff (BB:60%), BB ATK% buff (SBB:200%), SPARK buff (UBB:150%)</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -287,7 +267,6 @@
 	<unit>
 		<id>956</id>
 		<name>Tidal Nacre Medina</name>
-		<role>BB fill (SBB:10BC), BB ATKed buff, BB ATK% (UBB:500%)</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -301,7 +280,6 @@
 	<unit>
 		<id>965</id>
 		<name>Resplendent Queen Rinon</name>
-		<role>Healer, Cure Ails, Null Ails, 2 Elements buff (Light, dark), BB fill rate buff + HoT (UBB)</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -315,7 +293,6 @@
 	<unit>
 		<id>953</id>
 		<name>Phoenix Torque Ruby</name>
-		<role>Leader BB SPARK fill, Sparker (SBB:40 hits), add ATK down to atk buff, x3 hit + convert REC to ATK (UBB)</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -329,7 +306,6 @@
 	<unit>
 		<id>968</id>
 		<name>Grand Malediction Yuura</name>
-		<role>Nuker, DoT, BB ATKed buff, CRIT DMG buff (UBB:450%)</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -344,7 +320,6 @@
 	<unit>
 		<id>980</id>
 		<name>Inferno Rifle Bestie</name>
-		<role>BB supporter, Leader 30% HP/DEF, BB ATKed buff, BB fill (BB:6BC), BB regen buff (BB:4BC), BB fill rate buff (SBB:30%)</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -358,7 +333,6 @@
 	<unit>
 		<id>989</id>
 		<name>Dragon Scroll Kagura</name>
-		<role>ATK down debuff, add ATK down to atk, Element Weakness DMG buff , x3 hit (UBB)</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -372,7 +346,6 @@
 	<unit>
 		<id>992</id>
 		<name>Turbo Wings Nemethgear</name>
-		<role>Nuker, BB fill rate buff (BB/SBB:30%), CRIT DMG buff + SPARK buff (UBB:300% + 120%)</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -386,7 +359,6 @@
 	<unit>
 		<id>995</id>
 		<name>Hellion Armor Reis</name>
-		<role>Nuker, Leader 30% HP/ATK, CRIT buff (BB/SBB:60%), CRIT DMG buff (SBB:50%), BB ATK% (UBB:500%)</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -400,7 +372,6 @@
 	<unit>
 		<id>986</id>
 		<name>Feral Katana Toutetsu</name>
-		<role>ATK buff (SBB:140%), DoT debuff</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -414,7 +385,6 @@
 	<unit>
 		<id>983</id>
 		<name>Lance Champion Vernil</name>
-		<role>Inflict Ails, Inflict Ails on ATKed buff, BB ATK% buff (SBB:200%), SPARK buff (UBB:200%)</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -429,7 +399,6 @@
 	<unit>
 		<id>1007</id>
 		<name>Indomitable Flare Griff</name>
-		<role>Nuker, Leader 30% HP/ATK, buff 2 Elements (Fire,water), CRIT DMG buff (SBB:50%), CRIT buff (BB/SBB:60%), BB fill rate buff (SBB:30%), convert HP to ATK(UBB)</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -443,7 +412,6 @@
 	<unit>
 		<id>1010</id>
 		<name>Indigo Soul Iris</name>
-		<role>Leader Tanker, buff 2 Elements (Fire,water), miti Element dmg, add ATK/DEF down to atk</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -457,7 +425,6 @@
 	<unit>
 		<id>1022</id>
 		<name>Sinister Basilisk Kafka</name>
-		<role>Inflict Ails on ATKed buff, Inflict Ails to atk buff, buff 2 Elements (Light,dark), convert 10% HP to ATK</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -471,7 +438,6 @@
 	<unit>
 		<id>1019</id>
 		<name>Virtuous Champion Krantz</name>
-		<role>Mitigator, Leader 30% HP, heal,Cure Ails, buff 2 Elements (Light,dark), convert DEF to ATK (UBB)</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -485,7 +451,6 @@
 	<unit>
 		<id>1013</id>
 		<name>Emerald Radiance Libera</name>
-		<role>Hybrid, buff 2 Elements (Earth,thunder), DEF/REC buff (BB:120%), BC/HC drop buff (BB:20%), BB ATKed buff, convert REC to ATK buff, BB ATK% (UBB:500%)</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -499,7 +464,6 @@
 	<unit>
 		<id>1016</id>
 		<name>Roaring Staff Rhoa</name>
-		<role>Leader 30% HP/ATK + BB SPARK fill, buff 2 Elements (Earth,thunder), SPARK buff (SBB:70%), SPARK debuff</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -514,7 +478,6 @@
 	<unit>
 		<id>1056</id>
 		<name>Soul Covenant Charis</name>
-		<role>Normal ATK buffer (LS/BB/SBB:x2 hits, UBB:x3 hits), BC/HC drop buff (BB:35%), convert DEF to ATK buff</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -528,7 +491,6 @@
 	<unit>
 		<id>1047</id>
 		<name>Quatre Marinus Duran</name>
-		<role>BB fill (SBB:10BC), ATK down debuff, add ATK down to atk</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -542,7 +504,6 @@
 	<unit>
 		<id>1044</id>
 		<name>Wave Breaker Quartz</name>
-		<role>Buff HP permanent, DoT, HoT, convert HP to ATK, Chance Revive buff (UBB)</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -556,7 +517,6 @@
 	<unit>
 		<id>1050</id>
 		<name>Storm Chieftess Mahalu</name>
-		<role>Nuker, ATK buff (SBB:130%), SPARK buff (SBB:70%), HC/BC drop buff (BB:25%)</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -570,7 +530,6 @@
 	<unit>
 		<id>1053</id>
 		<name>Angelic Champion Nadore</name>
-		<role>Nuker, Element Weakness buff, stats buff (SBB:120%), BB ATKed buff</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -584,7 +543,6 @@
 	<unit>
 		<id>1041</id>
 		<name>Phosphor Crystal Rineth</name>
-		<role>Nuker, Element Weakness buff, BB regen buff (SBB:7BC), DEF down debuff</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -599,7 +557,6 @@
 	<unit>
 		<id>801</id>
 		<name>Flame Legend Vargas</name>
-		<role>Leader 30% HP 100% ATK for Fire units, ATK buff, ATK down debuff (UBB)</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>38</cost>
@@ -613,7 +570,6 @@
 	<unit>
 		<id>802</id>
 		<name>Ice Legend Selena</name>
-		<role>Leader 30% HP 100% ATK for Water units, HoT, x3 hit (UBB)</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>38</cost>
@@ -627,7 +583,6 @@
 	<unit>
 		<id>803</id>
 		<name>Earth Legend Lance</name>
-		<role>Leader 30% HP 100% ATK for Earth units, DEF buff, convert DEF to ATK buff (UBB)</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>38</cost>
@@ -641,7 +596,6 @@
 	<unit>
 		<id>804</id>
 		<name>Thunder Legend Eze</name>
-		<role>Leader 30% HP 100% ATK for Thunder units, ATK buff, SPARK buff (UBB)</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>38</cost>
@@ -655,7 +609,6 @@
 	<unit>
 		<id>805</id>
 		<name>Light Legend Atro</name>
-		<role>Leader 30% HP 100% ATK for Light units, ATK/DEF buff, BB fill + stats buff (UBB)</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>38</cost>
@@ -669,7 +622,6 @@
 	<unit>
 		<id>806</id>
 		<name>Dark Legend Magress</name>
-		<role>Leader 30% HP 100% ATK for Dark units, DEF buff, Miti 100% (UBB)</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>38</cost>
@@ -684,7 +636,6 @@
 	<unit>
 		<id>880</id>
 		<name>Angelic Blades Sefia</name>
-		<role>Inflict Para, add Para to ATK, BC drop buff (SBB:35%), x3 hit + ATK down debuff (UBB)</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -698,7 +649,6 @@
 	<unit>
 		<id>881</id>
 		<name>Demonic Idol Kikuri</name>
-		<role>Inflict Curse, add Curse to ATK, BB ATKed buff, ATK buff + DoT debuff (UBB)</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -713,7 +663,6 @@
 	<unit>
 		<id>901</id>
 		<name>Phoenix Wings Lava</name>
-		<role>Nuker, Ignore DEF buff, BB ATK% buff (SBB:200%, UBB:500%)</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -727,7 +676,6 @@
 	<unit>
 		<id>903</id>
 		<name>Valkyrie Archangel Griel</name>
-		<role>Leader 30% HP + Null Ails, BC/HC drop buff (SBB:30%), ATK/DEF down debuff</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -741,7 +689,6 @@
 	<unit>
 		<id>902</id>
 		<name>Leviathan Sage Elimo</name>
-		<role>Mitigator, Healer, Cure/Null Ails, DEF buff (SBB:140%), HoT</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -756,7 +703,6 @@
 	<unit>
 		<id>948</id>
 		<name>Flora Aegis Edea</name>
-		<role>Mitigator, add Ails to atk buff</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -770,7 +716,6 @@
 	<unit>
 		<id>949</id>
 		<name>Celestial Archer Loch</name>
-		<role>Nuker, SPARK buff</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -784,7 +729,6 @@
 	<unit>
 		<id>950</id>
 		<name>Inferno Princess Alice</name>
-		<role>Hybrid, Heal, inflict Curse, convert REC to ATK buff, BB fill rate buff, HoT + REC buff (UBB) </role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -799,7 +743,6 @@
 	<unit>
 		<id>975</id>
 		<name>Ice Bastion Zeldeus</name>
-		<role>Mitigator, Leader 30% HP/DEF ,DEF buff (SBB:140%), conver DEF to ATK buff</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -813,7 +756,6 @@
 	<unit>
 		<id>976</id>
 		<name>Gaia Tree Vertri</name>
-		<role>Healer, Cure Ails / Null Ails buff, BB fill (SBB:8BC), BB fill rate buff (SBB:30%), HoT + Chance Revive buff (UBB)</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -827,7 +769,6 @@
 	<unit>
 		<id>977</id>
 		<name>Angelic Paladin Will</name>
-		<role>Hybrid, Sparker(SBB), heal, HoT, BC/HC drop buff (BB:25%), BB ATK% buff (SBB:180%), buff Light element, miti 100% (Dark) + ATK/DEF down debuff (UBB)</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -842,7 +783,6 @@
 	<unit>
 		<id>1002</id>
 		<name>Wildfire Lotus Michele</name>
-		<role>Nuker, Leader 30% HP 100% ATK, buff 2 Elements (Fire, dark), ATK buff (SBB:140%), CRIT buff (SBB:40%), CRIT DMG buff (UBB:300%)</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -856,7 +796,6 @@
 	<unit>
 		<id>1003</id>
 		<name>Immortal Beast Sargavel</name>
-		<role>Leader 40% HP, Cure Ails / Null Ails, buff HP permanent, BB fill rate buff (SBB:30%), convert HP to ATK + SPARK debuff (UBB)</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -870,7 +809,6 @@
 	<unit>
 		<id>1004</id>
 		<name>Invictus Xeno Melchio</name>
-		<role>5 Elements dmg, Cure/Null Ails, buff Light element, convert ATK to DEF buff (SBB:30%)</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -885,7 +823,6 @@
 	<unit>
 		<id>997</id>
 		<name>Oracle Knight Ark</name>
-		<role>Leader 35% stats, x3 hit buff (BB), ATK buff (SBB:140%), 6 Elements buff + BB ATK% (UBB:500%)</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -899,7 +836,6 @@
 	<unit>
 		<id>8143</id>
 		<name>Mad Heretic Gazia</name>
-		<role>Mitigator, Leader 35% stats / 10% miti + Hot on guard, convert ATK to DEF buff (BB,SBB:60%), BB ATK% buff (SBB:300%)</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>45</cost>
@@ -913,7 +849,6 @@
 	<unit>
 		<id>1078</id>
 		<name>Sealed God Lucius</name>
-		<role>Buff HP permanent, BC/HC drop buff (BB:35%), BB fill rate buff (SBB:40%), convert HP to ATK (SBB:23%), HP Barrier buff (UBB)</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>45</cost>
@@ -927,7 +862,6 @@
 	<unit>
 		<id>1121</id>
 		<name>Mifa</name>
-		<role>Leader 40% HP, inflict Ails, DoT</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -941,7 +875,6 @@
 	<unit>
 		<id>1156</id>
 		<name>Lugina 7</name>
-		<role>Nuker, USBB, BB fill, ATK buff (BB:120%), DEF buff (SBB:150%), Ignore DEF buff</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -955,7 +888,6 @@
 	<unit>
 		<id>1157</id>
 		<name>Paris 7</name>
-		<role>Hybrid, leader 40%HP ,heal, Null Ails, BC/HC drop buff (BB:30%), BB ATKed buff, stats buff (SBB:130%), Miti (100%) + Hot (UBB)</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -969,7 +901,6 @@
 	<unit>
 		<id>1218</id>
 		<name>Seria 7</name>
-		<role>SPARK buff, DoT, fill on SPARK buff</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -983,7 +914,6 @@
 	<unit>
 		<id>1219</id>
 		<name>Karl 7</name>
-		<role>Leader, BB ATK% buff, OverDrive Gauge Fil, convert HP to ATK, BB fill rate buff (ES:30%)</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -998,7 +928,6 @@
 	<unit>
 		<id>8198</id>
 		<name>Deathless Hadaron</name>
-		<role>NUKER!, inflict Ails, CRIT buff (SBB:60%), CRIT DMG buff (SBB:150% self), Stealth, DEF buff (SBB:120%), ATK/DEF down debuff</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1012,7 +941,6 @@
 	<unit>
 		<id>8197</id>
 		<name>Archangel Aurelia</name>
-		<role>Supporter, Cure Ails / Null Ails, DoT, HoT, BB regen (SBB:4BC), convert REC to DEF (SBB:80%), Chance Revive buff (UBB)</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1026,7 +954,6 @@
 	<unit>
 		<id>8196</id>
 		<name>Neptunian Tridon</name>
-		<role>Hybrid, Leader 40% HP 50% REC 10% miti all, Shield buff, HoT, DEF buff (SBB:140%), BC/HC drop buff (SBB:30%), BB regen, ATK/DEF down debuff</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1040,7 +967,6 @@
 	<unit>
 		<id>8195</id>
 		<name>Herculean Ultor</name>
-		<role>Nuker, Taunt, DoT, CRIT DMG buff (SBB:50%), ATK buff (SBB:200%)</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1054,7 +980,6 @@
 	<unit>
 		<id>8194</id>
 		<name>Obsidian Seraph Zenia</name>
-		<role>Nuker, Leader BB SPARK fill, BB fill (BB:9BC), Ignore DEF buff, SPARK buff (SBB:80%), BB ATK% buff (SBB:200%), x3 hit buff + ATK buff (UBB)</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1068,7 +993,6 @@
 	<unit>
 		<id>8191</id>
 		<name>Deimos Thunderborn</name>
-		<role>Leader 40% HP + Null Ails + BB ATKed, Taunt, stats buff (SBB:100%), Miti (UBB)</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1082,7 +1006,6 @@
 	<unit>
 		<id>8180</id>
 		<name>Chrono Mage Elaina</name>
-		<role>BB regen buff, HoT, Cure Ails / Null Ails</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1096,7 +1019,6 @@
 	<unit>
 		<id>8177</id>
 		<name>Slayer Grandt</name>
-		<role>Nuker, Ignore DEF buff, ATK down debuff, convert HP to ATK</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1110,7 +1032,6 @@
 	<unit>
 		<id>8139.8</id>
 		<name>Imperator Zedus</name>
-		<role>NUKER!, SPARK buff (SBb:80%), Element Weakness DMG buff (BB:50%), CRIT DMG buff (SBB:50%)</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1124,7 +1045,6 @@
 	<unit>
 		<id>8138.8</id>
 		<name>Ruinous Andaria</name>
-		<role>Hybrid, Cure Ails / Null Ails, inflict Ails, BB regen buff (SBB:7BC), BB fill rate buff (SBB:30%)</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1139,7 +1059,6 @@
 	<unit>
 		<id>1038</id>
 		<name>Midnight Allure Lunaris</name>
-		<role>Cure Ails / Null Ails, inflict Ails, add ATK/DEF down to atk buff, Element Weakness DMG buff + OverDrive Gauge Fill (UBB)</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1153,7 +1072,6 @@
 	<unit>
 		<id>1037</id>
 		<name>Glorious Crusader Alyut</name>
-		<role>BB regen buff (SBB:7BC), inflict Ails, HoT, convert DEF to ATK (SBB:60%)</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1167,7 +1085,6 @@
 	<unit>
 		<id>1036</id>
 		<name>Blizzard Fang Signas</name>
-		<role>Nuker, CRIT buff, CRIT DMG buff, miti 100% (Fire) (UBB)</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1181,7 +1098,6 @@
 	<unit>
 		<id>1035</id>
 		<name>Crimson Phoenix Farlon</name>
-		<role>Nuker</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1196,7 +1112,6 @@
 	<unit>
 		<id>1085</id>
 		<name>Hailstorm Armor Reeze</name>
-		<role>Cure/Null Ails ,inflict Ails, add Ails to atk buff, convert REC to DEF buff (SBB:40%), Chance Revive buff (UBB)</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1210,7 +1125,6 @@
 	<unit>
 		<id>1086</id>
 		<name>Immortal Dragon Ragshelm</name>
-		<role>Leader 30% HP/ATK, Ignore DEF buff, ATK/DEF down debuff, add Injury to atk buff, SPARK debuff</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1224,7 +1138,6 @@
 	<unit>
 		<id>1087</id>
 		<name>Fulgor Heroine Shera</name>
-		<role>Mitigator, ATK buff (SBB:130%), BB regen (SBB:7BC)</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1239,7 +1152,6 @@
 	<unit>
 		<id>1134</id>
 		<name>Unleashed Ravana Vishra</name>
-		<role>Nuker, inflict Ails on ATKed buff, BB ATKed buff</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1253,7 +1165,6 @@
 	<unit>
 		<id>1135</id>
 		<name>Mayhem Empress Luly</name>
-		<role>HC/BC drop buff (SBB:30%), convert REC to DEF buff (SBB:50%), BB ATK% buff (UBB:500%)</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1267,7 +1178,6 @@
 	<unit>
 		<id>1136</id>
 		<name>Optimum Mecha Grybe</name>
-		<role>USBB, add ATK down to atk buff, HP Barrier buff (UBB)</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1281,7 +1191,6 @@
 	<unit>
 		<id>1137</id>
 		<name>Vicious Twin-Edge Logan</name>
-		<role>Leader 30% HP 100% ATK (5 elements required), inflict Ails, BB ATKed buff, buff HP permanent + Convert HP to ATK buff (UBB)</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1296,7 +1205,6 @@
 	<unit>
 		<id>1092</id>
 		<name>Pyro Archfiend Adel</name>
-		<role>Mitigator, leader 30% HP/DEF, SPARK buff (BB/SBB:70%, UBB:120%), HoT</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1310,7 +1218,6 @@
 	<unit>
 		<id>1098</id>
 		<name>Gracious Madam Cyan</name>
-		<role>SPARK buff (BB/SBB:70%), BB SPARK fill buff</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1324,7 +1231,6 @@
 	<unit>
 		<id>1101</id>
 		<name>Electrical Storm Eldora</name>
-		<role>Leader 30% HP + 10% miti, BB fill (BB/SBB:8BC), CRIT buff (SBB:60%), CRIT DMG buff (SBB:50%), convert HP to ATK (UBB)</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1338,7 +1244,6 @@
 	<unit>
 		<id>1104</id>
 		<name>Refulgent Savage Jed</name>
-		<role>BC/HP drop buff (BB/SBB:35%), add ATK down to atk buff, BB regen buff</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1352,7 +1257,6 @@
 	<unit>
 		<id>1107</id>
 		<name>Tenebrous Wings Reviora</name>
-		<role>Nuker, leader 30% HP, BB ATKed buff, BB fill rate buff (SBB:40%)</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1366,7 +1270,6 @@
 	<unit>
 		<id>1095</id>
 		<name>Glamorous Peril Savia</name>
-		<role>Leader 30% HP 30% ATK, SPARK DMG debuff, BB regen, ATK buff, x3 hit buff (UBB)</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1381,7 +1284,6 @@
 	<unit>
 		<id>1140</id>
 		<name>Ardent Dawn Avant</name>
-		<role>Nuker, CRIT buff (BB:60%), ATK buff (BB:130%), SPARK DMG debuff, BB ATK% buff (SBB:200%, UBB:300%), Convert HP to ATK buff (SBB:15%), CRIT DMG buff, SPARK buff</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1395,7 +1297,6 @@
 	<unit>
 		<id>1152</id>
 		<name>Merciful Beacon Charla</name>
-		<role>Supporter, BB fill (SBB:6BC), BB regen (BB:7BC), Heal, Cure Ails, HoT buff, BB SPARK fill buff, CRIT buff (SBB:60%), CRIT DMG buff (SBB:75%), SPARK buff (SBB:100%), miti + Chance Revive buff (UBB)</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1409,7 +1310,6 @@
 	<unit>
 		<id>1155</id>
 		<name>Calamity Steel Chrome</name>
-		<role>BB SPARK fill buff, SPARK DMG debuff, Element Weakness DMG buff, SPARK buff (SBB:80%, UBB:130%), BB ATK% buff (UBB:300%)</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1423,7 +1323,6 @@
 	<unit>
 		<id>1146</id>
 		<name>Heavenly Claymore Dolk</name>
-		<role>MITIGATOR!, LEADER 35% stats, Cure Ails, DEF buff (BB:130%), convert ATK to DEF buff (SBB:35%), Nulls stats down debuff, BC/HC drop buff (ES:30%)</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1437,7 +1336,6 @@
 	<unit>
 		<id>1149</id>
 		<name>Thunder Champion Rahgan</name>
-		<role>x2 hit buff (BB/SBB), DoT, convert DEF to ATK buff (SBB:60%)</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1451,7 +1349,6 @@
 	<unit>
 		<id>1143</id>
 		<name>Icicle Mirror Lune</name>
-		<role>Ignore DEF buff, Element Weakness DMG buff, SPARK buff (SBB:70%), BB fill rate buff (ES:50%), BB ATK% buff (UBB:500%)</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1466,7 +1363,6 @@
 	<unit>
 		<id>1173</id>
 		<name>Raydn 7</name>
-		<role>Ignore DEF buff, SPARK buff, convert DEF to ATK buff</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1480,7 +1376,6 @@
 	<unit>
 		<id>1174</id>
 		<name>Golem 7</name>
-		<role>NUKER, leader 40% HP/40% DEF, CRIT buff</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1494,7 +1389,6 @@
 	<unit>
 		<id>1175</id>
 		<name>Rina 7</name>
-		<role>HoT buff, BB ATKed buff, inflict Ails on ATKed</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1509,7 +1403,6 @@
 	<unit>
 		<id>1178</id>
 		<name>Rider Empress Vermilion</name>
-		<role>BB fill, BB regen buff, HoT buff, BB ATKed buff</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1523,7 +1416,6 @@
 	<unit>
 		<id>1181</id>
 		<name>Sacred Lotus Piany</name>
-		<role>BB Fill on SPARK buff, cure Ails, DEF + REC buff (BB: 130%), BB ATK% buff (SBB:200%,UBB:500%), Nulls STATS Debuff, SPARK buff (UBB:120%)</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1537,7 +1429,6 @@
 	<unit>
 		<id>1184</id>
 		<name>Malachite Pike Drevas</name>
-		<role>Leader 30% HP 30% DEF / 15% miti Fire Earth, inflict Ails on ATKed buff, 10% miti Fire Earth buff, DMG+ to Ailed Enemy buff, convert HP to ATK buff (UBB:50%)</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1551,7 +1442,6 @@
 	<unit>
 		<id>1187</id>
 		<name>Prism Lightning Reud</name>
-		<role>Leader 35% stats, BB ATKed buff, HoT buff, BB fill rate buff, convert HP to ATK</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1565,7 +1455,6 @@
 	<unit>
 		<id>1190</id>
 		<name>Seraph Wings Kiravel</name>
-		<role>SPARK buff, SPARK DMG debuff, ATK DOWN debuff</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1579,7 +1468,6 @@
 	<unit>
 		<id>1193</id>
 		<name>Sacred Kinnara Febros</name>
-		<role>Leader 40% HP / 40% ATK, ATK buff, BC/HC drop buff, BB fill, convert ATK to DEF, BB ATK% (UBb:500%)</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1594,7 +1482,6 @@
 	<unit>
 		<id>8148</id>
 		<name>Sanguine Hood Ciara</name>
-		<role>ATK buff (BB:115%, SBB:140%), add Fire Water Earth Thunder buff, Ignore DEF buff, BB ATK% buff (UBB:500%)</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1608,7 +1495,6 @@
 	<unit>
 		<id>8149</id>
 		<name>Pumleficent Semira</name>
-		<role>Null Ails/Cure Ails, inflict Weak Poison Para Curse, BC/HC drop buff</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1623,7 +1509,6 @@
 	<unit>
 		<id>1196</id>
 		<name>Ramna 7</name>
-		<role>Heal, Cure Ails, DEF + REC buff (BB:120%, SBB:130%), Miti(-50%) buff + Element Weakness DMG+ buff (UBB:300%)</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1637,7 +1522,6 @@
 	<unit>
 		<id>1197</id>
 		<name>Ophelia 7</name>
-		<role>BB FILLER, Low BB cost, BB fill, BB regen buff, BC fill rate buff, +20% HP permanent + convert 30% HP to ATK buff + HoT (UBB)</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1651,7 +1535,6 @@
 	<unit>
 		<id>1198</id>
 		<name>Lilith 7</name>
-		<role>Unlimited BB + SBB, Leader 30% HP + 100% ATK, NUKER with AOE dmg + TGT dmg in one (UBB) </role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1665,7 +1548,6 @@
 	<unit>
 		<id>1199</id>
 		<name>Elza 7</name>
-		<role>SPARKER (BB:30 hits, SBB: 40 hits), SPARK buff (BB:80%, SBB:90%, UBB:130%), HoT, add Injury Curse to ATK buff, Miti (100%) Light </role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1680,7 +1562,6 @@
 	<unit>
 		<id>1202</id>
 		<name>Limera 7</name>
-		<role>Leader, Heal, BB fill rate buff, Miti 10% (Fire,water,earth,thunder), convert REC to DEF buff </role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1694,7 +1575,6 @@
 	<unit>
 		<id>1205</id>
 		<name>Farzen 7</name>
-		<role>NUKER, SPARK buff, CRIT buff, CRIT DMG+ buff, SPARK DMG debuff, BB ATK% (UBB)</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1708,7 +1588,6 @@
 	<unit>
 		<id>1208</id>
 		<name>Ester 7</name>
-		<role>Leader, OD fill, BB fill, HoT, BB fill rate buff, + 25% HP permanent / 200% stats (UBB)</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1722,7 +1601,6 @@
 	<unit>
 		<id>1211</id>
 		<name>Jilias 7</name>
-		<role>Leader, ATK buff, BB ATK% buff, BC/HC drop buff, add Injury Para to ATK buff</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1736,7 +1614,6 @@
 	<unit>
 		<id>1214</id>
 		<name>Luce 7</name>
-		<role>Leader, CRIT buff, CRIT DMG+ buff, DoT, Add Fire,water,earth,thunder to ATK, SPARK buff</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1750,7 +1627,6 @@
 	<unit>
 		<id>1217</id>
 		<name>Laberd 7</name>
-		<role>MITIGATOR, Leader, BB ATKed buff, DEF buff, ATK DOWN debuff</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1765,7 +1641,6 @@
 	<unit>
 		<id>8154</id>
 		<name>Infernal Ravager Korzan</name>
-		<role>NUKER, Leader, Heal, BB fill rate buff, Ignore DEF buff, CRIT buff, ATK buff, CRIT DMG+ buff, +10% HP permanent buff, convert HP to ATK buff</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1779,7 +1654,6 @@
 	<unit>
 		<id>8157</id>
 		<name>Boreal Tempest Haile</name>
-		<role>Leader, BB regen buff, BB fill rate buff, STATS buff (BB:130%), BB ATK% (SBB:200%), ATK/DEF DOWN debuff,</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1794,7 +1668,6 @@
 	<unit>
 		<id>1232</id>
 		<name>Phoenix 7</name>
-		<role>Leader, Heal, HoT, Chance Heal when ATKed buff, Chance Angel Idol buff, DoT, Convert HP to DEF buff, +25% Max HP permanent, Fire Barrier</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1808,7 +1681,6 @@
 	<unit>
 		<id>1233</id>
 		<name>Mega 7</name>
-		<role>HoT, HC/BC drop buff, Heal, ATK buff, Convert DEF to ATK buff</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1822,7 +1694,6 @@
 	<unit>
 		<id>1234</id>
 		<name>Sodis 7</name>
-		<role>BB fill rate buff, SPARK buff, ATK to Light buff, BB ATK% buff, ES: miti or SPARK debuff</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1836,7 +1707,6 @@
 	<unit>
 		<id>1235</id>
 		<name>Zephyr 7</name>
-		<role>OverDrive Fill, ATK to Dark buff, STATS buff (SBB:130%), x4 hit buff, Dark Barrier</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1851,7 +1721,6 @@
 	<unit>
 		<id>8162</id>
 		<name>Eternal Guardian Zeruiah</name>
-		<role>Heal, Cure Ails, HC/BC drop buff, add All Elements buff, Miti 75% (UBB:75%), buff HP permanent (UBB:25%), convert REC to DEF buff (UBB:100%)</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1866,7 +1735,6 @@
 	<unit>
 		<id>1238</id>
 		<name>Gyrodorf 7</name>
-		<role>SPARK buff, BC/HC drop buff, USBB</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1880,7 +1748,6 @@
 	<unit>
 		<id>1241</id>
 		<name>Klaus 7</name>
-		<role>ATK/DEF DOWN debuff, BB regen buff, BB ATKed buff, add ATK DOWN to atk, convert ATK to DEF buff</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1894,7 +1761,6 @@
 	<unit>
 		<id>1244</id>
 		<name>Isuterio 7</name>
-		<role>buff HP permanent, inflict all Ails, BB ATK% buff, convert HP to ATK buff, add all Ails to atk buff</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1908,7 +1774,6 @@
 	<unit>
 		<id>1247</id>
 		<name>Raphyr 7</name>
-		<role>Mitigator, BB fill on SPARK buff, BB ATKed buff</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1922,7 +1787,6 @@
 	<unit>
 		<id>1250</id>
 		<name>Reinhart 7</name>
-		<role>Leader 35% stats, Cure Ails / Null Ails 3Turns / Null STATS Debuff, BB fill, convert HP to DEF buff, Reduce DMG (SBB: 10%, UBB: 100%) from (Fire,water,earth,thunder) buff</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1936,7 +1800,6 @@
 	<unit>
 		<id>1253</id>
 		<name>Marybelle 7</name>
-		<role>BB fill, Chance CRIT on SPARK buff, USBB, DoT debuff, BB ATK% buff</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1951,7 +1814,6 @@
 	<unit>
 		<id>1254</id>
 		<name>Owen 7</name>
-		<role>Leader 50% STATS, CRIT buff, ATK + DEF buff, convert DEF to ATK buff, CRIT DMG+ buff, DoT, BB ATK% buff</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>45</cost>
@@ -1965,7 +1827,6 @@
 	<unit>
 		<id>1255</id>
 		<name>Grahdens 7</name>
-		<role>Leader 50% STATS, Null Ails buff / Null STATS Debuff, buff LIGHT / DARK to atk, HP Barrier (Dark), 20% OD Fill+ buff, BB regen buff, HoT</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>45</cost>

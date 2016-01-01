@@ -36,9 +36,8 @@
 		name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
 		if (name.match(re)) {
 			id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
-			role =  xmlDoc.getElementsByTagName("role")[i].childNodes[0].nodeValue;
 			element =  xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
-			document.write('<li><h3><strong><a style="text-decoration:none;color:' + nameColor(element) +  '" href="unitinfo.html?id=' + id + '">' + name + '</a></strong></h3><em>' + role + '</em></li>');
+			document.write('<li><h3><strong><a style="text-decoration:none;color:' + nameColor(element) +  '" href="unitinfo.html?id=' + id + '">' + name + '</a></strong></h3></li>');
 		}
 	}
 </script>
