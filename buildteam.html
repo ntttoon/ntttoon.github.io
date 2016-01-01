@@ -25,7 +25,7 @@
 			document.write("<option value=" + id + " style=color:" + nameColor(ele) + ">" + name + "</option>");
 		}
 	}
-	function writeOption(id_html,id_ls_out,id_bb_out,id_sbb_out,id_ubb_out,id_es_out)
+	function writeOption(id_html,id_role_out,id_ls_out,id_bb_out,id_sbb_out,id_ubb_out,id_es_out)
 	{
 		var xmlhttp, xmlDoc;
 		xmlhttp = new XMLHttpRequest();
@@ -43,6 +43,7 @@
 			id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
 			ele =  xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
 			ls =  xmlDoc.getElementsByTagName("ls")[i].childNodes[0].nodeValue;
+			role =  xmlDoc.getElementsByTagName("role")[i].childNodes[0].nodeValue;
 			bb =  xmlDoc.getElementsByTagName("bb")[i].childNodes[0].nodeValue;
 			sbb =  xmlDoc.getElementsByTagName("sbb")[i].childNodes[0].nodeValue;
 			ubb =  xmlDoc.getElementsByTagName("ubb")[i].childNodes[0].nodeValue;
@@ -50,6 +51,7 @@
 			if(id==strSel)
 			{
 				document.getElementById(id_ls_out).innerHTML = ls;
+				document.getElementById(id_role_out).innerHTML = "<span style='color:" + nameColor(ele) + "'>" + role + "</span>";
 				document.getElementById(id_bb_out).innerHTML = "BB: <span style='color:" + nameColor(ele) + "'>" + bb + "</span>";
 				document.getElementById(id_sbb_out).innerHTML = "SBB: <span style='color:" + nameColor(ele) + "'>" + sbb + "</span>";
 				document.getElementById(id_ubb_out).innerHTML = "UBB: <span style='color:" + nameColor(ele) + "'>" + ubb + "</span>";
@@ -66,42 +68,42 @@
 </header>
 <div class="w3-container">
   <h5>Leader</h5>
-  <select class="w3-select" name="leader" id="leader" onChange='writeOption("leader","ls1","bb1","sbb1","ubb1","es1")'>
+  <select class="w3-select" name="leader" id="leader" onChange='writeOption("leader","role1","ls1","bb1","sbb1","ubb1","es1")'>
     <option value="" disabled selected>Choose your option</option>
     <script>
         loadOption();
     </script>
   </select>
   <h5>Friend</h5>
-  <select class="w3-select" name="friend" id="friend" onChange='writeOption("friend","ls2","bb2","sbb2","ubb2","es2")'>
+  <select class="w3-select" name="friend" id="friend" onChange='writeOption("friend","role2","ls2","bb2","sbb2","ubb2","es2")'>
     <option value="" disabled selected>Choose your option</option>
     <script>
         loadOption();
     </script>
   </select>
   <h5>Unit 3 in team</h5>
-  <select class="w3-select" name="unit3" id="unit3" onChange='writeOption("unit3","ls3","bb3","sbb3","ubb3","es3")'>
+  <select class="w3-select" name="unit3" id="unit3" onChange='writeOption("unit3","role3","ls3","bb3","sbb3","ubb3","es3")'>
     <option value="" disabled selected>Choose your option</option>
     <script>
         loadOption();
     </script>
   </select>
   <h5>Unit 4 in team</h5>
-  <select class="w3-select" name="unit4" id="unit4" onChange='writeOption("unit4","ls4","bb4","sbb4","ubb4","es4")'>
+  <select class="w3-select" name="unit4" id="unit4" onChange='writeOption("unit4","role4","ls4","bb4","sbb4","ubb4","es4")'>
     <option value="" disabled selected>Choose your option</option>
     <script>
         loadOption();
     </script>
   </select>
   <h5>Unit 5 in team</h5>
-  <select class="w3-select" name="unit5" id="unit5" onChange='writeOption("unit5","ls5","bb5","sbb5","ubb5","es5")'>
+  <select class="w3-select" name="unit5" id="unit5" onChange='writeOption("unit5","role5","ls5","bb5","sbb5","ubb5","es5")'>
     <option value="" disabled selected>Choose your option</option>
     <script>
         loadOption();
     </script>
   </select>
   <h5>Unit 6 in team</h5>
-  <select class="w3-select" name="unit6" id="unit6" onChange='writeOption("unit6","ls6","bb6","sbb6","ubb6","es6")'>
+  <select class="w3-select" name="unit6" id="unit6" onChange='writeOption("unit6","role6","ls6","bb6","sbb6","ubb6","es6")'>
     <option value="" disabled selected>Choose your option</option>
     <script>
         loadOption();
@@ -113,7 +115,7 @@
 <div id="id01" class="w3-modal">
   <div class="w3-modal-content w3-card-8">
     <header class="w3-container w3-red"> <span onclick="document.getElementById('id01').style.display='none'" 
-      class="w3-closebtn">×</span>
+class="w3-closebtn">×</span>
       <h5>Your Team</h5>
     </header>
     <div class="w3-container">
@@ -126,47 +128,66 @@
       <p id="ls6" style="display:none"></p>
       <hr>
       <h5 style="font-style:italic;text-decoration:underline">BB Skills</h5>
-      <div style="background-color:#eeeeee;padding:5px">
-          <div id="bb1"></div>
-          <div id="sbb1"></div>
-          <div id="ubb1"></div>
-          <div id="es1"></div>
-      </div>
-      <div style="padding:5px">
-          <div id="bb2"></div>
-          <div id="sbb2"></div>
-          <div id="ubb2"></div>
-          <div id="es2"></div>
-      </div>
-      
-      <div style="background-color:#eeeeee;padding:5px">
-          <div id="bb3"></div>
-          <div id="sbb3"></div>
-          <div id="ubb3"></div>
-          <div id="es3"></div>
-      </div>
-      
-      <div style="padding:5px">
-          <div id="bb4"></div>
-          <div id="sbb4"></div>
-          <div id="ubb4"></div>
-          <div id="es4"></div>
-      </div>
-      
-      <div style="background-color:#eeeeee;padding:5px">
-          <div id="bb5"></div>
-          <div id="sbb5"></div>
-          <div id="ubb5"></div>
-          <div id="es5"></div>
-      </div>
-      
-      <div style="padding:5px">
-          <div id="bb6"></div>
-          <div id="sbb6"></div>
-          <div id="ubb6"></div>
-          <div id="es6"></div>
-      </div>
-      
+      <!--block-->
+      <div class="w3-tooltip">
+        <div id="role1"></div>
+        <span class="w3-text w3-tag" style="text-align:left;width:100%;font-size:11px">
+            <div id="bb1"></div>
+            <div id="sbb1"></div>
+            <div id="ubb1"></div>
+            <div id="es1"></div>
+        </span>
+	  </div>
+      <!--block-->
+      <div class="w3-tooltip">
+        <div id="role2"></div>
+        <span class="w3-text w3-tag" style="text-align:left;width:100%;font-size:11px">
+            <div id="bb2"></div>
+            <div id="sbb2"></div>
+            <div id="ubb2"></div>
+            <div id="es2"></div>
+        </span>
+	  </div>
+      <!--block-->
+      <div class="w3-tooltip">
+        <div id="role3"></div>
+        <span class="w3-text w3-tag" style="text-align:left;width:100%;font-size:11px">
+            <div id="bb3"></div>
+            <div id="sbb3"></div>
+            <div id="ubb3"></div>
+            <div id="es3"></div>
+        </span>
+	  </div>
+      <!--block-->
+      <div class="w3-tooltip">
+        <div id="role4"></div>
+        <span class="w3-text w3-tag" style="text-align:left;width:100%;font-size:11px">
+            <div id="bb4"></div>
+            <div id="sbb4"></div>
+            <div id="ubb4"></div>
+            <div id="es4"></div>
+        </span>
+	  </div>
+      <!--block-->
+      <div class="w3-tooltip">
+        <div id="role5"></div>
+        <span class="w3-text w3-tag" style="text-align:left;width:100%;font-size:11px">
+            <div id="bb5"></div>
+            <div id="sbb5"></div>
+            <div id="ubb5"></div>
+            <div id="es5"></div>
+        </span>
+	  </div>
+      <!--block-->
+      <div class="w3-tooltip">
+        <div id="role6"></div>
+        <span class="w3-text w3-tag" style="text-align:left;width:100%;font-size:11px">
+            <div id="bb6"></div>
+            <div id="sbb6"></div>
+            <div id="ubb6"></div>
+            <div id="es6"></div>
+        </span>
+	  </div>
       <p></p>
     </div>
   </div>
