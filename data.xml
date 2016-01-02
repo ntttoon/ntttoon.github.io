@@ -4,6 +4,7 @@
 	<unit>
 		<id>852</id>
 		<name>Brimstone Emperor Alpha</name>
+		<role>Drain ATK HoT Convert</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -17,6 +18,7 @@
 	<unit>
 		<id>867</id>
 		<name>Cataclysm Empress Feeva</name>
+		<role>ATK DEF REC BC HC</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -30,6 +32,7 @@
 	<unit>
 		<id>861</id>
 		<name>Heavenly Emperor Kanon</name>
+		<role>HP DEF Null Cure Miti</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -43,6 +46,7 @@
 	<unit>
 		<id>864</id>
 		<name>Frolic Emperor Kira</name>
+		<role>CRIT Weakness Ignore ATKDOWN DEFDOWN ATK</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -56,6 +60,7 @@
 	<unit>
 		<id>855</id>
 		<name>Cyclone Emperor Tazer</name>
+		<role>Spark HC BC Ignore USBB</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -69,6 +74,7 @@
 	<unit>
 		<id>858</id>
 		<name>Rose Empress Tora</name>
+		<role>Drain Injury Weak Sick Poison Para Curse BB ATKed</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -83,6 +89,7 @@
 	<unit>
 		<id>885</id>
 		<name>Magma Twin-Pike Claire</name>
+		<role>Spark ATK DEF BC</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -96,6 +103,7 @@
 	<unit>
 		<id>888</id>
 		<name>Glacier Twin-Blade Colt</name>
+		<role>CRIT HP REC BB ATK</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -109,6 +117,7 @@
 	<unit>
 		<id>894</id>
 		<name>Thunderbird Sabre Diana</name>
+		<role>BB ATKed HC BC</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -122,6 +131,7 @@
 	<unit>
 		<id>897</id>
 		<name>Radiant Virtue Fadahl</name>
+		<role>BB Injury Weak Sick Poison Para Curse ATKDOWN DEFDOWN</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -135,6 +145,7 @@
 	<unit>
 		<id>900</id>
 		<name>Galactic Treasure Ivris</name>
+		<role>BB Heal Cure Null Idol</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -148,6 +159,7 @@
 	<unit>
 		<id>891</id>
 		<name>Sylvan Excalibur Quaid</name>
+		<role>BB BC ATK Fire,water,earth,thunder,light,dark hit</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -162,6 +174,7 @@
 	<unit>
 		<id>925</id>
 		<name>Grave Carver Aaron</name>
+		<role>BB DEF Miti</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -175,6 +188,7 @@
 	<unit>
 		<id>910</id>
 		<name>Inferno Wings Magnazorda</name>
+		<role>Injury Weak Miti BB DoT</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -188,6 +202,7 @@
 	<unit>
 		<id>916</id>
 		<name>Gaia Sennin Oguro</name>
+		<role>ATKed HP DEF BB ATK USBB Ignore</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -201,6 +216,7 @@
 	<unit>
 		<id>922</id>
 		<name>Demon Champion Raaga</name>
+		<role>Spark BC HC ATK DEF REC BB</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -214,6 +230,7 @@
 	<unit>
 		<id>919</id>
 		<name>Flaring Massacre Rize</name>
+		<role>HC ATK HoT Ignore</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -227,6 +244,7 @@
 	<unit>
 		<id>913</id>
 		<name>Tundra Scales Zerafalgar</name>
+		<role>Spark Miti BC BB ATKDOWN</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -241,6 +259,7 @@
 	<unit>
 		<id>962</id>
 		<name>Roaring Crash Balgran</name>
+		<role>ATKed BB Miti DEF Poison Para Curse Injury Weak Sick Convert ATK</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -254,6 +273,7 @@
 	<unit>
 		<id>959</id>
 		<name>Cyclonic Blades Dion</name>
+		<role>CRIT Weakness BB Spark</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -267,6 +287,7 @@
 	<unit>
 		<id>956</id>
 		<name>Tidal Nacre Medina</name>
+		<role>BB ATKed Miti</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -280,6 +301,7 @@
 	<unit>
 		<id>965</id>
 		<name>Resplendent Queen Rinon</name>
+		<role>Heal Null Cure Light,dark BB HoT</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -293,6 +315,7 @@
 	<unit>
 		<id>953</id>
 		<name>Phoenix Torque Ruby</name>
+		<role>Spark ATKDOWN hit Convert ATK</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -306,6 +329,7 @@
 	<unit>
 		<id>968</id>
 		<name>Grand Malediction Yuura</name>
+		<role>Drain ATK BB ATKed DoT USBB</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -320,6 +344,7 @@
 	<unit>
 		<id>980</id>
 		<name>Inferno Rifle Bestie</name>
+		<role>BB HP DEF ATKed ATK</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -333,6 +358,7 @@
 	<unit>
 		<id>989</id>
 		<name>Dragon Scroll Kagura</name>
+		<role>Spark Weakness ATKDOWN hit</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -346,6 +372,7 @@
 	<unit>
 		<id>992</id>
 		<name>Turbo Wings Nemethgear</name>
+		<role>BB USBB CRIT Spark</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -359,6 +386,7 @@
 	<unit>
 		<id>995</id>
 		<name>Hellion Armor Reis</name>
+		<role>BB CRIT HP ATK</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -372,6 +400,7 @@
 	<unit>
 		<id>986</id>
 		<name>Feral Katana Toutetsu</name>
+		<role>ATK DoT Ignore</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -385,6 +414,7 @@
 	<unit>
 		<id>983</id>
 		<name>Lance Champion Vernil</name>
+		<role>Spark Injury Weak Sick Poison Para Curse BB</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -399,6 +429,7 @@
 	<unit>
 		<id>1007</id>
 		<name>Indomitable Flare Griff</name>
+		<role>BB CRIT HP ATK Fire,water Convert</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -412,6 +443,7 @@
 	<unit>
 		<id>1010</id>
 		<name>Indigo Soul Iris</name>
+		<role>Miti BB ATKed Fire,water ATKDOWN DEFDOWN Weakness</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -425,6 +457,7 @@
 	<unit>
 		<id>1022</id>
 		<name>Sinister Basilisk Kafka</name>
+		<role>BB ATKed ATK Injury Weak Sick Poison Para Curse Light,dark Convert</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -438,6 +471,7 @@
 	<unit>
 		<id>1019</id>
 		<name>Virtuous Champion Krantz</name>
+		<role>BC HC HP ATK Miti Light,dark Heal Convert</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -451,6 +485,7 @@
 	<unit>
 		<id>1013</id>
 		<name>Emerald Radiance Libera</name>
+		<role>BB BC HC Earth,thunder DEF REC ATKed Convert</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -464,6 +499,7 @@
 	<unit>
 		<id>1016</id>
 		<name>Roaring Staff Rhoa</name>
+		<role>Spark HP ATK Earth,thunder Ignore</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -478,6 +514,7 @@
 	<unit>
 		<id>1056</id>
 		<name>Soul Covenant Charis</name>
+		<role>hit BC HC Convert ATK</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -491,6 +528,7 @@
 	<unit>
 		<id>1047</id>
 		<name>Quatre Marinus Duran</name>
+		<role>BB ATK DEF REC ATKDOWN</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -504,6 +542,7 @@
 	<unit>
 		<id>1044</id>
 		<name>Wave Breaker Quartz</name>
+		<role>Drain Heal HP DoT HoT Convert Revive</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -517,6 +556,7 @@
 	<unit>
 		<id>1050</id>
 		<name>Storm Chieftess Mahalu</name>
+		<role>Spark BB BC HC ATK</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -530,6 +570,7 @@
 	<unit>
 		<id>1053</id>
 		<name>Angelic Champion Nadore</name>
+		<role>ATK DEF HP REC Weakness BB ATKed Heal Miti</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -543,6 +584,7 @@
 	<unit>
 		<id>1041</id>
 		<name>Phosphor Crystal Rineth</name>
+		<role>BB Weakness ATKDOWN</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -557,6 +599,7 @@
 	<unit>
 		<id>801</id>
 		<name>Flame Legend Vargas</name>
+		<role>ATK ATKDOWN HP</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>38</cost>
@@ -570,6 +613,7 @@
 	<unit>
 		<id>802</id>
 		<name>Ice Legend Selena</name>
+		<role>HP ATK HoT hit Idol</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>38</cost>
@@ -583,6 +627,7 @@
 	<unit>
 		<id>803</id>
 		<name>Earth Legend Lance</name>
+		<role>HP ATK DEF Convert</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>38</cost>
@@ -596,6 +641,7 @@
 	<unit>
 		<id>804</id>
 		<name>Thunder Legend Eze</name>
+		<role>HP ATK Spark</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>38</cost>
@@ -609,6 +655,7 @@
 	<unit>
 		<id>805</id>
 		<name>Light Legend Atro</name>
+		<role>HP ATK DEF BB</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>38</cost>
@@ -622,6 +669,7 @@
 	<unit>
 		<id>806</id>
 		<name>Dark Legend Magress</name>
+		<role>HP ATK DEF Miti</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>38</cost>
@@ -636,6 +684,7 @@
 	<unit>
 		<id>880</id>
 		<name>Angelic Blades Sefia</name>
+		<role>BB ATK Para BC hit ATKDOWN</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -649,6 +698,7 @@
 	<unit>
 		<id>881</id>
 		<name>Demonic Idol Kikuri</name>
+		<role>BB ATK Curse ATKed DoT</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -663,6 +713,7 @@
 	<unit>
 		<id>901</id>
 		<name>Phoenix Wings Lava</name>
+		<role>BB ATK Ignore</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -676,6 +727,7 @@
 	<unit>
 		<id>903</id>
 		<name>Valkyrie Archangel Griel</name>
+		<role>BC HC HP Null ATKDOWN DEFDOWN BB</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -689,6 +741,7 @@
 	<unit>
 		<id>902</id>
 		<name>Leviathan Sage Elimo</name>
+		<role>BB HC Heal Cure DEF Miti Null ATKed</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -703,6 +756,7 @@
 	<unit>
 		<id>948</id>
 		<name>Flora Aegis Edea</name>
+		<role>ATK DEF Miti Injury Weak Sick Poison ATKDOWN Cure</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -716,6 +770,7 @@
 	<unit>
 		<id>949</id>
 		<name>Celestial Archer Loch</name>
+		<role>Spark ATK DEF CRIT BB BC Ignore</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -729,6 +784,7 @@
 	<unit>
 		<id>950</id>
 		<name>Inferno Princess Alice</name>
+		<role>BB ATK Heal Convert ATK HoT REC</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -743,6 +799,7 @@
 	<unit>
 		<id>975</id>
 		<name>Ice Bastion Zeldeus</name>
+		<role>BB HP DEF Miti DEF Convert</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -756,6 +813,7 @@
 	<unit>
 		<id>976</id>
 		<name>Gaia Tree Vertri</name>
+		<role>HC Null Cure Heal BB Revive HoT</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -769,6 +827,7 @@
 	<unit>
 		<id>977</id>
 		<name>Angelic Paladin Will</name>
+		<role>BB ATK Heal BC HC HoT Miti ATKDOWN DEFDOWN Light</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -783,6 +842,7 @@
 	<unit>
 		<id>1002</id>
 		<name>Wildfire Lotus Michele</name>
+		<role>BB HP ATK Fire Dark CRIT</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -796,6 +856,7 @@
 	<unit>
 		<id>1003</id>
 		<name>Immortal Beast Sargavel</name>
+		<role>Heal HP Cure Null BB Convert Spark</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -809,6 +870,7 @@
 	<unit>
 		<id>1004</id>
 		<name>Invictus Xeno Melchio</name>
+		<role>BB Ignore ATK Null Light Convert DEF Miti Cure</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -823,6 +885,7 @@
 	<unit>
 		<id>997</id>
 		<name>Oracle Knight Ark</name>
+		<role>Spark HP ATK DEF REC hit Fire,water,earth,thunder,light,dark BB</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -836,6 +899,7 @@
 	<unit>
 		<id>8143</id>
 		<name>Mad Heretic Gazia</name>
+		<role>Heal BB HP ATK DEF REC Miti Convert Barrier</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>45</cost>
@@ -849,6 +913,7 @@
 	<unit>
 		<id>1078</id>
 		<name>Sealed God Lucius</name>
+		<role>OverDrive Null Spark HP ATK BC HC BB Convert Barrier</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>45</cost>
@@ -862,6 +927,7 @@
 	<unit>
 		<id>1121</id>
 		<name>Mifa</name>
+		<role>HP ATK DoT Injury Weak Sick Poison Para Curse</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -875,6 +941,7 @@
 	<unit>
 		<id>1156</id>
 		<name>Lugina 7</name>
+		<role>BB ATK DEF BB Ignore USBB</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -888,6 +955,7 @@
 	<unit>
 		<id>1157</id>
 		<name>Paris 7</name>
+		<role>Miti BB ATKed HP Heal ATK DEF REC HoT</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -901,6 +969,7 @@
 	<unit>
 		<id>1218</id>
 		<name>Seria 7</name>
+		<role>BB ATK DEF Spark HC DoT</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -914,6 +983,7 @@
 	<unit>
 		<id>1219</id>
 		<name>Karl 7</name>
+		<role>BB Spark HP ATK DEF REC OverDrive Convert</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -928,6 +998,7 @@
 	<unit>
 		<id>8198</id>
 		<name>Deathless Hadaron</name>
+		<role>ATK DEF Poison Curse Weak Poison CRIT Stealth ATKDOWN DEFDOWN Idol</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -941,6 +1012,7 @@
 	<unit>
 		<id>8197</id>
 		<name>Archangel Aurelia</name>
+		<role>BC HC DEF REC Null Cure HoT BB Heal HoT Revive Convert</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -954,6 +1026,7 @@
 	<unit>
 		<id>8196</id>
 		<name>Neptunian Tridon</name>
+		<role>Miti HP REC CRIT Shield HoT DEF BC HC BB ATKDOWN DEFDOWN</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -967,6 +1040,7 @@
 	<unit>
 		<id>8195</id>
 		<name>Herculean Ultor</name>
+		<role>Weakness ATK DEF REC CRIT Taunt DoT Miti Idol</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -980,6 +1054,7 @@
 	<unit>
 		<id>8194</id>
 		<name>Obsidian Seraph Zenia</name>
+		<role>Spark BB ATK hit</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -993,6 +1068,7 @@
 	<unit>
 		<id>8191</id>
 		<name>Deimos Thunderborn</name>
+		<role>ATKed HP Null Taunt ATK DEF REC BB Miti</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1006,6 +1082,7 @@
 	<unit>
 		<id>8180</id>
 		<name>Chrono Mage Elaina</name>
+		<role>Miti Null BB HoT</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1019,6 +1096,7 @@
 	<unit>
 		<id>8177</id>
 		<name>Slayer Grandt</name>
+		<role>CRIT HP ATK Ignore ATKDOWN Convert</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1032,6 +1110,7 @@
 	<unit>
 		<id>8139.8</id>
 		<name>Imperator Zedus</name>
+		<role>Spark CRIT Weakness ATKDOWN DEFDOWN</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1045,6 +1124,7 @@
 	<unit>
 		<id>8138.8</id>
 		<name>Ruinous Andaria</name>
+		<role>BB CRIT Cure Null Poison Para</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1059,6 +1139,7 @@
 	<unit>
 		<id>1038</id>
 		<name>Midnight Allure Lunaris</name>
+		<role>ATKed BB ATK Cure Null Weak Sick ATKDOWN DEFDOWN Weakness OverDrive</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1072,6 +1153,7 @@
 	<unit>
 		<id>1037</id>
 		<name>Glorious Crusader Alyut</name>
+		<role>BB ATK Injury Para HoT Convert Miti</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1085,7 +1167,8 @@
 	<unit>
 		<id>1036</id>
 		<name>Blizzard Fang Signas</name>
-		<element>Water</element>
+		<role>CRIT </role>
+		<element>Water Weakness Miti CRIT Injury Poison ATK</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
 		<ls hit="11" dc="33" >15% Fire Resist (ALL) / 100% CRIT DMG+ (ALL) / 150% Element Weakness DMG+ (water)</ls>
@@ -1098,6 +1181,7 @@
 	<unit>
 		<id>1035</id>
 		<name>Crimson Phoenix Farlon</name>
+		<role>BB ATK USBB</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1112,6 +1196,7 @@
 	<unit>
 		<id>1085</id>
 		<name>Hailstorm Armor Reeze</name>
+		<role>BB ATKed Heal Null Cure Sick Para ATK DEF REC Convert Revive</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1125,6 +1210,7 @@
 	<unit>
 		<id>1086</id>
 		<name>Immortal Dragon Ragshelm</name>
+		<role>Ignore Miti HP ATK ATKDOWN DEFDOWN Injury Spark</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1138,6 +1224,7 @@
 	<unit>
 		<id>1087</id>
 		<name>Fulgor Heroine Shera</name>
+		<role>BB Miti ATK</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1152,6 +1239,7 @@
 	<unit>
 		<id>1134</id>
 		<name>Unleashed Ravana Vishra</name>
+		<role>CRIT Injury Weak Sick Poison Para Curse BB ATKed</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1165,6 +1253,7 @@
 	<unit>
 		<id>1135</id>
 		<name>Mayhem Empress Luly</name>
+		<role>Miti BB Weakness BC HC ATK Convert</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1178,6 +1267,7 @@
 	<unit>
 		<id>1136</id>
 		<name>Optimum Mecha Grybe</name>
+		<role>Miti Weakness ATKDOWN ATK Barrier</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1191,6 +1281,7 @@
 	<unit>
 		<id>1137</id>
 		<name>Vicious Twin-Edge Logan</name>
+		<role>HP ATK Injury Weak Sick Poison Para Curse BB ATKed Convert</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1205,6 +1296,7 @@
 	<unit>
 		<id>1092</id>
 		<name>Pyro Archfiend Adel</name>
+		<role>Miti BB HP DEF Spark HoT</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1218,6 +1310,7 @@
 	<unit>
 		<id>1098</id>
 		<name>Gracious Madam Cyan</name>
+		<role>Spark Null</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1231,6 +1324,7 @@
 	<unit>
 		<id>1101</id>
 		<name>Electrical Storm Eldora</name>
+		<role>CRIT HP Miti BB Convert</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1244,6 +1338,7 @@
 	<unit>
 		<id>1104</id>
 		<name>Refulgent Savage Jed</name>
+		<role>BC HC BB ATKDOWN</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1257,6 +1352,7 @@
 	<unit>
 		<id>1107</id>
 		<name>Tenebrous Wings Reviora</name>
+		<role>HP Miti BB ATKed</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1270,6 +1366,7 @@
 	<unit>
 		<id>1095</id>
 		<name>Glamorous Peril Savia</name>
+		<role>AP ATK BB Spark hit</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1284,6 +1381,7 @@
 	<unit>
 		<id>1140</id>
 		<name>Ardent Dawn Avant</name>
+		<role>Spark CRIT BB HP Convert ATK</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1297,6 +1395,7 @@
 	<unit>
 		<id>1152</id>
 		<name>Merciful Beacon Charla</name>
+		<role>BB ATKed HP DEF Heal HoT Spark CRIT Idol</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1310,6 +1409,7 @@
 	<unit>
 		<id>1155</id>
 		<name>Calamity Steel Chrome</name>
+		<role>Spark HP Weakness BB</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1323,6 +1423,7 @@
 	<unit>
 		<id>1146</id>
 		<name>Heavenly Claymore Dolk</name>
+		<role>HP ATK DEF REC Miti BC HC Null Convert</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1336,6 +1437,7 @@
 	<unit>
 		<id>1149</id>
 		<name>Thunder Champion Rahgan</name>
+		<role>BB hit ATK DoT Convert</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1349,6 +1451,7 @@
 	<unit>
 		<id>1143</id>
 		<name>Icicle Mirror Lune</name>
+		<role>Weakness ATK Ignore Spark BB</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1363,6 +1466,7 @@
 	<unit>
 		<id>1173</id>
 		<name>Raydn 7</name>
+		<role>Spark ATK Ignore Convert</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1376,6 +1480,7 @@
 	<unit>
 		<id>1174</id>
 		<name>Golem 7</name>
+		<role>Miti HP DEF BB CRIT ATKDOWN</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1389,6 +1494,7 @@
 	<unit>
 		<id>1175</id>
 		<name>Rina 7</name>
+		<role>BB BC HC ATK Injury Weak Sick Poison Para Curse HoT </role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1403,6 +1509,7 @@
 	<unit>
 		<id>1178</id>
 		<name>Rider Empress Vermilion</name>
+		<role>BB ATKed Heal HoT Revive</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1416,6 +1523,7 @@
 	<unit>
 		<id>1181</id>
 		<name>Sacred Lotus Piany</name>
+		<role>Spark Heal HP Null DEF REC BB Convert</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1429,6 +1537,7 @@
 	<unit>
 		<id>1184</id>
 		<name>Malachite Pike Drevas</name>
+		<role>Miti HP DEF Null Inflict Injury Weak Sick Poison Para Curse Convert Cure</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1442,6 +1551,7 @@
 	<unit>
 		<id>1187</id>
 		<name>Prism Lightning Reud</name>
+		<role>BB ATKed HP ATK DEF REC HoT Convert</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1455,6 +1565,7 @@
 	<unit>
 		<id>1190</id>
 		<name>Seraph Wings Kiravel</name>
+		<role>Spark ATK DEF ATKDOWN Miti</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1468,6 +1579,7 @@
 	<unit>
 		<id>1193</id>
 		<name>Sacred Kinnara Febros</name>
+		<role>BC HC HP ATK BB Convert DEF</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1482,6 +1594,7 @@
 	<unit>
 		<id>8148</id>
 		<name>Sanguine Hood Ciara</name>
+		<role>BB Weakness ATK Ignore</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1495,6 +1608,7 @@
 	<unit>
 		<id>8149</id>
 		<name>Pumleficent Semira</name>
+		<role>ATK Null Cure BC HC Weak Poison Para Curse OverDrive</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1509,6 +1623,7 @@
 	<unit>
 		<id>1196</id>
 		<name>Ramna 7</name>
+		<role>Miti Weakness Null Heal DEF REC ATK Miti Weakness Cure</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1522,6 +1637,7 @@
 	<unit>
 		<id>1197</id>
 		<name>Ophelia 7</name>
+		<role>BB ATK HP Convert HoT</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1535,6 +1651,7 @@
 	<unit>
 		<id>1198</id>
 		<name>Lilith 7</name>
+		<role>Spark HP ATK USBB DEF REC OverDrive BB</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1548,6 +1665,7 @@
 	<unit>
 		<id>1199</id>
 		<name>Elza 7</name>
+		<role>BB Spark Heal ATK Injury Curse HoT Miti Ignore</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1562,6 +1680,7 @@
 	<unit>
 		<id>1202</id>
 		<name>Limera 7</name>
+		<role>BB HP Idol Heal Cure Convert Miti DEF HoT</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1575,6 +1694,7 @@
 	<unit>
 		<id>1205</id>
 		<name>Farzen 7</name>
+		<role>BB CRIT ATK Spark</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1588,6 +1708,7 @@
 	<unit>
 		<id>1208</id>
 		<name>Ester 7</name>
+		<role>BB HP DEF OverDrive ATK REC HoT</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1601,6 +1722,7 @@
 	<unit>
 		<id>1211</id>
 		<name>Jilias 7</name>
+		<role>BC HC Item Karma Zel HP ATK DEF REC Injury Para BB</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1614,6 +1736,7 @@
 	<unit>
 		<id>1214</id>
 		<name>Luce 7</name>
+		<role>BB CRIT HP ATK DoT Fire,water,earth,thunder</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1627,6 +1750,7 @@
 	<unit>
 		<id>1217</id>
 		<name>Laberd 7</name>
+		<role>BB ATKed HP DEF Miti ATKDOWN</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1641,6 +1765,7 @@
 	<unit>
 		<id>8154</id>
 		<name>Infernal Ravager Korzan</name>
+		<role>BB ATKed CRIT HP ATK Ignore Convert</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1654,6 +1779,7 @@
 	<unit>
 		<id>8157</id>
 		<name>Boreal Tempest Haile</name>
+		<role>BB BC HC HP ATK DEF REC ATKDOWN DEFDOWN</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1668,6 +1794,7 @@
 	<unit>
 		<id>1232</id>
 		<name>Phoenix 7</name>
+		<role>Heal HP DEF Idol HoT DoT Convert Revive Barrier</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1681,6 +1808,7 @@
 	<unit>
 		<id>1233</id>
 		<name>Mega 7</name>
+		<role>BB ATK HoT BC HC Heal Convert</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1694,6 +1822,7 @@
 	<unit>
 		<id>1234</id>
 		<name>Sodis 7</name>
+		<role>Miti Spark Weakness BB ATK</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1707,6 +1836,7 @@
 	<unit>
 		<id>1235</id>
 		<name>Zephyr 7</name>
+		<role>Miti OverDrive ATK DEF REC hit Barrier Ignore</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1721,6 +1851,7 @@
 	<unit>
 		<id>8162</id>
 		<name>Eternal Guardian Zeruiah</name>
+		<role>BB EXP BC HC Item Karma Zel USBB Fire,water,earth,thunder,light,dark Miti HP Convert DEF</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1735,6 +1866,7 @@
 	<unit>
 		<id>1238</id>
 		<name>Gyrodorf 7</name>
+		<role>HP ATK Spark BC HC USBB</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1748,6 +1880,7 @@
 	<unit>
 		<id>1241</id>
 		<name>Klaus 7</name>
+		<role>BB HP ATKDOWN DEFDOWN Sick ATKed Convert DEF Miti</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1761,6 +1894,7 @@
 	<unit>
 		<id>1244</id>
 		<name>Isuterio 7</name>
+		<role>HP ATK Injury Weak Sick Poison Para Curse Convert Weakness Idol</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1774,6 +1908,7 @@
 	<unit>
 		<id>1247</id>
 		<name>Raphyr 7</name>
+		<role>HP DEF Miti BB Spark ATKed HoT</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1787,6 +1922,7 @@
 	<unit>
 		<id>1250</id>
 		<name>Reinhart 7</name>
+		<role>HP ATK DEF REC Null Cure BB Convert Miti</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1800,6 +1936,7 @@
 	<unit>
 		<id>1253</id>
 		<name>Marybelle 7</name>
+		<role>Spark ATK BB CRIT USBB DoT</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1814,6 +1951,7 @@
 	<unit>
 		<id>1254</id>
 		<name>Owen 7</name>
+		<role>CRIT HP ATK DEF REC Injury Weak Convert DoT</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>45</cost>
@@ -1827,6 +1965,7 @@
 	<unit>
 		<id>1255</id>
 		<name>Grahdens 7</name>
+		<role>Miti HP ATK DEF REC Null Light,dark Barrier OverDrive BB HoT</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>45</cost>

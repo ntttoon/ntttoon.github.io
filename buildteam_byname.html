@@ -64,8 +64,7 @@
 		for(i=0;i<total;i++)
 		{
 			name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
-			role =  xmlDoc.getElementsByTagName("role")[i].childNodes[0].nodeValue;
-			if (role.match(re)) {
+			if (name.match(re)) {
 				id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
 				ele =  xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
 				document.getElementById(id_list).innerHTML += "<a href='#' onClick='setValue("+ id + ',"' + id_input + '","' + id_list + '")' + "' id='" + id + "' style='color:" + nameColor(ele) + "'>" + name + "</a> ";
@@ -84,12 +83,12 @@
 
 <body>
 <header class="w3-container w3-teal w3-card-2">
-  <h5>BUILD TEAM by LS & BUFFS</h5>
+  <h5>BUILD TEAM</h5>
 </header>
 <div class="w3-blockquote w3-sand">
-  <p>Type one of these keywords to search units who related to leader skills and buffs:<br>
-  <strong>HP, ATK, DEF, REC, BB, BC, HC, Convert, Spark, CRIT, USBB, Barrier, OverDrive, HoT, DoT, USBB, Miti, Null, Cure, Injury, Weak, Sick, Poison, Para, Curse, atkdown, defdown, Fire, water, earth, thunder, light, dark, EXP, Item, Karma, Zel, Idol, Revive </strong>
-  </p>
+  <p>1. You can search unit by typing unit's name. If you don't remember unit's name or you want to show all 7* units, just type one space!<br>
+    2. Press "Enter" or click/touch outside the input field after you type something.<br>
+    3. You must click on the unit's name after search to get the correct unit's name into the input field.</p>
 </div>
 <div class="w3-container">
   <h5>Leader</h5>
