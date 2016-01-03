@@ -6,9 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <style>
-.noidung {
-	display: none;
-}
 .linknounderline {
 	text-decoration: none;
 }
@@ -71,7 +68,6 @@
 				document.getElementById(id_list).innerHTML += "<a href='#' onClick='setValue("+ id + ',"' + id_input + '","' + id_list + '")' + "' id='" + id + "' style='color:" + nameColor(ele) + "'>" + name + "</a> ";
 			}
 		}
-		
 	}
 	function setValue(id,id_input,id_list)
 	{
@@ -87,9 +83,11 @@
   <h5>BUILD TEAM by LS & BUFFS</h5>
 </header>
 <div class="w3-blockquote w3-sand">
-  <p>Type one of these keywords to search units who related to leader skills and buffs:<br>
-  <strong>HP, ATK, DEF, REC, BB, BC, HC, Convert, Spark, CRIT, USBB, Barrier, OverDrive, HoT, DoT, USBB, Miti, Null, Cure, Injury, Weak, Sick, Poison, Para, Curse, atkdown, defdown, Fire, water, earth, thunder, light, dark, EXP, Item, Karma, Zel, Idol, Revive </strong>
-  </p>
+    <a class="expander linknounderline" href="#">Read this first!</a>
+        <p class="content">
+          Type <strong>ONE</strong> of these keywords to search units who related to leader skills and buffs:<br>
+          <strong>HP(30%HP, 35%HP, 40%HP, 50%HP), ATK, DEF, REC, BB(BBreduce, BBregen, BBfill, BBATKed, BBATK%, BBspark, BBrate, BBcrit), BC, HC, Convert, Spark, CRIT, USBB, Barrier, OverDrive, HoT, DoT, USBB, Miti, Miti50%, Null, Cure, Injury, Weak, Sick, Poison, Para, Curse, atkdown, defdown, Fire, water, earth, thunder, light, dark, EXP, Item, Karma, Zel, Idol, Revive, hit, Weakness, Stealth, Taunt</strong>
+        </p>
 </div>
 <div class="w3-container">
   <h5>Leader</h5>
