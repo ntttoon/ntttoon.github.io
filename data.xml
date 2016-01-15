@@ -1936,7 +1936,7 @@
 	<unit>
 		<id>1253</id>
 		<name>Marybelle 7</name>
-		<role>Spark ATK BBfill BBATK% CRIT USBB DoT</role>
+		<role>Spark ATK BBfill BBATK% CRIT USBB DoT superspark</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1975,5 +1975,62 @@
 		<ubb hit="28" dc="28" cost="30" >1500% Light,dark (AOE) / 999BC Fill 3Turns / Gradual Heal FULL (ALL) 3Turns / Reduce DMG (100%) from (Light,dark) Enemy</ubb>
 		<es condtion="20% ALL STATS (SELF) when Ishrion sphere equipped" >Add 8BC Fill (ALL) 3Turns Effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60326.png"></art>
+	</unit>
+	<!--Shida 7* -->
+	<unit>
+		<id>1258</id>
+		<name>Lucina 7</name>
+		<role>30%HP water earth hit HoT ATK convert HealATKed DoT</role>
+		<element>Water</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="14" dc="42" >20% Chance Ignore DEF (ALL) / 30% HP 100% ATK (5 elements required) (ALL)</ls>
+		<bb hit="16" dc="16" cost="22" >260% Water (AOE) / Add Water,earth to ATK (ALL) 3Turns / Normal HitCount +100% (100% DMG) (ALL) 3Turns / Gradual Heal (ALL) 3Turns</bb>
+		<sbb hit="20" dc="20" cost="24" >500% Water (AOE) / Add Water,earth to ATK (ALL) 3Turns / Normal HitCount +100% (100% DMG) (ALL) 3Turns / 140% ATK+ (ALL) 3Turns</sbb>
+		<ubb hit="24" dc="24" cost="25" >1000% Water (AOE) / 100% Chance Heal 75-75% DMG when ATKed (ALL)3Turns / 200% ATK+ (ALL) 3Turns / 1000% DMG Each Turn 3Turns</ubb>
+		<es condtion="None" >80% ATK+ when Full HP (SELF) / Add Convert 15% HP to DEF (ALL) effect to BB/SBB (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20366.png"></art>
+	</unit>
+	<unit>
+		<id>1259</id>
+		<name>Zelnite 7</name>
+		<role>30%HP EXP BC HC Item Karma Zel BBfill OverDrive BBATKed hit ATK</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="14" dc="42" >10% EXP+ (ALL) / 20% BC+ 20% HC+ 4% Item+ 15% Karma+ 20% Zel+ (ALL) / 30% HP (ALL)</ls>
+		<bb hit="15" dc="15" cost="28" >260% Earth (AOE) / 8BC Fill (ALL) 1Turn / 25% BC+ 25% HC+ 3% Item+ (ALL) 3Turns / 15% OverDrive Fill+ 3Turns</bb>
+		<sbb hit="40" dc="40" cost="20" >500% Earth (AOE) / Drain 30-45% HP (SELF) / 8BC Fill (ALL) 1Turn / 4-7BC Fill when ATKed (100%) (ALL) 3Turns / 25% BC+ 25% HC+ 3% Item+ (ALL) 3Turns</sbb>
+		<ubb hit="20" dc="20" cost="25" >1000% Earth (AOE) / Normal HitCount +200% (100% DMG) (ALL) 3Turns / 200% ATK+ (ALL) 3Turns / 50% BC+ 50% HC+ 3% Item+ (ALL) 3Turns</ubb>
+		<es condtion="20% ALL STATS (SELF) when any DROP-type sphere equipped" >Normal HitCount +100% (100% DMG) (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30446.png"></art>
+	</unit>
+	<unit>
+		<id>1260</id>
+		<name>Orna 7</name>
+		<role>BBATKed Thunder Fire atkdown defdown crit convert superspark</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="13" dc="39" >Reduce 25% BB Cost (ALL) / 30% BC Fill+ (ALL) / 100% Chance 3-6BC Fill when ATKed (ALL)</ls>
+		<bb hit="15" dc="15" cost="22" >260% Thunder (AOE) / Add Thunder,fire to ATK (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns</bb>
+		<sbb hit="18" dc="18" cost="24" >500% Thunder (AOE) / Add Thunder,fire to ATK (ALL) 3Turns / 60% CRIT+ (ALL) 3Turns / Convert 60% REC to ATK (ALL) 3Turns / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns</sbb>
+		<ubb hit="23" dc="23" cost="25" >1000% Thunder (AOE) / 300% CRIT DMG+ (ALL) 3Turns / Convert 100% REC to ATK (ALL) 3Turns / 100% Chance SPARKcrit (50% DMG+) (ALL) 3Turns</ubb>
+		<es condtion="None" >80% ATK+ 2Turns on CRIT (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40496.png"></art>
+	</unit>
+	<unit>
+		<id>1261</id>
+		<name>Shida 7</name>
+		<role>35%HP BBfill Fire water earth thunder light dark Weakness Miti Para Curse Poison Injury Sick Weak</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="15" dc="45" >15% Light Resist (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL)</ls>
+		<bb hit="25" dc="25" cost="34" >450% Dark (AOE) / 12BC Fill (ALL) 1Turn / 150% ATK+ 150% DEF+ (SELF) 3Turns</bb>
+		<sbb hit="25" dc="25" cost="20" >650% Dark (AOE) / Add Fire,water,earth,thunder,light,dark to ATK (ALL) 3Turns / 50% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns</sbb>
+		<ubb hit="44" dc="44" cost="30" >1200% Dark (AOE) / Reduce DMG (100%) 1Turns / Add Fire,water,earth,thunder,light,dark to ATK (ALL) 3Turns / 300% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns</ubb>
+		<es condtion="None" >50% OverDrive Fill+ (SELF) / Inflict 8% Para 8% Curse 8% Poison 10% Injury 10% Sick 10% Weak on ATKed (ALL) 3Turns</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60096.png"></art>
 	</unit>
 </brave>
