@@ -1707,7 +1707,7 @@
 	</unit>
 	<unit>
 		<id>1208</id>
-		<name>Ester 7</name>
+		<name>Peacock Xena Estelle</name>
 		<role>BBregen BBrate 40%HP DEF OverDrive ATK REC HoT</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
@@ -1721,7 +1721,7 @@
 	</unit>
 	<unit>
 		<id>1211</id>
-		<name>Jilias 7</name>
+		<name>Double Voltage Julius</name>
 		<role>BC HC Item Karma Zel 30%HP ATK DEF REC Injury Para BBATK%</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
@@ -1749,7 +1749,7 @@
 	</unit>
 	<unit>
 		<id>1217</id>
-		<name>Laberd 7</name>
+		<name>Soul Reaver Laberd</name>
 		<role>BBATKed 40%HP DEF Miti50% ATKDOWN</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
