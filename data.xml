@@ -1465,7 +1465,7 @@
 	<!--Raydn 7 batch-->
 	<unit>
 		<id>1173</id>
-		<name>Raydn 7</name>
+		<name>Icicle Lance Raydn</name>
 		<role>Spark ATK Ignore Convert</role>
 		<element>Water</element>
 		<rarity>7</rarity>
@@ -1479,7 +1479,7 @@
 	</unit>
 	<unit>
 		<id>1174</id>
-		<name>Golem 7</name>
+		<name>Colossal Vars</name>
 		<role>Miti 40%HP DEF BBATK% CRIT ATKDOWN</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
@@ -1493,7 +1493,7 @@
 	</unit>
 	<unit>
 		<id>1175</id>
-		<name>Rina 7</name>
+		<name>Gilded Dogma Rina</name>
 		<role>BBrate BBATKed BC HC ATK Injury Weak Sick Poison Para Curse HoT </role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
