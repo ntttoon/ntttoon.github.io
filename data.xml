@@ -1679,7 +1679,7 @@
 	<!--Descendents of Elgaia -->
 	<unit>
 		<id>1202</id>
-		<name>Limera 7</name>
+		<name>Volcanic Scepter Limera</name>
 		<role>BBrate 40%HP Idol Heal Cure Convert Miti DEF HoT</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
@@ -1693,7 +1693,7 @@
 	</unit>
 	<unit>
 		<id>1205</id>
-		<name>Farzen 7</name>
+		<name>Frozen Typhoon Farzen</name>
 		<role>BBcrit BBATK% CRIT ATK Spark</role>
 		<element>Water</element>
 		<rarity>7</rarity>
@@ -1735,7 +1735,7 @@
 	</unit>
 	<unit>
 		<id>1214</id>
-		<name>Luce 7</name>
+		<name>Lunar Blade Rouche</name>
 		<role>BBreduce CRIT 40%HP ATK DoT Fire,water,earth,thunder</role>
 		<element>Light</element>
 		<rarity>7</rarity>
