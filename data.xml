@@ -2033,4 +2033,33 @@
 		<es condtion="None" >50% OverDrive Fill+ (SELF) / Inflict 8% Para 8% Curse 8% Poison 10% Injury 10% Sick 10% Weak on ATKed (ALL) 3Turns</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60096.png"></art>
 	</unit>
+	<!--Avani and Mikael -->
+	<unit>
+		<id>8160</id>
+		<name>Monster Hunter Avani</name>
+		<role>Spark BBspark hit Injury Weak Sick Poison Paralysis Curse</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="15" dc="45" >+80% ATK, 20% Crit Chance, 100% spark damage, +2~3 BC on spark, +1 hit count (-50% damage on extra hits)</ls>
+		<bb hit="28" dc="28" cost="25" >28 Hits, +300% AoE (ATK+100), 3 turn +1~2 BC on spark buff, 50% chance Injury/Weak/Sick/Poison/Paralysis/Curse, 3 turn 140% ATK buff when enemy has any ailment</bb>
+		<sbb hit="34" dc="34" cost="28" >34 Hits, +540% AoE (ATK+100), 3 turn +30% spark damage received debuff (30% chance), 3 turn +100% spark damage buff, 3 turn Hit Count +1 buff</sbb>
+		<ubb hit="40" dc="40" cost="25" >40 Hits, +1200% AoE (ATK+100), 3 turn +130% spark damage buff, 4 turn +100% spark damage received debuff (100% chance), 3 Turn Hit Count +3 (+100% damage multiplier)</ubb>
+		<es condtion="equip Vorpal Chainblade" >+100% ATK when enemy has any ailment, +1 hit count</es>
+		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830317.png"></art>
+	</unit>
+	<unit>
+		<id>8163</id>
+		<name>Storm Champion Mikael</name>
+		<role>40%HP BBATKed Miti Miti50% Convert DEF ATK Null</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="8" dc="40" >+40% HP/DEF, Nulls all ailments, +2~3 BC when attacked, +10% guard mitigation</ls>
+		<bb hit="10" dc="20" cost="29" >10 Hits, +300% AoE (ATK+100), 1 turn 50% mitigation, 3 turn fill 4 BC when guarding, 1 turn 10% guard mitigation increase</bb>
+		<sbb hit="12" dc="60" cost="22" >12 Hits, +300~1000% ST (ATK+100) based on remaining HP%, 1 turn 50% mitigation, 3 turn 50% ATK->DEF conversion, 3 turn +150% DEF</sbb>
+		<ubb hit="14" dc="28" cost="25" >14 Hits, +1200% AoE (ATK+100), 1 turn 100% mitigation on all allies, 2 turn 100% mitigation on self, 3 turn +250% ATK/DEF, 3 turn 100% ATK->DEF conversion</ubb>
+		<es condtion="equip Eremorn's Aegis" >+20% BB Fill Rate, +2~3 BC when attacked, +125% elemental weakness damage (no requirement)</es>
+		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840317.png"></art>
+	</unit>
 </brave>
