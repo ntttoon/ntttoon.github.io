@@ -2075,7 +2075,7 @@
 		<sbb hit="17" dc="17" cost="26" >17 Hits, 540% AoE (ATK+100), 3 turn +140% ATK, 2 turn Def Ignore Buff, 3 turn Hit Count +1 buff</sbb>
 		<ubb hit="23" dc="23" cost="25" >23 Hits, 1200% AoE (ATK+100), -80% ATK / -80% DEF {100%} for 3 turns, 3 turn +50% BC/HC Drop Rate Buff, 3 turn Hit Count +2 buff</ubb>
 		<es condtion="None" >Inflict Spark Damage Debuff, Hit Count +1</es>
-		<art path="http://i.imgur.com/3p0rrgt.png"></art>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10826.png"></art>
 	</unit>
 	<unit>
 		<id>1267</id>
@@ -2089,7 +2089,7 @@
 		<sbb hit="40" dc="40" cost="24" >40 Hits, 540% AoE (ATK+100), 3 Turn 1-2 BC on Spark Buff, Fill 8 BC, 3 Turn Self +150% ATK/DEF/REC Buff, Fill own BB 100%</sbb>
 		<ubb hit="25" dc="25" cost="30" >25 Hits, 1200% AoE (ATK+100), 3 turn +250% ATK, 3 turn +500% BB/SBB/UBB Mod, 3 Turn Self +250% ATK Buff</ubb>
 		<es condtion="None" >+100% ATK when BB Gauge is full</es>
-		<art path="http://i.imgur.com/bWpGEVV.png"></art>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20756.png"></art>
 	</unit>
 	<unit>
 		<id>1270</id>
@@ -2103,7 +2103,7 @@
 		<sbb hit="15" dc="15" cost="26" >15 Hits, 200-850% AoE depending on HP remaining (ATK+100), 1 turn 25% Spark Damage Taken Debuff (25% Chance), 3 turn 60% DEF->ATK buff, 3 Turn 20% Chance Sparks Crit Buff (50% Damage)</sbb>
 		<ubb hit="21" dc="21" cost="25" >21 Hits, 1200% AoE (ATK+100), 1 turn 100% Spark Damage Taken Debuff (100% Chance), 3 turn +250% ATK/DEF, 3 Turn Heal 75% of Damage Taken</ubb>
 		<es condtion="None" >0-100% DEF depending on HP lost, 0-50% ATK depending on HP remaining</es>
-		<art path="http://i.imgur.com/e3cir5W.png"></art>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30736.png"></art>
 	</unit>
 	<unit>
 		<id>1273</id>
@@ -2117,7 +2117,7 @@
 		<sbb hit="17" dc="17" cost="29" >17 Hits, 540% AoE (ATK+100), 3 turn Inflict Status when Hit (15% Injury/Sick/Weaken 10% Poison/Curse/Paralyze), 3 Turn 160% ATK Buff on Statused Targets, 3 turn +90% Spark Dmg</sbb>
 		<ubb hit="22" dc="22" cost="25" >22 Hits, 1200% AoE (ATK+100), 3 Turn 5-8 BC on Spark Buff, 3 Turn 300% ATK Buff on Statused Targets, 3 turn +130% Spark Dmg</ubb>
 		<es condtion="None" >100% ATK against Statused Targets, +50% Spark Damage</es>
-		<art path="http://i.imgur.com/hv6sU6c.png"></art>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40716.png"></art>
 	</unit>
 	<unit>
 		<id>1276</id>
@@ -2131,7 +2131,7 @@
 		<sbb hit="19" dc="19" cost="30" >19 Hits, 540% AoE (ATK+100), 3 turn +250% BB/SBB/UBB Mod, 3 Turn 1-2 BC on Spark Buff, 3 turn +130% ATK/DEF/REC</sbb>
 		<ubb hit="21" dc="21" cost="30" >21 Hits, 1200% AoE (ATK+100), Reduce Damage 75% for 3 turn, 3 turn 50 BC/turn, 3 turn +250% ATK/DEF/REC</ubb>
 		<es condtion="None" >1 Turn 25% Mitigation after taking 10000 damage, 2-3 BC On Spark</es>
-		<art path="http://i.imgur.com/VQwwtWp.png"></art>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50916.png"></art>
 	</unit>
 	<unit>
 		<id>1279</id>
@@ -2145,6 +2145,6 @@
 		<sbb hit="21" dc="42" cost="32" >21 Hits, 570% ST (ATK+100) +300% every turn used in a row (Max: 5), -50% ATK {50%} for 1 turn, 80% Injury/Weaken, Fill own BB 100%</sbb>
 		<ubb hit="24" dc="24" cost="25" >24 Hits, 1200% AoE (ATK+100), Fill BB 999 BC , 1 turn Inflict Debuff (50% Chance -50% ATK) Buff, 3 turn +500% BB/SBB/UBB Mod</ubb>
 		<es condtion="None" >+100% ATK when BB Gauge is full</es>
-		<art path="http://i.imgur.com/IyJcwji.png"></art>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60916.png"></art>
 	</unit>
 </brave>
