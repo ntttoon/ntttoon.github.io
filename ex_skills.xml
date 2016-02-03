@@ -293,5 +293,7 @@
 	<item>Angel Tears Lv. 5 - 25% chance to heal 25% damage Probable enormous recovery of HP when attacked</item>
 	<item>Hyperion Lv. 5 - 50% boost Enormously boosts HC efficacy</item>
 	<item>Legendary Thief Lv. 5 - Enormously boosts 10% boost BC, HC, Zel, 5% boost Karma, 2% boost Item drop rate when attacking</item>
+	<!--Special elgif 1/1 acc-->
 	<item>Holy King's Devotion - Negates all status ailments, elemental damage, critical damage</item>
+	<item>Great Pioneer's Light - 20% boost to all parameters, 50% boosts Spark damage and Fills 1~2 BC on Spark</item>
 </skills>
