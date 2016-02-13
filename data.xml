@@ -2147,4 +2147,33 @@
 		<es condtion="None" >100% ATK+ when Full BB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60916.png"></art>
 	</unit>
+	<!--Valentine 2016 bacth -->
+	<unit>
+		<id>8179</id>
+		<name>Lycanthrope Randolph</name>
+		<role>50%HP BBrate DoT Injury Curse Stealth ATK DEF REC Convert CRIT</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="17" dc="51" >50% BC Fill+ (ALL) / 120% ATK 100% DEF 100% REC (BB >= 50%) (ALL) / 50% HP (ALL)</ls>
+		<bb hit="16" dc="16" cost="22" >300% Fire (AOE) / Drain 35-50% HP (SELF) / 300% DMG Each Turn 3Turns / 80% Injury 80% Curse</bb>
+		<sbb hit="20" dc="20" cost="24" >580% Fire (AOE) / Drain 35-50% HP (SELF) / Stealth (300% ATK+ 40% CRIT+) (SELF) 2Turns / -50% DEF+ (SELF) 1Turns / 400% DMG Each Turn 3Turns</sbb>
+		<ubb hit="30" dc="30" cost="25" >1500% Fire, dark (AOE) / 300% ATK+ 300% REC+ (ALL) 3Turns / -100% DEF+ (SELF) 2Turns / 1000% DMG Each Turn 3Turns / Convert 130% REC to ATK (ALL) 3Turns</ubb>
+		<es condtion="30% ALL Stats (SELF) when Wolven Shroud is equipped OR Randolph is in squad." >Normal HitCount +100% (100% DMG) / Add 60% CRIT+ (ALL) Effect to BB/SBB (SELF)</es>
+		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810327.png"></art>
+	</unit>
+	<unit>
+		<id>8182</id>
+		<name>Landeythan Ravenna</name>
+		<role>Weakness BBfill Poison Para USBB Fire Dark</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="1" dc="45" >100-200% ATK+ Based on HP LOST (ALL) / 125% Element Weakness DMG+ (thunder,dark) / Null CRIT</ls>
+		<bb hit="1" dc="27" cost="22" >300% Thunder (AOE) / 12BC Fill (ALL) 1Turn / 80% Poison 80% Para </bb>
+		<sbb hit="1" dc="40" cost="33" >1280% Thunder (TGT) / 250% BB ATK+ on Consecutive SBB (Max 3x / SELF) / 100% BB Fill (SELF) / 200% Spark DMG+ (SELF) 2Turns / -30% DEF+ -30% REC+ (SELF) 1Turns</sbb>
+		<ubb hit="1" dc="47" cost="25" >3500% Thunder, dark (TGT) / 400% CRIT DMG+ (SELF) 1Turns / 300% Spark DMG+ (SELF) 1Turns / -50% DEF+ -50% REC+ (SELF) 2Turns</ubb>
+		<es condtion="30% ALL Stats (SELF) when Raven Plume Sphere is equipped OR Randolph is in squad." >Add Fire,dark to ATK (ALL) Effect to BB/SBB (SELF) / 40% Chance Angel Idol 2x (SELF)</es>
+		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840327.png"></art>
+	</unit>
 </brave>
