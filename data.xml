@@ -2147,7 +2147,7 @@
 		<es condtion="None" >100% ATK+ when Full BB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60916.png"></art>
 	</unit>
-	<!--Valentine 2016 bacth -->
+	<!--Valentine 2016 batch -->
 	<unit>
 		<id>8179</id>
 		<name>Lycanthrope Randolph</name>
@@ -2175,5 +2175,48 @@
 		<ubb hit="1" dc="47" cost="25" >3500% Thunder, dark (TGT) / 400% CRIT DMG+ (SELF) 1Turns / 300% Spark DMG+ (SELF) 1Turns / -50% DEF+ -50% REC+ (SELF) 2Turns</ubb>
 		<es condtion="30% ALL Stats (SELF) when Raven Plume Sphere is equipped OR Randolph is in squad." >Add Fire,dark to ATK (ALL) Effect to BB/SBB (SELF) / 40% Chance Angel Idol 2x (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840327.png"></art>
+	</unit>
+	<!--Darvanshel 7* batch -->
+	<unit>
+		<id>1299</id>
+		<name>Darvanshel 7</name>
+		<role>Miti50% HP DEF convert 40%HP Null</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="12" dc="48" >10% Chance Reduce DMG (20%) (ALL) / 40% HP (ALL) / Null Ails (ALL) / Null Ignore DEF (ALL)</ls>
+		<bb hit="14" dc="14" cost="24" >260% Fire (AOE) / Reduce DMG (50%) 1Turns / 15% Max HP+ till Death/Battle End / 140% DEF+ (ALL) 3Turns</bb>
+		<sbb hit="16" dc="16" cost="21" >450% Fire (AOE) / Reduce DMG (50%) 1Turns / 140% DEF+ (ALL) 3Turns / Convert 50% DEF to ATK (ALL) 3Turns</sbb>
+		<ubb hit="20" dc="20" cost="25" >1000% Fire (AOE) / Reduce DMG (75%) 3Turns / Convert 100% HP to ATK (ALL) 3Turns / Convert 100% HP to DEF (ALL) 3Turns</ubb>
+		<es condtion="None" >Null Elemental Weakness (SELF) / Add Null Ails (ALL) 3Turns Effect to BB/SBB (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10466.png"></art>
+	</unit>
+	<unit>
+		<id>1300</id>
+		<name>Duelmex 7</name>
+		<role>BBrate BBspark 40%HP Injury Weak Sick Poison Para Curse</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="10" dc="40" >4BC Fill Each Turn (ALL) / 50% BC Fill+ (ALL) / 100% Chance 2-3BC Fill on Spark (ALL) / 40% HP 40% ATK (ALL)</ls>
+		<bb hit="40" dc="" cost="22" >1200% Light (TGT) / Random Hits / 30% BC Fill+ (ALL) 3Turns / Add 15% Para to ATK (ALL) 3Turns</bb>
+		<sbb hit="18" dc="18" cost="24" >500% Light (AOE) / 30% BC Fill+ (ALL) 3Turns / 160% DMG+ to Ailed Enemy (ALL) 3Turns / 80% Para</sbb>
+		<ubb hit="25" dc="25" cost="25" >1000% Light (AOE) / 300% DMG+ to Ailed Enemy (ALL) 3Turns / 100% Sick 100% Poison 100% Curse / 100% Injury 100% Weak 100% Para / Add 100% Para to ATK (ALL) 3Turns</ubb>
+		<es condtion="None" >100% DMG+ to Ailed Enemy (SELF) / Inflict 15% Para on ATKed (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50106.png"></art>
+	</unit>
+	<unit>
+		<id>1301</id>
+		<name>Kajah 7</name>
+		<role>ATK BBATK% Injury Spark</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="9" dc="45" >100% BB ATK%+ (ALL) / 80-120% ATK+ Based on HP LOST (ALL) / 80% ATK (ALL)</ls>
+		<bb hit="15" dc="15" cost="25" >300% Dark (AOE) / 250% BB ATK%+ (ALL) 3Turns / Add 20% Injury to ATK (ALL) 3Turns</bb>
+		<sbb hit="17" dc="17" cost="30" >900% Dark (AOE) 200%-900% BB ATK% Based on HP LEFT / 80% Injury</sbb>
+		<ubb hit="23" dc="23" cost="25" >1800% Dark (AOE) 1000%-1800% BB ATK% Based on HP LEFT / 130% Spark DMG+ (ALL) 3Turns / 250% ATK+ (ALL) 3Turns / 300% BB ATK%+ (ALL) 3Turns</ubb>
+		<es condtion="None" >0-50% ATK+ Based on HP LEFT (SELF) / Reduce 20% BB Cost (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60476.png"></art>
 	</unit>
 </brave>
