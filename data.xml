@@ -940,7 +940,7 @@
 	</unit>
 	<unit>
 		<id>1156</id>
-		<name>Lugina 7</name>
+		<name>Seismic Fury Lugina</name>
 		<role>BBreduce ATK DEF BBfill BBATK% Ignore USBB</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
@@ -954,7 +954,7 @@
 	</unit>
 	<unit>
 		<id>1157</id>
-		<name>Paris 7</name>
+		<name>Radiating Grandeur Paris</name>
 		<role>BBATKed 40%HP Heal BC HC ATK DEF REC HoT Miti</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
@@ -1865,7 +1865,7 @@
 	<!--Otherly world -->
 	<unit>
 		<id>1238</id>
-		<name>Gyrodorf 7</name>
+		<name>Scorching Steel Gildorf</name>
 		<role>40%HP ATK Spark BC HC USBB</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
@@ -1879,7 +1879,7 @@
 	</unit>
 	<unit>
 		<id>1241</id>
-		<name>Klaus 7</name>
+		<name>Wyvern Wings Klaus</name>
 		<role>BBreduce BBrate BBregen BBATKed 40%HP ATKDOWN DEFDOWN Sick Convert DEF Miti</role>
 		<element>Water</element>
 		<rarity>7</rarity>
@@ -1893,7 +1893,7 @@
 	</unit>
 	<unit>
 		<id>1244</id>
-		<name>Isuterio 7</name>
+		<name>Venomous Echo Isterio</name>
 		<role>30%HP ATK Injury Weak Sick Poison Para Curse Convert Weakness Idol BBATK%</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
@@ -1907,7 +1907,7 @@
 	</unit>
 	<unit>
 		<id>1247</id>
-		<name>Raphyr 7</name>
+		<name>Galvanic Belle Lafiel</name>
 		<role>30%HP DEF Miti50% BBspark BBATKed BBregen HoT</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
@@ -1921,7 +1921,7 @@
 	</unit>
 	<unit>
 		<id>1250</id>
-		<name>Reinhart 7</name>
+		<name>Dharma Seal Reihard</name>
 		<role>35%HP ATK DEF REC Null Cure BBfill Convert Miti</role>
 		<element>Light</element>
 		<rarity>7</rarity>
@@ -1935,7 +1935,7 @@
 	</unit>
 	<unit>
 		<id>1253</id>
-		<name>Marybelle 7</name>
+		<name>Ghastly Blaster Malbelle</name>
 		<role>Spark ATK BBfill BBATK% CRIT USBB DoT superspark</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
