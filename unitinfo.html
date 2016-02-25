@@ -49,6 +49,8 @@
 			escondition = xmlDoc.getElementsByTagName("es")[i].getAttribute("condtion");
 			eseffect = xmlDoc.getElementsByTagName("es")[i].childNodes[0].nodeValue;
 			art = xmlDoc.getElementsByTagName("art")[i].getAttribute("path");
+			sp = xmlDoc.getElementsByTagName("sp")[i].getAttribute("list");
+			sp_array = sp.split("|");
 
 			//document.getElementById('artbox').innerHTML = "<img src=" + art + " />";
 			document.getElementById('big_btn').innerHTML = "<a class='w3-btn w3-teal' style='width:100%'" + 'href="unitinfo_big.html?id=' + id + '">View big size (for PC only)</a>';
@@ -59,6 +61,14 @@
 			document.write('<li><strong>SBB: </strong>' + 'hit: ' + sbbhit + ' - dc: ' + sbbdc + ' - cost: ' + sbbcost + '<br>' + sbb + '</li>');
 			document.write('<li><strong>UBB: </strong>' + 'hit: ' + ubbhit + ' - dc: ' + ubbdc + ' - cost: ' + ubbcost + '<br>' + ubb + '</li>');
 			document.write('<li><strong>ES: </strong>' + '<br>' + 'Condition: ' + escondition + '<br>' + 'Effect: ' + eseffect + '</li>');
+			if(!sp ==""){
+				document.write('<li><strong>SP list: </strong>' + '<br>');
+				for(j=0;j<sp_array.length;j++)
+				{
+					document.write('● ' + sp_array[j] + '<br>');
+				}
+				document.write('</li>');
+			}
 		}
 	}
 </script>

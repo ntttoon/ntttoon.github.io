@@ -14,6 +14,7 @@
 		<ubb hit="1" dc="1" cost="30" >1000% Fire (AOE) / Convert 30% HP to ATK (ALL) 3Turns</ubb>
 		<es condtion="Full HP SELF" >80% ATK+ SELF (Stacks with all other ATK buffs)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10596.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>867</id>
@@ -28,6 +29,7 @@
 		<ubb hit="22" dc="22" cost="15" >1000% Dark (AOE) / 170% ATK+ 170% DEF+ 170% REC+ (ALL) 3Turns</ubb>
 		<es condtion="Attacking / Attacked" >100% Chance Drain 5-8% HP (SELF) / 20% Chance Heal 20% DMG when ATKed (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60666_2.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>861</id>
@@ -42,6 +44,7 @@
 		<ubb hit="23" dc="23" cost="25" >1000% Thunder (AOE) / Reduce DMG (50%) 3Turns / 150% DEF+ (ALL) 3Turns</ubb>
 		<es condtion="None" >Nulls Ails (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40536.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>864</id>
@@ -56,6 +59,7 @@
 		<ubb hit="21" dc="21" cost="20" >1200% Light (AOE) / 60% CRIT+ (ALL) 3Turns / 200% ATK+ (ALL) 3Turns</ubb>
 		<es condtion="Attacked" >25% Chance Reflect DMG 15% (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50656.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>855</id>
@@ -70,6 +74,7 @@
 		<ubb hit="22" dc="22" cost="20" >1000% Water (AOE) / Ignore DEF (ALL) 2Turns / 120% Spark DMG+ (ALL) 3Turns</ubb>
 		<es condtion="Full BB Gauge SELF" >80% ATK+ SELF (Stacks with other ATK buffs)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20566.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>858</id>
@@ -84,6 +89,7 @@
 		<ubb hit="22" dc="22" cost="20" >1000% Earth (AOE) / 5-10BC Fill when ATKed (100%) (ALL) 3Turns / Add 100% Injury 100% Weak 100% Sick to ATK (ALL) 3Turns / Add 100% Poison 100% Para 100% Curse to ATK (ALL) 3Turns</ubb>
 		<es condtion="Attacking" >8% Chance Inflict Curse Para Poison (SELF) / 10% Chance Inflict Weak Injury Sick (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30556.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Diana batch-->
 	<unit>
@@ -99,6 +105,7 @@
 		<ubb hit="40" dc="40" cost="25" >1000% Fire (AOE) / 130% Spark DMG+ (ALL) 3Turns / 200% ATK+ (ALL) 3Turns</ubb>
 		<es condtion="Kurt in squad or Blaze Lance sphere equipped" >30% ALL Stats SELF</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10606.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>888</id>
@@ -113,6 +120,7 @@
 		<ubb hit="21" dc="21" cost="25" >1000% Water (AOE) / 70% CRIT+ (ALL) 3Turns / 200% ATK+ (ALL) 3Turns</ubb>
 		<es condtion="Claire in squad or Ice Blade sphere equipped" >30% ALL Stats SELF</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20576.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>894</id>
@@ -127,6 +135,7 @@
 		<ubb hit="20" dc="20" cost="25" >1000% Thunder (AOE) / 500% BB ATK%+ (ALL) 3Turns / 50-50BC Fill when ATKed (130%) (ALL) 3Turns</ubb>
 		<es condtion="None" >BB Fill Each Turn (4BC)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40546.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>897</id>
@@ -141,6 +150,7 @@
 		<ubb hit="20" dc="20" cost="25" >1300% Light (AOE) / 100% Chance -80% Enemy ATK 1Turns / 100% Chance -80% Enemy DEF 1Turns / 100% Injury 100% Poison 100% Para 100% Curse</ubb>
 		<es condtion="None" >100% Chance 2-3BC Fill when ATKed (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50665.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>900</id>
@@ -155,6 +165,7 @@
 		<ubb hit="22" dc="22" cost="25" >1000% Dark (AOE) / Angel Idol (2 Random Units) / Cure Ails</ubb>
 		<es condtion="None" >Angel Idol when HP &lt; 20% (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60676.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>891</id>
@@ -169,6 +180,7 @@
 		<ubb hit="20" dc="20" cost="25" >1000% Earth (AOE) / Add Fire,water,earth,thunder,light,dark to ATK (ALL) 2Turns / Normal HitCount +200% (110% DMG) 2Turns</ubb>
 		<es condtion="None" >Higher ATK+ DEF+ REC+ w/ Lower HP Left (150% - 0% Buff)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30566_2.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Aaron batch-->
 	<unit>
@@ -184,6 +196,7 @@
 		<ubb hit="20" dc="20" cost="20" >1000% Dark (AOE) / 15BC Fill 1Turn / 15BC Fill 3Turns / Reduce DMG (75%) 3Turns</ubb>
 		<es condtion="None" >100% Chance 2-3BC Fill when ATKed</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60706.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>910</id>
@@ -198,6 +211,7 @@
 		<ubb hit="20" dc="20" cost="20" >1000% Fire (AOE) / 2000% DMG Each Turn 1Turn / 50BC Fill (ALL) 3Turns</ubb>
 		<es condtion="None" >25% Chance Reflect 15% DMG to other random Enemy</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10636.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>916</id>
@@ -212,6 +226,7 @@
 		<ubb hit="22" dc="22" cost="30" >1500% Earth (AOE) / 200% ATK+ to Earth 3Turns / Ignore DEF (ALL) 3Turns</ubb>
 		<es condtion="None" >80% ATK+ on Full BB</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30596.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>922</id>
@@ -226,6 +241,7 @@
 		<ubb hit="23" dc="23" cost="25" >1000% Light (AOE) / 150% ATK+ 150% DEF+ 150% REC+ (ALL) 3Turns / 400% BB ATK%+ (ALL) 3Turns</ubb>
 		<es condtion="None" >Normal HitCount +100% (100% DMG)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50696.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>919</id>
@@ -240,6 +256,7 @@
 		<ubb hit="22" dc="22" cost="20" >Thunder (AOE) 1500%-2500% BB ATK% Based on HP LEFT</ubb>
 		<es condtion="None" >80% ATK+ on Full HP</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40576.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>913</id>
@@ -254,6 +271,7 @@
 		<ubb hit="40" dc="40" cost="28" >1000% Water (AOE) / 100% Chance -50% Enemy ATK 1Turns / Add 20% Chance -50% Enemy ATK to ATK (ALL) 3Turns</ubb>
 		<es condtion="None" >100% Chance 7BC Fill on ATK</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20606.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Oracle batch-->
 	<unit>
@@ -269,6 +287,7 @@
 		<ubb hit="20" dc="20" cost="25" >1000% Thunder (AOE) / Convert 100% DEF to ATK (ALL) 3Turns / Reduce DMG (100%) from (Water) Enemy 2Turns</ubb>
 		<es condtion="None" >20% Chance Reduce DMG (20%) (SELF) / 30% DEF+ (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40586.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>959</id>
@@ -283,6 +302,7 @@
 		<ubb hit="20" dc="20" cost="25" >1200% Earth (AOE) / 150% Spark DMG+ (ALL) 3Turns</ubb>
 		<es condtion="None" >100% CRIT DMG+ (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30606.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>956</id>
@@ -297,6 +317,7 @@
 		<ubb hit="20" dc="20" cost="25" >1000% Water (AOE) / Reduce DMG (75%) 1Turns / 500% BB ATK%+ (ALL) 2Turns</ubb>
 		<es condtion="None" >4BC Fill Each Turn (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20616.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>965</id>
@@ -311,6 +332,7 @@
 		<ubb hit="22" dc="22" cost="30" >1000% Light (AOE) / 50% BC Fill+ (ALL) 3Turns / Gradual Heal Full 3Turns</ubb>
 		<es condtion="None" >Nulls Ails (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50736.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>953</id>
@@ -325,6 +347,7 @@
 		<ubb hit="34" dc="34" cost="25" >1000% Fire (AOE) / Normal HitCount +200% (100% DMG) 3Turns / Convert 100% REC to ATK (ALL) 3Turns</ubb>
 		<es condtion="None" >15% BC+ 15% HC+ (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10646.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>968</id>
@@ -339,6 +362,7 @@
 		<ubb hit="24" dc="48" cost="20" >2000% Dark (TGT) / 450% CRIT DMG+ (ALL) 3Turns</ubb>
 		<es condtion="None" >80% ATK+ on Full BB</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60736.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Bestie batch-->
 	<unit>
@@ -354,6 +378,7 @@
 		<ubb hit="24" dc="24" cost="25" >1000% Fire (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 200% ATK+ 200% DEF+ (ALL) 3Turns</ubb>
 		<es condtion="None" >Normal HitCount +100% (100% DMG)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10666.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>989</id>
@@ -368,6 +393,7 @@
 		<ubb hit="20" dc="20" cost="25" >1000% Thunder (AOE) / Add 50% Chance -60% Enemy ATK to ATK (ALL)1Turns / Normal HitCount +200% (100% DMG) 2Turns</ubb>
 		<es condtion="None" >Nulls Elemental Weakness (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40596.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>992</id>
@@ -382,6 +408,7 @@
 		<ubb hit="45" dc="45" cost="25" >1000% Light (AOE) / 300% CRIT DMG+ 3Turns / 120% Spark DMG+ (ALL) 3Turns</ubb>
 		<es condtion="None" >80% ATK+ when Full BB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50746.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>995</id>
@@ -396,6 +423,7 @@
 		<ubb hit="20" dc="20" cost="20" >1200% Dark (AOE) / 70% CRIT+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 2Turns</ubb>
 		<es condtion="None" >100% CRIT DMG+ (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60756.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>986</id>
@@ -410,6 +438,7 @@
 		<ubb hit="20" dc="20" cost="25" >1000% Earth (AOE) / Ignore DEF (ALL) 2Turns / 250% ATK+ (ALL) 3Turns / 2000% DMG Each Turn 1Turns</ubb>
 		<es condtion="None" >100% Chance 1BC Fill on Spark (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30616.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>983</id>
@@ -424,6 +453,7 @@
 		<ubb hit="1" dc="40" cost="20" >2000% Water (AOE) / 200% Spark DMG+ (SELF) 1Turns / Inflict 100% Para 100% Curse 100% Poison 100% Injury 100% Sick 100% Weak on ATKed (ALL) 3Turns</ubb>
 		<es condtion="None" >50% Spark DMG+ (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20626.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Libera batch-->
 	<unit>
@@ -439,6 +469,7 @@
 		<ubb hit="21" dc="21" cost="20" >1200% Fire (AOE) / 300% CRIT DMG+ (ALL) 3Turns / Convert 20% HP to ATK (ALL) 3Turns</ubb>
 		<es condtion="None" >4BC Fill on CRIT (SELF) / Add 60% CRIT+ (ALL) effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10676.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1010</id>
@@ -453,6 +484,7 @@
 		<ubb hit="20" dc="20" cost="25" >1200% Water (AOE) / 400% Element Weakness DMG+ (fire,water) (ALL) 3Turns / Reduce DMG (100%) from (fire,earth) Enemy (ALL) 2Turns</ubb>
 		<es condtion="None" >Normal HitCount +100% (100% DMG)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20636.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1022</id>
@@ -467,6 +499,7 @@
 		<ubb hit="22" dc="22" cost="25" >1200% Dark (AOE) / Inflict 100% Injury 100% Weak 100% Sick 100% Poison 100% Para 100% Curse on ATKed (ALL) 3Turns / Add 100% Injury 100% Weak 100% Sick to ATK (ALL) 3Turns / Add 100% Poison 100% Para 100% Curse to ATK (ALL) 3Turns</ubb>
 		<es condtion="None" >Normal HitCount +100% (100% DMG)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60766.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1019</id>
@@ -481,11 +514,12 @@
 		<ubb hit="20" dc="20" cost="25" >1000% Light (AOE) / Reduce DMG (75%) 2Turns / Convert 100% DEF to ATK (ALL) 3Turns</ubb>
 		<es condtion="None" >20% Chance Reduce DMG (20%) (SELF) / Reduce 20% BB Cost (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50756.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1013</id>
 		<name>Emerald Radiance Libera</name>
-		<role>BBrate BBATK% BBATKed BC HC Earth,thunder DEF REC Convert</role>
+		<role>BBrate BBATK% BBATKed BC HC Earth,thunder DEF REC Convert ATK</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -495,6 +529,7 @@
 		<ubb hit="22" dc="22" cost="25" >1000% Earth (AOE) / 500% BB ATK%+ (ALL) 2Turns / Convert 100% REC to ATK (ALL) 3Turns</ubb>
 		<es condtion="None" >25% Chance Heal 20% DMG when ATKed (SELF) / Gradual Heal (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30626.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1016</id>
@@ -509,6 +544,7 @@
 		<ubb hit="23" dc="23" cost="30" >1200% Thunder (AOE) / 130% Spark DMG+ (ALL) 3Turns / 100% Chance Enemy receives 50% Spark DMG+ 1Turns</ubb>
 		<es condtion="None" >100% Chance 1BC Fill on Spark (SELF) / Add Ignore DEF (ALL) 2Turns effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40606.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Mahalu batch-->
 	<unit>
@@ -524,6 +560,7 @@
 		<ubb hit="21" dc="21" cost="25" >1200% Dark (AOE) / Normal HitCount +200% (100% DMG) (ALL) 3Turns / 100% BC+ 100% HC+ (ALL) 3Turns</ubb>
 		<es condtion="None" >15% HC+ 15% BC+ (SELF) / 100% Spark DMG+ 2Turns on >100k DMG Dealt (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60776.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1047</id>
@@ -538,11 +575,12 @@
 		<ubb hit="20" dc="20" cost="30" >1200% Earth (AOE) / 999BC Fill 1Turn / 200% ATK+ 200% DEF+ 200% REC+ (ALL) 3Turns</ubb>
 		<es condtion="None" >50% ATK 50% DEF 50% REC when Full BB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30636.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1044</id>
 		<name>Wave Breaker Quartz</name>
-		<role>Drain 40%HP DoT HoT Convert Revive</role>
+		<role>Drain 40%HP DoT HoT Convert ATK Revive</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -552,6 +590,7 @@
 		<ubb hit="" dc="" cost="25" >20% Max HP+ till Death/Battle End / Gradual Heal FULL (ALL) 3Turns / 50% Chance Revive 100% HP (ALL) 70Turns</ubb>
 		<es condtion="None" >40% Chance Revive 40% HP (SELF) Max 2x</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20646.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1050</id>
@@ -566,6 +605,7 @@
 		<ubb hit="21" dc="21" cost="25" >1200% Thunder (AOE) / 130% Spark DMG+ (ALL) 3Turns / 200% ATK+ (ALL) 3Turns</ubb>
 		<es condtion="None" >100% Chance 1BC Fill on Spark (SELF) / 40% Spark DMG+ (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40616.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1053</id>
@@ -580,6 +620,7 @@
 		<ubb hit="20" dc="20" cost="25" >Light (AOE) 1200%-2200% BB ATK% Based on HP LEFT / Reduce DMG (100%) 1Turns / Full Heal (ALL)</ubb>
 		<es condtion="None" >50% Elemental Weakness DMG+ (SELF) / 50% ATK+ 50% DEF+ 2Turns (SELF) on > 10k DMG Received</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50766.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1041</id>
@@ -594,6 +635,7 @@
 		<ubb hit="21" dc="21" cost="30" >1200% Fire (AOE) / 50BC Fill 5Turns / 300% BB ATK%+ (ALL) 3Turns / 300% Element Weakness DMG+ (fire,earth) (ALL) 3Turns</ubb>
 		<es condtion="None" >Reduce DMG (10%) from (earth,thunder) Enemy (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10686.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Starters batch-->
 	<unit>
@@ -609,6 +651,7 @@
 		<ubb hit="24" dc="24" cost="25" >1000% Fire (AOE) / 100% Chance -80% Enemy ATK 2Turns / 150% ATK+ (ALL) 3Turns</ubb>
 		<es condtion="Dandelga Sphere equipped" >20% ALL Stats SELF / 50% DMG+ to Weak Element SELF</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10016.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>802</id>
@@ -623,6 +666,7 @@
 		<ubb hit="25" dc="25" cost="20" >1000% Water (AOE) / Gradual Heal FULL 3Turns / Normal HitCount +200% (100% DMG) 3Turns</ubb>
 		<es condtion="Lexida Sphere equipped" >20% ALL Stats SELF / Angel Idol when HP &lt; 20% (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20016.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>803</id>
@@ -637,6 +681,7 @@
 		<ubb hit="21" dc="35" cost="25" >1000% Earth (AOE) / Convert 150% DEF to ATK (ALL) 3Turns</ubb>
 		<es condtion="Drevas Sphere equipped" >20% ALL Stats SELF / 20% Chance Reduce DMG 20% SELF</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30016.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>804</id>
@@ -651,6 +696,7 @@
 		<ubb hit="21" dc="35" cost="25" >1000% Thunder (AOE) / 150% Spark DMG+ (ALL) 3Turns</ubb>
 		<es condtion="Bathoota Sphere equipped" >20% ALL Stats SELF / 50% CRIT DMG+ SELF</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40016.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>805</id>
@@ -665,6 +711,7 @@
 		<ubb hit="23" dc="23" cost="40" >1000% Light (AOE) / 50BC Fill 3Turns / 150% ATK+ 150% DEF+ (ALL) 3Turns</ubb>
 		<es condtion="Urias Sphere equipped" >20% ALL Stats SELF / 20% Reduce BB Gauge Used SELF</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50016.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>806</id>
@@ -679,6 +726,7 @@
 		<ubb hit="22" dc="22" cost="15" >1000% Dark (AOE) / Reduce DMG (100%) 1Turns / 200% DEF+ (ALL) 3Turns</ubb>
 		<es condtion="Leomurg Sphere equipped" >20% ALL Stats SELF / 50% Chance Ignore DEF SELF</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60016.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Kikuri batch-->
 	<unit>
@@ -694,6 +742,7 @@
 		<ubb hit="22" dc="22" cost="15" >1000% Light (AOE) / Normal HitCount +200% (130% DMG) 3Turns / 100% Chance -80% Enemy ATK 1Turns</ubb>
 		<es condtion="Holy Eight Sphere equipped" >20% ALL Stats SELF / 100% BB ATK%+ (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50166_2.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>881</id>
@@ -708,6 +757,7 @@
 		<ubb hit="25" dc="50" cost="25" >1000% Dark (AOE) / 200% ATK+ (ALL) 3Turns / 800% DMG Each Turn 3Turns</ubb>
 		<es condtion="Scarlet Pin Sphere equipped" >20% ALL Stats SELF / 8% Chance Inflict Curse Para Poison SELF / 10% Chance Inflict Weak Injury Sick SELF</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60176.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Elimo batch-->
 	<unit>
@@ -723,6 +773,7 @@
 		<ubb hit="22" dc="22" cost="20" >1000% Fire (AOE) / 200% ATK+ to Fire 3Turns / 500% BB ATK%+ (ALL) 2Turns</ubb>
 		<es condtion="None" >25% Chance Heal 20% DMG when ATKed (SELF) / 50% Chance 2-3BC Fill when ATKed (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10126.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>903</id>
@@ -737,6 +788,7 @@
 		<ubb hit="23" dc="23" cost="15" >1000% Thunder (AOE) / 15BC Fill 3Turns / 30% Chance -80% Enemy ATK 1Turns / 30% Chance -80% Enemy DEF 1Turns</ubb>
 		<es condtion="None" >15% BC+ 15% HC+ (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40276.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>902</id>
@@ -751,6 +803,7 @@
 		<ubb hit="" dc="" cost="25" >Reduce DMG (75%) 3Turns / 3-5BC Fill when ATKed (100%) (ALL) 3Turns / Gradual Heal Full 3Turns / Null Ails 3Turns</ubb>
 		<es condtion="None" >20% Chance Reduce DMG (20%) (SELF) / Reduce 20% BB Cost (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20156.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Edea batch-->
 	<unit>
@@ -766,6 +819,7 @@
 		<ubb hit="21" dc="21" cost="25" >1000% Earth (AOE) / Reduce DMG (75%) 1Turns / Add 10% Chance -50% Enemy ATK to ATK (ALL) 2Turns</ubb>
 		<es condtion="20% ALL Stats (SELF) (Lafdranya Sphere equipped)" >Add Cure Ails (ALL) effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30166.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>949</id>
@@ -780,6 +834,7 @@
 		<ubb hit="1" dc="40" cost="30" >2000% Thunder (AOE) / 50% BC+ (SELF) / Ignore DEF (ALL) 2Turns / 200% Spark DMG+ (SELF) 1Turns</ubb>
 		<es condtion="20% ALL Stats (SELF) (Eshuon Sphere equipped)" >50% Spark DMG+ (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40166.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>950</id>
@@ -794,12 +849,13 @@
 		<ubb hit="23" dc="23" cost="20" >1000% Dark (AOE) / Heal (ALL) / Gradual Heal 3Turns / 350% REC+ (ALL) 3Turns</ubb>
 		<es condtion="None" >100% Chance Drain 5%-10% HP on ATK (SELF) / 100% Chance 7 BC Fill on ATK (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60116_2.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Will batch-->
 	<unit>
 		<id>975</id>
 		<name>Ice Bastion Zeldeus</name>
-		<role>BBATK% 30%HP DEF Miti50% DEF Convert</role>
+		<role>BBATK% 30%HP DEF Miti50% DEF Convert ATK</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -809,6 +865,7 @@
 		<ubb hit="20" dc="20" cost="40" >1000% Water (AOE) / Reduce DMG (75%) 2Turns / 150% DEF+ (ALL) 3Turns / Convert 100% DEF to ATK (ALL) 3Turns</ubb>
 		<es condtion="20% All STATS (SELF) when (Golem Core sphere equipped)" >Add 100% BB ATK%+ (ALL) 3Turns effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20276.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>976</id>
@@ -823,6 +880,7 @@
 		<ubb hit="" dc="" cost="20" >Cure Ails / Gradual Heal FULL (ALL) 3Turns / 50% Chance Revive 100% HP (ALL) 140Turns</ubb>
 		<es condtion="None" >10% Chance Reduce DMG to 1 (SELF) / Nulls Elemental Weakness (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30116.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>977</id>
@@ -837,6 +895,7 @@
 		<ubb hit="22" dc="22" cost="30" >Light (AOE) 1000%-2500% BB ATK% Based on HP LEFT / Reduce DMG (100%) from (DARK) Enemy 2Turns / 100% Chance -80% Enemy ATK 1Turns / 100% Chance -80% Enemy DEF 1Turns</ubb>
 		<es condtion="20% All STATS (SELF) when [God Devices spheres] equipped" >Add Light to ATK (3Turns) effect to BB/SBB</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50116.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Michele batch-->
 	<unit>
@@ -852,11 +911,12 @@
 		<ubb hit="34" dc="34" cost="20" >1000% Fire (AOE) / 300% CRIT DMG+ (ALL) 3Turns / 220% ATK+ (ALL) 3Turns</ubb>
 		<es condtion="20% All STATS (SELF) when DUEL Fragment sphere equipped" >Add Dark to ATK (ALL) Effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10256_2.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1003</id>
 		<name>Immortal Beast Sargavel</name>
-		<role>Heal 40%HP Cure Null BBrate Convert Spark</role>
+		<role>Heal 40%HP Cure Null BBrate Convert ATK Spark</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -866,6 +926,7 @@
 		<ubb hit="32" dc="32" cost="25" >1000% Thunder (AOE) / Convert 20% HP to ATK (ALL) 3Turns / 100% Chance Enemy receives 100% Spark DMG+ 2Turns</ubb>
 		<es condtion="None" >Nulls Ails (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40446.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1004</id>
@@ -880,6 +941,7 @@
 		<ubb hit="24" dc="24" cost="20" >1000% Fire,water,earth,thunder,light (AOE) / Reduce DMG (75%) 1Turns / Cure Ails / Null Ails 3Turns</ubb>
 		<es condtion="20% All STATS (SELF) when White Armor sphere equipped" >Add Cure Ails (ALL) effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50276.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Mock units-->
 	<unit>
@@ -895,6 +957,7 @@
 		<ubb hit="26" dc="26" cost="25" >1200% Light (AOE) / Add Fire,water,earth,thunder,light,dark to ATK (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns</ubb>
 		<es condtion="None" >25% Chance Heal 20% DMG when ATKed (SELF) / 50% Chance 2-3BC Fill when ATKed (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50286.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>8143</id>
@@ -909,6 +972,7 @@
 		<ubb hit="40" dc="40" cost="30" >Light (AOE) 1000%-3000% BB ATK% Based on HP LEFT / Reduce DMG (75%) 2Turns / 10k HP Barrier (Dark)</ubb>
 		<es condtion="None" >Reduce DMG (5%) from ALL Elements (SELF) / Add 4BC Fill 1Turn (ALL) effect to BB/SBB (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850347.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1078</id>
@@ -923,6 +987,7 @@
 		<ubb hit="70" dc="70" cost="25" >1200%-4000% BB ATK% based on Avg Allies BB Gauge (Drains ALL Allies BB) / 999BC Fill 1Turn / 10k HP Barrier (Light)</ubb>
 		<es condtion="None" >Nulls Elemental Weakness (SELF) / Nulls CRIT (SELF) / Add 4BC Fill 1Turn to BB/SBB</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50786.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1121</id>
@@ -937,6 +1002,7 @@
 		<ubb hit="20" dc="20" cost="25" >1000% Dark (AOE) / 800% DMG Each Turn 3Turns / 100% Injury 100% Weak 100% Sick 100% Poison / 100% Para 100% Curse / 300% DMG+ to Ailed Enemy (ALL) 3Turns</ubb>
 		<es condtion="None" >20% OverDrive Fill+ (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60786.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1156</id>
@@ -951,6 +1017,7 @@
 		<ubb hit="5" dc="75" cost="25" >3500% Earth (TGT) / 400% ATK+ to Earth 1Turns / 600% BB ATK%+ (ALL) 1Turns</ubb>
 		<es condtion="20% ALL Stats (SELF) when Sky Harbinger sphere equipped" >50% ATK+ on Full BB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30236.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1157</id>
@@ -965,6 +1032,7 @@
 		<ubb hit="25" dc="25" cost="20" >1000% Thunder (AOE) / Reduce DMG (100%) 1Turns / 200% ATK+ 200% DEF+ 200% REC+ (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns</ubb>
 		<es condtion="20% ALL Stats (SELF) when Honor Armor sphere equipped" >50% DEF+ when HP > 50% (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40236.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1218</id>
@@ -979,6 +1047,7 @@
 		<ubb hit="27" dc="27" cost="20" >1000% Fire (AOE) / 25% HC+ (SELF) / 200% ATK+ 200% DEF+ 200% REC+ (ALL) 3Turns / 1000% DMG Each Turn 3Turns / 100% Chance -80% Enemy ATK 2Turns</ubb>
 		<es condtion="None" >50% ATK 50% DEF 50% REC (SELF) when BB Gauge > 50% / Add 25% Chance Enemy receives 25% Spark DMG+ 1Turns Effect to BB/SBB</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10236.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1219</id>
@@ -993,6 +1062,7 @@
 		<ubb hit="28" dc="28" cost="20" >2500% Water (AOE) 1000%-2500% BB ATK% Based on HP LEFT / 999BC Fill 2Turns / 250% ATK+ 250% DEF+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns</ubb>
 		<es condtion="None" >50% ATK 50% DEF 50% REC (SELF) when BB Gauge > 50% / Add 30% BC Fill+ (ALL) 3Turns Effect to BB/SBB</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20236.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--GB exclusive batch-->
 	<unit>
@@ -1008,6 +1078,7 @@
 		<ubb hit="19" dc="19" cost="26" >2000% Dark (AOE) / 75% Chance -75% Enemy ATK 3Turns / 75% Chance -75% Enemy DEF 3Turns / Add 100% Injury 100% Weak 100% Sick 100% Poison to ATK (ALL) 3Turns / Angel Idol (SELF)</ubb>
 		<es condtion="Axe of Hadaron Sphere equipped" >50% HP (SELF) / 75% CRIT DMG+ (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860147.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>8197</id>
@@ -1022,6 +1093,7 @@
 		<ubb hit="21" dc="21" cost="20" >1000% Light (AOE) / 50% Chance Revive 100% HP (ALL) 140Turns / Gradual Heal FULL (ALL) 3Turns</ubb>
 		<es condtion="Harp of Aurelia Sphere equipped" >40% DEF 40% REC (SELF) / 50% Chance 2-3 BC Fill when ATKed (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850147.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>8196</id>
@@ -1036,6 +1108,7 @@
 		<ubb hit="25" dc="25" cost="30" >1000% Water (AOE) / 50% BC Fill+ (ALL) 3Turns / Shield (all, 20000HP 3500DEF) (ALL) 2Turns / 30% Chance -80% Enemy ATK 1Turns / 30% Chance -80% Enemy DEF 1Turns</ubb>
 		<es condtion="Tridon's Trident sphere equipped" >40% HP 40% DEF (SELF) / 3BC Fill Each Turn (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_820147.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>8195</id>
@@ -1050,6 +1123,7 @@
 		<ubb hit="3" dc="18" cost="28" >1200% Fire (AOE) / Reduce DMG (75%) 1Turns / 70% CRIT+ (SELF) 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 300% ATK+ 300% DEF+ 300% REC+ (SELF) 3Turns</ubb>
 		<es condtion="Blades of Ultor sphere is equipped" >40% ATK 40% DEF (SELF) / Angel Idol (Revives with 100% HP) when HP &lt; 20% (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810147.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>8194</id>
@@ -1064,6 +1138,7 @@
 		<ubb hit="30" dc="30" cost="25" >1200% Dark (AOE) / Normal HitCount +200% (100% DMG) (ALL) 3Turns / 250% ATK+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 2Turns</ubb>
 		<es condtion="Obsidian Core Amplifer sphere equipped" >20% ALL Stats (SELF) / Normal HitCount +100% (100% DMG)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860257.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>8191</id>
@@ -1078,6 +1153,7 @@
 		<ubb hit="18" dc="18" cost="25" >1000% Thunder (AOE) / 500BC Fill 1Turn (ALL) / Reduce DMG (50%) 3Turns / 200% ATK+ 200% DEF+ 200% REC+ (ALL) 3Turns</ubb>
 		<es condtion="Forgebreaker sphere equipped" >40% HP 40% DEF (SELF) / Nulls Elemental Weakness (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840257.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>8180</id>
@@ -1092,6 +1168,7 @@
 		<ubb hit="33" dc="33" cost="25" >1000% Earth,light,dark (AOE) / Reduce DMG (50%) 3Turns / Gradual Heal 3Turns</ubb>
 		<es condtion="None" >15% Chance Reduce DMG to 1 (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830527.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>8177</id>
@@ -1106,6 +1183,7 @@
 		<ubb hit="18" dc="36" cost="25" >1000% Fire (AOE) / 50% Chance -50% Enemy ATK 2Turns</ubb>
 		<es condtion="None" >125% Element Weakness DMG+ (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810527.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>8139.8</id>
@@ -1120,6 +1198,7 @@
 		<ubb hit="14" dc="28" cost="30" >1200% Thunder, light (AOE) / 300% CRIT DMG+ (ALL) 3Turns / 120% Spark DMG+ (ALL) 3Turns / 150% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns</ubb>
 		<es condtion="Spear of Zedus sphere equipped" >20% ALL Stats (SELF) / Add 60% CRIT+ (ALL) 3Turns effect to BB/SBB (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840147.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>8138.8</id>
@@ -1134,6 +1213,7 @@
 		<ubb hit="35" dc="35" cost="26" >1200% Earth (AOE) / 50BC Fill 3Turns / Cure Ails / Null Ails 3Turns</ubb>
 		<es condtion="Bow of Andaria sphere equipped" >40% HP 40% ATK (SELF) / Add 100% Chance 2-3 BC Fill when ATKed (ALL) 3Turns effect to BB/SBB (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830147.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Lunaris batch-->
 	<unit>
@@ -1149,6 +1229,7 @@
 		<ubb hit="22" dc="22" cost="25" >1200% Dark (AOE) / 300% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns / 25% OverDrive Gauge Fill</ubb>
 		<es condtion="None" >Nulls ATK/DEF/REC Down debuffs (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60316.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1037</id>
@@ -1163,6 +1244,7 @@
 		<ubb hit="21" dc="21" cost="20" >1200% Light (AOE) / Reduce DMG (75%) 1Turns / Convert 100% DEF to ATK (ALL) 3Turns</ubb>
 		<es condtion="None" >0-50% ATK+ (SELF) Based on HP Left / 0-100% DEF+ (SELF) Based on HP Lost</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50406.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1036</id>
@@ -1177,6 +1259,7 @@
 		<ubb hit="22" dc="22" cost="20" >1200% Water (AOE) / 300% CRIT DMG+ (ALL) 3Turns / Reduce DMG (100%) from (Fire) Enemy 2Turns</ubb>
 		<es condtion="None" >4BC Fill on CRIT (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20326.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1035</id>
@@ -1191,6 +1274,7 @@
 		<ubb hit="21" dc="21" cost="20" >Fire (AOE) 1200%-2000% BB ATK% Based on HP LEFT / 300% BB ATK%+ (ALL) 2Turns</ubb>
 		<es condtion="None" >150% ATK+ 1Turn (SELF) on > 10k DMG Received</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10336.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Shera batch-->
 	<unit>
@@ -1206,6 +1290,7 @@
 		<ubb hit="22" dc="22" cost="20" >1000% Water (AOE) / Cure Ails / 50% Chance Revive 100% HP (ALL) 140Turns</ubb>
 		<es condtion="20% ALL Stats (SELF) when Reeze's Armor sphere equipped" >Add Null Ails effect to BB/SBB</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20286.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1086</id>
@@ -1220,6 +1305,7 @@
 		<ubb hit="21" dc="21" cost="25" >1000% Earth (AOE) / 100% Chance Enemy receives 100% Spark DMG+ 1Turns / Add 10% Chance -60% Enemy ATK to ATK (ALL) 2Turns</ubb>
 		<es condtion="None" >Add Ignore DEF (ALL) 2Turns effect to BB/SBB / 100% DMG+ to Ailed Enemy</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30516.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1087</id>
@@ -1234,6 +1320,7 @@
 		<ubb hit="22" dc="22" cost="20" >1000% Thunder (AOE) / Reduce DMG (75%) 2Turns / 250% ATK+ (ALL) 3Turns</ubb>
 		<es condtion="None" >Null Ignore DEF ATKs (SELF) / 4BC Fill on Guard (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40506.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Vishra batch-->
 	<unit>
@@ -1249,11 +1336,12 @@
 		<ubb hit="21" dc="21" cost="20" >1000% Fire (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 200% ATK+ (ALL) 3Turns / Inflict 100% Injury 100% Weak 100% Sick 100% Poison 100% Para 100% Curse on ATKed (ALL) 3Turns</ubb>
 		<es condtion="None" >100% Chance 2-3BC Fill when ATKed (SELF) / 100% DMG+ to Ailed Enemy (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10286.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1135</id>
 		<name>Mayhem Empress Luly</name>
-		<role>Miti BBATK% Weakness BC HC ATK Convert</role>
+		<role>Miti BBATK% Weakness BC HC ATK Convert DEF</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1263,6 +1351,7 @@
 		<ubb hit="1" dc="50" cost="20" >Earth (AOE) 1300-2500% BB ATK% based on HP Left / 500% BB ATK%+ (ALL) 3Turns</ubb>
 		<es condtion="None" >200% BB ATK%+ (SELF) 2Turns on > 10k DMG Received</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30316.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1136</id>
@@ -1277,6 +1366,7 @@
 		<ubb hit="20" dc="20" cost="20" >1200% Thunder (AOE) / 100% Chance -80% Enemy ATK 2Turns / 10k HP Barrier (Thunder)</ubb>
 		<es condtion="None" >Reduce DMG (25%) (SELF) 1Turn on > 10k DMG Received</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40346.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1137</id>
@@ -1291,6 +1381,7 @@
 		<ubb hit="21" dc="21" cost="20" >1000% Dark (AOE) / 20% Max HP+ till Death/Battle End / Convert 20% HP to ATK (ALL) 3Turns</ubb>
 		<es condtion="None" >25% Chance Heal 20% DMG when ATKed (SELF) / 100% Chance Drain 5-8% HP (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60286.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Adel 7 batch-->
 	<unit>
@@ -1306,6 +1397,7 @@
 		<ubb hit="21" dc="21" cost="25" >1000% Fire (AOE) / Reduce DMG (75%) 2Turns / 120% Spark DMG+ (ALL) 3Turns</ubb>
 		<es condtion="None" >100% Chance 2-3 BC Fill on ATKed (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10736.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1098</id>
@@ -1320,11 +1412,12 @@
 		<ubb hit="21" dc="21" cost="25" >1200% Earth (AOE) / 80% Chance 3-6BC Fill on Spark (ALL) 3Turns / 130% Spark DMG+ (ALL) 3Turns</ubb>
 		<es condtion="None" >4BC Fill Each Turn (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30676.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1101</id>
 		<name>Electrical Storm Eldora</name>
-		<role>CRIT 30%HP Miti BBfill BBcrit Convert</role>
+		<role>CRIT 30%HP Miti BBfill BBcrit Convert ATK</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1334,6 +1427,7 @@
 		<ubb hit="20" dc="20" cost="20" >1200% Thunder (AOE) / 300% CRIT DMG+ (ALL) 3Turns / Convert 20% HP to ATK (ALL) 3Turns</ubb>
 		<es condtion="None" >50% ATK+ when Full BB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40646.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1104</id>
@@ -1348,6 +1442,7 @@
 		<ubb hit="21" dc="21" cost="25" >1200% Light (AOE) / 100% BC Fill+ (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns</ubb>
 		<es condtion="None" >Add 5BC Fill 3Turns (ALL) effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50816.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1107</id>
@@ -1362,6 +1457,7 @@
 		<ubb hit="21" dc="21" cost="25" >1200% Dark (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns</ubb>
 		<es condtion="None" >100% Chance Drain 5-8% HP (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60836.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1095</id>
@@ -1376,6 +1472,7 @@
 		<ubb hit="23" dc="23" cost="25" >1200% Water (AOE) / 100% Chance Enemy receives 50% Spark DMG+ / Normal HitCount +200% (120% DMG) (ALL) 3Turns</ubb>
 		<es condtion="None" >150% BB ATK%+ (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20676.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Doruku 7 batch-->
 	<unit>
@@ -1391,6 +1488,7 @@
 		<ubb hit="22" dc="22" cost="25" >Fire (AOE) 1200 - 2000% BB ATK% Based on HP LEFT / 300% CRIT DMG+ (ALL) 3Turns / 100% Spark DMG+ (ALL) 3Turns / 300% BB ATK%+ (ALL) 3Turns</ubb>
 		<es condtion="20% ALL Stats when Dandelga Sphere is Equipped" >0-50% ATK+ based on HP LEFT (SELF) / 50% ATK+ on Full BB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10756.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1152</id>
@@ -1405,6 +1503,7 @@
 		<ubb hit="" dc="" cost="20" >50BC Fill 3Turns / Reduce DMG (50%) 3Turns / 50% Chance Revive 100% HP (ALL) 90Turns / Gradual Heal FULL (ALL) 3Turns</ubb>
 		<es condtion="None" >Nulls Ails (SELF) / Angel Idol when HP &lt; 20% (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50836.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1155</id>
@@ -1419,6 +1518,7 @@
 		<ubb hit="22" dc="22" cost="25" >1200% Dark (AOE) / 130% Spark DMG+ (ALL) 3Turns / 100% Chance Enemy receives 100% Spark DMG+ 1Turns / 300% BB ATK%+ (ALL) 3Turns</ubb>
 		<es condtion="None" >70% Spark DMG+ on >15 Sparks (SELF) / 100% Chance 1BC Fill on Spark (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60846.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1146</id>
@@ -1433,6 +1533,7 @@
 		<ubb hit="21" dc="21" cost="25" >1000% Earth (AOE) / Reduce DMG (75%) 3Turns / 200% ATK+ 200% DEF+ 200% REC+ (ALL) 3Turns</ubb>
 		<es condtion="None" >Nulls CRIT (SELF) / Nulls Elemental Weakness (SELF) / Add 30% HC+ 30% BC+ (ALL) 3Turns effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30686.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1149</id>
@@ -1447,6 +1548,7 @@
 		<ubb hit="20" dc="20" cost="25" >1200% Thunder (AOE) / Normal HitCount +200% (100% DMG) (ALL) 3Turns / 200% ATK+ (ALL) 3Turns / 800% DMG Each Turn 3Turns</ubb>
 		<es condtion="None" >Normal HitCount +100% (100% DMG) (ALL) / Add Ignore DEF (ALL) effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40666.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1143</id>
@@ -1461,6 +1563,7 @@
 		<ubb hit="25" dc="25" cost="25" >1200% Water (AOE) / 500% BB ATK%+ (ALL) 2Turns / 400% Element Weakness DMG+ (fire,water) (ALL) 3Turns</ubb>
 		<es condtion="None" >50% Element Weakness DMG+ (Water) (SELF) / Add 50% BC Fill+ (ALL) 3Turns effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20696.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Raydn 7 batch-->
 	<unit>
@@ -1476,6 +1579,7 @@
 		<ubb hit="22" dc="22" cost="20" >1200% Water (AOE) / Ignore DEF (ALL) 2Turns / 120% Spark DMG+ (ALL) 3Turns / Convert 100% DEF to ATK (ALL) 3Turns</ubb>
 		<es condtion="None" >5BC Fill on >10k DMG Dealt (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20356.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1174</id>
@@ -1490,6 +1594,7 @@
 		<ubb hit="20" dc="20" cost="25" >1500% Earth (AOE) / 500% BB ATK%+ (ALL) 2Turns / 100% Chance -80% Enemy ATK 2Turns</ubb>
 		<es condtion="20% ALL Stats (SELF) / Reduce 20% BB Cost (SELF) when Golem Core sphere equipped" >20% Chance Reduce DMG (20%) (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30276.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1175</id>
@@ -1504,6 +1609,7 @@
 		<ubb hit="20" dc="20" cost="30" >1200% Thunder (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 5Turns / Inflict 100% Injury 100% Weak 100% Sick 100% Poison 100% Para 100% Curse on ATKed (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns</ubb>
 		<es condtion="None" >100% Chance 2-3BC Fill when ATKed (SELF) / 25% Chance Heal 20% DMG when ATKed (ALL)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40316.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Drevas 7 batch-->
 	<unit>
@@ -1519,11 +1625,12 @@
 		<ubb hit="22" dc="22" cost="30" >1200% Fire (AOE) / 50BC Fill 3Turns / Gradual Heal FULL (ALL) 3Turns / 33% Chance Revive Dead Ally 100% HP (ALL)</ubb>
 		<es condtion="None" >25% Chance Heal 20% DMG when ATKed (SELF) / 50% Chance 3-5BC Fill when ATKed (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10776.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1181</id>
 		<name>Sacred Lotus Piany</name>
-		<role>Spark 40%HP Null DEF REC BBspark BBATK% Convert</role>
+		<role>Spark 40%HP Null DEF REC BBspark BBATK% Convert ATK</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1533,11 +1640,12 @@
 		<ubb hit="22" dc="22" cost="30" >1200% Water (AOE) / 100% Chance 5-8BC Fill on Spark (ALL) 3Turns / 120% Spark DMG+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns</ubb>
 		<es condtion="None" >Nulls Ails (SELF) / 50% Chance 1-3BC Fill on Spark (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20706.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1184</id>
 		<name>Malachite Pike Drevas</name>
-		<role>Miti 30%HP DEF Null Inflict Injury Weak Sick Poison Para Curse Convert Cure</role>
+		<role>Miti 30%HP DEF Null Inflict Injury Weak Sick Poison Para Curse Convert ATK Cure</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1547,6 +1655,7 @@
 		<ubb hit="22" dc="22" cost="25" >1200% Earth (AOE) / Convert 50% HP to ATK (ALL) 3Turns / Inflict 100% Injury 100% Weak 100% Sick 100% Poison 100% Para 100% Curse on ATKed (ALL) 3Turns / 300% DMG+ to Ailed Enemy (ALL) 3Turns</ubb>
 		<es condtion="None" >Nulls Ails (SELF) / Add Cure Ails (ALL) effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30696.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1187</id>
@@ -1561,6 +1670,7 @@
 		<ubb hit="21" dc="21" cost="25" >1200% Thunder (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / Convert 30% HP to ATK (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns</ubb>
 		<es condtion="None" >25% Chance Heal 20% DMG when ATKed (SELF) / 50% Chance 2-3BC Fill when ATKed (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40676.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1190</id>
@@ -1575,6 +1685,7 @@
 		<ubb hit="23" dc="23" cost="20" >1200% Light (AOE) / Reduce DMG (50%) 3Turns / Reduce DMG (100%) from (dark, light) Enemy (ALL) 1Turns</ubb>
 		<es condtion="None" >100% Chance 2-3 BC Fill on Spark (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50866.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1193</id>
@@ -1589,6 +1700,7 @@
 		<ubb hit="21" dc="21" cost="30" >1200% Dark (AOE) / 999BC Fill (ALL) 1Turn / 250% ATK+ 250% DEF+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns</ubb>
 		<es condtion="None" >20% HC Fill+ BF Fill+ (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60876.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Halloween -->
 	<unit>
@@ -1604,6 +1716,7 @@
 		<ubb hit="21" dc="21" cost="20" >1200% Fire, Dark (AOE) / 250% ATK+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns</ubb>
 		<es condtion="None" >100% Chance Drain 5-10% HP (SELF) / Add Ignore DEF 2Turns (ALL) effect to BB/SBB (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810107.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>8149</id>
@@ -1618,6 +1731,7 @@
 		<ubb hit="17" dc="17" cost="20" >1000% Dark (AOE) / Add 100% Injury 100% Weak 100% Sick to ATK (ALL) 3Turns / Add 100% Poison 100% Para 100% Curse to ATK (ALL) 3Turns / 25% OverDrive Gauge Fill</ubb>
 		<es condtion="None" >100% DMG+ to Ailed Enemy (SELF) / Add Cure Ails (ALL) effect to BB/SBB (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860107.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Elza 7* -->
 	<unit>
@@ -1633,6 +1747,7 @@
 		<ubb hit="22" dc="22" cost="20" >1200% Fire (AOE) / Reduce DMG (50%) 3Turns / 300% Element Weakness DMG+ (fire) (ALL) 3Turns</ubb>
 		<es condtion="None" >Add Cure Ails (ALL) effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10366.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1197</id>
@@ -1647,6 +1762,7 @@
 		<ubb hit="23" dc="23" cost="20" >1200% Earth (AOE) / 20% Max HP+ till Death/Battle End / Convert 30% HP to ATK (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns</ubb>
 		<es condtion="None" >100% Chance 3-5BC Fill when ATKed (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30346.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1198</id>
@@ -1661,6 +1777,7 @@
 		<ubb hit="7" dc="14" cost="25" >1500% Light (TGT) 1500% BB ATK% / Light (AOE) 1000% BB ATK% / 999BC Fill (ALL) 1Turn / 100% BB Fill (SELF) / 200% ATK+ 200% DEF+ 200% REC+ (ALL) 3Turns </ubb>
 		<es condtion="20% ALL STATS (SELF) when Reeze's sphere is equipped" >Add 4BC Fill (ALL) Effect to BB/SBB</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50316.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1199</id>
@@ -1675,6 +1792,7 @@
 		<ubb hit="44" dc="44" cost="25" >1000% Dark (AOE) / 130% Spark DMG+ (ALL) 3Turns / 50% Weak 50% Sick 50% Poison / 50% Injury 50% Para 50% Curse / Reduce DMG (100%) from (Light) Enemy 2Turns</ubb>
 		<es condtion="None" >100% Chance Drain 5-10% HP (SELF) / Add Ignore DEF (ALL) 2Turns Effect to BB/SBB</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60526.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Descendents of Elgaia -->
 	<unit>
@@ -1690,6 +1808,7 @@
 		<ubb hit="23" dc="23" cost="25" >1200% Fire (AOE) / Convert 100% REC to DEF (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns / Reduce DMG (75%) from (Fire,water,earth,thunder) Enemy</ubb>
 		<es condtion="None" >Null Ails (SELF) / Reduce 20% BB Cost (SELF) / 50% Chance 3-5BC Fill when ATKed (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10796.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1205</id>
@@ -1704,6 +1823,7 @@
 		<ubb hit="22" dc="22" cost="25" >1200% Water (AOE) / 300% CRIT DMG+ (ALL) 3Turns / 100% Chance Enemy receives 100% Spark DMG+ 1Turns / 300% BB ATK%+ (ALL) 3Turns</ubb>
 		<es condtion="None" >Add 90% Spark DMG+ (ALL) 3Turns Effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20726.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1208</id>
@@ -1718,6 +1838,7 @@
 		<ubb hit="21" dc="21" cost="25" >1200% Earth (AOE) / 50BC Fill 3Turns / 25% Max HP+ till Death/Battle End / 200% ATK+ 200% DEF+ 200% REC+ (ALL) 3Turns</ubb>
 		<es condtion="None" >Add Gradual Heal (ALL) 3Turns Effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30706.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1211</id>
@@ -1732,6 +1853,7 @@
 		<ubb hit="20" dc="20" cost="20" >1200% Thunder (AOE) / 500% BB ATK%+ (ALL) 3Turns / 50% BC+ 50% HC+ 3% Item+ (ALL) 3Turns / Add 100% Injury 100% Para to ATK (ALL) 3Turns</ubb>
 		<es condtion="None" >0-50% ATK+ based on HP LEFT (SELF) / 50% ATK+ on Full BB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40686.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1214</id>
@@ -1746,6 +1868,7 @@
 		<ubb hit="1" dc="40" cost="30" >1500% Light (AOE) / Add Fire,water,earth,thunder,light,dark to ATK (ALL) 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 130% Spark DMG+ (ALL) 3Turns</ubb>
 		<es condtion="20% ALL Stats (SELF) / 100% Chance 10BC Fill on Spark (SELF) when Guiding Light Sphere Equipped" >Add 60% CRIT+ (ALL) 3Turns Effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50886.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1217</id>
@@ -1760,6 +1883,7 @@
 		<ubb hit="22" dc="22" cost="25" >1000% Dark (AOE) / Reduce DMG (75%) 3Turns / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns</ubb>
 		<es condtion="None" >100% Chance 2-3BC Fill when ATKed (SELF) / Null Ignore DEF (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60886.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Morokai Deva batch -->
 	<unit>
@@ -1775,6 +1899,7 @@
 		<ubb hit="2" dc="30" cost="25" >Fire (AOE) 1200%-4000% BB ATK% Based on HP LOST / 300% CRIT DMG+ (ALL) 3Turns / 100% Max HP+ till Death/Battle End / Convert 50% HP to ATK (ALL) 3Turns</ubb>
 		<es condtion="When Vulcan Axe is Equipped" >Null CRIT (SELF) / Null Elemental Weakness (SELF) / 200% BB ATK%+ (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810317.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>8157</id>
@@ -1789,6 +1914,7 @@
 		<ubb hit="22" dc="22" cost="25" >1200% Water (AOE) / 50BC Fill 3Turns / 200% ATK+ 200% DEF+ 200% REC+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 2Turns</ubb>
 		<es condtion="When Glacies Staff is Equipped" >20% ALL Stats (SELF) / 100% Chance 8BC Fill when ATKed (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_820317.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Phoenix 7 -->
 	<unit>
@@ -1804,6 +1930,7 @@
 		<ubb hit="" dc="" cost="35" >Full Heal (ALL) / 25% Max HP+ till Death/Battle End / 20k HP Barrier (fire) / 66% Chance Revive Dead Ally 100% HP (ALL) </ubb>
 		<es condtion="None" >Angel Idol when HP &lt; 20% (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10116.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1233</id>
@@ -1818,6 +1945,7 @@
 		<ubb hit="21" dc="21" cost="25" >1500% Water (AOE) / 300% ATK+ (ALL) 3Turns / 75% BC+ 75% HC+ (ALL) 3Turns / Convert 200% DEF to ATK (ALL) 3Turns / -100% DEF (ALL) 3Turns </ubb>
 		<es condtion="None" >100% Chance 2-3BC Fill on Spark (SELF) / 50% Spark DMG+ (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20126.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1234</id>
@@ -1832,6 +1960,7 @@
 		<ubb hit="24" dc="24" cost="30" >1200% Light (AOE) / 200% ATK+ to Light 3Turns / 130% Spark DMG+ (ALL) 3Turns / 300% BB ATK%+ (ALL) 3Turns</ubb>
 		<es condtion="[Condition 1] 20% HP 20% ATK (SELF) / Add Reduce DMG (50%) (ALL) 1Turns Effect to BB/SBB (SELF) when [Guardian Shard] is equipped. [Condition 2] 20% HP 20% DEF (SELF) / Add 25% Chance Enemy receives 25% Spark DMG+ 1Turns Effect to BB/SBB (SELF) when [Guardian Sliver] is equipped." >100% Chance 1-2BC Fill on Spark (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50386.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1235</id>
@@ -1846,6 +1975,7 @@
 		<ubb hit="23" dc="23" cost="30" >1200% Dark (AOE) / 25% OverDrive Fill / Normal HitCount +300% (100% DMG) (ALL) 3Turns / 10k HP Barrier (dark) </ubb>
 		<es condtion="None" >Add Ignore DEF (ALL) 2Turns effect to BB/SBB / Normal HitCount +100% (100% DMG) (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60356.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Zeruiah - Limited unit -->
 	<unit>
@@ -1861,6 +1991,7 @@
 		<ubb hit="" dc="" cost="30" >Reduce DMG (75%) 3Turns / 25% Max HP+ till Death/Battle End / 100% BC+ 100% HC+ 7% Item+ (ALL) 3Turns / Convert 100% REC to DEF (ALL) 3Turns</ubb>
 		<es condtion="None" >30% Chance Heal 25% when ATKed (SELF) / 25% Chance Reduce DMG (25%) (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830117.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Otherly world -->
 	<unit>
@@ -1876,6 +2007,7 @@
 		<ubb hit="22" dc="22" cost="25" >2000% Fire (AOE) / 150% Spark DMG+ (ALL) 3Turns / 250% ATK+ (ALL) 3Turns</ubb>
 		<es condtion="None" >50% Spark DMG+ (SELF) / 100% Chance 5BC Fill on Spark (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10806.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1241</id>
@@ -1890,6 +2022,7 @@
 		<ubb hit="24" dc="24" cost="25" >1200% Water (AOE) / Reduce DMG (100%) 1Turns / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance -80% Enemy ATK 3Turns / 100% Chance -80% Enemy DEF 3Turns</ubb>
 		<es condtion="None" >Add Convert 35% ATK to DEF (ALL) 3Turns Effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20736.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1244</id>
@@ -1904,6 +2037,7 @@
 		<ubb hit="21" dc="21" cost="25" >1200% Earth (AOE) / 500% BB ATK%+ (ALL) 3Turns / 400% Element Weakness DMG+ (water,earth) (ALL) 3Turns / Add 100% Injury 100% Weak 100% Sick 100% Poison to ATK (ALL) 3Turns / Add 100% Para 100% Curse to ATK (ALL) 3Turns</ubb>
 		<es condtion="None" >40% Chance Angel Idol 2x (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30716.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1247</id>
@@ -1918,6 +2052,7 @@
 		<ubb hit="22" dc="22" cost="30" >1200% Thunder (AOE) / 999BC Fill 3Turns / Reduce DMG (75%) 3Turns / Gradual Heal FULL (ALL) 3Turns</ubb>
 		<es condtion="None" >100% Chance 2-3BC Fill when ATKed (SELF) / 20% Chance Reduce DMG (20%) (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40696.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1250</id>
@@ -1932,6 +2067,7 @@
 		<ubb hit="20" dc="20" cost="30" >1200% Light (AOE) / 25% Max HP+ till Death/Battle End / Convert 25% HP to DEF (ALL) 3Turns / Reduce DMG (100%) from (Fire,water,earth,thunder) Enemy</ubb>
 		<es condtion="None" >Null Ails (SELF) / 100% Chance Reduce 20-25% BB Gauge Used (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50896.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1253</id>
@@ -1946,6 +2082,7 @@
 		<ubb hit="23" dc="23" cost="25" >Dark (AOE) 1200-2000% BB ATK% Based on HP LEFT / 100% Chance 5-8BC Fill on Spark (ALL) 3Turns / 130% Spark DMG+ (ALL) 3Turns / 1000% DMG Each Turn 3Turns</ubb>
 		<es condtion="None" >80% ATK+ when Full HP (SELF) / 50% ATK+ when BB > 50% (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60896.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Gra Owen 7* -->
 	<unit>
@@ -1961,6 +2098,7 @@
 		<ubb hit="29" dc="29" cost="30" >1500% Fire (AOE) / 300% CRIT DMG+ (ALL) 3Turns / 250% ATK+ 250% DEF+ 250% REC+ (ALL) 3Turns / 1000% DMG Each Turn 3Turns / 500% BB ATK%+ (ALL) 3Turns</ubb>
 		<es condtion="20% ALL STATS (SELF) when 羅獄焔燼メドブレア sphere equipped" >Add 160% DMG+ to Ailed Enemy (ALL) 3Turns Effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10516.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1255</id>
@@ -1975,12 +2113,13 @@
 		<ubb hit="28" dc="28" cost="30" >1500% Light,dark (AOE) / 999BC Fill 3Turns / Gradual Heal FULL (ALL) 3Turns / Reduce DMG (100%) from (Light,dark) Enemy</ubb>
 		<es condtion="20% ALL STATS (SELF) when Ishrion sphere equipped" >Add 8BC Fill (ALL) 3Turns Effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60326.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Shida 7* -->
 	<unit>
 		<id>1258</id>
 		<name>Lucina 7</name>
-		<role>30%HP water earth hit HoT ATK convert HealATKed DoT</role>
+		<role>30%HP water earth hit HoT ATK convert DEF HealATKed DoT</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1990,6 +2129,7 @@
 		<ubb hit="24" dc="24" cost="25" >1000% Water (AOE) / 100% Chance Heal 75-75% DMG when ATKed (ALL)3Turns / 200% ATK+ (ALL) 3Turns / 1000% DMG Each Turn 3Turns</ubb>
 		<es condtion="None" >80% ATK+ when Full HP (SELF) / Add Convert 15% HP to DEF (ALL) effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20366.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1259</id>
@@ -2004,11 +2144,12 @@
 		<ubb hit="20" dc="20" cost="25" >1000% Earth (AOE) / Normal HitCount +200% (100% DMG) (ALL) 3Turns / 200% ATK+ (ALL) 3Turns / 50% BC+ 50% HC+ 3% Item+ (ALL) 3Turns</ubb>
 		<es condtion="20% ALL STATS (SELF) when any DROP-type sphere equipped" >Normal HitCount +100% (100% DMG) (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30446.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1260</id>
 		<name>Orna 7</name>
-		<role>BBATKed Thunder Fire atkdown defdown crit convert superspark</role>
+		<role>BBATKed Thunder Fire atkdown defdown crit convert ATK superspark</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -2018,6 +2159,7 @@
 		<ubb hit="23" dc="23" cost="25" >1000% Thunder (AOE) / 300% CRIT DMG+ (ALL) 3Turns / Convert 100% REC to ATK (ALL) 3Turns / 100% Chance SPARKcrit (50% DMG+) (ALL) 3Turns</ubb>
 		<es condtion="None" >80% ATK+ 2Turns on CRIT (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40496.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1261</id>
@@ -2032,6 +2174,7 @@
 		<ubb hit="44" dc="44" cost="30" >1200% Dark (AOE) / Reduce DMG (100%) 1Turns / Add Fire,water,earth,thunder,light,dark to ATK (ALL) 3Turns / 300% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns</ubb>
 		<es condtion="None" >50% OverDrive Fill+ (SELF) / Inflict 8% Para 8% Curse 8% Poison 10% Injury 10% Sick 10% Weak on ATKed (ALL) 3Turns</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60096.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Avani and Mikael -->
 	<unit>
@@ -2047,6 +2190,7 @@
 		<ubb hit="40" dc="40" cost="25" >1200% Earth (AOE) / 130% Spark DMG+ (ALL) 3Turns / 100% Chance Enemy receives 100% Spark DMG+ 3Turns / Normal HitCount +300% (100% DMG) (ALL) 3Turns</ubb>
 		<es condtion="Vorpal ChainBlades Sphere equipped" >Normal HitCount +100% (100% DMG) (SELF) / 100% DMG+ to Ailed Enemy (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830317.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>8163.8</id>
@@ -2061,12 +2205,13 @@
 		<ubb hit="14" dc="28" cost="25" >1200% Thunder (AOE) / Reduce DMG (100%) 1Turns / Reduce DMG (100%) 2Turns / 250% ATK+ 250% DEF+ (ALL) 3Turns / Convert 100% attack to DEF (ALL) 3Turns</ubb>
 		<es condtion="Eremorn's Aegis Sphere equipped" >2-3BC Fill when ATKed (SELF) / 125% Element Weakness DMG+ (thunder) (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840317.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Sirius bacth -->
 	<unit>
 		<id>1264</id>
 		<name>Berdette 7</name>
-		<role>30%HP BBATKed hit atkdown defdown convert ATK BC HC</role>
+		<role>30%HP BBATKed hit atkdown defdown convert DEF ATK BC HC</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -2076,6 +2221,7 @@
 		<ubb hit="23" dc="23" cost="25" >1200% Fire (AOE) / Normal HitCount +200% (100% DMG) (ALL) 3Turns / 50% BC+ 50% HC+ (ALL) 3Turns / 100% Chance -80% Enemy ATK 3Turns / 100% Chance -80% Enemy DEF 3Turns</ubb>
 		<es condtion="None" >Normal HitCount +100% (100% DMG) (SELF) / 10% Chance Enemy receives 20% Spark DMG+ 1Turn (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10826.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1267</id>
@@ -2090,6 +2236,7 @@
 		<ubb hit="25" dc="25" cost="30" >1200% Water (AOE) / 250% ATK+ (ALL) 3Turns / 250% ATK+ (SELF) 3Turns / 500% BB ATK%+ (ALL) 3Turns</ubb>
 		<es condtion="None" >100% ATK+ when Full BB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20756.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1270</id>
@@ -2104,6 +2251,7 @@
 		<ubb hit="21" dc="21" cost="25" >1200% Earth (AOE) / 100% Chance Heal 75-75% DMG when ATKed (ALL) 3Turns / 100% Chance Enemy receives 100% Spark DMG+ 1Turns / 250% ATK+ 250% DEF+ (ALL) 3Turns</ubb>
 		<es condtion="None" >0-50% ATK+ based on HP LEFT (SELF) / 0-100% DEF+ based on HP LOST (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30736.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1273</id>
@@ -2118,6 +2266,7 @@
 		<ubb hit="22" dc="22" cost="25" >1200% Thunder (AOE) / 100% Chance 5-8BC Fill on Spark (ALL) 3Turns / 300% DMG+ to Ailed Enemy (ALL) 3Turns / 130% Spark DMG+ (ALL) 3Turns</ubb>
 		<es condtion="None" >50% Spark DMG+ (SELF) / 100% DMG+ to Ailed Enemy (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40716.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1276</id>
@@ -2132,6 +2281,7 @@
 		<ubb hit="21" dc="21" cost="30" >1200% Light (AOE) / 50BC Fill 3Turns / Reduce DMG (75%) 3Turns / 250% ATK+ 250% DEF+ 250% REC+ (ALL) 3Turns</ubb>
 		<es condtion="None" >2-3 BC Fill on Spark (SELF) / Reduce DMG (25%) 1Turn on > 10k DMG Received (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50916.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1279</id>
@@ -2146,6 +2296,7 @@
 		<ubb hit="24" dc="24" cost="25" >1200% Dark (AOE) / 999BC Fill (ALL) / Add 50% Chance -50% Enemy ATK to ATK (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns</ubb>
 		<es condtion="None" >100% ATK+ when Full BB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60916.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Valentine 2016 batch -->
 	<unit>
@@ -2161,6 +2312,7 @@
 		<ubb hit="30" dc="30" cost="25" >1500% Fire, dark (AOE) / 300% ATK+ 300% REC+ (ALL) 3Turns / -100% DEF+ (SELF) 2Turns / 1000% DMG Each Turn 3Turns / Convert 130% REC to ATK (ALL) 3Turns</ubb>
 		<es condtion="30% ALL Stats (SELF) when Wolven Shroud is equipped OR Randolph is in squad." >Normal HitCount +100% (100% DMG) / Add 60% CRIT+ (ALL) Effect to BB/SBB (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810327.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>8182</id>
@@ -2175,12 +2327,13 @@
 		<ubb hit="1" dc="47" cost="25" >3500% Thunder, dark (TGT) / 400% CRIT DMG+ (SELF) 1Turns / 300% Spark DMG+ (SELF) 1Turns / -50% DEF+ -50% REC+ (SELF) 2Turns</ubb>
 		<es condtion="30% ALL Stats (SELF) when Raven Plume Sphere is equipped OR Randolph is in squad." >Add Fire,dark to ATK (ALL) Effect to BB/SBB (SELF) / 40% Chance Angel Idol 2x (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840327.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<!--Darvanshel 7* batch -->
 	<unit>
 		<id>1299</id>
 		<name>Darvanshel 7</name>
-		<role>Miti50% HP DEF convert 40%HP Null</role>
+		<role>Miti50% HP DEF convert ATK 40%HP Null</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -2190,6 +2343,7 @@
 		<ubb hit="20" dc="20" cost="25" >1000% Fire (AOE) / Reduce DMG (75%) 3Turns / Convert 100% HP to ATK (ALL) 3Turns / Convert 100% HP to DEF (ALL) 3Turns</ubb>
 		<es condtion="None" >Null Elemental Weakness (SELF) / Add Null Ails (ALL) 3Turns Effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10466.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1300</id>
@@ -2204,6 +2358,7 @@
 		<ubb hit="25" dc="25" cost="25" >1000% Light (AOE) / 300% DMG+ to Ailed Enemy (ALL) 3Turns / 100% Sick 100% Poison 100% Curse / 100% Injury 100% Weak 100% Para / Add 100% Para to ATK (ALL) 3Turns</ubb>
 		<es condtion="None" >100% DMG+ to Ailed Enemy (SELF) / Inflict 15% Para on ATKed (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50106.png"></art>
+		<sp list=""></sp>
 	</unit>
 	<unit>
 		<id>1301</id>
@@ -2218,5 +2373,38 @@
 		<ubb hit="23" dc="23" cost="25" >1800% Dark (AOE) 1000%-1800% BB ATK% Based on HP LEFT / 130% Spark DMG+ (ALL) 3Turns / 250% ATK+ (ALL) 3Turns / 300% BB ATK%+ (ALL) 3Turns</ubb>
 		<es condtion="None" >0-50% ATK+ Based on HP LEFT (SELF) / Reduce 20% BB Cost (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60476.png"></art>
+		<sp list=""></sp>
+	</unit>
+	<!--Starter 8* -->
+	<unit>
+		<id>1302</id>
+		<name>Vargas 8</name>
+		<role></role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="13" dc="52" >6BC Fill Each Turn (ALL) / 120% BB ATK%+ (ALL) / 30% HP 100% ATK (ALL) / 30% HP 50% ATK (Fire)</ls>
+		<bb hit="15" dc="15" cost="25" >350% Fire (AOE) / 150% ATK+ (ALL) 3Turns / 300% BB ATK%+ (ALL) 3Turns</bb>
+		<sbb hit="20" dc="20" cost="20" >560% Fire (AOE) / 150% ATK+ (ALL) 3Turns / 300% BB ATK%+ (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns / 75% Element Weakness DMG+ (fire) (ALL) 3Turns</sbb>
+		<ubb hit="26" dc="26" cost="35" >1500% Fire (AOE) / 250% ATK+ (ALL) 3Turns / 600% BB ATK%+ (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns</ubb>
+		<es condtion="Dandelga Sphere equipped" >30% ALL Stats (SELF) / 100% DMG+ to Weak Element (SELF) / 0-50% ATK+ Based on HP LEFT (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10017.png"></art>
+		<sp list="10 SP	:: Increase ATK/REC :: 20% ATK/REC | 10 SP :: Increase DEF/HP :: 20% HP/DEF | 20 SP :: Increase Spark Damage :: 50% Spark Damage(self) | 20 SP :: Increase Crit Damage :: 50% Crit damage(self) | 50 SP :: On BB/SBB, add Spark Buff for 3 turns :: 80% Spark buff(party buff) | 50 SP :: On BB/SBB, add Increased Crit Damage for 3 turns :: 50% increase crit damage(party buff) | 50 SP :: Enhances BB Damage Increase and ATK Buff on UBB :: +300% BB/SBB/UBB Mod, +100% ATK buff | 100 SP :: On UBB, Gives Angel Idol Buff to Team :: 999 turns, 100% HP when triggered, 80% Proc Chance"></sp>
+	</unit>
+	<!--Tilith 7* -->
+	<unit>
+		<id>1336</id>
+		<name>Tilith 7</name>
+		<role>HP50% Null BBfill heal barrier convert DEF miti revive</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="12" dc="48" >8BC Fill Each Turn (ALL) / 100% Chance Reduce DMG (10%) (ALL) / 50% HP 50% REC (ALL) / Null Ails (ALL)</ls>
+		<bb hit="25" dc="25" cost="35" >400% Light (AOE) / 10BC Fill (ALL) 1Turn / Heal (ALL) / 20% Chance Heal 20-25% DMG when ATKed (ALL) 3Turns</bb>
+		<sbb hit="" dc="" cost="70" >50BC Fill (ALL) 1Turn / Heal (ALL) / 4000HP Barrier (light) / Convert 25% HP to DEF (ALL) 3Turns</sbb>
+		<ubb hit="70" dc="70" cost="30" >4000% Light (AOE) 1200%-4000% BB ATK% based on Avg Allies BB Gauge (Drains ALL Allies BB) / 999BC Fill (ALL) 1Turn / Reduce DMG (100%) 2Turns / 70% Chance Revive Dead Ally 100% HP (ALL)</ubb>
+		<es condtion="None" >Add Cure Ails (ALL) effect to BB/SBB (SELF) / Null Ails (SELF) / Null STATS Debuff (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50256.png"></art>
+		<sp list=""></sp>
 	</unit>
 </brave>
