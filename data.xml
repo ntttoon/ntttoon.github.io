@@ -4,7 +4,7 @@
 	<unit>
 		<id>852</id>
 		<name>Brimstone Emperor Alpha</name>
-		<role>Drain ATK HoT Convert</role>
+		<role>Drain ATK HoT ConvertATK</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -277,7 +277,7 @@
 	<unit>
 		<id>962</id>
 		<name>Roaring Crash Balgran</name>
-		<role>BBATKed Miti DEF Poison Para Curse Injury Weak Sick Convert ATK</role>
+		<role>BBATKed Miti DEF Poison Para Curse Injury Weak Sick ConvertATK</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -337,7 +337,7 @@
 	<unit>
 		<id>953</id>
 		<name>Phoenix Torque Ruby</name>
-		<role>ATKDOWN hit Convert ATK BBspark</role>
+		<role>ATKDOWN hit ConvertATK BBspark</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -459,7 +459,7 @@
 	<unit>
 		<id>1007</id>
 		<name>Indomitable Flare Griff</name>
-		<role>BBcrit BBrate CRIT 30%HP ATK Fire,water Convert</role>
+		<role>BBcrit BBrate CRIT 30%HP ATK Fire,water ConvertATK</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -489,7 +489,7 @@
 	<unit>
 		<id>1022</id>
 		<name>Sinister Basilisk Kafka</name>
-		<role>BBATKed ATK Injury Weak Sick Poison Para Curse Light,dark Convert</role>
+		<role>BBATKed ATK Injury Weak Sick Poison Para Curse Light,dark ConvertATK</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -504,7 +504,7 @@
 	<unit>
 		<id>1019</id>
 		<name>Virtuous Champion Krantz</name>
-		<role>BC HC 30%HP ATK Miti50% Light,dark Heal Convert</role>
+		<role>BC HC 30%HP ATK Miti50% Light,dark Heal ConvertATK</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -519,7 +519,7 @@
 	<unit>
 		<id>1013</id>
 		<name>Emerald Radiance Libera</name>
-		<role>BBrate BBATK% BBATKed BC HC Earth,thunder DEF REC Convert ATK</role>
+		<role>BBrate BBATK% BBATKed BC HC Earth,thunder DEF REC ConvertATK</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -550,7 +550,7 @@
 	<unit>
 		<id>1056</id>
 		<name>Soul Covenant Charis</name>
-		<role>hit BC HC Convert ATK</role>
+		<role>hit BC HC ConvertATK</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -580,7 +580,7 @@
 	<unit>
 		<id>1044</id>
 		<name>Wave Breaker Quartz</name>
-		<role>Drain 40%HP DoT HoT Convert ATK Revive</role>
+		<role>Drain 40%HP DoT HoT ConvertATK Revive</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -671,7 +671,7 @@
 	<unit>
 		<id>803</id>
 		<name>Earth Legend Lance</name>
-		<role>30%HP ATK DEF Convert</role>
+		<role>30%HP ATK DEF ConvertATK</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>38</cost>
@@ -839,7 +839,7 @@
 	<unit>
 		<id>950</id>
 		<name>Inferno Princess Alice</name>
-		<role>BBrate ATK Heal Convert ATK HoT REC</role>
+		<role>BBrate ATK Heal ConvertATK HoT REC</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -855,7 +855,7 @@
 	<unit>
 		<id>975</id>
 		<name>Ice Bastion Zeldeus</name>
-		<role>BBATK% 30%HP DEF Miti50% DEF Convert ATK</role>
+		<role>BBATK% 30%HP DEF Miti50% DEF ConvertATK</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -916,7 +916,7 @@
 	<unit>
 		<id>1003</id>
 		<name>Immortal Beast Sargavel</name>
-		<role>Heal 40%HP Cure Null BBrate Convert ATK Spark</role>
+		<role>Heal 40%HP Cure Null BBrate ConvertATK Spark</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -931,7 +931,7 @@
 	<unit>
 		<id>1004</id>
 		<name>Invictus Xeno Melchio</name>
-		<role>BBfill Ignore ATK Null Light Convert DEF Miti Cure</role>
+		<role>BBfill Ignore ATK Null Light ConvertDEF Miti Cure</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -962,7 +962,7 @@
 	<unit>
 		<id>8143</id>
 		<name>Mad Heretic Gazia</name>
-		<role>BBATK% 35%HP ATK DEF REC Miti50% Convert Barrier</role>
+		<role>BBATK% 35%HP ATK DEF REC Miti50% ConvertDEF ConvertATK Barrier</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>45</cost>
@@ -977,7 +977,7 @@
 	<unit>
 		<id>1078</id>
 		<name>Sealed God Lucius</name>
-		<role>OverDrive Null Spark HP ATK BC HC BBrate BBfill Convert Barrier</role>
+		<role>OverDrive Null Spark HP ATK BC HC BBrate BBfill ConvertATK Barrier</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>45</cost>
@@ -1052,7 +1052,7 @@
 	<unit>
 		<id>1219</id>
 		<name>Karl 7</name>
-		<role>BBfill BBspark BBATK% BBregen BBrate Spark 40%HP ATK DEF REC OverDrive Convert</role>
+		<role>BBfill BBspark BBATK% BBregen BBrate Spark 40%HP ATK DEF REC OverDrive ConvertATK</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1083,7 +1083,7 @@
 	<unit>
 		<id>8197</id>
 		<name>Archangel Aurelia</name>
-		<role>BC HC DEF REC Null Cure HoT BBregen Heal HoT Revive Convert</role>
+		<role>BC HC DEF REC Null Cure HoT BBregen Heal HoT Revive ConvertDEF</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1173,7 +1173,7 @@
 	<unit>
 		<id>8177</id>
 		<name>Slayer Grandt</name>
-		<role>CRIT 30%HP ATK Ignore ATKDOWN Convert</role>
+		<role>CRIT 30%HP ATK Ignore ATKDOWN ConvertATK</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1234,7 +1234,7 @@
 	<unit>
 		<id>1037</id>
 		<name>Glorious Crusader Alyut</name>
-		<role>BBregen ATK Injury Para HoT Convert Miti</role>
+		<role>BBregen ATK Injury Para HoT ConvertATK Miti</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1280,7 +1280,7 @@
 	<unit>
 		<id>1085</id>
 		<name>Hailstorm Armor Reeze</name>
-		<role>BBATKed Null Cure Sick Para ATK DEF REC Convert Revive</role>
+		<role>BBATKed Null Cure Sick Para ATK DEF REC ConvertDEF Revive</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1341,7 +1341,7 @@
 	<unit>
 		<id>1135</id>
 		<name>Mayhem Empress Luly</name>
-		<role>Miti BBATK% Weakness BC HC ATK Convert DEF</role>
+		<role>Miti BBATK% Weakness BC HC ATK ConvertDEF</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1371,7 +1371,7 @@
 	<unit>
 		<id>1137</id>
 		<name>Vicious Twin-Edge Logan</name>
-		<role>30%HP ATK Injury Weak Sick Poison Para Curse BBATKed Convert</role>
+		<role>30%HP ATK Injury Weak Sick Poison Para Curse BBATKed ConvertATK</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1417,7 +1417,7 @@
 	<unit>
 		<id>1101</id>
 		<name>Electrical Storm Eldora</name>
-		<role>CRIT 30%HP Miti BBfill BBcrit Convert ATK</role>
+		<role>CRIT 30%HP Miti BBfill BBcrit ConvertATK</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1478,7 +1478,7 @@
 	<unit>
 		<id>1140</id>
 		<name>Ardent Dawn Avant</name>
-		<role>Spark CRIT BBATK% 30%HP Convert ATK</role>
+		<role>Spark CRIT BBATK% 30%HP ConvertATK</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1523,7 +1523,7 @@
 	<unit>
 		<id>1146</id>
 		<name>Heavenly Claymore Dolk</name>
-		<role>35%HP ATK DEF REC Miti50% BC HC Null Convert</role>
+		<role>35%HP ATK DEF REC Miti50% BC HC Null ConvertDEF</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1538,7 +1538,7 @@
 	<unit>
 		<id>1149</id>
 		<name>Thunder Champion Rahgan</name>
-		<role>BBfill hit ATK DoT Convert</role>
+		<role>BBfill hit ATK DoT ConvertATK</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1569,7 +1569,7 @@
 	<unit>
 		<id>1173</id>
 		<name>Icicle Lance Raydn</name>
-		<role>Spark ATK Ignore Convert</role>
+		<role>Spark ATK Ignore ConvertATK</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1630,7 +1630,7 @@
 	<unit>
 		<id>1181</id>
 		<name>Sacred Lotus Piany</name>
-		<role>Spark 40%HP Null DEF REC BBspark BBATK% Convert ATK</role>
+		<role>Spark 40%HP Null DEF REC BBspark BBATK% ConvertATK</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1645,7 +1645,7 @@
 	<unit>
 		<id>1184</id>
 		<name>Malachite Pike Drevas</name>
-		<role>Miti 30%HP DEF Null Inflict Injury Weak Sick Poison Para Curse Convert ATK Cure</role>
+		<role>Miti 30%HP DEF Null Inflict Injury Weak Sick Poison Para Curse ConvertATK Cure</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1660,7 +1660,7 @@
 	<unit>
 		<id>1187</id>
 		<name>Prism Lightning Reud</name>
-		<role>BBATKed BBrate 35%HP ATK DEF REC HoT Convert</role>
+		<role>BBATKed BBrate 35%HP ATK DEF REC HoT ConvertATK</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1690,7 +1690,7 @@
 	<unit>
 		<id>1193</id>
 		<name>Sacred Kinnara Febros</name>
-		<role>BC HC 40%HP ATK BBfill BBATK% Convert DEF</role>
+		<role>BC HC 40%HP ATK BBfill BBATK% ConvertDEF</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1752,7 +1752,7 @@
 	<unit>
 		<id>1197</id>
 		<name>Cyclonic Heroine Ophelia</name>
-		<role>BBreduce BBfill BBregen BBrate ATK HP Convert HoT</role>
+		<role>BBreduce BBfill BBregen BBrate ATK HP ConvertATK HoT</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1798,7 +1798,7 @@
 	<unit>
 		<id>1202</id>
 		<name>Volcanic Scepter Limera</name>
-		<role>BBrate 40%HP Idol Heal Cure Convert Miti DEF HoT</role>
+		<role>BBrate 40%HP Idol Heal Cure ConvertDEF Miti HoT</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1889,7 +1889,7 @@
 	<unit>
 		<id>8154</id>
 		<name>Infernal Ravager Korzan</name>
-		<role>BBATKed CRIT 40%HP ATK Ignore Convert</role>
+		<role>BBATKed CRIT 40%HP ATK Ignore ConvertATK</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1920,7 +1920,7 @@
 	<unit>
 		<id>1232</id>
 		<name>Phoenix 7</name>
-		<role>Heal 40%HP DEF Idol HoT DoT Convert Revive Barrier</role>
+		<role>Heal 40%HP DEF Idol HoT DoT ConvertDEF Revive Barrier</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1935,7 +1935,7 @@
 	<unit>
 		<id>1233</id>
 		<name>Mega 7</name>
-		<role>BBATK% ATK HoT BC HC Heal Convert</role>
+		<role>BBATK% ATK HoT BC HC Heal ConvertATK</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1981,7 +1981,7 @@
 	<unit>
 		<id>8162</id>
 		<name>Eternal Guardian Zeruiah</name>
-		<role>BBrate EXP BC HC Item Karma Zel Heal Cure USBB Fire,water,earth,thunder,light,dark Miti HP Convert DEF</role>
+		<role>BBrate EXP BC HC Item Karma Zel Heal Cure USBB Fire,water,earth,thunder,light,dark Miti HP ConvertDEF</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -2012,7 +2012,7 @@
 	<unit>
 		<id>1241</id>
 		<name>Wyvern Wings Klaus</name>
-		<role>BBreduce BBrate BBregen BBATKed 40%HP ATKDOWN DEFDOWN Sick Convert DEF Miti</role>
+		<role>BBreduce BBrate BBregen BBATKed 40%HP ATKDOWN DEFDOWN Sick ConvertDEF Miti</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -2027,7 +2027,7 @@
 	<unit>
 		<id>1244</id>
 		<name>Venomous Echo Isterio</name>
-		<role>30%HP ATK Injury Weak Sick Poison Para Curse Convert Weakness Idol BBATK%</role>
+		<role>30%HP ATK Injury Weak Sick Poison Para Curse ConvertATK Weakness Idol BBATK%</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -2057,7 +2057,7 @@
 	<unit>
 		<id>1250</id>
 		<name>Dharma Seal Reihard</name>
-		<role>35%HP ATK DEF REC Null Cure BBfill Convert Miti</role>
+		<role>35%HP ATK DEF REC Null Cure BBfill ConvertDEF Miti</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -2088,7 +2088,7 @@
 	<unit>
 		<id>1254</id>
 		<name>Owen 7</name>
-		<role>BBcrit CRIT 50%HP ATK DEF REC Injury Weak Convert DoT</role>
+		<role>BBcrit CRIT 50%HP ATK DEF REC Injury Weak ConvertATK DoT</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>45</cost>
@@ -2119,7 +2119,7 @@
 	<unit>
 		<id>1258</id>
 		<name>Lucina 7</name>
-		<role>30%HP water earth hit HoT ATK convert DEF HealATKed DoT</role>
+		<role>30%HP water earth hit HoT ATK convertDEF HealATKed DoT</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -2149,7 +2149,7 @@
 	<unit>
 		<id>1260</id>
 		<name>Orna 7</name>
-		<role>BBATKed Thunder Fire atkdown defdown crit convert ATK superspark</role>
+		<role>BBATKed Thunder Fire atkdown defdown crit convertATK superspark</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -2195,7 +2195,7 @@
 	<unit>
 		<id>8163.8</id>
 		<name>Storm Champion Mikael</name>
-		<role>40%HP BBATKed Miti Miti50% Convert DEF ATK Null</role>
+		<role>40%HP BBATKed Miti Miti50% ConvertDEF ATK Null</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -2211,7 +2211,7 @@
 	<unit>
 		<id>1264</id>
 		<name>Berdette 7</name>
-		<role>30%HP BBATKed hit atkdown defdown convert DEF ATK BC HC</role>
+		<role>30%HP BBATKed hit atkdown defdown convertDEF ATK BC HC</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -2241,7 +2241,7 @@
 	<unit>
 		<id>1270</id>
 		<name>Duure 7</name>
-		<role>40%HP ATK Spark convert superspark DEF HealATKed</role>
+		<role>40%HP ATK Spark convertATK superspark DEF HealATKed</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -2302,7 +2302,7 @@
 	<unit>
 		<id>8179</id>
 		<name>Lycanthrope Randolph</name>
-		<role>50%HP BBrate DoT Injury Curse Stealth ATK DEF REC Convert CRIT</role>
+		<role>50%HP BBrate DoT Injury Curse Stealth ATK DEF REC ConvertATK CRIT</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -2333,7 +2333,7 @@
 	<unit>
 		<id>1299</id>
 		<name>Darvanshel 7</name>
-		<role>Miti50% HP DEF convert ATK 40%HP Null</role>
+		<role>Miti50% HP DEF convertATK convertDEF 40%HP Null</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -2379,7 +2379,7 @@
 	<unit>
 		<id>1302</id>
 		<name>Vargas 8</name>
-		<role></role>
+		<role>BBATK% 30%HP ATK atkdown Weakness</role>
 		<element>Fire</element>
 		<rarity>8</rarity>
 		<cost>45</cost>
@@ -2394,7 +2394,7 @@
 	<unit>
 		<id>1303</id>
 		<name>Selena 8</name>
-		<role></role>
+		<role>HoT 30%HP ATK BBregen healATKed hot hit</role>
 		<element>Water</element>
 		<rarity>8</rarity>
 		<cost>45</cost>
@@ -2409,7 +2409,7 @@
 	<unit>
 		<id>1304</id>
 		<name>Lance 8</name>
-		<role></role>
+		<role>30%HP ATK Cure DEF barrier convertATK Miti</role>
 		<element>Earth</element>
 		<rarity>8</rarity>
 		<cost>45</cost>
@@ -2424,7 +2424,7 @@
 	<unit>
 		<id>1305</id>
 		<name>Eze 8</name>
-		<role></role>
+		<role>SPARK 30%HP ATK superspark weakness</role>
 		<element>Thunder</element>
 		<rarity>8</rarity>
 		<cost>45</cost>
@@ -2439,7 +2439,7 @@
 	<unit>
 		<id>1306</id>
 		<name>Atro 8</name>
-		<role></role>
+		<role>BBreduce BBrate 30%HP ATK DEF REC OverDrive Fire,water,earth,thunder,light,dark Weakness</role>
 		<element>Light</element>
 		<rarity>8</rarity>
 		<cost>45</cost>
@@ -2454,7 +2454,7 @@
 	<unit>
 		<id>1307</id>
 		<name>Magress 8</name>
-		<role></role>
+		<role>30%HP ATK DEF Weakness Miti</role>
 		<element>Dark</element>
 		<rarity>8</rarity>
 		<cost>45</cost>
@@ -2466,11 +2466,102 @@
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60017.png"></art>
 		<sp list="10 SP :: Chance to recover HP on Hit :: 25% proc, 5% HP | 10 SP :: Increase Strength of Chance to recover HP on Hit (Enhancement) :: 25% proc, 10% HP | 10 SP :: Resistance to Light :: 5% Light Resist | 30 SP :: Elemental Damage Null | 30 SP :: Spark Damage Reduction :: 50% Spark Resist | 60 SP :: Add 50% mitigation to BB/SBB | 20 SP :: Mitigation lasts for 2 turns | 80 SP :: UBB Mitigation lasts 2 turns"></sp>
 	</unit>
+	<!--Kuryuku and Disciples -->
+	<unit>
+		<id>1309</id>
+		<name>Kuryuku 8</name>
+		<role>50%HP DEF BBrate cure convertDEF miti HP Barrier Injury Weak Sick Poison Para Curse</role>
+		<element>Fire</element>
+		<rarity>8</rarity>
+		<cost>47</cost>
+		<ls hit="10" dc="50" >0-50% DEF+ Based on HP LOST (ALL) / Null Elemental Weakness (ALL) / 50% HP 50% DEF (ALL) / Null Ails (ALL)</ls>
+		<bb hit="14" dc="14" cost="26" >350% Fire (AOE) / 50% BC Fill+ (ALL) 3Turns / Cure Ails</bb>
+		<sbb hit="19" dc="19" cost="30" >870% Fire (AOE) 200%-870% BB ATK% Based on HP LEFT / 50% BC Fill+ (ALL) 3Turns / Cure Ails / Convert 40% attack to DEF (ALL) 3Turns</sbb>
+		<ubb hit="24" dc="24" cost="30" >1500% Fire (AOE) / Reduce DMG (75%) 3Turns / 35% Max HP+ till Death/Battle End / Inflict 80% Injury 80% Weak 80% Sick 80% Poison 80% Para 80% Curse on ATKed (ALL) 3Turns</ubb>
+		<es condtion="None" >Null Ails (SELF) / Null Elemental Weakness (SELF) / Add 2k HP Barrier (fire) Effect to BB/SBB (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10847.png"></art>
+		<sp list="10 SP :: 0-50% ATK depending on HP remaining | 10 SP :: +10% BB Fill Rate | 20 SP :: Add Effect To BB/SBB (3 Turn +140% DEF) | 50 SP :: Add Effect To BB/SBB (3 turn +80% Spark Dmg) | 10 SP :: Add Effect To BB/SBB (3 turn +110% Spark Dmg) | 50 SP :: Add Effect To BB/SBB (3-5 BC on Hit for 3 turns) | 10 SP :: Add Effect To BB/SBB (4-7 BC on Hit for 3 turns) | 40 SP :: Add Effect To BB/SBB (Heal 2000-3000 HP (+ 11% Healer REC)) | 40 SP :: Add Effect To BB/SBB (3 Turn HoT 1500-2000 HP (+11% Target REC))"></sp>
+	</unit>
+	<unit>
+		<id>1312</id>
+		<name>Averus 7</name>
+		<role>40%HP DEF Injury Weak Sick Poison Para Curse Miti50% superspark Barrier Null</role>
+		<element>Water</element>
+		<rarity>7</rarity>
+		<cost>43</cost>
+		<ls hit="6" dc="42" >40% HP 40% DEF (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison (ALL) / 10% Para 10% Curse (ALL) / Reduce DMG (20%) 1Turn on > 5k DMG Received (ALL)</ls>
+		<bb hit="14" dc="14" cost="25" >290% Water (AOE) / Reduce DMG (50%) 1Turns / 65% Injury 65% Weak 65% Sick 65% Poison / 65% Para 65% Curse / 50% Chance Drain 3-5% HP (ALL) 3Turns</bb>
+		<sbb hit="17" dc="17" cost="20" >500% Water (AOE) / Reduce DMG (50%) 1Turns / 160% DMG+ to Ailed Enemy (ALL) 3Turns / Add 15% Injury 15% Weak 15% Sick to ATK (ALL) 3Turns / Add 10% Poison 10% Para 10% Curse to ATK (ALL) 3Turns / 50% Chance Drain 3-5% HP (ALL) 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="25" >1200% Water (AOE) / Reduce DMG (75%) 3Turns / 100% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 100% Chance Enemy receives 100% Spark DMG+ 1Turns / 20000HP Barrier (water)</ubb>
+		<es condtion="None" >100% DMG+ to Ailed Enemy (SELF) / Add Null Ails (ALL) 3Turns Effect to BB/SBB (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20776.png"></art>
+		<sp list=""></sp>
+	</unit>
+	<unit>
+		<id>1315</id>
+		<name>Beraldo 7</name>
+		<role>Hit 40%HP ATK miti Weakness Fire,water,earth,thunder Barrier</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>43</cost>
+		<ls hit="10" dc="40" >Normal HitCount +100% (-50% DMG) (ALL) / 40% HP 40% ATK (ALL) / Reduce DMG (15%) from (Earth,thunder) Enemy (ALL)</ls>
+		<bb hit="15" dc="15" cost="20" >350% Earth (AOE) / Normal HitCount +100% (100% DMG) (ALL) 3Turns / 75% Element Weakness DMG+ (fire,water,earth,thunder) (ALL) 3Turns</bb>
+		<sbb hit="23" dc="23" cost="28" >560% Earth (AOE) / Add Fire,water,earth,thunder to ATK (ALL) 3Turns / Normal HitCount +100% (100% DMG) (ALL) 3Turns / 100% Element Weakness DMG+ (fire,water,earth,thunder) (ALL) 3Turns</sbb>
+		<ubb hit="25" dc="25" cost="30" >1300% Earth (AOE) / Normal HitCount +200% (100% DMG) (ALL) 3Turns / 20000HP Barrier (earth) / 300% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns</ubb>
+		<es condtion="None" >Normal HitCount +100% (100% DMG) (SELF) / 100% Chance 1-1BC Fill on Spark (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30756.png"></art>
+		<sp list=""></sp>
+	</unit>
+	<unit>
+		<id>1318</id>
+		<name>Worudoga 7</name>
+		<role>BBspark SPARK 40%HP ATK cure null Barrier BBATK%</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>43</cost>
+		<ls hit="5" dc="40" >100% Chance 2-3BC Fill on Spark (ALL) / 75% Spark DMG+ (ALL) / 40% HP 40% ATK (ALL)</ls>
+		<bb hit="1" dc="17" cost="24" >350% Thunder (AOE) / Cure Ails / Null Ails 3Turns / Null STATS Debuff 1Turns</bb>
+		<sbb hit="1" dc="25" cost="32" >560% Thunder (AOE) 560% BB ATK% / Thunder (TGT) 640% BB ATK% / 100% BB Fill (SELF) / 100% Spark DMG+ (SELF) 3Turns</sbb>
+		<ubb hit="23" dc="23" cost="25" >1300% Thunder (AOE) / 150% Spark DMG+ (ALL) 3Turns / 20000HP Barrier (thunder) / 500% BB ATK%+ (ALL) 3Turns</ubb>
+		<es condtion="None" >50% Spark DMG+ (SELF) / 100% BB ATK%+ (SELF) 2Turns on &gt; 2 Sparks</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40746.png"></art>
+		<sp list=""></sp>
+	</unit>
+	<unit>
+		<id>1321</id>
+		<name>Lyra 7</name>
+		<role>BBATKed 40%HP REC Cure HoT HealATKed superspark convertATK atkdown defdown Revive</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>43</cost>
+		<ls hit="11" dc="44" >100% Chance 3-6BC Fill when ATKed (ALL) / 25% Chance Heal 20-20% DMG when ATKed (ALL) / 40% HP 40% REC (ALL)</ls>
+		<bb hit="" dc="" cost="22" >5-7BC Fill when ATKed (100%) (ALL) 3Turns / Heal (ALL) / 20% Chance Heal 20-25% DMG when ATKed (ALL) 3Turns / Cure Ails / Gradual Heal (ALL) 3Turns</bb>
+		<sbb hit="18" dc="18" cost="25" >560% Light (AOE) / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / Convert 80% REC to ATK (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns</sbb>
+		<ubb hit="22" dc="22" cost="30" >1300% Light (AOE) / 350% REC+ (ALL) 3Turns / 33% Chance Revive Dead Ally 100% HP (ALL) / 100% Chance -80% Enemy ATK 2Turns / 100% Chance -80% Enemy DEF 2Turns</ubb>
+		<es condtion="None" >Null Ails (SELF) / Reduce 20% BB Cost (SELF) / 50% Chance 3-5BC Fill when ATKed (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50936.png"></art>
+		<sp list=""></sp>
+	</unit>
+	<unit>
+		<id>1324</id>
+		<name>Zyle 7</name>
+		<role>BBspark BBATK% 40%HP ATK BBregen BC HC CRIT</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>43</cost>
+		<ls hit="13" dc="39" >100% Chance 2-3BC Fill on Spark (ALL) / 150% BB ATK%+ (ALL) / 40% HP 40% ATK (ALL)</ls>
+		<bb hit="19" dc="19" cost="26" >350% Dark (AOE) / 7BC Fill 3Turns / 40% BC Fill+ (ALL) 3Turns / 100% Chance 1-2BC Fill on Spark (ALL) 3Turns</bb>
+		<sbb hit="40" dc="40" cost="22" >560% Dark (AOE) / 25% Chance Enemy receives 30% Spark DMG+ 1Turns / 140% ATK+ (ALL) 3Turns / 250% BB ATK%+ (ALL) 3Turns</sbb>
+		<ubb hit="25" dc="25" cost="30" >1300% Dark (AOE) / 100% Chance 5-8BC Fill on Spark (ALL) 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 130% Spark DMG+ (ALL) 3Turns / 250% ATK+ (ALL) 3Turns</ubb>
+		<es condtion="None" >Add 35% BC+ 35% HC+ (ALL) 3Turns Effect to BB/SBB (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60956.png"></art>
+		<sp list=""></sp>
+	</unit>
 	<!--Tilith 7* -->
 	<unit>
 		<id>1336</id>
 		<name>Tilith 7</name>
-		<role>HP50% Null BBfill heal barrier convert DEF miti revive</role>
+		<role>HP50% REC Null BBfill heal HealATKed barrier convertDEF miti revive cure</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
