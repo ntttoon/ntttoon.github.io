@@ -2381,8 +2381,8 @@
 		<name>Vargas 8</name>
 		<role></role>
 		<element>Fire</element>
-		<rarity>7</rarity>
-		<cost>42</cost>
+		<rarity>8</rarity>
+		<cost>45</cost>
 		<ls hit="13" dc="52" >6BC Fill Each Turn (ALL) / 120% BB ATK%+ (ALL) / 30% HP 100% ATK (ALL) / 30% HP 50% ATK (Fire)</ls>
 		<bb hit="15" dc="15" cost="25" >350% Fire (AOE) / 150% ATK+ (ALL) 3Turns / 300% BB ATK%+ (ALL) 3Turns</bb>
 		<sbb hit="20" dc="20" cost="20" >560% Fire (AOE) / 150% ATK+ (ALL) 3Turns / 300% BB ATK%+ (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns / 75% Element Weakness DMG+ (fire) (ALL) 3Turns</sbb>
@@ -2390,6 +2390,81 @@
 		<es condtion="Dandelga Sphere equipped" >30% ALL Stats (SELF) / 100% DMG+ to Weak Element (SELF) / 0-50% ATK+ Based on HP LEFT (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10017.png"></art>
 		<sp list="10 SP	:: Increase ATK/REC :: 20% ATK/REC | 10 SP :: Increase DEF/HP :: 20% HP/DEF | 20 SP :: Increase Spark Damage :: 50% Spark Damage(self) | 20 SP :: Increase Crit Damage :: 50% Crit damage(self) | 50 SP :: On BB/SBB, add Spark Buff for 3 turns :: 80% Spark buff(party buff) | 50 SP :: On BB/SBB, add Increased Crit Damage for 3 turns :: 50% increase crit damage(party buff) | 50 SP :: Enhances BB Damage Increase and ATK Buff on UBB :: +300% BB/SBB/UBB Mod, +100% ATK buff | 100 SP :: On UBB, Gives Angel Idol Buff to Team :: 999 turns, 100% HP when triggered, 80% Proc Chance"></sp>
+	</unit>
+	<unit>
+		<id>1303</id>
+		<name>Selena 8</name>
+		<role></role>
+		<element>Water</element>
+		<rarity>8</rarity>
+		<cost>45</cost>
+		<ls hit="10" dc="40" >6BC Fill Each Turn (ALL) / Heal Each Turn (ALL) / 30% HP 100% ATK (ALL) / 30% HP 50% ATK (Water)</ls>
+		<bb hit="13" dc="13" cost="25" >350% Water (AOE) / 7BC Fill 3Turns / Gradual Heal (ALL) 3Turns</bb>
+		<sbb hit="18" dc="18" cost="20" >560% Water (AOE) / 7BC Fill 3Turns / 20% Chance Heal 20-30% DMG when ATKed (ALL) 3Turns / 35% BC+ 35% HC+ (ALL) 3Turns / Gradual Heal (ALL) 3Turns</sbb>
+		<ubb hit="25" dc="25" cost="30" >1500% Water (AOE) / 100% Chance Heal 30-50% DMG when ATKed (ALL) 3Turns / Normal HitCount +300% (100% DMG) (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns</ubb>
+		<es condtion="Lexida Sphere equipped" >30% ALL Stats (SELF) / Angel Idol when HP &lt; 20% (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20017.png"></art>
+		<sp list="20 SP :: BB Fill on Hit :: 2-3 BC Fill on Hit | 20 SP :: HP on Hit :: 25% proc, 10% HP return | 10 SP :: BC/HC Drop Rate :: 5% BC/HC Drop Rate Increase | 50 SP :: Status Null | 40 SP :: Stronger HoT :: Increase by 1000 | 40 SP :: Increase Water Elemental Damage :: 50% water elemental weakness damage for 3 turns | 60 SP :: Cleanse Status Ailments | 60 SP :: UBB lasts 4 turns instead of 3"></sp>
+	</unit>
+	<unit>
+		<id>1304</id>
+		<name>Lance 8</name>
+		<role></role>
+		<element>Earth</element>
+		<rarity>8</rarity>
+		<cost>45</cost>
+		<ls hit="10" dc="40" >30% HP 100% ATK (ALL) / 30% HP 50% ATK (Earth) / Null CRIT (ALL) / 8BC Fill on &gt; 5k DMG Received (ALL)</ls>
+		<bb hit="13" dc="13" cost="25" >350% Earth (AOE) / Cure Ails / 160% DEF+ (ALL) 3Turns</bb>
+		<sbb hit="17" dc="17" cost="20" >560% Earth (AOE) / Cure Ails / Null STATS Debuff 1Turns / 2000HP Barrier (earth) / 160% DEF+ (ALL) 3Turns</sbb>
+		<ubb hit="23" dc="23" cost="20" >1500% Earth (AOE) / Reduce DMG (75%) 3Turns / Null STATS Debuff 3Turns / Convert 250% DEF to ATK (ALL) 3Turns</ubb>
+		<es condtion="Drevas Sphere equipped" >30% ALL Stats (SELF) / 20% Chance Reduce DMG 20% (SELF) / Reduce DMG (25%) 1Turn on &gt; 10k DMG Received (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30017.png"></art>
+		<sp list="10 SP :: Increase DEF :: 30% DEF | 10 SP :: ATK buff vs Status Ailment Enemies :: 60% ATK vs Status Enemies(self) | 10 SP :: Increase ATK buff on Status Ailments :: 80% ATK vs Status Enemies(self) | 20 SP :: Chance to Inflict Status on Hit :: Injury/Sick/Weaken = 8%, Poison/Curse/Paralysis = 5% | 30 SP :: Immunity to Crit Damage | 30 SP :: Immunity to Elemental Weakness Damage | 40 SP :: On BB/SBB, increase Earth Elemental Weakness Damage :: 50% Elemental Weakness Damage, 3 turns | 50 SP :: Increase Strength of Earth Barrier Amount :: Increased by 1000 Damage | 50 SP :: On BB/SBB, Increase ATK based on DEF :: 70% DEF>ATK, 3 turns | 50 SP :: On BB/SBB/UBB, chance to inflict random status ailment :: Injury/Sick/Weaken = 40%, Poison/Curse/Paralysis = 30%"></sp>
+	</unit>
+	<unit>
+		<id>1305</id>
+		<name>Eze 8</name>
+		<role></role>
+		<element>Thunder</element>
+		<rarity>8</rarity>
+		<cost>45</cost>
+		<ls hit="2" dc="44" >100% Chance 2-3BC Fill on Spark (ALL) / 120% Spark DMG+ (ALL) / 30% HP 100% ATK (ALL) / 30% HP 50% ATK (Thunder)</ls>
+		<bb hit="2" dc="30" cost="25" >350% Thunder (AOE) / 90% Spark DMG+ (ALL) 3Turns / 150% ATK+ (ALL) 3Turns</bb>
+		<sbb hit="20" dc="20" cost="20" >560% Thunder (AOE) / 90% Spark DMG+ (ALL) 3Turns / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 150% ATK+ (ALL) 3Turns / 75% Element Weakness DMG+ (thunder) (ALL) 3Turns</sbb>
+		<ubb hit="2" dc="60" cost="30" >1500% Thunder (AOE) / 250% Spark DMG+ (ALL) 3Turns / 50% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 100% Chance Enemy receives 100% Spark DMG+ 1Turns</ubb>
+		<es condtion="Bathoota Sphere equipped" >30% ALL Stats (SELF) / 50% CRIT DMG+ (SELF) / 50% Spark DMG+ (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40017.png"></art>
+		<sp list="20 SP :: 20% All Stats | 10 SP :: Spark damage 50% | 10 SP :: Spark Damage 50 -> 70% (Enhancement) | 10 SP :: Spark Damage 70% -> 100% (Enhancement) | 10 SP :: Slightly Boost Critical Damage :: 30% increase in Critical Damage | 10 SP :: Boost Critical Damage (Enhancement) :: 50% increase in Critical Damage | 50 SP :: Boosts BB/SBB Spark Buff :: +30% Spark Buff(Adds onto Party Buff) | 60 SP :: UBB lasts 4 turns instead of 3"></sp>
+	</unit>
+	<unit>
+		<id>1306</id>
+		<name>Atro 8</name>
+		<role></role>
+		<element>Light</element>
+		<rarity>8</rarity>
+		<cost>45</cost>
+		<ls hit="9" dc="45" >Reduce 25% BB Cost (ALL) / 50% BC Fill+ (ALL) / 30% HP 100% ATK (ALL) / 30% HP 50% ATK (Light)</ls>
+		<bb hit="14" dc="14" cost="25" >350% Light (AOE) / 30% BC Fill+ (ALL) 3Turns / 150% ATK+ 150% DEF+ 150% REC+ (ALL) 3Turns</bb>
+		<sbb hit="20" dc="20" cost="20" >560% Light (AOE) / 20% OverDrive Fill+ 3Turns / 30% BC Fill+ (ALL) 3Turns / 150% ATK+ 150% DEF+ 150% REC+ (ALL) 3Turns</sbb>
+		<ubb hit="24" dc="24" cost="25" >2000% Light (AOE) / Add Fire,water,earth,thunder,light,dark to ATK (ALL) 3Turns / 300% ATK+ 300% DEF+ 300% REC+ (ALL) 3Turns / 300% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns</ubb>
+		<es condtion="Urias Sphere equipped" >30% ALL Stats (SELF) / 100% Chance Reduce 20-25% BB Gauge Used (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50017.png"></art>
+		<sp list="30 SP :: Chance of AoE Normal Attacks :: 20% Chance 50% Damage | 20 SP :: Slight BB Fill on Hit :: 2-3 BC | 10 SP :: HoT and BC per Turn happen at the beginning of the turn | 40 SP :: Strengthen Ares Buff :: 20% Fill Rate | 40 SP :: Add Elemental Weakness Boost Effect to BB/SBB :: 3 turns, increase 50% light elemental weakness damage | 50 SP :: Add Cure Ailments to BB/SBB | 50 SP :: Add BB Fill on hit to BB/SBB :: 3-5 BC on Hit, 3 Turns | 10 SP :: Strengthen BB Fill on hit effect :: 4-7 BC on Hit, 3 Turns | 50 SP :: Add Burst Heal Effect to BB/SBB :: 2000-3000(11% Healer Rec)"></sp>
+	</unit>
+	<unit>
+		<id>1307</id>
+		<name>Magress 8</name>
+		<role></role>
+		<element>Dark</element>
+		<rarity>8</rarity>
+		<cost>45</cost>
+		<ls hit="12" dc="48" >Null Elemental Weakness (ALL) / 30% HP 100% ATK (ALL) / 30% HP 50% ATK (Dark) / 8BC Fill on > 50k DMG Dealt (ALL)</ls>
+		<bb hit="13" dc="13" cost="25" >350% Dark (AOE) / 150% DEF+ (ALL) 3Turns / Reduce DMG (10%) on Guard (ALL) 3Turns</bb>
+		<sbb hit="15" dc="15" cost="20" >560% Dark (AOE) / 150% DEF+ (ALL) 3Turns / 75% Element Weakness DMG+ (dark) (ALL) 3Turns / Reduce DMG (10%) on Guard (ALL) 3Turns / 50% Chance Drain 3-6% HP on ATK (ALL) 3Turns</sbb>
+		<ubb hit="28" dc="28" cost="20" >1500% Dark (AOE) / Reduce DMG (100%) 1Turns / 300% DEF+ (ALL) 3Turns / Reduce DMG (30%) on Guard (ALL) 3Turns</ubb>
+		<es condtion="Leomurg Sphere equipped" >30% ALL Stats (SELF) / 80% Chance Ignore DEF (SELF) / Null CRIT (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60017.png"></art>
+		<sp list="10 SP :: Chance to recover HP on Hit :: 25% proc, 5% HP | 10 SP :: Increase Strength of Chance to recover HP on Hit (Enhancement) :: 25% proc, 10% HP | 10 SP :: Resistance to Light :: 5% Light Resist | 30 SP :: Elemental Damage Null | 30 SP :: Spark Damage Reduction :: 50% Spark Resist | 60 SP :: Add 50% mitigation to BB/SBB | 20 SP :: Mitigation lasts for 2 turns | 80 SP :: UBB Mitigation lasts 2 turns"></sp>
 	</unit>
 	<!--Tilith 7* -->
 	<unit>
