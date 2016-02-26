@@ -17,10 +17,25 @@ body, html {
 	padding: 0;
 	font-family: Tahoma, Geneva, sans-serif;
 }
-.full {
+.fullbg7 {
 	width: 1280px;
 	height: 720px;
 	background: url(images/ntttoon_bg.jpg) no-repeat;
+	overflow: hidden;
+	z-index: 1;
+	/*center*/
+	display: block;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.fullbg8 {
+	width: 1280px;
+	height: 720px;
+	background: url(images/ntttoon_bg2.jpg) no-repeat;
 	overflow: hidden;
 	z-index: 1;
 	/*center*/
@@ -100,7 +115,6 @@ body, html {
 </head>
 
 <body>
-<div class="full">
 <script>
 	var xmlhttp, xmlDoc;
 	xmlhttp = new XMLHttpRequest();
@@ -138,6 +152,14 @@ body, html {
 			escondition = xmlDoc.getElementsByTagName("es")[i].getAttribute("condtion");
 			eseffect = xmlDoc.getElementsByTagName("es")[i].childNodes[0].nodeValue;
 			art = xmlDoc.getElementsByTagName("art")[i].getAttribute("path");
+			
+			if(rarity == 8){
+				//document.getElementById("bg").className = "fullbg8";
+				document.write("<div class='fullbg8'>");
+			}else{
+				//document.getElementById("bg").className = "fullbg7";
+				document.write("<div class='fullbg7'>");
+			}
 			
 			document.write("<div class='unit_ele wow fadeIn' data-wow-duration='1s' data-wow-delay='0.5s'><img src=images/" + nameElement(element) + " width='40' height='40'></div>");
 			document.write("<div class='unit_name wow fadeIn' data-wow-duration='1s' data-wow-delay='0.5s'>" + name + "</div>");
