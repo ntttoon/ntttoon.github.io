@@ -11,6 +11,7 @@
 <body>
 <div class="w3-image" id="artbox"></div>
 <div id="big_btn"></div>
+<div id="bigsp_btn"></div>
 <ul class="w3-ul">
 <script>
 	var xmlhttp, xmlDoc;
@@ -53,7 +54,10 @@
 			sp_array = sp.split("|");
 
 			//document.getElementById('artbox').innerHTML = "<img src=" + art + " />";
-			document.getElementById('big_btn').innerHTML = "<a class='w3-btn w3-teal' style='width:100%'" + 'href="unitinfo_big.html?id=' + id + '">View big size (for PC only)</a>';
+			document.getElementById('big_btn').innerHTML = "<a class='w3-btn w3-teal' style='width:100%'" + 'href="unitinfo_big.html?id=' + id + '" target="blank">View full (for PC only)</a>';
+			if(!sp ==""){
+				document.getElementById('bigsp_btn').innerHTML = "<a class='w3-btn w3-indigo' style='width:100%'" + 'href="unitinfo_bigsp.html?id=' + id + '" target="blank">View full SP (for PC only)</a>';
+			}
 			document.write('<li><h3>' + name + '</h3></li>');
 			document.write('<li>' + "ID: " + id + " - Element: " + element + "<br>Rarity: " + rarity + "*" + " - Cost: " + cost + '</li>');
 			document.write('<li><strong>LS: </strong>' + 'hit: ' + normalhit + ' - dc: ' + normaldc + '<br>' + ls + '</li>');
@@ -62,7 +66,7 @@
 			document.write('<li><strong>UBB: </strong>' + 'hit: ' + ubbhit + ' - dc: ' + ubbdc + ' - cost: ' + ubbcost + '<br>' + ubb + '</li>');
 			document.write('<li><strong>ES: </strong>' + '<br>' + 'Condition: ' + escondition + '<br>' + 'Effect: ' + eseffect + '</li>');
 			if(!sp ==""){
-				document.write('<li><strong>SP list: </strong>' + '<br>');
+				document.write('<li><strong>Dream EVO Skills: </strong>' + '<br>');
 				for(j=0;j<sp_array.length;j++)
 				{
 					document.write('● ' + sp_array[j] + '<br>');
