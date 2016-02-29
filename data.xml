@@ -1728,7 +1728,7 @@
 		<cost>42</cost>
 		<ls hit="11" dc="44" >100% Spark DMG+ (ALL) / 80% ATK (ALL)</ls>
 		<bb hit="14" dc="14" cost="26" >280% Dark (AOE) / 12BC Fill (ALL) 1Turn / 200% BB ATK%+ (ALL) / 90% Chance CRIT on SPARK 3Turns (ALL)</bb>
-		<sbb hit="18" dc="18" cost="29" >Dark (AOE) 100% BB ATK+ on Consecutive SBB (Max 5x / SELF) / 100% BB Fill (SELF) / 750% DMG Each Turn 1Turns / 200% BB ATK%+ (ALL) / 100% Chance CRIT on SPARK 3Turns (ALL)</sbb>
+		<sbb hit="18" dc="18" cost="29" >500% Dark (AOE) 100% BB ATK+ on Consecutive SBB (Max 5x / SELF) / 100% BB Fill (SELF) / 750% DMG Each Turn 1Turns / 200% BB ATK%+ (ALL) / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns</sbb>
 		<ubb hit="23" dc="23" cost="25" >Dark (AOE) 1200-2000% BB ATK% Based on HP LEFT / 100% Chance 5-8BC Fill on Spark (ALL) 3Turns / 130% Spark DMG+ (ALL) 3Turns / 1000% DMG Each Turn 3Turns</ubb>
 		<es condtion="None" >80% ATK+ when Full HP (SELF) / 50% ATK+ when BB > 50% (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60896.png"></art>
@@ -1880,7 +1880,7 @@
 		<cost>42</cost>
 		<ls hit="12" dc="48" >Reduce 25% BB Cost (ALL) / 100% Chance 3-6BC Fill when ATKed (ALL) / 80% ATK (ALL)</ls>
 		<bb hit="17" dc="34" cost="16" >640% Dark (TGT) / 50BC Fill 3Turns (SELF)</bb>
-		<sbb hit="21" dc="42" cost="32" >570% 300% BB ATK+ on Consecutive SBB (Max 5x / SELF) / 100% BB Fill (SELF) / 50% Chance -50% Enemy ATK 1Turns / 80% Injury 80% Weak</sbb>
+		<sbb hit="21" dc="42" cost="32" >570% Dark (TGT) 300% BB ATK+ on Consecutive SBB (Max 5x / SELF) / 100% BB Fill (SELF) / 50% Chance -50% Enemy ATK 1Turns / 80% Injury 80% Weak</sbb>
 		<ubb hit="24" dc="24" cost="25" >1200% Dark (AOE) / 999BC Fill (ALL) / Add 50% Chance -50% Enemy ATK to ATK (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns</ubb>
 		<es condtion="None" >100% ATK+ when Full BB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60916.png"></art>
