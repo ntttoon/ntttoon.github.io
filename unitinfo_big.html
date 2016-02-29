@@ -15,7 +15,15 @@
 </head>
 
 <body>
-<nav class="w3-sidenav w3-white w3-card-2 w3-animate-left" style="width:250px" id="list"></nav>
+<nav class="w3-sidenav w3-white w3-card-2 w3-animate-left" style="width:250px" id="list">
+<form class="w3-form">
+  <div class="w3-input-group">      
+    <label class="w3-label w3-text-teal"><b>Input unit's name or elements (fire, water, etc)</b></label>
+    <input class="w3-input w3-border" name="search" type="text">
+  </div>
+  <button class="w3-btn w3-teal">Search</button>
+</form>
+</nav>
 <div id="sp_btn"></div>
 <script>
 	var xmlhttp, xmlDoc;
@@ -26,13 +34,21 @@
 	
 	total = xmlDoc.getElementsByTagName("unit").length;
 	var s = getURLParameter('id');
+	var se = getURLParameter('search');
+	var re = new RegExp(se, 'gi');
 	
 	for(i=0;i<total;i++)
 	{
 		id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
 		name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
 		element = xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
-		document.getElementById("list").innerHTML += "<a style='color:" + nameColor(element) + "' " + "href='unitinfo_big.html?id=" + id + "'>" + name +"</a>";
+		if (se == null){
+			document.getElementById("list").innerHTML += "<a style='color:" + nameColor(element) + "' " + "href='unitinfo_big.html?id=" + id + "'>" + name +"</a>";
+		}
+		if (name.match(re) || element.match(re)) {
+			document.getElementById("list").innerHTML += "<a style='color:" + nameColor(element) + "' " + "href='unitinfo_big.html?id=" + id + "&search=" + se + "'>" + name +"</a>";
+		}
+		//
 		if(id==s)
 		{
 			//name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
@@ -61,7 +77,7 @@
 			if(rarity == 8){
 				//document.getElementById("bg").className = "fullbg8";
 				document.write("<div class='fullbg8'>");
-				document.getElementById("sp_btn").innerHTML = "<a class='w3-btn w3-teal' style='position:absolute;top:0;right:0' href='unitinfo_bigsp.html?id=" + id + "'>Dream EVO Skills</a>";
+				document.getElementById("sp_btn").innerHTML = "<a class='w3-btn w3-purple' style='position:absolute;top:0;right:0' href='unitinfo_bigsp.html?id=" + id + "&search=" + se + "'>Dream EVO Skills</a>";
 			}else{
 				//document.getElementById("bg").className = "fullbg7";
 				document.write("<div class='fullbg7'>");
