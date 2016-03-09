@@ -2192,7 +2192,7 @@
 	</unit>
 	<unit>
 		<id>1218</id>
-		<name>Seria 7</name>
+		<name>Solar Fervor Seria</name>
 		<role>BBreduce ATK DEF Spark HC DoT</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
@@ -2207,7 +2207,7 @@
 	</unit>
 	<unit>
 		<id>1219</id>
-		<name>Karl 7</name>
+		<name>Boreal Courage Karl</name>
 		<role>BBfill BBspark BBATK% BBregen BBrate Spark 40%HP ATK DEF REC OverDrive ConvertATK</role>
 		<element>Water</element>
 		<rarity>7</rarity>
