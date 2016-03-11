@@ -19,27 +19,37 @@
   </div>
   <button class="w3-btn w3-teal">Search</button>
 </form>
-<ul class="w3-ul">
+
+<div id="placeholder"> </div>
 <script>
-	var xmlhttp, xmlDoc;
-	xmlhttp = new XMLHttpRequest();
-	xmlhttp.open("GET", "ex_skills.xml", false);
-	xmlhttp.send();
-	xmlDoc = xmlhttp.responseXML;
+	var xmlhttp = new XMLHttpRequest();
+	var url = "ex_skills.json";
 	
-	total = xmlDoc.getElementsByTagName("item").length;
-	//
-	var s = getURLParameter('search');
-	var re = new RegExp(s, 'gi');
-	for(i=0;i<total;i++)
-	{
-		items =  xmlDoc.getElementsByTagName("item")[i].childNodes[0].nodeValue;
-		if (items.match(re)) {
-			document.write('<li>' + items + '</li>');
+	xmlhttp.onreadystatechange=function() {
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			myFunction(xmlhttp.responseText);
 		}
 	}
+	xmlhttp.open("GET", url, true);
+	xmlhttp.send();
+	
+	var s = getURLParameter('search');
+	var re = new RegExp(s, 'gi');
+	
+	function myFunction(response) {
+		var arr = JSON.parse(response);
+		var i;
+		var out = "<ul class='w3-ul'>";
+	
+		for(i = 0; i < arr.length; i++) {
+			a = arr[i].items;
+			if (a.match(re)) {
+				out+="<li>" + arr[i].items +"</li>";
+			}
+		}
+		out+="</ul>";
+		document.getElementById("placeholder").innerHTML = out;
+	}
 </script>
-
-</ul>
 </body>
 </html>

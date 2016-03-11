@@ -294,6 +294,14 @@
 	<item>Hyperion Lv. 5 - 50% boost Enormously boosts HC efficacy</item>
 	<item>Legendary Thief Lv. 5 - Enormously boosts 10% boost BC, HC, Zel, 5% boost Karma, 2% boost Item drop rate when attacking</item>
 	<!--Special elgif 1/1 acc-->
+	<item>Divine Tree's Memories - Fills 2BC each turn &amp; boosts 15% BC, HC drop rate when attacking</item>
+	<item>Divine Flame's Memories - 20% boost to Atk &amp; boosts 10% BC efficacy</item>
+	<item>Divine Darkness's Memories - Boosts 10% critical rate &amp; absorbs 5~8% dmg when attacking</item>
+	<item>Goddess' Protection - Invalidates all status ailments</item>
 	<item>Holy King's Devotion - Negates all status ailments, elemental damage, critical damage</item>
-	<item>Great Pioneer's Light - 20% boost to all parameters, 50% boosts Spark damage and Fills 1~2 BC on Spark</item>
+	<item>Great Pioneer's Light - 20% boost to all parameters, boosts 50% Spark damage and Fills 1~2 BC on Spark</item>
+	<item>Epidemic God's Tragedy - Adds 10% Curse/Poison/Paralysis, 13% Injury/Weak/Sick to attack &amp; enormously boosts 150% damage against status inflicted foes</item>
+	<item>Imperial Encouragement - Fills 5 BC after each turn &amp; fills 4-5 BC when attacking normally &amp; negates Def ignoring attacks"</item>
+	<item>Heavenly Recollection - 20% boost to Def, max HP, 20% chance 25% damage reduction &amp; 30% chance to heal 10-15% damage &amp; 40% chance to fill 2-4 BC when attacked</item>
+	<item>Demolishing Blade - Critical damage boosts Fills 3-5 BC, enormously boosts 150% critical damage and 25% hit rate &amp; 50% boost to Atk</item>
 </skills>
