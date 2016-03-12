@@ -2525,6 +2525,36 @@
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840317.png"></art>
 		<sp list=""></sp>
 	</unit>
+	<unit>
+		<id>8166</id>
+		<name>Loremaster Allanon</name>
+		<role>30%HP ATK DEF REC OverDrive Null Cure Weakness BBfill BBATKed Miti Heal Fire,water,earth,thunder,light,dark HoT</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="10" dc="40" >20% OverDrive Fill+ (ALL) / Null Elemental Weakness (ALL) / 100% Element Weakness DMG+ (ALL) / 30% HP 30% ATK 30% DEF 30% REC (ALL)</ls>
+		<bb hit="" dc="" cost="26" >12BC Fill (ALL) 1Turn / 5-7BC Fill when ATKed (100%) (ALL) 3Turns / 15% Max HP+ till Death/Battle End / Reduce DMG (15%) from (All) Enemy 3Turns</bb>
+		<sbb hit="15" dc="15" cost="30" >540% Light (AOE) / Heal (ALL) / Add Fire,water,earth,thunder,light,dark to ATK (ALL) 3Turns / 75% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns</sbb>
+		<ubb hit="18" dc="18" cost="25" >1000% Light (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 300% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns / Reduce DMG (75%) from (All) Enemy3Turns</ubb>
+		<es condtion="Ritus Staff Sphere Equipped" >Add Cure Ails (ALL) 3Turns Effect to BB/SBB (SELF) / Add Null Ails (ALL) 3Turns Effect to BB/SBB (SELF)</es>
+		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850317.png"></art>
+		<sp list=""></sp>
+	</unit>
+	<unit>
+		<id>8169</id>
+		<name>Shadow Cat Nyami</name>
+		<role>Spark CRIT ATK DEF BBATK% superspark Stealth BBspark</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="16" dc="48" >100% Spark DMG+ (ALL) / 150% CRIT DMG+ (ALL) / 80% ATK 20% DEF (ALL)</ls>
+		<bb hit="16" dc="16" cost="25" >350% Dark (AOE) / 100% BB Fill (SELF) / 60% CRIT+ (ALL) 3Turns / 250% BB ATK%+ (ALL) 3Turns</bb>
+		<sbb hit="16" dc="16" cost="30" >540% Dark (AOE) / Dark (TGT) 300% BB ATK+ on Consecutive SBB (Max 3x / SELF) / 60% Chance SPARKcrit (50% DMG+) (SELF) 1Turns / Stealth (60% CRIT+) (SELF) 2Turns</sbb>
+		<ubb hit="22" dc="22" cost="25" >1500% Dark (AOE) / 300% ATK+ / 100% Chance 5-8BC Fill on Spark (ALL) 3Turns / 60% CRIT+ (ALL) 3Turns / 100% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 300% ATK+ (ALL) 3Turns</ubb>
+		<es condtion="Nyami's Bells Sphere Equipped" >20% Chance Reduce DMG to 1 (SELF)</es>
+		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860317.png"></art>
+		<sp list=""></sp>
+	</unit>
 	<!--Zeruiah - Limited unit -->
 	<unit>
 		<id>8162</id>
