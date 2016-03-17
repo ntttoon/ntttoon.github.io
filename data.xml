@@ -1358,7 +1358,7 @@
 	<unit>
 		<id>1181</id>
 		<name>Sacred Lotus Piany</name>
-		<role>Spark 40%HP Null DEF REC BBspark BBATK% ConvertATK</role>
+		<role>healSpark 40%HP Null DEF REC BBspark BBATK% ConvertATK</role>
 		<element>Water</element>
 		<rarity>7</rarity>
 		<cost>42</cost>
@@ -1479,7 +1479,7 @@
 	<unit>
 		<id>1199</id>
 		<name>Marzanna Reaper Elza</name>
-		<role>BBrate BBspark BBregen Spark ATK Injury Curse HoT Miti Ignore</role>
+		<role>BBrate BBspark BBfill BBregen healSpark Spark ATK Injury Curse HoT Miti Ignore</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -1586,7 +1586,7 @@
 	<unit>
 		<id>1232</id>
 		<name>Phoenix 7</name>
-		<role>Heal 40%HP DEF Idol HoT DoT ConvertDEF Revive Barrier</role>
+		<role>Heal healSpark 40%HP DEF Idol HoT DoT ConvertDEF Revive Barrier</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>40</cost>
@@ -2265,6 +2265,51 @@
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50256.png"></art>
 		<sp list=""></sp>
 	</unit>
+	<unit>
+		<id>1344</id>
+		<name>Arus 7</name>
+		<role>Ignore CRIT 80% BBfill BBregen OverDrive</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="12" dc="48" >20% Chance Ignore DEF (ALL) / 100% CRIT DMG+ (ALL) / 80% ATK (ALL) / 4BC Fill 2Turns on CRIT (ALL)</ls>
+		<bb hit="15" dc="15" cost="26" >260% Fire (AOE) / 10BC Fill (ALL) 1Turn / 4BC Fill 3Turns</bb>
+		<sbb hit="18" dc="36" cost="30" >Fire (TGT) 300%-1000% BB ATK% Based on HP LEFT / 10BC Fill (ALL) 1Turn / 100% BB Fill (SELF) / 8% OverDrive Fill</sbb>
+		<ubb hit="20" dc="20" cost="25" >1000% Fire (AOE) / Fire (TGT) / 50% OverDrive Fill / 60% OverDrive Fill+ 3Turns / 300% CRIT DMG+ (ALL) 3Turns</ubb>
+		<es condtion="20% All STATS when Scarlet Necklace is equipped" >Add Ignore DEF (ALL) 3Turns Effect to BB/SBB (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10556.png"></art>
+		<sp list=""></sp>
+	</unit>
+	<unit>
+		<id>1345</id>
+		<name>Rosetta 7</name>
+		<role>BBspark Spark 40%HP healSpark</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="12" dc="42" >100% Chance 2-3BC Fill on Spark (ALL) / 100% Spark DMG+ (ALL) / 40% HP (ALL) / 50% Spark DMG+ 2Turns on >15 Sparks (ALL)</ls>
+		<bb hit="40" dc="40" cost="24" >320% Earth (AOE) / 80% Spark DMG+ (ALL) 3Turns</bb>
+		<sbb hit="30" dc="30" cost="25" >500% Earth (AOE) / 100% Chance 2-3BC Fill on Spark (ALL) 3Turns / 90% Spark DMG+ (ALL) 3Turns / 400-500 HP Heal on Spark (ALL) 3Turns</sbb>
+		<ubb hit="40" dc="40" cost="25" >1000% Earth (AOE) / 130% Spark DMG+ (ALL) 3Turns / 100% Chance Enemy receives 100% Spark DMG+ 1Turns / 800-1000 HP Heal on Spark (ALL) 3Turns</ubb>
+		<es condtion="20% All STATS when SPARK Type sphere is equipped" >80% Spark DMG+ on Full HP (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30546.png"></art>
+		<sp list=""></sp>
+	</unit>
+	<unit>
+		<id>1346</id>
+		<name>Kuda 7</name>
+		<role>BBreduce BBATK% ATK CRIT</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="20" dc="40" >Reduce 25% BB Cost (ALL) / 100% BB ATK%+ (ALL) / 80% ATK (ALL) / 100% BB ATK%+ 2Turns on >10k DMG Dealt (ALL)</ls>
+		<bb hit="21" dc="21" cost="24" >260% Dark (AOE) / 140% ATK+ / 40% CRIT+ (ALL) 3Turns / 140% ATK+ (ALL) 3Turns</bb>
+		<sbb hit="25" dc="25" cost="25" >500% Dark (AOE) / 140% ATK+ / 60% CRIT+ (ALL) 3Turns / 140% ATK+ (ALL) 3Turns / 200% BB ATK%+ (ALL) 3Turns</sbb>
+		<ubb hit="27" dc="27" cost="25" >1000% Dark (AOE) / 250% ATK+ / 60% CRIT+ (ALL) 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 250% ATK+ (ALL) 3Turns / 400% BB ATK%+ (ALL) 3Turns</ubb>
+		<es condtion="None" >Add 50% CRIT DMG+ (ALL) 3Turns Effect to BB/SBB (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60536.png"></art>
+		<sp list=""></sp>
+	</unit>
 	<!--GB exclusive batch-->
 	<!--Halloween -->
 	<unit>
@@ -2549,9 +2594,9 @@
 		<cost>42</cost>
 		<ls hit="16" dc="48" >100% Spark DMG+ (ALL) / 150% CRIT DMG+ (ALL) / 80% ATK 20% DEF (ALL)</ls>
 		<bb hit="16" dc="16" cost="25" >350% Dark (AOE) / 100% BB Fill (SELF) / 60% CRIT+ (ALL) 3Turns / 250% BB ATK%+ (ALL) 3Turns</bb>
-		<sbb hit="16" dc="16" cost="30" >540% Dark (AOE) / Dark (TGT) 300% BB ATK+ on Consecutive SBB (Max 3x / SELF) / 60% Chance SPARKcrit (50% DMG+) (SELF) 1Turns / Stealth (60% CRIT+) (SELF) 2Turns</sbb>
+		<sbb hit="16" dc="16" cost="30" >540% Dark (AOE) 540% BB ATK% / Dark (TGT) 100% BB ATK% 300% BB ATK+ on Consecutive SBB (Max 3x / SELF) / 60% Chance SPARKcrit (50% DMG+) (SELF) 1Turns / Stealth (60% CRIT+) (SELF) 2Turns</sbb>
 		<ubb hit="22" dc="22" cost="25" >1500% Dark (AOE) / 300% ATK+ / 100% Chance 5-8BC Fill on Spark (ALL) 3Turns / 60% CRIT+ (ALL) 3Turns / 100% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 300% ATK+ (ALL) 3Turns</ubb>
-		<es condtion="Nyami's Bells Sphere Equipped" >20% Chance Reduce DMG to 1 (SELF)</es>
+		<es condtion="100% Spark DMG+ (SELF) 2Turns on >16 Sparks when Nyami's Bells Sphere is equipped" >20% Chance Reduce DMG to 1 (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860317.png"></art>
 		<sp list=""></sp>
 	</unit>
