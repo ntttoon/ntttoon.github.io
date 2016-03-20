@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Brave Frontier</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="js/libs.js"></script>
+<script>
+	$(document).ready(function(){
+		$.ajax({
+		type: "GET",
+		url: "data.xml",
+		dataType: "xml",
+		success: function(xml){
+			$(xml).find('unit').each(function(){
+					var id = $(this).find('id').text();
+					var name = $(this).find('name').text();
+					var element = $(this).find('element').text();
+					var thumb = $(this).find('thumb').attr('path');
+					$("#lst").append('<li><a style="text-decoration:none;font-weight:bold;font-size:1.2em;color:' + nameColor(element) +  '" href="unitinfo.html?id=' + id + '">' + name + '</a></li>')
+				});
+			},
+		error: function() {
+			alert("An error occurred while processing XML file.");
+		}
+		});
+	});
+</script>
+</head>
+
+<body>
+<header class="w3-container w3-teal w3-card-2">
+  <h5>ALL UNITS</h5>
+</header>
+<ul class="w3-ul" id="lst"></ul>
+<footer class="w3-container w3-teal w3-text-white-opacity">
+  <p>Data by DeathMax and BFPros<br>Dev and XML by ntttoon</p>
+</footer>
+</body>
+</html>
