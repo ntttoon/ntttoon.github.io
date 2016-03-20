@@ -28,7 +28,7 @@
 		name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
 		element =  xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
 		thumb =  xmlDoc.getElementsByTagName("thumb")[i].getAttribute("path");
-		document.write('<li><img src="' + thumb + '" class="w3-left w3-margin-right" style="width:50px"><h4><a style="text-decoration:none;color:' + nameColor(element) +  '" href="unitinfo.html?id=' + id + '">' + name + '</a></h4><div class="w3-clear"></div></li>');
+		document.write('<li class="w3-hover-sand"><a style="text-decoration:none;color:' + nameColor(element) +  '" href="unitinfo.html?id=' + id + '"> <img src="' + thumb + '" class="w3-left w3-margin-right" style="width:50px"><p>' + name + '</p></a> <div class="w3-clear"></div></li>');
 	}
 </script>
 </ul>

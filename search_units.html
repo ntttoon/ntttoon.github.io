@@ -37,7 +37,8 @@
 		element =  xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
 		if (name.match(re) || element.match(re)) {
 			id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
-			document.write('<li><h3><strong><a style="text-decoration:none;color:' + nameColor(element) +  '" href="unitinfo.html?id=' + id + '">' + name + '</a></strong></h3></li>');
+			thumb =  xmlDoc.getElementsByTagName("thumb")[i].getAttribute("path");
+			document.write('<li class="w3-hover-sand"><a style="text-decoration:none;color:' + nameColor(element) +  '" href="unitinfo.html?id=' + id + '"> <img src="' + thumb + '" class="w3-left w3-margin-right" style="width:50px"><p>' + name + '</p></a> <div class="w3-clear"></div></li>');
 		}
 	}
 </script>
