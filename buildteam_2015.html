@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Brave Frontier</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<script src="js/ga.js"></script>
+<style>
+.linknounderline {
+	text-decoration: none;
+}
+</style>
+<script src="js/libs.js"></script>
+<script>
+	function writeOption(id_input,id_name_out,id_ls_out,id_bb_out,id_sbb_out,id_ubb_out,id_es_out)
+	{
+		var xmlhttp, xmlDoc;
+		xmlhttp = new XMLHttpRequest();
+		xmlhttp.open("GET", "data.xml", false);
+		xmlhttp.send();
+		xmlDoc = xmlhttp.responseXML;
+		//
+		total = xmlDoc.getElementsByTagName("unit").length;
+		//
+		var n = document.getElementById(id_input).value;
+    	//alert(strSel);
+		for(i=0;i<total;i++)
+		{
+			id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
+			name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
+			ele =  xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
+			ls =  xmlDoc.getElementsByTagName("ls")[i].childNodes[0].nodeValue;
+			bb =  xmlDoc.getElementsByTagName("bb")[i].childNodes[0].nodeValue;
+			sbb =  xmlDoc.getElementsByTagName("sbb")[i].childNodes[0].nodeValue;
+			ubb =  xmlDoc.getElementsByTagName("ubb")[i].childNodes[0].nodeValue;
+			es =  xmlDoc.getElementsByTagName("es")[i].childNodes[0].nodeValue;
+			if(name==n)
+			{
+				document.getElementById(id_ls_out).innerHTML = ls;
+				document.getElementById(id_name_out).innerHTML = "<span style='color:" + nameColor(ele) + "'>▼ " + name + "</span>";
+				document.getElementById(id_bb_out).innerHTML = "BB: <span style='color:" + nameColor(ele) + "'>" + bb + "</span>";
+				document.getElementById(id_sbb_out).innerHTML = "SBB: <span style='color:" + nameColor(ele) + "'>" + sbb + "</span>";
+				document.getElementById(id_ubb_out).innerHTML = "UBB: <span style='color:" + nameColor(ele) + "'>" + ubb + "</span>";
+				document.getElementById(id_es_out).innerHTML = "ES: <span style='color:" + nameColor(ele) + "'>" + es + "</span>";
+			}
+		}
+	}
+	//
+	function searchUnit(id_input,id_list)
+	{
+		var xmlhttp, xmlDoc;
+		xmlhttp = new XMLHttpRequest();
+		xmlhttp.open("GET", "data.xml", false);
+		xmlhttp.send();
+		xmlDoc = xmlhttp.responseXML;
+		
+		total = xmlDoc.getElementsByTagName("unit").length;
+		//
+		var s = document.getElementById(id_input).value;
+		var re = new RegExp(s, 'gi');
+		for(i=0;i<total;i++)
+		{
+			name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
+			role =  xmlDoc.getElementsByTagName("role")[i].childNodes[0].nodeValue;
+			if (role.match(re)) {
+				id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
+				ele =  xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
+				document.getElementById(id_list).innerHTML += "<a href='#' onClick='setValue("+ id + ',"' + id_input + '","' + id_list + '")' + "' id='" + id + "' style='color:" + nameColor(ele) + "'>" + name + "</a> ";
+			}
+		}
+	}
+	function setValue(id,id_input,id_list)
+	{
+		v = document.getElementById(id).innerHTML;
+		document.getElementById(id_input).value = v;
+		document.getElementById(id_list).innerHTML = "";
+	}
+</script>
+</head>
+
+<body>
+<header class="w3-container w3-teal w3-card-2">
+  <h5>BUILD TEAM by LS & BUFFS</h5>
+</header>
+<div class="w3-blockquote w3-sand">
+    <a class="expander linknounderline" href="#">Read this first, click here!</a>
+        <p class="content">
+          <span class="w3-tag w3-yellow">Type <strong>ONE</strong> of these keywords to search units who related to leader skills and buffs (this not include Dream EVO skills):</span><br>
+          <strong>HP(30%HP, 35%HP, 40%HP, 50%HP), ATK, DEF, REC, BB(BBreduce, BBregen, BBfill, BBATKed, BBATK%, BBspark, BBrate, BBcrit), BC, HC, ConvertATK, ConvertDEF, Spark, CRIT, USBB, Barrier, OverDrive, HoT, DoT, USBB, Miti, Miti50%, Null, Cure, Injury, Weak, Sick, Poison, Para, Curse, atkdown, defdown, Fire, water, earth, thunder, light, dark, EXP, Item, Karma, Zel, Idol, Revive, hit, Weakness, Stealth, Taunt, HealATKed, superspark (aka CRIT Spark), healSpark</strong>
+        </p>
+</div>
+<div class="w3-container">
+  <h5>Leader</h5>
+  <input class="w3-input w3-border" name="search" id="leader" type="text" onChange="searchUnit('leader','leader_list');">
+  <div class="w3-text" id="leader_list"></div>
+  <h5>Friend</h5>
+  <input class="w3-input w3-border" name="search" id="friend" type="text" onChange="searchUnit('friend','friend_list');">
+  <div class="w3-text" id="friend_list"></div>
+  <h5>Unit 3 in team</h5>
+  <input class="w3-input w3-border" name="search" id="unit3" type="text" onChange="searchUnit('unit3','unit3_list');">
+  <div class="w3-text" id="unit3_list"></div>
+  <h5>Unit 4 in team</h5>
+  <input class="w3-input w3-border" name="search" id="unit4" type="text" onChange="searchUnit('unit4','unit4_list');">
+  <div class="w3-text" id="unit4_list"></div>
+  <h5>Unit 5 in team</h5>
+  <input class="w3-input w3-border" name="search" id="unit5" type="text" onChange="searchUnit('unit5','unit5_list');">
+  <div class="w3-text" id="unit5_list"></div>
+  <h5>Unit 6 in team</h5>
+  <input class="w3-input w3-border" name="search" id="unit6" type="text" onChange="searchUnit('unit6','unit6_list');">
+  <div class="w3-text" id="unit6_list"></div>
+</div>
+<br>
+<button onclick="document.getElementById('id01').style.display='block';
+				writeOption('leader','name1','ls1','bb1','sbb1','ubb1','es1');
+                writeOption('friend','name2','ls2','bb2','sbb2','ubb2','es2');
+                writeOption('unit3','name3','ls3','bb3','sbb3','ubb3','es3');
+                writeOption('unit4','name4','ls4','bb4','sbb4','ubb4','es4');
+                writeOption('unit5','name5','ls5','bb5','sbb5','ubb5','es5');
+                writeOption('unit6','name6','ls6','bb6','sbb6','ubb6','es6');
+                " class="w3-btn w3-red" style="width:100%">Build Your Team</button>
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-8">
+    <header class="w3-container w3-red"> <span onclick="document.getElementById('id01').style.display='none'" 
+class="w3-closebtn">×</span>
+      <h5>Your Team</h5>
+    </header>
+    <div class="w3-container">
+      <h5 style="font-style:italic;text-decoration:underline">Leader Skill</h5>
+      <p id="ls1"></p>
+      <p id="ls2"></p>
+      <p id="ls3" style="display:none"></p>
+      <p id="ls4" style="display:none"></p>
+      <p id="ls5" style="display:none"></p>
+      <p id="ls6" style="display:none"></p>
+      <hr>
+      <h5 style="font-style:italic;text-decoration:underline">BB Skills</h5>
+      <ul class="w3-ul">
+        <!--block-->
+        <li> <a class="expander linknounderline" href="#" id="name1"></a>
+          <div class="content"> <span class="w3-text w3-tag" style="text-align:left;width:100%;font-size:11px">
+            <div id="bb1"></div>
+            <div id="sbb1"></div>
+            <div id="ubb1"></div>
+            <div id="es1"></div>
+            </span> </div>
+        </li>
+        <!--block-->
+        <li> <a class="expander linknounderline" href="#" id="name2"></a>
+          <div class="content"> <span class="w3-text w3-tag" style="text-align:left;width:100%;font-size:11px">
+            <div id="bb2"></div>
+            <div id="sbb2"></div>
+            <div id="ubb2"></div>
+            <div id="es2"></div>
+            </span> </div>
+        </li>
+        <!--block-->
+        <li> <a class="expander linknounderline" href="#" id="name3"></a>
+          <div class="content"> <span class="w3-text w3-tag" style="text-align:left;width:100%;font-size:11px">
+            <div id="bb3"></div>
+            <div id="sbb3"></div>
+            <div id="ubb3"></div>
+            <div id="es3"></div>
+            </span> </div>
+        </li>
+        <!--block-->
+        <li> <a class="expander linknounderline" href="#" id="name4"></a>
+          <div class="content"> <span class="w3-text w3-tag" style="text-align:left;width:100%;font-size:11px">
+            <div id="bb4"></div>
+            <div id="sbb4"></div>
+            <div id="ubb4"></div>
+            <div id="es4"></div>
+            </span> </div>
+        </li>
+        <!--block-->
+        <li> <a class="expander linknounderline" href="#" id="name5"></a>
+          <div class="content"> <span class="w3-text w3-tag" style="text-align:left;width:100%;font-size:11px">
+            <div id="bb5"></div>
+            <div id="sbb5"></div>
+            <div id="ubb5"></div>
+            <div id="es5"></div>
+            </span> </div>
+        </li>
+        <!--block-->
+        <li> <a class="expander linknounderline" href="#" id="name6"></a>
+          <div class="content"> <span class="w3-text w3-tag" style="text-align:left;width:100%;font-size:11px">
+            <div id="bb6"></div>
+            <div id="sbb6"></div>
+            <div id="ubb6"></div>
+            <div id="es6"></div>
+            </span> </div>
+        </li>
+      </ul>
+      <p></p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
+<script type="text/javascript" src="js/simple-expand.min.js"></script> 
+<script type="text/javascript">
+        $(function () {
+            $('.expander').simpleexpand();
+           prettyPrint();
+        });
+</script>
+</body>
+</html>
