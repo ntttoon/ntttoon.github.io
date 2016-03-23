@@ -1689,7 +1689,7 @@
 	<!--Phoenix 7 -->
 	<unit>
 		<id>1232</id>
-		<name>Phoenix 7</name>
+		<name>Immortal Phoenix Levarza</name>
 		<role>Heal healSpark 40%HP DEF Idol HoT DoT ConvertDEF Revive Barrier</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
@@ -1705,7 +1705,7 @@
 	</unit>
 	<unit>
 		<id>1233</id>
-		<name>Mega 7</name>
+		<name>Ocean Conqueror Mega</name>
 		<role>BBATK% ATK HoT BC HC Heal ConvertATK</role>
 		<element>Water</element>
 		<rarity>7</rarity>
@@ -1721,7 +1721,7 @@
 	</unit>
 	<unit>
 		<id>1234</id>
-		<name>Sodis 7</name>
+		<name>Paladin Crusader Sodis</name>
 		<role>Miti50% Spark Weakness BBrate BBATK% ATK</role>
 		<element>Light</element>
 		<rarity>7</rarity>
@@ -1737,7 +1737,7 @@
 	</unit>
 	<unit>
 		<id>1235</id>
-		<name>Zephyr 7</name>
+		<name>Phantom Victor Zephyr</name>
 		<role>Miti OverDrive ATK DEF REC hit Barrier Ignore</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
@@ -1916,7 +1916,7 @@
 	<!--Sirius bacth -->
 	<unit>
 		<id>1264</id>
-		<name>Berdette 7</name>
+		<name>Tartarus Blaze Berdette</name>
 		<role>30%HP BBATKed hit atkdown defdown convertDEF ATK BC HC</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
@@ -1932,7 +1932,7 @@
 	</unit>
 	<unit>
 		<id>1267</id>
-		<name>Sarios 7</name>
+		<name>Tartarus Flood Sareas</name>
 		<role>35%HP BBspark BBfill USBB ATK BBATK%</role>
 		<element>Water</element>
 		<rarity>7</rarity>
@@ -1948,7 +1948,7 @@
 	</unit>
 	<unit>
 		<id>1270</id>
-		<name>Duure 7</name>
+		<name>Tartarus Demolition Dure</name>
 		<role>40%HP ATK Spark convertATK superspark DEF HealATKed</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
@@ -1964,7 +1964,7 @@
 	</unit>
 	<unit>
 		<id>1273</id>
-		<name>Razia 7</name>
+		<name>Tartarus Sacrifice Radia</name>
 		<role>40%HP OverDrive Sick Weaken Poison Curse Paralyze Spark BBspark</role>
 		<element>Thunder</element>
 		<rarity>7</rarity>
@@ -1980,7 +1980,7 @@
 	</unit>
 	<unit>
 		<id>1276</id>
-		<name>Sirius 7</name>
+		<name>Tartarus Massacre Sirius</name>
 		<role>40%HP BBATK% Spark BBspark ATK DEF REC Miti BBregen</role>
 		<element>Light</element>
 		<rarity>7</rarity>
@@ -1996,7 +1996,7 @@
 	</unit>
 	<unit>
 		<id>1279</id>
-		<name>Merina 7</name>
+		<name>Tartarus Burial Melina</name>
 		<role>BBATKed BBreduce BC atkdown Injury Weaken USBB BBfill BBATK%</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
@@ -2368,7 +2368,7 @@
 	</unit>
 	<unit>
 		<id>1254</id>
-		<name>Owen 7</name>
+		<name>Blazing Dawn Owen</name>
 		<role>BBcrit CRIT 50%HP ATK DEF REC Injury Weak ConvertATK DoT</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
@@ -2384,7 +2384,7 @@
 	</unit>
 	<unit>
 		<id>1255</id>
-		<name>Grahdens 7</name>
+		<name>Effulgent Dusk Grahdens</name>
 		<role>Miti 50%HP ATK DEF REC Null Light,dark Barrier OverDrive BBregen HoT</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
