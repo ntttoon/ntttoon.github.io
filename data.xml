@@ -2391,7 +2391,7 @@
 		<cost>45</cost>
 		<ls hit="15" dc="45" >15% Light Resist (ALL) / 15% Dark Resist (ALL) / 50% HP 50% ATK 50% DEF 50% REC (ALL)</ls>
 		<bb hit="18" dc="18" cost="28" >350% Light,dark (AOE) / Null Ails 3Turns / Null STATS Debuff 1Turns / Add Light,dark to ATK (ALL) 3Turns</bb>
-		<sbb hit="26" dc="26" cost="32" >750% Light,dark (AOE) / Add Light,dark to ATK (ALL) 3Turns / 10k HP Barrier (dark) / 20% OD Fill+ 3Turns</sbb>
+		<sbb hit="26" dc="26" cost="32" >750% Light,dark (AOE) / Add Light,dark to ATK (ALL) 3Turns / 2k HP Barrier (dark) / 20% OverDrive Fill+ 3Turns</sbb>
 		<ubb hit="28" dc="28" cost="30" >1500% Light,dark (AOE) / 999BC Fill 3Turns / Gradual Heal FULL (ALL) 3Turns / Reduce DMG (100%) from (Light,dark) Enemy</ubb>
 		<es condtion="20% ALL STATS (SELF) when Ishrion sphere equipped" >Add 8BC Fill (ALL) 3Turns Effect to BB/SBB (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60326.png"></art>
