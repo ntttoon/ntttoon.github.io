@@ -2253,6 +2253,103 @@
 		<thumb path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60956.png"></thumb>
 		<sp list=""></sp>
 	</unit>
+	<!--Founders of Meirith -->
+	<unit>
+		<id>1349</id>
+		<name>Goruzo 7</name>
+		<role></role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>43</cost>
+		<ls hit="15" dc="45" >15% Chance Reduce DMG to 1 (ALL) / 100% Chance 3-6BC Fill when ATKed (ALL) / 40% HP 40% ATK (ALL) / 150% ATK+ on > 5k DMG Received (ALL)</ls>
+		<bb hit="21" dc="21" cost="16" >290% Fire (AOE) / 8BC Fill (ALL) 1Turn / 7BC Fill 3Turns / Add Fire,thunder to ATK (ALL) 3Turns / Gradual Heal (ALL) 3Turns</bb>
+		<sbb hit="42" dc="42" cost="28" >500% Fire (AOE) / Add Fire,thunder to ATK (ALL) 3Turns / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / Convert 15% HP to ATK (ALL) 3Turns / Convert 15% HP to DEF (ALL) 3Turns </sbb>
+		<ubb hit="25" dc="25" cost="30" >1300% Fire (AOE) / 999BC Fill (ALL) 1Turn / 50BC Fill 3Turns / 250% ATK+ (SELF) 3Turns / 300% BB ATK%+ (ALL) 3Turns / Convert 40% HP to ATK (ALL) 3Turns</ubb>
+		<es condtion="None" >Add Ignore DEF (ALL) 2Turns Effect to BB/SBB (SELF) / 80% ATK+ Each Turn w/ bonus on 5 Consecutive Turns (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10866.png"></art>
+		<thumb path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10866.png"></thumb>
+		<sp list=""></sp>
+	</unit>
+	<unit>
+		<id>1351</id>
+		<name>Verne 8</name>
+		<role></role>
+		<element>Water</element>
+		<rarity>8</rarity>
+		<cost>47</cost>
+		<ls hit="12" dc="48" >Reduce 25% BB Cost (ALL) / 120% Spark DMG+ (ALL) / 50% HP 50% ATK (ALL)</ls>
+		<bb hit="18" dc="18" cost="26" >370% Water (AOE) / Add Water,earth to ATK (ALL) 3Turns / 100% Spark DMG+ (ALL) 3Turns / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns</bb>
+		<sbb hit="22" dc="22" cost="30" >580% Water (AOE) / Add Water,earth to ATK (ALL) 3Turns / 100% Spark DMG+ (ALL) 3Turns / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 25% Chance Enemy receives 25% Spark DMG+ 1Turns</sbb>
+		<ubb hit="26" dc="26" cost="30" >1500% Water (AOE) / 200% Spark DMG+ (ALL) 3Turns / 50% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 100% Chance Enemy receives 150% Spark DMG+ 2Turns</ubb>
+		<es condtion="30% All STATS (SELF) when Meirith Pearl Sphere Equipped" >0%-100% ATK+ DEF+ REC+ Based on HP LEFT (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20797.png"></art>
+		<thumb path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20797.png"></thumb>
+		<sp list="20 SP :: +20% All Stats | 30 SP :: +100% Spark Damage | 50 SP :: Hit Count +1 | 20 SP :: Reduce BB Cost 25% | 10 SP :: 5% DMG to HP when hit (25% Chance) | 20 SP :: Add Effect To BB/SBB (3 turn Dark Buff) | 30 SP :: Add Effect To BB/SBB (3 Turn +30% BC Drop Rate Buff) | 50 SP :: Add Effect To BB/SBB (3 Turn 1-2 BC on Spark Buff) | 60 SP :: BB+: +30% Spark Dmg, SBB+: +30% Spark Dmg"></sp>
+	</unit>
+	<unit>
+		<id>1354</id>
+		<name>Leona 7</name>
+		<role></role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>43</cost>
+		<ls hit="10" dc="40" >100% Chance Drain 3-8% HP (ALL) / 100% Chance 3-6BC Fill when ATKed (ALL) / 40% HP 40% DEF (ALL)</ls>
+		<bb hit="15" dc="15" cost="20" >350% Earth (AOE) / Add Water,earth to ATK (ALL) 3Turns / Add 10% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 30% Chance -40% Enemy ATK 1Turns / 30% Chance -40% Enemy DEF 1Turns</bb>
+		<sbb hit="21" dc="21" cost="26" >560% Earth (AOE) / Add Water,earth to ATK (ALL) 3Turns / Add 10% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns / 50% Chance Drain 4%-6% HP on ATK (ALL) 3Turns</sbb>
+		<ubb hit="24" dc="24" cost="30" >1300% Earth (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance Heal 75-75% DMG when ATKed (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns / 100% Chance -80% Enemy DEF 2Turns</ubb>
+		<es condtion="None" >Add 7BC Fill (ALL) 3Turns Effect to BB/SBB (SELF) / Add Gradual Heal (ALL) 3Turns Effect to BB/SBB (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30776.png"></art>
+		<thumb path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30776.png"></thumb>
+		<sp list=""></sp>
+	</unit>
+	<unit>
+		<id>1356</id>
+		<name>Cyrus 8</name>
+		<role></role>
+		<element>Thunder</element>
+		<rarity>8</rarity>
+		<cost>47</cost>
+		<ls hit="12" dc="48" >6-8BC Fill on CRIT (ALL) / 150% CRIT DMG+ (ALL) / 20% OverDrive Fill+ (ALL) / 50% HP 50% ATK (ALL)</ls>
+		<bb hit="17" dc="17" cost="26" >370% Thunder (AOE) / Add Fire,thunder to ATK (ALL) 3Turns / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns</bb>
+		<sbb hit="20" dc="20" cost="30" >580% Thunder (AOE) / Add Fire,thunder to ATK (ALL) 3Turns / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / 300% BB ATK%+ (ALL) 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="30" >1500% Thunder (AOE) / 60% CRIT+ (ALL) 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 50% Chance SPARKcrit (100% DMG+) (ALL) 3Turns / 600% BB ATK%+ (ALL) 3Turns</ubb>
+		<es condtion="None" >100% BB ATK%+ (SELF) / Null STATS Debuff (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40767.png"></art>
+		<thumb path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40767.png"></thumb>
+		<sp list="10 SP :: +20% ATK/REC | 10 SP :: +20% HP/DEF | 20 SP :: +50% Crit Damage | 20 SP :: 2-3 BC On Crit | 30 SP :: 100% Base/Buffed Crit Resist | 50 SP :: Add Effect To BB/SBB (3 Turn +150% ATK) | 50 SP :: Add Effect To BB/SBB (3 turn 70% ATK->DEF buff) | 20 SP :: Add Effect To BB/SBB (3 turn Light Buff) | 40 SP :: SBB+: +100% BB/SBB/UBB Mod, UBB+: +100% BB/SBB/UBB Mod"></sp>
+	</unit>
+	<unit>
+		<id>1359</id>
+		<name>Ashtaru 7</name>
+		<role></role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>43</cost>
+		<ls hit="9" dc="45" >40% HP 40% DEF (ALL) / 100% Spark DMG+ 2Turns on >30 Sparks (ALL)</ls>
+		<bb hit="17" dc="17" cost="22" >350% Light (AOE) / Add Light,dark to ATK (ALL) 3Turns / Add 20% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 35% BC+ 35% HC+ (ALL) 3Turns</bb>
+		<sbb hit="20" dc="20" cost="25" >560% Light (AOE) / 50% BC Fill+ (ALL) 3Turns / Add Light,dark to ATK (ALL) 3Turns / Add 20% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 2000HP Barrier (light) / 35% BC+ 35% HC+ (ALL) 3Turns</sbb>
+		<ubb hit="22" dc="22" cost="30" >1300% Light (AOE) / 100% Chance Heal 75-75% DMG when ATKed (ALL) 3Turns / Add 50% Chance -50% Enemy ATK to ATK (ALL) 3Turns / Reduce DMG (50%) from (All) Enemy2Turns</ubb>
+		<es condtion="None" >10% All STATS (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50966.png"></art>
+		<thumb path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50966.png"></thumb>
+		<sp list=""></sp>
+	</unit>
+	<unit>
+		<id>1362</id>
+		<name>Ekurisu 7</name>
+		<role></role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>43</cost>
+		<ls hit="7" dc="42" >6BC Fill Each Turn (ALL) / Heal Each Turn (ALL) / 20% OverDrive Fill+ (ALL) / 50% HP (ALL)</ls>
+		<bb hit="" dc="" cost="23" >10BC Fill (ALL) 1Turn / Heal (ALL) / Null Ails 3Turns / Null STATS Debuff 1Turns / Add Light,dark to ATK (ALL) 3Turns</bb>
+		<sbb hit="18" dc="18" cost="22" >560% Dark (AOE) / 8% OverDrive Fill / 20% OverDrive Fill+ 3Turns / Add Light,dark to ATK (ALL) 3Turns / Gradual Heal (ALL) 3Turns</sbb>
+		<ubb hit="23" dc="23" cost="30" >1300% Dark (AOE) / 50BC Fill 3Turns / 40% OverDrive Fill+ 3Turns / 80% Chance Angel Idol 100% HP (ALL) 140Turns / Gradual Heal FULL (ALL) 3Turns</ubb>
+		<es condtion="None" >Add Cure Ails (ALL) to BB/SBB (SELF) / Null Ails (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60976.png"></art>
+		<thumb path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60976.png"></thumb>
+		<sp list=""></sp>
+	</unit>
 	<!--Mock units-->
 	<unit>
 		<id>997</id>
