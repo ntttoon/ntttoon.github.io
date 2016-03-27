@@ -8,6 +8,7 @@
 <meta property="og:title" content="Brave Frontier Build Team" />
 <meta property="og:description" content="Build and share your team!" />
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<script src="js/libs.js"></script> 
 <script src="js/ga.js"></script>
 <style>
 .linknounderline {
@@ -21,6 +22,8 @@
 		if(!l==''){
 			buidTeam();
 			document.getElementById('buffs_tab').style.display='none';
+			document.getElementById('build_btn').style.display='none';
+			document.getElementById('create_btn').style.display='block';
 		}
 	}
 	function buidTeam(){
@@ -37,16 +40,71 @@
 		returnID('unit5',u5);
 		writeOption('friend','friend_thumb','friend_out','buffs_f');
 		returnID('friend',f);
-		document.getElementById('buffs_tab').style.display='block';
 	}
 </script>
 <script>
-	var l = getURLParameter('l');
+	//var l = getURLParameter('l');
 	var u2 = getURLParameter('u2');
 	var u3 = getURLParameter('u3');
 	var u4 = getURLParameter('u4');
 	var u5 = getURLParameter('u5');
 	var f = getURLParameter('f');
+	//
+	function viewBuffs(id_input,buffs_out){
+		var xmlhttp, xmlDoc;
+		xmlhttp = new XMLHttpRequest();
+		xmlhttp.open("GET", "data.xml", false);
+		xmlhttp.send();
+		xmlDoc = xmlhttp.responseXML;
+		//
+		total = xmlDoc.getElementsByTagName("unit").length;
+		//
+		var n = document.getElementById(id_input).value;
+		for(i=0;i<total;i++)
+		{
+			id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
+			name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
+			ele =  xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
+			ls =  xmlDoc.getElementsByTagName("ls")[i].childNodes[0].nodeValue;
+			bb =  xmlDoc.getElementsByTagName("bb")[i].childNodes[0].nodeValue;
+			sbb =  xmlDoc.getElementsByTagName("sbb")[i].childNodes[0].nodeValue;
+			ubb =  xmlDoc.getElementsByTagName("ubb")[i].childNodes[0].nodeValue;
+			es =  xmlDoc.getElementsByTagName("es")[i].childNodes[0].nodeValue;
+			thumb =  xmlDoc.getElementsByTagName("thumb")[i].getAttribute("path");
+			//
+			if(name==n){
+				var bb_array = bb.split("/");
+				var sbb_array = sbb.split("/");
+				var ubb_array = ubb.split("/");
+				var es_array = es.split("/");
+			
+				document.getElementById(buffs_out).innerHTML = name + '<br>';
+				jQuery.each( bb_array, function( j, val ){
+					if(!buffsOut(val) == ""){
+						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-blue">' + buffsOut(val,'bb') + '</span> ';
+					}
+				});
+				document.getElementById(buffs_out).innerHTML += '<br>';
+				jQuery.each( sbb_array, function( j, val ){
+					if(!buffsOut(val) == ""){
+						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-yellow">' + buffsOut(val,'sbb') + '</span> ';
+					}
+				});
+				document.getElementById(buffs_out).innerHTML += '<br>';
+				jQuery.each( ubb_array, function( j, val ){
+					if(!buffsOut(val) == ""){
+						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-red">' + buffsOut(val,'ubb') + '</span> ';
+					}
+				});
+				document.getElementById(buffs_out).innerHTML += '<br>';
+				jQuery.each( es_array, function( j, val ){
+					if(!buffsOut(val) == ""){
+						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-purple">' + buffsOut(val,'es') + '</span> ';
+					}
+				});
+			}
+		}
+	}
 	//
 	function returnID(id_input,param)
 	{
@@ -133,36 +191,6 @@
 			{
 				document.getElementById(thumb_out).src = thumb;
 				document.getElementById(div_out).innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
-				//Out buffs
-				var bb_array = bb.split("/");
-				var sbb_array = sbb.split("/");
-				var ubb_array = ubb.split("/");
-				var es_array = es.split("/");
-			
-				document.getElementById(buffs_out).innerHTML = name + '<br>';
-				jQuery.each( bb_array, function( j, val ){
-					if(!buffsOut(val) == ""){
-						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-blue">' + buffsOut(val,'bb') + '</span> ';
-					}
-				});
-				document.getElementById(buffs_out).innerHTML += '<br>';
-				jQuery.each( sbb_array, function( j, val ){
-					if(!buffsOut(val) == ""){
-						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-yellow">' + buffsOut(val,'sbb') + '</span> ';
-					}
-				});
-				document.getElementById(buffs_out).innerHTML += '<br>';
-				jQuery.each( ubb_array, function( j, val ){
-					if(!buffsOut(val) == ""){
-						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-red">' + buffsOut(val,'ubb') + '</span> ';
-					}
-				});
-				document.getElementById(buffs_out).innerHTML += '<br>';
-				jQuery.each( es_array, function( j, val ){
-					if(!buffsOut(val) == ""){
-						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-purple">' + buffsOut(val,'es') + '</span> ';
-					}
-				});
 				//export link
 				var sLink = "http://ntttoon.github.io/buildteam.html";
 				if(thumb_out == "leader_thumb"){
@@ -251,6 +279,7 @@
 </div>
 <br>
 <button onclick="buidTeam()" class="w3-btn w3-red" style="width:100%" id="build_btn">Build!!!</button>
+<button onclick="window.open('buildteam.html','_self')" class="w3-btn w3-blue" style="width:100%;display:none" id="create_btn">Create New!</button>
 <div class="w3-container">
     <h5>Copy this Link to share your team</h5>
     <input class="w3-input w3-border" id="genLink" type="text" value="">
@@ -262,13 +291,20 @@
       <h3>YOUR TEAM</h3>
     </header>
     <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%; text-align:center">
+      <button onclick="document.getElementById('buffs_tab').style.display='block';
+      				   viewBuffs('leader','buffs_l');
+      				   viewBuffs('unit2','buffs_2');
+                       viewBuffs('unit3','buffs_3');
+                       viewBuffs('unit4','buffs_4');
+                       viewBuffs('unit5','buffs_5');
+                       viewBuffs('friend','buffs_f');" class="w3-btn w3-purple" style="width:100%" id="build_btn">View buffs</button>
       <li><a href="#" class="tablink" onclick="openUnit(event, 'leader_out')"><img src="images/Unit_tab.png" width="90px" id="leader_thumb" /> <br>Leader</a></li>
       <li><a href="#" class="tablink" onclick="openUnit(event, 'unit2_out')"><img src="images/Unit_tab.png" width="90px" id="unit2_thumb" /> <br>Unit</a></li>
       <li><a href="#" class="tablink" onclick="openUnit(event, 'unit3_out')"><img src="images/Unit_tab.png" width="90px" id="unit3_thumb" /> <br>Unit</a></li>
       <li><a href="#" class="tablink" onclick="openUnit(event, 'unit4_out')"><img src="images/Unit_tab.png" width="90px" id="unit4_thumb" /> <br>Unit</a></li>
       <li><a href="#" class="tablink" onclick="openUnit(event, 'unit5_out')"><img src="images/Unit_tab.png" width="90px" id="unit5_thumb" /> <br>Unit</a></li>
       <li><a href="#" class="tablink" onclick="openUnit(event, 'friend_out')"><img src="images/Unit_tab.png" width="90px" id="friend_thumb" /> <br>Friend</a></li>
-      <li id="buffs_tab"><a href="#" class="tablink" onclick="openUnit(event, 'buffs_out')"><img src="images/dragon.png" height="90px"/> <br>Buffs</a></li>
+      <li id="buffs_tab"><a href="#" class="tablink" onclick="openUnit(event, 'buffs_out');"><img src="images/dragon.png" height="90px"/> <br>Buffs</a></li>
     </ul>
     <div id="leader_out" class="w3-container unit w3-small"></div>
     <div id="unit2_out" class="w3-container unit w3-small"></div>
@@ -314,7 +350,6 @@ function openUnit(evt, unitName) {
   evt.currentTarget.classList.add("w3-teal");
 }
 </script>
-<script src="js/libs.js"></script> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/simple-expand.min.js"></script> 
 <script type="text/javascript">
