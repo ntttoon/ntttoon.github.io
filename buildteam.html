@@ -76,27 +76,27 @@
 				var sbb_array = sbb.split("/");
 				var ubb_array = ubb.split("/");
 				var es_array = es.split("/");
-			
+				
 				document.getElementById(buffs_out).innerHTML = name + '<br>';
-				jQuery.each( bb_array, function( j, val ){
+				$.each( bb_array, function( j, val ){
 					if(!buffsOut(val) == ""){
 						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-blue">' + buffsOut(val,'bb') + '</span> ';
 					}
 				});
 				document.getElementById(buffs_out).innerHTML += '<br>';
-				jQuery.each( sbb_array, function( j, val ){
+				$.each( sbb_array, function( j, val ){
 					if(!buffsOut(val) == ""){
 						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-yellow">' + buffsOut(val,'sbb') + '</span> ';
 					}
 				});
 				document.getElementById(buffs_out).innerHTML += '<br>';
-				jQuery.each( ubb_array, function( j, val ){
+				$.each( ubb_array, function( j, val ){
 					if(!buffsOut(val) == ""){
 						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-red">' + buffsOut(val,'ubb') + '</span> ';
 					}
 				});
 				document.getElementById(buffs_out).innerHTML += '<br>';
-				jQuery.each( es_array, function( j, val ){
+				$.each( es_array, function( j, val ){
 					if(!buffsOut(val) == ""){
 						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-purple">' + buffsOut(val,'es') + '</span> ';
 					}
