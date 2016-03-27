@@ -21,59 +21,29 @@
 	function checkTeam(){
 		if(!l==''){
 			buidTeam();
-			document.getElementById('buffs_tab').style.display='none';
+			document.getElementById('build_btn').style.display='none';
+			document.getElementById('create_btn').style.display='block';
 		}
 	}
 	function buidTeam(){
 		document.getElementById('id01').style.display='block';
-		writeOption('leader','leader_thumb','leader_out','buffs_l');
-		returnID('leader',l);
-		writeOption('unit2','unit2_thumb','unit2_out','buffs_2');
-		returnID('unit2',u2);
-		writeOption('unit3','unit3_thumb','unit3_out','buffs_3');
-		returnID('unit3',u3);
-		writeOption('unit4','unit4_thumb','unit4_out','buffs_4');
-		returnID('unit4',u4);
-		writeOption('unit5','unit5_thumb','unit5_out','buffs_5');
-		returnID('unit5',u5);
-		writeOption('friend','friend_thumb','friend_out','buffs_f');
-		returnID('friend',f);
-		document.getElementById('buffs_tab').style.display='block';
+		writeOption('leader','leader_thumb','leader_out');
+		writeOption('unit2','unit2_thumb','unit2_out');
+		writeOption('unit3','unit3_thumb','unit3_out');
+		writeOption('unit4','unit4_thumb','unit4_out');
+		writeOption('unit5','unit5_thumb','unit5_out');
+		writeOption('friend','friend_thumb','friend_out');
 	}
 </script>
 <script>
-	var l = getURLParameter('l');
+	//var l = getURLParameter('l');
 	var u2 = getURLParameter('u2');
 	var u3 = getURLParameter('u3');
 	var u4 = getURLParameter('u4');
 	var u5 = getURLParameter('u5');
 	var f = getURLParameter('f');
-	//
-	function returnID(id_input,param)
-	{
-		var xmlhttp, xmlDoc;
-		xmlhttp = new XMLHttpRequest();
-		xmlhttp.open("GET", "data.xml", false);
-		xmlhttp.send();
-		xmlDoc = xmlhttp.responseXML;
-		//
-		total = xmlDoc.getElementsByTagName("unit").length;
-		//
-		//var n = document.getElementById(id_input).value;
-		var n = document.getElementById(id_input).value;
 
-		for(i=0;i<total;i++)
-		{
-			id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
-			name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
-			//Check name and return id
-			if(id==param){
-				document.getElementById(id_input).value = name;
-			}
-		}
-	}
-	//
-	function writeOption(id_input,thumb_out,div_out,buffs_out)
+	function writeOption(id_input,thumb_out,div_out)
 	{
 		var xmlhttp, xmlDoc;
 		xmlhttp = new XMLHttpRequest();
@@ -98,72 +68,41 @@
 			es =  xmlDoc.getElementsByTagName("es")[i].childNodes[0].nodeValue;
 			thumb =  xmlDoc.getElementsByTagName("thumb")[i].getAttribute("path");
 			//Check url and return team
-			
 			if(id==l)
 			{
 				document.getElementById("leader_thumb").src = thumb;
-				document.getElementById("leader_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+				document.getElementById("leader_out").innerHTML = '<h3>' + name + '</h3>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
 			}
 			if(id==u2)
 			{
 				document.getElementById("unit2_thumb").src = thumb;
-				document.getElementById("unit2_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+				document.getElementById("unit2_out").innerHTML = '<h3>' + name + '</h3>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
 			}
 			if(id==u3)
 			{
 				document.getElementById("unit3_thumb").src = thumb;
-				document.getElementById("unit3_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+				document.getElementById("unit3_out").innerHTML = '<h3>' + name + '</h3>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
 			}
 			if(id==u4)
 			{
 				document.getElementById("unit4_thumb").src = thumb;
-				document.getElementById("unit4_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+				document.getElementById("unit4_out").innerHTML = '<h3>' + name + '</h3>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
 			}
 			if(id==u5)
 			{
 				document.getElementById("unit5_thumb").src = thumb;
-				document.getElementById("unit5_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+				document.getElementById("unit5_out").innerHTML = '<h3>' + name + '</h3>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
 			}
 			if(id==f)
 			{
 				document.getElementById("friend_thumb").src = thumb;
-				document.getElementById("friend_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+				document.getElementById("friend_out").innerHTML = '<h3>' + name + '</h3>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
 			}
 			//Check input
 			if(name==n)
 			{
 				document.getElementById(thumb_out).src = thumb;
-				document.getElementById(div_out).innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
-				//Out buffs
-				var bb_array = bb.split("/");
-				var sbb_array = sbb.split("/");
-				var ubb_array = ubb.split("/");
-				var es_array = es.split("/");
-			
-				document.getElementById(buffs_out).innerHTML = name + '<br>';
-				jQuery.each( bb_array, function( j, val ){
-					if(!buffsOut(val) == ""){
-						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-blue">' + buffsOut(val,'bb') + '</span> ';
-					}
-				});
-				document.getElementById(buffs_out).innerHTML += '<br>';
-				jQuery.each( sbb_array, function( j, val ){
-					if(!buffsOut(val) == ""){
-						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-yellow">' + buffsOut(val,'sbb') + '</span> ';
-					}
-				});
-				document.getElementById(buffs_out).innerHTML += '<br>';
-				jQuery.each( ubb_array, function( j, val ){
-					if(!buffsOut(val) == ""){
-						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-red">' + buffsOut(val,'ubb') + '</span> ';
-					}
-				});
-				document.getElementById(buffs_out).innerHTML += '<br>';
-				jQuery.each( es_array, function( j, val ){
-					if(!buffsOut(val) == ""){
-						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-purple">' + buffsOut(val,'es') + '</span> ';
-					}
-				});
+				document.getElementById(div_out).innerHTML = '<h3>' + name + '</h3>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
 				//export link
 				var sLink = "http://ntttoon.github.io/buildteam.html";
 				if(thumb_out == "leader_thumb"){
@@ -212,7 +151,6 @@
 			}
 		}
 	}
-	//
 	function setValue(id,id_input,id_list)
 	{
 		v = document.getElementById(id).innerHTML;
@@ -252,6 +190,7 @@
 </div>
 <br>
 <button onclick="buidTeam()" class="w3-btn w3-red" style="width:100%" id="build_btn">Build!!!</button>
+<button onclick="window.open('buildteam.html','_self')" class="w3-btn w3-blue" style="width:100%;display:none" id="create_btn">Create New!</button>
 <div class="w3-container">
     <h5>Copy this Link to share your team</h5>
     <input class="w3-input w3-border" id="genLink" type="text" value="">
@@ -260,40 +199,22 @@
   <div class="w3-modal-content w3-card-4 w3-animate-zoom">
     <header class="w3-container w3-red"> <span onclick="document.getElementById('id01').style.display='none'" 
    class="w3-closebtn w3-padding-top">×</span>
-      <h3>YOUR TEAM</h3>
+      <h2>YOUR TEAM</h2>
     </header>
     <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%; text-align:center">
-      <li><a href="#" class="tablink" onclick="openUnit(event, 'leader_out')"><img src="images/Unit_tab.png" width="96px" id="leader_thumb" /> <br>Leader</a></li>
-      <li><a href="#" class="tablink" onclick="openUnit(event, 'unit2_out')"><img src="images/Unit_tab.png" width="96px" id="unit2_thumb" /> <br>Unit</a></li>
-      <li><a href="#" class="tablink" onclick="openUnit(event, 'unit3_out')"><img src="images/Unit_tab.png" width="96px" id="unit3_thumb" /> <br>Unit</a></li>
-      <li><a href="#" class="tablink" onclick="openUnit(event, 'unit4_out')"><img src="images/Unit_tab.png" width="96px" id="unit4_thumb" /> <br>Unit</a></li>
-      <li><a href="#" class="tablink" onclick="openUnit(event, 'unit5_out')"><img src="images/Unit_tab.png" width="96px" id="unit5_thumb" /> <br>Unit</a></li>
-      <li><a href="#" class="tablink" onclick="openUnit(event, 'friend_out')"><img src="images/Unit_tab.png" width="96px" id="friend_thumb" /> <br>Friend</a></li>
-      <li id="buffs_tab"><a href="#" class="tablink" onclick="openUnit(event, 'buffs_out')"><img src="images/dragon.png" height="96px"/> <br>Buffs</a></li>
+      <li><a href="#" class="tablink" onclick="openUnit(event, 'leader_out')"><img src="images/empty_thumb.gif" width="100px" id="leader_thumb" /> <br>Leader</a></li>
+      <li><a href="#" class="tablink" onclick="openUnit(event, 'unit2_out')"><img src="images/empty_thumb.gif" width="100px" id="unit2_thumb" /> <br>Unit</a></li>
+      <li><a href="#" class="tablink" onclick="openUnit(event, 'unit3_out')"><img src="images/empty_thumb.gif" width="100px" id="unit3_thumb" /> <br>Unit</a></li>
+      <li><a href="#" class="tablink" onclick="openUnit(event, 'unit4_out')"><img src="images/empty_thumb.gif" width="100px" id="unit4_thumb" /> <br>Unit</a></li>
+      <li><a href="#" class="tablink" onclick="openUnit(event, 'unit5_out')"><img src="images/empty_thumb.gif" width="100px" id="unit5_thumb" /> <br>Unit</a></li>
+      <li><a href="#" class="tablink" onclick="openUnit(event, 'friend_out')"><img src="images/empty_thumb.gif" width="100px" id="friend_thumb" /> <br>Friend</a></li>
     </ul>
-    <div id="leader_out" class="w3-container unit w3-small"></div>
-    <div id="unit2_out" class="w3-container unit w3-small"></div>
-    <div id="unit3_out" class="w3-container unit w3-small"></div>
-    <div id="unit4_out" class="w3-container unit w3-small"></div>
-    <div id="unit5_out" class="w3-container unit w3-small"></div>
-    <div id="friend_out" class="w3-container unit w3-small"></div>
-    <div id="buffs_out" class="w3-container unit w3-small">
-        <ul class="w3-ul">
-        	<li id="buffs_l"></li>
-            <li id="buffs_2"></li>
-            <li id="buffs_3"></li>
-            <li id="buffs_4"></li>
-            <li id="buffs_5"></li>
-            <li id="buffs_f"></li>
-            <li>
-            	Note: <br>
-            	<span class="w3-tag w3-blue">BB buffs</span>
-                <span class="w3-tag w3-yellow">SBB buffs</span>
-                <span class="w3-tag w3-red">UBB buffs</span>
-                <span class="w3-tag w3-purple">ES buffs</span>
-            </li>
-        </ul>
-    </div>
+    <div id="leader_out" class="w3-container unit"></div>
+    <div id="unit2_out" class="w3-container unit"></div>
+    <div id="unit3_out" class="w3-container unit"></div>
+    <div id="unit4_out" class="w3-container unit"></div>
+    <div id="unit5_out" class="w3-container unit"></div>
+    <div id="friend_out" class="w3-container unit"></div>
   </div>
 </div>
 

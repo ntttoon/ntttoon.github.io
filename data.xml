@@ -1209,7 +1209,7 @@
 		<cost>42</cost>
 		<ls hit="8" dc="24" >30% HP (ALL) / Reduce DMG (15%) from (Light,dark) Enemy (ALL) / 10BC Fill on > 10k DMG Received (ALL)</ls>
 		<bb hit="12" dc="12" cost="24" >300% Dark (AOE) / 4-5BC Fill when ATKed (100%) (ALL) 3Turns</bb>
-		<sbb hit="19" dc="19" cost="22" >480% Dark (AOE) 100% BB ATK%+ on Consecutive SBB (Max 5x / SELF) / 40% BC Fill+ (ALL) 3Turns</sbb>
+		<sbb hit="19" dc="19" cost="22" >480% Dark (AOE) 100% BB ATK+ on Consecutive SBB (Max 5x / SELF) / 40% BC Fill+ (ALL) 3Turns</sbb>
 		<ubb hit="21" dc="21" cost="25" >1200% Dark (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns</ubb>
 		<es condtion="None" >100% Chance Drain 5-8% HP (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60836.png"></art>
@@ -1519,7 +1519,7 @@
 		<bb hit="12" dc="12" cost="26" >300% Dark (AOE) / 8BC Fill 1Turn / 100% ATK+ (ALL) 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns</bb>
 		<sbb hit="16" dc="16" cost="22" >540% Dark (AOE) / 10BC Fill 1Turn / 130% ATK+ (ALL) 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns / Convert 30% attack to DEF (ALL) 3Turns</sbb>
 		<ubb hit="21" dc="21" cost="30" >1200% Dark (AOE) / 999BC Fill (ALL) 1Turn / 250% ATK+ 250% DEF+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns</ubb>
-		<es condtion="None" >20% HC Fill+ BF Fill+ (SELF)</es>
+		<es condtion="None" >20% HC Fill+ BC Fill+ (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60876.png"></art>
 		<thumb path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60876.png"></thumb>
 		<sp list=""></sp>
@@ -2257,7 +2257,7 @@
 	<unit>
 		<id>1349</id>
 		<name>Goruzo 7</name>
-		<role></role>
+		<role>BBATKed 40%HP ATK BBfill BBregen Fire thunder HoT CRIT ConvertATK ConvertDEF BBATK%</role>
 		<element>Fire</element>
 		<rarity>7</rarity>
 		<cost>43</cost>
@@ -2273,7 +2273,7 @@
 	<unit>
 		<id>1351</id>
 		<name>Verne 8</name>
-		<role></role>
+		<role>BBcost spark 50%HP ATK water earth superspark</role>
 		<element>Water</element>
 		<rarity>8</rarity>
 		<cost>47</cost>
@@ -2289,7 +2289,7 @@
 	<unit>
 		<id>1354</id>
 		<name>Leona 7</name>
-		<role></role>
+		<role>BBatked 40%HP DEF water earth atkdown defdown HealATKed BBregen HoT</role>
 		<element>Earth</element>
 		<rarity>7</rarity>
 		<cost>43</cost>
@@ -2305,7 +2305,7 @@
 	<unit>
 		<id>1356</id>
 		<name>Cyrus 8</name>
-		<role></role>
+		<role>BB crit OverDrive 50%HP ATK fire thunder BBATK% superspark</role>
 		<element>Thunder</element>
 		<rarity>8</rarity>
 		<cost>47</cost>
@@ -2321,7 +2321,7 @@
 	<unit>
 		<id>1359</id>
 		<name>Ashtaru 7</name>
-		<role></role>
+		<role>40%HP DEF light dark atkdown BC HC BBrate Barrier HealATKed miti</role>
 		<element>Light</element>
 		<rarity>7</rarity>
 		<cost>43</cost>
@@ -2337,7 +2337,7 @@
 	<unit>
 		<id>1362</id>
 		<name>Ekurisu 7</name>
-		<role></role>
+		<role>BBregen OverDrive 50%HP BBfill heal cure null light dark HoT Idol</role>
 		<element>Dark</element>
 		<rarity>7</rarity>
 		<cost>43</cost>
@@ -2830,7 +2830,7 @@
 		<ls hit="8" dc="40" >100% Chance 2-3BC Fill when ATKed (ALL) / Reduce DMG (10%) on Guard (ALL) / 40% HP 40% DEF (ALL) / Null Ails (ALL)</ls>
 		<bb hit="10" dc="20" cost="29" >300% Thunder (AOE) / Reduce DMG (50%) 1Turns / 3-4BC Fill on Guard 3Turns (ALL) / Reduce DMG (10%) on Guard 1Turns (ALL) </bb>
 		<sbb hit="12" dc="60" cost="22" >1000% Thunder (TGT) 300%-1000% BB ATK% Based on HP LEFT / Reduce DMG (50%) 1Turns / 150% DEF+ (ALL) 3Turns / Convert 60% attack to DEF (ALL) 3Turns </sbb>
-		<ubb hit="14" dc="28" cost="25" >1200% Thunder (AOE) / Reduce DMG (100%) 1Turns / Reduce DMG (100%) 2Turns / 250% ATK+ 250% DEF+ (ALL) 3Turns / Convert 100% attack to DEF (ALL) 3Turns</ubb>
+		<ubb hit="14" dc="28" cost="25" >1200% Thunder (AOE) / Reduce DMG (100%) 1Turn (ALL) / Reduce DMG (100%) 2Turns (SELF) / 250% ATK+ 250% DEF+ (ALL) 3Turns / Convert 100% attack to DEF (ALL) 3Turns</ubb>
 		<es condtion="Eremorn's Aegis Sphere equipped" >2-3BC Fill when ATKed (SELF) / 125% Element Weakness DMG+ (thunder) (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840317.png"></art>
 		<thumb path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_840317.png"></thumb>
