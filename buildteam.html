@@ -42,7 +42,7 @@
 	}
 </script>
 <script>
-	//var l = getURLParameter('l');
+	var l = getURLParameter('l');
 	var u2 = getURLParameter('u2');
 	var u3 = getURLParameter('u3');
 	var u4 = getURLParameter('u4');
@@ -56,10 +56,10 @@
 		xmlhttp.send();
 		xmlDoc = xmlhttp.responseXML;
 		//
-		total = xmlDoc.getElementsByTagName("unit").length;
+		var total = xmlDoc.getElementsByTagName("unit").length;
 		//
 		var n = document.getElementById(id_input).value;
-		for(i=0;i<total;i++)
+		for(var i=0;i<total;i++)
 		{
 			id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
 			name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
@@ -71,7 +71,7 @@
 			es =  xmlDoc.getElementsByTagName("es")[i].childNodes[0].nodeValue;
 			thumb =  xmlDoc.getElementsByTagName("thumb")[i].getAttribute("path");
 			//
-			if(name==n){
+			if(n==name){
 				var bb_array = bb.split("/");
 				var sbb_array = sbb.split("/");
 				var ubb_array = ubb.split("/");
@@ -113,12 +113,12 @@
 		xmlhttp.send();
 		xmlDoc = xmlhttp.responseXML;
 		//
-		total = xmlDoc.getElementsByTagName("unit").length;
+		var total = xmlDoc.getElementsByTagName("unit").length;
 		//
 		//var n = document.getElementById(id_input).value;
 		var n = document.getElementById(id_input).value;
 
-		for(i=0;i<total;i++)
+		for(var i=0;i<total;i++)
 		{
 			id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
 			name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
@@ -137,12 +137,12 @@
 		xmlhttp.send();
 		xmlDoc = xmlhttp.responseXML;
 		//
-		total = xmlDoc.getElementsByTagName("unit").length;
+		var total = xmlDoc.getElementsByTagName("unit").length;
 		//
 		//var n = document.getElementById(id_input).value;
 		var n = document.getElementById(id_input).value;
     	//alert(strSel);
-		for(i=0;i<total;i++)
+		for(var i=0;i<total;i++)
 		{
 			id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
 			name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
@@ -158,31 +158,37 @@
 			{
 				document.getElementById("leader_thumb").src = thumb;
 				document.getElementById("leader_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+				returnID('leader',l);
 			}
 			if(id==u2)
 			{
 				document.getElementById("unit2_thumb").src = thumb;
 				document.getElementById("unit2_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+				returnID('unit2',u2);
 			}
 			if(id==u3)
 			{
 				document.getElementById("unit3_thumb").src = thumb;
 				document.getElementById("unit3_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+				returnID('unit3',u3);
 			}
 			if(id==u4)
 			{
 				document.getElementById("unit4_thumb").src = thumb;
 				document.getElementById("unit4_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+				returnID('unit4',u4);
 			}
 			if(id==u5)
 			{
 				document.getElementById("unit5_thumb").src = thumb;
 				document.getElementById("unit5_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+				returnID('unit5',u5);
 			}
 			if(id==f)
 			{
 				document.getElementById("friend_thumb").src = thumb;
 				document.getElementById("friend_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+				returnID('friend',f);
 			}
 			//Check input
 			if(name==n)
@@ -221,11 +227,11 @@
 		xmlhttp.send();
 		xmlDoc = xmlhttp.responseXML;
 		
-		total = xmlDoc.getElementsByTagName("unit").length;
+		var total = xmlDoc.getElementsByTagName("unit").length;
 		//
 		var s = document.getElementById(id_input).value;
 		var re = new RegExp(s, 'gi');
-		for(i=0;i<total;i++)
+		for(var i=0;i<total;i++)
 		{
 			name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
 			role =  xmlDoc.getElementsByTagName("role")[i].childNodes[0].nodeValue;
@@ -247,7 +253,7 @@
 </script>
 </head>
 
-<body>
+<body onLoad="checkTeam();">
 <header class="w3-container w3-teal w3-card-2">
   <h5>BUILD TEAM</h5>
 </header>
@@ -324,7 +330,6 @@
 </div>
 
 <script>
-checkTeam();
 document.getElementsByClassName("tablink")[0].click();
 
 function openUnit(evt, unitName) {
