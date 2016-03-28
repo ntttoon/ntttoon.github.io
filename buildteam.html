@@ -78,11 +78,29 @@
 				//var es_array = es.split("/");
 				
 				document.getElementById(buffs_out).innerHTML = name + '<br>';
-				for(var k=0;k<bb_array.length;k++){
-					if(!bb_array[k] == ""){
-						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-blue">' + bb_array[k] + '</span> ';
-					}
-				}
+				$.each( bb_array, function( j, val ){
+					
+						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-blue">' + val + '</span> ';
+					
+				});
+				document.getElementById(buffs_out).innerHTML += '<br>';
+				$.each( sbb_array, function( j, val ){
+					
+						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-yellow">' + val + '</span> ';
+					
+				});
+				document.getElementById(buffs_out).innerHTML += '<br>';
+				$.each( ubb_array, function( j, val ){
+					
+						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-red">' + val + '</span> ';
+					
+				});
+				document.getElementById(buffs_out).innerHTML += '<br>';
+				$.each( es_array, function( j, val ){
+					
+						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-purple">' + val + '</span> ';
+					
+				});
 			}
 		}
 	}
