@@ -2253,6 +2253,55 @@
 		<thumb path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60956.png"></thumb>
 		<sp list=""></sp>
 	</unit>
+	<!--Arus Rosetta Kuda 7* -->
+	<unit>
+		<id>1344</id>
+		<name>Arus 7</name>
+		<role>Ignore CRIT 80% BBfill BBregen OverDrive</role>
+		<element>Fire</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="12" dc="48" >20% Chance Ignore DEF (ALL) / 100% CRIT DMG+ (ALL) / 80% ATK (ALL) / 4BC Fill 2Turns on CRIT (ALL)</ls>
+		<bb hit="15" dc="15" cost="26" >260% Fire (AOE) / 10BC Fill (ALL) 1Turn / 4BC Fill 3Turns</bb>
+		<sbb hit="18" dc="36" cost="30" >Fire (TGT) 300%-1000% BB ATK% Based on HP LEFT / 10BC Fill (ALL) 1Turn / 100% BB Fill (SELF) / 8% OverDrive Fill</sbb>
+		<ubb hit="20" dc="20" cost="25" >1000% Fire (AOE) / Fire (TGT) / 50% OverDrive Fill / 60% OverDrive Fill+ 3Turns / 300% CRIT DMG+ (ALL) 3Turns</ubb>
+		<es condtion="20% All STATS when Scarlet Necklace is equipped" >Add Ignore DEF (ALL) 3Turns Effect to BB/SBB (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10556.png"></art>
+		<thumb path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10556.png"></thumb>
+		<sp list=""></sp>
+	</unit>
+	<unit>
+		<id>1345</id>
+		<name>Rosetta 7</name>
+		<role>BBspark Spark 40%HP healSpark</role>
+		<element>Earth</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="12" dc="42" >100% Chance 2-3BC Fill on Spark (ALL) / 100% Spark DMG+ (ALL) / 40% HP (ALL) / 50% Spark DMG+ 2Turns on >15 Sparks (ALL)</ls>
+		<bb hit="40" dc="40" cost="24" >320% Earth (AOE) / 80% Spark DMG+ (ALL) 3Turns</bb>
+		<sbb hit="30" dc="30" cost="25" >500% Earth (AOE) / 100% Chance 2-3BC Fill on Spark (ALL) 3Turns / 90% Spark DMG+ (ALL) 3Turns / 400-500 HP Heal on Spark (ALL) 3Turns</sbb>
+		<ubb hit="40" dc="40" cost="25" >1000% Earth (AOE) / 130% Spark DMG+ (ALL) 3Turns / 100% Chance Enemy receives 100% Spark DMG+ 1Turns / 800-1000 HP Heal on Spark (ALL) 3Turns</ubb>
+		<es condtion="20% All STATS when SPARK Type sphere is equipped" >80% Spark DMG+ on Full HP (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30546.png"></art>
+		<thumb path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30546.png"></thumb>
+		<sp list=""></sp>
+	</unit>
+	<unit>
+		<id>1346</id>
+		<name>Kuda 7</name>
+		<role>BBreduce BBATK% ATK CRIT</role>
+		<element>Dark</element>
+		<rarity>7</rarity>
+		<cost>40</cost>
+		<ls hit="20" dc="40" >Reduce 25% BB Cost (ALL) / 100% BB ATK%+ (ALL) / 80% ATK (ALL) / 100% BB ATK%+ 2Turns on >10k DMG Dealt (ALL)</ls>
+		<bb hit="21" dc="21" cost="24" >260% Dark (AOE) / 140% ATK+ / 40% CRIT+ (ALL) 3Turns / 140% ATK+ (ALL) 3Turns</bb>
+		<sbb hit="25" dc="25" cost="25" >500% Dark (AOE) / 140% ATK+ / 60% CRIT+ (ALL) 3Turns / 140% ATK+ (ALL) 3Turns / 200% BB ATK%+ (ALL) 3Turns</sbb>
+		<ubb hit="27" dc="27" cost="25" >1000% Dark (AOE) / 250% ATK+ / 60% CRIT+ (ALL) 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 250% ATK+ (ALL) 3Turns / 400% BB ATK%+ (ALL) 3Turns</ubb>
+		<es condtion="None" >Add 50% CRIT DMG+ (ALL) 3Turns Effect to BB/SBB (SELF)</es>
+		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60536.png"></art>
+		<thumb path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60536.png"></thumb>
+		<sp list=""></sp>
+	</unit>
 	<!--Founders of Meirith -->
 	<unit>
 		<id>1349</id>
@@ -2509,54 +2558,6 @@
 		<es condtion="None" >Add Cure Ails (ALL) effect to BB/SBB (SELF) / Null Ails (SELF) / Null STATS Debuff (SELF)</es>
 		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50256.png"></art>
 		<thumb path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50256.png"></thumb>
-		<sp list=""></sp>
-	</unit>
-	<unit>
-		<id>1344</id>
-		<name>Arus 7</name>
-		<role>Ignore CRIT 80% BBfill BBregen OverDrive</role>
-		<element>Fire</element>
-		<rarity>7</rarity>
-		<cost>40</cost>
-		<ls hit="12" dc="48" >20% Chance Ignore DEF (ALL) / 100% CRIT DMG+ (ALL) / 80% ATK (ALL) / 4BC Fill 2Turns on CRIT (ALL)</ls>
-		<bb hit="15" dc="15" cost="26" >260% Fire (AOE) / 10BC Fill (ALL) 1Turn / 4BC Fill 3Turns</bb>
-		<sbb hit="18" dc="36" cost="30" >Fire (TGT) 300%-1000% BB ATK% Based on HP LEFT / 10BC Fill (ALL) 1Turn / 100% BB Fill (SELF) / 8% OverDrive Fill</sbb>
-		<ubb hit="20" dc="20" cost="25" >1000% Fire (AOE) / Fire (TGT) / 50% OverDrive Fill / 60% OverDrive Fill+ 3Turns / 300% CRIT DMG+ (ALL) 3Turns</ubb>
-		<es condtion="20% All STATS when Scarlet Necklace is equipped" >Add Ignore DEF (ALL) 3Turns Effect to BB/SBB (SELF)</es>
-		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10556.png"></art>
-		<thumb path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10556.png"></thumb>
-		<sp list=""></sp>
-	</unit>
-	<unit>
-		<id>1345</id>
-		<name>Rosetta 7</name>
-		<role>BBspark Spark 40%HP healSpark</role>
-		<element>Earth</element>
-		<rarity>7</rarity>
-		<cost>40</cost>
-		<ls hit="12" dc="42" >100% Chance 2-3BC Fill on Spark (ALL) / 100% Spark DMG+ (ALL) / 40% HP (ALL) / 50% Spark DMG+ 2Turns on >15 Sparks (ALL)</ls>
-		<bb hit="40" dc="40" cost="24" >320% Earth (AOE) / 80% Spark DMG+ (ALL) 3Turns</bb>
-		<sbb hit="30" dc="30" cost="25" >500% Earth (AOE) / 100% Chance 2-3BC Fill on Spark (ALL) 3Turns / 90% Spark DMG+ (ALL) 3Turns / 400-500 HP Heal on Spark (ALL) 3Turns</sbb>
-		<ubb hit="40" dc="40" cost="25" >1000% Earth (AOE) / 130% Spark DMG+ (ALL) 3Turns / 100% Chance Enemy receives 100% Spark DMG+ 1Turns / 800-1000 HP Heal on Spark (ALL) 3Turns</ubb>
-		<es condtion="20% All STATS when SPARK Type sphere is equipped" >80% Spark DMG+ on Full HP (SELF)</es>
-		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30546.png"></art>
-		<thumb path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30546.png"></thumb>
-		<sp list=""></sp>
-	</unit>
-	<unit>
-		<id>1346</id>
-		<name>Kuda 7</name>
-		<role>BBreduce BBATK% ATK CRIT</role>
-		<element>Dark</element>
-		<rarity>7</rarity>
-		<cost>40</cost>
-		<ls hit="20" dc="40" >Reduce 25% BB Cost (ALL) / 100% BB ATK%+ (ALL) / 80% ATK (ALL) / 100% BB ATK%+ 2Turns on >10k DMG Dealt (ALL)</ls>
-		<bb hit="21" dc="21" cost="24" >260% Dark (AOE) / 140% ATK+ / 40% CRIT+ (ALL) 3Turns / 140% ATK+ (ALL) 3Turns</bb>
-		<sbb hit="25" dc="25" cost="25" >500% Dark (AOE) / 140% ATK+ / 60% CRIT+ (ALL) 3Turns / 140% ATK+ (ALL) 3Turns / 200% BB ATK%+ (ALL) 3Turns</sbb>
-		<ubb hit="27" dc="27" cost="25" >1000% Dark (AOE) / 250% ATK+ / 60% CRIT+ (ALL) 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 250% ATK+ (ALL) 3Turns / 400% BB ATK%+ (ALL) 3Turns</ubb>
-		<es condtion="None" >Add 50% CRIT DMG+ (ALL) 3Turns Effect to BB/SBB (SELF)</es>
-		<art path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60536.png"></art>
-		<thumb path="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60536.png"></thumb>
 		<sp list=""></sp>
 	</unit>
 	<!--GB exclusive batch-->
@@ -2916,6 +2917,39 @@
 		<es condtion="30% ALL Stats (SELF) when Raven Plume Sphere is equipped OR Randolph is in squad." >Add Fire,dark to ATK (ALL) Effect to BB/SBB (SELF) / 40% Chance Angel Idol 2x (SELF)</es>
 		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840327.png"></art>
 		<thumb path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_840327.png"></thumb>
+		<sp list=""></sp>
+	</unit>
+	<!--Easter 2016 -->
+	<unit>
+		<id>8183</id>
+		<name>Plasma Blaster Bonnie</name>
+		<role>BBreduce BBrate BBATK% Fire,thunder,dark</role>
+		<element>Thunder</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="6" dc="36" >Reduce 25% BB Cost (ALL) / 50% BC Fill+ (ALL) / 150% BB ATK%+ (ALL)</ls>
+		<bb hit="12" dc="24" cost="25" >300% Fire,thunder,dark (AOE) / Ignore DEF (ALL) 2Turns / 65% Poison 65% Para 65% Curse / 65% Injury 65% Weak 65% Sick</bb>
+		<sbb hit="15" dc="30" cost="25" >540% Fire,thunder,dark (AOE) / Add Fire,thunder,dark to ATK (ALL) 3Turns / 200% BB ATK%+ (ALL) 3Turns / 65% Poison 65% Para 65% Curse / 65% Injury 65% Weak 65% Sick</sbb>
+		<ubb hit="18" dc="36" cost="30" >2000% Thunder (AOE) 1200%-2000% BB ATK% Based on HP LEFT / 300% DMG+ to Ailed Enemy (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns</ubb>
+		<es condtion="None" >50% ATK+ on Full BB (SELF) / 100% DMG+ to Ailed Enemy (SELF)</es>
+		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840117.png"></art>
+		<thumb path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_840117.png"></thumb>
+		<sp list=""></sp>
+	</unit>
+	<unit>
+		<id>8184</id>
+		<name>Eggstra Colorful Carrol</name>
+		<role>BBreduce BC HC BBregen ATK DEF REC OverDrive BBATKed Water,earth,light Barrier Cure</role>
+		<element>Light</element>
+		<rarity>7</rarity>
+		<cost>42</cost>
+		<ls hit="8" dc="40" >4BC Fill Each Turn (ALL) / Reduce 25% BB Cost (ALL) / 25% BC+ 25% HC+ (ALL)</ls>
+		<bb hit="14" dc="28" cost="25" >300% Water,earth,light (AOE) / 7BC Fill 3Turns / 130% ATK+ 130% DEF+ 130% REC+ (ALL) 3Turns</bb>
+		<sbb hit="16" dc="32" cost="25" >540% Water,earth,light (AOE) / 8% OverDrive Fill / 5-7BC Fill when ATKed (100%) (ALL) 3Turns / Add Water,earth,light to ATK (ALL) 3Turns / 130% ATK+ 130% DEF+ 130% REC+ (ALL) 3Turns</sbb>
+		<ubb hit="18" dc="36" cost="30" >1200% Water,earth,light (AOE) / 999BC Fill (ALL) 1Turn / 25% OverDrive Fill / 20000HP Barrier (light)</ubb>
+		<es condtion="None" >15% HC Fill+ (SELF) / 15% BC Fill+ (SELF) / Add Cure Ails (ALL) Effect to BB/SBB (SELF)</es>
+		<art path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850157.png"></art>
+		<thumb path="http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850157.png"></thumb>
 		<sp list=""></sp>
 	</unit>
 </brave>
