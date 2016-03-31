@@ -5,7 +5,6 @@
 <title>Brave Frontier</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<script src="js/ga.js"></script>
 <script src="js/libs.js"></script>
 </head>
 
@@ -20,27 +19,38 @@
   </div>
   <button class="w3-btn w3-teal">Search</button>
 </form>
-<ul class="w3-ul">
+
+<div id="placeholder"> </div>
 <script>
-	var xmlhttp, xmlDoc;
-	xmlhttp = new XMLHttpRequest();
-	xmlhttp.open("GET", "ex_skills.xml", false);
-	xmlhttp.send();
-	xmlDoc = xmlhttp.responseXML;
+	var xmlhttp = new XMLHttpRequest();
+	var url = "ex_skills.json";
 	
-	total = xmlDoc.getElementsByTagName("item").length;
-	//
-	var s = getURLParameter('search');
-	var re = new RegExp(s, 'gi');
-	for(i=0;i<total;i++)
-	{
-		items =  xmlDoc.getElementsByTagName("item")[i].childNodes[0].nodeValue;
-		if (items.match(re)) {
-			document.write('<li>' + items + '</li>');
+	xmlhttp.onreadystatechange=function() {
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			myFunction(xmlhttp.responseText);
 		}
 	}
+	xmlhttp.open("GET", url, true);
+	xmlhttp.send();
+	
+	var s = getURLParameter('search');
+	var re = new RegExp(s, 'gi');
+	
+	function myFunction(response) {
+		var arr = JSON.parse(response);
+		var i;
+		var out = "<ul class='w3-ul'>";
+		//alert(arr.exskills.item.length);
+		var json_len = arr.exskills.item.length;
+		for(i = 0; i < json_len; i++) {
+			a = arr.exskills.item[i];
+			if (a.match(re)) {
+				out+="<li>" + arr.exskills.item[i] +"</li>";
+			}
+		}
+		out+="</ul>";
+		document.getElementById("placeholder").innerHTML = out;
+	}
 </script>
-
-</ul>
 </body>
 </html>
