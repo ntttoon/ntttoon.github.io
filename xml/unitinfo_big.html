@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BF unit info - made by ntttoon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="css/fullart.css">
+<script src="js/ga.js"></script>
+<script src="js/libs.js"></script>
+<!--<link rel="stylesheet" href="css/animate.css">
+<script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>-->
+</head>
+
+<body>
+<nav class="w3-sidenav w3-white w3-card-2 w3-animate-left" style="width:250px" id="list">
+<form class="w3-form">
+  <div class="w3-input-group">      
+    <label class="w3-label w3-text-teal"><b>Input unit's name or elements (fire, water, etc)</b></label>
+    <input class="w3-input w3-border" name="search" type="text">
+  </div>
+  <button class="w3-btn w3-teal">Search</button>
+</form>
+</nav>
+<div id="sp_btn"></div>
+<script>
+	var xmlhttp, xmlDoc;
+	xmlhttp = new XMLHttpRequest();
+	xmlhttp.open("GET", "data.xml", false);
+	xmlhttp.send();
+	xmlDoc = xmlhttp.responseXML;
+	
+	total = xmlDoc.getElementsByTagName("unit").length;
+	var s = getURLParameter('id');
+	var se = getURLParameter('search');
+	var re = new RegExp(se, 'gi');
+	
+	for(i=0;i<total;i++)
+	{
+		id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
+		name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
+		element = xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
+		if (se == null){
+			document.getElementById("list").innerHTML += "<a style='color:" + nameColor(element) + "' " + "href='unitinfo_big.html?id=" + id + "'>" + name +"</a>";
+		}
+		if (name.match(re) || element.match(re)) {
+			document.getElementById("list").innerHTML += "<a style='color:" + nameColor(element) + "' " + "href='unitinfo_big.html?id=" + id + "&search=" + se + "'>" + name +"</a>";
+		}
+		//
+		if(id==s)
+		{
+			//name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
+			//element = xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
+			cost = xmlDoc.getElementsByTagName("cost")[i].childNodes[0].nodeValue;
+			rarity = xmlDoc.getElementsByTagName("rarity")[i].childNodes[0].nodeValue;
+			ls = xmlDoc.getElementsByTagName("ls")[i].childNodes[0].nodeValue;
+			normalhit = xmlDoc.getElementsByTagName("ls")[i].getAttribute("hit");
+			normaldc = xmlDoc.getElementsByTagName("ls")[i].getAttribute("dc");
+			bb = xmlDoc.getElementsByTagName("bb")[i].childNodes[0].nodeValue;
+			bbhit = xmlDoc.getElementsByTagName("bb")[i].getAttribute("hit");
+			bbdc = xmlDoc.getElementsByTagName("bb")[i].getAttribute("dc");
+			bbcost = xmlDoc.getElementsByTagName("bb")[i].getAttribute("cost");
+			sbb = xmlDoc.getElementsByTagName("sbb")[i].childNodes[0].nodeValue;
+			sbbhit = xmlDoc.getElementsByTagName("sbb")[i].getAttribute("hit");
+			sbbdc = xmlDoc.getElementsByTagName("sbb")[i].getAttribute("dc");
+			sbbcost = xmlDoc.getElementsByTagName("sbb")[i].getAttribute("cost");
+			ubb = xmlDoc.getElementsByTagName("ubb")[i].childNodes[0].nodeValue;
+			ubbhit = xmlDoc.getElementsByTagName("ubb")[i].getAttribute("hit");
+			ubbdc = xmlDoc.getElementsByTagName("ubb")[i].getAttribute("dc");
+			ubbcost = xmlDoc.getElementsByTagName("ubb")[i].getAttribute("cost");
+			escondition = xmlDoc.getElementsByTagName("es")[i].getAttribute("condtion");
+			eseffect = xmlDoc.getElementsByTagName("es")[i].childNodes[0].nodeValue;
+			art = xmlDoc.getElementsByTagName("art")[i].getAttribute("path");
+			
+			if(rarity == 8){
+				//document.getElementById("bg").className = "fullbg8";
+				document.write("<div class='fullbg8'>");
+				document.getElementById("sp_btn").innerHTML = "<a class='w3-btn w3-purple' style='position:absolute;top:0;right:0' href='unitinfo_bigsp.html?id=" + id + "&search=" + se + "'>OMNI Skills</a>";
+			}else{
+				//document.getElementById("bg").className = "fullbg7";
+				document.write("<div class='fullbg7'>");
+			}
+			
+			document.write("<div class='unit_ele'><img src=images/" + nameElement(element) + " width='40' height='40'></div>");
+			document.write("<div class='unit_name'>" + name + "</div>");
+			//Leader skill
+			document.write("<div class='box' style='top:100px;'>");
+				document.write("<div class='box_subinfo'>" + normalhit + " hits / " + normaldc + " DC</div>");
+				document.write("<div class='box_name'>Leader Skill</div>");
+				document.write("<div class='box_info'>" + ls + "</div>");
+			document.write("</div>");
+			//BB
+			document.write("<div class='box' style='top:220px;'>");
+				document.write("<div class='box_subinfo'>" + bbhit + " hits / " + bbdc + " DC / Cost: " + bbcost + " BC</div>");
+				document.write("<div class='box_name'>Brave Burst</div>");
+				document.write("<div class='box_info'>" + bb + "</div>");
+			document.write("</div>");
+			//SBB
+			document.write("<div class='box' style='top:340px;'>");
+				document.write("<div class='box_subinfo'>" + sbbhit + " hits / " + sbbdc + " DC / Cost: " + sbbcost + " BC</div>");
+				document.write("<div class='box_name'>Super Brave Burst</div>");
+				document.write("<div class='box_info'>" + sbb + "</div>");
+			document.write("</div>");
+			//UBB
+			document.write("<div class='box' style='top:460px;'>");
+				document.write("<div class='box_subinfo'>" + ubbhit + " hits / " + ubbdc + " DC / Cost: " + ubbcost + " BC</div>");
+				document.write("<div class='box_name'>Ultimate Brave Burst</div>");
+				document.write("<div class='box_info'>" + ubb + "</div>");
+			document.write("</div>");
+			//ES
+			document.write("<div class='box' style='top:580px;'>");
+				document.write("<div class='box_name'>Extra Skill</div>");
+				document.write("<div class='box_info'><u>Condition</u>: " + escondition + "<br/><u>Effect</u>: " + eseffect + "</div>");
+			document.write("</div>");
+			//
+			document.write("<div class='box_copyright'>Copyright by Alim/Gumi - Datamine: Deathmax/bravefrontierpros - Design & Dev: ntttoon</div>");
+			document.write("<div class='art'><img src=" + art + "></div>");
+		}
+	}
+</script>
+</div>
+</body>
+</html>

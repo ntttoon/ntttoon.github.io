@@ -13,29 +13,39 @@
 <header class="w3-container w3-teal w3-card-2">
   <h5>ALL UNITS</h5>
 </header>
-<ul class="w3-ul">
+<div id="placeholder"> </div>
 <script>
-	var xmlhttp, xmlDoc;
-	xmlhttp = new XMLHttpRequest();
-	xmlhttp.open("GET", "data.xml", false);
-	xmlhttp.send();
-	xmlDoc = xmlhttp.responseXML;
+	var xmlhttp = new XMLHttpRequest();
+	var url = "data/units.json";
 	
-	total = xmlDoc.getElementsByTagName("unit").length;
-	//
-	for(i=0;i<total;i++)
-	{
-		id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
-		name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
-		element =  xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
-		thumb =  xmlDoc.getElementsByTagName("thumb")[i].getAttribute("path");
-		document.write('<li class="w3-hover-sand"><a style="text-decoration:none;color:' + nameColor(element) +  '" href="unitinfo.html?id=' + id + '"> <img src="' + thumb + '" class="w3-left w3-margin-right" style="width:50px"><p>' + name + '</p></a> <div class="w3-clear"></div></li>');
+	xmlhttp.onreadystatechange=function() {
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			myFunction(xmlhttp.responseText);
+		}
+	}
+	xmlhttp.open("GET", url, true);
+	xmlhttp.send();
+	
+	function myFunction(response) {
+		var arr = JSON.parse(response);
+		var i;
+		var out = "<ul class='w3-ul'>";
+
+		var json_len = arr.brave.unit.length;
+		for(i = 0; i < json_len; i++) {
+			var id = arr.brave.unit[i].id;
+			var name = arr.brave.unit[i].name;
+			var element = arr.brave.unit[i].element;
+			var thumb = arr.brave.unit[i].thumb['@path'];
+			out+='<li class="w3-hover-sand"><a style="text-decoration:none;color:' + nameColor(element) +  '" href="unitinfo.html?id=' + id + '"> <img src="' + thumb + '" class="w3-left w3-margin-right" style="width:50px"><p>' + name + '</p></a> <div class="w3-clear"></div></li>'
+		}
+		out+="</ul>";
+		document.getElementById("placeholder").innerHTML = out;
 	}
 </script>
-</ul>
 
 <footer class="w3-container w3-teal w3-text-white-opacity">
-  <p>Data by DeathMax and BFPros<br>Dev and XML by ntttoon</p>
+  <p>Data by DeathMax and BFPros<br>Dev and json by ntttoon</p>
 </footer>
 </body>
 </html>

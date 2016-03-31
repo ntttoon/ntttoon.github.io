@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Brave Frontier</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<script src="js/ga.js"></script>
+<script src="js/libs.js"></script>
+</head>
+
+<body>
+<header class="w3-container w3-teal w3-card-2">
+  <h5>ALL UNITS</h5>
+</header>
+<ul class="w3-ul">
+<script>
+	var xmlhttp, xmlDoc;
+	xmlhttp = new XMLHttpRequest();
+	xmlhttp.open("GET", "data.xml", false);
+	xmlhttp.send();
+	xmlDoc = xmlhttp.responseXML;
+	
+	total = xmlDoc.getElementsByTagName("unit").length;
+	//
+	for(i=0;i<total;i++)
+	{
+		id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
+		name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
+		element =  xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
+		thumb =  xmlDoc.getElementsByTagName("thumb")[i].getAttribute("path");
+		document.write('<li class="w3-hover-sand"><a style="text-decoration:none;color:' + nameColor(element) +  '" href="unitinfo.html?id=' + id + '"> <img src="' + thumb + '" class="w3-left w3-margin-right" style="width:50px"><p>' + name + '</p></a> <div class="w3-clear"></div></li>');
+	}
+</script>
+</ul>
+
+<footer class="w3-container w3-teal w3-text-white-opacity">
+  <p>Data by DeathMax and BFPros<br>Dev and XML by ntttoon</p>
+</footer>
+</body>
+</html>

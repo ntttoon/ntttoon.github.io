@@ -50,248 +50,249 @@
 	var f = getURLParameter('f');
 	//
 	function viewBuffs_Name(id_input,buffs_out){
-		var xmlhttp, xmlDoc;
-		xmlhttp = new XMLHttpRequest();
-		xmlhttp.open("GET", "data.xml", false);
-		xmlhttp.send();
-		xmlDoc = xmlhttp.responseXML;
-		//
-		var total = xmlDoc.getElementsByTagName("unit").length;
-		//
-		var n = document.getElementById(id_input).value;
-		for(var i=0;i<total;i++)
-		{
-			id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
-			name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
-			ele =  xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
-			ls =  xmlDoc.getElementsByTagName("ls")[i].childNodes[0].nodeValue;
-			bb =  xmlDoc.getElementsByTagName("bb")[i].childNodes[0].nodeValue;
-			sbb =  xmlDoc.getElementsByTagName("sbb")[i].childNodes[0].nodeValue;
-			ubb =  xmlDoc.getElementsByTagName("ubb")[i].childNodes[0].nodeValue;
-			es =  xmlDoc.getElementsByTagName("es")[i].childNodes[0].nodeValue;
-			thumb =  xmlDoc.getElementsByTagName("thumb")[i].getAttribute("path");
-			//
-			if(n==name){
-				var bb_array = bb.split("/");
-				var sbb_array = sbb.split("/");
-				var ubb_array = ubb.split("/");
-				var es_array = es.split("/");
-				
-				document.getElementById(buffs_out).innerHTML = name + '<br>';
-				$.each( bb_array, function( j, val ){
-					if(!buffsOut(val) == ""){
-						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-blue" title="' + val + '">' + buffsOut(val,'bb') + '</span> ';
-					}
-				});
-				document.getElementById(buffs_out).innerHTML += '<br>';
-				$.each( sbb_array, function( j, val ){
-					if(!buffsOut(val) == ""){
-						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-yellow" title="' + val + '">' + buffsOut(val,'sbb') + '</span> ';
-					}
-				});
-				document.getElementById(buffs_out).innerHTML += '<br>';
-				$.each( ubb_array, function( j, val ){
-					if(!buffsOut(val) == ""){
-						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-red" title="' + val + '">' + buffsOut(val,'ubb') + '</span> ';
-					}
-				});
-				document.getElementById(buffs_out).innerHTML += '<br>';
-				$.each( es_array, function( j, val ){
-					if(!buffsOut(val) == ""){
-						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-purple" title="' + val + '">' + buffsOut(val,'es') + '</span> ';
-					}
-				});
+		var xmlhttp = new XMLHttpRequest();
+		var url = "data/units.json";
+		
+		xmlhttp.onreadystatechange=function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				myFunction(xmlhttp.responseText);
 			}
 		}
-	}
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
+		//
+		var n = document.getElementById(id_input).value;
+		
+		function myFunction(response) {
+			var arr = JSON.parse(response);
+			var i;
+			var json_len = arr.brave.unit.length;
+			for(i = 0; i < json_len; i++) {
+				var id = arr.brave.unit[i].id;
+				var name = arr.brave.unit[i].name;
+				var ls = arr.brave.unit[i].ls['#text'];
+				var bb = arr.brave.unit[i].bb['#text'];
+				var sbb = arr.brave.unit[i].sbb['#text'];
+				var ubb = arr.brave.unit[i].ubb['#text'];
+				var es = arr.brave.unit[i].es['#text'];
+				var thumb = arr.brave.unit[i].thumb['@path'];
+				//
+				if(n==name){
+					var bb_array = bb.split("/");
+					var sbb_array = sbb.split("/");
+					var ubb_array = ubb.split("/");
+					var es_array = es.split("/");
+					
+					document.getElementById(buffs_out).innerHTML = name + '<br>';
+					$.each( bb_array, function( j, val ){
+						if(!buffsOut(val) == ""){
+							document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-blue" title="' + val + '">' + buffsOut(val,'bb') + '</span> ';
+						}
+					});
+					document.getElementById(buffs_out).innerHTML += '<br>';
+					$.each( sbb_array, function( j, val ){
+						if(!buffsOut(val) == ""){
+							document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-yellow" title="' + val + '">' + buffsOut(val,'sbb') + '</span> ';
+						}
+					});
+					document.getElementById(buffs_out).innerHTML += '<br>';
+					$.each( ubb_array, function( j, val ){
+						if(!buffsOut(val) == ""){
+							document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-red" title="' + val + '">' + buffsOut(val,'ubb') + '</span> ';
+						}
+					});
+					document.getElementById(buffs_out).innerHTML += '<br>';
+					$.each( es_array, function( j, val ){
+						if(!buffsOut(val) == ""){
+							document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-purple" title="' + val + '">' + buffsOut(val,'es') + '</span> ';
+						}
+					});
+				}//end if
+			}//end for
+		}//end myFunction
+	}//end viewBuffs_Name
 	//
 	function viewBuffs_ID(buffs_out,param){
-		var xmlhttp, xmlDoc;
-		xmlhttp = new XMLHttpRequest();
-		xmlhttp.open("GET", "data.xml", false);
-		xmlhttp.send();
-		xmlDoc = xmlhttp.responseXML;
-		//
-		var total = xmlDoc.getElementsByTagName("unit").length;
-		//
-		for(var i=0;i<total;i++)
-		{
-			id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
-			name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
-			ele =  xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
-			ls =  xmlDoc.getElementsByTagName("ls")[i].childNodes[0].nodeValue;
-			bb =  xmlDoc.getElementsByTagName("bb")[i].childNodes[0].nodeValue;
-			sbb =  xmlDoc.getElementsByTagName("sbb")[i].childNodes[0].nodeValue;
-			ubb =  xmlDoc.getElementsByTagName("ubb")[i].childNodes[0].nodeValue;
-			es =  xmlDoc.getElementsByTagName("es")[i].childNodes[0].nodeValue;
-			thumb =  xmlDoc.getElementsByTagName("thumb")[i].getAttribute("path");
-			//
-			if(id==param){
-				var bb_array = bb.split("/");
-				var sbb_array = sbb.split("/");
-				var ubb_array = ubb.split("/");
-				var es_array = es.split("/");
-				
-				document.getElementById(buffs_out).innerHTML = name + '<br>';
-				$.each( bb_array, function( j, val ){
-					if(!buffsOut(val) == ""){
-						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-blue" title="' + val + '">' + buffsOut(val,'bb') + '</span> ';
-					}
-				});
-				document.getElementById(buffs_out).innerHTML += '<br>';
-				$.each( sbb_array, function( j, val ){
-					if(!buffsOut(val) == ""){
-						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-yellow" title="' + val + '">' + buffsOut(val,'sbb') + '</span> ';
-					}
-				});
-				document.getElementById(buffs_out).innerHTML += '<br>';
-				$.each( ubb_array, function( j, val ){
-					if(!buffsOut(val) == ""){
-						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-red" title="' + val + '">' + buffsOut(val,'ubb') + '</span> ';
-					}
-				});
-				document.getElementById(buffs_out).innerHTML += '<br>';
-				$.each( es_array, function( j, val ){
-					if(!buffsOut(val) == ""){
-						document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-purple" title="' + val + '">' + buffsOut(val,'es') + '</span> ';
-					}
-				});
+		var xmlhttp = new XMLHttpRequest();
+		var url = "data/units.json";
+		
+		xmlhttp.onreadystatechange=function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				myFunction(xmlhttp.responseText);
 			}
 		}
-	}
-	//
-	function returnID(id_input,param)
-	{
-		var xmlhttp, xmlDoc;
-		xmlhttp = new XMLHttpRequest();
-		xmlhttp.open("GET", "data.xml", false);
+		xmlhttp.open("GET", url, true);
 		xmlhttp.send();
-		xmlDoc = xmlhttp.responseXML;
 		//
-		var total = xmlDoc.getElementsByTagName("unit").length;
-		//
-		//var n = document.getElementById(id_input).value;
-		var n = document.getElementById(id_input).value;
-
-		for(var i=0;i<total;i++)
-		{
-			id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
-			name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
-			//Check name and return id
-			if(id==param){
-				document.getElementById(id_input).value = name;
-			}
-		}
-	}
+		function myFunction(response) {
+			var arr = JSON.parse(response);
+			var i;
+			var json_len = arr.brave.unit.length;
+			for(i = 0; i < json_len; i++) {
+				var id = arr.brave.unit[i].id;
+				var name = arr.brave.unit[i].name;
+				var ls = arr.brave.unit[i].ls['#text'];
+				var bb = arr.brave.unit[i].bb['#text'];
+				var sbb = arr.brave.unit[i].sbb['#text'];
+				var ubb = arr.brave.unit[i].ubb['#text'];
+				var es = arr.brave.unit[i].es['#text'];
+				var thumb = arr.brave.unit[i].thumb['@path'];
+				//
+				if(id==param){
+					var bb_array = bb.split("/");
+					var sbb_array = sbb.split("/");
+					var ubb_array = ubb.split("/");
+					var es_array = es.split("/");
+					
+					document.getElementById(buffs_out).innerHTML = name + '<br>';
+					$.each( bb_array, function( j, val ){
+						if(!buffsOut(val) == ""){
+							document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-blue" title="' + val + '">' + buffsOut(val,'bb') + '</span> ';
+						}
+					});
+					document.getElementById(buffs_out).innerHTML += '<br>';
+					$.each( sbb_array, function( j, val ){
+						if(!buffsOut(val) == ""){
+							document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-yellow" title="' + val + '">' + buffsOut(val,'sbb') + '</span> ';
+						}
+					});
+					document.getElementById(buffs_out).innerHTML += '<br>';
+					$.each( ubb_array, function( j, val ){
+						if(!buffsOut(val) == ""){
+							document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-red" title="' + val + '">' + buffsOut(val,'ubb') + '</span> ';
+						}
+					});
+					document.getElementById(buffs_out).innerHTML += '<br>';
+					$.each( es_array, function( j, val ){
+						if(!buffsOut(val) == ""){
+							document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-purple" title="' + val + '">' + buffsOut(val,'es') + '</span> ';
+						}
+					});
+				}//end if
+			}//end for
+		}//end myFunction
+	}//viewBuffs_ID
 	//
 	function writeOption(id_input,thumb_out,div_out)
 	{
-		var xmlhttp, xmlDoc;
-		xmlhttp = new XMLHttpRequest();
-		xmlhttp.open("GET", "data.xml", false);
-		xmlhttp.send();
-		xmlDoc = xmlhttp.responseXML;
-		//
-		var total = xmlDoc.getElementsByTagName("unit").length;
-		//
-		//var n = document.getElementById(id_input).value;
-		var n = document.getElementById(id_input).value;
-    	//alert(strSel);
-		for(var i=0;i<total;i++)
-		{
-			id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
-			name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
-			ele =  xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
-			ls =  xmlDoc.getElementsByTagName("ls")[i].childNodes[0].nodeValue;
-			bb =  xmlDoc.getElementsByTagName("bb")[i].childNodes[0].nodeValue;
-			sbb =  xmlDoc.getElementsByTagName("sbb")[i].childNodes[0].nodeValue;
-			ubb =  xmlDoc.getElementsByTagName("ubb")[i].childNodes[0].nodeValue;
-			es =  xmlDoc.getElementsByTagName("es")[i].childNodes[0].nodeValue;
-			thumb =  xmlDoc.getElementsByTagName("thumb")[i].getAttribute("path");
-			//Check url and return team
-			if(id==l)
-			{
-				document.getElementById("leader_thumb").src = thumb;
-				document.getElementById("leader_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
-			}
-			if(id==u2)
-			{
-				document.getElementById("unit2_thumb").src = thumb;
-				document.getElementById("unit2_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
-			}
-			if(id==u3)
-			{
-				document.getElementById("unit3_thumb").src = thumb;
-				document.getElementById("unit3_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
-			}
-			if(id==u4)
-			{
-				document.getElementById("unit4_thumb").src = thumb;
-				document.getElementById("unit4_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
-			}
-			if(id==u5)
-			{
-				document.getElementById("unit5_thumb").src = thumb;
-				document.getElementById("unit5_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
-			}
-			if(id==f)
-			{
-				document.getElementById("friend_thumb").src = thumb;
-				document.getElementById("friend_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
-			}
-			//Check input
-			if(name==n)
-			{
-				document.getElementById(thumb_out).src = thumb;
-				document.getElementById(div_out).innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
-				//export link
-				var sLink = "http://ntttoon.github.io/buildteam.html";
-				if(thumb_out == "leader_thumb"){
-					document.getElementById("genLink").value = sLink + '?l=' + id ;
-				}
-				if(thumb_out == "unit2_thumb"){
-					document.getElementById("genLink").value += '&u2=' + id ;
-				}
-				if(thumb_out == "unit3_thumb"){
-					document.getElementById("genLink").value += '&u3=' + id ;
-				}
-				if(thumb_out == "unit4_thumb"){
-					document.getElementById("genLink").value += '&u4=' + id ;
-				}
-				if(thumb_out == "unit5_thumb"){
-					document.getElementById("genLink").value += '&u5=' + id ;
-				}
-				if(thumb_out == "friend_thumb"){
-					document.getElementById("genLink").value += '&f=' + id ;
-				}
+		var xmlhttp = new XMLHttpRequest();
+		var url = "data/units.json";
+		
+		xmlhttp.onreadystatechange=function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				myFunction(xmlhttp.responseText);
 			}
 		}
-	}
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
+		//
+		var n = document.getElementById(id_input).value;
+    	//
+		function myFunction(response) {
+			var arr = JSON.parse(response);
+			var i;
+			var json_len = arr.brave.unit.length;
+			for(i = 0; i < json_len; i++) {
+				var id = arr.brave.unit[i].id;
+				var name = arr.brave.unit[i].name;
+				var ls = arr.brave.unit[i].ls['#text'];
+				var bb = arr.brave.unit[i].bb['#text'];
+				var sbb = arr.brave.unit[i].sbb['#text'];
+				var ubb = arr.brave.unit[i].ubb['#text'];
+				var es = arr.brave.unit[i].es['#text'];
+				var thumb = arr.brave.unit[i].thumb['@path'];
+				//Check url and return team
+				if(id==l)
+				{
+					document.getElementById("leader_thumb").src = thumb;
+					document.getElementById("leader_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+				}
+				if(id==u2)
+				{
+					document.getElementById("unit2_thumb").src = thumb;
+					document.getElementById("unit2_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+				}
+				if(id==u3)
+				{
+					document.getElementById("unit3_thumb").src = thumb;
+					document.getElementById("unit3_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+				}
+				if(id==u4)
+				{
+					document.getElementById("unit4_thumb").src = thumb;
+					document.getElementById("unit4_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+				}
+				if(id==u5)
+				{
+					document.getElementById("unit5_thumb").src = thumb;
+					document.getElementById("unit5_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+				}
+				if(id==f)
+				{
+					document.getElementById("friend_thumb").src = thumb;
+					document.getElementById("friend_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+				}
+				//Check input
+				if(name==n)
+				{
+					document.getElementById(thumb_out).src = thumb;
+					document.getElementById(div_out).innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+					//export link
+					var sLink = "http://ntttoon.github.io/buildteam.html";
+					if(thumb_out == "leader_thumb"){
+						document.getElementById("genLink").value = sLink + '?l=' + id ;
+					}
+					if(thumb_out == "unit2_thumb"){
+						document.getElementById("genLink").value += '&u2=' + id ;
+					}
+					if(thumb_out == "unit3_thumb"){
+						document.getElementById("genLink").value += '&u3=' + id ;
+					}
+					if(thumb_out == "unit4_thumb"){
+						document.getElementById("genLink").value += '&u4=' + id ;
+					}
+					if(thumb_out == "unit5_thumb"){
+						document.getElementById("genLink").value += '&u5=' + id ;
+					}
+					if(thumb_out == "friend_thumb"){
+						document.getElementById("genLink").value += '&f=' + id ;
+					}
+				}
+			}//for
+		}//end myFunction
+	}//end writeOption
 	//
 	function searchUnit(id_input,id_list)
 	{
-		var xmlhttp, xmlDoc;
-		xmlhttp = new XMLHttpRequest();
-		xmlhttp.open("GET", "data.xml", false);
-		xmlhttp.send();
-		xmlDoc = xmlhttp.responseXML;
+		var xmlhttp = new XMLHttpRequest();
+		var url = "data/units.json";
 		
-		var total = xmlDoc.getElementsByTagName("unit").length;
+		xmlhttp.onreadystatechange=function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				myFunction(xmlhttp.responseText);
+			}
+		}
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
 		//
 		var s = document.getElementById(id_input).value;
 		var re = new RegExp(s, 'gi');
-		for(var i=0;i<total;i++)
-		{
-			name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
-			role =  xmlDoc.getElementsByTagName("role")[i].childNodes[0].nodeValue;
-			ele =  xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
-			if (role.match(re) || name.match(re) || ele.match(re)) {
-				id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
-				ele =  xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
-				document.getElementById(id_list).innerHTML += "<a href='#' onClick='setValue("+ id + ',"' + id_input + '","' + id_list + '")' + "' id='" + id + "' style='color:" + nameColor(ele) + "'>" + name + "</a> ";
-			}
-		}
-	}
+		//
+		function myFunction(response) {
+			var arr = JSON.parse(response);
+			var i;
+			var json_len = arr.brave.unit.length;
+			for(i = 0; i < json_len; i++) {
+				var name = arr.brave.unit[i].name;
+				var role = arr.brave.unit[i].role;
+				var ele = arr.brave.unit[i].element;
+				if (role.match(re) || name.match(re) || ele.match(re)) {
+					var id = arr.brave.unit[i].id;
+					document.getElementById(id_list).innerHTML += "<a href='#' onClick='setValue("+ id + ',"' + id_input + '","' + id_list + '")' + "' id='" + id + "' style='color:" + nameColor(ele) + "'>" + name + "</a> ";
+				}//end if
+			}//end for
+		}// end myFunction
+	}//end searchUnit
 	//
 	function setValue(id,id_input,id_list)
 	{
@@ -409,7 +410,6 @@ function openUnit(evt, unitName) {
 <script type="text/javascript">
         $(function () {
             $('.expander').simpleexpand();
-           prettyPrint();
         });
 </script>
 </body>

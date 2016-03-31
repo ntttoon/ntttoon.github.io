@@ -8,11 +8,6 @@
 <link rel="stylesheet" href="css/fullart.css">
 <script src="js/ga.js"></script>
 <script src="js/libs.js"></script>
-<!--<link rel="stylesheet" href="css/animate.css">
-<script src="js/wow.min.js"></script>
-<script>
-	new WOW().init();
-</script>-->
 </head>
 
 <body>
@@ -26,65 +21,76 @@
 </form>
 </nav>
 <div id="sp_btn"></div>
-<div class="fullbg8">
+<div id="placeholder"> </div>
 <script>
-	var xmlhttp, xmlDoc;
-	xmlhttp = new XMLHttpRequest();
-	xmlhttp.open("GET", "data.xml", false);
-	xmlhttp.send();
-	xmlDoc = xmlhttp.responseXML;
+	var xmlhttp = new XMLHttpRequest();
+	var url = "data/units.json";
 	
-	total = xmlDoc.getElementsByTagName("unit").length;
-	var s = getURLParameter('id');
-	var se = getURLParameter('search');
-	var re = new RegExp(se, 'gi');
-	
-	for(i=0;i<total;i++)
-	{
-		id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
-		name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
-		element = xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
-		rarity = xmlDoc.getElementsByTagName("rarity")[i].childNodes[0].nodeValue;
-		if (se == null){
-			if (rarity == 8){
-				document.getElementById("list").innerHTML += "<a style='color:" + nameColor(element) + "' " + "href='unitinfo_bigsp.html?id=" + id + "'>" + name +"</a>";
-			}
-		}
-		if (name.match(re) || element.match(re)) {
-			if (rarity == 8){
-				document.getElementById("list").innerHTML += "<a style='color:" + nameColor(element) + "' " + "href='unitinfo_bigsp.html?id=" + id + "&search=" + se + "'>" + name +"</a>";
-			}
-		}
-		//
-		if(id==s)
-		{
-			name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
-			element = xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
-			art = xmlDoc.getElementsByTagName("art")[i].getAttribute("path");
-			sp = xmlDoc.getElementsByTagName("sp")[i].getAttribute("list");
-			sp_array = sp.split("|");
-			
-			document.getElementById("sp_btn").innerHTML = "<a class='w3-btn w3-teal' style='position:absolute;top:0;right:0' href='unitinfo_big.html?id=" + id + "&search=" + se + "'>Normal Skills</a>";
-			document.write("<div class='unit_ele'><img src=images/" + nameElement(element) + " width='40' height='40'></div>");
-			document.write("<div class='unit_name'>" + name + "</div>");
-			//Leader skill
-			document.write("<div class='box' style='top:100px;'>");
-				document.write("<div class='box_name'>OMNI Skills</div>");
-				
-				for(j=0;j<sp_array.length;j++)
-				{
-					document.write("<div class='box_info' style='margin-top:" + (j*1 + 10) + "px;width: 550px;'>");
-					document.write(sp_array[j] + '<br>');
-					document.write("</div>");
-				}
-				
-			document.write("</div>");
-			//
-			document.write("<div class='box_copyright'>Copyright by Alim/Gumi - Datamine: Deathmax/bravefrontierpros - Design & Dev: ntttoon</div>");
-			document.write("<div class='art'><img src=" + art + "></div>");
+	xmlhttp.onreadystatechange=function() {
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			myFunction(xmlhttp.responseText);
 		}
 	}
+	xmlhttp.open("GET", url, true);
+	xmlhttp.send();
+	
+	function myFunction(response) {
+		var arr = JSON.parse(response);
+		var i,j;
+		var out = "";
+		var s = getURLParameter('id');
+		var se = getURLParameter('search');
+		var re = new RegExp(se, 'gi');
+		var json_len = arr.brave.unit.length;
+		
+		for(i = 0; i < json_len; i++) {
+			var id = arr.brave.unit[i].id;
+			var name = arr.brave.unit[i].name;
+			var element = arr.brave.unit[i].element;
+			var rarity = arr.brave.unit[i].rarity;
+			//
+			if (se == null){
+				if (rarity == 8){
+					document.getElementById("list").innerHTML += "<a style='color:" + nameColor(element) + "' " + "href='unitinfo_bigsp.html?id=" + id + "'>" + name +"</a>";
+				}
+			}
+			if (name.match(re) || element.match(re)) {
+				if (rarity == 8){
+					document.getElementById("list").innerHTML += "<a style='color:" + nameColor(element) + "' " + "href='unitinfo_bigsp.html?id=" + id + "&search=" + se + "'>" + name +"</a>";
+				}
+			}
+			//
+			if(id==s)
+			{
+				var art = arr.brave.unit[i].art['@path'];
+				var sp = arr.brave.unit[i].sp['@list'];
+				var sp_array = sp.split("|");
+				//
+				document.getElementById("sp_btn").innerHTML = "<a class='w3-btn w3-teal' style='position:absolute;top:0;right:0' href='unitinfo_big.html?id=" + id + "&search=" + se + "'>Normal Skills</a>";
+				out+="<div class='fullbg8'>";
+				out+="<div class='unit_ele'><img src=images/" + nameElement(element) + " width='40' height='40'></div>";
+				out+="<div class='unit_name'>" + name + "</div>";
+				//
+				out+="<div class='box' style='top:100px;'>";
+					out+="<div class='box_name'>OMNI Skills</div>";
+					
+					for(j=0;j<sp_array.length;j++)
+					{
+						out+="<div class='box_info' style='margin-top:" + (j*1 + 10) + "px;width: 550px;'>";
+						out+=sp_array[j] + '<br>';
+						out+="</div>";
+					}
+					
+				out+="</div>";
+				//
+				out+="<div class='box_copyright'>Copyright by Alim/Gumi - Datamine: Deathmax/bravefrontierpros - Design & Dev: ntttoon</div>";
+				out+="<div class='art'><img src=" + art + "></div>";
+			}
+		}
+		out+="</div>";
+		document.getElementById("placeholder").innerHTML = out;
+	}
 </script>
-</div>
+
 </body>
 </html>

@@ -5,7 +5,7 @@
 <title>Brave Frontier</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<script src="../js/libs.js"></script>
+<script src="js/libs.js"></script>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
 <div id="placeholder"> </div>
 <script>
 	var xmlhttp = new XMLHttpRequest();
-	var url = "ex_skills.json";
+	var url = "data/ex_skills.json";
 	
 	xmlhttp.onreadystatechange=function() {
 		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
@@ -43,9 +43,10 @@
 		//alert(arr.exskills.item.length);
 		var json_len = arr.exskills.item.length;
 		for(i = 0; i < json_len; i++) {
-			a = arr.exskills.item[i];
+			var a = arr.exskills.item[i];
+			var item_ex = arr.exskills.item[i];
 			if (a.match(re)) {
-				out+="<li>" + arr.exskills.item[i] +"</li>";
+				out+="<li>" + item_ex +"</li>";
 			}
 		}
 		out+="</ul>";

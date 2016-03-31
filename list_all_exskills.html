@@ -14,7 +14,7 @@
 <div id="placeholder"> </div>
 <script>
 	var xmlhttp = new XMLHttpRequest();
-	var url = "ex_skills.json";
+	var url = "data/ex_skills.json";
 	
 	xmlhttp.onreadystatechange=function() {
 		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
@@ -31,7 +31,8 @@
 		//alert(arr.exskills.item.length);
 		var json_len = arr.exskills.item.length;
 		for(i = 0; i < json_len; i++) {
-			out+="<li>" + arr.exskills.item[i] +"</li>";
+			var item_ex = arr.exskills.item[i];
+			out+="<li>" + item_ex +"</li>";
 		}
 		out+="</ul>";
 		document.getElementById("placeholder").innerHTML = out;

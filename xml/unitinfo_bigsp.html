@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BF unit info - made by ntttoon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="css/fullart.css">
+<script src="js/ga.js"></script>
+<script src="js/libs.js"></script>
+<!--<link rel="stylesheet" href="css/animate.css">
+<script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>-->
+</head>
+
+<body>
+<nav class="w3-sidenav w3-white w3-card-2 w3-animate-left" style="width:250px" id="list">
+<form class="w3-form">
+  <div class="w3-input-group">      
+    <label class="w3-label w3-text-purple"><b>Input unit's name or elements (fire, water, etc)</b></label>
+    <input class="w3-input w3-border" name="search" type="text">
+  </div>
+  <button class="w3-btn w3-purple">Search</button>
+</form>
+</nav>
+<div id="sp_btn"></div>
+<div class="fullbg8">
+<script>
+	var xmlhttp, xmlDoc;
+	xmlhttp = new XMLHttpRequest();
+	xmlhttp.open("GET", "data.xml", false);
+	xmlhttp.send();
+	xmlDoc = xmlhttp.responseXML;
+	
+	total = xmlDoc.getElementsByTagName("unit").length;
+	var s = getURLParameter('id');
+	var se = getURLParameter('search');
+	var re = new RegExp(se, 'gi');
+	
+	for(i=0;i<total;i++)
+	{
+		id =  xmlDoc.getElementsByTagName("id")[i].childNodes[0].nodeValue;
+		name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
+		element = xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
+		rarity = xmlDoc.getElementsByTagName("rarity")[i].childNodes[0].nodeValue;
+		if (se == null){
+			if (rarity == 8){
+				document.getElementById("list").innerHTML += "<a style='color:" + nameColor(element) + "' " + "href='unitinfo_bigsp.html?id=" + id + "'>" + name +"</a>";
+			}
+		}
+		if (name.match(re) || element.match(re)) {
+			if (rarity == 8){
+				document.getElementById("list").innerHTML += "<a style='color:" + nameColor(element) + "' " + "href='unitinfo_bigsp.html?id=" + id + "&search=" + se + "'>" + name +"</a>";
+			}
+		}
+		//
+		if(id==s)
+		{
+			name =  xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue;
+			element = xmlDoc.getElementsByTagName("element")[i].childNodes[0].nodeValue;
+			art = xmlDoc.getElementsByTagName("art")[i].getAttribute("path");
+			sp = xmlDoc.getElementsByTagName("sp")[i].getAttribute("list");
+			sp_array = sp.split("|");
+			
+			document.getElementById("sp_btn").innerHTML = "<a class='w3-btn w3-teal' style='position:absolute;top:0;right:0' href='unitinfo_big.html?id=" + id + "&search=" + se + "'>Normal Skills</a>";
+			document.write("<div class='unit_ele'><img src=images/" + nameElement(element) + " width='40' height='40'></div>");
+			document.write("<div class='unit_name'>" + name + "</div>");
+			//Leader skill
+			document.write("<div class='box' style='top:100px;'>");
+				document.write("<div class='box_name'>OMNI Skills</div>");
+				
+				for(j=0;j<sp_array.length;j++)
+				{
+					document.write("<div class='box_info' style='margin-top:" + (j*1 + 10) + "px;width: 550px;'>");
+					document.write(sp_array[j] + '<br>');
+					document.write("</div>");
+				}
+				
+			document.write("</div>");
+			//
+			document.write("<div class='box_copyright'>Copyright by Alim/Gumi - Datamine: Deathmax/bravefrontierpros - Design & Dev: ntttoon</div>");
+			document.write("<div class='art'><img src=" + art + "></div>");
+		}
+	}
+</script>
+</div>
+</body>
+</html>
