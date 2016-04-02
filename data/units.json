@@ -6514,6 +6514,50 @@
                 }
             },
             {
+                "id": "",
+                "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
+                "role": "",
+                "element": "",
+                "rarity": "",
+                "cost": "",
+                "ls": {
+                    "@hit": "",
+                    "@dc": "",
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "sbb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "ubb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "es": {
+                    "@condtion": "",
+                    "#text": ""
+                },
+                "art": {
+                    "@path": ""
+                },
+                "thumb": {
+                    "@path": "images/Unit_tab.png"
+                },
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
                 "id": "997",
                 "name": "Oracle Knight Ark",
                 "role": "Spark 35%HP ATK DEF REC hit Fire,water,earth,thunder,light,dark BBATK%",
@@ -6852,7 +6896,7 @@
                     "#text": "1500% Fire (AOE) / 300% CRIT DMG+ (ALL) 3Turns / 250% ATK+ 250% DEF+ 250% REC+ (ALL) 3Turns / 1000% DMG Each Turn 3Turns / 500% BB ATK%+ (ALL) 3Turns"
                 },
                 "es": {
-                    "@condtion": "20% ALL STATS (SELF) when \u7f85\u7344\u7114\u71fc\u30e1\u30c9\u30d6\u30ec\u30a2 sphere equipped",
+                    "@condtion": "20% ALL STATS (SELF) when Medblare sphere equipped",
                     "#text": "Add 160% DMG+ to Ailed Enemy (ALL) 3Turns Effect to BB/SBB (SELF)"
                 },
                 "art": {
@@ -6948,6 +6992,50 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50256.png"
+                },
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "",
+                "name": "\u2605\u2605\u2605 GLOBAL EX UNITS \u2605\u2605\u2605",
+                "role": "",
+                "element": "",
+                "rarity": "",
+                "cost": "",
+                "ls": {
+                    "@hit": "",
+                    "@dc": "",
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "sbb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "ubb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "es": {
+                    "@condtion": "",
+                    "#text": ""
+                },
+                "art": {
+                    "@path": ""
+                },
+                "thumb": {
+                    "@path": "images/Unit_tab.png"
                 },
                 "sp": {
                     "@list": ""
