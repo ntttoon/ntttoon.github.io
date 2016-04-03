@@ -4509,7 +4509,7 @@
                 },
                 "sbb": {
                     "@hit": "1",
-                    "@dc": "1309",
+                    "@dc": "30",
                     "@cost": "29",
                     "#text": "Light (AOE) / 100% BB ATK+ on Consecutive SBB (Max 5x / SELF) / Add Fire,water,earth,thunder to ATK (ALL) 2Turns / 50% CRIT DMG+ (ALL) 3Turns / 300% DMG Each Turn 3Turns"
                 },
@@ -5851,6 +5851,50 @@
                 },
                 "sp": {
                     "@list": "10 SP :: Chance to recover HP on Hit :: 25% proc, 5% HP | 10 SP :: Increase Strength of Chance to recover HP on Hit (Enhancement) :: 25% proc, 10% HP | 10 SP :: Resistance to Light :: 5% Light Resist | 30 SP :: Elemental Damage Null | 30 SP :: Spark Damage Reduction :: 50% Spark Resist | 60 SP :: Add 50% mitigation to BB/SBB | 20 SP :: Mitigation lasts for 2 turns | 80 SP :: UBB Mitigation lasts 2 turns"
+                }
+            },
+            {
+                "id": "1308",
+                "name": "Kuryuku 7",
+                "role": "30%HP DEF BBrate cure convertDEF miti HP Injury Weak Sick Poison Para Curse",
+                "element": "Fire",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "8",
+                    "@dc": "40",
+                    "#text": "0-30% DEF+ Based on HP LOST (ALL) / 30% HP 30% DEF (ALL) / Null Ails (ALL)"
+                },
+                "bb": {
+                    "@hit": "11",
+                    "@dc": "11",
+                    "@cost": "26",
+                    "#text": "350% Fire (AOE) / 40% BC Fill+ (ALL) 3Turns / Cure Ails"
+                },
+                "sbb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "30",
+                    "#text": "720% Fire (AOE) 200%-720% BB ATK% Based on HP LEFT / 40% BC Fill+ (ALL) 3Turns / Cure Ails / Convert 35% attack to DEF (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "1300% Fire (AOE) / Reduce DMG (75%) 3Turns / 25% Max HP+ till Death/Battle End / Inflict 80% Injury 80% Weak 80% Sick 80% Poison 80% Para 80% Curse on ATKed (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Ails (SELF) / Null Elemental Weakness (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10846.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10846.png"
+                },
+                "sp": {
+                    "@list": ""
                 }
             },
             {
@@ -8092,6 +8136,50 @@
                 },
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850157.png"
+                },
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8186",
+                "name": "Dawnbearer Juno-Seto",
+                "role": "BBATKed Idol 50%HP REC Miti50% HoT Revive Barrier",
+                "element": "Light",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "8",
+                    "@dc": "40",
+                    "#text": "100% Chance 4-6BC Fill when ATKed (ALL) / 20% Chance Angel Idol 1x (ALL) / 50% HP 50% REC (ALL) / Null Ignore DEF (ALL)"
+                },
+                "bb": {
+                    "@hit": "13",
+                    "@dc": "13",
+                    "@cost": "25",
+                    "#text": "350% Light (AOE) / Reduce DMG (50%) 1Turns / Gradual Heal (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "29",
+                    "#text": "560% Light (AOE) / Reduce DMG (50%) 1Turns / 20% Max HP+ till Death/Battle End / 10% Chance Revive Dead Ally 20% HP (ALL) / Gradual Heal (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "35",
+                    "#text": "1300% Light (AOE) / 20000HP Barrier (light) / 75% Chance Revive Dead Ally 100% HP (ALL) / Gradual Heal FULL (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "0%-150% REC+ Based on HP LOST (SELF) / Add 1500HP Barrier (light) to BB/SBB (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850166.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850166.png"
                 },
                 "sp": {
                     "@list": ""
