@@ -5,14 +5,21 @@
 <title>Brave Frontier</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<script src="js/ga.js"></script>
+<script src="../js/ga.js"></script>
 <script src="js/libs.js"></script>
 </head>
 
 <body>
 <header class="w3-container w3-teal w3-card-2">
-  <h5>ALL UNITS</h5>
+  <h5>SEARCH UNITS</h5>
 </header>
+<form class="w3-form">
+  <div class="w3-input-group">      
+    <label class="w3-label w3-text-teal"><b>Input unit's name or elements (fire, water, etc)</b></label>
+    <input class="w3-input w3-border" name="search" type="text">
+  </div>
+  <button class="w3-btn w3-teal">Search</button>
+</form>
 <div id="placeholder"> </div>
 <script>
 	var xmlhttp = new XMLHttpRequest();
@@ -30,22 +37,25 @@
 		var arr = JSON.parse(response);
 		var i;
 		var out = "<ul class='w3-ul'>";
-
+		
 		var json_len = arr.brave.unit.length;
+		var s = getURLParameter('search');
+		var re = new RegExp(s, 'gi');
+		//
 		for(i = 0; i < json_len; i++) {
 			var id = arr.brave.unit[i].id;
 			var name = arr.brave.unit[i].name;
 			var element = arr.brave.unit[i].element;
 			var thumb = arr.brave.unit[i].thumb['@path'];
-			out+='<li class="w3-hover-sand"><a style="text-decoration:none;color:' + nameColor(element) +  '" href="unitinfo.html?id=' + id + '"> <img src="' + thumb + '" class="w3-left w3-margin-right" style="width:50px"><p>' + name + '</p></a> <div class="w3-clear"></div></li>'
+			if (name.match(re) || element.match(re)) {
+				out+='<li class="w3-hover-sand"><a style="text-decoration:none;color:' + nameColor(element) +  '" href="unitinfo.html?id=' + id + '"> <img src="' + thumb + '" class="w3-left w3-margin-right" style="width:50px"><p>' + name + '</p></a> <div class="w3-clear"></div></li>'
+			}
 		}
 		out+="</ul>";
 		document.getElementById("placeholder").innerHTML = out;
 	}
 </script>
 
-<footer class="w3-container w3-teal w3-text-white-opacity">
-  <p>Data by DeathMax and BFPros<br>Dev and json by ntttoon</p>
-</footer>
+</ul>
 </body>
 </html>
