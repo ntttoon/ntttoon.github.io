@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>banner HTML5</title>
+<link href="css/animate.css" type="text/css" rel="stylesheet">
+<link href="css/magic.css" type="text/css" rel="stylesheet">
+<style>
+body{
+	margin:0;
+	padding:0;
+	background-color:#FFF;
+}
+#banner{
+	width:336px;
+	height:280px;
+	overflow:hidden;
+	position:relative;
+	visibility:hidden;
+}
+#banner img{
+	position: absolute;
+}
+#bg01{
+	top:0;
+	left:0;
+}
+#landa{
+	top:52px;
+	left:10px;
+}
+#khampha{
+	top:240px;
+	left:120px;
+}
+#bg02{
+	top:0;
+	left:0;
+}
+#trainghiem{
+	top:40px;
+	left:7px;
+}
+#sp1f2{
+	top:70px;
+	left:250px;
+}
+#sp2f2{
+	top:190px;
+	left:220px;
+}
+#mienphi{
+	top:120px;
+	left:10px;
+}
+#quatang{
+	top:170px;
+	left:10px;
+}
+#boctham{
+	top:220px;
+	left:10px;
+}
+#replay{
+	top:5px;
+	left:310px;
+}
+</style>
+</head>
+
+<body>
+<div id="banner">
+	<div id="frame1">
+        <img id="bg01" src="images/bg01.jpg">
+        <img id="landa" src="images/landa.png">
+        <img id="khampha" src="images/khampha.png">
+    </div>
+    <div id="frame2">
+        <img id="bg02" src="images/bg02.jpg">
+        <img id="trainghiem" src="images/trainghiem.png">
+        <img id="sp1f2" src="images/sp1f2.png">
+        <img id="sp2f2" src="images/sp2f2.png">
+        <img id="mienphi" src="images/mienphi.png">
+        <img id="quatang" src="images/quatang.png">
+        <img id="boctham" src="images/boctham.png">
+        <img id="replay" src="images/replay_black.png">
+    </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="js/ntttoon.js" language="javascript" type="text/javascript"></script>
+<script type="text/javascript">
+	function bannerani(){
+		//effect(delay_start,div,effect_in,effect_out,duration,effect_mid,delay_mid,loop_mid)
+		effect(0,'#frame1 #bg01','fadeIn','zoomOut',5000,'',3000,1);
+		effect(500,'#frame1 #landa','fadeInUp','zoomOut',4000,'',3000,1);
+		effect(700,'#frame1 #khampha','fadeInLeft','zoomOut',4000,'flash',2000,1);
+		effect(5000,'#frame2 #bg02','zoomIn','',5000,'',3000,1);
+		effect(5500,'#frame2 #trainghiem','zoomIn','',5000,'',3000,1);
+		effect(6000,'#frame2 #sp1f2','flipInY','',5000,'',3000,1);
+		effect(6500,'#frame2 #sp2f2','flipInY','',5000,'',3000,1);
+		effect(7000,'#frame2 #mienphi','fadeInUp','',5000,'',3000,1);
+		effect(7300,'#frame2 #quatang','fadeInUp','',5000,'',3000,1);
+		effect(7600,'#frame2 #boctham','fadeInUp','',5000,'',3000,1);
+		effect(10000,'#frame2 #replay','fadeIn','',5000,'',3000,1);
+	}
+    $(document).ready(function() {
+		bannerani();
+    });
+	$("#frame2 #replay").click(function() {
+		$("#banner img").removeAttr('style');
+		bannerani();
+	});
+</script>
+</html>
