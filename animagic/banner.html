@@ -9,7 +9,7 @@
 body{
 	margin:0;
 	padding:0;
-	background-color:#FFF;
+	background-color:#CCC;
 }
 #banner{
 	width:336px;
@@ -64,11 +64,16 @@ body{
 #replay{
 	top:5px;
 	left:310px;
+	position: absolute;
+	visibility:hidden;
+	z-index:9999;
 }
 </style>
 </head>
 
 <body>
+<img id="replay" src="images/replay_black.png">
+<a href="#" target="_blank">
 <div id="banner">
 	<div id="frame1">
         <img id="bg01" src="images/bg01.jpg">
@@ -83,9 +88,10 @@ body{
         <img id="mienphi" src="images/mienphi.png">
         <img id="quatang" src="images/quatang.png">
         <img id="boctham" src="images/boctham.png">
-        <img id="replay" src="images/replay_black.png">
+        
     </div>
 </div>
+</a>
 </body>
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="js/ntttoon.js" language="javascript" type="text/javascript"></script>
@@ -102,13 +108,14 @@ body{
 		effect(7000,'#frame2 #mienphi','fadeInUp','',5000,'',3000,1);
 		effect(7300,'#frame2 #quatang','fadeInUp','',5000,'',3000,1);
 		effect(7600,'#frame2 #boctham','fadeInUp','',5000,'',3000,1);
-		effect(10000,'#frame2 #replay','fadeIn','',5000,'',3000,1);
+		effect(10000,'#replay','fadeIn','',5000,'',3000,1);
 	}
     $(document).ready(function() {
 		bannerani();
     });
-	$("#frame2 #replay").click(function() {
+	$("#replay").click(function() {
 		$("#banner img").removeAttr('style');
+		$(this).removeAttr('style');
 		bannerani();
 	});
 </script>
