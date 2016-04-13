@@ -5019,7 +5019,7 @@
             },
             {
                 "id": "1258",
-                "name": "Lucina 7",
+                "name": "Aqua Pura Lucina",
                 "role": "30%HP water earth hit HoT ATK convertDEF HealATKed DoT",
                 "element": "Water",
                 "rarity": "7",
@@ -5063,7 +5063,7 @@
             },
             {
                 "id": "1259",
-                "name": "Zelnite 7",
+                "name": "Legendary Thief Zelnite",
                 "role": "30%HP EXP BC HC Item Karma Zel BBfill OverDrive BBATKed hit ATK",
                 "element": "Earth",
                 "rarity": "7",
@@ -5107,7 +5107,7 @@
             },
             {
                 "id": "1260",
-                "name": "Orna 7",
+                "name": "Shocking Beauty Orna",
                 "role": "BBATKed Thunder Fire atkdown defdown crit convertATK superspark",
                 "element": "Thunder",
                 "rarity": "7",
@@ -5151,7 +5151,7 @@
             },
             {
                 "id": "1261",
-                "name": "Shida 7",
+                "name": "Omega Demise Shida",
                 "role": "35%HP BBfill Fire water earth thunder light dark Weakness Miti Para Curse Poison Injury Sick Weak",
                 "element": "Dark",
                 "rarity": "7",
@@ -5459,7 +5459,7 @@
             },
             {
                 "id": "1299",
-                "name": "Darvanshel 7",
+                "name": "Flare Paladin Darvanshel",
                 "role": "Miti50% HP DEF convertATK convertDEF 40%HP Null",
                 "element": "Fire",
                 "rarity": "7",
@@ -5503,7 +5503,7 @@
             },
             {
                 "id": "1300",
-                "name": "Duelmex 7",
+                "name": "Supreme Dragon Eldrex",
                 "role": "BBrate BBspark 40%HP Injury Weak Sick Poison Para Curse",
                 "element": "Light",
                 "rarity": "7",
@@ -5547,7 +5547,7 @@
             },
             {
                 "id": "1301",
-                "name": "Kajah 7",
+                "name": "Shadow Retribution Kajah",
                 "role": "ATK BBATK% Injury Spark",
                 "element": "Dark",
                 "rarity": "7",
@@ -5591,7 +5591,7 @@
             },
             {
                 "id": "1302",
-                "name": "Vargas 8",
+                "name": "Ignis Halcyon Vargas",
                 "role": "BBATK% 30%HP ATK atkdown Weakness",
                 "element": "Fire",
                 "rarity": "8",
@@ -5635,7 +5635,7 @@
             },
             {
                 "id": "1303",
-                "name": "Selena 8",
+                "name": "Algor Halcyon Selena",
                 "role": "HoT 30%HP ATK BBregen healATKed hot hit",
                 "element": "Water",
                 "rarity": "8",
@@ -5679,7 +5679,7 @@
             },
             {
                 "id": "1304",
-                "name": "Lance 8",
+                "name": "Terra Halcyon Lance",
                 "role": "30%HP ATK Cure DEF barrier convertATK Miti",
                 "element": "Earth",
                 "rarity": "8",
@@ -5723,7 +5723,7 @@
             },
             {
                 "id": "1305",
-                "name": "Eze 8",
+                "name": "Fulgor Halcyon Eze",
                 "role": "SPARK 30%HP ATK superspark weakness",
                 "element": "Thunder",
                 "rarity": "8",
@@ -5767,7 +5767,7 @@
             },
             {
                 "id": "1306",
-                "name": "Atro 8",
+                "name": "Lux Halcyon Atro",
                 "role": "BBreduce BBrate 30%HP ATK DEF REC OverDrive Fire,water,earth,thunder,light,dark Weakness",
                 "element": "Light",
                 "rarity": "8",
@@ -5811,7 +5811,7 @@
             },
             {
                 "id": "1307",
-                "name": "Magress 8",
+                "name": "Umbra Halcyon Magress",
                 "role": "30%HP ATK DEF Weakness Miti",
                 "element": "Dark",
                 "rarity": "8",
