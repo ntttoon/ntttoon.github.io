@@ -91,6 +91,38 @@ body, html {
 	font-weight: normal;
 	text-shadow: 1px 1px #000000;
 }
+.box_sp {
+	width: 604px;
+	height:100px;
+	float:left;
+	background: url(../images/list_bg.png) no-repeat;
+	padding: 4px 12px 4px 12px;
+	margin-right:15px;
+	font-size: 13px;
+	color: #FFFFFF;
+	font-style: normal;
+	font-weight: bold;
+	text-shadow: 1px 1px #000000;
+}
+.box_sp_txt {
+	width: 470px;
+	height:64px;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-shadow: 1px 1px #000000;
+}
+.sp_required_btn {
+	width: 98px;
+	height:76px;
+	float:right;
+	text-align:center;
+	margin-top:8px;
+	background: url(../images/sp_required_btn.png) no-repeat;
+	padding-top: 30px;
+	font-size: 30px;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 4px #000000;
+}
 .box_copyright {
 	position: absolute;
 	left: 30px;

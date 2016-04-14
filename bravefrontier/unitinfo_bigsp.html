@@ -76,15 +76,18 @@
 					
 					for(j=0;j<sp_array.length;j++)
 					{
-						out+="<div class='box_info' style='margin-top:" + (j*1 + 10) + "px;width: 550px;'>";
-						out+=sp_array[j] + '<br>';
+						var sp_cost = sp_array[j].substring(0, sp_array[j].search(':'));
+						out+="<div class='box_sp'>";
+						out+="<div class='sp_required_btn'>" + sp_cost;
+						out+="</div>";
+						out+="<p class='box_sp_txt'>"+ sp_array[j].substring(sp_array[j].search(':')+1, sp_array[j].length) + "</p>";
 						out+="</div>";
 					}
 					
 				out+="</div>";
 				//
 				out+="<div class='box_copyright'>Copyright by Alim/Gumi - Datamine: Deathmax/bravefrontierpros - Design & Dev: ntttoon</div>";
-				out+="<div class='art'><img src=" + art + "></div>";
+				//out+="<div class='art'><img src=" + art + "></div>";
 			}
 		}
 		out+="</div>";
