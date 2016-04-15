@@ -972,7 +972,7 @@
             {
                 "id": "902",
                 "name": "Leviathan Sage Elimo",
-                "role": "HC Heal Cure DEF Miti50% Null BBATKed",
+                "role": "HC Heal Cure DEF Miti50% Miti75% Null BBATKed",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "40",
@@ -1236,7 +1236,7 @@
             {
                 "id": "925",
                 "name": "Grave Carver Aaron",
-                "role": "BBfill BBregen DEF Miti50%",
+                "role": "BBfill BBregen DEF Miti50% Miti75%",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "40",
@@ -1280,7 +1280,7 @@
             {
                 "id": "948",
                 "name": "Flora Aegis Edea",
-                "role": "ATK DEF Miti50% Injury Weak Sick Poison ATKDOWN Cure",
+                "role": "ATK DEF Miti50% Injury Weak Sick Poison ATKDOWN Miti75% Cure",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "40",
@@ -1456,7 +1456,7 @@
             {
                 "id": "956",
                 "name": "Tidal Nacre Medina",
-                "role": "BBATKed BBfill BBrate Miti",
+                "role": "BBATKed BBfill BBrate Miti75%",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "40",
@@ -1676,7 +1676,7 @@
             {
                 "id": "975",
                 "name": "Ice Bastion Zeldeus",
-                "role": "BBATK% 30%HP DEF Miti50% DEF ConvertATK",
+                "role": "BBATK% 30%HP DEF Miti50% Miti75% DEF ConvertATK",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "40",
@@ -2160,7 +2160,7 @@
             {
                 "id": "1004",
                 "name": "Invictus Xeno Melchio",
-                "role": "BBfill Ignore ATK Null Light ConvertDEF Miti Cure",
+                "role": "BBfill Ignore ATK Null Light ConvertDEF Miti75% Cure",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "40",
@@ -2380,7 +2380,7 @@
             {
                 "id": "1019",
                 "name": "Virtuous Champion Krantz",
-                "role": "BC HC 30%HP ATK Miti50% Light,dark Heal ConvertATK",
+                "role": "BC HC 30%HP ATK Miti50% Miti75% Light,dark Heal ConvertATK",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "42",
@@ -2556,7 +2556,7 @@
             {
                 "id": "1037",
                 "name": "Glorious Crusader Alyut",
-                "role": "BBregen ATK Injury Para HoT ConvertATK Miti",
+                "role": "BBregen ATK Injury Para HoT ConvertATK Miti75%",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "40",
@@ -2996,7 +2996,7 @@
             {
                 "id": "1087",
                 "name": "Fulgor Heroine Shera",
-                "role": "BBreduce BBregen Miti50% ATK",
+                "role": "BBreduce BBregen Miti50% ATK Miti75%",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "40",
@@ -3040,7 +3040,7 @@
             {
                 "id": "1092",
                 "name": "Pyro Archfiend Adel",
-                "role": "Miti50% BBrate 30%HP DEF Spark HoT",
+                "role": "Miti50% BBrate 30%HP DEF Spark HoT Miti75%",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "42",
@@ -3568,7 +3568,7 @@
             {
                 "id": "1146",
                 "name": "Heavenly Claymore Dolk",
-                "role": "35%HP ATK DEF REC Miti50% BC HC Null ConvertDEF",
+                "role": "35%HP ATK DEF REC Miti50% Miti75% BC HC Null ConvertDEF",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "42",
@@ -4316,7 +4316,7 @@
             {
                 "id": "1202",
                 "name": "Volcanic Scepter Limera",
-                "role": "BBrate 40%HP Idol Heal Cure ConvertDEF Miti HoT",
+                "role": "BBrate 40%HP Idol Heal Cure ConvertDEF Miti Miti75% HoT",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "42",
@@ -4536,7 +4536,7 @@
             {
                 "id": "1217",
                 "name": "Soul Reaver Laberd",
-                "role": "BBATKed 40%HP DEF Miti50% ATKDOWN",
+                "role": "BBATKed 40%HP DEF Miti50% Miti75% ATKDOWN",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "42",
@@ -4888,7 +4888,7 @@
             {
                 "id": "1247",
                 "name": "Galvanic Belle Lafiel",
-                "role": "30%HP DEF Miti50% BBspark BBATKed BBregen HoT",
+                "role": "30%HP DEF Miti50% BBspark BBATKed BBregen HoT Miti75%",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "42",
@@ -5372,7 +5372,7 @@
             {
                 "id": "1276",
                 "name": "Tartarus Massacre Sirius",
-                "role": "40%HP BBATK% Spark BBspark ATK DEF REC Miti BBregen",
+                "role": "40%HP BBATK% Spark BBspark ATK DEF REC Miti75% BBregen",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "42",
@@ -5460,7 +5460,7 @@
             {
                 "id": "1299",
                 "name": "Flare Paladin Darvanshel",
-                "role": "Miti50% HP DEF convertATK convertDEF 40%HP Null",
+                "role": "Miti50% Miti75% HP DEF convertATK convertDEF 40%HP Null",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "40",
@@ -5680,7 +5680,7 @@
             {
                 "id": "1304",
                 "name": "Terra Halcyon Lance",
-                "role": "30%HP ATK Cure DEF barrier convertATK Miti",
+                "role": "30%HP ATK Cure DEF barrier convertATK Miti75%",
                 "element": "Earth",
                 "rarity": "8",
                 "cost": "45",
@@ -5856,7 +5856,7 @@
             {
                 "id": "1308",
                 "name": "Kuryuku 7",
-                "role": "30%HP DEF BBrate cure convertDEF miti HP Injury Weak Sick Poison Para Curse",
+                "role": "30%HP DEF BBrate cure convertDEF Miti75% HP Injury Weak Sick Poison Para Curse",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "43",
@@ -5900,7 +5900,7 @@
             {
                 "id": "1309",
                 "name": "Kuryuku 8",
-                "role": "50%HP DEF BBrate cure convertDEF miti HP Barrier Injury Weak Sick Poison Para Curse",
+                "role": "50%HP DEF BBrate cure convertDEF Miti75% HP Barrier Injury Weak Sick Poison Para Curse",
                 "element": "Fire",
                 "rarity": "8",
                 "cost": "47",
@@ -5944,7 +5944,7 @@
             {
                 "id": "1312",
                 "name": "Averus 7",
-                "role": "40%HP DEF Injury Weak Sick Poison Para Curse Miti50% superspark Barrier Null",
+                "role": "40%HP DEF Injury Weak Sick Poison Para Curse Miti50% Miti75% superspark Barrier Null",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "43",
@@ -6555,6 +6555,94 @@
                 },
                 "sp": {
                     "@list": ""
+                }
+            },
+            {
+                "id": "1367",
+                "name": "Sirius 8",
+                "role": "Spark BBATK% 50%HP BBspark Light Dark ATK DEF REC BBregen Miti75%",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "6BC Fill Each Turn (ALL) / 100% Spark DMG+ (ALL) / 180% BB ATK%+ (ALL) / 50% HP 50% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "25",
+                    "#text": "360% Light (AOE) / 100% Chance 1-2BC Fill on Spark (ALL) 3Turns / Add Light,dark to ATK (ALL) 3Turns / 250% BB ATK%+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "560% Light (AOE) / 100% Chance 1-2BC Fill on Spark (ALL) 3Turns / Add Light,dark to ATK (ALL) 3Turns / 140% ATK+ 140% DEF+ 140% REC+ (ALL) 3Turns / 300% BB ATK%+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "30",
+                    "#text": "1500% Light (AOE) / 50BC Fill 3Turns / Reduce DMG (75%) 3Turns / 250% ATK+ 250% DEF+ 250% REC+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "100% 2-3BC Fill on Spark (SELF) / Reduce DMG (25%) on > 10k DMG Received (SELF) / 25% Chance Heal 20% DMG when ATKed (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50917.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50917.png"
+                },
+                "sp": {
+                    "@list": "20 : +20% All Stats | 30 : +50% All Weakness Damage | 10 : +10% BB Gauge Fill Rate | 30 : 100% Base/Buffed Element Weakness Resist | 40 : +100% BB/SBB/UBB Mod | 40 : 1 BC on Spark Buff | 40 : Add Effect To BB/SBB (3 turn 6 BC/turn) | 60 : Adds an extra turn to BC/Stats/Mod UBB buffs (4 Turns)"
+                }
+            },
+            {
+                "id": "1368",
+                "name": "Mifune 8",
+                "role": "Spark ATK BBfill DoT",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "45",
+                "ls": {
+                    "@hit": "1",
+                    "@dc": "40",
+                    "#text": "100% Chance Drain 3-8% HP (ALL) / 20% Chance Ignore DEF (ALL) / 100% Spark DMG+ (ALL) / 150% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "1",
+                    "@dc": "20",
+                    "@cost": "34",
+                    "#text": "440% Dark (AOE) / 30% BC Fill+ (ALL) 3Turns / 25% Chance Enemy receives 50% Spark DMG+ 1Turns"
+                },
+                "sbb": {
+                    "@hit": "1",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "1000% Dark (AOE) / 25% Chance Enemy receives 50% Spark DMG+ 1Turns / Add 10% Chance -30% Enemy ATK to ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "7",
+                    "@dc": "35",
+                    "@cost": "35",
+                    "#text": "2000% Dark (AOE) / 200% Spark DMG+ (ALL) 3Turns / 300% ATK+ (ALL) 3Turns / 3000% DMG Each Turn 1Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% Spark DMG+ (SELF) / Add Ignore DEF (ALL) 2Turns Effect to BB/SBB (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60027.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60027.png"
+                },
+                "sp": {
+                    "@list": "20 : +50% ATK | 30 : +100% Spark Damage | 20 : 10 BC On Spark | 40 : +30% BB/SBB Mod | 10 : +50% BB/SBB/UBB ATK while over 50% HP | 30 : 20% Chance Normal Attacks AoE (-50% Damage) | 30 : 4 BC/turn | 40 : 10% DMG to HP when hit (25% Chance) | 50 : Add Effect To BB/SBB (3 Turn +150% ATK)"
                 }
             },
             {
@@ -7352,7 +7440,7 @@
             {
                 "id": "8143",
                 "name": "Mad Heretic Gazia",
-                "role": "BBATK% 35%HP ATK DEF REC Miti50% ConvertDEF ConvertATK Barrier",
+                "role": "BBATK% 35%HP ATK DEF REC Miti50% Miti75% ConvertDEF ConvertATK Barrier",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "45",
@@ -7484,7 +7572,7 @@
             {
                 "id": "8195",
                 "name": "Herculean Ultor",
-                "role": "Weakness ATK DEF REC CRIT Taunt DoT Miti Idol",
+                "role": "Weakness ATK DEF REC CRIT Taunt DoT Miti75% Idol",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "40",
@@ -7836,7 +7924,7 @@
             {
                 "id": "8166",
                 "name": "Loremaster Allanon",
-                "role": "30%HP ATK DEF REC OverDrive Null Cure Weakness BBfill BBATKed Miti Heal Fire,water,earth,thunder,light,dark HoT",
+                "role": "30%HP ATK DEF REC OverDrive Null Cure Weakness BBfill BBATKed Miti75% Heal Fire,water,earth,thunder,light,dark HoT",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "42",
@@ -7924,7 +8012,7 @@
             {
                 "id": "8162",
                 "name": "Eternal Guardian Zeruiah",
-                "role": "BBrate EXP BC HC Item Karma Zel Heal Cure USBB Fire,water,earth,thunder,light,dark Miti HP ConvertDEF",
+                "role": "BBrate EXP BC HC Item Karma Zel Heal Cure USBB Fire,water,earth,thunder,light,dark Miti75% HP ConvertDEF",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "42",
