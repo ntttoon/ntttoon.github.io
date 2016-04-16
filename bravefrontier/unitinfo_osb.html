@@ -104,7 +104,7 @@
 		var getc = getURLParameter('c');
 		var c_array = getc.split(",");
 		if(!getc==''){
-			$('#reset_btn').html('<a class="w3-btn w3-blue-grey" style="width:100%"' + 'href="unitinfo_osb.html?id=' + id + '">Reset</a>')
+			$('#reset_btn').html('<a class="w3-btn w3-blue-grey" style="width:100%;"' + 'href="unitinfo_osb.html?id=' + id + '">Reset</a>')
 			for(k=0;k < c_array.length;k++){
 				if(c_array[k] == 'true'){
 					document.getElementsByClassName('w3-check').item(k).checked = true;
