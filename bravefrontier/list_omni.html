@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Brave Frontier</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<script src="../js/ga.js"></script>
+<script src="js/libs.js"></script>
+</head>
+
+<body>
+<header class="w3-container w3-teal w3-card-2">
+  <h5>Simulated OMNI Skill Build</h5>
+</header>
+<div id="placeholder"> </div>
+<script>
+	var xmlhttp = new XMLHttpRequest();
+	var url = "data/units.json";
+	
+	xmlhttp.onreadystatechange=function() {
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			myFunction(xmlhttp.responseText);
+		}
+	}
+	xmlhttp.open("GET", url, true);
+	xmlhttp.send();
+	
+	function myFunction(response) {
+		var arr = JSON.parse(response);
+		var i;
+		var out = "<ul class='w3-ul'>";
+
+		var json_len = arr.brave.unit.length;
+		for(i = 0; i < json_len; i++) {
+			var id = arr.brave.unit[i].id;
+			var name = arr.brave.unit[i].name;
+			var element = arr.brave.unit[i].element;
+			var rarity = arr.brave.unit[i].rarity;
+			var thumb = arr.brave.unit[i].thumb['@path'];
+			if(rarity == 8){
+				out+='<li class="w3-hover-sand"><a style="text-decoration:none;color:' + nameColor(element) +  '" href="unitinfo_osb.html?id=' + id + '"> <img src="' + thumb + '" class="w3-left w3-margin-right" style="width:50px"><p>' + name + '</p></a> <div class="w3-clear"></div></li>'
+			}
+		}
+		out+="</ul>";
+		document.getElementById("placeholder").innerHTML = out;
+	}
+</script>
+
+</body>
+</html>

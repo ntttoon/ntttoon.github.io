@@ -61,7 +61,7 @@
 				//
 				document.getElementById('big_btn').innerHTML = "<a class='w3-btn w3-teal' style='width:100%'" + 'href="unitinfo_big.html?id=' + id + '" target="blank">View full (for PC only)</a>';
 				if(!sp ==""){
-					document.getElementById('bigsp_btn').innerHTML = "<a class='w3-btn w3-indigo' style='width:100%'" + 'href="unitinfo_bigsp.html?id=' + id + '" target="blank">View full SP (for PC only)</a>';
+					document.getElementById('bigsp_btn').innerHTML = '<a class="w3-btn w3-indigo" style="width:100%"' + 'href="unitinfo_bigsp.html?id=' + id + '" target="blank">View full SP (for PC only)</a>';
 				}
 				out+='<li><h3>' + name + '</h3></li>';
 				out+='<li>' + "ID: " + id + " - Element: " + element + "<br>Rarity: " + rarity + "*" + " - Cost: " + cost + '</li>';
@@ -71,10 +71,11 @@
 				out+='<li><strong>UBB: </strong>' + 'hit: ' + ubbhit + ' - dc: ' + ubbdc + ' - cost: ' + ubbcost + '<br>' + ubb + '</li>';
 				out+='<li><strong>ES: </strong>' + '<br>' + 'Condition: ' + escondition + '<br>' + 'Effect: ' + eseffect + '</li>';
 				if(!sp ==""){
+					out+='<a class="w3-btn w3-blue-grey" style="width:100%"' + 'href="unitinfo_osb.html?id=' + id + '" target="blank">Simulated OMNI Skill Build</a>';
 					out+='<li><strong>OMNI Skills: </strong>' + '<br>';
 					for(j=0;j<sp_array.length;j++)
 					{
-						out+='● ' + sp_array[j] + '<br>';
+						out+='● ' + sp_array[j].trim() + '<br>';
 					}
 					out+='</li>';
 				}
