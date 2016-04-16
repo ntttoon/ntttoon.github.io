@@ -57,7 +57,7 @@
 				}
 			}
 		}
-		out+='</ul>';
+		out+="</ul>";
 		document.getElementById("placeholder").innerHTML = out;
 	}
 	////////////////////////////////////////////////////////////
@@ -74,12 +74,12 @@
 				$(this).attr("disabled", false);
 			}
 		});
-		var allVals = [];
-		$('.w3-check').each(function() {
-			allVals.push(this.checked);
-		});
-		var id = getURLParameter("id");
-		$('#genLink').val(sLink + '?id=' + id + '&c=' + allVals);
+		//var allVals = [];
+//		$('.w3-check').each(function() {
+//			allVals.push(this.checked);
+//		});
+//		var id = getURLParameter("id");
+//		$('#genLink').val(sLink + '?id=' + id + '&c=' + allVals);
 	}
 	
 	$(document).ready(function(e) {
