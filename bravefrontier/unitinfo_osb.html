@@ -40,7 +40,7 @@
 				var sp = arr.brave.unit[i].sp['@list'];
 				var sp_array = sp.split("|");
 				//
-				out+='<li><img src="' + thumb + '" class="w3-left w3-margin-right" style="width:60px"><h3>' + name + '</h3></a> <div class="w3-clear"></div></li>';
+				out+='<li><img src="' + thumb + '" class="w3-left w3-margin-right" style="width:60px;"><h3>' + name + '</h3></a> <div class="w3-clear"></div></li>';
 				out+='<li id="sp">100/100 SP</li>';
 				for(j=0;j<sp_array.length;j++)
 				{
@@ -51,7 +51,6 @@
 			}
 		}
 		out+="</ul>";
-		//out+="<a class='w3-btn w3-teal' style='width:100%' href='#'>Gen</a>"
 		document.getElementById("placeholder").innerHTML = out;
 	}
 </script>
