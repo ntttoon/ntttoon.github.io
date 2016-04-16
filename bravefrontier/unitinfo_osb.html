@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <script src="../js/ga.js"></script>
 <script src="js/libs.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 </head>
 
 <body>
@@ -56,6 +55,7 @@
 		document.getElementById("placeholder").innerHTML = out;
 	}
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script>
 	var temp_sp = 100;
 	var base_sp = 100;
@@ -72,7 +72,7 @@
 		});
 	}
 	
-	$(function() {
+	$(document).ready(function(e) {
 		updateCB();
 		$('.w3-check').change(function(){
 			var c = this.checked;
