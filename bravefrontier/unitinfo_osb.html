@@ -45,7 +45,7 @@
 				for(j=0;j<sp_array.length;j++)
 				{
 					var sp_cost = sp_array[j].substring(0, sp_array[j].search(':'));
-					out+='<li><strong>'+ sp_cost.trim() + ' SP</strong><input class="w3-check" type="checkbox" value="'+ sp_cost.trim() +'"><label class="w3-validate">' + sp_array[j].substring(sp_array[j].search(':')+1, sp_array[j].length).trim() + '</label>';
+					out+='<li><strong>'+ sp_cost.trim() + ' SP </strong><input class="w3-check" type="checkbox" value="'+ sp_cost.trim() +'"><label class="w3-validate"> ' + sp_array[j].substring(sp_array[j].search(':')+1, sp_array[j].length).trim() + '</label>';
 					out+='</li>';
 				}
 			}
