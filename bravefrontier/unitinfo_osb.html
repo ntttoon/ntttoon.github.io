@@ -7,12 +7,19 @@
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <script src="../js/ga.js"></script>
 <script src="js/libs.js"></script>
+<script src="//code.jquery.com/jquery-1.12.3.js"></script>
 </head>
 
 <body>
 <form>
-<div id="placeholder"> </div>
+	<div id="placeholder"> </div>
 </form>
+<div class="w3-container">
+    <h5>Copy this Link to share your team</h5>
+    <input class="w3-input w3-border" id="genLink" type="text" value="">
+    <br>
+</div>
+<div id="reset_btn"></div>
 <script>
 	var xmlhttp = new XMLHttpRequest();
 	var url = "data/units.json";
@@ -52,43 +59,62 @@
 		}
 		out+="</ul>";
 		document.getElementById("placeholder").innerHTML = out;
-	}
-</script>
-<script src="//code.jquery.com/jquery-1.12.3.js"></script>
-<script>
-	var temp_sp = 100;
-	var base_sp = 100;
-	function updateCB() {
-		var allVals = [];
-		$('.w3-check').each(function() {
-			if($(this).val() > temp_sp){
-				$(this).attr("disabled", true);
-				$('.w3-check:checked').attr("disabled", false);
-			}
-			if($(this).val() <= temp_sp){
-				$(this).attr("disabled", false);
-			}
-		});
-	}
-	
-	$(document).ready(function(e) {
-		updateCB();
+		//////////////////////////////////////////////////////
+		var sLink = "http://ntttoon.github.io/bravefrontier/unitinfo_osb.html";
+		var temp_sp = 100;
+		var base_sp = 100;
+		function updateCB() {
+			$('.w3-check').each(function() {
+				if($(this).val() > temp_sp){
+					$(this).attr("disabled", true);
+					$('.w3-check:checked').attr("disabled", false);
+				}
+				if($(this).val() <= temp_sp){
+					$(this).attr("disabled", false);
+				}
+			});
+			var allVals = [];
+			var id = getURLParameter("id");
+			$('.w3-check').each(function() {
+				allVals.push(this.checked);
+			});
+			$('#genLink').val(sLink + '?id=' + id + '&c=' + allVals);
+		}
+		//////////////////////////////////////////////////////
 		$('.w3-check').change(function(){
 			var c = this.checked;
 			var v = $(this).val();
 			if(c == true){
 				temp_sp -= Number(v);
 				$(this).parent('li').addClass('w3-pale-yellow');
+				$('#sp').text(temp_sp + '/' + base_sp + ' SP');
 				updateCB();
 			}
 			if(c == false){
 				temp_sp += Number(v);
 				$(this).parent('li').removeClass('w3-pale-yellow');
+				$('#sp').text(temp_sp + '/' + base_sp + ' SP');
 				updateCB();
+			};
+		});
+		//////////////////////////////////////////////////////
+		var id = getURLParameter("id");
+		var getc = getURLParameter("c");
+		var c_array = getc.split(',');
+		if(!getc==""){
+			$('#reset_btn').html('<a class="w3-btn w3-blue-grey" style="width:100%;"' + 'href="unitinfo_osb.html?id=' + id + '">Reset</a>')
+			for(k=0;k < c_array.length;k++){
+				if(c_array[k] == "true"){
+					document.getElementsByClassName("w3-check").item(k).checked = true;
+					document.getElementsByClassName("w3-check").item(k).parentElement.className += " w3-pale-yellow";
+					$('#sp').text("SP");
+				}else{
+					document.getElementsByClassName("w3-check").item(k).disabled = true;
+				}
 			}
-			$('#sp').text(temp_sp + '/' + base_sp + ' SP');
-		})
-	});
+		}
+	}
 </script>
+
 </body>
 </html>
