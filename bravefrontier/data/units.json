@@ -5718,7 +5718,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30017.png"
                 },
                 "sp": {
-                    "@list": "10:30% boost to Def | 10:Boosts damage against status afflicted foes (60% boost) | 10:Considerably boosts damage against status afflicted foes (80% boost) | 20:Probable random status ailment counter (5% chance to inflict Curse, Poison and Paralysis & 8% chance to inflict Weak, Sick and Injury) | 30:Negates critical hit damage | 30:Negates elemental damage | 40:Adds Earth elemental damage boost for 3 turns effect to BB/SBB (50% boost) | 50:Enhances Earth barrier effect added to SBB (+1000 HP to barrier) | 50:Adds Atk boost relative to Def effect to BB/SBB (70% boost) | 50:Adds all status ailments effect to BB/SBB/UBB (30% chance to inflict Curse, Poison and Paralysis & 40% chance to inflict Weak, Sick and Injury)"
+                    "@list": "10:30% boost to Def | 10:(*) Boosts damage against status afflicted foes (60% boost) | 10:Considerably boosts damage against status afflicted foes (80% boost) (Prerequisite: *) | 20:Probable random status ailment counter (5% chance to inflict Curse, Poison and Paralysis & 8% chance to inflict Weak, Sick and Injury) | 30:Negates critical hit damage | 30:Negates elemental damage | 40:Adds Earth elemental damage boost for 3 turns effect to BB/SBB (50% boost) | 50:Enhances Earth barrier effect added to SBB (+1000 HP to barrier) | 50:Adds Atk boost relative to Def effect to BB/SBB (70% boost) | 50:Adds all status ailments effect to BB/SBB/UBB (30% chance to inflict Curse, Poison and Paralysis & 40% chance to inflict Weak, Sick and Injury)"
                 }
             },
             {
@@ -5762,7 +5762,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40017.png"
                 },
                 "sp": {
-                    "@list": "20:20% boost to all parameters | 10:50% boost to Spark damage | 10:Raises Spark damage boost from 50% to 70% | 10:Raises Spark damage boost from 70% to 100% | 10:Slightly boosts critical hit damage (30% boost) | 10:Boosts critical hit damage (50% boost) | 50:Enhances Spark damage boost effect added to BB/SBB (+30% boost) | 60:Allows enormous Spark damage boost & probable Spark critical effects to last for 4 turns"
+                    "@list": "20:20% boost to all parameters | 10:(*) 50% boost to Spark damage | 10:(**) Raises Spark damage boost from 50% to 70% (Prerequisite: *)  | 10:Raises Spark damage boost from 70% to 100% (Prerequisite: **) | 10:(***) Slightly boosts critical hit damage (30% boost) | 10:Boosts critical hit damage (50% boost) (Prerequisite: ***) | 50:Enhances Spark damage boost effect added to BB/SBB (+30% boost) | 60:Allows enormous Spark damage boost & probable Spark critical effects to last for 4 turns"
                 }
             },
             {
@@ -5806,7 +5806,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50017.png"
                 },
                 "sp": {
-                    "@list": "30:Normal attack may hit all foes (20% chance, -50% damage) | 20:Damage taken slightly boosts BB gauge (2~3 BC fill) | 10:Activates at turn's end effects during turn's start instead | 40:Enhances BB gauge boost effect added to BB/SBB (+20% boost) | 40:Adds Light elemental damage boost for 3 turns effect to BB/SBB (50% boost) | 50:Adds status ailment removal effect to BB/SBB | 50:Adds BB gauge boost when attacked effect to BB/SBB (3~5 BC fill) | 10:Enhances BB gauge boost when attacked effect (4~7 BC fill) | 50:Adds HP restoration when damage dealt effect to BB/SBB (+2000~3000 HP + 11% of healer's Rec)"
+                    "@list": "30:Normal attack may hit all foes (20% chance, -50% damage) | 20:Damage taken slightly boosts BB gauge (2~3 BC fill) | 10:Activates at turn's end effects during turn's start instead | 40:Enhances BB gauge boost effect added to BB/SBB (+20% boost) | 40:Adds Light elemental damage boost for 3 turns effect to BB/SBB (50% boost) | 50:Adds status ailment removal effect to BB/SBB | 50:(*) Adds BB gauge boost when attacked effect to BB/SBB (3~5 BC fill) | 10:Enhances BB gauge boost when attacked effect (4~7 BC fill) (Prerequisite: *) | 50:Adds HP restoration when damage dealt effect to BB/SBB (+2000~3000 HP + 11% of healer's Rec)"
                 }
             },
             {
@@ -5850,7 +5850,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60017.png"
                 },
                 "sp": {
-                    "@list": "10:Damage taken may slightly restore HP (25% chance to restore 5% of HP back) | 10:Damage taken may restore HP (25% chance to restore 10% of HP back) | 10:5% damage reduction from Light types | 30:Negates elemental damage | 30:50% Spark damage reduction | 60:Adds 50% damage reduction for 1 turn effect to BB/SBB | 20:Allows 50% damage reduction for 1 turn effects to last for 2 turns | 80:Allows UBB enormous damage reduction effects to last for 2 turns"
+                    "@list": "10:Damage taken may slightly restore HP (25% chance to restore 5% of HP back) | 10:Damage taken may restore HP (25% chance to restore 10% of HP back) | 10:5% damage reduction from Light types | 30:Negates elemental damage | 30:50% Spark damage reduction | 60:(*) Adds 50% damage reduction for 1 turn effect to BB/SBB | 20:Allows 50% damage reduction for 1 turn effects to last for 2 turns (Prerequisite: *) | 80:Allows UBB enormous damage reduction effects to last for 2 turns"
                 }
             },
             {
