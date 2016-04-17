@@ -109,7 +109,9 @@
 			for(k=0;k < c_array.length;k++){
 				if(c_array[k] == "true"){
 					document.getElementsByClassName("w3-check").item(k).checked = true;
+					document.getElementsByClassName("w3-check").item(k).disabled = true;
 					document.getElementsByClassName("w3-check").item(k).parentElement.className += " w3-pale-yellow";
+					document.getElementsByClassName("w3-validate").item(k).className += " w3-text-teal";
 					$('#sp').text("SP");
 				}else{
 					document.getElementsByClassName("w3-check").item(k).disabled = true;
