@@ -5855,7 +5855,7 @@
             },
             {
                 "id": "1308",
-                "name": "Kuryuku 7",
+                "name": "Mythic Kulyuk",
                 "role": "30%HP DEF BBrate cure convertDEF Miti75% HP Injury Weak Sick Poison Para Curse",
                 "element": "Fire",
                 "rarity": "7",
@@ -5899,7 +5899,7 @@
             },
             {
                 "id": "1309",
-                "name": "Kuryuku 8",
+                "name": "Fabled Emperor Kulyuk",
                 "role": "50%HP DEF BBrate cure convertDEF Miti75% HP Barrier Injury Weak Sick Poison Para Curse",
                 "element": "Fire",
                 "rarity": "8",
@@ -5943,7 +5943,7 @@
             },
             {
                 "id": "1312",
-                "name": "Averus 7",
+                "name": "Nereides Treasure Averus",
                 "role": "40%HP DEF Injury Weak Sick Poison Para Curse Miti50% Miti75% superspark Barrier Null",
                 "element": "Water",
                 "rarity": "7",
@@ -5987,7 +5987,7 @@
             },
             {
                 "id": "1315",
-                "name": "Beraldo 7",
+                "name": "Tempest Dragon Bestalg",
                 "role": "Hit 40%HP ATK miti Weakness Fire,water,earth,thunder Barrier",
                 "element": "Earth",
                 "rarity": "7",
@@ -6031,7 +6031,7 @@
             },
             {
                 "id": "1318",
-                "name": "Worudoga 7",
+                "name": "Steel Automaton Voldoga",
                 "role": "BBspark SPARK 40%HP ATK cure null Barrier BBATK%",
                 "element": "Thunder",
                 "rarity": "7",
@@ -6075,7 +6075,7 @@
             },
             {
                 "id": "1321",
-                "name": "Lyra 7",
+                "name": "Untainted Justice Layla",
                 "role": "BBATKed 40%HP REC Cure HoT HealATKed superspark convertATK atkdown defdown Revive",
                 "element": "Light",
                 "rarity": "7",
@@ -6119,7 +6119,7 @@
             },
             {
                 "id": "1324",
-                "name": "Zyle 7",
+                "name": "Mauve Tenebrosity Zeal",
                 "role": "BBspark BBATK% 40%HP ATK BBregen BC HC CRIT",
                 "element": "Dark",
                 "rarity": "7",
