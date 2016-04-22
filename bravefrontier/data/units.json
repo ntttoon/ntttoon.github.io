@@ -4989,7 +4989,7 @@
                     "@hit": "14",
                     "@dc": "14",
                     "@cost": "26",
-                    "#text": "280% Dark (AOE) / 12BC Fill (ALL) 1Turn / 200% BB ATK%+ (ALL) / 90% Chance CRIT on SPARK 3Turns (ALL)"
+                    "#text": "280% Dark (AOE) / 12BC Fill (ALL) 1Turn / 200% BB ATK%+ (ALL) / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns"
                 },
                 "sbb": {
                     "@hit": "18",
