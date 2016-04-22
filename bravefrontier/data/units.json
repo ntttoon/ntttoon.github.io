@@ -5938,7 +5938,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10847.png"
                 },
                 "sp": {
-                    "@list": "10 : 0-50% ATK depending on HP remaining | 10 : +10% BB Fill Rate | 20 : Add Effect To BB/SBB (3 Turn +140% DEF) | 50 : Add Effect To BB/SBB (3 turn +80% Spark Dmg) | 10 : Add Effect To BB/SBB (3 turn +110% Spark Dmg) | 50 : Add Effect To BB/SBB (3-5 BC on Hit for 3 turns) | 10 : Add Effect To BB/SBB (4-7 BC on Hit for 3 turns) | 40 : Add Effect To BB/SBB (Heal 2000-3000 HP (+ 11% Healer REC)) | 40 : Add Effect To BB/SBB (3 Turn HoT 1500-2000 HP (+11% Target REC))"
+                    "@list": "10 : Boosts Atk relative to remaining HP (+0.5% boost per 1% HP remaining, 50% boost max.) | 10 : Enhances BB gauge fill rate boost effect added to BB/SBB (Additional 10% boost to BC efficacy) | 20 : Adds enormous Def boost for 3 turns effect to BB/SBB (140% boost) | 50 : (*) Adds Spark damage boost effect to BB/SBB (80% boost) | 10 : Enhances Spark damage boost effect (Additional 30% boost to Spark damage - 110% boost total) (Prerequisite: *) | 50 : (**) Adds BB gauge boost when attacked for 3 turns effect to BB/SBB (3~5 BC fill) | 10 : Enhances BB gauge boost when attacked for 3 turns effect (4~7 BC fill instead) (Prerequisite: **) | 40 : Adds HP restoration when damage dealt effect to BB/SBB (Heals 2000~3000 + 11% of healer Rec) | 40 : Adds HP restoration for 3 turns effect to BB/SBB (Heals 1500~2000 + 10% of target Rec)"
                 }
             },
             {
