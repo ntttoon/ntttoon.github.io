@@ -177,7 +177,7 @@ function buffsOut(string,type) {
 		}
 	}
 	if(string.match(RegExp( /(Max HP\+)/, 'gi'))){
-		return string.trim().substr(0,3) + " HP per";
+		return string.trim().substr(0,3) + " MAX HP";
 	}
 	//BB
 	if(string.match(RegExp( /(BC Fill\+ \(ALL\))/, 'gi'))){
@@ -331,6 +331,9 @@ function buffsOut(string,type) {
 	}
 	if(string.match(RegExp( /(Shield)/, 'gi'))){
 		return "Tridon Shield";
+	}
+	if(string.match(RegExp( /( AOE on Normal ATK)/, 'gi'))){
+		return "AOE";
 	}
 	//Ails
 	if(string.match(RegExp( /(Add )/, 'gi'))){
