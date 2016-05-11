@@ -6295,7 +6295,7 @@
             },
             {
                 "id": "1349",
-                "name": "Goruzo 7",
+                "name": "Vehement Pyre Golzo",
                 "role": "BBATKed 40%HP ATK BBfill BBregen Fire thunder HoT CRIT ConvertATK ConvertDEF BBATK%",
                 "element": "Fire",
                 "rarity": "7",
@@ -6339,7 +6339,7 @@
             },
             {
                 "id": "1351",
-                "name": "Verne 8",
+                "name": "Absolute Zero Vern",
                 "role": "BBcost spark 50%HP ATK water earth superspark",
                 "element": "Water",
                 "rarity": "8",
@@ -6383,7 +6383,7 @@
             },
             {
                 "id": "1354",
-                "name": "Leona 7",
+                "name": "Natural Whip Leona",
                 "role": "BBatked 40%HP DEF water earth atkdown defdown HealATKed BBregen HoT",
                 "element": "Earth",
                 "rarity": "7",
@@ -6427,7 +6427,7 @@
             },
             {
                 "id": "1356",
-                "name": "Cyrus 8",
+                "name": "Lightning Menace Silas",
                 "role": "BB crit OverDrive 50%HP ATK fire thunder BBATK% superspark",
                 "element": "Thunder",
                 "rarity": "8",
@@ -6471,7 +6471,7 @@
             },
             {
                 "id": "1359",
-                "name": "Ashtaru 7",
+                "name": "Pious Sage Astall",
                 "role": "40%HP DEF light dark atkdown BC HC BBrate Barrier HealATKed miti",
                 "element": "Light",
                 "rarity": "7",
@@ -6515,7 +6515,7 @@
             },
             {
                 "id": "1362",
-                "name": "Ekurisu 7",
+                "name": "Dusk Artemis Eclise",
                 "role": "BBregen OverDrive 50%HP BBfill heal cure null light dark HoT Idol",
                 "element": "Dark",
                 "rarity": "7",
