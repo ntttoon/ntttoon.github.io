@@ -6378,7 +6378,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20797.png"
                 },
                 "sp": {
-                    "@list": "20 : +20% All Stats | 30 : +100% Spark Damage | 50 : Hit Count +1 | 20 : Reduce BB Cost 25% | 10 : 5% DMG to HP when hit (25% Chance) | 20 : Add Effect To BB/SBB (3 turn Dark Buff) | 30 : Add Effect To BB/SBB (3 Turn +30% BC Drop Rate Buff) | 50 : Add Effect To BB/SBB (3 Turn 1-2 BC on Spark Buff) | 60 : +30% Spark Dmg (BB/SBB)"
+                    "@list": "20 : 20% boost to all parameters | 30 : 100% boost to Spark damage | 50 : Raises normal hit amount (Doubles normal hit count) | 20 : Considerably reduces BB gauge required for BB (25% reduction) | 10 : Damage taken may slightly restore HP (25% chance to heal 5% damage) | 20 : Adds Dark element to attack for 3 turns effect to BB/SBB | 30 : Adds BC drop rate boost effect to BB/SBB (30% boost for 3 turns) | 50 : Adds slight BB gauge boost during Spark for 3 turns effect to BB/SBB (Fills 1-2 BC) | 60 : Enhances Spark damage boost effect added to BB/SBB/UBB (+30% boost)"
                 }
             },
             {
@@ -6466,7 +6466,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40767.png"
                 },
                 "sp": {
-                    "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 20 : +50% Crit Damage | 20 : 2-3 BC On Crit | 30 : 100% Base/Buffed Crit Resist | 50 : Add Effect To BB/SBB (3 Turn +150% ATK) | 50 : Add Effect To BB/SBB (3 turn 70% ATK->DEF buff) | 20 : Add Effect To BB/SBB (3 turn Light Buff) | 40 :+100% BB/SBB/UBB Mod"
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to HP, Def | 20 : Boosts critical hit damage (50% boost) | 20 : Critical hit damage boosts BB gauge (Fills 2-3 BC) | 30 : Negates critical hit damage | 50 : Adds huge boost to Atk for 3 turns effect to BB/SBB (150% boost) | 50 : Adds huge Def boost relative to Atk effect to BB/SBB (70% Atk to Def) | 20 : Adds Light element to attack effect to BB/SBB | 40 : Enhances BB Atk boost effect added to SBB/UBB (+100% boost)"
                 }
             },
             {
