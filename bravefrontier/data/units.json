@@ -6501,7 +6501,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "10% All STATS (SELF)"
+                    "#text": "10% All STATS (ALL)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50966.png"
