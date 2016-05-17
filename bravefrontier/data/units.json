@@ -7028,7 +7028,7 @@
                     "#text": "2500% Fire (AOE) 1500%-2500% BB ATK% Based on HP LEFT / 300% CRIT DMG+ (ALL) 3Turns / 250% Spark DMG+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns"
                 },
                 "es": {
-                    "@condtion": "30% ALL Stats (SELF) when Dandelga Sphere is Equipped",
+                    "@condtion": "30% ALL Stats (SELF) when [覇焔剣ダンデマグス] Sphere is Equipped",
                     "#text": "50% ATK+ on Full BB (SELF) / 0-50% ATK+ Based on HP LEFT (SELF)"
                 },
                 "art": {
@@ -7072,7 +7072,7 @@
                     "#text": "1300% Light (AOE) / Reduce DMG (75%) 3Turns / Add Fire,water,earth,thunder,light,dark to ATK (ALL) 3Turns / Convert 150% DEF to ATK (ALL) 3Turns"
                 },
                 "es": {
-                    "@condtion": "30% ALL Stats (SELF) when [覇断の聖皚套] Sphere is Equipped",
+                    "@condtion": "30% ALL Stats (SELF) when Virtuous Cape Sphere is Equipped",
                     "#text": "20% Chance Reduce DMG (20%) (SELF) / Reduce 20% BB Cost (SELF)"
                 },
                 "art": {
