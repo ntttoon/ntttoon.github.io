@@ -6998,6 +6998,94 @@
                 }
             },
             {
+                "id": "1387",
+                "name": "Avant 8",
+                "role": "Spark CRIT BBATK% 50%HP superspark ATK convertATK",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "12",
+                    "@dc": "48",
+                    "#text": "100% Spark DMG+ (ALL) / 150% CRIT DMG+ (ALL) / 200% BB ATK%+ (ALL) / 50% HP (ALL)"
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "24",
+                    "#text": "360% Fire (AOE) / 60% CRIT+ (ALL) 3Turns / 25% Chance Enemy receives 25% Spark DMG+ 1Turns / 160% ATK+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "560% Fire (AOE) / 30% Chance Enemy receives 30% Spark DMG+ 1Turns / 300% BB ATK%+ (ALL) 3Turns / Convert 20% HP to ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "25",
+                    "#text": "2500% Fire (AOE) 1500%-2500% BB ATK% Based on HP LEFT / 300% CRIT DMG+ (ALL) 3Turns / 250% Spark DMG+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "30% ALL Stats (SELF) when Dandelga Sphere is Equipped",
+                    "#text": "50% ATK+ on Full BB (SELF) / 0-50% ATK+ Based on HP LEFT (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10757.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10757.png"
+                },
+                "sp": {
+                    "@list": "20 : +50% ATK | 10 : +50% Crit Damage | 20 : +50% BB/SBB/UBB Mod when HP is above 50% | 30 : +15% BB Gauge Fill Rate | 20 : LS+: 10% HP | 50 : SBB+: +100% BB/SBB/UBB Mod & UBB+: +100% BB/SBB/UBB Mod | 50 : Add Effect To BB/SBB (3 turn +50% Crit Dmg) | 60 : UBB+: 1 Turn Spark Dmg Buff & UBB+: 1 Turn BB Mod Buff & UBB+: 1 Turn Crit Dmg Buff"
+                }
+            },
+            {
+                "id": "1388",
+                "name": "Krantz 8",
+                "role": "BBregen BC HC 30%HP ATK Miti50% Cure Dark Light Heal Fire,water,earth,thunder convertATK Miti75%",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "12",
+                    "@dc": "48",
+                    "#text": "6BC Fill Each Turn (ALL) / 20% BC+ 20% HC+ (ALL) / 30% HP 50% ATK (5 elements required) (ALL) / 30% HP 100% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "28",
+                    "#text": "340% Light (AOE) / Reduce DMG (50%) 1Turns / Cure Ails / Add Light,dark to ATK (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "23",
+                    "#text": "500% Light (AOE) / Reduce DMG (50%) 1Turns / Heal (ALL) / Add Light,dark to ATK (ALL) 3Turns / 35% BC+ 35% HC+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "25",
+                    "#text": "1300% Light (AOE) / Reduce DMG (75%) 3Turns / Add Fire,water,earth,thunder,light,dark to ATK (ALL) 3Turns / Convert 150% DEF to ATK (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "30% ALL Stats (SELF) when [覇断の聖皚套] Sphere is Equipped",
+                    "#text": "20% Chance Reduce DMG (20%) (SELF) / Reduce 20% BB Cost (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50757.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50757.png"
+                },
+                "sp": {
+                    "@list": "20 : +20% All Stats | 10 : +50% DEF when HP is above 50% | 20 : 2-3 BC when hit | 40 : Add Effect To BB/SBB (3 turn 50% REC->DEF buff) | 40 : Add Effect To BB/SBB (3 Turn Heal 20-25% of Damage Taken (20% Chance)) | 10 : Add Effect To SBB (Cure Status/Debuffs) | 10 : Add Effect To BB (Heal 2000-3000 HP (+ 11% Healer REC)) | 50 : BB+: 1 turn Reduce Damage & SBB+: 1 turn Reduce Damage | 50 : UBB+: 1 Turn Reduce Damage, 1 Turn DEF->ATK Buff"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
