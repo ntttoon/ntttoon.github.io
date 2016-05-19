@@ -6163,7 +6163,7 @@
             },
             {
                 "id": "1344",
-                "name": "Arus 7",
+                "name": "Milcham Nova Arus",
                 "role": "Ignore CRIT 80% BBfill BBregen OverDrive",
                 "element": "Fire",
                 "rarity": "7",
@@ -6207,7 +6207,7 @@
             },
             {
                 "id": "1345",
-                "name": "Rosetta 7",
+                "name": "Blossom Princess Rosetta",
                 "role": "BBspark Spark 40%HP healSpark",
                 "element": "Earth",
                 "rarity": "7",
@@ -6251,7 +6251,7 @@
             },
             {
                 "id": "1346",
-                "name": "Kuda 7",
+                "name": "Shadow Assailant Kuda",
                 "role": "BBreduce BBATK% ATK CRIT",
                 "element": "Dark",
                 "rarity": "7",
@@ -7527,7 +7527,7 @@
             },
             {
                 "id": "1336",
-                "name": "Tilith 7",
+                "name": "Rainbow Goddess Tilith",
                 "role": "HP50% REC Null BBfill heal HealATKed barrier convertDEF miti revive cure",
                 "element": "Light",
                 "rarity": "7",
