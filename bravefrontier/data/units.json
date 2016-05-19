@@ -8427,7 +8427,7 @@
                     "@hit": "15",
                     "@dc": "15",
                     "@cost": "30",
-                    "#text": "540% Light (AOE) / Heal (ALL) / Add Fire,water,earth,thunder,light,dark to ATK (ALL) 3Turns / 75% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns"
+                    "#text": "540% Light (AOE) / Heal (ALL) / 8% OverDrive Fill / Add Fire,water,earth,thunder,light,dark to ATK (ALL) 3Turns / 75% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "18",
