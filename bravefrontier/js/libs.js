@@ -284,6 +284,12 @@ function buffsOut(string,type) {
 			return string.trim().substr(8,4) + " REC to DEF";
 		}else{return string.trim().substr(8,3) + " REC to DEF";}
 	}
+	//convert to REC
+	if(string.match(RegExp( /(HP to REC)/, 'gi'))){
+		if(type=='ubb'){
+			return string.trim().substr(8,4) + " HP to REC";
+		}else{return string.trim().substr(8,3) + " HP to REC";}
+	}
 	//
 	if(string.match(RegExp( /(BC\+)/, 'gi'))){
 		if(string.match(RegExp( /(HC\+)/, 'gi'))){
