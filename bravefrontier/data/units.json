@@ -7086,6 +7086,270 @@
                 }
             },
             {
+                "id": "1389",
+                "name": "Rengaku 7",
+                "role": "35%HP ATK DEF REC BBfill BBregen BBrate BC HC superspark convertATK CRIT SPARK",
+                "element": "Fire",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "7",
+                    "@dc": "35",
+                    "#text": "35% HP 35% ATK 35% DEF 35% REC (ALL) / 20% ATK 20% DEF 20% REC (BB >= 50%) (ALL)"
+                },
+                "bb": {
+                    "@hit": "10",
+                    "@dc": "10",
+                    "@cost": "26",
+                    "#text": "350% Fire (AOE) / 8BC Fill (ALL) 1Turn / 6BC Fill 3Turns / 40% BC Fill+ (ALL) 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "2",
+                    "@dc": "30",
+                    "@cost": "30",
+                    "#text": "560% Fire (AOE) / 8BC Fill (ALL) 1Turn / 100% Chance 8-8BC Fill on Spark (SELF) 1Turns / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns / Convert 50% DEF to ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "2",
+                    "@dc": "50",
+                    "@cost": "30",
+                    "#text": "1300% Fire (AOE) / 999BC Fill (ALL) 1Turn / 50BC Fill 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 100% Chance Enemy receives 100% Spark DMG+ 2Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% Spark DMG+ (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10896.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10896.png"
+                },
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1390",
+                "name": "Rengaku 8",
+                "role": "40%HP ATK DEF REC BBfill BBregen BBrate BC HC superspark convertATK CRIT SPARK",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "11",
+                    "@dc": "44",
+                    "#text": "6BC Fill Each Turn (ALL) / 40% HP 40% ATK 40% DEF 40% REC (ALL) / 30% ATK 30% DEF 30% REC (BB >= 50%) (ALL)"
+                },
+                "bb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "26",
+                    "#text": "370% Fire (AOE) / 10BC Fill (ALL) 1Turn / 7BC Fill 3Turns / 50% BC Fill+ (ALL) 3Turns / 35% BC+ 35% HC+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "2",
+                    "@dc": "30",
+                    "@cost": "30",
+                    "#text": "580% Fire (AOE) / 10BC Fill (ALL) 1Turn / 100% Chance 10-10BC Fill on Spark (SELF) 1Turns / 30% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 35% BC+ 35% HC+ (ALL) 3Turns / Convert 70% DEF to ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "2",
+                    "@dc": "50",
+                    "@cost": "30",
+                    "#text": "1500% Fire (AOE) / 999BC Fill (ALL) 1Turn / 50BC Fill 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 100% Chance Enemy receives 150% Spark DMG+ 2Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% Spark DMG+ (SELF) / 100% Chance 2-3BC Fill on ATKed (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10897.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10897.png"
+                },
+                "sp": {
+                    "@list": "20 : +50% ATK | 20 : +50% DEF | 30 : +70% Spark Damage | 10 : +100% Spark Damage | 10 : +50% Crit Damage | 10 : LS+: 10% All Stats | 40 : BB/SBB+: Fill 2 BC | 60 : Add Effect To BB/SBB (8% OD Fill)"
+                }
+            },
+            {
+                "id": "1391",
+                "name": "Asani 7",
+                "role": "30%HP ATK Weakness Injury Weak Sick Poison Para Curse",
+                "element": "Water",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "6",
+                    "@dc": "36",
+                    "#text": "50% DMG+ to Ailed Enemy (ALL) / 75% Element Weakness DMG+ (ALL) / 30% HP 30% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "12",
+                    "@dc": "12",
+                    "@cost": "26",
+                    "#text": "350% Water (AOE) / Drain 3-5% HP (SELF) / 140% DMG+ to Ailed Enemy (ALL) 3Turns / Add 10% Injury 10% Weak 10% Sick to ATK (ALL) 3Turns / Add 8% Poison 8% Para 8% Curse to ATK (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "28",
+                    "#text": "560% Water (AOE) / Drain 3-5% HP (SELF) / 140% DMG+ to Ailed Enemy (ALL) 3Turns / 65% Sick 65% Poison 65% Curse / 65% Injury 65% Weak 65% Para / 50% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "1300% Water (AOE) / 250% DMG+ to Ailed Enemy (ALL) 3Turns / 250% ATK+ (ALL) 3Turns / 100% Sick 100% Poison 100% Curse / 100% Injury 100% Weak 100% Para / 300% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% Chance Drain 5-8% HP (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20826.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20826.png"
+                },
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1392",
+                "name": "Asani 8",
+                "role": "50%HP ATK Weakness Injury Weak Sick Poison Para Curse",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "100% DMG+ to Ailed Enemy (ALL) / 125% Element Weakness DMG+ (ALL) / 50% HP 50% ATK (ALL) / 6BC Fill on >10k DMG Dealt (ALL)"
+                },
+                "bb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "26",
+                    "#text": "370% Water (AOE) / Drain 3-6% HP (SELF) / 160% DMG+ to Ailed Enemy (ALL) 3Turns / Add 15% Injury 15% Weak 15% Sick to ATK (ALL) 3Turns / Add 10% Poison 10% Para 10% Curse to ATK (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "580% Water (AOE) / Drain 3-6% HP (SELF) / 160% DMG+ to Ailed Enemy (ALL) 3Turns / 75% Sick 75% Poison 75% Curse / 75% Injury 75% Weak 75% Para / 50% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "30",
+                    "#text": "1500% Water (AOE) / 300% DMG+ to Ailed Enemy (ALL) 3Turns / 300% ATK+ (ALL) 3Turns / 100% Sick 100% Poison 100% Curse / 100% Injury 100% Weak 100% Para / 300% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% Chance Drain 5-8% HP (SELF) / 8% Poison 8% Para 8% Curse 10% Injury 10% Sick 10% Weak (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20827.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20827.png"
+                },
+                "sp": {
+                    "@list": "20 : +20% All Stats | 10 : 0-100% ATK depending on HP remaining | 20 : Hit Count +1 | 30 : +50% All Weakness Damage | 30 : BB/SBB/UBB+: 30% ATK Buff on Statused Targets | 60 : Add Effect To BB/SBB (3 turn Inflict Status when Hit (15% Injury/Sick/Weaken 10% Poison/Curse/Paralyze)) | 20 : BB/SBB+: 0-0% HP Drain Buff (10 Chance) | 40 : UBB+: 1 Turn ATK Buff & 1 Turn ATK Buff on Statused Targets & 1 Turn Weakness Damage"
+                }
+            },
+            {
+                "id": "1393",
+                "name": "Izuna 7",
+                "role": "SPARK 30%HP ATK ATKDOWN DEFDOWN convertATK healATKed",
+                "element": "Light",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "9",
+                    "@dc": "36",
+                    "#text": "80% Spark DMG+ (ALL) / 30% HP 30% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "26",
+                    "#text": "350% Light (AOE) / 80% Spark DMG+ (ALL) 3Turns / Add 10% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 20% Chance -50% Enemy ATK 1Turns / 20% Chance -50% Enemy DEF 1Turns"
+                },
+                "sbb": {
+                    "@hit": "19",
+                    "@dc": "19",
+                    "@cost": "30",
+                    "#text": "560% Light (AOE) / 80% Spark DMG+ (ALL) 3Turns / Add 10% Chance -20% Enemy ATK to ATK (ALL) 3Turns / Convert 15% HP to ATK (ALL) 3Turns / 20% Chance -50% Enemy ATK 1Turns / 20% Chance -50% Enemy DEF 1Turns"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "30",
+                    "#text": "1300% Light (AOE) / 100% Chance Heal 75-75% DMG when ATKed (ALL) 3Turns / 250% Spark DMG+ (ALL) 3Turns / Convert 40% HP to ATK (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns / 100% Chance -80% Enemy DEF 2Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "20% Chance Reduce DMG (20%) (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50996.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50996.png"
+                },
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1394",
+                "name": "Izuna 8",
+                "role": "SPARK 50%HP ATK ATKDOWN DEFDOWN convertATK healATKed",
+                "element": "Light",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "100% Spark DMG+ (ALL) / 10% Chance Enemy receives 20% Spark DMG+ 1Turns (ALL) / 50% HP 50% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "19",
+                    "@dc": "19",
+                    "@cost": "26",
+                    "#text": "370% Light (AOE) / 100% Spark DMG+ (ALL) 3Turns / Add 10% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns"
+                },
+                "sbb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "30",
+                    "#text": "580% Light (AOE) / 100% Spark DMG+ (ALL) 3Turns / Add 20% Chance -20% Enemy ATK to ATK (ALL) 3Turns / Convert 20% HP to ATK (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns"
+                },
+                "ubb": {
+                    "@hit": "26",
+                    "@dc": "26",
+                    "@cost": "30",
+                    "#text": "1500% Light (AOE) / 100% Chance Heal 75-75% DMG when ATKed (ALL) 3Turns / 300% Spark DMG+ (ALL) 3Turns / Convert 50% HP to ATK (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns / 100% Chance -80% Enemy DEF 2Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "20% Chance Reduce DMG (20%) (SELF) / 40% Chance Angel Idol 2x (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50997.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50997.png"
+                },
+                "sp": {
+                    "@list": "20 : +20% All Stats | 10 : Debuff Immunity | 20 : Negate Status Ailments | 10 : Def Ignore Immunity | 20 : 100% Base/Buffed Element Weakness Resist | 20 : 100% Base/Buffed Crit Resist | 20 : LS+: 20% Spark Damage | 30 : Add Effect To BB/SBB (Cure Status/Debuffs) | 50 : BB/SBB/UBB+: +30% Spark Dmg"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
