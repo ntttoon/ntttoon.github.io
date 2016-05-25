@@ -7310,8 +7310,8 @@
                 "name": "Izuna 8",
                 "role": "SPARK 50%HP ATK ATKDOWN DEFDOWN convertATK healATKed",
                 "element": "Light",
-                "rarity": "7",
-                "cost": "43",
+                "rarity": "8",
+                "cost": "47",
                 "ls": {
                     "@hit": "13",
                     "@dc": "52",
