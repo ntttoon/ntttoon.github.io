@@ -6207,7 +6207,7 @@
             },
             {
                 "id": "1345",
-                "name": "Blossom Princess Rosetta",
+                "name": "Floral Princess Rosetta",
                 "role": "BBspark Spark 40%HP healSpark",
                 "element": "Earth",
                 "rarity": "7",
@@ -6598,7 +6598,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50917.png"
                 },
                 "sp": {
-                    "@list": "20 : +20% All Stats | 30 : +50% All Weakness Damage | 10 : +10% BB Gauge Fill Rate | 30 : 100% Base/Buffed Element Weakness Resist | 40 : +100% BB/SBB/UBB Mod | 40 : 1 BC on Spark Buff | 40 : Add Effect To BB/SBB (3 turn 6 BC/turn) | 60 : Adds an extra turn to BC/Stats/Mod UBB buffs (4 Turns)"
+                    "@list": "20 : 20% boost to all parameters | 30 : Boost elemental damage (50% boost) | 10 : Slightly boosts BC efficacy (10% boost) | 30 : Negates elemental damage | 40 : Enhances BB Atk boost effect added to BB/SBB/UBB (+100% boost) | 40 : Adds BB gauge boost when producing Sparks effect to BB/SBB (+1 BC/Spark boost) | 40 : Adds BB gauge boost each turn effect to BB/SBB (6 BC fill for 3 turns) | 60 : Allows UBB boost effects to last for 4 turns (Does not include the damage reduction effect)"
                 }
             },
             {
@@ -6642,7 +6642,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60027.png"
                 },
                 "sp": {
-                    "@list": "20 : +50% ATK | 30 : +100% Spark Damage | 20 : 10 BC On Spark | 40 : +30% BB/SBB Mod | 10 : +50% BB/SBB/UBB ATK while over 50% HP | 30 : 20% Chance Normal Attacks AoE (-50% Damage) | 30 : 4 BC/turn | 40 : 10% DMG to HP when hit (25% Chance) | 50 : Add Effect To BB/SBB (3 Turn +150% ATK)"
+                    "@list": "20 : 50% boost to Atk | 30 : 100% boost to Spark damage | 20 : Spark damage enormously boosts BB gauge (10 BC per Spark fill) | 40 : Slightly boosts BB/SBB Atk (30% boost) | 10 : Boosts BB Atk when HP is over 50% (50% boost) | 30 : Normal attack may hit all foes (20% chance, -50% damage) | 30 : Considerably boosts BB gauge each turn (4 BC fill) | 40 : Damage taken may slightly restore HP (25% chance to heal 10% of HP from damage taken) | 50 : Adds huge boost to Atk for 3 turns effect to BB/SBB (150% boost)"
                 }
             },
             {
@@ -9063,6 +9063,94 @@
                 },
                 "sp": {
                     "@list": ""
+                }
+            },
+            {
+                "id": "8198",
+                "name": "Blooming Sakura Miku",
+                "role": "CRIT 40%HP ATK Null ATKDOWN superspark hit",
+                "element": "Light",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "40",
+                    "#text": "125% CRIT DMG+ (ALL) / 40% HP 40% ATK 20% CRIT+ (ALL) / Null Ails (ALL)"
+                },
+                "bb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "26",
+                    "#text": "350% Light (AOE) / Add 20% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 30% Chance -40% Enemy ATK 1Turns"
+                },
+                "sbb": {
+                    "@hit": "28",
+                    "@dc": "28",
+                    "@cost": "27",
+                    "#text": "560% Light (AOE) / 75% CRIT DMG+ (ALL) 3Turns / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / Normal HitCount +100% (100% DMG) (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns"
+                },
+                "ubb": {
+                    "@hit": "1",
+                    "@dc": "37",
+                    "@cost": "30",
+                    "#text": "1300% Light (AOE) / Light (TGT) / 300% CRIT DMG+ (ALL) 3Turns / 100% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Add 60% CRIT+ (ALL) 3Turns Effect to BB/SBB (SELF) / 50% Chance 3-5BC Fill on ATKed (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850197.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850197.png"
+                },
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8199",
+                "name": "Mankai Sakura Miku",
+                "role": "CRIT 50%HP ATK Null ATKDOWN superspark hit",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "16",
+                    "@dc": "48",
+                    "#text": "15% Dark Resist (ALL) / 150% CRIT DMG+ (ALL) / 50% HP 50% ATK 30% CRIT+ (ALL) / Null Ails (ALL)"
+                },
+                "bb": {
+                    "@hit": "34",
+                    "@dc": "34",
+                    "@cost": "26",
+                    "#text": "370% Light (AOE) / Add 20% Chance -30% Enemy ATK to ATK (ALL) 3Turns / 30% Chance -40% Enemy ATK 1Turns"
+                },
+                "sbb": {
+                    "@hit": "43",
+                    "@dc": "43",
+                    "@cost": "27",
+                    "#text": "580% Light (AOE) / 100% CRIT DMG+ (ALL) 3Turns / 30% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / Normal HitCount +200% (100% DMG) (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns"
+                },
+                "ubb": {
+                    "@hit": "1",
+                    "@dc": "45",
+                    "@cost": "30",
+                    "#text": "1500% Light (AOE) / Light (TGT) / 300% CRIT DMG+ (ALL) 3Turns / 100% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 100% Chance -80% Enemy ATK 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Add 60% CRIT+ (ALL) 3Turns Effect to BB/SBB (SELF) / 65% Chance 3-5BC Fill on ATKed (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850198.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850198.png"
+                },
+                "sp": {
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 20 : Negates elemental damage | 30 : Normal attack may hit all foes (20% chance, 50% damage penalty) | 40 : Enhances critical damage boost effect added to LS (100% boost) | 20 : Adds probable huge 1 turn Def reduction effect to BB/SBB (30% chance to reduce 50% Def) | 50 : Adds HP restoration when damage dealt effect to BB/SBB (Heals 2000~3000 + 11% of healer Rec) | 60 : Allows probable 1 turn Atk reduction effects from SBB to last for 2 turns | 60 : Adds hugely raises normal hit amount effect to UBB (+3 to each hit count)"
                 }
             }
         ]
