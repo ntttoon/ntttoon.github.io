@@ -8010,7 +8010,7 @@
                 }
             },
             {
-                "id": "8177",
+                "id": "8125",
                 "name": "Slayer Grandt",
                 "role": "CRIT 30%HP ATK Ignore ATKDOWN ConvertATK",
                 "element": "Fire",
@@ -8054,7 +8054,7 @@
                 }
             },
             {
-                "id": "8180",
+                "id": "8128",
                 "name": "Chrono Mage Elaina",
                 "role": "Miti Null BBregen HoT",
                 "element": "Earth",
@@ -8098,7 +8098,7 @@
                 }
             },
             {
-                "id": "8138.8",
+                "id": "8138",
                 "name": "Ruinous Andaria",
                 "role": "BBreduce BBregen BBrate BBATKed CRIT Cure Null Poison Para",
                 "element": "Earth",
@@ -8142,7 +8142,7 @@
                 }
             },
             {
-                "id": "8139.8",
+                "id": "8139",
                 "name": "Imperator Zedus",
                 "role": "Spark CRIT Weakness ATKDOWN DEFDOWN",
                 "element": "Thunder",
@@ -8230,7 +8230,7 @@
                 }
             },
             {
-                "id": "8191",
+                "id": "8132",
                 "name": "Deimos Thunderborn",
                 "role": "BBATKed 40%HP Null Taunt ATK DEF REC BBfill Miti",
                 "element": "Thunder",
@@ -8274,7 +8274,7 @@
                 }
             },
             {
-                "id": "8194",
+                "id": "8135",
                 "name": "Obsidian Seraph Zenia",
                 "role": "Spark BBspark BBfill BBATK% ATK hit",
                 "element": "Dark",
@@ -8318,7 +8318,7 @@
                 }
             },
             {
-                "id": "8195",
+                "id": "8136",
                 "name": "Herculean Ultor",
                 "role": "Weakness ATK DEF REC CRIT Taunt DoT Miti75% Idol",
                 "element": "Fire",
@@ -8362,7 +8362,7 @@
                 }
             },
             {
-                "id": "8196",
+                "id": "8137",
                 "name": "Neptunian Tridon",
                 "role": "Miti 40%HP REC CRIT Shield HoT DEF BC HC BBrate ATKDOWN DEFDOWN",
                 "element": "Water",
@@ -8406,7 +8406,7 @@
                 }
             },
             {
-                "id": "8197",
+                "id": "8140",
                 "name": "Archangel Aurelia",
                 "role": "BC HC DEF REC Null Cure HoT BBregen Heal HoT Revive ConvertDEF",
                 "element": "Light",
@@ -8450,7 +8450,7 @@
                 }
             },
             {
-                "id": "8198",
+                "id": "8141",
                 "name": "Deathless Hadaron",
                 "role": "ATK DEF Poison Curse Weak Poison CRIT Stealth ATKDOWN DEFDOWN Idol",
                 "element": "Dark",
@@ -8582,7 +8582,7 @@
                 }
             },
             {
-                "id": "8160.8",
+                "id": "8160",
                 "name": "Monster Hunter Avani",
                 "role": "Spark BBspark hit Injury Weak Sick Poison Paralysis Curse",
                 "element": "Earth",
@@ -8626,7 +8626,7 @@
                 }
             },
             {
-                "id": "8163.8",
+                "id": "8163",
                 "name": "Storm Champion Mikael",
                 "role": "40%HP BBATKed Miti Miti50% ConvertDEF ATK Null",
                 "element": "Thunder",
@@ -8758,7 +8758,7 @@
                 }
             },
             {
-                "id": "8162",
+                "id": "8174",
                 "name": "Eternal Guardian Zeruiah",
                 "role": "BBrate EXP BC HC Item Karma Zel Heal Cure USBB Fire,water,earth,thunder,light,dark Miti75% MAXHP ConvertDEF",
                 "element": "Earth",
