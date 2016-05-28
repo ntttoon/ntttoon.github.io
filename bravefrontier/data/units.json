@@ -9150,7 +9150,7 @@
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850198.png"
                 },
                 "sp": {
-                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 20 : Negates elemental damage | 30 : Normal attack may hit all foes (20% chance, 50% damage penalty) | 40 : Enhances critical damage boost effect added to LS (100% boost) | 20 : Adds probable huge 1 turn Def reduction effect to BB/SBB (30% chance to reduce 50% Def) | 50 : Adds HP restoration when damage dealt effect to BB/SBB (Heals 2000~3000 + 11% of healer Rec) | 60 : Allows probable 1 turn Atk reduction effects from SBB to last for 2 turns | 60 : Adds hugely raises normal hit amount effect to UBB (+3 to each hit count)"
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 30 : Negates elemental damage | 30 : Normal attack may hit all foes (20% chance, 50% damage penalty) | 40 : Enhances critical damage boost effect added to LS (100% boost) | 20 : Adds probable huge 1 turn Def reduction effect to BB/SBB (30% chance to reduce 50% Def) | 50 : Adds HP restoration when damage dealt effect to BB/SBB (Heals 2000~3000 + 11% of healer Rec) | 60 : Allows probable 1 turn Atk reduction effects from SBB to last for 2 turns | 60 : Adds hugely raises normal hit amount effect to UBB (+3 to each hit count)"
                 }
             }
         ]
