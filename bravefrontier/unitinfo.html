@@ -35,6 +35,7 @@
 			var id = arr.brave.unit[i].id;
 			if(id==s)
 			{
+				var thumb = arr.brave.unit[i].thumb['@path'];
 				var name = arr.brave.unit[i].name;
 				var element = arr.brave.unit[i].element;
 				var cost = arr.brave.unit[i].cost;
@@ -63,7 +64,7 @@
 				if(!sp ==""){
 					document.getElementById('bigsp_btn').innerHTML = '<a class="w3-btn w3-indigo" style="width:100%"' + 'href="unitinfo_bigsp.html?id=' + id + '" target="blank">View full SP (for PC only)</a>';
 				}
-				out+='<li><h3>' + name + '</h3></li>';
+				out+='<li><img src="' + thumb + '" class="w3-left w3-margin-right" style="width:60px;"><h3>' + name + '</h3> <div class="w3-clear"></div></li>';
 				out+='<li>' + "ID: " + id + " - Element: " + element + "<br>Rarity: " + rarity + "*" + " - Cost: " + cost + '</li>';
 				out+='<li><strong>LS: </strong>' + 'hit: ' + normalhit + ' - dc: ' + normaldc + '<br>' + ls + '</li>';
 				out+='<li><strong>BB: </strong>' + 'hit: ' + bbhit + ' - dc: ' + bbdc + ' - cost: ' + bbcost + '<br>' + bb + '</li>';
