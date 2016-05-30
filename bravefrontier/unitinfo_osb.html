@@ -19,7 +19,7 @@
 </form>
 <div class="w3-container">
     <h5>Copy this Link to share your build</h5>
-    <input class="w3-input w3-border" id="genLink" type="text" value="">
+    <input class="w3-input w3-border" id="genLink" type="text" value="" onFocus="this.select()">
     <br>
 </div>
 <div id="reset_btn"></div>
@@ -50,7 +50,7 @@
 				var sp = arr.brave.unit[i].sp['@list'];
 				var sp_array = sp.split("|");
 				//
-				out+='<li><img src="' + thumb + '" class="w3-left w3-margin-right" style="width:60px;"><h3>' + name + '</h3></a> <div class="w3-clear"></div></li>';
+				out+='<li><a><img src="' + thumb + '" class="w3-left w3-margin-right" style="width:60px;"><h3>' + name + '</h3></a> <div class="w3-clear"></div></li>';
 				out+='<li id="sp">100/100 SP</li>';
 				for(j=0;j<sp_array.length;j++)
 				{
