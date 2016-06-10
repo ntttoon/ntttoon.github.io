@@ -7522,7 +7522,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51007.png"
                 },
                 "sp": {
-                    "@list": "10 : +20% HP | 10 : +30% HP | 10 : +50% HP | 20 : 100% Base/Buffed Element Weakness Resist | 10 : BBoT occur at the Start of Turn | 10 : LS+: +10% All Stats | 30 : BB+: Increase Max HP 5% | 50 : Add Effect To BB/SBB (3 Turn 20% Chance Sparks Crit Buff (50% Damage))"
+                    "@list": "10 : (*) +20% HP | 10 : (**) +30% HP (Prerequisite: *) | 10 : +50% HP (Prerequisite: **) | 20 : 100% Base/Buffed Element Weakness Resist | 10 : BBoT occur at the Start of Turn | 10 : LS+: +10% All Stats | 30 : BB+: Increase Max HP 5% | 50 : Add Effect To BB/SBB (3 Turn 20% Chance Sparks Crit Buff (50% Damage))"
                 }
             },
             {
