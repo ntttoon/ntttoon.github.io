@@ -7350,6 +7350,182 @@
                 }
             },
             {
+                "id": "1395",
+                "name": "Dece 7",
+                "role": "Spark 30%HP superspark BBfill ATK DEF REC",
+                "element": "Earth",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "1",
+                    "@dc": "40",
+                    "#text": "80% Spark DMG+ (ALL) / 30% HP 30% ATK (ALL) / 3% Chance SPARKcrit (50% DMG+) (ALL)"
+                },
+                "bb": {
+                    "@hit": "1",
+                    "@dc": "20",
+                    "@cost": "26",
+                    "#text": "350% Earth (AOE) / Ignore DEF (ALL) 2Turns / 80% Spark DMG+ (ALL) 3Turns / 25% Chance Enemy receives 25% Spark DMG+ 1Turns"
+                },
+                "sbb": {
+                    "@hit": "1",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "560% Earth (AOE) / 30% BC Fill+ (ALL) 3Turns / 80% Spark DMG+ (ALL) 3Turns / 120% ATK+ 120% DEF+ 120% REC+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "1",
+                    "@dc": "35",
+                    "@cost": "30",
+                    "#text": "1300% Earth (AOE) / 250% Spark DMG+ (ALL) 3Turns / 50% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 100% Chance Enemy receives 100% Spark DMG+ 2Turns / 200% ATK+ 200% DEF+ 200% REC+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "30% Spark DMG+ (SELF) / 100% Chance Heal on Spark (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30796.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30796.png"
+                },
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "136",
+                "name": "Dece 8",
+                "role": "Spark 30%HP superspark BBfill ATK DEF REC",
+                "element": "Earth",
+                "rarity": "7",
+                "cost": "47",
+                "ls": {
+                    "@hit": "1",
+                    "@dc": "42",
+                    "#text": "100% Spark DMG+ (ALL) / 50% HP 50% ATK (ALL) / Reduce DMG (15%) from (Earth,thunder) Enemy (ALL) / 5% Chance SPARKcrit (50% DMG+) (ALL)"
+                },
+                "bb": {
+                    "@hit": "1",
+                    "@dc": "20",
+                    "@cost": "26",
+                    "#text": "370% Earth (AOE) / Ignore DEF (ALL) 2Turns / 100% Spark DMG+ (ALL) 3Turns / 25% Chance Enemy receives 25% Spark DMG+ 1Turns"
+                },
+                "sbb": {
+                    "@hit": "1",
+                    "@dc": "25",
+                    "@cost": "30",
+                    "#text": "580% Earth (AOE) / 50% BC Fill+ (ALL) 3Turns / 100% Spark DMG+ (ALL) 3Turns / 140% ATK+ 140% DEF+ 140% REC+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "1",
+                    "@dc": "40",
+                    "@cost": "30",
+                    "#text": "1500% Earth (AOE) / 300% Spark DMG+ (ALL) 3Turns / 100% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 100% Chance Enemy receives 150% Spark DMG+ 2Turns / 250% ATK+ 250% DEF+ 250% REC+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% Spark DMG+ (SELF) / 100% Chance Heal on Spark (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30797.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30797.png"
+                },
+                "sp": {
+                    "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 10 : +50% Spark Damage | 10 : +70% Spark Damage | 10 : 10 BC On Spark | 30 : Add Effect To BB/SBB (3 Turn +60% Crit) | 30 : Add Effect To BB/SBB (3 turn +50% Crit Dmg) | 20 : SBB+: +10% ATK/DEF/REC | 50 : BB/SBB/UBB+: +30% Spark Dmg"
+                }
+            },
+            {
+                "id": "1397",
+                "name": "Sekto 7",
+                "role": "BBATKed healATKed 35%HP BBfill MAXHP miti CRIT",
+                "element": "Light",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "6",
+                    "@dc": "36",
+                    "#text": "100% Chance 2-4BC Fill when ATKed (ALL) / 25% Chance Heal 20-20% DMG when ATKed (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL)"
+                },
+                "bb": {
+                    "@hit": "9",
+                    "@dc": "9",
+                    "@cost": "27",
+                    "#text": "350% Light (AOE) / 6BC Fill (ALL) 1Turn / 10% Max HP+ till Death/Battle End / Reduce DMG (10%) from (Fire,water,earth,thunder) Enemy1Turns"
+                },
+                "sbb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "30",
+                    "#text": "Light (AOE) 200%-720% BB ATK% Based on HP LEFT / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / Reduce DMG (10%) from (Light,dark) Enemy2Turns"
+                },
+                "ubb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "30",
+                    "#text": "1300% Light (AOE) / 60% CRIT+ (ALL) 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 30% Max HP+ till Death/Battle End / Reduce DMG (50%) from (All) Enemy3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "0-50% ATK+ Based on HP LEFT (SELF) / 20% Chance Heal 20-25% DMG when ATKed (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_51006.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51006.png"
+                },
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1398",
+                "name": "Sekto 8",
+                "role": "BBATKed healATKed 40%HP BBfill MAXHP miti CRIT",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "8",
+                    "@dc": "48",
+                    "#text": "100% Chance 4-7BC Fill when ATKed (ALL) / 25% Chance Heal 25-25% DMG when ATKed (ALL) / 40% HP 40% ATK 40% DEF 40% REC (ALL) / Reduce DMG (15%) from (Light,dark) Enemy (ALL)"
+                },
+                "bb": {
+                    "@hit": "11",
+                    "@dc": "11",
+                    "@cost": "26",
+                    "#text": "370% Light (AOE) / 8BC Fill (ALL) 1Turn / 10% Max HP+ till Death/Battle End / Reduce DMG (10%) from (Fire,water,earth,thunder) Enemy1Turns"
+                },
+                "sbb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "30",
+                    "#text": "Light (AOE) 200%-870% BB ATK% Based on HP LEFT / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / Reduce DMG (10%) from (Light,dark) Enemy2Turns"
+                },
+                "ubb": {
+                    "@hit": "24",
+                    "@dc": "24",
+                    "@cost": "30",
+                    "#text": "1500% Light (AOE) / 60% CRIT+ (ALL) 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 35% Max HP+ till Death/Battle End / Reduce DMG (50%) from (All) Enemy3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "0-80% ATK+ Based on HP LEFT (SELF) / 25% Chance Heal 20-25% DMG when ATKed (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_51007.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51007.png"
+                },
+                "sp": {
+                    "@list": "10 : +20% HP | 10 : +30% HP | 10 : +50% HP | 20 : 100% Base/Buffed Element Weakness Resist | 10 : BBoT occur at the Start of Turn | 10 : LS+: +10% All Stats | 30 : BB+: Increase Max HP 5% | 50 : Add Effect To BB/SBB (3 Turn 20% Chance Sparks Crit Buff (50% Damage))"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
@@ -9151,6 +9327,138 @@
                 },
                 "sp": {
                     "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 30 : Negates elemental damage | 30 : Normal attack may hit all foes (20% chance, 50% damage penalty) | 40 : Enhances critical damage boost effect added to LS (100% boost) | 20 : Adds probable huge 1 turn Def reduction effect to BB/SBB (30% chance to reduce 50% Def) | 50 : Adds HP restoration when damage dealt effect to BB/SBB (Heals 2000~3000 + 11% of healer Rec) | 60 : Allows probable 1 turn Atk reduction effects from SBB to last for 2 turns | 60 : Adds hugely raises normal hit amount effect to UBB (+3 to each hit count)"
+                }
+            },
+            {
+                "id": "8200",
+                "name": "Overlord Azurai",
+                "role": "miti CRIT BBATK% 35%HP MAXHP convertDEF ATK DEF REC healATKed",
+                "element": "Fire",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "6",
+                    "@dc": "36",
+                    "#text": "Reduce DMG (5%) (ALL) / 150% CRIT DMG+ (ALL) / 160% BB ATK%+ (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL)"
+                },
+                "bb": {
+                    "@hit": "8",
+                    "@dc": "8",
+                    "@cost": "30",
+                    "#text": "380% Fire (AOE) / 140% ATK+ 140% DEF+ 140% REC+ (SELF) 3Turns / Convert 15% HP to ATK (ALL) 3Turns / Convert 15% HP to DEF (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "10",
+                    "@dc": "10",
+                    "@cost": "34",
+                    "#text": "Fire (AOE) 300%-700% BB ATK% Based on HP LEFT / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / 130% ATK+ 130% DEF+ 130% REC+ (ALL) 3Turns / 200% BB ATK%+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "30",
+                    "#text": "Fire (AOE) 1000%-3000% BB ATK% Based on HP LEFT / 100% Chance Heal 100-100% DMG when ATKed (ALL) 3Turns / 30% Max HP+ till Death/Battle End / 800% BB ATK%+ (ALL) 1Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Angel Idol when HP < 20% (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810337.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810337.png"
+                },
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8201",
+                "name": "Doombringer Azurai",
+                "role": "miti CRIT BBATK% 40%HP MAXHP convertATK convertDEF ATK DEF REC healATKed",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "8",
+                    "@dc": "48",
+                    "#text": "Reduce DMG (10%) (ALL) / 175% CRIT DMG+ (ALL) / 200% BB ATK%+ (ALL) / 40% HP 40% ATK 40% DEF 40% REC (ALL)"
+                },
+                "bb": {
+                    "@hit": "10",
+                    "@dc": "10",
+                    "@cost": "32",
+                    "#text": "440% Fire (AOE) / 20% Max HP+ till Death/Battle End / 160% ATK+ 160% DEF+ 160% REC+ (SELF) 3Turns / Convert 20% HP to ATK (ALL) 3Turns / Convert 20% HP to DEF (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "12",
+                    "@dc": "12",
+                    "@cost": "36",
+                    "#text": "Fire (AOE) 400%-800% BB ATK% Based on HP LEFT / 60% CRIT+ (ALL) 3Turns / 75% CRIT DMG+ (ALL) 3Turns / 140% ATK+ 140% DEF+ 140% REC+ (ALL) 3Turns / 300% BB ATK%+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "Fire (AOE) 2000%-4000% BB ATK% Based on HP LEFT / 100% Chance Heal 100-100% DMG when ATKed (ALL) 3Turns / 35% Max HP+ till Death/Battle End / 1000% BB ATK%+ (ALL) 1Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Angel Idol when HP < 20% (SELF) / 0-100% ATK+ Based on HP LEFT (SELF) / 0-100% DEF+ Based on HP LEFT (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810338.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810338.png"
+                },
+                "sp": {
+                    "@list": "20 : 20% boost to all parameters | 20 : Boosts critical hit damage (50% boost) | 20 : Critical hit damage boosts BB gauge (2~3 BC fill) | 30 : (*) Normal attack may hit all foes (20% chance, 50% damage penalty) | 10 : Enhances probability of normal attacks hitting all foes effect (+10% chance) (Prerequisite: *) | 10 : Negates Def ignoring damage | 10 : Enhances Leader Skill parameters boost effect (+10% boost) | 40 : Enhances BB Atk boost effect added to SBB/UBB (+100% boost) | 60 : Probable resistance against 1 KO attack (40% chance)"
+                }
+            },
+            {
+                "id": "8204",
+                "name": "Terror Fist Nyala",
+                "role": "BBATK% 40%HP convertATK Injury Para DoT atkdown",
+                "element": "Earth",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "8",
+                    "@dc": "48",
+                    "#text": "150% BB ATK%+ (ALL) / 40% HP 40% ATK (ALL) / 100% BB ATK%+ on Full HP (ALL) / 150% ATK+ on >20k DMG Dealt (ALL)"
+                },
+                "bb": {
+                    "@hit": "10",
+                    "@dc": "40",
+                    "@cost": "22",
+                    "#text": "640% Earth (TGT) / 250% BB ATK%+ (ALL) 3Turns / Convert 60% DEF to ATK (ALL) 3Turns / 90% Injury 90% Para"
+                },
+                "sbb": {
+                    "@hit": "12",
+                    "@dc": "48",
+                    "@cost": "18",
+                    "#text": "Earth (TGT) 500%-1500% BB ATK% Based on HP LEFT / 150% ATK+ 150% DEF+ 150% REC+ (SELF) 3Turns / 500% DMG Each Turn 1Turns / 70% Chance -50% Enemy ATK 1Turns / 90% Injury 90% Para"
+                },
+                "ubb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "20",
+                    "#text": "Earth (AOE) 1000%-2000% BB ATK% Based on HP LEFT / 2000% DMG Each Turn 1Turns / 500% BB ATK%+ (ALL) 3Turns / Convert 250% DEF to ATK (ALL) 3Turns / 100% Chance -80% Enemy ATK 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% DEF+ on Full BB (SELF) / 25% ATK+ (Max 100% / 4Turns / SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830327.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_830327.png"
+                },
+                "sp": {
+                    "@list": ""
                 }
             }
         ]
