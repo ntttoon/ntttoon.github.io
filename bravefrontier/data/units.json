@@ -41,6 +41,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10016.png"
                 },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/a/a1/Unit_ills_anime_10016.gif/revision/latest?cb=20160203055413"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -84,6 +87,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20016.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/a/a0/Unit_ills_anime_20016.gif/revision/latest?cb=20160204064328"
                 },
                 "sp": {
                     "@list": ""
@@ -129,6 +135,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30016.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/b/ba/Unit_ills_anime_30016.gif/revision/latest?cb=20160207034432"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -172,6 +181,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40016.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/f/fe/Unit_ills_anime_40016.gif/revision/latest?cb=20160207042119"
                 },
                 "sp": {
                     "@list": ""
@@ -217,6 +229,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50016.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/8/8d/Unit_ills_anime_50016.gif/revision/latest?cb=20160204064927"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -260,6 +275,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60016.png"
+                },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/a/af/Unit_ills_anime_60016.gif/revision/latest?cb=20141221223557"
                 },
                 "sp": {
                     "@list": ""
@@ -305,6 +323,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10596.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/e/ee/Unit_ills_anime_10596.gif/revision/latest?cb=20160204062903"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -348,6 +369,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20566.png"
+                },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/0/0c/Unit_ills_anime_20566.gif/revision/latest?cb=20150609031932"
                 },
                 "sp": {
                     "@list": ""
@@ -393,6 +417,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30556.png"
                 },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/b/b3/Unit_ills_anime_30556.gif/revision/latest?cb=20160317055916"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -436,6 +463,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40536.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/9/9a/Unit_ills_anime_40536.gif/revision/latest?cb=20150608050830"
                 },
                 "sp": {
                     "@list": ""
@@ -481,6 +511,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50656.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/a/a8/Unit_ills_anime_50656.gif/revision/latest?cb=20150609033439"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -524,6 +557,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60666_2.png"
+                },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/5/5a/Unit_ills_anime_60666.gif/revision/latest?cb=20150609033846"
                 },
                 "sp": {
                     "@list": ""
@@ -569,6 +605,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50166_2.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/a/a9/Unit_ills_anime_50166.gif/revision/latest?cb=20150531080425"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -612,6 +651,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60176.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/7/77/Unit_ills_anime_60176.gif/revision/latest?cb=20150604020450"
                 },
                 "sp": {
                     "@list": ""
@@ -657,6 +699,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10606.png"
                 },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/b/b1/Unit_ills_anime_10606.gif/revision/latest?cb=20160204063002"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -700,6 +745,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20576.png"
+                },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/1/11/Unit_ills_anime_20576.gif/revision/latest?cb=20160205070416"
                 },
                 "sp": {
                     "@list": ""
@@ -745,6 +793,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30566_2.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/8/89/Unit_ills_anime_30566.gif/revision/latest?cb=20160317055949"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -788,6 +839,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40546.png"
+                },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/2/2c/Unit_ills_anime_40546.gif/revision/latest?cb=20150513201910"
                 },
                 "sp": {
                     "@list": ""
@@ -833,6 +887,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50665.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/a/a5/Unit_ills_anime_50666.gif/revision/latest?cb=20151225071228"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -876,6 +933,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60676.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/a/a7/Unit_ills_anime_60676.gif/revision/latest?cb=20150609040123"
                 },
                 "sp": {
                     "@list": ""
@@ -921,6 +981,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10126.png"
                 },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/d/d9/Unit_ills_anime_10126.gif/revision/latest?cb=20150604011550"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -964,6 +1027,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40276.png"
+                },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/5/55/Unit_ills_anime_40276.gif/revision/latest?cb=20160207045156"
                 },
                 "sp": {
                     "@list": ""
@@ -1009,6 +1075,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20156.png"
                 },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/c/c9/Unit_ills_anime_20156.gif/revision/latest?cb=20160205062743"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -1052,6 +1121,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10636.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/3/3a/Unit_ills_anime_10636.gif/revision/latest?cb=20160204063241"
                 },
                 "sp": {
                     "@list": ""
@@ -1097,6 +1169,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20606.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/1/11/Unit_ills_anime_20606.gif/revision/latest?cb=20160205070603"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -1140,6 +1215,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30596.png"
+                },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/f/f1/Unit_ills_anime_30596.gif/revision/latest?cb=20151225064210"
                 },
                 "sp": {
                     "@list": ""
@@ -1185,6 +1263,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40576.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/1/1f/Unit_ills_anime_40576.gif/revision/latest?cb=20150609045104"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -1228,6 +1309,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50696.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/a/a9/Unit_ills_anime_50696.gif/revision/latest?cb=20151225071505"
                 },
                 "sp": {
                     "@list": ""
@@ -1273,6 +1357,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60706.png"
                 },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/6/68/Unit_ills_anime_60706.gif/revision/latest?cb=20150617191703"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -1316,6 +1403,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30166.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/e/e2/Unit_ills_anime_30166.gif/revision/latest?cb=20150528074532"
                 },
                 "sp": {
                     "@list": ""
@@ -1361,6 +1451,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40166.png"
                 },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/6/6f/Unit_ills_anime_40166.gif/revision/latest?cb=20160207043942"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -1404,6 +1497,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60116_2.png"
+                },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/5/5d/Unit_ills_anime_60116.gif/revision/latest?cb=20160204065248"
                 },
                 "sp": {
                     "@list": ""
@@ -1449,6 +1545,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10646.png"
                 },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/4/4b/Unit_ills_anime_10646.gif/revision/latest?cb=20160204063345"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -1492,6 +1591,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20616.png"
+                },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/6/65/Unit_ills_anime_20616.gif/revision/latest?cb=20160205070638"
                 },
                 "sp": {
                     "@list": ""
@@ -1537,6 +1639,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30606.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/4/43/Unit_ills_anime_30606.gif/revision/latest?cb=20151225064332"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -1580,6 +1685,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40586.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/9/92/Unit_ills_anime_40586.gif/revision/latest?cb=20150912075808"
                 },
                 "sp": {
                     "@list": ""
@@ -1625,6 +1733,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50736.png"
                 },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/1/1a/Unit_ills_anime_50736.gif/revision/latest?cb=20150912081230"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -1668,6 +1779,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60736.png"
+                },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/9/94/Unit_ills_anime_60736.gif/revision/latest?cb=20150730084041"
                 },
                 "sp": {
                     "@list": ""
@@ -1713,6 +1827,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20276.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/0/0f/Unit_ills_anime_20276.gif/revision/latest?cb=20160205064412"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -1756,6 +1873,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30116.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/a/a3/Unit_ills_anime_30116.gif/revision/latest?cb=20160207045739"
                 },
                 "sp": {
                     "@list": ""
@@ -1801,6 +1921,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50116.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/6/64/Unit_ills_anime_50116.gif/revision/latest?cb=20151225070602"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -1844,6 +1967,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10666.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/4/42/Unit_ills_anime_10666.gif/revision/latest?cb=20160204063420"
                 },
                 "sp": {
                     "@list": ""
@@ -1889,6 +2015,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20626.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/7/7b/Unit_ills_anime_20626.gif/revision/latest?cb=20160205070717"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -1932,6 +2061,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30616.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/c/cb/Unit_ills_anime_30616.gif/revision/latest?cb=20151225064403"
                 },
                 "sp": {
                     "@list": ""
@@ -1977,6 +2109,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40596.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/2/28/Unit_ills_anime_40596.gif/revision/latest?cb=20151225065838"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -2020,6 +2155,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50746.png"
+                },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/4/45/Unit_ills_anime_50746.gif/revision/latest?cb=20151225071617"
                 },
                 "sp": {
                     "@list": ""
@@ -2065,6 +2203,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60756.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/7/7f/Unit_ills_anime_60756.gif/revision/latest?cb=20151225073647"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -2108,6 +2249,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10256_2.png"
+                },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/2/2b/Unit_ills_anime_10256.gif/revision/latest?cb=20160203063357"
                 },
                 "sp": {
                     "@list": ""
@@ -2153,6 +2297,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40446.png"
                 },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/4/4a/Unit_ills_anime_40446.gif/revision/latest?cb=20151225065248"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -2196,6 +2343,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50276.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/2/2f/Unit_ills_anime_50276.gif/revision/latest?cb=20150616024402"
                 },
                 "sp": {
                     "@list": ""
@@ -2241,6 +2391,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10676.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/f/fb/Unit_ills_anime_10676.gif/revision/latest?cb=20160204063454"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -2284,6 +2437,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20636.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/f/fe/Unit_ills_anime_20636.gif/revision/latest?cb=20160205070814"
                 },
                 "sp": {
                     "@list": ""
@@ -2329,6 +2485,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30626.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/9/9d/Unit_ills_anime_30626.gif/revision/latest?cb=20150827004659"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -2372,6 +2531,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40606.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/3/3d/Unit_ills_anime_40606.gif/revision/latest?cb=20151225065910"
                 },
                 "sp": {
                     "@list": ""
@@ -2417,6 +2579,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50756.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/8/86/Unit_ills_anime_50756.gif/revision/latest?cb=20151225071646"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -2460,6 +2625,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60766.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/b/bf/Unit_ills_anime_60766.gif/revision/latest?cb=20151225073634"
                 },
                 "sp": {
                     "@list": ""
@@ -2505,6 +2673,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10336.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/1/14/Unit_ills_anime_10336.gif/revision/latest?cb=20160204060130"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -2548,6 +2719,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20326.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/e/e0/Unit_ills_anime_20326.gif/revision/latest?cb=20160205065630"
                 },
                 "sp": {
                     "@list": ""
@@ -2593,6 +2767,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50406.png"
                 },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/4/4a/Unit_ills_anime_50406.gif/revision/latest?cb=20151225070728"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -2636,6 +2813,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60316.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/4/4c/Unit_ills_anime_60316.gif/revision/latest?cb=20151225073416"
                 },
                 "sp": {
                     "@list": ""
@@ -2681,6 +2861,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10686.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/e/e3/Unit_ills_anime_10686.gif/revision/latest?cb=20160204063528"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -2724,6 +2907,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20646.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/b/b4/Unit_ills_anime_20646.gif/revision/latest?cb=20160205070856"
                 },
                 "sp": {
                     "@list": ""
@@ -2769,6 +2955,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30636.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/e/e9/Unit_ills_anime_30636.gif/revision/latest?cb=20151225064240"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -2812,6 +3001,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40616.png"
+                },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/1/1b/Unit_ills_anime_40616.gif/revision/latest?cb=20150930200904"
                 },
                 "sp": {
                     "@list": ""
@@ -2857,6 +3049,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50766.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/b/bf/Unit_ills_anime_50766.gif/revision/latest?cb=20160427164936"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -2900,6 +3095,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60776.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/9/9e/Unit_ills_anime_60776.gif/revision/latest?cb=20151225073010"
                 },
                 "sp": {
                     "@list": ""
@@ -2945,6 +3143,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20286.png"
                 },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/0/0f/Unit_ills_anime_20286.gif/revision/latest?cb=20151225061747"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -2988,6 +3189,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30516.png"
+                },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/9/94/Unit_ills_anime_30516.gif/revision/latest?cb=20160317055819"
                 },
                 "sp": {
                     "@list": ""
@@ -3033,6 +3237,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40506.png"
                 },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/5/51/Unit_ills_anime_40506.gif/revision/latest?cb=20150910024008"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -3076,6 +3283,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10736.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/f/f1/Unit_ills_anime_10736.gif/revision/latest?cb=20160204063836"
                 },
                 "sp": {
                     "@list": ""
@@ -3121,6 +3331,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20676.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/3/31/Unit_ills_anime_20676.gif/revision/latest?cb=20160205071013"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -3164,6 +3377,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30676.png"
+                },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/2/29/Unit_ills_anime_30676.gif/revision/latest?cb=20151225064545"
                 },
                 "sp": {
                     "@list": ""
@@ -3209,6 +3425,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40646.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/6/65/Unit_ills_anime_40646.gif/revision/latest?cb=20151225070021"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -3252,6 +3471,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50816.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/4/47/Unit_ills_anime_50816.gif/revision/latest?cb=20151225071822"
                 },
                 "sp": {
                     "@list": ""
@@ -3297,6 +3519,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60836.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/f/fa/Unit_ills_anime_60836.gif/revision/latest?cb=20151225073135"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -3340,6 +3565,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10286.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/b/b2/Unit_ills_anime_10286.gif/revision/latest?cb=20160203063605"
                 },
                 "sp": {
                     "@list": ""
@@ -3385,6 +3613,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30316.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/f/f9/Unit_ills_anime_30316.gif/revision/latest?cb=20160317055729"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -3428,6 +3659,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40346.png"
+                },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/1/1b/Unit_ills_anime_40346.gif/revision/latest?cb=20151225065316"
                 },
                 "sp": {
                     "@list": ""
@@ -3473,6 +3707,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60286.png"
                 },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/c/c9/Unit_ills_anime_60286.gif/revision/latest?cb=20151225072345"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -3516,6 +3753,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10756.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/9/99/Unit_ills_anime_10756.gif/revision/latest?cb=20160204063935"
                 },
                 "sp": {
                     "@list": ""
@@ -3561,6 +3801,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20696.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/a/a5/Unit_ills_anime_20696.gif/revision/latest?cb=20160205071105"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -3604,6 +3847,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30686.png"
+                },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/d/d4/Unit_ills_anime_30686.gif/revision/latest?cb=20151225064609"
                 },
                 "sp": {
                     "@list": ""
@@ -3649,6 +3895,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40666.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/9/99/Unit_ills_anime_40666.gif/revision/latest?cb=20151225070146"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -3692,6 +3941,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50836.png"
+                },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/3/3e/Unit_ills_anime_50836.gif/revision/latest?cb=20151031033842"
                 },
                 "sp": {
                     "@list": ""
@@ -3737,6 +3989,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60846.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/a/ab/Unit_ills_anime_60846.gif/revision/latest?cb=20151225073201"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -3780,6 +4035,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20356.png"
+                },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/9/90/Unit_ills_anime_20356.gif/revision/latest?cb=20160205065830"
                 },
                 "sp": {
                     "@list": ""
@@ -3825,6 +4083,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30276.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/7/79/Unit_ills_anime_30276.gif/revision/latest?cb=20160317055713"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -3868,6 +4129,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40316.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/e/e5/Unit_ills_anime_40316.gif/revision/latest?cb=20160226045003"
                 },
                 "sp": {
                     "@list": ""
@@ -3913,6 +4177,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10776.png"
                 },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/b/b1/Unit_ills_anime_10776.gif/revision/latest?cb=20160204064031"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -3956,6 +4223,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20706.png"
+                },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/2/2b/Unit_ills_anime_20706.gif/revision/latest?cb=20160205071154"
                 },
                 "sp": {
                     "@list": ""
@@ -4001,6 +4271,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30696.png"
                 },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/6/6a/Unit_ills_anime_30696.gif/revision/latest?cb=20151225064634"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -4044,6 +4317,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40676.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/a/a5/Unit_ills_anime_40676.gif/revision/latest?cb=20160325070836"
                 },
                 "sp": {
                     "@list": ""
@@ -4089,6 +4365,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50866.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/5/5b/Unit_ills_anime_50866.gif/revision/latest?cb=20151225072001"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -4132,6 +4411,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60876.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/3/37/Unit_ills_anime_60876.gif/revision/latest?cb=20151225073240"
                 },
                 "sp": {
                     "@list": ""
@@ -4177,6 +4459,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10366.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/8/82/Unit_ills_anime_10366.gif/revision/latest?cb=20160204061913"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -4220,6 +4505,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30346.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/4/4d/Unit_ills_anime_30346.gif/revision/latest?cb=20160317055755"
                 },
                 "sp": {
                     "@list": ""
@@ -4265,6 +4553,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50316.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/8/8d/Unit_ills_anime_50316.gif/revision/latest?cb=20160224194155"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -4308,6 +4599,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60526.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/e/e6/Unit_ills_anime_60526.gif/revision/latest?cb=20160204065413"
                 },
                 "sp": {
                     "@list": ""
@@ -4353,6 +4647,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10796.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/0/08/Unit_ills_anime_10796.gif/revision/latest?cb=20160204064101"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -4396,6 +4693,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20726.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/f/f4/Unit_ills_anime_20726.gif/revision/latest?cb=20160205071226"
                 },
                 "sp": {
                     "@list": ""
@@ -4441,6 +4741,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30706.png"
                 },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/9/98/Unit_ills_anime_30706.gif/revision/latest?cb=20151225064658"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -4484,6 +4787,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40686.png"
+                },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/1/1d/Unit_ills_anime_40686.gif/revision/latest?cb=20151225070236"
                 },
                 "sp": {
                     "@list": ""
@@ -4529,6 +4835,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50886.png"
                 },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/5/5c/Unit_ills_anime_50886.gif/revision/latest?cb=20151225072028"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -4572,6 +4881,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60886.png"
+                },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/0/02/Unit_ills_anime_60886.gif/revision/latest?cb=20151225073303"
                 },
                 "sp": {
                     "@list": ""
@@ -4617,6 +4929,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10116.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/a/a4/Unit_ills_anime_10116.gif/revision/latest?cb=20160614011622"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -4660,6 +4975,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20126.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/e/e8/Unit_ills_anime_20126.gif/revision/latest?cb=20160205062440"
                 },
                 "sp": {
                     "@list": ""
@@ -4705,6 +5023,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50386.png"
                 },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/6/61/Unit_ills_anime_50386.gif/revision/latest?cb=20160204064953"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -4748,6 +5069,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60356.png"
+                },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/7/77/Unit_ills_anime_60356.gif/revision/latest?cb=20160204065311"
                 },
                 "sp": {
                     "@list": ""
@@ -4793,6 +5117,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10806.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/3/3a/Unit_ills_anime_10806.gif/revision/latest?cb=20160204064131"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -4836,6 +5163,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20736.png"
+                },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/b/b7/Unit_ills_anime_20736.gif/revision/latest?cb=20160205071257"
                 },
                 "sp": {
                     "@list": ""
@@ -4881,6 +5211,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30716.png"
                 },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/9/98/Unit_ills_anime_30716.gif/revision/latest?cb=20151225064725"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -4924,6 +5257,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40696.png"
+                },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/8/82/Unit_ills_anime_40696.gif/revision/latest?cb=20151225070301"
                 },
                 "sp": {
                     "@list": ""
@@ -4969,6 +5305,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50896.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/c/cb/Unit_ills_anime_50896.gif/revision/latest?cb=20151225072049"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -5012,6 +5351,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60896.png"
+                },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/5/5d/Unit_ills_anime_60896.gif/revision/latest?cb=20160418051330"
                 },
                 "sp": {
                     "@list": ""
@@ -5057,6 +5399,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20366.png"
                 },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/e/e6/Unit_ills_anime_20366.gif/revision/latest?cb=20160204064717"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -5100,6 +5445,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30446.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/b/b6/Unit_ills_anime_30446.gif/revision/latest?cb=20160204064811"
                 },
                 "sp": {
                     "@list": ""
@@ -5145,6 +5493,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40496.png"
                 },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/b/b7/Unit_ills_anime_40496.gif/revision/latest?cb=20160204064909"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -5188,6 +5539,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60096.png"
+                },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/7/70/Unit_ills_anime_60096.gif/revision/latest?cb=20160204065232"
                 },
                 "sp": {
                     "@list": ""
@@ -5233,6 +5587,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10826.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/0/06/Unit_ills_anime_10826.gif/revision/latest?cb=20160203064145"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -5276,6 +5633,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20756.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/0/0b/Unit_ills_anime_20756.gif/revision/latest?cb=20160205071341"
                 },
                 "sp": {
                     "@list": ""
@@ -5321,6 +5681,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30736.png"
                 },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/7/7b/Unit_ills_anime_30736.gif/revision/latest?cb=20160129055252"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -5364,6 +5727,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40716.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/9/90/Unit_ills_anime_40716.gif/revision/latest?cb=20160418051648"
                 },
                 "sp": {
                     "@list": ""
@@ -5409,6 +5775,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50916.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/0/0c/Unit_ills_anime_50916.gif/revision/latest?cb=20160129055410"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -5452,6 +5821,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60916.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/d/d0/Unit_ills_anime_60916.gif/revision/latest?cb=20160204065455"
                 },
                 "sp": {
                     "@list": ""
@@ -5497,6 +5869,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10466.png"
                 },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/c/cb/Unit_ills_anime_10466.gif/revision/latest?cb=20160216060029"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -5540,6 +5915,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50106.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/5/55/Unit_ills_anime_50106.gif/revision/latest?cb=20160216055954"
                 },
                 "sp": {
                     "@list": ""
@@ -5585,6 +5963,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60476.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/9/9e/Unit_ills_anime_60476.gif/revision/latest?cb=20160216055938"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -5628,6 +6009,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10017.png"
+                },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/7/7f/Unit_ills_anime_10017.gif/revision/latest?cb=20160216055403"
                 },
                 "sp": {
                     "@list": "10:20% boost to Atk, Rec | 10:20% boost to Def, max HP | 20:50% boost to Spark damage | 20:Boosts critical hit damage (50% boost) | 50:Adds Spark damage boost effect to BB/SBB (80% boost) | 50:Adds critical hit damage boost effect to BB/SBB (50% boost) | 50:Enhances enormous Atk and BB Atk boosts effects added to UBB (Additional 100% Atk boost and 300% BB Atk boost) | 100:Adds high probability of resistance against 1 KO attack effect to UBB (80% chance)"
@@ -5673,6 +6057,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20017.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/3/30/Unit_ills_anime_20017.gif/revision/latest?cb=20160216055441"
+                },
                 "sp": {
                     "@list": "20:Damage taken slightly boosts BB gauge (2~3 BC when attacked) | 20:Damage taken may restore HP (25% chance to restore 10% of HP back) | 10:Damage dealt may slightly boost BC, HC drop rate (5% boost) | 50:Negates all status ailments | 40:Enhances HP restoration each turn effect added to BB/SBB (+1000 HP additional boost) | 40:Adds Water elemental damage boost for 3 turns effect to BB/SBB (50% boost) | 60:Adds status ailment removal effect to BB/SBB | 60:Allows UBB buff effects to last for 4 turns"
                 }
@@ -5716,6 +6103,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30017.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/1/11/Unit_ills_anime_30017.gif/revision/latest?cb=20160216055502"
                 },
                 "sp": {
                     "@list": "10:30% boost to Def | 10:(*) Boosts damage against status afflicted foes (60% boost) | 10:Considerably boosts damage against status afflicted foes (80% boost) (Prerequisite: *) | 20:Probable random status ailment counter (5% chance to inflict Curse, Poison and Paralysis & 8% chance to inflict Weak, Sick and Injury) | 30:Negates critical hit damage | 30:Negates elemental damage | 40:Adds Earth elemental damage boost for 3 turns effect to BB/SBB (50% boost) | 50:Enhances Earth barrier effect added to SBB (+1000 HP to barrier) | 50:Adds Atk boost relative to Def effect to BB/SBB (70% boost) | 50:Adds all status ailments effect to BB/SBB/UBB (30% chance to inflict Curse, Poison and Paralysis & 40% chance to inflict Weak, Sick and Injury)"
@@ -5761,6 +6151,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40017.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/6/64/Unit_ills_anime_40017.gif/revision/latest?cb=20160216055516"
+                },
                 "sp": {
                     "@list": "20:20% boost to all parameters | 10:(*) 50% boost to Spark damage | 10:(**) Raises Spark damage boost from 50% to 70% (Prerequisite: *)  | 10:Raises Spark damage boost from 70% to 100% (Prerequisite: **) | 10:(***) Slightly boosts critical hit damage (30% boost) | 10:Boosts critical hit damage (50% boost) (Prerequisite: ***) | 50:Enhances Spark damage boost effect added to BB/SBB (+30% boost) | 60:Allows enormous Spark damage boost & probable Spark critical effects to last for 4 turns"
                 }
@@ -5804,6 +6197,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50017.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/d/de/Unit_ills_anime_50017.gif/revision/latest?cb=20160216055528"
                 },
                 "sp": {
                     "@list": "30:Normal attack may hit all foes (20% chance, -50% damage) | 20:Damage taken slightly boosts BB gauge (2~3 BC fill) | 10:Activates at turn's end effects during turn's start instead | 40:Enhances BB gauge boost effect added to BB/SBB (+20% boost) | 40:Adds Light elemental damage boost for 3 turns effect to BB/SBB (50% boost) | 50:Adds status ailment removal effect to BB/SBB | 50:(*) Adds BB gauge boost when attacked effect to BB/SBB (3~5 BC fill) | 10:Enhances BB gauge boost when attacked effect (4~7 BC fill) (Prerequisite: *) | 50:Adds HP restoration when damage dealt effect to BB/SBB (+2000~3000 HP + 11% of healer's Rec)"
@@ -5849,6 +6245,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60017.png"
                 },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/2/27/Unit_ills_anime_60017.gif/revision/latest?cb=20160216055551"
+                },
                 "sp": {
                     "@list": "10:Damage taken may slightly restore HP (25% chance to restore 5% of HP back) | 10:Damage taken may restore HP (25% chance to restore 10% of HP back) | 10:5% damage reduction from Light types | 30:Negates elemental damage | 30:50% Spark damage reduction | 60:(*) Adds 50% damage reduction for 1 turn effect to BB/SBB | 20:Allows 50% damage reduction for 1 turn effects to last for 2 turns (Prerequisite: *) | 80:Allows UBB enormous damage reduction effects to last for 2 turns"
                 }
@@ -5892,6 +6291,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10846.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/9/99/Unit_ills_anime_10846.gif/revision/latest?cb=20160225223414"
                 },
                 "sp": {
                     "@list": ""
@@ -5937,6 +6339,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10847.png"
                 },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/5/57/Unit_ills_anime_10847.gif/revision/latest?cb=20160225223403"
+                },
                 "sp": {
                     "@list": "10 : Boosts Atk relative to remaining HP (+0.5% boost per 1% HP remaining, 50% boost max.) | 10 : Enhances BB gauge fill rate boost effect added to BB/SBB (Additional 10% boost to BC efficacy) | 20 : Adds enormous Def boost for 3 turns effect to BB/SBB (140% boost) | 50 : (*) Adds Spark damage boost effect to BB/SBB (80% boost) | 10 : Enhances Spark damage boost effect (Additional 30% boost to Spark damage - 110% boost total) (Prerequisite: *) | 50 : (**) Adds BB gauge boost when attacked for 3 turns effect to BB/SBB (3~5 BC fill) | 10 : Enhances BB gauge boost when attacked for 3 turns effect (4~7 BC fill instead) (Prerequisite: **) | 40 : Adds HP restoration when damage dealt effect to BB/SBB (Heals 2000~3000 + 11% of healer Rec) | 40 : Adds HP restoration for 3 turns effect to BB/SBB (Heals 1500~2000 + 10% of target Rec)"
                 }
@@ -5980,6 +6385,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20776.png"
+                },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/6/69/Unit_ills_anime_20776.gif/revision/latest?cb=20160225223434"
                 },
                 "sp": {
                     "@list": ""
@@ -6025,6 +6433,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30756.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/1/16/Unit_ills_anime_30756.gif/revision/latest?cb=20160225223535"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -6068,6 +6479,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40746.png"
+                },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/0/06/Unit_ills_anime_40746.gif/revision/latest?cb=20160225223646"
                 },
                 "sp": {
                     "@list": ""
@@ -6113,6 +6527,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50936.png"
                 },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/4/47/Unit_ills_anime_50936.gif/revision/latest?cb=20160225223736"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -6156,6 +6573,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60956.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/f/fa/Unit_ills_anime_60956.gif/revision/latest?cb=20160225223843"
                 },
                 "sp": {
                     "@list": ""
@@ -6201,6 +6621,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10556.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/9/9f/Unit_ills_anime_10556.gif/revision/latest?cb=20160317033224"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -6244,6 +6667,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30546.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/d/d3/Unit_ills_anime_30546.gif/revision/latest?cb=20160317033134"
                 },
                 "sp": {
                     "@list": ""
@@ -6289,6 +6715,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60536.png"
                 },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/6/68/Unit_ills_anime_60536.gif/revision/latest?cb=20160317033302"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -6332,6 +6761,56 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10866.png"
+                },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/6/65/Unit_ills_anime_10866.gif/revision/latest?cb=20160324214222"
+                },
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1350",
+                "name": "Blue Purity Vern",
+                "role": "BBcost spark 30%HP ATK water earth superspark",
+                "element": "Water",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "7",
+                    "@dc": "42",
+                    "#text": "100% Spark DMG+ (ALL) / 30% HP 30% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "26",
+                    "#text": "350% Water (AOE) / Add Water,earth to ATK (ALL) 3Turns / 80% Spark DMG+ (ALL) 3Turns / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "30",
+                    "#text": "560% Water (AOE) / Add Water,earth to ATK (ALL) 3Turns / 90% Spark DMG+ (ALL) 3Turns / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 25% Chance Enemy receives 25% Spark DMG+ 1Turns"
+                },
+                "ubb": {
+                    "@hit": "24",
+                    "@dc": "24",
+                    "@cost": "30",
+                    "#text": "1300% Water (AOE) / 150% Spark DMG+ (ALL) 3Turns / 50% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 100% Chance Enemy receives 100% Spark DMG+ 1Turns"
+                },
+                "es": {
+                    "@condtion": "20% ALL Stats (SELF) when Meirith Pearl Sphere Equipped",
+                    "#text": ""
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20796.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20796.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/b/ba/Unit_ills_anime_20796.gif/revision/latest?cb=20160324214211"
                 },
                 "sp": {
                     "@list": ""
@@ -6377,6 +6856,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20797.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/1/17/Unit_ills_anime_20797.gif/revision/latest?cb=20160324214203"
+                },
                 "sp": {
                     "@list": "20 : 20% boost to all parameters | 30 : 100% boost to Spark damage | 50 : Raises normal hit amount (Doubles normal hit count) | 20 : Considerably reduces BB gauge required for BB (25% reduction) | 10 : Damage taken may slightly restore HP (25% chance to heal 5% damage) | 20 : Adds Dark element to attack for 3 turns effect to BB/SBB | 30 : Adds BC drop rate boost effect to BB/SBB (30% boost for 3 turns) | 50 : Adds slight BB gauge boost during Spark for 3 turns effect to BB/SBB (Fills 1-2 BC) | 60 : Enhances Spark damage boost effect added to BB/SBB/UBB (+30% boost)"
                 }
@@ -6421,6 +6903,56 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30776.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/c/ce/Unit_ills_anime_30776.gif/revision/latest?cb=20160324214117"
+                },
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1355",
+                "name": "Thunder Punisher Silas",
+                "role": "crit 30%HP ATK fire thunder BBATK% superspark",
+                "element": "Thunder",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "9",
+                    "@dc": "36",
+                    "#text": "4-6BC Fill on CRIT (ALL) / 100% CRIT DMG+ (ALL) / 30% HP 30% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "13",
+                    "@dc": "13",
+                    "@cost": "26",
+                    "#text": "350% Thunder (AOE) / Add Fire,thunder to ATK (ALL) 3Turns / 40% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "30",
+                    "#text": "560% Thunder (AOE) / Add Fire,thunder to ATK (ALL) 3Turns / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / 250% BB ATK%+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "30",
+                    "#text": "1300% Thunder (AOE) / 60% CRIT+ (ALL) 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 50% Chance SPARKcrit (100% DMG+) (ALL) 3Turns / 400% BB ATK%+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "100% BB ATK%+ (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40766.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40766.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/7/70/Unit_ills_anime_40766.gif/revision/latest?cb=20160324214106"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -6428,7 +6960,7 @@
             {
                 "id": "1356",
                 "name": "Lightning Menace Silas",
-                "role": "BB crit OverDrive 50%HP ATK fire thunder BBATK% superspark",
+                "role": "crit OverDrive 50%HP ATK fire thunder BBATK% superspark",
                 "element": "Thunder",
                 "rarity": "8",
                 "cost": "47",
@@ -6464,6 +6996,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40767.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/b/bd/Unit_ills_anime_40767.gif/revision/latest?cb=20160324214059"
                 },
                 "sp": {
                     "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to HP, Def | 20 : Boosts critical hit damage (50% boost) | 20 : Critical hit damage boosts BB gauge (Fills 2-3 BC) | 30 : Negates critical hit damage | 50 : Adds huge boost to Atk for 3 turns effect to BB/SBB (150% boost) | 50 : Adds huge Def boost relative to Atk effect to BB/SBB (70% Atk to Def) | 20 : Adds Light element to attack effect to BB/SBB | 40 : Enhances BB Atk boost effect added to SBB/UBB (+100% boost)"
@@ -6509,6 +7044,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50966.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/b/bb/Unit_ills_anime_50966.gif/revision/latest?cb=20160324214024"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -6552,6 +7090,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60976.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/4/41/Unit_ills_anime_60976.gif/revision/latest?cb=20160324213951"
                 },
                 "sp": {
                     "@list": ""
@@ -6597,6 +7138,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50917.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/0/04/Unit_ills_anime_50917.gif/revision/latest?cb=20160526180716"
+                },
                 "sp": {
                     "@list": "20 : 20% boost to all parameters | 30 : Boost elemental damage (50% boost) | 10 : Slightly boosts BC efficacy (10% boost) | 30 : Negates elemental damage | 40 : Enhances BB Atk boost effect added to BB/SBB/UBB (+100% boost) | 40 : Adds BB gauge boost when producing Sparks effect to BB/SBB (+1 BC/Spark boost) | 40 : Adds BB gauge boost each turn effect to BB/SBB (6 BC fill for 3 turns) | 60 : Allows UBB boost effects to last for 4 turns (Does not include the damage reduction effect)"
                 }
@@ -6641,13 +7185,16 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60027.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/c/c4/Unit_ills_anime_60027.gif/revision/latest?cb=20160526180716"
+                },
                 "sp": {
                     "@list": "20 : 50% boost to Atk | 30 : 100% boost to Spark damage | 20 : Spark damage enormously boosts BB gauge (10 BC per Spark fill) | 40 : Slightly boosts BB/SBB Atk (30% boost) | 10 : Boosts BB Atk when HP is over 50% (50% boost) | 30 : Normal attack may hit all foes (20% chance, -50% damage) | 30 : Considerably boosts BB gauge each turn (4 BC fill) | 40 : Damage taken may slightly restore HP (25% chance to heal 10% of HP from damage taken) | 50 : Adds huge boost to Atk for 3 turns effect to BB/SBB (150% boost)"
                 }
             },
             {
                 "id": "1371",
-                "name": "Sherry 7",
+                "name": "Garnet Sorceress Shelly",
                 "role": "40%HP REC Injury Weak Sick Poison Para Curse ATKDOWN DEFDOWN",
                 "element": "Fire",
                 "rarity": "7",
@@ -6685,13 +7232,16 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10886.png"
                 },
+                "gif": {
+                    "@path": ""
+                },
                 "sp": {
                     "@list": ""
                 }
             },
             {
                 "id": "1374",
-                "name": "Soleil 7",
+                "name": "Arctic Virtuoso Soleil",
                 "role": "40%HP DEF Idol BC BBATKed Cure CRIT hit ATK AOE",
                 "element": "Water",
                 "rarity": "7",
@@ -6729,13 +7279,16 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20806.png"
                 },
+                "gif": {
+                    "@path": ""
+                },
                 "sp": {
                     "@list": ""
                 }
             },
             {
                 "id": "1375",
-                "name": "El Feris 7",
+                "name": "Perpetual Goddess Felice",
                 "role": "BBfill BBATKed 35%HP ATK DEF REC BBregen BBspark superspark BBATK%",
                 "element": "Earth",
                 "rarity": "7",
@@ -6773,13 +7326,16 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30786.png"
                 },
+                "gif": {
+                    "@path": ""
+                },
                 "sp": {
                     "@list": ""
                 }
             },
             {
                 "id": "1376",
-                "name": "El Feris 8",
+                "name": "Eternal Goddess Felice",
                 "role": "BBregen BBfill BBATKed 40%HP ATK DEF REC BBspark superspark BBATK%",
                 "element": "Earth",
                 "rarity": "8",
@@ -6817,13 +7373,16 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30787.png"
                 },
+                "gif": {
+                    "@path": ""
+                },
                 "sp": {
                     "@list": "10 : +50% ATK/DEF/REC when BB Gauge is full | 20 : +50% Spark Damage | 20 : +50% BB/SBB/UBB Mod | 10 : LS +10% All Stats | 50 : Add Effect To BB/SBB (3 turn +80% Spark Dmg) | 60 : Add Effect To BB/SBB (3 Turn Heal 400-500 HP on Spark) | 30 : Add Effect To BB/SBB (2 turn Def Ignore Buff) | 40 : Add Effect To BB/SBB (3 turn +100% BB/SBB/UBB Mod) | 60 : UBB +1 Turn"
                 }
             },
             {
                 "id": "1379",
-                "name": "Pamela 7",
+                "name": "Supreme Thunder Pamela",
                 "role": "OverDrive BC HC ConvertDEF ATK DEF",
                 "element": "Thunder",
                 "rarity": "7",
@@ -6861,13 +7420,16 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40776.png"
                 },
+                "gif": {
+                    "@path": ""
+                },
                 "sp": {
                     "@list": ""
                 }
             },
             {
                 "id": "1380",
-                "name": "Lara 7",
+                "name": "Sacred Dragonchild Lara",
                 "role": "30%HP ATK heal BBATK% HoT NullCRIT healATKed convertATK convertDEF Miti75% NullEWD",
                 "element": "Light",
                 "rarity": "7",
@@ -6905,13 +7467,16 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50986.png"
                 },
+                "gif": {
+                    "@path": ""
+                },
                 "sp": {
                     "@list": ""
                 }
             },
             {
                 "id": "1381",
-                "name": "Lara 8",
+                "name": "Celestial Wings Lara",
                 "role": "50%HP ATK heal BBATK% HoT NullCRIT healATKed convertATK convertDEF Miti75% NullEWD BC HC",
                 "element": "Light",
                 "rarity": "8",
@@ -6949,13 +7514,16 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50987.png"
                 },
+                "gif": {
+                    "@path": ""
+                },
                 "sp": {
                     "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 20 : 2-3 BC when hit | 10 : 3-4 BC when hit | 20 : 100% Base/Buffed Element Weakness Resist | 20 : Add Effect To BB/SBB (3 Turn +140% ATK) | 20 : Add Effect To BB/SBB (3 Turn +160% ATK) | 30 : Add Effect To BB/SBB (1 Turn Negate Stat Down Debuffs) | 50 : Add Effect To BB/SBB (Reduce Damage 50% for 1 turn)"
                 }
             },
             {
                 "id": "1384",
-                "name": "Mizeruka 7",
+                "name": "Shadow Ocean Mizerka",
                 "role": "hit 40%HP DEF AOE BBfill BBATKed ATKDOWN DEFDOWN HealATKed Curse MAXHP",
                 "element": "Dark",
                 "rarity": "7",
@@ -6992,6 +7560,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60986.png"
+                },
+                "gif": {
+                    "@path": ""
                 },
                 "sp": {
                     "@list": ""
@@ -7037,6 +7608,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10757.png"
                 },
+                "gif": {
+                    "@path": ""
+                },
                 "sp": {
                     "@list": "20 : +50% ATK | 10 : +50% Crit Damage | 20 : +50% BB/SBB/UBB Mod when HP is above 50% | 30 : +15% BB Gauge Fill Rate | 20 : LS+: 10% HP | 50 : SBB+: +100% BB/SBB/UBB Mod & UBB+: +100% BB/SBB/UBB Mod | 50 : Add Effect To BB/SBB (3 turn +50% Crit Dmg) | 60 : UBB+: 1 Turn Spark Dmg Buff & UBB+: 1 Turn BB Mod Buff & UBB+: 1 Turn Crit Dmg Buff"
                 }
@@ -7080,6 +7654,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50757.png"
+                },
+                "gif": {
+                    "@path": ""
                 },
                 "sp": {
                     "@list": "20 : +20% All Stats | 10 : +50% DEF when HP is above 50% | 20 : 2-3 BC when hit | 40 : Add Effect To BB/SBB (3 turn 50% REC->DEF buff) | 40 : Add Effect To BB/SBB (3 Turn Heal 20-25% of Damage Taken (20% Chance)) | 10 : Add Effect To SBB (Cure Status/Debuffs) | 10 : Add Effect To BB (Heal 2000-3000 HP (+ 11% Healer REC)) | 50 : BB+: 1 turn Reduce Damage & SBB+: 1 turn Reduce Damage | 50 : UBB+: 1 Turn Reduce Damage, 1 Turn DEF->ATK Buff"
@@ -7125,6 +7702,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10896.png"
                 },
+                "gif": {
+                    "@path": ""
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -7168,6 +7748,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10897.png"
+                },
+                "gif": {
+                    "@path": ""
                 },
                 "sp": {
                     "@list": "20 : +50% ATK | 20 : +50% DEF | 30 : +70% Spark Damage | 10 : +100% Spark Damage | 10 : +50% Crit Damage | 10 : LS+: 10% All Stats | 40 : BB/SBB+: Fill 2 BC | 60 : Add Effect To BB/SBB (8% OD Fill)"
@@ -7213,6 +7796,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20826.png"
                 },
+                "gif": {
+                    "@path": ""
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -7256,6 +7842,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20827.png"
+                },
+                "gif": {
+                    "@path": ""
                 },
                 "sp": {
                     "@list": "20 : +20% All Stats | 10 : 0-100% ATK depending on HP remaining | 20 : Hit Count +1 | 30 : +50% All Weakness Damage | 30 : BB/SBB/UBB+: 30% ATK Buff on Statused Targets | 60 : Add Effect To BB/SBB (3 turn Inflict Status when Hit (15% Injury/Sick/Weaken 10% Poison/Curse/Paralyze)) | 20 : BB/SBB+: 0-0% HP Drain Buff (10 Chance) | 40 : UBB+: 1 Turn ATK Buff & 1 Turn ATK Buff on Statused Targets & 1 Turn Weakness Damage"
@@ -7301,6 +7890,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50996.png"
                 },
+                "gif": {
+                    "@path": ""
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -7344,6 +7936,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50997.png"
+                },
+                "gif": {
+                    "@path": ""
                 },
                 "sp": {
                     "@list": "20 : +20% All Stats | 10 : Debuff Immunity | 20 : Negate Status Ailments | 10 : Def Ignore Immunity | 20 : 100% Base/Buffed Element Weakness Resist | 20 : 100% Base/Buffed Crit Resist | 20 : LS+: 20% Spark Damage | 30 : Add Effect To BB/SBB (Cure Status/Debuffs) | 50 : BB/SBB/UBB+: +30% Spark Dmg"
@@ -7389,6 +7984,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30796.png"
                 },
+                "gif": {
+                    "@path": ""
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -7432,6 +8030,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30797.png"
+                },
+                "gif": {
+                    "@path": ""
                 },
                 "sp": {
                     "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 10 : +50% Spark Damage | 10 : +70% Spark Damage | 10 : 10 BC On Spark | 30 : Add Effect To BB/SBB (3 Turn +60% Crit) | 30 : Add Effect To BB/SBB (3 turn +50% Crit Dmg) | 20 : SBB+: +10% ATK/DEF/REC | 50 : BB/SBB/UBB+: +30% Spark Dmg"
@@ -7477,6 +8078,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51006.png"
                 },
+                "gif": {
+                    "@path": ""
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -7520,6 +8124,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51007.png"
+                },
+                "gif": {
+                    "@path": ""
                 },
                 "sp": {
                     "@list": "10 : (*) +20% HP | 10 : (**) +30% HP (Prerequisite: *) | 10 : +50% HP (Prerequisite: **) | 20 : 100% Base/Buffed Element Weakness Resist | 10 : BBoT occur at the Start of Turn | 10 : LS+: +10% All Stats | 30 : BB+: Increase Max HP 5% | 50 : Add Effect To BB/SBB (3 Turn 20% Chance Sparks Crit Buff (50% Damage))"
@@ -7565,6 +8172,9 @@
                 "thumb": {
                     "@path": "images/Unit_tab.png"
                 },
+                "gif": {
+                    "@path": ""
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -7608,6 +8218,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50286.png"
+                },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/6/6e/Unit_ills_anime_50286.gif/revision/latest?cb=20150531064613"
                 },
                 "sp": {
                     "@list": ""
@@ -7653,6 +8266,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50786.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/d/d5/Unit_ills_anime_50786.gif/revision/latest?cb=20150731072100"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -7696,6 +8312,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60786.png"
+                },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/5/54/Unit_ills_anime_60786.gif/revision/latest?cb=20160411234227"
                 },
                 "sp": {
                     "@list": ""
@@ -7741,6 +8360,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30236.png"
                 },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/8/83/Unit_ills_anime_30236.gif/revision/latest?cb=20160222052546"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -7784,6 +8406,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40236.png"
+                },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/c/cc/Unit_ills_anime_40236.gif/revision/latest?cb=20160207045151"
                 },
                 "sp": {
                     "@list": ""
@@ -7829,6 +8454,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10236.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/7/79/Unit_ills_anime_10236.gif/revision/latest?cb=20160203062526"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -7872,6 +8500,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20236.png"
+                },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/3/31/Unit_ills_anime_20236.gif/revision/latest?cb=20160205064000"
                 },
                 "sp": {
                     "@list": ""
@@ -7917,6 +8548,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10516.png"
                 },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/d/d8/Unit_ills_anime_10516.gif/revision/latest?cb=20160204062509"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -7960,6 +8594,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60326.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/9/9c/Unit_ills_anime_60326.gif/revision/latest?cb=20160222052713"
                 },
                 "sp": {
                     "@list": ""
@@ -8005,6 +8642,9 @@
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50256.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/8/83/Unit_ills_anime_50256.gif/revision/latest?cb=20160227071139"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -8048,6 +8688,9 @@
                 },
                 "thumb": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50287.png"
+                },
+                "gif": {
+                    "@path": ""
                 },
                 "sp": {
                     "@list": "10 : 0-100% ATK depending on HP remaining | 10 : 0-100% DEF depending on HP lost | 20 : LS +20% Spark Damage | 10 : Add Effect To SBB (Cure Status/Debuffs) | 40 : Add Effect To BB/SBB (3 turn +90% Spark Dmg) | 40 : Add Effect To BB/SBB (1 Turn Crit Damage Negate) | 40 : Add Effect To BB/SBB (1 Turn Elemental Weakness Negate) | 60 : Add Effect To SBB (2 turn Fire/Water/Earth/Thunder/Light/Dark Buff)"
@@ -8093,6 +8736,9 @@
                 "thumb": {
                     "@path": "images/Unit_tab.png"
                 },
+                "gif": {
+                    "@path": ""
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -8136,6 +8782,9 @@
                 },
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810107.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/0/0b/Unit_ills_anime_810107.gif/revision/latest?cb=20151029033759"
                 },
                 "sp": {
                     "@list": ""
@@ -8181,6 +8830,9 @@
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860107.png"
                 },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/8/87/Unit_ills_anime_860107.gif/revision/latest?cb=20151103065346"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -8224,6 +8876,9 @@
                 },
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810527.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/5/5d/Unit_ills_anime_810527.gif/revision/latest?cb=20160430030937"
                 },
                 "sp": {
                     "@list": ""
@@ -8269,6 +8924,9 @@
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_830527.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/7/79/Unit_ills_anime_830527.gif/revision/latest?cb=20160614011634"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -8312,6 +8970,9 @@
                 },
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_830147.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/1/12/Unit_ills_anime_830147.gif/revision/latest?cb=20150924043350"
                 },
                 "sp": {
                     "@list": ""
@@ -8357,6 +9018,9 @@
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_840147.png"
                 },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/e/e0/Unit_ills_anime_840147.gif/revision/latest?cb=20150925044739"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -8400,6 +9064,9 @@
                 },
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850347.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/a/ac/Unit_ills_anime_850347.gif/revision/latest?cb=20151017075105"
                 },
                 "sp": {
                     "@list": ""
@@ -8445,6 +9112,9 @@
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_840257.png"
                 },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/d/d1/Unit_ills_anime_840257.gif/revision/latest?cb=20150910035659"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -8488,6 +9158,9 @@
                 },
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860257.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/0/0a/Unit_ills_anime_860257.gif/revision/latest?cb=20150823082010"
                 },
                 "sp": {
                     "@list": ""
@@ -8533,6 +9206,9 @@
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810147.png"
                 },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/5/5d/Unit_ills_anime_810147.gif/revision/latest?cb=20150801062458"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -8576,6 +9252,9 @@
                 },
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_820147.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/f/fa/Unit_ills_anime_820147.gif/revision/latest?cb=20150811083454"
                 },
                 "sp": {
                     "@list": ""
@@ -8621,6 +9300,9 @@
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850147.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/f/f1/Unit_ills_anime_850147.gif/revision/latest?cb=20150915144802"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -8664,6 +9346,9 @@
                 },
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860147.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/e/ef/Unit_ills_anime_860147.gif/revision/latest?cb=20150905063623"
                 },
                 "sp": {
                     "@list": ""
@@ -8709,6 +9394,9 @@
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810317.png"
                 },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/a/ac/Unit_ills_anime_810317.gif/revision/latest?cb=20160103005414"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -8752,6 +9440,9 @@
                 },
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_820317.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/0/07/Unit_ills_anime_820317.gif/revision/latest?cb=20160323204117"
                 },
                 "sp": {
                     "@list": ""
@@ -8797,6 +9488,9 @@
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_830317.png"
                 },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/1/10/Unit_ills_anime_830317.gif/revision/latest?cb=20160211054629"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -8840,6 +9534,9 @@
                 },
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_840317.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/9/97/Unit_ills_anime_840317.gif/revision/latest?cb=20160324020838"
                 },
                 "sp": {
                     "@list": ""
@@ -8885,6 +9582,9 @@
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850317.png"
                 },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/1/12/Unit_ills_anime_850317.gif/revision/latest?cb=20160312054037"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -8928,6 +9628,9 @@
                 },
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860317.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/5/5b/Unit_ills_anime_860317.gif/revision/latest?cb=20160312054105"
                 },
                 "sp": {
                     "@list": ""
@@ -8973,6 +9676,9 @@
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_830117.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/0/04/Unit_ills_anime_830117.gif/revision/latest?cb=20151224033001"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -9016,6 +9722,9 @@
                 },
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810327.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/0/01/Unit_ills_anime_810327.gif/revision/latest?cb=20160213091010"
                 },
                 "sp": {
                     "@list": ""
@@ -9061,6 +9770,9 @@
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_840327.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/4/48/Unit_ills_anime_840327.gif/revision/latest?cb=20160229055427"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -9104,6 +9816,9 @@
                 },
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_840117.png"
+                },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/f/fc/Unit_ills_anime_840117.gif/revision/latest?cb=20160327082937"
                 },
                 "sp": {
                     "@list": ""
@@ -9149,6 +9864,9 @@
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850157.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/2/2a/Unit_ills_anime_850157.gif/revision/latest?cb=20160323200730"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -9192,6 +9910,9 @@
                 },
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850166.png"
+                },
+                "gif": {
+                    "@path": "http://vignette1.wikia.nocookie.net/bravefrontierglobal/images/c/c2/Unit_ills_anime_850166.gif/revision/latest?cb=20160402215840"
                 },
                 "sp": {
                     "@list": ""
@@ -9237,6 +9958,9 @@
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860166.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/e/eb/Unit_ills_anime_860166.gif/revision/latest?cb=20160410022908"
+                },
                 "sp": {
                     "@list": ""
                 }
@@ -9280,6 +10004,9 @@
                 },
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850197.png"
+                },
+                "gif": {
+                    "@path": ""
                 },
                 "sp": {
                     "@list": ""
@@ -9325,6 +10052,9 @@
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850198.png"
                 },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/0/07/Unit_ills_anime_850198.gif/revision/latest?cb=20160527022717"
+                },
                 "sp": {
                     "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 30 : Negates elemental damage | 30 : Normal attack may hit all foes (20% chance, 50% damage penalty) | 40 : Enhances critical damage boost effect added to LS (100% boost) | 20 : Adds probable huge 1 turn Def reduction effect to BB/SBB (30% chance to reduce 50% Def) | 50 : Adds HP restoration when damage dealt effect to BB/SBB (Heals 2000~3000 + 11% of healer Rec) | 60 : Allows probable 1 turn Atk reduction effects from SBB to last for 2 turns | 60 : Adds hugely raises normal hit amount effect to UBB (+3 to each hit count)"
                 }
@@ -9368,6 +10098,9 @@
                 },
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810337.png"
+                },
+                "gif": {
+                    "@path": "http://vignette2.wikia.nocookie.net/bravefrontierglobal/images/a/a8/Unit_ills_anime_810337.gif/revision/latest?cb=20160612233756"
                 },
                 "sp": {
                     "@list": ""
@@ -9413,6 +10146,9 @@
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810338.png"
                 },
+                "gif": {
+                    "@path": "http://vignette4.wikia.nocookie.net/bravefrontierglobal/images/b/b7/Unit_ills_anime_810338.gif/revision/latest?cb=20160612233810"
+                },
                 "sp": {
                     "@list": "20 : 20% boost to all parameters | 20 : Boosts critical hit damage (50% boost) | 20 : Critical hit damage boosts BB gauge (2~3 BC fill) | 30 : (*) Normal attack may hit all foes (20% chance, 50% damage penalty) | 10 : Enhances probability of normal attacks hitting all foes effect (+10% chance) (Prerequisite: *) | 10 : Negates Def ignoring damage | 10 : Enhances Leader Skill parameters boost effect (+10% boost) | 40 : Enhances BB Atk boost effect added to SBB/UBB (+100% boost) | 60 : Probable resistance against 1 KO attack (40% chance)"
                 }
@@ -9456,6 +10192,9 @@
                 },
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_830327.png"
+                },
+                "gif": {
+                    "@path": "http://vignette3.wikia.nocookie.net/bravefrontierglobal/images/d/d2/Unit_ills_anime_830327.gif/revision/latest?cb=20160613011130"
                 },
                 "sp": {
                     "@list": ""
