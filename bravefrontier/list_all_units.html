@@ -11,7 +11,7 @@
 
 <body>
 <header class="w3-container w3-teal w3-card-2">
-  <h5>ALL UNITS</h5>
+  <h5 id="count_info"></h5>
 </header>
 <div id="placeholder"> </div>
 <script>
@@ -30,6 +30,8 @@
 		var arr = JSON.parse(response);
 		var i;
 		var out = "<ul class='w3-ul'>";
+		var count_seven=0;
+		var count_omni=0;
 
 		var json_len = arr.brave.unit.length;
 		for(i = 0; i < json_len; i++) {
@@ -38,11 +40,16 @@
 			var element = arr.brave.unit[i].element;
 			var rarity = arr.brave.unit[i].rarity;
 			var rarity_icon = (rarity == 8)?'<img src="images/oe_icon.png"> ':'';
+			var count_s = (rarity == 7)?1:0;
+			var count_o = (rarity == 8)?1:0;
+			count_seven += count_s;
+			count_omni += count_o;
 			var thumb = arr.brave.unit[i].thumb['@path'];
 			out+='<li class="w3-hover-sand"><a style="text-decoration:none;color:' + nameColor(element) +  '" href="unitinfo.html?id=' + id + '"> <img src="' + thumb + '" class="w3-left w3-margin-right" style="width:50px"><p>' + rarity_icon + name + '</p></a> <div class="w3-clear"></div></li>'
 		}
 		out+="</ul>";
 		document.getElementById("placeholder").innerHTML = out;
+		document.getElementById("count_info").innerHTML = '<b>' + count_seven + '</b> [7★] and <b>' + count_omni + '</b> [OMNI]';
 	}
 </script>
 
