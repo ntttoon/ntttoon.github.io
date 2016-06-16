@@ -7614,6 +7614,94 @@
                 }
             },
             {
+                "id": "1399",
+                "name": "Alice 8",
+                "role": "BBrate heal healATKed 50%HP ATK REC atkdown convertATK convertDEF BBATK% HoT",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "12",
+                    "@dc": "48",
+                    "#text": "6BC Fill Each Turn (ALL) / 30% Chance Heal 25-25% DMG when ATKed (ALL) / Heal Each Turn (ALL) / 50% HP 50% ATK 50% REC (ALL)"
+                },
+                "bb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "25",
+                    "#text": "370% Dark (AOE) / Heal (ALL) / 140% DEF+ 140% REC+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "30",
+                    "#text": "580% Dark (AOE) / 50% BC Fill+ (ALL) 3Turns / Add 20% Chance -20% Enemy ATK to ATK (ALL) 3Turns / Convert 80% REC to ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "27",
+                    "@dc": "27",
+                    "@cost": "30",
+                    "#text": "1500% Dark (AOE) / 600% BB ATK%+ (ALL) 3Turns / Convert 150% REC to ATK (ALL) 3Turns / Convert 150% REC to DEF (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns / Gradual Heal FULL (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "100% Chance Drain 5-10% HP (SELF) / 5BC Fill on > 1 DMG Dealt (SELF) / 25% Chance Heal 20-25% when ATKed (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60117.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60117.png"
+                },                
+                "sp": {
+                    "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 10 : Heal 600-800 (+ 10% REC) HP/turn | 20 : BB+: +10% DEF/REC | 50 : Add Effect To BB/SBB (3 Turn Heal 25-30% of Damage Taken (20% Chance)) | 30 : Add Effect To SBB (3 turn 80% REC->DEF buff) | 20 : Add Effect To BB/SBB (Cure Status/Debuffs)"
+                }
+            },
+            {
+                "id": "1400",
+                "name": "Elza 8",
+                "role": "BBrate BBspark healSpark 40%HP BBfill Spark Injury Sick Para Curse BBregen HoT",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "50% BC Fill+ (ALL) / 100% Chance 2-3BC Fill on Spark (ALL) / 100% Chance Heal on Spark (ALL) / 40% HP 80% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "33",
+                    "@dc": "33",
+                    "@cost": "25",
+                    "#text": "360% Dark (AOE) / 8BC Fill (ALL) 1Turn / 90% Spark DMG+ (ALL) 3Turns / 80% Injury 80% Sick 80% Para 80% Curse"
+                },
+                "sbb": {
+                    "@hit": "42",
+                    "@dc": "42",
+                    "@cost": "30",
+                    "#text": "560% Dark (AOE) / 7BC Fill 3Turns / 90% Spark DMG+ (ALL) 3Turns / Gradual Heal (ALL) 3Turns / Add 18% Injury 18% Sick 10% Para 10% Curse to ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "49",
+                    "@dc": "49",
+                    "@cost": "30",
+                    "#text": "1500% Dark (AOE) / 50BC Fill 3Turns / 300% DMG+ to Ailed Enemy (ALL) 3Turns / 200% Spark DMG+ (ALL) 3Turns / 100% Weak 100% Sick 100% Poison / 100% Injury 100% Para 100% Curse"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "100% Chance Drain 5-10% HP (SELF) / 80% Spark DMG+ on HP > 50% (SELF) / Add Ignore DEF 2Turns (ALL) effect to BB/SBB (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60527.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60527.png"
+                },                
+                "sp": {
+                    "@list": "20 : +20% All Stats | 10 : +50% All Weakness Damage | 10 : BB+: 2 BC/turn | 20 : SBB+: 2 BC/turn | 50 : BB/SBB/UBB+: +30% Spark Dmg | 40 : Add Effect To BB/SBB (3 Turn 1-2 BC on Spark Buff) | 40 : Add Effect To BB/SBB (3 Turn 20% Chance Sparks Crit Buff (50% Damage))"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",

@@ -1,5 +1,5 @@
 // by ntttoon 2016 04/07/2016
-function effect(delay_start,div,effect_in,effect_out,duration,effect_mid,delay_mid,loop_mid){
+function effect(delay_start,duration,div,effect_in,effect_out,delay_mid,effect_mid,loop_mid){
 	setTimeout(function(){
 		$(div).removeAttr('class');
 		$(div).css('visibility','visible');
