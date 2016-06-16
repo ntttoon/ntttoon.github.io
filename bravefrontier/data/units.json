@@ -6906,7 +6906,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30787.png"
                 },                
                 "sp": {
-                    "@list": "10 : +50% ATK/DEF/REC when BB Gauge is full | 20 : +50% Spark Damage | 20 : +50% BB/SBB/UBB Mod | 10 : LS +10% All Stats | 50 : Add Effect To BB/SBB (3 turn +80% Spark Dmg) | 60 : Add Effect To BB/SBB (3 Turn Heal 400-500 HP on Spark) | 30 : Add Effect To BB/SBB (2 turn Def Ignore Buff) | 40 : Add Effect To BB/SBB (3 turn +100% BB/SBB/UBB Mod) | 60 : UBB +1 Turn"
+                    "@list": "10 : Boosts Atk, Def, Rec when BB gauge is full (50% boost) | 20 : 50% boost to Spark damage | 20 : Boosts BB Atk (50% boost) | 10 : Enhances Leader Skill all parameters boost from 40% to 50% | 50 : Adds considerable Spark damage boost for 3 turns effect to BB/SBB (80% boost) | 60 : Adds considerable HP restoration during Spark for 3 turns effect to BB/SBB (400~500 HP healing on Spark) | 30 : Adds Def ignoring effect to attack for 2 turns effect to BB/SBB | 40 : Adds BB Atk boost for 3 turns effect to BB/SBB (100% boost) | 60 : Allows UBB effects to last for 4 turns"
                 }
             },
             {
@@ -7019,7 +7019,7 @@
                     "@hit": "20",
                     "@dc": "20",
                     "@cost": "30",
-                    "#text": "580% Light (AOE) / 20% Chance Heal 20-30% DMG when ATKed (ALL) 3Turns / Convert 50% REC to ATK (ALL) 3Turns / Convert 50% REC to DEF (ALL) 3Turns / Gradual Heal (ALL) 3Turns"
+                    "#text": "580% Light (AOE) / 20% Chance Heal 20-30% DMG when ATKed (ALL) 3Turns / Convert 50% REC to ATK (ALL) 3Turns / Convert 50% REC to DEF (ALL) 3Turns / Gradual Heal (ALL) 3Turns / Null CRIT (ALL) 1Turn"
                 },
                 "ubb": {
                     "@hit": "25",
@@ -7038,7 +7038,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50987.png"
                 },                
                 "sp": {
-                    "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 20 : 2-3 BC when hit | 10 : 3-4 BC when hit | 20 : 100% Base/Buffed Element Weakness Resist | 20 : Add Effect To BB/SBB (3 Turn +140% ATK) | 20 : Add Effect To BB/SBB (3 Turn +160% ATK) | 30 : Add Effect To BB/SBB (1 Turn Negate Stat Down Debuffs) | 50 : Add Effect To BB/SBB (Reduce Damage 50% for 1 turn)"
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 20 : (*) Damage taken slightly boosts BB gauge (2~3 BC fill) | 10 : Enhances BB gauge boost when attacked (3~4 BC fill) (Prerequisite: *) | 20 : Negates elemental damage | 20 : (**) Adds considerable Atk boost for 3 turns effect to BB/SBB (140% boost) | 20 : Enhances considerable Atk boost for 3 turns effect added to BB/SBB (+20% boost, 160% boost total) (Prerequisite: **) | 30 : Adds Atk, Def, Rec reducing effects negation for 1 turn to BB/SBB | 50 : Adds 50% damage reduction for 1 turn effect to BB/SBB"
                 }
             },
             {
