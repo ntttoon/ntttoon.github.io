@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Brave Frontier</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+<script src="../js/ga.js"></script>
+<script src="js/libs.js"></script>
+<script src="js/bfcanvas.js"></script>
+</head>
+
+<body>
+<header class="w3-container w3-teal w3-card-2">
+  <h5>BF CANVAS (for PC only)</h5>
+</header>
+
+<div class="w3-container">
+  <h5>Choose Art. (Use arrow keys to move art)</h5>
+  <select class="w3-select w3-border" id="sel" onChange="changeArt();">
+      <option value="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10017.png">Ignis Halcyon Vargas</option>
+      <option value="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20017.png">Algor Halcyon Selena</option>
+      <option value="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30017.png">Terra Halcyon Lance</option>
+      <option value="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40017.png">Fulgor Halcyon Eze</option>
+      <option value="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50017.png">Lux Halcyon Atro</option>
+      <option value="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60017.png">Umbra Halcyon Magress</option>
+  </select>
+  <h5>Input First Text (BOLD)</h5>
+  <input class="w3-input w3-border" type="text" onChange="txtboldAppend(txt1.value,310);" id="txt1">
+  <h5>Input Second Text</h5>
+  <input class="w3-input w3-border" type="text" onChange="txtnorAppend(txt2.value,335);" id="txt2">
+  <h5>Input Third Text</h5>
+  <input class="w3-input w3-border" type="text" onChange="txtnorAppend(txt2.value,360);" id="txt3">
+</div>
+
+<div style="text-align:center" class="w3-row-padding w3-margin-top">
+	<p>Right click on below image to save</p>
+	<canvas id="canvas" width="500" height="375"></canvas>
+</div>
+</body>
+<script src="js/bfcanvas.js"></script>
+</html>
