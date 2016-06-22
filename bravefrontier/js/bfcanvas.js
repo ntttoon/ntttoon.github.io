@@ -56,6 +56,7 @@ var update = function (modifier) {
 	if (39 in keysDown) { // Player holding right
 		hero.x += hero.speed * modifier;
 	}
+	//
 };
 
 // Draw everything
@@ -97,9 +98,10 @@ function saveimg(){
 	 var dataURL = canvas.toDataURL();
      document.getElementById('canvasImg').src = dataURL;
 }
-function changeArt(){
-	 var art = document.getElementById('sel').value;
-     heroImage.src = art;
+function changeArt(path){
+	 //var art = document.getElementById('sel').value;
+     heroImage.src = path;
+	 document.getElementById('id01').style.display='none'
 	 document.getElementById('txt1').focus();
 }
 function txtboldAppend(text,y){
@@ -117,4 +119,18 @@ function txtnorAppend(text,y){
 	ctx.textAlign = 'center';
 	ctx.fillStyle = 'white';
 	ctx.fillText(text, x, y);
+}
+function artMove(direction){
+	if(direction == 'up'){
+		hero.y -= 10;
+	}
+	if(direction == 'down'){
+		hero.y += 10;
+	}
+	if(direction == 'left'){
+		hero.x -= 10;
+	}
+	if(direction == 'right'){
+		hero.x += 10;
+	}
 }
