@@ -4932,7 +4932,7 @@
             {
                 "id": "1250",
                 "name": "Dharma Seal Reihard",
-                "role": "35%HP ATK DEF REC Null Cure BBfill MAXHP ConvertDEF Miti",
+                "role": "35%HP ATK DEF REC Null NullStats Cure BBfill MAXHP ConvertDEF Miti",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "42",
@@ -5680,7 +5680,7 @@
             {
                 "id": "1304",
                 "name": "Terra Halcyon Lance",
-                "role": "30%HP ATK NullCRIT Cure DEF barrier convertATK Miti75%",
+                "role": "30%HP ATK NullCRIT NullStats Cure DEF barrier convertATK Miti75%",
                 "element": "Earth",
                 "rarity": "8",
                 "cost": "45",
@@ -6032,7 +6032,7 @@
             {
                 "id": "1318",
                 "name": "Steel Automaton Voldoga",
-                "role": "BBspark SPARK 40%HP ATK cure null Barrier BBATK%",
+                "role": "BBspark SPARK 40%HP ATK cure null NullStats Barrier BBATK%",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "43",
@@ -6604,7 +6604,7 @@
             {
                 "id": "1362",
                 "name": "Dusk Artemis Eclise",
-                "role": "BBregen OverDrive 50%HP BBfill heal cure null light dark HoT Idol",
+                "role": "BBregen OverDrive 50%HP BBfill heal cure null NullStats light dark HoT Idol",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "43",
@@ -7702,6 +7702,182 @@
                 }
             },
             {
+                "id": "1401",
+                "name": "Stayn 7",
+                "role": "30%HP HealATKed Miti50% Cure Miti75% BBATKed HoT",
+                "element": "Water",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "7",
+                    "@dc": "42",
+                    "#text": "25% Chance Heal 15-20% DMG when ATKed (ALL) / 30% HP 30% DEF (ALL)"
+                },
+                "bb": {
+                    "@hit": "12",
+                    "@dc": "12",
+                    "@cost": "27",
+                    "#text": "290% Water (AOE) / Reduce DMG (50%) 1Turns / Cure Ails"
+                },
+                "sbb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "24",
+                    "#text": "500% Water (AOE) / Reduce DMG (50%) 1Turns / 20% Chance Heal 15-20% DMG when ATKed (ALL) 3Turns / Cure Ails"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "25",
+                    "#text": "1200% Water (AOE) / Reduce DMG (75%) 3Turns / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Ails (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20836.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20836.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1402",
+                "name": "Stayn 8",
+                "role": "50%HP HealATKed NullCRIT Miti50% Cure Miti75% BBATKed HoT",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "12",
+                    "@dc": "48",
+                    "#text": "30% Chance Heal 25-25% DMG when ATKed (ALL) / Null CRIT (ALL) / 50% HP 50% DEF (ALL)"
+                },
+                "bb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "27",
+                    "#text": "340% Water (AOE) / Reduce DMG (50%) 1Turns / Cure Ails"
+                },
+                "sbb": {
+                    "@hit": "19",
+                    "@dc": "19",
+                    "@cost": "24",
+                    "#text": "500% Water (AOE) / Reduce DMG (50%) 1Turns / 20% Chance Heal 20-30% DMG when ATKed (ALL) 3Turns / Cure Ails"
+                },
+                "ubb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "30",
+                    "#text": "1300% Water (AOE) / Reduce DMG (75%) 3Turns / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Ails (SELF) / Add 2k HP Barrier (Water) Effect to BB/SBB (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20837.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20837.png"
+                },                
+                "sp": {
+                    "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 10 : +10% BB Gauge Fill Rate | 30 : 100% Base/Buffed Element Weakness Resist | 30 : 50% Base/Buff Spark Resist | 40 : Add Effect To BB/SBB (Heal 2000-3000 HP (+ 11% Healer REC)) | 40 : Add Effect To BB/SBB (3 turn Negate Status Ailments) | 50 : Add Effect To BB/SBB (4-7 BC on Hit for 3 turns) | 20 : BB+: Mitigation +1 Turn & SBB+: Mitigation +1 Turn"
+                }
+            },
+            {
+                "id": "1403",
+                "name": "Leila 7",
+                "role": "30%HP Null NullStats atkdown defdown Spark BBregen BBATK%",
+                "element": "Thunder",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "7",
+                    "@dc": "35",
+                    "#text": "150% BB ATK%+ (ALL) / 30% HP 30% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "11",
+                    "@dc": "11",
+                    "@cost": "26",
+                    "#text": "350% Thunder (AOE) / Null Ails 3Turns / Null STATS Debuff 1Turns / Add 10% Chance -20% Enemy ATK to ATK (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "28",
+                    "#text": "420% Thunder (AOE) 200% BB ATK+ on Consecutive SBB (Max 3x / SELF) / 100% BB Fill (SELF) / 25% Chance Enemy receives 25% Spark DMG+ 1Turns / Add 20% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 20% Chance -50% Enemy ATK 1Turns / 20% Chance -50% Enemy DEF 1Turns"
+                },
+                "ubb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "30",
+                    "#text": "1300% Thunder (AOE) / 50BC Fill 3Turns / 100% Chance Enemy receives 100% Spark DMG+ 2Turns / 400% BB ATK%+ (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns / 100% Chance -80% Enemy DEF 2Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% ATK+ DEF+ on BB > 50% (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40786.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40786.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1404",
+                "name": "Leila 8",
+                "role": "50%HP BBspark BBATK% Null NullStats atkdown Spark defdown BBregen",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "11",
+                    "@dc": "44",
+                    "#text": "100% Chance 2-3BC Fill on Spark (ALL) / 200% BB ATK%+ (ALL) / 50% HP 50% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "26",
+                    "#text": "370% Thunder (AOE) / Null Ails 3Turns / Null STATS Debuff 1Turns / Add 10% Chance -20% Enemy ATK to ATK (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "480% Thunder (AOE) 200% BB ATK+ on Consecutive SBB (Max 3x / SELF) / 100% BB Fill (SELF) / 25% Chance Enemy receives 25% Spark DMG+ 1Turns / Add 20% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns"
+                },
+                "ubb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "30",
+                    "#text": "1500% Thunder (AOE) / 50BC Fill 3Turns / 100% Chance Enemy receives 150% Spark DMG+ 2Turns / 600% BB ATK%+ (ALL) 3Turns / 100% Chance -90% Enemy ATK 3Turns / 100% Chance -90% Enemy DEF 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "70% ATK+ DEF+ on BB > 50% (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40787.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40787.png"
+                },                
+                "sp": {
+                    "@list": "20 : +50% ATK | 30 : +100% Spark Damage | 10 : +50% Crit Damage | 10 : HoT occur at the Start of Turn | 50 : Add Effect To BB/SBB (3 turn +300% BB/SBB/UBB Mod) | 40 : Add Effect To BB/SBB (3 turn 6 BC/turn) | 20 : Add Effect To SBB (1 Turn Negate Stat Down Debuffs) | 50 : Add Effect To BB/SBB (3 Turn 20% OD Fill Rate Buff)"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
@@ -8100,7 +8276,7 @@
             {
                 "id": "1255",
                 "name": "Effulgent Dusk Grahdens",
-                "role": "Miti 50%HP ATK DEF REC Null Light,dark Barrier OverDrive BBregen HoT",
+                "role": "Miti 50%HP ATK DEF REC Null NullStats Light,dark Barrier OverDrive BBregen HoT",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "45",
@@ -8144,7 +8320,7 @@
             {
                 "id": "1336",
                 "name": "Rainbow Goddess Tilith",
-                "role": "HP50% REC Null BBfill heal HealATKed barrier convertDEF miti revive cure",
+                "role": "HP50% REC Null NullStats BBfill heal HealATKed barrier convertDEF miti revive cure",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "42",
