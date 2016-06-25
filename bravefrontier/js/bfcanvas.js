@@ -99,9 +99,12 @@ function saveimg(){
      document.getElementById('canvasImg').src = dataURL;
 }
 function changeArt(path){
-	 //var art = document.getElementById('sel').value;
      heroImage.src = path;
 	 document.getElementById('id01').style.display='none'
+}
+function changeBg(){
+	 var path = document.getElementById('sel').value;
+     bgImage.src = path;
 	 document.getElementById('txt1').focus();
 }
 function txtboldAppend(text,y){

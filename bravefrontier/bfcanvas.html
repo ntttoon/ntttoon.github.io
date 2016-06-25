@@ -63,7 +63,16 @@
 		document.getElementById("placeholder").innerHTML = out;
 	}
 </script>
-  
+  <h5>Choose Background</h5>
+  <select class="w3-select w3-border" name="option" id="sel" onChange="changeBg();">
+      <option value="images/bg_fbnews.jpg" selected>Default</option>
+      <option value="images/battle_fire.jpg">Background Fire</option>
+      <option value="images/battle_water.jpg">Background Water</option>
+      <option value="images/battle_earth.jpg">Background Earth</option>
+      <option value="images/battle_thunder.jpg">Background Thunder</option>
+      <option value="images/battle_light.jpg">Background Light</option>
+      <option value="images/battle_dark.jpg">Background Dark</option>
+   </select>
   <h5>Input First Text (BOLD)</h5>
   <input class="w3-input w3-border" type="text" onChange="txtboldAppend(txt1.value,310);" id="txt1">
   <h5>Input Second Text</h5>

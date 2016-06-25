@@ -30,27 +30,26 @@
 	function myFunction(response) {
 		var arr = JSON.parse(response);
 		var i;
-		var out = "<ul class='w3-ul'>";
+		var out = "<div class='w3-center'>";
 		var count_seven=0;
 		var count_omni=0;
 
 		var json_len = arr.brave.unit.length;
 		for(i = 0; i < json_len; i++) {
 			var id = arr.brave.unit[i].id;
-			var name = arr.brave.unit[i].name;
-			var element = arr.brave.unit[i].element;
 			var rarity = arr.brave.unit[i].rarity;
-			var rarity_icon = (rarity == 8)?'<img src="images/oe_icon.png"> ':'';
 			var count_s = (rarity == 7)?1:0;
 			var count_o = (rarity == 8)?1:0;
 			count_seven += count_s;
 			count_omni += count_o;
 			var thumb = arr.brave.unit[i].thumb['@path'];
-			out+='<li class="w3-hover-sand"><a style="text-decoration:none;color:' + nameColor(element) +  '" href="unitinfo.html?id=' + id + '"> <img src="' + thumb + '" class="w3-left w3-margin-right" style="width:50px"><p>' + rarity_icon + name + '</p></a> <div class="w3-clear"></div></li>'
+			if(id != ""){
+				out+='<a href="unitinfo.html?id=' + id + '" style="text-decoration:none;"> <img src="' + thumb + '" style="width:60px;margin-top:5px;"></a>';
+			}
 		}
-		out+="</ul>";
+		out+="</div>";
 		document.getElementById("placeholder").innerHTML = out;
-		document.getElementById("count_info").innerHTML = '<b>' + count_seven + '</b> [7★] and <b>' + count_omni + '</b> [OMNI]' + '<a href="list_all_units_thumbs.html"> <i class="fa fa-th w3-xlarge w3-right"></i></a>';
+		document.getElementById("count_info").innerHTML = '<b>' + count_seven + '</b> [7★] and <b>' + count_omni + '</b> [OMNI]' + '<a href="list_all_units.html"> <i class="fa fa fa-th-list w3-xlarge w3-right"></i></a>';
 	}
 </script>
 
