@@ -23,7 +23,7 @@ a{
 <div id="placeholder"> </div>
 <script>
 	if (typeof(Storage) !== "undefined") {
-		if (localStorage.view == "") {
+		if (!localStorage.view) {
             localStorage.view = "list";
         }
 		view = localStorage.view;
