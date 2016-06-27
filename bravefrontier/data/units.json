@@ -9900,6 +9900,94 @@
                 "sp": {
                     "@list": ""
                 }
+            },
+            {
+                "id": "8207",
+                "name": "Zero",
+                "role": "30%HP ATK Spark HealATKed superspark healSpark",
+                "element": "Dark",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "15",
+                    "@dc": "45",
+                    "#text": "100% Spark DMG+ (ALL) / 30% HP 30% ATK (ALL) / 100% Spark DMG+ on > 16 Sparks (ALL)"
+                },
+                "bb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "24",
+                    "#text": "350% Dark (AOE) / 20% Chance Heal 15-20% DMG when ATKed (ALL) 3Turns / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "19",
+                    "@dc": "19",
+                    "@cost": "30",
+                    "#text": "560% Dark (AOE) / 100% Spark DMG+ (ALL) 3Turns / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 25% Chance Enemy receives 25% Spark DMG+ 1Turns / 100% Chance Heal on Spark (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "26",
+                    "#text": "2250% Dark (AOE) 1300%-2250% BB ATK% Based on HP LOST / 100% Spark DMG+ (ALL) 3Turns / 50% Chance SPARKcrit (100% DMG+) (ALL) 3Turns / 100% Chance Enemy receives 150% Spark DMG+ 1Turns / 300% ATK+ 300% DEF+ 300% REC+ (SELF) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "100% 2-3BC Fill when ATKed (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860237.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860237.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8208",
+                "name": "Zero (OMNI)",
+                "role": "50%HP ATK Spark HealATKed superspark healSpark",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "17",
+                    "@dc": "51",
+                    "#text": "120% Spark DMG+ (ALL) / 50% HP 50% ATK (ALL) / 120% Spark DMG+ on > 15 Sparks (ALL)"
+                },
+                "bb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "26",
+                    "#text": "370% Dark (AOE) / 20% Chance Heal 20-30% DMG when ATKed (ALL) 3Turns / 100% Spark DMG+ (ALL) 3Turns / 30% Chance SPARKcrit (50% DMG+) (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "30",
+                    "#text": "580% Dark (AOE) / 100% Spark DMG+ (ALL) 3Turns / 30% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 25% Chance Enemy receives 25% Spark DMG+ 1Turns / 100% Chance Heal on Spark (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "28",
+                    "#text": "3000% Dark (AOE) 1750%-3000% BB ATK% Based on HP LOST / 250% Spark DMG+ (ALL) 3Turns / 50% Chance SPARKcrit (100% DMG+) (ALL) 3Turns / 100% Chance Enemy receives 150% Spark DMG+ 2Turns / 350% ATK+ 350% DEF+ 350% REC+ (SELF) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "100% 2-3BC Fill when ATKed (SELF) / 90% Spark DMG+ on Full HP (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860238.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860238.png"
+                },                
+                "sp": {
+                    "@list": "20 : 20% boost to all parameters | 10 : Hugely boosts Def relative to how low remaining HP is (+1% boost per 1% HP lost, 100% boost max) | 30 : 100% boost to Spark damage | 20 : Spark damage boosts BC, HC drop rate (15% boost) | 50 : Raises normal hit amount (+1 to each hit count) | 30 : Adds BC drop rate boost for 3 turns effect to BB/SBB (30% boost) | 50 : Adds slight BB gauge boost during Spark for 3 turns effect to BB/SBB (1~2 BC fill) | 60 : Enhances BB/SBB/UBB's Spark damage boost effect (+30% boost, 130% boost total on BB/SBB, 280% boost total on UBB) | 50 : Enhances the 'Spark damage restore HP' effect of SBB (+100 HP boost, 600~700 HP healed total)"
+                }
             }
         ]
     }
