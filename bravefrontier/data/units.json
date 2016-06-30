@@ -1280,7 +1280,7 @@
             {
                 "id": "948",
                 "name": "Flora Aegis Edea",
-                "role": "ATK DEF Miti50% Injury Weak Sick Poison ATKDOWN Miti75% Cure",
+                "role": "NullCRIT ATK DEF Miti50% Injury Weak Sick Poison ATKDOWN Miti75% Cure",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "40",
@@ -1720,7 +1720,7 @@
             {
                 "id": "976",
                 "name": "Gaia Tree Vertri",
-                "role": "Null Cure Heal BBfill BBrate Revive HoT",
+                "role": "NullEWD NullCRIT Null Cure Heal BBfill BBrate Revive HoT",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "40",
@@ -3392,7 +3392,7 @@
             {
                 "id": "1136",
                 "name": "Optimum Mecha Grybe",
-                "role": "Miti Weakness ATKDOWN ATK Barrier",
+                "role": "NullCRIT Miti Weakness ATKDOWN ATK Barrier",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "40",
@@ -3568,7 +3568,7 @@
             {
                 "id": "1146",
                 "name": "Heavenly Claymore Dolk",
-                "role": "35%HP ATK DEF REC Miti50% Miti75% BC HC Null ConvertDEF",
+                "role": "NullEWD 35%HP ATK DEF REC Miti50% Miti75% BC HC Null ConvertDEF",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "42",
@@ -4888,7 +4888,7 @@
             {
                 "id": "1247",
                 "name": "Galvanic Belle Lafiel",
-                "role": "30%HP DEF Miti50% BBspark BBATKed BBregen HoT Miti75%",
+                "role": "NullEWD NullCRIT 30%HP DEF Miti50% BBspark BBATKed BBregen HoT Miti75%",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "42",
@@ -5856,7 +5856,7 @@
             {
                 "id": "1308",
                 "name": "Mythic Kulyuk",
-                "role": "30%HP DEF BBrate cure convertDEF Miti75% MAXHP Injury Weak Sick Poison Para Curse",
+                "role": "Null 30%HP DEF BBrate cure convertDEF Miti75% MAXHP Injury Weak Sick Poison Para Curse",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "43",
@@ -5900,7 +5900,7 @@
             {
                 "id": "1309",
                 "name": "Fabled Emperor Kulyuk",
-                "role": "NullEWD 50%HP DEF BBrate cure convertDEF Miti75% MAXHP Barrier Injury Weak Sick Poison Para Curse",
+                "role": "NullEWD Null 50%HP DEF BBrate cure convertDEF Miti75% MAXHP Barrier Injury Weak Sick Poison Para Curse",
                 "element": "Fire",
                 "rarity": "8",
                 "cost": "47",
@@ -7087,7 +7087,7 @@
             },
             {
                 "id": "1387",
-                "name": "Avant 8",
+                "name": "Undying Flame Avant",
                 "role": "Spark CRIT BBATK% 50%HP superspark ATK convertATK",
                 "element": "Fire",
                 "rarity": "8",
@@ -7131,7 +7131,7 @@
             },
             {
                 "id": "1388",
-                "name": "Krantz 8",
+                "name": "Glorious Hero Krantz",
                 "role": "BBregen BC HC 30%HP ATK Miti50% Cure Dark Light Heal Fire,water,earth,thunder convertATK Miti75%",
                 "element": "Light",
                 "rarity": "8",
@@ -7175,7 +7175,7 @@
             },
             {
                 "id": "1389",
-                "name": "Rengaku 7",
+                "name": "Ardent Monk Rengaku",
                 "role": "35%HP ATK DEF REC BBfill BBregen BBrate BC HC superspark convertATK CRIT SPARK",
                 "element": "Fire",
                 "rarity": "7",
@@ -7219,7 +7219,7 @@
             },
             {
                 "id": "1390",
-                "name": "Rengaku 8",
+                "name": "Dancing Flames Rengaku",
                 "role": "40%HP ATK DEF REC BBfill BBregen BBrate BC HC superspark convertATK CRIT SPARK",
                 "element": "Fire",
                 "rarity": "8",
@@ -7263,7 +7263,7 @@
             },
             {
                 "id": "1391",
-                "name": "Asani 7",
+                "name": "Indigo Charm Azami",
                 "role": "30%HP ATK Weakness Injury Weak Sick Poison Para Curse",
                 "element": "Water",
                 "rarity": "7",
@@ -7307,7 +7307,7 @@
             },
             {
                 "id": "1392",
-                "name": "Asani 8",
+                "name": "Dark Allure Azami",
                 "role": "50%HP ATK Weakness Injury Weak Sick Poison Para Curse",
                 "element": "Water",
                 "rarity": "8",
@@ -7351,7 +7351,7 @@
             },
             {
                 "id": "1393",
-                "name": "Izuna 7",
+                "name": "Divine General Izuna",
                 "role": "SPARK 30%HP ATK ATKDOWN DEFDOWN convertATK healATKed",
                 "element": "Light",
                 "rarity": "7",
@@ -7395,7 +7395,7 @@
             },
             {
                 "id": "1394",
-                "name": "Izuna 8",
+                "name": "Godly Command Izuna",
                 "role": "SPARK 50%HP ATK ATKDOWN DEFDOWN convertATK healATKed",
                 "element": "Light",
                 "rarity": "8",
@@ -8100,7 +8100,7 @@
             {
                 "id": "1157",
                 "name": "Radiating Grandeur Paris",
-                "role": "BBATKed 40%HP Heal BC HC ATK DEF REC HoT Miti",
+                "role": "BBATKed 40%HP Heal Null BC HC ATK DEF REC HoT Miti",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "40",
@@ -8363,7 +8363,7 @@
             },
             {
                 "id": "1386",
-                "name": "Ark 8",
+                "name": "Knight of Holy Light Ark",
                 "role": "SPARK 50%HP ATK DEF REC heal cure hit OverDrive Barrier Miti75% BBATK%",
                 "element": "Light",
                 "rarity": "8",
