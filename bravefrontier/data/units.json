@@ -7126,7 +7126,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10757.png"
                 },                
                 "sp": {
-                    "@list": "20 : +50% ATK | 10 : +50% Crit Damage | 20 : +50% BB/SBB/UBB Mod when HP is above 50% | 30 : +15% BB Gauge Fill Rate | 20 : LS+: 10% HP | 50 : SBB+: +100% BB/SBB/UBB Mod & UBB+: +100% BB/SBB/UBB Mod | 50 : Add Effect To BB/SBB (3 turn +50% Crit Dmg) | 60 : UBB+: 1 Turn Spark Dmg Buff & UBB+: 1 Turn BB Mod Buff & UBB+: 1 Turn Crit Dmg Buff"
+                    "@list": "20 : 50% boost to Atk | 10 : Boosts critical hit damage (50% boost) | 20 : Boosts BB Atk when HP is over 50% (50% boost) | 30 : Slightly boosts BC efficacy (15% boost) | 20 : Enhances 50% boost to max HP Leader Skill effect (+10% boost) | 50 : Enhances BB Atk boost effect added to SBB/UBB (+100% boost) | 50 : Adds critical hit damage boost effect to BB/SBB (50% boost for 3 turns) | 60 : Allows UBB effects to last for 4 turns"
                 }
             },
             {
@@ -7170,7 +7170,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50757.png"
                 },                
                 "sp": {
-                    "@list": "20 : +20% All Stats | 10 : +50% DEF when HP is above 50% | 20 : 2-3 BC when hit | 40 : Add Effect To BB/SBB (3 turn 50% REC->DEF buff) | 40 : Add Effect To BB/SBB (3 Turn Heal 20-25% of Damage Taken (20% Chance)) | 10 : Add Effect To SBB (Cure Status/Debuffs) | 10 : Add Effect To BB (Heal 2000-3000 HP (+ 11% Healer REC)) | 50 : BB+: 1 turn Reduce Damage & SBB+: 1 turn Reduce Damage | 50 : UBB+: 1 Turn Reduce Damage, 1 Turn DEF->ATK Buff"
+                    "@list": "20 : 20% boost to all parameters | 10 : Boosts Def when HP is over 50% | 20 : Damage taken slightly boosts BB gauge (2~3 BC fill) | 40 : Adds considerable Def boost relative to Rec effect to BB/SBB (50% boost) | 40 : Adds probable slight HP restoration when attacked effect to BB/SBB (20% chance to heal 20~25% of HP from damage taken) | 10 : Adds status ailment removal effect to SBB | 10 : Adds HP restoration when attacking effect to BB (Heals (2000~3000 + 11% healer's Rec) HP) | 50 : Allows 50% damage reductions to last for 2 turns | 50 : Allows UBB effects to last for 4 turns"
                 }
             },
             {
@@ -7258,7 +7258,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10897.png"
                 },                
                 "sp": {
-                    "@list": "20 : +50% ATK | 20 : +50% DEF | 30 : +70% Spark Damage | 10 : +100% Spark Damage | 10 : +50% Crit Damage | 10 : LS+: 10% All Stats | 40 : BB/SBB+: Fill 2 BC | 60 : Add Effect To BB/SBB (8% OD Fill)"
+                    "@list": "20 : 50% boost to Atk | 20 : 50% boost to Def | 30 : (*) 70% boost to Spark damage | 10  Boosts 70% Spark damage to 100% Spark damage (Prerequisite: *) | 10 : Boosts critical hit damage (50% boost) | 10 : Enhances 40% boost to all parameters Leader Skill effect (+10% boost, 50% boost total) | 40 : Enhances BB gauge boost effect added to BB/SBB (+2 BC fill, 12 BC fill total) | 60 : Adds slight OD gauge boost effect to BB/SBB (8% boost)"
                 }
             },
             {
@@ -7346,7 +7346,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20827.png"
                 },                
                 "sp": {
-                    "@list": "20 : +20% All Stats | 10 : 0-100% ATK depending on HP remaining | 20 : Hit Count +1 | 30 : +50% All Weakness Damage | 30 : BB/SBB/UBB+: 30% ATK Buff on Statused Targets | 60 : Add Effect To BB/SBB (3 turn Inflict Status when Hit (15% Injury/Sick/Weaken 10% Poison/Curse/Paralyze)) | 20 : BB/SBB+: 0-0% HP Drain Buff (10 Chance) | 40 : UBB+: 1 Turn ATK Buff & 1 Turn ATK Buff on Statused Targets & 1 Turn Weakness Damage"
+                    "@list": "20 : 20% boost to all parameters | 10 : Hugely boosts Atk relative to how high remaining HP is (+1% boost to Atk per 1% HP remaining, 100% boost max) | 20 : Raises normal hit amount (+1 to each hit count) | 30 : Boosts elemental damage (50% boost) | 30 : Enhances damage boost against status afflicted foes effect added to BB/SBB/UBB (+30% boost, 190% boost total on BB/SBB, 330% boost total on UBB) | 60 : Adds status ailment counter effect to BB/SBB (10% chance to inflict Curse, Poison, Paralysis, 15% chance to inflict Weak, Sick, Injury) (for 3 turns) | 20 : Enhances success rate of probable HP absorption when attacking effect added to BB/SBB (+10% chance, 60% chance total) | 40 : Allows enormous Atk boost, enormous damage boost against status afflicted foes, and enormous elemental damage boost effects added to UBB to last for 4 turns"
                 }
             },
             {
@@ -8402,7 +8402,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50287.png"
                 },                
                 "sp": {
-                    "@list": "10 : 0-100% ATK depending on HP remaining | 10 : 0-100% DEF depending on HP lost | 20 : LS +20% Spark Damage | 10 : Add Effect To SBB (Cure Status/Debuffs) | 40 : Add Effect To BB/SBB (3 turn +90% Spark Dmg) | 40 : Add Effect To BB/SBB (1 Turn Crit Damage Negate) | 40 : Add Effect To BB/SBB (1 Turn Elemental Weakness Negate) | 60 : Add Effect To SBB (2 turn Fire/Water/Earth/Thunder/Light/Dark Buff)"
+                    "@list": "10 : Hugely boosts Atk relative to how high remaining HP is (+1% boost per 1% HP remaining, 100% boost max.) | 10 : Hugely boosts Def relative to how low remaining HP is (+1% boost per 1% HP lost, 100% boost max.) | 20 : Enhances Leader Skill Spark damage boost from 100% to 120% | 10 : Adds status ailment removal effect to SBB | 40 : Adds huge Spark boost damage effect to BB/SBB (90% boost) | 40 : Adds critical damage negation to BB/SBB | 40 : Adds elemental damage negation to BB/SBB | 60 : Adds all elements effect to SBB"
                 }
             },
             {
