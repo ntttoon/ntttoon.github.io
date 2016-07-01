@@ -7116,7 +7116,7 @@
                     "#text": "2500% Fire (AOE) 1500%-2500% BB ATK% Based on HP LEFT / 300% CRIT DMG+ (ALL) 3Turns / 250% Spark DMG+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns"
                 },
                 "es": {
-                    "@condtion": "30% ALL Stats (SELF) when [覇焔剣ダンデマグス] Sphere is Equipped",
+                    "@condtion": "30% ALL Stats (SELF) when Dandemagus Sphere is Equipped",
                     "#text": "50% ATK+ on Full BB (SELF) / 0-50% ATK+ Based on HP LEFT (SELF)"
                 },
                 "art": {
