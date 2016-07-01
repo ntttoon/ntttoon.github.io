@@ -7258,7 +7258,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10897.png"
                 },                
                 "sp": {
-                    "@list": "20 : 50% boost to Atk | 20 : 50% boost to Def | 30 : (*) 70% boost to Spark damage | 10  Boosts 70% Spark damage to 100% Spark damage (Prerequisite: *) | 10 : Boosts critical hit damage (50% boost) | 10 : Enhances 40% boost to all parameters Leader Skill effect (+10% boost, 50% boost total) | 40 : Enhances BB gauge boost effect added to BB/SBB (+2 BC fill, 12 BC fill total) | 60 : Adds slight OD gauge boost effect to BB/SBB (8% boost)"
+                    "@list": "20 : 50% boost to Atk | 20 : 50% boost to Def | 30 : (*) 70% boost to Spark damage | 10 : Boosts 70% Spark damage to 100% Spark damage (Prerequisite: *) | 10 : Boosts critical hit damage (50% boost) | 10 : Enhances 40% boost to all parameters Leader Skill effect (+10% boost, 50% boost total) | 40 : Enhances BB gauge boost effect added to BB/SBB (+2 BC fill, 12 BC fill total) | 60 : Adds slight OD gauge boost effect to BB/SBB (8% boost)"
                 }
             },
             {
@@ -8371,7 +8371,7 @@
                 "ls": {
                     "@hit": "20",
                     "@dc": "40",
-                    "#text": "80% Spark BC+ (ALL) / 100% Spark DMG+ (ALL) / 50% HP 50% ATK 50% DEF 50% REC (ALL)"
+                    "#text": "80% Spark BC+ (ALL) / 100% Spark DMG+ (ALL) / 50% HP 50% ATK 50% DEF 50% REC (ALL) / Reduce DMG (20%) 1Turn on > 5k DMG Received (ALL)"
                 },
                 "bb": {
                     "@hit": "25",
