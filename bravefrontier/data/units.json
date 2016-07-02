@@ -7434,7 +7434,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50997.png"
                 },                
                 "sp": {
-                    "@list": "20 : +20% All Stats | 10 : Debuff Immunity | 20 : Negate Status Ailments | 10 : Def Ignore Immunity | 20 : 100% Base/Buffed Element Weakness Resist | 20 : 100% Base/Buffed Crit Resist | 20 : LS+: 20% Spark Damage | 30 : Add Effect To BB/SBB (Cure Status/Debuffs) | 50 : BB/SBB/UBB+: +30% Spark Dmg"
+                    "@list": "20 : 20% boost to all parameters | 10 : Negates Atk, Def, Rec reducing effects | 20 : Negates all status ailments | 10 : Negates Def ignoring damage | 20 : Negates elemental damage | 20 : Negates critical hit damage | 20 : Enhances Leader Skill Spark damage boost from 100% to 120% | 30 : Adds status ailment removal effect to BB/SBB | 50 : Enhances Spark damage boost effect added to BB/SBB/UBB (+30% boost, 130% boost total on BB/SBB, 330% boost total on UBB)"
                 }
             },
             {
