@@ -11,48 +11,10 @@
 <script src="../js/ga.js"></script>
 <script src="js/libs.js"></script>
 <script src="//code.jquery.com/jquery-1.12.3.js"></script>
-<style>
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #FFF;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 30px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 30px;
-    color: #818181;
-    display: block;
-    transition: 0.3s
-}
-
-.sidenav a:hover{
-    color: #f1f1f1;
-}
-
-.closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    margin-left: 50px;
-}
-</style>
 </head>
 
 <body>
-<div id="mySidenav" class="sidenav">
-	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <div id="placeholder2"></div>
-</div>
-<a class="w3-btn w3-teal" style="width:100%" + onclick="openNav()">View Full Art</a>
+<div id="view_btn"></div>
 <form>
 	<div id="placeholder"> </div>
 </form>
@@ -78,39 +40,18 @@
 		var arr = JSON.parse(response);
 		var i,j;
 		var out = "<ul class='w3-ul'>";
-		var out_side = "<ul class='w3-ul'>";
 		var s = getURLParameter('id');
 		var json_len = arr.brave.unit.length;
 		for(i = 0; i < json_len; i++) {
 			var id = arr.brave.unit[i].id;
 			if(id==s)
 			{
-				var thumb = arr.brave.unit[i].thumb['@path'];
-				var art = arr.brave.unit[i].art['@path'];
 				var name = arr.brave.unit[i].name;
-				var element = arr.brave.unit[i].element;
-				var cost = arr.brave.unit[i].cost;
-				var rarity = arr.brave.unit[i].rarity;
-				var ls = arr.brave.unit[i].ls['#text'];
-				var normalhit = arr.brave.unit[i].ls['@hit'];
-				var normaldc = arr.brave.unit[i].ls['@dc'];
-				var bb = arr.brave.unit[i].bb['#text'];
-				var bbhit = arr.brave.unit[i].bb['@hit'];
-				var bbdc = arr.brave.unit[i].bb['@dc'];
-				var bbcost = arr.brave.unit[i].bb['@cost'];
-				var sbb = arr.brave.unit[i].sbb['#text'];
-				var sbbhit = arr.brave.unit[i].sbb['@hit'];
-				var sbbdc = arr.brave.unit[i].sbb['@dc'];
-				var sbbcost = arr.brave.unit[i].sbb['@cost'];
-				var ubb = arr.brave.unit[i].ubb['#text'];
-				var ubbhit = arr.brave.unit[i].ubb['@hit'];
-				var ubbdc = arr.brave.unit[i].ubb['@dc'];
-				var ubbcost = arr.brave.unit[i].ubb['@cost'];
-				var escondition = arr.brave.unit[i].es['@condtion'];
-				var eseffect = arr.brave.unit[i].es['#text'];
+				var thumb = arr.brave.unit[i].thumb['@path'];
 				var sp = arr.brave.unit[i].sp['@list'];
 				var sp_array = sp.split("|");
-				////////// out omni skill
+				//
+				document.getElementById('view_btn').innerHTML = "<a class='w3-btn w3-teal' style='width:100%'" + 'href="unitinfo.html?id=' + id + '" target="blank">View ' + name + ' info</a>';
 				out+='<li><img src="' + thumb + '" class="w3-left w3-margin-right" style="width:60px;"><h3>' + name + '</h3> <div class="w3-clear"></div></li>';
 				out+='<li id="sp">100/100 SP</li>';
 				for(j=0;j<sp_array.length;j++)
@@ -119,18 +60,10 @@
 					out+='<li><strong>'+ sp_cost.trim() + ' SP </strong><input class="w3-check" type="checkbox" value="'+ sp_cost.trim() +'"><label class="w3-validate"> ' + sp_array[j].substring(sp_array[j].search(':')+1, sp_array[j].length).trim() + '</label>';
 					out+='</li>';
 				}
-				////////// out info sidebar
-				out_side+='<li><strong>LS: </strong>' + 'hit: ' + normalhit + ' - dc: ' + normaldc + '<br>' + ls + '</li>';
-				out_side+='<li><strong>BB: </strong>' + 'hit: ' + bbhit + ' - dc: ' + bbdc + ' - cost: ' + bbcost + '<br>' + bb + '</li>';
-				out_side+='<li><strong>SBB: </strong>' + 'hit: ' + sbbhit + ' - dc: ' + sbbdc + ' - cost: ' + sbbcost + '<br>' + sbb + '</li>';
-				out_side+='<li><strong>UBB: </strong>' + 'hit: ' + ubbhit + ' - dc: ' + ubbdc + ' - cost: ' + ubbcost + '<br>' + ubb + '</li>';
-				out_side+='<li><strong>ES: </strong>' + '<br>' + 'Condition: ' + escondition + '<br>' + 'Effect: ' + eseffect + '</li>';
 			}
 		}
 		out+="</ul>";
-		out_side+="</li></ul>";
 		document.getElementById("placeholder").innerHTML = out;
-		document.getElementById("placeholder2").innerHTML = out_side;
 		//////////////////////////////////////////////////////
 		var sLink = "http://ntttoon.github.io/bravefrontier/unitinfo_osb.html";
 		var temp_sp = 100;
@@ -187,14 +120,6 @@
 				}
 			}
 		}
-	}
-	//////////
-	function openNav() {
-		document.getElementById("mySidenav").style.width = "100%";
-	}
-	
-	function closeNav() {
-		document.getElementById("mySidenav").style.width = "0";
 	}
 </script>
 
