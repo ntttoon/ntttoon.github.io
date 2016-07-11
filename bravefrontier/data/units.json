@@ -7878,6 +7878,182 @@
                 }
             },
             {
+                "id": "1407",
+                "name": "Melord 7",
+                "role": "BBrate 35%HP BBfill OverDrive BBATKed convertDEF CRIT convertATK healATKed spark atk def atkdown defdown",
+                "element": "Water",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "8",
+                    "@dc": "32",
+                    "#text": "30% BC Fill+ (ALL) / 0-20% ATK+ Based on HP LEFT (ALL) / 0-20% DEF+ Based on HP LEFT (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL)"
+                },
+                "bb": {
+                    "@hit": "13",
+                    "@dc": "13",
+                    "@cost": "23",
+                    "#text": "350% Water (AOE) / 6BC Fill (ALL) 1Turn / 20% OverDrive Fill+ 3Turns / 3-5BC Fill when ATKed (100%) (ALL) 3Turns / Convert 50% attack to DEF (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "7",
+                    "#text": "560% Water (AOE) / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / Convert 50% DEF to ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "25",
+                    "#text": "1300% Water (AOE) / 100% Chance Heal 100-100% DMG when ATKed (ALL) 3Turns / 250% Spark DMG+ (ALL) 3Turns / 250% ATK+ 250% DEF+ (ALL) 3Turns / 100% Chance -80% Enemy ATK 3Turns / 100% Chance -80% Enemy DEF 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "30% ATK DEF when BB > 50% (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20856.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20856.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1408",
+                "name": "Melord 8",
+                "role": "BBrate 40%HP Null BBfill OverDrive BBATKed convertDEF CRIT convertATK healATKed spark atk def atkdown defdown",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "50% BC Fill+ (ALL) / 0-30% ATK+ Based on HP LEFT (ALL) / 0-30% DEF+ Based on HP LEFT (ALL) / 40% HP 40% ATK 40% DEF 40% REC (ALL) / Null Ails (ALL)"
+                },
+                "bb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "25",
+                    "#text": "370% Water (AOE) / 8BC Fill (ALL) 1Turn / 20% OverDrive Fill+ 3Turns / 4-7BC Fill when ATKed (100%) (ALL) 3Turns / Convert 70% attack to DEF (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "5",
+                    "#text": "580% Water (AOE) / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / Convert 70% DEF to ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "30",
+                    "#text": "1500% Water (AOE) / 100% Chance Heal 100-100% DMG when ATKed (ALL) 3Turns / 300% Spark DMG+ (ALL) 3Turns / 300% ATK+ 300% DEF+ (ALL) 3Turns / 100% Chance -80% Enemy ATK 3Turns / 100% Chance -80% Enemy DEF 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% ATK DEF when BB > 50% (SELF) / 100% Chance 2-3BC Fill when ATKed (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20857.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20857.png"
+                },                
+                "sp": {
+                    "@list": "10 : LS+: +10% All Stats | 30 : SBB+: 10% DEF->ATK buff | 30 : BB+: 10% ATK->DEF buff | 20 : BB+: Fill 2 BC | 10 : Add Effect To BB/SBB (Cure Status/Debuffs) | 20 : Add Effect To BB/SBB (1 turn Inflict Debuff (20% Chance -20% ATK/DEF) Buff) | 20 : Add Effect To BB (-50% ATK and/or -50% DEF {20%} for 1 turn) | 20 : Add Effect To SBB (-50% ATK and/or -50% DEF {30%} for 1 turn) | 30 : Add Effect To BB/SBB (3 Turn +160% ATK) | 30 : Add Effect To BB/SBB (3 Turn +160% DEF)"
+                }
+            },
+            {
+                "id": "1409",
+                "name": "Karon 7",
+                "role": "BBATK% 30%HP superspark Drain ATK weakness DoT miti100%",
+                "element": "Dark",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "7",
+                    "@dc": "35",
+                    "#text": "200% BB ATK%+ (ALL) / 30% HP 30% ATK (ALL) / 3% Chance SPARKcrit (50% DMG+) (ALL)"
+                },
+                "bb": {
+                    "@hit": "11",
+                    "@dc": "11",
+                    "@cost": "25",
+                    "#text": "350% Dark (AOE) / Drain 3-5% HP (SELF) / 150% ATK+ (ALL) 3Turns / 230% BB ATK%+ (ALL) 3Turns / 50% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "30",
+                    "#text": "560% Light,dark (AOE) / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 150% ATK+ (ALL) 3Turns / 400% DMG Each Turn 2Turns / 300% BB ATK%+ (ALL) 3Turns / 50% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "1300% Light,dark (AOE) / Reduce DMG (100%) 1Turns / 50% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 250% ATK+ (ALL) 3Turns / 450% BB ATK%+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "100% BB ATK%+ when HP > 50% (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_61006.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_61006.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1410",
+                "name": "Karon 8",
+                "role": "BBATK% 50%HP superspark Drain ATK weakness DoT miti100%",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "250% BB ATK%+ (ALL) / 50% HP 50% ATK (ALL) / 5% Chance SPARKcrit (50% DMG+) (ALL) / 7BC Fill on >10k DMG Dealt (ALL)"
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "25",
+                    "#text": "370% Dark (AOE) / Drain 3-6% HP (SELF) / 170% ATK+ (ALL) 3Turns / 280% BB ATK%+ (ALL) 3Turns / 50% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "30",
+                    "#text": "580% Light,dark (AOE) / 30% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 170% ATK+ (ALL) 3Turns / 500% DMG Each Turn 2Turns / 350% BB ATK%+ (ALL) 3Turns / 50% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "30",
+                    "#text": "1500% Light,dark (AOE) / Reduce DMG (100%) 2Turns / 100% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 300% ATK+ (ALL) 3Turns / 550% BB ATK%+ (ALL) 3Turns "
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "150% BB ATK%+ when HP > 50% (SELF) / 80% ATK+ on Full HP (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_61007.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_61007.png"
+                },                
+                "sp": {
+                    "@list": "20 : +50% ATK | 10 : +30% HP | 10 : +50% Spark Damage | 10 : +70% Spark Damage | 10 : +100% Spark Damage | 10 : +10% BB Gauge Fill Rate | 20 : SBB+: 10% Chance Sparks Crit Buff (0% Damage) | 50 : BB+: +100% BB/SBB/UBB Mod & SBB+: +100% BB/SBB/UBB Mod & UBB+: +100% BB/SBB/UBB Mod | 50 : Add Effect To BB/SBB (3 turn 25% HP->ATK buff) | 20 : Add Effect To BB/SBB (3 Turn Light Unit +50% ATK) & Add Effect To BB/SBB (3 Turn Dark Unit +50% ATK) | 30 : BB+: +50% Weakness Damage & SBB+: +50% Weakness Damage"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
