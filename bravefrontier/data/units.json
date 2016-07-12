@@ -8465,7 +8465,7 @@
                     "@hit": "18",
                     "@dc": "18",
                     "@cost": "28",
-                    "#text": "350% Light,dark (AOE) / Null Ails 3Turns / Null STATS Debuff 1Turns / Add Light,dark to ATK (ALL) 3Turns"
+                    "#text": "350% Light,dark (AOE) / Null Ails 3Turns / Null STATS Debuff 1Turn / Add Light,dark to ATK (ALL) 3Turns"
                 },
                 "sbb": {
                     "@hit": "26",
@@ -8477,7 +8477,7 @@
                     "@hit": "28",
                     "@dc": "28",
                     "@cost": "30",
-                    "#text": "1500% Light,dark (AOE) / 999BC Fill 3Turns / Gradual Heal FULL (ALL) 3Turns / Reduce DMG (100%) from (Light,dark) Enemy"
+                    "#text": "1500% Light,dark (AOE) / 999BC Fill 3Turns / Gradual Heal FULL (ALL) 3Turns / Reduce DMG (100%) from (Light,dark) Enemy 2Turns"
                 },
                 "es": {
                     "@condtion": "20% ALL STATS (SELF) when Ishrion sphere equipped",
