@@ -79,6 +79,7 @@
 		var i,j;
 		var out = "<ul class='w3-ul'>";
 		var out_side = "<ul class='w3-ul'>";
+		var ls_out = bb_out = sbb_out = ubb_out = escon_out = es_out = "";
 		var s = getURLParameter('id');
 		var json_len = arr.brave.unit.length;
 		for(i = 0; i < json_len; i++) {
@@ -110,6 +111,12 @@
 				var eseffect = arr.brave.unit[i].es['#text'];
 				var sp = arr.brave.unit[i].sp['@list'];
 				var sp_array = sp.split("|");
+				var ls_array = ls.split("/");
+				var bb_array = bb.split("/");
+				var sbb_array = sbb.split("/");
+				var ubb_array = ubb.split("/");
+				var escon_array = escondition.split("/");
+				var es_array = eseffect.split("/");
 				////////// out omni skill
 				out+='<li><img src="' + thumb + '" class="w3-left w3-margin-right" style="width:60px;"><h3>' + name + '</h3> <div class="w3-clear"></div></li>';
 				out+='<li id="sp">100/100 SP</li>';
@@ -119,12 +126,37 @@
 					out+='<li><strong>'+ sp_cost.trim() + ' SP </strong><input class="w3-check" type="checkbox" value="'+ sp_cost.trim() +'"><label class="w3-validate"> ' + sp_array[j].substring(sp_array[j].search(':')+1, sp_array[j].length).trim() + '</label>';
 					out+='</li>';
 				}
+				////////// break into lines
+				for(j=0;j<ls_array.length;j++)
+				{
+					ls_out+='<div style="margin-left:40px" class="w3-small">◇ ' + ls_array[j].trim() + '<br></div>';
+				}
+				for(j=0;j<bb_array.length;j++)
+				{
+					bb_out+='<div style="margin-left:40px" class="w3-small">◇ ' + bb_array[j].trim() + '<br></div>';
+				}
+				for(j=0;j<sbb_array.length;j++)
+				{
+					sbb_out+='<div style="margin-left:40px" class="w3-small">◇ ' + sbb_array[j].trim() + '<br></div>';
+				}
+				for(j=0;j<ubb_array.length;j++)
+				{
+					ubb_out+='<div style="margin-left:40px" class="w3-small">◇ ' + ubb_array[j].trim() + '<br></div>';
+				}
+				for(j=0;j<escon_array.length;j++)
+				{
+					escon_out+='<div style="margin-left:40px" class="w3-small">◇ ' + escon_array[j].trim() + '<br></div>';
+				}
+				for(j=0;j<es_array.length;j++)
+				{
+					es_out+='<div style="margin-left:40px" class="w3-small">◇ ' + es_array[j].trim() + '<br></div>';
+				}
 				////////// out info sidebar
-				out_side+='<li><strong>LS: </strong>' + 'hit: ' + normalhit + ' - dc: ' + normaldc + '<br>' + ls + '</li>';
-				out_side+='<li><strong>BB: </strong>' + 'hit: ' + bbhit + ' - dc: ' + bbdc + ' - cost: ' + bbcost + '<br>' + bb + '</li>';
-				out_side+='<li><strong>SBB: </strong>' + 'hit: ' + sbbhit + ' - dc: ' + sbbdc + ' - cost: ' + sbbcost + '<br>' + sbb + '</li>';
-				out_side+='<li><strong>UBB: </strong>' + 'hit: ' + ubbhit + ' - dc: ' + ubbdc + ' - cost: ' + ubbcost + '<br>' + ubb + '</li>';
-				out_side+='<li><strong>ES: </strong>' + '<br>' + 'Condition: ' + escondition + '<br>' + 'Effect: ' + eseffect + '</li>';
+				out_side+='<li><strong>LS: </strong>' + 'hit: ' + normalhit + ' - dc: ' + normaldc + '<br>' + ls_out + '</li>';
+				out_side+='<li><strong>BB: </strong>' + 'hit: ' + bbhit + ' - dc: ' + bbdc + ' - cost: ' + bbcost + '<br>' + bb_out + '</li>';
+				out_side+='<li><strong>SBB: </strong>' + 'hit: ' + sbbhit + ' - dc: ' + sbbdc + ' - cost: ' + sbbcost + '<br>' + sbb_out + '</li>';
+				out_side+='<li><strong>UBB: </strong>' + 'hit: ' + ubbhit + ' - dc: ' + ubbdc + ' - cost: ' + ubbcost + '<br>' + ubb_out + '</li>';
+				out_side+='<li><strong>ES: </strong>' + '<br>' + 'Condition: ' + escon_out + '<br>' + 'Effect: ' + es_out + '</li>';
 			}
 		}
 		out+="</ul>";

@@ -33,7 +33,7 @@
                 },
                 "es": {
                     "@condtion": "Dandelga Sphere equipped",
-                    "#text": "20% ALL Stats SELF / 50% DMG+ to Weak Element SELF"
+                    "#text": "20% ALL Stats (SELF) / 50% DMG+ to Weak Element (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10016.png"
@@ -77,7 +77,7 @@
                 },
                 "es": {
                     "@condtion": "Lexida Sphere equipped",
-                    "#text": "20% ALL Stats SELF / Angel Idol when HP < 20% (SELF)"
+                    "#text": "20% ALL Stats (SELF) / Angel Idol when HP < 20% (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20016.png"
@@ -121,7 +121,7 @@
                 },
                 "es": {
                     "@condtion": "Drevas Sphere equipped",
-                    "#text": "20% ALL Stats SELF / 20% Chance Reduce DMG 20% SELF"
+                    "#text": "20% ALL Stats (SELF) / 20% Chance Reduce DMG 20% (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30016.png"
@@ -165,7 +165,7 @@
                 },
                 "es": {
                     "@condtion": "Bathoota Sphere equipped",
-                    "#text": "20% ALL Stats SELF / 50% CRIT DMG+ SELF"
+                    "#text": "20% ALL Stats (SELF) / 50% CRIT DMG+ (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40016.png"
@@ -209,7 +209,7 @@
                 },
                 "es": {
                     "@condtion": "Urias Sphere equipped",
-                    "#text": "20% ALL Stats SELF / 20% Reduce BB Gauge Used SELF"
+                    "#text": "20% ALL Stats (SELF) / 20% Reduce BB Gauge Used (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50016.png"
@@ -253,7 +253,7 @@
                 },
                 "es": {
                     "@condtion": "Leomurg Sphere equipped",
-                    "#text": "20% ALL Stats SELF / 50% Chance Ignore DEF SELF"
+                    "#text": "20% ALL Stats (SELF) / 50% Chance Ignore DEF (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60016.png"
@@ -296,8 +296,8 @@
                     "#text": "1000% Fire (AOE) / Convert 30% HP to ATK (ALL) 3Turns"
                 },
                 "es": {
-                    "@condtion": "Full HP SELF",
-                    "#text": "80% ATK+ SELF (Stacks with all other ATK buffs)"
+                    "@condtion": "None",
+                    "#text": "80% ATK+ (SELF) on Full HP"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10596.png"
@@ -340,8 +340,8 @@
                     "#text": "1000% Water (AOE) / Ignore DEF (ALL) 2Turns / 120% Spark DMG+ (ALL) 3Turns"
                 },
                 "es": {
-                    "@condtion": "Full BB Gauge SELF",
-                    "#text": "80% ATK+ SELF (Stacks with other ATK buffs)"
+                    "@condtion": "None",
+                    "#text": "80% ATK+ (SELF) on Full BB Gauge"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20566.png"
@@ -384,7 +384,7 @@
                     "#text": "1000% Earth (AOE) / 5-10BC Fill when ATKed (100%) (ALL) 3Turns / Add 100% Injury 100% Weak 100% Sick to ATK (ALL) 3Turns / Add 100% Poison 100% Para 100% Curse to ATK (ALL) 3Turns"
                 },
                 "es": {
-                    "@condtion": "Attacking",
+                    "@condtion": "None",
                     "#text": "8% Chance Inflict Curse Para Poison (SELF) / 10% Chance Inflict Weak Injury Sick (SELF)"
                 },
                 "art": {
@@ -472,7 +472,7 @@
                     "#text": "1200% Light (AOE) / 60% CRIT+ (ALL) 3Turns / 200% ATK+ (ALL) 3Turns"
                 },
                 "es": {
-                    "@condtion": "Attacked",
+                    "@condtion": "None",
                     "#text": "25% Chance Reflect DMG 15% (SELF)"
                 },
                 "art": {
@@ -516,7 +516,7 @@
                     "#text": "1000% Dark (AOE) / 170% ATK+ 170% DEF+ 170% REC+ (ALL) 3Turns"
                 },
                 "es": {
-                    "@condtion": "Attacking / Attacked",
+                    "@condtion": "None",
                     "#text": "100% Chance Drain 5-8% HP (SELF) / 20% Chance Heal 20% DMG when ATKed (SELF)"
                 },
                 "art": {
@@ -561,7 +561,7 @@
                 },
                 "es": {
                     "@condtion": "Holy Eight Sphere equipped",
-                    "#text": "20% ALL Stats SELF / 100% BB ATK%+ (SELF)"
+                    "#text": "20% ALL Stats (SELF) / 100% BB ATK%+ (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50166_2.png"
@@ -605,7 +605,7 @@
                 },
                 "es": {
                     "@condtion": "Scarlet Pin Sphere equipped",
-                    "#text": "20% ALL Stats SELF / 8% Chance Inflict Curse Para Poison SELF / 10% Chance Inflict Weak Injury Sick SELF"
+                    "#text": "20% ALL Stats (SELF) / 8% Chance Inflict Curse Para Poison (SELF) / 10% Chance Inflict Weak Injury Sick (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60176.png"
@@ -648,8 +648,8 @@
                     "#text": "1000% Fire (AOE) / 130% Spark DMG+ (ALL) 3Turns / 200% ATK+ (ALL) 3Turns"
                 },
                 "es": {
-                    "@condtion": "Kurt in squad or Blaze Lance sphere equipped",
-                    "#text": "30% ALL Stats SELF"
+                    "@condtion": "Colt in squad or Blaze Lance sphere equipped",
+                    "#text": "30% ALL Stats (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10606.png"
@@ -693,7 +693,7 @@
                 },
                 "es": {
                     "@condtion": "Claire in squad or Ice Blade sphere equipped",
-                    "#text": "30% ALL Stats SELF"
+                    "#text": "30% ALL Stats (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20576.png"
@@ -737,7 +737,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Higher ATK+ DEF+ REC+ w/ Lower HP Left (150% - 0% Buff)"
+                    "#text": "Higher ATK+ DEF+ REC+ with Lower HP Left (150% - 0% Buff)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30566_2.png"
@@ -777,7 +777,7 @@
                     "@hit": "20",
                     "@dc": "20",
                     "@cost": "25",
-                    "#text": "1000% Thunder (AOE) / 500% BB ATK%+ (ALL) 3Turns / 50-50BC Fill when ATKed (130%) (ALL) 3Turns"
+                    "#text": "1000% Thunder (AOE) / 500% BB ATK%+ (ALL) 3Turns / 50BC Fill when ATKed (130%) (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -1309,7 +1309,7 @@
                 },
                 "es": {
                     "@condtion": "20% ALL Stats (SELF) (Lafdranya Sphere equipped)",
-                    "#text": "Add Cure Ails (ALL) effect to BB/SBB (SELF)"
+                    "#text": "Add Cure Ails (ALL) effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30166.png"
@@ -1705,7 +1705,7 @@
                 },
                 "es": {
                     "@condtion": "20% All STATS (SELF) when (Golem Core sphere equipped)",
-                    "#text": "Add 100% BB ATK%+ (ALL) 3Turns effect to BB/SBB (SELF)"
+                    "#text": "Add 100% BB ATK%+ (ALL) 3Turns effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20276.png"
@@ -1793,7 +1793,7 @@
                 },
                 "es": {
                     "@condtion": "20% All STATS (SELF) when [God Devices spheres] equipped",
-                    "#text": "Add Light to ATK (3Turns) effect to BB/SBB"
+                    "#text": "Add Light to ATK (3Turns) effect to BB,SBB"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50116.png"
@@ -1833,7 +1833,7 @@
                     "@hit": "24",
                     "@dc": "24",
                     "@cost": "25",
-                    "#text": "1000% Fire (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 200% ATK+ 200% DEF+ (ALL) 3Turns"
+                    "#text": "1000% Fire (AOE) / 50BC Fill when ATKed (100%) (ALL) 3Turns / 200% ATK+ 200% DEF+ (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -2101,7 +2101,7 @@
                 },
                 "es": {
                     "@condtion": "20% All STATS (SELF) when DUEL Fragment sphere equipped",
-                    "#text": "Add Dark to ATK (ALL) Effect to BB/SBB (SELF)"
+                    "#text": "Add Dark to ATK (ALL) Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10256_2.png"
@@ -2129,7 +2129,7 @@
                     "@hit": "",
                     "@dc": "",
                     "@cost": "15",
-                    "#text": "Heal (ALL) / Cure Ails / Null Ails 3Turns / 10% Max HP+ till Death/Battle End"
+                    "#text": "Heal (ALL) / Cure Ails / Null Ails 3Turns / 10% Max HP+ till Death,Battle End"
                 },
                 "sbb": {
                     "@hit": "28",
@@ -2189,7 +2189,7 @@
                 },
                 "es": {
                     "@condtion": "20% All STATS (SELF) when White Armor sphere equipped",
-                    "#text": "Add Cure Ails (ALL) effect to BB/SBB (SELF)"
+                    "#text": "Add Cure Ails (ALL) effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50276.png"
@@ -2233,7 +2233,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "4BC Fill on CRIT (SELF) / Add 60% CRIT+ (ALL) effect to BB/SBB (SELF)"
+                    "#text": "4BC Fill on CRIT (SELF) / Add 60% CRIT+ (ALL) effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10676.png"
@@ -2365,7 +2365,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "100% Chance 1BC Fill on Spark (SELF) / Add Ignore DEF (ALL) 2Turns effect to BB/SBB (SELF)"
+                    "#text": "100% Chance 1BC Fill on Spark (SELF) / Add Ignore DEF (ALL) 2Turns effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40606.png"
@@ -2701,7 +2701,7 @@
                     "@hit": "14",
                     "@dc": "14",
                     "@cost": "27",
-                    "#text": "300% Water (AOE) / 10% Max HP+ till Death/Battle End / 250% DMG Each Turn 3Turns / Gradual Heal (ALL) 3Turns"
+                    "#text": "300% Water (AOE) / 10% Max HP+ till Death,Battle End / 250% DMG Each Turn 3Turns / Gradual Heal (ALL) 3Turns"
                 },
                 "sbb": {
                     "@hit": "18",
@@ -2713,7 +2713,7 @@
                     "@hit": "",
                     "@dc": "",
                     "@cost": "25",
-                    "#text": "20% Max HP+ till Death/Battle End / Gradual Heal FULL (ALL) 3Turns / 50% Chance Revive 100% HP (ALL) 70Turns"
+                    "#text": "20% Max HP+ till Death,Battle End / Gradual Heal FULL (ALL) 3Turns / 50% Chance Revive 100% HP (ALL) 70Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -2937,7 +2937,7 @@
                 },
                 "es": {
                     "@condtion": "20% ALL Stats (SELF) when Reeze's Armor sphere equipped",
-                    "#text": "Add Null Ails effect to BB/SBB"
+                    "#text": "Add Null Ails effect to BB,SBB"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20286.png"
@@ -2981,7 +2981,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Add Ignore DEF (ALL) 2Turns effect to BB/SBB / 100% DMG+ to Ailed Enemy"
+                    "#text": "Add Ignore DEF (ALL) 2Turns effect to BB,SBB / 100% DMG+ to Ailed Enemy"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30516.png"
@@ -3245,7 +3245,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Add 5BC Fill 3Turns (ALL) effect to BB/SBB (SELF)"
+                    "#text": "Add 5BC Fill 3Turns (ALL) effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50816.png"
@@ -3285,7 +3285,7 @@
                     "@hit": "21",
                     "@dc": "21",
                     "@cost": "25",
-                    "#text": "1200% Dark (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns"
+                    "#text": "1200% Dark (AOE) / 50BC Fill when ATKed (100%) (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -3329,7 +3329,7 @@
                     "@hit": "21",
                     "@dc": "21",
                     "@cost": "20",
-                    "#text": "1000% Fire (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 200% ATK+ (ALL) 3Turns / Inflict 100% Injury 100% Weak 100% Sick 100% Poison 100% Para 100% Curse on ATKed (ALL) 3Turns"
+                    "#text": "1000% Fire (AOE) / 50BC Fill when ATKed (100%) (ALL) 3Turns / 200% ATK+ (ALL) 3Turns / Inflict 100% Injury 100% Weak 100% Sick 100% Poison 100% Para 100% Curse on ATKed (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -3461,7 +3461,7 @@
                     "@hit": "21",
                     "@dc": "21",
                     "@cost": "20",
-                    "#text": "1000% Dark (AOE) / 20% Max HP+ till Death/Battle End / Convert 20% HP to ATK (ALL) 3Turns"
+                    "#text": "1000% Dark (AOE) / 20% Max HP+ till Death,Battle End / Convert 20% HP to ATK (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -3553,7 +3553,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "50% Element Weakness DMG+ (Water) (SELF) / Add 50% BC Fill+ (ALL) 3Turns effect to BB/SBB (SELF)"
+                    "#text": "50% Element Weakness DMG+ (Water) (SELF) / Add 50% BC Fill+ (ALL) 3Turns effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20696.png"
@@ -3597,7 +3597,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Nulls CRIT (SELF) / Nulls Elemental Weakness (SELF) / Add 30% HC+ 30% BC+ (ALL) 3Turns effect to BB/SBB (SELF)"
+                    "#text": "Nulls CRIT (SELF) / Nulls Elemental Weakness (SELF) / Add 30% HC+ 30% BC+ (ALL) 3Turns effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30686.png"
@@ -3641,7 +3641,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Normal HitCount +100% (100% DMG) (ALL) / Add Ignore DEF (ALL) effect to BB/SBB (SELF)"
+                    "#text": "Normal HitCount +100% (100% DMG) (ALL) / Add Ignore DEF (ALL) effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40666.png"
@@ -3857,7 +3857,7 @@
                     "@hit": "20",
                     "@dc": "20",
                     "@cost": "30",
-                    "#text": "1200% Thunder (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 5Turns / Inflict 100% Injury 100% Weak 100% Sick 100% Poison 100% Para 100% Curse on ATKed (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns"
+                    "#text": "1200% Thunder (AOE) / 50BC Fill when ATKed (100%) (ALL) 5Turns / Inflict 100% Injury 100% Weak 100% Sick 100% Poison 100% Para 100% Curse on ATKed (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -3993,7 +3993,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Nulls Ails (SELF) / Add Cure Ails (ALL) effect to BB/SBB (SELF)"
+                    "#text": "Nulls Ails (SELF) / Add Cure Ails (ALL) effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30696.png"
@@ -4033,7 +4033,7 @@
                     "@hit": "21",
                     "@dc": "21",
                     "@cost": "25",
-                    "#text": "1200% Thunder (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / Convert 30% HP to ATK (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns"
+                    "#text": "1200% Thunder (AOE) / 50BC Fill when ATKed (100%) (ALL) 3Turns / Convert 30% HP to ATK (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -4169,7 +4169,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Add Cure Ails (ALL) effect to BB/SBB (SELF)"
+                    "#text": "Add Cure Ails (ALL) effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10366.png"
@@ -4209,7 +4209,7 @@
                     "@hit": "23",
                     "@dc": "23",
                     "@cost": "20",
-                    "#text": "1200% Earth (AOE) / 20% Max HP+ till Death/Battle End / Convert 30% HP to ATK (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns"
+                    "#text": "1200% Earth (AOE) / 20% Max HP+ till Death,Battle End / Convert 30% HP to ATK (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -4257,7 +4257,7 @@
                 },
                 "es": {
                     "@condtion": "20% ALL STATS (SELF) when Reeze's sphere is equipped",
-                    "#text": "Add 4BC Fill (ALL) Effect to BB/SBB"
+                    "#text": "Add 4BC Fill (ALL) Effect to BB,SBB"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50316.png"
@@ -4301,7 +4301,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "100% Chance Drain 5-10% HP (SELF) / Add Ignore DEF (ALL) 2Turns Effect to BB/SBB"
+                    "#text": "100% Chance Drain 5-10% HP (SELF) / Add Ignore DEF (ALL) 2Turns Effect to BB,SBB"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60526.png"
@@ -4389,7 +4389,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Add 90% Spark DMG+ (ALL) 3Turns Effect to BB/SBB (SELF)"
+                    "#text": "Add 90% Spark DMG+ (ALL) 3Turns Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20726.png"
@@ -4429,11 +4429,11 @@
                     "@hit": "21",
                     "@dc": "21",
                     "@cost": "25",
-                    "#text": "1200% Earth (AOE) / 50BC Fill 3Turns / 25% Max HP+ till Death/Battle End / 200% ATK+ 200% DEF+ 200% REC+ (ALL) 3Turns"
+                    "#text": "1200% Earth (AOE) / 50BC Fill 3Turns / 25% Max HP+ till Death,Battle End / 200% ATK+ 200% DEF+ 200% REC+ (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Add Gradual Heal (ALL) 3Turns Effect to BB/SBB (SELF)"
+                    "#text": "Add Gradual Heal (ALL) 3Turns Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30706.png"
@@ -4521,7 +4521,7 @@
                 },
                 "es": {
                     "@condtion": "20% ALL Stats (SELF) / 100% Chance 10BC Fill on Spark (SELF) when Guiding Light Sphere Equipped",
-                    "#text": "Add 60% CRIT+ (ALL) 3Turns Effect to BB/SBB (SELF)"
+                    "#text": "Add 60% CRIT+ (ALL) 3Turns Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50886.png"
@@ -4561,7 +4561,7 @@
                     "@hit": "22",
                     "@dc": "22",
                     "@cost": "25",
-                    "#text": "1000% Dark (AOE) / Reduce DMG (75%) 3Turns / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns"
+                    "#text": "1000% Dark (AOE) / Reduce DMG (75%) 3Turns / 50BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -4605,7 +4605,7 @@
                     "@hit": "",
                     "@dc": "",
                     "@cost": "35",
-                    "#text": "Full Heal (ALL) / 25% Max HP+ till Death/Battle End / 20k HP Barrier (fire) / 66% Chance Revive Dead Ally 100% HP (ALL)"
+                    "#text": "Full Heal (ALL) / 25% Max HP+ till Death,Battle End / 20k HP Barrier (fire) / 66% Chance Revive Dead Ally 100% HP (ALL)"
                 },
                 "es": {
                     "@condtion": "None",
@@ -4696,7 +4696,7 @@
                     "#text": "1200% Light (AOE) / 200% ATK+ to Light 3Turns / 130% Spark DMG+ (ALL) 3Turns / 300% BB ATK%+ (ALL) 3Turns"
                 },
                 "es": {
-                    "@condtion": "[Condition 1] 20% HP 20% ATK (SELF) / Add Reduce DMG (50%) (ALL) 1Turns Effect to BB/SBB (SELF) when [Guardian Shard] is equipped. [Condition 2] 20% HP 20% DEF (SELF) / Add 25% Chance Enemy receives 25% Spark DMG+ 1Turns Effect to BB/SBB (SELF) when [Guardian Sliver] is equipped.",
+                    "@condtion": "[Condition 1] 20% HP 20% ATK (SELF) / Add Reduce DMG (50%) (ALL) 1Turns Effect to BB,SBB (SELF) when [Guardian Shard] is equipped. [Condition 2] 20% HP 20% DEF (SELF) / Add 25% Chance Enemy receives 25% Spark DMG+ 1Turns Effect to BB,SBB (SELF) when [Guardian Sliver] is equipped.",
                     "#text": "100% Chance 1-2BC Fill on Spark (SELF)"
                 },
                 "art": {
@@ -4741,7 +4741,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Add Ignore DEF (ALL) 2Turns effect to BB/SBB / Normal HitCount +100% (100% DMG) (SELF)"
+                    "#text": "Add Ignore DEF (ALL) 2Turns effect to BB,SBB / Normal HitCount +100% (100% DMG) (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60356.png"
@@ -4825,11 +4825,11 @@
                     "@hit": "24",
                     "@dc": "24",
                     "@cost": "25",
-                    "#text": "1200% Water (AOE) / Reduce DMG (100%) 1Turns / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance -80% Enemy ATK 3Turns / 100% Chance -80% Enemy DEF 3Turns"
+                    "#text": "1200% Water (AOE) / Reduce DMG (100%) 1Turns / 50BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance -80% Enemy ATK 3Turns / 100% Chance -80% Enemy DEF 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Add Convert 35% ATK to DEF (ALL) 3Turns Effect to BB/SBB (SELF)"
+                    "#text": "Add Convert 35% ATK to DEF (ALL) 3Turns Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20736.png"
@@ -4857,7 +4857,7 @@
                     "@hit": "15",
                     "@dc": "15",
                     "@cost": "24",
-                    "#text": "300% Earth (AOE) / 15% Max HP+ till Death/Battle End / 50% Injury 50% Weak 50% Sick 50% Poison / 50% Para 50% Curse"
+                    "#text": "300% Earth (AOE) / 15% Max HP+ till Death,Battle End / 50% Injury 50% Weak 50% Sick 50% Poison / 50% Para 50% Curse"
                 },
                 "sbb": {
                     "@hit": "18",
@@ -4957,7 +4957,7 @@
                     "@hit": "20",
                     "@dc": "20",
                     "@cost": "30",
-                    "#text": "1200% Light (AOE) / 25% Max HP+ till Death/Battle End / Convert 25% HP to DEF (ALL) 3Turns / Reduce DMG (100%) from (Fire,water,earth,thunder) Enemy"
+                    "#text": "1200% Light (AOE) / 25% Max HP+ till Death,Battle End / Convert 25% HP to DEF (ALL) 3Turns / Reduce DMG (100%) from (Fire,water,earth,thunder) Enemy"
                 },
                 "es": {
                     "@condtion": "None",
@@ -5049,7 +5049,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "80% ATK+ when Full HP (SELF) / Add Convert 15% HP to DEF (ALL) effect to BB/SBB (SELF)"
+                    "#text": "80% ATK+ when Full HP (SELF) / Add Convert 15% HP to DEF (ALL) effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20366.png"
@@ -5473,7 +5473,7 @@
                     "@hit": "14",
                     "@dc": "14",
                     "@cost": "24",
-                    "#text": "260% Fire (AOE) / Reduce DMG (50%) 1Turns / 15% Max HP+ till Death/Battle End / 140% DEF+ (ALL) 3Turns"
+                    "#text": "260% Fire (AOE) / Reduce DMG (50%) 1Turns / 15% Max HP+ till Death,Battle End / 140% DEF+ (ALL) 3Turns"
                 },
                 "sbb": {
                     "@hit": "16",
@@ -5489,7 +5489,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Null Elemental Weakness (SELF) / Add Null Ails (ALL) 3Turns Effect to BB/SBB (SELF)"
+                    "#text": "Null Elemental Weakness (SELF) / Add Null Ails (ALL) 3Turns Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10466.png"
@@ -5517,7 +5517,7 @@
                     "@hit": "40",
                     "@dc": "",
                     "@cost": "22",
-                    "#text": "1200% Light (TGT) / Random Hits / 30% BC Fill+ (ALL) 3Turns / Add 15% Para to ATK (ALL) 3Turns"
+                    "#text": "1200% Light (TGT) (Random Hits) / 30% BC Fill+ (ALL) 3Turns / Add 15% Para to ATK (ALL) 3Turns"
                 },
                 "sbb": {
                     "@hit": "18",
@@ -5881,7 +5881,7 @@
                     "@hit": "20",
                     "@dc": "20",
                     "@cost": "30",
-                    "#text": "1300% Fire (AOE) / Reduce DMG (75%) 3Turns / 25% Max HP+ till Death/Battle End / Inflict 80% Injury 80% Weak 80% Sick 80% Poison 80% Para 80% Curse on ATKed (ALL) 3Turns"
+                    "#text": "1300% Fire (AOE) / Reduce DMG (75%) 3Turns / 25% Max HP+ till Death,Battle End / Inflict 80% Injury 80% Weak 80% Sick 80% Poison 80% Para 80% Curse on ATKed (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -5925,11 +5925,11 @@
                     "@hit": "24",
                     "@dc": "24",
                     "@cost": "30",
-                    "#text": "1500% Fire (AOE) / Reduce DMG (75%) 3Turns / 35% Max HP+ till Death/Battle End / Inflict 80% Injury 80% Weak 80% Sick 80% Poison 80% Para 80% Curse on ATKed (ALL) 3Turns"
+                    "#text": "1500% Fire (AOE) / Reduce DMG (75%) 3Turns / 35% Max HP+ till Death,Battle End / Inflict 80% Injury 80% Weak 80% Sick 80% Poison 80% Para 80% Curse on ATKed (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Null Ails (SELF) / Null Elemental Weakness (SELF) / Add 2k HP Barrier (fire) Effect to BB/SBB (SELF)"
+                    "#text": "Null Ails (SELF) / Null Elemental Weakness (SELF) / Add 2k HP Barrier (fire) Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10847.png"
@@ -5973,7 +5973,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "100% DMG+ to Ailed Enemy (SELF) / Add Null Ails (ALL) 3Turns Effect to BB/SBB (SELF)"
+                    "#text": "100% DMG+ to Ailed Enemy (SELF) / Add Null Ails (ALL) 3Turns Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20776.png"
@@ -6149,7 +6149,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Add 35% BC+ 35% HC+ (ALL) 3Turns Effect to BB/SBB (SELF)"
+                    "#text": "Add 35% BC+ 35% HC+ (ALL) 3Turns Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60956.png"
@@ -6193,7 +6193,7 @@
                 },
                 "es": {
                     "@condtion": "20% All STATS when Scarlet Necklace is equipped",
-                    "#text": "Add Ignore DEF (ALL) 3Turns Effect to BB/SBB (SELF)"
+                    "#text": "Add Ignore DEF (ALL) 3Turns Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10556.png"
@@ -6281,7 +6281,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Add 50% CRIT DMG+ (ALL) 3Turns Effect to BB/SBB (SELF)"
+                    "#text": "Add 50% CRIT DMG+ (ALL) 3Turns Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60536.png"
@@ -6325,7 +6325,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Add Ignore DEF (ALL) 2Turns Effect to BB/SBB (SELF) / 80% ATK+ Each Turn w/ bonus on 5 Consecutive Turns (SELF)"
+                    "#text": "Add Ignore DEF (ALL) 2Turns Effect to BB,SBB (SELF) / 80% ATK+ Each Turn with bonus on 5 Consecutive Turns (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10866.png"
@@ -6453,11 +6453,11 @@
                     "@hit": "24",
                     "@dc": "24",
                     "@cost": "30",
-                    "#text": "1300% Earth (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance Heal 75-75% DMG when ATKed (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns / 100% Chance -80% Enemy DEF 2Turns"
+                    "#text": "1300% Earth (AOE) / 50BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance Heal 75-75% DMG when ATKed (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns / 100% Chance -80% Enemy DEF 2Turns"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Add 7BC Fill (ALL) 3Turns Effect to BB/SBB (SELF) / Add Gradual Heal (ALL) 3Turns Effect to BB/SBB (SELF)"
+                    "#text": "Add 7BC Fill (ALL) 3Turns Effect to BB,SBB (SELF) / Add Gradual Heal (ALL) 3Turns Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30776.png"
@@ -6721,7 +6721,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "50% Spark DMG+ (SELF) / Add Ignore DEF (ALL) 2Turns Effect to BB/SBB (SELF)"
+                    "#text": "50% Spark DMG+ (SELF) / Add Ignore DEF (ALL) 2Turns Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60027.png"
@@ -6765,7 +6765,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Add 160% DMG+ to Ailed Enemy (ALL) 3Turns Effect to BB/SBB (SELF)"
+                    "#text": "Add 160% DMG+ to Ailed Enemy (ALL) 3Turns Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10886.png"
@@ -6809,7 +6809,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Add 5BC Fill (ALL) 1Turn effect to BB/SBB (SELF) / 0-50% DEF+ Based on HP LOST (SELF)"
+                    "#text": "Add 5BC Fill (ALL) 1Turn effect to BB,SBB (SELF) / 0-50% DEF+ Based on HP LOST (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20806.png"
@@ -7029,7 +7029,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Reduce DMG (25%) 1Turn when HP < 50% (SELF) / Add 35% BC+ 35% HC+ (ALL) 3Turns Effect to BB/SBB (SELF)"
+                    "#text": "Reduce DMG (25%) 1Turn when HP < 50% (SELF) / Add 35% BC+ 35% HC+ (ALL) 3Turns Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50987.png"
@@ -7069,7 +7069,7 @@
                     "@hit": "22",
                     "@dc": "22",
                     "@cost": "30",
-                    "#text": "1300% Dark (AOE) / 50BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance Heal 100-100% DMG when ATKed (ALL) 3Turns / 35% Max HP+ till Death/Battle End / 100% Chance -80% Enemy ATK 3Turns / 100% Chance -80% Enemy DEF 3Turns"
+                    "#text": "1300% Dark (AOE) / 50BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance Heal 100-100% DMG when ATKed (ALL) 3Turns / 35% Max HP+ till Death,Battle End / 100% Chance -80% Enemy ATK 3Turns / 100% Chance -80% Enemy DEF 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -7541,7 +7541,7 @@
                     "@hit": "9",
                     "@dc": "9",
                     "@cost": "27",
-                    "#text": "350% Light (AOE) / 6BC Fill (ALL) 1Turn / 10% Max HP+ till Death/Battle End / Reduce DMG (10%) from (Fire,water,earth,thunder) Enemy1Turns"
+                    "#text": "350% Light (AOE) / 6BC Fill (ALL) 1Turn / 10% Max HP+ till Death,Battle End / Reduce DMG (10%) from (Fire,water,earth,thunder) Enemy1Turns"
                 },
                 "sbb": {
                     "@hit": "15",
@@ -7553,7 +7553,7 @@
                     "@hit": "21",
                     "@dc": "21",
                     "@cost": "30",
-                    "#text": "1300% Light (AOE) / 60% CRIT+ (ALL) 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 30% Max HP+ till Death/Battle End / Reduce DMG (50%) from (All) Enemy3Turns"
+                    "#text": "1300% Light (AOE) / 60% CRIT+ (ALL) 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 30% Max HP+ till Death,Battle End / Reduce DMG (50%) from (All) Enemy3Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -7585,7 +7585,7 @@
                     "@hit": "11",
                     "@dc": "11",
                     "@cost": "26",
-                    "#text": "370% Light (AOE) / 8BC Fill (ALL) 1Turn / 10% Max HP+ till Death/Battle End / Reduce DMG (10%) from (Fire,water,earth,thunder) Enemy1Turns"
+                    "#text": "370% Light (AOE) / 8BC Fill (ALL) 1Turn / 10% Max HP+ till Death,Battle End / Reduce DMG (10%) from (Fire,water,earth,thunder) Enemy1Turns"
                 },
                 "sbb": {
                     "@hit": "17",
@@ -7597,7 +7597,7 @@
                     "@hit": "24",
                     "@dc": "24",
                     "@cost": "30",
-                    "#text": "1500% Light (AOE) / 60% CRIT+ (ALL) 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 35% Max HP+ till Death/Battle End / Reduce DMG (50%) from (All) Enemy3Turns"
+                    "#text": "1500% Light (AOE) / 60% CRIT+ (ALL) 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 35% Max HP+ till Death,Battle End / Reduce DMG (50%) from (All) Enemy3Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -7689,7 +7689,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "100% Chance Drain 5-10% HP (SELF) / 80% Spark DMG+ on HP > 50% (SELF) / Add Ignore DEF 2Turns (ALL) effect to BB/SBB (SELF)"
+                    "#text": "100% Chance Drain 5-10% HP (SELF) / 80% Spark DMG+ on HP > 50% (SELF) / Add Ignore DEF 2Turns (ALL) effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60527.png"
@@ -7729,7 +7729,7 @@
                     "@hit": "20",
                     "@dc": "20",
                     "@cost": "25",
-                    "#text": "1200% Water (AOE) / Reduce DMG (75%) 3Turns / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns"
+                    "#text": "1200% Water (AOE) / Reduce DMG (75%) 3Turns / 50BC Fill when ATKed (100%) (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -7773,11 +7773,11 @@
                     "@hit": "23",
                     "@dc": "23",
                     "@cost": "30",
-                    "#text": "1300% Water (AOE) / Reduce DMG (75%) 3Turns / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns"
+                    "#text": "1300% Water (AOE) / Reduce DMG (75%) 3Turns / 50BC Fill when ATKed (100%) (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Null Ails (SELF) / Add 2k HP Barrier (Water) Effect to BB/SBB (SELF)"
+                    "#text": "Null Ails (SELF) / Add 2k HP Barrier (Water) Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20837.png"
@@ -8157,7 +8157,7 @@
                     "@hit": "20",
                     "@dc": "20",
                     "@cost": "26",
-                    "#text": "350% Light (AOE) / 15% Max HP+ till Death/Battle End / 35% BC+ 35% HC+ (ALL) 3Turns"
+                    "#text": "350% Light (AOE) / 15% Max HP+ till Death,Battle End / 35% BC+ 35% HC+ (ALL) 3Turns"
                 },
                 "sbb": {
                     "@hit": "35",
@@ -8349,7 +8349,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "50% ATK 50% DEF 50% REC (SELF) when BB Gauge > 50% / Add 25% Chance Enemy receives 25% Spark DMG+ 1Turns Effect to BB/SBB"
+                    "#text": "50% ATK 50% DEF 50% REC (SELF) when BB Gauge > 50% / Add 25% Chance Enemy receives 25% Spark DMG+ 1Turns Effect to BB,SBB"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10236.png"
@@ -8393,7 +8393,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "50% ATK 50% DEF 50% REC (SELF) when BB Gauge > 50% / Add 30% BC Fill+ (ALL) 3Turns Effect to BB/SBB"
+                    "#text": "50% ATK 50% DEF 50% REC (SELF) when BB Gauge > 50% / Add 30% BC Fill+ (ALL) 3Turns Effect to BB,SBB"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20236.png"
@@ -8437,7 +8437,7 @@
                 },
                 "es": {
                     "@condtion": "20% ALL STATS (SELF) when Medblare sphere equipped",
-                    "#text": "Add 160% DMG+ to Ailed Enemy (ALL) 3Turns Effect to BB/SBB (SELF)"
+                    "#text": "Add 160% DMG+ to Ailed Enemy (ALL) 3Turns Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10516.png"
@@ -8481,7 +8481,7 @@
                 },
                 "es": {
                     "@condtion": "20% ALL STATS (SELF) when Ishrion sphere equipped",
-                    "#text": "Add 8BC Fill (ALL) 3Turns Effect to BB/SBB (SELF)"
+                    "#text": "Add 8BC Fill (ALL) 3Turns Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60326.png"
@@ -8525,7 +8525,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Add Cure Ails (ALL) effect to BB/SBB (SELF) / Null Ails (SELF) / Null STATS Debuff (SELF)"
+                    "#text": "Add Cure Ails (ALL) effect to BB,SBB (SELF) / Null Ails (SELF) / Null STATS Debuff (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50256.png"
@@ -8657,7 +8657,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "100% Chance Drain 5-10% HP (SELF) / Add Ignore DEF 2Turns (ALL) effect to BB/SBB (SELF)"
+                    "#text": "100% Chance Drain 5-10% HP (SELF) / Add Ignore DEF 2Turns (ALL) effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810107.png"
@@ -8701,7 +8701,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "100% DMG+ to Ailed Enemy (SELF) / Add Cure Ails (ALL) effect to BB/SBB (SELF)"
+                    "#text": "100% DMG+ to Ailed Enemy (SELF) / Add Cure Ails (ALL) effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860107.png"
@@ -8833,7 +8833,7 @@
                 },
                 "es": {
                     "@condtion": "Bow of Andaria sphere equipped",
-                    "#text": "40% HP 40% ATK (SELF) / Add 100% Chance 2-3 BC Fill when ATKed (ALL) 3Turns effect to BB/SBB (SELF)"
+                    "#text": "40% HP 40% ATK (SELF) / Add 100% Chance 2-3 BC Fill when ATKed (ALL) 3Turns effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830147.png"
@@ -8877,7 +8877,7 @@
                 },
                 "es": {
                     "@condtion": "Spear of Zedus sphere equipped",
-                    "#text": "20% ALL Stats (SELF) / Add 60% CRIT+ (ALL) 3Turns effect to BB/SBB (SELF)"
+                    "#text": "20% ALL Stats (SELF) / Add 60% CRIT+ (ALL) 3Turns effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840147.png"
@@ -8921,7 +8921,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Reduce DMG (5%) from ALL Elements (SELF) / Add 4BC Fill 1Turn (ALL) effect to BB/SBB (SELF)"
+                    "#text": "Reduce DMG (5%) from ALL Elements (SELF) / Add 4BC Fill 1Turn (ALL) effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850347.png"
@@ -9219,13 +9219,13 @@
                     "@hit": "19",
                     "@dc": "19",
                     "@cost": "27",
-                    "#text": "Fire (AOE) 400%-800% BB ATK% Based on HP LOST / 75% CRIT DMG+ (ALL) 3Turns / 10% Max HP+ till Death/Battle End / Convert 20% HP to ATK (ALL) 3Turns"
+                    "#text": "Fire (AOE) 400%-800% BB ATK% Based on HP LOST / 75% CRIT DMG+ (ALL) 3Turns / 10% Max HP+ till Death,Battle End / Convert 20% HP to ATK (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "2",
                     "@dc": "30",
                     "@cost": "25",
-                    "#text": "Fire (AOE) 1200%-4000% BB ATK% Based on HP LOST / 300% CRIT DMG+ (ALL) 3Turns / 100% Max HP+ till Death/Battle End / Convert 50% HP to ATK (ALL) 3Turns"
+                    "#text": "Fire (AOE) 1200%-4000% BB ATK% Based on HP LOST / 300% CRIT DMG+ (ALL) 3Turns / 100% Max HP+ till Death,Battle End / Convert 50% HP to ATK (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "When Vulcan Axe is Equipped",
@@ -9389,7 +9389,7 @@
                     "@hit": "",
                     "@dc": "",
                     "@cost": "26",
-                    "#text": "12BC Fill (ALL) 1Turn / 5-7BC Fill when ATKed (100%) (ALL) 3Turns / 15% Max HP+ till Death/Battle End / Reduce DMG (15%) from (All) Enemy 3Turns"
+                    "#text": "12BC Fill (ALL) 1Turn / 5-7BC Fill when ATKed (100%) (ALL) 3Turns / 15% Max HP+ till Death,Battle End / Reduce DMG (15%) from (All) Enemy 3Turns"
                 },
                 "sbb": {
                     "@hit": "15",
@@ -9401,11 +9401,11 @@
                     "@hit": "18",
                     "@dc": "18",
                     "@cost": "25",
-                    "#text": "1000% Light (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 300% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns / Reduce DMG (75%) from (All) Enemy3Turns"
+                    "#text": "1000% Light (AOE) / 50BC Fill when ATKed (100%) (ALL) 3Turns / 300% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns / Reduce DMG (75%) from (All) Enemy3Turns"
                 },
                 "es": {
                     "@condtion": "Ritus Staff Sphere Equipped",
-                    "#text": "Add Cure Ails (ALL) 3Turns Effect to BB/SBB (SELF) / Add Null Ails (ALL) 3Turns Effect to BB/SBB (SELF)"
+                    "#text": "Add Cure Ails (ALL) 3Turns Effect to BB,SBB (SELF) / Add Null Ails (ALL) 3Turns Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850317.png"
@@ -9489,7 +9489,7 @@
                     "@hit": "",
                     "@dc": "",
                     "@cost": "30",
-                    "#text": "Reduce DMG (75%) 3Turns / 25% Max HP+ till Death/Battle End / 100% BC+ 100% HC+ 7% Item+ (ALL) 3Turns / Convert 100% REC to DEF (ALL) 3Turns"
+                    "#text": "Reduce DMG (75%) 3Turns / 25% Max HP+ till Death,Battle End / 100% BC+ 100% HC+ 7% Item+ (ALL) 3Turns / Convert 100% REC to DEF (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -9537,7 +9537,7 @@
                 },
                 "es": {
                     "@condtion": "30% ALL Stats (SELF) when Wolven Shroud is equipped OR Randolph is in squad.",
-                    "#text": "Normal HitCount +100% (100% DMG) / Add 60% CRIT+ (ALL) Effect to BB/SBB (SELF)"
+                    "#text": "Normal HitCount +100% (100% DMG) / Add 60% CRIT+ (ALL) Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810327.png"
@@ -9581,7 +9581,7 @@
                 },
                 "es": {
                     "@condtion": "30% ALL Stats (SELF) when Raven Plume Sphere is equipped OR Randolph is in squad.",
-                    "#text": "Add Fire,dark to ATK (ALL) Effect to BB/SBB (SELF) / 40% Chance Angel Idol 2x (SELF)"
+                    "#text": "Add Fire,dark to ATK (ALL) Effect to BB,SBB (SELF) / 40% Chance Angel Idol 2x (SELF)"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840327.png"
@@ -9669,7 +9669,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "15% HC Fill+ (SELF) / 15% BC Fill+ (SELF) / Add Cure Ails (ALL) Effect to BB/SBB (SELF)"
+                    "#text": "15% HC Fill+ (SELF) / 15% BC Fill+ (SELF) / Add Cure Ails (ALL) Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850157.png"
@@ -9703,7 +9703,7 @@
                     "@hit": "18",
                     "@dc": "18",
                     "@cost": "29",
-                    "#text": "560% Light (AOE) / Reduce DMG (50%) 1Turns / 20% Max HP+ till Death/Battle End / 10% Chance Revive Dead Ally 20% HP (ALL) / Gradual Heal (ALL) 3Turns"
+                    "#text": "560% Light (AOE) / Reduce DMG (50%) 1Turns / 20% Max HP+ till Death,Battle End / 10% Chance Revive Dead Ally 20% HP (ALL) / Gradual Heal (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "21",
@@ -9747,7 +9747,7 @@
                     "@hit": "20",
                     "@dc": "20",
                     "@cost": "29",
-                    "#text": "580% Light (AOE) / Reduce DMG (50%) 1Turns / 25% Max HP+ till Death/Battle End / 12% Chance Revive Dead Ally 25% HP (ALL) / Gradual Heal (ALL) 3Turns"
+                    "#text": "580% Light (AOE) / Reduce DMG (50%) 1Turns / 25% Max HP+ till Death,Battle End / 12% Chance Revive Dead Ally 25% HP (ALL) / Gradual Heal (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "24",
@@ -9757,7 +9757,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "50-150% REC+ Based on HP LOST (SELF) / Add 2000HP Barrier (light) Effect to BB/SBB (SELF)"
+                    "#text": "50-150% REC+ Based on HP LOST (SELF) / Add 2000HP Barrier (light) Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850167.png"
@@ -9785,7 +9785,7 @@
                     "@hit": "50",
                     "@dc": "50",
                     "@cost": "22",
-                    "#text": "4000% Dark (TGT) / Random Hits / 55BC Fill 1Turns / Add 15% Injury 15% Weak 15% Sick to ATK (ALL) 3Turns"
+                    "#text": "4000% Dark (TGT) (Random Hits) / 55BC Fill 1Turns / Add 15% Injury 15% Weak 15% Sick to ATK (ALL) 3Turns"
                 },
                 "sbb": {
                     "@hit": "22",
@@ -9801,7 +9801,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "100% ATK+ on Full HP (SELF) / Add 160% DMG+ to Ailed Enemy (ALL) 3Turns Effect to BB/SBB (SELF)"
+                    "#text": "100% ATK+ on Full HP (SELF) / Add 160% DMG+ to Ailed Enemy (ALL) 3Turns Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860166.png"
@@ -9829,7 +9829,7 @@
                     "@hit": "50",
                     "@dc": "50",
                     "@cost": "22",
-                    "#text": "4000% Dark (TGT) / Random Hits / 55BC Fill 1Turns / Add 20% Injury 20% Weak 20% Sick 20% Poison to ATK (ALL) 3Turns"
+                    "#text": "4000% Dark (TGT) (Random Hits) / 55BC Fill 1Turns / Add 20% Injury 20% Weak 20% Sick 20% Poison to ATK (ALL) 3Turns"
                 },
                 "sbb": {
                     "@hit": "24",
@@ -9845,7 +9845,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "100% ATK+ on Full HP (SELF) / Add 190% DMG+ to Ailed Enemy (ALL) 3Turns Effect to BB/SBB (SELF)"
+                    "#text": "100% ATK+ on Full HP (SELF) / Add 190% DMG+ to Ailed Enemy (ALL) 3Turns Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860167.png"
@@ -9889,7 +9889,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Add 60% CRIT+ (ALL) 3Turns Effect to BB/SBB (SELF) / 50% Chance 3-5BC Fill on ATKed (SELF)"
+                    "#text": "Add 60% CRIT+ (ALL) 3Turns Effect to BB,SBB (SELF) / 50% Chance 3-5BC Fill on ATKed (SELF)"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850197.png"
@@ -9933,7 +9933,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Add 60% CRIT+ (ALL) 3Turns Effect to BB/SBB (SELF) / 65% Chance 3-5BC Fill on ATKed (SELF)"
+                    "#text": "Add 60% CRIT+ (ALL) 3Turns Effect to BB,SBB (SELF) / 65% Chance 3-5BC Fill on ATKed (SELF)"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850198.png"
@@ -9973,7 +9973,7 @@
                     "@hit": "15",
                     "@dc": "15",
                     "@cost": "30",
-                    "#text": "Fire (AOE) 1000%-3000% BB ATK% Based on HP LEFT / 100% Chance Heal 100-100% DMG when ATKed (ALL) 3Turns / 30% Max HP+ till Death/Battle End / 800% BB ATK%+ (ALL) 1Turns"
+                    "#text": "Fire (AOE) 1000%-3000% BB ATK% Based on HP LEFT / 100% Chance Heal 100-100% DMG when ATKed (ALL) 3Turns / 30% Max HP+ till Death,Battle End / 800% BB ATK%+ (ALL) 1Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -10005,7 +10005,7 @@
                     "@hit": "10",
                     "@dc": "10",
                     "@cost": "32",
-                    "#text": "440% Fire (AOE) / 20% Max HP+ till Death/Battle End / 160% ATK+ 160% DEF+ 160% REC+ (SELF) 3Turns / Convert 20% HP to ATK (ALL) 3Turns / Convert 20% HP to DEF (ALL) 3Turns"
+                    "#text": "440% Fire (AOE) / 20% Max HP+ till Death,Battle End / 160% ATK+ 160% DEF+ 160% REC+ (SELF) 3Turns / Convert 20% HP to ATK (ALL) 3Turns / Convert 20% HP to DEF (ALL) 3Turns"
                 },
                 "sbb": {
                     "@hit": "12",
@@ -10017,7 +10017,7 @@
                     "@hit": "20",
                     "@dc": "20",
                     "@cost": "30",
-                    "#text": "Fire (AOE) 2000%-4000% BB ATK% Based on HP LEFT / 100% Chance Heal 100-100% DMG when ATKed (ALL) 3Turns / 35% Max HP+ till Death/Battle End / 1000% BB ATK%+ (ALL) 1Turns"
+                    "#text": "Fire (AOE) 2000%-4000% BB ATK% Based on HP LEFT / 100% Chance Heal 100-100% DMG when ATKed (ALL) 3Turns / 35% Max HP+ till Death,Battle End / 1000% BB ATK%+ (ALL) 1Turns"
                 },
                 "es": {
                     "@condtion": "None",
