@@ -4951,7 +4951,7 @@
                     "@hit": "17",
                     "@dc": "17",
                     "@cost": "20",
-                    "#text": "540% Light (AOE) / 10BC Fill (ALL) 1Turn / Convert 15% HP to DEF (ALL) 3Turns / Reduce DMG (10%) from (Fire,water,earth,thunder) Enemy"
+                    "#text": "540% Light (AOE) / 10BC Fill (ALL) 1Turn / Convert 15% HP to DEF (ALL) 3Turns / Reduce DMG (10%) from (Fire,water,earth,thunder) Enemy 1Turns"
                 },
                 "ubb": {
                     "@hit": "20",
