@@ -9448,8 +9448,8 @@
                     "#text": "1500% Dark (AOE) / 300% ATK+ / 100% Chance 5-8BC Fill on Spark (ALL) 3Turns / 60% CRIT+ (ALL) 3Turns / 100% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 300% ATK+ (ALL) 3Turns"
                 },
                 "es": {
-                    "@condtion": "100% Spark DMG+ (SELF) 2Turns on >16 Sparks when Nyami's Bells Sphere is equipped",
-                    "#text": "20% Chance Reduce DMG to 1 (SELF)"
+                    "@condtion": "Nyami's Bells Sphere is equipped",
+                    "#text": "100% Spark DMG+ (SELF) 2Turns on >16 Sparks / 20% Chance Reduce DMG to 1 (SELF)"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860317.png"
