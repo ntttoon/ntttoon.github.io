@@ -4957,7 +4957,7 @@
                     "@hit": "20",
                     "@dc": "20",
                     "@cost": "30",
-                    "#text": "1200% Light (AOE) / 25% Max HP+ till Death,Battle End / Convert 25% HP to DEF (ALL) 3Turns / Reduce DMG (100%) from (Fire,water,earth,thunder) Enemy"
+                    "#text": "1200% Light (AOE) / 25% Max HP+ till Death,Battle End / Convert 25% HP to DEF (ALL) 3Turns / Reduce DMG (100%) from (Fire,water,earth,thunder) Enemy 2Turns"
                 },
                 "es": {
                     "@condtion": "None",
