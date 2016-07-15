@@ -6749,13 +6749,13 @@
                     "@hit": "16",
                     "@dc": "16",
                     "@cost": "22",
-                    "#text": "350% Fire (AOE) / Add 10% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 30% Chance -40% Enemy ATK 1Turns / 30% Chance -40% Enemy DEF 1Turns / 75% Injury 75% Weak 75% Sick 75% Poison / 75% Para 75% Curse"
+                    "#text": "350% Fire (AOE) / Add 10% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 30% Chance -40% Enemy ATK 1Turns / 30% Chance -40% Enemy DEF 1Turns / 75% Injury 75% Weak 75% Sick 75% Poison 75% Para 75% Curse"
                 },
                 "sbb": {
                     "@hit": "19",
                     "@dc": "19",
                     "@cost": "26",
-                    "#text": "560% Fire (AOE) / Add 20% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns / 75% Injury 75% Weak 75% Sick 75% Poison / 75% Para 75% Curse / Inflict 15% Injury 15% Weak 15% Sick 10% Poison 10% Para 10% Curse on ATKed (ALL) 3Turns"
+                    "#text": "560% Fire (AOE) / Add 20% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns / 75% Injury 75% Weak 75% Sick 75% Poison 75% Para 75% Curse / Inflict 15% Injury 15% Weak 15% Sick 10% Poison 10% Para 10% Curse on ATKed (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "22",
