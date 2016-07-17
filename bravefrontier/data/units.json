@@ -7051,7 +7051,7 @@
                 "ls": {
                     "@hit": "10",
                     "@dc": "40",
-                    "#text": "Normal HitCount +100% (-50% DMG) (ALL) / 40% HP 40% DEF (ALL) / AoE Normal Attack"
+                    "#text": "Normal HitCount +100% (-50% DMG) (ALL) / 40% HP 40% DEF (ALL) / 25% Chance AOE on Normal ATK (-50% DMG) (ALL)"
                 },
                 "bb": {
                     "@hit": "13",
