@@ -10164,6 +10164,226 @@
                 "sp": {
                     "@list": "20 : 20% boost to all parameters | 10 : Hugely boosts Def relative to how low remaining HP is (+1% boost per 1% HP lost, 100% boost max) | 30 : 100% boost to Spark damage | 20 : Spark damage boosts BC, HC drop rate (15% boost) | 50 : Raises normal hit amount (+1 to each hit count) | 30 : Adds BC drop rate boost for 3 turns effect to BB/SBB (30% boost) | 50 : Adds slight BB gauge boost during Spark for 3 turns effect to BB/SBB (1~2 BC fill) | 60 : Enhances BB/SBB/UBB's Spark damage boost effect (+30% boost, 130% boost total on BB/SBB, 280% boost total on UBB) | 50 : Enhances the 'Spark damage restore HP' effect of SBB (+100 HP boost, 600~700 HP healed total)"
                 }
+            },
+            {
+                "id": "8210",
+                "name": "Kyo Kusanagi 7",
+                "role": "30%HP ATK BBspark Spark Injury Weak dot hit",
+                "element": "Fire",
+                "rarity": "7",
+                "cost": "42",
+                "ls": {
+                    "@hit": "8",
+                    "@dc": "40",
+                    "#text": "100% Chance 1-2BC Fill on Spark (ALL) / 75% Spark DMG+ (ALL) / 30% HP 75% ATK (5 elements required) (ALL)"
+                },
+                "bb": {
+                    "@hit": "9",
+                    "@dc": "18",
+                    "@cost": "25",
+                    "#text": "300% Fire (AOE) / 80% Spark DMG+ (ALL) 3Turns / 80% Injury 80% Weak"
+                },
+                "sbb": {
+                    "@hit": "12",
+                    "@dc": "24",
+                    "@cost": "30",
+                    "#text": "540% Fire (AOE) / 90% Spark DMG+ (ALL) 3Turns / 140% ATK+ (ALL) 3Turns / 300% DMG Each Turn 3Turns"
+                },
+                "ubb": {
+                    "@hit": "15",
+                    "@dc": "30",
+                    "@cost": "30",
+                    "#text": "1300% Fire (AOE) / 120% Spark DMG+ (ALL) 3Turns / Normal HitCount +300% (100% DMG) (ALL) 3Turns / 800% DMG Each Turn 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "90% BB ATK%+ 2Turns on > 6 Sparks (SELF) / 15% Dark Resist (SELF) / Add Fire, light to ATK (ALL) 3Turns Effect to BB,SBB (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810187.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810187.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8215",
+                "name": "Terry Bogard 7",
+                "role": "50%HP ATK DEF NullCRIT Miti50% Fire Earth REC ConvertDEF miti100% MAXHP",
+                "element": "Earth",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "3",
+                    "@dc": "36",
+                    "#text": "15% Chance Reduce DMG to 1 (ALL) / 50% HP (ALL) / 120% ATK 120% DEF 2Turns (ALL) / Null CRIT (ALL)"
+                },
+                "bb": {
+                    "@hit": "3",
+                    "@dc": "12",
+                    "@cost": "19",
+                    "#text": "350% Fire (AOE) / Reduce DMG (50%) 2Turns (SELF) / Add Fire,earth to ATK (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "4",
+                    "@dc": "16",
+                    "@cost": "40",
+                    "#text": "560% Fire (AOE) / Reduce DMG (50%) 1Turns / Add Fire,earth to ATK (ALL) 3Turns / 130% ATK+ 130% DEF+ 130% REC+ (ALL) 3Turns / Convert 25% HP to DEF (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "4",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "1300% Fire (AOE) / Reduce DMG (100%) 1Turns / 35% Max HP+ till Death/Battle End / 250% ATK+ 250% DEF+ 250% REC+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null CRIT (SELF) / Null Elemental Weakness (SELF) / Null Ignore DEF (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830177.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_830177.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8216",
+                "name": "Terry Bogard 8",
+                "role": "50%HP ATK DEF NullCRIT Miti50% Fire Earth REC ConvertDEF miti100% MAXHP",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "4",
+                    "@dc": "44",
+                    "#text": "20% Chance Reduce DMG to 1 (ALL) / 50% HP (ALL) / 140% ATK 140% DEF 2Turns (ALL) / Null CRIT (ALL)"
+                },
+                "bb": {
+                    "@hit": "4",
+                    "@dc": "16",
+                    "@cost": "19",
+                    "#text": "370% Fire (AOE) / Reduce DMG (50%) 2Turns (SELF) / Add Fire,earth to ATK (ALL) 3Turns / Null CRIT (ALL) 1Turn"
+                },
+                "sbb": {
+                    "@hit": "5",
+                    "@dc": "20",
+                    "@cost": "40",
+                    "#text": "580% Fire (AOE) / Reduce DMG (50%) 1Turns / Add Fire,earth to ATK (ALL) 3Turns / 140% ATK+ 140% DEF+ 140% REC+ (ALL) 3Turns / Convert 25% HP to DEF (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "5",
+                    "@dc": "25",
+                    "@cost": "30",
+                    "#text": "1500% Fire (AOE) / Reduce DMG (100%) 1Turns / 35% Max HP+ till Death/Battle End / 250% ATK+ 250% DEF+ 250% REC+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null CRIT (SELF) / Null Elemental Weakness (SELF) / Null Ignore DEF (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830178.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_830178.png"
+                },                
+                "sp": {
+                    "@list": "10 : Boosts Def when HP is over 50% (50% boost) | 20 : 40% boost to max HP | 20 : Enhances LS's max HP parameter boost effect (+10% boost, 60% boost total) | 30 : Considerably boosts BB Atk when HP is over 50% (100% boost) | 20 : Negates all status ailments | 30 : Allows 50% damage reduction effects to last for additional turn (on BB/SBB) | 30 : Adds Def ignoring effect to attack for 2 turns effect to BB/SBB | 20 : Enhances SBB's parameters boost effect (+10% boost, 150% boost total) | 40 : Adds Fire, Earth, Thunder elemental damage reduction for 3 turns effect to BB/SBB (15% reduction) | 40 : Allows UBB's enormous damage reduction effect to last for 2 turns"
+                }
+            },
+            {
+                "id": "8218",
+                "name": "Benimaru Nikaido 7",
+                "role": "BBreduce hit 35%HP Injury Weak Para OverDrive BBatked ATK Thunder",
+                "element": "Thunder",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "7",
+                    "@dc": "49",
+                    "#text": "Reduce 25% BB Cost (ALL) / Normal HitCount +100% (-50% DMG) (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL)"
+                },
+                "bb": {
+                    "@hit": "13",
+                    "@dc": "13",
+                    "@cost": "21",
+                    "#text": "350% Thunder (AOE) / Normal HitCount +100% (100% DMG) (ALL) 3Turns / 160% ATK+ (SELF) 2Turns / 85% Injury 85% Weak 85% Para"
+                },
+                "sbb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "26",
+                    "#text": "560% Thunder (AOE) / 10% OverDrive Fill / 5-7BC Fill when ATKed (100%) (ALL) 3Turns / Normal HitCount +200% (100% DMG) (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "20",
+                    "#text": "1300% Thunder (AOE) / 50% OverDrive Fill / Normal HitCount +300% (100% DMG) (ALL) 3Turns / 300% ATK+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Normal HitCount +100% (100% DMG) (SELF) / Add Thunder to ATK (ALL) 3Turns Effect to BB,SBB (SELF) / 300% OD Fill+ 1Turn on > 5k DMG Received (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840177.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_840177.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8220",
+                "name": "Athena Asamiya 7",
+                "role": "HealATKed 40%HP ATK Reflect Drain Cure barrier NullStats Fire,water,earth,thunder,light,dark HoT",
+                "element": "Light",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "40",
+                    "#text": "50% Chance Heal 25-25% DMG when ATKed (ALL) / 100% Chance Reflect 50-50% DMG (ALL) / 40% HP 40% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "10",
+                    "@dc": "20",
+                    "@cost": "16",
+                    "#text": "350% Light (AOE) / Drain 8-10% HP (SELF) / Drain 3-5% HP (SELF) / 20% Chance Heal 20-25% DMG when ATKed (ALL) 3Turns / Cure Ails"
+                },
+                "sbb": {
+                    "@hit": "12",
+                    "@dc": "24",
+                    "@cost": "24",
+                    "#text": "560% Light (AOE) / Drain 8-10% HP (SELF) / Drain 4-6% HP (SELF) / 20% Chance Heal 25-30% DMG when ATKed (ALL) 3Turns / 2500HP Barrier (light)"
+                },
+                "ubb": {
+                    "@hit": "3",
+                    "@dc": "27",
+                    "@cost": "25",
+                    "#text": "1300% Light (AOE) / 100% Chance Heal 75-75% DMG when ATKed (ALL) 3Turns / Null STATS Debuff 3Turns / Add Fire,water,earth,thunder,light,dark to ATK (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Add Light to ATK (ALL) 3Turns Effect to BB,SBB (SELF) / Add Gradual Heal (ALL) 3Turns Effect to BB,SBB (SELF) / 100% Chance Reflect 50-50% DMG (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850177.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850177.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
             }
         ]
     }
