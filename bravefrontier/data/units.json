@@ -8144,7 +8144,7 @@
             {
                 "id": "1419",
                 "name": "Hisui 7",
-                "role": "NullCRIT 30%HP NullStats DEF REC convertDEF NullEWD miti75% OverDrive BBATKed",
+                "role": "NullCRIT 30%HP Null NullStats DEF REC convertDEF NullEWD miti75% OverDrive BBATKed",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "44",
@@ -8188,7 +8188,7 @@
             {
                 "id": "1420",
                 "name": "Hisui 8",
-                "role": "NullCRIT 30%HP NullStats DEF REC convertDEF NullEWD miti75% OverDrive BBATKed",
+                "role": "NullCRIT 50%HP Null NullStats DEF REC convertDEF NullEWD miti75% OverDrive BBATKed",
                 "element": "Earth",
                 "rarity": "8",
                 "cost": "48",
@@ -8213,7 +8213,7 @@
                     "@hit": "21",
                     "@dc": "21",
                     "@cost": "30",
-                    "#text": "1500% Earth (AOE) / Reduce DMG (75%) 3Turns / 80% OverDrive Fill+ 3Turns / 50-50BC Fill when ATKed (100%) (ALL) 3Turns"
+                    "#text": "1500% Earth (AOE) / Reduce DMG (75%) 3Turns / 80% OverDrive Fill+ 3Turns / 50BC Fill when ATKed (100%) (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
