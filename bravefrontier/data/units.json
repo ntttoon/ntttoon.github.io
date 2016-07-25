@@ -8054,6 +8054,182 @@
                 }
             },
             {
+                "id": "1417",
+                "name": "Shura 7",
+                "role": "BBspark Spark 30%HP ATK DEF REC BBfill superspark",
+                "element": "Fire",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "7",
+                    "@dc": "35",
+                    "#text": "100% Chance 1-2BC Fill on Spark (ALL) / 100% Spark DMG+ (ALL) / 30% HP (ALL) / 30% ATK 30% DEF 30% REC (HP > 50%) (ALL)"
+                },
+                "bb": {
+                    "@hit": "5",
+                    "@dc": "10",
+                    "@cost": "26",
+                    "#text": "350% Fire (AOE) / 50% BC Fill+ (ALL) 3Turns / 80% Spark DMG+ (ALL) 3Turns / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "30",
+                    "#text": "560% Fire (AOE) / 80% Spark DMG+ (ALL) 3Turns / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 80% ATK+ (SELF) 3Turns / 60% CRIT+ (SELF) 3Turns / 30% Spark DMG+ (SELF) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "30",
+                    "#text": "1300% Fire (AOE) / 300% CRIT DMG+ (ALL) 3Turns / 250% Spark DMG+ (ALL) 3Turns / 50% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 50% Spark DMG+ (SELF) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "30% Spark DMG+ (SELF) / 30% ATK+ when BB > 50% (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10916.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10916.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1418",
+                "name": "Shura 8",
+                "role": "BBspark Spark 50%HP ATK DEF REC BBfill superspark",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "9",
+                    "@dc": "45",
+                    "#text": "100% Chance 2-3BC Fill on Spark (ALL) / 120% Spark DMG+ (ALL) / 50% HP (ALL) / 50% ATK 50% DEF 50% REC (HP > 50%) (ALL)"
+                },
+                "bb": {
+                    "@hit": "6",
+                    "@dc": "12",
+                    "@cost": "27",
+                    "#text": "370% Fire (AOE) / 50% BC Fill+ (ALL) 3Turns / 100% Spark DMG+ (ALL) 3Turns / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "30",
+                    "#text": "580% Fire (AOE) / 100% Spark DMG+ (ALL) 3Turns / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 100% ATK+ (SELF) 3Turns / 60% CRIT+ (SELF) 3Turns / 50% Spark DMG+ (SELF) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "30",
+                    "#text": "1500% Fire (AOE) / 300% CRIT DMG+ (ALL) 3Turns / 300% Spark DMG+ (ALL) 3Turns / 50% Chance SPARKcrit (100% DMG+) (ALL) 3Turns / 70% Spark DMG+ (SELF) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% Spark DMG+ (SELF) / 50% ATK+ when BB > 50% (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10917.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10917.png"
+                },                
+                "sp": {
+                    "@list": "10 : +20% HP | 20 : +50% ATK | 10 : (*) +50% Spark Damage | 10 : (**) +70% Spark Damage (Prerequisite: *) | 10 : +100% Spark Damage (Prerequisite: **) | 10 : (***) +40% Crit Damage | 10 : +70% Crit Damage (Prerequisite: ***) | 40 : BB+: +30% Spark Dmg & SBB+: +30% Spark Dmg & UBB+: +30% Spark Dmg | 30 : Add Effect To BB/SBB (1 turn 25% Spark Damage Taken Debuff (25% Chance))"
+                }
+            },
+            {
+                "id": "1419",
+                "name": "Hisui 7",
+                "role": "NullCRIT 30%HP NullStats DEF REC convertDEF NullEWD miti75% OverDrive BBATKed",
+                "element": "Earth",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "6",
+                    "@dc": "36",
+                    "#text": "Null CRIT (ALL) / 30% HP 30% DEF (ALL)"
+                },
+                "bb": {
+                    "@hit": "8",
+                    "@dc": "8",
+                    "@cost": "26",
+                    "#text": "350% Earth (AOE) / Null Ails 3Turns / Null STATS Debuff 1Turns / 140% DEF+ 140% REC+ (ALL) 3Turns / Reduce DMG (10%) on Guard (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "28",
+                    "#text": "560% Earth (AOE) / 140% DEF+ 140% REC+ (ALL) 3Turns / Convert 50% REC to DEF (ALL) 3Turns / Reduce DMG (10%) on Guard (ALL) 3Turns / Null Elemental Weakness (ALL) 1Turn"
+                },
+                "ubb": {
+                    "@hit": "19",
+                    "@dc": "19",
+                    "@cost": "30",
+                    "#text": "1300% Earth (AOE) / Reduce DMG (75%) 3Turns / 50% OverDrive Fill+ 3Turns / 50BC Fill when ATKed (100%) (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Ails (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30816.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30816.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1420",
+                "name": "Hisui 8",
+                "role": "NullCRIT 30%HP NullStats DEF REC convertDEF NullEWD miti75% OverDrive BBATKed",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "8",
+                    "@dc": "48",
+                    "#text": "Null CRIT (ALL) / 50% HP 50% DEF (ALL) / Reduce DMG (20%) 1Turn on > 5k DMG Received (ALL)"
+                },
+                "bb": {
+                    "@hit": "10",
+                    "@dc": "10",
+                    "@cost": "26",
+                    "#text": "370% Earth (AOE) / Null Ails 3Turns / Null STATS Debuff 1Turns / 160% DEF+ 160% REC+ (ALL) 3Turns / Reduce DMG (10%) on Guard (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "28",
+                    "#text": "580% Earth (AOE) / 160% DEF+ 160% REC+ (ALL) 3Turns / Convert 70% REC to DEF (ALL) 3Turns / Reduce DMG (10%) on Guard (ALL) 3Turns / Null Elemental Weakness (ALL) 1Turn"
+                },
+                "ubb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "30",
+                    "#text": "1500% Earth (AOE) / Reduce DMG (75%) 3Turns / 80% OverDrive Fill+ 3Turns / 50-50BC Fill when ATKed (100%) (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Ails (SELF) / Null Elemental Weakness (SELF) / Angel Idol 1x on OD Activation (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30817.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30817.png"
+                },                
+                "sp": {
+                    "@list": "10 : +50% DEF | 10 : 10% DMG to HP when hit (25% Chance) | 30 : Def Ignore Immunity | 20 : 50% Base/Buff Spark Resist | 20 : 100% Base/Buffed Crit Resist | 30 : (*) Add Effect To BB/SBB (Reduce Damage 50% for 1 turn) | 30 : Add Effect To BB/SBB (Reduce Damage 50% for 2 turn) (Prerequisite: *) | 20 : Add Effect To BB/SBB (Cure Status/Debuffs) | 20 : Add Effect To BB/SBB (3 Turn 8 BC on Guard Buff) | 10 : BB+: +5% Guard Mitigation & SBB+: +5% Guard Mitigation"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
