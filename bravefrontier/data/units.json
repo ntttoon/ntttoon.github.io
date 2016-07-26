@@ -3279,7 +3279,7 @@
                     "@hit": "19",
                     "@dc": "19",
                     "@cost": "22",
-                    "#text": "480% Dark (AOE) 100% BB ATK+ on Consecutive SBB (Max 5x / SELF) / 40% BC Fill+ (ALL) 3Turns"
+                    "#text": "480% Dark (AOE) 100% BB ATK+ on Consecutive SBB (Max 5x , SELF) / 40% BC Fill+ (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "21",
@@ -3631,7 +3631,7 @@
                     "@hit": "15",
                     "@dc": "15",
                     "@cost": "26",
-                    "#text": "500% Thunder (AOE) 100% BB ATK+ on Consecutive SBB (Max 3x / SELF) / Normal HitCount +100% (100% DMG) (ALL) 3Turns / 300% DMG Each Turn 3Turns / Convert 60% DEF to ATK (ALL) 3Turns"
+                    "#text": "500% Thunder (AOE) 100% BB ATK+ on Consecutive SBB (Max 3x , SELF) / Normal HitCount +100% (100% DMG) (ALL) 3Turns / 300% DMG Each Turn 3Turns / Convert 60% DEF to ATK (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "20",
@@ -4511,7 +4511,7 @@
                     "@hit": "1",
                     "@dc": "30",
                     "@cost": "29",
-                    "#text": "480% Light (AOE) / 100% BB ATK+ on Consecutive SBB (Max 5x / SELF) / Add Fire,water,earth,thunder to ATK (ALL) 2Turns / 50% CRIT DMG+ (ALL) 3Turns / 300% DMG Each Turn 3Turns"
+                    "#text": "480% Light (AOE) / 100% BB ATK+ on Consecutive SBB (Max 5x , SELF) / Add Fire,water,earth,thunder to ATK (ALL) 2Turns / 50% CRIT DMG+ (ALL) 3Turns / 300% DMG Each Turn 3Turns"
                 },
                 "ubb": {
                     "@hit": "1",
@@ -4995,7 +4995,7 @@
                     "@hit": "18",
                     "@dc": "18",
                     "@cost": "29",
-                    "#text": "500% Dark (AOE) 100% BB ATK+ on Consecutive SBB (Max 5x / SELF) / 100% BB Fill (SELF) / 750% DMG Each Turn 1Turns / 200% BB ATK%+ (ALL) / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns"
+                    "#text": "500% Dark (AOE) 100% BB ATK+ on Consecutive SBB (Max 5x , SELF) / 100% BB Fill (SELF) / 750% DMG Each Turn 1Turns / 200% BB ATK%+ (ALL) / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "23",
@@ -5435,7 +5435,7 @@
                     "@hit": "21",
                     "@dc": "42",
                     "@cost": "32",
-                    "#text": "570% Dark (TGT) 300% BB ATK+ on Consecutive SBB (Max 5x / SELF) / 100% BB Fill (SELF) / 50% Chance -50% Enemy ATK 1Turns / 80% Injury 80% Weak"
+                    "#text": "570% Dark (TGT) 300% BB ATK+ on Consecutive SBB (Max 5x , SELF) / 100% BB Fill (SELF) / 50% Chance -50% Enemy ATK 1Turns / 80% Injury 80% Weak"
                 },
                 "ubb": {
                     "@hit": "24",
@@ -7811,7 +7811,7 @@
                     "@hit": "18",
                     "@dc": "18",
                     "@cost": "28",
-                    "#text": "420% Thunder (AOE) 200% BB ATK+ on Consecutive SBB (Max 3x / SELF) / 100% BB Fill (SELF) / 25% Chance Enemy receives 25% Spark DMG+ 1Turns / Add 20% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 20% Chance -50% Enemy ATK 1Turns / 20% Chance -50% Enemy DEF 1Turns"
+                    "#text": "420% Thunder (AOE) 200% BB ATK+ on Consecutive SBB (Max 3x , SELF) / 100% BB Fill (SELF) / 25% Chance Enemy receives 25% Spark DMG+ 1Turns / Add 20% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 20% Chance -50% Enemy ATK 1Turns / 20% Chance -50% Enemy DEF 1Turns"
                 },
                 "ubb": {
                     "@hit": "21",
@@ -7855,7 +7855,7 @@
                     "@hit": "20",
                     "@dc": "20",
                     "@cost": "30",
-                    "#text": "480% Thunder (AOE) 200% BB ATK+ on Consecutive SBB (Max 3x / SELF) / 100% BB Fill (SELF) / 25% Chance Enemy receives 25% Spark DMG+ 1Turns / Add 20% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns"
+                    "#text": "480% Thunder (AOE) 200% BB ATK+ on Consecutive SBB (Max 3x , SELF) / 100% BB Fill (SELF) / 25% Chance Enemy receives 25% Spark DMG+ 1Turns / Add 20% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns"
                 },
                 "ubb": {
                     "@hit": "25",
@@ -8559,7 +8559,7 @@
                     "@hit": "26",
                     "@dc": "26",
                     "@cost": "22",
-                    "#text": "480% Water (AOE) / 100% BB ATK+ on Consecutive SBB (Max 5x / SELF) / 30% BC+ (SELF) / 5% OverDrive Gauge Fill / 200% BB ATK%+ (ALL) 3Turns / Convert 15% HP to ATK (ALL) 3Turns"
+                    "#text": "480% Water (AOE) / 100% BB ATK+ on Consecutive SBB (Max 5x , SELF) / 30% BC+ (SELF) / 5% OverDrive Gauge Fill / 200% BB ATK%+ (ALL) 3Turns / Convert 15% HP to ATK (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "28",
@@ -8603,7 +8603,7 @@
                     "@hit": "26",
                     "@dc": "26",
                     "@cost": "26",
-                    "#text": "100% BB ATK+ on Consecutive SBB (Max 3x / SELF) / 140% ATK+ 140% DEF+ (ALL) 3Turns / Convert 80% DEF to ATK (ALL) 3Turns"
+                    "#text": "100% BB ATK+ on Consecutive SBB (Max 3x , SELF) / 140% ATK+ 140% DEF+ (ALL) 3Turns / Convert 80% DEF to ATK (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "29",
@@ -9615,7 +9615,7 @@
                     "@hit": "16",
                     "@dc": "16",
                     "@cost": "30",
-                    "#text": "540% Dark (AOE) 540% BB ATK% / Dark (TGT) 100% BB ATK% 300% BB ATK+ on Consecutive SBB (Max 3x / SELF) / 60% Chance SPARKcrit (50% DMG+) (SELF) 1Turns / Stealth (60% CRIT+) (SELF) 2Turns"
+                    "#text": "540% Dark (AOE) 540% BB ATK% / Dark (TGT) 100% BB ATK% 300% BB ATK+ on Consecutive SBB (Max 3x , SELF) / 60% Chance SPARKcrit (50% DMG+) (SELF) 1Turns / Stealth (60% CRIT+) (SELF) 2Turns"
                 },
                 "ubb": {
                     "@hit": "22",
@@ -9747,7 +9747,7 @@
                     "@hit": "1",
                     "@dc": "40",
                     "@cost": "33",
-                    "#text": "1280% Thunder (TGT) / 250% BB ATK+ on Consecutive SBB (Max 3x / SELF) / 100% BB Fill (SELF) / 200% Spark DMG+ (SELF) 2Turns / -30% DEF+ -30% REC+ (SELF) 1Turns"
+                    "#text": "1280% Thunder (TGT) / 250% BB ATK+ on Consecutive SBB (Max 3x , SELF) / 100% BB Fill (SELF) / 200% Spark DMG+ (SELF) 2Turns / -30% DEF+ -30% REC+ (SELF) 1Turns"
                 },
                 "ubb": {
                     "@hit": "1",
