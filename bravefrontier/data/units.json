@@ -7439,7 +7439,7 @@
             },
             {
                 "id": "1395",
-                "name": "Dece 7",
+                "name": "Green Fang Daze",
                 "role": "Spark 30%HP superspark BBfill ATK DEF REC",
                 "element": "Earth",
                 "rarity": "7",
@@ -7483,7 +7483,7 @@
             },
             {
                 "id": "1396",
-                "name": "Dece 8",
+                "name": "Emerald Tusk Daze",
                 "role": "Spark 30%HP superspark BBfill ATK DEF REC",
                 "element": "Earth",
                 "rarity": "8",
@@ -7522,12 +7522,12 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30797.png"
                 },                
                 "sp": {
-                    "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 10 : +50% Spark Damage | 10 : +70% Spark Damage | 10 : 10 BC On Spark | 30 : Add Effect To BB/SBB (3 Turn +60% Crit) | 30 : Add Effect To BB/SBB (3 turn +50% Crit Dmg) | 20 : SBB+: +10% ATK/DEF/REC | 50 : BB/SBB/UBB+: +30% Spark Dmg"
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 10 : (*) 50% boost to Spark damage | 10 : Boosts 50% Spark damage to 70% Spark damage (Prerequisites: *) | 10 : Spark damage enormously boosts BB gauge (10 BC fill) | 30 : (**) Adds enormous critical hit rate boost for 3 turns effect to BB/SBB (60% boost) | 30 : Adds critical hit damage boost for 3 turns effect to BB/SBB (50% boost) (Prerequisite: **) | 20 : Enhances SBB's Atk, Def, Rec boost effects (+10% boost, 150% boost total) | 50 : Enhances Spark damage boost effect added to BB/SBB/UBB (+30% boost, 130% boost total on BB/SBB, 330% boost total on UBB)"
                 }
             },
             {
                 "id": "1397",
-                "name": "Sekto 7",
+                "name": "Roaring Beast Zekt",
                 "role": "BBATKed healATKed 35%HP BBfill MAXHP miti CRIT",
                 "element": "Light",
                 "rarity": "7",
@@ -7571,7 +7571,7 @@
             },
             {
                 "id": "1398",
-                "name": "Sekto 8",
+                "name": "Howling Wolf Zekt",
                 "role": "BBATKed healATKed 40%HP BBfill MAXHP miti CRIT",
                 "element": "Light",
                 "rarity": "8",
@@ -7610,12 +7610,12 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51007.png"
                 },                
                 "sp": {
-                    "@list": "10 : (*) +20% HP | 10 : (**) +30% HP (Prerequisite: *) | 10 : +50% HP (Prerequisite: **) | 20 : 100% Base/Buffed Element Weakness Resist | 10 : BBoT occur at the Start of Turn | 10 : LS+: +10% All Stats | 30 : BB+: Increase Max HP 5% | 50 : Add Effect To BB/SBB (3 Turn 20% Chance Sparks Crit Buff (50% Damage))"
+                    "@list": "10 : (*) 20% boost to max HP | 10 : (**) Boosts 20% max HP to 30% max HP (Prerequisite: *) | 10 : Boosts 30% max HP to 50% max HP (Prerequisite: **) | 20 : Negates elemental damage | 10 : Activates at turn's end effects during turn's start instead (effects will only activate once in Arena/Colosseum) | 10 : Enhances Leader Skill all parameters boost from 40% to 50% | 30 : Enhances BB's max HP boost effect (+5% boost, 15% boost total) | 50 : Adds probable Spark critical for 3 turns effect to BB/SBB (20% chance to deal 50% more Spark damage)"
                 }
             },
             {
                 "id": "1399",
-                "name": "Alice 8",
+                "name": "Lovely Princess Alice",
                 "role": "BBrate heal healATKed 50%HP ATK REC atkdown convertATK convertDEF BBATK% HoT",
                 "element": "Dark",
                 "rarity": "8",
@@ -7654,12 +7654,12 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60117.png"
                 },                
                 "sp": {
-                    "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 10 : Heal 600-800 (+ 10% REC) HP/turn | 20 : BB+: +10% DEF/REC | 50 : Add Effect To BB/SBB (3 Turn Heal 25-30% of Damage Taken (20% Chance)) | 30 : Add Effect To SBB (3 turn 80% REC->DEF buff) | 20 : Add Effect To BB/SBB (Cure Status/Debuffs)"
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 10 : Restores HP each turn (Heals (600~800 + 10% of target's Rec) HP) | 20 : Enhances BB's Def, Rec boost effects (+10% boost, 150% boost total) | 50 : Adds probable HP restoration when attacked for 3 turns effect to BB/SBB (20% chance to heal 25~30% HP from damage taken) | 30 : Adds huge Def boost relative to Rec for 3 turns effect to SBB (80% boost) | 20 : Adds status ailment removal effect to BB/SBB"
                 }
             },
             {
                 "id": "1400",
-                "name": "Elza 8",
+                "name": "Graceful Princess Elza",
                 "role": "BBrate BBspark healSpark 40%HP BBfill Spark Injury Sick Para Curse BBregen HoT",
                 "element": "Dark",
                 "rarity": "8",
@@ -7698,12 +7698,12 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60527.png"
                 },                
                 "sp": {
-                    "@list": "20 : +20% All Stats | 10 : +50% All Weakness Damage | 10 : BB+: 2 BC/turn | 20 : SBB+: 2 BC/turn | 50 : BB/SBB/UBB+: +30% Spark Dmg | 40 : Add Effect To BB/SBB (3 Turn 1-2 BC on Spark Buff) | 40 : Add Effect To BB/SBB (3 Turn 20% Chance Sparks Crit Buff (50% Damage))"
+                    "@list": "20 : 20% boost to all parameters | 10 : Boosts elemental damage (50% boost) | 10 : Boosts BB gauge each turn (2 BC fill) | 20 : Enhances SBB's BB gauge boost each turn effect (2 BC fill, 9 BC fill total) | 50 : Enhances Spark damage boost effect added to BB/SBB/UBB (+30% boost, 120% boost on BB/SBB, 230% boost on UBB total) | 40 : Adds slight BB gauge boost during Spark for 3 turns effect to BB/SBB (1~2 BC fill) | 40 : Adds probable Spark critical for 3 turns effect to BB/SBB (20% chance to deal 50% more Spark damage)"
                 }
             },
             {
                 "id": "1401",
-                "name": "Stayn 7",
+                "name": "Cerulean Knight Stein",
                 "role": "30%HP HealATKed Miti50% Cure Miti75% BBATKed HoT",
                 "element": "Water",
                 "rarity": "7",
@@ -7747,7 +7747,7 @@
             },
             {
                 "id": "1402",
-                "name": "Stayn 8",
+                "name": "Sapphire Noble Stein",
                 "role": "50%HP HealATKed NullCRIT Miti50% Cure Miti75% BBATKed HoT",
                 "element": "Water",
                 "rarity": "8",
@@ -7786,12 +7786,12 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20837.png"
                 },                
                 "sp": {
-                    "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 10 : +10% BB Gauge Fill Rate | 30 : 100% Base/Buffed Element Weakness Resist | 30 : 50% Base/Buff Spark Resist | 40 : Add Effect To BB/SBB (Heal 2000-3000 HP (+ 11% Healer REC)) | 40 : Add Effect To BB/SBB (3 turn Negate Status Ailments) | 50 : Add Effect To BB/SBB (4-7 BC on Hit for 3 turns) | 20 : BB+: Mitigation +1 Turn & SBB+: Mitigation +1 Turn"
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 10 : Slightly boosts BC efficacy (10% boost) | 30 : Negates elemental damage | 30 : 50% Spark damage reduction | 40 : Adds HP restoration when damage dealt effect to BB/SBB (Heals (2000~3000 + 11% of healer's Rec) HP) | 40 : Adds status ailment negation for 3 turns effect to BB/SBB | 50 : Adds considerable BB gauge boost when attacked for 3 turns effect to BB/SBB (4~7 BC fill) | 20 : Allows 50% damage reduction for 1 turn effect added to BB/SBB to last for 2 turns"
                 }
             },
             {
                 "id": "1403",
-                "name": "Leila 7",
+                "name": "Phoenix Thunder Rayla",
                 "role": "30%HP Null NullStats atkdown defdown Spark BBregen BBATK%",
                 "element": "Thunder",
                 "rarity": "7",
@@ -7835,7 +7835,7 @@
             },
             {
                 "id": "1404",
-                "name": "Leila 8",
+                "name": "Bennu Edge Rayla",
                 "role": "50%HP BBspark BBATK% Null NullStats atkdown Spark defdown BBregen",
                 "element": "Thunder",
                 "rarity": "8",
@@ -7874,7 +7874,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40787.png"
                 },                
                 "sp": {
-                    "@list": "20 : +50% ATK | 30 : +100% Spark Damage | 10 : +50% Crit Damage | 10 : HoT occur at the Start of Turn | 50 : Add Effect To BB/SBB (3 turn +300% BB/SBB/UBB Mod) | 40 : Add Effect To BB/SBB (3 turn 6 BC/turn) | 20 : Add Effect To SBB (1 Turn Negate Stat Down Debuffs) | 50 : Add Effect To BB/SBB (3 Turn 20% OD Fill Rate Buff)"
+                    "@list": "20 : 50% boost to Atk | 30 : 100% boost to Spark damage | 10 : Boosts critical hit damage (50% boost) | 10 : Activates at turn's end effects during turn's start instead (effects will only activate once in Arena/Colosseum) | 50 : Adds huge BB Atk boost for 3 turns effect to BB/SBB (300% boost) | 40 : Adds BB gauge boost each turn for 3 turns effect to BB/SBB (6 BC fill) | 20 : Adds Atk, Def, Rec reducing effects negation for 1 turn to SBB | 50 : Adds considerable OD gauge boost for 3 turns effect to BB/SBB (20% boost to the fill rate)"
                 }
             },
             {
