@@ -10386,6 +10386,94 @@
                 }
             },
             {
+                "id": "8212",
+                "name": "Mai Shiranui 7",
+                "role": "CRIT ATK atkdown defdown Fire",
+                "element": "Fire",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "12",
+                    "@dc": "48",
+                    "#text": "150% CRIT DMG+ (ALL) / 100% ATK 20% CRIT+ (ALL) / 50% ATK+ 2Turns on CRIT (ALL)"
+                },
+                "bb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "24",
+                    "#text": "350% Fire (AOE) / 60% CRIT+ (ALL) 3Turns / 100% CRIT DMG+ (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "24",
+                    "#text": "560% Fire (AOE) / 100% CRIT DMG+ (ALL) 3Turns / 160% ATK+ (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "30",
+                    "#text": "1300% Fire (AOE) / 300% CRIT DMG+ (ALL) 3Turns / 100% Chance -90% Enemy ATK 2Turns / 100% Chance -90% Enemy DEF 2Turns / 50% Chance for Extra Action (ALL)"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "100% Chance 6BC Fill on CRIT (SELF) / 20% Chance Reduce DMG to 1 (SELF) / Add Fire to ATK (ALL) 3Turns Effect to BB,SBB (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810177.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810177.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8214",
+                "name": "Kula Diamond 7",
+                "role": "BBatked 40%HP DEF Barrier convertATK miti100% ATK Water",
+                "element": "Water",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "11",
+                    "@dc": "44",
+                    "#text": "100% Chance 3-6BC Fill when ATKed (ALL) / 40% HP 40% DEF (ALL) / 140% DEF+ 2Turns on > 20k DMG Dealt (ALL)"
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "28",
+                    "#text": "350% Water (AOE) / 5-7BC Fill when ATKed (100%) (ALL) 3Turns / 2500HP Barrier (water) / 160% DEF+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "23",
+                    "#text": "560% Water (AOE) / 5-7BC Fill when ATKed (100%) (ALL) 3Turns / 160% DEF+ (ALL) 3Turns / Convert 60% DEF to ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "1300% Water (AOE) / Reduce DMG (100%) 1Turns / 50BC Fill when ATKed (100%) (ALL) 3Turns / 250% ATK+ 250% DEF+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Reduce DMG (25%) on > 10k DMG Received (SELF) / Reduce 20% BB Cost (SELF) / Add Water to ATK (ALL) 3Turns Effect to BB,SBB (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_820177.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_820177.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
                 "id": "8215",
                 "name": "Terry Bogard 7",
                 "role": "50%HP ATK DEF NullCRIT Miti50% Fire Earth REC ConvertDEF miti100% MAXHP",
@@ -10556,6 +10644,138 @@
                 },
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850177.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8221",
+                "name": "Iori Yagami 7",
+                "role": "BBATK% ATK BBrate Fire Dark BBregen",
+                "element": "Dark",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "40",
+                    "#text": "150% BB ATK%+ (ALL) / 80% ATK (ALL) / 5BC Fill on > 10k DMG Dealt (ALL)"
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "25",
+                    "#text": "350% Fire (AOE) / 40% BC Fill+ (ALL) 3Turns / Add Fire,dark to ATK (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "25",
+                    "#text": "560% Fire (AOE) / Add Fire,dark to ATK (ALL) 3Turns / 200% ATK+ (SELF) 3Turns / 200% BB ATK%+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "1500% Fire (AOE) / 50BC Fill 3Turns / 500% ATK+ -50% DEF+ (SELF) 3Turns / 500% BB ATK%+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "0-100% ATK+ Based on HP LOST (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860177.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860177.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8222",
+                "name": "Iori Yagami 8",
+                "role": "BBATK% ATK 40%HP Weakness BBrate Fire Dark BBregen",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "14",
+                    "@dc": "42",
+                    "#text": "200% BB ATK%+ (ALL) / 80-120% ATK+ Based on HP LOST (ALL) / 40% HP 80% ATK (ALL) / 6BC Fill on > 10k DMG Dealt (ALL)"
+                },
+                "bb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "25",
+                    "#text": "370% Fire (AOE) / 50% BC Fill+ (ALL) 3Turns / Add Fire,dark to ATK (ALL) 3Turns / 150% Element Weakness DMG+ (dark) (SELF) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "25",
+                    "#text": "580% Fire (AOE) / Add Fire,dark to ATK (ALL) 3Turns / 300% ATK+ (SELF) 3Turns / 300% BB ATK%+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "24",
+                    "@dc": "24",
+                    "@cost": "30",
+                    "#text": "2000% Fire (AOE) / 50BC Fill 3Turns / 600% ATK+ -50% DEF+ (SELF) 3Turns / 600% BB ATK%+ (ALL) 3Turns / 400% Element Weakness DMG+ (fire,dark) (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "0-100% ATK+ Based on HP LOST (SELF) / 100% Chance 2-3BC Fill when ATKed (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860178.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860178.png"
+                },                
+                "sp": {
+                    "@list": "20 : (*) 50% boost to Atk | 10 : Boosts 50% Atk to 80% Atk (Prerequisite: *) | 30 : (**) 50% boost to BB Atk | 30 : Boosts 50% BB Atk to 100% BB Atk (Prerequisite: **) | 20 : Raises normal hit amount (Doubles (+1) amount) | 30 : Adds considerable Atk boost for 3 turns effect to BB/SBB (160% boost) | 30 : Adds Def ignoring effect to attack for 2 turns effect to BB/SBB | 40 : Enhances SBB/UBB's Atk boost effect (+100% boost. 400%/700% total)"
+                }
+            },
+            {
+                "id": "8228",
+                "name": "Omega Rugal 7",
+                "role": "BBregen BBATK% 30%HP ATK BBATKed null CRIT barrier convertATK OverDrive Dark",
+                "element": "Dark",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "4",
+                    "@dc": "32",
+                    "#text": "6BC Fill Each Turn (ALL) / 200% BB ATK%+ (ALL) / 30% HP 50% ATK (Dark) / 30% HP 100% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "1",
+                    "@dc": "15",
+                    "@cost": "25",
+                    "#text": "300% Dark (AOE) / 6-7BC Fill when ATKed (100%) (ALL) 3Turns / Null Ails 3Turns / 100% BB Fill (SELF)"
+                },
+                "sbb": {
+                    "@hit": "1",
+                    "@dc": "25",
+                    "@cost": "30",
+                    "#text": "Dark (AOE) 350%-700% BB ATK% Based on HP LEFT / 60% CRIT+ (ALL) 3Turns / 3000HP Barrier (dark) / 300% BB ATK%+ (ALL) 3Turns / Convert 60% DEF to ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "1",
+                    "@dc": "30",
+                    "@cost": "35",
+                    "#text": "1300% Dark (AOE) / 35% OverDrive Fill / 20000HP Barrier (dark) / 500% BB ATK%+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "10% ALL Elements Resist (SELF) / 80% ATK+ on Full BB (SELF) / Add Dark to ATK (ALL) 3Turns Effect to BB,SBB (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860187.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860187.png"
                 },                
                 "sp": {
                     "@list": ""
