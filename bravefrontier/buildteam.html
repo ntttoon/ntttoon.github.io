@@ -286,9 +286,11 @@
 				var name = arr.brave.unit[i].name;
 				var role = arr.brave.unit[i].role;
 				var ele = arr.brave.unit[i].element;
+				var thumb = arr.brave.unit[i].thumb['@path'];
 				if (role.match(re) || name.match(re) || ele.match(re)) {
 					var id = arr.brave.unit[i].id;
-					document.getElementById(id_list).innerHTML += "<a href='#' onClick='setValue("+ id + ',"' + id_input + '","' + id_list + '")' + "' id='" + id + "' style='color:" + nameColor(ele) + "'>" + name + "</a> ";
+					//document.getElementById(id_list).innerHTML += "<a href='#' onClick='setValue("+ id + ',"' + id_input + '","' + id_list + '")' + "' id='" + id + "' style='color:" + nameColor(ele) + "'>" + name + "</a> ";
+					document.getElementById(id_list).innerHTML += "<img width='60' style='cursor:pointer;' src='" + thumb + "' alt='" + name + "' id='" + id + "' onClick='setValue(" + id + ',"' + id_input + '","' + id_list + '")' + "'>";
 				}//end if
 			}//end for
 		}// end myFunction
@@ -296,7 +298,7 @@
 	//
 	function setValue(id,id_input,id_list)
 	{
-		v = document.getElementById(id).innerHTML;
+		v = document.getElementById(id).alt;
 		document.getElementById(id_input).value = v;
 		document.getElementById(id_list).innerHTML = "";
 	}
