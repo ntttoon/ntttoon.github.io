@@ -8230,6 +8230,270 @@
                 }
             },
             {
+                "id": "1434",
+                "name": "Marefu 7",
+                "role": "30%HP DEF Injury Weak Sick Poison Para Curse BBfill BBATKed",
+                "element": "Fire",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "7",
+                    "@dc": "35",
+                    "#text": "30% HP 30% DEF (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison 10% Para 10% Curse (ALL)"
+                },
+                "bb": {
+                    "@hit": "11",
+                    "@dc": "11",
+                    "@cost": "26",
+                    "#text": "350% Fire (AOE) / 6BC Fill (ALL) 1Turn / 65% Sick 65% Poison 65% Curse / 65% Injury 65% Weak 65% Para"
+                },
+                "sbb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "30",
+                    "#text": "560% Fire (AOE) / 3-5BC Fill when ATKed (100%) (ALL) 3Turns / Inflict 15% Injury 15% Weak 15% Sick 10% Poison 10% Para 10% Curse on ATKed (ALL) 3Turns / Add 10% Injury 10% Weak 10% Sick to ATK (ALL) 3Turns / Add 8% Poison 8% Para 8% Curse to ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "19",
+                    "@dc": "19",
+                    "@cost": "30",
+                    "#text": "1300% Fire (AOE) / 50BC Fill when ATKed (100%) (ALL) 3Turns / 250% DMG+ to Ailed Enemy (ALL) 3Turns / Add 100% Injury 100% Weak 100% Sick to ATK (ALL) 3Turns / Add 100% Poison 100% Para 100% Curse to ATK (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "80% DMG+ to Ailed Enemy (SELF) / 20% Chance Heal 20-25% DMG when ATKed (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10936.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10936.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1435",
+                "name": "Marefu 8",
+                "role": "50%HP DEF Injury Weak Sick Poison Para Curse BBfill BBATKed",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "9",
+                    "@dc": "45",
+                    "#text": "100% Chance 4-7BC Fill when ATKed (ALL) / 50% HP 50% DEF (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison 10% Para 10% Curse (ALL)"
+                },
+                "bb": {
+                    "@hit": "13",
+                    "@dc": "13",
+                    "@cost": "27",
+                    "#text": "370% Fire (AOE) / 8BC Fill (ALL) 1Turn / 75% Sick 75% Poison 75% Curse / 75% Injury 75% Weak 75% Para"
+                },
+                "sbb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "30",
+                    "#text": "580% Fire (AOE) / 4-7BC Fill when ATKed (100%) (ALL) 3Turns / Inflict 15% Injury 15% Weak 15% Sick 10% Poison 10% Para 10% Curse on ATKed (ALL) 3Turns / Add 15% Injury 15% Weak 15% Sick to ATK (ALL) 3Turns / Add 10% Poison 10% Para 10% Curse to ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "30",
+                    "#text": "1500% Fire (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 300% DMG+ to Ailed Enemy (ALL) 3Turns / Add 100% Injury 100% Weak 100% Sick to ATK (ALL) 3Turns / Add 100% Poison 100% Para 100% Curse to ATK (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "100% DMG+ to Ailed Enemy (SELF) / 25% Chance Heal 20-25% DMG when ATKed (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10937.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10937.png"
+                },                
+                "sp": {
+                    "@list": "10 : +20% HP/DEF | 20 : 0-50% DEF depending on HP lost | 30 : Add Effect To BB/SBB (3 Turn 100% ATK Buff on Statused Targets) | 20 : Add Effect To BB/SBB (3 turn 8 BC/turn) | 30 : Add Effect To SBB/UBB (75% Injury/Poison/Sick/Weaken) & Add Effect To SBB/UBB (75% Curse/Paralyze) | 10 : Add Effect To BB/SBB (3 turn Fire Buff) | 10 : Add Effect To BB/SBB (3 turn Water Buff) | 10 : Add Effect To BB/SBB (3 turn Earth Buff) | 10 : Add Effect To BB/SBB (3 turn Thunder Buff) | 20 : Add Effect To BB/SBB (3 turn Light Buff) | 20 : Add Effect To BB/SBB (3 turn Dark Buff)"
+                }
+            },
+            {
+                "id": "1436",
+                "name": "Horia 7",
+                "role": "40%HP Heal MAXHP Idol hot NullStats NullCRIT NullEWD convertREC",
+                "element": "Water",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "9",
+                    "@dc": "36",
+                    "#text": "Heal Each Turn (ALL) / 0-30% ATK+ Based on HP LEFT (ALL) / 0-30% DEF+ Based on HP LEFT (ALL) / 40% HP (ALL)"
+                },
+                "bb": {
+                    "@hit": "12",
+                    "@dc": "12",
+                    "@cost": "26",
+                    "#text": "350% Water (AOE) / Heal (ALL) / 10% Max HP+ till Death,Battle End / 10% Chance Angel Idol 1% HP (ALL) 999Turns / Gradual Heal (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "27",
+                    "#text": "560% Water (AOE) / Null STATS Debuff (ALL) 1Turn / Null CRIT (ALL) 1Turn / Null Elemental Weakness (ALL) 1Turn / Convert 15% HP to REC (ALL) 3Turns / Gradual Heal (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "1300% Water (AOE) / Null STATS Debuff (ALL) 3Turns / 30% Max HP+ till Death,Battle End / 80% Chance Angel Idol 100% HP (ALL) 999Turns / Gradual Heal FULL (ALL) 3Turns / Null CRIT (ALL) 3Turns / Null Elemental Weakness (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "10% ALL Stats (ALL)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20876.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20876.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1437",
+                "name": "Horia 8",
+                "role": "60%HP Heal MAXHP Idol hot NullStats NullCRIT NullEWD convertREC",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "11",
+                    "@dc": "44",
+                    "#text": "Heal Each Turn (ALL) / 0-50% ATK+ Based on HP LEFT (ALL) / 0-50% DEF+ Based on HP LEFT (ALL) / 60% HP (ALL) / Reduce DMG (15%) from (Fire,water) Enemy (ALL)"
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "27",
+                    "#text": "370% Water (AOE) / Heal (ALL) / 15% Max HP+ till Death,Battle End / 10% Chance Angel Idol 1% HP (ALL) 999Turns / Gradual Heal (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "19",
+                    "@dc": "19",
+                    "@cost": "28",
+                    "#text": "580% Water (AOE) / Null STATS Debuff (ALL) 1Turn / Null CRIT (ALL) 1Turn / Null Elemental Weakness (ALL) 1Turn / Convert 20% HP to REC (ALL) 3Turns / Gradual Heal (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "30",
+                    "#text": "1500% Water (AOE) / Null STATS Debuff (ALL) 3Turns / 35% Max HP+ till Death,Battle End / 80% Chance Angel Idol 100% HP (ALL) 999Turns / Gradual Heal FULL (ALL) 3Turns / Null CRIT (ALL) 3Turns / Null Elemental Weakness (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "10% ALL Stats (ALL) / 40% Chance Angel Idol 2x (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20877.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20877.png"
+                },                
+                "sp": {
+                    "@list": "10 : (*) +30% HP | 10 : +50% HP (Prerequisite: *) | 20 : Negate Status Ailments | 10 : BBoT occur at the Start of Turn | 30 : BB+: HoT 1000 HP (+10% Target REC) & SBB+: HoT 1000 HP (+10% Target REC) | 30 : Add Effect To BB/SBB (3 turn Negate Status Ailments) | 20 : Add Elements (thunder,fire,water,earth) To Attacks | 20 : LS+: 0-20% ATK/DEF/REC depending on HP remaining | 30 : Add Effect To BB/SBB (2 turn Fire Dmg 10% Reduction) & Add Effect To BB/SBB (2 turn Water Dmg 10% Reduction) | 40 : BB+: Increase Max HP 5% & UBB+: Increase Max HP 5%"
+                }
+            },
+            {
+                "id": "1438",
+                "name": "Lauda 7",
+                "role": "BBrate BBATK% 30%HP ATK BBspark superspark BBregen Spark",
+                "element": "Light",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "12",
+                    "@dc": "36",
+                    "#text": "30% BC Fill+ (ALL) / 150% BB ATK%+ (ALL) / 30% HP 30% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "26",
+                    "@dc": "26",
+                    "@cost": "24",
+                    "#text": "350% Light (AOE) / 100% Chance 1-2BC Fill on Spark (ALL) 3Turns / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 200% BB ATK%+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "25",
+                    "#text": "560% Light (AOE) / 640% Light (TGT) / 100% Chance 1-2BC Fill on Spark (ALL) 3Turns / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 250% BB ATK%+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "40",
+                    "@dc": "40",
+                    "@cost": "30",
+                    "#text": "1300% Light (AOE) / 50BC Fill 3Turns / 250% Spark DMG+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Normal HitCount +100% (100% DMG) (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_51036.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51036.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1439",
+                "name": "Lauda 8",
+                "role": "BBrate BBATK% 50%HP ATK BBspark superspark BBregen Spark",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "14",
+                    "@dc": "42",
+                    "#text": "50% BC Fill+ (ALL) / 200% BB ATK%+ (ALL) / 50% HP 50% ATK (ALL) / 120% Spark DMG+ 2Turns on > 15 Sparks (ALL)"
+                },
+                "bb": {
+                    "@hit": "30",
+                    "@dc": "30",
+                    "@cost": "25",
+                    "#text": "370% Light (AOE) / 100% Chance 1-2BC Fill on Spark (ALL) 3Turns / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 250% BB ATK%+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "29",
+                    "@dc": "29",
+                    "@cost": "26",
+                    "#text": "580% Light (AOE) / 660% Light (TGT) / 100% Chance 2-3BC Fill on Spark (ALL) 3Turns / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 300% BB ATK%+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "46",
+                    "@dc": "46",
+                    "@cost": "30",
+                    "#text": "1500% Light (AOE) / 50BC Fill 3Turns / 300% Spark DMG+ (ALL) 3Turns / 600% BB ATK%+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Normal HitCount +100% (100% DMG) (SELF) / 50% ATK+ when BB > 50% (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_51037.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51037.png"
+                },                
+                "sp": {
+                    "@list": "10 : +50% ATK | 10 : +50% ATK when BB Gauge is above 50% | 10 : (*) +50% Spark Damage | 10 : (**) +70% Spark Damage (Prerequisite: *) | 10 : +100% Spark Damage (Prerequisite: **) | 20 : Add Effect To BB/SBB (1 turn 25% Spark Damage Taken Debuff (25% Chance)) | 20 : BB+: 10% Chance Sparks Crit Buff (0% Damage) & SBB+: 10% Chance Sparks Crit Buff (0% Damage) | 50 : BB+: +100% BB/SBB/UBB Mod & SBB+: +100% BB/SBB/UBB Mod"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
