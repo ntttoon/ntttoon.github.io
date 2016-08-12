@@ -277,6 +277,7 @@
 		//
 		var s = document.getElementById(id_input).value;
 		var re = new RegExp(s, 'gi');
+		var filter = document.querySelector('input[name="filter"]:checked').value;
 		//
 		function myFunction(response) {
 			var arr = JSON.parse(response);
@@ -287,10 +288,25 @@
 				var role = arr.brave.unit[i].role;
 				var ele = arr.brave.unit[i].element;
 				var thumb = arr.brave.unit[i].thumb['@path'];
-				if (role.match(re) || name.match(re) || ele.match(re)) {
-					var id = arr.brave.unit[i].id;
-					//document.getElementById(id_list).innerHTML += "<a href='#' onClick='setValue("+ id + ',"' + id_input + '","' + id_list + '")' + "' id='" + id + "' style='color:" + nameColor(ele) + "'>" + name + "</a> ";
-					document.getElementById(id_list).innerHTML += "<img width='60' style='cursor:pointer;' src='" + thumb + "' alt='" + name + "' id='" + id + "' onClick='setValue(" + id + ',"' + id_input + '","' + id_list + '")' + "'>";
+				if(filter == 'name'){
+					if(name.match(re)){
+						var id = arr.brave.unit[i].id;
+						document.getElementById(id_list).innerHTML += "<img width='60' style='cursor:pointer;' src='" + thumb + "' alt='" + name + "' id='" + id + "' onClick='setValue(" + id + ',"' + id_input + '","' + id_list + '")' + "'>";
+					}
+				}
+				//
+				if(filter == 'elements'){
+					if(ele.match(re)){
+						var id = arr.brave.unit[i].id;
+						document.getElementById(id_list).innerHTML += "<img width='60' style='cursor:pointer;' src='" + thumb + "' alt='" + name + "' id='" + id + "' onClick='setValue(" + id + ',"' + id_input + '","' + id_list + '")' + "'>";
+					}
+				}
+				//
+				if(filter == 'buffs'){
+					if(role.match(re)){
+						var id = arr.brave.unit[i].id;
+						document.getElementById(id_list).innerHTML += "<img width='60' style='cursor:pointer;' src='" + thumb + "' alt='" + name + "' id='" + id + "' onClick='setValue(" + id + ',"' + id_input + '","' + id_list + '")' + "'>";
+					}
 				}//end if
 			}//end for
 		}// end myFunction
@@ -310,10 +326,14 @@
   <h5>BUILD TEAM</h5>
 </header>
 <div class="w3-blockquote w3-sand"> <a class="expander linknounderline" href="#">Read this first, click here!</a>
-  <p class="content"> <span class="w3-tag w3-yellow">Type <strong>ONE</strong> of these keywords to search units who related to leader skills and buffs, or you can search by NAME (this not include OMNI SP skills):</span><br>
-    <strong>HP(30%HP, 35%HP, 40%HP, 50%HP, 60%HP), MAXHP, ATK, DEF, REC, BB(BBreduce, BBregen, BBfill, BBATKed, BBATK%, BBspark, BBrate, BBcrit), BC, HC, ConvertATK, ConvertDEF, ConvertREC, Spark, CRIT, USBB, Barrier, OverDrive, HoT, DoT, USBB, Miti, Miti50%, Miti75%, Null, Cure, Injury, Weak, Sick, Poison, Para, Curse, atkdown, defdown, Fire, water, earth, thunder, light, dark, EXP, Item, Karma, Zel, Idol, Revive, hit, Weakness, Stealth, Taunt, HealATKed, superspark (aka CRIT Spark), healSpark, NullCRIT, NullStats, NullEWD, AOE (aka normal to AOE attack)</strong> </p>
+  <div class="content" style="padding:10px">** You can search by Unit's Name (ie: Felice, Krantz..) or by Elements (ie: Dark, Light..) <br>** Chose Buffs and type <strong>ONE</strong> of these keywords to search units who related to leader skills and buffs (this not include OMNI SP skills): <strong class="w3-text-deep-orange">HP(30%HP, 35%HP, 40%HP, 50%HP, 60%HP), MAXHP, ATK, DEF, REC, BB(BBreduce, BBregen, BBfill, BBATKed, BBATK%, BBspark, BBrate, BBcrit), BC, HC, ConvertATK, ConvertDEF, ConvertREC, Spark, CRIT, USBB, Barrier, OverDrive, HoT, DoT, USBB, Miti, Miti50%, Miti75%, Null, Cure, Injury, Weak, Sick, Poison, Para, Curse, atkdown, defdown, Fire, water, earth, thunder, light, dark, EXP, Item, Karma, Zel, Idol, Revive, hit, Weakness, Stealth, Taunt, HealATKed, superspark (aka CRIT Spark), healSpark, NullCRIT, NullStats, NullEWD, AOE (aka normal to AOE attack)</strong> </div>
 </div>
 <div class="w3-container">
+  <p>Search by
+  <input class="w3-radio" type="radio" name="filter" value="name" checked><label class="w3-validate">Name</label>
+  <input class="w3-radio" type="radio" name="filter" value="elements" ><label class="w3-validate">Elements</label>
+  <input class="w3-radio" type="radio" name="filter" value="buffs" ><label class="w3-validate">Buffs</label>
+  </p>
   <h5>Leader</h5>
   <input class="w3-input w3-border" name="search" id="leader" type="text" onChange="searchUnit('leader','leader_list');">
   <div class="w3-text" id="leader_list"></div>
