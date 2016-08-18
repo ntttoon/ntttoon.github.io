@@ -8494,6 +8494,94 @@
                 }
             },
             {
+                "id": "1440",
+                "name": "Rize 8",
+                "role": "HC 40%HP ATK HoT Spark BBregen CRIT",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "12",
+                    "@dc": "48",
+                    "#text": "25% HC+ (ALL) / 40% HP 100% ATK (ALL) / 160% ATK+ 3Turns when > 30 HC Received (ALL)"
+                },
+                "bb": {
+                    "@hit": "19",
+                    "@dc": "38",
+                    "@cost": "17",
+                    "#text": "Thunder (TGT) 500%-800% BB ATK% Based on HP LEFT / 25% Chance Enemy receives 25% Spark DMG+ 1Turns / Gradual Heal (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "29",
+                    "#text": "500% Thunder (TGT) / Thunder (AOE) 200%-900% BB ATK% Based on HP LEFT / Ignore DEF (ALL) 2Turns / 25% Chance Enemy receives 25% Spark DMG+ 1Turns / 100% ATK+ (SELF) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "25",
+                    "#text": "Thunder (AOE) 1500%-2500% BB ATK% Based on HP LEFT / 50BC Fill 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 300% ATK+ (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "25% Chance Heal 20-25% when ATKed (SELF) / 6 BC Fill on > 10k DMG Dealt (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40577.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40577.png"
+                },                
+                "sp": {
+                    "@list": "20 : (*) +30% HP | 10 : +50% HP (Prerequisite: *) | 20 : (**) +50% Spark Damage | 10 : (***) +70% Spark Damage (Prerequisite: **) | 10 : +100% Spark Damage (Prerequisite: ***) | 20 : +50% Crit Damage | 10 : HBoT occur at the Start of Turn | 20 : LS+: +10% HP | 30 : Add Effect To SBB (3 Turn HoT 3500-4000 HP (+10% Target REC)) | 20 : Add Effect To BB/SBB (3 Turn HoT 4500-5000 HP (+10% Target REC))"
+                }
+            },
+            {
+                "id": "1441",
+                "name": "Zelnite 8",
+                "role": "EXP BC HC Item Karma Zel 50%HP BBfill OverDrive BBrate BBatked heal hit ATK",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "15",
+                    "@dc": "45",
+                    "#text": "10% EXP+ (ALL) / 25% BC+ 25% HC+ 5% Item+ 20% Karma+ 25% Zel+ (ALL) / 50% HP (ALL)"
+                },
+                "bb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "28",
+                    "#text": "360% Earth (AOE) / 8BC Fill (ALL) 1Turn / 20% OverDrive Fill+ 3Turns / 30% BC+ 30% HC+ 3% Item+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "43",
+                    "@dc": "43",
+                    "@cost": "20",
+                    "#text": "560% Earth (AOE) / 10BC Fill (ALL) 1Turn / 50% BC Fill+ (ALL) 3Turns / 5-8BC Fill when ATKed (100%) (ALL) 3Turns / Heal (ALL) / 30% BC+ 30% HC+ 3% Item+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "25",
+                    "#text": "1500% Earth (AOE) / 80% OverDrive Fill+ 3Turns / 100% BC Fill+ (ALL) 3Turns / Normal HitCount +300% (100% DMG) (ALL) 3Turns / 300% ATK+ (ALL) 3Turns / 50% BC+ 50% HC+ 5% Item+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "Thief's Treasure Sphere OR DROP-type Sphere Equipped",
+                    "#text": "30% ALL Stats (SELF) / 25% Chance Heal 20-25% when ATKed (SELF) / 6 BC Fill on > 10k DMG Dealt (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30447.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30447.png"
+                },                
+                "sp": {
+                    "@list": "20 : +20% All Stats | 20 : Hit Count +1 | 20 : +1% Item Drop Rate | 30 : 15% OD Gauge Fill Rate | 30 : BB+: +10% BC/HC Drop Rate Buff & SBB+: +10% BC/HC Drop Rate Buff | 50 : BB+: Fill 3 BC & SBB+: Fill 3 BC | 50 : BB+: +2% Item Drop Rate Buff & SBB+: +2% Item Drop Rate Buff | 100 : LS+: +5% Player XP"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
