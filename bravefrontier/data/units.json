@@ -8582,6 +8582,270 @@
                 }
             },
             {
+                "id": "1442",
+                "name": "Rosalia 7",
+                "role": "",
+                "element": "Earth",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "6",
+                    "@dc": "36",
+                    "#text": "150% BB ATK%+ (ALL) / 40% HP 40% ATK (ALL) / Null Ignore DEF (ALL)"
+                },
+                "bb": {
+                    "@hit": "9",
+                    "@dc": "9",
+                    "@cost": "26",
+                    "#text": "350% Earth (AOE) / 200% BB ATK%+ (ALL) 3Turns / 65% Sick 65% Poison 65% Curse / 65% Injury 65% Weak 65% Para"
+                },
+                "sbb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "28",
+                    "#text": "560% Earth (AOE) / 250% BB ATK%+ (ALL) 3Turns / 65% Sick 65% Poison 65% Curse / 65% Injury 65% Weak 65% Para / Add 10% Injury 10% Weak 10% Sick to ATK (ALL) 3Turns / Add 8% Poison 8% Para 8% Curse to ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "19",
+                    "@dc": "19",
+                    "@cost": "30",
+                    "#text": "1300% Earth (AOE) / 250% DMG+ to Ailed Enemy (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns / 100% Sick 100% Poison 100% Curse / 100% Injury 100% Weak 100% Para"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "80% DMG+ to Ailed Enemy (SELF) / Gradual Heal (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30836.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30836.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1443",
+                "name": "Rosalia 8",
+                "role": "",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "8",
+                    "@dc": "40",
+                    "#text": "100% Chance 4-7BC Fill when ATKed (ALL) / Null CRIT (ALL) / 50% HP 50% DEF (ALL) / Reduce DMG (10%) from (Fire,water,earth,thunder) Enemy (ALL)"
+                },
+                "bb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "20",
+                    "#text": "10BC Fill (ALL) 1Turn / Heal (ALL) / Cure Ails / Null Ails (ALL) 3Turns / Null STATS Debuff (ALL) 2Turns"
+                },
+                "sbb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "10",
+                    "#text": "10BC Fill (ALL) 1Turn / 150% Spark DMG+ (ALL) 3Turns / Add 10% Chance -25% Enemy ATK to ATK (ALL) 3Turns / 350% BB ATK%+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "25",
+                    "#text": "Reduce DMG (75%) 3Turns / 50BC Fill when ATKed (100%) (ALL) 3Turns / 50% Chance Angel Idol 100% HP (ALL) 999Turns / 500% BB ATK%+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Ails (SELF) / 5 BC Fill Per Turn (SELF) / 50% DEF+ on BB > 50% (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30837.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30837.png"
+                },                
+                "sp": {
+                    "@list": "10 : +20% HP/DEF | 10 : 2-3 BC when hit | 30 : LS+: Mitigate Damage 5% | 30 : SBB+: +100% BB/SBB/UBB Mod & UBB+: +100% BB/SBB/UBB Mod | 40 : BB+: Fill 2 BC & SBB+: Fill 2 BC | 20 : Add Effect To SBB (3 Turn +60% Crit) | 30 : Add Effect To SBB (3 turn +50% Crit Dmg) | 20 : Add Effect To BB/SBB (4-7 BC on Hit for 3 turns) | 20 : Add Effect To SBB (Heal 3000-3500 HP (+ 40% Healer REC)) | 20 : Add Effect To BB/SBB (3 Turn Heal 20-25% of Damage Taken (20% Chance))"
+                }
+            },
+            {
+                "id": "1444",
+                "name": "Fizz 7",
+                "role": "",
+                "element": "Thunder",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "40",
+                    "#text": "100% Chance 8-8BC Fill on ATK (ALL) / 30% HP 30% ATK (ALL) / 25% Chance AOE on Normal ATK (-50% DMG) (ALL)"
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "26",
+                    "#text": "350% Thunder (AOE) / 15% OverDrive Fill+ (ALL) 3Turns / 50% BC Fill+ (ALL) 3Turns / Normal HitCount +100% (100% DMG) (ALL) 3Turns / AOE on Normal ATK (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "28",
+                    "#text": "560% Thunder (AOE) / 8% OverDrive Fill / 15% OverDrive Fill+ (ALL) 3Turns / Normal HitCount +100% (100% DMG) (ALL) 3Turns / AOE on Normal ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "1300% Thunder (AOE) / 200% OverDrive Fill+ (ALL) 5Turns / 250% ATK+ 250% DEF+ (ALL) 5Turns / AOE on Normal ATK (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "300% OD Fill+ 1Turn on > 5k DMG Received (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40816.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40816.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1445",
+                "name": "Fizz 8",
+                "role": "",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "14",
+                    "@dc": "42",
+                    "#text": "100% Chance 10-10BC Fill on ATK (ALL) / 50% HP 50% ATK (ALL) / 50% ATK 50% DEF (BB >= 50%) (ALL) / 25% Chance AOE on Normal ATK (-50% DMG) (ALL)"
+                },
+                "bb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "27",
+                    "#text": "370% Thunder (AOE) / 20% OverDrive Fill+ (ALL) 3Turns / 50% BC Fill+ (ALL) 3Turns / Normal HitCount +100% (20% DMG) (ALL) 3Turns / AOE on Normal ATK (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "29",
+                    "#text": "580% Thunder (AOE) / 10% OverDrive Fill / 20% OverDrive Fill+ (ALL) 3Turns / Normal HitCount +100% (20% DMG) (ALL) 3Turns / AOE on Normal ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "30",
+                    "#text": "1500% Thunder (AOE) / 300% OverDrive Fill+ (ALL) 5Turns / 300% ATK+ 300% DEF+ (ALL) 5Turns / AOE on Normal ATK (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "300% OD Fill+ 1Turn on > 5k DMG Received (SELF) / 100% ATK+ 100% DEF+ on > 5k DMG Received (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40817.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40817.png"
+                },                
+                "sp": {
+                    "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 20 : +50% Spark Damage | 20 : Hit Count +1 | 20 : 20% OD Gauge Fill Rate | 60 : LS+: 0% Chance Normal Attacks AoE (20% Damage) | 40 : 100% HP Angel Idol Buff when HP below 20% | 20 : Add Effect To BB/SBB (3 Turn +60% Crit) | 30 : Add Effect To BB/SBB (3 turn +50% Crit Dmg) | 30 : Add Effect To BB/SBB (3 Turn +30% BC/HC Drop Rate Buff) | 40 : BB+: Hit Count + (10% damage) & SBB+: Hit Count + (10% damage) | 40 : SBB+: 10% OD Fill Rate Buff"
+                }
+            },
+            {
+                "id": "1446",
+                "name": "Gregor 7",
+                "role": "",
+                "element": "Dark",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "8",
+                    "@dc": "32",
+                    "#text": "150% CRIT DMG+ (ALL) / 75% Element Weakness DMG+ (ALL) / 30% HP 30% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "12",
+                    "@dc": "12",
+                    "@cost": "24",
+                    "#text": "350% Dark (AOE) / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / 20% Chance -50% Enemy ATK 1Turns / 20% Chance -50% Enemy DEF 1Turns"
+                },
+                "sbb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "27",
+                    "#text": "560% Dark (AOE) / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / 20% Chance -50% Enemy ATK 1Turns / 20% Chance -50% Enemy DEF 1Turns / 50% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "30",
+                    "#text": "1300% Dark (AOE) / 300% CRIT DMG+ (ALL) 3Turns / 100% Chance -80% Enemy ATK 3Turns / 100% Chance -80% Enemy DEF 3Turns / 300% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% Elemental Weakness DMG+ (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_61026.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_61026.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1447",
+                "name": "Gregor 8",
+                "role": "",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "12",
+                    "@dc": "48",
+                    "#text": "150% CRIT DMG+ (ALL) / 20% Chance Reflect 25-25% DMG (ALL) / 125% Element Weakness DMG+ (ALL) / 50% HP 50% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "26",
+                    "#text": "370% Dark (AOE) / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "28",
+                    "#text": "580% Dark (AOE) / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns / 50% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "24",
+                    "@dc": "24",
+                    "@cost": "30",
+                    "#text": "1500% Dark (AOE) / 300% CRIT DMG+ (ALL) 3Turns / 100% Chance -80% Enemy ATK 3Turns / 100% Chance -80% Enemy DEF 3Turns / 300% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% Elemental Weakness DMG+ (SELF) / Add 30% Chance -20% Enemy ATK to ATK (SELF) 2Turns on 1 DMG Dealt / Add 30% Chance -20% Enemy DEF to ATK (SELF) 2Turns on 1 DMG Dealt"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_61027.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_61027.png"
+                },                
+                "sp": {
+                    "@list": "20 : +50% ATK | 20 : +50% DEF | 10 : +30% Crit Damage | 20 : +50% Crit Damage | 10 : Add Elements To Attacks | 20 : Add Effect To BB/SBB (2 turn DoT Debuff (400% + 100 Flat Atk)) | 20 : BB+: 0% ATK and/or 0% DEF {10%} for 0 turns & SBB+: 0% ATK and/or 0% DEF {10%} for 0 turns | 40 : BB+: +25% Crit Dmg & SBB+: +25% Crit Dmg | 40 : BB+: +50% Weakness Damage & SBB+: +50% Weakness Damage"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
@@ -11087,6 +11351,94 @@
                 },                
                 "sp": {
                     "@list": "20 : (*) 50% boost to Atk | 10 : Boosts 50% Atk to 80% Atk (Prerequisite: *) | 30 : (**) 50% boost to BB Atk | 30 : Boosts 50% BB Atk to 100% BB Atk (Prerequisite: **) | 20 : Raises normal hit amount (Doubles (+1) amount) | 30 : Adds considerable Atk boost for 3 turns effect to BB/SBB (160% boost) | 30 : Adds Def ignoring effect to attack for 2 turns effect to BB/SBB | 40 : Enhances SBB/UBB's Atk boost effect (+100% boost. 400%/700% total)"
+                }
+            },
+            {
+                "id": "8223",
+                "name": "Rogue Inquisitor Adriesta",
+                "role": "",
+                "element": "Fire",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "39",
+                    "#text": "100% Chance 1-2BC Fill on Spark (ALL) / Null Elemental Weakness (ALL) / 30% HP 30% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "26",
+                    "#text": "350% Thunder (AOE) / 100% Chance 1-2BC Fill on Spark (ALL) 3Turns / Heal on Spark (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "24",
+                    "@dc": "24",
+                    "@cost": "24",
+                    "#text": "560% Thunder (AOE) / 100% Chance 1-2BC Fill on Spark (ALL) 3Turns / Add 10% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 140% ATK+ 140% DEF+ (ALL) 3Turns / Convert 50% DEF to ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "28",
+                    "@dc": "28",
+                    "@cost": "30",
+                    "#text": "1300% Thunder (AOE) / 20000HP Barrier (thunder) / 250% ATK+ 250% DEF+ (ALL) 3Turns / 100% Chance -80% Enemy ATK 3Turns / 100% Chance -80% Enemy DEF 3Turns / Reduce DMG (50%) from (All) Enemy3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% Spark DMG+ on > 15 Sparks (SELF) / 50% DEF+ on > 15 Sparks (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810417.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810417.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8224",
+                "name": "Scourgemistress Adriesta",
+                "role": "",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "18",
+                    "@dc": "54",
+                    "#text": "100% Chance 2-3BC Fill on Spark (ALL) / Null Elemental Weakness (ALL) / 50% HP 50% ATK (ALL) / 100% Spark DMG+ on > 15 Sparks (ALL)"
+                },
+                "bb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "27",
+                    "#text": "370% Thunder (AOE) / 100% Chance 2-3BC Fill on Spark (ALL) 3Turns / Heal on Spark (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "30",
+                    "@dc": "30",
+                    "@cost": "25",
+                    "#text": "580% Thunder (AOE) / 100% Chance 2-3BC Fill on Spark (ALL) 3Turns / Add 20% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 160% ATK+ 160% DEF+ (ALL) 3Turns / Convert 70% DEF to ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "40",
+                    "@dc": "40",
+                    "@cost": "30",
+                    "#text": "1500% Thunder (AOE) / 25000HP Barrier (thunder) / 300% ATK+ 300% DEF+ (ALL) 3Turns / 100% Chance -90% Enemy ATK 3Turns / 100% Chance -90% Enemy DEF 3Turns / Reduce DMG (50%) from (All) Enemy3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "100% Spark DMG+ on > 15 Sparks (SELF) / 100% DEF+ on > 15 Sparks (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810418.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810418.png"
+                },                
+                "sp": {
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 20 : 100% max boost to Atk and Def relative to remaining HP | 20 : 80% boost to Spark damage | 50 : Adds Thunder barrier effect to SBB (3000 HP) | 30 : Enhances SBB's Atk relative to Def boost effect (+10% boost, 80% boost total) | 30 : Enhances BB/SBB's BB gauge boost during Spark effect (+1 BC, 3~4 BC fill on Spark total) | 50 : Enhances SBB's Atk and Def boost effect (+20% boost, 180% boost total) | 40 : Allows UBB's boost effects to last for 4 turns"
                 }
             },
             {
