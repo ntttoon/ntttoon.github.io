@@ -1,0 +1,438 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Brave Frontier</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:image" content="http://ntttoon.github.io/bravefrontier/images/fb_bt.jpg" />
+<meta property="og:title" content="Brave Frontier Build Team" />
+<meta property="og:description" content="Build and share your team!" />
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<script src="js/libs.js"></script> 
+<script src="../js/ga.js"></script>
+<style>
+.linknounderline {
+	text-decoration: none;
+}
+.unit {display:none};
+</style>
+<script>
+	var l = getURLParameter('l');
+	function checkTeam(){
+		if(!l==''){
+			buidTeam();
+			viewBuffs_ID('buffs_l',l);
+			viewBuffs_ID('buffs_2',u2);
+			viewBuffs_ID('buffs_3',u3);
+			viewBuffs_ID('buffs_4',u4);
+			viewBuffs_ID('buffs_5',u5);
+			viewBuffs_ID('buffs_f',f);
+			document.getElementById('build_btn').style.display='none';
+			document.getElementById('create_btn').style.display='block';
+		}
+	}
+	function buidTeam(){
+		document.getElementById('id01').style.display='block';
+		writeOption('leader','leader_thumb','leader_out');
+		writeOption('unit2','unit2_thumb','unit2_out');
+		writeOption('unit3','unit3_thumb','unit3_out');
+		writeOption('unit4','unit4_thumb','unit4_out');
+		writeOption('unit5','unit5_thumb','unit5_out');
+		writeOption('friend','friend_thumb','friend_out');
+	}
+</script>
+<script>
+	var l = getURLParameter('l');
+	var u2 = getURLParameter('u2');
+	var u3 = getURLParameter('u3');
+	var u4 = getURLParameter('u4');
+	var u5 = getURLParameter('u5');
+	var f = getURLParameter('f');
+	//
+	function viewBuffs_Name(id_input,buffs_out){
+		var xmlhttp = new XMLHttpRequest();
+		var url = "data/units.json";
+		
+		xmlhttp.onreadystatechange=function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				myFunction(xmlhttp.responseText);
+			}
+		}
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
+		//
+		var n = document.getElementById(id_input).value;
+		
+		function myFunction(response) {
+			var arr = JSON.parse(response);
+			var i;
+			var json_len = arr.brave.unit.length;
+			for(i = 0; i < json_len; i++) {
+				var id = arr.brave.unit[i].id;
+				var name = arr.brave.unit[i].name;
+				var ls = arr.brave.unit[i].ls['#text'];
+				var bb = arr.brave.unit[i].bb['#text'];
+				var sbb = arr.brave.unit[i].sbb['#text'];
+				var ubb = arr.brave.unit[i].ubb['#text'];
+				var es = arr.brave.unit[i].es['#text'];
+				var thumb = arr.brave.unit[i].thumb['@path'];
+				//
+				if(n==name){
+					var bb_array = bb.split("/");
+					var sbb_array = sbb.split("/");
+					var ubb_array = ubb.split("/");
+					var es_array = es.split("/");
+					
+					document.getElementById(buffs_out).innerHTML = name + '<br>';
+					$.each( bb_array, function( j, val ){
+						if(!buffsOut(val) == ""){
+							document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-blue" title="' + val + '">' + buffsOut(val,'bb') + '</span> ';
+						}
+					});
+					document.getElementById(buffs_out).innerHTML += '<br>';
+					$.each( sbb_array, function( j, val ){
+						if(!buffsOut(val) == ""){
+							document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-yellow" title="' + val + '">' + buffsOut(val,'sbb') + '</span> ';
+						}
+					});
+					document.getElementById(buffs_out).innerHTML += '<br>';
+					$.each( ubb_array, function( j, val ){
+						if(!buffsOut(val) == ""){
+							document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-red" title="' + val + '">' + buffsOut(val,'ubb') + '</span> ';
+						}
+					});
+					document.getElementById(buffs_out).innerHTML += '<br>';
+					$.each( es_array, function( j, val ){
+						if(!buffsOut(val) == ""){
+							document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-purple" title="' + val + '">' + buffsOut(val,'es') + '</span> ';
+						}
+					});
+				}//end if
+			}//end for
+		}//end myFunction
+	}//end viewBuffs_Name
+	//
+	function viewBuffs_ID(buffs_out,param){
+		var xmlhttp = new XMLHttpRequest();
+		var url = "data/units.json";
+		
+		xmlhttp.onreadystatechange=function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				myFunction(xmlhttp.responseText);
+			}
+		}
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
+		//
+		function myFunction(response) {
+			var arr = JSON.parse(response);
+			var i;
+			var json_len = arr.brave.unit.length;
+			for(i = 0; i < json_len; i++) {
+				var id = arr.brave.unit[i].id;
+				var name = arr.brave.unit[i].name;
+				var ls = arr.brave.unit[i].ls['#text'];
+				var bb = arr.brave.unit[i].bb['#text'];
+				var sbb = arr.brave.unit[i].sbb['#text'];
+				var ubb = arr.brave.unit[i].ubb['#text'];
+				var es = arr.brave.unit[i].es['#text'];
+				var thumb = arr.brave.unit[i].thumb['@path'];
+				//
+				if(id==param){
+					var bb_array = bb.split("/");
+					var sbb_array = sbb.split("/");
+					var ubb_array = ubb.split("/");
+					var es_array = es.split("/");
+					
+					document.getElementById(buffs_out).innerHTML = name + '<br>';
+					$.each( bb_array, function( j, val ){
+						if(!buffsOut(val) == ""){
+							document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-blue" title="' + val + '">' + buffsOut(val,'bb') + '</span> ';
+						}
+					});
+					document.getElementById(buffs_out).innerHTML += '<br>';
+					$.each( sbb_array, function( j, val ){
+						if(!buffsOut(val) == ""){
+							document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-yellow" title="' + val + '">' + buffsOut(val,'sbb') + '</span> ';
+						}
+					});
+					document.getElementById(buffs_out).innerHTML += '<br>';
+					$.each( ubb_array, function( j, val ){
+						if(!buffsOut(val) == ""){
+							document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-red" title="' + val + '">' + buffsOut(val,'ubb') + '</span> ';
+						}
+					});
+					document.getElementById(buffs_out).innerHTML += '<br>';
+					$.each( es_array, function( j, val ){
+						if(!buffsOut(val) == ""){
+							document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-purple" title="' + val + '">' + buffsOut(val,'es') + '</span> ';
+						}
+					});
+				}//end if
+			}//end for
+		}//end myFunction
+	}//viewBuffs_ID
+	//
+	function writeOption(id_input,thumb_out,div_out)
+	{
+		var xmlhttp = new XMLHttpRequest();
+		var url = "data/units.json";
+		
+		xmlhttp.onreadystatechange=function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				myFunction(xmlhttp.responseText);
+			}
+		}
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
+		//
+		var n = document.getElementById(id_input).value;
+    	//
+		function myFunction(response) {
+			var arr = JSON.parse(response);
+			var i;
+			var json_len = arr.brave.unit.length;
+			for(i = 0; i < json_len; i++) {
+				var id = arr.brave.unit[i].id;
+				var name = arr.brave.unit[i].name;
+				var ls = arr.brave.unit[i].ls['#text'];
+				var bb = arr.brave.unit[i].bb['#text'];
+				var sbb = arr.brave.unit[i].sbb['#text'];
+				var ubb = arr.brave.unit[i].ubb['#text'];
+				var es = arr.brave.unit[i].es['#text'];
+				var thumb = arr.brave.unit[i].thumb['@path'];
+				//Check url and return team
+				if(id==l)
+				{
+					document.getElementById("leader_thumb").src = thumb;
+					document.getElementById("leader_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+				}
+				if(id==u2)
+				{
+					document.getElementById("unit2_thumb").src = thumb;
+					document.getElementById("unit2_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+				}
+				if(id==u3)
+				{
+					document.getElementById("unit3_thumb").src = thumb;
+					document.getElementById("unit3_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+				}
+				if(id==u4)
+				{
+					document.getElementById("unit4_thumb").src = thumb;
+					document.getElementById("unit4_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+				}
+				if(id==u5)
+				{
+					document.getElementById("unit5_thumb").src = thumb;
+					document.getElementById("unit5_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+				}
+				if(id==f)
+				{
+					document.getElementById("friend_thumb").src = thumb;
+					document.getElementById("friend_out").innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+				}
+				//Check input
+				if(name==n)
+				{
+					document.getElementById(thumb_out).src = thumb;
+					document.getElementById(div_out).innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '</p>';
+					//export link
+					var sLink = "http://ntttoon.github.io/bravefrontier/buildteam.html";
+					if(thumb_out == "leader_thumb"){
+						document.getElementById("genLink").value = sLink + '?l=' + id ;
+					}
+					if(thumb_out == "unit2_thumb"){
+						document.getElementById("genLink").value += '&u2=' + id ;
+					}
+					if(thumb_out == "unit3_thumb"){
+						document.getElementById("genLink").value += '&u3=' + id ;
+					}
+					if(thumb_out == "unit4_thumb"){
+						document.getElementById("genLink").value += '&u4=' + id ;
+					}
+					if(thumb_out == "unit5_thumb"){
+						document.getElementById("genLink").value += '&u5=' + id ;
+					}
+					if(thumb_out == "friend_thumb"){
+						document.getElementById("genLink").value += '&f=' + id ;
+					}
+				}
+			}//for
+		}//end myFunction
+	}//end writeOption
+	//
+	function searchUnit(id_input,id_list)
+	{
+		var xmlhttp = new XMLHttpRequest();
+		var url = "data/units.json";
+		
+		xmlhttp.onreadystatechange=function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				myFunction(xmlhttp.responseText);
+			}
+		}
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
+		//
+		var s = document.getElementById(id_input).value;
+		var re = new RegExp(s, 'gi');
+		var filter = document.querySelector('input[name="filter"]:checked').value;
+		//
+		function myFunction(response) {
+			var arr = JSON.parse(response);
+			var i;
+			var json_len = arr.brave.unit.length;
+			for(i = 0; i < json_len; i++) {
+				var name = arr.brave.unit[i].name;
+				var role = arr.brave.unit[i].role;
+				var ele = arr.brave.unit[i].element;
+				var thumb = arr.brave.unit[i].thumb['@path'];
+				if(filter == 'name'){
+					if(name.match(re)){
+						var id = arr.brave.unit[i].id;
+						document.getElementById(id_list).innerHTML += "<img width='60' style='cursor:pointer;' src='" + thumb + "' alt='" + name + "' id='" + id + "' onClick='setValue(" + id + ',"' + id_input + '","' + id_list + '")' + "'>";
+					}
+				}
+				//
+				if(filter == 'elements'){
+					if(ele.match(re)){
+						var id = arr.brave.unit[i].id;
+						document.getElementById(id_list).innerHTML += "<img width='60' style='cursor:pointer;' src='" + thumb + "' alt='" + name + "' id='" + id + "' onClick='setValue(" + id + ',"' + id_input + '","' + id_list + '")' + "'>";
+					}
+				}
+				//
+				if(filter == 'buffs'){
+					if(role.match(re)){
+						var id = arr.brave.unit[i].id;
+						document.getElementById(id_list).innerHTML += "<img width='60' style='cursor:pointer;' src='" + thumb + "' alt='" + name + "' id='" + id + "' onClick='setValue(" + id + ',"' + id_input + '","' + id_list + '")' + "'>";
+					}
+				}//end if
+			}//end for
+		}// end myFunction
+	}//end searchUnit
+	//
+	function setValue(id,id_input,id_list)
+	{
+		v = document.getElementById(id).alt;
+		document.getElementById(id_input).value = v;
+		document.getElementById(id_list).innerHTML = "";
+	}
+</script>
+</head>
+
+<body onLoad="checkTeam();">
+<header class="w3-container w3-teal w3-card-2">
+  <h5>BUILD TEAM</h5>
+</header>
+<div class="w3-blockquote w3-sand"> <a class="expander linknounderline" href="#">Read this first, click here!</a>
+  <div class="content" style="padding:10px">** You can search by Unit's Name (ie: Felice, Krantz..) or by Elements (ie: Dark, Light..) <br>** Chose Buffs and type <strong>ONE</strong> of these keywords to search units who related to leader skills and buffs (this not include OMNI SP skills): <strong class="w3-text-deep-orange">HP(30%HP, 35%HP, 40%HP, 50%HP, 60%HP), MAXHP, ATK, DEF, REC, BB(BBreduce, BBregen, BBfill, BBATKed, BBATK%, BBspark, BBrate, BBcrit), BC, HC, ConvertATK, ConvertDEF, ConvertREC, Spark, CRIT, USBB, Barrier, OverDrive, HoT, DoT, USBB, Miti, Miti50%, Miti75%, Null, Cure, Injury, Weak, Sick, Poison, Para, Curse, atkdown, defdown, Fire, water, earth, thunder, light, dark, EXP, Item, Karma, Zel, Idol, Revive, hit, Weakness, Stealth, Taunt, HealATKed, superspark (aka CRIT Spark), healSpark, NullCRIT, NullStats, NullEWD, AOE (aka normal to AOE attack)</strong> </div>
+</div>
+<div class="w3-container">
+  <p>Search by
+  <input class="w3-radio" type="radio" name="filter" value="name" checked><label class="w3-validate">Name</label>
+  <input class="w3-radio" type="radio" name="filter" value="elements" ><label class="w3-validate">Elements</label>
+  <input class="w3-radio" type="radio" name="filter" value="buffs" ><label class="w3-validate">Buffs</label>
+  </p>
+  <h5>Leader</h5>
+  <input class="w3-input w3-border" name="search" id="leader" type="text" onChange="searchUnit('leader','leader_list');">
+  <div class="w3-text" id="leader_list"></div>
+  <h5>Unit 2 in team</h5>
+  <input class="w3-input w3-border" name="search" id="unit2" type="text" onChange="searchUnit('unit2','unit2_list');">
+  <div class="w3-text" id="unit2_list"></div>
+  <h5>Unit 3 in team</h5>
+  <input class="w3-input w3-border" name="search" id="unit3" type="text" onChange="searchUnit('unit3','unit3_list');">
+  <div class="w3-text" id="unit3_list"></div>
+  <h5>Unit 4 in team</h5>
+  <input class="w3-input w3-border" name="search" id="unit4" type="text" onChange="searchUnit('unit4','unit4_list');">
+  <div class="w3-text" id="unit4_list"></div>
+  <h5>Unit 5 in team</h5>
+  <input class="w3-input w3-border" name="search" id="unit5" type="text" onChange="searchUnit('unit5','unit5_list');">
+  <div class="w3-text" id="unit5_list"></div>
+  <h5>Friend</h5>
+  <input class="w3-input w3-border" name="search" id="friend" type="text" onChange="searchUnit('friend','friend_list');">
+  <div class="w3-text" id="friend_list"></div>
+</div>
+<br>
+<button onclick="buidTeam()" class="w3-btn w3-red" style="width:100%" id="build_btn">Build!!!</button>
+<button onclick="window.open('buildteam.html','_self')" class="w3-btn w3-blue" style="width:100%;display:none" id="create_btn">Create New!</button>
+<div class="w3-container">
+    <h5>Copy this Link to share your team</h5>
+    <input class="w3-input w3-border" id="genLink" type="text" value="">
+</div>
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+    <header class="w3-container w3-red"> <span onclick="document.getElementById('id01').style.display='none'" 
+   class="w3-closebtn w3-padding-top">×</span>
+      <h4>YOUR TEAM</h4>
+    </header>
+    <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%; text-align:center">
+      <li><a href="#" class="tablink" onclick="openUnit(event, 'leader_out')"><img src="images/Unit_tab.png" width="90px" id="leader_thumb" /> <br>Leader</a></li>
+      <li><a href="#" class="tablink" onclick="openUnit(event, 'unit2_out')"><img src="images/Unit_tab.png" width="90px" id="unit2_thumb" /> <br>Unit</a></li>
+      <li><a href="#" class="tablink" onclick="openUnit(event, 'unit3_out')"><img src="images/Unit_tab.png" width="90px" id="unit3_thumb" /> <br>Unit</a></li>
+      <li><a href="#" class="tablink" onclick="openUnit(event, 'unit4_out')"><img src="images/Unit_tab.png" width="90px" id="unit4_thumb" /> <br>Unit</a></li>
+      <li><a href="#" class="tablink" onclick="openUnit(event, 'unit5_out')"><img src="images/Unit_tab.png" width="90px" id="unit5_thumb" /> <br>Unit</a></li>
+      <li><a href="#" class="tablink" onclick="openUnit(event, 'friend_out')"><img src="images/Unit_tab.png" width="90px" id="friend_thumb" /> <br>Friend</a></li>
+      <li id="buffs_tab"><a href="#" class="tablink" onclick="openUnit(event, 'buffs_out');
+      														  viewBuffs_Name('leader','buffs_l');
+                                                              viewBuffs_Name('unit2','buffs_2');
+                                                              viewBuffs_Name('unit3','buffs_3');
+                                                              viewBuffs_Name('unit4','buffs_4');
+                                                              viewBuffs_Name('unit5','buffs_5');
+                                                              viewBuffs_Name('friend','buffs_f');"><img src="images/dragon.png" height="90px"/> <br>Buffs</a></li>
+    </ul>
+    <div id="leader_out" class="w3-container unit w3-small"></div>
+    <div id="unit2_out" class="w3-container unit w3-small"></div>
+    <div id="unit3_out" class="w3-container unit w3-small"></div>
+    <div id="unit4_out" class="w3-container unit w3-small"></div>
+    <div id="unit5_out" class="w3-container unit w3-small"></div>
+    <div id="friend_out" class="w3-container unit w3-small"></div>
+    <div id="buffs_out" class="w3-container unit w3-small">
+        <ul class="w3-ul">
+        	<li id="buffs_l"></li>
+            <li id="buffs_2"></li>
+            <li id="buffs_3"></li>
+            <li id="buffs_4"></li>
+            <li id="buffs_5"></li>
+            <li id="buffs_f"></li>
+            <li>
+            	Note: <br>
+                <span class="w3-text-red">- This tab only work on PC, not on mobile devices (smartphone, tablet)</span> <br>
+                <span class="w3-text-red">- Drag mouse over buff tags to view details</span> <br>
+            	<span class="w3-tag w3-blue">BB buffs</span>
+                <span class="w3-tag w3-yellow">SBB buffs</span>
+                <span class="w3-tag w3-red">UBB buffs</span>
+                <span class="w3-tag w3-purple">ES buffs</span>
+                <br>
+            </li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementsByClassName("tablink")[0].click();
+
+function openUnit(evt, unitName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("unit");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].classList.remove("w3-teal");
+  }
+  document.getElementById(unitName).style.display = "block";
+  evt.currentTarget.classList.add("w3-teal");
+}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/simple-expand.min.js"></script> 
+<script type="text/javascript">
+        $(function () {
+            $('.expander').simpleexpand();
+        });
+</script>
+</body>
+</html>

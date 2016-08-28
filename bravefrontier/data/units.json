@@ -4,7 +4,8 @@
             {
                 "id": "801",
                 "name": "Flame Legend Vargas",
-                "role": "",
+                "role": "atk",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "38",
@@ -48,7 +49,8 @@
             {
                 "id": "802",
                 "name": "Ice Legend Selena",
-                "role": "",
+                "role": "hot",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "38",
@@ -92,7 +94,8 @@
             {
                 "id": "803",
                 "name": "Earth Legend Lance",
-                "role": "",
+                "role": "def",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "38",
@@ -136,7 +139,8 @@
             {
                 "id": "804",
                 "name": "Thunder Legend Eze",
-                "role": "",
+                "role": "atk",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "38",
@@ -180,7 +184,8 @@
             {
                 "id": "805",
                 "name": "Light Legend Atro",
-                "role": "",
+                "role": "atk,def",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "38",
@@ -224,7 +229,8 @@
             {
                 "id": "806",
                 "name": "Dark Legend Magress",
-                "role": "",
+                "role": "def",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "38",
@@ -268,7 +274,8 @@
             {
                 "id": "852",
                 "name": "Brimstone Emperor Alpha",
-                "role": "",
+                "role": "hot",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "40",
@@ -312,7 +319,8 @@
             {
                 "id": "855",
                 "name": "Cyclone Emperor Tazer",
-                "role": "",
+                "role": "spark",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "40",
@@ -356,7 +364,8 @@
             {
                 "id": "858",
                 "name": "Rose Empress Tora",
-                "role": "",
+                "role": "ails_add",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "40",
@@ -400,7 +409,8 @@
             {
                 "id": "861",
                 "name": "Heavenly Emperor Kanon",
-                "role": "",
+                "role": "cure,null_ails,def",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "40",
@@ -444,7 +454,8 @@
             {
                 "id": "864",
                 "name": "Frolic Emperor Kira",
-                "role": "crit,idef,atk_down,def_down",
+                "role": "idef,crit,atk_down,def_down",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "40",
@@ -488,7 +499,8 @@
             {
                 "id": "867",
                 "name": "Cataclysm Empress Feeva",
-                "role": "",
+                "role": "atk,def,rec,bc,hc",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "40",
@@ -532,7 +544,8 @@
             {
                 "id": "880",
                 "name": "Angelic Blades Sefia",
-                "role": "",
+                "role": "ails,ails_add,bc",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "40",
@@ -576,7 +589,8 @@
             {
                 "id": "881",
                 "name": "Demonic Idol Kikuri",
-                "role": "",
+                "role": "ails,ails_add,bb_atked",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "40",
@@ -620,7 +634,8 @@
             {
                 "id": "885",
                 "name": "Magma Twin-Pike Claire",
-                "role": "",
+                "role": "spark,bc",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "40",
@@ -664,7 +679,8 @@
             {
                 "id": "888",
                 "name": "Glacier Twin-Blade Colt",
-                "role": "",
+                "role": "bb_regen,crit",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "40",
@@ -709,6 +725,7 @@
                 "id": "891",
                 "name": "Sylvan Excalibur Quaid",
                 "role": "add_ele",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "40",
@@ -752,7 +769,8 @@
             {
                 "id": "894",
                 "name": "Thunderbird Sabre Diana",
-                "role": "",
+                "role": "bb_regen,bb_atked,hc,bc",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "40",
@@ -796,7 +814,8 @@
             {
                 "id": "897",
                 "name": "Radiant Virtue Fadahl",
-                "role": "",
+                "role": "atk_down,def_down,ails_add",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "40",
@@ -840,7 +859,8 @@
             {
                 "id": "900",
                 "name": "Galactic Treasure Ivris",
-                "role": "",
+                "role": "heal,cure,bb_fill,null_ails",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "40",
@@ -884,7 +904,8 @@
             {
                 "id": "901",
                 "name": "Phoenix Wings Lava",
-                "role": "",
+                "role": "idef,bb_atk",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "40",
@@ -928,7 +949,8 @@
             {
                 "id": "903",
                 "name": "Valkyrie Archangel Griel",
-                "role": "",
+                "role": "bc,hc,atk_down",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "40",
@@ -972,7 +994,8 @@
             {
                 "id": "902",
                 "name": "Leviathan Sage Elimo",
-                "role": "miti,heal,def,cure",
+                "role": "miti,heal,cure,def",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "40",
@@ -1016,7 +1039,8 @@
             {
                 "id": "910",
                 "name": "Inferno Wings Magnazorda",
-                "role": "",
+                "role": "ails_add,bb_fill,dot",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "40",
@@ -1060,7 +1084,8 @@
             {
                 "id": "913",
                 "name": "Tundra Scales Zerafalgar",
-                "role": "",
+                "role": "bc,bb_regen",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "40",
@@ -1104,7 +1129,8 @@
             {
                 "id": "916",
                 "name": "Gaia Sennin Oguro",
-                "role": "",
+                "role": "bb_regen",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "40",
@@ -1148,7 +1174,8 @@
             {
                 "id": "919",
                 "name": "Flaring Massacre Rize",
-                "role": "",
+                "role": "hot,idef",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "40",
@@ -1192,7 +1219,8 @@
             {
                 "id": "922",
                 "name": "Demon Champion Raaga",
-                "role": "",
+                "role": "bc,hc,spark",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "40",
@@ -1237,6 +1265,7 @@
                 "id": "925",
                 "name": "Grave Carver Aaron",
                 "role": "miti,bb_fill,def",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "40",
@@ -1281,6 +1310,7 @@
                 "id": "948",
                 "name": "Flora Aegis Edea",
                 "role": "miti,ails_add,cure",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "40",
@@ -1324,7 +1354,8 @@
             {
                 "id": "949",
                 "name": "Celestial Archer Loch",
-                "role": "",
+                "role": "spark,bb_atk",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "40",
@@ -1368,7 +1399,8 @@
             {
                 "id": "950",
                 "name": "Inferno Princess Alice",
-                "role": "heal,convert_atk,bb_rate",
+                "role": "heal,ails,convert_atk,bb_rate",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "40",
@@ -1412,7 +1444,8 @@
             {
                 "id": "953",
                 "name": "Phoenix Torque Ruby",
-                "role": "",
+                "role": "atk_down_add,atk_down",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "40",
@@ -1456,7 +1489,8 @@
             {
                 "id": "956",
                 "name": "Tidal Nacre Medina",
-                "role": "",
+                "role": "bb_fill,bb_atked",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "40",
@@ -1500,7 +1534,8 @@
             {
                 "id": "959",
                 "name": "Cyclonic Blades Dion",
-                "role": "",
+                "role": "crit,bb_atk",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "40",
@@ -1544,7 +1579,8 @@
             {
                 "id": "962",
                 "name": "Roaring Crash Balgran",
-                "role": "",
+                "role": "ails,convert_def,ails_add",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "40",
@@ -1588,7 +1624,8 @@
             {
                 "id": "965",
                 "name": "Resplendent Queen Rinon",
-                "role": "",
+                "role": "heal,cure,null_ails,add_ele",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "40",
@@ -1632,7 +1669,8 @@
             {
                 "id": "968",
                 "name": "Grand Malediction Yuura",
-                "role": "",
+                "role": "bb_atked,dot",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "40",
@@ -1676,7 +1714,8 @@
             {
                 "id": "975",
                 "name": "Ice Bastion Zeldeus",
-                "role": "miti,def",
+                "role": "miti,def,bb_atk",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "40",
@@ -1720,7 +1759,8 @@
             {
                 "id": "976",
                 "name": "Gaia Tree Vertri",
-                "role": "",
+                "role": "heal,cure,null_ails,bb_fill,bb_rate",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "40",
@@ -1764,7 +1804,8 @@
             {
                 "id": "977",
                 "name": "Angelic Paladin Will",
-                "role": "",
+                "role": "heal,hc,bc,bb_atk,hot,add_ele",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "40",
@@ -1808,7 +1849,8 @@
             {
                 "id": "980",
                 "name": "Inferno Rifle Bestie",
-                "role": "",
+                "role": "bb_fill,bb_regen,bb_rate,bb_atked",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "40",
@@ -1852,7 +1894,8 @@
             {
                 "id": "983",
                 "name": "Lance Champion Vernil",
-                "role": "",
+                "role": "ails_atked,bb_atk",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "40",
@@ -1896,7 +1939,8 @@
             {
                 "id": "986",
                 "name": "Feral Katana Toutetsu",
-                "role": "",
+                "role": "dot,atk",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "40",
@@ -1940,7 +1984,8 @@
             {
                 "id": "989",
                 "name": "Dragon Scroll Kagura",
-                "role": "",
+                "role": "atk_down,ewd,atk_down_add",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "40",
@@ -1984,7 +2029,8 @@
             {
                 "id": "992",
                 "name": "Turbo Wings Nemethgear",
-                "role": "",
+                "role": "bb_fill,bb_rate",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "40",
@@ -2028,7 +2074,8 @@
             {
                 "id": "995",
                 "name": "Hellion Armor Reis",
-                "role": "",
+                "role": "crit,crit_dmg",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "40",
@@ -2072,7 +2119,8 @@
             {
                 "id": "1002",
                 "name": "Wildfire Lotus Michele",
-                "role": "",
+                "role": "add_ele,atk,crit",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "40",
@@ -2116,7 +2164,8 @@
             {
                 "id": "1003",
                 "name": "Immortal Beast Sargavel",
-                "role": "",
+                "role": "heal,cure,maxhp,bb_rate,null_ails",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "40",
@@ -2160,7 +2209,8 @@
             {
                 "id": "1004",
                 "name": "Invictus Xeno Melchio",
-                "role": "",
+                "role": "null_ails,add_ele,convert_def,cure",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "40",
@@ -2205,6 +2255,7 @@
                 "id": "1007",
                 "name": "Indomitable Flare Griff",
                 "role": "add_ele,crit,crit_dmg,bb_rate",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "42",
@@ -2249,6 +2300,7 @@
                 "id": "1010",
                 "name": "Indigo Soul Iris",
                 "role": "add_ele,miti_ele,atk_down_add,def_down_add",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "42",
@@ -2293,6 +2345,7 @@
                 "id": "1013",
                 "name": "Emerald Radiance Libera",
                 "role": "add_ele,def,rec,bc,hc,bb_atked,convert_atk",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "42",
@@ -2336,7 +2389,8 @@
             {
                 "id": "1016",
                 "name": "Roaring Staff Rhoa",
-                "role": "add_ele,spark_debuff,spark",
+                "role": "add_ele,spark_debuff,spark,idef",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "42",
@@ -2380,7 +2434,8 @@
             {
                 "id": "1019",
                 "name": "Virtuous Champion Krantz",
-                "role": "miti,cure,add_ele",
+                "role": "miti,cure,add_ele,heal",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "42",
@@ -2425,6 +2480,7 @@
                 "id": "1022",
                 "name": "Sinister Basilisk Kafka",
                 "role": "add_ele,ails_atked,convert_atk,ails_add",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "42",
@@ -2468,7 +2524,8 @@
             {
                 "id": "1035",
                 "name": "Crimson Phoenix Farlon",
-                "role": "BBATK% ATK USBB",
+                "role": "bb_atk",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "40",
@@ -2512,7 +2569,8 @@
             {
                 "id": "1036",
                 "name": "Blizzard Fang Signas",
-                "role": "Weakness Miti CRIT Injury Poison ATK",
+                "role": "crit,ails,crit_dmg",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "40",
@@ -2556,7 +2614,8 @@
             {
                 "id": "1037",
                 "name": "Glorious Crusader Alyut",
-                "role": "BBregen ATK Injury Para HoT ConvertATK Miti75%",
+                "role": "bb_regen,ails,hot,convert_atk",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "40",
@@ -2600,7 +2659,8 @@
             {
                 "id": "1038",
                 "name": "Midnight Allure Lunaris",
-                "role": "BBATKed ATK Cure Null Weak Sick ATKDOWN DEFDOWN Weakness OverDrive",
+                "role": "cure,null_ails,ails,atk_down_add,def_down_add",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "40",
@@ -2644,7 +2704,8 @@
             {
                 "id": "1041",
                 "name": "Phosphor Crystal Rineth",
-                "role": "BBregen Weakness ATKDOWN",
+                "role": "bb_regen,ewd,def_down",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "42",
@@ -2688,7 +2749,8 @@
             {
                 "id": "1044",
                 "name": "Wave Breaker Quartz",
-                "role": "Drain 40%HP MAXHP DoT HoT ConvertATK Revive",
+                "role": "maxhp,dot,hot,convert_atk",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "42",
@@ -2732,7 +2794,8 @@
             {
                 "id": "1047",
                 "name": "Quatre Marinus Duran",
-                "role": "BBrate BBfill ATK DEF REC ATKDOWN",
+                "role": "bb_fill,atk_down,atk_down_add",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "42",
@@ -2776,7 +2839,8 @@
             {
                 "id": "1050",
                 "name": "Storm Chieftess Mahalu",
-                "role": "Spark BC HC ATK",
+                "role": "spark,hc,bc,atk",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "42",
@@ -2820,7 +2884,8 @@
             {
                 "id": "1053",
                 "name": "Angelic Champion Nadore",
-                "role": "ATK DEF 30%HP REC Weakness BBATKed Heal Miti",
+                "role": "atk,def,rec,ewd,bb_atked",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "42",
@@ -2864,7 +2929,8 @@
             {
                 "id": "1056",
                 "name": "Soul Covenant Charis",
-                "role": "hit BC HC ConvertATK",
+                "role": "hit,bc,hc,convert_atk",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "42",
@@ -2908,7 +2974,8 @@
             {
                 "id": "1085",
                 "name": "Hailstorm Armor Reeze",
-                "role": "BBATKed Null Cure Sick Para ATK DEF REC ConvertDEF Revive",
+                "role": "cure,ails,ails_add,convert_def,null_ails",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "40",
@@ -2952,7 +3019,8 @@
             {
                 "id": "1086",
                 "name": "Immortal Dragon Ragshelm",
-                "role": "Ignore Miti 30%HP ATK ATKDOWN DEFDOWN Injury Spark",
+                "role": "atk_down,def_down,ails_add,spark_debuff,idef",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "40",
@@ -2996,7 +3064,8 @@
             {
                 "id": "1087",
                 "name": "Fulgor Heroine Shera",
-                "role": "BBreduce BBregen Miti50% ATK Miti75%",
+                "role": "miti,atk,bb_regen",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "40",
@@ -3040,7 +3109,8 @@
             {
                 "id": "1092",
                 "name": "Pyro Archfiend Adel",
-                "role": "Miti50% BBrate 30%HP DEF Spark HoT Miti75%",
+                "role": "miti,spark,hot",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "42",
@@ -3084,7 +3154,8 @@
             {
                 "id": "1095",
                 "name": "Glamorous Peril Savia",
-                "role": "30%HP ATK BBregen Spark hit",
+                "role": "bb_regen,spark_debuff,atk",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "42",
@@ -3128,7 +3199,8 @@
             {
                 "id": "1098",
                 "name": "Gracious Madam Cyan",
-                "role": "Spark Null BBspark",
+                "role": "spark,bb_spark",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "42",
@@ -3172,7 +3244,8 @@
             {
                 "id": "1101",
                 "name": "Electrical Storm Eldora",
-                "role": "CRIT 30%HP Miti BBfill BBcrit ConvertATK",
+                "role": "bb_fill,crit,crit_dmg",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "42",
@@ -3216,7 +3289,8 @@
             {
                 "id": "1104",
                 "name": "Refulgent Savage Jed",
-                "role": "BC HC BBrate BBregen ATKDOWN",
+                "role": "bc,hc,atk_down_add,bb_regen",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "42",
@@ -3260,7 +3334,8 @@
             {
                 "id": "1107",
                 "name": "Tenebrous Wings Reviora",
-                "role": "30%HP Miti BBATKed BBrate BBATK%",
+                "role": "bb_atked,bb_rate",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "42",
@@ -3304,7 +3379,8 @@
             {
                 "id": "1134",
                 "name": "Unleashed Ravana Vishra",
-                "role": "CRIT Injury Weak Sick Poison Para Curse BBATKed",
+                "role": "ails_atked,bb_atked",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "40",
@@ -3348,7 +3424,8 @@
             {
                 "id": "1135",
                 "name": "Mayhem Empress Luly",
-                "role": "Miti BBATK% Weakness BC HC ATK ConvertDEF",
+                "role": "bc,hc,convert_def",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "40",
@@ -3392,7 +3469,8 @@
             {
                 "id": "1136",
                 "name": "Optimum Mecha Grybe",
-                "role": "NullCRIT Miti Weakness ATKDOWN ATK Barrier",
+                "role": "atk_down_add",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "40",
@@ -3436,7 +3514,8 @@
             {
                 "id": "1137",
                 "name": "Vicious Twin-Edge Logan",
-                "role": "30%HP ATK Injury Weak Sick Poison Para Curse BBATKed MAXHP ConvertATK",
+                "role": "ails,bb_atked",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "40",
@@ -3480,7 +3559,8 @@
             {
                 "id": "1140",
                 "name": "Ardent Dawn Avant",
-                "role": "Spark CRIT BBATK% 30%HP ConvertATK",
+                "role": "crit,atk,spark_debuff,bb_atk,convert_atk",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "42",
@@ -3524,7 +3604,8 @@
             {
                 "id": "1143",
                 "name": "Icicle Mirror Lune",
-                "role": "Weakness ATK Ignore Spark BBATK%",
+                "role": "idef,ewd,spark,bb_rate",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "42",
@@ -3568,7 +3649,8 @@
             {
                 "id": "1146",
                 "name": "Heavenly Claymore Dolk",
-                "role": "NullEWD 35%HP ATK DEF REC Miti50% Miti75% BC HC Null ConvertDEF",
+                "role": "miti,cure,def,convert_def,null_stats,bc,hc",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "42",
@@ -3612,7 +3694,8 @@
             {
                 "id": "1149",
                 "name": "Thunder Champion Rahgan",
-                "role": "BBfill hit ATK DoT ConvertATK",
+                "role": "hit,dot,convert_atk,idef",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "42",
@@ -3656,7 +3739,8 @@
             {
                 "id": "1152",
                 "name": "Merciful Beacon Charla",
-                "role": "BBATKed BBspark BBrate BBfill 40%HP DEF Heal HoT Spark CRIT Idol",
+                "role": "bb_fill,bb_regen,heal,cure,hot,bb_spark,crit,crit_dmg,spark",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "42",
@@ -3700,7 +3784,8 @@
             {
                 "id": "1155",
                 "name": "Calamity Steel Chrome",
-                "role": "Spark 30%HP Weakness BBspark",
+                "role": "bb_spark,spark,ewd,spark_debuff",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "42",
@@ -3744,7 +3829,8 @@
             {
                 "id": "1173",
                 "name": "Icicle Lance Raydn",
-                "role": "Spark ATK Ignore ConvertATK",
+                "role": "idef,spark,convert_atk",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "40",
@@ -3788,7 +3874,8 @@
             {
                 "id": "1174",
                 "name": "Colossal Vars",
-                "role": "Miti 40%HP DEF BBATK% CRIT ATKDOWN",
+                "role": "crit,crit_dmg,atk_down",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "40",
@@ -3832,7 +3919,8 @@
             {
                 "id": "1175",
                 "name": "Gilded Dogma Rina",
-                "role": "BBrate BBATKed BC HC ATK Injury Weak Sick Poison Para Curse HoT",
+                "role": "ails,hot,bb_atked,ails_atked",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "40",
@@ -3876,7 +3964,8 @@
             {
                 "id": "1178",
                 "name": "Rider Empress Vermilion",
-                "role": "BBATKed BBfill BBregen HoT Revive",
+                "role": "bb_fill,bb_regen,hot,bb_atked",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "42",
@@ -3920,7 +4009,8 @@
             {
                 "id": "1181",
                 "name": "Sacred Lotus Piany",
-                "role": "healSpark 40%HP Null DEF REC BBspark BBATK% ConvertATK",
+                "role": "bb_spark,cure,def,rec,bb_atk,convert_atk,null_stats",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "42",
@@ -3964,7 +4054,8 @@
             {
                 "id": "1184",
                 "name": "Malachite Pike Drevas",
-                "role": "Miti 30%HP DEF Null Inflict Injury Weak Sick Poison Para Curse ConvertATK Cure",
+                "role": "null_ails,ails_atked,miti_ele,atk_ailed,cure",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "42",
@@ -4008,7 +4099,8 @@
             {
                 "id": "1187",
                 "name": "Prism Lightning Reud",
-                "role": "BBATKed BBrate 35%HP ATK DEF REC HoT ConvertATK",
+                "role": "bb_atked,hot,bb_rate,convert_atk",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "42",
@@ -4052,7 +4144,8 @@
             {
                 "id": "1190",
                 "name": "Seraph Wings Kiravel",
-                "role": "Spark ATK DEF ATKDOWN Miti",
+                "role": "spark,atk_down,spark_debuff",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "42",
@@ -4096,7 +4189,8 @@
             {
                 "id": "1193",
                 "name": "Sacred Kinnara Febros",
-                "role": "BC HC 40%HP ATK BBfill BBATK% ConvertDEF",
+                "role": "bb_fill,atk,bc,hc,convert_def",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "42",
@@ -4140,7 +4234,8 @@
             {
                 "id": "1196",
                 "name": "Siva Afi Ramna",
-                "role": "Miti Weakness Null Heal DEF REC ATK Weakness Cure",
+                "role": "heal,def,rec,cure",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "40",
@@ -4184,7 +4279,8 @@
             {
                 "id": "1197",
                 "name": "Cyclonic Heroine Ophelia",
-                "role": "BBreduce BBfill BBregen BBrate ATK MAXHP ConvertATK HoT",
+                "role": "bb_fill,bb_regen,bb_rate",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "40",
@@ -4228,7 +4324,8 @@
             {
                 "id": "1198",
                 "name": "Executioner Lilith XTF",
-                "role": "Spark 30%HP ATK USBB DEF REC OverDrive BBfill",
+                "role": "od_fill,bb_fill",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "40",
@@ -4272,7 +4369,8 @@
             {
                 "id": "1199",
                 "name": "Marzanna Reaper Elza",
-                "role": "BBrate BBspark BBfill BBregen healSpark Spark ATK Injury Curse HoT Miti Ignore",
+                "role": "bb_fill,spark,ails,bb_regen,hot,ails_add,idef",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "40",
@@ -4316,7 +4414,8 @@
             {
                 "id": "1202",
                 "name": "Volcanic Scepter Limera",
-                "role": "BBrate 40%HP Idol Heal Cure ConvertDEF Miti Miti75% HoT",
+                "role": "bb_rate,heal,cure,convert_def,miti_ele",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "42",
@@ -4360,7 +4459,8 @@
             {
                 "id": "1205",
                 "name": "Frozen Typhoon Farzen",
-                "role": "BBcrit BBATK% CRIT ATK Spark",
+                "role": "crit,crit_dmg,spark_debuff,spark",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "42",
@@ -4404,7 +4504,8 @@
             {
                 "id": "1208",
                 "name": "Peacock Xena Estelle",
-                "role": "BBregen BBrate 40%HP DEF OverDrive ATK REC HoT MAXHP",
+                "role": "bb_regen,od_fill,bb_regen,bb_rate,hot",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "42",
@@ -4448,7 +4549,8 @@
             {
                 "id": "1211",
                 "name": "Double Voltage Julius",
-                "role": "BC HC Item Karma Zel 30%HP ATK DEF REC Injury Para BBATK%",
+                "role": "atk,ails,bb_atk,bc,hc,item",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "42",
@@ -4492,7 +4594,8 @@
             {
                 "id": "1214",
                 "name": "Lunar Blade Rouche",
-                "role": "BBreduce CRIT 40%HP ATK DoT Fire,water,earth,thunder",
+                "role": "crit_dmg,dot,add_ele,crit",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "42",
@@ -4536,7 +4639,8 @@
             {
                 "id": "1217",
                 "name": "Soul Reaver Laberd",
-                "role": "BBATKed 40%HP DEF Miti50% Miti75% ATKDOWN",
+                "role": "miti,bb_atked,def,atk_down",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "42",
@@ -4580,7 +4684,8 @@
             {
                 "id": "1232",
                 "name": "Immortal Phoenix Levarza",
-                "role": "Heal healSpark 40%HP DEF Idol HoT DoT ConvertDEF MAXHP Revive Barrier",
+                "role": "idol,hot,heal_atked,heal,dot,convert_def",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "40",
@@ -4624,7 +4729,8 @@
             {
                 "id": "1233",
                 "name": "Ocean Conqueror Mega",
-                "role": "BBATK% ATK HoT BC HC Heal ConvertATK",
+                "role": "bc,hc,hot,atk",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "40",
@@ -4668,7 +4774,8 @@
             {
                 "id": "1234",
                 "name": "Paladin Crusader Sodis",
-                "role": "Miti50% Spark Weakness BBrate BBATK% ATK",
+                "role": "bb_rate,spark,bb_atk,miti,spark_debuff",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "40",
@@ -4712,7 +4819,8 @@
             {
                 "id": "1235",
                 "name": "Phantom Victor Zephyr",
-                "role": "Miti OverDrive ATK DEF REC hit Barrier Ignore",
+                "role": "od_fill,atk,def,rec,idef",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "40",
@@ -4756,7 +4864,8 @@
             {
                 "id": "1238",
                 "name": "Scorching Steel Gildorf",
-                "role": "40%HP ATK Spark BC HC USBB",
+                "role": "spark,bc,hc",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "42",
@@ -4800,7 +4909,8 @@
             {
                 "id": "1241",
                 "name": "Wyvern Wings Klaus",
-                "role": "BBreduce BBrate BBregen BBATKed 40%HP ATKDOWN DEFDOWN Sick ConvertDEF Miti",
+                "role": "atk_down,def_down,ails,bb_regen,bb_atked,atk_down_add,convert_def",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "42",
@@ -4844,7 +4954,8 @@
             {
                 "id": "1244",
                 "name": "Venomous Echo Isterio",
-                "role": "30%HP ATK MAXHP Injury Weak Sick Poison Para Curse ConvertATK Weakness Idol BBATK%",
+                "role": "maxhp,ails,bb_atk,convert_atk,ails_add",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "42",
@@ -4888,7 +4999,8 @@
             {
                 "id": "1247",
                 "name": "Galvanic Belle Lafiel",
-                "role": "NullEWD NullCRIT 30%HP DEF Miti50% BBspark BBATKed BBregen HoT Miti75%",
+                "role": "miti,bb_spark,bb_atked",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "42",
@@ -4932,7 +5044,8 @@
             {
                 "id": "1250",
                 "name": "Dharma Seal Reihard",
-                "role": "35%HP ATK DEF REC Null NullStats Cure BBfill MAXHP ConvertDEF Miti",
+                "role": "cure,null_ails,null_stats,bb_fill,convert_def,miti_ele",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "42",
@@ -4976,7 +5089,8 @@
             {
                 "id": "1253",
                 "name": "Ghastly Blaster Malbelle",
-                "role": "Spark ATK BBfill BBATK% CRIT USBB DoT superspark",
+                "role": "bb_fill,bb_atk,spark_crit,dot",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "42",
@@ -5020,7 +5134,8 @@
             {
                 "id": "1258",
                 "name": "Aqua Pura Lucina",
-                "role": "30%HP water earth hit HoT ATK convertDEF HealATKed DoT",
+                "role": "add_ele,hit,hot,atk,convert_def",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "40",
@@ -5064,7 +5179,8 @@
             {
                 "id": "1259",
                 "name": "Legendary Thief Zelnite",
-                "role": "30%HP EXP BC HC Item Karma Zel BBfill OverDrive BBATKed hit ATK",
+                "role": "bb_fill,hc,bc,item,od_rate,bb_atked",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "40",
@@ -5108,7 +5224,8 @@
             {
                 "id": "1260",
                 "name": "Shocking Beauty Orna",
-                "role": "BBATKed Thunder Fire atkdown defdown crit convertATK superspark",
+                "role": "add_ele,atk_down,def_down,crit,convert_atk,spark_crit",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "40",
@@ -5152,7 +5269,8 @@
             {
                 "id": "1261",
                 "name": "Omega Demise Shida",
-                "role": "35%HP BBfill Fire water earth thunder light dark Weakness Miti Para Curse Poison Injury Sick Weak",
+                "role": "bb_fill,add_ele,ewd",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "40",
@@ -5196,7 +5314,8 @@
             {
                 "id": "1264",
                 "name": "Tartarus Blaze Berdette",
-                "role": "30%HP BBATKed hit atkdown defdown convertDEF ATK BC HC",
+                "role": "hit,convert_def,atk_down,def_down,idef,atk",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "42",
@@ -5240,7 +5359,8 @@
             {
                 "id": "1267",
                 "name": "Tartarus Flood Sareas",
-                "role": "35%HP BBspark BBfill USBB ATK BBATK%",
+                "role": "bb_fill,bb_spark",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "42",
@@ -5284,7 +5404,8 @@
             {
                 "id": "1270",
                 "name": "Tartarus Demolition Dure",
-                "role": "40%HP ATK Spark convertATK superspark DEF HealATKed",
+                "role": "heal_atked,atk,def,spark_crit,spark_debuff,convert_atk",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "42",
@@ -5328,7 +5449,8 @@
             {
                 "id": "1273",
                 "name": "Tartarus Sacrifice Radia",
-                "role": "40%HP OverDrive Sick Weaken Poison Curse Paralyze Spark BBspark",
+                "role": "od_fill,ails,ails_add,atk_ailed,spark,ails_atked",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "42",
@@ -5372,7 +5494,8 @@
             {
                 "id": "1276",
                 "name": "Tartarus Massacre Sirius",
-                "role": "40%HP BBATK% Spark BBspark ATK DEF REC Miti75% BBregen",
+                "role": "bb_spark,bb_atk,atk,def,rec",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "42",
@@ -5416,7 +5539,8 @@
             {
                 "id": "1279",
                 "name": "Tartarus Burial Melina",
-                "role": "BBATKed BBreduce BC atkdown Injury Weaken USBB BBfill BBATK%",
+                "role": "atk_down,ails",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "42",
@@ -5460,7 +5584,8 @@
             {
                 "id": "1299",
                 "name": "Flare Paladin Darvanshel",
-                "role": "Miti50% MAXHP Miti75% HP DEF convertATK convertDEF 40%HP Null",
+                "role": "miti,maxhp,def,convert_atk,null_ails",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "40",
@@ -5504,7 +5629,8 @@
             {
                 "id": "1300",
                 "name": "Supreme Dragon Elderex",
-                "role": "BBrate BBspark 40%HP Injury Weak Sick Poison Para Curse",
+                "role": "bb_rate,ails_add,atk_ailed",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "40",
@@ -5548,7 +5674,8 @@
             {
                 "id": "1301",
                 "name": "Shadow Retribution Kajah",
-                "role": "ATK BBATK% Injury Spark",
+                "role": "bb_atk,ails_add,ails",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "40",
@@ -5592,7 +5719,8 @@
             {
                 "id": "1302",
                 "name": "Ignis Halcyon Vargas",
-                "role": "BBATK% 30%HP ATK atkdown Weakness",
+                "role": "atk,bb_atk,atk_down,ewd",
+                "rolesp": "spark,crit_dmg",
                 "element": "Fire",
                 "rarity": "8",
                 "cost": "45",
@@ -5636,7 +5764,8 @@
             {
                 "id": "1303",
                 "name": "Algor Halcyon Selena",
-                "role": "HoT 30%HP ATK BBregen healATKed hot hit",
+                "role": "bb_regen,hot,heal_atked,bc,hc",
+                "rolesp": "cure",
                 "element": "Water",
                 "rarity": "8",
                 "cost": "45",
@@ -5680,7 +5809,8 @@
             {
                 "id": "1304",
                 "name": "Terra Halcyon Lance",
-                "role": "30%HP ATK NullCRIT NullStats Cure DEF barrier convertATK Miti75%",
+                "role": "cure,def,null_stats,barrier",
+                "rolesp": "LS_null_crit,convert_atk,ails",
                 "element": "Earth",
                 "rarity": "8",
                 "cost": "45",
@@ -5724,7 +5854,8 @@
             {
                 "id": "1305",
                 "name": "Fulgor Halcyon Eze",
-                "role": "SPARK 30%HP ATK superspark weakness",
+                "role": "spark,atk,spark_crit,ewd",
+                "rolesp": "LS_bb_spark",
                 "element": "Thunder",
                 "rarity": "8",
                 "cost": "45",
@@ -5768,7 +5899,8 @@
             {
                 "id": "1306",
                 "name": "Lux Halcyon Atro",
-                "role": "BBreduce BBrate 30%HP ATK DEF REC OverDrive Fire,water,earth,thunder,light,dark Weakness",
+                "role": "bb_rate,atk,def,rec,od_rate",
+                "rolesp": "LS_bb_reduce,cure,bb_atked,heal",
                 "element": "Light",
                 "rarity": "8",
                 "cost": "45",
@@ -5812,7 +5944,8 @@
             {
                 "id": "1307",
                 "name": "Umbra Halcyon Magress",
-                "role": "NullEWD 30%HP ATK DEF Weakness Miti",
+                "role": "def,miti_guard,ewd,drain",
+                "rolesp": "LS_null_ewd,miti",
                 "element": "Dark",
                 "rarity": "8",
                 "cost": "45",
@@ -5856,7 +5989,8 @@
             {
                 "id": "1308",
                 "name": "Mythic Kulyuk",
-                "role": "Null 30%HP DEF BBrate cure convertDEF Miti75% MAXHP Injury Weak Sick Poison Para Curse",
+                "role": "bb_rate,cure,convert_def",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "43",
@@ -5900,7 +6034,8 @@
             {
                 "id": "1309",
                 "name": "Fabled Emperor Kulyuk",
-                "role": "NullEWD Null 50%HP DEF BBrate cure convertDEF Miti75% MAXHP Barrier Injury Weak Sick Poison Para Curse",
+                "role": "bb_rate,cure,convert_def,barrier",
+                "rolesp": "LS_null_ewd,LS_null_ails,def,spark,bb_atked,heal,hot",
                 "element": "Fire",
                 "rarity": "8",
                 "cost": "47",
@@ -5944,7 +6079,8 @@
             {
                 "id": "1312",
                 "name": "Nereides Treasure Averus",
-                "role": "40%HP DEF Injury Weak Sick Poison Para Curse Miti50% Miti75% superspark Barrier Null",
+                "role": "ails,miti,drain,atk_ailed,ails_add,null_ails",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "43",
@@ -5988,7 +6124,8 @@
             {
                 "id": "1315",
                 "name": "Tempest Dragon Bestalg",
-                "role": "Hit 40%HP ATK miti Weakness Fire,water,earth,thunder Barrier",
+                "role": "hit,ewd,add_ele",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "43",
@@ -6032,7 +6169,8 @@
             {
                 "id": "1318",
                 "name": "Steel Automaton Voldoga",
-                "role": "BBspark SPARK 40%HP ATK cure null NullStats Barrier BBATK%",
+                "role": "cure,null_ails,null_stats",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "43",
@@ -6076,7 +6214,8 @@
             {
                 "id": "1321",
                 "name": "Untainted Justice Layla",
-                "role": "BBATKed 40%HP REC Cure HoT HealATKed superspark convertATK atkdown defdown Revive",
+                "role": "bb_atked,heal,heal_atked,cure,hot,spark_crit,convert_atk,atk_down,def_down",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "43",
@@ -6120,7 +6259,8 @@
             {
                 "id": "1324",
                 "name": "Mauve Tenebrosity Zeal",
-                "role": "BBspark BBATK% 40%HP ATK BBregen BC HC CRIT",
+                "role": "bb_regen,bb_rate,bb_spark,spark_debuff,atk,bb_atk,bc,hc",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "43",
@@ -6164,7 +6304,8 @@
             {
                 "id": "1344",
                 "name": "Milcham Nova Arus",
-                "role": "Ignore CRIT 80% BBfill BBregen OverDrive",
+                "role": "bb_fill,bb_regen,od_fill,idef",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "40",
@@ -6208,7 +6349,8 @@
             {
                 "id": "1345",
                 "name": "Floral Princess Rosetta",
-                "role": "BBspark Spark 40%HP healSpark",
+                "role": "spark,bb_spark,heal_spark",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "40",
@@ -6252,7 +6394,8 @@
             {
                 "id": "1346",
                 "name": "Shadow Assailant Kuda",
-                "role": "BBreduce BBATK% ATK CRIT",
+                "role": "atk,crit,bb_atk,crit_dmg",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "40",
@@ -6265,13 +6408,13 @@
                     "@hit": "21",
                     "@dc": "21",
                     "@cost": "24",
-                    "#text": "260% Dark (AOE) / 140% ATK+ / 40% CRIT+ (ALL) 3Turns / 140% ATK+ (ALL) 3Turns"
+                    "#text": "260% Dark (AOE) / 40% CRIT+ (ALL) 3Turns / 140% ATK+ (ALL) 3Turns"
                 },
                 "sbb": {
                     "@hit": "25",
                     "@dc": "25",
                     "@cost": "25",
-                    "#text": "500% Dark (AOE) / 140% ATK+ / 60% CRIT+ (ALL) 3Turns / 140% ATK+ (ALL) 3Turns / 200% BB ATK%+ (ALL) 3Turns"
+                    "#text": "500% Dark (AOE) / 60% CRIT+ (ALL) 3Turns / 140% ATK+ (ALL) 3Turns / 200% BB ATK%+ (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "27",
@@ -6296,7 +6439,8 @@
             {
                 "id": "1349",
                 "name": "Vehement Pyre Golzo",
-                "role": "BBATKed 40%HP ATK BBfill BBregen Fire thunder HoT CRIT ConvertATK ConvertDEF BBATK%",
+                "role": "bb_fill,bb_regen,add_ele,hot,crit,crit_dmg,convert_atk,convert_def,idef",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "43",
@@ -6340,7 +6484,8 @@
             {
                 "id": "1350",
                 "name": "Blue Purity Vern",
-                "role": "BBcost spark 30%HP ATK water earth superspark",
+                "role": "add_ele,spark,spark_crit,spark_debuff",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "43",
@@ -6384,7 +6529,8 @@
             {
                 "id": "1351",
                 "name": "Absolute Zero Vern",
-                "role": "BBcost spark 50%HP ATK water earth superspark",
+                "role": "add_ele,spark,spark_crit,spark_debuff",
+                "rolesp": "LS_bb_reduce,bc,bb_spark",
                 "element": "Water",
                 "rarity": "8",
                 "cost": "47",
@@ -6428,7 +6574,8 @@
             {
                 "id": "1354",
                 "name": "Natural Whip Leona",
-                "role": "BBatked 40%HP DEF water earth atkdown defdown HealATKed BBregen HoT",
+                "role": "add_ele,atk_down_add,atk_down,def_down,drain,bb_regen,hot",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "43",
@@ -6472,7 +6619,8 @@
             {
                 "id": "1355",
                 "name": "Thunder Punisher Silas",
-                "role": "crit 30%HP ATK fire thunder BBATK% superspark",
+                "role": "add_ele,crit,crit_dmg,bb_atk",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "43",
@@ -6516,7 +6664,8 @@
             {
                 "id": "1356",
                 "name": "Lightning Menace Silas",
-                "role": "crit OverDrive 50%HP ATK fire thunder BBATK% superspark",
+                "role": "add_ele,crit,crit_dmg,bb_atk",
+                "rolesp": "atk,convert_def",
                 "element": "Thunder",
                 "rarity": "8",
                 "cost": "47",
@@ -6560,7 +6709,8 @@
             {
                 "id": "1359",
                 "name": "Pious Sage Astall",
-                "role": "40%HP DEF light dark atkdown BC HC BBrate Barrier HealATKed miti",
+                "role": "add_ele,atk_down_add,bc,hc,bb_rate,barrier,bc,hc",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "43",
@@ -6604,7 +6754,8 @@
             {
                 "id": "1362",
                 "name": "Dusk Artemis Eclise",
-                "role": "BBregen OverDrive 50%HP BBfill heal cure null NullStats light dark HoT Idol",
+                "role": "bb_fill,heal,null_ails,null_stats,add_ele,od_fill,od_rate,hot,cure",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "43",
@@ -6648,7 +6799,8 @@
             {
                 "id": "1367",
                 "name": "Sacred Emperor Sirius",
-                "role": "Spark BBATK% 50%HP BBspark Light Dark ATK DEF REC BBregen Miti75%",
+                "role": "bb_spark,add_ele,bb_atk,atk,def,rec",
+                "rolesp": "bb_regen",
                 "element": "Light",
                 "rarity": "8",
                 "cost": "47",
@@ -6692,7 +6844,8 @@
             {
                 "id": "1368",
                 "name": "Heavenless Bushi Mifune",
-                "role": "Spark ATK BBfill DoT",
+                "role": "bb_rate,spark_debuff,atk_down_add,idef",
+                "rolesp": "atk",
                 "element": "Dark",
                 "rarity": "8",
                 "cost": "45",
@@ -6736,7 +6889,8 @@
             {
                 "id": "1371",
                 "name": "Garnet Sorceress Shelly",
-                "role": "40%HP REC Injury Weak Sick Poison Para Curse ATKDOWN DEFDOWN",
+                "role": "atk_down_add,atk_down,def_down,ails,ails_atked,atk_ailed",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "43",
@@ -6780,7 +6934,8 @@
             {
                 "id": "1374",
                 "name": "Arctic Virtuoso Soleil",
-                "role": "40%HP DEF Idol BC BBATKed Cure CRIT hit ATK AOE",
+                "role": "bb_atked,heal,heal_atked,cure,crit,crit_dmg,hit,atk,aoe,bb_fill",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "43",
@@ -6824,7 +6979,8 @@
             {
                 "id": "1375",
                 "name": "Perpetual Goddess Felice",
-                "role": "BBfill BBATKed 35%HP ATK DEF REC BBregen BBspark superspark BBATK%",
+                "role": "bb_atked,bb_regen,bb_spark",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "43",
@@ -6868,7 +7024,8 @@
             {
                 "id": "1376",
                 "name": "Eternal Goddess Felice",
-                "role": "BBregen BBfill BBATKed 40%HP ATK DEF REC BBspark superspark BBATK%",
+                "role": "bb_regen,bb_atked,bb_spark",
+                "rolesp": "LS_bb_atked,spark,heal_spark,idef,bb_atk",
                 "element": "Earth",
                 "rarity": "8",
                 "cost": "47",
@@ -6912,7 +7069,8 @@
             {
                 "id": "1379",
                 "name": "Supreme Thunder Pamela",
-                "role": "OverDrive BC HC ConvertDEF ATK DEF",
+                "role": "od_fill,def,bc,hc,convert_def,od_rate,atk,convert_atk",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "43",
@@ -6956,7 +7114,8 @@
             {
                 "id": "1380",
                 "name": "Sacred Dragonchild Lara",
-                "role": "30%HP ATK heal BBATK% HoT NullCRIT healATKed convertATK convertDEF Miti75% NullEWD",
+                "role": "heal,bb_atk,hot,null_crit,heal_atked,convert_atk,convert_def",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "43",
@@ -7000,7 +7159,8 @@
             {
                 "id": "1381",
                 "name": "Celestial Wings Lara",
-                "role": "50%HP ATK heal BBATK% HoT NullCRIT healATKed convertATK convertDEF Miti75% NullEWD BC HC",
+                "role": "heal,bb_atk,hot,null_crit,heal_atked,convert_atk,convert_def,bc,hc",
+                "rolesp": "LS_null_id,atk,null_stats,miti",
                 "element": "Light",
                 "rarity": "8",
                 "cost": "47",
@@ -7044,7 +7204,8 @@
             {
                 "id": "1384",
                 "name": "Shadow Ocean Mizerka",
-                "role": "hit 40%HP DEF AOE BBfill BBATKed ATKDOWN DEFDOWN HealATKed Curse MAXHP",
+                "role": "bb_fill,bb_atked,atk_down,def_down,heal_atked,ails",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "43",
@@ -7088,7 +7249,8 @@
             {
                 "id": "1387",
                 "name": "Undying Flame Avant",
-                "role": "Spark CRIT BBATK% 50%HP superspark ATK convertATK",
+                "role": "crit,spark_debuff,atk,,bb_atk,convert_atk",
+                "rolesp": "crit_dmg",
                 "element": "Fire",
                 "rarity": "8",
                 "cost": "47",
@@ -7132,7 +7294,8 @@
             {
                 "id": "1388",
                 "name": "Glorious Hero Krantz",
-                "role": "BBregen BC HC 30%HP ATK Miti50% Cure Dark Light Heal Fire,water,earth,thunder convertATK Miti75%",
+                "role": "miti,cure,add_ele,heal,bc,hc",
+                "rolesp": "convert_def,heal_atked",
                 "element": "Light",
                 "rarity": "8",
                 "cost": "47",
@@ -7176,7 +7339,8 @@
             {
                 "id": "1389",
                 "name": "Ardent Monk Rengaku",
-                "role": "35%HP ATK DEF REC BBfill BBregen BBrate BC HC superspark convertATK CRIT SPARK",
+                "role": "bb_fill,bb_rate,bc,hc,spark_crit,convert_atk",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "43",
@@ -7220,7 +7384,8 @@
             {
                 "id": "1390",
                 "name": "Dancing Flames Rengaku",
-                "role": "40%HP ATK DEF REC BBfill BBregen BBrate BC HC superspark convertATK CRIT SPARK",
+                "role": "bb_fill,bb_regen,bb_rate,bc,hc,spark_crit,convert_atk",
+                "rolesp": "od_fill",
                 "element": "Fire",
                 "rarity": "8",
                 "cost": "47",
@@ -7264,7 +7429,8 @@
             {
                 "id": "1391",
                 "name": "Indigo Charm Azami",
-                "role": "30%HP ATK Weakness Injury Weak Sick Poison Para Curse",
+                "role": "atk_ailed,ails_add,ails,ewd",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "43",
@@ -7308,7 +7474,8 @@
             {
                 "id": "1392",
                 "name": "Dark Allure Azami",
-                "role": "50%HP ATK Weakness Injury Weak Sick Poison Para Curse",
+                "role": "atk_ailed,ails_add,ails,ewd",
+                "rolesp": "ails_atked",
                 "element": "Water",
                 "rarity": "8",
                 "cost": "47",
@@ -7352,7 +7519,8 @@
             {
                 "id": "1393",
                 "name": "Divine General Izuna",
-                "role": "SPARK 30%HP ATK ATKDOWN DEFDOWN convertATK healATKed",
+                "role": "spark,atk_down_add,atk_down,def_down,convert_atk",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "43",
@@ -7396,7 +7564,8 @@
             {
                 "id": "1394",
                 "name": "Godly Command Izuna",
-                "role": "SPARK 50%HP ATK ATKDOWN DEFDOWN convertATK healATKed",
+                "role": "spark,atk_down_add,atk_down,def_down,convert_atk",
+                "rolesp": "cure",
                 "element": "Light",
                 "rarity": "8",
                 "cost": "47",
@@ -7440,7 +7609,8 @@
             {
                 "id": "1395",
                 "name": "Green Fang Daze",
-                "role": "Spark 30%HP superspark BBfill ATK DEF REC",
+                "role": "idef,spark,spark_debuff,bb_rate,atk,def,rec",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "43",
@@ -7484,7 +7654,8 @@
             {
                 "id": "1396",
                 "name": "Emerald Tusk Daze",
-                "role": "Spark 30%HP superspark BBfill ATK DEF REC",
+                "role": "idef,spark,spark_debuff,bb_rate,atk,def,rec",
+                "rolesp": "crit,crit_dmg",
                 "element": "Earth",
                 "rarity": "8",
                 "cost": "47",
@@ -7528,7 +7699,8 @@
             {
                 "id": "1397",
                 "name": "Roaring Beast Zekt",
-                "role": "BBATKed healATKed 35%HP BBfill MAXHP miti CRIT",
+                "role": "bb_fill,maxhp,miti_ele,crit,crit_dmg",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "43",
@@ -7572,7 +7744,8 @@
             {
                 "id": "1398",
                 "name": "Howling Wolf Zekt",
-                "role": "BBATKed healATKed 40%HP BBfill MAXHP miti CRIT",
+                "role": "bb_fill,maxhp,miti_ele,crit,crit_dmg",
+                "rolesp": "LS_bb_atked,LS_heal_atked,spark_crit",
                 "element": "Light",
                 "rarity": "8",
                 "cost": "47",
@@ -7616,7 +7789,8 @@
             {
                 "id": "1399",
                 "name": "Lovely Princess Alice",
-                "role": "BBrate heal healATKed 50%HP ATK REC atkdown convertATK convertDEF BBATK% HoT",
+                "role": "heal,def,rec,bb_rate,atk_down_add,convert_atk",
+                "rolesp": "LS_heal_atked,heal_atked,convert_def,cure",
                 "element": "Dark",
                 "rarity": "8",
                 "cost": "47",
@@ -7660,7 +7834,8 @@
             {
                 "id": "1400",
                 "name": "Graceful Princess Elza",
-                "role": "BBrate BBspark healSpark 40%HP BBfill Spark Injury Sick Para Curse BBregen HoT",
+                "role": "bb_fill,spark,ails,bb_regen,hot,ails_add,idef",
+                "rolesp": "LS_bb_spark,bb_spark,spark_crit",
                 "element": "Dark",
                 "rarity": "8",
                 "cost": "47",
@@ -7704,7 +7879,8 @@
             {
                 "id": "1401",
                 "name": "Cerulean Knight Stein",
-                "role": "30%HP HealATKed Miti50% Cure Miti75% BBATKed HoT",
+                "role": "miti,cure,heal_atked",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "43",
@@ -7748,7 +7924,8 @@
             {
                 "id": "1402",
                 "name": "Sapphire Noble Stein",
-                "role": "50%HP HealATKed NullCRIT Miti50% Cure Miti75% BBATKed HoT",
+                "role": "miti,cure,heal_atked,barrier",
+                "rolesp": "LS_heal_atked,LS_null_crit,heal,null_ails,bb_atked",
                 "element": "Water",
                 "rarity": "8",
                 "cost": "47",
@@ -7792,7 +7969,8 @@
             {
                 "id": "1403",
                 "name": "Phoenix Thunder Rayla",
-                "role": "30%HP Null NullStats atkdown defdown Spark BBregen BBATK%",
+                "role": "null_ails,null_stats,atk_down_add,spark_debuff,def_down_add",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "43",
@@ -7836,7 +8014,8 @@
             {
                 "id": "1404",
                 "name": "Bennu Edge Rayla",
-                "role": "50%HP BBspark BBATK% Null NullStats atkdown Spark defdown BBregen",
+                "role": "null_ails,null_stats,atk_down_add,spark_debuff,atk_down,def_down",
+                "rolesp": "LS_bb_spark,bb_atk,bb_regen,null_stats,od_rate",
                 "element": "Thunder",
                 "rarity": "8",
                 "cost": "47",
@@ -7880,7 +8059,8 @@
             {
                 "id": "1407",
                 "name": "Decay Demon Melord",
-                "role": "BBrate 35%HP BBfill OverDrive BBATKed convertDEF CRIT convertATK healATKed spark atk def atkdown defdown",
+                "role": "bb_fill,bb_atked,convert_def,crit,crit_dmg,convert_atk",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "44",
@@ -7924,7 +8104,8 @@
             {
                 "id": "1408",
                 "name": "Sage God Melord",
-                "role": "BBrate 40%HP Null BBfill OverDrive BBATKed convertDEF CRIT convertATK healATKed spark atk def atkdown defdown",
+                "role": "bb_fill,od_rate,bb_atked,convert_def,crit,crit_dmg,convert_atk",
+                "rolesp": "LS_null_ails,cure,atk_down,def_down,atk,def",
                 "element": "Water",
                 "rarity": "8",
                 "cost": "48",
@@ -7968,7 +8149,8 @@
             {
                 "id": "1409",
                 "name": "Heresy Demon Kalon",
-                "role": "BBATK% 30%HP superspark Drain ATK weakness DoT miti100%",
+                "role": "atk,bb_atk,ewd,spark_crit,dot",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "44",
@@ -8012,7 +8194,8 @@
             {
                 "id": "1410",
                 "name": "Dark Destruction Kalon",
-                "role": "BBATK% 50%HP superspark Drain ATK weakness DoT miti100%",
+                "role": "atk,bb_atk,ewd,spark_crit,dot",
+                "rolesp": "convert_atk",
                 "element": "Dark",
                 "rarity": "8",
                 "cost": "48",
@@ -8056,7 +8239,8 @@
             {
                 "id": "1417",
                 "name": "Shura 7",
-                "role": "BBspark Spark 30%HP ATK DEF REC BBfill superspark",
+                "role": "bb_rate,spark,spark_crit",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "44",
@@ -8100,7 +8284,8 @@
             {
                 "id": "1418",
                 "name": "Shura 8",
-                "role": "BBspark Spark 50%HP ATK DEF REC BBfill superspark",
+                "role": "bb_rate,spark,spark_crit",
+                "rolesp": "LS_bb_spark,spark_debuff",
                 "element": "Fire",
                 "rarity": "8",
                 "cost": "48",
@@ -8144,7 +8329,8 @@
             {
                 "id": "1419",
                 "name": "Hisui 7",
-                "role": "NullCRIT 30%HP Null NullStats DEF REC convertDEF NullEWD miti75% OverDrive BBATKed",
+                "role": "null_ails,null_stats,def,rec,miti_guard,convert_def,null_ewd",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "44",
@@ -8188,7 +8374,8 @@
             {
                 "id": "1420",
                 "name": "Hisui 8",
-                "role": "NullCRIT 50%HP Null NullStats DEF REC convertDEF NullEWD miti75% OverDrive BBATKed",
+                "role": "null_ails,null_stats,def,rec,miti_guard,convert_def,null_ewd",
+                "rolesp": "LS_null_crit,miti,cure,bb_guard",
                 "element": "Earth",
                 "rarity": "8",
                 "cost": "48",
@@ -8232,7 +8419,8 @@
             {
                 "id": "1434",
                 "name": "Marefu 7",
-                "role": "30%HP DEF Injury Weak Sick Poison Para Curse BBfill BBATKed",
+                "role": "bb_fill,ails,bb_atked,ails_atked,ails_add",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "44",
@@ -8276,7 +8464,8 @@
             {
                 "id": "1435",
                 "name": "Marefu 8",
-                "role": "50%HP DEF Injury Weak Sick Poison Para Curse BBfill BBATKed",
+                "role": "bb_fill,ails,bb_atked,ails_atked,ails_add",
+                "rolesp": "LS_bb_atked,atk_ailed,bb_regen,add_ele",
                 "element": "Fire",
                 "rarity": "8",
                 "cost": "48",
@@ -8301,7 +8490,7 @@
                     "@hit": "21",
                     "@dc": "21",
                     "@cost": "30",
-                    "#text": "1500% Fire (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 300% DMG+ to Ailed Enemy (ALL) 3Turns / Add 100% Injury 100% Weak 100% Sick to ATK (ALL) 3Turns / Add 100% Poison 100% Para 100% Curse to ATK (ALL) 3Turns"
+                    "#text": "1500% Fire (AOE) / 50BC Fill when ATKed (100%) (ALL) 3Turns / 300% DMG+ to Ailed Enemy (ALL) 3Turns / Add 100% Injury 100% Weak 100% Sick to ATK (ALL) 3Turns / Add 100% Poison 100% Para 100% Curse to ATK (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -8320,7 +8509,8 @@
             {
                 "id": "1436",
                 "name": "Horia 7",
-                "role": "40%HP Heal MAXHP Idol hot NullStats NullCRIT NullEWD convertREC",
+                "role": "heal,maxhp,idol,hot,null_stats,null_crit,null_ewd,convert_rec",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "44",
@@ -8364,7 +8554,8 @@
             {
                 "id": "1437",
                 "name": "Horia 8",
-                "role": "60%HP Heal MAXHP Idol hot NullStats NullCRIT NullEWD convertREC",
+                "role": "heal,maxhp,idol,hot,null_stats,null_crit,null_ewd,convert_rec",
+                "rolesp": "null_ails,miti_ele",
                 "element": "Water",
                 "rarity": "8",
                 "cost": "48",
@@ -8408,7 +8599,8 @@
             {
                 "id": "1438",
                 "name": "Lauda 7",
-                "role": "BBrate BBATK% 30%HP ATK BBspark superspark BBregen Spark",
+                "role": "bb_spark,spark_crit,bb_atk",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "44",
@@ -8452,7 +8644,8 @@
             {
                 "id": "1439",
                 "name": "Lauda 8",
-                "role": "BBrate BBATK% 50%HP ATK BBspark superspark BBregen Spark",
+                "role": "bb_spark,spark_crit,bb_atk",
+                "rolesp": "spark_debuff",
                 "element": "Light",
                 "rarity": "8",
                 "cost": "48",
@@ -8496,7 +8689,8 @@
             {
                 "id": "1440",
                 "name": "Rize 8",
-                "role": "HC 40%HP ATK HoT Spark BBregen CRIT",
+                "role": "spark_debuff,hot,idef",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "8",
                 "cost": "47",
@@ -8540,7 +8734,8 @@
             {
                 "id": "1441",
                 "name": "Zelnite 8",
-                "role": "EXP BC HC Item Karma Zel 50%HP BBfill OverDrive BBrate BBatked heal hit ATK",
+                "role": "exp,item,karma,zel,bc,hc,bb_fill,od_rate,bb_rate,bb_atked",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "8",
                 "cost": "47",
@@ -8584,7 +8779,8 @@
             {
                 "id": "1442",
                 "name": "Rosalia 7",
-                "role": "",
+                "role": "bb_atk,ails,ails_add",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "44",
@@ -8628,7 +8824,8 @@
             {
                 "id": "1443",
                 "name": "Rosalia 8",
-                "role": "",
+                "role": "bb_fill,heal,cure,null_ails,null_stats,spark,atk_down_add,bb_atk",
+                "rolesp": "LS_bb_atked,LS_null_crit,crit,crit_dmg,bb_atked,heal_atked",
                 "element": "Earth",
                 "rarity": "8",
                 "cost": "48",
@@ -8672,7 +8869,8 @@
             {
                 "id": "1444",
                 "name": "Fizz 7",
-                "role": "",
+                "role": "od_rate,bb_rate,hit,aoe,od_fill",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "44",
@@ -8716,14 +8914,15 @@
             {
                 "id": "1445",
                 "name": "Fizz 8",
-                "role": "",
+                "role": "od_rate,bb_fill,hit,aoe,od_fill",
+                "rolesp": "crit,crit_dmg,bc,hc",
                 "element": "Thunder",
                 "rarity": "8",
                 "cost": "48",
                 "ls": {
                     "@hit": "14",
                     "@dc": "42",
-                    "#text": "100% Chance 10-10BC Fill on ATK (ALL) / 50% HP 50% ATK (ALL) / 50% ATK 50% DEF (BB >= 50%) (ALL) / 25% Chance AOE on Normal ATK (-50% DMG) (ALL)"
+                    "#text": "100% Chance 10BC Fill on ATK (ALL) / 50% HP 50% ATK (ALL) / 50% ATK 50% DEF (BB >= 50%) (ALL) / 25% Chance AOE on Normal ATK (-50% DMG) (ALL)"
                 },
                 "bb": {
                     "@hit": "17",
@@ -8760,7 +8959,8 @@
             {
                 "id": "1446",
                 "name": "Gregor 7",
-                "role": "",
+                "role": "crit,crit_dmg,atk_down,def_down,ewd",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "44",
@@ -8804,7 +9004,8 @@
             {
                 "id": "1447",
                 "name": "Gregor 8",
-                "role": "",
+                "role": "crit,crit_dmg,atk_down,def_down,ewd",
+                "rolesp": "dot",
                 "element": "Dark",
                 "rarity": "8",
                 "cost": "48",
@@ -8849,6 +9050,7 @@
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
+                "rolesp": "",
                 "element": "",
                 "rarity": "",
                 "cost": "",
@@ -8892,7 +9094,8 @@
             {
                 "id": "997",
                 "name": "Oracle Knight Ark",
-                "role": "Spark 35%HP ATK DEF REC hit Fire,water,earth,thunder,light,dark BBATK%",
+                "role": "hit,atk",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "40",
@@ -8936,7 +9139,8 @@
             {
                 "id": "1078",
                 "name": "Sealed God Lucius",
-                "role": "OverDrive Null Spark ATK MAXHP BC HC BBrate BBfill ConvertATK Barrier",
+                "role": "maxhp,bc,hc,bb_rate,convert_atk,bb_fill",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "45",
@@ -8980,7 +9184,8 @@
             {
                 "id": "1121",
                 "name": "Retribution Demon Mirfah",
-                "role": "40%HP ATK DoT Injury Weak Sick Poison Para Curse",
+                "role": "ails,atk_ailed,ails_atked",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "40",
@@ -9024,7 +9229,8 @@
             {
                 "id": "1156",
                 "name": "Seismic Fury Lugina",
-                "role": "BBreduce ATK DEF BBfill BBATK% Ignore USBB",
+                "role": "bb_fill,atk,idef",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "40",
@@ -9068,7 +9274,8 @@
             {
                 "id": "1157",
                 "name": "Radiating Grandeur Paris",
-                "role": "BBATKed 40%HP Heal Null BC HC ATK DEF REC HoT Miti",
+                "role": "null_ails,bc,hc,heal,bb_atked,atk,def,rec",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "40",
@@ -9112,7 +9319,8 @@
             {
                 "id": "1218",
                 "name": "Solar Fervor Seria",
-                "role": "BBreduce ATK DEF Spark HC DoT",
+                "role": "spark,dot,bb_spark,spark_debuff",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "40",
@@ -9156,7 +9364,8 @@
             {
                 "id": "1219",
                 "name": "Boreal Courage Karl",
-                "role": "BBfill BBspark BBATK% BBregen BBrate Spark 40%HP ATK DEF REC OverDrive ConvertATK",
+                "role": "bb_atk,od_fill,convert_atk,bb_rate",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "40",
@@ -9200,7 +9409,8 @@
             {
                 "id": "1254",
                 "name": "Blazing Dawn Owen",
-                "role": "BBcrit CRIT 50%HP ATK DEF REC Injury Weak ConvertATK DoT",
+                "role": "crit,ails,atk,def,convert_atk,ails_atked",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "45",
@@ -9244,7 +9454,8 @@
             {
                 "id": "1255",
                 "name": "Effulgent Dusk Grahdens",
-                "role": "Miti 50%HP ATK DEF REC Null NullStats Light,dark Barrier OverDrive BBregen HoT",
+                "role": "null_ails,null_stats,add_ele,barrier,od_rate,bb_regen",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "45",
@@ -9288,7 +9499,8 @@
             {
                 "id": "1336",
                 "name": "Rainbow Goddess Tilith",
-                "role": "HP50% REC Null NullStats BBfill heal HealATKed barrier convertDEF miti revive cure",
+                "role": "bb_fill,heal,heal_atked,barrier,convert_def,convert_rec,cure",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "42",
@@ -9332,7 +9544,8 @@
             {
                 "id": "1386",
                 "name": "Knight of Holy Light Ark",
-                "role": "SPARK 50%HP ATK DEF REC heal cure hit OverDrive Barrier Miti75% BBATK%",
+                "role": "heal,cure,hit,atk,od_rate,barrier",
+                "rolesp": "spark,null_crit,null_ewd,add_ele",
                 "element": "Light",
                 "rarity": "8",
                 "cost": "47",
@@ -9377,6 +9590,7 @@
                 "id": "",
                 "name": "\u2605\u2605\u2605 GLOBAL EX UNITS \u2605\u2605\u2605",
                 "role": "",
+                "rolesp": "",
                 "element": "",
                 "rarity": "",
                 "cost": "",
@@ -9420,7 +9634,8 @@
             {
                 "id": "8148",
                 "name": "Sanguine Hood Ciara",
-                "role": "BBATK% Weakness ATK Ignore",
+                "role": "atk,add_ele,idef",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "40",
@@ -9464,7 +9679,8 @@
             {
                 "id": "8149",
                 "name": "Pumleficent Semira",
-                "role": "Null Cure BC HC Weak Poison Para Curse OverDrive",
+                "role": "null_ails,ails,bc,hc,cure",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "40",
@@ -9508,7 +9724,8 @@
             {
                 "id": "8125",
                 "name": "Slayer Grandt",
-                "role": "CRIT 30%HP ATK Ignore ATKDOWN ConvertATK",
+                "role": "idef,atk_down",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "40",
@@ -9552,7 +9769,8 @@
             {
                 "id": "8128",
                 "name": "Chrono Mage Elaina",
-                "role": "Miti Null BBregen HoT",
+                "role": "bb_regen,HoT,cure,null_ails",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "40",
@@ -9596,7 +9814,8 @@
             {
                 "id": "8138",
                 "name": "Ruinous Andaria",
-                "role": "BBreduce BBregen BBrate BBATKed CRIT Cure Null Poison Para",
+                "role": "cure,null_ails,ails,bb_regen,bb_rate,bb_atked",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "40",
@@ -9640,7 +9859,8 @@
             {
                 "id": "8139",
                 "name": "Imperator Zedus",
-                "role": "Spark CRIT Weakness ATKDOWN DEFDOWN",
+                "role": "spark,ewd,crit_dmg,atk_down,def_down,crit",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "40",
@@ -9684,7 +9904,8 @@
             {
                 "id": "8143",
                 "name": "Mad Heretic Gazia",
-                "role": "BBATK% 35%HP ATK DEF REC Miti50% Miti75% ConvertDEF ConvertATK Barrier",
+                "role": "miti,convert_def,bb_guard,bb_atk,convert_atk,bb_fill",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "45",
@@ -9728,7 +9949,8 @@
             {
                 "id": "8132",
                 "name": "Deimos Thunderborn",
-                "role": "BBATKed 40%HP Null Taunt ATK DEF REC BBfill Miti",
+                "role": "taunt,atk,def,rec",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "40",
@@ -9772,7 +9994,8 @@
             {
                 "id": "8135",
                 "name": "Obsidian Seraph Zenia",
-                "role": "Spark BBspark BBfill BBATK% ATK hit",
+                "role": "bb_fill,idef,spark,bb_atk",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "40",
@@ -9816,7 +10039,8 @@
             {
                 "id": "8136",
                 "name": "Herculean Ultor",
-                "role": "Weakness ATK DEF REC CRIT Taunt DoT Miti75% Idol",
+                "role": "taunt,dot,crit_dmg,atk",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "40",
@@ -9860,7 +10084,8 @@
             {
                 "id": "8137",
                 "name": "Neptunian Tridon",
-                "role": "Miti 40%HP REC CRIT Shield HoT DEF BC HC BBrate ATKDOWN DEFDOWN",
+                "role": "shield,hot,def,bc,hc",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "40",
@@ -9904,7 +10129,8 @@
             {
                 "id": "8140",
                 "name": "Archangel Aurelia",
-                "role": "BC HC DEF REC Null Cure HoT BBregen Heal HoT Revive ConvertDEF",
+                "role": "cure,null_ails,dot,hot,bb_regen,heal,convert_def",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "40",
@@ -9948,7 +10174,8 @@
             {
                 "id": "8141",
                 "name": "Deathless Hadaron",
-                "role": "ATK DEF Poison Curse Weak Poison CRIT Stealth ATKDOWN DEFDOWN Idol",
+                "role": "ails,ails_add,crit,stealth,def",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "40",
@@ -9992,7 +10219,8 @@
             {
                 "id": "8154",
                 "name": "Infernal Ravager Korzan",
-                "role": "BBATKed CRIT 40%HP ATK Ignore MAXHP ConvertATK",
+                "role": "idef,crit,atk,crit_dmg,maxhp,convert_atk",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "42",
@@ -10036,7 +10264,8 @@
             {
                 "id": "8157",
                 "name": "Boreal Tempest Haile",
-                "role": "BBrate BBATK% BBregen BC HC 30%HP ATK DEF REC ATKDOWN DEFDOWN",
+                "role": "bb_regen,bb_rate,atk,def,rec,bb_fill,bb_atk,atk_down,def_down",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "42",
@@ -10080,7 +10309,8 @@
             {
                 "id": "8160",
                 "name": "Monster Hunter Avani",
-                "role": "Spark BBspark hit Injury Weak Sick Poison Paralysis Curse",
+                "role": "bb_spark,atk_ailed,ails,spark,spark_debuff,hit",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "42",
@@ -10124,7 +10354,8 @@
             {
                 "id": "8163",
                 "name": "Storm Champion Mikael",
-                "role": "40%HP BBATKed Miti Miti50% ConvertDEF ATK Null",
+                "role": "miti,bb_guard,miti_guard,def,convert_def",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "42",
@@ -10168,7 +10399,8 @@
             {
                 "id": "8166",
                 "name": "Loremaster Allanon",
-                "role": "30%HP ATK DEF REC NullEWD OverDrive Null Cure Weakness BBfill BBATKed MAXHP Miti75% Heal Fire,water,earth,thunder,light,dark HoT",
+                "role": "bb_fill,bb_atked,maxhp,miti_ele,heal,od_fill,add_ele,ewd,cure,null_ails",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "42",
@@ -10212,7 +10444,8 @@
             {
                 "id": "8169",
                 "name": "Shadow Cat Nyami",
-                "role": "Spark CRIT ATK DEF BBATK% superspark Stealth BBspark",
+                "role": "crit,bb_atk,spark_crit,stealth",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "42",
@@ -10256,7 +10489,8 @@
             {
                 "id": "8174",
                 "name": "Eternal Guardian Zeruiah",
-                "role": "BBrate EXP BC HC Item Karma Zel Heal Cure USBB Fire,water,earth,thunder,light,dark Miti75% MAXHP ConvertDEF",
+                "role": "exp,hc,bc,item,karma,zel,heal,cure,add_ele",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "42",
@@ -10300,7 +10534,8 @@
             {
                 "id": "8179",
                 "name": "Lycanthrope Randolph",
-                "role": "50%HP BBrate DoT Injury Curse Stealth ATK DEF REC ConvertATK CRIT",
+                "role": "dot,ails,stealth,crit",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "42",
@@ -10344,7 +10579,8 @@
             {
                 "id": "8182",
                 "name": "Landeythan Ravenna",
-                "role": "Weakness BBfill Poison Para USBB Fire Dark NullCRIT",
+                "role": "bb_fill,ails,add_ele",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "42",
@@ -10388,7 +10624,8 @@
             {
                 "id": "8183",
                 "name": "Plasma Blaster Bonnie",
-                "role": "BBreduce BBrate BBATK% Fire,thunder,dark",
+                "role": "idef,ails,add_ele,bb_atk",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "42",
@@ -10432,7 +10669,8 @@
             {
                 "id": "8184",
                 "name": "Eggstra Colorful Carrol",
-                "role": "BBreduce BC HC BBregen ATK DEF REC OverDrive BBATKed Water,earth,light Barrier Cure",
+                "role": "bb_regen,atk,def,rec,od_fill,bb_atked,add_ele,cure",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "42",
@@ -10476,7 +10714,8 @@
             {
                 "id": "8186",
                 "name": "Dawnbearer Juno-Seto",
-                "role": "BBATKed Idol 50%HP REC Miti50% MAXHP HoT Revive Barrier",
+                "role": "miti,hot,maxhp,revive,barrier",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "43",
@@ -10520,7 +10759,8 @@
             {
                 "id": "8187",
                 "name": "Empyrean Juno-Seto",
-                "role": "BBATKed Idol 50%HP REC Miti50% MAXHP HoT Revive Barrier",
+                "role": "miti,hot,maxhp,revive,barrier",
+                "rolesp": "LS_bb_atked,LS_null_id,null_ails,convert_def,bc,hc",
                 "element": "Light",
                 "rarity": "8",
                 "cost": "47",
@@ -10564,7 +10804,8 @@
             {
                 "id": "8189",
                 "name": "Umbral Bloom Ensa-Taya",
-                "role": "50%HP BBATK% Injury Weak Sick Spark ConvertATK Barrier",
+                "role": "ails_add,spark,bb_atk,convert_atk,atk_ailed",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "43",
@@ -10608,7 +10849,8 @@
             {
                 "id": "8190",
                 "name": "Void Pasha Ensa-Taya",
-                "role": "50%HP BBATK% Injury Weak Sick Poison Spark ConvertATK Barrier",
+                "role": "ails_add,spark,bb_atk,convert_atk,atk_ailed",
+                "rolesp": "bb_spark,dot",
                 "element": "Dark",
                 "rarity": "8",
                 "cost": "47",
@@ -10652,7 +10894,8 @@
             {
                 "id": "8198",
                 "name": "Blooming Sakura Miku",
-                "role": "CRIT 40%HP ATK Null ATKDOWN superspark hit",
+                "role": "atk_down_add,atk_down,crit_dmg,spark_crit,hit,crit",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "43",
@@ -10696,7 +10939,8 @@
             {
                 "id": "8199",
                 "name": "Mankai Sakura Miku",
-                "role": "CRIT 50%HP ATK Null ATKDOWN superspark hit",
+                "role": "atk_down_add,atk_down,crit_dmg,spark_crit,hit,crit",
+                "rolesp": "LS_null_ails,def_down,heal",
                 "element": "Light",
                 "rarity": "8",
                 "cost": "47",
@@ -10740,7 +10984,8 @@
             {
                 "id": "8200",
                 "name": "Overlord Azurai",
-                "role": "miti CRIT BBATK% 35%HP MAXHP convertDEF ATK DEF REC healATKed",
+                "role": "atk,def,rec,convert_atk,convert_def,crit,crit_dmg,bb_atk",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "43",
@@ -10784,7 +11029,8 @@
             {
                 "id": "8201",
                 "name": "Doombringer Azurai",
-                "role": "miti CRIT BBATK% 40%HP MAXHP convertATK convertDEF ATK DEF REC healATKed",
+                "role": "maxhp,convert_atk,convert_def,crit,crit_dmg,atk,def,rec,bb_atk",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "8",
                 "cost": "47",
@@ -10828,7 +11074,8 @@
             {
                 "id": "8204",
                 "name": "Terror Fist Nyala",
-                "role": "BBATK% 40%HP convertATK Injury Para DoT atkdown",
+                "role": "bb_atk,convert_atk,ails,dot",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "43",
@@ -10872,7 +11119,8 @@
             {
                 "id": "8207",
                 "name": "Zero",
-                "role": "30%HP ATK Spark HealATKed superspark healSpark",
+                "role": "heal_atked,spark_crit,spark,spark_debuff,heal_spark",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "43",
@@ -10916,7 +11164,8 @@
             {
                 "id": "8208",
                 "name": "Zero (OMNI)",
-                "role": "50%HP ATK Spark HealATKed superspark healSpark",
+                "role": "heal_atked,spark,spark_crit,spark_debuff,heal_spark",
+                "rolesp": "bc,bb_spark",
                 "element": "Dark",
                 "rarity": "8",
                 "cost": "47",
@@ -10960,7 +11209,8 @@
             {
                 "id": "8210",
                 "name": "Kyo Kusanagi 7",
-                "role": "30%HP ATK BBspark Spark Injury Weak dot hit",
+                "role": "spark,ails,atk,dot,add_ele",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "42",
@@ -11004,7 +11254,8 @@
             {
                 "id": "8212",
                 "name": "Mai Shiranui 7",
-                "role": "CRIT ATK atkdown defdown Fire",
+                "role": "crit,crit_dmg,atk_down,def_down,atk,add_ele",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "43",
@@ -11048,7 +11299,8 @@
             {
                 "id": "8214",
                 "name": "Kula Diamond 7",
-                "role": "BBatked 40%HP DEF Barrier convertATK miti100% ATK Water",
+                "role": "bb_atked,barrier,def,convert_atk,add_ele",
+                "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
                 "cost": "43",
@@ -11092,7 +11344,8 @@
             {
                 "id": "8215",
                 "name": "Terry Bogard 7",
-                "role": "50%HP ATK DEF NullCRIT Miti50% Fire Earth REC ConvertDEF miti100% MAXHP",
+                "role": "add_ele,miti,atk,def,rec,convert_def",
+                "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
                 "cost": "43",
@@ -11136,7 +11389,8 @@
             {
                 "id": "8216",
                 "name": "Terry Bogard 8",
-                "role": "50%HP ATK DEF NullCRIT Miti50% Fire Earth REC ConvertDEF miti100% MAXHP",
+                "role": "add_ele,null_crit,miti,atk,def,rec,convert_def",
+                "rolesp": "idef,miti_ele",
                 "element": "Earth",
                 "rarity": "8",
                 "cost": "47",
@@ -11180,7 +11434,8 @@
             {
                 "id": "8218",
                 "name": "Benimaru Nikaido 7",
-                "role": "BBreduce hit 35%HP Injury Weak Para OverDrive BBatked ATK Thunder",
+                "role": "hit,ails,od_fill,bb_atked,add_ele",
+                "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
                 "cost": "43",
@@ -11224,7 +11479,8 @@
             {
                 "id": "8220",
                 "name": "Athena Asamiya 7",
-                "role": "HealATKed 40%HP ATK Reflect Drain Cure barrier NullStats Fire,water,earth,thunder,light,dark HoT",
+                "role": "drain,heal_atked,cure,barrier,add_ele,hot",
+                "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
                 "cost": "43",
@@ -11237,13 +11493,13 @@
                     "@hit": "10",
                     "@dc": "20",
                     "@cost": "16",
-                    "#text": "350% Light (AOE) / Drain 8-10% HP (SELF) / Drain 3-5% HP (SELF) / 20% Chance Heal 20-25% DMG when ATKed (ALL) 3Turns / Cure Ails"
+                    "#text": "350% Light (AOE) / Drain 3-5% HP (SELF) / 20% Chance Heal 20-25% DMG when ATKed (ALL) 3Turns / Cure Ails"
                 },
                 "sbb": {
                     "@hit": "12",
                     "@dc": "24",
                     "@cost": "24",
-                    "#text": "560% Light (AOE) / Drain 8-10% HP (SELF) / Drain 4-6% HP (SELF) / 20% Chance Heal 25-30% DMG when ATKed (ALL) 3Turns / 2500HP Barrier (light)"
+                    "#text": "560% Light (AOE) / Drain 4-6% HP (SELF) / 20% Chance Heal 25-30% DMG when ATKed (ALL) 3Turns / 2500HP Barrier (light)"
                 },
                 "ubb": {
                     "@hit": "3",
@@ -11268,7 +11524,8 @@
             {
                 "id": "8221",
                 "name": "Iori Yagami 7",
-                "role": "BBATK% ATK BBrate Fire Dark BBregen",
+                "role": "bb_rate,add_ele,bb_atk",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "43",
@@ -11312,7 +11569,8 @@
             {
                 "id": "8222",
                 "name": "Iori Yagami 8",
-                "role": "BBATK% ATK 40%HP Weakness BBrate Fire Dark BBregen",
+                "role": "bb_rate,add_ele,bb_atk",
+                "rolesp": "atk,idef",
                 "element": "Dark",
                 "rarity": "8",
                 "cost": "47",
@@ -11356,7 +11614,8 @@
             {
                 "id": "8223",
                 "name": "Rogue Inquisitor Adriesta",
-                "role": "",
+                "role": "bb_spark,heal_spark,atk_down_add,atk,def,convert_atk",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
                 "cost": "44",
@@ -11400,7 +11659,8 @@
             {
                 "id": "8224",
                 "name": "Scourgemistress Adriesta",
-                "role": "",
+                "role": "bb_spark,heal_spark,atk_down_add,atk,def,convert_atk",
+                "rolesp": "LS_bb_spark,LS_null_ewd,barrier",
                 "element": "Fire",
                 "rarity": "8",
                 "cost": "48",
@@ -11444,7 +11704,8 @@
             {
                 "id": "8228",
                 "name": "Omega Rugal 7",
-                "role": "BBregen BBATK% 30%HP ATK BBATKed null CRIT barrier convertATK OverDrive Dark",
+                "role": "bb_atked,null_ails,crit,barrier,bb_atk,convert_atk,add_ele",
+                "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
                 "cost": "43",
