@@ -202,12 +202,14 @@
 					//check role sp
 					var role_array = role.split(",");
 					var rolesp_array = rolesp.split(",");
-					$.each( rolesp_array, function( j ){
-						var rolesp_chk = document.getElementById(id_input + '_' +rolesp_array[j] + '_chk').checked;
-						if(rolesp_chk){
-							role_array = role_array.concat(rolesp_array[j]);
-						}
-					});//end each role sp
+					if(!rolesp ==""){
+						$.each( rolesp_array, function( j ){
+							var rolesp_chk = document.getElementById(id_input + '_' +rolesp_array[j] + '_chk').checked;
+							if(rolesp_chk){
+								role_array = role_array.concat(rolesp_array[j]);
+							}
+						});//end each role sp
+					}//end if
 					
 					//check pre role		
 					$.each( role_array, function( j ){
