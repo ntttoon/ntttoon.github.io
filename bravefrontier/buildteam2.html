@@ -196,9 +196,20 @@
 				var id = arr.brave.unit[i].id;
 				var name = arr.brave.unit[i].name;
 				var role = arr.brave.unit[i].role;
+				var rolesp = arr.brave.unit[i].rolesp;
 				//
 				if(n==name){
+					//check role sp
 					var role_array = role.split(",");
+					var rolesp_array = rolesp.split(",");
+					$.each( rolesp_array, function( j ){
+						var rolesp_chk = document.getElementById(id_input + '_' +rolesp_array[j] + '_chk').checked;
+						if(rolesp_chk){
+							role_array = role_array.concat(rolesp_array[j]);
+						}
+					});//end each role sp
+					
+					//check pre role		
 					$.each( role_array, function( j ){
 						if(role_array[j] == 'atk'){
 							document.getElementById('atk').outerHTML = '<input class="w3-radio" type="radio" id="atk" checked>';
@@ -389,7 +400,7 @@
 						else if(role_array[j] == 'shield'){
 							document.getElementById('shield').outerHTML = '<input class="w3-radio" type="radio" id="shield" checked>';
 						}
-					});
+					});//end each pre role
 				}//end if
 			}//end for
 		}//end myFunction
@@ -416,6 +427,8 @@
 			var i;
 			var json_len = arr.brave.unit.length;
 			var sp_out = "";
+			var rolesp_out = "";
+			
 			for(i = 0; i < json_len; i++) {
 				var id = arr.brave.unit[i].id;
 				var name = arr.brave.unit[i].name;
@@ -427,6 +440,9 @@
 				var thumb = arr.brave.unit[i].thumb['@path'];
 				var sp = arr.brave.unit[i].sp['@list'];
 				var sp_array = sp.split("|");
+				var rolesp = arr.brave.unit[i].rolesp;
+				var rolesp_array = rolesp.split(",");
+				
 				//Check url and return team
 				if(id==l)
 				{
@@ -462,16 +478,20 @@
 				if(name==n)
 				{
 					//Write sp out
+					//alert(rolesp_array);
 					var sp_content ="";
 					if(!sp ==""){
 						sp_content = '<hr><b>OMNI Skills:</b><br>';
 						$.each(sp_array, function( j ){
 							sp_out += '● ' + sp_array[j].trim() + '<br>';
 						})
+						$.each(rolesp_array, function( j ){
+							rolesp_out += '<input class="w3-check" type="checkbox" value="'+ rolesp_array[j] +'" id="' + id_input+ '_'+ rolesp_array[j] + '_chk"><label class="w3-validate"> ' + rolesp_array[j] + '</label>'
+						})
 					}
 					//end Write sp out
 					document.getElementById(thumb_out).src = thumb;
-					document.getElementById(div_out).innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '<br>' + sp_content + sp_out + '</p>';
+					document.getElementById(div_out).innerHTML = '<h4>' + name + '</h4>' + '<p><b>LS: </b>' + ls + '<br>' + '<b>BB: </b>' + bb + '<br>' + '<b>SBB: </b>' + sbb + '<br>' + '<b>UBB: </b>' + ubb + '<br>' + '<b>ES: </b>' + es + '<br>' + sp_content + sp_out + rolesp_out + '</p>';
 					
 					//export link
 					var sLink = "http://ntttoon.github.io/bravefrontier/buildteam.html";
