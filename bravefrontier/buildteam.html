@@ -604,6 +604,7 @@
 			for(i = 0; i < json_len; i++) {
 				var name = arr.brave.unit[i].name;
 				var role = arr.brave.unit[i].role;
+				var rolesp = arr.brave.unit[i].rolesp;
 				var ele = arr.brave.unit[i].element;
 				var thumb = arr.brave.unit[i].thumb['@path'];
 				if(filter == 'name'){
@@ -621,7 +622,7 @@
 				}
 				//
 				if(filter == 'buffs'){
-					if(role.match(re)){
+					if(role.match(re) || rolesp.match(re)){
 						var id = arr.brave.unit[i].id;
 						document.getElementById(id_list).innerHTML += "<img width='60' style='cursor:pointer;' src='" + thumb + "' alt='" + name + "' id='" + id + "' onClick='setValue(" + id + ',"' + id_input + '","' + id_list + '")' + "'>";
 					}
