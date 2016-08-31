@@ -11698,7 +11698,7 @@
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810418.png"
                 },                
                 "sp": {
-                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 20 : 100% max boost to Atk and Def relative to remaining HP | 20 : 80% boost to Spark damage | 50 : Adds Thunder barrier effect to SBB (3000 HP) | 30 : Enhances SBB's Atk relative to Def boost effect (+10% boost, 80% boost total) | 30 : Enhances BB/SBB's BB gauge boost during Spark effect (+1 BC, 3~4 BC fill on Spark total) | 50 : Enhances SBB's Atk and Def boost effect (+20% boost, 180% boost total) | 40 : Allows UBB's boost effects to last for 4 turns"
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 20 : 100% max boost to Atk and Def relative to HP lost | 20 : 80% boost to Spark damage | 50 : Adds Thunder barrier effect to SBB (3000 HP) | 30 : Enhances SBB's Atk relative to Def boost effect (+10% boost, 80% boost total) | 30 : Enhances BB/SBB's BB gauge boost during Spark effect (+1 BC, 3~4 BC fill on Spark total) | 50 : Enhances SBB's Atk and Def boost effect (+20% boost, 180% boost total) | 40 : Allows UBB's boost effects to last for 4 turns"
                 }
             },
             {
