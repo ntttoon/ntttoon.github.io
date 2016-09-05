@@ -62,7 +62,8 @@ var update = function (modifier) {
 // Draw everything
 var render = function () {
 	ctx.drawImage(bgImage, 0, 0);
-	ctx.drawImage(heroImage, hero.x, hero.y);
+	var sf = document.getElementById("zoom_factor").value; 
+	ctx.drawImage(heroImage, hero.x, hero.y,heroImage.width * sf,heroImage.height * sf);
 	ctx.drawImage(messImage, 0, 335);
 	txtboldAppend(txt1.value);
 	wrapText(txt2.value, 10, 420, 480, 40);
@@ -137,4 +138,16 @@ function wrapText(text, x, y, maxWidth, lineHeight) {
 	ctx.textAlign = 'left';
 	ctx.fillStyle = 'white';
 	ctx.fillText(line, x, y);
+}
+function zoomFactor(type){
+	var sf = document.getElementById("zoom_factor").value;
+	var a = Number(sf);
+	if(type=='in' && a > 0.1){
+		a -= 0.1;
+		document.getElementById("zoom_factor").value = a.toPrecision(1);
+	}
+	if(type=='out' && a < 1 ){
+		a += 0.1;
+		document.getElementById("zoom_factor").value = a.toPrecision(1);
+	}
 }

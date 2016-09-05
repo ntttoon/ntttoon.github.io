@@ -84,6 +84,11 @@
   <!-- Right col -->
   <div class="w3-col" style="width:50%">
     <div style="text-align:center" class="w3-row-padding w3-margin-top">
+    <p>
+    	<a class="w3-btn-floating-large w3-teal" id="btn_left" onClick="zoomFactor('in');"><i class="fa fa-search-minus"></i></a>
+        <a class="w3-btn-floating-large w3-teal" id="btn_right" onClick="zoomFactor('out');"><i class="fa fa-search-plus"></i></a>
+        <input  class="w3-input w3-border" type="text" id="zoom_factor" value="1" style="width:100px;margin:0 auto;text-align:center">
+    </p>
       <p>Right click on image below to save</p>
       <canvas id="canvas" width="500" height="750"></canvas>
     </div>
