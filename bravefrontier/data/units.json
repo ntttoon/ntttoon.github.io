@@ -8238,7 +8238,7 @@
             },
             {
                 "id": "1417",
-                "name": "Shura 7",
+                "name": "Wicked Warrior Shura",
                 "role": "bb_rate,spark,spark_crit",
                 "rolesp": "",
                 "element": "Fire",
@@ -8283,7 +8283,7 @@
             },
             {
                 "id": "1418",
-                "name": "Shura 8",
+                "name": "Heavenly Rift Shura",
                 "role": "bb_rate,spark,spark_crit",
                 "rolesp": "LS_bb_spark,spark_debuff",
                 "element": "Fire",
@@ -8323,12 +8323,12 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10917.png"
                 },                
                 "sp": {
-                    "@list": "10 : +20% HP | 20 : +50% ATK | 10 : (*) +50% Spark Damage | 10 : (**) +70% Spark Damage (Prerequisite: *) | 10 : +100% Spark Damage (Prerequisite: **) | 10 : (***) +40% Crit Damage | 10 : +70% Crit Damage (Prerequisite: ***) | 40 : BB+: +30% Spark Dmg & SBB+: +30% Spark Dmg & UBB+: +30% Spark Dmg | 30 : Add Effect To BB/SBB (1 turn 25% Spark Damage Taken Debuff (25% Chance))"
+                    "@list": "10 : 20% boost to max HP | 20 : 50% boost to Atk | 10 : (*) 50% boost to Spark damage | 10 : (**) Raises Spark damage boost from 50% to 70% (Prerequisite: *) | 10 : Raises Spark damage boost from 70% to 100% (Prerequisite: **) | 10 : (***) Slightly boosts critical hit damage (40% boost) | 10 : Boosts critical hit damage (+30% boost, 70% boost total) (Prerequisite: ***) | 40 : Enhances BB/SBB/UBB's Spark damage boost effect (+30% boost, 130% boost on BB/SBB total, 330% boost on UBB total) | 30 : Adds probable Spark vulnerability infliction for 2 turns effect to BB/SBB (25% chance to deal 25% more Spark damage)"
                 }
             },
             {
                 "id": "1419",
-                "name": "Hisui 7",
+                "name": "Emerald Knight Hisui",
                 "role": "null_ails,null_stats,def,rec,miti_guard,convert_def,null_ewd",
                 "rolesp": "",
                 "element": "Earth",
@@ -8373,7 +8373,7 @@
             },
             {
                 "id": "1420",
-                "name": "Hisui 8",
+                "name": "Heavenly Spiral Hisui",
                 "role": "null_ails,null_stats,def,rec,miti_guard,convert_def,null_ewd",
                 "rolesp": "LS_null_crit,miti,cure,bb_guard",
                 "element": "Earth",
@@ -8413,7 +8413,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30817.png"
                 },                
                 "sp": {
-                    "@list": "10 : +50% DEF | 10 : 10% DMG to HP when hit (25% Chance) | 30 : Def Ignore Immunity | 20 : 50% Base/Buff Spark Resist | 20 : 100% Base/Buffed Crit Resist | 30 : (*) Add Effect To BB/SBB (Reduce Damage 50% for 1 turn) | 30 : Add Effect To BB/SBB (Reduce Damage 50% for 2 turn) (Prerequisite: *) | 20 : Add Effect To BB/SBB (Cure Status/Debuffs) | 20 : Add Effect To BB/SBB (3 Turn 8 BC on Guard Buff) | 10 : BB+: +5% Guard Mitigation & SBB+: +5% Guard Mitigation"
+                    "@list": "10 : 50% boost to Def | 10 : Damage taken may slightly restore HP (25% chance to heal 10% HP from damage taken) | 20 : Negates Def ignoring damage | 20 : 50% Spark damage reduction | 20 : Negates critical hit damage | 30 : (*) Adds 50% damage reduction for 1 turn to BB/SBB | 30 : Allows 50% damage reduction for 1 turn effects to last for 2 turns (Prerequisite: *)  | 20 : Adds status ailment removal effect to BB/SBB | 20 : Adds huge BB gauge boost when guarding for 3 turns effect to BB/SBB (8 BC fill) | 10 : Enhances BB/SBB's damage reduction when guarding effect (+5% boost, 15% boost total)"
                 }
             },
             {
