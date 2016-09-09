@@ -7603,7 +7603,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50997.png"
                 },                
                 "sp": {
-                    "@list": "20 : 20% boost to all parameters | 10 : Negates Atk, Def, Rec reducing effects | 20 : Negates all status ailments | 10 : Negates Def ignoring damage | 20 : Negates elemental damage | 20 : Negates critical hit damage | 20 : Enhances Leader Skill Spark damage boost from 100% to 120% | 30 : Adds status ailment removal effect to BB/SBB | 50 : Enhances Spark damage boost effect added to BB/SBB/UBB (+30% boost, 130% boost total on BB/SBB, 330% boost total on UBB)"
+                    "@list": "20 : 20% boost to all parameters | 10 : Negates Atk, Def, Rec reducing effects | 20 : Negates all status ailments (Prerequisites: *) | 10 : Negates Def ignoring damage | 20 : Negates elemental damage | 20 : Negates critical hit damage | 20 : Enhances Leader Skill Spark damage boost from 100% to 120% | 30 : (*) Adds status ailment removal effect to BB/SBB | 50 : Enhances Spark damage boost effect added to BB/SBB/UBB (+30% boost, 130% boost total on BB/SBB, 330% boost total on UBB)"
                 }
             },
             {
@@ -9044,6 +9044,276 @@
                 },                
                 "sp": {
                     "@list": "20 : +50% ATK | 20 : +50% DEF | 10 : +30% Crit Damage | 20 : +50% Crit Damage | 10 : Add Elements To Attacks | 20 : Add Effect To BB/SBB (2 turn DoT Debuff (400% + 100 Flat Atk)) | 20 : BB+: 0% ATK and/or 0% DEF {10%} for 0 turns & SBB+: 0% ATK and/or 0% DEF {10%} for 0 turns | 40 : BB+: +25% Crit Dmg & SBB+: +25% Crit Dmg | 40 : BB+: +50% Weakness Damage & SBB+: +50% Weakness Damage"
+                }
+            },
+            {
+                "id": "1448",
+                "name": "Mariela 7",
+                "role": "bb_regen,heal_atked,null_ails,od_rate,bb_atked,crit,crit_dmg",
+                "rolesp": "LS_bb_atked",
+                "element": "Water",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "39",
+                    "#text": "100% Chance 3-6BC Fill when ATKed (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL)"
+                },
+                "bb": {
+                    "@hit": "30",
+                    "@dc": "30",
+                    "@cost": "27",
+                    "#text": "350% Water (AOE) / 5BC Fill 3Turns / 20% Chance Heal 15-20% DMG when ATKed (ALL) 3Turns / Null Ails 3Turns"
+                },
+                "sbb": {
+                    "@hit": "38",
+                    "@dc": "38",
+                    "@cost": "28",
+                    "#text": "560% Water (AOE) / 15% OverDrive Fill+ 3Turns / 3-5BC Fill when ATKed (100%) (ALL) 3Turns / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "40",
+                    "@dc": "40",
+                    "@cost": "30",
+                    "#text": "1300% Water (AOE) / 20% OverDrive Fill / 999-999BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance Heal 100-100% DMG when ATKed (ALL) 3Turns / 60% CRIT+ (ALL) 3Turns / 300% CRIT DMG+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Ails (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20886.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20886.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1449",
+                "name": "Mariela 8",
+                "role": "bb_regen,heal_atked,null_ails,od_rate,bb_atked,crit,crit_dmg",
+                "rolesp": "LS_bb_atked,heal,cure,od_rate,null_crit,null_ails",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "14",
+                    "@dc": "42",
+                    "#text": "100% Chance 4-7BC Fill when ATKed (ALL) / 40% HP 40% ATK 40% DEF 40% REC (ALL) / Reduce DMG (20%) 1Turn on > 5k DMG Received (ALL)"
+                },
+                "bb": {
+                    "@hit": "32",
+                    "@dc": "32",
+                    "@cost": "28",
+                    "#text": "370% Water (AOE) / 7BC Fill 3Turns / 20% Chance Heal 20-25% DMG when ATKed (ALL) 3Turns / Null Ails 3Turns"
+                },
+                "sbb": {
+                    "@hit": "43",
+                    "@dc": "43",
+                    "@cost": "29",
+                    "#text": "580% Water (AOE) / 20% OverDrive Fill+ 3Turns / 4-7BC Fill when ATKed (100%) (ALL) 3Turns / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "48",
+                    "@dc": "48",
+                    "@cost": "30",
+                    "#text": "1500% Water (AOE) / 30% OverDrive Fill / 999-999BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance Heal 100-100% DMG when ATKed (ALL) 3Turns / 60% CRIT+ (ALL) 3Turns / 300% CRIT DMG+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Ails (SELF) / 100% 2-3BC Fill on ATKed (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20887.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20887.png"
+                },                
+                "sp": {
+                    "@list": "20 : +20% All Stats | 10 : 0-50% DEF depending on HP lost | 20 : 100% Base/Buffed Element Weakness Resist | 30 : LS+: +10% All Stats | 50 : SBB+: +25% Crit Dmg | 30 : Add Effect To BB/SBB (Heal 2000-3000 HP (+ 11% Healer REC)) | 20 : Add Effect To BB/SBB (Cure Status/Debuffs) | 30 : Add Effect To BB (3 Turn 20% OD Fill Rate Buff) | 40 : Add Effect To BB/SBB (1 Turn Negate Critical Damage) | 10 : Add Effect To SBB (3 turn Negate Status Ailments)"
+                }
+            },
+            {
+                "id": "1450",
+                "name": "Victor 7",
+                "role": "bb_fill,atk,def,rec,dot,ails,convert_atk,atk_down",
+                "rolesp": "",
+                "element": "Thunder",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "1",
+                    "@dc": "40",
+                    "#text": "15% Chance Ignore DEF (ALL) / 120% ATK 120% DEF 2Turns (ALL) / Reduce DMG (20%) from (All) Enemy (ALL)"
+                },
+                "bb": {
+                    "@hit": "1",
+                    "@dc": "20",
+                    "@cost": "27",
+                    "#text": "350% Thunder (AOE) / 8BC Fill (ALL) 1Turn / 120% ATK+ 120% DEF+ 120% REC+ (ALL) 3Turns / 300% DMG Each Turn 2Turns / 75% Injury 75% Para"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "30",
+                    "#text": "750% Thunder (AOE) / 400% DMG Each Turn 2Turns / Convert 60% DEF to ATK (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "1800% Thunder (AOE) / 999BC Fill (ALL) / 300% ATK+ 300% DEF+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns / Convert 200% DEF to ATK (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% CRIT DMG+ (SELF) / 50% Elemental Weakness DMG+ (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40826.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40826.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1451",
+                "name": "Victor 8",
+                "role": "bb_fill,atk,def,rec,dot,ails,convert_atk,atk_down",
+                "rolesp": "",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "2",
+                    "@dc": "42",
+                    "#text": "20% Chance Ignore DEF (ALL) / 150% ATK 150% DEF 2Turns (ALL) / Reduce DMG (25%) from (All) Enemy (ALL) / Add 30% Chance -20% Enemy ATK to ATK 2Turns on ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "2",
+                    "@dc": "30",
+                    "@cost": "28",
+                    "#text": "370% Thunder (AOE) / 8BC Fill (ALL) 1Turn / 140% ATK+ 140% DEF+ 140% REC+ (ALL) 3Turns / 400% DMG Each Turn 2Turns / 80% Injury 80% Para"
+                },
+                "sbb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "32",
+                    "#text": "800% Thunder (AOE) / 500% DMG Each Turn 2Turns / Convert 70% DEF to ATK (ALL) 3Turns / 30% Chance -50% Enemy ATK 2Turns"
+                },
+                "ubb": {
+                    "@hit": "24",
+                    "@dc": "24",
+                    "@cost": "30",
+                    "#text": "2000% Thunder (AOE) / 999BC Fill (ALL) / 350% ATK+ 350% DEF+ (ALL) 3Turns / 600% BB ATK%+ (ALL) 3Turns / Convert 250% DEF to ATK (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "100% CRIT DMG+ (SELF) / 50% Elemental Weakness DMG+ (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40827.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40827.png"
+                },                
+                "sp": {
+                    "@list": "20 : +50% ATK | 10 : +50% ATK when BB Gauge is above 50% | 10 : +20% HP/DEF | 20 : +50% BB/SBB/UBB Mod | 20 : 20% Chance Ignore Def | 30 : 20% Chance Normal Attacks AoE (-50% Damage) | 20 : 30% Chance Normal Attacks AoE (-50% Damage) | 20 : Negate Status Ailments | 30 : BB+: +10% ATK/DEF/REC | 50 : SBB+: 20% DEF->ATK buff"
+                }
+            },
+            {
+                "id": "1452",
+                "name": "Garrel 7",
+                "role": "atk,crit,spark,def",
+                "rolesp": "",
+                "element": "Light",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "7",
+                    "@dc": "35",
+                    "#text": "80% Spark DMG+ (ALL) / 40% HP 40% ATK (ALL) / 80% ATK (Light)"
+                },
+                "bb": {
+                    "@hit": "9",
+                    "@dc": "9",
+                    "@cost": "26",
+                    "#text": "350% Light (AOE) / 80% ATK+ to Light 3Turns / 60% CRIT+ (ALL) 3Turns / 80% Spark DMG+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "28",
+                    "#text": "420% Light (AOE) 200% BB ATK+ on Consecutive SBB (Max 3x , SELF) / 100% BB Fill (SELF) / 80% ATK+ DEF+ to Light 3Turns / 80% Spark DMG+ (ALL) 3Turns / 30% Spark DMG+ (SELF) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "30",
+                    "#text": "1300% Light (AOE) / 50BC Fill 3Turns / 150% ATK+ to Light 5Turns / 300% CRIT DMG+ (ALL) 3Turns / 250% Spark DMG+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "30% Spark DMG+ (SELF) / 100% Chance Heal on Spark (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_51046.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51046.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1453",
+                "name": "Garrel 8",
+                "role": "atk,crit,spark,def",
+                "rolesp": "LS_null_crit,bb_regen",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "100% Spark DMG+ (ALL) / Null CRIT (ALL) / 50% HP 50% ATK (ALL) / 100% ATK (Light)"
+                },
+                "bb": {
+                    "@hit": "12",
+                    "@dc": "12",
+                    "@cost": "27",
+                    "#text": "370% Light (AOE) / 100% ATK+ to Light 3Turns / 60% CRIT+ (ALL) 3Turns / 100% Spark DMG+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "30",
+                    "#text": "Light (AOE) 200% BB ATK+ on Consecutive SBB (Max 3x / SELF) / 100% BB Fill (SELF) / 100% ATK+ DEF+ to Light 3Turns / 100% Spark DMG+ (ALL) 3Turns / 50% Spark DMG+ (SELF) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "30",
+                    "#text": "1500% Light (AOE) / 50BC Fill 3Turns / 200% ATK+ to Light 5Turns / 300% CRIT DMG+ (ALL) 3Turns / 300% Spark DMG+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% Spark DMG+ (SELF) / 100% Chance Heal on Spark (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_51047.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51047.png"
+                },                
+                "sp": {
+                    "@list": "20 : +20% All Stats | 40 : +50% All Stats | 20 : +50% ATK when BB Gauge is above 50% | 20 : +50% DEF when BB Gauge is above 50% | 20 : +50% Spark Damage | 20 : +70% Spark Damage | 10 : 100% Base/Buffed Element Weakness Resist | 30 : Add Effect To BB/SBB (3 Turn Light Unit +120% ATK/DEF) | 40 : BB+: +30% Spark Dmg & SBB+: +30% Spark Dmg & UBB+: +30% Spark Dmg | 30 : Add Effect To BB/SBB (3 turn 7 BC/turn)"
                 }
             },
             {
