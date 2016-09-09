@@ -9075,7 +9075,7 @@
                     "@hit": "40",
                     "@dc": "40",
                     "@cost": "30",
-                    "#text": "1300% Water (AOE) / 20% OverDrive Fill / 999-999BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance Heal 100-100% DMG when ATKed (ALL) 3Turns / 60% CRIT+ (ALL) 3Turns / 300% CRIT DMG+ (ALL) 3Turns"
+                    "#text": "1300% Water (AOE) / 20% OverDrive Fill / 999BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance Heal 100% DMG when ATKed (ALL) 3Turns / 60% CRIT+ (ALL) 3Turns / 300% CRIT DMG+ (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -9120,7 +9120,7 @@
                     "@hit": "48",
                     "@dc": "48",
                     "@cost": "30",
-                    "#text": "1500% Water (AOE) / 30% OverDrive Fill / 999-999BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance Heal 100-100% DMG when ATKed (ALL) 3Turns / 60% CRIT+ (ALL) 3Turns / 300% CRIT DMG+ (ALL) 3Turns"
+                    "#text": "1500% Water (AOE) / 30% OverDrive Fill / 999BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance Heal 100% DMG when ATKed (ALL) 3Turns / 60% CRIT+ (ALL) 3Turns / 300% CRIT DMG+ (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -9294,7 +9294,7 @@
                     "@hit": "21",
                     "@dc": "21",
                     "@cost": "30",
-                    "#text": "Light (AOE) 200% BB ATK+ on Consecutive SBB (Max 3x / SELF) / 100% BB Fill (SELF) / 100% ATK+ DEF+ to Light 3Turns / 100% Spark DMG+ (ALL) 3Turns / 50% Spark DMG+ (SELF) 3Turns"
+                    "#text": "480% Light (AOE) 200% BB ATK+ on Consecutive SBB (Max 3x , SELF) / 100% BB Fill (SELF) / 100% ATK+ DEF+ to Light 3Turns / 100% Spark DMG+ (ALL) 3Turns / 50% Spark DMG+ (SELF) 3Turns"
                 },
                 "ubb": {
                     "@hit": "25",
