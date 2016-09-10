@@ -5,9 +5,9 @@
 <title>Brave Frontier</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 <script src="../js/ga.js"></script>
-<script src="js/konva.min.js"></script>
 </head>
 
 <body>
@@ -18,11 +18,11 @@
   <!-- Left col -->
   <div class="w3-col" style="width:50%">
     <div class="w3-container">
-      <h5>Choose Art. (Use mouse to move art)</h5>
+      <h5>Choose Art. (Use arrow keys to move art)</h5>
       <!-- Trigger/Open the Modal -->
       <button onclick="document.getElementById('id01').style.display='block'" class="w3-btn w3-teal" style="width:100%">Open Unit's Board</button>
       <h5>URL image (you can paste image's url to this box)</h5>
-      <input class="w3-input w3-border" type="text" onChange="changeUnit(this.value);" id="url" value="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10017.png">
+      <input class="w3-input w3-border" type="text" onChange="changeArt(this.value);" id="url" value="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10017.png">
       <!--Modal-->
       <div id="id01" class="w3-modal">
         <div class="w3-modal-content w3-animate-top w3-card-8">
@@ -58,7 +58,7 @@
 			var art = arr.brave.unit[i].art['@path'];
 			var thumb = arr.brave.unit[i].thumb['@path'];
 			if(id !== ""){
-				out+='<img src="' + thumb + '" style="width:50px;cursor:pointer" onClick="changeUnit(' + "'" + art + "'" + ')" >';
+				out+='<img src="' + thumb + '" style="width:50px;cursor:pointer" onClick="changeArt(' + "'" + art + "'" + ')" >';
 			}
 		}
 		document.getElementById("placeholder").innerHTML = out;
@@ -75,21 +75,21 @@
         <option value="images/battle_dark.jpg">Background Dark</option>
       </select>
       <h5>Name</h5>
-      <input class="w3-input w3-border" type="text" onChange="changeName(txt1.value);" id="txt1" value="Vargas">
+      <input class="w3-input w3-border" type="text" onChange="txtboldAppend();" id="txt1">
       <h5>Text</h5>
-      <textarea  class="w3-input w3-border" type="text" onChange="changeDialogue(txt2.value);" id="txt2">Hello, I am Vargas</textarea>
+      <textarea  class="w3-input w3-border" type="text" onChange="wrapText();" id="txt2"></textarea>
     </div>
   </div>
   <!-- Right col -->
   <div class="w3-col" style="width:50%">
     <div style="text-align:center" class="w3-row-padding w3-margin-top">
     <p>
-    	<a class="w3-btn-floating-large w3-teal" id="btn_left" onClick="zoomOut();"><i class="fa fa-search-minus"></i></a>
-        <a class="w3-btn-floating-large w3-teal" id="btn_right" onClick="zoomIn();"><i class="fa fa-search-plus"></i></a>
-        <input class="w3-input w3-border" type="text" id="zoom_factor" value="1" style="width:100px;margin:0 auto;text-align:center">
+    	<a class="w3-btn-floating-large w3-teal" id="btn_left" onClick="zoomFactor('in');"><i class="fa fa-search-minus"></i></a>
+        <a class="w3-btn-floating-large w3-teal" id="btn_right" onClick="zoomFactor('out');"><i class="fa fa-search-plus"></i></a>
+        <input  class="w3-input w3-border" type="text" id="zoom_factor" value="1" style="width:100px;margin:0 auto;text-align:center">
     </p>
       <p>Right click on image below to save</p>
-      <div id="container" style="width:500px;margin:0 auto"></div>
+      <canvas id="canvas" width="500" height="750"></canvas>
     </div>
   </div>
 </div>
