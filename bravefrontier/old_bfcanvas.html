@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Brave Frontier</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="../js/ga.js"></script>
+<script src="js/libs.js"></script>
+</head>
+
+<body>
+<header class="w3-container w3-teal w3-card-2">
+  <h5>BF CANVAS (for PC only)</h5>
+</header>
+
+<div class="w3-container">
+  <h5>Choose Art. (Use arrow keys to move art)</h5>
+  <!-- Trigger/Open the Modal -->
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-btn w3-teal" style="width:100%">Open Unit's Board</button>
+  <!--Modal-->
+  <div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-animate-top w3-card-8">
+    <header class="w3-container w3-teal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn">&times;</span>
+      <h5>Chose your unit</h5>
+    </header>
+      <div id="placeholder"> </div>
+    <div class="w3-container w3-light-grey w3-padding">
+    <button class="w3-btn w3-right w3-white w3-border" onclick="document.getElementById('id01').style.display='none'">Close</button>
+  </div>
+  </div>
+</div>
+  <script>
+	var xmlhttp = new XMLHttpRequest();
+	var url = "data/units.json";
+	
+	xmlhttp.onreadystatechange=function() {
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			myFunction(xmlhttp.responseText);
+		}
+	}
+	xmlhttp.open("GET", url, true);
+	xmlhttp.send();
+	
+	function myFunction(response) {
+		var arr = JSON.parse(response);
+		var i;
+		var out = '';
+
+		var json_len = arr.brave.unit.length;
+		for(i = 0; i < json_len; i++) {
+			var id = arr.brave.unit[i].id;
+			var art = arr.brave.unit[i].art['@path'];
+			var thumb = arr.brave.unit[i].thumb['@path'];
+			if(id !== ""){
+				out+='<img src="' + thumb + '" style="width:50px;cursor:pointer" onClick="changeArt(' + "'" + art + "'" + ')" >';
+			}
+		}
+		document.getElementById("placeholder").innerHTML = out;
+	}
+</script>
+  <h5>Choose Background</h5>
+  <select class="w3-select w3-border" name="option" id="sel" onChange="changeBg();">
+      <option value="images/bg_fbnews.jpg" selected>Default</option>
+      <option value="images/battle_fire.jpg">Background Fire</option>
+      <option value="images/battle_water.jpg">Background Water</option>
+      <option value="images/battle_earth.jpg">Background Earth</option>
+      <option value="images/battle_thunder.jpg">Background Thunder</option>
+      <option value="images/battle_light.jpg">Background Light</option>
+      <option value="images/battle_dark.jpg">Background Dark</option>
+   </select>
+  <h5>Input First Text (BOLD)</h5>
+  <input class="w3-input w3-border" type="text" onChange="txtboldAppend(txt1.value,310);" id="txt1">
+  <h5>Input Second Text</h5>
+  <input class="w3-input w3-border" type="text" onChange="txtnorAppend(txt2.value,335);" id="txt2">
+  <h5>Input Third Text</h5>
+  <input class="w3-input w3-border" type="text" onChange="txtnorAppend(txt2.value,360);" id="txt3">
+</div>
+
+<div style="text-align:center" class="w3-row-padding w3-margin-top">
+	<p>
+    	<a class="w3-btn-floating-large w3-teal" id="btn_left" onClick="artMove('left');"><i class="fa fa-arrow-left"></i></a>
+        <a class="w3-btn-floating-large w3-teal" id="btn_right" onClick="artMove('right');"><i class="fa fa-arrow-right"></i></a>
+        <a class="w3-btn-floating-large w3-teal" id="btn_up" onClick="artMove('up');"><i class="fa fa-arrow-up"></i></a>
+        <a class="w3-btn-floating-large w3-teal" id="btn_down" onClick="artMove('down');"><i class="fa fa-arrow-down"></i></a>
+    </p>
+	<p>Right click on image below to save</p>
+	<canvas id="canvas" width="500" height="375"></canvas>
+</div>
+</body>
+<script src="js/old_bfcanvas.js"></script>
+</html>

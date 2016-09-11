@@ -26,8 +26,6 @@ layer.add(unitImg);
 var dialogueImg = new Konva.Image({
 	x: 0,
 	y: 335,
-	width: 500,
-	height: 415,
 });
 layer.add(dialogueImg);
 

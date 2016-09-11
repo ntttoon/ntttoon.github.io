@@ -1,139 +1,200 @@
-//This script base on: https://github.com/lostdecade/simple_canvas_game
-//Modify: ntttoon
+// create new Konva object
+var stage = new Konva.Stage({
+	container: 'container',
+	width: 500,
+	height: 375
+});
+var layer = new Konva.Layer();
+stage.add(layer);
 
-// Create the canvas
-//var canvas = document.createElement("canvas");
-var ctx = canvas.getContext("2d");
-//canvas.width = 500;
-//canvas.height = 375;
-//document.body.appendChild(canvas);
+// create bg layer
+var bgImg = new Konva.Image({
+	x: 0,
+	y: 0,
+});
+layer.add(bgImg);
 
-// Load image
-var bgImage = new Image();
-bgImage.src = "images/bg_fbnews.jpg";
-//
-var heroImage = new Image();
-heroImage.src = "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10017.png";
-heroImage.onload = function() {
-	reset();
+// create unit layer
+var unitImg = new Konva.Image({
+	x: 0,
+	y: 0,
+	draggable: true,
+});
+layer.add(unitImg);
+
+// create dialogue layer
+var dialogueImg = new Konva.Image({
+	x: 0,
+	y: 255,
+});
+layer.add(dialogueImg);
+
+//// create obj and load image to obj
+// imageObj1 load bg layer
+var imageObj1 = new Image();
+imageObj1.onload = function() {
+	bgImg.image(imageObj1);
+	layer.draw();
 };
-//
-var messImage = new Image();
-messImage.src = "images/mess_box.png";
-// Game objects
-var hero = {
-	speed: 256 // movement in pixels per second
+imageObj1.src = 'images/bg_fbnews.jpg';
+
+// imageObj2 load unit layer
+var imageObj2 = new Image();
+imageObj2.onload = function() {
+	unitImg.image(imageObj2);
+	unitImg.setOffset({
+		x: (unitImg.getWidth() / 2) - 250,
+		y: (unitImg.getHeight() / 2) - 187.5,
+	});
+	layer.draw();
 };
+imageObj2.src = 'http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10017.png';
 
-// Handle keyboard controls
-var keysDown = {};
-
-addEventListener("keydown", function (e) {
-	keysDown[e.keyCode] = true;
-}, false);
-
-addEventListener("keyup", function (e) {
-	delete keysDown[e.keyCode];
-}, false);
-
-//
-var reset = function () {
-	hero.x = -((heroImage.width / 2) - 250);
-	hero.y = -((heroImage.height / 2) - 187.5);
+// imageObj3 load dialogue layer
+var imageObj3 = new Image();
+imageObj3.onload = function() {
+	dialogueImg.image(imageObj3);
+	layer.draw();
 };
+imageObj3.src = 'images/mess_box.png';
 
-// Update game objects
-var update = function (modifier) {
-	if (38 in keysDown) { // Player holding up
-		hero.y -= hero.speed * modifier;
-	}
-	if (40 in keysDown) { // Player holding down
-		hero.y += hero.speed * modifier;
-	}
-	if (37 in keysDown) { // Player holding left
-		hero.x -= hero.speed * modifier;
-	}
-	if (39 in keysDown) { // Player holding right
-		hero.x += hero.speed * modifier;
-	}
-	//
-};
+// create name txt
+var nameText = new Konva.Text({
+	x: 10,
+	y: 270,
+	width: 480,
+	text: 'Ignis Halcyon Vargas',
+	fontSize: 24,
+	fontStyle: 'bold',
+	fontFamily: 'Roboto',
+	fill: 'white',
+	align: 'center',
+	id: 'nametxt'
+});
+layer.add(nameText);
 
-// Draw everything
-var render = function () {
-	ctx.drawImage(bgImage, 0, 0);
-	ctx.drawImage(heroImage, hero.x, hero.y);
-	ctx.drawImage(messImage, 0, 275);
-	txtboldAppend(txt1.value,310);
-	txtnorAppend(txt2.value,335);
-	txtnorAppend(txt3.value,360);
-	//
-};
+// create dialogue txt
+var dialogueText = new Konva.Text({
+	x: 10,
+	y: 300,
+	text: 'Have I outdone my father?\nI can tell he\'s laughing at me from somewhere, for even daring to think so.',
+	fontSize: 20,
+	fontFamily: 'Roboto',
+	lineHeight: 1.1,
+	fill: 'white',
+	width: 480,
+	align: 'center',
+	id: 'dialoguetxt'
+});
+layer.add(dialogueText);
 
-// The main game loop
-var main = function () {
-	var now = Date.now();
-	var delta = now - then;
+// function change unit
+function changeUnit(path){
+	document.getElementById('url').value = path;
+	var imageObj2 = new Image();
+	imageObj2.onload = function() {
+		unitImg.image(imageObj2);
+		layer.draw();
+	};
+	imageObj2.src = path;
+	document.getElementById('id01').style.display='none'
+}
 
-	update(delta / 1000);
-	render();
+// function change bg
+function changeBg(path){
+	var path = document.getElementById('sel').value;
+	var imageObj1 = new Image();
+	imageObj1.onload = function() {
+		bgImg.image(imageObj1);
+		layer.draw();
+	};
+	imageObj1.src = path;
+}
 
-	then = now;
-
-	// Request to do this again ASAP
-	requestAnimationFrame(main);
+// function change name
+function changeName(txt){
+	var a = stage.find('#nametxt')[0];
+	a.destroy(); 
 	
-};
+	var nameText = new Konva.Text({
+		x: 10,
+		y: 270,
+		width: 480,
+		text: txt,
+		fontSize: 24,
+		fontStyle: 'bold',
+		fontFamily: 'Roboto',
+		fill: 'white',
+		align: 'center',
+		id: 'nametxt'
+	});
+	layer.add(nameText);
+	layer.draw();
+}
 
-// Cross-browser support for requestAnimationFrame
-var w = window;
-requestAnimationFrame = w.requestAnimationFrame || w.webkitRequestAnimationFrame || w.msRequestAnimationFrame || w.mozRequestAnimationFrame;
+// function change dialogue
+function changeDialogue(txt){
+	var b = stage.find('#dialoguetxt')[0];
+	b.destroy(); 
 
-// Let's play this game!
-var then = Date.now();
-reset();
-main();
+	var dialogueText = new Konva.Text({
+		x: 10,
+		y: 300,
+		text: txt,
+		fontSize: 20,
+		fontFamily: 'Roboto',
+		lineHeight: 1.1,
+		fill: 'white',
+		width: 480,
+		align: 'center',
+		id: 'dialoguetxt'
+	});
+	layer.add(dialogueText);
+	layer.draw();
+}
+
 //
-function saveimg(){
-	 var dataURL = canvas.toDataURL();
-     document.getElementById('canvasImg').src = dataURL;
+function zoomOut(path){
+	var path = document.getElementById("url").value;
+	var sf = document.getElementById("zoom_factor").value;
+	var a = Number(sf);
+	//
+	var imageObj2 = new Image();
+	imageObj2.onload = function() {
+		unitImg.image(imageObj2);
+		if(a > 0.1){
+			a -= 0.1;
+			document.getElementById("zoom_factor").value = a.toPrecision(1);
+			unitImg.scaleX(a);
+			unitImg.scaleY(a);
+		}
+		layer.draw();
+	};
+	imageObj2.src = path;
 }
-function changeArt(path){
-     heroImage.src = path;
-	 document.getElementById('id01').style.display='none'
+//
+function zoomIn(path){
+	var path = document.getElementById("url").value;
+	var sf = document.getElementById("zoom_factor").value;
+	var a = Number(sf);
+	//
+	var imageObj2 = new Image();
+	imageObj2.onload = function() {
+		unitImg.image(imageObj2);
+		if(a < 1){
+			a += 0.1;
+			document.getElementById("zoom_factor").value = a.toPrecision(1);
+			unitImg.scaleX(a);
+			unitImg.scaleY(a);
+		}
+		layer.draw();
+	};
+	imageObj2.src = path;
 }
-function changeBg(){
-	 var path = document.getElementById('sel').value;
-     bgImage.src = path;
-	 document.getElementById('txt1').focus();
-}
-function txtboldAppend(text,y){
-	var x = canvas.width / 2;
-    //var y = canvas.height / 2;
-	ctx.font = 'bold 24px Roboto';
-	ctx.textAlign = 'center';
-	ctx.fillStyle = 'white';
-	ctx.fillText(text, x, y);
-}
-function txtnorAppend(text,y){
-	var x = canvas.width / 2;
-    //var y = canvas.height / 2;
-	ctx.font = '20px Roboto';
-	ctx.textAlign = 'center';
-	ctx.fillStyle = 'white';
-	ctx.fillText(text, x, y);
-}
-function artMove(direction){
-	if(direction == 'up'){
-		hero.y -= 10;
-	}
-	if(direction == 'down'){
-		hero.y += 10;
-	}
-	if(direction == 'left'){
-		hero.x -= 10;
-	}
-	if(direction == 'right'){
-		hero.x += 10;
-	}
-}
+// add cursor styling
+unitImg.on('mouseover', function() {
+	document.body.style.cursor = 'pointer';
+});
+unitImg.on('mouseout', function() {
+	document.body.style.cursor = 'default';
+});
