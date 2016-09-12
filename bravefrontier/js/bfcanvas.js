@@ -25,7 +25,7 @@ layer.add(unitImg);
 // create dialogue layer
 var dialogueImg = new Konva.Image({
 	x: 0,
-	y: 255,
+	y: 275,
 });
 layer.add(dialogueImg);
 
@@ -61,12 +61,13 @@ imageObj3.src = 'images/mess_box.png';
 // create name txt
 var nameText = new Konva.Text({
 	x: 10,
-	y: 270,
+	y: 290,
 	width: 480,
 	text: 'Ignis Halcyon Vargas',
+	wrap: 'none',
 	fontSize: 24,
 	fontStyle: 'bold',
-	fontFamily: 'Roboto',
+	fontFamily: 'Arial',
 	fill: 'white',
 	align: 'center',
 	id: 'nametxt'
@@ -76,13 +77,14 @@ layer.add(nameText);
 // create dialogue txt
 var dialogueText = new Konva.Text({
 	x: 10,
-	y: 300,
-	text: 'Have I outdone my father?\nI can tell he\'s laughing at me from somewhere, for even daring to think so.',
+	y: 320,
+	text: 'Have I outdone my father?\nI can tell he\'s laughing at me from somewhere.',
 	fontSize: 20,
-	fontFamily: 'Roboto',
+	fontFamily: 'Arial',
 	lineHeight: 1.1,
 	fill: 'white',
 	width: 480,
+	height: 46,
 	align: 'center',
 	id: 'dialoguetxt'
 });
@@ -118,12 +120,13 @@ function changeName(txt){
 	
 	var nameText = new Konva.Text({
 		x: 10,
-		y: 270,
+		y: 290,
 		width: 480,
 		text: txt,
+		wrap: 'none',
 		fontSize: 24,
 		fontStyle: 'bold',
-		fontFamily: 'Roboto',
+		fontFamily: 'Arial',
 		fill: 'white',
 		align: 'center',
 		id: 'nametxt'
@@ -139,13 +142,14 @@ function changeDialogue(txt){
 
 	var dialogueText = new Konva.Text({
 		x: 10,
-		y: 300,
+		y: 320,
 		text: txt,
 		fontSize: 20,
-		fontFamily: 'Roboto',
+		fontFamily: 'Arial',
 		lineHeight: 1.1,
 		fill: 'white',
 		width: 480,
+		height: 46,
 		align: 'center',
 		id: 'dialoguetxt'
 	});
