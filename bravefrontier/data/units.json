@@ -8418,7 +8418,7 @@
             },
             {
                 "id": "1434",
-                "name": "Marefu 7",
+                "name": "Parch Misfit Malef",
                 "role": "bb_fill,ails,bb_atked,ails_atked,ails_add",
                 "rolesp": "",
                 "element": "Fire",
@@ -8463,7 +8463,7 @@
             },
             {
                 "id": "1435",
-                "name": "Marefu 8",
+                "name": "Torch Eccentric Malef",
                 "role": "bb_fill,ails,bb_atked,ails_atked,ails_add",
                 "rolesp": "LS_bb_atked,atk_ailed,bb_regen,add_ele",
                 "element": "Fire",
@@ -8508,7 +8508,7 @@
             },
             {
                 "id": "1436",
-                "name": "Horia 7",
+                "name": "Ocean Slasher Holia",
                 "role": "heal,maxhp,idol,hot,null_stats,null_crit,null_ewd,convert_rec",
                 "rolesp": "",
                 "element": "Water",
@@ -8553,7 +8553,7 @@
             },
             {
                 "id": "1437",
-                "name": "Horia 8",
+                "name": "Torrential Scar Holia",
                 "role": "heal,maxhp,idol,hot,null_stats,null_crit,null_ewd,convert_rec",
                 "rolesp": "null_ails,miti_ele",
                 "element": "Water",
@@ -8598,7 +8598,7 @@
             },
             {
                 "id": "1438",
-                "name": "Lauda 7",
+                "name": "False Demon Lauda",
                 "role": "bb_spark,spark_crit,bb_atk",
                 "rolesp": "",
                 "element": "Light",
@@ -8643,7 +8643,7 @@
             },
             {
                 "id": "1439",
-                "name": "Lauda 8",
+                "name": "Ideal Subject Lauda",
                 "role": "bb_spark,spark_crit,bb_atk",
                 "rolesp": "spark_debuff",
                 "element": "Light",
@@ -8688,7 +8688,7 @@
             },
             {
                 "id": "1440",
-                "name": "Rize 8",
+                "name": "Eternal Radiance Rize",
                 "role": "spark_debuff,hot,idef",
                 "rolesp": "",
                 "element": "Thunder",
@@ -8733,7 +8733,7 @@
             },
             {
                 "id": "1441",
-                "name": "Zelnite 8",
+                "name": "Shining Thief Zelnite",
                 "role": "exp,item,karma,zel,bc,hc,bb_fill,od_rate,bb_rate,bb_atked",
                 "rolesp": "",
                 "element": "Earth",
