@@ -8503,7 +8503,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10937.png"
                 },                
                 "sp": {
-                    "@list": "10 : +20% HP/DEF | 20 : 0-50% DEF depending on HP lost | 30 : Add Effect To BB/SBB (3 Turn 100% ATK Buff on Statused Targets) | 20 : Add Effect To BB/SBB (3 turn 8 BC/turn) | 30 : Add Effect To SBB/UBB (75% Injury/Poison/Sick/Weaken) & Add Effect To SBB/UBB (75% Curse/Paralyze) | 10 : Add Effect To BB/SBB (3 turn Fire Buff) | 10 : Add Effect To BB/SBB (3 turn Water Buff) | 10 : Add Effect To BB/SBB (3 turn Earth Buff) | 10 : Add Effect To BB/SBB (3 turn Thunder Buff) | 20 : Add Effect To BB/SBB (3 turn Light Buff) | 20 : Add Effect To BB/SBB (3 turn Dark Buff)"
+                    "@list": "10 : 20% boost to Def, max HP | 20 : Boosts Def relative to how low remaining HP is (0.5% boost per 1% HP lost, 50% boost total) | 30 : Adds considerable damage boost against status afflicted foes for 3 turns effect to BB/SBB (100% boost) | 20 : Adds enormous BB gauge boost each turn for 3 turns effect to BB/SBB (Fills 8 BC for 3 turns) | 30 : Adds probable random status ailment infliction effect to SBB/UBB (75% chance) | 10 : Adds Fire element to attack for 3 turns effect to BB/SBB | 10 : Adds Water element to attack for 3 turns effect to BB/SBB | 10 : Adds Earth element to attack for 3 turns effect to BB/SBB | 10 : Adds Thunder element to attack for 3 turns effect to BB/SBB | 20 : Adds Light element to attack for 3 turns effect to BB/SBB | 20 : Adds Dark element to attack for 3 turns effect to BB/SBB"
                 }
             },
             {
@@ -8593,7 +8593,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20877.png"
                 },                
                 "sp": {
-                    "@list": "10 : (*) +30% HP | 10 : +50% HP (Prerequisite: *) | 20 : Negate Status Ailments | 10 : BBoT occur at the Start of Turn | 30 : BB+: HoT 1000 HP (+10% Target REC) & SBB+: HoT 1000 HP (+10% Target REC) | 30 : Add Effect To BB/SBB (3 turn Negate Status Ailments) | 20 : Add Elements (thunder,fire,water,earth) To Attacks | 20 : LS+: 0-20% ATK/DEF/REC depending on HP remaining | 30 : Add Effect To BB/SBB (2 turn Fire Dmg 10% Reduction) & Add Effect To BB/SBB (2 turn Water Dmg 10% Reduction) | 40 : BB+: Increase Max HP 5% & UBB+: Increase Max HP 5%"
+                    "@list": "10 : (*)  30% boost to max HP | 10 : Raise max HP boost from 30% to 50% (Prerequisite: *) | 20 : Negates all status ailments | 10 : Activates at turn's end HP restoration each turn effect at turn's start instead (effects will only activate once in Arena/Colosseum) | 30 : Enhances BB/SBB's HP restoration each turn effect (+1000 HP. Heal 4000-4500 + 15% Rec total) | 30 : Adds status ailment negation for 3 turns effect to BB/SBB | 20 : Adds Fire, Water, Thunder, Earth elements to attack effect | 20 : Enhances LS's Atk, Def, Rec boost relative to how high HP is effect (+20% boost, 70% boost total at max HP, +0.7% boost per 1% HP remaining total) | 30 : Adds slight Fire, Water elemental damage reduction for 2 turns effect to BB/SBB (10% reduction) | 40 : Enhances BB/UBB's max HP boost effect (+5% HP boost. 20% boost on BB, 40% boost on UBB total)"
                 }
             },
             {
@@ -8683,7 +8683,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51037.png"
                 },                
                 "sp": {
-                    "@list": "10 : +50% ATK | 10 : +50% ATK when BB Gauge is above 50% | 10 : (*) +50% Spark Damage | 10 : (**) +70% Spark Damage (Prerequisite: *) | 10 : +100% Spark Damage (Prerequisite: **) | 20 : Add Effect To BB/SBB (1 turn 25% Spark Damage Taken Debuff (25% Chance)) | 20 : BB+: 10% Chance Sparks Crit Buff (0% Damage) & SBB+: 10% Chance Sparks Crit Buff (0% Damage) | 50 : BB+: +100% BB/SBB/UBB Mod & SBB+: +100% BB/SBB/UBB Mod"
+                    "@list": "10 : 50% boost to Atk | 10 : Boosts Atk when BB gauge is over 50% (50% boost) | 10 : (*) 50% boost to Spark damage | 10 : (**) Raises Spark damage boost from 50% to 70% (Prerequisite: *) | 10 : Raises Spark damage boost from 70% to 100% (Prerequisite: **) | 20 : Adds probable Spark vulnerability infliction for 2 turns effect to BB/SBB (25% chance for 25% vulnerability) | 20 : Enhances BB/SBB's success rate of Spark critical effect (+10% chance. 30% chance total) | 50 : Enhances BB/SBB's BB Atk boost effect (+100% boost. 350/400% total)"
                 }
             },
             {
@@ -8728,7 +8728,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40577.png"
                 },                
                 "sp": {
-                    "@list": "20 : (*) +30% HP | 10 : +50% HP (Prerequisite: *) | 20 : (**) +50% Spark Damage | 10 : (***) +70% Spark Damage (Prerequisite: **) | 10 : +100% Spark Damage (Prerequisite: ***) | 20 : +50% Crit Damage | 10 : HBoT occur at the Start of Turn | 20 : LS+: +10% HP | 30 : Add Effect To SBB (3 Turn HoT 3500-4000 HP (+10% Target REC)) | 20 : Add Effect To BB/SBB (3 Turn HoT 4500-5000 HP (+10% Target REC))"
+                    "@list": "20 : (*) 30% boost to max HP | 10 : Raises max HP boost from 30% to 50% (Prerequisite: *) | 20 : (**) 50% boost to Spark damage | 10 : (***) Raises Spark damage boost from 50% to 70% (Prerequisite: **) | 10 : Raises Spark damage boost from 70% to 100% (Prerequisite: ***) | 20 : Boosts critical hit damage (50% boost) | 10 : Activates at turn's end HP restoration each turn effect at turn's start instead (effects will only activate once in Arena/Colosseum) | 20 : Enhances LS's max HP boost from 40% to 50% | 30 : (****) Adds great HP restoration for 3 turns effect to SBB (Heals (3500~4000 + 10% of target's Rec) HP) | 20 : Enhances BB/SBB's great HP restoration for 3 turns effect (+1000 HP healing, heals (4500~5000 + 10% of target's Rec) HP total) (Prerequisites: ****)"
                 }
             },
             {
@@ -8773,7 +8773,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30447.png"
                 },                
                 "sp": {
-                    "@list": "20 : +20% All Stats | 20 : Hit Count +1 | 20 : +1% Item Drop Rate | 30 : 15% OD Gauge Fill Rate | 30 : BB+: +10% BC/HC Drop Rate Buff & SBB+: +10% BC/HC Drop Rate Buff | 50 : BB+: Fill 3 BC & SBB+: Fill 3 BC | 50 : BB+: +2% Item Drop Rate Buff & SBB+: +2% Item Drop Rate Buff | 100 : LS+: +5% Player XP"
+                    "@list": "20 : 20% boost to all parameters | 20 : Raises normal hit amount (+1 to each hit count) | 20 : Slightly boosts Item drop rate (1% boost) | 30 : Boosts OD gauge fill rate (15% boost) | 30 : Enhances BB/SBB's BC and HC drop rate boost effect (+10% boost, 40% boost total) | 50 : Enhances BB/SBB's BB gauge boost effect (+3 BC fill, 11 BC fill on BB, 13 BC fill on SBB total) | 50 : Enhances BB/SBB's Item drop rate boost effect (+2% boost, 5% boost total) | 100 : Enhances LS's EXP boost effect (+5% boost, 15% boost total)"
                 }
             },
             {
