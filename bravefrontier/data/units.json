@@ -9317,6 +9317,96 @@
                 }
             },
             {
+                "id": "1454",
+                "name": "Quaid 8",
+                "role": "bb_rate,bb_atk,bb_regen,add_ele",
+                "rolesp": "spark,crit,bb_atked,atk_down,def_down,heal",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "15",
+                    "@dc": "45",
+                    "#text": "Reduce 20% BB Cost (ALL) / 30% BC Fill+ (ALL) / 30% HP 100% ATK (5 elements required) (ALL) / 30% HP 50% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "24",
+                    "#text": "370% Fire,water,thunder (AOE) / 50% BC Fill+ (ALL) 3Turns / 250% BB ATK%+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "24",
+                    "#text": "580% Light,dark (AOE) / 7BC Fill 3Turns / Add Fire,water,earth,thunder to ATK (ALL) 3Turns / 300% BB ATK%+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "25",
+                    "#text": "1500% Earth (AOE) / 50BC Fill when ATKed (100%) (ALL) 3Turns / Add Fire,water,earth,thunder,light,dark to ATK (ALL) 3Turns / 300% ATK+ 300% DEF+ (ALL) 3Turns / 600% BB ATK%+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "Meirith Pearl is Equipped",
+                    "#text": "30% ALL Stats / 0-150% ATK+ DEF+ REC+ Based on HP Lost (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30567.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30567.png"
+                },                
+                "sp": {
+                    "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 20 : +75% BB Mod | 30 : SBB+ Add Light/Dark elements | 50 : Add Effect to BB/SBB (3 turn +100% Spark damage) | 50 : Add Effect to BB/SBB (3 turn +60% Crit rate) | 50 : Add Effect To BB/SBB (3 Turn 4-7 BC when hit) | 30 : Add Effect To BB/SBB (1 turn 30% chance, 50% ATK/DEF Down) | 40 : Add Effect To BB/SBB (Heal 2000-3000 + 11% Rec HP) | 40 : BB+/SBB+/UBB+: +100% BB Atk buff"
+                }
+            },
+            {
+                "id": "1455",
+                "name": "Zellha 8",
+                "role": "atk_down_add,ewd,ails_add,atk_down,def_down,ails",
+                "rolesp": "LS_bb_reduce,convert_atk,crit_dmg,crit,atk_ailed",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "12",
+                    "@dc": "48",
+                    "#text": "Reduce 25% BB Cost (ALL) / 40% HP 40% ATK 40% DEF 40% REC (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison (ALL) / 10% Para 10% Curse (ALL)"
+                },
+                "bb": {
+                    "@hit": "30",
+                    "@dc": "30",
+                    "@cost": "26",
+                    "#text": "360% Light (AOE) / Add 20% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 50% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns / Add 15% Injury 15% Weak 15% Sick to ATK (ALL) 3Turns / Add 10% Poison 10% Para 10% Curse to ATK (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "40",
+                    "@dc": "40",
+                    "@cost": "28",
+                    "#text": "560% Light,dark (AOE) / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns / 75% Sick 75% Poison 75% Curse / 75% Injury 75% Weak 75% Para / 50% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "48",
+                    "@dc": "48",
+                    "@cost": "30",
+                    "#text": "1500% Light (AOE) / Reduce DMG (100%) 2Turns / 300% DMG+ to Ailed Enemy (ALL) 3Turns / 100% Sick 100% Poison 100% Curse / 100% Injury 100% Weak 100% Para / 300% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% Spark DMG+ (SELF) / 100% DMG+ to Ailed Enemy (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50477.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50477.png"
+                },                
+                "sp": {
+                    "@list": "10 : +20% HP/ATK | 10 : 0-50% ATK relative to HP remaining | 20 : +50% Spark | 20 : +50% elemental damage | 20 : +50% ATK against status afflicted foes | 50 : BB+/SBB+: +50% elemental damage | 40 : Add Effect To BB/SBB (3 turn 70% DEF -> ATK) | 30 : Add Effect To BB/SBB (3 turn +50% Crit Damage) | 30 : Add Effect To BB/SBB (3 turn +60% Crit rate) | 50 : Add Effect to BB/SBB (3 turn +100% ATK against status afflicted foes)"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
