@@ -11748,7 +11748,7 @@
             },
             {
                 "id": "8216",
-                "name": "Terry Bogard 8",
+                "name": "Terry Bogard (OMNI)",
                 "role": "add_ele,null_crit,miti,atk,def,rec,convert_def",
                 "rolesp": "idef,miti_ele",
                 "element": "Earth",
@@ -11928,7 +11928,7 @@
             },
             {
                 "id": "8222",
-                "name": "Iori Yagami 8",
+                "name": "Iori Yagami (OMNI)",
                 "role": "bb_rate,add_ele,bb_atk",
                 "rolesp": "atk,idef",
                 "element": "Dark",
@@ -12104,6 +12104,276 @@
                 },                
                 "sp": {
                     "@list": ""
+                }
+            },
+            {
+                "id": "8227.8",
+                "name": "Hallelujah 7",
+                "role": "null_ails,idol,od_rate,convert_def",
+                "rolesp": "LS_null_id",
+                "element": "Thunder",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "18",
+                    "@dc": "36",
+                    "#text": "10% Earth Resist (ALL) / 200% BB ATK%+ (ALL) / Null Ignore DEF (ALL) / 50% HP 150% ATK (Thunder)"
+                },
+                "bb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "22",
+                    "#text": "350% Thunder (AOE) / Null Ails 3Turns / 10% Chance Angel Idol (ALL) 999Turns"
+                },
+                "sbb": {
+                    "@hit": "26",
+                    "@dc": "26",
+                    "@cost": "24",
+                    "#text": "560% Thunder (AOE) / 20% OverDrive Fill+ 3Turns / Null Ails 3Turns / Convert 60% attack to DEF (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "30",
+                    "@dc": "30",
+                    "@cost": "30",
+                    "#text": "1300% Thunder (AOE) / 300% CRIT DMG+ (ALL) 3Turns / 50% Chance Angel Idol 100% HP (ALL) 999Turns / Convert 250% attack to DEF (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Ails (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840367.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_840367.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8228.8",
+                "name": "Hallelujah (OMNI)",
+                "role": "bb_fill,null_ails,idol,od_rate,convert_def",
+                "rolesp": "LS_null_id,cure",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "19",
+                    "@dc": "57",
+                    "#text": "15% Earth Resist (ALL) / 250% BB ATK%+ (ALL) / Null Ignore DEF (ALL) / 60% HP 200% ATK (Thunder)"
+                },
+                "bb": {
+                    "@hit": "26",
+                    "@dc": "26",
+                    "@cost": "22",
+                    "#text": "370% Thunder (AOE) / 10BC Fill (ALL) 1Turn / Null Ails 3Turns / 10% Chance Angel Idol (ALL) 999Turns"
+                },
+                "sbb": {
+                    "@hit": "36",
+                    "@dc": "36",
+                    "@cost": "24",
+                    "#text": "Thunder (AOE) 580% BB ATK+ on Consecutive SBB (Max 1x , SELF) / 30% OverDrive Fill+ 3Turns / Null Ails 3Turns / Add Fire,water to ATK (SELF) 1Turns / Convert 70% attack to DEF (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "40",
+                    "@dc": "40",
+                    "@cost": "30",
+                    "#text": "2000% Thunder (AOE) / 80% OverDrive Fill+ 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 50% Chance Angel Idol 100% HP (ALL) 999Turns / Convert 250% attack to DEF (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Ails (SELF) / 70% ATK+ when BB Gauge > 50% (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840368.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_840368.png"
+                },                
+                "sp": {
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 10 : (*) Boosts 50% Spark damage | 20 : Boosts 50% Spark damage to 100% Spark damage (Prerequisite: *) | 40 : Resistance against 1 KO attack when HP is below 20% | 20 : Adds status ailment removal effect to BB/SBB | 20 : Adds damage boost to Thunder types for 3 turns effect to BB/SBB (75% Atk to Thunder types) | 30 : Enhances SBB's huge boost to Def relative to Atk effect (+10% boost, 80% Atk to Def total) | 40 : Adds Thunder elemental damage boost for 3 turns effect to SBB (150% elemental damage) | 40 : Enhances probability of BB's resistance against 1 KO attack effect (+5% chance, 15% chance total)"
+                }
+            },
+            {
+                "id": "8229",
+                "name": "Gaston 7",
+                "role": "atk_down,bb_atked,id,hit",
+                "rolesp": "",
+                "element": "Light",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "39",
+                    "#text": "10% Dark Resist (ALL) / 25% Chance AOE on Normal ATK (-50% DMG) (ALL) / 50% HP 150% ATK (Light)"
+                },
+                "bb": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "@cost": "17",
+                    "#text": "760% Light (TGT) / 70% Chance -50% Enemy ATK 1Turns / 100% Weak"
+                },
+                "sbb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "33",
+                    "#text": "560% Light (AOE) / 5-6BC Fill when ATKed (100%) (ALL) 3Turns / Ignore DEF (ALL) 3Turns / Normal HitCount +100% (100% DMG) (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "19",
+                    "@dc": "19",
+                    "@cost": "30",
+                    "#text": "1300% Light (AOE) / Normal HitCount +300% (100% DMG) (ALL) 3Turns / 300% ATK+ 300% DEF+ (ALL) 3Turns / 100% Chance AOE on Normal ATK (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "when ATK Boosting Type Sphere is Equipped",
+                    "#text": "20% ALL Stats"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850367.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850367.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8230",
+                "name": "Gaston (OMNI)",
+                "role": "atk_down,bb_atked,id,hit",
+                "rolesp": "",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "16",
+                    "@dc": "48",
+                    "#text": "15% Dark Resist (ALL) / 100% Chance 10BC Fill on ATK (ALL) / 35% Chance AOE on Normal ATK (-50% DMG) (ALL) / 60% HP 200% ATK (Light)"
+                },
+                "bb": {
+                    "@hit": "20",
+                    "@dc": "60",
+                    "@cost": "17",
+                    "#text": "780% Light (TGT) / Drain 50-75% HP (SELF) / 70% Chance -50% Enemy ATK 1Turns / 100% Weak"
+                },
+                "sbb": {
+                    "@hit": "19",
+                    "@dc": "19",
+                    "@cost": "33",
+                    "#text": "580% Light (AOE) / 5-8BC Fill when ATKed (100%) (ALL) 3Turns / Ignore DEF (ALL) 3Turns / Normal HitCount +200% (100% DMG) (ALL) 3Turns / 150% ATK+ 150% DEF+ 150% REC+ (SELF) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "30",
+                    "#text": "1500% Light (AOE) / Normal HitCount +300% (100% DMG) (ALL) 3Turns / 300% ATK+ 300% DEF+ (ALL) 3Turns / 1200% DMG Each Turn 3Turns / 100% Chance AOE on Normal ATK (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "when ATK Boosting Type Sphere is Equipped",
+                    "#text": "30% ALL Stats / 25% ATK+ DEF+ REC+ Each Turn (Max 3x stack) (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850368.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850368.png"
+                },                
+                "sp": {
+                    "@list": "10 : 50% boost to Atk | 10 : Boosts Atk relative to remaining HP (0.5% boost per 1% HP left. 50% boost total) | 30 : Normal attack may hit all foes (20% chance with 50% damage penalty) | 10 : Enhances probability of normal attacks hitting all foes effect added (+10% chance. 30% chance total) | 20 : Raises normal hit amount (+1 hit count) | 10 : Allows SBB's self parameter boost effects to last for additional turn | 20 : Enhances BB's probability to perform 1 extra action within the same turn (+20% chance. 70% chance total) | 20 : Adds damage boost to Light types for 3 turns effect to BB/SBB (75% Atk of Light types) | 30 : Adds Paralysis effect to BB (100% chance) | 40 : Adds Light elemental damage boost effect for 3 turns effect to SBB (150% elemental damage) | 50 : Adds 15% Dark elemental damage reduction for 2 turns effect to BB/SBB"
+                }
+            },
+            {
+                "id": "8231",
+                "name": "Toki 7",
+                "role": "ails,bb_atk",
+                "rolesp": "",
+                "element": "Dark",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "2",
+                    "@dc": "48",
+                    "#text": "10% Light Resist (ALL) / 80% Spark DMG+ (ALL) / 50% HP 150% ATK (Dark)"
+                },
+                "bb": {
+                    "@hit": "2",
+                    "@dc": "50",
+                    "@cost": "20",
+                    "#text": "Dark (TGT) 400%-700% BB ATK% Based on HP LEFT / 55BC Fill 1Turns / 80% Sick 80% Curse"
+                },
+                "sbb": {
+                    "@hit": "2",
+                    "@dc": "54",
+                    "@cost": "35",
+                    "#text": "500% Dark (TGT) 500%-1500% BB ATK% Based on HP LEFT / 100% BB Fill (SELF) / 300% BB ATK%+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "2",
+                    "@dc": "60",
+                    "@cost": "25",
+                    "#text": "Dark (TGT) 1500%-3000% BB ATK% Based on HP LEFT / 100% Chance Heal 100% DMG when ATKed (ALL) 3Turns / 450% BB ATK%+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "100% Chance Reflect 50% DMG (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860367.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860367.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8232",
+                "name": "Toki (OMNI)",
+                "role": "ails,spark_debuff,bb_atk",
+                "rolesp": "atk_ailed,od_fill",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "3",
+                    "@dc": "51",
+                    "#text": "15% Light Resist (ALL) / 100% Spark DMG+ (ALL) / 25% OverDrive Fill+ (ALL) / 60% HP 200% ATK (Dark)"
+                },
+                "bb": {
+                    "@hit": "3",
+                    "@dc": "54",
+                    "@cost": "20",
+                    "#text": "Dark (TGT) 500%-800% BB ATK% Based on HP LEFT / 55BC Fill 1Turns / 90% Sick 90% Curse"
+                },
+                "sbb": {
+                    "@hit": "3",
+                    "@dc": "60",
+                    "@cost": "35",
+                    "#text": "660% Dark (TGT) / Dark (TGT) 500%-1500% BB ATK% Based on HP LEFT / 100% BB Fill (SELF) / 35% Chance Enemy receives 70% Spark DMG+ 1Turns / 350% BB ATK%+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "3",
+                    "@dc": "66",
+                    "@cost": "25",
+                    "#text": "Dark (TGT) 2000%-4000% BB ATK% Based on HP LEFT / 100% Chance Heal 100% DMG when ATKed (ALL) 3Turns / 100% Chance Enemy receives 150% Spark DMG+ 2Turns / 550% BB ATK%+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "100% Chance Reflect 50% DMG (SELF) / 20% Chance Reduce DMG to 1 (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860368.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860368.png"
+                },                
+                "sp": {
+                    "@list": "10 : (*) 50% boost to Spark damage | 20 : Boosts 50% Spark damage to 100% Spark damage (Prerequisites: *) | 10 : Boosts critical hit damage (50% boost) | 20 : Negates all status ailments | 80 : 80% damage reduction from Dark Types | 30 : Adds damage boost against status afflicted foes for 3 turns effect to BB/SBB (160% boost) | 20 : Adds damage boost to Dark types for 3 turns effect to BB/SBB (75% boost to Atk of Dark types) | 30 : Adds OD gauge boost effect to SBB (8% boost) | 40 : Adds Dark elemental damage boost effect for 3 turns effect to SBB (150% boost) | 40 : Enhances SBB/UBB's BB Atk boost effect (+100% boost, 450% boost on SBB, 650% boost on UBB total)"
                 }
             }
         ]
