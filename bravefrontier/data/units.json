@@ -11229,7 +11229,7 @@
                     "@hit": "24",
                     "@dc": "24",
                     "@cost": "30",
-                    "#text": "900% Dark (AOE) 300%-900% BB ATK% Based on HP LEFT / 100% Spark DMG+ (ALL) 3Turns / 300% BB ATK%+ (ALL) 3Turns / Convert 70% DEF to ATK (ALL) 3Turns"
+                    "#text": "900% Dark (AOE) 300%-900% BB ATK% Based on HP LEFT / 110% Spark DMG+ (ALL) 3Turns / 350% BB ATK%+ (ALL) 3Turns / Convert 80% DEF to ATK (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "26",
