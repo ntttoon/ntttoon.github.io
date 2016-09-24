@@ -39,8 +39,8 @@ body, html {
 	z-index: 2;
 }
 .art img {
-	height: 720px;
-	margin-left:540px;
+	width: 70%;
+	margin-left:40%;
 }
 .unit_ele {
 	position: absolute;
