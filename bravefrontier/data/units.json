@@ -12630,7 +12630,7 @@
                     "@hit": "3",
                     "@dc": "66",
                     "@cost": "25",
-                    "#text": "Dark (TGT) 2000%-4000% BB ATK% Based on HP LEFT / 100% Chance Heal 100% DMG when ATKed (ALL) 3Turns / 100% Chance Enemy receives 150% Spark DMG+ 2Turns / 550% BB ATK%+ (ALL) 3Turns"
+                    "#text": "Dark (TGT) 2000%-4000% BB ATK% Based on HP LEFT / 100% Chance Reduce 5% Enemy HP Left /100% Chance Heal 100% DMG when ATKed (ALL) 3Turns / 100% Chance Enemy receives 150% Spark DMG+ 2Turns / 550% BB ATK%+ (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
