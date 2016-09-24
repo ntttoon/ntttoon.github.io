@@ -2569,7 +2569,7 @@
             {
                 "id": "1036",
                 "name": "Blizzard Fang Signas",
-                "role": "crit,ails,crit_dmg",
+                "role": "crit,ails,atk_ele,crit_dmg",
                 "rolesp": "",
                 "element": "Water",
                 "rarity": "7",
@@ -3354,7 +3354,7 @@
                     "@hit": "19",
                     "@dc": "19",
                     "@cost": "22",
-                    "#text": "480% Dark (AOE) 100% BB ATK+ on Consecutive SBB (Max 5x , SELF) / 40% BC Fill+ (ALL) 3Turns"
+                    "#text": "480% Dark (AOE) / 100% BB ATK+ on Consecutive SBB (Max 5x , SELF) / 40% BC Fill+ (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "21",
@@ -3424,7 +3424,7 @@
             {
                 "id": "1135",
                 "name": "Mayhem Empress Luly",
-                "role": "bc,hc,convert_def",
+                "role": "bc,hc,atk_ele,convert_def",
                 "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
@@ -3469,7 +3469,7 @@
             {
                 "id": "1136",
                 "name": "Optimum Mecha Grybe",
-                "role": "atk_down_add",
+                "role": "atk_down_add,atk_ele",
                 "rolesp": "",
                 "element": "Thunder",
                 "rarity": "7",
@@ -3714,7 +3714,7 @@
                     "@hit": "15",
                     "@dc": "15",
                     "@cost": "26",
-                    "#text": "500% Thunder (AOE) 100% BB ATK+ on Consecutive SBB (Max 3x , SELF) / Normal HitCount +100% (100% DMG) (ALL) 3Turns / 300% DMG Each Turn 3Turns / Convert 60% DEF to ATK (ALL) 3Turns"
+                    "#text": "500% Thunder (AOE) / 100% BB ATK+ on Consecutive SBB (Max 3x , SELF) / Normal HitCount +100% (100% DMG) (ALL) 3Turns / 300% DMG Each Turn 3Turns / Convert 60% DEF to ATK (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "20",
@@ -4234,7 +4234,7 @@
             {
                 "id": "1196",
                 "name": "Siva Afi Ramna",
-                "role": "heal,def,rec,cure",
+                "role": "heal,def,rec,atk_ele,cure",
                 "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
@@ -4774,7 +4774,7 @@
             {
                 "id": "1234",
                 "name": "Paladin Crusader Sodis",
-                "role": "bb_rate,spark,bb_atk,miti,spark_debuff",
+                "role": "bb_rate,spark,atk_ele,bb_atk,miti,spark_debuff",
                 "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
@@ -4819,7 +4819,7 @@
             {
                 "id": "1235",
                 "name": "Phantom Victor Zephyr",
-                "role": "od_fill,atk,def,rec,idef",
+                "role": "od_fill,atk_ele,atk,def,rec,idef",
                 "rolesp": "",
                 "element": "Dark",
                 "rarity": "7",
@@ -5109,7 +5109,7 @@
                     "@hit": "18",
                     "@dc": "18",
                     "@cost": "29",
-                    "#text": "500% Dark (AOE) 100% BB ATK+ on Consecutive SBB (Max 5x , SELF) / 100% BB Fill (SELF) / 750% DMG Each Turn 1Turns / 200% BB ATK%+ (ALL) / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns"
+                    "#text": "500% Dark (AOE) / 100% BB ATK+ on Consecutive SBB (Max 5x , SELF) / 100% BB Fill (SELF) / 750% DMG Each Turn 1Turns / 200% BB ATK%+ (ALL) / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "23",
@@ -5559,7 +5559,7 @@
                     "@hit": "21",
                     "@dc": "42",
                     "@cost": "32",
-                    "#text": "570% Dark (TGT) 300% BB ATK+ on Consecutive SBB (Max 5x , SELF) / 100% BB Fill (SELF) / 50% Chance -50% Enemy ATK 1Turns / 80% Injury 80% Weak"
+                    "#text": "570% Dark (TGT) / 300% BB ATK+ on Consecutive SBB (Max 5x , SELF) / 100% BB Fill (SELF) / 50% Chance -50% Enemy ATK 1Turns / 80% Injury 80% Weak"
                 },
                 "ubb": {
                     "@hit": "24",
@@ -7989,7 +7989,7 @@
                     "@hit": "18",
                     "@dc": "18",
                     "@cost": "28",
-                    "#text": "420% Thunder (AOE) 200% BB ATK+ on Consecutive SBB (Max 3x , SELF) / 100% BB Fill (SELF) / 25% Chance Enemy receives 25% Spark DMG+ 1Turns / Add 20% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 20% Chance -50% Enemy ATK 1Turns / 20% Chance -50% Enemy DEF 1Turns"
+                    "#text": "420% Thunder (AOE) / 200% BB ATK+ on Consecutive SBB (Max 3x , SELF) / 100% BB Fill (SELF) / 25% Chance Enemy receives 25% Spark DMG+ 1Turns / Add 20% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 20% Chance -50% Enemy ATK 1Turns / 20% Chance -50% Enemy DEF 1Turns"
                 },
                 "ubb": {
                     "@hit": "21",
@@ -8034,7 +8034,7 @@
                     "@hit": "20",
                     "@dc": "20",
                     "@cost": "30",
-                    "#text": "480% Thunder (AOE) 200% BB ATK+ on Consecutive SBB (Max 3x , SELF) / 100% BB Fill (SELF) / 25% Chance Enemy receives 25% Spark DMG+ 1Turns / Add 20% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns"
+                    "#text": "480% Thunder (AOE) / 200% BB ATK+ on Consecutive SBB (Max 3x , SELF) / 100% BB Fill (SELF) / 25% Chance Enemy receives 25% Spark DMG+ 1Turns / Add 20% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns"
                 },
                 "ubb": {
                     "@hit": "25",
@@ -9229,7 +9229,7 @@
             {
                 "id": "1452",
                 "name": "Garrel 7",
-                "role": "atk,crit,spark,def",
+                "role": "atk_ele,crit,spark,def_ele",
                 "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
@@ -9249,7 +9249,7 @@
                     "@hit": "18",
                     "@dc": "18",
                     "@cost": "28",
-                    "#text": "420% Light (AOE) 200% BB ATK+ on Consecutive SBB (Max 3x , SELF) / 100% BB Fill (SELF) / 80% ATK+ DEF+ to Light 3Turns / 80% Spark DMG+ (ALL) 3Turns / 30% Spark DMG+ (SELF) 3Turns"
+                    "#text": "420% Light (AOE) / 200% BB ATK+ on Consecutive SBB (Max 3x , SELF) / 100% BB Fill (SELF) / 80% ATK+ DEF+ to Light 3Turns / 80% Spark DMG+ (ALL) 3Turns / 30% Spark DMG+ (SELF) 3Turns"
                 },
                 "ubb": {
                     "@hit": "21",
@@ -9274,7 +9274,7 @@
             {
                 "id": "1453",
                 "name": "Garrel 8",
-                "role": "atk,crit,spark,def",
+                "role": "atk_ele,crit,spark,def_ele",
                 "rolesp": "LS_null_crit,bb_regen",
                 "element": "Light",
                 "rarity": "8",
@@ -9294,7 +9294,7 @@
                     "@hit": "21",
                     "@dc": "21",
                     "@cost": "30",
-                    "#text": "480% Light (AOE) 200% BB ATK+ on Consecutive SBB (Max 3x , SELF) / 100% BB Fill (SELF) / 100% ATK+ DEF+ to Light 3Turns / 100% Spark DMG+ (ALL) 3Turns / 50% Spark DMG+ (SELF) 3Turns"
+                    "#text": "480% Light (AOE) / 200% BB ATK+ on Consecutive SBB (Max 3x , SELF) / 100% BB Fill (SELF) / 100% ATK+ DEF+ to Light 3Turns / 100% Spark DMG+ (ALL) 3Turns / 50% Spark DMG+ (SELF) 3Turns"
                 },
                 "ubb": {
                     "@hit": "25",
@@ -9404,6 +9404,276 @@
                 },                
                 "sp": {
                     "@list": "10 : +20% HP/ATK | 10 : 0-50% ATK relative to HP remaining | 20 : +50% Spark | 20 : +50% elemental damage | 20 : +50% ATK against status afflicted foes | 50 : BB+/SBB+: +50% elemental damage | 40 : Add Effect To BB/SBB (3 turn 70% DEF -> ATK) | 30 : Add Effect To BB/SBB (3 turn +50% Crit Damage) | 30 : Add Effect To BB/SBB (3 turn +60% Crit rate) | 50 : Add Effect to BB/SBB (3 turn +100% ATK against status afflicted foes)"
+                }
+            },
+            {
+                "id": "1457",
+                "name": "Riones 7",
+                "role": "bb_regen,ewd,miti_ele,atk_ele,convert_atk",
+                "rolesp": "",
+                "element": "Fire",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "7",
+                    "@dc": "35",
+                    "#text": "100% Element Weakness DMG+ (fire,water) / 40% HP 40% ATK (ALL) / Reduce DMG (15%) from (Fire,earth) Enemy (ALL)"
+                },
+                "bb": {
+                    "@hit": "11",
+                    "@dc": "11",
+                    "@cost": "26",
+                    "#text": "350% Fire (AOE) / 5BC Fill 3Turns / 100% Element Weakness DMG+ (fire,water) (ALL) 3Turns / Reduce DMG (10%) from (Fire,earth) Enemy2Turns"
+                },
+                "sbb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "29",
+                    "#text": "560% Fire (AOE) / 80% ATK+ to Fire 3Turns / Convert 60% DEF to ATK (ALL) 3Turns / 100% Element Weakness DMG+ (fire,water) (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "1300% Fire (AOE) / 250% Spark DMG+ (ALL) 3Turns / Convert 200% DEF to ATK (ALL) 3Turns / 350% Element Weakness DMG+ (fire,water) (ALL) 3Turns / Reduce DMG (80%) from (Fire,earth) Enemy3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Reduce 20% BB Cost (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10946.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10946.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1458",
+                "name": "Riones 8",
+                "role": "bb_regen,ewd,miti_ele,atk_ele,convert_atk",
+                "rolesp": "atk_ele,def_ele",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "11",
+                    "@dc": "44",
+                    "#text": "150% Element Weakness DMG+ (fire,water) / 50% HP 50% ATK (ALL) / Reduce DMG (15%) from (Fire,earth) Enemy (ALL) / Reduce DMG (20%) on > 5k DMG Received (ALL)"
+                },
+                "bb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "27",
+                    "#text": "370% Fire (AOE) / 7BC Fill 3Turns / 125% Element Weakness DMG+ (fire,water) (ALL) 3Turns / Reduce DMG (10%) from (Fire,earth) Enemy2Turns"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "30",
+                    "#text": "580% Fire (AOE) / 100% ATK+ to Fire 3Turns / Convert 70% DEF to ATK (ALL) 3Turns / 125% Element Weakness DMG+ (fire,water) (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "30",
+                    "#text": "1500% Fire (AOE) / 300% Spark DMG+ (ALL) 3Turns / Convert 250% DEF to ATK (ALL) 3Turns / 450% Element Weakness DMG+ (fire,water) (ALL) 3Turns / Reduce DMG (80%) from (Fire,earth) Enemy3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Reduce 20% BB Cost (SELF) / 20% Chance Reduce DMG (20%) (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10947.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10947.png"
+                },                
+                "sp": {
+                    "@list": "10 : +20% ATK/REC | 10: +20% HP/DEF | 10 : 3 BC/turn | 30 : Add Effect To SBB (2 turn Fire/Earth Dmg 10% Reduction) | 10 : BB+: 2 BC/turn | 50 : BB+: +25% Weakness Damage & SBB+: +25% Weakness Damage | 20 : (*) Add Effect To BB/SBB (3 Turn Water Unit +100% ATK/DEF) | 20 : Add Effect To BB/SBB (3 Turn Water Unit +120% ATK/DEF) (Prerequisite: *) | 20 : (**) Add Effect To BB (3 Turn Fire Unit +100% ATK/DEF) | 20 : Add Effect To BB (3 Turn Fire Unit +120% ATK/DEF) & SBB+: +20% ATK/DEF (Prerequisite: **)"
+                }
+            },
+            {
+                "id": "1459",
+                "name": "Seju 7",
+                "role": "bb_rate,atk_ele,crit,crit_dmg",
+                "rolesp": "",
+                "element": "Earth",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "6",
+                    "@dc": "36",
+                    "#text": "100% CRIT DMG+ (ALL) / 20% BC+ 20% HC+ (ALL) / 30% HP 60% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "12",
+                    "@dc": "12",
+                    "@cost": "15",
+                    "#text": "640% Earth (TGT) / 50BC Fill 3Turns (SELF) / 50% BC Fill+ (ALL) 3Turns / 80% ATK+ to Earth 3Turns / 60% CRIT+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "26",
+                    "#text": "800% Earth (TGT) / 500% BB ATK+ on Consecutive SBB (Max 3x , SELF) / 100% BB Fill (SELF) / 50% CRIT DMG+ (ALL) 3Turns / 80% ATK+ 80% DEF+ (SELF) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "1300% Earth (AOE) / 50BC Fill 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 50% Chance SPARKcrit (100% DMG+) (ALL) 3Turns / 300% ATK+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% CRIT DMG+ (SELF) / 30% Spark DMG+ (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30846.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30846.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1460",
+                "name": "Seju 8",
+                "role": "bb_rate,atk_ele,crit,crit_dmg",
+                "rolesp": "atk_ele,def_ele,bb_fill",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "9",
+                    "@dc": "45",
+                    "#text": "150% CRIT DMG+ (ALL) / 25% BC+ 25% HC+ (ALL) / 40% HP 80% ATK (ALL) / 7BC Fill on > 30k DMG Dealt (ALL)"
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "14",
+                    "#text": "660% Earth (TGT) / 50BC Fill 3Turns (SELF) / 50% BC Fill+ (ALL) 3Turns / 100% ATK+ to Earth 3Turns / 60% CRIT+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "25",
+                    "#text": "1000% Earth (TGT) / 500% BB ATK+ on Consecutive SBB (Max 3x , SELF) / 100% BB Fill (SELF) / 50% CRIT DMG+ (ALL) 3Turns / 100% ATK+ 100% DEF+ (SELF) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "30",
+                    "#text": "1500% Earth (AOE) / 50BC Fill 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 50% Chance SPARKcrit (150% DMG+) (ALL) 3Turns / 350% ATK+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "100% CRIT DMG+ (SELF) / 50% Spark DMG+ (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30847.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30847.png"
+                },                
+                "sp": {
+                    "@list": "20 : +50% ATK | 20 : (*) +100% Spark Damage | 10 : +120% Spark Damage (Prerequisite: *)  | 10 : (**) +30% Crit Damage | 10 : +70% Crit Damage (Prerequisite: **)  | 10 : Add Elements To Attacks | 20 : (***) Add Effect To SBB (3 Turn Earth Unit +100% ATK/DEF) | 20 : Add Effect To BB/SBB (3 Turn Earth Unit +120% ATK/DEF) (Prerequisite: ***)  | 40 : Add Effect To SBB (3 Turn +60% Crit) | 40 : Add Effect To SBB (Fill 8 BC)"
+                }
+            },
+            {
+                "id": "1461",
+                "name": "Sonia 7",
+                "role": "spark_crit,convert_def,spark,spark_debuff,atk_down_add",
+                "rolesp": "",
+                "element": "Dark",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "9",
+                    "@dc": "36",
+                    "#text": "80% Spark DMG+ (ALL) / 10% Chance Enemy receives 15% Spark DMG+ 1Turns (ALL) / 40% HP 40% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "24",
+                    "#text": "350% Dark (AOE) / Drain 3-5% HP (SELF) / 30% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / Convert 60% attack to DEF (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "27",
+                    "#text": "560% Dark (AOE) / 600% Dark (TGT) Random Hits / 80% Spark DMG+ (ALL) 3Turns / 25% Chance Enemy receives 25% Spark DMG+ 1Turns / Add 10% Chance -20% Enemy ATK to ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "30",
+                    "#text": "1300% Dark (AOE) / 400% Dark (TGT) Random Hits / 50% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 300% ATK+ (ALL) 3Turns / Convert 200% DEF to ATK (ALL) 3Turns / 100% Chance -80% Enemy ATK 1Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "8% Injury (SELF) / 30% ATK+ DEF+ on BB Gauge > 50% (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_61036.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_61036.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1462",
+                "name": "Sonia 8",
+                "role": "spark_crit,convert_def,spark,spark_debuff,atk_down_add",
+                "rolesp": "atk,def,ails",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "6BC Fill Each Turn (ALL) / 100% Spark DMG+ (ALL) / 10% Chance Enemy receives 20% Spark DMG+ 1Turns (ALL) / 50% HP 50% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "26",
+                    "#text": "370% Dark (AOE) / Drain 3-6% HP (SELF) / 30% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / Convert 70% attack to DEF (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "28",
+                    "#text": "580% Dark (AOE) / 800% Dark (TGT) Random Hits / 100% Spark DMG+ (ALL) 3Turns / 25% Chance Enemy receives 25% Spark DMG+ 1Turns / Add 20% Chance -20% Enemy ATK to ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "1500% Dark (AOE) / 600% Dark (TGT) Random Hits / 50% Chance SPARKcrit (100% DMG+) (ALL) 3Turns / 350% ATK+ (ALL) 3Turns / Convert 250% DEF to ATK (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "10% Injury (SELF) / 50% ATK+ DEF+ on BB Gauge > 50% (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_61037.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_61037.png"
+                },                
+                "sp": {
+                    "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 10 : (*) +70% Spark Damage | 10 : +100% Spark Damage (Prerequisite: *) | 10 : (**) Add Effect To SBB (3 turn 70% ATK->DEF buff) | 20 : Add Effect To BB/SBB (3 turn 80% ATK->DEF buff) (Prerequisite: **) | 30 : SBB+: +30% Spark Dmg | 40 : Add Effect To BB/SBB (3 Turn +160% ATK) | 40 : Add Effect To BB/SBB (3 Turn +160% DEF) | 10 : Add Effect To SBB (80% Sick) & Add Effect To SBB (80% Paralyze)"
                 }
             },
             {
@@ -9789,7 +10059,7 @@
                     "@hit": "26",
                     "@dc": "26",
                     "@cost": "26",
-                    "#text": "100% BB ATK+ on Consecutive SBB (Max 3x , SELF) / 140% ATK+ 140% DEF+ (ALL) 3Turns / Convert 80% DEF to ATK (ALL) 3Turns"
+                    "#text": "570% Fire (AOE) / 100% BB ATK+ on Consecutive SBB (Max 3x , SELF) / 140% ATK+ 140% DEF+ (ALL) 3Turns / Convert 80% DEF to ATK (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "29",
@@ -10824,7 +11094,7 @@
                     "@hit": "16",
                     "@dc": "16",
                     "@cost": "30",
-                    "#text": "540% Dark (AOE) 540% BB ATK% / Dark (TGT) 100% BB ATK% 300% BB ATK+ on Consecutive SBB (Max 3x , SELF) / 60% Chance SPARKcrit (50% DMG+) (SELF) 1Turns / Stealth (60% CRIT+) (SELF) 2Turns"
+                    "#text": "540% Dark (AOE) / 100% Dark (TGT) - 300% BB ATK+ on Consecutive SBB (Max 3x , SELF) / 60% Chance SPARKcrit (50% DMG+) (SELF) 1Turns / Stealth (60% CRIT+) (SELF) 2Turns"
                 },
                 "ubb": {
                     "@hit": "22",
@@ -11217,7 +11487,7 @@
                 "ls": {
                     "@hit": "14",
                     "@dc": "56",
-                    "#text": "100% Spark DMG+ (ALL) / 200% BB ATK%+ (ALL) / 80% ATK+ Based on HP LEFT (ALL) / 50% HP (ALL)"
+                    "#text": "100% Spark DMG+ (ALL) / 200% BB ATK%+ (ALL) / 80-80% ATK+ Based on HP LEFT (ALL) / 50% HP (ALL)"
                 },
                 "bb": {
                     "@hit": "50",
@@ -12155,7 +12425,7 @@
                 "id": "8228.8",
                 "name": "Hallelujah (OMNI)",
                 "role": "bb_fill,null_ails,idol,od_rate,convert_def",
-                "rolesp": "LS_null_id,cure",
+                "rolesp": "LS_null_id,cure,atk_ele,ewd",
                 "element": "Thunder",
                 "rarity": "8",
                 "cost": "48",
@@ -12174,7 +12444,7 @@
                     "@hit": "36",
                     "@dc": "36",
                     "@cost": "24",
-                    "#text": "Thunder (AOE) 580% BB ATK+ on Consecutive SBB (Max 1x , SELF) / 30% OverDrive Fill+ 3Turns / Null Ails 3Turns / Add Fire,water to ATK (SELF) 1Turns / Convert 70% attack to DEF (ALL) 3Turns"
+                    "#text": "580% Thunder (AOE) / 580% BB ATK+ on Consecutive SBB (Max 1x , SELF) / 30% OverDrive Fill+ 3Turns / Null Ails 3Turns / Add Fire,water to ATK (SELF) 1Turns / Convert 70% attack to DEF (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "40",
@@ -12245,7 +12515,7 @@
                 "id": "8230",
                 "name": "Gaston (OMNI)",
                 "role": "atk_down,bb_atked,id,hit",
-                "rolesp": "",
+                "rolesp": "atk_ele,ails,ewd,miti_ele",
                 "element": "Light",
                 "rarity": "8",
                 "cost": "48",
@@ -12335,7 +12605,7 @@
                 "id": "8232",
                 "name": "Toki (OMNI)",
                 "role": "ails,spark_debuff,bb_atk",
-                "rolesp": "atk_ailed,od_fill",
+                "rolesp": "atk_ailed,atk_ele,od_fill,ewd",
                 "element": "Dark",
                 "rarity": "8",
                 "cost": "48",
