@@ -11217,7 +11217,7 @@
                 "ls": {
                     "@hit": "14",
                     "@dc": "56",
-                    "#text": "100% Spark DMG+ (ALL) / 200% BB ATK%+ (ALL) / 80-80% ATK+ Based on HP LEFT (ALL) / 50% HP (ALL)"
+                    "#text": "100% Spark DMG+ (ALL) / 200% BB ATK%+ (ALL) / 80% ATK+ Based on HP LEFT (ALL) / 50% HP (ALL)"
                 },
                 "bb": {
                     "@hit": "50",
