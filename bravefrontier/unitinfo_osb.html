@@ -8,6 +8,7 @@
 <meta property="og:title" content="Brave Frontier OMNI Skill Build" />
 <meta property="og:description" content="Build and share!" />
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <script src="../js/ga.js"></script>
 <script src="js/libs.js"></script>
 <script src="//code.jquery.com/jquery-1.12.3.js"></script>
@@ -26,10 +27,10 @@
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+   /* padding: 8px 8px 8px 32px;*/
     text-decoration: none;
     font-size: 30px;
-    color: #818181;
+    color: #000000;
     display: block;
     transition: 0.3s
 }
@@ -41,24 +42,24 @@
 .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
-    margin-left: 50px;
+    right: 0;
 }
 </style>
 </head>
 
 <body>
 <div id="mySidenav" class="sidenav">
-	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="material-icons" style="font-size:36px">close</i></a>
     <div id="placeholder2"></div>
 </div>
 <a class="w3-btn w3-teal" style="width:100%" + onclick="openNav()">View Info</a>
 <form>
 	<div id="placeholder"> </div>
 </form>
+<hr>
 <div class="w3-container">
-    <h5>Copy this Link to share your build</h5>
-    <input class="w3-input w3-border" id="genLink" type="text" value="" onFocus="this.select()">
+    <div class="w3-small">Copy this Link to share your build</div>
+    <input class="w3-input w3-border w3-small" id="genLink" type="text" value="" onFocus="this.select()">
     <br>
 </div>
 <div id="reset_btn"></div>
@@ -123,7 +124,7 @@
 				for(j=0;j<sp_array.length;j++)
 				{
 					var sp_cost = sp_array[j].substring(0, sp_array[j].search(':'));
-					out+='<li><strong>'+ sp_cost.trim() + ' SP </strong><input class="w3-check" type="checkbox" value="'+ sp_cost.trim() +'"><label class="w3-validate"> ' + sp_array[j].substring(sp_array[j].search(':')+1, sp_array[j].length).trim() + '</label>';
+					out+='<li><strong class="w3-small">'+ sp_cost.trim() + ' SP </strong><input class="w3-check" type="checkbox" value="'+ sp_cost.trim() +'"><label class="w3-validate w3-small"> ' + sp_array[j].substring(sp_array[j].search(':')+1, sp_array[j].length).trim() + '</label>';
 					out+='</li>';
 				}
 				////////// break into lines
