@@ -5983,7 +5983,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60017.png"
                 },                
                 "sp": {
-                    "@list": "10:Damage taken may slightly restore HP (25% chance to restore 5% of HP back) | 10:Damage taken may restore HP (25% chance to restore 10% of HP back) | 10:5% damage reduction from Light types | 30:Negates elemental damage | 30:50% Spark damage reduction | 60:(*) Adds 50% damage reduction for 1 turn effect to BB/SBB | 20:Allows 50% damage reduction for 1 turn effects to last for 2 turns (Prerequisite: *) | 80:Allows UBB enormous damage reduction effects to last for 2 turns"
+                    "@list": "10:(*) Damage taken may slightly restore HP (25% chance to restore 5% of HP back) | 10:Damage taken may restore HP (25% chance to restore 10% of HP back) (Prerequisite: *) | 10:5% damage reduction from Light types | 30:Negates elemental damage | 30:50% Spark damage reduction | 60:(**) Adds 50% damage reduction for 1 turn effect to BB/SBB | 20:Allows 50% damage reduction for 1 turn effects to last for 2 turns (Prerequisite: **) | 80:Allows UBB enormous damage reduction effects to last for 2 turns"
                 }
             },
             {
