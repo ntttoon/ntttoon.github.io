@@ -124,7 +124,10 @@
 				for(j=0;j<sp_array.length;j++)
 				{
 					var sp_cost = sp_array[j].substring(0, sp_array[j].search(':'));
-					out+='<li><strong class="w3-small">'+ sp_cost.trim() + ' SP </strong><input class="w3-check" type="checkbox" value="'+ sp_cost.trim() +'"><label class="w3-validate w3-small"> ' + sp_array[j].substring(sp_array[j].search(':')+1, sp_array[j].length).trim() + '</label>';
+					var sp_indent = (sp_array[j].match(RegExp( /(Prerequisite)/, 'gi')))?'class="w3-light-grey" style="margin-left:15px;"':'';
+					var sp_disabled = (sp_array[j].match(RegExp( /(Prerequisite)/, 'gi')))?'disabled':'';
+					
+					out+='<li ' + sp_indent + '><strong class="w3-small">'+ sp_cost.trim() + ' SP </strong><input class="w3-check" type="checkbox" value="'+ sp_cost.trim() +'" ' + sp_disabled + '><label class="w3-validate w3-small"> ' + sp_array[j].substring(sp_array[j].search(':')+1, sp_array[j].length).trim() + '</label>';
 					out+='</li>';
 				}
 				////////// break into lines
@@ -169,6 +172,7 @@
 		var temp_sp = 100;
 		var base_sp = 100;
 		function updateCB() {
+			
 			$('.w3-check').each(function() {
 				if($(this).val() > temp_sp){
 					$(this).attr("disabled", true);
@@ -176,6 +180,7 @@
 				}
 				if($(this).val() <= temp_sp){
 					$(this).attr("disabled", false);
+					//$( "li:contains('Prerequisite')" ).addClass('w3-pale-yellow');
 				}
 			});
 			var allVals = [];
@@ -191,13 +196,14 @@
 			var v = $(this).val();
 			if(c == true){
 				temp_sp -= Number(v);
+				$(this).parent('li').removeClass();
 				$(this).parent('li').addClass('w3-pale-yellow');
 				$('#sp').text(temp_sp + '/' + base_sp + ' SP');
 				updateCB();
 			}
 			if(c == false){
 				temp_sp += Number(v);
-				$(this).parent('li').removeClass('w3-pale-yellow');
+				$(this).parent('li').removeClass();
 				$('#sp').text(temp_sp + '/' + base_sp + ' SP');
 				updateCB();
 			};
