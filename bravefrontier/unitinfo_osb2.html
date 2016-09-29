@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Brave Frontier</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:image" content="http://ntttoon.github.io/bravefrontier/images/fb_osb.jpg" />
+<meta property="og:title" content="Brave Frontier OMNI Skill Build" />
+<meta property="og:description" content="Build and share!" />
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="../js/ga.js"></script>
+<script src="js/libs.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.3.js"></script>
+<style>
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+}
+
+.sidenav a {
+   /* padding: 8px 8px 8px 32px;*/
+    text-decoration: none;
+    font-size: 30px;
+    color: #000000;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+</style>
+</head>
+
+<body>
+<div id="mySidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="material-icons" style="font-size:36px">close</i></a>
+    <div id="placeholder2"></div>
+</div>
+<a class="w3-btn w3-teal" style="width:100%" + onclick="openNav()">View Info</a>
+<form>
+	<div id="placeholder"> </div>
+</form>
+<hr>
+<div class="w3-container">
+    <div class="w3-small">Copy this Link to share your build</div>
+    <input class="w3-input w3-border w3-small" id="genLink" type="text" value="" onFocus="this.select()">
+    <br>
+</div>
+<div id="reset_btn"></div>
+<script>
+	var xmlhttp = new XMLHttpRequest();
+	var url = "data/units2.json";
+	
+	xmlhttp.onreadystatechange=function() {
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			myFunction(xmlhttp.responseText);
+		}
+	}
+	xmlhttp.open("GET", url, true);
+	xmlhttp.send();
+	
+	function myFunction(response) {
+		var arr = JSON.parse(response);
+		var i,j;
+		var out = "<ul class='w3-ul'>";
+		var out_side = "<ul class='w3-ul'>";
+		var ls_out = bb_out = sbb_out = ubb_out = escon_out = es_out = "";
+		var s = getURLParameter('id');
+		var json_len = arr.brave.unit.length;
+		for(i = 0; i < json_len; i++) {
+			var id = arr.brave.unit[i].id;
+			if(id==s)
+			{
+				var thumb = arr.brave.unit[i].thumb['@path'];
+				var art = arr.brave.unit[i].art['@path'];
+				var name = arr.brave.unit[i].name;
+				var element = arr.brave.unit[i].element;
+				var cost = arr.brave.unit[i].cost;
+				var rarity = arr.brave.unit[i].rarity;
+				var ls = arr.brave.unit[i].ls['#text'];
+				var normalhit = arr.brave.unit[i].ls['@hit'];
+				var normaldc = arr.brave.unit[i].ls['@dc'];
+				var bb = arr.brave.unit[i].bb['#text'];
+				var bbhit = arr.brave.unit[i].bb['@hit'];
+				var bbdc = arr.brave.unit[i].bb['@dc'];
+				var bbcost = arr.brave.unit[i].bb['@cost'];
+				var sbb = arr.brave.unit[i].sbb['#text'];
+				var sbbhit = arr.brave.unit[i].sbb['@hit'];
+				var sbbdc = arr.brave.unit[i].sbb['@dc'];
+				var sbbcost = arr.brave.unit[i].sbb['@cost'];
+				var ubb = arr.brave.unit[i].ubb['#text'];
+				var ubbhit = arr.brave.unit[i].ubb['@hit'];
+				var ubbdc = arr.brave.unit[i].ubb['@dc'];
+				var ubbcost = arr.brave.unit[i].ubb['@cost'];
+				var escondition = arr.brave.unit[i].es['@condtion'];
+				var eseffect = arr.brave.unit[i].es['#text'];
+				var sp = arr.brave.unit[i].sp['@list'];
+				var sp_array = sp.split("|");
+				var ls_array = ls.split("/");
+				var bb_array = bb.split("/");
+				var sbb_array = sbb.split("/");
+				var ubb_array = ubb.split("/");
+				var escon_array = escondition.split("/");
+				var es_array = eseffect.split("/");
+				////////// out omni skill
+				out+='<li><img src="' + thumb + '" class="w3-left w3-margin-right" style="width:60px;"><h3>' + name + '</h3> <div class="w3-clear"></div></li>';
+				out+='<li id="sp">100/100 SP</li>';
+				for(j=0;j<sp_array.length;j++)
+				{
+					var sp_cost = sp_array[j].substring(0, sp_array[j].search(':'));
+					var sp_indent = (sp_array[j].match(RegExp( /(Prerequisite)/, 'gi')))?'class="w3-light-grey" style="margin-left:15px;"':'';
+					var sp_disabled = (sp_array[j].match(RegExp( /(Prerequisite)/, 'gi')))?'disabled':'';
+					
+					out+='<li ' + sp_indent + '><strong class="w3-small">'+ sp_cost.trim() + ' SP </strong><input class="w3-check" type="checkbox" value="'+ sp_cost.trim() +'" ' + sp_disabled + '><label class="w3-validate w3-small"> ' + sp_array[j].substring(sp_array[j].search(':')+1, sp_array[j].length).trim() + '</label>';
+					out+='</li>';
+				}
+				////////// break into lines
+				for(j=0;j<ls_array.length;j++)
+				{
+					ls_out+='<div style="margin-left:40px" class="w3-small">◇ ' + ls_array[j].trim() + '<br></div>';
+				}
+				for(j=0;j<bb_array.length;j++)
+				{
+					bb_out+='<div style="margin-left:40px" class="w3-small">◇ ' + bb_array[j].trim() + '<br></div>';
+				}
+				for(j=0;j<sbb_array.length;j++)
+				{
+					sbb_out+='<div style="margin-left:40px" class="w3-small">◇ ' + sbb_array[j].trim() + '<br></div>';
+				}
+				for(j=0;j<ubb_array.length;j++)
+				{
+					ubb_out+='<div style="margin-left:40px" class="w3-small">◇ ' + ubb_array[j].trim() + '<br></div>';
+				}
+				for(j=0;j<escon_array.length;j++)
+				{
+					escon_out+='<div style="margin-left:40px" class="w3-small">◇ ' + escon_array[j].trim() + '<br></div>';
+				}
+				for(j=0;j<es_array.length;j++)
+				{
+					es_out+='<div style="margin-left:40px" class="w3-small">◇ ' + es_array[j].trim() + '<br></div>';
+				}
+				////////// out info sidebar
+				out_side+='<li><strong>LS: </strong>' + 'hit: ' + normalhit + ' - dc: ' + normaldc + '<br>' + ls_out + '</li>';
+				out_side+='<li><strong>BB: </strong>' + 'hit: ' + bbhit + ' - dc: ' + bbdc + ' - cost: ' + bbcost + '<br>' + bb_out + '</li>';
+				out_side+='<li><strong>SBB: </strong>' + 'hit: ' + sbbhit + ' - dc: ' + sbbdc + ' - cost: ' + sbbcost + '<br>' + sbb_out + '</li>';
+				out_side+='<li><strong>UBB: </strong>' + 'hit: ' + ubbhit + ' - dc: ' + ubbdc + ' - cost: ' + ubbcost + '<br>' + ubb_out + '</li>';
+				out_side+='<li><strong>ES: </strong>' + '<br>' + 'Condition: ' + escon_out + '<br>' + 'Effect: ' + es_out + '</li>';
+			}
+		}
+		out+="</ul>";
+		out_side+="</li></ul>";
+		document.getElementById("placeholder").innerHTML = out;
+		document.getElementById("placeholder2").innerHTML = out_side;
+		//////////////////////////////////////////////////////
+		var sLink = "http://ntttoon.github.io/bravefrontier/unitinfo_osb.html";
+		var temp_sp = 100;
+		var base_sp = 100;
+		function updateCB() {
+			$('.w3-check').each(function() {
+				if($(this).val() > temp_sp){
+					$(this).attr("disabled", true);
+					$('.w3-check:checked').attr("disabled", false);
+				}
+				if($(this).val() <= temp_sp){
+					//$(this).attr("disabled", false);
+				}
+			});
+			var allVals = [];
+			var id = getURLParameter("id");
+			$('.w3-check').each(function() {
+				allVals.push(this.checked);
+			});
+			$('#genLink').val(sLink + '?id=' + id + '&c=' + allVals);
+		}
+		//////////////////////////////////////////////////////
+		$('.w3-check').change(function(){
+			var c = this.checked;
+			var v = $(this).val();
+			var t = $(this).next( ".w3-validate" ).text();
+			
+			
+			if(c == true){
+				temp_sp -= Number(v);
+				$(this).parent('li').removeClass();
+				$(this).parent('li').addClass('w3-pale-yellow');
+				$('#sp').text(temp_sp + '/' + base_sp + ' SP');
+				$(this).css("display", "none");
+				//
+				if(t.indexOf('*') == 2){
+					//alert(t);
+					$( "li:contains('*')" ).children('.w3-check').attr("disabled", false);
+				}
+				if(t.indexOf('#') == 2){
+					$( "li:contains('#')" ).children('.w3-check').attr("disabled", false);
+				}
+				if(t.indexOf('$') == 2){
+					$( "li:contains('$')" ).children('.w3-check').attr("disabled", false);
+				}
+				//
+				updateCB();
+			}
+//			if(c == false){
+//				temp_sp += Number(v);
+//				$(this).parent('li').removeClass();
+//				$('#sp').text(temp_sp + '/' + base_sp + ' SP');
+//				if(t.match(RegExp(/(Prerequisite: a)/, 'gi'))){
+//					$( "li:contains('Prerequisite: a')" ).children('.w3-check').attr("disabled", true);
+//				}
+//				if(t.match(RegExp(/(Prerequisite: b)/, 'gi'))){
+//					$( "li:contains('Prerequisite: b')" ).children('.w3-check').attr("disabled", true);
+//				}
+//				if(t.match(RegExp(/(Prerequisite: c)/, 'gi'))){
+//					$( "li:contains('Prerequisite: c')" ).children('.w3-check').attr("disabled", true);
+//				}
+//				//
+//				updateCB();
+//			};
+		});
+		//////////////////////////////////////////////////////
+		var id = getURLParameter("id");
+		var getc = getURLParameter("c");
+		var c_array = getc.split(',');
+		if(!getc==""){
+			$('#reset_btn').html('<a class="w3-btn w3-blue-grey" style="width:100%;"' + 'href="unitinfo_osb.html?id=' + id + '">Reset</a>')
+			for(k=0;k < c_array.length;k++){
+				if(c_array[k] == "true"){
+					document.getElementsByClassName("w3-check").item(k).checked = true;
+					document.getElementsByClassName("w3-check").item(k).disabled = true;
+					document.getElementsByClassName("w3-check").item(k).parentElement.className += " w3-pale-yellow";
+					document.getElementsByClassName("w3-validate").item(k).className += " w3-text-teal";
+					$('#sp').text("SP");
+				}else{
+					document.getElementsByClassName("w3-check").item(k).disabled = true;
+				}
+			}
+		}
+	}
+	//////////
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "100%";
+	}
+	
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+	}
+</script>
+
+</body>
+</html>
