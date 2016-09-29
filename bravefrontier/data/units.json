@@ -5893,7 +5893,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40017.png"
                 },                
                 "sp": {
-                    "@list": "20:20% boost to all parameters | 10:(*) 50% boost to Spark damage | 10:(**) Raises Spark damage boost from 50% to 70% (Prerequisite: *)  | 10:Raises Spark damage boost from 70% to 100% (Prerequisite: **) | 10:(***) Slightly boosts critical hit damage (30% boost) | 10:Boosts critical hit damage (50% boost) (Prerequisite: ***) | 50:Enhances Spark damage boost effect added to BB/SBB (+30% boost) | 60:Allows enormous Spark damage boost & probable Spark critical effects to last for 4 turns"
+                    "@list": "20:20% boost to all parameters | 10:(*) 50% boost to Spark damage | 10:(#) Raises Spark damage boost from 50% to 70% (Prerequisite: *)  | 10:Raises Spark damage boost from 70% to 100% (Prerequisite: #) | 10:($) Slightly boosts critical hit damage (30% boost) | 10:Boosts critical hit damage (50% boost) (Prerequisite: $) | 50:Enhances Spark damage boost effect added to BB/SBB (+30% boost) | 60:Allows enormous Spark damage boost & probable Spark critical effects to last for 4 turns"
                 }
             },
             {
@@ -5983,7 +5983,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60017.png"
                 },                
                 "sp": {
-                    "@list": "10:(*) Damage taken may slightly restore HP (25% chance to restore 5% of HP back) | 10:Damage taken may restore HP (25% chance to restore 10% of HP back) (Prerequisite: *) | 10:5% damage reduction from Light types | 30:Negates elemental damage | 30:50% Spark damage reduction | 60:(**) Adds 50% damage reduction for 1 turn effect to BB/SBB | 20:Allows 50% damage reduction for 1 turn effects to last for 2 turns (Prerequisite: **) | 80:Allows UBB enormous damage reduction effects to last for 2 turns"
+                    "@list": "10:(*) Damage taken may slightly restore HP (25% chance to restore 5% of HP back) | 10:Damage taken may restore HP (25% chance to restore 10% of HP back) (Prerequisite: *) | 10:5% damage reduction from Light types | 30:Negates elemental damage | 30:50% Spark damage reduction | 60:(#) Adds 50% damage reduction for 1 turn effect to BB/SBB | 20:Allows 50% damage reduction for 1 turn effects to last for 2 turns (Prerequisite: #) | 80:Allows UBB enormous damage reduction effects to last for 2 turns"
                 }
             },
             {
@@ -6073,7 +6073,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10847.png"
                 },                
                 "sp": {
-                    "@list": "10 : Boosts Atk relative to remaining HP (+0.5% boost per 1% HP remaining, 50% boost max.) | 10 : Enhances BB gauge fill rate boost effect added to BB/SBB (Additional 10% boost to BC efficacy) | 20 : Adds enormous Def boost for 3 turns effect to BB/SBB (140% boost) | 50 : (*) Adds Spark damage boost effect to BB/SBB (80% boost) | 10 : Enhances Spark damage boost effect (Additional 30% boost to Spark damage - 110% boost total) (Prerequisite: *) | 50 : (**) Adds BB gauge boost when attacked for 3 turns effect to BB/SBB (3~5 BC fill) | 10 : Enhances BB gauge boost when attacked for 3 turns effect (4~7 BC fill instead) (Prerequisite: **) | 40 : Adds HP restoration when damage dealt effect to BB/SBB (Heals 2000~3000 + 11% of healer Rec) | 40 : Adds HP restoration for 3 turns effect to BB/SBB (Heals 1500~2000 + 10% of target Rec)"
+                    "@list": "10 : Boosts Atk relative to remaining HP (+0.5% boost per 1% HP remaining, 50% boost max.) | 10 : Enhances BB gauge fill rate boost effect added to BB/SBB (Additional 10% boost to BC efficacy) | 20 : Adds enormous Def boost for 3 turns effect to BB/SBB (140% boost) | 50 : (*) Adds Spark damage boost effect to BB/SBB (80% boost) | 10 : Enhances Spark damage boost effect (Additional 30% boost to Spark damage - 110% boost total) (Prerequisite: *) | 50 : (#) Adds BB gauge boost when attacked for 3 turns effect to BB/SBB (3~5 BC fill) | 10 : Enhances BB gauge boost when attacked for 3 turns effect (4~7 BC fill instead) (Prerequisite: #) | 40 : Adds HP restoration when damage dealt effect to BB/SBB (Heals 2000~3000 + 11% of healer Rec) | 40 : Adds HP restoration for 3 turns effect to BB/SBB (Heals 1500~2000 + 10% of target Rec)"
                 }
             },
             {
@@ -7198,7 +7198,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50987.png"
                 },                
                 "sp": {
-                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 20 : (*) Damage taken slightly boosts BB gauge (2~3 BC fill) | 10 : Enhances BB gauge boost when attacked (3~4 BC fill) (Prerequisite: *) | 20 : Negates elemental damage | 20 : (**) Adds considerable Atk boost for 3 turns effect to BB/SBB (140% boost) | 20 : Enhances considerable Atk boost for 3 turns effect added to BB/SBB (+20% boost, 160% boost total) (Prerequisite: **) | 30 : Adds Atk, Def, Rec reducing effects negation for 1 turn to BB/SBB | 50 : Adds 50% damage reduction for 1 turn effect to BB/SBB"
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 20 : (*) Damage taken slightly boosts BB gauge (2~3 BC fill) | 10 : Enhances BB gauge boost when attacked (3~4 BC fill) (Prerequisite: *) | 20 : Negates elemental damage | 20 : (#) Adds considerable Atk boost for 3 turns effect to BB/SBB (140% boost) | 20 : Enhances considerable Atk boost for 3 turns effect added to BB/SBB (+20% boost, 160% boost total) (Prerequisite: #) | 30 : Adds Atk, Def, Rec reducing effects negation for 1 turn to BB/SBB | 50 : Adds 50% damage reduction for 1 turn effect to BB/SBB"
                 }
             },
             {
@@ -7693,7 +7693,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30797.png"
                 },                
                 "sp": {
-                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 10 : (*) 50% boost to Spark damage | 10 : Boosts 50% Spark damage to 70% Spark damage (Prerequisites: *) | 10 : Spark damage enormously boosts BB gauge (10 BC fill) | 30 : (**) Adds enormous critical hit rate boost for 3 turns effect to BB/SBB (60% boost) | 30 : Adds critical hit damage boost for 3 turns effect to BB/SBB (50% boost) (Prerequisite: **) | 20 : Enhances SBB's Atk, Def, Rec boost effects (+10% boost, 150% boost total) | 50 : Enhances Spark damage boost effect added to BB/SBB/UBB (+30% boost, 130% boost total on BB/SBB, 330% boost total on UBB)"
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 10 : (*) 50% boost to Spark damage | 10 : Boosts 50% Spark damage to 70% Spark damage (Prerequisites: *) | 10 : Spark damage enormously boosts BB gauge (10 BC fill) | 30 : (#) Adds enormous critical hit rate boost for 3 turns effect to BB/SBB (60% boost) | 30 : Adds critical hit damage boost for 3 turns effect to BB/SBB (50% boost) (Prerequisite: #) | 20 : Enhances SBB's Atk, Def, Rec boost effects (+10% boost, 150% boost total) | 50 : Enhances Spark damage boost effect added to BB/SBB/UBB (+30% boost, 130% boost total on BB/SBB, 330% boost total on UBB)"
                 }
             },
             {
@@ -7783,7 +7783,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51007.png"
                 },                
                 "sp": {
-                    "@list": "10 : (*) 20% boost to max HP | 10 : (**) Boosts 20% max HP to 30% max HP (Prerequisite: *) | 10 : Boosts 30% max HP to 50% max HP (Prerequisite: **) | 20 : Negates elemental damage | 10 : Activates at turn's end effects during turn's start instead (effects will only activate once in Arena/Colosseum) | 10 : Enhances Leader Skill all parameters boost from 40% to 50% | 30 : Enhances BB's max HP boost effect (+5% boost, 15% boost total) | 50 : Adds probable Spark critical for 3 turns effect to BB/SBB (20% chance to deal 50% more Spark damage)"
+                    "@list": "10 : (*) 20% boost to max HP | 10 : (#) Boosts 20% max HP to 30% max HP (Prerequisite: *) | 10 : Boosts 30% max HP to 50% max HP (Prerequisite: #) | 20 : Negates elemental damage | 10 : Activates at turn's end effects during turn's start instead (effects will only activate once in Arena/Colosseum) | 10 : Enhances Leader Skill all parameters boost from 40% to 50% | 30 : Enhances BB's max HP boost effect (+5% boost, 15% boost total) | 50 : Adds probable Spark critical for 3 turns effect to BB/SBB (20% chance to deal 50% more Spark damage)"
                 }
             },
             {
@@ -8233,7 +8233,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_61007.png"
                 },                
                 "sp": {
-                    "@list": "20 : 50% boost to Atk | 10 : 30% boost to max HP | 10 : (*) 50% boost to Spark damage | 10 : (**) Raises Spark damage boost from 50% to 70% (Prerequisites: *) | 10 : Raises Spark damage boost from 70% to 100% (Prerequisites: **) | 10 : Slightly boosts BC efficacy (10% boost) | 20 : Enhances SBB's success rate of Spark critical effect (+10% chance, 40% chance total) | 50 : Enhances BB/SBB/UBB's BB Atk boost effect (+100% boost, 380% boost on BB, 450% boost on SBB, 650% boost on UBB total) | 50 : Adds considerable Atk boost relative to max HP for 3 turns effect to BB/SBB (25% boost) | 20 : Adds damage boost to Light, Dark types effect to BB/SBB (50% boost) | 30 : Enhances BB/SBB's elemental damage boost effect (+50% boost, 100% boost total)"
+                    "@list": "20 : 50% boost to Atk | 10 : 30% boost to max HP | 10 : (*) 50% boost to Spark damage | 10 : (#) Raises Spark damage boost from 50% to 70% (Prerequisites: *) | 10 : Raises Spark damage boost from 70% to 100% (Prerequisites: #) | 10 : Slightly boosts BC efficacy (10% boost) | 20 : Enhances SBB's success rate of Spark critical effect (+10% chance, 40% chance total) | 50 : Enhances BB/SBB/UBB's BB Atk boost effect (+100% boost, 380% boost on BB, 450% boost on SBB, 650% boost on UBB total) | 50 : Adds considerable Atk boost relative to max HP for 3 turns effect to BB/SBB (25% boost) | 20 : Adds damage boost to Light, Dark types effect to BB/SBB (50% boost) | 30 : Enhances BB/SBB's elemental damage boost effect (+50% boost, 100% boost total)"
                 }
             },
             {
@@ -8323,7 +8323,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10917.png"
                 },                
                 "sp": {
-                    "@list": "10 : 20% boost to max HP | 20 : 50% boost to Atk | 10 : (*) 50% boost to Spark damage | 10 : (**) Raises Spark damage boost from 50% to 70% (Prerequisite: *) | 10 : Raises Spark damage boost from 70% to 100% (Prerequisite: **) | 10 : (***) Slightly boosts critical hit damage (40% boost) | 10 : Boosts critical hit damage (+30% boost, 70% boost total) (Prerequisite: ***) | 40 : Enhances BB/SBB/UBB's Spark damage boost effect (+30% boost, 130% boost on BB/SBB total, 330% boost on UBB total) | 30 : Adds probable Spark vulnerability infliction for 2 turns effect to BB/SBB (25% chance to deal 25% more Spark damage)"
+                    "@list": "10 : 20% boost to max HP | 20 : 50% boost to Atk | 10 : (*) 50% boost to Spark damage | 10 : (#) Raises Spark damage boost from 50% to 70% (Prerequisite: *) | 10 : Raises Spark damage boost from 70% to 100% (Prerequisite: #) | 10 : ($) Slightly boosts critical hit damage (40% boost) | 10 : Boosts critical hit damage (+30% boost, 70% boost total) (Prerequisite: $) | 40 : Enhances BB/SBB/UBB's Spark damage boost effect (+30% boost, 130% boost on BB/SBB total, 330% boost on UBB total) | 30 : Adds probable Spark vulnerability infliction for 2 turns effect to BB/SBB (25% chance to deal 25% more Spark damage)"
                 }
             },
             {
@@ -8683,7 +8683,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51037.png"
                 },                
                 "sp": {
-                    "@list": "10 : 50% boost to Atk | 10 : Boosts Atk when BB gauge is over 50% (50% boost) | 10 : (*) 50% boost to Spark damage | 10 : (**) Raises Spark damage boost from 50% to 70% (Prerequisite: *) | 10 : Raises Spark damage boost from 70% to 100% (Prerequisite: **) | 20 : Adds probable Spark vulnerability infliction for 2 turns effect to BB/SBB (25% chance for 25% vulnerability) | 20 : Enhances BB/SBB's success rate of Spark critical effect (+10% chance. 30% chance total) | 50 : Enhances BB/SBB's BB Atk boost effect (+100% boost. 350/400% total)"
+                    "@list": "10 : 50% boost to Atk | 10 : Boosts Atk when BB gauge is over 50% (50% boost) | 10 : (*) 50% boost to Spark damage | 10 : (#) Raises Spark damage boost from 50% to 70% (Prerequisite: *) | 10 : Raises Spark damage boost from 70% to 100% (Prerequisite: #) | 20 : Adds probable Spark vulnerability infliction for 2 turns effect to BB/SBB (25% chance for 25% vulnerability) | 20 : Enhances BB/SBB's success rate of Spark critical effect (+10% chance. 30% chance total) | 50 : Enhances BB/SBB's BB Atk boost effect (+100% boost. 350/400% total)"
                 }
             },
             {
@@ -8728,7 +8728,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40577.png"
                 },                
                 "sp": {
-                    "@list": "20 : (*) 30% boost to max HP | 10 : Raises max HP boost from 30% to 50% (Prerequisite: *) | 20 : (**) 50% boost to Spark damage | 10 : (***) Raises Spark damage boost from 50% to 70% (Prerequisite: **) | 10 : Raises Spark damage boost from 70% to 100% (Prerequisite: ***) | 20 : Boosts critical hit damage (50% boost) | 10 : Activates at turn's end HP restoration each turn effect at turn's start instead (effects will only activate once in Arena/Colosseum) | 20 : Enhances LS's max HP boost from 40% to 50% | 30 : (****) Adds great HP restoration for 3 turns effect to SBB (Heals (3500~4000 + 10% of target's Rec) HP) | 20 : Enhances BB/SBB's great HP restoration for 3 turns effect (+1000 HP healing, heals (4500~5000 + 10% of target's Rec) HP total) (Prerequisites: ****)"
+                    "@list": "20 : (*) 30% boost to max HP | 10 : Raises max HP boost from 30% to 50% (Prerequisite: *) | 20 : (#) 50% boost to Spark damage | 10 : ($) Raises Spark damage boost from 50% to 70% (Prerequisite: #) | 10 : Raises Spark damage boost from 70% to 100% (Prerequisite: $) | 20 : Boosts critical hit damage (50% boost) | 10 : Activates at turn's end HP restoration each turn effect at turn's start instead (effects will only activate once in Arena/Colosseum) | 20 : Enhances LS's max HP boost from 40% to 50% | 30 : (^) Adds great HP restoration for 3 turns effect to SBB (Heals (3500~4000 + 10% of target's Rec) HP) | 20 : Enhances BB/SBB's great HP restoration for 3 turns effect (+1000 HP healing, heals (4500~5000 + 10% of target's Rec) HP total) (Prerequisites: ^)"
                 }
             },
             {
@@ -9493,7 +9493,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10947.png"
                 },                
                 "sp": {
-                    "@list": "10 : +20% ATK/REC | 10: +20% HP/DEF | 10 : 3 BC/turn | 30 : Add Effect To SBB (2 turn Fire/Earth Dmg 10% Reduction) | 10 : BB+: 2 BC/turn | 50 : BB+: +25% Weakness Damage & SBB+: +25% Weakness Damage | 20 : (*) Add Effect To BB/SBB (3 Turn Water Unit +100% ATK/DEF) | 20 : Add Effect To BB/SBB (3 Turn Water Unit +120% ATK/DEF) (Prerequisite: *) | 20 : (**) Add Effect To BB (3 Turn Fire Unit +100% ATK/DEF) | 20 : Add Effect To BB (3 Turn Fire Unit +120% ATK/DEF) & SBB+: +20% ATK/DEF (Prerequisite: **)"
+                    "@list": "10 : +20% ATK/REC | 10: +20% HP/DEF | 10 : 3 BC/turn | 30 : Add Effect To SBB (2 turn Fire/Earth Dmg 10% Reduction) | 10 : BB+: 2 BC/turn | 50 : BB+: +25% Weakness Damage & SBB+: +25% Weakness Damage | 20 : (*) Add Effect To BB/SBB (3 Turn Water Unit +100% ATK/DEF) | 20 : Add Effect To BB/SBB (3 Turn Water Unit +120% ATK/DEF) (Prerequisite: *) | 20 : (#) Add Effect To BB (3 Turn Fire Unit +100% ATK/DEF) | 20 : Add Effect To BB (3 Turn Fire Unit +120% ATK/DEF) & SBB+: +20% ATK/DEF (Prerequisite: #)"
                 }
             },
             {
@@ -9583,7 +9583,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30847.png"
                 },                
                 "sp": {
-                    "@list": "20 : +50% ATK | 20 : (*) +100% Spark Damage | 10 : +120% Spark Damage (Prerequisite: *)  | 10 : (**) +30% Crit Damage | 10 : +70% Crit Damage (Prerequisite: **)  | 10 : Add Elements To Attacks | 20 : (***) Add Effect To SBB (3 Turn Earth Unit +100% ATK/DEF) | 20 : Add Effect To BB/SBB (3 Turn Earth Unit +120% ATK/DEF) (Prerequisite: ***)  | 40 : Add Effect To SBB (3 Turn +60% Crit) | 40 : Add Effect To SBB (Fill 8 BC)"
+                    "@list": "20 : +50% ATK | 20 : (*) +100% Spark Damage | 10 : +120% Spark Damage (Prerequisite: *)  | 10 : (#) +30% Crit Damage | 10 : +70% Crit Damage (Prerequisite: #)  | 10 : Add Elements To Attacks | 20 : ($) Add Effect To SBB (3 Turn Earth Unit +100% ATK/DEF) | 20 : Add Effect To BB/SBB (3 Turn Earth Unit +120% ATK/DEF) (Prerequisite: $)  | 40 : Add Effect To SBB (3 Turn +60% Crit) | 40 : Add Effect To SBB (Fill 8 BC)"
                 }
             },
             {
@@ -9673,7 +9673,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_61037.png"
                 },                
                 "sp": {
-                    "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 10 : (*) +70% Spark Damage | 10 : +100% Spark Damage (Prerequisite: *) | 10 : (**) Add Effect To SBB (3 turn 70% ATK->DEF buff) | 20 : Add Effect To BB/SBB (3 turn 80% ATK->DEF buff) (Prerequisite: **) | 30 : SBB+: +30% Spark Dmg | 40 : Add Effect To BB/SBB (3 Turn +160% ATK) | 40 : Add Effect To BB/SBB (3 Turn +160% DEF) | 10 : Add Effect To SBB (80% Sick) & Add Effect To SBB (80% Paralyze)"
+                    "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 10 : (*) +70% Spark Damage | 10 : +100% Spark Damage (Prerequisite: *) | 10 : (#) Add Effect To SBB (3 turn 70% ATK->DEF buff) | 20 : Add Effect To BB/SBB (3 turn 80% ATK->DEF buff) (Prerequisite: #) | 30 : SBB+: +30% Spark Dmg | 40 : Add Effect To BB/SBB (3 Turn +160% ATK) | 40 : Add Effect To BB/SBB (3 Turn +160% DEF) | 10 : Add Effect To SBB (80% Sick) & Add Effect To SBB (80% Paralyze)"
                 }
             },
             {
@@ -12238,7 +12238,7 @@
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860178.png"
                 },                
                 "sp": {
-                    "@list": "20 : (*) 50% boost to Atk | 10 : Boosts 50% Atk to 80% Atk (Prerequisite: *) | 30 : (**) 50% boost to BB Atk | 30 : Boosts 50% BB Atk to 100% BB Atk (Prerequisite: **) | 20 : Raises normal hit amount (Doubles (+1) amount) | 30 : Adds considerable Atk boost for 3 turns effect to BB/SBB (160% boost) | 30 : Adds Def ignoring effect to attack for 2 turns effect to BB/SBB | 40 : Enhances SBB/UBB's Atk boost effect (+100% boost. 400%/700% total)"
+                    "@list": "20 : (*) 50% boost to Atk | 10 : Boosts 50% Atk to 80% Atk (Prerequisite: *) | 30 : (#) 50% boost to BB Atk | 30 : Boosts 50% BB Atk to 100% BB Atk (Prerequisite: #) | 20 : Raises normal hit amount (Doubles (+1) amount) | 30 : Adds considerable Atk boost for 3 turns effect to BB/SBB (160% boost) | 30 : Adds Def ignoring effect to attack for 2 turns effect to BB/SBB | 40 : Enhances SBB/UBB's Atk boost effect (+100% boost. 400%/700% total)"
                 }
             },
             {
