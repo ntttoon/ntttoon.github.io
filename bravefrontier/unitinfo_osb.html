@@ -127,7 +127,7 @@
 					var sp_indent = (sp_array[j].match(RegExp( /(Prerequisite)/, 'gi')))?'class="w3-light-grey" style="margin-left:15px;"':'';
 					var sp_disabled = (sp_array[j].match(RegExp( /(Prerequisite)/, 'gi')))?'disabled':'';
 					
-					out+='<li ' + sp_indent + '><strong class="w3-small">'+ sp_cost.trim() + ' SP </strong><input class="w3-check" type="checkbox" value="'+ sp_cost.trim() +'" ' + sp_disabled + '><label class="w3-validate w3-small"> ' + sp_array[j].substring(sp_array[j].search(':')+1, sp_array[j].length).trim() + '</label>';
+					out+='<li ' + sp_indent + '><span class="w3-badge w3-teal">'+ Number(j+1) +'</span> <strong class="w3-small">'+ sp_cost.trim() + ' SP </strong><input class="w3-check" type="checkbox" value="'+ sp_cost.trim() +'" ' + sp_disabled + '><label class="w3-validate w3-small"> ' + sp_array[j].substring(sp_array[j].search(':')+1, sp_array[j].length).trim() + '</label>';
 					out+='</li>';
 				}
 				////////// break into lines
@@ -181,7 +181,7 @@
 			var allVals = [];
 			var id = getURLParameter("id");
 			$('.w3-check').each(function() {
-				allVals.push(this.checked);
+				allVals.push((this.checked)?1:0);
 			});
 			$('#genLink').val(sLink + '?id=' + id + '&c=' + allVals);
 		}
@@ -219,7 +219,7 @@
 		});
 		new Clipboard('.w3-btn');
 		$( "#copy_btn" ).bind( "click", function() {
-  			$('#copy_status').html("Copied, now you can paste and share!");
+  			$('#copy_status').html("Copied!");
 		});
 		//////////////////////////////////////////////////////
 		var id = getURLParameter("id");
@@ -228,7 +228,7 @@
 		if(!getc==""){
 			$('#reset_btn').html('<a class="w3-btn w3-blue-grey w3-round w3-small"' + 'href="unitinfo_osb.html?id=' + id + '">Reset</a>');
 			for(k=0;k < c_array.length;k++){
-				if(c_array[k] == "true"){
+				if(c_array[k] == "true" || c_array[k] == 1){
 					document.getElementsByClassName("w3-check").item(k).checked = true;
 					document.getElementsByClassName("w3-check").item(k).disabled = true;
 					document.getElementsByClassName("w3-check").item(k).parentElement.className += " w3-pale-yellow";
