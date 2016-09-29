@@ -59,7 +59,7 @@
 </form>
 <hr>
 <div class="w3-container">
-    <div class="w3-small">Manual copy2</div>
+    <div class="w3-small">Manual copy3</div>
     <input class="w3-input w3-border w3-small" id="genLink" type="text" value="" >
     <br>
 </div>
@@ -124,8 +124,8 @@
 				for(j=0;j<sp_array.length;j++)
 				{
 					var sp_cost = sp_array[j].substring(0, sp_array[j].search(':'));
-					//var sp_indent = (sp_array[j].match(RegExp( /(Prerequisite)/, 'gi')))?'class="w3-light-grey" style="margin-left:15px;"':'';
-					//var sp_disabled = (sp_array[j].match(RegExp( /(Prerequisite)/, 'gi')))?'disabled':'';
+					var sp_indent = (sp_array[j].match(RegExp( /(Prerequisite)/, 'gi')))?'class="w3-light-grey" style="margin-left:15px;"':'';
+					var sp_disabled = (sp_array[j].match(RegExp( /(Prerequisite)/, 'gi')))?'disabled':'';
 					
 					out+='<li ' +' sp_indent' + '><span class="w3-badge w3-teal">'+ Number(j+1) +'</span> <strong class="w3-small">'+ sp_cost.trim() + ' SP </strong><input class="w3-check" type="checkbox" value="'+ sp_cost.trim() +'" ' + 'sp_disabled' + '><label class="w3-validate w3-small"> ' + sp_array[j].substring(sp_array[j].search(':')+1, sp_array[j].length).trim() + '</label>';
 					out+='</li>';
