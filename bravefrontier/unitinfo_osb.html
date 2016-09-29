@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <script src="../js/ga.js"></script>
 <script src="js/libs.js"></script>
+<script src="js/clipboard.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.3.js"></script>
 <style>
 .sidenav {
@@ -197,8 +198,8 @@
 				$(this).css("display", "none");
 				$('#sp').text(temp_sp + '/' + base_sp + ' SP');
 				$('#reset_btn').html('<a class="w3-btn w3-blue-grey w3-round w3-small"' + 'href="unitinfo_osb.html?id=' + id + '">Reset</a>');
-				//$('#copy_status').html('');
-				//$('#copy_btn').html('<a class="w3-btn w3-blue-grey w3-round w3-small" data-clipboard-target="#genLink">Copy</a>');
+				$('#copy_status').html('');
+				$('#copy_btn').html('<a class="w3-btn w3-blue-grey w3-round w3-small" data-clipboard-target="#genLink">Copy</a>');
 				//
 				if(t.indexOf('*') == 2){
 					$( "li:contains('*')" ).children('.w3-check').attr("disabled", false);
@@ -216,10 +217,10 @@
 				updateCB();
 			}
 		});
-		//new Clipboard('.w3-btn');
-		//$( "#copy_btn" ).bind( "click", function() {
-  			//$('#copy_status').html("Copied!");
-		//});
+		new Clipboard('.w3-btn');
+		$( "#copy_btn" ).bind( "click", function() {
+  			$('#copy_status').html("Copied!");
+		});
 		//////////////////////////////////////////////////////
 		var id = getURLParameter("id");
 		var getc = getURLParameter("c");
