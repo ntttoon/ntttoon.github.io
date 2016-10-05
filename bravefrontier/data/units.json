@@ -8778,7 +8778,7 @@
             },
             {
                 "id": "1442",
-                "name": "Rosalia 7",
+                "name": "Cursed Princess Rozalia",
                 "role": "bb_atk,ails,ails_add",
                 "rolesp": "",
                 "element": "Earth",
@@ -8823,7 +8823,7 @@
             },
             {
                 "id": "1443",
-                "name": "Rosalia 8",
+                "name": "Wind Princess Rozalia",
                 "role": "bb_fill,heal,cure,null_ails,null_stats,spark,atk_down_add,bb_atk",
                 "rolesp": "LS_bb_atked,LS_null_crit,crit,crit_dmg,bb_atked,heal_atked",
                 "element": "Earth",
@@ -8868,7 +8868,7 @@
             },
             {
                 "id": "1444",
-                "name": "Fizz 7",
+                "name": "Thunder Knight Fizz",
                 "role": "od_rate,bb_rate,hit,aoe,od_fill",
                 "rolesp": "",
                 "element": "Thunder",
@@ -8913,7 +8913,7 @@
             },
             {
                 "id": "1445",
-                "name": "Fizz 8",
+                "name": "Flashing Thief Fizz",
                 "role": "od_rate,bb_fill,hit,aoe,od_fill",
                 "rolesp": "crit,crit_dmg,bc,hc",
                 "element": "Thunder",
@@ -8958,7 +8958,7 @@
             },
             {
                 "id": "1446",
-                "name": "Gregor 7",
+                "name": "Wicked Sorcerer Gregor",
                 "role": "crit,crit_dmg,atk_down,def_down,ewd",
                 "rolesp": "",
                 "element": "Dark",
@@ -9003,7 +9003,7 @@
             },
             {
                 "id": "1447",
-                "name": "Gregor 8",
+                "name": "Treasure Demon Gregor",
                 "role": "crit,crit_dmg,atk_down,def_down,ewd",
                 "rolesp": "dot",
                 "element": "Dark",
