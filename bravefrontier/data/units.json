@@ -12645,6 +12645,96 @@
                 "sp": {
                     "@list": "10 : (*) 50% boost to Spark damage | 20 : Boosts 50% Spark damage to 100% Spark damage (Prerequisites: *) | 10 : Boosts critical hit damage (50% boost) | 20 : Negates all status ailments | 80 : 80% damage reduction from Dark Types | 30 : Adds damage boost against status afflicted foes for 3 turns effect to BB/SBB (160% boost) | 20 : Adds damage boost to Dark types for 3 turns effect to BB/SBB (75% boost to Atk of Dark types) | 30 : Adds OD gauge boost effect to SBB (8% boost) | 40 : Adds Dark elemental damage boost effect for 3 turns effect to SBB (150% boost) | 40 : Enhances SBB/UBB's BB Atk boost effect (+100% boost, 450% boost on SBB, 650% boost on UBB total)"
                 }
+            },
+            {
+                "id": "8233",
+                "name": "Matriarch Gabriela",
+                "role": "heal_atked,null_stats,null_crit,null_ewd,bb_atked,convert_atk",
+                "rolesp": "",
+                "element": "Light",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "12",
+                    "@dc": "36",
+                    "#text": "25% Chance Heal 15-20% DMG when ATKed (ALL) / 0-30% ATK+ Based on HP LEFT (ALL) / 0-30% DEF+ Based on HP LEFT (ALL) / 40% HP (ALL)"
+                },
+                "bb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "24",
+                    "#text": "350% Light,Dark (AOE) / 20% Chance Heal 15-20% DMG when ATKed (ALL) 3Turns / Null STATS Debuff 1Turns / Null CRIT (ALL) 1Turn / Null Elemental Weakness (ALL) 1Turn"
+                },
+                "sbb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "29",
+                    "#text": "500% Light (TGT) / Light (AOE) 200%-700% BB ATK% Based on HP LEFT / Drain 35-50% HP (SELF) / 3-5BC Fill when ATKed (100%) (ALL) 3Turns / 130% ATK+ 130% DEF+ 130% REC+ (SELF) 3Turns / Convert 20% HP to ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "30",
+                    "#text": "2000% Light (AOE) 1000%-2000% BB ATK% Based on HP LEFT / 50BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance Heal 100% DMG when ATKed (ALL) 3Turns / 80% Chance Angel Idol 100% HP (ALL) 190Turns / Convert 50% HP to ATK (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "70% ATK+ 2Turns on > 5k DMG Received (SELF) / 100% Chance Drain 4-8% HP (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850417.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850417.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8234",
+                "name": "Silver Queen Gabriela",
+                "role": "heal_atked,null_stats,null_crit,null_ewd,bb_atked,convert_atk",
+                "rolesp": "LS_bb_reduce,heal,hot,bb_fill,bb_regen,add_ele",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "17",
+                    "@dc": "51",
+                    "#text": "Reduce 25% BB Cost (ALL) / 30% Chance Heal 25-25% DMG when ATKed (ALL) / 0-50% ATK+ Based on HP LEFT (ALL) / 0-50% DEF+ Based on HP LEFT (ALL) / 60% HP (ALL)"
+                },
+                "bb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "25",
+                    "#text": "370% Light,Dark (AOE) / 20% Chance Heal 20-30% DMG when ATKed (ALL) 3Turns / Null STATS Debuff 1Turns / Null CRIT (ALL) 1Turn / Null Elemental Weakness (ALL) 1Turn"
+                },
+                "sbb": {
+                    "@hit": "26",
+                    "@dc": "26",
+                    "@cost": "30",
+                    "#text": "600% Light (TGT) / Light (AOE) 200%-900% BB ATK% Based on HP LEFT / Drain 45-65% HP (SELF) / 4-7BC Fill when ATKed (100%) (ALL) 3Turns / 150% ATK+ 150% DEF+ 150% REC+ (SELF) 3Turns / Convert 25% HP to ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "33",
+                    "@dc": "33",
+                    "@cost": "30",
+                    "#text": "2500% Light (AOE) 1500%-2500% BB ATK% Based on HP LEFT / 50BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance Heal 100% DMG when ATKed (ALL) 3Turns / 80% Chance Angel Idol 100% HP (ALL) 190Turns / Convert 60% HP to ATK (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "100% ATK+ 2Turns on > 5k DMG Received (SELF) / 100% Chance Drain 6-10% HP (SELF) / 40% Chance Angel Idol 2x (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850418.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850418.png"
+                },                
+                "sp": {
+                    "@list": "20 : (*) 30% boost to max HP | 10 : 50% boost to max HP (Prerequisite: *) | 30 : 70% boost to Spark damage when damage dealt has exceeded certain amount (When 25,000 HP as damage is dealt )(for 2 turns) | 20 : Considerably reduces BB gauge required for BB (25% reduction) | 30 : Adds great HP restoration effect to BB/SBB (Heals (3500~4500 + 40% of healer's Rec) HP) | 30 : Adds great HP restoration for 3 turns effect to BB/SBB (Heals (3000~3500 + 10% of target's Rec) HP) | 30 : Adds huge BB gauge boost effect to BB/SBB (Fills 8 BC) | 30 : Adds huge BB gauge boost for 3 turns effect to BB/SBB (Fills 7 BC) | 30 : Adds Light and Dark elements to attack for 3 turns effect to BB/SBB | 50 : Allows BB's negation of critical, elemental damage and Atk, Def, Rec reductions effects to last 1 more turn | 20 : Enhances SBB's BB gauge boost when damage taken effect +1 BC. (Fills 5-8 BC total)"
+                }
             }
         ]
     }
