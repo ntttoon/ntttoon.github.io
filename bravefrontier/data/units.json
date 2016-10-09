@@ -8763,7 +8763,7 @@
                     "#text": "1500% Earth (AOE) / 80% OverDrive Fill+ 3Turns / 100% BC Fill+ (ALL) 3Turns / Normal HitCount +300% (100% DMG) (ALL) 3Turns / 300% ATK+ (ALL) 3Turns / 50% BC+ 50% HC+ 5% Item+ (ALL) 3Turns"
                 },
                 "es": {
-                    "@condtion": "Thief's Treasure Sphere OR DROP-type Sphere Equipped",
+                    "@condtion": "Thief's Jewel Sphere OR DROP-type Sphere Equipped",
                     "#text": "30% ALL Stats (SELF) / 25% Chance Heal 20-25% when ATKed (SELF) / 6 BC Fill on > 10k DMG Dealt (SELF)"
                 },
                 "art": {
