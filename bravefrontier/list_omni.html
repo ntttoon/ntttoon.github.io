@@ -8,14 +8,22 @@
 <meta property="og:title" content="Brave Frontier OMNI Skill Build" />
 <meta property="og:description" content="Build and share!" />
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 <script src="../js/ga.js"></script>
 <script src="js/libs.js"></script>
 </head>
 
 <body>
-<header class="w3-container w3-teal w3-card-2">
-  <h5>Simulated OMNI Skill Build</h5>
-</header>
+<!-- Navbar -->
+<div class="w3-top">
+ <ul class="w3-navbar w3-teal w3-left-align">
+  <li><a href="index.html" class="w3-hover-white"><i class="fa fa-home"></i></a></li>
+  <li class="w3-hide-small" style="margin-top:8px">Simulated OMNI Skill Build</li>
+ </ul>
+</div>
+<!-- end Navbar -->
+<div style="margin-top:40px;"></div>
+
 <div id="placeholder"> </div>
 <script>
 	var xmlhttp = new XMLHttpRequest();
@@ -43,7 +51,7 @@
 			var rarity_icon = (rarity == 8)?'<img src="images/oe_icon.png"> ':'';
 			var thumb = arr.brave.unit[i].thumb['@path'];
 			if(rarity == 8){
-				out+='<li class="w3-hover-sand"><a style="text-decoration:none;color:' + nameColor(element) +  '" href="unitinfo_osb.html?id=' + id + '"> <img src="' + thumb + '" class="w3-left w3-margin-right" style="width:50px"><p>' + rarity_icon + name + '</p></a> <div class="w3-clear"></div></li>'
+				out+='<li class="w3-hover-sand"><a style="text-decoration:none;color:' + nameColor(element) +  '" href="unitinfo_osb.html?id=' + id + '" target="_blank"> <img src="' + thumb + '" class="w3-left w3-margin-right" style="width:50px"><p>' + rarity_icon + name + '</p></a> <div class="w3-clear"></div></li>'
 			}
 		}
 		out+="</ul>";

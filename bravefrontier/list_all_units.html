@@ -16,10 +16,43 @@ a{
 </head>
 
 <body>
-<header class="w3-container w3-teal w3-card-2 w3-top">
-  <h5 id="count_info"></h5>
-</header>
-<div style="margin-top:50px;"></div>
+<!-- Navbar -->
+<div class="w3-top">
+ <ul class="w3-navbar w3-teal w3-left-align">
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    <a class="w3-hover-white" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li class="w3-hide-small"><a href="index.html" class="w3-hover-white"><i class="fa fa-home"></i></a></li>
+  <li class="w3-hide-small"><a href="list_all_units.html" class="w3-hover-white" onClick="thumbView();"><i class="fa fa-th"></i></a></li>
+  <li class="w3-hide-small"><a href="list_all_units.html" class="w3-hover-white" onClick="listView();"><i class="fa fa-th-list"></i></a></li>
+  <li style="margin-top:8px;margin-left:15px"><div id="count_info"></div></li>
+  <li class="w3-hide-small w3-right"><a href="search_units.html" class="w3-hover-white" title="Search"><i class="fa fa-search"></i></a></li>
+ </ul>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+    <ul class="w3-navbar w3-teal w3-left-align">
+      <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="list_all_units.html" onClick="thumbView();"><i class="fa fa-th"></i> Thumb View</a></li>
+      <li><a href="list_all_units.html" onClick="listView();"><i class="fa fa-th-list"></i> List View</a></li>
+      <li><a href="search_units.html"><i class="fa fa-search"></i> Search</a></li>
+    </ul>
+  </div>
+</div>
+<!-- end Navbar -->
+<script>
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+<div style="margin-top:40px;"></div>
 <div id="placeholder"> </div>
 <script>
 	if (typeof(Storage) !== "undefined") {
@@ -69,11 +102,11 @@ a{
 			var thumb = arr.brave.unit[i].thumb['@path'];
 			//Display
 			if(view == 'list'){
-				out+='<li class="w3-hover-sand"><a style="text-decoration:none;color:' + nameColor(element) +  '" href="unitinfo.html?id=' + id + '"> <img src="' + thumb + '" class="w3-left w3-margin-right" style="width:50px"><p>' + rarity_icon + name + '</p></a> <div class="w3-clear"></div></li>'
+				out+='<li class="w3-hover-sand"><a style="text-decoration:none;color:' + nameColor(element) +  '" href="unitinfo.html?id=' + id + '" target="_blank"> <img src="' + thumb + '" class="w3-left w3-margin-right" style="width:50px"><p>' + rarity_icon + name + '</p></a> <div class="w3-clear"></div></li>'
 			}
 			if(view == 'thumb'){
 				if(id != ""){
-					out+='<a href="unitinfo.html?id=' + id + '"> <img src="' + thumb + '" style="width:60px;margin-top:5px;"></a>';
+					out+='<a href="unitinfo.html?id=' + id + '" target="_blank"> <img src="' + thumb + '" style="width:60px;margin-top:5px;"></a>';
 				}
 			}
 		}
@@ -81,10 +114,10 @@ a{
 		document.getElementById("placeholder").innerHTML = out;
 		//Header and change icon
 		if(view == 'list'){
-			document.getElementById("count_info").innerHTML = '<b>' + count_seven + '</b> [7★] and <b>' + count_omni + '</b> [OMNI]' + '<div class="w3-right">' + '<a href="search_units.html"> <i class="fa fa-search w3-xlarge" style="margin-right:10px;"></i></a>' + '<a href="list_all_units.html" onClick="thumbView();"> <i class="fa fa-th w3-xlarge"></i></a></div>';
+			document.getElementById("count_info").innerHTML = '<b>' + count_seven + '</b> [7★] and <b>' + count_omni + '</b> [OMNI]';
 		}
 		if(view == 'thumb'){
-			document.getElementById("count_info").innerHTML = '<b>' + count_seven + '</b> [7★] and <b>' + count_omni + '</b> [OMNI]' + '<div class="w3-right">' + '<a href="search_units.html"> <i class="fa fa-search w3-xlarge" style="margin-right:10px;"></i></a>' + '<a href="list_all_units.html" onClick="listView();"> <i class="fa fa-th-list w3-xlarge"></i></a></div>';
+			document.getElementById("count_info").innerHTML = '<b>' + count_seven + '</b> [7★] and <b>' + count_omni + '</b> [OMNI]';
 		}
 	}
 	/////////////////////
