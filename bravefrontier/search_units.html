@@ -58,7 +58,7 @@
 			var rarity_icon = (rarity == 8)?'<img src="images/oe_icon.png"> ':'';
 			var thumb = arr.brave.unit[i].thumb['@path'];
 			if (name.match(re) || element.match(re)) {
-				out+='<li class="w3-hover-sand"><a style="text-decoration:none;color:' + nameColor(element) +  '" href="unitinfo.html?id=' + id + '"> <img src="' + thumb + '" class="w3-left w3-margin-right" style="width:50px"><p>' + rarity_icon + name + '</p></a> <div class="w3-clear"></div></li>'
+				out+='<li class="w3-hover-sand"><a style="text-decoration:none;color:' + nameColor(element) +  '" href="unitinfo.html?id=' + id + '" target="_blank"> <img src="' + thumb + '" class="w3-left w3-margin-right" style="width:50px"><p>' + rarity_icon + name + '</p></a> <div class="w3-clear"></div></li>'
 			}
 		}
 		out+="</ul>";
