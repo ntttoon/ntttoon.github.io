@@ -9229,7 +9229,7 @@
             {
                 "id": "1452",
                 "name": "Garrel 7",
-                "role": "atk_ele,crit,spark,def_ele",
+                "role": "atk_ele,def_ele,crit,spark,def_ele",
                 "rolesp": "",
                 "element": "Light",
                 "rarity": "7",
@@ -9243,7 +9243,7 @@
                     "@hit": "9",
                     "@dc": "9",
                     "@cost": "26",
-                    "#text": "350% Light (AOE) / 80% ATK+ to Light 3Turns / 60% CRIT+ (ALL) 3Turns / 80% Spark DMG+ (ALL) 3Turns"
+                    "#text": "350% Light (AOE) / 80% ATK+ DEF+ to Light 3Turns / 60% CRIT+ (ALL) 3Turns / 80% Spark DMG+ (ALL) 3Turns"
                 },
                 "sbb": {
                     "@hit": "18",
@@ -9274,7 +9274,7 @@
             {
                 "id": "1453",
                 "name": "Garrel 8",
-                "role": "atk_ele,crit,spark,def_ele",
+                "role": "atk_ele,def_ele,crit,spark,def_ele",
                 "rolesp": "LS_null_crit,bb_regen",
                 "element": "Light",
                 "rarity": "8",
@@ -9288,7 +9288,7 @@
                     "@hit": "12",
                     "@dc": "12",
                     "@cost": "27",
-                    "#text": "370% Light (AOE) / 100% ATK+ to Light 3Turns / 60% CRIT+ (ALL) 3Turns / 100% Spark DMG+ (ALL) 3Turns"
+                    "#text": "370% Light (AOE) / 100% ATK+ DEF+ to Light 3Turns / 60% CRIT+ (ALL) 3Turns / 100% Spark DMG+ (ALL) 3Turns"
                 },
                 "sbb": {
                     "@hit": "21",
@@ -9313,7 +9313,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51047.png"
                 },                
                 "sp": {
-                    "@list": "20 : +20% All Stats | 40 : +50% All Stats | 20 : +50% ATK when BB Gauge is above 50% | 20 : +50% DEF when BB Gauge is above 50% | 20 : +50% Spark Damage | 20 : +70% Spark Damage | 10 : 100% Base/Buffed Element Weakness Resist | 30 : Add Effect To BB/SBB (3 Turn Light Unit +120% ATK/DEF) | 40 : BB+: +30% Spark Dmg & SBB+: +30% Spark Dmg & UBB+: +30% Spark Dmg | 30 : Add Effect To BB/SBB (3 turn 7 BC/turn)"
+                    "@list": "20 : (*) +20% All Stats | 40 : +50% All Stats (Prerequisite: *) | 20 : +50% ATK when BB Gauge is above 50% | 20 : +50% DEF when BB Gauge is above 50% | 20 : (#) +50% Spark Damage | 20 : +70% Spark Damage (Prerequisite: #) | 10 : 100% Base/Buffed Element Weakness Resist | 30 : Add Effect To BB/SBB (3 Turn Light Unit +120% ATK/DEF) | 40 : BB+: +30% Spark Dmg & SBB+: +30% Spark Dmg & UBB+: +30% Spark Dmg | 30 : Add Effect To BB/SBB (3 turn 7 BC/turn)"
                 }
             },
             {
@@ -9409,7 +9409,7 @@
             {
                 "id": "1457",
                 "name": "Riones 7",
-                "role": "bb_regen,ewd,miti_ele,atk_ele,convert_atk",
+                "role": "bb_regen,ewd,miti_ele,atk_ele,def_ele,convert_atk",
                 "rolesp": "",
                 "element": "Fire",
                 "rarity": "7",
@@ -9429,7 +9429,7 @@
                     "@hit": "14",
                     "@dc": "14",
                     "@cost": "29",
-                    "#text": "560% Fire (AOE) / 80% ATK+ to Fire 3Turns / Convert 60% DEF to ATK (ALL) 3Turns / 100% Element Weakness DMG+ (fire,water) (ALL) 3Turns"
+                    "#text": "560% Fire (AOE) / 80% ATK+ DEF+ to Fire 3Turns / Convert 60% DEF to ATK (ALL) 3Turns / 100% Element Weakness DMG+ (fire,water) (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "20",
@@ -9454,8 +9454,8 @@
             {
                 "id": "1458",
                 "name": "Riones 8",
-                "role": "bb_regen,ewd,miti_ele,atk_ele,convert_atk",
-                "rolesp": "atk_ele,def_ele",
+                "role": "bb_regen,ewd,miti_ele,atk_ele,def_ele,convert_atk",
+                "rolesp": "",
                 "element": "Fire",
                 "rarity": "8",
                 "cost": "48",
@@ -9474,7 +9474,7 @@
                     "@hit": "18",
                     "@dc": "18",
                     "@cost": "30",
-                    "#text": "580% Fire (AOE) / 100% ATK+ to Fire 3Turns / Convert 70% DEF to ATK (ALL) 3Turns / 125% Element Weakness DMG+ (fire,water) (ALL) 3Turns"
+                    "#text": "580% Fire (AOE) / 100% ATK+ DEF+ to Fire 3Turns / Convert 70% DEF to ATK (ALL) 3Turns / 125% Element Weakness DMG+ (fire,water) (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "22",
@@ -9499,7 +9499,7 @@
             {
                 "id": "1459",
                 "name": "Seju 7",
-                "role": "bb_rate,atk_ele,crit,crit_dmg",
+                "role": "bb_rate,atk_ele,def_ele,crit,crit_dmg",
                 "rolesp": "",
                 "element": "Earth",
                 "rarity": "7",
@@ -9513,7 +9513,7 @@
                     "@hit": "12",
                     "@dc": "12",
                     "@cost": "15",
-                    "#text": "640% Earth (TGT) / 50BC Fill 3Turns (SELF) / 50% BC Fill+ (ALL) 3Turns / 80% ATK+ to Earth 3Turns / 60% CRIT+ (ALL) 3Turns"
+                    "#text": "640% Earth (TGT) / 50BC Fill 3Turns (SELF) / 50% BC Fill+ (ALL) 3Turns / 80% ATK+ DEF+ to Earth 3Turns / 60% CRIT+ (ALL) 3Turns"
                 },
                 "sbb": {
                     "@hit": "16",
@@ -9544,8 +9544,8 @@
             {
                 "id": "1460",
                 "name": "Seju 8",
-                "role": "bb_rate,atk_ele,crit,crit_dmg",
-                "rolesp": "atk_ele,def_ele,bb_fill",
+                "role": "bb_rate,atk_ele,def_ele,crit,crit_dmg",
+                "rolesp": "bb_fill",
                 "element": "Earth",
                 "rarity": "8",
                 "cost": "48",
@@ -9558,7 +9558,7 @@
                     "@hit": "14",
                     "@dc": "14",
                     "@cost": "14",
-                    "#text": "660% Earth (TGT) / 50BC Fill 3Turns (SELF) / 50% BC Fill+ (ALL) 3Turns / 100% ATK+ to Earth 3Turns / 60% CRIT+ (ALL) 3Turns"
+                    "#text": "660% Earth (TGT) / 50BC Fill 3Turns (SELF) / 50% BC Fill+ (ALL) 3Turns / 100% ATK+ DEF+ to Earth 3Turns / 60% CRIT+ (ALL) 3Turns"
                 },
                 "sbb": {
                     "@hit": "18",
@@ -9674,6 +9674,276 @@
                 },                
                 "sp": {
                     "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 10 : (*) +70% Spark Damage | 10 : +100% Spark Damage (Prerequisite: *) | 10 : (#) Add Effect To SBB (3 turn 70% ATK->DEF buff) | 20 : Add Effect To BB/SBB (3 turn 80% ATK->DEF buff) (Prerequisite: #) | 30 : SBB+: +30% Spark Dmg | 40 : Add Effect To BB/SBB (3 Turn +160% ATK) | 40 : Add Effect To BB/SBB (3 Turn +160% DEF) | 10 : Add Effect To SBB (80% Sick) & Add Effect To SBB (80% Paralyze)"
+                }
+            },
+            {
+                "id": "1485",
+                "name": "Salz 7",
+                "role": "bb_rate,bb_atk,bc,hc,od_fill",
+                "rolesp": "",
+                "element": "Water",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "5",
+                    "@dc": "35",
+                    "#text": "200% BB ATK%+ (ALL) / 40% HP 40% ATK (ALL) / 100% Spark DMG+ 2Turns on > 30 BC Received (ALL)"
+                },
+                "bb": {
+                    "@hit": "11",
+                    "@dc": "11",
+                    "@cost": "28",
+                    "#text": "350% Water (AOE) / 50% BC Fill+ (ALL) 3Turns / 230% BB ATK%+ (ALL) 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "29",
+                    "#text": "Water (AOE) 200%-720% BB ATK% Based on HP LEFT / 8% OverDrive Fill / 300% BB ATK%+ (ALL) 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "19",
+                    "@dc": "19",
+                    "@cost": "30",
+                    "#text": "Water (AOE) 1200%-2000% BB ATK% Based on HP LEFT / 60% CRIT+ (ALL) 3Turns / 100% Chance Enemy receives 100% Spark DMG+ 2Turns / 450% BB ATK%+ (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns / 100% Chance -80% Enemy DEF 2Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "100% BB ATK%+ (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20906.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20906.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1486",
+                "name": "Salz 8",
+                "role": "bb_rate,bb_atk,bc,hc,od_fill",
+                "rolesp": "",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "8",
+                    "@dc": "48",
+                    "#text": "250% BB ATK%+ (ALL) / 50% HP 50% ATK (ALL) / 120% Spark DMG+ 2Turns on > 30 BC Received (ALL) / Reduce DMG (20%) 2Turns on > 20 HC Received (ALL)"
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "29",
+                    "#text": "370% Water (AOE) / 50% BC Fill+ (ALL) 3Turns / 280% BB ATK%+ (ALL) 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "19",
+                    "@dc": "19",
+                    "@cost": "30",
+                    "#text": "Water (AOE) 200%-870% BB ATK% Based on HP LEFT / 8% OverDrive Fill / 350% BB ATK%+ (ALL) 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "30",
+                    "#text": "Water (AOE) 1500%-2500% BB ATK% Based on HP LEFT / 60% CRIT+ (ALL) 3Turns / 100% Chance Enemy receives 150% Spark DMG+ 2Turns / 550% BB ATK%+ (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns / 100% Chance -80% Enemy DEF 2Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "150% BB ATK%+ (SELF) / 50% Spark DMG+ (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20907.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20907.png"
+                },                
+                "sp": {
+                    "@list": "10 : (*) +20% HP | 10 : (#) +30% HP (Prerequisite: *) | 20 : +50% HP (Prerequisite: #) | 20 : +50% Spark Damage | 20 : +50% BB/SBB/UBB Mod | 10 : Debuff Immunity | 30 : ($) BB/SBB/UBB+: +100% | 20 : BB/SBB/UBB+: +150% (Prerequisite: $)"
+                }
+            },
+            {
+                "id": "1487",
+                "name": "Gairas 7",
+                "role": "atk_ele,def_ele,atk_down_add,miti_ele,spark_crit,spark_debuff",
+                "rolesp": "",
+                "element": "Earth",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "7",
+                    "@dc": "35",
+                    "#text": "40% HP 40% ATK (ALL) / 80% ATK (Earth) / Reduce DMG (15%) from (Water,thunder) Enemy (ALL)"
+                },
+                "bb": {
+                    "@hit": "12",
+                    "@dc": "12",
+                    "@cost": "27",
+                    "#text": "350% Earth (AOE) / 80% ATK+ DEF+ to Earth 3Turns / Add 20% Chance -20% Enemy ATK to ATK (ALL) 3Turns / Reduce DMG (10%) from (Water,thunder) Enemy 2Turns"
+                },
+                "sbb": {
+                    "@hit": "10",
+                    "@dc": "10",
+                    "@cost": "28",
+                    "#text": "560% Earth (AOE) / 640% Earth (TGT) / 80% ATK+ DEF+ to Earth 3Turns / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 25% Chance Enemy receives 25% Spark DMG+ 1Turns"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "1300% Earth (AOE) / 150% ATK+ to Earth 5Turns / 50% Chance SPARKcrit (100% DMG+) (ALL) 3Turns / 300% ATK+ (ALL) 3Turns / Reduce DMG (80%) from (Water,thunder) Enemy 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% Elemental Weakness DMG+ (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30866.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30866.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1488",
+                "name": "Gairas 8",
+                "role": "atk_ele,def_ele,atk_down_add,miti_ele,spark_crit,spark_debuff",
+                "rolesp": "ewd,miti_ele",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "50% HP 50% ATK (ALL) / 100% ATK (Earth) / Reduce DMG (15%) from (Water,thunder) Enemy (ALL) / 7BC Fill on > 30k DMG Dealt (ALL)"
+                },
+                "bb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "28",
+                    "#text": "370% Earth (AOE) / 100% ATK+ DEF+ to Earth 3Turns / Add 20% Chance -20% Enemy ATK to ATK (ALL) 3Turns / Reduce DMG (10%) from (Water,thunder) Enemy 2Turns"
+                },
+                "sbb": {
+                    "@hit": "12",
+                    "@dc": "12",
+                    "@cost": "29",
+                    "#text": "580% Earth (AOE) / 660% Earth (TGT) / 100% ATK+ DEF+ to Earth 3Turns / 30% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 25% Chance Enemy receives 25% Spark DMG+ 1Turns"
+                },
+                "ubb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "30",
+                    "#text": "1500% Earth (AOE) / 200% ATK+ to Earth 5Turns / 50% Chance SPARKcrit (150% DMG+) (ALL) 3Turns / 350% ATK+ (ALL) 3Turns / Reduce DMG (80%) from (Water,thunder) Enemy 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% Elemental Weakness DMG+ (SELF) / Normal HitCount +200% (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30867.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30867.png"
+                },                
+                "sp": {
+                    "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 20 : (*) +50% Spark Damage | 10 : (#) +70% Spark Damage (Prerequisite: *) | 10 : +100% Spark Damage (Prerequisite: #) | 30 : ($) Add Effect To BB/SBB (3 turn +125% Earth/Thunder Weakness Damage) | 20 : Add Effect To BB/SBB (3 turn +150% Earth/Thunder Weakness Damage) (Prerequisite: $) | 20 : Add Effect To SBB (2 turn Water Dmg 10% Reduction) & Add Effect To SBB (2 turn Thunder Dmg 10% Reduction) | 30 : SBB+: 10% Chance Sparks Crit Buff | 30 : BB+: +20% ATK/DEF & SBB+: +20% ATK/DEF | 20 : Add Effect To SBB (1 turn Inflict Debuff (20% Chance -20% ATK) Buff)"
+                }
+            },
+            {
+                "id": "1489",
+                "name": "Agures 7",
+                "role": "bb_regen,heal_atked,def,hot,bb_fill,bb_atked,convert_atk",
+                "rolesp": "LS_bb_atked",
+                "element": "Light",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "8",
+                    "@dc": "32",
+                    "#text": "100% Chance 2-4BC Fill when ATKed (ALL) / Heal Each Turn (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL)"
+                },
+                "bb": {
+                    "@hit": "13",
+                    "@dc": "13",
+                    "@cost": "27",
+                    "#text": "350% Light (AOE) / 6BC Fill 3Turns / 20% Chance Heal 15-20% DMG when ATKed (ALL) 3Turns / 140% DEF+ (ALL) 3Turns / Gradual Heal (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "28",
+                    "#text": "560% Light (AOE) / 6BC Fill (ALL) 1Turn / 6BC Fill 3Turns / 3-6BC Fill when ATKed (100%) (ALL) 3Turns / Convert 60% DEF to ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "30",
+                    "#text": "1300% Light (AOE) / 999BC Fill (ALL) 1Turn / 50BC Fill 3Turns / Reduce DMG (75%) 3Turns / Convert 200% DEF to ATK (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "10% ALL Stats (SELF) / 5% Chance Reduce DMG to 1 (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_51066.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51066.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1490",
+                "name": "Agures 8",
+                "role": "bb_regen,heal_atked,def,hot,bb_fill,bb_atked,convert_atk",
+                "rolesp": "LS_bb_atked,cure",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "11",
+                    "@dc": "44",
+                    "#text": "50% BC Fill+ (ALL) / 100% Chance 4-7BC Fill when ATKed (ALL) / Heal Each Turn (ALL) / 40% HP 40% ATK 40% DEF 40% REC (ALL)"
+                },
+                "bb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "28",
+                    "#text": "370% Light (AOE) / 7BC Fill 3Turns / 20% Chance Heal 20-25% DMG when ATKed (ALL) 3Turns / 160% DEF+ (ALL) 3Turns / Gradual Heal (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "580% Light (AOE) / 8BC Fill (ALL) 1Turn / 7BC Fill 3Turns / 4-7BC Fill when ATKed (100%) (ALL) 3Turns / Convert 70% DEF to ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "30",
+                    "#text": "1500% Light (AOE) / 999BC Fill (ALL) 1Turn / 50BC Fill 3Turns / Reduce DMG (75%) 3Turns / Convert 250% DEF to ATK (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "10% ALL Stats (SELF) / 10% Chance Reduce DMG to 1 (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_51067.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51067.png"
+                },                
+                "sp": {
+                    "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 10 : 0-50% ATK depending on HP remaining | 10 : 0-50% DEF depending on HP lost | 10 : +15% BB Gauge Fill Rate | 20 : Negate Status Ailments | 10 : BBoT occur at the Start of Turn | 10 : LS+: +10% All Stats | 50 : Add Effect To BB (4-7 BC on Hit for 3 turns) | 30 : Add Effect To BB/SBB (Cure Status/Debuffs)"
                 }
             },
             {
