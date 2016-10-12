@@ -9693,13 +9693,13 @@
                     "@hit": "11",
                     "@dc": "11",
                     "@cost": "28",
-                    "#text": "350% Water (AOE) / 50% BC Fill+ (ALL) 3Turns / 230% BB ATK%+ (ALL) 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns"
+                    "#text": "350% Water (AOE) / 50% BC Fill+ (ALL) 3Turns / 200% BB ATK%+ (ALL) 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns"
                 },
                 "sbb": {
                     "@hit": "15",
                     "@dc": "15",
                     "@cost": "29",
-                    "#text": "Water (AOE) 200%-720% BB ATK% Based on HP LEFT / 8% OverDrive Fill / 300% BB ATK%+ (ALL) 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns"
+                    "#text": "Water (AOE) 200%-720% BB ATK% Based on HP LEFT / 8% OverDrive Fill / 250% BB ATK%+ (ALL) 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "19",
@@ -9738,13 +9738,13 @@
                     "@hit": "14",
                     "@dc": "14",
                     "@cost": "29",
-                    "#text": "370% Water (AOE) / 50% BC Fill+ (ALL) 3Turns / 280% BB ATK%+ (ALL) 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns"
+                    "#text": "370% Water (AOE) / 50% BC Fill+ (ALL) 3Turns / 250% BB ATK%+ (ALL) 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns"
                 },
                 "sbb": {
                     "@hit": "19",
                     "@dc": "19",
                     "@cost": "30",
-                    "#text": "Water (AOE) 200%-870% BB ATK% Based on HP LEFT / 8% OverDrive Fill / 350% BB ATK%+ (ALL) 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns"
+                    "#text": "Water (AOE) 200%-870% BB ATK% Based on HP LEFT / 8% OverDrive Fill / 300% BB ATK%+ (ALL) 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "22",
