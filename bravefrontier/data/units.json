@@ -9889,7 +9889,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "10% ALL Stats (SELF) / 5% Chance Reduce DMG to 1 (SELF)"
+                    "#text": "10% ALL Stats (ALL) / 5% Chance Reduce DMG to 1 (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_51066.png"
@@ -9934,7 +9934,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "10% ALL Stats (SELF) / 10% Chance Reduce DMG to 1 (SELF)"
+                    "#text": "10% ALL Stats (ALL) / 10% Chance Reduce DMG to 1 (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_51067.png"
