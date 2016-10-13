@@ -12913,7 +12913,7 @@
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860368.png"
                 },                
                 "sp": {
-                    "@list": "10 : (*) 50% boost to Spark damage | 20 : Boosts 50% Spark damage to 100% Spark damage (Prerequisites: *) | 10 : Boosts critical hit damage (50% boost) | 20 : Negates all status ailments | 80 : 80% damage reduction from Dark Types | 30 : Adds damage boost against status afflicted foes for 3 turns effect to BB/SBB (160% boost) | 20 : Adds damage boost to Dark types for 3 turns effect to BB/SBB (75% boost to Atk of Dark types) | 30 : Adds OD gauge boost effect to SBB (8% boost) | 40 : Adds Dark elemental damage boost effect for 3 turns effect to SBB (150% boost) | 40 : Enhances SBB/UBB's BB Atk boost effect (+100% boost, 450% boost on SBB, 650% boost on UBB total)"
+                    "@list": "10 : (*) 50% boost to Spark damage | 20 : Boosts 50% Spark damage to 100% Spark damage (Prerequisites: *) | 10 : Boosts critical hit damage (50% boost) | 20 : Negates all status ailments | 50 : 50% damage reduction from Dark Types | 30 : Adds damage boost against status afflicted foes for 3 turns effect to BB/SBB (160% boost) | 20 : Adds damage boost to Dark types for 3 turns effect to BB/SBB (75% boost to Atk of Dark types) | 30 : Adds OD gauge boost effect to SBB (8% boost) | 40 : Adds Dark elemental damage boost effect for 3 turns effect to SBB (150% boost) | 40 : Enhances SBB/UBB's BB Atk boost effect (+100% boost, 450% boost on SBB, 650% boost on UBB total)"
                 }
             },
             {
