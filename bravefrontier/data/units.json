@@ -9947,6 +9947,96 @@
                 }
             },
             {
+                "id": "1491",
+                "name": "Lava 8",
+                "role": "atk_ele,id,bb_atk,bb_spark",
+                "rolesp": "bb_fill",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "6BC Fill Each Turn (ALL) / 200% BB ATK%+ (ALL) / 30% HP 100% ATK (Fire) / 30% HP 50% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "27",
+                    "#text": "360% Fire (AOE) / 120% ATK+ to Fire 3Turns / Ignore DEF (ALL) 2Turns / 350% BB ATK%+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "22",
+                    "#text": "560% Fire (AOE) / 100% Chance 2-3BC Fill on Spark (ALL) 3Turns / 120% ATK+ to Fire 3Turns / Ignore DEF (ALL) 2Turns / 400% BB ATK%+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "26",
+                    "@dc": "26",
+                    "@cost": "25",
+                    "#text": "1500% Fire (AOE) / 300% ATK+ to Fire 3Turns / 250% Spark DMG+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "25% Chance Heal 20% DMG when ATKed (SELF) / 100% Chance 2-3BC Fill when ATKed (SELF) / 50% DEF+ (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10127.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10127.png"
+                },                
+                "sp": {
+                    "@list": "20 : +50% ATK | 10 : +20% HP/DEF | 10 : (*) +70% Spark Damage | 10 : +100% Spark Damage (Prerequisite: *) | 10 : +50% Crit Damage | 10 : +50% All Weakness Damage | 80 : Survive up to 1 fatal blows (50% Chance) | 20 : BB/SBB+: +30% ATK to Fire | 40 : BB/SBB/UBB+: +50% BBATK% | 30 : Add Effect To BB/SBB (Fill 8 BC)"
+                }
+            },
+            {
+                "id": "1492",
+                "name": "Elimo 8",
+                "role": "miti,heal,cure,def,rec,heal_atked",
+                "rolesp": "hot,null_stats,null_ails,null_crit,null_ewd",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "11",
+                    "@dc": "44",
+                    "#text": "15% Chance Reduce DMG (20%) (ALL) / 75% HC Fill+ (ALL) / 30% HC+ (ALL) / 60% HP (ALL)"
+                },
+                "bb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "25",
+                    "#text": "Reduce DMG (50%) 2Turns / Heal (ALL) / Cure Ails / 160% DEF+ 160% REC+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "25",
+                    "#text": "Reduce DMG (50%) 2Turns / Heal (ALL) / 20% Chance Heal 25-30% DMG when ATKed (ALL) 3Turns / 160% DEF+ 160% REC+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "30",
+                    "#text": "999BC Fill (ALL) 1Turn / Reduce DMG (75%) 3Turns / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / Null Ails 3Turns / Gradual Heal FULL (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "20% Chance Reduce DMG (20%) (SELF) / Reduce 20% BB Cost (SELF) / Add 3k Water HP Barrier (ALL) effect to BB,SBB (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20157_2.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20157.png"
+                },                
+                "sp": {
+                    "@list": "20 : +30% HP/DEF | 10 : (*) 2-3 BC when hit | 10 : 3-4 BC when hit (Prerequisite: *) | 20 : Negate Status Ailments | 20 : Def Ignore Immunity | 30 : Add Effect To BB/SBB (3 Turn HoT 3000-3500 HP (+15% Target REC)) | 30 : Add Effect To BB/SBB (1 Turn Negate Stat Down Debuffs) | 30 : Add Effect To BB/SBB (3 turn Negate Status Ailments) | 30 : Add Effect To BB/SBB (1 Turn Negate Critical Damage) | 30 : Add Effect To BB/SBB (1 Turn Negate Elemental Weakness Damage)"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
