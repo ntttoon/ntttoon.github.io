@@ -9147,7 +9147,7 @@
                 "ls": {
                     "@hit": "1",
                     "@dc": "40",
-                    "#text": "15% Chance Ignore DEF (ALL) / 120% ATK 120% DEF 2Turns (ALL) / Reduce DMG (20%) from (All) Enemy (ALL)"
+                    "#text": "15% Chance Ignore DEF (ALL) / 120% ATK 120% DEF 2Turns (ALL) / Reduce DMG (20%) from Enemy (ALL) 2Turns"
                 },
                 "bb": {
                     "@hit": "1",
@@ -9192,7 +9192,7 @@
                 "ls": {
                     "@hit": "2",
                     "@dc": "42",
-                    "#text": "20% Chance Ignore DEF (ALL) / 150% ATK 150% DEF 2Turns (ALL) / Reduce DMG (25%) from (All) Enemy (ALL) / Add 30% Chance -20% Enemy ATK to ATK 2Turns on ATK (ALL)"
+                    "#text": "20% Chance Ignore DEF (ALL) / 150% ATK 150% DEF 2Turns (ALL) / Reduce DMG (25%) from Enemy (ALL) 2Turns / Add 30% Chance -20% Enemy ATK to ATK 2Turns on ATK (ALL)"
                 },
                 "bb": {
                     "@hit": "2",
