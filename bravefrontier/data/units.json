@@ -9048,7 +9048,7 @@
             },
             {
                 "id": "1448",
-                "name": "Mariela 7",
+                "name": "Azure Princess Mariela",
                 "role": "bb_regen,heal_atked,null_ails,od_rate,bb_atked,crit,crit_dmg",
                 "rolesp": "LS_bb_atked",
                 "element": "Water",
@@ -9093,7 +9093,7 @@
             },
             {
                 "id": "1449",
-                "name": "Mariela 8",
+                "name": "Dragon Mother Mariela",
                 "role": "bb_regen,heal_atked,null_ails,od_rate,bb_atked,crit,crit_dmg",
                 "rolesp": "LS_bb_atked,heal,cure,od_rate,null_crit,null_ails",
                 "element": "Water",
@@ -9138,7 +9138,7 @@
             },
             {
                 "id": "1450",
-                "name": "Victor 7",
+                "name": "Lion Demon Viktor",
                 "role": "bb_fill,atk,def,rec,dot,ails,convert_atk,atk_down",
                 "rolesp": "",
                 "element": "Thunder",
@@ -9183,7 +9183,7 @@
             },
             {
                 "id": "1451",
-                "name": "Victor 8",
+                "name": "Roaring Thunder Viktor",
                 "role": "bb_fill,atk,def,rec,dot,ails,convert_atk,atk_down",
                 "rolesp": "",
                 "element": "Thunder",
@@ -9228,7 +9228,7 @@
             },
             {
                 "id": "1452",
-                "name": "Garrel 7",
+                "name": "Azure King Garrel",
                 "role": "atk_ele,def_ele,crit,spark,def_ele",
                 "rolesp": "",
                 "element": "Light",
@@ -9273,7 +9273,7 @@
             },
             {
                 "id": "1453",
-                "name": "Garrel 8",
+                "name": "Brave Emperor Garrel",
                 "role": "atk_ele,def_ele,crit,spark,def_ele",
                 "rolesp": "LS_null_crit,bb_regen",
                 "element": "Light",
