@@ -10037,6 +10037,276 @@
                 }
             },
             {
+                "id": "1493",
+                "name": "Arisa 7",
+                "role": "cure,null_ails,atk,def,rec,maxhp,convert_atk,convert_def",
+                "rolesp": "LS_null_ails",
+                "element": "Fire",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "11",
+                    "@dc": "33",
+                    "#text": "Heal Each Turn (ALL) / 30% HP 30% DEF (ALL) / Null Ails (ALL)"
+                },
+                "bb": {
+                    "@hit": "26",
+                    "@dc": "26",
+                    "@cost": "28",
+                    "#text": "350% Fire (AOE) / Cure Ails / Null Ails 3Turns / 120% ATK+ 120% DEF+ 120% REC+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "34",
+                    "@dc": "34",
+                    "@cost": "29",
+                    "#text": "560% Fire (AOE) / 10% Max HP+ till Death,Battle End / 120% ATK+ 120% DEF+ 120% REC+ (ALL) 3Turns / Convert 20% HP to ATK (ALL) 3Turns / Convert 20% HP to DEF (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "40",
+                    "@dc": "40",
+                    "@cost": "30",
+                    "#text": "1300% Fire (AOE) / 25% Max HP+ till Death,Battle End / 250% ATK+ 250% DEF+ 250% REC+ (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "30% ATK+ DEF+ when BB Gauge > 50% (SELF) / 3BC Fill Each Turn (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10976.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10976.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1494",
+                "name": "Arisa 8",
+                "role": "cure,null_ails,atk,def,rec,maxhp,convert_atk,convert_def",
+                "rolesp": "LS_null_ails,convert_rec,add_ele,crit_dmg,crit",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "14",
+                    "@dc": "42",
+                    "#text": "Heal Each Turn (ALL) / 50% HP 50% DEF (ALL) / Null Ails (ALL) / Reduce DMG (20%) 1Turn on > 20 Sparks (ALL)"
+                },
+                "bb": {
+                    "@hit": "32",
+                    "@dc": "32",
+                    "@cost": "27",
+                    "#text": "370% Fire (AOE) / Cure Ails / Null Ails 3Turns / 140% ATK+ 140% DEF+ 140% REC+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "40",
+                    "@dc": "40",
+                    "@cost": "28",
+                    "#text": "580% Fire (AOE) / 15% Max HP+ till Death,Battle End / 140% ATK+ 140% DEF+ 140% REC+ (ALL) 3Turns / Convert 25% HP to ATK (ALL) 3Turns / Convert 25% HP to DEF (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "45",
+                    "@dc": "45",
+                    "@cost": "30",
+                    "#text": "1500% Fire (AOE) / 35% Max HP+ till Death,Battle End / 300% ATK+ 300% DEF+ 300% REC+ (ALL) 5Turns / Gradual Heal FULL (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% ATK+ DEF+ when BB Gauge > 50% (SELF) / 4BC Fill Each Turn (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10977.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10977.png"
+                },                
+                "sp": {
+                    "@list": "20 : +20% All Stats | 10 : 2-3 BC when hit | 20 : Def Ignore Immunity | 10 : LS+: Heal 200 (+ 10% REC) HP/turn | 40 : SBB+: +5% ->ATK/DEF buff | 30 : Add Effect To SBB (3 turn 30% HP->REC buff) | 30 : Add Effect To BB/SBB (3 turn Fire/Light Buff) | 30 : Add Effect To BB/SBB (3 turn +50% Crit Dmg) | 40 : Add Effect To BB/SBB (3 Turn +60% Crit)"
+                }
+            },
+            {
+                "id": "1495",
+                "name": "Licht 7",
+                "role": "bb_fill,spark,heal_spark,bb_spark,spark_crit",
+                "rolesp": "",
+                "element": "Thunder",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "7",
+                    "@dc": "35",
+                    "#text": "100% Spark DMG+ (ALL) / 30% HP 30% ATK (ALL) / 150% BB ATK%+ 1Turn on > 5k DMG Received (ALL)"
+                },
+                "bb": {
+                    "@hit": "11",
+                    "@dc": "11",
+                    "@cost": "29",
+                    "#text": "350% Thunder (AOE) / 6BC Fill (ALL) 1Turn / 80% Spark DMG+ (ALL) 3Turns / 100% Chance Heal on Spark (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "30",
+                    "#text": "560% Thunder (AOE) / 6BC Fill (ALL) 1Turn / 100% Chance 1-2BC Fill on Spark (ALL) 3Turns / 80% Spark DMG+ (ALL) 3Turns / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "1300% Thunder (AOE) / 100% Chance 4-6BC Fill on Spark (ALL) 3Turns / 250% Spark DMG+ (ALL) 3Turns / 50% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 100% Chance Heal on Spark (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% Spark DMG+ on Full HP (SELF) / 10% Chance Enemy receives 20% Spark DMG+ 1Turn (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40856.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40856.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1496",
+                "name": "Licht 8",
+                "role": "bb_fill,spark,heal_spark,bb_spark,spark_crit",
+                "rolesp": "spark_debuff,bb_regen",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "9",
+                    "@dc": "45",
+                    "#text": "100% Chance Heal on Spark (ALL) / 120% Spark DMG+ (ALL) / 50% HP 50% ATK (ALL) / 200% BB ATK%+ 1Turn on > 5k DMG Received (ALL)"
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "28",
+                    "#text": "370% Thunder (AOE) / 8BC Fill (ALL) 1Turn / 100% Spark DMG+ (ALL) 3Turns / 100% Chance Heal on Spark (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "19",
+                    "@dc": "19",
+                    "@cost": "29",
+                    "#text": "580% Thunder (AOE) / 8BC Fill (ALL) 1Turn / 100% Chance 2-3BC Fill on Spark (ALL) 3Turns / 100% Spark DMG+ (ALL) 3Turns / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "30",
+                    "#text": "1500% Thunder (AOE) / 100% Chance 5-8BC Fill on Spark (ALL) 3Turns / 300% Spark DMG+ (ALL) 3Turns / 50% Chance SPARKcrit (100% DMG+) (ALL) / 100% Chance Heal on Spark (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "80% Spark DMG+ on Full HP (SELF) / 10% Chance Enemy receives 25% Spark DMG+ 1Turn (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40857.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40857.png"
+                },                
+                "sp": {
+                    "@list": "10 : +50% ATK | 10 : (*) +50% Spark Damage | 10 : (#) +70% Spark Damage (Prerequisite: *) | 20 : +100% Spark Damage (Prerequisite: #) | 30 : BB+: Fill 2 BC & SBB+: Fill 2 BC | 20 : SBB+: 10% Chance Sparks Crit Buff (0% Damage) | 50 : BB+: +30% Spark Dmg & SBB+: +30% Spark Dmg & UBB+: +30% Spark Dmg | 20 : Add Effect To SBB (HP on Spark) | 40 : Add Effect To BB/SBB (1 turn 25% Spark Damage Taken Debuff (25% Chance)) | 30 : Add Effect To BB/SBB (3 turn 7 BC/turn)"
+                }
+            },
+            {
+                "id": "1497",
+                "name": "Johann 7",
+                "role": "miti,od_rate,bb_atked,bb_rate",
+                "rolesp": "LS_bb_atked",
+                "element": "Dark",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "8",
+                    "@dc": "32",
+                    "#text": "100% Chance 2-4BC Fill when ATKed (ALL) / 25% Chance Heal 20% DMG when ATKed (ALL) / 30% HP 30% DEF (ALL)"
+                },
+                "bb": {
+                    "@hit": "13",
+                    "@dc": "13",
+                    "@cost": "27",
+                    "#text": "290% Dark (AOE) / Reduce DMG (50%) 1Turns / 20% OverDrive Fill+ 3Turns / 3-6BC Fill when ATKed (100%) (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "29",
+                    "#text": "500% Dark (AOE) / Reduce DMG (50%) 1Turns / 20% OverDrive Fill+ 3Turns / 40% BC Fill+ (ALL) 3Turns / 3-6BC Fill when ATKed (100%) (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "1200% Dark (AOE) / Reduce DMG (75%) 3Turns / 300% OverDrive Fill+ 1Turns / 50BC Fill when ATKed (100%) (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Ignore DEF (SELF) / Reduce DMG (20%) 1Turn on > 5k DMG Received (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_61046.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_61046.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1498",
+                "name": "Johann 8",
+                "role": "miti,od_rate,bb_atked,bb_rate",
+                "rolesp": "LS_bb_atked,atk_down,def_down,atk_down_add,def_down_add",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "11",
+                    "@dc": "44",
+                    "#text": "100% Chance 4-7BC Fill when ATKed (ALL) / 25% Chance Heal 25% DMG when ATKed (ALL) / 20% OverDrive Fill+ (ALL) / 50% HP 50% DEF (ALL)"
+                },
+                "bb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "26",
+                    "#text": "340% Dark (AOE) / Reduce DMG (50%) 1Turns / 20% OverDrive Fill+ 3Turns / 4-7BC Fill when ATKed (100%) (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "28",
+                    "#text": "500% Dark (AOE) / Reduce DMG (50%) 1Turns / 20% OverDrive Fill+ 3Turns / 50% BC Fill+ (ALL) 3Turns / 4-7BC Fill when ATKed (100%) (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "30",
+                    "#text": "1300% Dark (AOE) / Reduce DMG (75%) 3Turns / 300% OverDrive Fill+ 2Turns / 50BC Fill when ATKed (100%) (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Ignore DEF (SELF) / Reduce DMG (25%) 1Turn on > 5k DMG Received (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_61047.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_61047.png"
+                },                
+                "sp": {
+                    "@list": "20 : +50% DEF | 10 : +20% HP/DEF | 10 : 0-50% DEF depending on HP lost | 10 : 3 BC/turn | 10 : 10-15% DMG to HP when hit (25% Chance) | 20 : 20% OD Gauge Fill Rate | 30 : BB+: Reduce Damage 0% for 2 turns & SBB+: Reduce Damage 0% for 2 turns | 20 : BB+: 1 BC on Hit (0% Chance) for 0 turns & SBB+: 1 BC on Hit (0% Chance) for 0 turns | 40 : Add Effect To BB/SBB (-50% ATK and/or -50% DEF {30%} for 1 turn) | 40 : Add Effect To BB/SBB (Inflict Debuff (20% Chance -20% ATK/DEF) Buff) 3 Turns"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
