@@ -11287,10 +11287,10 @@
                     "#text": "20% ALL Stats (SELF) / Normal HitCount +100% (100% DMG)"
                 },
                 "art": {
-                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860257.png"
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860257_2.png"
                 },
                 "thumb": {
-                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860257.png"
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860257_2.png"
                 },                
                 "sp": {
                     "@list": ""
