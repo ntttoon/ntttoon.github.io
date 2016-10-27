@@ -9408,7 +9408,7 @@
             },
             {
                 "id": "1457",
-                "name": "Riones 7",
+                "name": "Dragon Warrior Lyonesse",
                 "role": "bb_regen,ewd,miti_ele,atk_ele,def_ele,convert_atk",
                 "rolesp": "",
                 "element": "Fire",
@@ -9453,7 +9453,7 @@
             },
             {
                 "id": "1458",
-                "name": "Riones 8",
+                "name": "Blazing Dragon Lyonesse",
                 "role": "bb_regen,ewd,miti_ele,atk_ele,def_ele,convert_atk",
                 "rolesp": "",
                 "element": "Fire",
@@ -9498,7 +9498,7 @@
             },
             {
                 "id": "1459",
-                "name": "Seju 7",
+                "name": "Wild Edge Serge",
                 "role": "bb_rate,atk_ele,def_ele,crit,crit_dmg",
                 "rolesp": "",
                 "element": "Earth",
@@ -9543,7 +9543,7 @@
             },
             {
                 "id": "1460",
-                "name": "Seju 8",
+                "name": "Silva Khopesh Serge",
                 "role": "bb_rate,atk_ele,def_ele,crit,crit_dmg",
                 "rolesp": "bb_fill",
                 "element": "Earth",
@@ -9588,7 +9588,7 @@
             },
             {
                 "id": "1461",
-                "name": "Sonia 7",
+                "name": "Lion Princess Sonia",
                 "role": "spark_crit,convert_def,spark,spark_debuff,atk_down_add",
                 "rolesp": "",
                 "element": "Dark",
@@ -9633,7 +9633,7 @@
             },
             {
                 "id": "1462",
-                "name": "Sonia 8",
+                "name": "Roaring Empress Sonia",
                 "role": "spark_crit,convert_def,spark,spark_debuff,atk_down_add",
                 "rolesp": "atk,def,ails",
                 "element": "Dark",
