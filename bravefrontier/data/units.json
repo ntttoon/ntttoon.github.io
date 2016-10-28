@@ -9493,7 +9493,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10947.png"
                 },                
                 "sp": {
-                    "@list": "10 : +20% ATK/REC | 10: +20% HP/DEF | 10 : 3 BC/turn | 30 : Add Effect To SBB (2 turn Fire/Earth Dmg 10% Reduction) | 10 : BB+: 2 BC/turn | 50 : BB+: +25% Weakness Damage & SBB+: +25% Weakness Damage | 20 : (*) Add Effect To BB/SBB (3 Turn Water Unit +100% ATK/DEF) | 20 : Add Effect To BB/SBB (3 Turn Water Unit +120% ATK/DEF) (Prerequisite: *) | 20 : (#) Add Effect To BB (3 Turn Fire Unit +100% ATK/DEF) | 20 : Add Effect To BB (3 Turn Fire Unit +120% ATK/DEF) & SBB+: +20% ATK/DEF (Prerequisite: #)"
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 10 : Boosts BB gauge each turn (Fills 3 BC) | 30 : Adds slight damage reduction from Fire, Earth types for 2 turns effect to SBB (10% reduction) | 10 : Enhances BB's huge BB gauge boost each turn effect (+2 BC fill. Fills 9 BC total) | 50 : Enhances BB/SBB's elemental damage boost for Fire, Water types effect (+25% boost. 150% elemental damage total) | 20 : (*) Adds considerable Atk, Def boost for Water types effect to BB/SBB (100% boost) | 20 : Enhances BB/SBB's considerable Atk, Def boost for Water types effect (120% boost) (Prerequisite: *) | 20 : (#) Adds considerable Atk, Def boost for Fire types effect to BB/SBB (100% boost) | 20 : Enhances BB/SBB's considerable Atk, Def boost for Fire types effect (120% boost) (Prerequisite: #)"
                 }
             },
             {
@@ -9583,7 +9583,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30847.png"
                 },                
                 "sp": {
-                    "@list": "20 : +50% ATK | 20 : (*) +100% Spark Damage | 10 : +120% Spark Damage (Prerequisite: *)  | 10 : (#) +30% Crit Damage | 10 : +70% Crit Damage (Prerequisite: #)  | 10 : Add Elements To Attacks | 20 : ($) Add Effect To SBB (3 Turn Earth Unit +100% ATK/DEF) | 20 : Add Effect To BB/SBB (3 Turn Earth Unit +120% ATK/DEF) (Prerequisite: $)  | 40 : Add Effect To SBB (3 Turn +60% Crit) | 40 : Add Effect To SBB (Fill 8 BC)"
+                    "@list": "20 : 50% boost to Atk | 20 : (*) 100% boost to Spark damage | 10 : Raises Spark damage boost from 100% to 120% (Prerequisite: *) | 10 : (#) Slightly boosts critical hit damage (30% boost) | 10 : Boosts critical hit damage (+40% boost. 70% boost total) (Prerequisite: #) | 10 : Adds Fire, Water, Thunder, Earth elements to attack effect | 20 : ($) Adds considerable Atk, Def boost for Earth types effect to SBB (100% boost) | 20 : Enhances BB/SBB's considerable Atk, Def boost for Earth types effect (120% boost) (Prerequisite: $) | 40 : Adds enormous critical hit rate boost for 3 turns effect to SBB (60% Crit) | 40 : Adds huge boost to BB gauge effect to SBB (Fills 8 BC)"
                 }
             },
             {
@@ -9673,7 +9673,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_61037.png"
                 },                
                 "sp": {
-                    "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 10 : (*) +70% Spark Damage | 10 : +100% Spark Damage (Prerequisite: *) | 10 : (#) Add Effect To SBB (3 turn 70% ATK->DEF buff) | 20 : Add Effect To BB/SBB (3 turn 80% ATK->DEF buff) (Prerequisite: #) | 30 : SBB+: +30% Spark Dmg | 40 : Add Effect To BB/SBB (3 Turn +160% ATK) | 40 : Add Effect To BB/SBB (3 Turn +160% DEF) | 10 : Add Effect To SBB (80% Sick) & Add Effect To SBB (80% Paralyze)"
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to max HP, Def | 10 : (*) 70% boost to Spark damage | 10 : Raises Spark damage boost from 70% to 100% (Prerequisite: *) | 10 : (#) Adds huge boost to Def relative to Atk for 3 turns effect to SBB (70% Atk to Def) | 20 : Enhances BB/SBB's huge boost to Def relative to Atk for 3 turns effect (+10% boost. 80% Atk to Def total) (Prerequisite: #) | 30 : Enhances SBB's Spark damage boost effect (+30% boost. 130% boost total) | 40 : Adds huge boost to Atk for 3 turns effect to BB/SBB (160% boost) | 40 : Adds huge boost to Def for 3 turns effect to BB/SBB (160% boost) | 10 : Adds high probability of Sick, Paralysis infliction effect to SBB (80% chance)"
                 }
             },
             {
