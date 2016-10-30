@@ -78,6 +78,7 @@
 	function myFunction(response) {
 		var arr = JSON.parse(response);
 		var i,j;
+		var lead_az = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 		var out = "<ul class='w3-ul'>";
 		var out_side = "<ul class='w3-ul'>";
 		var ls_out = bb_out = sbb_out = ubb_out = escon_out = es_out = "";
@@ -129,7 +130,7 @@
 					var sp_indent = (sp_array[j].search('Prerequisite') !== -1)?'class="w3-light-grey" style="margin-left:15px;"':'';
 					var sp_disabled = (sp_array[j].search('Prerequisite') !== -1)?'disabled':'';
 					
-					out+='<li ' + sp_indent + '><span class="w3-badge w3-teal">'+ Number(j+1) +'</span> <strong class="w3-small">'+ sp_cost.trim() + ' SP </strong><input class="w3-check" type="checkbox" value="'+ sp_cost.trim() +'" ' + sp_disabled + '><label class="w3-validate w3-small"> ' + sp_array[j].substring(sp_array[j].search(':')+1, sp_array[j].length).trim() + '</label>';
+					out+='<li ' + sp_indent + '><span class="w3-tag w3-round w3-teal" style="width:30px;" >'+ lead_az[j] +'</span> <strong class="w3-small">'+ sp_cost.trim() + ' SP </strong><input class="w3-check" type="checkbox" value="'+ sp_cost.trim() +'" ' + sp_disabled + '><label class="w3-validate w3-small"> ' + sp_array[j].substring(sp_array[j].search(':')+1, sp_array[j].length).trim() + '</label>';
 					out+='</li>';
 				}
 				////////// break into lines
