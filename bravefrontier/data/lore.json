@@ -1,0 +1,74 @@
+{
+    "brave": {
+        "unit": [
+            {
+                "id": "Kira",
+                "thumb": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50656.png",
+                "lore3": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore4": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore5": {
+                    "art": "",
+                    "enlore": "A disciple who believed himself too strong to swear allegiance to any single god. Though he was as powerful as a high ranking god, Kira was discriminated against for not having existed since ancient times. There were also rumors that claimed the true reason he was ostracized by his peers was because demon blood ran through his veins. Kira was not interested in his origins, and treated those around him condescendingly, regardless of their stature or rank. The reason for his constant quarreling with the gods and all the ruckus he caused can possibly be attributed to his personality.",
+                    "vnlore": ""
+                },
+                "lore6": {
+                    "art": "",
+                    "enlore": "A disciple who challenged the Holy Emperor Karna Masta in battle. Wanting to prove his unparalleled strength, he went after Karna Masta. Defeating many disciples on his way to the battlefield also helped him to release even more power than before. However, Kira was still no match for the great Karna Masta. After being defeated by the Holy Emperor, he was sealed within a barrier by a high ranking god. This is all said to have happened long before the great war with the gods.",
+                    "vnlore": ""
+                },
+                "lore7": {
+                    "art": "",
+                    "enlore": "A disciple who was sealed in Ishgria. After having been disgraced by the defeat he suffered at Karna Masta's hands, his powers slowly began to regenerate. However, even after he had fully recovered, he still couldn't break the barrier he found himself sealed in. Watching Kira struggle, a higher ranking god promised him his freedom as long as he destroyed the other five disciples within the barrier. He accepted the god's proposal on the condition that their resurrection could be possible in the future, and then promptly began hunting them all down.",
+                    "vnlore": ""
+                },
+                "lore8": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                }
+            },
+            {
+                "id": "Kira",
+                "thumb": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50656.png",
+                "lore3": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore4": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore5": {
+                    "art": "",
+                    "enlore": "A disciple who believed himself too strong to swear allegiance to any single god. Though he was as powerful as a high ranking god, Kira was discriminated against for not having existed since ancient times. There were also rumors that claimed the true reason he was ostracized by his peers was because demon blood ran through his veins. Kira was not interested in his origins, and treated those around him condescendingly, regardless of their stature or rank. The reason for his constant quarreling with the gods and all the ruckus he caused can possibly be attributed to his personality.",
+                    "vnlore": ""
+                },
+                "lore6": {
+                    "art": "",
+                    "enlore": "A disciple who challenged the Holy Emperor Karna Masta in battle. Wanting to prove his unparalleled strength, he went after Karna Masta. Defeating many disciples on his way to the battlefield also helped him to release even more power than before. However, Kira was still no match for the great Karna Masta. After being defeated by the Holy Emperor, he was sealed within a barrier by a high ranking god. This is all said to have happened long before the great war with the gods.",
+                    "vnlore": ""
+                },
+                "lore7": {
+                    "art": "",
+                    "enlore": "A disciple who was sealed in Ishgria. After having been disgraced by the defeat he suffered at Karna Masta's hands, his powers slowly began to regenerate. However, even after he had fully recovered, he still couldn't break the barrier he found himself sealed in. Watching Kira struggle, a higher ranking god promised him his freedom as long as he destroyed the other five disciples within the barrier. He accepted the god's proposal on the condition that their resurrection could be possible in the future, and then promptly began hunting them all down.",
+                    "vnlore": ""
+                },
+                "lore8": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                }
+            }
+        ]
+    }
+}
