@@ -2,71 +2,38 @@
     "brave": {
         "unit": [
             {
-                "id": "Kira",
-                "thumb": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50656.png",
-                "lore3": {
+                "id": "Zekt",
+                "thumb": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_51007.png",
+                "translator": "Nova Strike",
+                "lore3s": {
                     "art": "",
                     "enlore": "",
                     "vnlore": ""
                 },
-                "lore4": {
+                "lore4s": {
                     "art": "",
                     "enlore": "",
                     "vnlore": ""
                 },
-                "lore5": {
-                    "art": "",
-                    "enlore": "A disciple who believed himself too strong to swear allegiance to any single god. Though he was as powerful as a high ranking god, Kira was discriminated against for not having existed since ancient times. There were also rumors that claimed the true reason he was ostracized by his peers was because demon blood ran through his veins. Kira was not interested in his origins, and treated those around him condescendingly, regardless of their stature or rank. The reason for his constant quarreling with the gods and all the ruckus he caused can possibly be attributed to his personality.",
-                    "vnlore": ""
-                },
-                "lore6": {
-                    "art": "",
-                    "enlore": "A disciple who challenged the Holy Emperor Karna Masta in battle. Wanting to prove his unparalleled strength, he went after Karna Masta. Defeating many disciples on his way to the battlefield also helped him to release even more power than before. However, Kira was still no match for the great Karna Masta. After being defeated by the Holy Emperor, he was sealed within a barrier by a high ranking god. This is all said to have happened long before the great war with the gods.",
-                    "vnlore": ""
-                },
-                "lore7": {
-                    "art": "",
-                    "enlore": "A disciple who was sealed in Ishgria. After having been disgraced by the defeat he suffered at Karna Masta's hands, his powers slowly began to regenerate. However, even after he had fully recovered, he still couldn't break the barrier he found himself sealed in. Watching Kira struggle, a higher ranking god promised him his freedom as long as he destroyed the other five disciples within the barrier. He accepted the god's proposal on the condition that their resurrection could be possible in the future, and then promptly began hunting them all down.",
-                    "vnlore": ""
-                },
-                "lore8": {
-                    "art": "",
-                    "enlore": "",
-                    "vnlore": ""
-                }
-            },
-            {
-                "id": "Kira",
-                "thumb": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50656.png",
-                "lore3": {
+                "lore5s": {
                     "art": "",
                     "enlore": "",
                     "vnlore": ""
                 },
-                "lore4": {
+                "lore6s": {
                     "art": "",
                     "enlore": "",
                     "vnlore": ""
                 },
-                "lore5": {
-                    "art": "",
-                    "enlore": "A disciple who believed himself too strong to swear allegiance to any single god. Though he was as powerful as a high ranking god, Kira was discriminated against for not having existed since ancient times. There were also rumors that claimed the true reason he was ostracized by his peers was because demon blood ran through his veins. Kira was not interested in his origins, and treated those around him condescendingly, regardless of their stature or rank. The reason for his constant quarreling with the gods and all the ruckus he caused can possibly be attributed to his personality.",
-                    "vnlore": ""
+                "lore7s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_51006.png",
+                    "enlore": "A wolf-type sacred beast that served a certain disciple. Its strength in battle was said to eclipse even the gods. It fought against the First Summoner while he was on a solitary adventure, and left a massive scar on his face. Afterwards, it encountered the same Summoner alongside his allies, and faced them beside its disciple master. The sacred beast did not yield an inch despite being outnumbered, and succeeded in defeating a female Summoner. However, it was dealt a mortal wound immediately afterward by another Summoner's spear. It is said that even facing its own death, the sacred beast continued to fight to protect its master.",
+                    "vnlore": "Một Lang thần thú, đã từng hầu hạ cho một môn sinh của chúa, sở hữu sức mạnh được cho rằng có thể sánh ngang với các vị thần, đã chiến đấu với triệu hồi giả đầu tiên khi anh ta đang trong chuyến phiêu lưu cô độc của minh, để lại cho con người đó một vết sẹo lớn trên mặt. Sau này, chính con sói thần đó và chủ nhân của nó, đối mặt lại với triệu hồi sư đấy, và bên cạnh là đồng đội của anh. Con thú huyền thoại, mặc dù bị áp đảo về số lượng, nhưng không hề nhân nhượng với những đòn đánh của mình, hạ gục một nữ triệu hồi sư. Tuy nhiên ngay sau đó, một triệu hồi sư khác đã dùng cây thương của mình hạ sát một đòn chí mạng vào ngay con quái thú. Sử sách ghi lại rằng, cho dù đang đối diện trước cái chết của chính mình, con quái thú đó vẫn tiếp tục kiên cường chiến đấu để bảo vệ chủ nhân của chính nó."
                 },
-                "lore6": {
-                    "art": "",
-                    "enlore": "A disciple who challenged the Holy Emperor Karna Masta in battle. Wanting to prove his unparalleled strength, he went after Karna Masta. Defeating many disciples on his way to the battlefield also helped him to release even more power than before. However, Kira was still no match for the great Karna Masta. After being defeated by the Holy Emperor, he was sealed within a barrier by a high ranking god. This is all said to have happened long before the great war with the gods.",
-                    "vnlore": ""
-                },
-                "lore7": {
-                    "art": "",
-                    "enlore": "A disciple who was sealed in Ishgria. After having been disgraced by the defeat he suffered at Karna Masta's hands, his powers slowly began to regenerate. However, even after he had fully recovered, he still couldn't break the barrier he found himself sealed in. Watching Kira struggle, a higher ranking god promised him his freedom as long as he destroyed the other five disciples within the barrier. He accepted the god's proposal on the condition that their resurrection could be possible in the future, and then promptly began hunting them all down.",
-                    "vnlore": ""
-                },
-                "lore8": {
-                    "art": "",
-                    "enlore": "",
-                    "vnlore": ""
+                "lore8s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_51007.png",
+                    "enlore": "While this sacred beast scarred the First Summoner's face, it only attacked him because his fighting spirit revealed him to be a threat to its master. As such, it is said that the sacred beast was never combative by nature. Had it not encountered the First Summoner, the sacred beast would have grown even further. In order to protect its master, it might have carved out an area that even the Four Fallen Gods could not invade easily. This likely would have made the Summoners' Hall La Veda region survey even more difficult.",
+                    "vnlore": "Mặc dù không thể chối bỏ việc con quái thú này đã gây tổn hại lên khuôn mặt của triệu hồi sư đầu tiên, nhưng nó chỉ tấn công khi tinh thần chiến đấu của anh ta đã chứng tỏ rằng, bản thân anh ấy là một mối đe dọa với chủ nhân của nó. Như vậy, sử sách cho rằng, Lang thần thú này chưa bao giờ sở hữu một bản năng thiện chiến. Nếu như cuộc giao tranh định mệnh giữa hai nhân vật này chưa bao giờ xảy ra, con quái thú thần thoại này sẽ càng ngày càng trở nên mạnh mẽ. Và để nhằm bảo vệ chủ nhân của mình, nó chắc chắn sẽ tự chính bản thân nó, cai trị và canh gác một vùng đất đã được chọn mà kể cả 4 vị thần sa ngã cũng sẽ không thể dễ dàng xâm lấn. Như vậy, chắc chắn một điều rằng, việc điều tra của sảnh Triệu hồi của tỉnh La Veda sẽ trở nên rất khó khăn nếu điều đó thực sự xảy ra."
                 }
             }
         ]

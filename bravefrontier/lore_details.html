@@ -2,54 +2,175 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>NttToon PlayGround</title>
+<title>Brave Frontier</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="og:image" content="http://ntttoon.github.io/bravefrontier/images/fb_tristats.jpg" />
-<meta property="og:title" content="Brave Frontier - Tri/Duo Stats buff" />
-<meta property="og:description" content="Click here!" />
+<meta property="og:image" content="http://ntttoon.github.io/bravefrontier/images/fb_lore.jpg" />
+<meta property="og:title" content="Brave Frontier - Unit Lore" />
+<meta property="og:description" content="EN and VN Lore, Click to read!" />
 <link rel="stylesheet" href="../css/w3.css">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 <script src="../js/ga.js"></script>
+<script src="js/libs.js"></script>
 </head>
 
 <body>
 <!-- Navbar -->
 <div class="w3-top w3-teal" style="height:39px;">
-  <ul class="w3-pagination">
-    <li><a href="#" class="w3-hover-white"><i class="fa fa-home"></i></a></li>
-    <li><a href="#" class="w3-hover-white">EN</a></li>
-    <li><a href="#" class="w3-hover-white">VN</a></li>
-  </ul>
-</div>
+  <div id="top_menu"></div>
+    <!--
+    <li><a href="lore_details.html" class="w3-hover-white" onClick="lanEN();">EN</a></li>
+    <li><a href="lore_details.html" class="w3-hover-white" onClick="lanVN();">VN</a></li>
+    -->
+  </div>
 <!-- end Navbar -->
 
 <div style="margin-top:50px;"></div>
-<div class="w3-container w3-margin-top">
-  <div class="w3-card-2">
-    <div class="w3-center"><img src="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50654.png" style="width:100%;max-width:400px"></div>
-    <div class="w3-container w3-justify">
-      <p>A disciple who believed himself too strong to swear allegiance to any single god. Though he was as powerful as a high ranking god, Kira was discriminated against for not having existed since ancient times. There were also rumors that claimed the true reason he was ostracized by his peers was because demon blood ran through his veins. Kira was not interested in his origins, and treated those around him condescendingly, regardless of their stature or rank. The reason for his constant quarreling with the gods and all the ruckus he caused can possibly be attributed to his personality.</p>
-    </div>
-  </div>
-</div>
-<!-- break -->
-<div class="w3-container w3-margin-top">
-  <div class="w3-card-2">
-    <div class="w3-center"><img src="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50655.png" style="width:100%;max-width:400px"></div>
-    <div class="w3-container w3-justify">
-      <p>A disciple who challenged the Holy Emperor Karna Masta in battle. Wanting to prove his unparalleled strength, he went after Karna Masta. Defeating many disciples on his way to the battlefield also helped him to release even more power than before. However, Kira was still no match for the great Karna Masta. After being defeated by the Holy Emperor, he was sealed within a barrier by a high ranking god. This is all said to have happened long before the great war with the gods.</p>
-    </div>
-  </div>
-</div>
-<!-- break -->
-<div class="w3-container w3-margin-top">
-  <div class="w3-card-2">
-    <div class="w3-center"><img src="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50656.png" style="width:100%;max-width:400px"></div>
-    <div class="w3-container w3-justify">
-      <p>A disciple who was sealed in Ishgria. After having been disgraced by the defeat he suffered at Karna Masta's hands, his powers slowly began to regenerate. However, even after he had fully recovered, he still couldn't break the barrier he found himself sealed in. Watching Kira struggle, a higher ranking god promised him his freedom as long as he destroyed the other five disciples within the barrier. He accepted the god's proposal on the condition that their resurrection could be possible in the future, and then promptly began hunting them all down.
-</p>
-    </div>
-  </div>
-</div>
+<div id="placeholder"> </div>
+
+<script>
+	if (typeof(Storage) !== "undefined") {
+		if (!localStorage.lan) {
+            localStorage.lan = "en";
+        }
+		lan = localStorage.lan;
+	} else {
+		alert("Sorry, your browser does not support Web Storage...");
+	}
+	/////
+	var xmlhttp = new XMLHttpRequest();
+	var url = "data/lore.json";
+	
+	xmlhttp.onreadystatechange=function() {
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			myFunction(xmlhttp.responseText);
+		}
+	}
+	xmlhttp.open("GET", url, true);
+	xmlhttp.send();
+	
+	function myFunction(response) {
+		var arr = JSON.parse(response);
+		var i;
+		var out = "";
+		var top_btn = "";
+		var s = getURLParameter('id');
+		var json_len = arr.brave.unit.length;
+		for(i = 0; i < json_len; i++) {
+			var id = arr.brave.unit[i].id;
+			if(id==s)
+			{
+				var thumb = arr.brave.unit[i].thumb;
+				var translator = arr.brave.unit[i].translator;
+				//
+				var lore3s_art = arr.brave.unit[i].lore3s['art'];
+				var lore3s_en = arr.brave.unit[i].lore3s['enlore'];
+				var lore3s_vn = arr.brave.unit[i].lore3s['vnlore'];
+				//
+				var lore4s_art = arr.brave.unit[i].lore4s['art'];
+				var lore4s_en = arr.brave.unit[i].lore4s['enlore'];
+				var lore4s_vn = arr.brave.unit[i].lore4s['vnlore'];
+				//
+				var lore5s_art = arr.brave.unit[i].lore5s['art'];
+				var lore5s_en = arr.brave.unit[i].lore5s['enlore'];
+				var lore5s_vn = arr.brave.unit[i].lore5s['vnlore'];
+				//
+				var lore6s_art = arr.brave.unit[i].lore6s['art'];
+				var lore6s_en = arr.brave.unit[i].lore6s['enlore'];
+				var lore6s_vn = arr.brave.unit[i].lore6s['vnlore'];
+				//
+				var lore7s_art = arr.brave.unit[i].lore7s['art'];
+				var lore7s_en = arr.brave.unit[i].lore7s['enlore'];
+				var lore7s_vn = arr.brave.unit[i].lore7s['vnlore'];
+				//
+				var lore8s_art = arr.brave.unit[i].lore8s['art'];
+				var lore8s_en = arr.brave.unit[i].lore8s['enlore'];
+				var lore8s_vn = arr.brave.unit[i].lore8s['vnlore'];
+				
+				//
+				var lore3s_lan = (lan == 'en') ? lore3s_en : lore3s_vn;
+				var lore4s_lan = (lan == 'en') ? lore4s_en : lore4s_vn;
+				var lore5s_lan = (lan == 'en') ? lore5s_en : lore5s_vn;
+				var lore6s_lan = (lan == 'en') ? lore6s_en : lore6s_vn;
+				var lore7s_lan = (lan == 'en') ? lore7s_en : lore7s_vn;
+				var lore8s_lan = (lan == 'en') ? lore8s_en : lore8s_vn;
+				//
+				if(!lore3s_art == ""){
+					out+= '<div class="w3-container w3-margin-top">';
+					out+= '<div class="w3-card-2">';
+					out+= '<div class="w3-center"><img src="' + lore3s_art + '" style="width:100%;max-width:400px"></div>';
+					out+= '<div class="w3-container w3-justify">';
+					out+= '<p>' + lore3s_lan + '</p>';
+					out+= '</div></div></div>'
+				}
+				//
+				if(!lore4s_art == ""){
+					out+= '<div class="w3-container w3-margin-top">';
+					out+= '<div class="w3-card-2">';
+					out+= '<div class="w3-center"><img src="' + lore4s_art + '" style="width:100%;max-width:400px"></div>';
+					out+= '<div class="w3-container w3-justify">';
+					out+= '<p>' + lore4s_lan + '</p>';
+					out+= '</div></div></div>'
+				}
+				//
+				if(!lore5s_art == ""){
+					out+= '<div class="w3-container w3-margin-top">';
+					out+= '<div class="w3-card-2">';
+					out+= '<div class="w3-center"><img src="' + lore5s_art + '" style="width:100%;max-width:400px"></div>';
+					out+= '<div class="w3-container w3-justify">';
+					out+= '<p>' + lore5s_lan + '</p>';
+					out+= '</div></div></div>'
+				}
+				//
+				if(!lore6s_art == ""){
+					out+= '<div class="w3-container w3-margin-top">';
+					out+= '<div class="w3-card-2">';
+					out+= '<div class="w3-center"><img src="' + lore6s_art + '" style="width:100%;max-width:400px"></div>';
+					out+= '<div class="w3-container w3-justify">';
+					out+= '<p>' + lore6s_lan + '</p>';
+					out+= '</div></div></div>'
+				}
+				//
+				if(!lore7s_art == ""){
+					out+= '<div class="w3-container w3-margin-top">';
+					out+= '<div class="w3-card-2">';
+					out+= '<div class="w3-center"><img src="' + lore7s_art + '" style="width:100%;max-width:400px"></div>';
+					out+= '<div class="w3-container w3-justify">';
+					out+= '<p>' + lore7s_lan + '</p>';
+					out+= '</div></div></div>'
+				}
+				//
+				if(!lore8s_art == ""){
+					out+= '<div class="w3-container w3-margin-top">';
+					out+= '<div class="w3-card-2">';
+					out+= '<div class="w3-center"><img src="' + lore8s_art + '" style="width:100%;max-width:400px"></div>';
+					out+= '<div class="w3-container w3-justify">';
+					out+= '<p>' + lore8s_lan + '</p>';
+					out+= '</div></div></div>'
+				}
+			}
+		}
+		out+= '<p class="w3-center">Translator: ' + translator + '</p>'
+		document.getElementById("placeholder").innerHTML = out;
+		/////
+		top_btn+= '<ul class="w3-pagination"><li><a href="list_lore.html" class="w3-hover-white"><i class="fa fa-arrow-left"></i></a></li>';
+		top_btn+= '<li><a href="lore_details.html?id=' + id + '" class="w3-hover-white" onClick="lanEN();">EN</a></li><li><a href="lore_details.html?id=' + id + '" class="w3-hover-white" onClick="lanVN();">VN</a></li>';
+		top_btn+= '</ul>';
+		document.getElementById("top_menu").innerHTML = top_btn;
+	}
+	/////////////////////
+	function lanVN(){
+		if(lan == "en"){
+			localStorage.lan = "vn";
+			lan = localStorage.lan;
+		}
+	}
+	function lanEN(){
+		if(lan == "vn"){
+			localStorage.lan = "en";
+			lan = localStorage.lan;
+		}
+	}
+</script>
+
 </body>
 </html>
