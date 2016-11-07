@@ -16,16 +16,27 @@
 <body>
 <!-- Navbar -->
 <div class="w3-top w3-teal" style="height:39px;">
-  <ul class="w3-pagination">
-  	<li><a href="list_lore.html" class="w3-hover-white"><i class="fa fa-arrow-left"></i></a></li>
-  </ul>
-</div>
+  <div id="top_menu"></div>
+    <!--
+    <li><a href="lore_details.html" class="w3-hover-white" onClick="lanEN();">EN</a></li>
+    <li><a href="lore_details.html" class="w3-hover-white" onClick="lanVN();">VN</a></li>
+    -->
+  </div>
 <!-- end Navbar -->
 
 <div style="margin-top:50px;"></div>
 <div id="placeholder"> </div>
 
 <script>
+	if (typeof(Storage) !== "undefined") {
+		if (!localStorage.lan) {
+            localStorage.lan = "en";
+        }
+		lan = localStorage.lan;
+	} else {
+		alert("Sorry, your browser does not support Web Storage...");
+	}
+	/////
 	var xmlhttp = new XMLHttpRequest();
 	var url = "data/lore.json";
 	
@@ -48,40 +59,48 @@
 			var id = arr.brave.unit[i].id;
 			if(id==s)
 			{
+				var id_lan = s;
 				var thumb = arr.brave.unit[i].thumb;
 				var translator = arr.brave.unit[i].translator;
 				//
 				var lore3s_art = arr.brave.unit[i].lore3s['art'];
-				//var lore3s_en = arr.brave.unit[i].lore3s['enlore'];
+				var lore3s_en = arr.brave.unit[i].lore3s['enlore'];
 				var lore3s_vn = arr.brave.unit[i].lore3s['vnlore'];
 				//
 				var lore4s_art = arr.brave.unit[i].lore4s['art'];
-				//var lore4s_en = arr.brave.unit[i].lore4s['enlore'];
+				var lore4s_en = arr.brave.unit[i].lore4s['enlore'];
 				var lore4s_vn = arr.brave.unit[i].lore4s['vnlore'];
 				//
 				var lore5s_art = arr.brave.unit[i].lore5s['art'];
-				//var lore5s_en = arr.brave.unit[i].lore5s['enlore'];
+				var lore5s_en = arr.brave.unit[i].lore5s['enlore'];
 				var lore5s_vn = arr.brave.unit[i].lore5s['vnlore'];
 				//
 				var lore6s_art = arr.brave.unit[i].lore6s['art'];
-				//var lore6s_en = arr.brave.unit[i].lore6s['enlore'];
+				var lore6s_en = arr.brave.unit[i].lore6s['enlore'];
 				var lore6s_vn = arr.brave.unit[i].lore6s['vnlore'];
 				//
 				var lore7s_art = arr.brave.unit[i].lore7s['art'];
-				//var lore7s_en = arr.brave.unit[i].lore7s['enlore'];
+				var lore7s_en = arr.brave.unit[i].lore7s['enlore'];
 				var lore7s_vn = arr.brave.unit[i].lore7s['vnlore'];
 				//
 				var lore8s_art = arr.brave.unit[i].lore8s['art'];
-				//var lore8s_en = arr.brave.unit[i].lore8s['enlore'];
+				var lore8s_en = arr.brave.unit[i].lore8s['enlore'];
 				var lore8s_vn = arr.brave.unit[i].lore8s['vnlore'];
 				
+				//
+				var lore3s_lan = (lan == 'en') ? lore3s_en : lore3s_vn;
+				var lore4s_lan = (lan == 'en') ? lore4s_en : lore4s_vn;
+				var lore5s_lan = (lan == 'en') ? lore5s_en : lore5s_vn;
+				var lore6s_lan = (lan == 'en') ? lore6s_en : lore6s_vn;
+				var lore7s_lan = (lan == 'en') ? lore7s_en : lore7s_vn;
+				var lore8s_lan = (lan == 'en') ? lore8s_en : lore8s_vn;
 				//
 				if(!lore3s_art == ""){
 					out+= '<div class="w3-container w3-margin-top">';
 					out+= '<div class="w3-card-2">';
 					out+= '<div class="w3-center"><img src="' + lore3s_art + '" style="width:100%;max-width:400px"></div>';
 					out+= '<div class="w3-container w3-justify">';
-					out+= '<p>' + lore3s_vn + '</p>';
+					out+= '<p>' + lore3s_lan + '</p>';
 					out+= '</div></div></div>'
 				}
 				//
@@ -90,7 +109,7 @@
 					out+= '<div class="w3-card-2">';
 					out+= '<div class="w3-center"><img src="' + lore4s_art + '" style="width:100%;max-width:400px"></div>';
 					out+= '<div class="w3-container w3-justify">';
-					out+= '<p>' + lore4s_vn + '</p>';
+					out+= '<p>' + lore4s_lan + '</p>';
 					out+= '</div></div></div>'
 				}
 				//
@@ -99,7 +118,7 @@
 					out+= '<div class="w3-card-2">';
 					out+= '<div class="w3-center"><img src="' + lore5s_art + '" style="width:100%;max-width:400px"></div>';
 					out+= '<div class="w3-container w3-justify">';
-					out+= '<p>' + lore5s_vn + '</p>';
+					out+= '<p>' + lore5s_lan + '</p>';
 					out+= '</div></div></div>'
 				}
 				//
@@ -108,7 +127,7 @@
 					out+= '<div class="w3-card-2">';
 					out+= '<div class="w3-center"><img src="' + lore6s_art + '" style="width:100%;max-width:400px"></div>';
 					out+= '<div class="w3-container w3-justify">';
-					out+= '<p>' + lore6s_vn + '</p>';
+					out+= '<p>' + lore6s_lan + '</p>';
 					out+= '</div></div></div>'
 				}
 				//
@@ -117,7 +136,7 @@
 					out+= '<div class="w3-card-2">';
 					out+= '<div class="w3-center"><img src="' + lore7s_art + '" style="width:100%;max-width:400px"></div>';
 					out+= '<div class="w3-container w3-justify">';
-					out+= '<p>' + lore7s_vn + '</p>';
+					out+= '<p>' + lore7s_lan + '</p>';
 					out+= '</div></div></div>'
 				}
 				//
@@ -126,7 +145,7 @@
 					out+= '<div class="w3-card-2">';
 					out+= '<div class="w3-center"><img src="' + lore8s_art + '" style="width:100%;max-width:400px"></div>';
 					out+= '<div class="w3-container w3-justify">';
-					out+= '<p>' + lore8s_vn + '</p>';
+					out+= '<p>' + lore8s_lan + '</p>';
 					out+= '</div></div></div>'
 				}
 			}
@@ -134,6 +153,24 @@
 		}
 		out+= '<p class="w3-center">Translator: ' + translator + '</p>'
 		document.getElementById("placeholder").innerHTML = out;
+		/////
+		top_btn+= '<ul class="w3-pagination"><li><a href="list_lore.html" class="w3-hover-white"><i class="fa fa-arrow-left"></i></a></li>';
+		top_btn+= '<li><a href="lore_details.html?id=' + id_lan + '" class="w3-hover-white" onClick="lanEN();">EN</a></li><li><a href="lore_details.html?id=' + id_lan + '" class="w3-hover-white" onClick="lanVN();">VN</a></li>';
+		top_btn+= '</ul>';
+		document.getElementById("top_menu").innerHTML = top_btn;
+	}
+	/////////////////////
+	function lanVN(){
+		if(lan == "en"){
+			localStorage.lan = "vn";
+			lan = localStorage.lan;
+		}
+	}
+	function lanEN(){
+		if(lan == "vn"){
+			localStorage.lan = "en";
+			lan = localStorage.lan;
+		}
 	}
 </script>
 
