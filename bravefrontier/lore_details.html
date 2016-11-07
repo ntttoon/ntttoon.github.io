@@ -59,6 +59,7 @@
 			var id = arr.brave.unit[i].id;
 			if(id==s)
 			{
+				var id_lan = s;
 				var thumb = arr.brave.unit[i].thumb;
 				var translator = arr.brave.unit[i].translator;
 				//
@@ -148,12 +149,13 @@
 					out+= '</div></div></div>'
 				}
 			}
+			
 		}
 		out+= '<p class="w3-center">Translator: ' + translator + '</p>'
 		document.getElementById("placeholder").innerHTML = out;
 		/////
 		top_btn+= '<ul class="w3-pagination"><li><a href="list_lore.html" class="w3-hover-white"><i class="fa fa-arrow-left"></i></a></li>';
-		top_btn+= '<li><a href="lore_details.html?id=' + id + '" class="w3-hover-white" onClick="lanEN();">EN</a></li><li><a href="lore_details.html?id=' + id + '" class="w3-hover-white" onClick="lanVN();">VN</a></li>';
+		top_btn+= '<li><a href="lore_details.html?id=' + id_lan + '" class="w3-hover-white" onClick="lanEN();">EN</a></li><li><a href="lore_details.html?id=' + id_lan + '" class="w3-hover-white" onClick="lanVN();">VN</a></li>';
 		top_btn+= '</ul>';
 		document.getElementById("top_menu").innerHTML = top_btn;
 	}
