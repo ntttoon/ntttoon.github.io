@@ -293,7 +293,7 @@
                 "lore4s": {
                     "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_20473.png",
                     "enlore": "",
-                    "vnlore": "Hoàng tử thứ 3 của Vương Quốc Sama, người chỉ huy Hải Quân Sama chống lại đội quân của các vị Thần (God Army). Arius có tài năng xuất chúng trong cả kiếm thuật lẫn phép thuật, tuy nhiên bởi tính cách có phần mềm mỏng, anh vô tình đồng ý với những lời kiến từ người khác quá nhanh chóng, dẫn đến sự hỗn loạn trong chính đơn vị Hải Quân của mình. Đồng thời, là một trong những người ủng hộ Selena, một trong Six Heroes, một cách nhiệt huyết, anh đã kí họa Selena mà không có sự cho phép của cô, thậm chí còn đưa ra công chúng. Có nhiều lời đồn đoán rằng Selena đã yêu cầu anh giữ khoản cách với cô sau sự việc."
+                    "vnlore": "Hoàng tử thứ 3 của Vương Quốc Sama, người chỉ huy Hải Quân Sama chống lại đội quân của các vị Thần (God Army). Arius có tài năng xuất chúng trong cả kiếm thuật lẫn phép thuật, tuy nhiên bởi tính cách có phần mềm mỏng, anh vô tình đồng ý với những lời kiến từ người khác quá nhanh chóng, dẫn đến sự hỗn loạn trong chính đơn vị Hải Quân của mình. Đồng thời, là một trong những người ủng hộ Selena, một trong Six Heroes, một cách nhiệt huyết, anh đã kí họa Selena mà không có sự cho phép của cô, thậm chí còn đưa ra công chúng. Có nhiều lời đồn đoán rằng Selena đã yêu cầu anh giữ khoảng cách với cô sau sự việc."
                 },
                 "lore5s": {
                     "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_20474.png",
@@ -693,12 +693,12 @@
                 "lore7s": {
                     "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_40816.png",
                     "enlore": "",
-                    "vnlore": "Fizz là cận vệ thân cận của Công chúa của Gió, hoạt động trong tổ chức của những nữ hiệp sĩ có tên là “Lady Wings” (Đôi cánh nữ giới). Công chúa rất tin tưởng và trân trọng Fizz nhất trong những người hầu của cô. Và Fizz cũng luôn hy vọng vào cô chủ của mình, kể cả khi cô chủ bị một phù thủy bắt cóc với âm mưu chiếm lấy gia bảo của dòng tộc hoàng gia. Thực sự rằng, mọi người tin rằng chính Fizz đã cầu cứu một tên trộm để giải cứu công chúa. Mặc dù sau này, cô công chúa đã bị nguyền rủa phải sống ẩn thân, Fizz vẫn không ngừng quan tâm và hỗ trợ cô chủ của mình."
+                    "vnlore": "Fizz là cận vệ thân cận của Công chúa của Gió, hoạt động trong tổ chức của những nữ hiệp sĩ có tên là “Lady Wings” (Đôi cánh nữ giới). Công chúa rất tin tưởng và trân trọng Fizz nhất trong những người hầu của cô. Và Fizz cũng luôn hy vọng vào cô chủ của mình, kể cả khi cô chủ bị một phù thủy bắt cóc với âm mưu chiếm lấy gia bảo của dòng tộc hoàng gia. Thực sự mọi người tin rằng chính Fizz đã cầu cứu một tên trộm để giải cứu công chúa. Mặc dù sau này, cô công chúa đã bị nguyền rủa phải sống ẩn thân, Fizz vẫn không ngừng quan tâm và hỗ trợ cô chủ của mình."
                 },
                 "lore8s": {
                     "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_40817.png",
                     "enlore": "",
-                    "vnlore": "Fizz luôn biết ơn Zelnite vì đã không biết bao lần giải cứu công chúa. Một số người nói rằng cô còn yêu thích lối sống đầy nguy hiểm của tên trộm khét tiếng đó. Nếu như cô không chọn con đường trở thành hiệp sĩ và bảo vệ công chúa, có thể cô đã đi theo dấu chân của Zelnite. Và nêu chuyện đó xảy ra thì số lượng những câu chuyện về tên trộm cao quý ấy sẽ nhiều hơn , bao gồm cả những câu chuyện về sự lợi dụng của một nữ trộm."
+                    "vnlore": "Fizz luôn biết ơn Zelnite vì đã không biết bao lần giải cứu công chúa. Một số người nói rằng cô còn yêu thích lối sống đầy nguy hiểm của tên trộm khét tiếng đó. Nếu như cô không chọn con đường trở thành hiệp sĩ và bảo vệ công chúa, có thể cô đã đi theo dấu chân của Zelnite. Và nêu chuyện đó xảy ra thì số lượng những câu chuyện về tên trộm cao quý ấy sẽ nhiều hơn, bao gồm cả những câu chuyện về sự lợi dụng của một nữ trộm."
                 }
             },
             {
@@ -734,6 +734,76 @@
                     "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_61027.png",
                     "enlore": "",
                     "vnlore": "Gregor được biết đến bởi tham vọng của mình với một báu vật hoàng gia của một vương quốc nọ và chính tham vọng đó đã khiến ông bỏ ra một khoảng thời gian rất lớn để nghiên cứu về sức mạnh tiềm ẩn của nó. Theo những dữ liệu còn sót lại, viên đá quý đó sẽ chuyển hóa người dùng thành một con quỷ. Nếu như âm mưu của Gregor thành công, ông đã có thể chuyển hóa thành hình dạng tối ưu của mình là một con quỷ và dùng sức mạnh mới của mình để gieo rắc nổi sợ hãi lên Grand Gaia."
+                }
+            },
+            {
+                "id": "Adriesta",
+                "thumb": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810418.png",
+                "translator": "Le Giang",
+                "lore3s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore4s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore5s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore6s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore7s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810417.png",
+                    "enlore": "",
+                    "vnlore": "Hăng hái, dũng cảm và kiên quyết là những từ được nói tới khi nhắc đến Adriesta khi mà cô vẫn còn đang học nghệ thuật săn phù thủy ở Học viện Hoàng gia. Ở đó, cô bé mồ coi trẻ tuổi nhanh chóng nắm bắt những sắc màu của chiến tranh và cuối cùng trở thành thành viên nhỏ tuổi nhất được nhận danh hiệu Thợ săn Phù thủy Bậc Thầy. Với đôi mắt sắc bén và tính cách cương quyết, những chiến tích của cô trong cuộc chiến chống lại quân đoàn quỷ phá hoại vùng đất không bao lâu lan xa. Một số người nói rằng là nó lan quá rộng và quá xa nhưng cô không hề quan tâm đến việc đó. Nhưng không lâu sau, do một bước ngoặt bất ngờ, cô mang thai. Mặc dù phản đối lúc đầu, nhưng cô dần trở nên thương yêu đứa con trong bụng. Tuy nhiên, vào ngày hạ sinh đứa trẻ,  một thế lực đen tối thâm nhập vào khu vực của cô và giết hết mọi người ở đó trước khi lôi đứa con còn trong bụng của cô ra. Việc cuối cùng mà cô nhớ được là nỗi đau và máu trước khi bóng tối bao trùm lấy cô. Những tưởng lửa sống của mình đã tắt nhưng kỳ lạ thay khi mà hôm sau cô thấy mình tỉnh dậy bên bờ biển của Fuindor. Khi cô ngồi dậy thì dấu ấn Fuinsignum trên hông cô đập liên hồi và ánh lên màu sắc của lửa. Tuy nhiên, trước khi cô kịp hiểu chuyện gì đang xảy ra thì một bầy quỷ dữ xuất hiện từ trong hòn đảo, thèm khát máu và thịt.<ul><li>Fusion: Nói nhanh lên. Quỷ dữ đang xuất hiện ở khắp nơi và ta sẽ báo được thù!</li><li>Summon: Ta không có thời gian rảnh cho những trò ngu ngốc! Tránh đường!</li></ul>"
+                },
+                "lore8s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810418.png",
+                    "enlore": "",
+                    "vnlore": "Hăng hái, dũng cảm và kiên quyết là những giá trị còn lại mà cô bám vào trong cuộc đời mới của mình. Cái chết không còn ý nghĩa gì đối với cô khi mà cô cứ sống lại sau mỗi cái chết đau đớn. Mỗi cái chết của cô, cho dù là do bị xé nát bằng móng vuốt, bị acid phun vào, lửa thiêu hay là tứ chi bị nghiền nát, tất cả đều chỉ có một kết quả: cô ngồi dậy, nguyên vẹn và không thương tích, ở ngày hôm sau với dấu ấn Fuinsignum cháy mờ ảo trên da của cô mỗi khi ánh hừng đông ló dạng. Ban đầu, cô tự hỏi tại sao cô lại được nhận “món quà” này. Phải chăng nó là một trò đùa bệnh hoạn của một vị thần bị lãng quên hay là có một kế hoạch nào đó nham hiểm hơn dành cho cô? Những mảnh vỡ ký ức về cuộc đời trước đó của cô chợt thoáng qua mắt cô nhưng có vẻ như chúng càng trở nên mờ nhạt hơn mỗi khi mặt trời mọc. Chẳng bao lâu sau, việc duy nhất khiến cho đôi chân cô đi về phía trước chính là ký ức về con quỷ đã bắt mất đứa con của cô. Nó sẽ phải trả giá cho sự khinh bỉ mà nó dành cho cô, không cần biết là cô sẽ phải bước qua bao nhiêu địa ngục đẫm máu để tìm được nó. VÀ VÂNG, NÓ SẼ PHẢI TRẢ GIÁ.<ul><li>Evolution: Tiếp tục đi! Chạy đi chứ ác quỷ! Trước sau gì ngươi cũng chết mà thôi, cho dù là hôm nay hay ngày mai đi chăng nữa!</li><li>Fusion: Chúng ta đã làm việc này bao nhiêu lần rồi nhỉ? Ta chẳng thế nhớ được. Nó có quan trọng không? Có cần thiết không?</li><li>Summon: Nếu ngươi không có gan thì đừng có quan tâm, ta không cần những kẻ yếu đuối.</li></ul>"
+                }
+            },
+            {
+                "id": "Gabriela",
+                "thumb": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850418.png",
+                "translator": "Le Giang",
+                "lore3s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore4s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore5s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore6s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore7s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850417.png",
+                    "enlore": "",
+                    "vnlore": "Một Vampire thuần chủng lâu đời, dòng dõi của Gabriela có thể có liên quan đến Chúa tể Vampire cổ xưa đã từng thống trị vùng đất phía Đông. Được chọn lựa làm nữ chúa của một tổ chức nhỏ bởi các người bạn cũng là Vampire, Gabriela cai quản dòng dõi của mình và con người mà họ cùng chung sống từ trong bóng tối. Mặc dù nhiều người tin rằng bản chất của họ là Undead (những người đã chết nhưng sống lại) nhưng sự thật thì đơn giản hơn rất nhiều: họ có tuổi thọ cao và chia sẻ những kiến thức bí ẩn mà loài người chỉ có thể mơ mới chạm đến được. Với khả năng sử dụng ma thuật thành thạo và sự thông thái hiếm có, tổ chức của cô trở thành trung tâm của tập đoàn mà sau này sẽ kiểm soát hầu hết kinh tế của cả đế quốc. Cô không ghét loài người nhưng cô lại có sở thích độc ác khi mà cô thấy thích thú trong việc thao túng loài người làm việc cho cô. Đó là một kì của xung đột và hỗn loạn, thời kì mà thân ai nấy lo, mạnh ai nấy sống. Lợi dụng lòng tham của con người, Gabriela tìm thấy niềm vui trong việc thao túng nhưng tên cặn bã của Đế quốc thực thi mệnh lệnh của cô.<ul><li>Fusion: Nói đi, hỡi Triệu hồi sư! Hôm nay ngươi mang đến gì cho ta nào? Mong là người sẽ không làm ta thất vọng.</li><li>Summon: Ta là Gabriela. Người nối dõi của dòng máu hoàng tộc danh giá nhất! Ngươi là ai mà dám ra lệnh cho ta?</li></ul>"
+                },
+                "lore8s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850418.png",
+                    "enlore": "",
+                    "vnlore": "Rơi vào tình trạng hỗn loạn trong những ngày đầu của Cuộc Tử Hành, tầng lớp quý tộc của Đế quốc trở nên hoang mang và giao nộp các Vampire đang sống cùng với chúng cho các thợ săn phù thủy ở Học viện Hoàng gia để cứu lấy cái địa vị mục nát và suy đồi của chúng. Sau khi quyết định rằng bỏ trốn là lựa chọn tốt nhất, Gabriel dẫn dắt tổ chức của mình rời khỏi thành phố. Tuy nhiên, cho dù cô đi đến đâu, bè lũ thợ săn phù thủy dường như lúc nào cũng đi trước một bước. Từng Vampire một bị tiêu diệt cho đến khi Gabriela là người cuối cùng còn sót lại. Biết rằng là không còn nơi nào để trốn, cô quyết định kéo tất cả những kẻ đuổi theo cô cùng với cô xuống địa ngục. Khi mà những lưỡi gươm bạc lạnh lẽo đâm vào người cô hết lần này đến lần khác, một giọng nói đen tối vang lên, khiêu khích cô, cười vào sự đau đớn của cô trước khi tất cả mọi thứ đi vào bóng tối. Bất ngờ thay, cô tỉnh dậy trong một ngôi mộ phủ đầy xương người, mùi hôi thối của tội lỗi và sự thối rữa dày đặc trong không khí. Sau khi cô đứng lên, cô nhận ra rằng cô đang ở trên hòn đảo bị nguyền rủa của Fuindor. Con tim cứng rắn hơn với dấu ấn Fuginsignum cháy bỏng trên da mình, Gabriela thề với tổ tiên rằng cô sẽ tiêu diệt tất cả mọi vật cản và đưa Vampire trở về thời kì huy hoàng của nó. BẰNG BẤT CỨ GIÁ NÀO.<ul><li>Evolution: Thập kỉ? Thế kỉ? Thời gian không có ý nghĩa gì đối với ta. Ngay cả khi ngươi đã ra đi, ta sẽ vẫn tiếp tục tồn tại.</li><li>Fusion: Ký ức của những anh hùng đã ngã xuống... Cảm xúc khi mà cuộc sống kết thúc... Mmm, thật ngon lành!</li><li>Summon: Có một thước đo cho sự tao nhã ngay cả trong những việc nhỏ nhất. Tất cả mọi thứ đều có bước đầu tiên.</li></ul>"
                 }
             }
         ]
