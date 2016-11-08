@@ -4,7 +4,7 @@
             {
                 "id": "Zekt",
                 "thumb": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_51007.png",
-                "translator": "twolanh",
+                "translator": "Mả",
                 "lore3s": {
                     "art": "",
                     "enlore": "",
@@ -279,6 +279,461 @@
                     "art": "",
                     "enlore": "",
                     "vnlore": ""
+                }
+            },
+            {
+                "id": "Arius",
+                "thumb": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_20475.png",
+                "translator": "Shiku",
+                "lore3s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore4s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_20473.png",
+                    "enlore": "",
+                    "vnlore": "Hoàng tử thứ 3 của Vương Quốc Sama, người chỉ huy Hải Quân Sama chống lại đội quân của các vị Thần (God Army). Arius có tài năng xuất chúng trong cả kiếm thuật lẫn phép thuật, tuy nhiên bởi tính cách có phần mềm mỏng, anh vô tình đồng ý với những lời kiến từ người khác quá nhanh chóng, dẫn đến sự hỗn loạn trong chính đơn vị Hải Quân của mình. Đồng thời, là một trong những người ủng hộ Selena, một trong Six Heroes, một cách nhiệt huyết, anh đã kí họa Selena mà không có sự cho phép của cô, thậm chí còn đưa ra công chúng. Có nhiều lời đồn đoán rằng Selena đã yêu cầu anh giữ khoản cách với cô sau sự việc."
+                },
+                "lore5s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_20474.png",
+                    "enlore": "",
+                    "vnlore": "Hoàng tử thứ 3 của Vương Quốc Sama, người chiến đấu chống lại đội quân của các vi Thần để bảo vệ thần dân của vương quốc. Mặc dù liên tiếp đẩy lùi đội quân của các vị Thần, nhưng Arius lại không thể dập tắt được những bất ổn còn tồn tại trong quân đội của mình trên cương vị một người chỉ huy. Tuy nhiên, mọi việc đã thay đổi khi anh mời War Captain Mega tham gia Hải Quân của mình. Hiểu ra được vấn đề nằm ở chính bản thân Arius, Mega đã thẳng thắng chỉ ra trực tiếp đến Arius. Ngay sau khi nghe được những gì Mega cần truyền đạt, Arius sau đó đã từ bỏ chức vị của mình, giao lại mọi quyền hành cho Mega. Chàng hoàng tử từ đó chiến đấu như một người lính trong quân ngũ. Tương truyền rằng, quân đội sau đó đã chiến đấu hiệu quả hơn so với những nỗ lực trước đây của anh."
+                },
+                "lore6s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_20475.png",
+                    "enlore": "",
+                    "vnlore": "Hoàng tử thứ 3 của Vương Quốc Sama, anh đã chiến đấu như một người lính trong quân ngũ, tuy vậy bởi Captain Mega bị thương, Arius phải nhanh chóng phục hồi chức vụ chỉ huy. Luôn nghĩ đến cách mà Mega đối đãi với cấp dưới, Arius lắng nghe những góp ý và báo cáo của họ. Với sự chắc chắn khác hẳn với lức trước, rất nhiều người đã nêu lên tiếng nói mong muốn Arius chính thức nhận lấy chức vụ của mình. Tuy nhiên Arius một mực từ chối, đồng thời nhẹ nhàng đáp lại rằng anh không thể đáp ứng được kì vọng của mọi người. Ngay khi Mega hồi phục, anh lập tức trở lại chiến trường với kỹ năng kiếm thuật được cải tiến."
+                },
+                "lore7s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore8s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                }
+            },
+            {
+                "id": "Griff",
+                "thumb": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_10676.png",
+                "translator": "Lông",
+                "lore3s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore4s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore5s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_10674.png",
+                    "enlore": "",
+                    "vnlore": "Là một triệu hồi sư phục vụ cho Hội đồng triệu hồi sư Akras từ thời điểm mới hình thành. Mặc dù ban đầu chỉ là một người lính bình thường đến từ quân đội của Đế quốc Randall, anh đã nhanh chóng thăng tiến cấp bậc của mình và trở thành tướng quân cũng như nhận được sự ủng hộ của phần đông binh lính. Tuy nhiên, chỉ với những chiến dịch nhỏ giữa quân đội đế quốc và liên bang vẫn chưa thể làm anh hài lòng mà thay vào đó là niềm hi vọng cho cơ hội đốt mặt với những trận chiến thực sự.  Cơ hội đã hiện đến với anh khi Triệu hồi sư đầu tiên (Owen) trở về từ Grand Gaia và Griff đã thách đấu với ông ta trong một trận chiến khốc liệt. Một vài ngày sau đó, Griff để lại thư từ chức rút khỏi lực lượng quân đội hoàng gia và gia nhập vào Hội đồng triệu hồi sư."
+                },
+                "lore6s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_10675.png",
+                    "enlore": "",
+                    "vnlore": "Cựu chỉ huy của quân đoàn diệt quỷ số 4. Griff giữ một vai trò lãnh đạo chủ chốt trong những ngày đầu của Summoner’s Hall mà được cho rằng chỉ đứng thứ hai sau các vị Nguyên lão. Anh rèn luyện những điều cơ bản trong chiến đấu cho những Triệu hồi sư mới gia nhập, trở thành một triệu hồi sư có năng lực. Bộ viêm giáp đỏ rực anh đang mặc mà được tìm thấy trong một cuộc khảo sát tại vương quốc Agni, được cho là tạo ra bởi các cấm thuật tiến hành bởi vương quốc Agni cổ đại."
+                },
+                "lore7s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_10676.png",
+                    "enlore": "",
+                    "vnlore": "Được bí mật chỉ định làm thủ lĩnh “Ishgria’s Recon Squad”. Ngay khi anh cùng nhóm của mình đặt chân xuống Ishgria, họ đã ngay lập tức đụng độ và bị tấn công bởi một con quỷ mạnh mẽ (Shusui). Griff nhận ra rằng con quỷ kia chỉ muốn đối đầu với những đối thủ mạnh, anh giao cho Krantz chỉ huy nhóm và chiến đấu với con quỷ đó một mình. Theo những báo cáo ghi chép còn lại ở Ishgria, cuộc chiến khốc liệt giữa Griff và con quỷ kia diễn ra trong nhiều ngày, nó đã trở thành những hồi ức sống động tồn tại trong loài quỷ sau này."
+                },
+                "lore8s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                }
+            },
+            {
+                "id": "Iris",
+                "thumb": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_20636.png",
+                "translator": "Lông",
+                "lore3s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore4s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore5s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_20634.png",
+                    "enlore": "",
+                    "vnlore": "Một triệu hồi sư gia nhập Hội đồng triệu hồi sư Akras vào những ngày đầu thành lập. Trong khi là viên chức dân sự cho đế chế Randall, Iris bị buộc tội là gián điệp của liên bang Elgaia, và sau đó đã bị chuyển công tác đến nơi khác. Sự vô tội của cô đã được chứng minh ngay sau đó, nhưng người ta tin rằng đó chính là lí do để cô gia nhập vào hàng ngũ Hội đồng triệu hồi sư. Đã có rất nhiều triệu hồi sư khác tự hỏi rằng tại sao một quan chức dân sự mà cô có khả năng chiến đấu cao như vậy lại chỉ gia nhập vào Hội đồng triệu hồi sư, nhưng cô không hề đề cập gì về nó."
+                },
+                "lore6s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_20635.png",
+                    "enlore": "",
+                    "vnlore": "Cựu chỉ huy quân đoàn diệt quỷ số 5. Không có một thong tin nào về những vị trí của Iris đã khám phá ở Grand Gaia, nó chắc chắn rằng đã bị xoá đi một cách cố ý. Và ngay cả các Nguyên lão (Summoner of Old) cũng không biết được sự thật đằng sau câu chuyện của Iris. Có một vài câu truyện kể rằng trong một lần cô khảo sát một thánh tích nào đó, cô đã tìm ra được sự thật gây shock nào đó về cuộc chiến với các vị thần (The Great War). Mặc dù không có bằng chức xác thực điều này, nhưng nó cũng nói rằng cô ấy đã có thể làm được vậy bởi vì Iris đã triệu hồi được linh hồn đã chết của 12 vệ thần cổ đại."
+                },
+                "lore7s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_20636.png",
+                    "enlore": "",
+                    "vnlore": "Được lựa chọn bí mật tham gia vào nhóm “Ishgria’s Recon Squad”. Sau khi tách ra khỏi chỉ huy Griff, nhóm bất ngờ bị tấn công bởi một sinh vật nguy hiểm  và tất cả thành viên bị phân tán. Iris hoàn toàn bị cô lập, sau khi khảo sát khu vực xung quanh thì cô gặp một kẻ tự xưng là nữ thần. Đó là lần cuối cùng bất cứ ai biết được về cô. Hơn nữa Iris là người nắm giữ trong tay báo cáo chi tiết có liên quan đến nhóm của cô tại Ishgria, vì vậy vị trí của các báo cáo này đến giờ vẫn còn là bí ẩn."
+                },
+                "lore8s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                }
+            },
+            {
+                "id": "Libera",
+                "thumb": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_30626.png",
+                "translator": "Lông",
+                "lore3s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore4s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore5s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_30624.png",
+                    "enlore": "",
+                    "vnlore": "Một triệu hồi sư phục vụ cho Hội đồng triệu hồi sư Akras từ khi mới thành lập. Libera là một quý tộc trong đế quốc Randall, phục vụ cho lực lượng vệ binh hoàng gia cho tới một ngày cô đạt được sức mạnh triệu hồi và quyết định tham gia vào hội đồng triệu hồi sư Akras để chống lại những mong muốn của gia đình. Quá mệt mỏi khi phải hành xử như một nữ quân nhân kiểu mẫu xinh đẹp, cô tham gia vào hội đồng triệu hồi sư để chứng minh thực lực của mình hữu dụng. Sau đó, Libera từ bỏ gia đình của mình và tiếp tục luyện tập chăm chỉ để thực hiện nguyện vọng của chính bản thân. Cuối cùng cô đã đạt được danh hiệu chỉ huy quân đoàn diệt quỷ."
+                },
+                "lore6s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_30625.png",
+                    "enlore": "",
+                    "vnlore": "Cựu chỉ huy của quân đoàn diệt quỷ số 8. Báo cáo ghi chép rằng trong một lần khảo sát Vriksha, cô đã để lại thông tin liên quan đến sự tranh chấp lãnh thổ của “4 vị thần sa ngã” trong truyền thuyết, và cả về giống loài ác quỷ. Trong khi xem xét thực tế rằng khu vực của cô khảo sát thuộc quyền hạn kiểm soát của Afla Dilith, nó là thứ có thể chứng minh năng lực của Libera trong việc hoàn thành nhiệm vụ khảo sát này. Khẳng định sự thiết sót trong hiểu biết của các Nguyên lão về Grand Gaia và tình trạng hiện tại cũng như khả năng đáng kinh ngạc của cô."
+                },
+                "lore7s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_30626.png",
+                    "enlore": "",
+                    "vnlore": "Libera được bí mật chọn tham gia vào “Ishgria’s Recon Squad”. Tiểu đội 7 thành viên rời đi theo lệnh của Nguyên lão. Nhưng lại chia tách ra bởi người chỉ huy trong quá trình đầu thực hiện nhiệm vụ. Sau khi bị tấn công bởi con một quái thú hung tợn, ba thành viên còn lại chạy trốn tới một khu vực an toàn khác nhưng lại đụng độ một con quỷ mạnh mẽ khác. Libera giao lại phần báo cáo khảo sát của mình cho một thành viên và sau đó tạo ra một lối thoát cùng với Krantz. Tuy nhiên, cô không biết rằng thành viên cuối cùng sẽ không bao giờ có thể đưa nó trở lại Elgaia, bởi vì toàn bộ thành viên đều sẽ bị tiêu diệt."
+                },
+                "lore8s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                }
+            },
+            {
+                "id": "Rhoa",
+                "thumb": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_40606.png",
+                "translator": "Lông",
+                "lore3s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore4s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore5s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_40604.png",
+                    "enlore": "",
+                    "vnlore": "Rhoa gia nhập hội đồng triệu hồi sư không lâu sau khi nó được thành lập. Ban đầu là một nhà nghiên cứu khoa học cho liên bang Elgaia, thành thạo về những kỹ thuật tiên tiến đến từ thế giới khác hơn bất cứ ai. Là một người tích cực nhưng cũng bướng bỉnh không kém phần. Anh thường dung mông húc vào những thành viên xung quanh (đoạn này cắt giảm vì hơi tối nghĩa đối với mình, chắc nghĩa kiểu như dạng người năng động tếu táo thích “va chạm cơ thể”). Tuy nhiên, anh đã để lại rất nhiều kiến thức bổ ích cho cháu trai yêu quý của mình (Noel). Rhoa tin tưởng rằng tất cả mọi người sẽ cảm thụ được kỹ thuật triệu hồi mà anh đã phát hiện ra, và tạo cho mình một con đường để đến với hội đồng triệu hồi sư."
+                },
+                "lore6s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_40605.png",
+                    "enlore": "",
+                    "vnlore": "Chỉ huy quân đoàn diệt quỷ số 7. Sau khi khảo sát Atharva (thời đầu chắc nhiệm vụ của cái đám này chỉ toàn đi du lịch ngắm cảnh với khảo sát), rhoa phát hiện ra nhiều cổ vật huyền thoại đến từ công nghệ cổ đại và tìm ra được chức năng cũng như tác dụng của chúng. Nhiều công nghệ đã được sử dụng phổ biến trong Summoner’s Hall hiện nay đều là sản phẩm đến từ công trình nghiên cứu của anh. Việc thành lập Viện nghiên cứu của Triệu hồi sư cũng có thể có một phần đóng góp của anh . Người ta nói rằng Rhoa cùng với chỉ huy quân đoàn diệt quỷ số 6 như chó với mèo, sự bất đồng của họ rất nổi tiếng và nó thường trở thành đề tài tham luận cho đến sau này."
+                },
+                "lore7s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_40606.png",
+                    "enlore": "",
+                    "vnlore": "Rhoa cũng được chọn là thành viên của “Ishgria’s Recon Squad”. Không chỉ lo lắng về những con quỷ Ishgria, nhóm của họ còn bị phục kích bởi một con quái vật hung tợn khi đến điểm hội quân. Rhoa đề xuất một kế hoạch để vượt qua trở ngại này bằng cách sử dụng cỗ máy mà anh tìm thấy ở một vài di tích cổ xưa để giúp cho đồng đội có thể đào thoát. Mặc dù Rhoa quyết định ở lại hi sinh bản thân mình nhưng bất ngờ một nữ triệu hồi sư người mà luôn bất đồng  với anh xuất hiện và trợ giúp. Rhoa nở một nụ cười chua chát những vẫn chiến đấu cùng với quái thú bên cạnh cô. Sau đó cũng không còn báo cáo nào cho đề cập về việc hội quân của nhóm."
+                },
+                "lore8s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                }
+            },
+            {
+                "id": "Krantz",
+                "thumb": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_50757.png",
+                "translator": "Lông",
+                "lore3s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore4s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore5s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_50754.png",
+                    "enlore": "",
+                    "vnlore": "Krantz tham gia vào Summoner’s Hall từ khi mới bắt đầu hoạt động. Là một người lính có xuất thân tầm thường trong liên bang Elgaia, hồ sơ về quá khứ của anh rất ít. Tuy nhiên, khi anh trở thành triệu hồi sư dưới sự giám hộ của các Nguyên lão thì tài năng của anh nở hoa nhanh chóng trong khoảng thời gian rất ngắn, đạt được trình độ cực cao. Mang gánh nặng của thế hệ sau trên đôi vai mình, các Nguyên lão kỳ vọng rất nhiều ở anh, mặc dù anh có một khiếm khuyết rất lớn trong việc tiếp cận và sử dụng các máy móc và công nghệ."
+                },
+                "lore6s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_50755.png",
+                    "enlore": "",
+                    "vnlore": "Cựu chỉ huy quân đoàn diệt quỷ số 9. Trong quá trình khảo sát khu vực lục địa Lazeria, Krantz gặp phải thứ gì đó tấn công gây tổn thương con người, điều này khiến anh tham gia vào một trận chiến khốc liệt chống lại chúng. Lí do tại sao Lizeria trở thành một nơi không có quyền lực và nằm ngoài tầm kiểm soát của “4 vị thần sa ngã” là bởi vì những gì Krantz đã làm ở đó. Tuy nhiên, khi anh đến để điều tra về một toà tháp huyền bí nằm trên vị trí trọng yếu của cộng hoà La Veda thì anh lại không thể có bất cứ báo cáo gì về nó bởi những công nghệ này hoàn toàn xa lạ với anh."
+                },
+                "lore7s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_50756.png",
+                    "enlore": "",
+                    "vnlore": "Cũng là một thành viên của “Ishgria’s Recon Squad”. Ngay sau khi đặt chân xuống Ishgria, cả đội đã bị một con quái thú tấn công khiến quân số chỉ còn 3 người, Krantz đã được đề xuất làm quyền chỉ huy. Không lâu sau đó, một con quỷ lại xuất hiện và Krantz đã buộc phải đưa ra lựa chọn ở lại cùng với Libera đối phó với con quỷ kia (Karon). Trong khi thành viên còn lại của tiểu đội sẽ rời đi mang theo báo cáo. Nhưng sau cùng, thành viên đó sẽ không bao giờ có thể trở về Elgaia."
+                },
+                "lore8s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_50757.png",
+                    "enlore": "",
+                    "vnlore": "Nếu Krantz có thể trở về từ Ishgria một cách an toàn, anh ấy sẽ hoàn thành được một nhiệm vụ lớn tại Hội đồng triệu hồi sư Akras. Sẽ chẳng có ai ngạc nhiên khi thấy anh trở thành một thành viên trẻ tuổi của Hội đồng Nguyên lão vì thành tích của mình. Anh luôn cởi mở nhìn nhận trước những quan điểm của người khác và có khả năng sẽ trở thành người lãnh đạo các triệu hồi sư trong cuộc chiến với 4 vị thần sa ngã. Với một tầm ảnh hưởng khác so với Grahdens và Owen."
+                }
+            },
+            {
+                "id": "Kafka",
+                "thumb": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_60786.png",
+                "translator": "Lông",
+                "lore3s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore4s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore5s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_10875.png",
+                    "enlore": "",
+                    "vnlore": "Thủ lĩnh quân đoàn diệt quỷ số 10. Vào thời điểm tham gia “Ishgria’s Recon Squad” anh vẫn còn rất trẻ. Sau khi khám phá Grand Gaia cùng Griff, Krantz cùng các thành viên khác trong nhóm, Mirfah đã được tiến cử vào vị trí chỉ huy quân đoàn diệt quỷ, điều này nói lên những tiềm năng qua những thành tựu của anh đạt được."
+                },
+                "lore6s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_60785.png",
+                    "enlore": "",
+                    "vnlore": "Cựu chỉ huy quân đoàn diệt quỷ số 10, là người cuối cùng còn sống sót thuộc “Ishgria’s Recon Squad”. Vào thời điểm anh tới Ishgria, Mirfah luôn nhận được sự quan tâm yêu mến của các thành viên khác bởi anh là người nhỏ tuổi nhất, cũng là vì sự đáng yêu của anh. Với tiềm năng của mình, anh cũng chiếm được vị trí nhất định trong nhóm. Sau này, khi bị mắc kẹt ở Ishgria, anh đã hấp thụ sức mạnh quỷ dữ để tồn tại."
+                },
+                "lore7s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_60786.png",
+                    "enlore": "",
+                    "vnlore": "Vùng đất Ishgria với vô số quỷ dữ, đã chứng minh là quá khắc nghiệt đối với sự tồn tại của một con người cô độc. Điều này khiến Mirfah phải hi sinh đi nhiều thứ để đạt được sức mạnh cần thiết đảm bảo cho sự sống còn. Tuy nhiên, có một điều mà anh không bao giờ quên đi: báo cáo về “Ishgria’s Recon Squad”. Cho đến tận ngày nay, Mirfah vẫn chưa kể toàn bộ câu chuyện về điều đó."
+                },
+                "lore8s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                }
+            },
+            {
+                "id": "Mariela",
+                "thumb": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_20887.png",
+                "translator": "Anh Quân",
+                "lore3s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore4s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore5s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore6s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore7s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_20886.png",
+                    "enlore": "",
+                    "vnlore": "Công chúa của một vương quốc nằm trong thẩm quyền của đế quốc Randall. Mariela được kể lại rằng đã cảm nhận được những thế giới khác từ khi còn nhỏ, khi cô được ban tặng khả năng thuật lại những ảo cảnh trên mặt nước. Không may rằng, năng lực của Mariella đã thu hút sự chú ý của một con quỷ sư tử, dẫn đến Mariela bị con quy ấy bắt đến Ishgria sau khi cha và ông của cô thất bại trong việc bảo vệ cô. Tuy nhiên khi đến đó, một con quy khác đã cứu cô và lấy cô làm vợ. Lạ rằng, rất ít người ở Elgaia biết về sự việc này."
+                },
+                "lore8s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_20887.png",
+                    "enlore": "",
+                    "vnlore": "Sau khi kết hôn với thủ lỉnh của bộ lạc rồng quỷ, Mariela đã sinh được một cậu con trai. Đáng tiếc rằng không lâu sau, nhà của họ đã bị tấn công bởi bọn sư tử quỷ, khiến cho Mariela phải sử dụng sức mạnh cuối cùng để tạo một khiên chắn bảo vệ con trai cô rồi nhờ người em dâu chăm sóc cho đứa con của mình. Sau đó, cô sử dụng năng lực của mình để cầu cứu hai nhà triệu hồi cổ xưa trước khi chết. Nếu như cô còn sống, cô đã trở thành một người mẹ mạnh mẽ luôn luôn sẵn sang bảo vệ con mình và biết đâu, cô có thể thay đổi cách sống của chồng mình."
+                }
+            },
+            {
+                "id": "Viktor",
+                "thumb": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_40827.png",
+                "translator": "Anh Quân",
+                "lore3s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore4s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore5s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore6s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore7s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_40826.png",
+                    "enlore": "",
+                    "vnlore": "Viktor là thủ lĩnh của bộ lạc sư tử quỷ. Bộ lạc của anh có phong tục kết hôn với những giống loài mạnh hơn để đảm bảo rằng con cháu đời sau có khả năng tồn tại và sống sót trong những điều kiện khắc nghiệt nhất của môi trường. Khi anh ta phát hiện một người phụ nữ ở Elgaia có khả năng nhìn thấy được tương lai, Viktor đã qua thế giới của cô và bắt cóc cô ấy về làm vợ. Tuy nhiên, không lâu sau, kẻ thù không đội trời chung của anh, thủ lĩnh bộ lạc rồng quỷ, cướp lấy người phụ nữ ấy và phá hủy những gì còn lại của bộ lạc của anh. Truyền thuyết được viết lại rằng, Viktor đã thách đấu với kẻ thù của anh, nhưng đã chết dưới tay của bọn rồng quỷ."
+                },
+                "lore8s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_40827.png",
+                    "enlore": "",
+                    "vnlore": "Viktor là một vị thủ lĩnh cực kỳ tận tâm đối với bộ lạc của mình, thậm chí có thể hy sinh tất cả mọi thứ để trả thù cho sự hủy diệt của nó. Một số người cho rằng thủ lĩnh của bộ lạc rồng quỷ đã nói rằng chính tình cảm này đã dẫn tới cái chết của Viktor. Nếu như anh ta giải quyết vấn đề này một cách logic và chiến thuật hơn, Viktor có thể đã đánh trả và thậm chí dồn bộ lạc rồng quỷ vào thế kẹt. Tuy nhiên, điều đó còn phụ thuộc vào sự thù địch của anh ta đối với chủng tộc rồng quỷ và lãnh đạo của họ."
+                }
+            },
+            {
+                "id": "Garrel",
+                "thumb": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_51047.png",
+                "translator": "Anh Quân",
+                "lore3s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore4s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore5s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore6s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore7s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_51046.png",
+                    "enlore": "",
+                    "vnlore": "Garrel là vua của một vương quốc nằm trong thẩm quyền của đế quốc Randall. Ngày xưa, công chúa của ông bị một con quỷ bắt cóc vì khả năng hiếm có của cô. Là một vị anh hung đầy uy danh và dũng cảm, ông đã cố gắng hết sức để bảo vệ con mình, thậm chí ông còn nhờ giúp từ những người bạn là những nhà triệu hồi. Đáng tiếc rằng, chỉ có sức mạnh của ông thì không đủ để chống lại con quỷ đó và ông đã chết trong trận chiến đó. Khi những nhà triệu hồi đến chi viện thì lúc đó đã quá muộn, cô công chúa đã bị bắt đi."
+                },
+                "lore8s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_51047.png",
+                    "enlore": "",
+                    "vnlore": "Sau sự việc đau buồn đó, cái tên Garrel như bị lãng quên trong lịch sử. Tuy nhiên, không thể tranh cải rằng ông có đủ sức để chống lại một con quỷ một mình mà không sử dụng khả năng triệu hồi. Hiện nay, cháu của ông đang làm việc là một nhà triệu hội, dẫn đến khả năng có thể ông cũng có một ít tài năng triệu hồi. Nếu như lúc đó Garrel có thể dùng phép triệu hồi, ông đã cứu được cô con gái của mình và trở nên hùng mạnh như một nhà triệu hồi cổ xưa."
+                }
+            },
+            {
+                "id": "Rozalia",
+                "thumb": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_30837.png",
+                "translator": "Anh Quân",
+                "lore3s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore4s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore5s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore6s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore7s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_30836.png",
+                    "enlore": "",
+                    "vnlore": "Còn được biết đến là Công chúa của Gió, Rozalia là công chúa của một nước nhỏ. Cô trở thành người trị vì sau khi cha cô qua đời và truyền lại viên đá quý gia bảo cho cô. Khi một tên phù thủy có âm mưu muốn chiếm đoạt báu vật đó, một tên trộm dũng cảm đã đến và giải cứu cô. Rozalia buộc phải sử dụng sức mạnh chứa trong viên đá quý để bảo vệ thần dân của mình khỏi cuộc tấn công từ đội quân của tên phù thủy. Tuy nhiên, cô đã phải trả giá bằng chính sắc đẹp của mình và hứng chịu lời nguyền. Và kể từ đó, cô không bao giờ xuất hiện trước công chúng nữa."
+                },
+                "lore8s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_30837.png",
+                    "enlore": "",
+                    "vnlore": "Đáng tiếc rằng, sau sự việc đó, không ai biết được chuyện gì xảy ra với Rozalia hoặc vương quốc mà cô trị vì. Tuy nhiên, có một truyền thuyết rằng Rozalia đã lấy lại được sắc đẹp và hiện diện trước những thần dân của mình. Ngoài ra, trong những tác phẩm văn học về Zelnite, người ta viết rằng Zelnite đã lấy đi lời nguyền và cứu cô. Nếu đó là sự thật, có thể cho rằng Zelnite đã dạy cho Rozalia bảo vệ những gì quý giá, những ”báu vật thực sự” của mình và chính điều đó đã giúp cô mang lại bình yên cho đất nước của mình."
+                }
+            },
+            {
+                "id": "Fizz",
+                "thumb": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_40817.png",
+                "translator": "Anh Quân",
+                "lore3s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore4s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore5s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore6s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore7s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_40816.png",
+                    "enlore": "",
+                    "vnlore": "Fizz là cận vệ thân cận của Công chúa của Gió, hoạt động trong tổ chức của những nữ hiệp sĩ có tên là “Lady Wings” (Đôi cánh nữ giới). Công chúa rất tin tưởng và trân trọng Fizz nhất trong những người hầu của cô. Và Fizz cũng luôn hy vọng vào cô chủ của mình, kể cả khi cô chủ bị một phù thủy bắt cóc với âm mưu chiếm lấy gia bảo của dòng tộc hoàng gia. Thực sự rằng, mọi người tin rằng chính Fizz đã cầu cứu một tên trộm để giải cứu công chúa. Mặc dù sau này, cô công chúa đã bị nguyền rủa phải sống ẩn thân, Fizz vẫn không ngừng quan tâm và hỗ trợ cô chủ của mình."
+                },
+                "lore8s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_40817.png",
+                    "enlore": "",
+                    "vnlore": "Fizz luôn biết ơn Zelnite vì đã không biết bao lần giải cứu công chúa. Một số người nói rằng cô còn yêu thích lối sống đầy nguy hiểm của tên trộm khét tiếng đó. Nếu như cô không chọn con đường trở thành hiệp sĩ và bảo vệ công chúa, có thể cô đã đi theo dấu chân của Zelnite. Và nêu chuyện đó xảy ra thì số lượng những câu chuyện về tên trộm cao quý ấy sẽ nhiều hơn , bao gồm cả những câu chuyện về sự lợi dụng của một nữ trộm."
+                }
+            },
+            {
+                "id": "Gregor",
+                "thumb": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_61027.png",
+                "translator": "Anh Quân",
+                "lore3s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore4s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore5s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore6s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore7s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_61026.png",
+                    "enlore": "",
+                    "vnlore": "Tên phù thủy với ý định chiếm đoạt báu vật của một vương quốc trong Elgaia. Ông đã lên âm mưu bắt cóc công chúa của nước đó để chạm tay đến báu vật, nhưng tham vọng của ông bị phá khi một hiệp sĩ dưới quyền công chúa đã cầu cứu một tên trộm khét tiếng. Để trả thù, ông đã ra lệnh đội quân của mình tấn công vương quốc ấy, cố gắng đè bẹp nó bằng ma thuật của mình. Tuy nhiên, Gregor đã bị tiêu diệt khi công chúa kích hoạt sức mạnh tiềm ẩn trong báu vật mà ông thèm muốn."
+                },
+                "lore8s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_61027.png",
+                    "enlore": "",
+                    "vnlore": "Gregor được biết đến bởi tham vọng của mình với một báu vật hoàng gia của một vương quốc nọ và chính tham vọng đó đã khiến ông bỏ ra một khoảng thời gian rất lớn để nghiên cứu về sức mạnh tiềm ẩn của nó. Theo những dữ liệu còn sót lại, viên đá quý đó sẽ chuyển hóa người dùng thành một con quỷ. Nếu như âm mưu của Gregor thành công, ông đã có thể chuyển hóa thành hình dạng tối ưu của mình là một con quỷ và dùng sức mạnh mới của mình để gieo rắc nổi sợ hãi lên Grand Gaia."
                 }
             }
         ]
