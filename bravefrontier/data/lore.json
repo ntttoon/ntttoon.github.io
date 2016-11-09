@@ -493,6 +493,41 @@
             },
             {
                 "id": "Kafka",
+                "thumb": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_60766.png",
+                "translator": "Lông",
+                "lore3s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore4s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                },
+                "lore5s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_60764.png",
+                    "enlore": "",
+                    "vnlore": "Giống như các thành viên khác, Kafka tham gia vào Summoner’s Hall không lâu sau khi nó được thành lập. Cô ấy là một nhà khoa học chuyên nghiên cứu về các cấm chú quỷ dữ trong đế quốc Randall, không hiểu bằng cách nào cô đã tham gia vào Summoner’s Hall, những thông tin về điều đó rất mơ hồ. Đã được sinh ra trên một chặng đường dài như là một ma thuật gia tài năng. Khi tham gia vào Summoner’s Hall, cô khám phá Grand Gaia và tìm ra những tài liệu cổ đại về những cấm thuật ma quỷ, mở ra vô số kiến thức đã thất truyền từ trước. Cô luôn cãi nhau với chỉ huy quân đoàn diệt quỷ số 7 và thường bị khiển trách bởi Grahdens vì điều đó."
+                },
+                "lore6s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_60765.png",
+                    "enlore": "",
+                    "vnlore": "Cựu chỉ huy quân đoàn diệt quỷ số 6. Kafka khảo sát khu vực lục địa trung tâm Grand Gaia - Bariura, khai quật được nhiều tài liệu nghiên cứu cổ đại của đế quốc Bariura. Cô thu thập được nhiều ma vật từ một cơ sở cũ nghiên cứu về công nghệ ma quỷ. Nhìn ra sức mạnh của mình thăng tiến cùng những gì mình tìm ra. Đó là nhờ vào những kiến thức cô có được, kể cả của Rhoa mà Viện nghiên cứu của Triệu hồi sư đã được thành lập. Tuy nhiên, bất đồng giữa 2 quân đoàn tạo ra vẫn luôn tồn tại."
+                },
+                "lore7s": {
+                    "art": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_60766.png",
+                    "enlore": "",
+                    "vnlore": "Kafka chấp nhận tham gia “Ishgria’s Recon Squad”. Khi cả tiểu đội phải hứng chịu sự tấn công từ một con quái thú hung tợn, Rhoa đã sẵn sàng chấp nhận ở lại hi sinh để giúp đỡ những đồng đội của mình chạy thoát. Tuy nhiên, Kafka đã nhìn ra được kế hoạch của anh ta, cô lựa chọn giúp đỡ anh ta cũng là để chống lại ý muốn của chính Rhoa (tình củm vỡi). Mặc dù đây là lần đầu tiên 2 người họ sát cánh chiến đấu bên nhau, nhưng có thể nói rằng họ rất tâm đầu ý hợp (Nguyên văn:  Pretty good team/chế tí :P)."
+                },
+                "lore8s": {
+                    "art": "",
+                    "enlore": "",
+                    "vnlore": ""
+                }
+            },
+            {
+                "id": "Mirfah",
                 "thumb": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_60786.png",
                 "translator": "Lông",
                 "lore3s": {
