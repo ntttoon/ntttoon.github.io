@@ -13858,7 +13858,7 @@
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810398.png"
                 },                
                 "sp": {
-                    "@list": "20 : 20% boost to all parameters | 10 : 20% boost to max HP, Def | 100 : Damage taken boosts BB gauge (Fills 2-3 BC) | 20 : Negates all status ailments | 50 : 50% damage reduction from Fire Types | 10 : Enhances LS's parameter boost effect (+10% boost. 55% boost total) | 20 : Enhances SBB's parameter boost effect (+10% boost. 170% boost total) | 30 : Adds considerable BC, HC drop rate boost for 3 turns effect to BB/SBB (30% boost) | 30 : (*) Adds 50% damage reduction effect to BB/SBB | 20 : Allows 50% damage reduction effects to last for 2 turns (Prerequisite: *)"
+                    "@list": "20 : 20% boost to all parameters | 10 : 20% boost to max HP, Def | 10 : Damage taken boosts BB gauge (Fills 2-3 BC) | 20 : Negates all status ailments | 50 : 50% damage reduction from Fire Types | 10 : Enhances LS's parameter boost effect (+10% boost. 55% boost total) | 20 : Enhances SBB's parameter boost effect (+10% boost. 170% boost total) | 30 : Adds considerable BC, HC drop rate boost for 3 turns effect to BB/SBB (30% boost) | 30 : (*) Adds 50% damage reduction effect to BB/SBB | 20 : Allows 50% damage reduction effects to last for 2 turns (Prerequisite: *)"
                 }
             },
             {
