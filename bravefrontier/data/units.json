@@ -10307,6 +10307,276 @@
                 }
             },
             {
+                "id": "1505",
+                "name": "Glen 7",
+                "role": "crit,dot,crit_dmg",
+                "rolesp": "",
+                "element": "Fire",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "9",
+                    "@dc": "36",
+                    "#text": "25% Chance AOE on Normal ATK (-50% DMG) (ALL) / 30% HP (ALL) / 120% ATK 120% DEF 3Turns (ALL)"
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "18",
+                    "#text": "350% Fire (AOE) / 60% CRIT+ (ALL) 3Turns / 400% DMG Each Turn 3Turns"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "29",
+                    "#text": "Fire (AOE) 200%-720% BB ATK% Based on HP LEFT / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / 400% DMG Each Turn 3Turns"
+                },
+                "ubb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "30",
+                    "#text": "Fire (AOE) 1200%-2000% BB ATK% Based on HP LEFT / 999BC Fill (ALL) 1Turn / 300% ATK+ (ALL) 3Turns / 1000% DMG Each Turn 3Turns / 400% Element Weakness DMG+ (fire) (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "10% ALL Stats (ALL) / 0-30% ATK+ Based on HP LEFT (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10996.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10996.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1506",
+                "name": "Glen 8",
+                "role": "crit,dot,crit_dmg",
+                "rolesp": "bb_atk",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "12",
+                    "@dc": "48",
+                    "#text": "30% Chance AOE on Normal ATK (-50% DMG) (ALL) / 50% HP (ALL) / 150% ATK 150% DEF 3Turns (ALL) / 50% ABP+ 25% CBP+"
+                },
+                "bb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "16",
+                    "#text": "370% Fire (AOE) / 60% CRIT+ (ALL) 3Turns / 500% DMG Each Turn 3Turns"
+                },
+                "sbb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "28",
+                    "#text": "Fire (AOE) 200%-870% BB ATK% Based on HP LEFT / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / 500% DMG Each Turn 3Turns"
+                },
+                "ubb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "30",
+                    "#text": "Fire (AOE) 1500%-2500% BB ATK% Based on HP LEFT / 999BC Fill (ALL) 1Turn / 350% ATK+ (ALL) 3Turns / 1200% DMG Each Turn 3Turns / 500% Element Weakness DMG+ (fire) (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "10% ALL Stats (ALL) / 0-50% ATK+ Based on HP LEFT (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10997.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10997.png"
+                },                
+                "sp": {
+                    "@list": "30 : (*) +30% HP | 10 : +50% HP (Prerequisite: *) | 10 : 0-50% ATK relative to remaining HP | 10 : +15% BB fill rate | 80 : 70% chance Angel Idol | 50 : LS+: AoE Normal Attack {+20% damage} | 50 : LS+: AoE Normal Attack {+10% chance} | 60 : Add Effect to BB/SBB (3 Turn 400% BB Atk)"
+                }
+            },
+            {
+                "id": "1507",
+                "name": "Lanza 7",
+                "role": "bb_fill,id,atk,atk_down",
+                "rolesp": "LS_bb_atked",
+                "element": "Earth",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "12",
+                    "@dc": "36",
+                    "#text": "100% Chance 2-4BC Fill when ATKed (ALL) / 30% HP 80% DEF (ALL) / 10% BB SBB Activation+ (ALL)"
+                },
+                "bb": {
+                    "@hit": "30",
+                    "@dc": "30",
+                    "@cost": "28",
+                    "#text": "350% Earth (AOE) / 6BC Fill (ALL) 1Turn / Ignore DEF (ALL) 2Turns / 140% ATK+ (ALL) 3Turns / 20% Chance -50% Enemy ATK 1Turns"
+                },
+                "sbb": {
+                    "@hit": "38",
+                    "@dc": "38",
+                    "@cost": "29",
+                    "#text": "560% Earth (AOE) / 6BC Fill (ALL) 1Turn / Ignore DEF (ALL) 2Turns / 140% ATK+ (ALL) 3Turns / 80% ATK+ 80% DEF+ (SELF) 3Turns / 20% Chance -50% Enemy ATK 1Turns"
+                },
+                "ubb": {
+                    "@hit": "30",
+                    "@dc": "30",
+                    "@cost": "30",
+                    "#text": "1300% Earth (AOE) / Earth (TGT) / Random Hits / 250% Spark DMG+ (ALL) 3Turns / Convert 200% DEF to ATK (ALL) 3Turns / 400% Element Weakness DMG+ (earth) (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "30% ATK+ DEF+ when BB Gauge > 50% (SELF) / 5% Chance Reduce DMG to 1 (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30876.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30876.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1508",
+                "name": "Lanza 8",
+                "role": "bb_fill,id,atk,atk_down",
+                "rolesp": "LS_bb_atked",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "14",
+                    "@dc": "42",
+                    "#text": "100% Chance 4-7BC Fill when ATKed (ALL) / 50% HP 100% DEF (ALL) / 20% BB SBB Activation+ (ALL) / 50% ABP+ 25% CBP+"
+                },
+                "bb": {
+                    "@hit": "34",
+                    "@dc": "34",
+                    "@cost": "27",
+                    "#text": "370% Earth (AOE) / 8BC Fill (ALL) 1Turn / Ignore DEF (ALL) 2Turns / 160% ATK+ (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns"
+                },
+                "sbb": {
+                    "@hit": "42",
+                    "@dc": "42",
+                    "@cost": "28",
+                    "#text": "580% Earth (AOE) / 8BC Fill (ALL) 1Turn / Ignore DEF (ALL) 2Turns / 160% ATK+ (ALL) 3Turns / 100% ATK+ 100% DEF+ (SELF) 3Turns / 30% Chance -50% Enemy ATK 1Turns"
+                },
+                "ubb": {
+                    "@hit": "36",
+                    "@dc": "36",
+                    "@cost": "30",
+                    "#text": "1500% Earth (AOE) / Earth (TGT) / Random Hits / 300% Spark DMG+ (ALL) 3Turns / Convert 250% DEF to ATK (ALL) 3Turns / 500% Element Weakness DMG+ (earth) (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% ATK+ DEF+ when BB Gauge > 50% (SELF) / 10% Chance Reduce DMG to 1 (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30877.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30877.png"
+                },                
+                "sp": {
+                    "@list": "10 : +20% HP/DEF | 30 : +50% HP/DEF | 20 : +80% ATK at full BB gauge | 20 : +80% DEF at full HP | 20 : 2-3 BC when hit | 20 : Null Crit DMG | 80 : 50% chance Angel Idol | 40 : LS+: +10% BB Activation Chance | 50 : LS+: +2-3 BC when hit"
+                }
+            },
+            {
+                "id": "1509",
+                "name": "Eleanor 7",
+                "role": "miti,miti_ele,bc,hc",
+                "rolesp": "",
+                "element": "Thunder",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "7",
+                    "@dc": "35",
+                    "#text": "30% HP 80% DEF (ALL) / Reduce DMG (10%) from (Fire,water,earth,thunder) Enemy (ALL) / 10% Chance Reduce 30% Enemy BB Gauge (ALL)"
+                },
+                "bb": {
+                    "@hit": "12",
+                    "@dc": "12",
+                    "@cost": "29",
+                    "#text": "290% Thunder (AOE) / Reduce DMG (50%) 1Turns / Reduce DMG (10%) from (Fire,water,earth,thunder) Enemy1Turns"
+                },
+                "sbb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "25",
+                    "#text": "500% Thunder (AOE) / Reduce DMG (50%) 1Turns / 30% BC+ 30% HC+ (ALL) 3Turns / Reduce DMG (10%) from (Fire,water,earth,thunder) Enemy1Turns"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "1200% Thunder (AOE) / Reduce DMG (75%) 3Turns / 50BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance Heal 75% DMG when ATKed (ALL) 3Turns / 400% Element Weakness DMG+ (thunder) (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Ails (SELF) / 100% Chance 1-2BC Fill when ATKed (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40866.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40866.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1510",
+                "name": "Eleanor 8",
+                "role": "miti,miti_ele,bc,hc",
+                "rolesp": "ails_add",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "11",
+                    "@dc": "44",
+                    "#text": "50% HP 100% DEF (ALL) / Reduce DMG (15%) from (Fire,water,earth,thunder) Enemy (ALL) / 20% Chance Reduce 50% Enemy BB Gauge (ALL) / 50% ABP+ 25% CBP+"
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "28",
+                    "#text": "340% Thunder (AOE) / Reduce DMG (50%) 1Turns / Reduce DMG (10%) from (Fire,water,earth,thunder) Enemy1Turns"
+                },
+                "sbb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "24",
+                    "#text": "500% Thunder (AOE) / Reduce DMG (50%) 1Turns / 35% BC+ 35% HC+ (ALL) 3Turns / Reduce DMG (10%) from (Fire,water,earth,thunder) Enemy1Turns"
+                },
+                "ubb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "30",
+                    "#text": "1300% Thunder (AOE) / Reduce DMG (75%) 3Turns / 50BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance Heal 75% DMG when ATKed (ALL) 3Turns / 500% Element Weakness DMG+ (thunder) (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Ails (SELF) / 100% Chance 2-3BC Fill when ATKed (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40867.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40867.png"
+                },                
+                "sp": {
+                    "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 20 : 3 BC/turn | 20 : Null Element DMG | 40 : Add Effect to SBB {1 Turn +10% Light/Dark Mitigation} | 40 : BB+ & SBB+: +1 Turn for 50% mitigation | 50 : LS+: +10% enemy BB gauge drain chance | 40 : Add Effect to BB/SBB {3 Turn 15% Injury/Sick/Weak Reflect, 10% Curse/Paralysis/Poison Reflect}"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
@@ -13499,6 +13769,231 @@
                 },                
                 "sp": {
                     "@list": "20 : 30% boost to max HP | 10 : 50% boost to Atk | 10 : 50% boost to Def | 20 : Negates elemental damage | 10 : Enhances Leader Skill all parameters boost from 40% to 50% | 30 : 10% damage reduction from Light, Dark types (To self) | 20 : Adds considerable Atk boost for 3 turns effect to BB (160% boost) | 20 : Adds considerable Atk boost for 3 turns effect to SBB (160% boost) | 20 : Adds considerable Def boost for 3 turns effect to BB (160% boost) | 20 : Adds considerable Def boost for 3 turns effect to SBB (160% boost) | 30 : Adds considerable OD gauge fill rate boost for 3 turns effect to BB (20% boost) | 30 : Enhances SBB's huge boost to Atk relative to Def effect (+10% boost, 80% boost total) | 30 : Enhances BB's huge boost to Def relative to Atk effect (+10% boost, 80% boost total)"
+                }
+            },
+            {
+                "id": "8238",
+                "name": "Rain-Global 7",
+                "role": "bb_regen,maxhp,atk,def,rec,convert_def,atk_down,def_down",
+                "rolesp": "LS_null_id",
+                "element": "Fire",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "8",
+                    "@dc": "48",
+                    "#text": "Null Ignore DEF (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL) / Reduce DMG (20%) 1Turn on > 5k DMG Received (ALL)"
+                },
+                "bb": {
+                    "@hit": "12",
+                    "@dc": "12",
+                    "@cost": "24",
+                    "#text": "350% Fire (AOE) / 6BC Fill 3Turns / 10% Max HP+ till Death,Battle End / 140% ATK+ 140% DEF+ 140% REC+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "30",
+                    "#text": "560% Fire (AOE) / 140% ATK+ 140% DEF+ 140% REC+ (ALL) 3Turns / Convert 60% attack to DEF (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "1300% Fire (AOE) / 50BC Fill 3Turns / 300% ATK+ 300% DEF+ 300% REC+ (ALL) 3Turns / 100% Chance -80% Enemy ATK 3Turns / 100% Chance -80% Enemy DEF 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Elemental Weakness (SELF) / 10% ALL Stats to Fire (ALL)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810397.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810397.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8239",
+                "name": "Rain-Global (Omni)",
+                "role": "bb_regen,maxhp,atk,def,rec,convert_def,atk_down,def_down,null_crit",
+                "rolesp": "LS_null_id,hc,bc,miti",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "Null Ignore DEF (ALL) / 45% HP 45% ATK 45% DEF 45% REC (ALL) / Reduce DMG (20%) 1Turn on > 5k DMG Received (ALL) / Add 30% Chance -20% Enemy ATK to ATK (ALL) 2Turns on > 1 DMG Dealt (ALL)"
+                },
+                "bb": {
+                    "@hit": "13",
+                    "@dc": "13",
+                    "@cost": "24",
+                    "#text": "370% Fire (AOE) / 8BC Fill 3Turns / 15% Max HP+ till Death,Battle End / 150% ATK+ 150% DEF+ 150% REC+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "30",
+                    "#text": "580% Earth (AOE) / 160% ATK+ 160% DEF+ 160% REC+ (ALL) 3Turns / Convert 80% attack to DEF (ALL) 3Turns / 30% Chance -50% Enemy ATK 2Turns / 30% Chance -50% Enemy DEF 2Turns / Null CRIT (ALL) 1Turn"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "30",
+                    "#text": "1500% Light (AOE) / 50BC Fill 3Turns / 35% Max HP+ till Death,Battle End / 350% ATK+ 350% DEF+ 350% REC+ (ALL) 3Turns / 100% Chance -90% Enemy ATK 3Turns / 100% Chance -90% Enemy DEF 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Elemental Weakness (SELF) / 10% ALL Stats to Fire (ALL)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810398.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810398.png"
+                },                
+                "sp": {
+                    "@list": "20 : 20% boost to all parameters | 10 : 20% boost to max HP, Def | 100 : Damage taken boosts BB gauge (Fills 2-3 BC) | 20 : Negates all status ailments | 50 : 50% damage reduction from Fire Types | 10 : Enhances LS's parameter boost effect (+10% boost. 55% boost total) | 20 : Enhances SBB's parameter boost effect (+10% boost. 170% boost total) | 30 : Adds considerable BC, HC drop rate boost for 3 turns effect to BB/SBB (30% boost) | 30 : (*) Adds 50% damage reduction effect to BB/SBB | 20 : Allows 50% damage reduction effects to last for 2 turns (Prerequisite: *)"
+                }
+            },
+            {
+                "id": "8240",
+                "name": "Fina-Global 7",
+                "role": "bb_fill,heal,cure,barrier,def,rec,convert_atk,miti_ele",
+                "rolesp": "LS_bb_reduce,LS_null_ails",
+                "element": "Light",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "15",
+                    "@dc": "45",
+                    "#text": "Reduce 20% BB Cost (ALL) / 20% OverDrive Fill+ (ALL) / 40% HP 80% ATK 40% REC (4 elements required) (ALL) / Null Ails (ALL)"
+                },
+                "bb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "22",
+                    "#text": "10BC Fill (ALL) 1Turn / Heal (ALL) / Cure Ails / 2000HP Barrier (light)"
+                },
+                "sbb": {
+                    "@hit": "26",
+                    "@dc": "52",
+                    "@cost": "48",
+                    "#text": "750% Light (AOE) / 20BC Fill (ALL) 1Turn / 160% DEF+ 160% REC+ (ALL) 3Turns / Convert 80% REC to ATK (ALL) 3Turns / Reduce DMG (10%) from (Light,dark) Enemy3Turns"
+                },
+                "ubb": {
+                    "@hit": "28",
+                    "@dc": "56",
+                    "@cost": "30",
+                    "#text": "1300% Light (AOE) / 50BC Fill 3Turns / Reduce DMG (100%) 1Turns / Gradual Heal FULL (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Ails (SELF) / 0-100% REC+ Based on HP LEFT (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850397.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850397.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8241",
+                "name": "Fina-Global (Omni)",
+                "role": "bb_fill,od_fill,heal,cure,barrier,def,rec,convert_atk,miti_ele",
+                "rolesp": "LS_bb_reduce,LS_null_ails,null_ails",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "16",
+                    "@dc": "48",
+                    "#text": "Reduce 25% BB Cost (ALL) / 25% OverDrive Fill+ (ALL) / 50% HP 100% ATK 50% REC (4 elements required) (ALL) / Null Ails (ALL)"
+                },
+                "bb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "22",
+                    "#text": "12BC Fill (ALL) 1Turn / 8% OverDrive Fill / Heal (ALL) / Cure Ails / 3000HP Barrier (light)"
+                },
+                "sbb": {
+                    "@hit": "28",
+                    "@dc": "56",
+                    "@cost": "48",
+                    "#text": "870% Light (AOE) / 25BC Fill (ALL) 1Turn / 160% DEF+ 160% REC+ (ALL) 3Turns / Convert 100% REC to ATK (ALL) 3Turns / Reduce DMG (15%) from (Light,dark) Enemy3Turns"
+                },
+                "ubb": {
+                    "@hit": "30",
+                    "@dc": "0",
+                    "@cost": "30",
+                    "#text": "Light (AOE) 1500%-4000% BB ATK% based on Avg Allies BB Gauge (Drains ALL Allies BB) / 100BC Fill 3Turns / Reduce DMG (100%) 2Turns / 350% REC+ (SELF) 3Turns / Gradual Heal FULL (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Ails (SELF) / 0-150% REC+ Based on HP LEFT (SELF) / 100% Chance Angel Idol on OD Activation (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850398.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850398.png"
+                },                
+                "sp": {
+                    "@list": "10 : 20% boost to max HP, Def | 10 : 50% boost to Rec | 20 : Considerably reduces BB gauge required for BB (25% reduction) | 20 : Enhances LS's max HP, Rec and Atk parameters boost effect (+10% HP, Rec & +50% Atk. 60% HP, Rec & 150% Atk total) | 10 : Adds status ailments removal effect to SBB | 20 : Adds great restoration of all allies' HP when attacking effect to SBB (Heals (3000-3500 + 40% of healer's Rec) HP) | 30 : Adds status ailment negation for 3 turns effect to BB/SBB | 30 : (*) Adds Light barrier effect to SBB (3000 HP barrier) | 10 : Enhances added Light barrier effect (+1000 HP). (Prerequisite: *) | 40 : Enhances SBB's Def and Rec boost effect (+20% boost. 180% boost total)"
+                }
+            },
+            {
+                "id": "8246",
+                "name": "Charlotte",
+                "role": "null_ails,hot,miti,def",
+                "rolesp": "",
+                "element": "Water",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "3",
+                    "@dc": "42",
+                    "#text": "Reduce DMG (5%) (ALL) / Reduce DMG (10%) on Guard (ALL) / Heal Each Turn (ALL) / 50% HP 50% DEF (ALL)"
+                },
+                "bb": {
+                    "@hit": "5",
+                    "@dc": "10",
+                    "@cost": "25",
+                    "#text": "270% Water (AOE) / Null Ails 3Turns / Gradual Heal (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "6",
+                    "@dc": "12",
+                    "@cost": "30",
+                    "#text": "480% Water (AOE) / Reduce DMG (50%) 1Turns / Null Ails 3Turns / 140% DEF+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "7",
+                    "@dc": "14",
+                    "@cost": "35",
+                    "#text": "1000% Water (AOE) / Reduce DMG (50%) 3Turns / 250% DEF+ (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Ails (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_820387.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_820387.png"
+                },                
+                "sp": {
+                    "@list": ""
                 }
             }
         ]
