@@ -9943,7 +9943,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51067.png"
                 },                
                 "sp": {
-                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to max HP, Def | 10 : Boosts Atk relative to remaining HP (0.5% boost per 1% HP remaining. 50% boost at full HP total) | 10 : Boosts Def relative to how low remaining HP is (0.5% boost per 1% HP lost. 50% boost at 0% HP total) | 10 : Boosts BC efficacy (15% boost) | 20 : Negates all status ailments | 10 : Activates at turn's end effects during turn's start instead | 10 : Enhances 40% boost to all parameters Leader Skill effect | 50 : Adds damage taken considerably boosts BB gauge effect to BB (Fills 4-7 BC) | 30 : Adds status ailment removal effect to BB/SBB"
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to max HP, Def | 10 : Boosts Atk relative to remaining HP (0.5% boost per 1% HP remaining. 50% boost at full HP total) | 10 : Boosts Def relative to how low remaining HP is (0.5% boost per 1% HP lost. 50% boost at 0% HP total) | 10 : Boosts BC efficacy (15% boost) | 20 : Negates all status ailments | 10 : Activates at turn's end effects during turn's start instead | 10 : Enhances 40% to 50% boost to all parameters Leader Skill effect | 50 : Adds damage taken considerably boosts BB gauge effect to BB (Fills 4-7 BC) | 30 : Adds status ailment removal effect to BB/SBB"
                 }
             },
             {
