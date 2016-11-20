@@ -21,18 +21,19 @@ a {
   <ul class="w3-navbar w3-blue w3-left-align">
     <li class="w3-hide-medium w3-hide-large w3-opennav w3-right"> <a class="w3-hover-white" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a> </li>
     <li class="w3-hide-small"><a href="index.html" class="w3-hover-white"><i class="fa fa-home"></i></a></li>
-    <li class="w3-hide-small"><a href="my_vault.html" class="w3-hover-white" onClick="addMode();"><i class="fa fa-plus"></i></a></li>
-    <li class="w3-hide-small"><a href="my_vault.html" class="w3-hover-white" onClick="favMode();"><i class="fa fa-star"></i></a></li>
-    <li class="w3-hide-small"><a href="my_vault.html" class="w3-hover-white" onClick="clearVault();">CLEAR VAULT!</a></li>
+    <li class="w3-hide-small"><a href="my_vault_mobile.html" class="w3-hover-white" onClick="addMode();"><i class="fa fa-plus"></i></a></li>
+    <li class="w3-hide-small"><a href="my_vault_mobile.html" class="w3-hover-white" onClick="favMode();"><i class="fa fa-star"></i></a></li>
+    <li class="w3-hide-small"><a href="my_vault_mobile.html" class="w3-hover-white" onClick="clearVault();">CLEAR VAULT!</a></li>
+    <li style="margin-top:8px;margin-left:15px"><div id="mode_info"></div></li>
   </ul>
   
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
     <ul class="w3-navbar w3-blue w3-left-align">
       <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-      <li><a href="my_vault.html" onClick="addMode();"><i class="fa fa-plus"></i> Add View</a></li>
-      <li><a href="my_vault.html" onClick="favMode();"><i class="fa fa-star"></i> Fav Mode</a></li>
-      <li><a href="my_vault.html" onClick="clearVault();">CLEAR VAULT!</a></li>
+      <li><a href="my_vault_mobile.html" onClick="addMode();"><i class="fa fa-plus"></i> Add Mode</a></li>
+      <li><a href="my_vault_mobile.html" onClick="favMode();"><i class="fa fa-star"></i> Fav Mode</a></li>
+      <li><a href="my_vault_mobile.html" onClick="clearVault();">CLEAR VAULT!</a></li>
     </ul>
   </div>
 </div>
@@ -51,13 +52,8 @@ function openNav() {
 <div style="margin-top:40px;"></div>
 <div class="w3-row"> 
   <!-- Left col -->
-  <div class="w3-col" style="width:50%">
+  <div id="left_col" class="w3-col" style="width:100%">
     <div id="left_list"> </div>
-  </div>
-  
-  <!-- Right col -->
-  <div class="w3-col" style="width:50%">
-    <div id="right_content" style="height:126vh"> </div>
   </div>
 </div>
 <script>
@@ -75,6 +71,13 @@ function openNav() {
 		
 	} else {
 		alert("Sorry, your browser does not support Web Storage...");
+	}
+	////////////
+	if(mode == 'add'){
+		document.getElementById("mode_info").innerHTML = 'You are in Add Mode';
+	}
+	if(mode == 'fav'){
+		document.getElementById("mode_info").innerHTML = 'You are in Fav Mode';
 	}
 	////////////
 	var xmlhttp = new XMLHttpRequest();
@@ -111,7 +114,7 @@ function openNav() {
 			if(mode == 'fav'){
 				for(j = 0; j < vault_len; j++) {
 					if(id == vault_unique[j] && id != ""){
-						out_left+='<img id="' + id + '" src="' + thumb + '" style="width:60px;margin-top:5px;cursor:pointer;" onClick="unitClickView(' + id + ')" > ';
+						out_left+='<a href="unitinfo.html?id=' + id + '" target="_blank"> <img src="' + thumb + '" style="width:60px;margin-top:5px;"></a>';
 					}
 				}
 			}
@@ -120,13 +123,7 @@ function openNav() {
 		out_left+="</div>";
 		document.getElementById("left_list").innerHTML = out_left;
 	}
-	
 	/////////////////////
-	function unitClickView(id){
-		var path = 'unitinfo.html?id=' + id;
-		var fullpath = '<iframe src="' + path +' " frameborder="0" width="100%" height="100%"></iframe>';
-		document.getElementById("right_content").innerHTML = fullpath;
-	}
 	function unitClickAdd(id){
 		myvault+= id + '|';
 		localStorage.myvault = myvault;
@@ -150,7 +147,7 @@ function openNav() {
 			mode = localStorage.mode;
 		}
 	}
-	//////////
+	////////////
 	Array.prototype.remove = function() {
     var what, a = arguments, L = a.length, ax;
     while (L && this.length) {
