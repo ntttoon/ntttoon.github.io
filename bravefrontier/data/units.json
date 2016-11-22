@@ -14085,6 +14085,51 @@
                 "sp": {
                     "@list": ""
                 }
+            },
+            {
+                "id": "8247",
+                "name": "Charlotte (Omni)",
+                "role": "null_ails,hot,miti,def",
+                "rolesp": "",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "4",
+                    "@dc": "48",
+                    "#text": "Reduce DMG (5%) (ALL) / Reduce DMG (10%) on Guard (ALL) / Heal Each Turn (ALL) / 50% HP 50% DEF (ALL)"
+                },
+                "bb": {
+                    "@hit": "6",
+                    "@dc": "12",
+                    "@cost": "25",
+                    "#text": "350% Water (AOE) / Null Ails 3Turns / / 30% Chance -50% Enemy ATK 1Turns / Gradual Heal (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "8",
+                    "@dc": "16",
+                    "@cost": "30",
+                    "#text": "560% Water (AOE) / Reduce DMG (50%) 1Turns / Null Ails 3Turns / 140% DEF+ (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns"
+                },
+                "ubb": {
+                    "@hit": "10",
+                    "@dc": "20",
+                    "@cost": "35",
+                    "#text": "1500% Water (AOE) / Reduce DMG (50%) 3Turns / 250% DEF+ (ALL) 3Turns / 100% Chance -80% Enemy ATK 3Turns / Gradual Heal FULL (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Ails (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_820388.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_820388.png"
+                },                
+                "sp": {
+                    "@list": "10 : (*) 20% boost to max HP | 10 : (#) Boosts 20% max HP to 30% max HP (Prerequisite: *) | 10 : Boosts 30% max HP to 50% max HP (Prerequisite: #) | 30 : Negates elemental damage | 20 : Enhances success rate of BB/SBBs probable Atk reduction effect (+10% chance, 40% chance total) | 30 : Allows SBB's 50% damage reduction effects to last for additional turn | 40 : Enhances SBB's Def boost effect (+20% boost, 160% boost total) | 40 : Enhances BB's HP restoration each turn effect (+1000 HP healed) | 60 : Allows UBB effects to last for 4 turns"
+                }
             }
         ]
     }
