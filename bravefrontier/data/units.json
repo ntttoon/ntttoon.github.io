@@ -10667,6 +10667,276 @@
                 }
             },
             {
+                "id": "1513",
+                "name": "Asto 7",
+                "role": "bb_fill,bb_regen,bb_rate",
+                "rolesp": "",
+                "element": "Water",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "40",
+                    "#text": "6BC Fill Each Turn (ALL) / 30% HP 80% ATK (ALL) / 10% BB SBB Activation+ (Arena/ALL)"
+                },
+                "bb": {
+                    "@hit": "13",
+                    "@dc": "13",
+                    "@cost": "19",
+                    "#text": "300% Water (AOE) / Water (TGT) / 6BC Fill (ALL) 1Turn / 6BC Fill 3Turns"
+                },
+                "sbb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "26",
+                    "#text": "500% Water (AOE) / Water (TGT) / Random Hits / 6BC Fill (ALL) 1Turn / 6BC Fill 3Turns / 40% BC Fill+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "30",
+                    "#text": "1300% Water (AOE) / 50BC Fill 3Turns / 400% Element Weakness DMG+ (water) (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns / Reduce DMG (100%) from (All) Enemy2Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "100% Chance 1-2BC Fill when ATKed (SELF) / 20% Chance Heal 20-25% DMG when ATKed (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20926.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20926.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1514",
+                "name": "Asto 8",
+                "role": "bb_fill,bb_regen,bb_rate",
+                "rolesp": "bb_atked",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "12",
+                    "@dc": "48",
+                    "#text": "8BC Fill Each Turn (ALL) / 50% HP 100% ATK (ALL) / 20% BB SBB Activation+ (Arena/ALL) / 50% ABP+ 25% CBP+"
+                },
+                "bb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "18",
+                    "#text": "320% Water (AOE) / Water (TGT) / 8BC Fill (ALL) 1Turn / 7BC Fill 3Turns"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "25",
+                    "#text": "520% Water (AOE) / Water (TGT) / Random Hits / 8BC Fill (ALL) 1Turn / 7BC Fill 3Turns / 50% BC Fill+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "30",
+                    "#text": "1500% Water (AOE) / 50BC Fill 3Turns / 500% Element Weakness DMG+ (water) (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns / Reduce DMG (100%) from (All) Enemy2Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "100% Chance 2-3BC Fill when ATKed (SELF) / 25% Chance Heal 20-25% DMG when ATKed (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20927.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20927.png"
+                },                
+                "sp": {
+                    "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 10 : 0-50% DEF depending on HP remaining | 10 : +50% ATK when BB Gauge is above 50% | 20 : +50% BB/SBB/UBB Mod | 60 : Survive up to 1 fatal blows (60% Chance) | 40 : LS+: Increased chance of initiating BB/SBB | 30 : BB+: Fill 2 BC & SBB+: Fill 2 BC | 30 : BB+: 2 BC/turn & SBB+: 2 BC/turn | 50 : Add Effect To BB/SBB (4-7 BC on Hit for 3 turns)"
+                }
+            },
+            {
+                "id": "1515",
+                "name": "Janis 7",
+                "role": "cure,idol,aoe,null",
+                "rolesp": "",
+                "element": "Light",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "39",
+                    "#text": "15% Chance Angel Idol 1x (ALL) / 30% HP 80% DEF (ALL) / Reduce DMG (10%) from (Light,dark) Enemy (ALL)"
+                },
+                "bb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "28",
+                    "#text": "350% Light (AOE) / Cure Ails / 10% Chance Angel Idol 1% HP (ALL) 999Turns / 100% Chance AOE on Normal ATK (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "19",
+                    "@dc": "19",
+                    "@cost": "29",
+                    "#text": "560% Light (AOE) / Cure Ails / Null Ails 3Turns / 10% Chance Angel Idol 1% HP (ALL) 999Turns / 100% Chance AOE on Normal ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "26",
+                    "@dc": "26",
+                    "@cost": "30",
+                    "#text": "1300% Light (AOE) / Null Ails 3Turns / 80% Chance Angel Idol 100% HP (ALL) 999Turns / 400% Element Weakness DMG+ (light) (ALL) 3Turns / 100% Chance AOE on Normal ATK (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Ails (SELF) / 40% Chance Angel Idol 1x (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_51086.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51086.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1516",
+                "name": "Janis 8",
+                "role": "cure,idol,aoe,null",
+                "rolesp": "hot",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "15",
+                    "@dc": "45",
+                    "#text": "20% Chance Angel Idol 1x (ALL) / 50% HP 100% DEF (ALL) / Reduce DMG (15%) from (Light,dark) Enemy (ALL) / 50% ABP+ 25% CBP+"
+                },
+                "bb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "27",
+                    "#text": "370% Light (AOE) / Cure Ails / 10% Chance Angel Idol 1% HP (ALL) 999Turns / 100% Chance AOE on Normal ATK (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "28",
+                    "#text": "580% Light (AOE) / Cure Ails / Null Ails 3Turns / 10% Chance Angel Idol 1% HP (ALL) 999Turns / 100% Chance AOE on Normal ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "27",
+                    "@dc": "27",
+                    "@cost": "30",
+                    "#text": "1500% Light (AOE) / Null Ails 5Turns / 80% Chance Angel Idol 100% HP (ALL) 999Turns / 500% Element Weakness DMG+ (light) (ALL) 3Turns / 100% Chance AOE on Normal ATK (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Ails (SELF) / 40% Chance Angel Idol 2x (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_51087.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51087.png"
+                },                
+                "sp": {
+                    "@list": "10 : +20% HP/ATK | 10 : +20% HP/DEF | 20 : Hit Count +1 | 10 : 2-3 BC when hit | 20 : 100% Base/Buffed Element Weakness Resist | 50 : LS+: Survive up to fatal blows (+5% Chance) | 40 : Add Effect To BB/SBB (3 Turn HoT 3000-3500 HP (+15% Target REC)) | 40 : LS+: Mitigate Damage 5%"
+                }
+            },
+            {
+                "id": "1517",
+                "name": "Zeku 7",
+                "role": "",
+                "rolesp": "",
+                "element": "Dark",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "1",
+                    "@dc": "40",
+                    "#text": "30% HP (ALL) / 150% ATK 3Turns (ALL) / 30% Chance -50% Enemy BC Fill+ (ALL) 2Turns"
+                },
+                "bb": {
+                    "@hit": "1",
+                    "@dc": "20",
+                    "@cost": "31",
+                    "#text": "400% Dark (AOE) / 80% ATK+ (SELF) 3Turns / 75% Injury 75% Curse"
+                },
+                "sbb": {
+                    "@hit": "1",
+                    "@dc": "15",
+                    "@cost": "33",
+                    "#text": "750% Dark (AOE) / Dark (TGT) / 50% CRIT DMG+ (SELF) 3Turns / 80% ATK+ (SELF) 3Turns / 75% Injury 75% Curse"
+                },
+                "ubb": {
+                    "@hit": "1",
+                    "@dc": "35",
+                    "@cost": "30",
+                    "#text": "1800% Dark (AOE) / 300% CRIT DMG+ (ALL) 3Turns / 250% Spark DMG+ (ALL) 3Turns / 300% ATK+ (ALL) 3Turns / 300% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% CRIT DMG+ (SELF) / 100% 8BC Fill on Spark (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_61056.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_61056.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1518",
+                "name": "Zeku 8",
+                "role": "",
+                "rolesp": "id",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "1",
+                    "@dc": "42",
+                    "#text": "50% HP (ALL) / 200% ATK 3Turns (ALL) / 50% Chance -50% Enemy BC Fill+ (ALL) 2Turns / 50% ABP+ 25% CBP+"
+                },
+                "bb": {
+                    "@hit": "1",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "420% Dark (AOE) / 100% ATK+ (SELF) 3Turns / 80% Injury 80% Curse"
+                },
+                "sbb": {
+                    "@hit": "1",
+                    "@dc": "20",
+                    "@cost": "32",
+                    "#text": "800% Dark (AOE) / Dark (TGT) / 50% CRIT DMG+ (SELF) 3Turns / 100% ATK+ (SELF) 3Turns / 80% Injury 80% Curse"
+                },
+                "ubb": {
+                    "@hit": "1",
+                    "@dc": "40",
+                    "@cost": "30",
+                    "#text": "2000% Dark (AOE) / 300% CRIT DMG+ (ALL) 3Turns / 300% Spark DMG+ (ALL) 3Turns / 350% ATK+ (ALL) 3Turns / 300% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "100% CRIT DMG+ (SELF) / 100% 10BC Fill on Spark (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_61057.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_61057.png"
+                },                
+                "sp": {
+                    "@list": "10 : 0-80% ATK depending on HP remaining | 20 : +100% Spark Damage | 10 : +50% Crit Damage | 20 : +50% All Weakness Damage | 40 : (*) 20% Chance Normal Attacks AoE (-50% Damage) | 10 : (#) 30% Chance Normal Attacks AoE (-50% Damage) (Prerequisite: *) | 20 : 30% Chance Normal Attacks AoE (-25% Damage) (Prerequisite: #) | 50 : Add Effect To BB/SBB (2 turn Def Ignore Buff) | 50 : LS+: Chance to reduce BB gauge fill rate for 2 turns"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
@@ -14039,6 +14309,186 @@
                 },                
                 "sp": {
                     "@list": "10 : 20% boost to max HP, Def | 10 : 50% boost to Rec | 20 : Considerably reduces BB gauge required for BB (25% reduction) | 20 : Enhances LS's max HP, Rec and Atk parameters boost effect (+10% HP, Rec & +50% Atk. 60% HP, Rec & 150% Atk total) | 10 : Adds status ailments removal effect to SBB | 20 : Adds great restoration of all allies' HP when attacking effect to SBB (Heals (3000-3500 + 40% of healer's Rec) HP) | 30 : Adds status ailment negation for 3 turns effect to BB/SBB | 30 : (*) Adds Light barrier effect to SBB (3000 HP barrier) | 10 : Enhances added Light barrier effect (+1000 HP). (Prerequisite: *) | 40 : Enhances SBB's Def and Rec boost effect (+20% boost. 180% boost total)"
+                }
+            },
+            {
+                "id": "8242",
+                "name": "Lasswell-Global",
+                "role": "atk_ele,spark,evade,id",
+                "rolesp": "",
+                "element": "Water",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "12",
+                    "@dc": "48",
+                    "#text": "120% Spark DMG+ (ALL) / Normal HitCount +100% (-50% DMG) (ALL) / 100% Chance Reflect 50% DMG (ALL) / 50% HP 100% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "22",
+                    "#text": "370% Water (AOE) / 80% ATK+ to Water 3Turns / 100% Spark DMG+ (ALL) 3Turns / 10% Evade ATKs (SELF) 1Turn"
+                },
+                "sbb": {
+                    "@hit": "19",
+                    "@dc": "19",
+                    "@cost": "34",
+                    "#text": "560% Water (TGT) / Water (AOE) 200%-700% BB ATK% Based on HP LEFT / 80% ATK+ to Water 3Turns / 110% Spark DMG+ (ALL) 3Turns / 50% Spark DMG+ (SELF) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "30",
+                    "#text": "1000% Water (TGT) / Water (AOE) 1000%-2000% BB ATK% Based on HP LEFT / 300% CRIT DMG+ (ALL) 3Turns / 250% Spark DMG+ (ALL) 3Turns / 50% Evade ATKs (ALL) 1Turn"
+                },
+                "es": {
+                    "@condtion": "20% ALL Stats when ATK Boosting Type Sphere is Equipped",
+                    "#text": "50% ATK+ to Water (ALL) / Add Ignore DEF (ALL) 3Turns Effect to BB,SBB (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_820397.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_820397.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8243",
+                "name": "Lasswell-Global (Omni)",
+                "role": "atk_ele,spark,evade,id",
+                "rolesp": "",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "14",
+                    "@dc": "56",
+                    "#text": "130% Spark DMG+ (ALL) / Normal HitCount +100% (-50% DMG) (ALL) / 100% Chance Reflect 50-75% DMG (ALL) / 50% HP 100% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "22",
+                    "#text": "390% Water (AOE) / 100% ATK+ to Water 3Turns / 100% Spark DMG+ (ALL) 3Turns / 15% Evade ATKs (SELF) 1Turn"
+                },
+                "sbb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "34",
+                    "#text": "600% Dark (TGT) / Water (AOE) 200%-900% BB ATK% Based on HP LEFT / 100% ATK+ to Water 3Turns / 120% Spark DMG+ (ALL) 3Turns / 50% Spark DMG+ (SELF) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "24",
+                    "@dc": "24",
+                    "@cost": "30",
+                    "#text": "1200% Earth (TGT) / Water (AOE) 1500%-2500% BB ATK% Based on HP LEFT / 300% CRIT DMG+ (ALL) 3Turns / 300% Spark DMG+ (ALL) 3Turns / 50% Evade ATKs (ALL) 1Turn"
+                },
+                "es": {
+                    "@condtion": "30% ALL Stats when ATK Boosting Type Sphere is Equipped",
+                    "#text": "50% ATK+ to Water (ALL) / Add Ignore DEF (ALL) 3Turns Effect to BB,SBB (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_820398.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_820398.png"
+                },                
+                "sp": {
+                    "@list": "10 : 30% boost to Atk, Rec | 20 : (*) 100% boost to Spark damage | 10 : Raises Spark damage boost from 100% to 120% (Prerequisite: *) | 10 : (#) Slightly boosts critical hit damage (30% boost) | 10 : Boosts critical hit damage (70% boost) (Prerequisite: #) | 30 : Considerably raises normal hit amount (+2 to each hit count) | 30 : Enhances BB/SBB's considerable Atk, Def boost for Water types effect (+20% boost. 120% boost total) | 20 : Enhances and allows BB's self evasion effect to last for 1 additional turn (+5% chance. 20% chance to evade attacks total) | 40 : Adds Water elemental damage boost effect for 3 turns effect to BB/SBB (150% elemental damage) | 40 : Enhances BB/SBB/UBB's Spark damage boost effect (+30% boost. 130%/150% boost total) | 50 : 50% damage reduction from Fire Types"
+                }
+            },
+            {
+                "id": "8244",
+                "name": "Lid",
+                "role": "bb_atk,ails_atked,heal_atked,crit_dmg,crit,add_ele",
+                "rolesp": "",
+                "element": "Thunder",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "15",
+                    "@dc": "45",
+                    "#text": "150% CRIT DMG+ (ALL) / 200% BB ATK%+ (ALL) / 20% BC+ 20% HC+ 5% Item+ 15% Karma+ 75% Zel+ (ALL) / 50% HP 50% ATK 30% CRIT+ (ALL)"
+                },
+                "bb": {
+                    "@hit": "19",
+                    "@dc": "19",
+                    "@cost": "25",
+                    "#text": "350% Thunder (AOE) / Thunder (AOE) 1337 Fixed DMG / 280% BB ATK%+ (ALL) 3Turns / Inflict 65% Weak 65% Para on ATKed (SELF) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "28",
+                    "@dc": "28",
+                    "@cost": "30",
+                    "#text": "560% Thunder (AOE) / 30% Chance Heal 15-20% DMG when ATKed (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / 150% ATK+ -20% DEF+ -20% REC+ (SELF) 2Turns / 350% BB ATK%+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "30",
+                    "@dc": "30",
+                    "@cost": "30",
+                    "#text": "1300% Thunder (AOE) / 300% OverDrive Fill+ 5Turns / 300% CRIT DMG+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Add 60% CRIT+ (ALL) Effect to BB,SBB (SELF) / Add Water, Earth, Thunder to ATK (ALL) Effect to BB,SBB (SELF) / Null Spark (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840397.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_840397.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8245",
+                "name": "Lid (Omni)",
+                "role": "bb_atk,ails_atked,heal_atked,crit_dmg,crit,add_ele",
+                "rolesp": "atk_ele,def_ele,bb_atked",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "16",
+                    "@dc": "48",
+                    "#text": "150% CRIT DMG+ (ALL) / 250% BB ATK%+ (ALL) / 25% BC+ 25% HC+ 5% Item+ 15% Karma+ 100% Zel+ (ALL) / 50% HP 50% ATK 30% CRIT+ (ALL)"
+                },
+                "bb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "25",
+                    "#text": "370% Thunder (AOE) / Thunder (AOE) 1337 Fixed DMG / 280% BB ATK%+ (ALL) 3Turns / Inflict 75% Weak 75% Para on ATKed (SELF) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "30",
+                    "@dc": "30",
+                    "@cost": "30",
+                    "#text": "580% Fire (AOE) / 30% Chance Heal 15-20% DMG when ATKed (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / 200% ATK+ -30% DEF+ -30% REC+ (SELF) 2Turns / 350% BB ATK%+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "32",
+                    "@dc": "32",
+                    "@cost": "30",
+                    "#text": "1500% Thunder (AOE) / 300% OverDrive Fill+ 5Turns / Add Fire,water,earth,thunder,light,dark to ATK (ALL) 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 600% BB ATK%+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Add 60% CRIT+ (ALL) Effect to BB,SBB (SELF) / Add Water, Earth, Thunder to ATK (ALL) Effect to BB,SBB (SELF) / Null Spark (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840398.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_840398.png"
+                },                
+                "sp": {
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to max HP, Def | 30 : 25% damage reduction from Thunder types | 20 : (*) Adds considerable Atk, Def boost for Thunder types effect to BB/SBB (100% boost) | 20 : Enhances added Atk, Def boost (+20%) for Thunder types effect (Prerequisite: *) | 30 : Enhances SBB's critical damage boost effect (+50% boost. 100% boost total) | 20 : (#) Adds considerable BB gauge boost when attacked for 3 turns effect to BB/SBB (Fills 4-7 BC) | 10 : Enhances added BB gauge boost when attacked for 3 turns effect (+1 BC. 5-8 BC fill total) (Prerequisite: #) | 40 : Enhances BB/SBB/UBB's BB Atk boost effect (+100% boost. 380%/450%/700% boost total)"
                 }
             },
             {
