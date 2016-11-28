@@ -14488,7 +14488,7 @@
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_840398.png"
                 },                
                 "sp": {
-                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to max HP, Def | 30 : 25% damage reduction from Thunder types | 20 : (*) Adds considerable Atk, Def boost for Thunder types effect to BB/SBB (100% boost) | 20 : Enhances added Atk, Def boost (+20%) for Thunder types effect (Prerequisite: *) | 30 : Enhances SBB's critical damage boost effect (+50% boost. 100% boost total) | 20 : (#) Adds considerable BB gauge boost when attacked for 3 turns effect to BB/SBB (Fills 4-7 BC) | 10 : Enhances added BB gauge boost when attacked for 3 turns effect (+1 BC. 5-8 BC fill total) (Prerequisite: #) | 40 : Enhances BB/SBB/UBB's BB Atk boost effect (+100% boost. 380%/450%/700% boost total)"
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to max HP, Def | 10 : Removes SBB's Def, Rec self parameter reduction effects | 30 : 25% damage reduction from Thunder types | 20 : (*) Adds considerable BB gauge boost when attacked for 3 turns effect to BB/SBB (Fills 4-7 BC) | 10 : Enhances added BB gauge boost when attacked for 3 turns effect (+1 BC. 5-8 BC fill total) (Prerequisite: *) | 20 : (#) Adds considerable Atk, Def boost for Thunder types effect to BB/SBB (100% boost) | 20 : Enhances added Atk, Def boost (+20%, 120% boost total) for Thunder types effect (Prerequisite: #) | 30 : Enhances SBB's critical damage boost effect (+50% boost. 100% boost total) | 40 : Enhances BB/SBB/UBB's BB Atk boost effect (+100% boost. 380%/450%/700% boost total)"
                 }
             },
             {
