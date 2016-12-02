@@ -14580,6 +14580,141 @@
                 "sp": {
                     "@list": "10 : (*) 20% boost to max HP | 10 : (#) Boosts 20% max HP to 30% max HP (Prerequisite: *) | 10 : Boosts 30% max HP to 50% max HP (Prerequisite: #) | 30 : Negates elemental damage | 20 : Enhances success rate of BB/SBBs probable Atk reduction effect (+10% chance, 40% chance total) | 30 : Allows SBB's 50% damage reduction effects to last for additional turn | 40 : Enhances SBB's Def boost effect (+20% boost, 160% boost total) | 40 : Enhances BB's HP restoration each turn effect (+1000 HP healed) | 60 : Allows UBB effects to last for 4 turns"
                 }
+            },
+            {
+                "id": "8248",
+                "name": "Void Walker Zenia",
+                "role": "bb_fill,id,spark,hit",
+                "rolesp": "LS_bb_spark",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "17",
+                    "@dc": "51",
+                    "#text": "100% Chance 2-3BC Fill on Spark (ALL) / Normal HitCount +100% (-50% DMG) (ALL) / 40% HP 100% ATK (ALL) / 120% Spark DMG+ 2Turns on > 15 Sparks (ALL)"
+                },
+                "bb": {
+                    "@hit": "25",
+                    "@dc": "50",
+                    "@cost": "20",
+                    "#text": "1000% Dark (TGT) / 10BC Fill (ALL) 1Turn / Ignore DEF (ALL) 2Turns / 50% Spark DMG+ (SELF) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "30",
+                    "@dc": "30",
+                    "@cost": "26",
+                    "#text": "700% Dark (AOE) / 100% Spark DMG+ (ALL) 3Turns / Normal HitCount +100% (ALL) 3Turns / 100% ATK+ (SELF) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "40",
+                    "@dc": "40",
+                    "@cost": "30",
+                    "#text": "1500% Dark (AOE) / 300% Spark DMG+ (ALL) 3Turns / Normal HitCount +300% (100% DMG) (ALL) 3Turns / 350% ATK+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "Obsidian Core Amplifer sphere equipped",
+                    "#text": "30% ALL Stats (SELF) / Normal HitCount +200% (30% DMG) (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860258.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860258.png"
+                },                
+                "sp": {
+                    "@list": "10 : 50% boost to Atk | 10 : 50% boost to Atk when HP is over 50% | 10 : 50% boost to Atk when BB gauge is over 50% | 10 : (*) 70% boost to Spark damage | 10 : Boosts 70% Spark damage to 100% Spark damage (Prerequisite: *) | 30 : Slightly reduces damage for 1 turn when damage dealt has exceeded certain amount (25% reduction after 50,000 damage dealt) | 50 : Adds normal attacks hit all foes for 3 turns effect to SBB | 50 : Enhances SBB's damage dealt by normal hit amount increase effect (+50% boost. Extra hits deal 50% extra damage) | 50 : Enhances SBB's normal hit amount increase effect (+1 hit to each hit count. Additional +2 hits total) | 40 : Allows UBB effects to last for 4 turns"
+                }
+            },
+            {
+                "id": "8249",
+                "name": "Wulf Aspirant Faelan",
+                "role": "cure,null_ails,barrier,ails_atked,atk_ailed,bb_atk,ails",
+                "rolesp": "LS_null_ails",
+                "element": "Earth",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "36",
+                    "#text": "50% DMG+ to Ailed Enemy (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL) / Null Ails (ALL) / 250% BB ATK%+ when HP > 50% (ALL)"
+                },
+                "bb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "26",
+                    "#text": "350% Water (AOE) / Cure Ails / Null Ails 3Turns / 2500HP Barrier (water) / Inflict 15% Injury 15% Weak 15% Sick 10% Poison 10% Para 10% Curse on ATKed (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "29",
+                    "#text": "600% Earth (TGT) / Earth (AOE) 200% BB ATK+ on Consecutive SBB (Max 3x , SELF) / Random Hits / 140% DMG+ to Ailed Enemy (ALL) 3Turns / 300% BB ATK%+ (ALL) 3Turns / 20% Injury 20% Weak 20% Sick 20% Poison 20% Para 20% Curse"
+                },
+                "ubb": {
+                    "@hit": "28",
+                    "@dc": "28",
+                    "@cost": "30",
+                    "#text": "1300% Water (AOE) / 250% DMG+ to Ailed Enemy (ALL) 3Turns / 20000HP Barrier (earth) / 500% BB ATK%+ (ALL) 3Turns / Add 100% Injury 100% Weak 100% Sick 100% Poison to ATK (ALL) 3Turns / Add 100% Para 100% Curse to ATK (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Ails (SELF) / 80% DMG+ to Ailed Enemy (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830417.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_830417.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8250",
+                "name": "White Wulf Faelan",
+                "role": "cure,null_ails,barrier,ails_atked,atk_ailed,bb_atk,ails",
+                "rolesp": "LS_null_ails,null_stats",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "16",
+                    "@dc": "48",
+                    "#text": "100% DMG+ to Ailed Enemy (ALL) / 40% HP 40% ATK 40% DEF 40% REC (ALL) / Null Ails (ALL) / 300% BB ATK%+ when HP > 50% (ALL)"
+                },
+                "bb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "27",
+                    "#text": "400% Water (AOE) / Cure Ails / Null Ails 3Turns / 3000HP Barrier (water) / Inflict 15% Injury 15% Weak 15% Sick 10% Poison 10% Para 10% Curse on ATKed (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "26",
+                    "@dc": "26",
+                    "@cost": "30",
+                    "#text": "800% Earth (TGT) / Earth (AOE) 200% BB ATK+ on Consecutive SBB (Max 3x , SELF) / Random Hits / 160% DMG+ to Ailed Enemy (ALL) 3Turns / 350% BB ATK%+ (ALL) 3Turns / 25% Injury 25% Weak 25% Sick 25% Poison 25% Para 25% Curse"
+                },
+                "ubb": {
+                    "@hit": "31",
+                    "@dc": "31",
+                    "@cost": "30",
+                    "#text": "1500% Water (AOE) / 300% DMG+ to Ailed Enemy (ALL) 3Turns / 25000HP Barrier (earth) / 600% BB ATK%+ (ALL) 3Turns / Add 100% Injury 100% Weak 100% Sick 100% Poison to ATK (ALL) 3Turns / Add 100% Para 100% Curse to ATK (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Ails (SELF) / 100% DMG+ to Ailed Enemy (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830418.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_830418.png"
+                },                
+                "sp": {
+                    "@list": "20 : 20% boost to all parameters | 10 : Enhances LS's all parameters boost from 40% to 50% | 30 : Adds negation of Atk, Def, Rec reducing effects for 2 turns effect to BB | 40 : Adds fill own BB gauge to max effect to SBB | 30 : Allows BB buff effects to last for 5 turns (Only applies to probable status ailment counter and negation for all status ailments) | 40 : (*) Adds Earth barrier effect to SBB (3000 HP) | 20 : Enhances BB/SBB's barrier effect (+1000 HP, 4000 HP on barrier total) (Prerequisite: *) | 40 : Enhances SBB/UBB's BB Atk boost effect (+100% boost, 450% on SBB, 700% on UBB total) | 30 : Enhances SBB/UBB's damage boost against status afflicted foes effect (+40% boost, 200% on SBB, 340% boost on UBB total)"
+                }
             }
         ]
     }
