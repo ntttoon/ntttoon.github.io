@@ -9349,7 +9349,7 @@
                 },
                 "es": {
                     "@condtion": "Meirith Pearl is Equipped",
-                    "#text": "30% ALL Stats / 0-150% ATK+ DEF+ REC+ Based on HP Lost (SELF)"
+                    "#text": "30% ALL Stats (SELF) / 0-150% ATK+ DEF+ REC+ Based on HP Lost (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30567.png"
@@ -10038,7 +10038,7 @@
             },
             {
                 "id": "1493",
-                "name": "Arisa 7",
+                "name": "Shining Courage Alessa",
                 "role": "cure,null_ails,atk,def,rec,maxhp,convert_atk,convert_def",
                 "rolesp": "LS_null_ails",
                 "element": "Fire",
@@ -10083,7 +10083,7 @@
             },
             {
                 "id": "1494",
-                "name": "Arisa 8",
+                "name": "Brave Leader Alessa",
                 "role": "cure,null_ails,atk,def,rec,maxhp,convert_atk,convert_def",
                 "rolesp": "LS_null_ails,convert_rec,add_ele,crit_dmg,crit",
                 "element": "Fire",
@@ -10128,7 +10128,7 @@
             },
             {
                 "id": "1495",
-                "name": "Licht 7",
+                "name": "Flashing Knight Licht",
                 "role": "bb_fill,spark,heal_spark,bb_spark,spark_crit",
                 "rolesp": "",
                 "element": "Thunder",
@@ -10173,7 +10173,7 @@
             },
             {
                 "id": "1496",
-                "name": "Licht 8",
+                "name": "Gracious Champion Licht",
                 "role": "bb_fill,spark,heal_spark,bb_spark,spark_crit",
                 "rolesp": "spark_debuff,bb_regen",
                 "element": "Thunder",
@@ -10218,7 +10218,7 @@
             },
             {
                 "id": "1497",
-                "name": "Johann 7",
+                "name": "Noble Links Johan",
                 "role": "miti,od_rate,bb_atked,bb_rate",
                 "rolesp": "LS_bb_atked",
                 "element": "Dark",
@@ -10263,7 +10263,7 @@
             },
             {
                 "id": "1498",
-                "name": "Johann 8",
+                "name": "Imperial Chain Johan",
                 "role": "miti,od_rate,bb_atked,bb_rate",
                 "rolesp": "LS_bb_atked,atk_down,def_down,atk_down_add,def_down_add",
                 "element": "Dark",
@@ -13759,7 +13759,7 @@
                 },
                 "es": {
                     "@condtion": "when ATK Boosting Type Sphere is Equipped",
-                    "#text": "20% ALL Stats"
+                    "#text": "20% ALL Stats (SELF)"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850367.png"
@@ -13804,7 +13804,7 @@
                 },
                 "es": {
                     "@condtion": "when ATK Boosting Type Sphere is Equipped",
-                    "#text": "30% ALL Stats / 25% ATK+ DEF+ REC+ Each Turn (Max 3x stack) (SELF)"
+                    "#text": "30% ALL Stats (SELF) / 25% ATK+ DEF+ REC+ Each Turn (Max 3x stack) (SELF)"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850368.png"
@@ -14343,7 +14343,7 @@
                     "#text": "1000% Water (TGT) / Water (AOE) 1000%-2000% BB ATK% Based on HP LEFT / 300% CRIT DMG+ (ALL) 3Turns / 250% Spark DMG+ (ALL) 3Turns / 50% Evade ATKs (ALL) 1Turn"
                 },
                 "es": {
-                    "@condtion": "20% ALL Stats when ATK Boosting Type Sphere is Equipped",
+                    "@condtion": "20% ALL Stats (SELF) when ATK Boosting Type Sphere is Equipped",
                     "#text": "50% ATK+ to Water (ALL) / Add Ignore DEF (ALL) 3Turns Effect to BB,SBB (SELF)"
                 },
                 "art": {
@@ -14388,7 +14388,7 @@
                     "#text": "1200% Earth (TGT) / Water (AOE) 1500%-2500% BB ATK% Based on HP LEFT / 300% CRIT DMG+ (ALL) 3Turns / 300% Spark DMG+ (ALL) 3Turns / 50% Evade ATKs (ALL) 1Turn"
                 },
                 "es": {
-                    "@condtion": "30% ALL Stats when ATK Boosting Type Sphere is Equipped",
+                    "@condtion": "30% ALL Stats (SELF) when ATK Boosting Type Sphere is Equipped",
                     "#text": "50% ATK+ to Water (ALL) / Add Ignore DEF (ALL) 3Turns Effect to BB,SBB (SELF)"
                 },
                 "art": {
@@ -14539,7 +14539,7 @@
             {
                 "id": "8247",
                 "name": "Charlotte (Omni)",
-                "role": "null_ails,hot,miti,def",
+                "role": "null_ails,hot,miti,def,cure",
                 "rolesp": "",
                 "element": "Water",
                 "rarity": "8",
@@ -14553,7 +14553,7 @@
                     "@hit": "6",
                     "@dc": "12",
                     "@cost": "25",
-                    "#text": "350% Water (AOE) / Null Ails 3Turns / / 30% Chance -50% Enemy ATK 1Turns / Gradual Heal (ALL) 3Turns"
+                    "#text": "350% Water (AOE) / Null Ails 3Turns / 30% Chance -50% Enemy ATK 1Turns / Gradual Heal (ALL) 3Turns"
                 },
                 "sbb": {
                     "@hit": "8",
@@ -14568,8 +14568,8 @@
                     "#text": "1500% Water (AOE) / Reduce DMG (50%) 3Turns / 250% DEF+ (ALL) 3Turns / 100% Chance -80% Enemy ATK 3Turns / Gradual Heal FULL (ALL) 3Turns"
                 },
                 "es": {
-                    "@condtion": "None",
-                    "#text": "Null Ails (SELF)"
+                    "@condtion": "Patriot is Equipped",
+                    "#text": "20% ALL Stats (SELF) / Add Cure Ails (ALL) effect to BB,SBB / Null CRIT (SELF) (no need sphere)"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_820388.png"
