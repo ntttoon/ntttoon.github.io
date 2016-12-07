@@ -14604,7 +14604,7 @@
                     "@hit": "30",
                     "@dc": "30",
                     "@cost": "26",
-                    "#text": "700% Dark (AOE) / 100% Spark DMG+ (ALL) 3Turns / Normal HitCount +100% (ALL) 3Turns / 100% ATK+ (SELF) 3Turns"
+                    "#text": "700% Dark (AOE) / 100% Spark DMG+ (ALL) 3Turns / Normal HitCount +130% (ALL) 3Turns / 100% ATK+ (SELF) 3Turns"
                 },
                 "ubb": {
                     "@hit": "40",
@@ -14623,7 +14623,7 @@
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860258.png"
                 },                
                 "sp": {
-                    "@list": "10 : 50% boost to Atk | 10 : 50% boost to Atk when HP is over 50% | 10 : 50% boost to Atk when BB gauge is over 50% | 10 : (*) 70% boost to Spark damage | 10 : Boosts 70% Spark damage to 100% Spark damage (Prerequisite: *) | 30 : Slightly reduces damage for 1 turn when damage dealt has exceeded certain amount (25% reduction after 50,000 damage dealt) | 50 : Adds normal attacks hit all foes for 3 turns effect to SBB | 50 : Enhances SBB's damage dealt by normal hit amount increase effect (+50% boost. Extra hits deal 50% extra damage) | 50 : Enhances SBB's normal hit amount increase effect (+1 hit to each hit count. Additional +2 hits total) | 40 : Allows UBB effects to last for 4 turns"
+                    "@list": "10 : 50% boost to Atk | 10 : 50% boost to Atk when HP is over 50% | 10 : 50% boost to Atk when BB gauge is over 50% | 10 : (*) 70% boost to Spark damage | 10 : Boosts 70% Spark damage to 100% Spark damage (Prerequisite: *) | 30 : Slightly reduces damage for 1 turn when damage dealt has exceeded certain amount (25% reduction after 50,000 damage dealt) | 50 : Adds normal attacks hit all foes for 3 turns effect to SBB | 30 : Enhances SBB's damage dealt by normal hit amount increase effect (+50% boost. Extra hits deal 50% extra damage) | 30 : Enhances SBB's normal hit amount increase effect (+1 hit to each hit count. Additional +2 hits total) | 40 : Allows UBB effects to last for 4 turns"
                 }
             },
             {
