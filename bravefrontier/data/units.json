@@ -10937,6 +10937,276 @@
                 }
             },
             {
+                "id": "1519",
+                "name": "Barbara 7",
+                "role": "spark,atk_down,id,atk_down_add",
+                "rolesp": "",
+                "element": "Fire",
+                "rarity": "7",
+                "cost": "46",
+                "ls": {
+                    "@hit": "7",
+                    "@dc": "42",
+                    "#text": "100% Spark DMG+ (ALL) / 30% HP 30% ATK (ALL) / 3% Chance SPARKcrit (50% DMG+) (ALL)"
+                },
+                "bb": {
+                    "@hit": "10",
+                    "@dc": "10",
+                    "@cost": "31",
+                    "#text": "380% Fire (AOE) / 80% Spark DMG+ (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns"
+                },
+                "sbb": {
+                    "@hit": "1",
+                    "@dc": "20",
+                    "@cost": "33",
+                    "#text": "580% Fire (AOE) / Ignore DEF (ALL) 2Turns / 80% Spark DMG+ (ALL) 3Turns / Add 10% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "1500% Fire (AOE) / 250% Spark DMG+ (ALL) 3Turns / 30% Chance SPARKcrit (100% DMG+) (ALL) 3Turns / 300% ATK+ (ALL) 3Turns / 100% Chance -80% Enemy ATK 1Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "30% Spark DMG+ (SELF) / ATK+ Each Turn (Max 80%,10Turns) (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_11016.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_11016.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1520",
+                "name": "Barbara 8",
+                "role": "spark,atk_down,id,atk_down_add",
+                "rolesp": "spark_crit,spark_debuff",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "9",
+                    "@dc": "45",
+                    "#text": "120% Spark DMG+ (ALL) / 50% HP 50% ATK (ALL) / 5% Chance SPARKcrit (50% DMG+) (ALL) / 8BC Fill on > 30k DMG Dealt (ALL)"
+                },
+                "bb": {
+                    "@hit": "12",
+                    "@dc": "12",
+                    "@cost": "30",
+                    "#text": "420% Fire (AOE) / 100% Spark DMG+ (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns"
+                },
+                "sbb": {
+                    "@hit": "1",
+                    "@dc": "25",
+                    "@cost": "32",
+                    "#text": "620% Fire (AOE) / Ignore DEF (ALL) 2Turns / 100% Spark DMG+ (ALL) 3Turns / Add 20% Chance -20% Enemy ATK to ATK (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "32",
+                    "#text": "1800% Fire (AOE) / 300% Spark DMG+ (ALL) 3Turns / 50% Chance SPARKcrit (100% DMG+) (ALL) 3Turns / 350% ATK+ (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% Spark DMG+ (SELF) / ATK+ Each Turn (Max 100%,10Turns) (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_11017.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_11017.png"
+                },                
+                "sp": {
+                    "@list": "10 : 20% ATK/REC | 10 : 20% HP/DEF | 10 : (*) 70% Spark DMG | 15 : 100% Spark DMG​ (Prerequisite: *) | 10 : Increases MAX ATK from 99,999 to 130,000 | 10 : Enhances LS: 20% Spark DMG | 40 : Enhances BB/SBB: 40% Spark DMG | 15 : Add to BB: 20% Chance -20% ATK for 1 Turn (ALL) 3 Turns | 45 : Add to BB/SBB: 30% Chance Spark Critical (ALL) 3 Turns | 45 : Add to BB/SBB: 25% Chance Enemy Receives 25% Spark DMG for 1 Turn (ALL) 3 Turns"
+                }
+            },
+            {
+                "id": "1521",
+                "name": "Dias Tima 7",
+                "role": "drain,bb_rate,ails,atk_ailed",
+                "rolesp": "",
+                "element": "Light",
+                "rarity": "7",
+                "cost": "46",
+                "ls": {
+                    "@hit": "11",
+                    "@dc": "44",
+                    "#text": "80% DMG+ to Ailed Enemy (ALL) / 40% HP (ALL) / 30% ATK 30% DEF 30% REC (HP > 50%) (ALL)"
+                },
+                "bb": {
+                    "@hit": "13",
+                    "@dc": "13",
+                    "@cost": "30",
+                    "#text": "380% Light (AOE) / Drain 3-4% HP (SELF) / 40% BC Fill+ (ALL) 3Turns / 65% Sick 65% Poison 65% Curse / 65% Injury 65% Weak 65% Para"
+                },
+                "sbb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "33",
+                    "#text": "580% Light (AOE) / 580% Light (AOE) to Dark Enemies Only / 150% DMG+ to Ailed Enemy (ALL) 3Turns / 65% Sick 65% Poison 65% Curse / 65% Injury 65% Weak 65% Para"
+                },
+                "ubb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "32",
+                    "#text": "Light (AOE) 1500%-2500% BB ATK% Based on HP LEFT / 250% DMG+ to Ailed Enemy (ALL) 3Turns / Convert 200% attack to DEF (ALL) 3Turns / 100% Sick 100% Poison 100% Curse / 100% Injury 100% Weak 100% Para / Inflict 100% Injury 100% Weak 100% Sick 100% Poison 100% Para 100% Curse on ATKed (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "80% DMG+ to Ailed Enemy (SELF) / 0-50% ATK+ Based on HP LEFT (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_51106.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51106.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1522",
+                "name": "Dias Tima 8",
+                "role": "drain,bb_rate,ails,atk_ailed",
+                "rolesp": "atk_down,maxhp",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "50% BC Fill+ (ALL) / 100% DMG+ to Ailed Enemy (ALL) / 60% HP (ALL) / 50% ATK 50% DEF 50% REC (HP > 50%) (ALL)"
+                },
+                "bb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "30",
+                    "#text": "420% Light (AOE) / Drain 3-5% HP (SELF) / 50% BC Fill+ (ALL) 3Turns / 75% Sick 75% Poison 75% Curse / 75% Injury 75% Weak 75% Para"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "32",
+                    "#text": "620% Light (AOE) / 620% Light (AOE) to Dark Enemies Only / 170% DMG+ to Ailed Enemy (ALL) 3Turns / 75% Sick 75% Poison 75% Curse / 75% Injury 75% Weak 75% Para"
+                },
+                "ubb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "32",
+                    "#text": "Light (AOE) 1500%-2800% BB ATK% Based on HP LEFT / 300% DMG+ to Ailed Enemy (ALL) 3Turns / Convert 250% attack to DEF (ALL) 3Turns / 100% Sick 100% Poison 100% Curse / 100% Injury 100% Weak 100% Para / Inflict 100% Injury 100% Weak 100% Sick 100% Poison 100% Para 100% Curse on ATKed (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "100% DMG+ to Ailed Enemy (SELF) / 0-80% ATK+ Based on HP LEFT (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_51107.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51107.png"
+                },                
+                "sp": {
+                    "@list": "10 : (*) 30% HP | 15 : 50% HP​ (Prerequisite: *) | 20 : 80% Spark DMG | 15 : 50% EWD | 20 : 50% ATK on Ailed Enemy | 10 : Increases MAX ATK from 99,999 to 130,000 | 30 : Enhances SBB: 30% ATK on Ailed Enemy | 35 : Add to BB/SBB: 30% Chance -50% Enemy ATK | 55 : Add to BB/SBB: 15% MAX HP"
+                }
+            },
+            {
+                "id": "1523",
+                "name": "Sieg 7",
+                "role": "atk_ele,def_ele,atk,convert_atk",
+                "rolesp": "",
+                "element": "Dark",
+                "rarity": "7",
+                "cost": "46",
+                "ls": {
+                    "@hit": "9",
+                    "@dc": "36",
+                    "#text": "100% CRIT DMG+ (ALL) / 150% BB ATK%+ (ALL) / 30% HP 60% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "13",
+                    "@dc": "13",
+                    "@cost": "30",
+                    "#text": "380% Dark (AOE) / 80% ATK+ to Dark 3Turns / 140% ATK+ (ALL) 3Turns / Convert 60% DEF to ATK (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "32",
+                    "#text": "480% Dark (AOE) 200% BB ATK+ on Consecutive SBB (Max 3x , SELF) / 100% BB Fill (SELF) / 80% ATK+ DEF+ to Dark 3Turns / 140% ATK+ (ALL) 3Turns / Convert 60% DEF to ATK (ALL) 3Turns / 30% Spark DMG+ (SELF)"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "40",
+                    "@cost": "32",
+                    "#text": "2000% Dark (TGT) / 100% BB Fill (SELF) / 300% ATK+ (ALL) 3Turns / Convert 200% DEF to ATK (ALL) 3Turns / 60% CRIT+ (SELF) / 50% Spark DMG+ (SELF)"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "80% ATK+ on Full BB (SELF) / 30% Spark DMG+ (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_61066.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_61066.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1524",
+                "name": "Sieg 8",
+                "role": "atk_ele,def_ele,atk,convert_atk",
+                "rolesp": "LS_bb_spark",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "100% Chance 2-3BC Fill on Spark (ALL) / 150% CRIT DMG+ (ALL) / 200% BB ATK%+ (ALL) / 40% HP 80% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "30",
+                    "#text": "420% Dark (AOE) / 100% ATK+ to Dark 3Turns / 160% ATK+ (ALL) 3Turns / Convert 70% DEF to ATK (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "32",
+                    "#text": "540% Dark (AOE) 200% BB ATK+ on Consecutive SBB (Max 3x , SELF) / 100% BB Fill (SELF) / 100% ATK+ DEF+ to Dark 3Turns / 160% ATK+ (ALL) 3Turns / Convert 70% DEF to ATK (ALL) 3Turns / 50% Spark DMG+ (SELF)"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "44",
+                    "@cost": "32",
+                    "#text": "2500% Dark (TGT) / 100% BB Fill (SELF) / 350% ATK+ (ALL) 3Turns / Convert 250% DEF to ATK (ALL) 3Turns / 60% CRIT+ (SELF) / 70% Spark DMG+ (SELF)"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "100% ATK+ on Full BB (SELF) / 50% Spark DMG+ (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_61067.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_61067.png"
+                },                
+                "sp": {
+                    "@list": "10 : 20% HP/ATK | 10 : (*) 50% ATK | 15 : 80% ATK​ (Prerequisite: *) | 15 : (#) 100% Spark DMG | 10 : 120% Spark DMG​ (Prerequisite: #) | 20 : 50% CRIT DMG | 10 : Increases MAX ATK from 99,999 to 130,000 | 35 : Enhances BB/SBB: 120% ATK/DEF (Dark) | 40 : Enhances BB/SBB: 180% ATK | 40 : Enhances SBB: 10% DEF -> ATK"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
