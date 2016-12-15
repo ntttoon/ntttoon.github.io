@@ -14985,6 +14985,51 @@
                 "sp": {
                     "@list": "20 : 20% boost to all parameters | 10 : Enhances LS's all parameters boost from 40% to 50% | 30 : Adds negation of Atk, Def, Rec reducing effects for 2 turns effect to BB | 40 : Adds fill own BB gauge to max effect to SBB | 30 : Allows BB buff effects to last for 5 turns (Only applies to probable status ailment counter and negation for all status ailments) | 40 : (*) Adds Earth barrier effect to SBB (3000 HP) | 20 : Enhances BB/SBB's barrier effect (+1000 HP, 4000 HP on barrier total) (Prerequisite: *) | 40 : Enhances SBB/UBB's BB Atk boost effect (+100% boost, 450% on SBB, 700% on UBB total) | 30 : Enhances SBB/UBB's damage boost against status afflicted foes effect (+40% boost, 200% on SBB, 340% boost on UBB total)"
                 }
+            },
+            {
+                "id": "8255",
+                "name": "Infinity Starsage Zeruiah",
+                "role": "",
+                "rolesp": "",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "11",
+                    "@dc": "55",
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "35",
+                    "@dc": "35",
+                    "@cost": "22",
+                    "#text": ""
+                },
+                "sbb": {
+                    "@hit": "45",
+                    "@dc": "45",
+                    "@cost": "45",
+                    "#text": ""
+                },
+                "ubb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "35",
+                    "#text": ""
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830118.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_830118.png"
+                },                
+                "sp": {
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to max HP, Def | 20 : Boosts Item drop rate (2% boost) | 20 : Negates all status ailments | 20 : Enhances SBB's elemental damage boost effect (+50% boost, 100% boost total) | 30 : Adds fills own BB gauge to max effect to BB/UBB | 30 : Enhances SBB's damage reduction effect to include Light, Dark types | 30 : Adds boost OD gauge boost effect to SBB (8% boost) | 40 : Enhances BB/UBB's max HP boost effect (+5% boost, 20% boost on BB, 40% boost on UBB total) | 50 : Enhances BB/SBB's Item drop rate boost effect (+2% boost, 5% boost on BB, 9% boost on UBB total) | 50 : Allows UBB effects to last for 4 turns | 80 : Enhances LS's EXP boost effect (+8% boost, 20% boost total)"
+                }
             }
         ]
     }
