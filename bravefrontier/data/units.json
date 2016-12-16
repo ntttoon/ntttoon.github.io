@@ -11207,6 +11207,186 @@
                 }
             },
             {
+                "id": "1537",
+                "name": "Arus 8",
+                "role": "bb_fill,bb_regen,dot,od_fill,id",
+                "rolesp": "crit,crit_dmg",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "20% Chance Ignore DEF (ALL) / 150% CRIT DMG+ (ALL) / 40% HP 100% ATK (ALL) / 100% Chance 8BC Fill 3Turns on CRIT (ALL)"
+                },
+                "bb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "26",
+                    "#text": "360% Fire (AOE) / 10BC Fill (ALL) 1Turn / 7BC Fill 3Turns / 500% DMG Each Turn 2Turns"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "40",
+                    "@cost": "30",
+                    "#text": "Fire (TGT) 300%-1100% BB ATK% Based on HP LEFT / 10BC Fill (ALL) 1Turn / 100% BB Fill (SELF) / 8% OverDrive Fill / 50% Spark DMG+ (SELF)"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "30",
+                    "#text": "1500% Fire (AOE) / Fire (TGT) / 50% OverDrive Fill / 60% OverDrive Fill+ 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 300% Spark DMG+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "Scarlet Necklace is equipped",
+                    "#text": "30% ALL Stats (SELF) / Add Ignore DEF (ALL) 3Turns Effect to BB,SBB (SELF) / Raise Max ATK Limit to 130k (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10557.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10557.png"
+                },                
+                "sp": {
+                    "@list": "10 : +50% ATK | 10 : +30% HP | 20 : +20% HP/DEF | 10 : (*) +50% Spark Damage | 10 : (#) +70% Spark Damage (Prerequisite: *) | 20 : +100% Spark Damage (Prerequisite: #) | 40 : BB+: Fill 2 BC & SBB+: Fill 2 BC | 20 : SBB+: undefined-NaN% AoE depending on HP remaining | 40 : Add Effect To BB/SBB (3 turn +50% Crit Dmg) | 50 : Add Effect To BB/SBB (3 Turn +60% Crit)"
+                }
+            },
+            {
+                "id": "1538",
+                "name": "Belfura 8",
+                "role": "bb_atk,atk_down,def_down,bb_fill",
+                "rolesp": "bc,hc",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "100% Spark DMG+ (ALL) / 50% HP 50% ATK (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison (ALL) / 10% Para 10% Curse (ALL)"
+                },
+                "bb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "26",
+                    "#text": "360% Water (AOE) / 300% BB ATK%+ (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns"
+                },
+                "sbb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "25",
+                    "#text": "560% Water (AOE) / 8BC Fill (ALL) 1Turn / 300% BB ATK%+ (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns"
+                },
+                "ubb": {
+                    "@hit": "27",
+                    "@dc": "27",
+                    "@cost": "30",
+                    "#text": "1500% Water (AOE) / 50BC Fill 3Turns / 500% BB ATK%+ (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns / 100% Chance -80% Enemy DEF 2Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% ATK+ DEF+ on BB > 50% (SELF) / 150% BB ATK%+ (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20537.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20537.png"
+                },                
+                "sp": {
+                    "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 10 : +80% ATK when BB Gauge is full | 10 : (*) +50% Spark Damage | 10 : +70% Spark Damage (Prerequisite: *) | 20 : Def Ignore Immunity | 30 : Add Effect To BB/SBB (3 Turn +35% BC/HC Drop Rate Buff) | 50 : Increase duration of ATK/DEF down infliction to 2 turns. | 50 : BB+: +100% BB/SBB/UBB Mod & SBB+: +100% BB/SBB/UBB Mod"
+                }
+            },
+            {
+                "id": "1539",
+                "name": "Ragshelm 8",
+                "role": "cure,atk_down,def_down,ails_add,spark_debuff,id",
+                "rolesp": "atk_ailed,miti_guard",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "15",
+                    "@dc": "45",
+                    "#text": "20% Chance Ignore DEF (ALL) / Reduce DMG (10%) on Guard (ALL) / 50% HP 50% ATK (ALL) / 30% Chance -20% Enemy ATK 1Turn on > 10k DMG Dealt (ALL)"
+                },
+                "bb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "27",
+                    "#text": "360% Earth (AOE) / Cure Ails / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns / Add 20% Injury 15% Weak 15% Sick to ATK (ALL) 3Turns / Add 10% Poison 10% Para 10% Curse to ATK (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "25",
+                    "#text": "560% Earth (AOE) / 30% Chance Enemy receives 30% Spark DMG+ 1Turns / 30% Chance -50% Enemy ATK 2Turns / 30% Chance -50% Enemy DEF 2Turns / Add 20% Injury 15% Weak 15% Sick to ATK (ALL) 3Turns / Add 10% Poison 10% Para 10% Curse to ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "30",
+                    "#text": "1500% Earth (AOE) / 300% DMG+ to Ailed Enemy (ALL) 3Turns / 100% Chance Enemy receives 150% Spark DMG+ 1Turns / 100% Chance -80% Enemy ATK 2Turns / 100% Chance -80% Enemy DEF 2Turns / Add 100% Injury 100% Weak 100% Sick to ATK (ALL) 3Turns / Add 100% Poison 100% Para 100% Curse to ATK (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Add Ignore DEF (ALL) 2Turns effect to BB,SBB / 150% DMG+ to Ailed Enemy (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30517.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30517.png"
+                },                
+                "sp": {
+                    "@list": "20 : +50% HP | 10 : +80% ATK when BB Gauge is full | 10 : +80% DEF when HP is full | 20 : 50% ATK against Statused Targets | 50 : Increase the effect strength of ATK/DEF down infliction on BB/SBB. | 40 : Add Effect To BB/SBB (3 Turn 160% ATK Buff on Statused Targets) | 10 : Add Effect To SBB (Cure Status/Debuffs) | 40 : Add Effect To BB/SBB (3 Turn +10% Guard Mitigation)"
+                }
+            },
+            {
+                "id": "1540",
+                "name": "Shera 8",
+                "role": "miti,bb_rate,atk,bb_regen,miti_guard,",
+                "rolesp": "def",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "Reduce 25% BB Cost (ALL) / 15% Chance Reduce DMG (20%) (ALL) / 50% BC Fill+ (ALL) / 50% HP 50% DEF (ALL)"
+                },
+                "bb": {
+                    "@hit": "18",
+                    "@dc": "36",
+                    "@cost": "25",
+                    "#text": "540% Thunder (TGT) / Reduce DMG (50%) 1Turns / 50% BC Fill+ (ALL) 3Turns / 160% ATK+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "40",
+                    "@dc": "40",
+                    "@cost": "26",
+                    "#text": "500% Thunder (AOE) / 7BC Fill 3Turns / Reduce DMG (50%) 1Turns / 160% ATK+ (ALL) 3Turns / Reduce DMG (10%) on Guard (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "27",
+                    "@dc": "27",
+                    "@cost": "30",
+                    "#text": "1300% Thunder (AOE) / 50BC Fill 3Turns / Reduce DMG (75%) 3Turns / 350% ATK+ (ALL) 3Turns / Reduce DMG (30%) on Guard (ALL) 5Turns "
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Ignore DEF (SELF) / 5BC Fill on Guard (SELF) / 50% DEF+ on BB > 50% (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40507.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40507.png"
+                },                
+                "sp": {
+                    "@list": "10 : +20% HP/DEF | 20 : +50% HP/DEF | 20 : 2-3 BC when hit | 20 : 100% Base/Buffed Element Weakness Resist | 20 : 100% Base/Buffed Crit Resist | 40 : 1 turn 25% Spark Resist Mitigation buff to allies | 40 : BB+: Reduce Damage 0% for 1 turn & SBB+: Reduce Damage 0% for 1 turn | 40 : BB+: +20% BB Fill Rate | 50 : Add Effect To BB/SBB (3 Turn +160% DEF)"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
@@ -14989,37 +15169,37 @@
             {
                 "id": "8255",
                 "name": "Infinity Starsage Zeruiah",
-                "role": "",
-                "rolesp": "",
+                "role": "heal,cure,maxhp,bc,hc,item,add_ele,ewd,miti_ele,barrier",
+                "rolesp": "od_fill",
                 "element": "Earth",
                 "rarity": "8",
                 "cost": "48",
                 "ls": {
                     "@hit": "11",
                     "@dc": "55",
-                    "#text": ""
+                    "#text": "60% BC Fill+ (ALL) / 12% EXP+ (ALL) / 30% BC+ 30% HC+ 7% Item+ 25% Karma+ 25% Zel+ (ALL) / 60% HP 60% DEF 60% REC (ALL)"
                 },
                 "bb": {
                     "@hit": "35",
                     "@dc": "35",
                     "@cost": "22",
-                    "#text": ""
+                    "#text": "370% Water (AOE) / Heal (ALL) / Cure Ails / 15% Max HP+ till Death,Battle End / 35% BC+ 35% HC+ 3% Item+ (ALL) 3Turns"
                 },
                 "sbb": {
                     "@hit": "45",
                     "@dc": "45",
                     "@cost": "45",
-                    "#text": ""
+                    "#text": "580% Water (AOE) / 100% BB Fill (SELF) / Add Fire,water,earth,thunder,light,dark to ATK (ALL) 3Turns / 40% BC+ 40% HC+ 5% Item+ (ALL) 3Turns / 50% Element Weakness DMG+ (ALL Elements) (ALL) 3Turns / Reduce DMG (10%) from (Fire,water,earth,thunder) Enemy1Turns"
                 },
                 "ubb": {
                     "@hit": "",
-                    "@dc": "",
+                    "@dc": "0",
                     "@cost": "35",
-                    "#text": ""
+                    "#text": "Reduce DMG (75%) 3Turns / 35% Max HP+ till Death/Battle End / 100% BC+ 100% HC+ 7% Item+ (ALL) 3Turns / Convert 250% DEF to ATK (ALL) 3Turns / Convert 150% REC to DEF (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": ""
+                    "#text": "30% Chance Heal 25% when ATKed (SELF) / 25% Chance Reduce DMG (30%) (SELF) / Add 3k HP Barrier (Earth) Effect to BB/SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830118.png"
