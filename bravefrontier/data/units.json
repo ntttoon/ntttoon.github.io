@@ -9948,7 +9948,7 @@
             },
             {
                 "id": "1491",
-                "name": "Lava 8",
+                "name": "Ignis Vestae Lava",
                 "role": "atk_ele,id,bb_atk,bb_spark",
                 "rolesp": "bb_fill",
                 "element": "Fire",
@@ -9993,7 +9993,7 @@
             },
             {
                 "id": "1492",
-                "name": "Elimo 8",
+                "name": "Salacia Persei Elimo",
                 "role": "miti,heal,cure,def,rec,heal_atked",
                 "rolesp": "hot,null_stats,null_ails,null_crit,null_ewd",
                 "element": "Water",
@@ -10308,7 +10308,7 @@
             },
             {
                 "id": "1505",
-                "name": "Glen 7",
+                "name": "Crimson Fist Glenn",
                 "role": "crit,dot,crit_dmg",
                 "rolesp": "",
                 "element": "Fire",
@@ -10353,7 +10353,7 @@
             },
             {
                 "id": "1506",
-                "name": "Glen 8",
+                "name": "Scorching Fang Glenn",
                 "role": "crit,dot,crit_dmg",
                 "rolesp": "bb_atk",
                 "element": "Fire",
@@ -10398,7 +10398,7 @@
             },
             {
                 "id": "1507",
-                "name": "Lanza 7",
+                "name": "Emerald Axe Lanza",
                 "role": "bb_fill,id,atk,atk_down",
                 "rolesp": "LS_bb_atked",
                 "element": "Earth",
@@ -10443,7 +10443,7 @@
             },
             {
                 "id": "1508",
-                "name": "Lanza 8",
+                "name": "Malachite Steel Lanza",
                 "role": "bb_fill,id,atk,atk_down",
                 "rolesp": "LS_bb_atked",
                 "element": "Earth",
@@ -10488,7 +10488,7 @@
             },
             {
                 "id": "1509",
-                "name": "Eleanor 7",
+                "name": "Golden Magic Eleanor",
                 "role": "miti,miti_ele,bc,hc",
                 "rolesp": "",
                 "element": "Thunder",
@@ -10533,7 +10533,7 @@
             },
             {
                 "id": "1510",
-                "name": "Eleanor 8",
+                "name": "Auric Echo Eleanor",
                 "role": "miti,miti_ele,bc,hc",
                 "rolesp": "ails_add",
                 "element": "Thunder",
