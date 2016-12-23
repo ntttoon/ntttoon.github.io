@@ -11344,7 +11344,7 @@
             {
                 "id": "1540",
                 "name": "Shera 8",
-                "role": "miti,bb_rate,atk,bb_regen,miti_guard,",
+                "role": "miti,bb_rate,atk,bb_regen,miti_guard",
                 "rolesp": "def",
                 "element": "Thunder",
                 "rarity": "8",
@@ -11384,6 +11384,276 @@
                 },                
                 "sp": {
                     "@list": "10 : +20% HP/DEF | 20 : +50% HP/DEF | 20 : 2-3 BC when hit | 20 : 100% Base/Buffed Element Weakness Resist | 20 : 100% Base/Buffed Crit Resist | 40 : 1 turn 25% Spark Resist Mitigation buff to allies | 40 : BB+: Reduce Damage 0% for 1 turn & SBB+: Reduce Damage 0% for 1 turn | 40 : BB+: +20% BB Fill Rate | 50 : Add Effect To BB/SBB (3 Turn +160% DEF)"
+                }
+            },
+            {
+                "id": "1547",
+                "name": "Camilla 7",
+                "role": "spark,hit,bc,hc,bb_atked,heal_atked,aoe",
+                "rolesp": "",
+                "element": "Water",
+                "rarity": "7",
+                "cost": "46",
+                "ls": {
+                    "@hit": "9",
+                    "@dc": "36",
+                    "#text": "25% Chance AOE on Normal ATK (-50% DMG) (ALL) / 4% Item+ (ALL) / 50% HP 50% ATK (ALL) / 5% Chance SPARKcrit (50% DMG+) (ALL)"
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "31",
+                    "#text": "380% Water (AOE) / 80% Spark DMG+ (ALL) 3Turns / Normal HitCount +100% (ALL) 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "33",
+                    "#text": "580% Water (AOE) / 3-6BC Fill when ATKed (100%) (ALL) 3Turns / 20% Chance Heal 15-20% DMG when ATKed (ALL) 3Turns / Normal HitCount +100% (ALL) 3Turns / 30% BC+ 30% HC+ (ALL) 3Turns / 100% Chance AOE on Normal ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "30",
+                    "#text": "1500% Water (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance Heal 100-100% DMG when ATKed (ALL) 3Turns / Normal HitCount +300% (50% DMG) (ALL) 3Turns / 50% BC+ 50% HC+ 10% Item+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% ATK+ DEF+ 2Turns on > 10 BC Received (SELF) / Normal HitCount +100% (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20946.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20946.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1548",
+                "name": "Camilla 8",
+                "role": "spark,hit,bc,hc,bb_atked,heal_atked,aoe",
+                "rolesp": "",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "30% Chance AOE on Normal ATK (-50% DMG) (ALL) / 5% Item+ (ALL) / 60% HP 60% ATK (ALL) / 10% Chance SPARKcrit (50% DMG+) (ALL)"
+                },
+                "bb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "30",
+                    "#text": "420% Water (AOE) / 100% Spark DMG+ (ALL) 3Turns / Normal HitCount +100% (20% DMG) (ALL) 3Turns / 35% BC+ 35% HC+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "32",
+                    "#text": "620% Water (AOE) / 4-7BC Fill when ATKed (100%) (ALL) 3Turns / 20% Chance Heal 20-25% DMG when ATKed (ALL) 3Turns / Normal HitCount +100% (20% DMG) (ALL) 3Turns / 35% BC+ 35% HC+ (ALL) 3Turns / 100% Chance AOE on Normal ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "27",
+                    "@dc": "27",
+                    "@cost": "32",
+                    "#text": "1800% Water (AOE) / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance Heal 100-100% DMG when ATKed (ALL) 3Turns / Normal HitCount +300% (100% DMG) (ALL) 3Turns / 50% BC+ 50% HC+ 10% Item+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "80% ATK+ DEF+ 2Turns on > 10 BC Received (SELF) / Normal HitCount +100% (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20947.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20947.png"
+                },                
+                "sp": {
+                    "@list": "15 : +30% ATK/REC | 15 : +30% DEF/HP | 10 : +80% Spark | 20 : null Ignore DEF | 10 : Increases MAX ATK from 99,999 to 130,000 | 35 : (*) Add +100% Spark damage for 3 turns on SBB | 10 : +30% Spark damage to BB/SBB (up to 130%)​ (Prerequisite: *) | 30 : +10% BC/HC drop rate on BB/SBB (up to 45%) | 35 : (#) +15% extra hit damage on BB/SBB (up to 35%) | 40 : +1 hit count on BB/SBB​ (Prerequisite: #)"
+                }
+            },
+            {
+                "id": "1549",
+                "name": "Fredo 7",
+                "role": "bb_regen,od_rate,null_ails,od_fill,null_stats,null_ewd",
+                "rolesp": "",
+                "element": "Earth",
+                "rarity": "7",
+                "cost": "46",
+                "ls": {
+                    "@hit": "7",
+                    "@dc": "42",
+                    "#text": "Reduce 15% BB Cost (ALL) / 10% Chance Reduce DMG (20%) (ALL) / 45% HP 45% ATK 45% DEF 45% REC (ALL)"
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "31",
+                    "#text": "380% Earth (AOE) / 6BC Fill 3Turns / 20% OverDrive Fill+ 3Turns / Null Ails 3Turns"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "33",
+                    "#text": "580% Earth (AOE) / 8% OverDrive Fill / 20% OverDrive Fill+ 3Turns / Null STATS Debuff (ALL) 1Turns / Null Elemental Weakness (ALL) 1Turn"
+                },
+                "ubb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "30",
+                    "#text": "Earth (AOE) 1500%-2500% BB ATK% Based on HP LEFT / Reduce DMG (75%) 3Turns / 250% OverDrive Fill+ 2Turns / 100% Chance 4-6BC Fill on Spark (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "10% ALL Stats (ALL)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30896.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30896.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1550",
+                "name": "Fredo 8",
+                "role": "bb_regen,od_rate,null_ails,od_fill,null_stats,null_ewd",
+                "rolesp": "bb_rate,cure,heal",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "Reduce 20% BB Cost (ALL) / 15% Chance Reduce DMG (20%) (ALL) / 50% HP 50% ATK 50% DEF 50% REC (ALL) / 20% OD Fill+ 2Turns on > 20 Sparks (ALL)"
+                },
+                "bb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "30",
+                    "#text": "420% Earth (AOE) / 7BC Fill 3Turns / 20% OverDrive Fill+ 3Turns / Null Ails 3Turns"
+                },
+                "sbb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "32",
+                    "#text": "620% Earth (AOE) / 8% OverDrive Fill / 20% OverDrive Fill+ 3Turns / Null STATS Debuff (ALL) 1Turns / Null Elemental Weakness (ALL) 1Turn"
+                },
+                "ubb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "32",
+                    "#text": "Earth (AOE) 1500%-2800% BB ATK% Based on HP LEFT / Reduce DMG (75%) 3Turns / 300% OverDrive Fill+ 2Turns / 100% Chance 5-8BC Fill on Spark (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "10% ALL Stats (ALL) / Angel Idol after OverDrive (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30897.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30897.png"
+                },                
+                "sp": {
+                    "@list": "10 : (*) +20% Stats | 15 : +50% Stats​ (Prerequisite: *) | 20 : null ailments | 10 : Increases MAX ATK from 99,999 to 130,000 | 20 : +20% OD fill rate | 10 : +10% Stats to LS (up to 60%) | 45 : Add +50% BB fill rate for 3 turns on BB/SBB | 35 : +10% OD fill rate buff on BB/SBB (up to 30%) | 45 : Add cure ailments/debuffs on BB/SBB | 45 : Add 2500-3500 (+11% Healer REC) burst Heal on BB/SBB"
+                }
+            },
+            {
+                "id": "1551",
+                "name": "Oan 7",
+                "role": "atk_ele,bb_atk,ewd,convert_atk",
+                "rolesp": "",
+                "element": "Thunder",
+                "rarity": "7",
+                "cost": "46",
+                "ls": {
+                    "@hit": "8",
+                    "@dc": "40",
+                    "#text": "100% Element Weakness DMG+ (earth,thunder) / 50% HP 50% ATK (ALL) / Reduce DMG (10%) from (Water,thunder) Enemy (ALL)"
+                },
+                "bb": {
+                    "@hit": "12",
+                    "@dc": "12",
+                    "@cost": "31",
+                    "#text": "380% Thunder (AOE) / 80% ATK+ DEF+ to Thunder 3Turns / 250% BB ATK%+ (ALL) 3Turns / 100% Element Weakness DMG+ (earth,thunder) (ALL) 3Turns "
+                },
+                "sbb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "33",
+                    "#text": "580% Thunder (AOE) / 80% ATK+ DEF+ to Thunder 3Turns / 250% BB ATK%+ (ALL) 3Turns / Convert 25% HP to ATK (ALL) 3Turns / 100% Element Weakness DMG+ (earth,thunder) (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "1500% Thunder (AOE) / 300% ATK+ to Thunder 3Turns / 500% BB ATK%+ (ALL) 3Turns / Convert 50% HP to ATK (ALL) 3Turns / 350% Element Weakness DMG+ (earth,thunder) (ALL) 3Turns / Reduce DMG (60%) from (Earth,thunder) Enemy 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "0-80% ATK+ Based on HP LEFT (SELF) / 30% Spark DMG+ (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40876.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40876.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1552",
+                "name": "Oan 8",
+                "role": "atk_ele,bb_atk,ewd,convert_atk",
+                "rolesp": "convert_def,miti_ele",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "250% BB ATK%+ (ALL) / 150% Element Weakness DMG+ (earth,thunder) / 60% HP 60% ATK (ALL) / Reduce DMG (15%) from (Water,thunder) Enemy (ALL)"
+                },
+                "bb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "30",
+                    "#text": "420% Thunder (AOE) / 100% ATK+ DEF+ to Thunder 3Turns / 300% BB ATK%+ (ALL) 3Turns / 125% Element Weakness DMG+ (earth,thunder) (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "32",
+                    "#text": "620% Thunder (AOE) / 100% ATK+ DEF+ to Thunder 3Turns / 300% BB ATK%+ (ALL) 3Turns / Convert 30% HP to ATK (ALL) 3Turns / 125% Element Weakness DMG+ (earth,thunder) (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "24",
+                    "@dc": "24",
+                    "@cost": "32",
+                    "#text": "1800% Thunder (AOE) / 350% ATK+ to Thunder 3Turns / 600% BB ATK%+ (ALL) 3Turns / Convert 60% HP to ATK (ALL) 3Turns / 450% Element Weakness DMG+ (earth,thunder) (ALL) 3Turns / Reduce DMG (80%) from (Earth,thunder) Enemy 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "0-100% ATK+ Based on HP LEFT (SELF) / 50% Spark DMG+ (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_40877.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40877.png"
+                },                
+                "sp": {
+                    "@list": "10 : +30% ATK/HP | 15 : (*) +100% Spark damage | 10 : +120% Spark damage​ (Prerequisite: *) | 10 : Increases MAX ATK from 99,999 to 130,000 | 45 : Add +30% HP -> DEF on SBB | 45 : +10% Water/Thunder mitigation for 2 turns on BB/SBB | 40 : +25% E/T EWD on BB/SBB (up to 150%) | 50 : +100% BB/SBB/UBB Mod on BB/SBB (up to 400%) | 30 : +20% Thunder ATK/DEF on BB/SBB (up to 120%)"
                 }
             },
             {
@@ -15033,51 +15303,6 @@
             },
             {
                 "id": "8248",
-                "name": "Void Walker Zenia",
-                "role": "bb_fill,id,spark,hit",
-                "rolesp": "LS_bb_spark",
-                "element": "Dark",
-                "rarity": "8",
-                "cost": "47",
-                "ls": {
-                    "@hit": "17",
-                    "@dc": "51",
-                    "#text": "100% Chance 2-3BC Fill on Spark (ALL) / Normal HitCount +100% (-50% DMG) (ALL) / 40% HP 100% ATK (ALL) / 120% Spark DMG+ 2Turns on > 15 Sparks (ALL)"
-                },
-                "bb": {
-                    "@hit": "25",
-                    "@dc": "50",
-                    "@cost": "20",
-                    "#text": "1000% Dark (TGT) / 10BC Fill (ALL) 1Turn / Ignore DEF (ALL) 2Turns / 50% Spark DMG+ (SELF) 3Turns"
-                },
-                "sbb": {
-                    "@hit": "30",
-                    "@dc": "30",
-                    "@cost": "26",
-                    "#text": "700% Dark (AOE) / 100% Spark DMG+ (ALL) 3Turns / Normal HitCount +130% (ALL) 3Turns / 100% ATK+ (SELF) 3Turns"
-                },
-                "ubb": {
-                    "@hit": "40",
-                    "@dc": "40",
-                    "@cost": "30",
-                    "#text": "1500% Dark (AOE) / 300% Spark DMG+ (ALL) 3Turns / Normal HitCount +300% (100% DMG) (ALL) 3Turns / 350% ATK+ (ALL) 3Turns"
-                },
-                "es": {
-                    "@condtion": "Obsidian Core Amplifer sphere equipped",
-                    "#text": "30% ALL Stats (SELF) / Normal HitCount +200% (30% DMG) (SELF)"
-                },
-                "art": {
-                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860258.png"
-                },
-                "thumb": {
-                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860258.png"
-                },                
-                "sp": {
-                    "@list": "10 : 50% boost to Atk | 10 : 50% boost to Atk when HP is over 50% | 10 : 50% boost to Atk when BB gauge is over 50% | 10 : (*) 70% boost to Spark damage | 10 : Boosts 70% Spark damage to 100% Spark damage (Prerequisite: *) | 30 : Slightly reduces damage for 1 turn when damage dealt has exceeded certain amount (25% reduction after 50,000 damage dealt) | 50 : Adds normal attacks hit all foes for 3 turns effect to SBB | 30 : Enhances SBB's damage dealt by normal hit amount increase effect (+50% boost. Extra hits deal 50% extra damage) | 30 : Enhances SBB's normal hit amount increase effect (+1 hit to each hit count. Additional +2 hits total) | 40 : Allows UBB effects to last for 4 turns"
-                }
-            },
-            {
-                "id": "8249",
                 "name": "Wulf Aspirant Faelan",
                 "role": "cure,null_ails,barrier,ails_atked,atk_ailed,bb_atk,ails",
                 "rolesp": "LS_null_ails",
@@ -15122,7 +15347,7 @@
                 }
             },
             {
-                "id": "8250",
+                "id": "8249",
                 "name": "White Wulf Faelan",
                 "role": "cure,null_ails,barrier,ails_atked,atk_ailed,bb_atk,ails",
                 "rolesp": "LS_null_ails,null_stats",
@@ -15164,6 +15389,141 @@
                 },                
                 "sp": {
                     "@list": "20 : 20% boost to all parameters | 10 : Enhances LS's all parameters boost from 40% to 50% | 30 : Adds negation of Atk, Def, Rec reducing effects for 2 turns effect to BB | 40 : Adds fill own BB gauge to max effect to SBB | 30 : Allows BB buff effects to last for 5 turns (Only applies to probable status ailment counter and negation for all status ailments) | 40 : (*) Adds Earth barrier effect to SBB (3000 HP) | 20 : Enhances BB/SBB's barrier effect (+1000 HP, 4000 HP on barrier total) (Prerequisite: *) | 40 : Enhances SBB/UBB's BB Atk boost effect (+100% boost, 450% on SBB, 700% on UBB total) | 30 : Enhances SBB/UBB's damage boost against status afflicted foes effect (+40% boost, 200% on SBB, 340% boost on UBB total)"
+                }
+            },
+            {
+                "id": "8250",
+                "name": "Void Walker Zenia",
+                "role": "bb_fill,id,spark,hit",
+                "rolesp": "LS_bb_spark",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "17",
+                    "@dc": "51",
+                    "#text": "100% Chance 2-3BC Fill on Spark (ALL) / Normal HitCount +100% (-50% DMG) (ALL) / 40% HP 100% ATK (ALL) / 120% Spark DMG+ 2Turns on > 15 Sparks (ALL)"
+                },
+                "bb": {
+                    "@hit": "25",
+                    "@dc": "50",
+                    "@cost": "20",
+                    "#text": "1000% Dark (TGT) / 10BC Fill (ALL) 1Turn / Ignore DEF (ALL) 2Turns / 50% Spark DMG+ (SELF) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "30",
+                    "@dc": "30",
+                    "@cost": "26",
+                    "#text": "700% Dark (AOE) / 100% Spark DMG+ (ALL) 3Turns / Normal HitCount +130% (ALL) 3Turns / 100% ATK+ (SELF) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "40",
+                    "@dc": "40",
+                    "@cost": "30",
+                    "#text": "1500% Dark (AOE) / 300% Spark DMG+ (ALL) 3Turns / Normal HitCount +300% (100% DMG) (ALL) 3Turns / 350% ATK+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "Obsidian Core Amplifer sphere equipped",
+                    "#text": "30% ALL Stats (SELF) / Normal HitCount +200% (30% DMG) (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860258.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860258.png"
+                },                
+                "sp": {
+                    "@list": "10 : 50% boost to Atk | 10 : 50% boost to Atk when HP is over 50% | 10 : 50% boost to Atk when BB gauge is over 50% | 10 : (*) 70% boost to Spark damage | 10 : Boosts 70% Spark damage to 100% Spark damage (Prerequisite: *) | 30 : Slightly reduces damage for 1 turn when damage dealt has exceeded certain amount (25% reduction after 50,000 damage dealt) | 50 : Adds normal attacks hit all foes for 3 turns effect to SBB | 30 : Enhances SBB's damage dealt by normal hit amount increase effect (+50% boost. Extra hits deal 50% extra damage) | 30 : Enhances SBB's normal hit amount increase effect (+1 hit to each hit count. Additional +2 hits total) | 40 : Allows UBB effects to last for 4 turns"
+                }
+            },
+            {
+                "id": "8251",
+                "name": "Commander Wannahon",
+                "role": "hit,aoe,add_ele,atk",
+                "rolesp": "",
+                "element": "Earth",
+                "rarity": "7",
+                "cost": "46",
+                "ls": {
+                    "@hit": "11",
+                    "@dc": "44",
+                    "#text": "Normal HitCount +100% (-50% DMG) (ALL) / Null Elemental Weakness (ALL) / 50% HP 150% ATK (Earth)"
+                },
+                "bb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "30",
+                    "#text": "380% Earth (AOE) / Normal HitCount +100% (ALL) 3Turns / 50% Chance AOE on Normal ATK (-25% DMG) (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "32",
+                    "#text": "580% Earth (AOE) / Add Water,earth,light to ATK (ALL) 3Turns / 150% ATK+ (ALL) 3Turns / 100% Chance AOE on Normal ATK (-25% DMG) (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "24",
+                    "@dc": "24",
+                    "@cost": "32",
+                    "#text": "1500% Earth (AOE) / 300% ATK+ (ALL) 3Turns / 300% Element Weakness DMG+ (water,earth,light) (ALL) 3Turns / 100% Chance AOE on Normal ATK (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Normal HitCount +100% (SELF) / 3BC Fill Each Turn (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830277.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_830277.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8252",
+                "name": "Blightblade Wannahon",
+                "role": "atk_down_add,hit,aoe,add_ele,crit_dmg,atk",
+                "rolesp": "ails,crit,atk_ele,def_ele,atk_ailed,ewd",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "175% CRIT DMG+ (ALL) / Normal HitCount +100% (-25% DMG) (ALL) / Null Elemental Weakness (ALL) / 60% HP 200% ATK (Earth)"
+                },
+                "bb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "30",
+                    "#text": "420% Earth (AOE) / Add 20% Chance -30% Enemy ATK to ATK (ALL) 3Turns / Normal HitCount +200% (ALL) 3Turns / 50% Chance AOE on Normal ATK (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "32",
+                    "#text": "620% Earth (AOE) / Add Water,earth,light to ATK (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / 170% ATK+ (ALL) 3Turns / 100% Chance AOE on Normal ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "26",
+                    "@dc": "26",
+                    "@cost": "32",
+                    "#text": "1800% Earth (AOE) / 350% ATK+ (ALL) 3Turns / 1500% DMG Each Turn 3Turns / 400% Element Weakness DMG+ (water,earth,light) (ALL) 3Turns / 100% Chance AOE on Normal ATK (+25% DMG) (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Normal HitCount +200% (SELF) / 5BC Fill Each Turn (SELF) / 0-100% ATK+ Based on HP LEFT (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830277.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_830277.png"
+                },                
+                "sp": {
+                    "@list": "10 : 50% boost to Atk | 10 : Boosts Atk when BB gauge is over 50% (50% boost) | 20 : Boosts elemental damage (50% boost) | 20 : Adds probable random status ailment infliction effect to attack (45% chance to inflict Curse, Paralysis, Poison, 50% chance to inflict Weak, Sick, Injury) | 20 : Adds fill own BB gauge to max effect to SBB | 20 : Adds enormous critical hit rate boost for 3 turns effect to BB/SBB (60% boost) | 20 : Enhances SBB's damage of normal attacks hit all foes effect (+25% damage) | 30 : Enhances SBB's critical damage boost effect (+50% boost, 100% boost total) | 30 : Adds considerable Atk, Def boost for Earth types for 3 turns effect to BB/SBB (120% boost) | 30 : Adds damage boost against status afflicted foes effect to BB/SBB (160% boost) | 40 : Adds Earth elemental damage boost for 3 turns effect to BB/SBB (150% boost) | 40 : Allows SBB's buff effects to last for additional turn"
                 }
             },
             {
@@ -15209,6 +15569,51 @@
                 },                
                 "sp": {
                     "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to max HP, Def | 20 : Boosts Item drop rate (2% boost) | 20 : Negates all status ailments | 20 : Enhances SBB's elemental damage boost effect (+50% boost, 100% boost total) | 30 : Adds fills own BB gauge to max effect to BB/UBB | 30 : Enhances SBB's damage reduction effect to include Light, Dark types | 30 : Adds boost OD gauge boost effect to SBB (8% boost) | 40 : Enhances BB/UBB's max HP boost effect (+5% boost, 20% boost on BB, 40% boost on UBB total) | 50 : Enhances BB/SBB's Item drop rate boost effect (+2% boost, 5% boost on BB, 9% boost on UBB total) | 50 : Allows UBB effects to last for 4 turns | 80 : Enhances LS's EXP boost effect (+8% boost, 20% boost total)"
+                }
+            },
+            {
+                "id": "8256",
+                "name": "Toy Soldier Haido",
+                "role": "heal,cure,hot,atk_ele,def_ele,barrier",
+                "rolesp": "",
+                "element": "Dark",
+                "rarity": "7",
+                "cost": "43",
+                "ls": {
+                    "@hit": "16",
+                    "@dc": "48",
+                    "#text": "40% boost to Atk and max HP, probable 15% damage reduction (15% chance), hugely boosts BB gauge fill rate (40%) & restores HP each turn (600-800 HP)"
+                },
+                "bb": {
+                    "@hit": "0",
+                    "@dc": "0",
+                    "@cost": "25",
+                    "#text": "Greatly restores HP (3000-3500 HP), removes all status ailments & gradually restores HP for 3 turns (2500-3000 HP)"
+                },
+                "sbb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "30",
+                    "#text": "17 combo powerful Dark attack on all foes (480%), boosts Atk, Def (80%) of Dark types for 3 turns, activates Dark barrier (2500 HP) & gradually restores HP for 3 turns (2500-3000 HP)"
+                },
+                "ubb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "35",
+                    "#text": "18 combo massive Dark attack on all foes (1000%), negates elemental damage for 3 turns, enormously boosts BB gauge for 3 turns (50 BC) & activates Dark barrier (15000 HP)"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Hugely boosts BB gauge each turn (3 BC)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860126.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860126.png"
+                },                
+                "sp": {
+                    "@list": ""
                 }
             }
         ]
