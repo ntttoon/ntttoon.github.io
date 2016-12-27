@@ -9988,7 +9988,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10127.png"
                 },                
                 "sp": {
-                    "@list": "20 : +50% ATK | 10 : +20% HP/DEF | 10 : (*) +70% Spark Damage | 10 : +100% Spark Damage (Prerequisite: *) | 10 : +50% Crit Damage | 10 : +50% All Weakness Damage | 80 : Survive up to 1 fatal blows (50% Chance) | 20 : BB/SBB+: +30% ATK to Fire | 40 : BB/SBB/UBB+: +50% BBATK% | 30 : Add Effect To BB/SBB (Fill 8 BC)"
+                    "@list": "20 : 50% boost to Atk | 10 : 20% boost to Def, max HP | 10 : (*) 70% boost to Spark damage | 10 : Raises Spark damage boost from 70% to 100% (Prerequisite: *) | 10 : Boosts critical hit damage (50% boost) | 10 : Boosts elemental damage (50% boost) | 80 : Probable resistance against 1 KO attack (50% chance) | 20 : Enhances BB/SBB's considerable Atk boost for Fire types effect (+30% boost, 150% boost total) | 40 : Enhances BB/SBB's BB Atk boost effect (+50% boost, 400% boost on BB, 450% boost on SBB, 550% boost on UBB total) | 30 : Adds huge boost to BB gauge effect to BB/SBB (8 BC fill)"
                 }
             },
             {
@@ -10033,7 +10033,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20157.png"
                 },                
                 "sp": {
-                    "@list": "20 : +30% HP/DEF | 10 : (*) 2-3 BC when hit | 10 : 3-4 BC when hit (Prerequisite: *) | 20 : Negate Status Ailments | 20 : Def Ignore Immunity | 30 : Add Effect To BB/SBB (3 Turn HoT 3000-3500 HP (+15% Target REC)) | 30 : Add Effect To BB/SBB (1 Turn Negate Stat Down Debuffs) | 30 : Add Effect To BB/SBB (3 turn Negate Status Ailments) | 30 : Add Effect To BB/SBB (1 Turn Negate Critical Damage) | 30 : Add Effect To BB/SBB (1 Turn Negate Elemental Weakness Damage)"
+                    "@list": "20 : 30% boost to max HP, Def | 10 : (*) Damage taken boosts BB Gauge (Fills 2-3 BC) | 10 : Enhance BB gauge boost when hit (Fills 3-4 BC) (Prerequisite: *) | 20 : Negates all status ailments | 20 : Negates Def ignoring damage | 30 : Adds great HP restoration for 3 turns effect to BB/SBB (Heals 3000-3500 + 15% Rec) | 30 : Adds Atk, Def, Rec negation for 1 turn effect to BB/SBB | 30 : Adds status ailments negation for 3 turns effect to BB/SBB | 30 : Adds elemental damage negation for 1 turn effect to BB/SBB | 30 : Adds critical damage negation for 1 turn effect to BB/SBB"
                 }
             },
             {
@@ -10393,7 +10393,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10997.png"
                 },                
                 "sp": {
-                    "@list": "30 : (*) +30% HP | 10 : +50% HP (Prerequisite: *) | 10 : 0-50% ATK relative to remaining HP | 10 : +15% BB fill rate | 80 : 70% chance Angel Idol | 50 : LS+: AoE Normal Attack {+20% damage} | 50 : LS+: AoE Normal Attack {+10% chance} | 60 : Add Effect to BB/SBB (3 Turn 400% BB Atk)"
+                    "@list": "20 : (*) 30% boost to max HP | 10 : Raises max HP boost from 30% to 50% | 10 : Boosts Atk relative to remaining HP (+0.5% boost per 1% HP remaining - 50% boost on max HP) | 10 : Slightly boosts BC efficacy (15% boost) | 80 : Probable resistance against 1 KO attack (70% chance) | 50 : Enhances LS's damage of normal attacks may hit all foes effect (+20% damage, -30% damage total) | 50 : Enhances LS's success rate of normal attacks may hit all foes effect (+10% chance, 40% chance total) | 60 : Adds huge BB Atk boost for 3 turns effect to BB/SBB (400% boost)"
                 }
             },
             {
@@ -10483,7 +10483,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30877.png"
                 },                
                 "sp": {
-                    "@list": "10 : +20% HP/DEF | 30 : +50% HP/DEF | 20 : +80% ATK at full BB gauge | 20 : +80% DEF at full HP | 20 : 2-3 BC when hit | 20 : Null Crit DMG | 80 : 50% chance Angel Idol | 40 : LS+: +10% BB Activation Chance | 50 : LS+: +2-3 BC when hit"
+                    "@list": "10 : (*) 20% boost to Def, max HP | 30 : Raises Def and max HP boost from 20% to 50% (Prerequisite: *) | 20 : Considerably boosts Atk when BB gauge is full (80% boost) | 20 : Considerably boosts Def when HP is full (80% boost) | 20 : Damage taken boosts BB gauge (Fills 2-3 BC) | 20 : Negates critical hit damage | 80 : Probable resistance against 1 KO attack (50% chance to survive) | 40 : Enhances LS's success rate of BB/SBB activation effect (+10% boost. 30% chance total) | 50 : Enhances LS's damage taken boosts BB gauge effect (+2-3 BC. Fills 6-10 BC total)"
                 }
             },
             {
@@ -10573,7 +10573,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40867.png"
                 },                
                 "sp": {
-                    "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 20 : 3 BC/turn | 20 : Null Element DMG | 40 : Add Effect to SBB {1 Turn +10% Light/Dark Mitigation} | 40 : BB+ & SBB+: +1 Turn for 50% mitigation | 50 : LS+: +10% enemy BB gauge drain chance | 40 : Add Effect to BB/SBB {3 Turn 15% Injury/Sick/Weak Reflect, 10% Curse/Paralysis/Poison Reflect}"
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 20 : Boosts BB gauge each turn (Fills 3 BC) | 20 : Negates elemental damage | 40 : Adds slight damage reduction from Light, Dark types for 1 turn effect to SBB (10% reduction) | 40 : Allows BB/SBB's 50% damage reductions to last for 2 turns | 50 : Enhances LS's success rate of foe's considerable BB gauge reduction effect (+10% chance. 30% chance total) | 40 : Adds probable status ailment counter to attack for 3 turns effect to BB/SBB (15% chance to reflect Injury, Weak, Sick, 10% chance to reflect Curse, Poison, Paralysis)"
                 }
             },
             {
@@ -15414,7 +15414,7 @@
                     "@hit": "30",
                     "@dc": "30",
                     "@cost": "26",
-                    "#text": "700% Dark (AOE) / 100% Spark DMG+ (ALL) 3Turns / Normal HitCount +130% (ALL) 3Turns / 100% ATK+ (SELF) 3Turns"
+                    "#text": "700% Dark (AOE) / 100% Spark DMG+ (ALL) 3Turns / Normal HitCount +100% (ALL) 3Turns / 100% ATK+ (SELF) 3Turns"
                 },
                 "ubb": {
                     "@hit": "40",
@@ -15524,6 +15524,96 @@
                 },                
                 "sp": {
                     "@list": "10 : 50% boost to Atk | 10 : Boosts Atk when BB gauge is over 50% (50% boost) | 20 : Boosts elemental damage (50% boost) | 20 : Adds probable random status ailment infliction effect to attack (45% chance to inflict Curse, Paralysis, Poison, 50% chance to inflict Weak, Sick, Injury) | 20 : Adds fill own BB gauge to max effect to SBB | 20 : Adds enormous critical hit rate boost for 3 turns effect to BB/SBB (60% boost) | 20 : Enhances SBB's damage of normal attacks hit all foes effect (+25% damage) | 30 : Enhances SBB's critical damage boost effect (+50% boost, 100% boost total) | 30 : Adds considerable Atk, Def boost for Earth types for 3 turns effect to BB/SBB (120% boost) | 30 : Adds damage boost against status afflicted foes effect to BB/SBB (160% boost) | 40 : Adds Earth elemental damage boost for 3 turns effect to BB/SBB (150% boost) | 40 : Allows SBB's buff effects to last for additional turn"
+                }
+            },
+            {
+                "id": "8253",
+                "name": "Resurrected Silvie",
+                "role": "bb_atked,atk,def,rec,bb_spark,spark",
+                "rolesp": "LS_bb_spark",
+                "element": "Thunder",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "14",
+                    "@dc": "42",
+                    "#text": "100% Chance 1-2BC Fill on Spark (ALL) / 100% Spark DMG+ (ALL) / 30% HP 30% ATK (ALL) / 30% ATK 30% DEF 30% REC (BB >= 30%) (ALL)"
+                },
+                "bb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "25",
+                    "#text": "Thunder (AOE) 100%-450% BB ATK% Based on HP LEFT / 3-6BC Fill when ATKed (100%) (ALL) 3Turns / 130% ATK+ 130% DEF+ 130% REC+ (ALL) 3Turns / 80% ATK+ 80% DEF+ 80% REC+ (SELF) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "28",
+                    "#text": "450% Thunder (TGT) / Thunder (AOE) 200%-800% BB ATK% Based on HP LEFT / 100% Chance 1-2BC Fill on Spark (ALL) 3Turns / 100% Spark DMG+ (ALL) 3Turns / 30% Spark DMG+ (SELF) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "30",
+                    "@dc": "30",
+                    "@cost": "30",
+                    "#text": "Thunder (AOE) 1200%-2000% BB ATK% Based on HP LEFT / 250% Spark DMG+ (ALL) 3Turns / 250% ATK+ 250% DEF+ 250% REC+ (ALL) 3Turns / 80% Chance Angel Idol 100% HP (ALL) 999Turns / 50% Spark DMG+ (SELF) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Angel Idol when HP < 20% (SELF) / 30% Spark DMG+ (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840127.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_840127.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8254",
+                "name": "Silent Sentinel Silvie",
+                "role": "bb_atked,atk,def,rec,idol,bb_spark,spark",
+                "rolesp": "LS_bb_spark",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "17",
+                    "@dc": "51",
+                    "#text": "100% Chance 2-3BC Fill on Spark (ALL) / 130% Spark DMG+ (ALL) / 50% HP 50% ATK (ALL) / 50% ATK 50% DEF 50% REC (BB >= 50%) (ALL)"
+                },
+                "bb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "27",
+                    "#text": "Thunder (AOE) 100%-500% BB ATK% Based on HP LEFT / 4-7BC Fill when ATKed (100%) (ALL) 3Turns / 150% ATK+ 150% DEF+ 150% REC+ (ALL) 3Turns / 100% ATK+ 100% DEF+ 100% REC+ (SELF) 3Turns / 10% Chance Angel Idol 1% HP (ALL) 999Turns"
+                },
+                "sbb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "30",
+                    "#text": "500% Thunder (TGT) / Thunder (AOE) 200%-900% BB ATK% Based on HP LEFT / 100% Chance 2-3BC Fill on Spark (ALL) 3Turns / 120% Spark DMG+ (ALL) 3Turns / 50% Spark DMG+ (SELF) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "35",
+                    "@dc": "35",
+                    "@cost": "30",
+                    "#text": "Thunder (AOE) 1500%-2500% BB ATK% Based on HP LEFT / 300% Spark DMG+ (ALL) 3Turns / 300% ATK+ 300% DEF+ 300% REC+ (ALL) 3Turns / 80% Chance Angel Idol 100% HP (ALL) 999Turns / 100% Spark DMG+ (SELF) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Angel Idol when HP < 20% (SELF) / 50% Spark DMG+ (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840128.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_840128.png"
+                },                
+                "sp": {
+                    "@list": "20 : (*) 20% boost to all parameters | 10 : 30% boost to all parameters (Prerequisites: *) | 20 : 30% boost to max HP | 10 : (#) 70% boost to Spark damage | 10 : Raises Spark damage boost from 70% to 100% (Prerequisites: #) | 30 : Enhances BB's boost to Atk, Def, Rec effect (+30% boost, 180% boost total) | 30 : Enhances BB's boost to own Atk, Def, Rec effect (+30% boost, 130% boost total) | 30 : Allows BB effects to last 1 more turn | 30 : Enhances SBB's Spark damage boosts BB gauge effect (+1 BC, 3~4 BC fill per Spark total) | 30 : Enhances SBB/UBB's Spark damage boost effect (+30% boost, 150% boost on SBB, 330% boost on UBB total) | 30 : Allows UBB effects to last 1 more turn"
                 }
             },
             {
