@@ -11657,6 +11657,96 @@
                 }
             },
             {
+                "id": "1553",
+                "name": "Afla Dilith 8",
+                "role": "bb_fill,spark,bb_atk,bb_spark,spark_debuff",
+                "rolesp": "atk,spark_crit",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "54",
+                "ls": {
+                    "@hit": "12",
+                    "@dc": "48",
+                    "#text": "100% Chance Drain 5-10% HP (ALL) / 120% Spark DMG+ (ALL) / 60% HP 60% ATK (ALL) / 250% BB ATK%+ 2Turns on > 15 Sparks (ALL)"
+                },
+                "bb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "30",
+                    "#text": "450% Fire,water (AOE) / 8BC Fill (ALL) 1Turn / 120% Spark DMG+ (ALL) 3Turns / 350% BB ATK%+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "35",
+                    "#text": "700% Fire,water (AOE) / 100% Chance 2-3BC Fill on Spark (ALL) 3Turns / 120% Spark DMG+ (ALL) 3Turns / 30% Chance Enemy receives 30% Spark DMG+ 1Turns / 350% BB ATK%+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "28",
+                    "@dc": "28",
+                    "@cost": "32",
+                    "#text": "Fire (AOE) 1500%-3000% BB ATK% Based on HP LEFT / 50BC Fill 3Turns / Add Fire,water,earth,thunder,light,dark to ATK (ALL) 3Turns / 350% Spark DMG+ (ALL) 3Turns / 50% Chance SPARKcrit (150% DMG+) (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% Spark DMG+ (SELF) / 150% BB ATK%+ (SELF) / Raise Max ATK Limit to 130k (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_11027.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_11027.png"
+                },                
+                "sp": {
+                    "@list": "20 : +30% Stats | 10 : +80% ATK when BB is full | 10 : (*) +100% Spark damage | 10 : +120% Spark damage​ (Prerequisite: *) | 10 : +20% ATK/HP to LS (up to 80%) | 10 : +20% Spark damage to LS (up to 140%) | 40 : +30% Spark damage on BB/SBB (up to ?%) | 30 : +100% BB Mod on BB/SBB/UBB (up to ?%) | 60 : Add +180% ATK buff for 3 turns on BB/SBB | 50 : Add +50% Spark Crit buff (30% chance) for 3 turns on BB/SBB"
+                }
+            },
+            {
+                "id": "1554",
+                "name": "Zevalhua 8",
+                "role": "atk_down,def_down,ails,ails_add,atk_ailed,ails_atked",
+                "rolesp": "heal_atked,dot",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "54",
+                "ls": {
+                    "@hit": "11",
+                    "@dc": "44",
+                    "#text": "100% Chance 4-7BC Fill when ATKed (ALL) / 25% Chance Heal 25-25% DMG when ATKed (ALL) / 100% DMG+ to Ailed Enemy (ALL) / 60% HP 60% DEF (ALL)"
+                },
+                "bb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "30",
+                    "#text": "450% Earth (AOE) / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns / 75% Injury 75% Weak 75% Sick 75% Poison 75% Para 75% Curse / Add 15% Injury 15% Weak 15% Sick to ATK (ALL) 3Turns / Add 10% Poison 10% Para 10% Curse to ATK (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "35",
+                    "#text": "700% Earth (AOE) / 170% DMG+ to Ailed Enemy (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns / 75% Injury 75% Weak 75% Sick 75% Poison 75% Para 75% Curse / Inflict 15% Injury 15% Weak 15% Sick 10% Poison 10% Para 10% Curse on ATKed (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "32",
+                    "#text": "2000% Earth (AOE) / Earth (TGT) / Random Hits / 300% DMG+ to Ailed Enemy (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns / 100% Chance -80% Enemy DEF 2Turns / 100% Injury 100% Weak 100% Sick 100% Poison / 100% Para 100% Curse"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "8BC Fill on > 5k DMG Received (SELF) / 8% Curse Poison Para (SELF) / 10% Injury Sick Weak (SELF) / Raise Max ATK Limit to 130k (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30907.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30907.png"
+                },                
+                "sp": {
+                    "@list": "20 : +30% Stats | 10 : +100% Spark damage | 10 : (*) 2-3 BC when hit | 10 : 3-4 BC when hit​ (Prerequisite: *) | 20 : null ailments | 20 : null EWD | 70 : 70% chance to proc AI once | 40 : +30% ATK against afflicted enemies on SBB | 50 : Add 25-30% heal when hit (20% chance) for 3 turns on BB/SBB | 40 : Add +600% DoT for 2 turns on BB/SBB"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
@@ -15672,38 +15762,173 @@
                 "ls": {
                     "@hit": "16",
                     "@dc": "48",
-                    "#text": "40% boost to Atk and max HP, probable 15% damage reduction (15% chance), hugely boosts BB gauge fill rate (40%) & restores HP each turn (600-800 HP)"
+                    "#text": "15% Chance Reduce DMG (15%) (ALL) / 40% BC Fill+ (ALL) / Heal Each Turn (ALL) / 40% HP 40% DEF (ALL)"
                 },
                 "bb": {
                     "@hit": "0",
                     "@dc": "0",
                     "@cost": "25",
-                    "#text": "Greatly restores HP (3000-3500 HP), removes all status ailments & gradually restores HP for 3 turns (2500-3000 HP)"
+                    "#text": "Heal (ALL) / Cure Ails / Gradual Heal (ALL) 3Turns"
                 },
                 "sbb": {
                     "@hit": "17",
                     "@dc": "17",
                     "@cost": "30",
-                    "#text": "17 combo powerful Dark attack on all foes (480%), boosts Atk, Def (80%) of Dark types for 3 turns, activates Dark barrier (2500 HP) & gradually restores HP for 3 turns (2500-3000 HP)"
+                    "#text": "480% Dark (AOE) / 80% ATK+ DEF+ to Dark 3Turns / 2500HP Barrier (dark) / Gradual Heal (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "18",
                     "@dc": "18",
                     "@cost": "35",
-                    "#text": "18 combo massive Dark attack on all foes (1000%), negates elemental damage for 3 turns, enormously boosts BB gauge for 3 turns (50 BC) & activates Dark barrier (15000 HP)"
+                    "#text": "1000% Dark (AOE) / 50BC Fill 3Turns / 15000HP Barrier (dark) / Null Elemental Weakness (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Hugely boosts BB gauge each turn (3 BC)"
+                    "#text": "3BC Fill Each Turn (SELF)"
                 },
                 "art": {
-                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860126.png"
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860127.png"
                 },
                 "thumb": {
-                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860126.png"
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860127.png"
                 },                
                 "sp": {
                     "@list": ""
+                }
+            },
+            {
+                "id": "8257",
+                "name": "Eldritch Rocker Haido",
+                "role": "heal,cure,atk_down,hot,atk_ele,def_ele,barrier",
+                "rolesp": "def,od_fill",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "18",
+                    "@dc": "54",
+                    "#text": "20% Chance Reduce DMG (20%) (ALL) / 50% BC Fill+ (ALL) / Heal Each Turn (ALL) / 50% HP 50% DEF (ALL)"
+                },
+                "bb": {
+                    "@hit": "0",
+                    "@dc": "0",
+                    "@cost": "25",
+                    "#text": "Heal (ALL) / Cure Ails / 30% Chance -40% Enemy ATK 1Turns / Gradual Heal (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "560% Dark (AOE) / 80% ATK+ DEF+ to Dark 3Turns / 3000HP Barrier (dark) / 30% Chance -50% Enemy ATK 1Turns / Gradual Heal (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "26",
+                    "@dc": "26",
+                    "@cost": "35",
+                    "#text": "1500% Dark (AOE) / 50BC Fill 3Turns / 20000HP Barrier (dark) / 100% Chance -80% Enemy ATK 3Turns / Null Elemental Weakness (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "25% ALL Stats when Golden Heart is Equipped",
+                    "#text": "4BC Fill Each Turn (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860128.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860128.png"
+                },                
+                "sp": {
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 20 : Damage taken slightly boosts BB Gauge (Fills 2-3 BC) | 30 : Adds BC drop rate boost for 3 turns effect to BB/SBB (30% boost) | 40 : Adds huge boost to Def for 3 turns effect to BB/SBB (160% boost) | 10 : Activates at turn's end effects during turn's start instead (effects will only activate once in Arena/Colosseum) | 60 : Adds slight OD gauge boost effect to BB/SBB (8% OD fill) | 30 : Enhances SBB's considerable Atk, Def boost for Dark types effect (+20% boost. 100% boost total) | 20 : Enhances UBB's Dark barrier effect (+5,000 HP. 25,000 HP total) | 60 : Allows UBB effects to last for one more turn"
+                }
+            },
+            {
+                "id": "8258",
+                "name": "Worldwalker Ilm",
+                "role": "drain,miti,maxhp,dot",
+                "rolesp": "",
+                "element": "Water",
+                "rarity": "7",
+                "cost": "44",
+                "ls": {
+                    "@hit": "16",
+                    "@dc": "48",
+                    "#text": "25% Chance Heal 15-20% DMG when ATKed (ALL) / 0-30% ATK+ Based on HP LEFT (ALL) / 0-30% DEF+ Based on HP LEFT (ALL) / 50% HP 50% DEF (ALL)"
+                },
+                "bb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "24",
+                    "#text": "350% Dark (AOE) / Drain 3-5% HP (SELF) / Reduce DMG (50%) 1Turns"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "Water (AOE) 300%-900% BB ATK% Based on HP LEFT / Reduce DMG (50%) 1Turns / 10% Max HP+ till Death,Battle End / 400% DMG Each Turn 3Turns"
+                },
+                "ubb": {
+                    "@hit": "24",
+                    "@dc": "24",
+                    "@cost": "30",
+                    "#text": "Water (AOE) 1000%-3000% BB ATK% Based on HP LEFT / 25% Max HP+ till Death,Battle End / 20000HP Barrier (water) / Gradual Heal FULL (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "0-50% ATK+ DEF+ Based on HP LOST"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_820417.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_820417.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8259",
+                "name": "Fate-Eater Ilm",
+                "role": "drain,miti,bb_atked,maxhp,dot,convert_atk,convert_def",
+                "rolesp": "null_crit,null_ewd",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "18",
+                    "@dc": "54",
+                    "#text": "30% Chance Heal 25-25% DMG when ATKed (ALL) / 0-50% ATK+ Based on HP LEFT (ALL) / 0-50% DEF+ Based on HP LEFT (ALL) / 50% HP 50% DEF (ALL)"
+                },
+                "bb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "24",
+                    "#text": "370% Dark (AOE) / Drain 5-7% HP (SELF) / Reduce DMG (50%) 2Turns / 5-7BC Fill when ATKed (100%) (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "30",
+                    "#text": "Water (AOE) 300%-900% BB ATK% Based on HP LEFT / Reduce DMG (50%) 2Turns / 25% Max HP+ till Death,Battle End / 500% DMG Each Turn 3Turns / Convert 25% HP to ATK (ALL) 3Turns / Convert 25% HP to DEF (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "26",
+                    "@dc": "26",
+                    "@cost": "30",
+                    "#text": "Water (AOE) 2000%-4000% BB ATK% Based on HP LEFT / 35% Max HP+ till Death,Battle End / 25000HP Barrier (water) / Convert 50% HP to ATK (ALL) 3Turns / Convert 50% HP to DEF (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "0-100% ATK+ DEF+ Based on HP LOST / Reduce DMG (25%) 2Turns on HP < 50% (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_820418.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_820418.png"
+                },                
+                "sp": {
+                    "@list": "20 : (*) 20% boost to all parameters | 40 : Raises all parameter boost from 20% to 50% (Prerequisites: *) | 20 : Negates all status ailments | 10 : Negates Def ignoring damage | 20 : Enhances LS's Def, max HP boost effect (+10% boost, 60% boost total) | 30 : Enhances SBB's Atk, Def relative to max HP boost effect (+5% boost, 30% boost total) | 30 : Enhances SBB/UBB's max HP boost effect (+5% boost, 30% on SBB, 40% on UBB total) | 30 : Adds critical hit damage negation effect to BB/SBB | 30 : Adds elemental damage negation effect to BB/SBB | 40 : Adds resistance against 1 KO attack when HP is below 20%"
                 }
             }
         ]
