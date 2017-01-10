@@ -14598,7 +14598,7 @@
                     "@hit": "20",
                     "@dc": "60",
                     "@cost": "17",
-                    "#text": "780% Light (TGT) / Drain 50-75% HP (SELF) / 70% Chance -50% Enemy ATK 1Turns / 100% Weak"
+                    "#text": "780% Light (TGT) / Drain 50-75% HP (SELF) / 70% Chance -50% Enemy ATK 1Turns / 100% Weak / 50% Chance Extra Action (SELF) 1Turn"
                 },
                 "sbb": {
                     "@hit": "19",
@@ -15929,6 +15929,96 @@
                 },                
                 "sp": {
                     "@list": "20 : (*) 20% boost to all parameters | 40 : Raises all parameter boost from 20% to 50% (Prerequisites: *) | 20 : Negates all status ailments | 10 : Negates Def ignoring damage | 20 : Enhances LS's Def, max HP boost effect (+10% boost, 60% boost total) | 30 : Enhances SBB's Atk, Def relative to max HP boost effect (+5% boost, 30% boost total) | 30 : Enhances SBB/UBB's max HP boost effect (+5% boost, 30% on SBB, 40% on UBB total) | 30 : Adds critical hit damage negation effect to BB/SBB | 30 : Adds elemental damage negation effect to BB/SBB | 40 : Adds resistance against 1 KO attack when HP is below 20%"
+                }
+            },
+            {
+                "id": "8260",
+                "name": "Royal Blade Rahotep",
+                "role": "atk_ele,def_ele,atk_ailed,ails,bb_atked",
+                "rolesp": "",
+                "element": "Fire",
+                "rarity": "7",
+                "cost": "46",
+                "ls": {
+                    "@hit": "8",
+                    "@dc": "40",
+                    "#text": "100% Chance 4-6BC Fill when ATKed (ALL) / 40-80% ATK+ Based on HP LOST (ALL) / 50% HP 80% ATK 80% DEF (Fire)"
+                },
+                "bb": {
+                    "@hit": "9",
+                    "@dc": "9",
+                    "@cost": "30",
+                    "#text": "380% Fire (AOE) / 80% ATK+ DEF+ to Fire 3Turns / 150% DMG+ to Ailed Enemy (ALL) 3Turns / 65% Injury 65% Weak 65% Sick 65% Poison 65% Para 65% Curse"
+                },
+                "sbb": {
+                    "@hit": "13",
+                    "@dc": "13",
+                    "@cost": "32",
+                    "#text": "580% Fire (AOE) / 4-7BC Fill when ATKed (100%) (ALL) 3Turns / 80% ATK+ DEF+ to Fire 3Turns / 60% CRIT+ (SELF) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "32",
+                    "#text": "1500% Fire (AOE) / 300% ATK+ to Fire 3Turns / 2500% DMG Each Turn 1Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Gradual Heal (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810356.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810356.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8261",
+                "name": "Sunless Warden Rahotep",
+                "role": "atk_ele,def_ele,atk_ailed,ails,bb_atked,idol",
+                "rolesp": "",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "100% Chance 5-7BC Fill when ATKed (ALL) / 40-120% ATK+ Based on HP LOST (ALL) / 65% HP 100% ATK 100% DEF (Fire) / Null CRIT (ALL)"
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "30",
+                    "#text": "420% Fire (AOE) / 100% ATK+ DEF+ to Fire 3Turns / 170% DMG+ to Ailed Enemy (ALL) 3Turns / 75% Injury 75% Weak 75% Sick 75% Poison 75% Para 75% Curse / 20% Chance Extra Action (SELF) 1Turn"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "32",
+                    "#text": "800% Fire (AOE) / 5-8BC Fill when ATKed (100%) (ALL) 3Turns / 100% ATK+ DEF+ to Fire 3Turns / 12% Chance Angel Idol 1% HP (ALL) 999Turns / 7% Chance Extra Action (ALL) 1Turn"
+                },
+                "ubb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "32",
+                    "#text": "Fire (AOE) 1500%-2800% BB ATK% Based on HP LEFT / 350% ATK+ to Fire 3Turns / 3000% DMG Each Turn 1Turns / 80% Chance Revive Dead Ally 100% HP (ALL)"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Gradual Heal (SELF) / 70% Chance Angel Idol 1x (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810357.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810357.png"
+                },                
+                "sp": {
+                    "@list": "10 : 30% boost to max HP | 15 : 30% boost to Def, max HP | 10 : Boosts critical hit damage (70% boost) | 30 : (*) Normal attacks may hit all foes (20% chance with 50% damage penalty) | 10 : (#) Enhances probability of normal attacks hitting all foes effect (+10% chance. 30% chance with 50% damage penalty) (Prerequisites: *) | 20 : Enhances damage dealt by normal attack may hit all foes effect (-25% damage penalty. 30% chance with 25% damage penalty) (Prerequisites: #) | 15 : Greatly restores HP each turn (Heals 3000-4000 + 10% Rec) | 30 : Adds great HP restoration effect for 3 turns to BB/SBB (Heals 3000-3500 + 15% Rec) | 30 : Enhances BB/SBB's considerable Atk, Def boost for Fire types effect (+20% boost. 120% boost total) | 45 : Enhances BB/SBB's probability to perform 1 extra action within the same turn (+5% chance. 25% chance on BB, 12% chance on SBB total)"
                 }
             }
         ]
