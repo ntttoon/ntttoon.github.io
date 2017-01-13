@@ -10677,7 +10677,7 @@
                 "ls": {
                     "@hit": "10",
                     "@dc": "40",
-                    "#text": "6BC Fill Each Turn (ALL) / 30% HP 80% ATK (ALL) / 10% BB SBB Activation+ (Arena/ALL)"
+                    "#text": "6BC Fill Each Turn (ALL) / 30% HP 80% ATK (ALL) / 10% BB SBB Activation+ (Arena,ALL)"
                 },
                 "bb": {
                     "@hit": "13",
@@ -10722,7 +10722,7 @@
                 "ls": {
                     "@hit": "12",
                     "@dc": "48",
-                    "#text": "8BC Fill Each Turn (ALL) / 50% HP 100% ATK (ALL) / 20% BB SBB Activation+ (Arena/ALL) / 50% ABP+ 25% CBP+"
+                    "#text": "8BC Fill Each Turn (ALL) / 50% HP 100% ATK (ALL) / 20% BB SBB Activation+ (Arena,ALL) / 50% ABP+ 25% CBP+"
                 },
                 "bb": {
                     "@hit": "16",
@@ -15739,7 +15739,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "30% Chance Heal 25% when ATKed (SELF) / 25% Chance Reduce DMG (30%) (SELF) / Add 3k HP Barrier (Earth) Effect to BB/SBB (SELF)"
+                    "#text": "30% Chance Heal 25% when ATKed (SELF) / 25% Chance Reduce DMG (30%) (SELF) / Add 3k HP Barrier (Earth) Effect to BB,SBB (SELF)"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830118.png"
