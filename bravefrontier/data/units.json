@@ -10869,7 +10869,7 @@
                     "@hit": "1",
                     "@dc": "15",
                     "@cost": "33",
-                    "#text": "750% Dark (AOE) / Dark (TGT) / 50% CRIT DMG+ (SELF) 3Turns / 80% ATK+ (SELF) 3Turns / 75% Injury 75% Curse"
+                    "#text": "750% Dark (AOE) / 580% Dark (TGT) / 50% CRIT DMG+ (SELF) 3Turns / 80% ATK+ (SELF) 3Turns / 75% Injury 75% Curse"
                 },
                 "ubb": {
                     "@hit": "1",
@@ -10914,7 +10914,7 @@
                     "@hit": "1",
                     "@dc": "20",
                     "@cost": "32",
-                    "#text": "800% Dark (AOE) / Dark (TGT) / 50% CRIT DMG+ (SELF) 3Turns / 100% ATK+ (SELF) 3Turns / 80% Injury 80% Curse"
+                    "#text": "800% Dark (AOE) / 600% Dark (TGT) / 50% CRIT DMG+ (SELF) 3Turns / 100% ATK+ (SELF) 3Turns / 80% Injury 80% Curse"
                 },
                 "ubb": {
                     "@hit": "1",
