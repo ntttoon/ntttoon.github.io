@@ -10668,7 +10668,7 @@
             },
             {
                 "id": "1513",
-                "name": "Asto 7",
+                "name": "Frigid Blade Asto",
                 "role": "bb_fill,bb_regen,bb_rate",
                 "rolesp": "",
                 "element": "Water",
@@ -10713,7 +10713,7 @@
             },
             {
                 "id": "1514",
-                "name": "Asto 8",
+                "name": "Sapphire Dragon Asto",
                 "role": "bb_fill,bb_regen,bb_rate",
                 "rolesp": "bb_atked",
                 "element": "Water",
@@ -10753,12 +10753,12 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20927.png"
                 },                
                 "sp": {
-                    "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 10 : 0-50% DEF depending on HP remaining | 10 : +50% ATK when BB Gauge is above 50% | 20 : +50% BB/SBB/UBB Mod | 60 : Survive up to 1 fatal blows (60% Chance) | 40 : LS+: Increased chance of initiating BB/SBB | 30 : BB+: Fill 2 BC & SBB+: Fill 2 BC | 30 : BB+: 2 BC/turn & SBB+: 2 BC/turn | 50 : Add Effect To BB/SBB (4-7 BC on Hit for 3 turns)"
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to max HP, Def | 10 : Boosts Def relative to how high remaining HP is (0.5% boost per 1% HP remaining) | 10 : Boosts Atk when BB gauge is over 50% (50% boost) | 20 : Boosts BB Atk (50% boost) | 60 : Probable resistance against 1 KO attack (60% chance) | 40 : Enhances LS's success rate of BB/SBB activation effect (+10% chance. 30% chance total) | 30 : Enhances BB/SBB's huge BB gauge boost effect (+2 BC. Fills 10 BC total) | 30 : Enhances BB/SBB's huge BB gauge boost each turn effect (+2 BC. FIlls 9 BC total) | 50 : Adds considerable BB gauge boost when attacked for 3 turns effect to BB/SBB (Fills 4-7 BC)"
                 }
             },
             {
                 "id": "1515",
-                "name": "Janis 7",
+                "name": "Lovely Comet Janice",
                 "role": "cure,idol,aoe,null",
                 "rolesp": "",
                 "element": "Light",
@@ -10803,7 +10803,7 @@
             },
             {
                 "id": "1516",
-                "name": "Janis 8",
+                "name": "Angelic Star Janice",
                 "role": "cure,idol,aoe,null",
                 "rolesp": "hot",
                 "element": "Light",
@@ -10843,12 +10843,12 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51087.png"
                 },                
                 "sp": {
-                    "@list": "10 : +20% HP/ATK | 10 : +20% HP/DEF | 20 : Hit Count +1 | 10 : 2-3 BC when hit | 20 : 100% Base/Buffed Element Weakness Resist | 50 : LS+: Survive up to fatal blows (+5% Chance) | 40 : Add Effect To BB/SBB (3 Turn HoT 3000-3500 HP (+15% Target REC)) | 40 : LS+: Mitigate Damage 5%"
+                    "@list": "10 : 20% boost to Atk, max HP | 10 : 20% boost to Def, max HP | 20 : Raises normal hit amount (+1 to each hit count) | 10 : Damage taken boosts BB gauge (Fills 2-3 BC) | 20 : Negates elemental damage | 50 : Enhances success rate of LS's probable 1 KO attack resistance effect (+5% chance. 25% chance to survive 1 KO attack) | 40 : Adds great HP restoration effect for 3 turns to BB/SBB (Heal 3000-3500 + 15% Rec) | 40 : Enhances LS's damage reduction from Light, Dark types effect (+5% reduction. 20% reduction total)"
                 }
             },
             {
                 "id": "1517",
-                "name": "Zeku 7",
+                "name": "Calm Triumph Zekuu",
                 "role": "",
                 "rolesp": "",
                 "element": "Dark",
@@ -10893,7 +10893,7 @@
             },
             {
                 "id": "1518",
-                "name": "Zeku 8",
+                "name": "Halting Victory Zekuu",
                 "role": "",
                 "rolesp": "id",
                 "element": "Dark",
@@ -10933,7 +10933,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_61057.png"
                 },                
                 "sp": {
-                    "@list": "10 : 0-80% ATK depending on HP remaining | 20 : +100% Spark Damage | 10 : +50% Crit Damage | 20 : +50% All Weakness Damage | 40 : (*) 20% Chance Normal Attacks AoE (-50% Damage) | 10 : (#) 30% Chance Normal Attacks AoE (-50% Damage) (Prerequisite: *) | 20 : 30% Chance Normal Attacks AoE (-25% Damage) (Prerequisite: #) | 50 : Add Effect To BB/SBB (2 turn Def Ignore Buff) | 50 : LS+: Chance to reduce BB gauge fill rate for 2 turns"
+                    "@list": "10 : Considerably boosts Atk relative to how high remaining HP is (0.8% boost per 1% HP remaining. 80% total) | 20 : 100% boost to Spark damage | 10 : Boosts critical hit damage (50% boost) | 20 : Boosts elemental damage (50% boost) | 40 : (*) Normal attacks may hit all foes (20% chance with 50% damage penalty) | 10 : (#) Enhances success rate of normal hits may hit all foes effect (+10% chance. 30% chance with 50% damage penalty total.) (Prerequisite: *) | 20 : Boosts damage of normal attacks may hit all foes with enhanced success rate effect (-25% penalty. 30% chance with 25% damage penalty total.) (Prerequisite: #) | 50 : Adds Def ignoring effect to attack for 2 turns effect to BB/SBB | 50 : Enhances success rate of LS's probable BB gauge fill rate reduction for 2 turns effect (+10% chance. 60% chance total)"
                 }
             },
             {
@@ -11744,6 +11744,366 @@
                 },                
                 "sp": {
                     "@list": "20 : +30% Stats | 10 : +100% Spark damage | 10 : (*) 2-3 BC when hit | 10 : 3-4 BC when hit​ (Prerequisite: *) | 20 : null ailments | 20 : null EWD | 70 : 70% chance to proc AI once | 40 : +30% ATK against afflicted enemies on SBB | 50 : Add 25-30% heal when hit (20% chance) for 3 turns on BB/SBB | 40 : Add +600% DoT for 2 turns on BB/SBB"
+                }
+            },
+            {
+                "id": "1555",
+                "name": "Valen 7",
+                "role": "bb_fill,miti,def,miti_guard,bb_guard",
+                "rolesp": "LS_bb_atked",
+                "element": "Fire",
+                "rarity": "7",
+                "cost": "46",
+                "ls": {
+                    "@hit": "7",
+                    "@dc": "35",
+                    "#text": "100% Chance 2-4BC Fill when ATKed (ALL) / Reduce DMG (10%) on Guard (ALL) / 50% HP 50% DEF (ALL)"
+                },
+                "bb": {
+                    "@hit": "13",
+                    "@dc": "13",
+                    "@cost": "29",
+                    "#text": "320% Fire (AOE) / 6BC Fill (ALL) 1Turn / Reduce DMG (50%) 1Turns / 150% DEF+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "31",
+                    "#text": "520% Fire (AOE) / 6BC Fill (ALL) 1Turn / Reduce DMG (50%) 1Turns / 150% DEF+ (ALL) 3Turns / Reduce DMG (10%) on Guard (ALL) 3Turns / 6BC Fill on Guard (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "1400% Fire (AOE) / Reduce DMG (75%) 3Turns / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns / Reduce DMG (20%) on Guard (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% DEF+ on Full HP (SELF) / Reduce DMG (10%) 1Turn on > 5k DMG Received (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_11036.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_11036.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1556",
+                "name": "Valen 8",
+                "role": "bb_fill,miti,def,miti_guard,bb_guard",
+                "rolesp": "LS_bb_atked,bb_atked,convert_atk,cure",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "9",
+                    "@dc": "45",
+                    "#text": "100% Chance 4-7BC Fill when ATKed (ALL) / Reduce DMG (10%) on Guard (ALL) / Heal Each Turn (ALL) / 60% HP 60% DEF (ALL)"
+                },
+                "bb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "28",
+                    "#text": "390% Fire (AOE) / 8BC Fill (ALL) 1Turn / Reduce DMG (50%) 1Turns / 170% DEF+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "30",
+                    "#text": "540% Fire (AOE) / 8BC Fill (ALL) 1Turn / Reduce DMG (50%) 1Turns / 170% DEF+ (ALL) 3Turns / Reduce DMG (10%) on Guard (ALL) 3Turns / 8BC Fill on Guard (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "32",
+                    "#text": "1600% Fire (AOE) / Reduce DMG (75%) 3Turns / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns / Reduce DMG (30%) on Guard (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "80% DEF+ on Full HP (SELF) / Reduce DMG (20%) 1Turn on > 5k DMG Received (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_11037.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_11037.png"
+                },                
+                "sp": {
+                    "@list": "20 : +50% DEF | 10 : +20% ATK/HP | 20 : (*) 2-3 BC when hit | 10 : 3-4 BC when hit (Prerequisite: *)​ | 20 : null Ignore DEF | 20 : 2-turn mitigation | 30 : +2 BC fill to BB/SBB | 40 : Add 4-7 BC when hit for 3 turns on BB/SBB | 40 : Add +70% DEF -> ATK for 3 turns on BB/SBB | 20 : Add cure ailments/debuffs on BB/SBB"
+                }
+            },
+            {
+                "id": "1557",
+                "name": "Legil 7",
+                "role": "atk,bb_atk,spark,spark_debuff,convert_atk",
+                "rolesp": "",
+                "element": "Light",
+                "rarity": "7",
+                "cost": "46",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "40",
+                    "#text": "150% BB ATK%+ (ALL) / 45% HP 45% ATK 45% DEF 45% REC (ALL) / Reduce DMG (5%) from (All) Enemy (ALL)"
+                },
+                "bb": {
+                    "@hit": "12",
+                    "@dc": "12",
+                    "@cost": "31",
+                    "#text": "380% Light (AOE) / 150% ATK+ (ALL) 3Turns / 400% BB ATK%+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "33",
+                    "#text": "Light (AOE) 200%-750% BB ATK% Based on HP LEFT / 120% Spark DMG+ (ALL) 3Turns / 25% Chance Enemy receives 25% Spark DMG+ 1Turns / 400% BB ATK%+ (ALL) 3Turns / Convert 30% HP to ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "32",
+                    "#text": "Light (AOE) 1500%-2500% BB ATK% Based on HP LEFT / Reduce DMG (75%) 3Turns / 30% Max HP+ till Death,Battle End / 300% Spark DMG+ (ALL) 3Turns / 500% BB ATK%+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "30% ATK+ DEF+ on HP > 50% (SELF) / 5% Chance Reduce DMG to 1 (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_51126.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51126.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1558",
+                "name": "Legil 8",
+                "role": "atk,bb_atk,spark,spark_debuff,convert_atk",
+                "rolesp": "null_ails,null_ewd,,hot,atk_ele,def_ele",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "50% BC Fill+ (ALL) / 200% BB ATK%+ (ALL) / 50% HP 50% ATK 50% DEF 50% REC (ALL) / Reduce DMG (10%) from (All) Enemy (ALL)"
+                },
+                "bb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "30",
+                    "#text": "420% Light (AOE) / 170% ATK+ (ALL) 3Turns / 450% BB ATK%+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "19",
+                    "@dc": "19",
+                    "@cost": "32",
+                    "#text": "Light (AOE) 200%-900% BB ATK% Based on HP LEFT / 150% Spark DMG+ (ALL) 3Turns / 25% Chance Enemy receives 25% Spark DMG+ 1Turns / 450% BB ATK%+ (ALL) 3Turns / Convert 35% HP to ATK (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "32",
+                    "#text": "Light (AOE) 1500%-2800% BB ATK% Based on HP LEFT / Reduce DMG (75%) 3Turns / 35% Max HP+ till Death,Battle End / 350% Spark DMG+ (ALL) 3Turns / 600% BB ATK%+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% ATK+ DEF+ on HP > 50% (SELF) / 10% Chance Reduce DMG to 1 (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_51127.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51127.png"
+                },                
+                "sp": {
+                    "@list": "25 : +50% Stats | 20 : +100% Spark damage | 10 : Increases MAX ATK from 99,999 to 130,000 | 10 : Add +10% Stats to LS (up to 60%) | 30 : Add +5% all element mitigation to LS (up to 15%) | 30 : Add null ailments for 3 turns on BB/SBB | 45 : Add null EWD for 1 turn on BB/SBB | 30 : Add 2500-3500 burst Heal (+11% healer REC) to BB/SBB | 35 : (*) +100% ATK/DEF to Light units for 3 turns on BB/SBB | 10 : +20% ATK/DEF to Light units for 3 turns on BB/SBB (up to 120%)​ (Prerequisite: *)"
+                }
+            },
+            {
+                "id": "1559",
+                "name": "Salvardo 7",
+                "role": "drain,idol,crit,crit_dmg",
+                "rolesp": "",
+                "element": "Dark",
+                "rarity": "7",
+                "cost": "46",
+                "ls": {
+                    "@hit": "5",
+                    "@dc": "40",
+                    "#text": "100% Chance Drain 3-8% HP (ALL) / 100% Chance 2-4BC Fill when ATKed (ALL) / 50% HP 50% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "10/3",
+                    "@dc": "",
+                    "@cost": "30",
+                    "#text": "10 hits AoE (430%) / 4 hits ST (560%) / Drain 3-5% HP (SELF) / 10% Chance Angel Idol 1% HP (ALL) 999Turns"
+                },
+                "sbb": {
+                    "@hit": "14/4",
+                    "@dc": "",
+                    "@cost": "33",
+                    "#text": "12 hits AoE (470%) / 4 hits ST (600%) / Drain 25-30% HP (SELF) / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / 10% Chance Angel Idol 1% HP (ALL) 999Turns"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "34",
+                    "#text": "2000% Dark (AOE) / 300% CRIT DMG+ (ALL) 3Turns / 300% ATK+ (ALL) 3Turns / 80% Chance Angel Idol 100% HP (ALL) 999Turns / 450% Element Weakness DMG+ (dark) (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "20% Chance Heal 20-25% DMG when ATKed (SELF) / 40% Chance Angel Idol 1x (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_61086.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_61086.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1560",
+                "name": "Salvardo 8",
+                "role": "drain,idol,crit,crit_dmg",
+                "rolesp": "ewd,atk_down_add",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "7",
+                    "@dc": "49",
+                    "#text": "100% Chance Drain 5-10% HP (ALL) / 100% Chance 4-7BC Fill when ATKed (ALL) / 20% Chance Angel Idol 1x (ALL) / 60% HP 60% ATK (ALL)"
+                },
+                "bb": {
+                    "@hit": "12/4",
+                    "@dc": "",
+                    "@cost": "29",
+                    "#text": "12 hits AoE (470%) / 4 hits ST (600%) / Drain 4-6% HP (SELF) / 10% Chance Angel Idol 1% HP (ALL) 999Turns"
+                },
+                "sbb": {
+                    "@hit": "16/5",
+                    "@dc": "",
+                    "@cost": "32",
+                    "#text": "16 hits AoE (620%) / 5 hits AoE to Light enemies (600%) / Drain 30-35% HP (SELF) / 60% CRIT+ (ALL) 3Turns / 75% CRIT DMG+ (ALL) 3Turns / 10% Chance Angel Idol 1% HP (ALL) 999Turns"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "33",
+                    "#text": "2200% Dark (AOE) / 300% CRIT DMG+ (ALL) 3Turns / 350% ATK+ (ALL) 3Turns / 80% Chance Angel Idol 100% HP (ALL) 999Turns / 500% Element Weakness DMG+ (dark) (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "25% Chance Heal 20-25% DMG when ATKed (SELF) / 40% Chance Angel Idol 2x (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_61087.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_61087.png"
+                },                
+                "sp": {
+                    "@list": "10 : +50% ATK | 10 : +0-80% ATK based on HP remaining | 15 : (*) +100% Spark damage | 10 : +120% Spark damage (Prerequisite: *)​ | 20 : +75% Crit damage | 10 : Increases MAX ATK from 99,999 to 130,000 | 55 : Add +5% chance to AI proc on LS (up to 25% chance) | 50 : Add +150% EWD to Dark units for 3 turns on BB/SBB | 40 : Add -20% ATK Down buff (20% chance,1 turn) for 3 turns on BB/SBB"
+                }
+            },
+            {
+                "id": "1561",
+                "name": "Kira 8",
+                "role": "id,crit,crit_dmg,spark_debuff,atk_down,def_down",
+                "rolesp": "ewd,add_ele,atk_down_add,def_down_add",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "150% CRIT DMG+ (ALL) / 150% Element Weakness DMG+ (light,dark) / 40% HP 80% ATK (ALL) / 200% BB ATK%+ on HP > 50% (ALL)"
+                },
+                "bb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "26",
+                    "#text": "360% Dark (AOE) / Ignore DEF (ALL) 2Turns / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "19",
+                    "@dc": "19",
+                    "@cost": "24",
+                    "#text": "560% Dark (AOE) / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / 25% Chance Enemy receives 25% Spark DMG+ 1Turns / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns"
+                },
+                "ubb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "30",
+                    "#text": "1500% Dark (AOE) / 60% CRIT+ (ALL) 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 350% ATK+ (ALL) 3Turns / 450% Element Weakness DMG+ (light,dark) (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "25% Chance Reflect DMG 15% (SELF) / 100% CRIT DMG+ (SELF) / 50% Spark DMG+ (SELF) / 125% Element Weakness DMG+ (light) (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_50657.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50657.png"
+                },                
+                "sp": {
+                    "@list": "10 : +20% ATK/HP | 10 : +70% Spark damage | 15 : +100% Spark damage | 10 : +50% EWD | 10 : Increase max damage from 99k to 130k | 30 : ATK/DEF Down up to 2 turns on SBB | 30 : +25% Crit damage to BB/SBB | 45 : +130% Light/Dark EWD for 3 turns on BB/SBB | 20 : Add Light/Dark elements to attack for 3 turns on BB/SBB | 45 : -20% ATK/DEF Down buff (20% chance, 1 turn) for 3 turns on BB/SBB"
+                }
+            },
+            {
+                "id": "1562",
+                "name": "Feeva 8",
+                "role": "bb_regen,bb_rate,atk,def,rec,bb_fill,heal_atked,bc,hc",
+                "rolesp": "bb_spark,spark",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "16",
+                    "@dc": "48",
+                    "#text": "50% BC Fill+ (ALL) / 70% Spark BC+ (ALL) / 40% HP 40% ATK 40% DEF 40% REC (ALL) / 120% Spark DMG+ 2Turns on > 20BC Received (ALL)"
+                },
+                "bb": {
+                    "@hit": "32",
+                    "@dc": "32",
+                    "@cost": "27",
+                    "#text": "370% Dark (AOE) / 7BC Fill 3Turns / 50% BC Fill+ (ALL) 3Turns / 150% ATK+ 150% DEF+ 150% REC+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "42",
+                    "@dc": "42",
+                    "@cost": "25",
+                    "#text": "580% Dark (AOE) / 8BC Fill (ALL) 1Turn / 20% Chance Heal 20-25% DMG when ATKed (ALL) 3Turns / 150% ATK+ 150% DEF+ 150% REC+ (ALL) 3Turns / 35% BC+ 35% HC+ (ALL) 3Turn"
+                },
+                "ubb": {
+                    "@hit": "26",
+                    "@dc": "26",
+                    "@cost": "25",
+                    "#text": "1500% Dark (AOE) / Reduce DMG (100%) 2Turns / 300% Spark DMG+ (ALL) 3Turns / 350% ATK+ 350% DEF+ 350% REC+ (ALL) 3Turns / 100% BC+ 100% HC+ (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "30% ALL Stats on Sin of Rebellion Sphere Equipped",
+                    "#text": "100% Chance Drain 5-8% HP (SELF) / 25% Chance Heal 20-25% DMG when ATKed (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_60667.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_60667.png"
+                },                
+                "sp": {
+                    "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 20 : +80% ATK/DEF/REC when BB is full | 10 : +80% Spark damage | 30 : +10% ATK/DEF/REC to BB/SBB | 30 : +5% heal when hit (10% chance) to SBB | 20 : Add 7 BC/turn for 3 turns on SBB | 50 : Add 2-3 BC on Spark buff for 3 turns on BB/SBB | 40 : (*) Add +100% Spark damage for 3 turns on BB/SBB | 20 : +30% Spark damage on BB/SBB (up to 130%) (Prerequisite: *)"
                 }
             },
             {
