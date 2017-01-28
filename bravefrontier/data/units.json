@@ -10938,7 +10938,7 @@
             },
             {
                 "id": "1519",
-                "name": "Barbara 7",
+                "name": "Blazing Chain Barbara",
                 "role": "spark,atk_down,id,atk_down_add",
                 "rolesp": "",
                 "element": "Fire",
@@ -10983,7 +10983,7 @@
             },
             {
                 "id": "1520",
-                "name": "Barbara 8",
+                "name": "Pyro Flail Barbara",
                 "role": "spark,atk_down,id,atk_down_add",
                 "rolesp": "spark_crit,spark_debuff",
                 "element": "Fire",
@@ -11028,7 +11028,7 @@
             },
             {
                 "id": "1521",
-                "name": "Dias Tima 7",
+                "name": "Alien Light Diastima",
                 "role": "drain,bb_rate,ails,atk_ailed",
                 "rolesp": "",
                 "element": "Light",
@@ -11073,7 +11073,7 @@
             },
             {
                 "id": "1522",
-                "name": "Dias Tima 8",
+                "name": "Third Eye Diastima",
                 "role": "drain,bb_rate,ails,atk_ailed",
                 "rolesp": "atk_down,maxhp",
                 "element": "Light",
@@ -11118,7 +11118,7 @@
             },
             {
                 "id": "1523",
-                "name": "Sieg 7",
+                "name": "Battle Fanatic Zeek",
                 "role": "atk_ele,def_ele,atk,convert_atk",
                 "rolesp": "",
                 "element": "Dark",
@@ -11163,7 +11163,7 @@
             },
             {
                 "id": "1524",
-                "name": "Sieg 8",
+                "name": "War Maniac Zeek",
                 "role": "atk_ele,def_ele,atk,convert_atk",
                 "rolesp": "LS_bb_spark",
                 "element": "Dark",
