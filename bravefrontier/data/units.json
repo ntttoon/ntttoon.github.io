@@ -10393,7 +10393,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10997.png"
                 },                
                 "sp": {
-                    "@list": "20 : (*) 30% boost to max HP | 10 : Raises max HP boost from 30% to 50% | 10 : Boosts Atk relative to remaining HP (+0.5% boost per 1% HP remaining - 50% boost on max HP) | 10 : Slightly boosts BC efficacy (15% boost) | 80 : Probable resistance against 1 KO attack (70% chance) | 50 : Enhances LS's damage of normal attacks may hit all foes effect (+20% damage, -30% damage total) | 50 : Enhances LS's success rate of normal attacks may hit all foes effect (+10% chance, 40% chance total) | 60 : Adds huge BB Atk boost for 3 turns effect to BB/SBB (400% boost)"
+                    "@list": "20 : (*) 30% boost to max HP | 10 : Raises max HP boost from 30% to 50% (Prerequisite: *) | 10 : Boosts Atk relative to remaining HP (+0.5% boost per 1% HP remaining - 50% boost on max HP) | 10 : Slightly boosts BC efficacy (15% boost) | 80 : Probable resistance against 1 KO attack (70% chance) | 50 : Enhances LS's damage of normal attacks may hit all foes effect (+20% damage, -30% damage total) | 50 : Enhances LS's success rate of normal attacks may hit all foes effect (+10% chance, 40% chance total) | 60 : Adds huge BB Atk boost for 3 turns effect to BB/SBB (400% boost)"
                 }
             },
             {
