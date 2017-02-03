@@ -11023,7 +11023,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_11017.png"
                 },                
                 "sp": {
-                    "@list": "10 : 20% ATK/REC | 10 : 20% HP/DEF | 10 : (*) 70% Spark DMG | 15 : 100% Spark DMG​ (Prerequisite: *) | 10 : Increases MAX ATK from 99,999 to 130,000 | 10 : Enhances LS: 20% Spark DMG | 40 : Enhances BB/SBB: 40% Spark DMG | 15 : Add to BB: 20% Chance -20% ATK for 1 Turn (ALL) 3 Turns | 45 : Add to BB/SBB: 30% Chance Spark Critical (ALL) 3 Turns | 45 : Add to BB/SBB: 25% Chance Enemy Receives 25% Spark DMG for 1 Turn (ALL) 3 Turns"
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 10 : (*) 70% boost to Spark damage | 15 : Raises Spark damage boost from 70% to 100% (Prerequisite: *) | 10 : Raises Atk parameter limits to 130000 | 10 : Enhances LS's Spark damage boost from 120% to 140% | 40 : Enhances BB/SBB's enormous Spark damage boost effect (+40% boost. 140% boost total) | 15 : Adds probable 1 turn Atk reduction effect to attack for all allies for 3 turns effect to BB (20% chance to reduce enemy Atk by 20%) | 45 : Adds probable Spark critical for 3 turns effect to BB/SBB (30% chance Sparks deal 50% extra damage) | 45 : Adds probable Spark vulnerability infliction for 2 turns effect to BB/SBB (25% chance for 25% vulnerability)"
                 }
             },
             {
@@ -11113,7 +11113,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51107.png"
                 },                
                 "sp": {
-                    "@list": "10 : (*) 30% HP | 15 : 50% HP​ (Prerequisite: *) | 20 : 80% Spark DMG | 15 : 50% EWD | 20 : 50% ATK on Ailed Enemy | 10 : Increases MAX ATK from 99,999 to 130,000 | 30 : Enhances SBB: 30% ATK on Ailed Enemy | 35 : Add to BB/SBB: 30% Chance -50% Enemy ATK | 55 : Add to BB/SBB: 15% MAX HP"
+                    "@list": "10 : (*) 30% boost to max HP | 15 : Raises max HP boost from 30% to 50% (Prerequisite: *) | 20 : 80% boost to Spark damage | 15 : Boosts elemental damage (50% boost) | 20 : Boosts Atk against status afflicted foes (50% boost) | 10 : Raises Atk parameter limits to 130000 | 30 : Enhances SBB's huge damage boost against status afflicted foes effect (+30% boost. 200% boost total) | 35 : Adds probable huge 1 turn Atk reduction effect to attack for all allies effect to BB/SBB (30% chance to reduce enemy Atk by 50%) | 55 : Adds max HP boost for all allies effect to BB/SBB (15% boost)"
                 }
             },
             {
@@ -11203,7 +11203,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_61067.png"
                 },                
                 "sp": {
-                    "@list": "10 : 20% HP/ATK | 10 : (*) 50% ATK | 15 : 80% ATK​ (Prerequisite: *) | 15 : (#) 100% Spark DMG | 10 : 120% Spark DMG​ (Prerequisite: #) | 20 : 50% CRIT DMG | 10 : Increases MAX ATK from 99,999 to 130,000 | 35 : Enhances BB/SBB: 120% ATK/DEF (Dark) | 40 : Enhances BB/SBB: 180% ATK | 40 : Enhances SBB: 10% DEF -> ATK"
+                    "@list": "10 : 20% boost to Atk, max HP | 10 : (*) 50% boost to Atk | 15 : Raises Atk boost from 50% to 80% (Prerequisite: *) | 15 : (#) 100% boost to Spark damage | 10 : Raises Spark damage boost from 100% to 120% (Prerequisite: #) | 20 : Boosts critical hit damage (50% boost) | 10 : Raises Atk parameter limits to 130000 | 35 : Enhances BB/SBB's considerable Atk, Def boost for Dark types effect (+20% boost. 120% boost total) | 40 : Enhances BB/SBB's huge Atk boost effect (+20% boost. 180% boost total) | 40 : Enhances SBB's huge boost to Atk relative to Def effect (+10% boost. 80% Def to Atk total)"
                 }
             },
             {
