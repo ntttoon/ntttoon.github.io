@@ -75,48 +75,6 @@
 	xmlhttp.open("GET", url, true);
 	xmlhttp.send();
 	
-	function sAr_f(str){
-		var re_str;
-		if(str.match(RegExp( /(\(\*\))/, 'gi'))){
-			re_str = str.replace(/\(\*\)/gi, "<span style='display:none'>(*)</span>");
-			return re_str;
-		}
-		if(str.match(RegExp( /(\(\#\))/, 'gi'))){
-			re_str = str.replace(/\(\#\)/gi, "<span style='display:none'>(#)</span>");
-			return re_str;
-		}
-		if(str.match(RegExp( /(\(\$\))/, 'gi'))){
-			re_str = str.replace(/\(\$\)/gi, "<span style='display:none'>($)</span>");
-			return re_str;
-		}
-		if(str.match(RegExp( /(\(\^\))/, 'gi'))){
-			re_str = str.replace(/\(\^\)/gi, "<span style='display:none'>(^)</span>");
-			return re_str;
-		}
-		else{return str;}
-	}
-	
-	function sAr_e(str){
-		var re_str;
-		if(str.match(RegExp( /(\(Prerequisite\: \*\))/, 'gi'))){
-			re_str = str.replace(/\(Prerequisite\: \*\)/gi, "<span style='display:none'>(Prerequisite: *)</span>");
-			return re_str;
-		}
-		if(str.match(RegExp( /(\(Prerequisite\: \#\))/, 'gi'))){
-			re_str = str.replace(/\(Prerequisite\: \#\)/gi, "<span style='display:none'>(Prerequisite: #)</span>");
-			return re_str;
-		}
-		if(str.match(RegExp( /(\(Prerequisite\: \$\))/, 'gi'))){
-			re_str = str.replace(/\(Prerequisite\: \$\)/gi, "<span style='display:none'>(Prerequisite: $)</span>");
-			return re_str;
-		}
-		if(str.match(RegExp( /(\(Prerequisite\: \^\))/, 'gi'))){
-			re_str = str.replace(/\(Prerequisite\: \^\)/gi, "<span style='display:none'>(Prerequisite: ^)</span>");
-			return re_str;
-		}
-		else{return str;}
-	}
-	
 	function myFunction(response) {
 		var arr = JSON.parse(response);
 		var i,j;
@@ -172,10 +130,7 @@
 					var sp_indent = (sp_array[j].search('Prerequisite') !== -1)?'class="w3-light-grey" style="margin-left:15px;"':'';
 					var sp_disabled = (sp_array[j].search('Prerequisite') !== -1)?'disabled':'';
 					
-					temp_out = '<li ' + sp_indent + '><span class="w3-tag w3-round w3-teal" style="width:30px;" >'+ lead_az[j] +'</span> <strong class="w3-small">'+ sp_cost.trim() + ' SP </strong><input class="w3-check" type="checkbox" value="'+ sp_cost.trim() +'" ' + sp_disabled + '><label class="w3-validate w3-small"> ' + sp_array[j].substring(sp_array[j].search(':')+1, sp_array[j].length).trim() + '</label>';
-					temp_out = sAr_f(temp_out);
-					temp_out = sAr_e(temp_out);
-					out+=temp_out;
+					out+= '<li ' + sp_indent + '><span class="w3-tag w3-round w3-teal" style="width:30px;" >'+ lead_az[j] +'</span> <strong class="w3-small">'+ sp_cost.trim() + ' SP </strong><input class="w3-check" type="checkbox" value="'+ sp_cost.trim() +'" ' + sp_disabled + '><label class="w3-validate w3-small"> ' + sp_array[j].substring(sp_array[j].search(':')+1, sp_array[j].length).trim() + '</label>';
 					out+='</li>';
 				}
 				////////// break into lines
