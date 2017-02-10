@@ -11345,7 +11345,7 @@
                 "id": "1540",
                 "name": "Shera 8",
                 "role": "miti,bb_rate,atk,bb_regen,miti_guard",
-                "rolesp": "def",
+                "rolesp": "def,miti_spark",
                 "element": "Thunder",
                 "rarity": "8",
                 "cost": "47",
@@ -16379,6 +16379,96 @@
                 },                
                 "sp": {
                     "@list": "10 : 30% boost to max HP | 15 : 30% boost to Def, max HP | 10 : Boosts critical hit damage (70% boost) | 30 : <span style='display:none'>(*)</span> Normal attacks may hit all foes (20% chance with 50% damage penalty) | 10 : <span style='display:none'>(#)</span> Enhances probability of normal attacks hitting all foes effect (+10% chance. 30% chance with 50% damage penalty) <span style='display:none'>(Prerequisite: *)</span> | 20 : Enhances damage dealt by normal attack may hit all foes effect (-25% damage penalty. 30% chance with 25% damage penalty) <span style='display:none'>(Prerequisite: #)</span> | 15 : Greatly restores HP each turn (Heals 3000-4000 + 10% Rec) | 30 : Adds great HP restoration effect for 3 turns to BB/SBB (Heals 3000-3500 + 15% Rec) | 30 : Enhances BB/SBB's considerable Atk, Def boost for Fire types effect (+20% boost. 120% boost total) | 45 : Enhances BB/SBB's probability to perform 1 extra action within the same turn (+5% chance. 25% chance on BB, 12% chance on SBB total)"
+                }
+            },
+            {
+                "id": "8262",
+                "name": "Uncrowned Lord Eerikki",
+                "role": "atk,crit,crit_dmg,spark_crit",
+                "rolesp": "",
+                "element": "Thunder",
+                "rarity": "7",
+                "cost": "46",
+                "ls": {
+                    "@hit": "12",
+                    "@dc": "48",
+                    "#text": "50% boost to Atk, max HP, 30% boost to critical hit rate, considerably boosts BB Atk, hugely boosts critical damage & considerably boosts OD gauge fill rate (200% BB Atk, 150% Crit & 20% OD fill rate)"
+                },
+                "bb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "30",
+                    "#text": "16 combo powerful Thunder attack on all foes, greatly boosts Atk for 3 turns, boosts critical hit rate for 3 turns & normal attacks hit all foes for 3 turns (150% Atk & 60% Crit)"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "32",
+                    "#text": "20 combo powerful Thunder attack on all foes (consecutive usage boosts damage), boosts critical damage for 3 turns, greatly boosts Atk for 3 turns, boosts critical hit rate for 3 turns, adds probable Spark critical for 3 turns & considerably boosts own Atk for 3 turns (330% boost to multiplier per use up to 2x, 160% Atk, 60% Crit, 50% Crit damage, 30% chance Sparks deal 50% extra damage & 100% self Atk)"
+                },
+                "ubb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "32",
+                    "#text": "23 combo massive Thunder attack on all foes, enormously boosts Atk for 5 turns, boosts critical hit rate for 3 turns, normal attacks hit all foes for 3 turns & considerably raises normal hit amount for 3 turns (300% Atk, 60% Crit, adds +2 to each hit count with extra hits at 100% power)"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Considerably boosts Atk when BB gauge is full & adds resistance against 1 KO attack when HP is below 20% (80% boost)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840417.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_840417.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8263",
+                "name": "Uncrowned Lord Eerikki",
+                "role": "atk,crit,crit_dmg,spark_crit,evade",
+                "rolesp": "convert_atk,spark_debuff",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "14",
+                    "@dc": "56",
+                    "#text": "60% boost to Atk, max HP, 30% boost to critical hit rate, greatly boosts BB Atk, hugely boosts critical damage & considerably boosts OD gauge fill rate (250% BB Atk, 175% Crit & 25% OD fill rate)"
+                },
+                "bb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "20 combo powerful Thunder attack on all foes, adds probable evasion for 1 turn, hugely boosts Atk for 3 turns, boosts critical hit rate for 3 turns & normal attacks hit all foes for 3 turns (10% chance to evade attacks, 160% Atk, 60% Crit)"
+                },
+                "sbb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "32",
+                    "#text": "25 combo powerful Thunder attack on all foes (consecutive usage boosts damage) , adds probable evasion for 1 turn, considerably boosts critical damage for 3 turns, hugely boosts Atk for 3 turns, boosts critical hit rate for 3 turns, adds probable Spark critical for 3 turns & hugely boosts own Atk for 3 turns (370% boost to multiplier per use up to 2x, 10% chance to evade attacks, 75% Crit damage, 160% Atk, 60% Crit, 30% chance Sparks deal 50% extra damage & 200% self Atk)"
+                },
+                "ubb": {
+                    "@hit": "28",
+                    "@dc": "28",
+                    "@cost": "32",
+                    "#text": "28 combo massive Thunder attack on all foes, hugely boosts max HP, enormously boosts Atk for 5 turns, boosts critical hit rate for 3 turns, normal attacks hit all foes for 3 turns & hugely raises normal hit amount for 3 turns (40% HP, 350% Atk, 60% Crit & adds +3 to each hit count with extra hits at 100% power)"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Greatly boosts Atk when BB gauge is full & adds resistance against 1 KO attack when HP is below 20% (100% boost)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840418.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_840418.png"
+                },                
+                "sp": {
+                    "@list": "10 : 50% boost to Atk | 15 : 30% boost to Def, max HP | 15 : 100% boost to Spark damage | 10 : Damage taken boosts BB gauge (Fills 2-3 BC) | 10 : Breaks Atk's parameter limit (Raises maximum Atk from 99999 to 130000) | 20 : Enhances SBB's success rate of Spark critical effect (+10% chance. 40% chance total) | 35 : Enhances BB/SBB's evasion effect (+5% chance. 15% chance to evade total) | 40 : Adds huge Atk boost relative to Def for 3 turns effect to BB/SBB (70% Def to Atk) | 25 : Enhances BB/SBB's Atk boost effect (+20% boost. 180% boost total) | 35 : Adds probable considerable Spark vulnerability for 2 turns to BB/SBB (25% chance for 50% vulnerability)"
                 }
             }
         ]
