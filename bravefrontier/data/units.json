@@ -14970,7 +14970,7 @@
                     "@hit": "4",
                     "@dc": "20",
                     "@cost": "30",
-                    "#text": "1300% Fire (AOE) / Reduce DMG (100%) 1Turns / 35% Max HP+ till Death/Battle End / 250% ATK+ 250% DEF+ 250% REC+ (ALL) 3Turns"
+                    "#text": "1300% Fire (AOE) / Reduce DMG (100%) 1Turns / 35% Max HP+ till Death,Battle End / 250% ATK+ 250% DEF+ 250% REC+ (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -15015,7 +15015,7 @@
                     "@hit": "5",
                     "@dc": "25",
                     "@cost": "30",
-                    "#text": "1500% Fire (AOE) / Reduce DMG (100%) 1Turns / 35% Max HP+ till Death/Battle End / 250% ATK+ 250% DEF+ 250% REC+ (ALL) 3Turns"
+                    "#text": "1500% Fire (AOE) / Reduce DMG (100%) 1Turns / 35% Max HP+ till Death,Battle End / 250% ATK+ 250% DEF+ 250% REC+ (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -16635,7 +16635,7 @@
                     "@hit": "",
                     "@dc": "0",
                     "@cost": "35",
-                    "#text": "Reduce DMG (75%) 3Turns / 35% Max HP+ till Death/Battle End / 100% BC+ 100% HC+ 7% Item+ (ALL) 3Turns / Convert 250% DEF to ATK (ALL) 3Turns / Convert 150% REC to DEF (ALL) 3Turns"
+                    "#text": "Reduce DMG (75%) 3Turns / 35% Max HP+ till Death,Battle End / 100% BC+ 100% HC+ 7% Item+ (ALL) 3Turns / Convert 250% DEF to ATK (ALL) 3Turns / Convert 150% REC to DEF (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -16995,7 +16995,7 @@
                     "@hit": "28",
                     "@dc": "28",
                     "@cost": "32",
-                    "#text": "1800% Thunder (AOE) / 60% CRIT+ (ALL) 5Turns / 40% Max HP+ till Death/Battle End / Normal HitCount +300% (100% DMG) (ALL) 3Turns / 350% ATK+ (ALL) 5Turns / 100% Chance AOE on Normal ATK (AOE) 3Turns"
+                    "#text": "1800% Thunder (AOE) / 60% CRIT+ (ALL) 5Turns / 40% Max HP+ till Death,Battle End / Normal HitCount +300% (100% DMG) (ALL) 3Turns / 350% ATK+ (ALL) 5Turns / 100% Chance AOE on Normal ATK (AOE) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
