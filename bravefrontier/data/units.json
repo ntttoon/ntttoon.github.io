@@ -16944,7 +16944,7 @@
                     "@hit": "20",
                     "@dc": "20",
                     "@cost": "32",
-                    "#text": "Thunder (AOE) 330% BB ATK+ on Consecutive SBB (Max 2x / SELF) / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 160% ATK+ (ALL) 3Turns / 100% ATK+ (SELF) 3Turns"
+                    "#text": "Thunder (AOE) 330% BB ATK+ on Consecutive SBB (Max 2x , SELF) / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / 20% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 160% ATK+ (ALL) 3Turns / 100% ATK+ (SELF) 3Turns"
                 },
                 "ubb": {
                     "@hit": "23",
@@ -16989,7 +16989,7 @@
                     "@hit": "25",
                     "@dc": "25",
                     "@cost": "32",
-                    "#text": "Thunder (AOE) 370% BB ATK+ on Consecutive SBB (Max 2x / SELF) / 60% CRIT+ (ALL) 3Turns / 75% CRIT DMG+ (ALL) 3Turns / 30% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 160% ATK+ (ALL) 3Turns / 200% ATK+ (SELF) 3Turns / 10% Evade ATKs (AOE) 1Turns"
+                    "#text": "Thunder (AOE) 370% BB ATK+ on Consecutive SBB (Max 2x , SELF) / 60% CRIT+ (ALL) 3Turns / 75% CRIT DMG+ (ALL) 3Turns / 30% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 160% ATK+ (ALL) 3Turns / 200% ATK+ (SELF) 3Turns / 10% Evade ATKs (AOE) 1Turns"
                 },
                 "ubb": {
                     "@hit": "28",
