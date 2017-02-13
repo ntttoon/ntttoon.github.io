@@ -12129,7 +12129,7 @@
                     "@hit": "14",
                     "@dc": "14",
                     "@cost": "32",
-                    "#text": "580% Water (AOE) / 100% Chance 1-2BC Fill on Spark (ALL) 3Turns / 100% Spark DMG+ (ALL) 3Turns / 30% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 580% Fire (4 Hits/AOE/ATK +100) on Earth Enemies"
+                    "#text": "580% Water (AOE) / 100% Chance 1-2BC Fill on Spark (ALL) 3Turns / 100% Spark DMG+ (ALL) 3Turns / 30% Chance SPARKcrit (50% DMG+) (ALL) 3Turns / 580% Fire (4 Hits,AOE,ATK +100) on Earth Enemies"
                 },
                 "ubb": {
                     "@hit": "20",
@@ -12174,7 +12174,7 @@
                     "@hit": "18",
                     "@dc": "18",
                     "@cost": "31",
-                    "#text": "620% Water (AOE) / 100% Chance 2-3BC Fill on Spark (ALL) 3Turns / 130% Spark DMG+ (ALL) 3Turns / 30% Chance SPARKcrit (60% DMG+) (ALL) 3Turns / 620% Fire (6 Hits/AOE/ATK +200) on Earth Enemies"
+                    "#text": "620% Water (AOE) / 100% Chance 2-3BC Fill on Spark (ALL) 3Turns / 130% Spark DMG+ (ALL) 3Turns / 30% Chance SPARKcrit (60% DMG+) (ALL) 3Turns / 620% Fire (6 Hits,AOE,ATK +200) on Earth Enemies"
                 },
                 "ubb": {
                     "@hit": "24",
@@ -12399,7 +12399,7 @@
                     "@hit": "12",
                     "@dc": "12",
                     "@cost": "33",
-                    "#text": "800% Fire (AOE) / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / 80% ATK+ (SELF) 3Turns / 580% Fire (3 Hits/AOE/ATK +100) on Earth Enemies / 120% Spark DMG+ (SELF) 3Turns"
+                    "#text": "800% Fire (AOE) / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / 80% ATK+ (SELF) 3Turns / 580% Fire (3 Hits,AOE,ATK +100) on Earth Enemies / 120% Spark DMG+ (SELF) 3Turns"
                 },
                 "ubb": {
                     "@hit": "18",
@@ -12444,7 +12444,7 @@
                     "@hit": "14",
                     "@dc": "14",
                     "@cost": "32",
-                    "#text": "850% Fire (AOE) / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / 100% ATK+ (SELF) 3Turns / 620% Fire (5 Hits/AOE/ATK +200) on Earth Enemies / 120% Spark DMG+ (SELF) 3Turns"
+                    "#text": "850% Fire (AOE) / 60% CRIT+ (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / 100% ATK+ (SELF) 3Turns / 620% Fire (5 Hits,AOE,ATK +200) on Earth Enemies / 120% Spark DMG+ (SELF) 3Turns"
                 },
                 "ubb": {
                     "@hit": "20",
