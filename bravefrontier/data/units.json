@@ -18289,6 +18289,102 @@
                 "sp": {
                     "@list": "10 : 30% boost to max HP, Atk | 10 : Boosts critical hit damage (70% boost) | 20 : Boosts elemental damage (50% boost) | 10 : Increases max Atk from 99,999 to 130,000 | 15 : Adds powerful additional attack at turn's end for 3 turns effect to SBB (400% multiplier) | 25 : Enhances BB's max HP boost effect (+10% boost. 30% boost total) | 25 : Enhances SBB's elemental damage boost effect (+50% boost. 200% boost total) | 30 : Enhances SBB's critical damage (50%) boost effect (+50% boost. 125% boost total) | 30 : Adds considerable boost to BC, HC drop rates for 3 turns effect to BB/SBB (30% boost) | 40 : Enhances LS's critical damage boost effect (+100% boost. 250% boost total) | 45 : Allows UBB effects to last for one more turn"
                 }
+            },
+            {
+                "id": "8267",
+                "name": "Ardent Soul Feng",
+                "role": "",
+                "rolesp": "",
+                "element": "Fire",
+                "rarity": "7",
+                "cost": "46",
+                "ls": {
+                    "@hit": "",
+                    "@dc": "",
+                    "#text": ""
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "sbb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "ubb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810507.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810507.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8268",
+                "name": "Blazing Phoenix Feng",
+                "role": "",
+                "rolesp": "",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "",
+                    "@dc": "",
+                    "#text": ""
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "sbb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "ubb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810508.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810508.png"
+                },                
+                "sp": {
+                    "@list": "20 : 50% boost to max HP | 10 : 80% boost to Atk relative to remaining HP | 10 : 80% boost to Def relative to HP lost | 20 : 80% boost to Spark damage | 65 : Enhances LS's reduction to Fire, Water, Earth, Thunder elemental damage effect (+5% boost, 20% total) | 30 : Adds Atk, Def, Rec negation for 1 turn effect to BB/SBB | 30 : Adds critical damage negation for 1 turn effect to BB/SBB | 25 : Adds considerable Atk boost for Fire, Thunder types effect to BB/SBB (120% boost) | 25 : Adds considerable Atk boost for Water, Earth types effect to BB/SBB (120% boost)"
+                }
             }
         ]
     }
