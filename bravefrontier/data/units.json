@@ -14,6 +14,9 @@
                     "@dc": "30",
                     "#text": "30% HP 100% ATK (Fire)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "12",
                     "@dc": "12",
@@ -58,6 +61,9 @@
                     "@hit": "9",
                     "@dc": "36",
                     "#text": "30% HP 100% ATK (Water)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "12",
@@ -104,6 +110,9 @@
                     "@dc": "40",
                     "#text": "30% HP 100% ATK (Earth)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "12",
                     "@dc": "12",
@@ -148,6 +157,9 @@
                     "@hit": "8",
                     "@dc": "40",
                     "#text": "30% HP 100% ATK (Thunder)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "12",
@@ -194,6 +206,9 @@
                     "@dc": "48",
                     "#text": "30% HP 100% ATK (Light)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "13",
                     "@dc": "13",
@@ -238,6 +253,9 @@
                     "@hit": "7",
                     "@dc": "42",
                     "#text": "30% HP 100% ATK (Dark)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "10",
@@ -284,6 +302,9 @@
                     "@dc": "24",
                     "#text": "100% Chance Drain 3-8% HP (ALL) / 80% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "30",
@@ -328,6 +349,9 @@
                     "@hit": "11",
                     "@dc": "22",
                     "#text": "75% Spark DMG+ (ALL) / 15% BC+ 15% HC+ (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "15",
@@ -374,6 +398,9 @@
                     "@dc": "26",
                     "#text": "100% Chance Drain 3-8% HP (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison (ALL) / 10% Para 10% Curse (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -418,6 +445,9 @@
                     "@hit": "11",
                     "@dc": "22",
                     "#text": "30% HP 30% DEF (ALL) / Null Ails (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "15",
@@ -464,6 +494,9 @@
                     "@dc": "24",
                     "#text": "150% CRIT DMG+ (ALL) / 125% Element Weakness DMG+ (light,dark)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "14",
                     "@dc": "14",
@@ -508,6 +541,9 @@
                     "@hit": "13",
                     "@dc": "26",
                     "#text": "50% BC Fill+ (ALL) / 70% Spark BC+ (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "28",
@@ -554,6 +590,9 @@
                     "@dc": "42",
                     "#text": "50% BC Fill+ (ALL) / 100% ATK (Light)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "17",
                     "@dc": "17",
@@ -598,6 +637,9 @@
                     "@hit": "16",
                     "@dc": "48",
                     "#text": "50% BC Fill+ (ALL) / 100% ATK (Dark)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "18",
@@ -644,6 +686,9 @@
                     "@dc": "24",
                     "#text": "75% Spark DMG+ (ALL) / 30% ATK 30% DEF (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "20",
                     "@dc": "20",
@@ -688,6 +733,9 @@
                     "@hit": "8",
                     "@dc": "24",
                     "#text": "150% CRIT DMG+ (ALL) / 30% HP 30% REC (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "17",
@@ -734,6 +782,9 @@
                     "@dc": "24",
                     "#text": "Reduce 20% BB Cost (ALL) / 30% BC Fill+ (ALL) / 100% ATK (5 elements required) (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -778,6 +829,9 @@
                     "@hit": "11",
                     "@dc": "22",
                     "#text": "75% HC Fill+ (ALL) / 100% Chance 4-6BC Fill when ATKed (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "",
@@ -824,6 +878,9 @@
                     "@dc": "21",
                     "#text": "100% Chance Reduce 25-40% BB Gauge Used (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison (ALL) / 10% Para 10% Curse (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "14",
                     "@dc": "14",
@@ -868,6 +925,9 @@
                     "@hit": "13",
                     "@dc": "26",
                     "#text": "4BC Fill Each Turn (ALL) / Heal Each Turn (ALL) / Null Ails (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "18",
@@ -914,6 +974,9 @@
                     "@dc": "30",
                     "#text": "4BC Fill Each Turn (ALL) / 100% ATK (Fire)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -958,6 +1021,9 @@
                     "@hit": "11",
                     "@dc": "33",
                     "#text": "10% BC+ 10% HC+ (ALL) / 30% HP (ALL) / Null Ails (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "16",
@@ -1004,6 +1070,9 @@
                     "@dc": "24",
                     "#text": "10% Chance Reduce DMG (20%) (ALL) / 75% HC Fill+ (ALL) / 25% HC+ (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "",
                     "@dc": "",
@@ -1048,6 +1117,9 @@
                     "@hit": "12",
                     "@dc": "24",
                     "#text": "15% Injury 15% Weak (ALL) / Reduce DMG (15%) from (Fire,earth) Enemy"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "15",
@@ -1094,6 +1166,9 @@
                     "@dc": "16",
                     "#text": "70% Spark BC+ (ALL) / Reduce DMG (15%) from (Water,fire) Enemy"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "28",
                     "@dc": "28",
@@ -1138,6 +1213,9 @@
                     "@hit": "8",
                     "@dc": "16",
                     "#text": "100% Chance 3-6BC Fill when ATKed (ALL) / 30% HP 30% DEF (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "14",
@@ -1184,6 +1262,9 @@
                     "@dc": "20",
                     "#text": "20% HC+ (ALL) / 80% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "17",
                     "@dc": "34",
@@ -1228,6 +1309,9 @@
                     "@hit": "11",
                     "@dc": "22",
                     "#text": "100% Chance 1-2BC Fill on Spark (ALL) / 100% Spark DMG+ (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "26",
@@ -1274,6 +1358,9 @@
                     "@dc": "20",
                     "#text": "4BC Fill Each Turn (ALL) / 10% Chance Reduce DMG (20%) (ALL) / 40% DEF (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "30",
@@ -1318,6 +1405,9 @@
                     "@hit": "12",
                     "@dc": "36",
                     "#text": "Nulls CRIT (ALL) / 100% ATK 30% DEF (Earth)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "15",
@@ -1364,6 +1454,9 @@
                     "@dc": "36",
                     "#text": "50% Spark DMG+ (ALL) / 100% ATK 30% DEF (Thunder)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "28",
                     "@dc": "28",
@@ -1408,6 +1501,9 @@
                     "@hit": "10",
                     "@dc": "40",
                     "#text": "4BC Fill Each Turn (ALL) / 100% ATK (Dark)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "13",
@@ -1454,6 +1550,9 @@
                     "@dc": "39",
                     "#text": "70% Spark BC+ (ALL) / 100% Chance 1-2BC Fill on Spark (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "20",
                     "@dc": "20",
@@ -1498,6 +1597,9 @@
                     "@hit": "9",
                     "@dc": "27",
                     "#text": "3BC Fill Each Turn (ALL) / 50% BC Fill+ (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "16",
@@ -1544,6 +1646,9 @@
                     "@dc": "24",
                     "#text": "150% CRIT DMG+ (ALL) / 125% Element Weakness DMG+ (earth,thunder)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -1588,6 +1693,9 @@
                     "@hit": "9",
                     "@dc": "18",
                     "#text": "5BC Fill when ATKed on Guard (ALL) / Reduce DMG (10%) on Guard (ALL) / 30% DEF (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "12",
@@ -1634,6 +1742,9 @@
                     "@dc": "20",
                     "#text": "25% Chance Heal 20-20% DMG when ATKed (ALL) / Heal Each Turn (ALL) / Null Ails (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "",
                     "@dc": "",
@@ -1678,6 +1789,9 @@
                     "@hit": "10",
                     "@dc": "20",
                     "#text": "100% Chance Drain 3-8% HP (ALL) / 80% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "15",
@@ -1724,6 +1838,9 @@
                     "@dc": "40",
                     "#text": "20% Chance Reduce DMG (20%) (ALL) / 30% HP 30% DEF (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "1",
                     "@dc": "20",
@@ -1768,6 +1885,9 @@
                     "@hit": "8",
                     "@dc": "32",
                     "#text": "75% HC Fill+ (ALL) / Nulls CRIT (ALL) / Nulls Elemental Weakness (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "",
@@ -1814,6 +1934,9 @@
                     "@dc": "48",
                     "#text": "4BC Fill Each Turn (ALL) / 100% ATK (Light)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "14",
                     "@dc": "14",
@@ -1858,6 +1981,9 @@
                     "@hit": "18",
                     "@dc": "36",
                     "#text": "Reduce 25% BB Cost (ALL) / 100% Chance Reduce 15-20% BB Gauge Used (ALL) / 30% HP 30% DEF (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "20",
@@ -1904,6 +2030,9 @@
                     "@dc": "30",
                     "#text": "75% Spark DMG+ (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison (ALL) / 10% Para 10% Curse (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "20",
                     "@dc": "20",
@@ -1948,6 +2077,9 @@
                     "@hit": "10",
                     "@dc": "30",
                     "#text": "80% ATK (ALL) / 50% ATK on Full HP (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "15",
@@ -1994,6 +2126,9 @@
                     "@dc": "30",
                     "#text": "100% Spark DMG+ (ALL) / 125% Element Weakness DMG+ (water,thunder)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "17",
                     "@dc": "17",
@@ -2038,6 +2173,9 @@
                     "@hit": "15",
                     "@dc": "30",
                     "#text": "50% BC Fill+ (ALL) / 150% BB ATK%+ (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "18",
@@ -2084,6 +2222,9 @@
                     "@dc": "33",
                     "#text": "6-8BC Fill on CRIT (ALL) / 150% CRIT DMG+ (ALL) / 30% HP 30% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -2128,6 +2269,9 @@
                     "@hit": "18",
                     "@dc": "36",
                     "#text": "40% BC Fill+ (ALL) / 30% HP 100% ATK (5 elements required) (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "20",
@@ -2174,6 +2318,9 @@
                     "@dc": "36",
                     "#text": "40% Chance Heal 20-20% DMG when ATKed (ALL) / Heal Each Turn (ALL) / 40% HP (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "",
                     "@dc": "",
@@ -2218,6 +2365,9 @@
                     "@hit": "16",
                     "@dc": "48",
                     "#text": "100% Chance 7-7BC Fill on ATK (ALL) / 15% Chance Ignore DEF (ALL) / 80% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "18",
@@ -2264,6 +2414,9 @@
                     "@dc": "36",
                     "#text": "6-8BC Fill on CRIT (ALL) / 150% CRIT DMG+ (ALL) / 30% HP 30% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "14",
                     "@dc": "14",
@@ -2308,6 +2461,9 @@
                     "@hit": "8",
                     "@dc": "32",
                     "#text": "20% Chance Reduce DMG (20%) (ALL) / 5BC Fill when ATKed on Guard (ALL) / Reduce DMG (15%) on Guard (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "12",
@@ -2354,6 +2510,9 @@
                     "@dc": "36",
                     "#text": "50% BC Fill+ (ALL) / 100% BB ATK%+ (ALL) / 12% BC+ 12% HC+ (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -2398,6 +2557,9 @@
                     "@hit": "13",
                     "@dc": "39",
                     "#text": "100% Chance 1-2BC Fill on Spark (ALL) / 50% Spark DMG+ (ALL) / 30% HP 30% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "15",
@@ -2444,6 +2606,9 @@
                     "@dc": "36",
                     "#text": "12% BC+ 12% HC+ (ALL) / 30% HP 100% ATK (5 elements required) (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "12",
                     "@dc": "12",
@@ -2488,6 +2653,9 @@
                     "@hit": "11",
                     "@dc": "33",
                     "#text": "100% Chance 2-5BC Fill when ATKed (ALL) / 80% ATK (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison (ALL) / 10% Para 10% Curse (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "15",
@@ -2534,6 +2702,9 @@
                     "@dc": "30",
                     "#text": "100% BB ATK%+ (ALL) / 120% ATK (Fire)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "12",
                     "@dc": "12",
@@ -2578,6 +2749,9 @@
                     "@hit": "11",
                     "@dc": "33",
                     "#text": "15% Fire Resist (ALL) / 100% CRIT DMG+ (ALL) / 150% Element Weakness DMG+ (water)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "13",
@@ -2624,6 +2798,9 @@
                     "@dc": "36",
                     "#text": "4BC Fill Each Turn (ALL) / Heal Each Turn (ALL) / 120% ATK (Light)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "14",
                     "@dc": "14",
@@ -2668,6 +2845,9 @@
                     "@hit": "14",
                     "@dc": "42",
                     "#text": "100% Chance 2-4BC Fill when ATKed (ALL) / 30% Chance Heal 20-20% DMG when ATKed (ALL) / 120% ATK (Dark)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "16",
@@ -2714,6 +2894,9 @@
                     "@dc": "30",
                     "#text": "6BC Fill Each Turn (ALL) / 125% Element Weakness DMG+ (fire,earth)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "13",
                     "@dc": "13",
@@ -2758,6 +2941,9 @@
                     "@hit": "8",
                     "@dc": "16",
                     "#text": "50% Chance Drain 5-10% HP (ALL) / Heal Each Turn (ALL) / 40% HP (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "14",
@@ -2804,6 +2990,9 @@
                     "@dc": "33",
                     "#text": "50% BC Fill+ (ALL) / 80% ATK 80% DEF 80% REC (BB >= 50%) (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "13",
                     "@dc": "13",
@@ -2848,6 +3037,9 @@
                     "@hit": "12",
                     "@dc": "36",
                     "#text": "100% Spark DMG+ (ALL) / 100% BB ATK%+ 2Turns on >25 Sparks"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "15",
@@ -2894,6 +3086,9 @@
                     "@dc": "24",
                     "#text": "0-100% ATK+ Based on HP LEFT (ALL) / 0-100% DEF+ Based on HP LOST (ALL) / 30% HP (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -2938,6 +3133,9 @@
                     "@hit": "8",
                     "@dc": "24",
                     "#text": "Normal HitCount +100% (-50% DMG) (ALL) / 15% BC+ 15% HC+ (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "13",
@@ -2984,6 +3182,9 @@
                     "@dc": "42",
                     "#text": "100% Chance 3-4BC Fill when ATKed (ALL) / Heal Each Turn (ALL) / Null Ails (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "16",
                     "@dc": "16",
@@ -3028,6 +3229,9 @@
                     "@hit": "14",
                     "@dc": "42",
                     "#text": "15% Chance Ignore DEF (ALL) / Reduce DMG (10%) on Guard (ALL) / 30% HP 30% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "17",
@@ -3074,6 +3278,9 @@
                     "@dc": "40",
                     "#text": "Reduce 25% BB Cost (ALL) / 10% Chance Reduce DMG (20%) (ALL) / 30% BC Fill+ (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "30",
@@ -3118,6 +3325,9 @@
                     "@hit": "10",
                     "@dc": "30",
                     "#text": "10% Chance Reduce DMG (20%) (ALL) / 30% BC Fill+ (ALL) / 30% HP 30% DEF (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "13",
@@ -3164,6 +3374,9 @@
                     "@dc": "36",
                     "#text": "30% HP 30% ATK (ALL) / 50% ATK 50% DEF 50% REC (BB >= 50%) (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -3208,6 +3421,9 @@
                     "@hit": "9",
                     "@dc": "27",
                     "#text": "75% Spark DMG+ (ALL) / 30% ATK (ALL) / Null Ails (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "13",
@@ -3254,6 +3470,9 @@
                     "@dc": "33",
                     "#text": "6-8BC Fill on CRIT (ALL) / 30% HP (ALL) / Reduce DMG (15%) from (Water,thunder) Enemy (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -3298,6 +3517,9 @@
                     "@hit": "9",
                     "@dc": "27",
                     "#text": "50% BC Fill+ (ALL) / 4BC Fill 2Turns on > 30 BC Received (ALL) / Gradual Heal 2Turns on > 30 HC Received (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "14",
@@ -3344,6 +3566,9 @@
                     "@dc": "24",
                     "#text": "30% HP (ALL) / Reduce DMG (15%) from (Light,dark) Enemy (ALL) / 10BC Fill on > 10k DMG Received (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "12",
                     "@dc": "12",
@@ -3388,6 +3613,9 @@
                     "@hit": "10",
                     "@dc": "40",
                     "#text": "150% CRIT DMG+ (ALL) / 80% ATK (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison (ALL) / 10% Para 10% Curse (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "14",
@@ -3434,6 +3662,9 @@
                     "@dc": "36",
                     "#text": "15% Thunder Resist (ALL) / 100% BB ATK%+ (ALL) / 150% Element Weakness DMG+ (earth)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "13",
                     "@dc": "13",
@@ -3478,6 +3709,9 @@
                     "@hit": "11",
                     "@dc": "44",
                     "#text": "15% Water Resist (ALL) / Nulls CRIT (ALL) / 150% Element Weakness DMG+ (thunder)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "15",
@@ -3524,6 +3758,9 @@
                     "@dc": "40",
                     "#text": "30% HP 100% ATK (5 elements required) (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison (ALL) / 10% Para 10% Curse (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "14",
                     "@dc": "14",
@@ -3568,6 +3805,9 @@
                     "@hit": "10",
                     "@dc": "40",
                     "#text": "70% Spark DMG+ (ALL) / 150% CRIT DMG+ (ALL) / 100% BB ATK%+ (ALL) / 30% HP (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "13",
@@ -3614,6 +3854,9 @@
                     "@dc": "39",
                     "#text": "125% Element Weakness DMG+ (fire,water) / 80% ATK (ALL) / 100% BB ATK%+ on >10k DMG Dealt (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "16",
                     "@dc": "16",
@@ -3658,6 +3901,9 @@
                     "@hit": "10",
                     "@dc": "40",
                     "#text": "Nulls Elemental Weakness (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "12",
@@ -3704,6 +3950,9 @@
                     "@dc": "32",
                     "#text": "100% Chance 7-7BC Fill on ATK (ALL) / Normal HitCount +100% (-50% DMG) (ALL) / 80% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "12",
                     "@dc": "12",
@@ -3748,6 +3997,9 @@
                     "@hit": "10",
                     "@dc": "40",
                     "#text": "30% BC Fill+ (ALL) / 100% Chance 2-4BC Fill when ATKed (ALL) / 15% BC+ (ALL) / 40% HP 40% DEF (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "",
@@ -3794,6 +4046,9 @@
                     "@dc": "36",
                     "#text": "100% Chance 1-2BC Fill on Spark (ALL) / 100% Spark DMG+ (ALL) / 30% HP (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "14",
                     "@dc": "14",
@@ -3838,6 +4093,9 @@
                     "@hit": "10",
                     "@dc": "40",
                     "#text": "100% Spark DMG+ (ALL) / 120% ATK (Water) / 10% Chance Enemy receives 20% Spark DMG+ 2Turns"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "16",
@@ -3884,6 +4142,9 @@
                     "@dc": "40",
                     "#text": "15% Chance Reduce DMG (25%) (ALL) / 40% HP 40% DEF (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "13",
                     "@dc": "13",
@@ -3928,6 +4189,9 @@
                     "@hit": "8",
                     "@dc": "40",
                     "#text": "50% BC Fill+ (ALL) / 15% BC+ 15% HC+ (ALL) / 120% ATK (Thunder)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "11",
@@ -3974,6 +4238,9 @@
                     "@dc": "44",
                     "#text": "4BC Fill Each Turn (ALL) / 100% Chance 3-6BC Fill when ATKed (ALL) / 40% Chance Heal 25-25% DMG when ATKed (ALL) / Heal Each Turn (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -4018,6 +4285,9 @@
                     "@hit": "10",
                     "@dc": "40",
                     "#text": "100% Chance 2-3BC Fill on Spark (ALL) / 100% Chance Heal on Spark (ALL) / 40% HP (ALL) / Null Ails (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "13",
@@ -4064,6 +4334,9 @@
                     "@dc": "40",
                     "#text": "15% Fire Resist (ALL) / 15% Earth Resist (ALL) / 30% HP 30% DEF (ALL) / Null Ails (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "13",
                     "@dc": "13",
@@ -4108,6 +4381,9 @@
                     "@hit": "12",
                     "@dc": "48",
                     "#text": "100% Chance 3-5BC Fill when ATKed (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "15",
@@ -4154,6 +4430,9 @@
                     "@dc": "44",
                     "#text": "100% Chance 1-2BC Fill on Spark (ALL) / 100% Spark DMG+ (ALL) / 120% ATK 120% DEF 2Turns (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -4198,6 +4477,9 @@
                     "@hit": "9",
                     "@dc": "45",
                     "#text": "18% BC+ 18% HC+ (ALL) / 40% HP 40% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "12",
@@ -4244,6 +4526,9 @@
                     "@dc": "40",
                     "#text": "15% Earth Resist (ALL) / 150% Element Weakness DMG+ (fire) / Null Ails (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "13",
                     "@dc": "13",
@@ -4288,6 +4573,9 @@
                     "@hit": "9",
                     "@dc": "36",
                     "#text": "4BC Fill Each Turn (ALL) / Reduce 25% BB Cost (ALL) / 120% ATK (Earth)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "14",
@@ -4334,6 +4622,9 @@
                     "@dc": "39",
                     "#text": "50% Spark DMG+ (ALL) / 30% HP 100% ATK (5 elements required) (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "18",
                     "@dc": "36",
@@ -4378,6 +4669,9 @@
                     "@hit": "12",
                     "@dc": "48",
                     "#text": "50% BC Fill+ (ALL) / 100% Chance 1-2BC Fill on Spark (ALL) / 100% Chance Heal on Spark (ALL) / 80% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "30",
@@ -4424,6 +4718,9 @@
                     "@dc": "32",
                     "#text": "50% BC Fill+ (ALL) / 40% HP (ALL) / 20% Chance Angel Idol 1x (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "13",
                     "@dc": "13",
@@ -4468,6 +4765,9 @@
                     "@hit": "10",
                     "@dc": "40",
                     "#text": "6-8BC Fill on CRIT (ALL) / 150% CRIT DMG+ (ALL) / 80% ATK (ALL) / 50% ATK Next Turn on CRIT (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "13",
@@ -4514,6 +4814,9 @@
                     "@dc": "36",
                     "#text": "5BC Fill Each Turn (ALL) / 40% HP 40% DEF (ALL) / 20% OverDrive Fill+ (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -4558,6 +4861,9 @@
                     "@hit": "15",
                     "@dc": "45",
                     "#text": "18% BC+ 18% HC+ 3% Item+ 10% Karma+ 15% Zel+ (ALL) / 30% HP 30% ATK 30% DEF 30% REC (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "17",
@@ -4604,6 +4910,9 @@
                     "@dc": "36",
                     "#text": "Reduce 20% BB Cost (ALL) / 150% CRIT DMG+ (ALL) / 40% HP 40% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "2",
                     "@dc": "30",
@@ -4648,6 +4957,9 @@
                     "@hit": "11",
                     "@dc": "44",
                     "#text": "100% Chance 3-6BC Fill when ATKed (ALL) / 40% HP 40% DEF (ALL) / Reduce DMG (20%) 1Turn on > 5k DMG Received (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "15",
@@ -4694,6 +5006,9 @@
                     "@dc": "44",
                     "#text": "80% HC Fill+ (ALL) / Heal Each Turn (ALL) / 40% HP 40% DEF (ALL) / 100% Chance Heal on Spark (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "13",
                     "@dc": "13",
@@ -4738,6 +5053,9 @@
                     "@hit": "10",
                     "@dc": "40",
                     "#text": "4BC Fill Each Turn (ALL) / 100% ATK (Water)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "15",
@@ -4784,6 +5102,9 @@
                     "@dc": "44",
                     "#text": "15% Dark Resist (ALL) / 100% Spark DMG+ (ALL) / 150% Element Weakness DMG+ (light)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "13",
                     "@dc": "13",
@@ -4828,6 +5149,9 @@
                     "@hit": "12",
                     "@dc": "48",
                     "#text": "15% Light Resist (ALL) / 150% Element Weakness DMG+ (dark) / 20% OverDrive Fill+"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "15",
@@ -4874,6 +5198,9 @@
                     "@dc": "44",
                     "#text": "75% Spark DMG+ (ALL) / 10% Chance Enemy receives 20% Spark DMG+ 1Turns (ALL) / 40% HP 40% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "13",
                     "@dc": "13",
@@ -4918,6 +5245,9 @@
                     "@hit": "10",
                     "@dc": "40",
                     "#text": "Reduce 25% BB Cost (ALL) / 50% BC Fill+ (ALL) / 40% HP (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "15",
@@ -4964,6 +5294,9 @@
                     "@dc": "40",
                     "#text": "30% HP 30% ATK (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison (ALL) / 10% Para 10% Curse (ALL) / 100% DMG+ to Ailed Enemy (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -5008,6 +5341,9 @@
                     "@hit": "8",
                     "@dc": "32",
                     "#text": "Nulls CRIT (ALL) / Nulls Elemental Weakness (ALL) / 30% HP 30% DEF (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "15",
@@ -5054,6 +5390,9 @@
                     "@dc": "40",
                     "#text": "35% HP 35% ATK 35% DEF 35% REC (ALL) / Null Ails (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -5098,6 +5437,9 @@
                     "@hit": "11",
                     "@dc": "44",
                     "#text": "100% Spark DMG+ (ALL) / 80% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "14",
@@ -5144,6 +5486,9 @@
                     "@dc": "42",
                     "#text": "20% Chance Ignore DEF (ALL) / 30% HP 100% ATK (5 elements required) (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "16",
                     "@dc": "16",
@@ -5188,6 +5533,9 @@
                     "@hit": "14",
                     "@dc": "42",
                     "#text": "10% EXP+ (ALL) / 20% BC+ 20% HC+ 4% Item+ 15% Karma+ 20% Zel+ (ALL) / 30% HP (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "15",
@@ -5234,6 +5582,9 @@
                     "@dc": "39",
                     "#text": "Reduce 25% BB Cost (ALL) / 30% BC Fill+ (ALL) / 100% Chance 3-6BC Fill when ATKed (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -5278,6 +5629,9 @@
                     "@hit": "15",
                     "@dc": "45",
                     "#text": "15% Light Resist (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "25",
@@ -5324,6 +5678,9 @@
                     "@dc": "40",
                     "#text": "100% Chance 3-5BC Fill when ATKed (ALL) / Normal HitCount +100% (-50% DMG) (ALL) / 30% HP 30% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "14",
                     "@dc": "14",
@@ -5368,6 +5725,9 @@
                     "@hit": "7",
                     "@dc": "28",
                     "#text": "4BC Fill Each Turn (ALL) / 100% Chance 2-3BC Fill on Spark (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "13",
@@ -5414,6 +5774,9 @@
                     "@dc": "28",
                     "#text": "10% Chance Enemy receives 20% Spark DMG+ 1Turns (ALL) / 0-120% ATK+ Based on HP LEFT (ALL) / 40% HP (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "12",
                     "@dc": "12",
@@ -5458,6 +5821,9 @@
                     "@hit": "10",
                     "@dc": "40",
                     "#text": "100% DMG+ to Ailed Enemy (ALL) / 20% OverDrive Fill+ (ALL) / 40% HP (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "14",
@@ -5504,6 +5870,9 @@
                     "@dc": "44",
                     "#text": "75% Spark DMG+ (ALL) / 150% BB ATK%+ (ALL) / 40% HP 40% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "16",
                     "@dc": "16",
@@ -5548,6 +5917,9 @@
                     "@hit": "12",
                     "@dc": "48",
                     "#text": "Reduce 25% BB Cost (ALL) / 100% Chance 3-6BC Fill when ATKed (ALL) / 80% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "17",
@@ -5594,6 +5966,9 @@
                     "@dc": "48",
                     "#text": "10% Chance Reduce DMG (20%) (ALL) / 40% HP (ALL) / Null Ails (ALL) / Null Ignore DEF (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "14",
                     "@dc": "14",
@@ -5638,6 +6013,9 @@
                     "@hit": "10",
                     "@dc": "40",
                     "#text": "4BC Fill Each Turn (ALL) / 50% BC Fill+ (ALL) / 100% Chance 2-3BC Fill on Spark (ALL) / 40% HP 40% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "40",
@@ -5684,6 +6062,9 @@
                     "@dc": "45",
                     "#text": "100% BB ATK%+ (ALL) / 80-120% ATK+ Based on HP LOST (ALL) / 80% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -5728,6 +6109,9 @@
                     "@hit": "13",
                     "@dc": "52",
                     "#text": "6BC Fill Each Turn (ALL) / 120% BB ATK%+ (ALL) / 30% HP 100% ATK (ALL) / 30% HP 50% ATK (Fire)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "15",
@@ -5774,6 +6158,9 @@
                     "@dc": "40",
                     "#text": "6BC Fill Each Turn (ALL) / Heal Each Turn (ALL) / 30% HP 100% ATK (ALL) / 30% HP 50% ATK (Water)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "13",
                     "@dc": "13",
@@ -5818,6 +6205,9 @@
                     "@hit": "10",
                     "@dc": "40",
                     "#text": "30% HP 100% ATK (ALL) / 30% HP 50% ATK (Earth) / Null CRIT (ALL) / 8BC Fill on > 5k DMG Received (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "13",
@@ -5864,6 +6254,9 @@
                     "@dc": "44",
                     "#text": "100% Chance 2-3BC Fill on Spark (ALL) / 120% Spark DMG+ (ALL) / 30% HP 100% ATK (ALL) / 30% HP 50% ATK (Thunder)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "2",
                     "@dc": "30",
@@ -5908,6 +6301,9 @@
                     "@hit": "9",
                     "@dc": "45",
                     "#text": "Reduce 25% BB Cost (ALL) / 50% BC Fill+ (ALL) / 30% HP 100% ATK (ALL) / 30% HP 50% ATK (Light)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "14",
@@ -5954,6 +6350,9 @@
                     "@dc": "48",
                     "#text": "Null Elemental Weakness (ALL) / 30% HP 100% ATK (ALL) / 30% HP 50% ATK (Dark) / 8BC Fill on > 50k DMG Dealt (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "13",
                     "@dc": "13",
@@ -5998,6 +6397,9 @@
                     "@hit": "8",
                     "@dc": "40",
                     "#text": "0-30% DEF+ Based on HP LOST (ALL) / 30% HP 30% DEF (ALL) / Null Ails (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "11",
@@ -6044,6 +6446,9 @@
                     "@dc": "50",
                     "#text": "0-50% DEF+ Based on HP LOST (ALL) / Null Elemental Weakness (ALL) / 50% HP 50% DEF (ALL) / Null Ails (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "14",
                     "@dc": "14",
@@ -6088,6 +6493,9 @@
                     "@hit": "6",
                     "@dc": "42",
                     "#text": "40% HP 40% DEF (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison (ALL) / 10% Para 10% Curse (ALL) / Reduce DMG (20%) 1Turn on > 5k DMG Received (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "14",
@@ -6134,6 +6542,9 @@
                     "@dc": "40",
                     "#text": "Normal HitCount +100% (-50% DMG) (ALL) / 40% HP 40% ATK (ALL) / Reduce DMG (15%) from (Earth,thunder) Enemy (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -6178,6 +6589,9 @@
                     "@hit": "5",
                     "@dc": "40",
                     "#text": "100% Chance 2-3BC Fill on Spark (ALL) / 75% Spark DMG+ (ALL) / 40% HP 40% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "1",
@@ -6224,6 +6638,9 @@
                     "@dc": "44",
                     "#text": "100% Chance 3-6BC Fill when ATKed (ALL) / 25% Chance Heal 20-20% DMG when ATKed (ALL) / 40% HP 40% REC (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "",
                     "@dc": "",
@@ -6268,6 +6685,9 @@
                     "@hit": "13",
                     "@dc": "39",
                     "#text": "100% Chance 2-3BC Fill on Spark (ALL) / 150% BB ATK%+ (ALL) / 40% HP 40% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "19",
@@ -6314,6 +6734,9 @@
                     "@dc": "48",
                     "#text": "20% Chance Ignore DEF (ALL) / 100% CRIT DMG+ (ALL) / 80% ATK (ALL) / 4BC Fill 2Turns on CRIT (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -6358,6 +6781,9 @@
                     "@hit": "12",
                     "@dc": "42",
                     "#text": "100% Chance 2-3BC Fill on Spark (ALL) / 100% Spark DMG+ (ALL) / 40% HP (ALL) / 50% Spark DMG+ 2Turns on >15 Sparks (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "40",
@@ -6404,6 +6830,9 @@
                     "@dc": "40",
                     "#text": "Reduce 25% BB Cost (ALL) / 100% BB ATK%+ (ALL) / 80% ATK (ALL) / 100% BB ATK%+ 2Turns on >10k DMG Dealt (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "21",
                     "@dc": "21",
@@ -6448,6 +6877,9 @@
                     "@hit": "15",
                     "@dc": "45",
                     "#text": "15% Chance Reduce DMG to 1 (ALL) / 100% Chance 3-6BC Fill when ATKed (ALL) / 40% HP 40% ATK (ALL) / 150% ATK+ on > 5k DMG Received (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "21",
@@ -6494,6 +6926,9 @@
                     "@dc": "42",
                     "#text": "100% Spark DMG+ (ALL) / 30% HP 30% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "14",
                     "@dc": "14",
@@ -6538,6 +6973,9 @@
                     "@hit": "12",
                     "@dc": "48",
                     "#text": "Reduce 25% BB Cost (ALL) / 120% Spark DMG+ (ALL) / 50% HP 50% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "18",
@@ -6584,6 +7022,9 @@
                     "@dc": "40",
                     "#text": "100% Chance Drain 3-8% HP (ALL) / 100% Chance 3-6BC Fill when ATKed (ALL) / 40% HP 40% DEF (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -6628,6 +7069,9 @@
                     "@hit": "9",
                     "@dc": "36",
                     "#text": "4-6BC Fill on CRIT (ALL) / 100% CRIT DMG+ (ALL) / 30% HP 30% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "13",
@@ -6674,6 +7118,9 @@
                     "@dc": "48",
                     "#text": "6-8BC Fill on CRIT (ALL) / 150% CRIT DMG+ (ALL) / 20% OverDrive Fill+ (ALL) / 50% HP 50% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "17",
                     "@dc": "17",
@@ -6718,6 +7165,9 @@
                     "@hit": "9",
                     "@dc": "45",
                     "#text": "40% HP 40% DEF (ALL) / 100% Spark DMG+ 2Turns on >30 Sparks (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "17",
@@ -6764,6 +7214,9 @@
                     "@dc": "42",
                     "#text": "6BC Fill Each Turn (ALL) / Heal Each Turn (ALL) / 20% OverDrive Fill+ (ALL) / 50% HP (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "",
                     "@dc": "",
@@ -6808,6 +7261,9 @@
                     "@hit": "13",
                     "@dc": "52",
                     "#text": "6BC Fill Each Turn (ALL) / 100% Spark DMG+ (ALL) / 180% BB ATK%+ (ALL) / 50% HP 50% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "17",
@@ -6854,6 +7310,9 @@
                     "@dc": "40",
                     "#text": "100% Chance Drain 3-8% HP (ALL) / 20% Chance Ignore DEF (ALL) / 100% Spark DMG+ (ALL) / 150% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "1",
                     "@dc": "20",
@@ -6898,6 +7357,9 @@
                     "@hit": "10",
                     "@dc": "40",
                     "#text": "100% DMG+ to Ailed Enemy (ALL) / 40% HP 40% REC (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison (ALL) / 10% Para 10% Curse (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "16",
@@ -6944,6 +7406,9 @@
                     "@dc": "39",
                     "#text": "30% Chance Heal 15-20% DMG when ATKed (ALL) / 20% Chance Angel Idol 1x (ALL) / 20% BC+ (ALL) / 40% HP 40% DEF (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "",
                     "@dc": "",
@@ -6988,6 +7453,9 @@
                     "@hit": "9",
                     "@dc": "36",
                     "#text": "40% BC Fill+ (ALL) / 100% Chance 3-6BC Fill when ATKed (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "14",
@@ -7034,6 +7502,9 @@
                     "@dc": "42",
                     "#text": "7BC Fill Each Turn (ALL) / 50% BC Fill+ (ALL) / 100% Chance 4-7BC Fill when ATKed (ALL) / 40% HP 40% ATK 40% DEF 40% REC (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "35",
                     "@dc": "35",
@@ -7078,6 +7549,9 @@
                     "@hit": "10",
                     "@dc": "40",
                     "#text": "80-120% ATK+ Based on HP LOST (ALL) / 100% ATK (ALL) / 5BC Fill on >10k DMG Dealt (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "15",
@@ -7124,6 +7598,9 @@
                     "@dc": "35",
                     "#text": "20% Chance Reduce DMG (15%) (ALL) / 30% HP 30% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "10",
                     "@dc": "10",
@@ -7168,6 +7645,9 @@
                     "@hit": "11",
                     "@dc": "44",
                     "#text": "20% Chance Reduce DMG (20%) (ALL) / 50% HP 50% ATK (ALL) / Def Ignore Immunity"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "14",
@@ -7214,6 +7694,9 @@
                     "@dc": "40",
                     "#text": "Normal HitCount +100% (-50% DMG) (ALL) / 40% HP 40% DEF (ALL) / 25% Chance AOE on Normal ATK (-50% DMG) (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "13",
                     "@dc": "13",
@@ -7258,6 +7741,9 @@
                     "@hit": "12",
                     "@dc": "48",
                     "#text": "100% Spark DMG+ (ALL) / 150% CRIT DMG+ (ALL) / 200% BB ATK%+ (ALL) / 50% HP (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "14",
@@ -7304,6 +7790,9 @@
                     "@dc": "48",
                     "#text": "6BC Fill Each Turn (ALL) / 20% BC+ 20% HC+ (ALL) / 30% HP 50% ATK (5 elements required) (ALL) / 30% HP 100% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -7348,6 +7837,9 @@
                     "@hit": "7",
                     "@dc": "35",
                     "#text": "35% HP 35% ATK 35% DEF 35% REC (ALL) / 20% ATK 20% DEF 20% REC (BB >= 50%) (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "10",
@@ -7394,6 +7886,9 @@
                     "@dc": "44",
                     "#text": "6BC Fill Each Turn (ALL) / 40% HP 40% ATK 40% DEF 40% REC (ALL) / 30% ATK 30% DEF 30% REC (BB >= 50%) (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "20",
                     "@dc": "20",
@@ -7438,6 +7933,9 @@
                     "@hit": "6",
                     "@dc": "36",
                     "#text": "50% DMG+ to Ailed Enemy (ALL) / 75% Element Weakness DMG+ (ALL) / 30% HP 30% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "12",
@@ -7484,6 +7982,9 @@
                     "@dc": "50",
                     "#text": "100% DMG+ to Ailed Enemy (ALL) / 125% Element Weakness DMG+ (ALL) / 50% HP 50% ATK (ALL) / 6BC Fill on >10k DMG Dealt (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "16",
                     "@dc": "16",
@@ -7528,6 +8029,9 @@
                     "@hit": "9",
                     "@dc": "36",
                     "#text": "80% Spark DMG+ (ALL) / 30% HP 30% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "14",
@@ -7574,6 +8078,9 @@
                     "@dc": "52",
                     "#text": "100% Spark DMG+ (ALL) / 10% Chance Enemy receives 20% Spark DMG+ 1Turns (ALL) / 50% HP 50% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "19",
                     "@dc": "19",
@@ -7618,6 +8125,9 @@
                     "@hit": "1",
                     "@dc": "40",
                     "#text": "80% Spark DMG+ (ALL) / 30% HP 30% ATK (ALL) / 3% Chance SPARKcrit (50% DMG+) (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "1",
@@ -7664,6 +8174,9 @@
                     "@dc": "42",
                     "#text": "100% Spark DMG+ (ALL) / 50% HP 50% ATK (ALL) / Reduce DMG (15%) from (Earth,thunder) Enemy (ALL) / 5% Chance SPARKcrit (50% DMG+) (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "1",
                     "@dc": "20",
@@ -7708,6 +8221,9 @@
                     "@hit": "6",
                     "@dc": "36",
                     "#text": "100% Chance 2-4BC Fill when ATKed (ALL) / 25% Chance Heal 20-20% DMG when ATKed (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "9",
@@ -7754,6 +8270,9 @@
                     "@dc": "48",
                     "#text": "100% Chance 4-7BC Fill when ATKed (ALL) / 25% Chance Heal 25-25% DMG when ATKed (ALL) / 40% HP 40% ATK 40% DEF 40% REC (ALL) / Reduce DMG (15%) from (Light,dark) Enemy (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "11",
                     "@dc": "11",
@@ -7798,6 +8317,9 @@
                     "@hit": "12",
                     "@dc": "48",
                     "#text": "6BC Fill Each Turn (ALL) / 30% Chance Heal 25-25% DMG when ATKed (ALL) / Heal Each Turn (ALL) / 50% HP 50% ATK 50% REC (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "15",
@@ -7844,6 +8366,9 @@
                     "@dc": "52",
                     "#text": "50% BC Fill+ (ALL) / 100% Chance 2-3BC Fill on Spark (ALL) / 100% Chance Heal on Spark (ALL) / 40% HP 80% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "33",
                     "@dc": "33",
@@ -7888,6 +8413,9 @@
                     "@hit": "7",
                     "@dc": "42",
                     "#text": "25% Chance Heal 15-20% DMG when ATKed (ALL) / 30% HP 30% DEF (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "12",
@@ -7934,6 +8462,9 @@
                     "@dc": "48",
                     "#text": "30% Chance Heal 25-25% DMG when ATKed (ALL) / Null CRIT (ALL) / 50% HP 50% DEF (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -7978,6 +8509,9 @@
                     "@hit": "7",
                     "@dc": "35",
                     "#text": "150% BB ATK%+ (ALL) / 30% HP 30% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "11",
@@ -8024,6 +8558,9 @@
                     "@dc": "44",
                     "#text": "100% Chance 2-3BC Fill on Spark (ALL) / 200% BB ATK%+ (ALL) / 50% HP 50% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "14",
                     "@dc": "14",
@@ -8068,6 +8605,9 @@
                     "@hit": "8",
                     "@dc": "32",
                     "#text": "30% BC Fill+ (ALL) / 0-20% ATK+ Based on HP LEFT (ALL) / 0-20% DEF+ Based on HP LEFT (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "13",
@@ -8114,6 +8654,9 @@
                     "@dc": "50",
                     "#text": "50% BC Fill+ (ALL) / 0-30% ATK+ Based on HP LEFT (ALL) / 0-30% DEF+ Based on HP LEFT (ALL) / 40% HP 40% ATK 40% DEF 40% REC (ALL) / Null Ails (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -8158,6 +8701,9 @@
                     "@hit": "7",
                     "@dc": "35",
                     "#text": "200% BB ATK%+ (ALL) / 30% HP 30% ATK (ALL) / 3% Chance SPARKcrit (50% DMG+) (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "11",
@@ -8204,6 +8750,9 @@
                     "@dc": "50",
                     "#text": "250% BB ATK%+ (ALL) / 50% HP 50% ATK (ALL) / 5% Chance SPARKcrit (50% DMG+) (ALL) / 7BC Fill on >10k DMG Dealt (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "14",
                     "@dc": "14",
@@ -8248,6 +8797,9 @@
                     "@hit": "7",
                     "@dc": "35",
                     "#text": "100% Chance 1-2BC Fill on Spark (ALL) / 100% Spark DMG+ (ALL) / 30% HP (ALL) / 30% ATK 30% DEF 30% REC (HP > 50%) (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "5",
@@ -8294,6 +8846,9 @@
                     "@dc": "45",
                     "#text": "100% Chance 2-3BC Fill on Spark (ALL) / 120% Spark DMG+ (ALL) / 50% HP (ALL) / 50% ATK 50% DEF 50% REC (HP > 50%) (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "6",
                     "@dc": "12",
@@ -8338,6 +8893,9 @@
                     "@hit": "6",
                     "@dc": "36",
                     "#text": "Null CRIT (ALL) / 30% HP 30% DEF (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "8",
@@ -8384,6 +8942,9 @@
                     "@dc": "48",
                     "#text": "Null CRIT (ALL) / 50% HP 50% DEF (ALL) / Reduce DMG (20%) 1Turn on > 5k DMG Received (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "10",
                     "@dc": "10",
@@ -8428,6 +8989,9 @@
                     "@hit": "7",
                     "@dc": "35",
                     "#text": "30% HP 30% DEF (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison 10% Para 10% Curse (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "11",
@@ -8474,6 +9038,9 @@
                     "@dc": "45",
                     "#text": "100% Chance 4-7BC Fill when ATKed (ALL) / 50% HP 50% DEF (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison 10% Para 10% Curse (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "13",
                     "@dc": "13",
@@ -8518,6 +9085,9 @@
                     "@hit": "9",
                     "@dc": "36",
                     "#text": "Heal Each Turn (ALL) / 0-30% ATK+ Based on HP LEFT (ALL) / 0-30% DEF+ Based on HP LEFT (ALL) / 40% HP (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "12",
@@ -8564,6 +9134,9 @@
                     "@dc": "44",
                     "#text": "Heal Each Turn (ALL) / 0-50% ATK+ Based on HP LEFT (ALL) / 0-50% DEF+ Based on HP LEFT (ALL) / 60% HP (ALL) / Reduce DMG (15%) from (Fire,water) Enemy (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "14",
                     "@dc": "14",
@@ -8608,6 +9181,9 @@
                     "@hit": "12",
                     "@dc": "36",
                     "#text": "30% BC Fill+ (ALL) / 150% BB ATK%+ (ALL) / 30% HP 30% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "26",
@@ -8654,6 +9230,9 @@
                     "@dc": "42",
                     "#text": "50% BC Fill+ (ALL) / 200% BB ATK%+ (ALL) / 50% HP 50% ATK (ALL) / 120% Spark DMG+ 2Turns on > 15 Sparks (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "30",
                     "@dc": "30",
@@ -8698,6 +9277,9 @@
                     "@hit": "12",
                     "@dc": "48",
                     "#text": "25% HC+ (ALL) / 40% HP 100% ATK (ALL) / 160% ATK+ 3Turns when > 30 HC Received (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "19",
@@ -8744,6 +9326,9 @@
                     "@dc": "45",
                     "#text": "10% EXP+ (ALL) / 25% BC+ 25% HC+ 5% Item+ 20% Karma+ 25% Zel+ (ALL) / 50% HP (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "17",
                     "@dc": "17",
@@ -8788,6 +9373,9 @@
                     "@hit": "6",
                     "@dc": "36",
                     "#text": "150% BB ATK%+ (ALL) / 40% HP 40% ATK (ALL) / Null Ignore DEF (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "9",
@@ -8834,6 +9422,9 @@
                     "@dc": "40",
                     "#text": "100% Chance 4-7BC Fill when ATKed (ALL) / Null CRIT (ALL) / 50% HP 50% DEF (ALL) / Reduce DMG (10%) from (Fire,water,earth,thunder) Enemy (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "",
                     "@dc": "",
@@ -8878,6 +9469,9 @@
                     "@hit": "10",
                     "@dc": "40",
                     "#text": "100% Chance 8-8BC Fill on ATK (ALL) / 30% HP 30% ATK (ALL) / 25% Chance AOE on Normal ATK (-50% DMG) (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "14",
@@ -8924,6 +9518,9 @@
                     "@dc": "42",
                     "#text": "100% Chance 10BC Fill on ATK (ALL) / 50% HP 50% ATK (ALL) / 50% ATK 50% DEF (BB >= 50%) (ALL) / 25% Chance AOE on Normal ATK (-50% DMG) (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "17",
                     "@dc": "17",
@@ -8968,6 +9565,9 @@
                     "@hit": "8",
                     "@dc": "32",
                     "#text": "150% CRIT DMG+ (ALL) / 75% Element Weakness DMG+ (ALL) / 30% HP 30% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "12",
@@ -9014,6 +9614,9 @@
                     "@dc": "48",
                     "#text": "150% CRIT DMG+ (ALL) / 20% Chance Reflect 25-25% DMG (ALL) / 125% Element Weakness DMG+ (ALL) / 50% HP 50% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "16",
                     "@dc": "16",
@@ -9058,6 +9661,9 @@
                     "@hit": "13",
                     "@dc": "39",
                     "#text": "100% Chance 3-6BC Fill when ATKed (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "30",
@@ -9104,6 +9710,9 @@
                     "@dc": "42",
                     "#text": "100% Chance 4-7BC Fill when ATKed (ALL) / 40% HP 40% ATK 40% DEF 40% REC (ALL) / Reduce DMG (20%) 1Turn on > 5k DMG Received (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "32",
                     "@dc": "32",
@@ -9148,6 +9757,9 @@
                     "@hit": "1",
                     "@dc": "40",
                     "#text": "15% Chance Ignore DEF (ALL) / 120% ATK 120% DEF 2Turns (ALL) / Reduce DMG (20%) from Enemy (ALL) 2Turns"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "1",
@@ -9194,6 +9806,9 @@
                     "@dc": "42",
                     "#text": "20% Chance Ignore DEF (ALL) / 150% ATK 150% DEF 2Turns (ALL) / Reduce DMG (25%) from Enemy (ALL) 2Turns / Add 30% Chance -20% Enemy ATK to ATK 2Turns on ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "2",
                     "@dc": "30",
@@ -9238,6 +9853,9 @@
                     "@hit": "7",
                     "@dc": "35",
                     "#text": "80% Spark DMG+ (ALL) / 40% HP 40% ATK (ALL) / 80% ATK (Light)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "9",
@@ -9284,6 +9902,9 @@
                     "@dc": "50",
                     "#text": "100% Spark DMG+ (ALL) / Null CRIT (ALL) / 50% HP 50% ATK (ALL) / 100% ATK (Light)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "12",
                     "@dc": "12",
@@ -9328,6 +9949,9 @@
                     "@hit": "15",
                     "@dc": "45",
                     "#text": "Reduce 20% BB Cost (ALL) / 30% BC Fill+ (ALL) / 30% HP 100% ATK (5 elements required) (ALL) / 30% HP 50% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "17",
@@ -9374,6 +9998,9 @@
                     "@dc": "48",
                     "#text": "Reduce 25% BB Cost (ALL) / 40% HP 40% ATK 40% DEF 40% REC (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison (ALL) / 10% Para 10% Curse (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "30",
                     "@dc": "30",
@@ -9418,6 +10045,9 @@
                     "@hit": "7",
                     "@dc": "35",
                     "#text": "100% Element Weakness DMG+ (fire,water) / 40% HP 40% ATK (ALL) / Reduce DMG (15%) from (Fire,earth) Enemy (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "11",
@@ -9464,6 +10094,9 @@
                     "@dc": "44",
                     "#text": "150% Element Weakness DMG+ (fire,water) / 50% HP 50% ATK (ALL) / Reduce DMG (15%) from (Fire,earth) Enemy (ALL) / Reduce DMG (20%) on > 5k DMG Received (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -9508,6 +10141,9 @@
                     "@hit": "6",
                     "@dc": "36",
                     "#text": "100% CRIT DMG+ (ALL) / 20% BC+ 20% HC+ (ALL) / 30% HP 60% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "12",
@@ -9554,6 +10190,9 @@
                     "@dc": "45",
                     "#text": "150% CRIT DMG+ (ALL) / 25% BC+ 25% HC+ (ALL) / 40% HP 80% ATK (ALL) / 7BC Fill on > 30k DMG Dealt (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "14",
                     "@dc": "14",
@@ -9598,6 +10237,9 @@
                     "@hit": "9",
                     "@dc": "36",
                     "#text": "80% Spark DMG+ (ALL) / 10% Chance Enemy receives 15% Spark DMG+ 1Turns (ALL) / 40% HP 40% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "16",
@@ -9644,6 +10286,9 @@
                     "@dc": "52",
                     "#text": "6BC Fill Each Turn (ALL) / 100% Spark DMG+ (ALL) / 10% Chance Enemy receives 20% Spark DMG+ 1Turns (ALL) / 50% HP 50% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "18",
                     "@dc": "18",
@@ -9688,6 +10333,9 @@
                     "@hit": "5",
                     "@dc": "35",
                     "#text": "200% BB ATK%+ (ALL) / 40% HP 40% ATK (ALL) / 100% Spark DMG+ 2Turns on > 30 BC Received (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "11",
@@ -9734,6 +10382,9 @@
                     "@dc": "48",
                     "#text": "250% BB ATK%+ (ALL) / 50% HP 50% ATK (ALL) / 120% Spark DMG+ 2Turns on > 30 BC Received (ALL) / Reduce DMG (20%) 2Turns on > 20 HC Received (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "14",
                     "@dc": "14",
@@ -9778,6 +10429,9 @@
                     "@hit": "7",
                     "@dc": "35",
                     "#text": "40% HP 40% ATK (ALL) / 80% ATK (Earth) / Reduce DMG (15%) from (Water,thunder) Enemy (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "12",
@@ -9824,6 +10478,9 @@
                     "@dc": "50",
                     "#text": "50% HP 50% ATK (ALL) / 100% ATK (Earth) / Reduce DMG (15%) from (Water,thunder) Enemy (ALL) / 7BC Fill on > 30k DMG Dealt (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "16",
                     "@dc": "16",
@@ -9868,6 +10525,9 @@
                     "@hit": "8",
                     "@dc": "32",
                     "#text": "100% Chance 2-4BC Fill when ATKed (ALL) / Heal Each Turn (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "13",
@@ -9914,6 +10574,9 @@
                     "@dc": "44",
                     "#text": "50% BC Fill+ (ALL) / 100% Chance 4-7BC Fill when ATKed (ALL) / Heal Each Turn (ALL) / 40% HP 40% ATK 40% DEF 40% REC (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "16",
                     "@dc": "16",
@@ -9958,6 +10621,9 @@
                     "@hit": "13",
                     "@dc": "52",
                     "#text": "6BC Fill Each Turn (ALL) / 200% BB ATK%+ (ALL) / 30% HP 100% ATK (Fire) / 30% HP 50% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "17",
@@ -10004,6 +10670,9 @@
                     "@dc": "44",
                     "#text": "15% Chance Reduce DMG (20%) (ALL) / 75% HC Fill+ (ALL) / 30% HC+ (ALL) / 60% HP (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "",
                     "@dc": "",
@@ -10048,6 +10717,9 @@
                     "@hit": "11",
                     "@dc": "33",
                     "#text": "Heal Each Turn (ALL) / 30% HP 30% DEF (ALL) / Null Ails (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "26",
@@ -10094,6 +10766,9 @@
                     "@dc": "42",
                     "#text": "Heal Each Turn (ALL) / 50% HP 50% DEF (ALL) / Null Ails (ALL) / Reduce DMG (20%) 1Turn on > 20 Sparks (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "32",
                     "@dc": "32",
@@ -10138,6 +10813,9 @@
                     "@hit": "7",
                     "@dc": "35",
                     "#text": "100% Spark DMG+ (ALL) / 30% HP 30% ATK (ALL) / 150% BB ATK%+ 1Turn on > 5k DMG Received (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "11",
@@ -10184,6 +10862,9 @@
                     "@dc": "45",
                     "#text": "100% Chance Heal on Spark (ALL) / 120% Spark DMG+ (ALL) / 50% HP 50% ATK (ALL) / 200% BB ATK%+ 1Turn on > 5k DMG Received (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "14",
                     "@dc": "14",
@@ -10228,6 +10909,9 @@
                     "@hit": "8",
                     "@dc": "32",
                     "#text": "100% Chance 2-4BC Fill when ATKed (ALL) / 25% Chance Heal 20% DMG when ATKed (ALL) / 30% HP 30% DEF (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "13",
@@ -10274,6 +10958,9 @@
                     "@dc": "44",
                     "#text": "100% Chance 4-7BC Fill when ATKed (ALL) / 25% Chance Heal 25% DMG when ATKed (ALL) / 20% OverDrive Fill+ (ALL) / 50% HP 50% DEF (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "16",
                     "@dc": "16",
@@ -10318,6 +11005,9 @@
                     "@hit": "9",
                     "@dc": "36",
                     "#text": "25% Chance AOE on Normal ATK (-50% DMG) (ALL) / 30% HP (ALL) / 120% ATK 120% DEF 3Turns (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "14",
@@ -10364,6 +11054,9 @@
                     "@dc": "48",
                     "#text": "30% Chance AOE on Normal ATK (-50% DMG) (ALL) / 50% HP (ALL) / 150% ATK 150% DEF 3Turns (ALL) / 50% ABP+ 25% CBP+"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "17",
                     "@dc": "17",
@@ -10408,6 +11101,9 @@
                     "@hit": "12",
                     "@dc": "36",
                     "#text": "100% Chance 2-4BC Fill when ATKed (ALL) / 30% HP 80% DEF (ALL) / 10% BB SBB Activation+ (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "30",
@@ -10454,6 +11150,9 @@
                     "@dc": "42",
                     "#text": "100% Chance 4-7BC Fill when ATKed (ALL) / 50% HP 100% DEF (ALL) / 20% BB SBB Activation+ (ALL) / 50% ABP+ 25% CBP+"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "34",
                     "@dc": "34",
@@ -10498,6 +11197,9 @@
                     "@hit": "7",
                     "@dc": "35",
                     "#text": "30% HP 80% DEF (ALL) / Reduce DMG (10%) from (Fire,water,earth,thunder) Enemy (ALL) / 10% Chance Reduce 30% Enemy BB Gauge (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "12",
@@ -10544,6 +11246,9 @@
                     "@dc": "44",
                     "#text": "50% HP 100% DEF (ALL) / Reduce DMG (15%) from (Fire,water,earth,thunder) Enemy (ALL) / 20% Chance Reduce 50% Enemy BB Gauge (ALL) / 50% ABP+ 25% CBP+"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "14",
                     "@dc": "14",
@@ -10588,6 +11293,9 @@
                     "@hit": "12",
                     "@dc": "48",
                     "#text": "100% Spark DMG+ (ALL) / 20% BC+ 20% HC+ (ALL) / 50% HP 50% ATK (ALL) / 5% Chance SPARKcrit (50% DMG+) (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "17",
@@ -10634,6 +11342,9 @@
                     "@dc": "52",
                     "#text": "100% Chance 4-7BC Fill when ATKed (ALL) / Null Ignore DEF (ALL) / 50% HP 50% DEF (ALL) / Null Ails (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "16",
                     "@dc": "16",
@@ -10678,6 +11389,9 @@
                     "@hit": "10",
                     "@dc": "40",
                     "#text": "6BC Fill Each Turn (ALL) / 30% HP 80% ATK (ALL) / 10% BB SBB Activation+ (Arena,ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "13",
@@ -10724,6 +11438,9 @@
                     "@dc": "48",
                     "#text": "8BC Fill Each Turn (ALL) / 50% HP 100% ATK (ALL) / 20% BB SBB Activation+ (Arena,ALL) / 50% ABP+ 25% CBP+"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "16",
                     "@dc": "16",
@@ -10768,6 +11485,9 @@
                     "@hit": "13",
                     "@dc": "39",
                     "#text": "15% Chance Angel Idol 1x (ALL) / 30% HP 80% DEF (ALL) / Reduce DMG (10%) from (Light,dark) Enemy (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "15",
@@ -10814,6 +11534,9 @@
                     "@dc": "45",
                     "#text": "20% Chance Angel Idol 1x (ALL) / 50% HP 100% DEF (ALL) / Reduce DMG (15%) from (Light,dark) Enemy (ALL) / 50% ABP+ 25% CBP+"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "18",
                     "@dc": "18",
@@ -10858,6 +11581,9 @@
                     "@hit": "1",
                     "@dc": "40",
                     "#text": "30% HP (ALL) / 150% ATK 3Turns (ALL) / 30% Chance -50% Enemy BC Fill+ (ALL) 2Turns"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "1",
@@ -10904,6 +11630,9 @@
                     "@dc": "42",
                     "#text": "50% HP (ALL) / 200% ATK 3Turns (ALL) / 50% Chance -50% Enemy BC Fill+ (ALL) 2Turns / 50% ABP+ 25% CBP+"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "1",
                     "@dc": "20",
@@ -10948,6 +11677,9 @@
                     "@hit": "7",
                     "@dc": "42",
                     "#text": "100% Spark DMG+ (ALL) / 30% HP 30% ATK (ALL) / 3% Chance SPARKcrit (50% DMG+) (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "10",
@@ -10994,6 +11726,9 @@
                     "@dc": "45",
                     "#text": "120% Spark DMG+ (ALL) / 50% HP 50% ATK (ALL) / 5% Chance SPARKcrit (50% DMG+) (ALL) / 8BC Fill on > 30k DMG Dealt (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "12",
                     "@dc": "12",
@@ -11038,6 +11773,9 @@
                     "@hit": "11",
                     "@dc": "44",
                     "#text": "80% DMG+ to Ailed Enemy (ALL) / 40% HP (ALL) / 30% ATK 30% DEF 30% REC (HP > 50%) (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "13",
@@ -11084,6 +11822,9 @@
                     "@dc": "52",
                     "#text": "50% BC Fill+ (ALL) / 100% DMG+ to Ailed Enemy (ALL) / 60% HP (ALL) / 50% ATK 50% DEF 50% REC (HP > 50%) (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -11128,6 +11869,9 @@
                     "@hit": "9",
                     "@dc": "36",
                     "#text": "100% CRIT DMG+ (ALL) / 150% BB ATK%+ (ALL) / 30% HP 60% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "13",
@@ -11174,6 +11918,9 @@
                     "@dc": "52",
                     "#text": "100% Chance 2-3BC Fill on Spark (ALL) / 150% CRIT DMG+ (ALL) / 200% BB ATK%+ (ALL) / 40% HP 80% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -11218,6 +11965,9 @@
                     "@hit": "13",
                     "@dc": "52",
                     "#text": "20% Chance Ignore DEF (ALL) / 150% CRIT DMG+ (ALL) / 40% HP 100% ATK (ALL) / 100% Chance 8BC Fill 3Turns on CRIT (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "17",
@@ -11264,6 +12014,9 @@
                     "@dc": "52",
                     "#text": "100% Spark DMG+ (ALL) / 50% HP 50% ATK (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison (ALL) / 10% Para 10% Curse (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "18",
                     "@dc": "18",
@@ -11308,6 +12061,9 @@
                     "@hit": "15",
                     "@dc": "45",
                     "#text": "20% Chance Ignore DEF (ALL) / Reduce DMG (10%) on Guard (ALL) / 50% HP 50% ATK (ALL) / 30% Chance -20% Enemy ATK 1Turn on > 10k DMG Dealt (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "18",
@@ -11354,6 +12110,9 @@
                     "@dc": "52",
                     "#text": "Reduce 25% BB Cost (ALL) / 15% Chance Reduce DMG (20%) (ALL) / 50% BC Fill+ (ALL) / 50% HP 50% DEF (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "18",
                     "@dc": "36",
@@ -11398,6 +12157,9 @@
                     "@hit": "9",
                     "@dc": "36",
                     "#text": "25% Chance AOE on Normal ATK (-50% DMG) (ALL) / 4% Item+ (ALL) / 50% HP 50% ATK (ALL) / 5% Chance SPARKcrit (50% DMG+) (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "14",
@@ -11444,6 +12206,9 @@
                     "@dc": "52",
                     "#text": "30% Chance AOE on Normal ATK (-50% DMG) (ALL) / 5% Item+ (ALL) / 60% HP 60% ATK (ALL) / 10% Chance SPARKcrit (50% DMG+) (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "18",
                     "@dc": "18",
@@ -11488,6 +12253,9 @@
                     "@hit": "7",
                     "@dc": "42",
                     "#text": "Reduce 15% BB Cost (ALL) / 10% Chance Reduce DMG (20%) (ALL) / 45% HP 45% ATK 45% DEF 45% REC (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "14",
@@ -11534,6 +12302,9 @@
                     "@dc": "50",
                     "#text": "Reduce 20% BB Cost (ALL) / 15% Chance Reduce DMG (20%) (ALL) / 50% HP 50% ATK 50% DEF 50% REC (ALL) / 20% OD Fill+ 2Turns on > 20 Sparks (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "17",
                     "@dc": "17",
@@ -11578,6 +12349,9 @@
                     "@hit": "8",
                     "@dc": "40",
                     "#text": "100% Element Weakness DMG+ (earth,thunder) / 50% HP 50% ATK (ALL) / Reduce DMG (10%) from (Water,thunder) Enemy (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "12",
@@ -11624,6 +12398,9 @@
                     "@dc": "50",
                     "#text": "250% BB ATK%+ (ALL) / 150% Element Weakness DMG+ (earth,thunder) / 60% HP 60% ATK (ALL) / Reduce DMG (15%) from (Water,thunder) Enemy (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "16",
                     "@dc": "16",
@@ -11668,6 +12445,9 @@
                     "@hit": "12",
                     "@dc": "48",
                     "#text": "100% Chance Drain 5-10% HP (ALL) / 120% Spark DMG+ (ALL) / 60% HP 60% ATK (ALL) / 250% BB ATK%+ 2Turns on > 15 Sparks (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "16",
@@ -11714,6 +12494,9 @@
                     "@dc": "44",
                     "#text": "100% Chance 4-7BC Fill when ATKed (ALL) / 25% Chance Heal 25-25% DMG when ATKed (ALL) / 100% DMG+ to Ailed Enemy (ALL) / 60% HP 60% DEF (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "18",
                     "@dc": "18",
@@ -11758,6 +12541,9 @@
                     "@hit": "7",
                     "@dc": "35",
                     "#text": "100% Chance 2-4BC Fill when ATKed (ALL) / Reduce DMG (10%) on Guard (ALL) / 50% HP 50% DEF (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "13",
@@ -11804,6 +12590,9 @@
                     "@dc": "45",
                     "#text": "100% Chance 4-7BC Fill when ATKed (ALL) / Reduce DMG (10%) on Guard (ALL) / Heal Each Turn (ALL) / 60% HP 60% DEF (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -11848,6 +12637,9 @@
                     "@hit": "10",
                     "@dc": "40",
                     "#text": "150% BB ATK%+ (ALL) / 45% HP 45% ATK 45% DEF 45% REC (ALL) / Reduce DMG (5%) from (All) Enemy (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "12",
@@ -11894,6 +12686,9 @@
                     "@dc": "52",
                     "#text": "50% BC Fill+ (ALL) / 200% BB ATK%+ (ALL) / 50% HP 50% ATK 50% DEF 50% REC (ALL) / Reduce DMG (10%) from (All) Enemy (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -11938,6 +12733,9 @@
                     "@hit": "5",
                     "@dc": "40",
                     "#text": "100% Chance Drain 3-8% HP (ALL) / 100% Chance 2-4BC Fill when ATKed (ALL) / 50% HP 50% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "10/3",
@@ -11984,6 +12782,9 @@
                     "@dc": "49",
                     "#text": "100% Chance Drain 5-10% HP (ALL) / 100% Chance 4-7BC Fill when ATKed (ALL) / 20% Chance Angel Idol 1x (ALL) / 60% HP 60% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "12/4",
                     "@dc": "",
@@ -12028,6 +12829,9 @@
                     "@hit": "10",
                     "@dc": "50",
                     "#text": "150% CRIT DMG+ (ALL) / 150% Element Weakness DMG+ (light,dark) / 40% HP 80% ATK (ALL) / 200% BB ATK%+ on HP > 50% (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "15",
@@ -12074,6 +12878,9 @@
                     "@dc": "48",
                     "#text": "50% BC Fill+ (ALL) / 70% Spark BC+ (ALL) / 40% HP 40% ATK 40% DEF 40% REC (ALL) / 120% Spark DMG+ 2Turns on > 20BC Received (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "32",
                     "@dc": "32",
@@ -12118,6 +12925,9 @@
                     "@hit": "8",
                     "@dc": "40",
                     "#text": "100% Chance 1-2BC Fill on Spark (ALL) / 110% Spark DMG+ (ALL) / 50% HP 50% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "12",
@@ -12164,6 +12974,9 @@
                     "@dc": "40",
                     "#text": "100% Chance 2-3BC Fill on Spark (ALL) / 130% Spark DMG+ (ALL) / 20% OverDrive Fill+ (ALL) / 60% HP 60% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "16",
                     "@dc": "16",
@@ -12208,6 +13021,9 @@
                     "@hit": "11",
                     "@dc": "33",
                     "#text": "200% BB ATK%+ (ALL) / 0-80% REC+ Based on HP LEFT (ALL) / 50% HP 50% ATK 50% DEF (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "30",
@@ -12254,6 +13070,9 @@
                     "@dc": "42",
                     "#text": "250% BB ATK%+ (ALL) / 0-100% REC+ Based on HP LEFT (ALL) / Null Ignore DEF (ALL) / 60% HP 60% ATK 60% DEF (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "34",
                     "@dc": "34",
@@ -12298,6 +13117,9 @@
                     "@hit": "4",
                     "@dc": "36",
                     "#text": "100% DMG+ to Ailed Enemy (ALL) / 50% HP 50% ATK (ALL) / 7% Injury 7% Weak 7% Sick 5% Poison (ALL) / 5% Para 5% Curse (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "10",
@@ -12344,6 +13166,9 @@
                     "@dc": "40",
                     "#text": "130% DMG+ to Ailed Enemy (ALL) / 60% HP 60% ATK (ALL) / 15% Injury 15% Weak 15% Sick 10% Poison (ALL) / 10% Para 10% Curse (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "12",
                     "@dc": "12",
@@ -12388,6 +13213,9 @@
                     "@hit": "7",
                     "@dc": "35",
                     "#text": "150% CRIT DMG+ (ALL) / 0-60% ATK+ Based on HP LEFT (ALL) / 40% HP 80% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "10",
@@ -12434,6 +13262,9 @@
                     "@dc": "45",
                     "#text": "175% CRIT DMG+ (ALL) / 0-80% ATK+ Based on HP LEFT (ALL) / 50% HP 100% ATK (ALL) / 10% Chance SPARKcrit (50% DMG+) (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "12",
                     "@dc": "12",
@@ -12478,6 +13309,9 @@
                     "@hit": "8",
                     "@dc": "40",
                     "#text": "100% Element Weakness DMG+ (fire,water) / 50% HP 50% DEF 50% REC (ALL) / Reduce DMG (15%) from (Fire,earth) Enemy (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "12",
@@ -12524,6 +13358,9 @@
                     "@dc": "50",
                     "#text": "25% Spark DMG Resist (ALL) / 150% Element Weakness DMG+ (fire,water) / 60% HP 60% DEF 60% REC (ALL) / Reduce DMG (15%) from (Fire,earth) Enemy (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "14",
                     "@dc": "14",
@@ -12568,6 +13405,9 @@
                     "@hit": "8",
                     "@dc": "40",
                     "#text": "100% Chance 2-4BC Fill when ATKed (ALL) / Heal Each Turn (ALL) / 45% HP 45% ATK 45% DEF 45% REC (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "15",
@@ -12614,6 +13454,9 @@
                     "@dc": "50",
                     "#text": "100% Chance 4-7BC Fill when ATKed (ALL) / Heal Each Turn (ALL) / 50% HP 50% ATK 50% DEF 50% REC (ALL) / Reduce DMG (20%) 1Turn on > 5K DMG Received (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "17",
                     "@dc": "17",
@@ -12657,6 +13500,9 @@
                 "ls": {
                     "@hit": "",
                     "@dc": "",
+                    "#text": ""
+                },
+                "ls_raid": {
                     "#text": ""
                 },
                 "bb": {
@@ -12704,6 +13550,9 @@
                     "@dc": "40",
                     "#text": "70% Spark BC+ (ALL) / 75% Spark DMG+ (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "22",
                     "@dc": "22",
@@ -12748,6 +13597,9 @@
                     "@hit": "13",
                     "@dc": "52",
                     "#text": "Null Ails (ALL) / 20% OverDrive Fill+ / 140% ATK+ 2Turns on >20k DMG Dealt / 100% Spark DMG+ on >15 Sparks"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "20",
@@ -12794,6 +13646,9 @@
                     "@dc": "32",
                     "#text": "40% HP (ALL) / 50% ATK (ALL) / 100% ATK (HP < 50%) (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "12",
                     "@dc": "12",
@@ -12838,6 +13693,9 @@
                     "@hit": "14",
                     "@dc": "42",
                     "#text": "Reduce 25% BB Cost (ALL) / 10% Chance Reduce DMG (25%) (ALL) / 120% ATK 120% DEF 2Turns (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "18",
@@ -12884,6 +13742,9 @@
                     "@dc": "33",
                     "#text": "15% Chance Reduce DMG to 1 (ALL) / 100% Chance 3-5BC Fill when ATKed (ALL) / 40% HP (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "17",
                     "@dc": "17",
@@ -12928,6 +13789,9 @@
                     "@hit": "12",
                     "@dc": "48",
                     "#text": "100% Chance Reduce 25-30% BB Gauge Used (ALL) / 80% HC Fill+ (ALL) / 30% Chance Heal 25-25% DMG when ATKed (ALL) / 40% ATK 40% DEF (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "19",
@@ -12974,6 +13838,9 @@
                     "@dc": "64",
                     "#text": "5BC Fill Each Turn (ALL) / 100% Chance 7-7BC Fill on ATK (ALL) / 100% Chance 1-2BC Fill on Spark (ALL) / 40% HP 40% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "18",
                     "@dc": "18",
@@ -13018,6 +13885,9 @@
                     "@hit": "15",
                     "@dc": "45",
                     "#text": "6-8BC Fill on CRIT (ALL) / 150% CRIT DMG+ (ALL) / 50% HP 50% ATK 50% DEF 50% REC (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "19",
@@ -13064,6 +13934,9 @@
                     "@dc": "45",
                     "#text": "15% Light Resist (ALL) / 15% Dark Resist (ALL) / 50% HP 50% ATK 50% DEF 50% REC (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "18",
                     "@dc": "18",
@@ -13108,6 +13981,9 @@
                     "@hit": "12",
                     "@dc": "48",
                     "#text": "8BC Fill Each Turn (ALL) / 100% Chance Reduce DMG (10%) (ALL) / 50% HP 50% REC (ALL) / Null Ails (ALL) / Null STATS Debuff (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "25",
@@ -13154,6 +14030,9 @@
                     "@dc": "40",
                     "#text": "80% Spark BC+ (ALL) / 100% Spark DMG+ (ALL) / 50% HP 50% ATK 50% DEF 50% REC (ALL) / Reduce DMG (20%) 1Turn on > 5k DMG Received (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "25",
                     "@dc": "25",
@@ -13197,6 +14076,9 @@
                 "ls": {
                     "@hit": "",
                     "@dc": "",
+                    "#text": ""
+                },
+                "ls_raid": {
                     "#text": ""
                 },
                 "bb": {
@@ -13244,6 +14126,9 @@
                     "@dc": "24",
                     "#text": "100% BB ATK%+ (ALL) / 100% Element Weakness DMG+ (ALL) / 120% ATK (Fire,water) / 120% ATK (Earth,thunder)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -13288,6 +14173,9 @@
                     "@hit": "9",
                     "@dc": "27",
                     "#text": "100% ATK (Light,dark) / Null Ails (ALL) / 25% DMG+ to Ailed Enemy (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "12",
@@ -13334,6 +14222,9 @@
                     "@dc": "32",
                     "#text": "150% CRIT DMG+ (ALL) / 30% HP 30% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "6",
                     "@dc": "48",
@@ -13378,6 +14269,9 @@
                     "@hit": "10",
                     "@dc": "20",
                     "#text": "Reduce DMG (10%) (ALL) / Null Ails (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "",
@@ -13424,6 +14318,9 @@
                     "@dc": "28",
                     "#text": "Reduce 20% BB Cost (ALL) / 100% Chance Reduce 15-20% BB Gauge Used (ALL) / 20% CRIT (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "25",
                     "@dc": "25",
@@ -13468,6 +14365,9 @@
                     "@hit": "8",
                     "@dc": "24",
                     "#text": "80% Spark DMG+ (ALL) / 150% CRIT DMG+ (ALL) / 20% CRIT (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "11",
@@ -13514,6 +14414,9 @@
                     "@dc": "48",
                     "#text": "Reduce DMG (10%) (ALL) / Reduce DMG (10%) on Guard (ALL) / Heal on Guard (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "22",
                     "@dc": "22",
@@ -13558,6 +14461,9 @@
                     "@hit": "12",
                     "@dc": "36",
                     "#text": "100% Chance 3-5BC Fill when ATKed (ALL) / 40% HP (ALL) / Null Ails (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "14",
@@ -13604,6 +14510,9 @@
                     "@dc": "39",
                     "#text": "100% Chance 1-2BC Fill on Spark (ALL) / 150% BB ATK%+ (ALL) / 80% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "20",
                     "@dc": "20",
@@ -13648,6 +14557,9 @@
                     "@hit": "11",
                     "@dc": "22",
                     "#text": "100% Element Weakness DMG+ (ALL) / 80% ATK 50% DEF 20% CRIT (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "16",
@@ -13694,6 +14606,9 @@
                     "@dc": "24",
                     "#text": "Reduce DMG (10%) (ALL) / 40% HP 50% REC 20% CRIT (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "16",
                     "@dc": "16",
@@ -13738,6 +14653,9 @@
                     "@hit": "12",
                     "@dc": "24",
                     "#text": "25% BC+ 25% HC+ (ALL) / 40% DEF 40% REC (ALL) / Null Ails (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "",
@@ -13784,6 +14702,9 @@
                     "@dc": "26",
                     "#text": "20% Chance Ignore DEF (ALL) / 50-400% ATK+ Based on HP LOST (ALL) / 50-50% DEF+ Based on HP LOST (ALL) / 80% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -13828,6 +14749,9 @@
                     "@hit": "13",
                     "@dc": "39",
                     "#text": "100% Chance 3-6BC Fill when ATKed (ALL) / 175% CRIT DMG+ (ALL) / 40% HP 40% ATK (ALL) / 50% ATK (BB >= 100%) (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "16",
@@ -13874,6 +14798,9 @@
                     "@dc": "48",
                     "#text": "50% BC Fill+ (ALL) / 150% BB ATK%+ (ALL) / 25% BC+ 25% HC+ (ALL) / 30% HP 30% ATK 30% DEF 30% REC (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "18",
                     "@dc": "18",
@@ -13918,6 +14845,9 @@
                     "@hit": "15",
                     "@dc": "45",
                     "#text": "100% Chance 2-3BC Fill on Spark (ALL) / 100% Spark DMG+ (ALL) / Normal HitCount +100% (-50% DMG) (ALL) / 80% ATK 20% CRIT+ (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "28",
@@ -13964,6 +14894,9 @@
                     "@dc": "40",
                     "#text": "100% Chance 2-3BC Fill when ATKed (ALL) / Reduce DMG (10%) on Guard (ALL) / 40% HP 40% DEF (ALL) / Null Ails (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "10",
                     "@dc": "20",
@@ -14008,6 +14941,9 @@
                     "@hit": "10",
                     "@dc": "40",
                     "#text": "20% OverDrive Fill+ (ALL) / Null Elemental Weakness (ALL) / 100% Element Weakness DMG+ (ALL) / 30% HP 30% ATK 30% DEF 30% REC (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "",
@@ -14054,6 +14990,9 @@
                     "@dc": "48",
                     "#text": "100% Spark DMG+ (ALL) / 150% CRIT DMG+ (ALL) / 80% ATK 20% DEF (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "16",
                     "@dc": "16",
@@ -14098,6 +15037,9 @@
                     "@hit": "10",
                     "@dc": "50",
                     "#text": "60% BC Fill+ (ALL) / 12% EXP+ (ALL) / 24% BC+ 24% HC+ 7% Item+ 15% Karma+ 20% Zel+ (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "30",
@@ -14144,6 +15086,9 @@
                     "@dc": "51",
                     "#text": "50% BC Fill+ (ALL) / 120% ATK 100% DEF 100% REC (BB >= 50%) (ALL) / 50% HP (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "16",
                     "@dc": "16",
@@ -14188,6 +15133,9 @@
                     "@hit": "1",
                     "@dc": "45",
                     "#text": "100-200% ATK+ Based on HP LOST (ALL) / 125% Element Weakness DMG+ (thunder,dark) / Null CRIT"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "1",
@@ -14234,6 +15182,9 @@
                     "@dc": "36",
                     "#text": "Reduce 25% BB Cost (ALL) / 50% BC Fill+ (ALL) / 150% BB ATK%+ (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "12",
                     "@dc": "24",
@@ -14278,6 +15229,9 @@
                     "@hit": "8",
                     "@dc": "40",
                     "#text": "4BC Fill Each Turn (ALL) / Reduce 25% BB Cost (ALL) / 25% BC+ 25% HC+ (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "14",
@@ -14324,6 +15278,9 @@
                     "@dc": "40",
                     "#text": "100% Chance 4-6BC Fill when ATKed (ALL) / 20% Chance Angel Idol 1x (ALL) / 50% HP 50% REC (ALL) / Null Ignore DEF (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "13",
                     "@dc": "13",
@@ -14368,6 +15325,9 @@
                     "@hit": "9",
                     "@dc": "45",
                     "#text": "100% Chance 4-7BC Fill when ATKed (ALL) / 20% Chance Angel Idol 1x (ALL) / 50% HP 50% REC (ALL) / Null Ignore DEF (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "15",
@@ -14414,6 +15374,9 @@
                     "@dc": "48",
                     "#text": "100% Spark DMG+ (ALL) / 150% BB ATK%+ (ALL) / 0-120% ATK+ Based on HP LEFT (ALL) / 50% HP (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "50",
                     "@dc": "50",
@@ -14458,6 +15421,9 @@
                     "@hit": "14",
                     "@dc": "56",
                     "#text": "100% Spark DMG+ (ALL) / 200% BB ATK%+ (ALL) / 80-80% ATK+ Based on HP LEFT (ALL) / 50% HP (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "50",
@@ -14504,6 +15470,9 @@
                     "@dc": "40",
                     "#text": "125% CRIT DMG+ (ALL) / 40% HP 40% ATK 20% CRIT+ (ALL) / Null Ails (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "23",
                     "@dc": "23",
@@ -14548,6 +15517,9 @@
                     "@hit": "16",
                     "@dc": "48",
                     "#text": "15% Dark Resist (ALL) / 150% CRIT DMG+ (ALL) / 50% HP 50% ATK 30% CRIT+ (ALL) / Null Ails (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "34",
@@ -14594,6 +15566,9 @@
                     "@dc": "36",
                     "#text": "Reduce DMG (5%) (ALL) / 150% CRIT DMG+ (ALL) / 160% BB ATK%+ (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "8",
                     "@dc": "8",
@@ -14638,6 +15613,9 @@
                     "@hit": "8",
                     "@dc": "48",
                     "#text": "Reduce DMG (10%) (ALL) / 175% CRIT DMG+ (ALL) / 200% BB ATK%+ (ALL) / 40% HP 40% ATK 40% DEF 40% REC (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "10",
@@ -14684,6 +15662,9 @@
                     "@dc": "48",
                     "#text": "150% BB ATK%+ (ALL) / 40% HP 40% ATK (ALL) / 100% BB ATK%+ on Full HP (ALL) / 150% ATK+ on >20k DMG Dealt (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "10",
                     "@dc": "40",
@@ -14728,6 +15709,9 @@
                     "@hit": "15",
                     "@dc": "45",
                     "#text": "100% Spark DMG+ (ALL) / 30% HP 30% ATK (ALL) / 100% Spark DMG+ on > 16 Sparks (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "16",
@@ -14774,6 +15758,9 @@
                     "@dc": "51",
                     "#text": "120% Spark DMG+ (ALL) / 50% HP 50% ATK (ALL) / 120% Spark DMG+ on > 15 Sparks (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "20",
                     "@dc": "20",
@@ -14818,6 +15805,9 @@
                     "@hit": "8",
                     "@dc": "40",
                     "#text": "100% Chance 1-2BC Fill on Spark (ALL) / 75% Spark DMG+ (ALL) / 30% HP 75% ATK (5 elements required) (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "9",
@@ -14864,6 +15854,9 @@
                     "@dc": "48",
                     "#text": "150% CRIT DMG+ (ALL) / 100% ATK 20% CRIT+ (ALL) / 50% ATK+ 2Turns on CRIT (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -14908,6 +15901,9 @@
                     "@hit": "11",
                     "@dc": "44",
                     "#text": "100% Chance 3-6BC Fill when ATKed (ALL) / 40% HP 40% DEF (ALL) / 140% DEF+ 2Turns on > 20k DMG Dealt (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "14",
@@ -14954,6 +15950,9 @@
                     "@dc": "36",
                     "#text": "15% Chance Reduce DMG to 1 (ALL) / 50% HP (ALL) / 120% ATK 120% DEF 2Turns (ALL) / Null CRIT (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "3",
                     "@dc": "12",
@@ -14998,6 +15997,9 @@
                     "@hit": "4",
                     "@dc": "44",
                     "#text": "20% Chance Reduce DMG to 1 (ALL) / 50% HP (ALL) / 140% ATK 140% DEF 2Turns (ALL) / Null CRIT (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "4",
@@ -15044,6 +16046,9 @@
                     "@dc": "49",
                     "#text": "Reduce 25% BB Cost (ALL) / Normal HitCount +100% (-50% DMG) (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "13",
                     "@dc": "13",
@@ -15088,6 +16093,9 @@
                     "@hit": "10",
                     "@dc": "40",
                     "#text": "50% Chance Heal 25-25% DMG when ATKed (ALL) / 100% Chance Reflect 50-50% DMG (ALL) / 40% HP 40% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "10",
@@ -15134,6 +16142,9 @@
                     "@dc": "40",
                     "#text": "150% BB ATK%+ (ALL) / 80% ATK (ALL) / 5BC Fill on > 10k DMG Dealt (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "14",
                     "@dc": "14",
@@ -15178,6 +16189,9 @@
                     "@hit": "14",
                     "@dc": "42",
                     "#text": "200% BB ATK%+ (ALL) / 80-120% ATK+ Based on HP LOST (ALL) / 40% HP 80% ATK (ALL) / 6BC Fill on > 10k DMG Dealt (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "17",
@@ -15224,6 +16238,9 @@
                     "@dc": "39",
                     "#text": "100% Chance 1-2BC Fill on Spark (ALL) / Null Elemental Weakness (ALL) / 30% HP 30% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "18",
                     "@dc": "18",
@@ -15268,6 +16285,9 @@
                     "@hit": "18",
                     "@dc": "54",
                     "#text": "100% Chance 2-3BC Fill on Spark (ALL) / Null Elemental Weakness (ALL) / 50% HP 50% ATK (ALL) / 100% Spark DMG+ on > 15 Sparks (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "22",
@@ -15314,6 +16334,9 @@
                     "@dc": "32",
                     "#text": "6BC Fill Each Turn (ALL) / 200% BB ATK%+ (ALL) / 30% HP 50% ATK (Dark) / 30% HP 100% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "1",
                     "@dc": "15",
@@ -15358,6 +16381,9 @@
                     "@hit": "18",
                     "@dc": "36",
                     "#text": "10% Earth Resist (ALL) / 200% BB ATK%+ (ALL) / Null Ignore DEF (ALL) / 50% HP 150% ATK (Thunder)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "21",
@@ -15404,6 +16430,9 @@
                     "@dc": "57",
                     "#text": "15% Earth Resist (ALL) / 250% BB ATK%+ (ALL) / Null Ignore DEF (ALL) / 60% HP 200% ATK (Thunder)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "26",
                     "@dc": "26",
@@ -15448,6 +16477,9 @@
                     "@hit": "13",
                     "@dc": "39",
                     "#text": "10% Dark Resist (ALL) / 25% Chance AOE on Normal ATK (-50% DMG) (ALL) / 50% HP 150% ATK (Light)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "13",
@@ -15494,6 +16526,9 @@
                     "@dc": "48",
                     "#text": "15% Dark Resist (ALL) / 100% Chance 10BC Fill on ATK (ALL) / 35% Chance AOE on Normal ATK (-50% DMG) (ALL) / 60% HP 200% ATK (Light)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "20",
                     "@dc": "60",
@@ -15538,6 +16573,9 @@
                     "@hit": "2",
                     "@dc": "48",
                     "#text": "10% Light Resist (ALL) / 80% Spark DMG+ (ALL) / 50% HP 150% ATK (Dark)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "2",
@@ -15584,6 +16622,9 @@
                     "@dc": "51",
                     "#text": "15% Light Resist (ALL) / 100% Spark DMG+ (ALL) / 25% OverDrive Fill+ (ALL) / 60% HP 200% ATK (Dark)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "3",
                     "@dc": "54",
@@ -15628,6 +16669,9 @@
                     "@hit": "12",
                     "@dc": "36",
                     "#text": "25% Chance Heal 15-20% DMG when ATKed (ALL) / 0-30% ATK+ Based on HP LEFT (ALL) / 0-30% DEF+ Based on HP LEFT (ALL) / 40% HP (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "17",
@@ -15674,6 +16718,9 @@
                     "@dc": "51",
                     "#text": "Reduce 25% BB Cost (ALL) / 30% Chance Heal 25-25% DMG when ATKed (ALL) / 0-50% ATK+ Based on HP LEFT (ALL) / 0-50% DEF+ Based on HP LEFT (ALL) / 60% HP (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "21",
                     "@dc": "21",
@@ -15718,6 +16765,9 @@
                     "@hit": "14",
                     "@dc": "56",
                     "#text": "250% BB ATK%+ (ALL) / 0-150% ATK+ Based on HP LEFT (ALL) / 125% Element Weakness DMG+ (ALL) / 50% HP 50% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "20",
@@ -15764,6 +16814,9 @@
                     "@dc": "36",
                     "#text": "10% Chance Reduce DMG to 1 (ALL) / 20% Chance Angel Idol 1x (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL) / 30% ATK 30% DEF (BB >= 50%) (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "14",
                     "@dc": "14",
@@ -15808,6 +16861,9 @@
                     "@hit": "13",
                     "@dc": "52",
                     "#text": "15% Chance Reduce DMG to 1 (ALL) / 20% Chance Angel Idol 1x (ALL) / 40% HP 40% ATK 40% DEF 40% REC (ALL) / 50% ATK 50% DEF (BB >= 50%) (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "18",
@@ -15854,6 +16910,9 @@
                     "@dc": "48",
                     "#text": "Null Ignore DEF (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL) / Reduce DMG (20%) 1Turn on > 5k DMG Received (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "12",
                     "@dc": "12",
@@ -15898,6 +16957,9 @@
                     "@hit": "10",
                     "@dc": "50",
                     "#text": "Null Ignore DEF (ALL) / 45% HP 45% ATK 45% DEF 45% REC (ALL) / Reduce DMG (20%) 1Turn on > 5k DMG Received (ALL) / Add 30% Chance -20% Enemy ATK to ATK (ALL) 2Turns on > 1 DMG Dealt (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "13",
@@ -15944,6 +17006,9 @@
                     "@dc": "45",
                     "#text": "Reduce 20% BB Cost (ALL) / 20% OverDrive Fill+ (ALL) / 40% HP 80% ATK 40% REC (4 elements required) (ALL) / Null Ails (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "",
                     "@dc": "",
@@ -15988,6 +17053,9 @@
                     "@hit": "16",
                     "@dc": "48",
                     "#text": "Reduce 25% BB Cost (ALL) / 25% OverDrive Fill+ (ALL) / 50% HP 100% ATK 50% REC (4 elements required) (ALL) / Null Ails (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "",
@@ -16034,6 +17102,9 @@
                     "@dc": "48",
                     "#text": "120% Spark DMG+ (ALL) / Normal HitCount +100% (-50% DMG) (ALL) / 100% Chance Reflect 50% DMG (ALL) / 50% HP 100% ATK (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -16078,6 +17149,9 @@
                     "@hit": "14",
                     "@dc": "56",
                     "#text": "130% Spark DMG+ (ALL) / Normal HitCount +100% (-50% DMG) (ALL) / 100% Chance Reflect 50-75% DMG (ALL) / 50% HP 100% ATK (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "16",
@@ -16124,6 +17198,9 @@
                     "@dc": "45",
                     "#text": "150% CRIT DMG+ (ALL) / 200% BB ATK%+ (ALL) / 20% BC+ 20% HC+ 5% Item+ 15% Karma+ 75% Zel+ (ALL) / 50% HP 50% ATK 30% CRIT+ (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "19",
                     "@dc": "19",
@@ -16168,6 +17245,9 @@
                     "@hit": "16",
                     "@dc": "48",
                     "#text": "150% CRIT DMG+ (ALL) / 250% BB ATK%+ (ALL) / 25% BC+ 25% HC+ 5% Item+ 15% Karma+ 100% Zel+ (ALL) / 50% HP 50% ATK 30% CRIT+ (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "20",
@@ -16214,6 +17294,9 @@
                     "@dc": "42",
                     "#text": "Reduce DMG (5%) (ALL) / Reduce DMG (10%) on Guard (ALL) / Heal Each Turn (ALL) / 50% HP 50% DEF (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "5",
                     "@dc": "10",
@@ -16258,6 +17341,9 @@
                     "@hit": "4",
                     "@dc": "48",
                     "#text": "Reduce DMG (5%) (ALL) / Reduce DMG (10%) on Guard (ALL) / Heal Each Turn (ALL) / 50% HP 50% DEF (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "6",
@@ -16304,6 +17390,9 @@
                     "@dc": "36",
                     "#text": "50% DMG+ to Ailed Enemy (ALL) / 35% HP 35% ATK 35% DEF 35% REC (ALL) / Null Ails (ALL) / 250% BB ATK%+ when HP > 50% (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "18",
                     "@dc": "18",
@@ -16348,6 +17437,9 @@
                     "@hit": "16",
                     "@dc": "48",
                     "#text": "100% DMG+ to Ailed Enemy (ALL) / 40% HP 40% ATK 40% DEF 40% REC (ALL) / Null Ails (ALL) / 300% BB ATK%+ when HP > 50% (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "21",
@@ -16394,6 +17486,9 @@
                     "@dc": "51",
                     "#text": "100% Chance 2-3BC Fill on Spark (ALL) / Normal HitCount +100% (-50% DMG) (ALL) / 40% HP 100% ATK (ALL) / 120% Spark DMG+ 2Turns on > 15 Sparks (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "25",
                     "@dc": "50",
@@ -16439,6 +17534,9 @@
                     "@dc": "44",
                     "#text": "Normal HitCount +100% (-50% DMG) (ALL) / Null Elemental Weakness (ALL) / 50% HP 150% ATK (Earth)"
                 },
+                "ls_raid": {
+                    "#text": "20% HP 20% ATK 20% DEF 20% REC (Earth)"
+                },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
@@ -16474,33 +17572,36 @@
             {
                 "id": "8252",
                 "name": "Blightblade Wannahon",
-                "role": "atk_down_add,hit,aoe,add_ele,crit_dmg,atk",
-                "rolesp": "ails,crit,atk_ele,def_ele,atk_ailed,ewd",
+                "role": "atk_down_add,hit,aoe,crit_dmg,atk,idef",
+                "rolesp": "ails_add,crit,atk_ele,def_ele,atk_ailed,ewd",
                 "element": "Earth",
                 "rarity": "8",
                 "cost": "50",
                 "ls": {
                     "@hit": "13",
                     "@dc": "52",
-                    "#text": "175% CRIT DMG+ (ALL) / Normal HitCount +100% (-25% DMG) (ALL) / Null Elemental Weakness (ALL) / 60% HP 200% ATK (Earth)"
+                    "#text": "175% CRIT DMG+ (ALL) / Normal HitCount +100% (-25% DMG) (ALL) / 150% Element Weakness DMG+ (earth) / 60% HP 200% ATK (Earth)"
+                },
+                "ls_raid": {
+                    "#text": "25% HP 25% ATK 25% DEF 25% REC (Earth) / Reduce DMG (15%) from (earth,thunder) Enemy (ALL)"
                 },
                 "bb": {
                     "@hit": "17",
                     "@dc": "17",
                     "@cost": "30",
-                    "#text": "420% Earth (AOE) / Add 20% Chance -30% Enemy ATK to ATK (ALL) 3Turns / Normal HitCount +200% (ALL) 3Turns / 50% Chance AOE on Normal ATK (ALL) 3Turns"
+                    "#text": "420% Earth (AOE) / Add 20% Chance -30% Enemy ATK to ATK (ALL) 3Turns / Normal HitCount +200% (ALL) 3Turns / 100% Chance AOE on Normal ATK (ALL) 3Turns"
                 },
                 "sbb": {
                     "@hit": "20",
                     "@dc": "20",
                     "@cost": "32",
-                    "#text": "620% Earth (AOE) / Add Water,earth,light to ATK (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / 170% ATK+ (ALL) 3Turns / 100% Chance AOE on Normal ATK (ALL) 3Turns"
+                    "#text": "620% Earth (AOE) / Add 20% Chance -30% Enemy ATK to ATK (ALL) 3Turns / 50% CRIT DMG+ (ALL) 3Turns / 170% ATK+ (ALL) 3Turns / 100% Chance AOE on Normal ATK (ALL) 3Turns / Ignore DEF (ALL) 2Turns"
                 },
                 "ubb": {
                     "@hit": "26",
                     "@dc": "26",
                     "@cost": "32",
-                    "#text": "1800% Earth (AOE) / 350% ATK+ (ALL) 3Turns / 1500% DMG Each Turn 3Turns / 400% Element Weakness DMG+ (water,earth,light) (ALL) 3Turns / 100% Chance AOE on Normal ATK (+25% DMG) (ALL) 3Turns"
+                    "#text": "1800% Earth (AOE) / 350% ATK+ (ALL) 3Turns / 1500% DMG Each Turn 3Turns / 500% Element Weakness DMG+ (earth) (ALL) 3Turns / 100% Chance AOE on Normal ATK (+25% DMG) (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -16528,6 +17629,9 @@
                     "@hit": "14",
                     "@dc": "42",
                     "#text": "100% Chance 1-2BC Fill on Spark (ALL) / 100% Spark DMG+ (ALL) / 30% HP 30% ATK (ALL) / 30% ATK 30% DEF 30% REC (BB >= 30%) (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "20",
@@ -16574,6 +17678,9 @@
                     "@dc": "51",
                     "#text": "100% Chance 2-3BC Fill on Spark (ALL) / 130% Spark DMG+ (ALL) / 50% HP 50% ATK (ALL) / 50% ATK 50% DEF 50% REC (BB >= 50%) (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "25",
                     "@dc": "25",
@@ -16618,6 +17725,9 @@
                     "@hit": "11",
                     "@dc": "55",
                     "#text": "60% BC Fill+ (ALL) / 12% EXP+ (ALL) / 30% BC+ 30% HC+ 7% Item+ 25% Karma+ 25% Zel+ (ALL) / 60% HP 60% DEF 60% REC (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "35",
@@ -16664,6 +17774,9 @@
                     "@dc": "48",
                     "#text": "15% Chance Reduce DMG (15%) (ALL) / 40% BC Fill+ (ALL) / Heal Each Turn (ALL) / 40% HP 40% DEF (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "0",
                     "@dc": "0",
@@ -16708,6 +17821,9 @@
                     "@hit": "18",
                     "@dc": "54",
                     "#text": "20% Chance Reduce DMG (20%) (ALL) / 50% BC Fill+ (ALL) / Heal Each Turn (ALL) / 50% HP 50% DEF (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "0",
@@ -16754,6 +17870,9 @@
                     "@dc": "48",
                     "#text": "25% Chance Heal 15-20% DMG when ATKed (ALL) / 0-30% ATK+ Based on HP LEFT (ALL) / 0-30% DEF+ Based on HP LEFT (ALL) / 50% HP 50% DEF (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "18",
                     "@dc": "18",
@@ -16798,6 +17917,9 @@
                     "@hit": "18",
                     "@dc": "54",
                     "#text": "30% Chance Heal 25-25% DMG when ATKed (ALL) / 0-50% ATK+ Based on HP LEFT (ALL) / 0-50% DEF+ Based on HP LEFT (ALL) / 50% HP 50% DEF (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "20",
@@ -16844,6 +17966,9 @@
                     "@dc": "40",
                     "#text": "100% Chance 4-6BC Fill when ATKed (ALL) / 40-80% ATK+ Based on HP LOST (ALL) / 50% HP 80% ATK 80% DEF (Fire)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "9",
                     "@dc": "9",
@@ -16888,6 +18013,9 @@
                     "@hit": "13",
                     "@dc": "52",
                     "#text": "100% Chance 5-7BC Fill when ATKed (ALL) / 40-120% ATK+ Based on HP LOST (ALL) / 65% HP 100% ATK 100% DEF (Fire) / Null CRIT (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
                 },
                 "bb": {
                     "@hit": "14",
@@ -16934,6 +18062,9 @@
                     "@dc": "48",
                     "#text": "150% CRIT DMG+ (ALL) / 200% BB ATK%+ (ALL) / 20% OverDrive Fill+ (ALL) / 50% HP 50% ATK 30% CRIT+ (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "16",
                     "@dc": "16",
@@ -16979,6 +18110,9 @@
                     "@dc": "56",
                     "#text": "175% CRIT DMG+ (ALL) / 250% BB ATK%+ (ALL) / 25% OverDrive Fill+ (ALL) / 60% HP 60% ATK 30% CRIT+ (ALL)"
                 },
+                "ls_raid": {
+                    "#text": ""
+                },
                 "bb": {
                     "@hit": "20",
                     "@dc": "20",
@@ -16999,7 +18133,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Greatly boosts Atk when BB gauge is full & adds resistance against 1 KO attack when HP is below 20% (100% boost)"
+                    "#text": "Angel Idol when HP < 20% (SELF) / 100% ATK+ on Full BB (SELF)"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840418.png"
@@ -17009,6 +18143,151 @@
                 },                
                 "sp": {
                     "@list": "10 : 50% boost to Atk | 15 : 30% boost to Def, max HP | 15 : 100% boost to Spark damage | 10 : Damage taken boosts BB gauge (Fills 2-3 BC) | 10 : Breaks Atk's parameter limit (Raises maximum Atk from 99999 to 130000) | 20 : Enhances SBB's success rate of Spark critical effect (+10% chance. 40% chance total) | 35 : Enhances BB/SBB's evasion effect (+5% chance. 15% chance to evade total) | 40 : Adds huge Atk boost relative to Def for 3 turns effect to BB/SBB (70% Def to Atk) | 25 : Enhances BB/SBB's Atk boost effect (+20% boost. 180% boost total) | 35 : Adds probable considerable Spark vulnerability for 2 turns to BB/SBB (25% chance for 50% vulnerability)"
+                }
+            },
+            {
+                "id": "8264",
+                "name": "Heroes Fei and Fang",
+                "role": "heal_spark,spark,bc,hc,bb_fill",
+                "rolesp": "null_ails,cure",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "16",
+                    "@dc": "48",
+                    "#text": "50% Spark BC+ (ALL) / 50% Spark HC+ (ALL) / 100% Spark DMG+ (ALL) / 30% BC+ 30% HC+ (ALL) / 40% HP 40% ATK 40% DEF 40% REC (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "25",
+                    "#text": "200% Water (AOE) / 250% Earth (AOE) / 100% Chance Heal on Spark 3Turns / 130% Spark DMG+ (ALL) 3Turns / 35% BC+ 35% HC+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "23",
+                    "#text": "250% Water (AOE) / 350% Earth (AOE) / 10BC Fill (ALL) 1Turn / 130% Spark DMG+ (ALL) 3Turns / 100% ATK+ 100% DEF+ 100% REC+ (SELF) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "32",
+                    "@dc": "32",
+                    "@cost": "30",
+                    "#text": "2000% Water (AOE) / 100% BC Fill+ (ALL) 3Turns / 300% Spark DMG+ (ALL) 3Turns / 100% BC+ 100% HC+ (ALL) 3Turns / Null CRIT (AOE) 3Turns / Null Elemental Weakness (AOE) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Elemental Weakness (SELF) / 100% Spark DMG+ on > 30BC Received (SELF) / Reduce DMG (25%) on > 30HC Received (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830518.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_830518.png"
+                },                
+                "sp": {
+                    "@list": "20 : 20% boost to all parameters | 30 : 50% boost to Atk when BC collected has exceeded certain amount (30 BC required) | 30 : 50% boost to Def when HC collected has exceeded certain amount (20 HC required) | 10 : <span style='display:none'>(*)</span>70% boost to Spark damage | 10 : 100% boost to Spark damage <span style='display:none'>(Prerequisite: *)</span> | 10 : Enhances LS's all parameters boost from 40% to 50% | 30 : Adds status ailment negation for 3 turns effect to BB/SBB | 10 : Adds status ailment removal effect to SBB | 20 : Enhances BB's BC and HC drop rate effect (+10% boost. 45% BC/HC total) | 30 : Enhances SBB's Atk, Def, Rec self-boost effect (+30% boost. 130% boost total)"
+                }
+            }
+            ,
+            {
+                "id": "8265",
+                "name": "Bright Warrider Durumn",
+                "role": "atk_ele,atk_down_add,bb_atked,crit_dmg,idef",
+                "rolesp": "",
+                "element": "Thunder",
+                "rarity": "7",
+                "cost": "46",
+                "ls": {
+                    "@hit": "14",
+                    "@dc": "42",
+                    "#text": "150% CRIT DMG+ (ALL) / 50% HP 150% ATK 20% CRIT+ (Thunder) / 100% Chance 5BC Fill 3Turns on CRIT (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "30",
+                    "#text": "380% Thunder (AOE) / 80% ATK+ to Thunder 3Turns / Add 20% Chance -20% Enemy ATK to ATK (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "3/21",
+                    "@dc": "3/21",
+                    "@cost": "32",
+                    "#text": "560% Thunder (TGT) / Thunder (AOE) 200%-700% BB ATK% Based on HP LEFT / 4-7BC Fill when ATKed (100%) (ALL) 3Turns / 100% ATK+ to Thunder 3Turns / 50% CRIT DMG+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "3/24",
+                    "@dc": "3/24",
+                    "@cost": "30",
+                    "#text": "1000% Thunder (TGT) / Thunder (AOE) 1000%-2000% BB ATK% Based on HP LEFT / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance Heal 100-100% DMG when ATKed (ALL) 3Turns / 300% CRIT DMG+ (ALL) 3Turns "
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% CRIT DMG+ (SELF) / Add Ignore DEF (ALL) 3Turns to BB,SBB (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840277.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_840277.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "8266",
+                "name": "Viper Blitzkrieg Durumn",
+                "role": "atk_ele,maxhp,atk_down_add,bb_atked,crit_dmg,ewd,idef",
+                "rolesp": "dot,bc,hc",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "17",
+                    "@dc": "51",
+                    "#text": "150% CRIT DMG+ (ALL) / 150% Element Weakness DMG+ (thunder) / 60% HP 200% ATK 30% CRIT+ (Thunder) / 100% Chance 10BC Fill 3Turns on CRIT (ALL)"
+                },
+                "ls_raid": {
+                    "#text": "25% HP 25% ATK 25% DEF 25% REC (Thunder) / Reduce DMG (15%) from (thunder,water) Enemy (ALL)"
+                },
+                "bb": {
+                    "@hit": "26",
+                    "@dc": "26",
+                    "@cost": "30",
+                    "#text": "420% Thunder (AOE) / 100% ATK+ to Thunder 3Turns / 20% Max HP+ till Death,Battle End / Add 20% Chance -30% Enemy ATK to ATK (ALL) 3Turns "
+                },
+                "sbb": {
+                    "@hit": "3/26",
+                    "@dc": "3/26",
+                    "@cost": "32",
+                    "#text": "600% Thunder (TGT) / Thunder (AOE) 200%-900% BB ATK% Based on HP LEFT / 5-8BC Fill when ATKed (100%) (ALL) 3Turns / 120% ATK+ to Thunder 3Turns / 75% CRIT DMG+ (ALL) 3Turns / 150% Element Weakness DMG+ (thunder) (ALL) 3Turns "
+                },
+                "ubb": {
+                    "@hit": "3/29",
+                    "@dc": "3/29",
+                    "@cost": "32",
+                    "#text": "1200% Thunder (TGT) / Thunder (AOE) 1500%-2500% BB ATK% Based on HP LEFT / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 100% Chance Heal 100-100% DMG when ATKed (ALL) 3Turns / 300% CRIT DMG+ (ALL) 3Turns / 500% Element Weakness DMG+ (thunder) (ALL) 3Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "100% CRIT DMG+ (SELF) / Add Ignore DEF (ALL) 3Turns to BB,SBB (SELF) / 100% Chance Drain 6-10% HP (SELF)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840278.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_840278.png"
+                },                
+                "sp": {
+                    "@list": "10 : 30% boost to max HP, Atk | 10 : Boosts critical hit damage (70% boost) | 20 : Boosts elemental damage (50% boost) | 10 : Increases max Atk from 99,999 to 130,000 | 15 : Adds powerful additional attack at turn's end for 3 turns effect to SBB (400% multiplier) | 25 : Enhances BB's max HP boost effect (+10% boost. 30% boost total) | 25 : Enhances SBB's elemental damage boost effect (+50% boost. 200% boost total) | 30 : Enhances SBB's critical damage (50%) boost effect (+50% boost. 125% boost total) | 30 : Adds considerable boost to BC, HC drop rates for 3 turns effect to BB/SBB (30% boost) | 40 : Enhances LS's critical damage boost effect (+100% boost. 250% boost total) | 45 : Allows UBB effects to last for one more turn"
                 }
             }
         ]

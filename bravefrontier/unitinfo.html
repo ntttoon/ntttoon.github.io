@@ -67,7 +67,7 @@
 		var arr = JSON.parse(response);
 		var i,j;
 		var out = "<ul class='w3-ul'>";
-		var ls_out = bb_out = sbb_out = ubb_out = escon_out = es_out = "";
+		var ls_out = ls_raid_out = bb_out = sbb_out = ubb_out = escon_out = es_out = "";
 		var s = getURLParameter('id');
 		var json_len = arr.brave.unit.length;
 		for(i = 0; i < json_len; i++) {
@@ -81,6 +81,7 @@
 				var cost = arr.brave.unit[i].cost;
 				var rarity = arr.brave.unit[i].rarity;
 				var ls = arr.brave.unit[i].ls['#text'];
+				var ls_raid = arr.brave.unit[i].ls_raid['#text'];
 				var normalhit = arr.brave.unit[i].ls['@hit'];
 				var normaldc = arr.brave.unit[i].ls['@dc'];
 				var bb = arr.brave.unit[i].bb['#text'];
@@ -100,6 +101,7 @@
 				var sp = arr.brave.unit[i].sp['@list'];
 				var sp_array = sp.split("|");
 				var ls_array = ls.split("/");
+				var ls_raid_array = ls_raid.split("/");
 				var bb_array = bb.split("/");
 				var sbb_array = sbb.split("/");
 				var ubb_array = ubb.split("/");
@@ -109,6 +111,10 @@
 				for(j=0;j<ls_array.length;j++)
 				{
 					ls_out+='<div style="margin-left:40px" class="w3-small">◇ ' + ls_array[j].trim() + '<br></div>';
+				}
+				for(j=0;j<ls_raid_array.length;j++)
+				{
+					ls_raid_out+='<div style="margin-left:40px" class="w3-small">◇ ' + ls_raid_array[j].trim() + '<br></div>';
 				}
 				for(j=0;j<bb_array.length;j++)
 				{
@@ -134,6 +140,9 @@
 				out+='<li><img src="' + thumb + '" class="w3-left w3-margin-right" style="width:60px;"><h3>' + name + '</h3> <div class="w3-clear"></div></li>';
 				out+='<li>' + "ID: " + id + " - Element: " + element + "<br>Rarity: " + rarity + "*" + " - Cost: " + cost + '</li>';
 				out+='<li><strong>LS: </strong>' + 'hit: ' + normalhit + ' - dc: ' + normaldc + '<br>' + ls_out + '</li>';
+				if(!ls_raid ==""){
+					out+='<li><strong>LS Raid: </strong>' + '<br>' + ls_raid_out + '</li>';
+				}
 				out+='<li><strong>BB: </strong>' + 'hit: ' + bbhit + ' - dc: ' + bbdc + ' - cost: ' + bbcost + '<br>' + bb_out + '</li>';
 				out+='<li><strong>SBB: </strong>' + 'hit: ' + sbbhit + ' - dc: ' + sbbdc + ' - cost: ' + sbbcost + '<br>' + sbb_out + '</li>';
 				out+='<li><strong>UBB: </strong>' + 'hit: ' + ubbhit + ' - dc: ' + ubbdc + ' - cost: ' + ubbcost + '<br>' + ubb_out + '</li>';
