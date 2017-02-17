@@ -18341,40 +18341,40 @@
             {
                 "id": "8268",
                 "name": "Blazing Phoenix Feng",
-                "role": "",
-                "rolesp": "",
+                "role": "heal_atked,maxhp,revive,convert_def,heal,bb_atk,convert_atk",
+                "rolesp": "null_crit,null_stats,atk_ele",
                 "element": "Fire",
                 "rarity": "8",
                 "cost": "50",
                 "ls": {
-                    "@hit": "",
-                    "@dc": "",
-                    "#text": ""
+                    "@hit": "12",
+                    "@dc": "48",
+                    "#text": "0-60% ATK+ Based on HP LEFT (ALL) / 0-60% DEF+ Based on HP LEFT (ALL) / 0-60% REC+ Based on HP LEFT (ALL) / 20% Chance Angel Idol 1x (ALL) / 60% HP (ALL) / Reduce DMG (15%) from (Fire,water,earth,thunder) Enemy (ALL)"
                 },
                 "ls_raid": {
                     "#text": ""
                 },
                 "bb": {
-                    "@hit": "",
-                    "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "420% Fire (AOE) / 25% Chance Heal 25-30% DMG when ATKed (ALL) 3Turns / 25% Max HP+ till Death,Battle End / 10% Chance Revive Dead Ally 20% HP (ALL) / Convert 35% HP to DEF (ALL) 3Turns"
                 },
                 "sbb": {
-                    "@hit": "",
-                    "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@hit": "24",
+                    "@dc": "24",
+                    "@cost": "32",
+                    "#text": "Fire (AOE) 200%-900% BB ATK% Based on HP LEFT / Heal (ALL) / 10% Chance Revive Dead Ally 20% HP (ALL) / 450% BB ATK%+ (ALL) 3Turns / Convert 35% HP to ATK (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "",
-                    "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@dc": "0",
+                    "@cost": "32",
+                    "#text": "Reduce DMG (100%) 2Turns / 35% Max HP+ till Death,Battle End / 100% Chance Revive Dead Ally 20% HP (ALL) / Convert 60% HP to ATK (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": ""
+                    "#text": "Angel Idol when HP < 20% (SELF) / 25% Chance Heal 20-25% DMG when ATKed (SELF)"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810508.png"
