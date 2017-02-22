@@ -11955,7 +11955,7 @@
             },
             {
                 "id": "1537",
-                "name": "Arus 8",
+                "name": "Supreme Chol Arus",
                 "role": "bb_fill,bb_regen,dot,od_fill,id",
                 "rolesp": "crit,crit_dmg",
                 "element": "Fire",
@@ -11998,12 +11998,12 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10557.png"
                 },                
                 "sp": {
-                    "@list": "10 : +50% ATK | 10 : +30% HP | 20 : +20% HP/DEF | 10 : <span style='display:none'>(*)</span> +50% Spark Damage | 10 : <span style='display:none'>(#)</span> +70% Spark Damage <span style='display:none'>(Prerequisite: *)</span> | 20 : +100% Spark Damage <span style='display:none'>(Prerequisite: #)</span> | 40 : BB+: Fill 2 BC & SBB+: Fill 2 BC | 20 : SBB+: undefined-NaN% AoE depending on HP remaining | 40 : Add Effect To BB/SBB (3 turn +50% Crit Dmg) | 50 : Add Effect To BB/SBB (3 Turn +60% Crit)"
+                    "@list": "10 : 50% boost to Atk | 10 : 30% boost to max HP | 20 : 20% boost to Def, max HP | 10 : <span style='display:none'>(*)</span> 50% boost to Spark damage | 10 : <span style='display:none'>(#)</span> Boosts 50% Spark damage to 70% Spark damage <span style='display:none'>(Prerequisite: *)</span> | 20 : Boosts 70% Spark damage to 100% Spark damage <span style='display:none'>(Prerequisite: #)</span> | 40 : Enhances BB/SBB's BB gauge boost effect (+2 BC fill. Fills 12 BC total) | 20 : Enhances SBB's damage boost relative to remaining HP effect (+2% multiplier per 1% HP remaining. Total 10% boost to multiplier per 1% HP remaining (300~1300% SBB multiplier)) | 40 : Adds critical hit damage boost for 3 turns effect to BB/SBB (50% boost) | 50 : Adds enormous critical hit rate boost for 3 turns effect to BB/SBB (60% boost)"
                 }
             },
             {
                 "id": "1538",
-                "name": "Belfura 8",
+                "name": "Glacial Wings Belfura",
                 "role": "bb_atk,atk_down,def_down,bb_fill",
                 "rolesp": "bc,hc",
                 "element": "Water",
@@ -12046,12 +12046,12 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20537.png"
                 },                
                 "sp": {
-                    "@list": "10 : +20% ATK/REC | 10 : +20% HP/DEF | 10 : +80% ATK when BB Gauge is full | 10 : <span style='display:none'>(*)</span> +50% Spark Damage | 10 : +70% Spark Damage <span style='display:none'>(Prerequisite: *)</span> | 20 : Def Ignore Immunity | 30 : Add Effect To BB/SBB (3 Turn +35% BC/HC Drop Rate Buff) | 50 : Increase duration of ATK/DEF down infliction to 2 turns. | 50 : BB+: +100% BB/SBB/UBB Mod & SBB+: +100% BB/SBB/UBB Mod"
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 10 : Boosts Atk when BB gauge is full (80% boost) | 10 : <span style='display:none'>(*)</span> 50% boost to Spark damage | 10 : Boosts 50% Spark damage to 70% Spark damage <span style='display:none'>(Prerequisite: *)</span> | 20 : Negates Def ignore effect | 30 : Adds considerable BC, HC drop rate boost effect to BB/SBB (35% boost. Lasts 3 turns) | 50 : Allows SBB's Atk, Def reduction effects to last 2 turns | 50 : Enhances BB/SBB's BB Atk boost effect (+100% boost. 400% boost total)"
                 }
             },
             {
                 "id": "1539",
-                "name": "Ragshelm 8",
+                "name": "Divine Dragon Ragzbyul",
                 "role": "cure,atk_down,def_down,ails_add,spark_debuff,id",
                 "rolesp": "atk_ailed,miti_guard",
                 "element": "Earth",
@@ -12094,12 +12094,12 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30517.png"
                 },                
                 "sp": {
-                    "@list": "20 : +50% HP | 10 : +80% ATK when BB Gauge is full | 10 : +80% DEF when HP is full | 20 : 50% ATK against Statused Targets | 50 : Increase the effect strength of ATK/DEF down infliction on BB/SBB. | 40 : Add Effect To BB/SBB (3 Turn 160% ATK Buff on Statused Targets) | 10 : Add Effect To SBB (Cure Status/Debuffs) | 40 : Add Effect To BB/SBB (3 Turn +10% Guard Mitigation)"
+                    "@list": "20 : 50% boost to max HP | 10 : Boosts Atk when BB gauge is full (80% boost) | 10 : Boosts Def when HP is full (80% boost) | 20 : Boosts damage against status afflicted foes (50% boost) | 50 : Enhances BB/SBB's probable Atk, Def reduction effects | 40 : Adds huge damage boost against status afflicted foes effect to BB/SBB (160% boost. Lasts 3 turns) | 10 : Adds status ailment removal effect to SBB | 40 : Adds damage reduction when guarding effect to BB?SBB (10% reduction. Lasts 3 turns)"
                 }
             },
             {
                 "id": "1540",
-                "name": "Shera 8",
+                "name": "Radiant Guardian Shera",
                 "role": "miti,bb_rate,atk,bb_regen,miti_guard",
                 "rolesp": "def,miti_spark",
                 "element": "Thunder",
@@ -12142,7 +12142,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40507.png"
                 },                
                 "sp": {
-                    "@list": "10 : +20% HP/DEF | 20 : +50% HP/DEF | 20 : 2-3 BC when hit | 20 : 100% Base/Buffed Element Weakness Resist | 20 : 100% Base/Buffed Crit Resist | 40 : 1 turn 25% Spark Resist Mitigation buff to allies | 40 : BB+: Reduce Damage 0% for 1 turn & SBB+: Reduce Damage 0% for 1 turn | 40 : BB+: +20% BB Fill Rate | 50 : Add Effect To BB/SBB (3 Turn +160% DEF)"
+                    "@list": "10 : <span style='display:none'>(*)</span>20% boost to Def, max HP | 20 : Boosts 20% Def, max HP to 50% Def, max HP <span style='display:none'>(Prerequisite: *)</span> | 20 : Damage taken boosts BB gauge (Fills 2-3 BC) | 20 : Negates elemental damage | 20 : Negates critical hit damage | 40 : Adds Spark damage reduction effect to SBB (25% reduction. Lasts 1 turn) | 40 : Allows BB/SBB's 50% damage reductions to last 2 turns | 40 : Enhances BB's BC efficacy boost effect (+20% boost. 70% boost total) | 50 : Adds huge boost to Def effect to BB/SBB (160% boost. Lasts 3 turns)"
                 }
             },
             {
