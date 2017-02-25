@@ -3892,40 +3892,40 @@
             {
                 "id": "1583",
                 "name": "Adel 8",
-                "role": "",
-                "rolesp": "",
+                "role": "miti,heal_spark,spark,hot,null_stats",
+                "rolesp": "heal_atked,null_ails",
                 "element": "Fire",
                 "rarity": "8",
                 "cost": "47",
                 "ls": {
-                    "@hit": "",
-                    "@dc": "",
-                    "#text": ""
+                    "@hit": "12",
+                    "@dc": "48",
+                    "#text": "15% Chance Reduce DMG (20%) (ALL) / 50% BC Fill+ (ALL) / Heal Each Turn (ALL) / 50% HP 50% DEF (ALL)"
                 },
                 "ls_raid": {
                     "#text": ""
                 },
                 "bb": {
-                    "@hit": "",
-                    "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "22",
+                    "#text": "340% Fire (AOE) / Reduce DMG (50%) 1Turns / 100% Chance Heal on Spark 3Turns / 100% Spark DMG+ (ALL) 3Turns / Gradual Heal (ALL) 3Turns"
                 },
                 "sbb": {
-                    "@hit": "",
-                    "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "24",
+                    "#text": "500% Fire (AOE) / Reduce DMG (50%) 1Turns / 100% Chance Heal on Spark 3Turns / Null STATS Debuff 1Turns / 100% Spark DMG+ (ALL) 3Turns / Gradual Heal (ALL) 3Turns"
                 },
                 "ubb": {
-                    "@hit": "",
-                    "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "30",
+                    "#text": "1300% Fire (AOE) / Reduce DMG (75%) 3Turns / 300% Spark DMG+ (ALL) 3Turns / Add 50% Chance -50% Enemy ATK to ATK (ALL) 3Turns / Gradual Heal FULL (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": ""
+                    "#text": "100% Chance 2-3BC Fill on ATKed (SELF) / Reduce 20% BB Cost (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10737.png"
@@ -3940,40 +3940,40 @@
             {
                 "id": "1584",
                 "name": "Savia 8",
-                "role": "",
-                "rolesp": "",
+                "role": "bb_regen,cure,spark_debuff,bb_spark,atk,def,null_crit,null_ewd",
+                "rolesp": "convert_atk",
                 "element": "Water",
                 "rarity": "8",
                 "cost": "47",
                 "ls": {
-                    "@hit": "",
-                    "@dc": "",
-                    "#text": ""
+                    "@hit": "14",
+                    "@dc": "42",
+                    "#text": "7BC Fill Each Turn (ALL) / 100% Spark DMG+ (ALL) / 50% HP 50% ATK (ALL) / 80% ATK 80% DEF 80% REC (BB >= 50%) (ALL)"
                 },
                 "ls_raid": {
                     "#text": ""
                 },
                 "bb": {
-                    "@hit": "",
-                    "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "26",
+                    "#text": "370% Water (AOE) / 7BC Fill 3Turns / Cure Ails / 30% Chance Enemy receives 30% Spark DMG+ 1Turns"
                 },
                 "sbb": {
-                    "@hit": "",
-                    "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "28",
+                    "#text": "580% Water (AOE) / 100% Chance 2-3BC Fill on Spark (ALL) 3Turns / 30% Chance Enemy receives 30% Spark DMG+ 1Turns / 160% ATK+ 160% DEF+ (ALL) 3Turns / Null CRIT (AOE) 1Turns / Null Elemental Weakness (AOE) 1Turns"
                 },
                 "ubb": {
-                    "@hit": "",
-                    "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "30",
+                    "#text": "1500% Water (AOE) / 250% OverDrive Fill+ 3Turns / 100% Chance Enemy receives 100% Spark DMG+ 2Turns / Normal HitCount +300% (120% DMG) (ALL) 3Turns / 350% ATK+ 350% DEF+ (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": ""
+                    "#text": "50% Spark DMG+ (SELF) / 150% BB ATK%+ (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20677.png"
@@ -3982,21 +3982,21 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20677.png"
                 },                
                 "sp": {
-                    "@list": "20 : 30% ATK/HP | 10 : +50% ATK when BB > 50% | 20 : 100% Spark damage | 20 : Null EWD | 20 : +20% OD fill rate | 30 : +10% Spark crit (+10% chance) | 20 : +1 hit buff (+30% damage) on UBB | 10 : Add cure ailment on BB/SBB | 20 : Add 7 BC fill to SBB | 40 : Add +80% DEF -> ATK on BB/SBB"
+                    "@list": "20 : 30% ATK/HP | 10 : +50% ATK when BB > 50% | 20 : 100% Spark damage | 20 : Null EWD | 20 : +20% OD fill rate | 30 : +10% Spark crit (+10% chance) | 20 : +1 hit buff (+30% damage) on UBB | 10 : Add cure ailment on SBB | 20 : Add 7 BC fill to SBB | 40 : Add +80% DEF -> ATK on BB/SBB"
                 }
             },
             {
                 "id": "1586",
                 "name": "Baro",
-                "role": "",
-                "rolesp": "",
+                "role": "cure,null_ails,bb_fill,heal_atked,bb_regen",
+                "rolesp": "bb_atked",
                 "element": "Earth",
                 "rarity": "8",
                 "cost": "50",
                 "ls": {
-                    "@hit": "",
-                    "@dc": "",
-                    "#text": ""
+                    "@hit": "9",
+                    "@dc": "45",
+                    "#text": "+60% DEF,HP / 4-7 BC when hit / 7 BC,turn / null Ignore DEF"
                 },
                 "ls_raid": {
                     "#text": ""
@@ -4004,24 +4004,24 @@
                 "bb": {
                     "@hit": "",
                     "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@cost": "17",
+                    "#text": "13 hits AoE (420%, 25-30% HP drain) / BB fill to other units / cures ailments,debuffs / null ailements for 3 turns / 8 BC fill"
                 },
                 "sbb": {
                     "@hit": "",
                     "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@cost": "28",
+                    "#text": "18 hits AoE (520%, 25-30% HP drain) / BB fill to other units / 20-25% heal when hit (20% chance) / 8 BC,turn for 3 turns / 8 BC fill"
                 },
                 "ubb": {
                     "@hit": "",
                     "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@cost": "32",
+                    "#text": "21 hits AoE (1800%, 50-55% HP drain) / +35% HP / nulls EWD,Crits+Spark resist for 5 turns / 100% heal when hit (100% chance) 50 BC,turn for 3 turns"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": ""
+                    "#text": "10% ATK,DEF,REC per turn to self for 5 turns (50% max) / 2-3 BC when hit"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30927.png"
@@ -4036,40 +4036,40 @@
             {
                 "id": "1588",
                 "name": "Ionia",
-                "role": "",
-                "rolesp": "",
+                "role": "convert_def,heal_atked,bb_spark,atk_down,def_down,ails,spark_crit",
+                "rolesp": "bb_fill,crit,spark",
                 "element": "Light",
                 "rarity": "8",
                 "cost": "50",
                 "ls": {
-                    "@hit": "",
-                    "@dc": "",
-                    "#text": ""
+                    "@hit": "12",
+                    "@dc": "48",
+                    "#text": "+60% ATK,HP / +50% ATK,DEF,REC when HP is > 50% / 2-3 BC on Spark / -20% ATK Down (30% chance) after dealing 1 damage"
                 },
                 "ls_raid": {
                     "#text": ""
                 },
                 "bb": {
-                    "@hit": "",
-                    "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@hit": "7",
+                    "@dc": "7",
+                    "@cost": "16",
+                    "#text": "7 hits AoE (420%) / 10 hits RT (600%) / +30% HP->DEF / 20-25% heal when hit buff / 2-3 BC on Spark for 3 turns"
                 },
                 "sbb": {
-                    "@hit": "",
-                    "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@hit": "11",
+                    "@dc": "11",
+                    "@cost": "28",
+                    "#text": "11 hits AoE (620%) / 14 hits RT (800%) / -50% ATK,DEF Down (30% chance) for 1 turn / +80% Injury,Paralysis,Sickness,Weakness / +60% Spark crit buff (30% chance) for 3 turns"
                 },
                 "ubb": {
-                    "@hit": "",
-                    "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@hit": "12",
+                    "@dc": "12",
+                    "@cost": "32",
+                    "#text": "12 hits AoE (1800%) / 16 hits RT (1300%) / -80% ATK,DEF Down (100% chance) for 2 turns / +350% Spark damage, +120% Spark crit (50% chance) 5-8 BC on Spark for 3 turns"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": ""
+                    "#text": "+80% ATK,DEF when BB is > 50% / +80% Spark damage when HP is > 50%"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_51137.png"
@@ -4084,40 +4084,40 @@
             {
                 "id": "1590",
                 "name": "Xion",
-                "role": "",
-                "rolesp": "",
+                "role": "add_ele,od_fill,atk,def,rec,od_regen",
+                "rolesp": "exp, bb_atk",
                 "element": "Dark",
                 "rarity": "8",
                 "cost": "50",
                 "ls": {
-                    "@hit": "",
-                    "@dc": "",
-                    "#text": ""
+                    "@hit": "15",
+                    "@dc": "45",
+                    "#text": "+150% ATK / +80% HP / +15% EXP / +30% Ignore DEF chance / +20% OD fill rate"
                 },
                 "ls_raid": {
                     "#text": ""
                 },
                 "bb": {
-                    "@hit": "",
-                    "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "30",
+                    "#text": "17 hits AoE (470%) / 1 hit ST (600%) / adds FWET elements to attack for 3 turns / +8% OD fill"
                 },
                 "sbb": {
-                    "@hit": "",
-                    "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "32",
+                    "#text": "21 hits AoE (850%) / 1 hit ST (650%) / +170% ATK,DEF,REC / adds FWET elements to attack / OD fill,turn for 3 turns"
                 },
                 "ubb": {
-                    "@hit": "",
-                    "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "32",
+                    "#text": "25 hits AoE (2000%) / ST (2200%) / +400% ATK,DEF,REC for 3 turns / +100% elemental mitigation for 3 turns / OD,turn for 3 turns / +50% OD fill"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": ""
+                    "#text": "+10% Stats to party / +50% A,D,R based on HP remaining / +50% Spark damage"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_61097.png"
