@@ -2577,7 +2577,7 @@
                     "@hit": "36",
                     "@dc": "36",
                     "@cost": "30",
-                    "#text": "1500% Earth (AOE) / Earth (TGT) / Random Hits / 300% Spark DMG+ (ALL) 3Turns / Convert 250% DEF to ATK (ALL) 3Turns / 500% Element Weakness DMG+ (earth) (ALL) 3Turns"
+                    "#text": "1500% Earth (AOE) / Earth (TGT) Random Hits / 300% Spark DMG+ (ALL) 3Turns / Convert 250% DEF to ATK (ALL) 3Turns / 500% Element Weakness DMG+ (earth) (ALL) 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -2763,7 +2763,7 @@
                     "@hit": "18",
                     "@dc": "18",
                     "@cost": "25",
-                    "#text": "520% Water (AOE) / Water (TGT) / Random Hits / 8BC Fill (ALL) 1Turn / 7BC Fill 3Turns / 50% BC Fill+ (ALL) 3Turns"
+                    "#text": "520% Water (AOE) / Water (TGT) Random Hits / 8BC Fill (ALL) 1Turn / 7BC Fill 3Turns / 50% BC Fill+ (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "21",
@@ -3363,7 +3363,7 @@
             },
             {
                 "id": "1556",
-                "name": "Valen 8",
+                "name": "Triumphant Blaze Valen",
                 "role": "bb_fill,miti,def,miti_guard,bb_guard",
                 "rolesp": "LS_bb_atked,bb_atked,convert_atk,cure",
                 "element": "Fire",
@@ -3411,7 +3411,7 @@
             },
             {
                 "id": "1558",
-                "name": "Legil 8",
+                "name": "Pure General Regil",
                 "role": "atk,bb_atk,spark,spark_debuff,convert_atk",
                 "rolesp": "null_ails,null_ewd,,hot,atk_ele,def_ele",
                 "element": "Light",
@@ -3459,7 +3459,7 @@
             },
             {
                 "id": "1560",
-                "name": "Salvardo 8",
+                "name": "Soul Eater Zalvard",
                 "role": "drain,idol,crit,crit_dmg",
                 "rolesp": "ewd,atk_down_add",
                 "element": "Dark",
@@ -3996,32 +3996,32 @@
                 "ls": {
                     "@hit": "9",
                     "@dc": "45",
-                    "#text": "+60% DEF,HP / 4-7 BC when hit / 7 BC,turn / null Ignore DEF"
+                    "#text": "7BC Fill Each Turn (ALL) / 100% Chance 4-7BC Fill when ATKed (ALL) / Null Ignore DEF (ALL) / 60% HP 60% DEF (ALL)"
                 },
                 "ls_raid": {
                     "#text": ""
                 },
                 "bb": {
-                    "@hit": "",
-                    "@dc": "",
+                    "@hit": "13",
+                    "@dc": "13",
                     "@cost": "17",
-                    "#text": "13 hits AoE (420%, 25-30% HP drain) / BB fill to other units / cures ailments,debuffs / null ailements for 3 turns / 8 BC fill"
+                    "#text": "420% Earth (AOE) / Drain 25-30% HP (SELF) / 8BC Fill (ALL) 1Turn / Cure Ails / Null Ails 3Turns"
                 },
                 "sbb": {
-                    "@hit": "",
-                    "@dc": "",
+                    "@hit": "18",
+                    "@dc": "18",
                     "@cost": "28",
-                    "#text": "18 hits AoE (520%, 25-30% HP drain) / BB fill to other units / 20-25% heal when hit (20% chance) / 8 BC,turn for 3 turns / 8 BC fill"
+                    "#text": "620% Earth (AOE) / Drain 30-35% HP (SELF) / 8BC Fill (ALL) 1Turn / 8BC Fill 3Turns / 20% Chance Heal 20-25% DMG when ATKed (ALL) 3Turns "
                 },
                 "ubb": {
-                    "@hit": "",
-                    "@dc": "",
+                    "@hit": "21",
+                    "@dc": "21",
                     "@cost": "32",
-                    "#text": "21 hits AoE (1800%, 50-55% HP drain) / +35% HP / nulls EWD,Crits+Spark resist for 5 turns / 100% heal when hit (100% chance) 50 BC,turn for 3 turns"
+                    "#text": "1800% Earth (AOE) / Drain 50-55% HP (SELF) / 50BC Fill 3Turns / 100% Chance Heal 100-100% DMG when ATKed (ALL) 3Turns / 35% Max HP+ till Death,Battle End / Null CRIT (AOE) 5Turns / Null Elemental Weakness (AOE) 5Turns "
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "10% ATK,DEF,REC per turn to self for 5 turns (50% max) / 2-3 BC when hit"
+                    "#text": "ATK+ DEF+ Each Turn (Max 50%,5x) (SELF) / 100% Chance 2-3BC Fill on ATKed (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30927.png"
@@ -4044,32 +4044,32 @@
                 "ls": {
                     "@hit": "12",
                     "@dc": "48",
-                    "#text": "+60% ATK,HP / +50% ATK,DEF,REC when HP is > 50% / 2-3 BC on Spark / -20% ATK Down (30% chance) after dealing 1 damage"
+                    "#text": "100% Chance 2-3BC Fill on Spark (ALL) / 60% HP 60% ATK (ALL) / 50% ATK 50% DEF 50% REC (HP > 50%) (ALL) / 30% Chance -20% Enemy ATK 2Turns on > 1 DMG Dealt (ALL)"
                 },
                 "ls_raid": {
                     "#text": ""
                 },
                 "bb": {
-                    "@hit": "7",
-                    "@dc": "7",
+                    "@hit": "7/10",
+                    "@dc": "7/10",
                     "@cost": "16",
-                    "#text": "7 hits AoE (420%) / 10 hits RT (600%) / +30% HP->DEF / 20-25% heal when hit buff / 2-3 BC on Spark for 3 turns"
+                    "#text": "420% Light (AOE) / Light (TGT) Random Hits / 100% Chance 2-3BC Fill on Spark (ALL) 3Turns / 20% Chance Heal 20-25% DMG when ATKed (ALL) 3Turns / Convert 30% HP to DEF (ALL) 3Turns"
                 },
                 "sbb": {
-                    "@hit": "11",
-                    "@dc": "11",
+                    "@hit": "11/14",
+                    "@dc": "11/14",
                     "@cost": "28",
-                    "#text": "11 hits AoE (620%) / 14 hits RT (800%) / -50% ATK,DEF Down (30% chance) for 1 turn / +80% Injury,Paralysis,Sickness,Weakness / +60% Spark crit buff (30% chance) for 3 turns"
+                    "#text": "620% Light (AOE) / Light (TGT) Random Hits / 30% Chance SPARKcrit (60% DMG+) (ALL) 3Turns / 30% Chance -50% Enemy ATK 1Turns / 30% Chance -50% Enemy DEF 1Turns / 80% Injury 80% Weak 80% Sick 80% Para"
                 },
                 "ubb": {
-                    "@hit": "12",
-                    "@dc": "12",
+                    "@hit": "12/16",
+                    "@dc": "12/16",
                     "@cost": "32",
-                    "#text": "12 hits AoE (1800%) / 16 hits RT (1300%) / -80% ATK,DEF Down (100% chance) for 2 turns / +350% Spark damage, +120% Spark crit (50% chance) 5-8 BC on Spark for 3 turns"
+                    "#text": "1800% Light (AOE) / Light (TGT) Random Hits / 100% Chance 5-8BC Fill on Spark (ALL) 3Turns / 350% Spark DMG+ (ALL) 3Turns / 50% Chance SPARKcrit (120% DMG+) (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns / 100% Chance -80% Enemy DEF 2Turns"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "+80% ATK,DEF when BB is > 50% / +80% Spark damage when HP is > 50%"
+                    "#text": "80% ATK+ DEF+ when BB > 50% (SELF) / 80% Spark DMG+ when HP > 50% (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_51137.png"
@@ -4092,32 +4092,32 @@
                 "ls": {
                     "@hit": "15",
                     "@dc": "45",
-                    "#text": "+150% ATK / +80% HP / +15% EXP / +30% Ignore DEF chance / +20% OD fill rate"
+                    "#text": "30% Chance Ignore DEF (ALL) / 15% EXP+ (ALL) / 20% OverDrive Fill+ (ALL) / 80% HP 150% ATK (ALL)"
                 },
                 "ls_raid": {
                     "#text": ""
                 },
                 "bb": {
-                    "@hit": "17",
-                    "@dc": "17",
+                    "@hit": "17/1",
+                    "@dc": "17/1",
                     "@cost": "30",
-                    "#text": "17 hits AoE (470%) / 1 hit ST (600%) / adds FWET elements to attack for 3 turns / +8% OD fill"
+                    "#text": "470% Dark (AOE) / Dark (TGT) / 8% OverDrive Fill / Add Fire,water,earth,thunder to ATK (ALL) 3Turns"
                 },
                 "sbb": {
-                    "@hit": "21",
-                    "@dc": "21",
+                    "@hit": "21/1",
+                    "@dc": "21/1",
                     "@cost": "32",
-                    "#text": "21 hits AoE (850%) / 1 hit ST (650%) / +170% ATK,DEF,REC / adds FWET elements to attack / OD fill,turn for 3 turns"
+                    "#text": "850% Dark (AOE) / Dark (TGT) / 8% OverDrive Fill / Add Fire,water,earth,thunder to ATK (ALL) 3Turns / 170% ATK+ 170% DEF+ 170% REC+ (ALL) 3Turns / OD Fill at End of Turn"
                 },
                 "ubb": {
-                    "@hit": "25",
-                    "@dc": "25",
+                    "@hit": "25/1",
+                    "@dc": "25/1",
                     "@cost": "32",
-                    "#text": "25 hits AoE (2000%) / ST (2200%) / +400% ATK,DEF,REC for 3 turns / +100% elemental mitigation for 3 turns / OD,turn for 3 turns / +50% OD fill"
+                    "#text": "2000% Dark (AOE) / Dark (TGT) / 50% OverDrive Fill / 400% ATK+ 400% DEF+ 400% REC+ (ALL) 3Turns / Reduce DMG (100%) from (All) Enemy3Turns / OD Fill at End of Turn"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "+10% Stats to party / +50% A,D,R based on HP remaining / +50% Spark damage"
+                    "#text": "10% ALL Stats (ALL) / 0-50% ATK+ Based on HP LEFT (SELF) / 50% Spark DMG (SELF)"
                 },
                 "art": {
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_61097.png"
@@ -4305,7 +4305,7 @@
                     "@hit": "25",
                     "@dc": "25",
                     "@cost": "32",
-                    "#text": "2000% Earth (AOE) / Earth (TGT) / Random Hits / 300% DMG+ to Ailed Enemy (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns / 100% Chance -80% Enemy DEF 2Turns / 100% Injury 100% Weak 100% Sick 100% Poison / 100% Para 100% Curse"
+                    "#text": "2000% Earth (AOE) / Earth (TGT) Random Hits / 300% DMG+ to Ailed Enemy (ALL) 3Turns / 100% Chance -80% Enemy ATK 2Turns / 100% Chance -80% Enemy DEF 2Turns / 100% Injury 100% Weak 100% Sick 100% Poison / 100% Para 100% Curse"
                 },
                 "es": {
                     "@condtion": "None",
@@ -4319,6 +4319,54 @@
                 },                
                 "sp": {
                     "@list": "20 : +30% Stats | 10 : +100% Spark damage | 10 : <span style='display:none'>(*)</span> 2-3 BC when hit | 10 : 3-4 BC when hit​ <span style='display:none'>(Prerequisite: *)</span> | 20 : null ailments | 20 : null EWD | 70 : 70% chance to proc AI once | 40 : +30% ATK against afflicted enemies on SBB | 50 : Add 25-30% heal when hit (20% chance) for 3 turns on BB/SBB | 40 : Add +600% DoT for 2 turns on BB/SBB"
+                }
+            },
+            {
+                "id": "1591",
+                "name": "Cardes 8",
+                "role": "miti,heal,cure,def,bb_atked,heal_atked,null_ails",
+                "rolesp": "null_ewd,null_crit,miti_ele,miti_spark,convert_def",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "54",
+                "ls": {
+                    "@hit": "11",
+                    "@dc": "44",
+                    "#text": "100% Chance Reduce 25-30% BB Gauge Used (ALL) / 100% Chance 4-7BC Fill when ATKed (ALL) / 25% Chance Heal 25-25% DMG when ATKed (ALL) / 60% HP 60% DEF (ALL)"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "27",
+                    "#text": "420% Dark (AOE) / Drain 4-6% HP (SELF) / Reduce DMG (50%) 2Turns / Heal (ALL) / Cure Ails / 180% DEF+ (ALL) 3Turns"
+                },
+                "sbb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "31",
+                    "#text": "650% Dark (AOE) / Reduce DMG (50%) 2Turns / 4-7BC Fill when ATKed (100%) (ALL) 3Turns / 20% Chance Heal 20-25% DMG when ATKed (ALL) 3Turns / Null Ails 3Turns / 180% DEF+ (ALL) 3Turns"
+                },
+                "ubb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "32",
+                    "#text": "1800% Dark (AOE) / Reduce DMG (75%) 3Turns / 50-50BC Fill when ATKed (100%) (ALL) 3Turns / 35% Max HP+ till Death,Battle End / 350% DEF+ (ALL) 5Turns / Null CRIT (AOE) 5Turns / Null Elemental Weakness (AOE) 5Turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Add 3K HP Barrier (Dark) Effect to BB,SBB (SELF) / 20% Chance Reduce DMG (20%) (SELF) / 25% Chance Heal 20-25% DMG when ATKed (SELF)"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_61107.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_61107.png"
+                },                
+                "sp": {
+                    "@list": "20 : +30% Stats | 10 : +80% DEF when BB is > 50% | 10 : 2-3 BC when hit | 20 : Null Ignore DEF | 20 : Add 4-7 BC when hit for 3 turns on BB | 35 : Add Null EWD for 1 turn on BB/SBB | 35 : Add Null Crits for 1 turn on BB/SBB | 30 : Add +10% Light/Dark mitigation for 1 turn on BB/SBB | 30 : Add +25% Spark resist for 1 turn on BB/SBB | 35 : Add +80% ATK->DEF buff for 3 turns on BB/SBB"
                 }
             },
             {
@@ -4437,7 +4485,7 @@
                     "@hit": "50",
                     "@dc": "50",
                     "@cost": "22",
-                    "#text": "4000% Dark (TGT) (Random Hits) / 55BC Fill 1Turns / Add 20% Injury 20% Weak 20% Sick 20% Poison to ATK (ALL) 3Turns"
+                    "#text": "4000% Dark (TGT) Random Hits / 55BC Fill 1Turns / Add 20% Injury 20% Weak 20% Sick 20% Poison to ATK (ALL) 3Turns"
                 },
                 "sbb": {
                     "@hit": "24",
@@ -5860,40 +5908,40 @@
             {
                 "id": "8272",
                 "name": "Leona",
-                "role": "",
-                "rolesp": "",
+                "role": "dot,convert_def,convert_atk,convert_rec",
+                "rolesp": "evade",
                 "element": "Earth",
                 "rarity": "8",
                 "cost": "50",
                 "ls": {
                     "@hit": "1",
                     "@dc": "50",
-                    "#text": ""
+                    "#text": "35% Chance AOE on Normal ATK (-50% DMG) (ALL) / 60% HP 100% ATK 100% DEF (ALL) / 35% Chance 60% ABP+ CBP+ / 25% BB SBB Activation+ (Arena/ALL)"
                 },
                 "ls_raid": {
                     "#text": ""
                 },
                 "bb": {
                     "@hit": "1",
-                    "@dc": "",
+                    "@dc": "20",
                     "@cost": "27",
-                    "#text": ""
+                    "#text": "470% Earth (AOE) / Taunt (100% DEF+) (SELF) 1Turns / 500% DMG Each Turn 3Turns / Convert 60% attack to DEF (ALL) 3Turns"
                 },
                 "sbb": {
                     "@hit": "1",
-                    "@dc": "",
+                    "@dc": "12",
                     "@cost": "29",
-                    "#text": ""
+                    "#text": "600% Earth (TGT) / Earth (AOE) 200%-900% BB ATK% Based on HP LEFT / 300% ATK+ -30% DEF+ -30% REC+ (SELF) 3Turns / 600% DMG Each Turn 3Turns / Convert 80% DEF to ATK (ALL) 3Turns / Convert 80% DEF to REC (ALL) 3Turns / 110% Spark DMG+ (SELF) 3Turns"
                 },
                 "ubb": {
                     "@hit": "1",
-                    "@dc": "",
+                    "@dc": "20",
                     "@cost": "32",
-                    "#text": ""
+                    "#text": "1200% Earth (TGT) / Earth (AOE) 1500%-2800% BB ATK% Based on HP LEFT / 350% CRIT DMG+ (ALL) 3Turns / 350% ATK+ 350% DEF+ 350% REC+ (ALL) 3Turns / 400% ATK+ -200% DEF+ (SELF) 3Turns / 100% Chance -90% Enemy ATK 3Turns / 100% Chance -90% Enemy DEF 3Turns"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": ""
+                    "#text": "0-150% ATK+ DEF+ Based on HP Lost (SELF) / 100% 10BC Fill on Spark (SELF) / Null Elemental Weakness (SELF)"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830188.png"
@@ -5999,6 +6047,102 @@
                 },                
                 "sp": {
                     "@list": "20 : 20% boost to all parameters | 20 : Negates all status ailments | 10 : Adds Fire, Water, Thunder, Earth elements to attack effect | 30 : Adds 1 turn Atk, Def, Rec reducing effects negation to BB/SBB | 20 : <span style='display:none'>(*)</span> Adds Light barrier effect to BB (2000 HP barrier) | 20 : Enhanced BB/SBB's Light barrier effect (+500 HP) <span style='display:none'>(Prerequisite: *)</span> | 30 : <span style='display:none'>(#)</span> Adds slight Fire, Thunder, Light elemental damage reduction effect to BB (10% reduction) | 20 : Adds slight Fire, Thunder, Light elemental damage reduction effect to SBB (10% reduction) <span style='display:none'>(Prerequisite: #)</span> | 30 : <span style='display:none'>($)</span> Adds slight Water, Earth, Dark elemental damage reduction effect to SBB (10% reduction) | 20 : Adds slight Water, Earth, Dark elemental damage reduction effect to BB (10% reduction) <span style='display:none'>(Prerequisite: $)</span>"
+                }
+            },
+            {
+                "id": "8275",
+                "name": "Mai Shiranui",
+                "role": "",
+                "rolesp": "",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "",
+                    "@dc": "",
+                    "#text": ""
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "sbb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "ubb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810178.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810178.png"
+                },                
+                "sp": {
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 30 : Negates elemental damage | 60 : Adds normal attack hits all foes for 3 turns effect to BB/SBB | 30 : Adds great HP restoration effect to BB/SBB (Heal 2000-3000 + 11% Rec) | 40 : Adds negation of status ailments for 3 turns effect to BB/SBB | 30 : Adds status ailment removal effect to BB/SBB | 80 : Probable resistance against 1 KO attack | 20 : <span style='display:none'>(*)</span> Adds considerable Atk, Def boost for Fire types for 3 turns effect to BB/SBB (100% boost) | 20 : Adds considerable Atk, Def boost for Fire types for 3 turns effect to BB/SBB (120% boost) <span style='display:none'>(Prerequisite: *)</span>"
+                }
+            },
+            {
+                "id": "8276",
+                "name": "Kula Diamond",
+                "role": "",
+                "rolesp": "",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "",
+                    "@dc": "",
+                    "#text": ""
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "sbb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "ubb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_820178.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_820178.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> 20% boost to max HP | 10 : <span style='display:none'>(#)</span> Raises max HP boost from 20% to 30% <span style='display:none'>(Prerequisite: *)</span> | 10 : Raises max HP boost from 30% to 50% <span style='display:none'>(Prerequisite: #)</span> | 10 : Damage taken boosts BB Gauge (Fills 2-3 BC) | 20 : Negates all status ailments | 20 : Enhances UBB's Water barrier effect (+5000 HP. 25,000 HP total) | 40 : Adds probable status ailment counter to attack for 3 turns effect to BB/SBB (15% chance to reflect Injury, Weak and Sick & 10% chance to reflect Curse, Poison and Paralysis) | 30 : Adds status ailment removal effect to BB/SBB | 40 : Adds Water barrier effect to SBB (3,000 HP) | 30 : Allow SBBs negate critical damage effect to last an additional turn"
                 }
             }
         ]
