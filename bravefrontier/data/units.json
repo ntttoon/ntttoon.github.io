@@ -3358,7 +3358,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40877.png"
                 },                
                 "sp": {
-                    "@list": "10 : 30% boost to Atk, max HP | 15 : <span style='display:none'>(*)</span> 100% boost to Spark damage | 10 : Boosts 100% Spark damage to 120% Spark damage <span style='display:none'>(Prerequisite: *)</span> | 10 : Breaks Atk's parameter limit (Increases max Atk from 99,999 to 130,000) | 45 : Adds boost to Def relative to HP for 3 turns effect to BB/SBB (30% HP to Def) | 45 : Adds slight Fire, Water elemental damage reduction for 2 turns effect to BB/SBB (10% reduction) | 40 : Enhances BB/SBB's elemental damage boost effect (+25% boost, 150% total) | 50 : Enhances BB Atk boost effect added to BB/SBB (+100% boost, 400% total) | 30 : Enhances BB/SBB's damage boost to Light, Dark types effect (+20% boost, 120% total)"
+                    "@list": "10 : 30% boost to Atk, max HP | 15 : <span style='display:none'>(*)</span> 100% boost to Spark damage | 10 : Boosts 100% Spark damage to 120% Spark damage <span style='display:none'>(Prerequisite: *)</span> | 10 : Breaks Atk's parameter limit (Increases max Atk from 99,999 to 130,000) | 45 : Adds boost to Def relative to HP for 3 turns effect to BB/SBB (30% HP to Def) | 45 : Adds slight Fire, Water elemental damage reduction for 2 turns effect to BB/SBB (10% reduction) | 40 : Enhances BB/SBB's elemental damage boost effect (+25% boost, 150% total) | 50 : Enhances BB Atk boost effect added to BB/SBB (+100% boost, 400% total) | 30 : Enhances BB/SBB's damage boost to Thunder types effect (+20% boost, 120% total)"
                 }
             },
             {
