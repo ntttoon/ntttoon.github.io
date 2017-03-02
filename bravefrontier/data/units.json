@@ -3268,7 +3268,7 @@
             {
                 "id": "1550",
                 "name": "Viridian Flag Freed",
-                "role": "bb_regen,od_rate,null_ails,od_fill,null_stats,null_ewd",
+                "role": "bb_regen,od_rate,null_ails,od_fill,null_stats,null_crit,null_ewd",
                 "rolesp": "bb_rate,cure,heal",
                 "element": "Earth",
                 "rarity": "8",
@@ -3291,7 +3291,7 @@
                     "@hit": "22",
                     "@dc": "22",
                     "@cost": "32",
-                    "#text": "620% Earth (AOE) / 8% OverDrive Fill / 20% OverDrive Fill+ 3Turns / Null STATS Debuff (ALL) 1Turns / Null Elemental Weakness (ALL) 1Turn"
+                    "#text": "620% Earth (AOE) / 8% OverDrive Fill / 20% OverDrive Fill+ 3Turns / Null STATS Debuff (ALL) 1Turns / Null CRIT (ALL) 1Turn / Null Elemental Weakness (ALL) 1Turn"
                 },
                 "ubb": {
                     "@hit": "25",
