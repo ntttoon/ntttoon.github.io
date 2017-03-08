@@ -3507,7 +3507,7 @@
             },
             {
                 "id": "1561",
-                "name": "Kira 8",
+                "name": "Vexing Monarch Kira",
                 "role": "id,crit,crit_dmg,spark_debuff,atk_down,def_down",
                 "rolesp": "ewd,add_ele,atk_down_add,def_down_add",
                 "element": "Light",
@@ -3555,7 +3555,7 @@
             },
             {
                 "id": "1562",
-                "name": "Feeva 8",
+                "name": "Sublime Darkness Feeva",
                 "role": "bb_regen,bb_rate,atk,def,rec,bb_fill,heal_atked,bc,hc",
                 "rolesp": "bb_spark,spark",
                 "element": "Dark",
@@ -3603,7 +3603,7 @@
             },
             {
                 "id": "1564",
-                "name": "Hugo 8",
+                "name": "Chain Magister Hugh",
                 "role": "spark,spark_crit,bb_spark",
                 "rolesp": "LS_bb_spark,od_rate",
                 "element": "Water",
@@ -3651,7 +3651,7 @@
             },
             {
                 "id": "1566",
-                "name": "Mariette 8",
+                "name": "Mademoiselle Mariletta",
                 "role": "bb_fill,bb_atk,convert_def,convert_rec,bb_atked,convert_atk",
                 "rolesp": "hot,heal_atked,",
                 "element": "Earth",
@@ -3699,7 +3699,7 @@
             },
             {
                 "id": "1568",
-                "name": "Zola 8",
+                "name": "Bitter Manipulator Zora",
                 "role": "drain,atk_down,def_down,ails,heal_atked,ails_add",
                 "rolesp": "atk_ailed,atk_down_add,def_down_add",
                 "element": "Thunder",
