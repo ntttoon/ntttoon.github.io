@@ -1,0 +1,78 @@
+{
+    "brave": {
+        "unit": [
+            {
+                "id": "1306",
+                "name": "Lux Halcyon Atro",
+                "element": "Light",
+                "rarity": "8",
+                "ls": {
+                    "#text": ""
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "buffs": {
+                    "#text": "BB Rate / TriStats (150%) / OD Rate"
+                },
+                "ubb": {
+                    "#text": ""
+                },
+                "sp": {
+                    "@text": "Cure / BB Atked / Heal"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50017.png"
+                }
+            },
+            {
+                "id": "1367",
+                "name": "Sacred Emperor Sirius",
+                "element": "Light",
+                "rarity": "8",
+                "ls": {
+                    "#text": ""
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "buffs": {
+                    "#text": "BB Spark / Add DL / BB Mod (400%) / TriStats (140%)"
+                },
+                "ubb": {
+                    "#text": "BB Regen (50BC) / Miti (75%) / TriStats (250%) / BB Mod (500%)"
+                },
+                "sp": {
+                    "@text": ""
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_50917.png"
+                }
+            },
+            {
+                "id": "1376",
+                "name": "Eternal Goddess Felice",
+                "element": "Earth",
+                "rarity": "8",
+                "ls": {
+                    "#text": ""
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "buffs": {
+                    "#text": "Spark Blanket /BB Regen / BB Atked / BB Spark"
+                },
+                "ubb": {
+                    "#text": ""
+                },
+                "sp": {
+                    "@text": "Heal Spark"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30787.png"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,134 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Brave Frontier</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/w3.css">
+<link rel="stylesheet" href="css/tree.css">
+<script src="../js/ga.js"></script>
+</head>
+
+<body>
+<header class="w3-container w3-teal w3-card-2">
+  <h5>Brave Frontier</h5>
+</header>
+<div id="placeholder"> </div>
+<!--<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third w3-margin-bottom">
+    <div class="w3-card-2 w3-padding">
+      <ul class="tree">
+      <img src="http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10017.png" style="width:60px;">
+        <li><span class="w3-tag w3-round w3-teal">LS</span></li>
+        <li><span class="w3-tag w3-round w3-teal">BB/SBB/ES</span>
+          <ul>
+            <li>ATK (150%)</li>
+            <li>BB Mod (300%)</li>
+            <li>ATK Down (30% chance)</li>
+            <li>EWD (75% to Fire)</li>
+          </ul>
+        </li>
+        <li><span class="w3-tag w3-round w3-teal">UBB</span>
+          <ul>
+            <li>ATK (250%)</li>
+            <li>BB Mod (600%)</li>
+            <li>ATK Down (100% chance)</li>
+          </ul>
+        </li>
+        <li><span class="w3-tag w3-round w3-teal">SP</span>
+          <ul>
+            <li>SPARK (80%)</li>
+            <li>CRIT Dmg (50%)</li>
+            <li>Idol (80%)</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>-->
+
+<script>
+	var xmlhttp = new XMLHttpRequest();
+	var url = "data/tree_units.json";
+	
+	xmlhttp.onreadystatechange=function() {
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			myFunction(xmlhttp.responseText);
+		}
+	}
+	xmlhttp.open("GET", url, true);
+	xmlhttp.send();
+	
+	function myFunction(response) {
+		var arr = JSON.parse(response);
+		var i,j;
+		var out = "<div class='w3-row-padding w3-margin-top'>";
+		var ls_out = ls_raid_out = buffs_out = ubb_out = sp_out = thumb_out = "";
+		var json_len = arr.brave.unit.length;
+		for(i = 0; i < json_len; i++) {
+			var id = arr.brave.unit[i].id;
+			var name = arr.brave.unit[i].name;
+			var element = arr.brave.unit[i].element;
+			var rarity = arr.brave.unit[i].rarity;
+			var ls = arr.brave.unit[i].ls['#text'];
+			var ls_raid = arr.brave.unit[i].ls_raid['#text'];
+			var buffs = arr.brave.unit[i].buffs['#text'];
+			var ubb = arr.brave.unit[i].ubb['#text'];
+			var sp = arr.brave.unit[i].sp['@text'];
+			var thumb = arr.brave.unit[i].thumb['@path'];
+			
+			var ls_array = ls.split("/");
+			var ls_raid_array = ls_raid.split("/");
+			var buffs_array = buffs.split("/");
+			var ubb_array = ubb.split("/");
+			var sp_array = sp.split("/");
+			////////// Export to tree
+			ls_out = ls_raid_out = buffs_out = ubb_out = sp_out = thumb_out = "";
+			for(j=0;j<ls_array.length;j++)
+			{
+				ls_out+='<li>' + ls_array[j].trim() + '</li>';
+			}
+			for(j=0;j<ls_raid_array.length;j++)
+			{
+				ls_raid_out+='<li>' + ls_raid_array[j].trim() + '</li>';
+			}
+			for(j=0;j<buffs_array.length;j++)
+			{
+				
+				buffs_out+='<li>' + buffs_array[j].trim() + '</li>';
+			}
+			for(j=0;j<ubb_array.length;j++)
+			{
+				ubb_out+='<li>' + ubb_array[j].trim() + '</li>';
+			}
+			for(j=0;j<sp_array.length;j++)
+			{
+				sp_out+='<li>' + sp_array[j].trim() + '</li>';
+			}
+			//
+			out+="<div class='w3-quarter w3-margin-bottom'> <div class='w3-card w3-padding'> <ul class='tree'>";
+			out+='<div style="float:left"><img src="' + thumb + '" style="width:60px;"></div> <a href="unitinfo.html?id='+ id + '" target="_blank" class="w3-button w3-blue" style="margin: 14px 10px;">Details >></a> <div style="clear:both"></div>';
+			if(!ls ==""){
+				out+='<li><span class="w3-tag w3-round w3-teal">LS</span><ul>' + ls_out + '</ul></li>';
+			}
+			if(!ls_raid ==""){
+				out+='<li><span class="w3-tag w3-round w3-teal">LS Raid</span><ul>' + ls_raid_out + '</ul></li>';
+			}
+			if(!buffs ==""){
+				out+='<li><span class="w3-tag w3-round w3-teal">BB/SBB/ES</span><ul>' + buffs_out + '</ul></li>';
+			}
+			if(!ubb ==""){
+				out+='<li><span class="w3-tag w3-round w3-teal">UBB</span><ul>' + ubb_out + '</ul></li>';
+			}
+			if(!sp ==""){
+				out+='<li><span class="w3-tag w3-round w3-teal">SP</span><ul>' + sp_out + '</ul></li>';
+			}
+			out+='</ul></div></div>';
+		}
+		out+='</div>';
+		document.getElementById("placeholder").innerHTML = out;
+	}
+</script>
+
+</body>
+</html>
