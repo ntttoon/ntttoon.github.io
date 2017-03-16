@@ -4,7 +4,7 @@
             {
                 "id": "1302",
                 "name": "Ignis Halcyon Vargas",
-                "role": "atk,bb_atk,atk_down,ewd",
+                "role": "atk,bb_mod,atk_down,ewd",
                 "rolesp": "spark,crit_dmg",
                 "element": "Fire",
                 "rarity": "8",
@@ -388,7 +388,7 @@
             {
                 "id": "1356",
                 "name": "Lightning Menace Silas",
-                "role": "add_ele,crit,crit_dmg,bb_atk",
+                "role": "add_ele,crit,crit_dmg,bb_mod",
                 "rolesp": "atk,convert_def",
                 "element": "Thunder",
                 "rarity": "8",
@@ -436,7 +436,7 @@
             {
                 "id": "1367",
                 "name": "Sacred Emperor Sirius",
-                "role": "bb_spark,add_ele,bb_atk,atk,def,rec",
+                "role": "bb_spark,add_ele,bb_mod,atk,def,rec",
                 "rolesp": "bb_regen",
                 "element": "Light",
                 "rarity": "8",
@@ -533,7 +533,7 @@
                 "id": "1376",
                 "name": "Eternal Goddess Felice",
                 "role": "bb_regen,bb_atked,bb_spark",
-                "rolesp": "LS_bb_atked,spark,heal_spark,idef,bb_atk",
+                "rolesp": "LS_bb_atked,spark,heal_spark,idef,bb_mod",
                 "element": "Earth",
                 "rarity": "8",
                 "cost": "47",
@@ -580,7 +580,7 @@
             {
                 "id": "1381",
                 "name": "Celestial Wings Lara",
-                "role": "heal,bb_atk,hot,null_crit,heal_atked,convert_atk,convert_def,bc,hc",
+                "role": "heal,bb_mod,hot,null_crit,heal_atked,convert_atk,convert_def,bc,hc",
                 "rolesp": "LS_null_id,atk,null_stats,miti",
                 "element": "Light",
                 "rarity": "8",
@@ -628,7 +628,7 @@
             {
                 "id": "1387",
                 "name": "Undying Flame Avant",
-                "role": "crit,spark_debuff,atk,,bb_atk,convert_atk",
+                "role": "crit,spark_debuff,atk,,bb_mod,convert_atk",
                 "rolesp": "crit_dmg",
                 "element": "Fire",
                 "rarity": "8",
@@ -869,7 +869,7 @@
                 "id": "1396",
                 "name": "Emerald Tusk Daze",
                 "role": "idef,spark,spark_debuff,bb_rate,atk,def,rec",
-                "rolesp": "crit,crit_dmg",
+                "rolesp": "LS_miti_ele,crit,crit_dmg",
                 "element": "Earth",
                 "rarity": "8",
                 "cost": "47",
@@ -917,7 +917,7 @@
                 "id": "1398",
                 "name": "Howling Wolf Zekt",
                 "role": "bb_fill,maxhp,miti_ele,crit,crit_dmg",
-                "rolesp": "LS_bb_atked,LS_heal_atked,spark_crit",
+                "rolesp": "LS_miti_ele,LS_bb_atked,LS_heal_atked,spark_crit",
                 "element": "Light",
                 "rarity": "8",
                 "cost": "47",
@@ -1109,7 +1109,7 @@
                 "id": "1404",
                 "name": "Bennu Edge Rayla",
                 "role": "null_ails,null_stats,atk_down_add,spark_debuff,atk_down,def_down",
-                "rolesp": "LS_bb_spark,bb_atk,bb_regen,null_stats,od_rate",
+                "rolesp": "LS_bb_spark,bb_mod,bb_regen,null_stats,od_rate",
                 "element": "Thunder",
                 "rarity": "8",
                 "cost": "47",
@@ -1204,7 +1204,7 @@
             {
                 "id": "1410",
                 "name": "Dark Destruction Kalon",
-                "role": "atk,bb_atk,ewd,spark_crit,dot",
+                "role": "atk,bb_mod,ewd,spark_crit,dot",
                 "rolesp": "convert_atk",
                 "element": "Dark",
                 "rarity": "8",
@@ -1397,7 +1397,7 @@
                 "id": "1437",
                 "name": "Torrential Scar Holia",
                 "role": "heal,maxhp,idol,hot,null_stats,null_crit,null_ewd,convert_rec",
-                "rolesp": "null_ails,miti_ele",
+                "rolesp": "LS_miti_ele,null_ails,miti_ele",
                 "element": "Water",
                 "rarity": "8",
                 "cost": "48",
@@ -1444,7 +1444,7 @@
             {
                 "id": "1439",
                 "name": "Ideal Subject Lauda",
-                "role": "bb_spark,spark_crit,bb_atk",
+                "role": "bb_spark,spark_crit,bb_mod",
                 "rolesp": "spark_debuff",
                 "element": "Light",
                 "rarity": "8",
@@ -1588,8 +1588,8 @@
             {
                 "id": "1443",
                 "name": "Wind Princess Rozalia",
-                "role": "bb_fill,heal,cure,null_ails,null_stats,spark,atk_down_add,bb_atk",
-                "rolesp": "LS_bb_atked,LS_null_crit,crit,crit_dmg,bb_atked,heal_atked",
+                "role": "bb_fill,heal,cure,null_ails,null_stats,spark,atk_down_add,bb_mod",
+                "rolesp": "LS_miti_ele,LS_bb_atked,LS_null_crit,crit,crit_dmg,bb_atked,heal_atked",
                 "element": "Earth",
                 "rarity": "8",
                 "cost": "48",
@@ -1876,7 +1876,7 @@
             {
                 "id": "1454",
                 "name": "Heroic Leader Quaid",
-                "role": "bb_rate,bb_atk,bb_regen,add_ele",
+                "role": "bb_rate,bb_mod,bb_regen,add_ele",
                 "rolesp": "spark,crit,bb_atked,atk_down,def_down,heal",
                 "element": "Earth",
                 "rarity": "8",
@@ -1973,7 +1973,7 @@
                 "id": "1458",
                 "name": "Blazing Dragon Lyonesse",
                 "role": "bb_regen,ewd,miti_ele,atk_ele,def_ele,convert_atk",
-                "rolesp": "",
+                "rolesp": "LS_miti_ele",
                 "element": "Fire",
                 "rarity": "8",
                 "cost": "48",
@@ -2116,7 +2116,7 @@
             {
                 "id": "1486",
                 "name": "Great General Zalts",
-                "role": "bb_rate,bb_atk,bc,hc,od_fill",
+                "role": "bb_rate,bb_mod,bc,hc,od_fill",
                 "rolesp": "",
                 "element": "Water",
                 "rarity": "8",
@@ -2165,7 +2165,7 @@
                 "id": "1488",
                 "name": "Victorious General Gyras",
                 "role": "atk_ele,def_ele,atk_down_add,miti_ele,spark_crit,spark_debuff",
-                "rolesp": "ewd,miti_ele",
+                "rolesp": "LS_miti_ele,ewd,miti_ele",
                 "element": "Earth",
                 "rarity": "8",
                 "cost": "48",
@@ -2260,7 +2260,7 @@
             {
                 "id": "1491",
                 "name": "Ignis Vestae Lava",
-                "role": "atk_ele,id,bb_atk,bb_spark",
+                "role": "atk_ele,id,bb_mod,bb_spark",
                 "rolesp": "bb_fill",
                 "element": "Fire",
                 "rarity": "8",
@@ -2308,7 +2308,7 @@
             {
                 "id": "1492",
                 "name": "Salacia Persei Elimo",
-                "role": "miti,heal,cure,def,rec,heal_atked",
+                "role": "miti,heal,cure,def,rec,heal_atked,barrier",
                 "rolesp": "hot,null_stats,null_ails,null_crit,null_ewd",
                 "element": "Water",
                 "rarity": "8",
@@ -2501,7 +2501,7 @@
                 "id": "1506",
                 "name": "Scorching Fang Glenn",
                 "role": "crit,dot,crit_dmg",
-                "rolesp": "bb_atk",
+                "rolesp": "bb_mod",
                 "element": "Fire",
                 "rarity": "8",
                 "cost": "48",
@@ -2597,7 +2597,7 @@
                 "id": "1510",
                 "name": "Auric Echo Eleanor",
                 "role": "miti,miti_ele,bc,hc",
-                "rolesp": "ails_add",
+                "rolesp": "LS_miti_ele,ails_add",
                 "element": "Thunder",
                 "rarity": "8",
                 "cost": "48",
@@ -2789,7 +2789,7 @@
                 "id": "1516",
                 "name": "Angelic Star Janice",
                 "role": "cure,idol,aoe,null",
-                "rolesp": "hot",
+                "rolesp": "LS_miti_ele,hot",
                 "element": "Light",
                 "rarity": "8",
                 "cost": "48",
@@ -3076,7 +3076,7 @@
             {
                 "id": "1538",
                 "name": "Glacial Wings Belfura",
-                "role": "bb_atk,atk_down,def_down,bb_fill",
+                "role": "bb_mod,atk_down,def_down,bb_fill",
                 "rolesp": "bc,hc",
                 "element": "Water",
                 "rarity": "8",
@@ -3316,8 +3316,8 @@
             {
                 "id": "1552",
                 "name": "Magnanimous Bolt Ewan",
-                "role": "atk_ele,bb_atk,ewd,convert_atk",
-                "rolesp": "convert_def,miti_ele",
+                "role": "atk_ele,bb_mod,ewd,convert_atk",
+                "rolesp": "LS_miti_ele,convert_def,miti_ele",
                 "element": "Thunder",
                 "rarity": "8",
                 "cost": "50",
@@ -3412,8 +3412,8 @@
             {
                 "id": "1558",
                 "name": "Pure General Regil",
-                "role": "atk,bb_atk,spark,spark_debuff,convert_atk",
-                "rolesp": "null_ails,null_ewd,hot,atk_ele,def_ele",
+                "role": "atk,bb_mod,spark,spark_debuff,convert_atk",
+                "rolesp": "LS_miti_ele,null_ails,null_ewd,hot,atk_ele,def_ele",
                 "element": "Light",
                 "rarity": "8",
                 "cost": "50",
@@ -3652,7 +3652,7 @@
             {
                 "id": "1566",
                 "name": "Mademoiselle Mariletta",
-                "role": "bb_fill,bb_atk,convert_def,convert_rec,bb_atked,convert_atk",
+                "role": "bb_fill,bb_mod,convert_def,convert_rec,bb_atked,convert_atk",
                 "rolesp": "hot,heal_atked,",
                 "element": "Earth",
                 "rarity": "8",
@@ -3797,7 +3797,7 @@
                 "id": "1572",
                 "name": "Azeria 8",
                 "role": "heal_spark,atk_ele,miti_ele,def,rec,convert_rec,ewd",
-                "rolesp": "heal_atked,hot,barrier,miti_spark",
+                "rolesp": "LS_miti_ele,heal_atked,hot,barrier,miti_spark",
                 "element": "Water",
                 "rarity": "8",
                 "cost": "50",
@@ -4085,7 +4085,7 @@
                 "id": "1590",
                 "name": "Xion",
                 "role": "add_ele,od_fill,atk,def,rec,od_regen",
-                "rolesp": "exp, bb_atk",
+                "rolesp": "exp, bb_mod",
                 "element": "Dark",
                 "rarity": "8",
                 "cost": "50",
@@ -4132,7 +4132,7 @@
             {
                 "id": "1602",
                 "name": "Amu Yunos",
-                "role": "ewd,od_rate,null_crit,null_dot",
+                "role": "ewd,od_rate,null_crit,miti_dot",
                 "rolesp": "bb_atked,cure",
                 "element": "Water",
                 "rarity": "8",
@@ -4372,7 +4372,7 @@
             {
                 "id": "1553",
                 "name": "Strife God Afla Dilith",
-                "role": "bb_fill,spark,bb_atk,bb_spark,spark_debuff",
+                "role": "bb_fill,spark,bb_mod,bb_spark,spark_debuff",
                 "rolesp": "atk,spark_crit",
                 "element": "Fire",
                 "rarity": "8",
@@ -4468,7 +4468,7 @@
             {
                 "id": "1591",
                 "name": "Cardes 8",
-                "role": "miti,heal,cure,def,bb_atked,heal_atked,null_ails",
+                "role": "miti,heal,cure,def,bb_atked,heal_atked,null_ails,barrier",
                 "rolesp": "null_ewd,null_crit,miti_ele,miti_spark,convert_def",
                 "element": "Dark",
                 "rarity": "8",
@@ -4511,6 +4511,54 @@
                 },                
                 "sp": {
                     "@list": "20 : +30% Stats | 10 : +80% DEF when BB is > 50% | 10 : 2-3 BC when hit | 20 : Null Ignore DEF | 20 : Add 4-7 BC when hit for 3 turns on BB | 35 : Add Null EWD for 1 turn on BB/SBB | 35 : Add Null Crits for 1 turn on BB/SBB | 30 : Add +10% Light/Dark mitigation for 1 turn on BB/SBB | 30 : Add +25% Spark resist for 1 turn on BB/SBB | 35 : Add +80% ATK->DEF buff for 3 turns on BB/SBB"
+                }
+            },
+            {
+                "id": "1600",
+                "name": "Maxwell",
+                "role": "crit,crit_dmg,ewd,crit_res_down,ewd_res_down",
+                "rolesp": "bb_spark,heal_spark,spark",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "54",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "+60% ATK,HP / +150% Crit damage / +150% EWD / +250% BB Mod"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "30",
+                    "#text": "20 hits AoE (500%) / +60% Crit rate / +50% Crit damage / +125% EWD for 3 turns"
+                },
+                "sbb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "32",
+                    "#text": "33 hits Light,Dark AoE (700%) / +60% Crit rate / +50% Crit damage / +125% EWD for 3 turns / lowers Crit,EWD resistance for 1 turn"
+                },
+                "ubb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "32",
+                    "#text": "42 hits Light,Dark AoE (2000%) / adds all elements to attack / +350% Crit damage / +450% EWD / +600% BB Mod for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+50% Light EWD / +50% Crit damage / AI proc once (100% chance) / raise ATK cap up to 130,000"
+                },
+                "art": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_51147.png"
+                },
+                "thumb": {
+                    "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51147.png"
+                },                
+                "sp": {
+                    "@list": "20 : +30% Stats | 10 : +100% Spark damage | 20 : null EWD | 25 : +25% Crit damage buff on BB/SBB | 25 : +25% EWD buff on BB/SBB | 35 : Add 2-3 BC on Spark buff for 3 turns on BB/SBB | 30 : Add 400-500 HP on Spark buff for 3 turns on BB/SBB | 60 : Add +150% Spark damage for 3 turns on BB/SBB | 30 : Add 80% chance to proc AI (revive at full HP) for 999 turns on UBB"
                 }
             },
             {
@@ -4612,7 +4660,7 @@
             {
                 "id": "8190",
                 "name": "Void Pasha Ensa-Taya",
-                "role": "ails_add,spark,bb_atk,convert_atk,atk_ailed",
+                "role": "ails_add,spark,bb_mod,convert_atk,atk_ailed",
                 "rolesp": "bb_spark,dot",
                 "element": "Dark",
                 "rarity": "8",
@@ -4708,8 +4756,8 @@
             {
                 "id": "8201",
                 "name": "Doombringer Azurai",
-                "role": "maxhp,convert_atk,convert_def,crit,crit_dmg,atk,def,rec,bb_atk",
-                "rolesp": "",
+                "role": "maxhp,convert_atk,convert_def,crit,crit_dmg,atk,def,rec,bb_mod",
+                "rolesp": "LS_miti_ele",
                 "element": "Fire",
                 "rarity": "8",
                 "cost": "47",
@@ -4852,7 +4900,7 @@
             {
                 "id": "8222",
                 "name": "Iori Yagami (OMNI)",
-                "role": "bb_rate,add_ele,bb_atk",
+                "role": "bb_rate,add_ele,bb_mod",
                 "rolesp": "atk,idef",
                 "element": "Dark",
                 "rarity": "8",
@@ -5044,7 +5092,7 @@
             {
                 "id": "8232",
                 "name": "Toki (OMNI)",
-                "role": "ails,spark_debuff,bb_atk",
+                "role": "ails,spark_debuff,bb_mod",
                 "rolesp": "atk_ailed,atk_ele,od_fill,ewd",
                 "element": "Dark",
                 "rarity": "8",
@@ -5140,7 +5188,7 @@
             {
                 "id": "8235",
                 "name": "Abyssal Witch Ciara",
-                "role": "ewd,add_ele,atk,bb_atk,id",
+                "role": "ewd,add_ele,atk,bb_mod,id",
                 "rolesp": "atk_down,atk_down_add",
                 "element": "Fire",
                 "rarity": "8",
@@ -5380,7 +5428,7 @@
             {
                 "id": "8245",
                 "name": "Lid (Omni)",
-                "role": "bb_atk,ails_atked,heal_atked,crit_dmg,crit,add_ele",
+                "role": "item,karma,zel,bb_mod,ails_atked,heal_atked,crit_dmg,crit,add_ele",
                 "rolesp": "atk_ele,def_ele,bb_atked",
                 "element": "Thunder",
                 "rarity": "8",
@@ -5429,7 +5477,7 @@
                 "id": "8247",
                 "name": "Charlotte (Omni)",
                 "role": "null_ails,hot,miti,def,cure",
-                "rolesp": "",
+                "rolesp": "LS_miti_ele",
                 "element": "Water",
                 "rarity": "8",
                 "cost": "47",
@@ -5476,7 +5524,7 @@
             {
                 "id": "8249",
                 "name": "White Wulf Faelan",
-                "role": "cure,null_ails,barrier,ails_atked,atk_ailed,bb_atk,ails",
+                "role": "cure,null_ails,barrier,ails_atked,atk_ailed,bb_mod,ails",
                 "rolesp": "LS_null_ails,null_stats",
                 "element": "Earth",
                 "rarity": "8",
@@ -5668,7 +5716,7 @@
             {
                 "id": "8255",
                 "name": "Infinity Starsage Zeruiah",
-                "role": "heal,cure,maxhp,bc,hc,item,add_ele,ewd,miti_ele,barrier",
+                "role": "karma,zel,heal,cure,maxhp,bc,hc,item,add_ele,ewd,miti_ele,barrier",
                 "rolesp": "od_fill",
                 "element": "Earth",
                 "rarity": "8",
@@ -6004,8 +6052,8 @@
             {
                 "id": "8268",
                 "name": "Blazing Phoenix Feng",
-                "role": "heal_atked,maxhp,revive,convert_def,heal,bb_atk,convert_atk",
-                "rolesp": "null_crit,null_stats,atk_ele",
+                "role": "heal_atked,maxhp,revive,convert_def,heal,bb_mod,convert_atk",
+                "rolesp": "LS_miti_ele,null_crit,null_stats,atk_ele",
                 "element": "Fire",
                 "rarity": "8",
                 "cost": "50",

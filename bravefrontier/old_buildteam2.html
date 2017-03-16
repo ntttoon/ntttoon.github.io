@@ -22,6 +22,12 @@
 	function checkTeam(){
 		if(!l==''){
 			buidTeam();
+			viewBuffs_ID('buffs_l',l);
+			viewBuffs_ID('buffs_2',u2);
+			viewBuffs_ID('buffs_3',u3);
+			viewBuffs_ID('buffs_4',u4);
+			viewBuffs_ID('buffs_5',u5);
+			viewBuffs_ID('buffs_f',f);
 			document.getElementById('build_btn').style.display='none';
 			document.getElementById('checkbuffs_tab').style.display='none';
 			document.getElementById('create_btn').style.display='block';
@@ -44,6 +50,130 @@
 	var u4 = getURLParameter('u4');
 	var u5 = getURLParameter('u5');
 	var f = getURLParameter('f');
+	//
+	function viewBuffs_Name(id_input,buffs_out){
+		var xmlhttp = new XMLHttpRequest();
+		var url = "data/units.json";
+		
+		xmlhttp.onreadystatechange=function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				myFunction(xmlhttp.responseText);
+			}
+		}
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
+		//
+		var n = document.getElementById(id_input).value;
+		
+		function myFunction(response) {
+			var arr = JSON.parse(response);
+			var i;
+			var json_len = arr.brave.unit.length;
+			for(i = 0; i < json_len; i++) {
+				var id = arr.brave.unit[i].id;
+				var name = arr.brave.unit[i].name;
+				var ls = arr.brave.unit[i].ls['#text'];
+				var bb = arr.brave.unit[i].bb['#text'];
+				var sbb = arr.brave.unit[i].sbb['#text'];
+				var ubb = arr.brave.unit[i].ubb['#text'];
+				var es = arr.brave.unit[i].es['#text'];
+				var thumb = arr.brave.unit[i].thumb['@path'];
+				//
+				if(n==name){
+					var bb_array = bb.split("/");
+					var sbb_array = sbb.split("/");
+					var ubb_array = ubb.split("/");
+					var es_array = es.split("/");
+					
+					document.getElementById(buffs_out).innerHTML = name + '<br>';
+					$.each( bb_array, function( j, val ){
+						if(!buffsOut(val) == ""){
+							document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-blue" title="' + val + '">' + buffsOut(val,'bb') + '</span> ';
+						}
+					});
+					document.getElementById(buffs_out).innerHTML += '<br>';
+					$.each( sbb_array, function( j, val ){
+						if(!buffsOut(val) == ""){
+							document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-yellow" title="' + val + '">' + buffsOut(val,'sbb') + '</span> ';
+						}
+					});
+					document.getElementById(buffs_out).innerHTML += '<br>';
+					$.each( ubb_array, function( j, val ){
+						if(!buffsOut(val) == ""){
+							document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-red" title="' + val + '">' + buffsOut(val,'ubb') + '</span> ';
+						}
+					});
+					document.getElementById(buffs_out).innerHTML += '<br>';
+					$.each( es_array, function( j, val ){
+						if(!buffsOut(val) == ""){
+							document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-purple" title="' + val + '">' + buffsOut(val,'es') + '</span> ';
+						}
+					});
+				}//end if
+			}//end for
+		}//end myFunction
+	}//end viewBuffs_Name
+	//
+	function viewBuffs_ID(buffs_out,param){
+		var xmlhttp = new XMLHttpRequest();
+		var url = "data/units.json";
+		
+		xmlhttp.onreadystatechange=function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				myFunction(xmlhttp.responseText);
+			}
+		}
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
+		//
+		function myFunction(response) {
+			var arr = JSON.parse(response);
+			var i;
+			var json_len = arr.brave.unit.length;
+			for(i = 0; i < json_len; i++) {
+				var id = arr.brave.unit[i].id;
+				var name = arr.brave.unit[i].name;
+				var ls = arr.brave.unit[i].ls['#text'];
+				var bb = arr.brave.unit[i].bb['#text'];
+				var sbb = arr.brave.unit[i].sbb['#text'];
+				var ubb = arr.brave.unit[i].ubb['#text'];
+				var es = arr.brave.unit[i].es['#text'];
+				var thumb = arr.brave.unit[i].thumb['@path'];
+				//
+				if(id==param){
+					var bb_array = bb.split("/");
+					var sbb_array = sbb.split("/");
+					var ubb_array = ubb.split("/");
+					var es_array = es.split("/");
+					
+					document.getElementById(buffs_out).innerHTML = name + '<br>';
+					$.each( bb_array, function( j, val ){
+						if(!buffsOut(val) == ""){
+							document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-blue" title="' + val + '">' + buffsOut(val,'bb') + '</span> ';
+						}
+					});
+					document.getElementById(buffs_out).innerHTML += '<br>';
+					$.each( sbb_array, function( j, val ){
+						if(!buffsOut(val) == ""){
+							document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-yellow" title="' + val + '">' + buffsOut(val,'sbb') + '</span> ';
+						}
+					});
+					document.getElementById(buffs_out).innerHTML += '<br>';
+					$.each( ubb_array, function( j, val ){
+						if(!buffsOut(val) == ""){
+							document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-red" title="' + val + '">' + buffsOut(val,'ubb') + '</span> ';
+						}
+					});
+					document.getElementById(buffs_out).innerHTML += '<br>';
+					$.each( es_array, function( j, val ){
+						if(!buffsOut(val) == ""){
+							document.getElementById(buffs_out).innerHTML += '<span class="w3-tag w3-purple" title="' + val + '">' + buffsOut(val,'es') + '</span> ';
+						}
+					});
+				}//end if
+			}//end for
+		}//end myFunction
+	}//viewBuffs_ID
 	
 	///////// Check buffs name /////////
 	function checkBuffs_Name(id_input){
@@ -188,12 +318,6 @@
 						else if(role_array[j] == 'ails_atked'){
 							document.getElementById('ails_atked').outerHTML = '<input class="w3-radio" type="radio" id="ails_atked" checked>';
 						}
-						else if(role_array[j] == 'crit_res_down'){
-							document.getElementById('crit_res_down').outerHTML = '<input class="w3-radio" type="radio" id="crit_res_down" checked>';
-						}
-						else if(role_array[j] == 'ewd_res_down'){
-							document.getElementById('ewd_res_down').outerHTML = '<input class="w3-radio" type="radio" id="ewd_res_down" checked>';
-						}
 						//
 						else if(role_array[j] == 'crit'){
 							document.getElementById('crit').outerHTML = '<input class="w3-radio" type="radio" id="crit" checked>';
@@ -240,9 +364,6 @@
 						else if(role_array[j] == 'drain'){
 							document.getElementById('drain').outerHTML = '<input class="w3-radio" type="radio" id="drain" checked>';
 						}
-						else if(role_array[j] == 'miti_dot'){
-							document.getElementById('miti_dot').outerHTML = '<input class="w3-radio" type="radio" id="miti_dot" checked>';
-						}
 						//
 						else if(role_array[j] == 'bb_reduce' || role_array[j] == 'LS_bb_reduce'){
 							document.getElementById('bb_reduce').outerHTML = '<input class="w3-radio" type="radio" id="bb_reduce" checked>';
@@ -256,8 +377,8 @@
 						else if(role_array[j] == 'bb_atked' || role_array[j] == 'LS_bb_atked'){
 							document.getElementById('bb_atked').outerHTML = '<input class="w3-radio" type="radio" id="bb_atked" checked>';
 						}
-						else if(role_array[j] == 'bb_mod'){
-							document.getElementById('bb_mod').outerHTML = '<input class="w3-radio" type="radio" id="bb_mod" checked>';
+						else if(role_array[j] == 'bb_atk'){
+							document.getElementById('bb_atk').outerHTML = '<input class="w3-radio" type="radio" id="bb_atk" checked>';
 						}
 						else if(role_array[j] == 'bb_spark' || role_array[j] == 'LS_bb_spark'){
 							document.getElementById('bb_spark').outerHTML = '<input class="w3-radio" type="radio" id="bb_spark" checked>';
@@ -596,6 +717,13 @@
       <li><a href="#" class="tablink" onclick="openUnit(event, 'unit4_out')"><img src="images/Unit_tab.png" width="70px" id="unit4_thumb" /> <br>Unit</a></li>
       <li><a href="#" class="tablink" onclick="openUnit(event, 'unit5_out')"><img src="images/Unit_tab.png" width="70px" id="unit5_thumb" /> <br>Unit</a></li>
       <li><a href="#" class="tablink" onclick="openUnit(event, 'friend_out')"><img src="images/Unit_tab.png" width="70px" id="friend_thumb" /> <br>Friend</a></li>
+      <li id="buffs_tab"><a href="#" class="tablink" onclick="openUnit(event, 'buffs_out');
+      														  viewBuffs_Name('leader','buffs_l');
+                                                              viewBuffs_Name('unit2','buffs_2');
+                                                              viewBuffs_Name('unit3','buffs_3');
+                                                              viewBuffs_Name('unit4','buffs_4');
+                                                              viewBuffs_Name('unit5','buffs_5');
+                                                              viewBuffs_Name('friend','buffs_f');"><img src="images/list_icon.png" width="70px"/> <br>Buffs Sum</a></li>
       <li id="checkbuffs_tab"><a href="#" class="tablink" onclick="openUnit(event, 'check_buffs');
       										   resetBuffs();
       										   checkBuffs_Name('leader');
@@ -611,6 +739,27 @@
     <div id="unit4_out" class="w3-container unit w3-small"></div>
     <div id="unit5_out" class="w3-container unit w3-small"></div>
     <div id="friend_out" class="w3-container unit w3-small"></div>
+    <!--Buff details-->
+    <div id="buffs_out" class="w3-container unit w3-small">
+        <ul class="w3-ul">
+        	<li id="buffs_l"></li>
+            <li id="buffs_2"></li>
+            <li id="buffs_3"></li>
+            <li id="buffs_4"></li>
+            <li id="buffs_5"></li>
+            <li id="buffs_f"></li>
+            <li>
+            	Note: <br>
+                <span class="w3-text-red">- This tab only work on PC, not on mobile devices (smartphone, tablet)</span> <br>
+                <span class="w3-text-red">- Drag mouse over buff tags to view details</span> <br>
+            	<span class="w3-tag w3-blue">BB buffs</span>
+                <span class="w3-tag w3-yellow">SBB buffs</span>
+                <span class="w3-tag w3-red">UBB buffs</span>
+                <span class="w3-tag w3-purple">ES buffs</span>
+                <br>
+            </li>
+        </ul>
+    </div>
     <!--Check Buffs-->
     <div id="check_buffs" class="w3-container unit w3-small">
     <p id="pre_buffs"></p>
@@ -638,7 +787,7 @@ function openUnit(evt, unitName) {
 <script>
 	<!-- http://www.miniwebtool.com/html-compressor/ -->
 	function resetBuffs(){
-		document.getElementById("pre_buffs").innerHTML = '<div class="w3-row"><div class="w3-container w3-quarter"><input class="w3-radio" type="radio" disabled id="atk"><label class="w3-validate">ATK</label><br><input class="w3-radio" type="radio" disabled id="atk_ele"><label class="w3-validate">ATK Element</label><br><input class="w3-radio" type="radio" disabled id="atk_ailed"><label class="w3-validate">ATK on Alied</label><br><input class="w3-radio" type="radio" disabled id="def"><label class="w3-validate">DEF</label><br><input class="w3-radio" type="radio" disabled id="def_ele"><label class="w3-validate">DEF Element</label><br><input class="w3-radio" type="radio" disabled id="rec"><label class="w3-validate">REC</label><br><input class="w3-radio" type="radio" disabled id="convert_atk"><label class="w3-validate">Convert to ATK</label><br><input class="w3-radio" type="radio" disabled id="convert_def"><label class="w3-validate">Convert to DEF</label><br><input class="w3-radio" type="radio" disabled id="convert_rec"><label class="w3-validate">Convert to REC</label><br><input class="w3-radio" type="radio" disabled id="miti"><label class="w3-validate">Miti</label><br><input class="w3-radio" type="radio" disabled id="miti_ele"><label class="w3-validate">Miti elements</label><br><input class="w3-radio" type="radio" disabled id="miti_guard"><label class="w3-validate">Miti on Guard</label><br><input class="w3-radio" type="radio" disabled id="miti_spark"><label class="w3-validate">Miti Spark</label><br><input class="w3-radio" type="radio" disabled id="add_ele"><label class="w3-validate">Add Elements to ATK</label><br><input class="w3-radio" type="radio" disabled id="heal"><label class="w3-validate">Heal</label><br><input class="w3-radio" type="radio" disabled id="heal_atked"><label class="w3-validate">Heal on Atked</label><br><input class="w3-radio" type="radio" disabled id="hot"><label class="w3-validate">HoT</label><br><input class="w3-radio" type="radio" disabled id="heal_spark"><label class="w3-validate">Heal on Spark</label><br></div><div class="w3-container w3-quarter"><input class="w3-radio" type="radio" disabled id="null_ails"><label class="w3-validate">Null Ails</label><br><input class="w3-radio" type="radio" disabled id="null_crit"><label class="w3-validate">Null Crit Dmg</label><br><input class="w3-radio" type="radio" disabled id="null_ewd"><label class="w3-validate">Null EWD Dmg</label><br><input class="w3-radio" type="radio" disabled id="null_stats"><label class="w3-validate">Null Stats Debuff</label><br><input class="w3-radio" type="radio" disabled id="null_id"><label class="w3-validate">Null Ignore Defense</label><br><input class="w3-radio" type="radio" disabled id="cure"><label class="w3-validate">Cure Ails</label><br><input class="w3-radio" type="radio" disabled id="atk_down"><label class="w3-validate">ATK DOWN</label><br><input class="w3-radio" type="radio" disabled id="def_down"><label class="w3-validate">DEF DOWN</label><br><input class="w3-radio" type="radio" disabled id="atk_down_add"><label class="w3-validate">Add ATK DOWN to ATK</label><br><input class="w3-radio" type="radio" disabled id="def_down_add"><label class="w3-validate">Add DEF DOWN to ATK</label><br><input class="w3-radio" type="radio" disabled id="spark"><label class="w3-validate">SPARK buff</label><br><input class="w3-radio" type="radio" disabled id="spark_debuff"><label class="w3-validate">SPARK Debuff</label><br><input class="w3-radio" type="radio" disabled id="spark_crit"><label class="w3-validate">Chance Critical SPARK</label><br><input class="w3-radio" type="radio" disabled id="ails"><label class="w3-validate">Inflict Ails</label><br><input class="w3-radio" type="radio" disabled id="ails_add"><label class="w3-validate">Add Ails to ATK</label><br><input class="w3-radio" type="radio" disabled id="ails_atked"><label class="w3-validate">Counter Ails on ATKed</label><br><input class="w3-radio" type="radio" disabled id="crit_res_down"><label class="w3-validate">Crit Resit Down</label><br><input class="w3-radio" type="radio" disabled id="ewd_res_down"><label class="w3-validate">EWD Resit Down</label><br></div><div class="w3-container w3-quarter"><input class="w3-radio" type="radio" disabled id="crit"><label class="w3-validate">Crit rate</label><br><input class="w3-radio" type="radio" disabled id="crit_dmg"><label class="w3-validate">Crit Dmg</label><br><input class="w3-radio" type="radio" disabled id="ewd"><label class="w3-validate">Element Weakness Dmg</label><br><input class="w3-radio" type="radio" disabled id="dot"><label class="w3-validate">DoT</label><br><input class="w3-radio" type="radio" disabled id="bc"><label class="w3-validate">BC drops</label><br><input class="w3-radio" type="radio" disabled id="hc"><label class="w3-validate">HC drops</label><br><input class="w3-radio" type="radio" disabled id="hit"><label class="w3-validate">+ Normal Hit</label><br><input class="w3-radio" type="radio" disabled id="maxhp"><label class="w3-validate">Max HP</label><br><input class="w3-radio" type="radio" disabled id="aoe"><label class="w3-validate">AoE Normal Atk</label><br><input class="w3-radio" type="radio" disabled id="od_fill"><label class="w3-validate">OD Fill</label><br><input class="w3-radio" type="radio" disabled id="od_rate"><label class="w3-validate">OD Fill Rate</label><br><input class="w3-radio" type="radio" disabled id="barrier"><label class="w3-validate">Barrier</label><br><input class="w3-radio" type="radio" disabled id="idol"><label class="w3-validate">Idol</label><br><input class="w3-radio" type="radio" disabled id="revive"><label class="w3-validate">Revive</label><br><input class="w3-radio" type="radio" disabled id="drain"><label class="w3-validate">Drain</label><br><input class="w3-radio" type="radio" disabled id="miti_dot"><label class="w3-validate">Miti DoT</label><br></div><div class="w3-container w3-quarter"><input class="w3-radio" type="radio" disabled id="bb_reduce"><label class="w3-validate">BB Reduce</label><br><input class="w3-radio" type="radio" disabled id="bb_regen"><label class="w3-validate">BB Regen</label><br><input class="w3-radio" type="radio" disabled id="bb_fill"><label class="w3-validate">BB Fill</label><br><input class="w3-radio" type="radio" disabled id="bb_atked"><label class="w3-validate">BB on ATKed</label><br><input class="w3-radio" type="radio" disabled id="bb_mod"><label class="w3-validate">BB ATK%</label><br><input class="w3-radio" type="radio" disabled id="bb_spark"><label class="w3-validate">BB on Spark</label><br><input class="w3-radio" type="radio" disabled id="bb_rate"><label class="w3-validate">BB Fill Rate</label><br><input class="w3-radio" type="radio" disabled id="bb_guard"><label class="w3-validate">BB on Guard</label><br><input class="w3-radio" type="radio" disabled id="exp"><label class="w3-validate">EXP</label><br><input class="w3-radio" type="radio" disabled id="item"><label class="w3-validate">Item</label><br><input class="w3-radio" type="radio" disabled id="karma"><label class="w3-validate">Karma</label><br><input class="w3-radio" type="radio" disabled id="zel"><label class="w3-validate">Zell</label><br><input class="w3-radio" type="radio" disabled id="idef"><label class="w3-validate">Ignore DEF</label><br><input class="w3-radio" type="radio" disabled id="stealth"><label class="w3-validate">Stealth</label><br><input class="w3-radio" type="radio" disabled id="taunt"><label class="w3-validate">Taunt</label><br><input class="w3-radio" type="radio" disabled id="shield"><label class="w3-validate">Shield</label><br><input class="w3-radio" type="radio" disabled id="evade"><label class="w3-validate">Evade</label><br></div></div>'
+		document.getElementById("pre_buffs").innerHTML = '<div class="w3-row"><div class="w3-container w3-quarter"><input class="w3-radio" type="radio" disabled id="atk"><label class="w3-validate">ATK</label><br><input class="w3-radio" type="radio" disabled id="atk_ele"><label class="w3-validate">ATK Element</label><br><input class="w3-radio" type="radio" disabled id="atk_ailed"><label class="w3-validate">ATK on Alied</label><br><input class="w3-radio" type="radio" disabled id="def"><label class="w3-validate">DEF</label><br><input class="w3-radio" type="radio" disabled id="def_ele"><label class="w3-validate">DEF Element</label><br><input class="w3-radio" type="radio" disabled id="rec"><label class="w3-validate">REC</label><br><input class="w3-radio" type="radio" disabled id="convert_atk"><label class="w3-validate">Convert to ATK</label><br><input class="w3-radio" type="radio" disabled id="convert_def"><label class="w3-validate">Convert to DEF</label><br><input class="w3-radio" type="radio" disabled id="convert_rec"><label class="w3-validate">Convert to REC</label><br><input class="w3-radio" type="radio" disabled id="miti"><label class="w3-validate">Miti</label><br><input class="w3-radio" type="radio" disabled id="miti_ele"><label class="w3-validate">Miti elements</label><br><input class="w3-radio" type="radio" disabled id="miti_guard"><label class="w3-validate">Miti on Guard</label><br><input class="w3-radio" type="radio" disabled id="miti_spark"><label class="w3-validate">Miti Spark</label><br><input class="w3-radio" type="radio" disabled id="add_ele"><label class="w3-validate">Add Elements to ATK</label><br><input class="w3-radio" type="radio" disabled id="heal"><label class="w3-validate">Heal</label><br><input class="w3-radio" type="radio" disabled id="heal_atked"><label class="w3-validate">Heal on Atked</label><br><input class="w3-radio" type="radio" disabled id="hot"><label class="w3-validate">HoT</label><br><input class="w3-radio" type="radio" disabled id="heal_spark"><label class="w3-validate">Heal on Spark</label><br></div><div class="w3-container w3-quarter"><input class="w3-radio" type="radio" disabled id="null_ails"><label class="w3-validate">Null Ails</label><br><input class="w3-radio" type="radio" disabled id="null_crit"><label class="w3-validate">Null Crit Dmg</label><br><input class="w3-radio" type="radio" disabled id="null_ewd"><label class="w3-validate">Null EWD Dmg</label><br><input class="w3-radio" type="radio" disabled id="null_stats"><label class="w3-validate">Null Stats Debuff</label><br><input class="w3-radio" type="radio" disabled id="null_id"><label class="w3-validate">Null Ignore Defense</label><br><input class="w3-radio" type="radio" disabled id="cure"><label class="w3-validate">Cure Ails</label><br><input class="w3-radio" type="radio" disabled id="atk_down"><label class="w3-validate">ATK DOWN</label><br><input class="w3-radio" type="radio" disabled id="def_down"><label class="w3-validate">DEF DOWN</label><br><input class="w3-radio" type="radio" disabled id="atk_down_add"><label class="w3-validate">Add ATK DOWN to ATK</label><br><input class="w3-radio" type="radio" disabled id="def_down_add"><label class="w3-validate">Add DEF DOWN to ATK</label><br><input class="w3-radio" type="radio" disabled id="spark"><label class="w3-validate">SPARK buff</label><br><input class="w3-radio" type="radio" disabled id="spark_debuff"><label class="w3-validate">SPARK Debuff</label><br><input class="w3-radio" type="radio" disabled id="spark_crit"><label class="w3-validate">Chance Critical SPARK</label><br><input class="w3-radio" type="radio" disabled id="ails"><label class="w3-validate">Inflict Ails</label><br><input class="w3-radio" type="radio" disabled id="ails_add"><label class="w3-validate">Add Ails to ATK</label><br><input class="w3-radio" type="radio" disabled id="ails_atked"><label class="w3-validate">Counter Ails on ATKed</label><br></div><div class="w3-container w3-quarter"><input class="w3-radio" type="radio" disabled id="crit"><label class="w3-validate">Crit rate</label><br><input class="w3-radio" type="radio" disabled id="crit_dmg"><label class="w3-validate">Crit Dmg</label><br><input class="w3-radio" type="radio" disabled id="ewd"><label class="w3-validate">Element Weakness Dmg</label><br><input class="w3-radio" type="radio" disabled id="dot"><label class="w3-validate">DoT</label><br><input class="w3-radio" type="radio" disabled id="bc"><label class="w3-validate">BC drops</label><br><input class="w3-radio" type="radio" disabled id="hc"><label class="w3-validate">HC drops</label><br><input class="w3-radio" type="radio" disabled id="hit"><label class="w3-validate">+ Normal Hit</label><br><input class="w3-radio" type="radio" disabled id="maxhp"><label class="w3-validate">Max HP</label><br><input class="w3-radio" type="radio" disabled id="aoe"><label class="w3-validate">AoE Normal Atk</label><br><input class="w3-radio" type="radio" disabled id="od_fill"><label class="w3-validate">OD Fill</label><br><input class="w3-radio" type="radio" disabled id="od_rate"><label class="w3-validate">OD Fill Rate</label><br><input class="w3-radio" type="radio" disabled id="barrier"><label class="w3-validate">Barrier</label><br><input class="w3-radio" type="radio" disabled id="idol"><label class="w3-validate">Idol</label><br><input class="w3-radio" type="radio" disabled id="revive"><label class="w3-validate">Revive</label><br><input class="w3-radio" type="radio" disabled id="drain"><label class="w3-validate">Drain</label><br></div><div class="w3-container w3-quarter"><input class="w3-radio" type="radio" disabled id="bb_reduce"><label class="w3-validate">BB Reduce</label><br><input class="w3-radio" type="radio" disabled id="bb_regen"><label class="w3-validate">BB Regen</label><br><input class="w3-radio" type="radio" disabled id="bb_fill"><label class="w3-validate">BB Fill</label><br><input class="w3-radio" type="radio" disabled id="bb_atked"><label class="w3-validate">BB on ATKed</label><br><input class="w3-radio" type="radio" disabled id="bb_atk"><label class="w3-validate">BB ATK%</label><br><input class="w3-radio" type="radio" disabled id="bb_spark"><label class="w3-validate">BB on Spark</label><br><input class="w3-radio" type="radio" disabled id="bb_rate"><label class="w3-validate">BB Fill Rate</label><br><input class="w3-radio" type="radio" disabled id="bb_guard"><label class="w3-validate">BB on Guard</label><br><input class="w3-radio" type="radio" disabled id="exp"><label class="w3-validate">EXP</label><br><input class="w3-radio" type="radio" disabled id="item"><label class="w3-validate">Item</label><br><input class="w3-radio" type="radio" disabled id="karma"><label class="w3-validate">Karma</label><br><input class="w3-radio" type="radio" disabled id="zel"><label class="w3-validate">Zell</label><br><input class="w3-radio" type="radio" disabled id="idef"><label class="w3-validate">Ignore DEF</label><br><input class="w3-radio" type="radio" disabled id="stealth"><label class="w3-validate">Stealth</label><br><input class="w3-radio" type="radio" disabled id="taunt"><label class="w3-validate">Taunt</label><br><input class="w3-radio" type="radio" disabled id="shield"><label class="w3-validate">Shield</label><br><input class="w3-radio" type="radio" disabled id="evade"><label class="w3-validate">Evade</label><br></div></div>'
 	}
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
