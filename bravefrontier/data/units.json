@@ -4274,6 +4274,102 @@
                 }
             },
             {
+                "id": "1607",
+                "name": "Griff",
+                "role": "add_ele,crit_dmg,bb_mod,bb_rate,crit_res_down,crit",
+                "rolesp": "ewd,spark_crit",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "+50% HP,ATK / +150% Crit damage / +80% ATK on Crit / 8-10 BC on Crit"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "26",
+                    "#text": "16 hits AoE (370%) / adds Fire,Water elements to attack / +50% Crit damage / +300% BB Mod for 3 turns"
+                },
+                "sbb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "28",
+                    "#text": "19 hits AoE (580%) / adds Fire,Water elements to attack / +50% Crit damage / +300% BB Mod / +50% BB fill rate for 3 turns / lowers enemy Crit resist (15% chance) for 1 turn"
+                },
+                "ubb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "30",
+                    "#text": "23 hits AoE (1500%) / +350% ATK / +60% Crit rate / +50% HP->ATK / +300% Crit damage for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+50% Crit damage / +8 BC on Crit / +60% Crit rate for 3 turns when using BB,SBB"
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_10677.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_10677.png"
+                },                
+                "sp": {
+                    "@list": "10 : +30% HP/ATK | 15 : +100% Spark damage | 10 : <span style='display:none'>(*)</span> +40% Crit damage | 10 : +75% Crit damage​ <span style='display:none'>(Prerequisite: *)</span> | 20 : Null EWD | 10 : Raise ATK cap from 99k to 130k | 25 : +25% Crit damage buff to BB/SBB | 25 : +100% BB Mod buff to BB/SBB | 30 : Add +125% Fire/Water EWD buff for 3 turns on BB/SBB | 40 : +50% Spark Crit buff (30% chance) for 3 turns on BB/SBB"
+                }
+            },
+            {
+                "id": "1608",
+                "name": "Iris",
+                "role": "add_ele,miti_guard,miti_ele,atk_down_add,def_down_add,ewd",
+                "rolesp": "heal_atked,atk_down,def_down",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "+50% HP,DEF / +10% Guard mitigation / +6 BC when hit while Guard / -20% mitigation (20% chance)"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "26",
+                    "#text": "14 hits AoE (370%) / adds Water,Fire elements to attack / +10% Guard mitigation for 3 turns / +10% Earth,Fire mitigation for 2 turns"
+                },
+                "sbb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "28",
+                    "#text": "16 hits AoE (580%) / adds Water,Fire elements to attack / -20% ATK,DEF Down buff (10% chance, 1 turn) / +125% Fire,Water EWD for 3 turns / +10% Earth,Fire mitigation for 2 turns"
+                },
+                "ubb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "30",
+                    "#text": "21 hits AoE (1500%) / +450% Fire,Water EWD / +100% Fire,Earth mitigation / +30% Guard mitigation / -50% ATK,DEF Down buff (50% chance, 1 turn) for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+50% ATK,DEF when BB gauge > 50% / +1 hit count"
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_20637.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_20637.png"
+                },                
+                "sp": {
+                    "@list": "10 : +20% HP/DEF | 10 : +50% ATK/DEF when HP > 50% | 10 : +50% EWD | 20 : 2-3 BC when hit | 20 : Null EWD | 20 : Null Crits | 40 : Add 20-25% heal when hit (25% chance) for 3 turns on BB/SBB | 30 : Add -50% ATK/DEF Down (30% chance) for 1 turn on BB/SBB | 20 : +5% elemental mitigation buff on BB/SBB | 30 : +25% EWD buff on BB/SBB"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
