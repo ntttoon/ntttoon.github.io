@@ -6480,6 +6480,102 @@
                 "sp": {
                     "@list": "10 : <span style='display:none'>(*)</span> 20% boost to max HP | 10 : <span style='display:none'>(#)</span> Raises max HP boost from 20% to 30% <span style='display:none'>(Prerequisite: *)</span> | 10 : Raises max HP boost from 30% to 50% <span style='display:none'>(Prerequisite: #)</span> | 10 : Damage taken boosts BB Gauge (Fills 2-3 BC) | 20 : Negates all status ailments | 20 : Enhances UBB's Water barrier effect (+5000 HP. 25,000 HP total) | 40 : Adds probable status ailment counter to attack for 3 turns effect to BB/SBB (15% chance to reflect Injury, Weak and Sick & 10% chance to reflect Curse, Poison and Paralysis) | 30 : Adds status ailment removal effect to BB/SBB | 40 : Adds Water barrier effect to SBB (3,000 HP) | 30 : Allow SBBs negate critical damage effect to last an additional turn"
                 }
+            },
+            {
+                "id": "8278",
+                "name": "Titanbane Primus Keres",
+                "role": "crit_ele,atk_ele,def_ele,atk_down_add,miti,crit_dmg,convert_atk,convert_def,ewd",
+                "rolesp": "null_ewd,idef,miti_ele",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "200% boost to Atk, 60% boost to max HP and 30% boost to critical hit rate of Dark types, hugely boosts critical damage, hugely boosts Def, Rec when BB gauge is over 50% & hugely boosts Dark elemental damage (150% Crit, 80% Def, Rec & 150% elemental damage)"
+                },
+                "ls_raid": {
+                    "#text": "25% boost to all parameters of Dark types & 20% damage reduction from Dark, Light types in Guild Raid"
+                },
+                "bb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "30",
+                    "#text": "18 combo Dark attack on all foes, enormously boosts Dark types' critical hit rate for 3 turns, hugely boosts Dark types' Atk, Def for 3 turns, adds probable great 1 turn Atk reduction effect to attack for 3 turns & 50% damage reduction for 2 turns (120% Atk, Def, 60% Crit & 20% chance to reduce enemy Atk by 30%)"
+                },
+                "sbb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "32",
+                    "#text": "21 combo powerful Dark attack on all foes (damage relative to remaining HP), boosts critical damage for 3 turns, hugely boosts Atk, Def relative to max HP for 3 turns, 50% damage reduction for 2 turn & hugely boosts Dark elemental damage for 3 turns (7% boost to multiplier per 1% HP remaining, 30% HP to Atk, Def, 75% Crit & 150% elemental damage)"
+                },
+                "ubb": {
+                    "@hit": "24",
+                    "@dc": "24",
+                    "@cost": "32",
+                    "#text": "24 combo massive Dark attack on all foes (damage relative to remaining HP), boosts critical damage for 3 turns, greatly boosts Atk, Def relative to max HP for 3 turns, hugely boosts max HP, hugely reduces damage from Light & Dark types for 3 turns & enormously boosts Dark elemental damage for 3 turns (10% boost to multiplier per 1% HP remaining, 300% Crit, 50% HP to Atk, Def, 500% elemental damage, 40% HP boost & 80% elemental reduction)"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Considerably boosts critical damage, probable damage reduction to 1 & restores HP each turn (100% Crit, 20% chance & heals 2500-3000 + 10% Rec)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860278.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860278.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> 30% boost to max HP | 10 : Raises max HP boost from 30% to 50% <span style='display:none'>(Prerequisite: *)</span> | 15 : Critical hit damage boosts BB Gauge (Fills 8-10 BC) | 20 : Boosts elemental damage (50% boost) | 10 : Raises Atk parameter limits to 130000 | 40 : Enhances LS's critical damage boost effect (+100% boost. 250% boost total) | 5 : Adds elemental damage negation for 2 turns effect to BB/SBB | 15 : Adds Def ignoring effect to attack for 2 turns effect to BB/SBB | 25 : Enhances SBB's Atk, Def boost relative to max HP effect (+5% boost. 35% HP to Atk, Def total) | 30 : Adds Light, Dark damage reduction for 1 turn effect to BB/SBB (15% reduction) | 30 : Enhances SBB's critical damage boost effect (+50% boost. 125% boost total)"
+                }
+            },
+            {
+                "id": "8280",
+                "name": "Starpyre Lancer Zeis",
+                "role": "spark,atk_down_add,atk_ele,def_ele,spark_crit,ewd",
+                "rolesp": "idef,heal_spark,convert_atk",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "17",
+                    "@dc": "51",
+                    "#text": "200% boost to Atk and 60% boost to max HP of Fire types, 130% boost to Spark damage, Spark damage boosts BB gauge & hugely boosts Fire elemental damage (Fills 2-3 BC & 150% elemental damage)"
+                },
+                "ls_raid": {
+                    "#text": "25% boost to all parameters of Fire types & 15% damage reduction from Fire, Earth types in Guild Raid"
+                },
+                "bb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "30",
+                    "#text": "21 combo Fire attack on all foes, hugely boosts Spark damage for 3 turns, adds probable great 1 turn Atk reduction effect to attack for 3 turns & greatly boosts Fire types' Atk, Def for 3 turns (120% Spark, 20% chance to reduce enemy Atk by 30% & 100% Atk, Def)"
+                },
+                "sbb": {
+                    "@hit": "23/3",
+                    "@dc": "23/3",
+                    "@cost": "32",
+                    "#text": "23 combo powerful Fire attack on all foes (damage relative to remaining HP), 3 combo powerful Fire attack on single foe, enormously boosts Spark damage for 3 turns, adds probable Spark critical for 3 turns, hugely boosts Fire types' Atk, Def for 3 turns & hugely boosts Fire elemental damage for 3 turns (7% boost to multiplier per 1% HP remaining, 150% Spark, 30% chance Sparks deal 60% extra damage, 150% elemental damage & 120% Atk, Def)"
+                },
+                "ubb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "32",
+                    "#text": "25 combo massive Fire attack on all foes, enormously boosts Spark damage for 3 turns, inflicts enormous Spark vulnerability for 3 turns, enormously boosts Atk for 3 turns, additional massive attack at turn's end for 3 turns & enormously boosts Fire elemental damage for 3 turns (350% Atk and Spark, 500% elemental damage, 150% vulnerability & 1500% DoT multiplier)"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Greatly boosts Atk when BB gauge is full, damage taken greatly boosts BB gauge & 100% boost to Spark damage for 2 turns when Sparks exceed certain amount (100% Atk, fills 2-3 BC & 100% Spark after 15 Sparks)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810278.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810278.png"
+                },                
+                "sp": {
+                    "@list": "25 : 50% boost to all parameters | 15 : <span style='display:none'>(*)</span> 100% boost to Spark damage | 10 : Raises Spark damage boost from 100% to 120% <span style='display:none'>(Prerequisite: *)</span> | 20 : Boosts elemental damage (50% boost) | 10 : Raises Atk parameter limits to 130000 | 10 : Enhances LS's 130% boost to Spark damage effect (+10% boost. 140% boost total) | 35 : Adds resistance against 1 KO attack after activating OD | 15 : Adds Def ignoring effect to attack for 2 turns effect to BB/SBB | 20 : Adds considerable HP restoration during Spark for 3 turns effect to SBB (Heals 400-500 HP) | 25 : Enhances SBB's elemental damage boost effect (+50% boost. 200% boost total) | 40 : Adds greatly boosts Atk relative to Def for 3 turns effect to BB/SBB (80% Def to Atk)"
+                }
             }
         ]
     }
