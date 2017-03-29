@@ -6674,6 +6674,54 @@
                 }
             },
             {
+                "id": "8281",
+                "name": "Demonic Witch Xie'Jing ",
+                "role": "ails,ewd,atk_ailed,bb_atked,dot",
+                "rolesp": "ails_add,ails_atked",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "54",
+                "ls": {
+                    "@hit": "17",
+                    "@dc": "51",
+                    "#text": "50% boost to all parameters / greatly boosts BC efficacy [60%] / hugely boosts damage against status afflicted foes [150%] / & hugely boosts elemental damage [125%]"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "28",
+                    "@dc": "28",
+                    "@cost": "28",
+                    "#text": "28 combo powerful Dark, Fire, Earth, Thunder attack [450%] on all foes, / probable [80%] random status ailment infliction, / boosts all elemental damage [75%] for 3 turns / & hugely boosts damage [170%] against status afflicted foes for 3 turns "
+                },
+                "sbb": {
+                    "@hit": "40",
+                    "@dc": "40",
+                    "@cost": "34",
+                    "#text": "40 combo power Dark attack [200-900%] on all foes (damage relative to remaining HP), / probable [80%] random status ailment infliction, / damage taken considerably boosts BB gauge [4-7BC] for 3 turns, / additional powerful attack at turn's end [500%] for 3 turns / & hugely boosts damage [170%] against status afflicted foes for 3 turns"
+                },
+                "ubb": {
+                    "@hit": "45",
+                    "@dc": "45",
+                    "@cost": "32",
+                    "#text": "45 combo massive Dark, Fire, Earth, Thunder attack [1800%] on all foes, / adds random status ailment infliction to attack [100%] for 3 turns, / hugely boosts BC efficacy [100%] for 3 turns, / enormously boosts all elemental damage [400%] for 3 turns / & enormously boosts damage [300%] against status afflicted foes for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Hugely boosts damage against status afflicted foes [100%], / negates all status ailments & negates Atk, Def, Rec reduction effects "
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860158.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860158.png"
+                },                
+                "sp": {
+                    "@list": "20 : 30% boost to all parameters | 10 : 100% boost to Spark damage | 15 : Boosts elemental damage [50%] | 20 : Boosts damage against status afflicted foes [50%] | 15 : Boosts BC efficacy [20%] | 35 : Adds probable [15%] random status infliction to attack for 3 turns effect to BB/SBB | 35 : Adds probable [15%] random status counter for 3 turns effect to BB/SBB | 15 : Enhances SBB's damage taken considerably boosts BB gauge [5-8BC] effect | 30 : Enhances BB/SBB/UBB's damage boost [+30%] against status afflicted foes effect"
+                }
+            },
+            {
                 "id": "8283",
                 "name": "Midnight Judge Neferet",
                 "role": "heal,bb_mod,convert_rec,maxhp,convert_atk,convert_def,null_crit,null_ewd,null_stats",
