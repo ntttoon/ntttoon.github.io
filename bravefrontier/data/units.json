@@ -2830,7 +2830,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_51087.png"
                 },                
                 "sp": {
-                    "@list": "10 : 20% boost to Atk, max HP | 10 : 20% boost to Def, max HP | 20 : Raises normal hit amount (+1 to each hit count) | 10 : Damage taken boosts BB gauge (Fills 2-3 BC) | 20 : Negates elemental damage | 50 : Enhances success rate of LS's probable 1 KO attack resistance effect (+5% chance. 25% chance to survive 1 KO attack) | 40 : Adds great HP restoration effect for 3 turns to BB/SBB (Heal 3000-3500 + 15% Rec) | 40 : Enhances LS's damage reduction from Light, Dark types effect (+5% reduction. 20% reduction total)"
+                    "@list": "10 : <span style='display:none'>(*)</span> 20% boost to Atk, max HP | 10 : 20% boost to Def, max HP <span style='display:none'>(Prerequisite: *)</span> | 20 : Raises normal hit amount (+1 to each hit count) | 10 : Damage taken boosts BB gauge (Fills 2-3 BC) | 20 : Negates elemental damage | 50 : Enhances success rate of LS's probable 1 KO attack resistance effect (+5% chance. 25% chance to survive 1 KO attack) | 40 : Adds great HP restoration effect for 3 turns to BB/SBB (Heal 3000-3500 + 15% Rec) | 40 : Enhances LS's damage reduction from Light, Dark types effect (+5% reduction. 20% reduction total)"
                 }
             },
             {
