@@ -3747,7 +3747,7 @@
             },
             {
                 "id": "1570",
-                "name": "Legolus 8",
+                "name": "Infernal Pyre Rugahr",
                 "role": "crit,crit_dmg",
                 "rolesp": "atk",
                 "element": "Fire",
@@ -3795,7 +3795,7 @@
             },
             {
                 "id": "1572",
-                "name": "Azeria 8",
+                "name": "Crystalline Blue Azalea",
                 "role": "heal_spark,atk_ele,miti_ele,def,rec,convert_rec,ewd",
                 "rolesp": "LS_miti_ele,heal_atked,hot,barrier,miti_spark",
                 "element": "Water",
@@ -3843,7 +3843,7 @@
             },
             {
                 "id": "1574",
-                "name": "Claira 8",
+                "name": "Furious Thunder Cleria",
                 "role": "bb_rate,bb_atked,heal,cure,bb_spark,null_ails,hot",
                 "rolesp": "LS_bb_atked,bb_fill",
                 "element": "Thunder",
