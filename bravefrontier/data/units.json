@@ -3790,7 +3790,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_11047.png"
                 },                
                 "sp": {
-                    "@list": "15 : +30% ATK/HP | 20 : +0-80% ATK based on HP remaining | 20 : <span style='display:none'>(*)</span>+100% Spark damage | 15 : +120% Spark damage <span style='display:none'>(Prerequisite: *)</span> | 20 : <span style='display:none'>(#)</span>+40% Crit damage | 10 : +75% Crit damage <span style='display:none'>(Prerequisite: #)</span> | 10 : Raise max damage from 99,999 to 130,000 | 35 : Enhance critical damage buff on BB/SBB by 25% | 20 : Enhance 2nd attack against Earth enemies on SBB (+200% BB mod) | 50 : Add +180% ATK for 3 turns to BB/SBB"
+                    "@list": "15 : 30% boost to Atk, max HP | 20 : Considerably boosts Atk relative to how high remaining HP is (0.8% boost per 1% HP remaining, 80% boost total) | 20 : <span style='display:none'>(*)</span>100% boost to Spark damage | 15 : Raises Spark damage boost from 100% to 120% <span style='display:none'>(Prerequisite: *)</span> | 20 : <span style='display:none'>(#)</span>Slightly boosts critical hit damage (40% boost) | 10 : Boosts critical hit damage (75% boost) <span style='display:none'>(Prerequisite: #)</span> | 10 : Raises Atk parameter limits to 130000 | 35 : Enhances BB/SBB's critical damage boost effect (+25% boost. 75% boost total) | 20 : Enhances SBB's attack against all Earth types effect (+200% BB Atk. 820% BB mod total) | 50 : Adds huge boost to Atk for 3 turns effect to BB/SBB (180% boost)"
                 }
             },
             {
@@ -3838,7 +3838,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20977.png"
                 },                
                 "sp": {
-                    "@list": "15 : +30% DEF/REC/HP | 20 : 2-3 BC when hit | 20 : 15-20% heal when hit (25% chance) | 20 : null EWD | 10 : Raise max damage from 99,999 to 130,000 | 40 : Add 20-25% heal when hit (25% chance) for 3 turns on BB/SBB | 40 : Add 3000-3500 HoT on BB/SBB | 40 : Add +100% ATK/DEF/REC to Earth units for 3 turns on BB/SBB | 45 : Add 3000 HP Water barrier on BB/SBB | 35 : Add (25%) Spark resist for 1 turn on BB/SBB"
+                    "@list": "15 : 30% boost to Def, Rec, max HP | 20 : Damage taken boosts BB gauge (Fills 2-3 BC) | 20 : Damage taken may slightly restore HP (25% chance to heal 15-20% damage) | 20 : Negates elemental damage | 10 : Raises Atk parameter limits to 130000 | 40 : Adds probable slight HP restoration when attacked for 3 turns effect to BB/SBB (25% chance to heal 20-25% damage) | 40 : Adds great HP restoration effect for 3 turns to BB/SBB (Heal 3000-3500 + 15% Rec) | 40 : Adds considerable boost to Earth Types' Atk, Def, Rec for 3 turns effect to BB/SBB (100% boost) | 45 : Adds Water barrier effect to BB/SBB (3000 HP) | 35 : Adds Spark damage reduction for 1 turn effect to BB/SBB (25% reduction)"
                 }
             },
             {
@@ -3886,7 +3886,7 @@
                     "@path": "http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_40897.png"
                 },                
                 "sp": {
-                    "@list": "20 : +30% Stats | 20 : +100% Spark damage | 10 : 3 BC/turn | 20 : null Crits | 10 : Raise max damage from 99,999 to 130,000 | 10 : +10% Stats to LS | 30 : +2-3 BC when hit to LS | 35 : +1000 HoT (+10% REC) on SBB | 35 : +1000 burst Heal (+10% REC) on BB/SBB | 45 : Add 8 BC fill to BB/SBB"
+                    "@list": "20 : 30% boost to all parameters | 20 : 100% boost to Spark damage | 10 : Boosts BB gauge each turn (Fills 3 BC) | 20 : Negates critical damage | 10 : Raises Atk parameter limits to 130000 | 10 : Enhances LS's boost to all parameters effect from 50% to 60% | 30 : Enhances LS's damage taken hugely boosts BB gauge effect (+2-3 BC. Fills 6-10 BC total) | 35 : Enhances SBB's greatly restores HP each turn effect (+1000 HP & +10% Rec. Gradually heals 4500-5000 + 25% Rec total) | 35 : Enhances BB/SBB's greatly restores HP effect (+1000 HP & +10% Rec. Heals 5000-5500 + 25% Rec total) | 45 : Adds huge boost to BB gauge effect to BB/SBB (Fills 8 BC)"
                 }
             },
             {
