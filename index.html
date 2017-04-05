@@ -1,39 +1,168 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>NttToon PlayGround</title>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:image" content="http://ntttoon.github.io/images/fb_hompage.jpg" />
+<meta property="og:title" content="NTTTOON'S BLOG'" />
+<meta property="og:description" content="Hello World!, my name is NTTTOON" />
 <link rel="stylesheet" href="css/w3.css">
 <script src="js/ga.js"></script>
-</head>
+<script src="js/w3data.js"></script>
 
-<body>
-<header class="w3-container w3-teal w3-card-2">
-  <h5>NTTTOON'S PLAYGROUND</h5>
-</header>
-<div class="w3-row-padding w3-margin-top">
-  <div class="w3-third w3-margin-bottom">
-    <div class="w3-card-2"> <a href="bravefrontier/"><img src="images/bfgb.jpg" style="width:100%"></a>
-      <div class="w3-container">
-        <h4>Some stuffs about BF</h4>
-      </div>
+<body class="w3-light-grey">
+  <!-- Sidebar (hidden by default) -->
+  <nav class="w3-sidebar w3-bar-block w3-card-2 w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px"
+    id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+    <a href="bravefrontier/index.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">Brave Frontier</a>
+    <a href="animagic/index.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">AniMagic</a>
+  </nav>
+
+  <!-- Top menu -->
+  <div class="w3-top">
+    <div class="w3-white w3-xlarge" style="margin:auto">
+      <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+      <div class="w3-center w3-padding-16"><b>NTTTOON'S BLOG</b></div>
     </div>
   </div>
-  <!-- <div class="w3-third w3-margin-bottom">
-    <div class="w3-card-2"> <a href="animagic/"><img src="images/animagic.png" style="width:100%"></a>
-      <div class="w3-container">
-        <h4>Animation CSS class</h4>
+  <!-- w3-content defines a container for fixed size centered content, and is wrapped around the whole page content, except for the footer in this example -->
+  <div class="w3-content" style="max-width:1400px">
+
+    <!-- Header -->
+    <header class="w3-container w3-center w3-padding-32">
+      <h1><b></b></h1>
+    </header>
+
+    <!-- Grid -->
+    <div class="w3-row">
+
+      <!-- Blog entries -->
+      <div class="w3-col l8 s12">
+        <!-- Blog entry -->
+        <div id="my_main_posts">
+          <div w3-repeat="posts">
+            <div class="w3-card-4 w3-margin w3-white">
+              <img src="{{image}}" alt="Nature" style="width:100%">
+              <div class="w3-container">
+                <h3><b>{{title}}</b></h3>
+                <h5><span class="w3-opacity">{{date}}</span></h5>
+              </div>
+              <div class="w3-container">
+                <p>{{short_des}}</p>
+                <div class="w3-row">
+                  <div class="w3-col m8 s12">
+                    <p><a href="{{link}}" class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+          </div>
+        </div>
+        <!-- end myposts -->
       </div>
-    </div>
+      <!-- END BLOG ENTRIES -->
+
+      <!-- Introduction menu -->
+      <div class="w3-col l4">
+        <!-- About Card -->
+        <div class="w3-card-2 w3-margin w3-margin-top">
+          <img src="images/cid.png" style="width:100%">
+          <div class="w3-container w3-white">
+            <h4><b>Hello, my name is ntttoon (ntt + toon )</b></h4>
+            <p>This is my personal blog, it's also my pet project. I love the combination between Art and Code. I hope you will
+              find something helpful here. Thanks</p>
+          </div>
+        </div>
+        <hr>
+
+        <!-- New Posts -->
+        <div class="w3-card-2 w3-margin">
+          <div class="w3-container w3-padding">
+            <h4>New Posts</h4>
+          </div>
+          <ul class="w3-ul w3-hoverable w3-white" id="my_sub_posts">
+            <li class="w3-padding-16" w3-repeat="posts">
+              <a href="{{link}}" target="_blank" style="text-decoration: none">
+                <img src="{{thumb}}" alt="" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">{{title}}</span><br>
+                <div class="w3-clear"></div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <hr>
+
+        <!-- My Projects -->
+        <div class="w3-card-2 w3-margin">
+          <div class="w3-container w3-padding">
+            <h4>My Projects</h4>
+          </div>
+          <ul class="w3-ul w3-hoverable w3-white">
+            <li class="w3-padding-16">
+              <a href="bravefrontier/index.html" target="_blank" style="text-decoration: none">
+                <img src="images/bravefrontier.png" alt="" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">Brave Frontier</span><br>
+                <span>Small tools for Brave Frontier mobile game</span>
+              </a>
+            </li>
+            <li class="w3-padding-16">
+              <a href="animagic/index.html" target="_blank" style="text-decoration: none">
+                <img src="images/animagic.png" alt="" class="w3-left w3-margin-right" style="width:50px">
+                <span class="w3-large">AniMagic</span><br>
+                <span>For making HTML5 banners. Easy to use!.</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <hr>
+
+        <!-- Labels / tags -->
+        <div class="w3-card-2 w3-margin">
+          <div class="w3-container w3-padding">
+            <h4>Tags</h4>
+          </div>
+          <div class="w3-container w3-white">
+            <p><a href="#" class="w3-tag w3-light-grey w3-hover-black w3-margin-bottom">bravefrontier</a> <a href="#" class="w3-tag w3-light-grey w3-hover-black w3-margin-bottom">animation</a>              </p>
+          </div>
+        </div>
+
+        <!-- END Introduction Menu -->
+      </div>
+
+      <!-- END GRID -->
+    </div><br>
+
+    <!-- END w3-content -->
   </div>
- <div class="w3-third w3-margin-bottom">
-    <div class="w3-card-2"> <img src="images/bfgb.jpg" style="width:100%">
-      <div class="w3-container">
-        <h4>5 Terre</h4>
-      </div>
-    </div>
-  </div>-->
-</div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-dark-grey w3-padding-small w3-margin-top">
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+
+  <script>
+    w3Http("json/posts.json", function () {
+      if (this.readyState == 4 && this.status == 200) {
+        var myObject = JSON.parse(this.responseText);
+        w3DisplayData("my_main_posts", myObject);
+        w3DisplayData("my_sub_posts", myObject);
+      }
+    });
+  </script>
+
 </body>
+
 </html>
