@@ -12,21 +12,7 @@
 <script src="js/w3data.js"></script>
 
 <body class="w3-light-grey">
-  <!-- Sidebar (hidden by default) -->
-  <nav class="w3-sidebar w3-bar-block w3-card-2 w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px"
-    id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
-    <a href="bravefrontier/index.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">Brave Frontier</a>
-    <a href="animagic/index.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">AniMagic</a>
-  </nav>
-
-  <!-- Top menu -->
-  <div class="w3-top">
-    <div class="w3-white w3-xlarge" style="margin:auto">
-      <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-      <div class="w3-center w3-padding-16"><b>NTTTOON'S BLOG</b></div>
-    </div>
-  </div>
+  <div w3-include-html="widgets/menu_sidebar.html"></div>
   <!-- w3-content defines a container for fixed size centered content, and is wrapped around the whole page content, except for the footer in this example -->
   <div class="w3-content" style="max-width:1400px">
 
@@ -162,6 +148,8 @@
         w3DisplayData("my_sub_posts", myObject);
       }
     });
+
+    w3IncludeHTML();
   </script>
 
 </body>
