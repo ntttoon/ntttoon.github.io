@@ -26,10 +26,9 @@
 
       <!-- Blog entries -->
       <div class="w3-col l8 s12">
+        <div id="my_main_posts"></div>
         <!-- Blog entry -->
-        <div id="my_main_posts">
-          <div w3-repeat="posts">
-            <div class="w3-card-4 w3-margin w3-white">
+        <!-- <div class="w3-card-4 w3-margin w3-white">
               <img src="{{image}}" alt="" style="width:100%">
               <div class="w3-container">
                 <h3><b>{{title}}</b></h3>
@@ -44,9 +43,7 @@
                 </div>
               </div>
             </div>
-            <hr>
-          </div>
-        </div>
+            <hr> -->
         <!-- end myposts -->
       </div>
       <!-- END BLOG ENTRIES -->
@@ -69,14 +66,15 @@
           <div class="w3-container w3-padding">
             <h4>New Posts</h4>
           </div>
-          <ul class="w3-ul w3-hoverable w3-white" id="my_sub_posts">
-            <li class="w3-padding-16" w3-repeat="posts">
+          <ul class="w3-ul w3-hoverable w3-white">
+            <div id="my_sub_posts"></div>
+            <!--<li class="w3-padding-16" w3-repeat="posts">
               <a href="{{link}}" style="text-decoration: none">
                 <img src="{{thumb}}" alt="" class="w3-left w3-margin-right" style="width:50px">
                 <span class="w3-large">{{title}}</span><br>
                 <div class="w3-clear"></div>
               </a>
-            </li>
+            </li> -->
           </ul>
         </div>
         <hr>
@@ -138,20 +136,60 @@
     function w3_close() {
       document.getElementById("mySidebar").style.display = "none";
     }
-  </script>
-
-  <script>
-    w3Http("json/posts.json", function () {
-      if (this.readyState == 4 && this.status == 200) {
-        var myObject = JSON.parse(this.responseText);
-        w3DisplayData("my_main_posts", myObject);
-        w3DisplayData("my_sub_posts", myObject);
-      }
-    });
 
     w3IncludeHTML();
   </script>
+  <script>
+    var xmlhttp = new XMLHttpRequest();
+    var url = "json/posts.json";
 
+    xmlhttp.onreadystatechange = function () {
+      if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        myFunction(xmlhttp.responseText);
+      }
+    }
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+
+    function myFunction(response) {
+      var arr = JSON.parse(response);
+      var i;
+      var out = "";
+      var sub_out = "";
+
+      var json_len = arr.posts.length;
+      for (i = 0; i < json_len; i++) {
+        var title = arr.posts[i].title;
+        var date = arr.posts[i].date;
+        var short_des = arr.posts[i].short_des;
+        var image = arr.posts[i].image;
+        var thumb = arr.posts[i].thumb;
+        var link = arr.posts[i].link;
+
+        out += '<div class="w3-card-4 w3-margin w3-white">';
+        out += '<img src="' + image + '" alt="" style="width:100%">'
+        out += '<div class="w3-container">';
+        out += '<h3><b>' + title + '</b></h3>';
+        out += '<h5><span class="w3-opacity">' + date + '</span></h5>';
+        out += '</div>';
+        out += '<div class="w3-container">';
+        out += '<p>' + short_des + '</p>';
+        out += '<div class="w3-row">';
+        out += '<div class="w3-col m8 s12">';
+        out += '<p><a href="' + link + '" class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></a></p>';
+        out += '</div></div></div></div><hr>'
+
+        sub_out += '<li class="w3-padding-16">';
+        sub_out += '<a href="' + link + '" style="text-decoration: none">';
+        sub_out += '<img src="' + thumb + '" alt="" class="w3-left w3-margin-right" style="width:50px">';
+        sub_out += '<span class="w3-large">' + title + '</span><br>';
+        sub_out += '<div class="w3-clear"></div>';
+        sub_out += '</a></li>';
+      }
+      document.getElementById("my_main_posts").innerHTML = out;
+      document.getElementById("my_sub_posts").innerHTML = sub_out;
+    }
+  </script>
 </body>
 
 </html>
