@@ -50,16 +50,7 @@
 
       <!-- Introduction menu -->
       <div class="w3-col l4">
-        <!-- About Card -->
-        <div class="w3-card-2 w3-margin w3-margin-top">
-          <img src="images/cid.png" style="width:100%">
-          <div class="w3-container w3-white">
-            <h4><b>Hello, my name is ntttoon (ntt + toon )</b></h4>
-            <p>This is my personal blog, it's also my pet project. I love the combination between Art and Code. I hope you will
-              find something helpful here. Thanks</p>
-          </div>
-        </div>
-        <hr>
+        <div w3-include-html="widgets/about.html"></div>
 
         <!-- New Posts -->
         <div class="w3-card-2 w3-margin">
@@ -79,39 +70,8 @@
         </div>
         <hr>
 
-        <!-- My Projects -->
-        <div class="w3-card-2 w3-margin">
-          <div class="w3-container w3-padding">
-            <h4>My Projects</h4>
-          </div>
-          <ul class="w3-ul w3-hoverable w3-white">
-            <li class="w3-padding-16">
-              <a href="bravefrontier/index.html" target="_blank" style="text-decoration: none">
-                <img src="images/bravefrontier.png" alt="" class="w3-left w3-margin-right" style="width:50px">
-                <span class="w3-large">Brave Frontier</span><br>
-                <span>Small tools for Brave Frontier mobile game</span>
-              </a>
-            </li>
-            <li class="w3-padding-16">
-              <a href="animagic/index.html" target="_blank" style="text-decoration: none">
-                <img src="images/animagic.png" alt="" class="w3-left w3-margin-right" style="width:50px">
-                <span class="w3-large">AniMagic</span><br>
-                <span>For making HTML5 banners. Easy to use!.</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <hr>
-
-        <!-- Labels / tags -->
-        <div class="w3-card-2 w3-margin">
-          <div class="w3-container w3-padding">
-            <h4>Tags</h4>
-          </div>
-          <div class="w3-container w3-white">
-            <p><a href="#" class="w3-tag w3-light-grey w3-hover-black w3-margin-bottom">bravefrontier</a> <a href="#" class="w3-tag w3-light-grey w3-hover-black w3-margin-bottom">animation</a>              </p>
-          </div>
-        </div>
+        <div w3-include-html="widgets/projects.html"></div>
+        <div w3-include-html="widgets/tags.html"></div>
 
         <!-- END Introduction Menu -->
       </div>
@@ -122,23 +82,12 @@
     <!-- END w3-content -->
   </div>
 
-  <!-- Footer -->
-  <footer class="w3-container w3-dark-grey w3-padding-small w3-margin-top">
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-  </footer>
+  <div w3-include-html="widgets/footer.html"></div>
 
   <script>
-    // Script to open and close sidebar
-    function w3_open() {
-      document.getElementById("mySidebar").style.display = "block";
-    }
-
-    function w3_close() {
-      document.getElementById("mySidebar").style.display = "none";
-    }
-    
     w3IncludeHTML();
   </script>
+  <script src="http://ntttoon.github.io/js/menu_control.js"></script>
   <script>
     var xmlhttp = new XMLHttpRequest();
     var url = "json/posts.json";
