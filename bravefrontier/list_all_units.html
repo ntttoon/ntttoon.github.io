@@ -18,25 +18,23 @@ a{
 <body>
 <!-- Navbar -->
 <div class="w3-top">
- <ul class="w3-navbar w3-teal w3-left-align">
-  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-    <a class="w3-hover-white" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  </li>
-  <li class="w3-hide-small"><a href="index.html" class="w3-hover-white"><i class="fa fa-home"></i></a></li>
-  <li class="w3-hide-small"><a href="list_all_units.html" class="w3-hover-white" onClick="thumbView();"><i class="fa fa-th"></i></a></li>
-  <li class="w3-hide-small"><a href="list_all_units.html" class="w3-hover-white" onClick="listView();"><i class="fa fa-th-list"></i></a></li>
-  <li style="margin-top:8px;margin-left:15px"><div id="count_info"></div></li>
-  <li class="w3-hide-small w3-right"><a href="search_units.html" class="w3-hover-white" title="Search"><i class="fa fa-search"></i></a></li>
- </ul>
+ <div class="w3-bar w3-teal w3-left-align">
+  <a class="w3-hover-white w3-hide-medium w3-hide-large w3-opennav w3-display-topright w3-bar-item" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="index.html" class="w3-hover-white w3-hide-small w3-bar-item"><i class="fa fa-home"></i></a>
+  <a href="list_all_units.html" class="w3-hover-white w3-hide-small w3-bar-item" onClick="thumbView();"><i class="fa fa-th"></i></a>
+  <a href="list_all_units.html" class="w3-hover-white w3-hide-small w3-bar-item" onClick="listView();"><i class="fa fa-th-list"></i></a>
+  <div id="count_info" class="w3-bar-item"></div>
+  <a href="search_units.html" class="w3-hover-white w3-hide-small w3-bar-item w3-display-right" title="Search"><i class="fa fa-search"></i></a>
+ </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
-    <ul class="w3-navbar w3-teal w3-left-align">
-      <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-      <li><a href="list_all_units.html" onClick="thumbView();"><i class="fa fa-th"></i> Thumb View</a></li>
-      <li><a href="list_all_units.html" onClick="listView();"><i class="fa fa-th-list"></i> List View</a></li>
-      <li><a href="search_units.html"><i class="fa fa-search"></i> Search</a></li>
-    </ul>
+    <div class="w3-bar-block w3-teal">
+      <a href="index.html" class=" w3-bar-item"><i class="fa fa-home"></i> Home</a>
+      <a href="list_all_units.html" class=" w3-bar-item" onClick="thumbView();"><i class="fa fa-th"></i> Thumb View</a>
+      <a href="list_all_units.html" class=" w3-bar-item" onClick="listView();"><i class="fa fa-th-list"></i> List View</a>
+      <a href="search_units.html" class=" w3-bar-item"><i class="fa fa-search"></i> Search</a>
+    </div>
   </div>
 </div>
 <!-- end Navbar -->

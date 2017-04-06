@@ -536,15 +536,15 @@
 <body onLoad="checkTeam();">
 <!-- Navbar -->
 <div class="w3-top">
- <ul class="w3-navbar w3-teal w3-left-align">
-  <li><a href="index.html" class="w3-hover-white"><i class="fa fa-home"></i></a></li>
-  <li class="w3-hide-small" style="margin-top:8px">BUILD YOUR TEAM</li>
- </ul>
+ <div class="w3-bar w3-teal w3-left-align">
+  <a href="index.html" class="w3-hover-white w3-bar-item"><i class="fa fa-home"></i></a>
+  <div class="w3-hide-small w3-bar-item">BUILD YOUR TEAM</div>
+ </div>
 </div>
 <!-- end Navbar -->
 <div style="margin-top:40px;"></div>
 
-<button onclick="openAccordion('note')" class="w3-btn w3-block w3-left-align">Read this first, click here!</button>
+<button onclick="openAccordion('note')" class="w3-button w3-black" style="width:100%">Read this first, click here!</button>
 <div id="note" class="w3-container w3-hide w3-sand">
   ** You can search by Unit's Name (ie: Felice, Krantz..) or by Elements (ie: Dark, Light..) <br>** Chose Buffs and type <strong>ONE</strong> of these keywords to search units who related to leader skills, BB/SBB/ES buffs, and OMNI SP skills: 
 <br><strong class="w3-text-deep-orange">LS_bb_atked, LS_bb_spark, LS_bb_reduce, LS_heal_atked, LS_null_crit, LS_null_ails, LS_null_ewd, LS_null_ewd, LS_null_id, LS_miti_ele</strong>
@@ -585,26 +585,25 @@
 </div>
 <div id="id01" class="w3-modal">
   <div class="w3-modal-content w3-card-4 w3-animate-zoom">
-    <header class="w3-container w3-red"> <span onclick="document.getElementById('id01').style.display='none'" 
-   class="w3-closebtn w3-padding-top">×</span>
+    <header class="w3-container w3-red"> <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright w3-hover-none">×</span>
       <h4>YOUR TEAM</h4>
     </header>
-    <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%; text-align:center">
-      <li><a href="#" class="tablink" onclick="openUnit(event, 'leader_out')"><img src="images/Unit_tab.png" width="70px" id="leader_thumb" /> <br>Leader</a></li>
-      <li><a href="#" class="tablink" onclick="openUnit(event, 'unit2_out')"><img src="images/Unit_tab.png" width="70px" id="unit2_thumb" /> <br>Unit</a></li>
-      <li><a href="#" class="tablink" onclick="openUnit(event, 'unit3_out')"><img src="images/Unit_tab.png" width="70px" id="unit3_thumb" /> <br>Unit</a></li>
-      <li><a href="#" class="tablink" onclick="openUnit(event, 'unit4_out')"><img src="images/Unit_tab.png" width="70px" id="unit4_thumb" /> <br>Unit</a></li>
-      <li><a href="#" class="tablink" onclick="openUnit(event, 'unit5_out')"><img src="images/Unit_tab.png" width="70px" id="unit5_thumb" /> <br>Unit</a></li>
-      <li><a href="#" class="tablink" onclick="openUnit(event, 'friend_out')"><img src="images/Unit_tab.png" width="70px" id="friend_thumb" /> <br>Friend</a></li>
-      <li id="checkbuffs_tab"><a href="#" class="tablink" onclick="openUnit(event, 'check_buffs');
+    <div class="w3-bar w3-white w3-border-bottom" style="width:100%; text-align:center">
+      <a href="#" class="tablink w3-bar-item" onclick="openUnit(event, 'leader_out')"><img src="images/Unit_tab.png" width="70px" id="leader_thumb" /> <br>Leader</a>
+      <a href="#" class="tablink w3-bar-item" onclick="openUnit(event, 'unit2_out')"><img src="images/Unit_tab.png" width="70px" id="unit2_thumb" /> <br>Unit</a>
+      <a href="#" class="tablink w3-bar-item" onclick="openUnit(event, 'unit3_out')"><img src="images/Unit_tab.png" width="70px" id="unit3_thumb" /> <br>Unit</a>
+      <a href="#" class="tablink w3-bar-item" onclick="openUnit(event, 'unit4_out')"><img src="images/Unit_tab.png" width="70px" id="unit4_thumb" /> <br>Unit</a>
+      <a href="#" class="tablink w3-bar-item" onclick="openUnit(event, 'unit5_out')"><img src="images/Unit_tab.png" width="70px" id="unit5_thumb" /> <br>Unit</a>
+      <a href="#" class="tablink w3-bar-item" onclick="openUnit(event, 'friend_out')"><img src="images/Unit_tab.png" width="70px" id="friend_thumb" /> <br>Friend</a>
+      <div id="checkbuffs_tab"><a href="#" class="tablink w3-bar-item" onclick="openUnit(event, 'check_buffs');
       										   resetBuffs();
       										   checkBuffs_Name('leader');
                                                checkBuffs_Name('unit2');
                                                checkBuffs_Name('unit3');
                                                checkBuffs_Name('unit4');
                                                checkBuffs_Name('unit5');
-                                               checkBuffs_Name('friend');"><img src="images/check_icon.png" width="70px" id="friend_thumb" /> <br>Check Buffs</a></li>    
-    </ul>
+                                               checkBuffs_Name('friend');"><img src="images/check_icon.png" width="70px" id="friend_thumb" /> <br>Check Buffs</a></div>    
+    </div>
     <div id="leader_out" class="w3-container unit w3-small"></div>
     <div id="unit2_out" class="w3-container unit w3-small"></div>
     <div id="unit3_out" class="w3-container unit w3-small"></div>

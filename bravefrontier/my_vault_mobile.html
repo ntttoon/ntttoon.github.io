@@ -18,23 +18,23 @@ a {
 <body>
 <!-- Navbar -->
 <div class="w3-top">
-  <ul class="w3-navbar w3-blue w3-left-align">
-    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right"> <a class="w3-hover-white" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a> </li>
-    <li class="w3-hide-small"><a href="index.html" class="w3-hover-white"><i class="fa fa-home"></i></a></li>
-    <li class="w3-hide-small"><a href="my_vault_mobile.html" class="w3-hover-white" onClick="addMode();"><i class="fa fa-plus"></i></a></li>
-    <li class="w3-hide-small"><a href="my_vault_mobile.html" class="w3-hover-white" onClick="favMode();"><i class="fa fa-star"></i></a></li>
-    <li class="w3-hide-small"><a href="my_vault_mobile.html" class="w3-hover-white" onClick="clearVault();"><i class="fa fa-trash-o"></i></a></li>
-    <li style="margin-top:8px;margin-left:15px"><div id="mode_info"></div></li>
-  </ul>
+  <div class="w3-bar w3-blue w3-left-align">
+    <a class="w3-hover-white w3-hide-medium w3-hide-large w3-opennav w3-display-topright w3-bar-item" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-hover-white w3-hide-small w3-bar-item"><i class="fa fa-home"></i></a></li>
+    <a href="my_vault_mobile.html" class="w3-hover-white w3-hide-small w3-bar-item" onClick="addMode();"><i class="fa fa-plus"></i></a>
+    <a href="my_vault_mobile.html" class="w3-hover-white w3-hide-small w3-bar-item" onClick="favMode();"><i class="fa fa-star"></i></a>
+    <a href="my_vault_mobile.html" class="w3-hover-white w3-hide-small w3-bar-item" onClick="clearVault();"><i class="fa fa-trash-o"></i></a>
+    <div id="mode_info" class="w3-bar-item"></div>
+  </div>
   
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
-    <ul class="w3-navbar w3-blue w3-left-align">
-      <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-      <li><a href="my_vault_mobile.html" onClick="addMode();"><i class="fa fa-plus"></i> Add Mode</a></li>
-      <li><a href="my_vault_mobile.html" onClick="favMode();"><i class="fa fa-star"></i> Fav Mode</a></li>
-      <li><a href="my_vault_mobile.html" onClick="clearVault();"><i class="fa fa-trash-o"></i> Delete Vault</a></li>
-    </ul>
+    <div class="w3-bar-block w3-blue">
+      <a href="index.html" class="w3-bar-item"><i class="fa fa-home"></i> Home</a>
+      <a href="my_vault_mobile.html" onClick="addMode();"class="w3-bar-item"><i class="fa fa-plus"></i> Add Mode</a>
+      <a href="my_vault_mobile.html" onClick="favMode();"class="w3-bar-item"><i class="fa fa-star"></i> Fav Mode</a>
+      <a href="my_vault_mobile.html" onClick="clearVault();"class="w3-bar-item"><i class="fa fa-trash-o"></i> Delete Vault</a>
+    </div>
   </div>
 </div>
 <!-- end Navbar --> 

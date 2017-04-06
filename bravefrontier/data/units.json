@@ -3891,7 +3891,7 @@
             },
             {
                 "id": "1583",
-                "name": "Adel 8",
+                "name": "Blazing Emperor Adel",
                 "role": "miti,heal_spark,spark,hot,null_stats",
                 "rolesp": "heal_atked,null_ails",
                 "element": "Fire",
@@ -3939,7 +3939,7 @@
             },
             {
                 "id": "1584",
-                "name": "Savia 8",
+                "name": "Alluring Empress Savia",
                 "role": "bb_regen,cure,spark_debuff,bb_spark,atk,def,null_crit,null_ewd",
                 "rolesp": "convert_atk",
                 "element": "Water",
@@ -3987,7 +3987,7 @@
             },
             {
                 "id": "1586",
-                "name": "Baro",
+                "name": "Bizarre Sight Baro",
                 "role": "cure,null_ails,bb_fill,heal_atked,bb_regen",
                 "rolesp": "bb_atked",
                 "element": "Earth",
@@ -4035,7 +4035,7 @@
             },
             {
                 "id": "1588",
-                "name": "Ionia",
+                "name": "Metal Flower Ionia",
                 "role": "convert_def,heal_atked,bb_spark,atk_down,def_down,ails,spark_crit",
                 "rolesp": "bb_fill,crit,spark",
                 "element": "Light",
@@ -4083,7 +4083,7 @@
             },
             {
                 "id": "1590",
-                "name": "Xion",
+                "name": "Disnomian Emperor Shion",
                 "role": "add_ele,od_fill,atk,def,rec,od_regen",
                 "rolesp": "exp, bb_mod",
                 "element": "Dark",

@@ -1,71 +1,75 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Brave Frontier</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../css/w3.css">
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-<script src="../js/ga.js"></script>
-<script src="js/libs.js"></script>
+	<meta charset="utf-8">
+	<title>Brave Frontier</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/w3.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="../js/ga.js"></script>
+	<script src="js/libs.js"></script>
 </head>
 
 <body>
-<!-- Navbar -->
-<div class="w3-top">
- <ul class="w3-navbar w3-teal w3-left-align">
-  <li><a href="index.html" class="w3-hover-white"><i class="fa fa-home"></i></a></li>
-  <li class="w3-hide-small" style="margin-top:8px">SEARCH UNITS</li>
- </ul>
-</div>
-<!-- end Navbar -->
-<div style="margin-top:20px;"></div>
+	<!-- Navbar -->
+	<div class="w3-top">
+		<div class="w3-bar w3-teal">
+			<a href="index.html" class="w3-hover-white w3-bar-item"><i class="fa fa-home"></i></a>
+			<div class="w3-bar-item w3-hide-small">SEARCH UNITS</div>
+		</div>
+	</div>
+	<!-- end Navbar -->
+	<div style="margin-top:50px;"></div>
 
-<form class="w3-form">
-  <div class="w3-input-group">      
-    <label class="w3-label w3-text-teal"><b>Input unit's name or elements (fire, water, etc)</b></label>
-    <input class="w3-input w3-border" name="search" type="text">
-  </div>
-  <button class="w3-btn w3-teal">Search</button>
-</form>
-<div id="placeholder"> </div>
-<script>
-	var xmlhttp = new XMLHttpRequest();
-	var url = "data/units.json";
-	
-	xmlhttp.onreadystatechange=function() {
-		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-			myFunction(xmlhttp.responseText);
-		}
-	}
-	xmlhttp.open("GET", url, true);
-	xmlhttp.send();
-	
-	function myFunction(response) {
-		var arr = JSON.parse(response);
-		var i;
-		var out = "<ul class='w3-ul'>";
-		
-		var json_len = arr.brave.unit.length;
-		var s = getURLParameter('search');
-		var re = new RegExp(s, 'gi');
-		//
-		for(i = 0; i < json_len; i++) {
-			var id = arr.brave.unit[i].id;
-			var name = arr.brave.unit[i].name;
-			var element = arr.brave.unit[i].element;
-			var rarity = arr.brave.unit[i].rarity;
-			var rarity_icon = (rarity == 8)?'<img src="images/oe_icon.png"> ':'';
-			var thumb = arr.brave.unit[i].thumb['@path'];
-			if (name.match(re) || element.match(re)) {
-				out+='<li class="w3-hover-sand"><a style="text-decoration:none;color:' + nameColor(element) +  '" href="unitinfo.html?id=' + id + '" target="_blank"> <img src="' + thumb + '" class="w3-left w3-margin-right" style="width:50px"><p>' + rarity_icon + name + '</p></a> <div class="w3-clear"></div></li>'
+	<form class="w3-container">
+		<label class="w3-label w3-text-teal"><b>Input unit's name or elements (fire, water, etc)</b></label>
+		<input class="w3-input w3-border" name="search" type="text">
+		<p><button class="w3-btn w3-teal">Search</button></p>
+		<hr>
+	</form>
+	<div id="placeholder"> </div>
+	<script>
+		var xmlhttp = new XMLHttpRequest();
+		var url = "data/units.json";
+
+		xmlhttp.onreadystatechange = function () {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				myFunction(xmlhttp.responseText);
 			}
 		}
-		out+="</ul>";
-		document.getElementById("placeholder").innerHTML = out;
-	}
-</script>
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
 
-</ul>
+		function myFunction(response) {
+			var arr = JSON.parse(response);
+			var i;
+			var out = "<ul class='w3-ul'>";
+
+			var json_len = arr.brave.unit.length;
+			var s = getURLParameter('search');
+			var re = new RegExp(s, 'gi');
+			//
+			for (i = 0; i < json_len; i++) {
+				var id = arr.brave.unit[i].id;
+				var name = arr.brave.unit[i].name;
+				var element = arr.brave.unit[i].element;
+				var rarity = arr.brave.unit[i].rarity;
+				var rarity_icon = (rarity == 8) ? '<img src="images/oe_icon.png"> ' : '';
+				var thumb = arr.brave.unit[i].thumb['@path'];
+				if (name.match(re) || element.match(re)) {
+					out += '<li class="w3-hover-sand"><a style="text-decoration:none;color:' + nameColor(element) +
+						'" href="unitinfo.html?id=' + id + '" target="_blank"> <img src="' + thumb +
+						'" class="w3-left w3-margin-right" style="width:50px"><p>' + rarity_icon + name +
+						'</p></a> <div class="w3-clear"></div></li>'
+				}
+			}
+			out += "</ul>";
+			document.getElementById("placeholder").innerHTML = out;
+		}
+	</script>
+
+	</ul>
 </body>
+
 </html>
