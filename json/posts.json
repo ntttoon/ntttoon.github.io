@@ -1,12 +1,20 @@
 {
     "posts": [
         {
+            "title": "Rate summon 22h ngày 6/4/2017",
+            "date": "04-06-2017",
+            "short_des": "Các bạn đã chuẩn bị quay chưa? :))",
+            "image": "http://dlc.bfglobal.gumi.sg/content/gacha/gacha_rare_bg_img_20170406_x10.png",
+            "thumb": "http://forums.gumi.sg/core/image.php?userid=2&dateline=1440606663",
+            "link": "posts/00003.html"
+        },
+        {
             "title": "Bảo trì từ 15h ngày 6/4/2017",
             "date": "04-06-2017",
             "short_des": "Bảo trì từ 15h ngày 6/4/2017",
             "image": "http://gumi.sg/wp-content/uploads/2017/03/NEWServerMaintenance_HEADER-1.png",
             "thumb": "http://forums.gumi.sg/core/image.php?userid=2&dateline=1440606663",
-            "link": "posts/00002/index.html"
+            "link": "posts/00002.html"
         },
         {
             "title": "Monthly Events for April 2017",
@@ -14,7 +22,7 @@
             "short_des": "Greetings Summoners!, Here are the events lined up for the month of April. Make sure you mark them on your calendar so you won’t miss them!",
             "image": "http://gumi.sg/wp-content/uploads/2017/03/April2017Events_HEADER.png",
             "thumb": "http://forums.gumi.sg/core/image.php?userid=2&dateline=1440606663",
-            "link": "posts/00001/index.html"
+            "link": "posts/00001.html"
         },
         {
             "title": "Welcome to my blog",
