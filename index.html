@@ -149,10 +149,12 @@
   <script src="js/jPages.js"></script>
   <script>
     $(function(){
-      $("div.holder").jPages({
-        containerID : "itemContainer",
-        perPage : 5
-      });
+      setTimeout(function(){
+        $("div.holder").jPages({
+          containerID : "itemContainer",
+          perPage : 5
+        });
+      }, 1000);
     });
   </script>
 </body>
