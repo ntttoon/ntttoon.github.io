@@ -54,10 +54,11 @@
 
       <!-- Introduction menu -->
       <div class="w3-col l4">
-        <div w3-include-html="widgets/about.html"></div>
+
+        <div w3-include-html="widgets/search.html"></div>
 
         <!-- New Posts -->
-        <div class="w3-card-2 w3-margin">
+        <div class="w3-card-2 w3-margin w3-blue">
           <div class="w3-container w3-padding">
             <h4>New Posts</h4>
           </div>
@@ -74,9 +75,10 @@
         </div>
         <hr>
 
-        <div w3-include-html="widgets/projects.html"></div>
         <div w3-include-html="widgets/tags.html"></div>
-
+        <div w3-include-html="widgets/projects.html"></div>
+        <div w3-include-html="widgets/about.html"></div>
+        
         <!-- END Introduction Menu -->
       </div>
 
@@ -106,7 +108,7 @@
 
     function myFunction(response) {
       var arr = JSON.parse(response);
-      var i;
+      var i,j;
       var out = "";
       var sub_out = "";
 
@@ -131,6 +133,16 @@
         out += '<div class="w3-col m8 s12">';
         out += '<p><a href="' + link + '" class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></a></p>';
         out += '</div></div></div></div><hr></li>'
+      }
+      document.getElementById("itemContainer").innerHTML = out;
+
+      for (j = 0; j < 5; j++) {
+        var title = arr.posts[j].title;
+        var date = arr.posts[j].date;
+        var short_des = arr.posts[j].short_des;
+        var image = arr.posts[j].image;
+        var thumb = arr.posts[j].thumb;
+        var link = arr.posts[j].link;
 
         sub_out += '<li class="w3-padding-16">';
         sub_out += '<a href="' + link + '" style="text-decoration: none">';
@@ -139,7 +151,6 @@
         sub_out += '<div class="w3-clear"></div>';
         sub_out += '</a></li>';
       }
-      document.getElementById("itemContainer").innerHTML = out;
       document.getElementById("my_sub_posts").innerHTML = sub_out;
     }
   </script>
