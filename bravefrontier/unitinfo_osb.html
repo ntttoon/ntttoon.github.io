@@ -173,14 +173,17 @@
 				out_side+='<li><strong>SBB: </strong>' + 'hit: ' + sbbhit + ' - dc: ' + sbbdc + ' - cost: ' + sbbcost + '<br>' + sbb_out + '</li>';
 				out_side+='<li><strong>UBB: </strong>' + 'hit: ' + ubbhit + ' - dc: ' + ubbdc + ' - cost: ' + ubbcost + '<br>' + ubb_out + '</li>';
 				out_side+='<li><strong>ES: </strong>' + '<br>' + 'Condition: ' + escon_out + '<br>' + 'Effect: ' + es_out + '</li>';
-				////////// write meta
-				$('head').append('<meta property="og:image" content="http://ntttoon.github.io/bravefrontier/images/fb_osb.jpg" />');
 			}
 		}
 		out+="</ul>";
 		out_side+="</li></ul>";
 		document.getElementById("placeholder").innerHTML = out;
 		document.getElementById("placeholder2").innerHTML = out_side;
+
+		$(function(){
+			////////// write meta
+			$('head').append('<meta property="og:image" content="http://ntttoon.github.io/bravefrontier/images/fb_osb.jpg" />');
+		})
 
 		//////////////////////////////////////////////////////
 		var sLink = "http://ntttoon.github.io/bravefrontier/unitinfo_osb.html";
