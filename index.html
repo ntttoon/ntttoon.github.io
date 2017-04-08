@@ -90,10 +90,19 @@
 
   <div w3-include-html="widgets/footer.html"></div>
 
+  <!-- include HTML -->
   <script>
     w3IncludeHTML();
   </script>
+
+  <!-- Control menu -->
   <script src="http://ntttoon.github.io/js/menu_control.js"></script>
+
+  <!-- jPpages -->
+  <link rel="stylesheet" href="css/jPages.css">
+  <script src="js/jquery-1.8.2.min.js"></script>
+  <script src="js/jPages.js"></script>
+
   <script>
     var xmlhttp = new XMLHttpRequest();
     var url = "json/posts.json";
@@ -152,21 +161,14 @@
         sub_out += '</a></li>';
       }
       document.getElementById("my_sub_posts").innerHTML = sub_out;
-    }
-  </script>
-  <!-- jPages -->
-  <link rel="stylesheet" href="css/jPages.css">
-  <script src="js/jquery-1.8.2.min.js"></script>
-  <script src="js/jPages.js"></script>
-  <script>
-    $(function(){
-      setTimeout(function(){
-        $("div.holder").jPages({
+      
+      ///// Call jPages after all post load
+      $("div.holder").jPages({
           containerID : "itemContainer",
-          perPage : 5
-        });
-      }, 100);
-    });
+          perPage : 5,
+          minHeight:false
+      });
+    }
   </script>
 </body>
 
