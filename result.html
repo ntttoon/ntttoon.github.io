@@ -13,6 +13,11 @@
 <style>
   a{text-decoration: none};
 </style>
+<script>
+  function getURLParameter(name) {
+    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null
+  }
+</script>
 
 <body class="w3-light-grey" style="margin-top:80px">
   <div w3-include-html="widgets/menu_sidebar.html"></div>
@@ -27,8 +32,9 @@
     <!-- Grid -->
     <div class="w3-row">
 
+      <div w3-include-html="widgets/search.html"></div>
+      
       <!-- Blog entries -->
-      <div class="w3-col l8 s12">
         <div class="w3-center"><div class="holder"></div></div>
         <ul id="itemContainer" style="list-style-type:none;margin:0;padding:0">
           <!--<div id="my_main_posts"></div>-->
@@ -52,40 +58,7 @@
             </div>
             <hr> -->
         <!-- end myposts -->
-      </div>
       <!-- END BLOG ENTRIES -->
-
-      <!-- Introduction menu -->
-      <div class="w3-col l4">
-        
-        <div class="w3-container w3-padding">
-          <a href="result.html" target="_self" class="w3-btn w3-blue" style="width: 100%">Search</a>
-        </div>
-
-        <!-- New Posts -->
-        <div class="w3-card-2 w3-margin w3-blue">
-          <div class="w3-container w3-padding">
-            <h4>New Posts</h4>
-          </div>
-          <ul class="w3-ul w3-hoverable w3-white">
-            <div id="my_sub_posts"></div>
-            <!--<li class="w3-padding-16" w3-repeat="posts">
-              <a href="{{link}}">
-                <img src="{{thumb}}" alt="" class="w3-left w3-margin-right" style="width:50px">
-                <span class="w3-large">{{title}}</span><br>
-                <div class="w3-clear"></div>
-              </a>
-            </li> -->
-          </ul>
-        </div>
-        <hr>
-
-        <div w3-include-html="widgets/tags.html"></div>
-        <div w3-include-html="widgets/projects.html"></div>
-        <div w3-include-html="widgets/about.html"></div>
-        
-        <!-- END Introduction Menu -->
-      </div>
 
       <!-- END GRID -->
     </div><br>
@@ -127,6 +100,9 @@
       var sub_out = "";
 
       var json_len = arr.posts.length;
+      var s = getURLParameter('search');
+			var re = new RegExp(s, 'gi');
+
       for (i = 0; i < json_len; i++) {
         var title = arr.posts[i].title;
         var date = arr.posts[i].date;
@@ -136,37 +112,22 @@
         var thumb = arr.posts[i].thumb;
         var link = arr.posts[i].link;
 
-        out += '<li><div class="w3-card-4 w3-margin w3-white">';
-        out += '<img src="' + image + '" alt="" style="width:100%">'
-        out += '<div class="w3-container">';
-        out += '<h4><b>' + title + '</b></h4>';
-        out += '<p> <span class="w3-tag w3-teal w3-hover-black"><a href="result.html?search=' + tags + '">' + tags + '</a></span> <span class="w3-opacity">' + date + '</span></p>';
-        out += '</div>';
-        out += '<div class="w3-container">';
-        out += '<p>' + short_des + '</p>';
-        out += '<div class="w3-row">';
-        out += '<div class="w3-col m8 s12">';
-        out += '<p><a href="' + link + '" class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></a></p>';
-        out += '</div></div></div></div><hr></li>'
+        if (title.match(re) || tags.match(re) || short_des.match(re)) {
+          out += '<li><div class="w3-card-4 w3-margin w3-white">';
+          out += '<img src="' + image + '" alt="" style="width:100%">'
+          out += '<div class="w3-container">';
+          out += '<h4><b>' + title + '</b></h4>';
+          out += '<p> <span class="w3-tag w3-teal w3-hover-black"><a href="result.html?search=' + tags + '">' + tags + '</a></span> <span class="w3-opacity">' + date + '</span></p>';
+          out += '</div>';
+          out += '<div class="w3-container">';
+          out += '<p>' + short_des + '</p>';
+          out += '<div class="w3-row">';
+          out += '<div class="w3-col m8 s12">';
+          out += '<p><a href="' + link + '" class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></a></p>';
+          out += '</div></div></div></div><hr></li>'
+        }
       }
       document.getElementById("itemContainer").innerHTML = out;
-
-      for (j = 0; j < 5; j++) {
-        var title = arr.posts[j].title;
-        var date = arr.posts[j].date;
-        var short_des = arr.posts[j].short_des;
-        var image = arr.posts[j].image;
-        var thumb = arr.posts[j].thumb;
-        var link = arr.posts[j].link;
-
-        sub_out += '<li class="w3-padding-16">';
-        sub_out += '<a href="' + link + '">';
-        sub_out += '<img src="' + thumb + '" alt="" class="w3-left w3-margin-right" style="width:50px">';
-        sub_out += '<span class="w3-large">' + title + '</span><br>';
-        sub_out += '<div class="w3-clear"></div>';
-        sub_out += '</a></li>';
-      }
-      document.getElementById("my_sub_posts").innerHTML = sub_out;
       
       ///// Call jPages after all post load
       $("div.holder").jPages({
