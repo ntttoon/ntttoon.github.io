@@ -1,6 +1,15 @@
 {
     "posts": [
         {
+            "title": "Bảng so sánh thông số các series chip Qualcomm Snapdragon (SD)",
+            "date": "04-09-2017",
+            "short_des": "Smartphone Android đang rất phổ biến, nhiều người mua điện thoại mà không biết cơ bản về các thông số. Bài này sẽ so sánh các dòng chip xử lý SD, qua đó bạn cũng sẽ nắm được nhu cầu bạn cần là gì, giá cả..v..v.. ",
+            "tags":"Qualcomm Snapdragon",
+            "image": "https://www.qualcomm.com/sites/ember/files/styles/scale_1280/public/components/one-column-hdi/background/quickcharge-bg-4_0.png",
+            "thumb": "https://www.qualcomm.com/sites/ember/files/styles/optimize/public/components/one-column-hdi/top/snapdragon-chip-tiny-1.png",
+            "link": "posts/00006.html"
+        },
+        {
             "title": "Hướng dẫn FG Water of Trees",
             "date": "04-07-2017",
             "short_des": "Clip và hướng dẫn để sống sót lấy được 7M điểm",
