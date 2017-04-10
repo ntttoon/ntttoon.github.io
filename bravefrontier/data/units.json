@@ -4466,6 +4466,150 @@
                 }
             },
             {
+                "id": "1614",
+                "name": "Pacific Ocean Zelest",
+                "role": "atk,def,convert_atk,atk_down_add,atk_down,crit,crit_dmg,spark,bb_spark,idef",
+                "rolesp": "spark_crit,crit_res_down,add_ele",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "9",
+                    "@dc": "45",
+                    "#text": "+60% ATK,HP / +130% Spark damage / +175% Crit damage / Ignore DEF (30% chance)"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "29",
+                    "#text": "18 hits AoE (420%) / +180% ATK,DEF for 3 turns / +70% DEF -> ATK for 3 turns / -20% ATK Down buff (20% chance, 1 turn) for 3 turns / -50% ATK Down (30% chance) for 1 turn"
+                },
+                "sbb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "28",
+                    "#text": "22 hits AoE (620%) / +60% Crit rate for 3 turns / +50% Crit damage for 3 turns / +130% Spark damage for 3 turns / 2-3 BC on Spark for 3 turns / Ignore DEF for 2 turns"
+                },
+                "ubb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "32",
+                    "#text": "25 hits AoE (1500%, +1300% based on HP remaining) / +350% ATK for 3 turns / +350% Crit damage for 3 turns / +350% Spark damage for 3 turns / 5-8 BC on Spark for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "0-80% ATK,DEF based on HP remaining / +50% Spark damage"
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_20997.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_20997.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> +30% ATK/HP | 15 : +50% ATK/HP​<span style='display:none'>(Prerequisite: *)</span> | 20 : +120% Spark damage | 10 : +50% Crit damage | 10 : Raise ATK cap from 99k to 130k | 20 : 2-turn ATK Down on BB | 20 : +20% Spark damage on SBB | 35 : Add +50% Spark debuff (30% chance) on SBB | 35 : Add 20% lower Crit resistance debuff (20% chance) for 2 turns on BB | 40 : Add Water/Earth elements to attack for 3 turns on BB/SBB"
+                }
+            },
+            {
+                "id": "1616",
+                "name": "Rapunzelulu Lagura",
+                "role": "bb_fill,bb_regen,bc,hc,bb_rate,spark_crit,spark_debuff",
+                "rolesp": "bb_spark,add_ele",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "7",
+                    "@dc": "49",
+                    "#text": "+100% ATK / +50% HP / +130% Spark damage / 2-3 BC on Spark / +50% Spark Crit (20% chance) after 10 Sparks"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "19",
+                    "@dc": "19",
+                    "@cost": "30",
+                    "#text": "19 hits AoE (470%) / 8 BC fill / 7 BC,turn for 3 turns / +35% BC,HC drop rate for 3 turns / +50% BB fill rate for 3 turns"
+                },
+                "sbb": {
+                    "@hit": "2/1",
+                    "@dc": "",
+                    "@cost": "32",
+                    "#text": "2 hits AoE (850%) / 1 hit ST (650%) / +100% ATK, +60% Crit rate to self / +50% Spark Crit to self for 3 turns / +30% Spark debuff (30% chance) for 1 turn"
+                },
+                "ubb": {
+                    "@hit": "2/1",
+                    "@dc": "",
+                    "@cost": "32",
+                    "#text": "2 hits AoE (2000%) / 1 hit ST (2200%) / +250% ATK for 3 turns / +350% Crit damage for 3 turns / +350% Spark damage for 3 turns / 50 BC,turn for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+50% Spark damage / +100% Crit multiplier / 10 BC on Spark"
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_40917.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_40917.png"
+                },                
+                "sp": {
+                    "@list": "20 : +50% HP/ATK | 10 : 0-50% ATK based on HP remaining | 15 : +130% Spark damage | 20 : +75% Crit damage | 10 : Raise ATK cap from 99k to 130k | 20 : +2 BC/turn on BB | 20 : +2 BB fill on BB | 35 : Add 2-3 BC on Spark for 3 turns on BB | 25 : Add +200% AoE and ST Mod on SBB | 40 : Add Fire/Thunder elements to attack for 3 turns on BB/SBB"
+                }
+            },
+            {
+                "id": "1618",
+                "name": "Genderbent Lucius Rinasella",
+                "role": "heal,heal_atked,bb_atked,idol,hot,null_ewd,null_crit",
+                "rolesp": "cure,barrier",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "+60% HP,DEF,REC / 25% heal when hit (25% chance) / 1000-1200 HP,turn / +25% Spark resist"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "30",
+                    "#text": "15 hits AoE (420%) / 4000-4500 burst Heal (+40% REC) / 20-25% heal when hit (25% chance) for 3 turns / 4-7 BC when hit for 3 turns / +10% AI proc buff for 999 turns"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "29",
+                    "#text": "20 hits AoE (620%) / 4000-4500 burst Heal / 3500-4000 HoT for 3 turns / null EWD,Crit for 2 turns / +10% AI proc buff for 999 turns"
+                },
+                "ubb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "32",
+                    "#text": "23 hits AoE (1800%) / +100% elemental mitigation for 2 turns / null EWD,Crit and 100% heal when hit for 3 turns / revives unit (50% chance, at 50% HP)"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "60% chance to proc AI once / 20-25% heal when hit (25% chance)"
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_51187.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_51187.png"
+                },                
+                "sp": {
+                    "@list": "15 : +30% DEF/HP | 10 : +50% DEF when BB > 50% | 20 : 2-3 BC when hit | 20 : null ailments | 20 : null EWD | 10 : Raise ATK cap from 99k to 130k | 20 : +5% AI proc on BB/SBB | 35 : +5% heal when hit (10% chance) on BB | 30 : Add cure ailments/debuffs on BB/SBB | 35 : Add 3000 Light barrier on BB/SBB"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
