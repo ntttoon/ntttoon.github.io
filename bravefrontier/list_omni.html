@@ -11,21 +11,57 @@
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 <script src="../js/ga.js"></script>
 <script src="js/libs.js"></script>
+<style>
+a{
+	text-decoration:none;
+}
+</style>
 </head>
 
 <body>
 <!-- Navbar -->
 <div class="w3-top">
  <div class="w3-bar w3-teal w3-left-align">
-  <a href="index.html" class="w3-hover-white w3-bar-item"><i class="fa fa-home"></i></a>
-  <div class="w3-hide-small w3-bar-item">Simulated OMNI Skill Building</div>
+  <a class="w3-hover-white w3-hide-medium w3-hide-large w3-opennav w3-display-topright w3-bar-item" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="index.html" class="w3-hover-white w3-hide-small w3-bar-item"><i class="fa fa-home"></i></a>
+  <a href="list_omni.html" class="w3-hover-white w3-hide-small w3-bar-item" onClick="thumbView();"><i class="fa fa-th"></i></a>
+  <a href="list_omni.html" class="w3-hover-white w3-hide-small w3-bar-item" onClick="listView();"><i class="fa fa-th-list"></i></a>
+  <div id="count_info" class="w3-bar-item">Select unit you want to build</div>
  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+    <div class="w3-bar-block w3-teal">
+      <a href="index.html" class=" w3-bar-item"><i class="fa fa-home"></i> Home</a>
+      <a href="list_omni.html" class=" w3-bar-item" onClick="thumbView();"><i class="fa fa-th"></i> Thumb View</a>
+      <a href="list_omni.html" class=" w3-bar-item" onClick="listView();"><i class="fa fa-th-list"></i> List View</a>
+    </div>
+  </div>
 </div>
 <!-- end Navbar -->
+<script>
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
 <div style="margin-top:40px;"></div>
-
 <div id="placeholder"> </div>
 <script>
+	if (typeof(Storage) !== "undefined") {
+		if (!localStorage.view) {
+            localStorage.view = "list";
+        }
+		view = localStorage.view;
+	} else {
+		alert("Sorry, your browser does not support Web Storage...");
+	}
+	////////////
 	var xmlhttp = new XMLHttpRequest();
 	var url = "data/units.json";
 	
@@ -41,6 +77,12 @@
 		var arr = JSON.parse(response);
 		var i;
 		var out = "<ul class='w3-ul'>";
+		if(view == 'list'){
+			out = "<ul class='w3-ul'>";
+		}
+		if(view == 'thumb'){
+			out = "<div class='w3-center'>";
+		}
 
 		var json_len = arr.brave.unit.length;
 		for(i = 0; i < json_len; i++) {
@@ -51,11 +93,31 @@
 			var rarity_icon = (rarity == 8)?'<img src="images/oe_icon.png"> ':'';
 			var thumb = arr.brave.unit[i].thumb['@path'];
 			if(rarity == 8){
+				if(view == 'list'){
 				out+='<li class="w3-hover-sand"><a style="text-decoration:none;color:' + nameColor(element) +  '" href="unitinfo_osb.html?id=' + id + '" target="_blank"> <img src="' + thumb + '" class="w3-left w3-margin-right" style="width:50px"><p>' + rarity_icon + name + '</p></a> <div class="w3-clear"></div></li>'
+				}
+				if(view == 'thumb'){
+					if(id != ""){
+						out+='<a href="unitinfo_osb.html?id=' + id + '" target="_blank"> <img src="' + thumb + '" style="width:60px;margin-top:5px;"></a>';
+					}
+				}
 			}
 		}
-		out+="</ul>";
+		out+="</ul></div>";
 		document.getElementById("placeholder").innerHTML = out;
+	}
+	/////////////////////
+	function thumbView(){
+		if(view == "list"){
+			localStorage.view = "thumb";
+			view = localStorage.view;
+		}
+	}
+	function listView(){
+		if(view == "thumb"){
+			localStorage.view = "list";
+			view = localStorage.view;
+		}
 	}
 </script>
 

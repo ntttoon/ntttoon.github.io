@@ -4610,6 +4610,150 @@
                 }
             },
             {
+                "id": "1621",
+                "name": "Libera",
+                "role": "add_ele,def,rec,bc,hc,bb_spark,convert_atk,convert_def,bb_atked,bb_rate",
+                "rolesp": "miti_dot,ewd,od_rate,bb_fill,bb_mod",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "14",
+                    "@dc": "42",
+                    "#text": "+40% Stats / +200% BB Mod / +50% BC fill rate / +20% BC,HC drop rate"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "28",
+                    "#text": "17 hits AoE (360%) / adds Earth,Thunder elements to attack for 3 turns / +160% DEF,REC for 3 turns / +35% BC,HC drop rate for 3 turns / 2-3 BC on Spark for 3 turns"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "26",
+                    "#text": "20 hits AoE (560%) / adds Earth,Thunder elements to attack for 3 turns / +70% REC->ATK,DEF for 3 turns / 4-7 BC when hit for 3 turns / +50% BC fill rate for 3 turns"
+                },
+                "ubb": {
+                    "@hit": "24",
+                    "@dc": "24",
+                    "@cost": "30",
+                    "#text": "24 hits AoE (1500%) / +300% ATK,REC for 3 turns / +250% REC->ATK for 3 turns / +500% BB Mod for 3 turns / 50 BC,turn for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "25% heal when hit (30% chance, 800-1000 HoT (+10% REC)"
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_30627.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_30627.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> +20% Stats  | 20 : +40% Stats <span style='display:none'>(Prerequisite: *)</span> ​ | 20 : 2-3 BC when hit | 20 : null EWD | 20 : +10% DEF/REC buff on BB | 40 : Add 10% DoT mitigation for 1 turn on BB/SBB | 40 : Add +125% Earth/Thunder EWD for 3 turns on BB/SBB | 30 : Add +20% OD fill rate buff for 3 turns on BB/SBB | 40 : Add 8 BC fill on BB/SBB | 30 : Add +400% BB Mod buff for 3 turns on BB/SBB"
+                }
+            },
+            {
+                "id": "1622",
+                "name": "Rhoa",
+                "role": "add_ele,spark,spark_debuff,dot,idef",
+                "rolesp": "ewd,spark_crit,bb_spark",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "14",
+                    "@dc": "42",
+                    "#text": "+50% HP,ATK / +100% Spark damage / 2-3 BC on Spark / +50% Spark for 2 turns after 20 Sparks"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "27",
+                    "#text": "16 hits AoE (360%) / adds Earth,Thunder elements to attack for 3 turns / +100% Spark damage for 3 turns / +30% Spark debuff (30% chance) / +500% DoT for 2 turns"
+                },
+                "sbb": {
+                    "@hit": "19/5",
+                    "@dc": "19/5",
+                    "@cost": "26",
+                    "#text": "19 hits AoE (560%) / 5 hits ST (600%) / adds Earth,Thunder elements to attack for 3 turns / +100% Spark damage for 3 turns / +30% Spark debuff (30% chance) / +500% DoT for 2 turns"
+                },
+                "ubb": {
+                    "@hit": "24/6",
+                    "@dc": "24/6",
+                    "@cost": "30",
+                    "#text": "24 hits AoE (1500%) / 6 hits ST (1800%) / +300% Spark damage for 3 turns / +100% Spark Crit (50% chance) for 3 turns / 5-8 BC on Spark for 3 turns / +100% Spark debuff (100% chance) for 2 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "2-3 BC on Spark / +50% Spark Crit (20% chance) / Ignore DEF for 2 turns when using BB,SBB"
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_40607.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_40607.png"
+                },                
+                "sp": {
+                    "@list": "10 : +30% HP/ATK | 10 : +50% ATK when BB Gauge> 50% | 10 : <span style='display:none'>(*)</span> +80% Spark | 10 : +100% Spark <span style='display:none'>(Prerequisite: *)</span> ​| 20 : AoE normal attacks (20% chance, -50% damage) | 30 : +30% Spark buff on BB/SBB | 20 : +10% Spark debuff (+10% chance) on BB/SBB | 30 : Add +125% Earth/Thunder EWD for 3 turns on BB/SBB | 40 : Add +50% Spark Crit (30% chance) for 3 turns on BB/SBB | 40 : Add 2-3 BC on Spark for 3 turns on BB/SBB"
+                }
+            },
+            {
+                "id": "1623",
+                "name": "Kafka",
+                "role": "add_ele,ails_atked,atk_ailed,convert_atk,convert_def,ails_add,ewd",
+                "rolesp": "bb_atked,LS_bb_atked",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "14",
+                    "@dc": "42",
+                    "#text": "+80% ATK / +40% HP / 4-7 BC when hit / 20% IWS / 15% CPP"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "27",
+                    "#text": "17 hits AoE (360%) / adds Light,Dark elements to attack for 3 turns / +15% IWS reflect for 3 turns / +10% CPP reflect for 3 turns / +170% ATK against statused for 3 turns"
+                },
+                "sbb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "27",
+                    "#text": "21 hits AoE (560%) / adds Light,Dark elements to attack for 3 turns / +25% HP->ATK,DEF for 3 turns / +15% IWS buff for 3 turns / +10% CPP buff for 3 turns / 50% EWD for 3 turns"
+                },
+                "ubb": {
+                    "@hit": "24",
+                    "@dc": "24",
+                    "@cost": "30",
+                    "#text": "24 hits AoE (1500%) / +300% ATK,DEF for 3 turns / inflict all ailments / reflect ailments (100% chance) for 3 turns / +300% ATK against statused for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+50% ATK,DEF when BB Gauge > 50% / +100% ATK against statused / 2-3 BC when hit"
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_60767.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_60767.png"
+                },                
+                "sp": {
+                    "@list": "20 : +30% HP/ATK | 10 : +0-50% ATK/DEF based on HP remaining | 20 : +80% Spark | 10 : +50% ATK against statused | 10 : +50% EWD | 20 : null EWD | 20 : +20% ATK against statused on BB | 30 : +10% HP->ATK/DEF buff on SBB | 20 : +25% EWD buff on SBB |50 : Add 4-7 BC when hit for 3 turns on BB/SBB"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
@@ -4757,7 +4901,7 @@
                 "id": "1554",
                 "name": "Ruling God Zevalhua",
                 "role": "atk_down,def_down,ails,ails_add,atk_ailed,ails_atked",
-                "rolesp": "heal_atked,dot",
+                "rolesp": "heal_atked,dot,LS_bb_atked,LS_heal_atked",
                 "element": "Earth",
                 "rarity": "8",
                 "cost": "54",
@@ -7055,6 +7199,54 @@
                 },                
                 "sp": {
                     "@list": "10 : Enhances LS's parameters boost effect [+10%] | 15 : Enhances LS's BB Atk boost effect [+75%] | 15 : 30% boost to Atk, max HP | 15 : 100% boost to Spark damage | 10 : Raises Atk parameter limits to 130000 | 40 : Adds resistance against 1 KO attack when HP is below 20% | 30 : Adds Light and Dark elements to attack for 3 turns effect to SBB | 35 : Adds probable [30%] huge 1 turn Atk reduction [50%] effect to BB/SBB | 20 : Enhances SBB's parameters boost effect [+10%] | 40 : Enhances SBB/UBB's BB Atk boost effect [+100%]"
+                }
+            },
+            {
+                "id": "8290",
+                "name": "Kingslayer Lancelot",
+                "role": "miti,convert_def,null_crit,bb_spark,spark,convert_atk",
+                "rolesp": "spark_crit,spark_debuff,null_stats,heal_spark",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "39",
+                    "#text": "60% boost to max HP / 130% boost to Spark damage / boosts Atk, Def, Rec relative to remaining HP [20-60%] / & slightly reduces damage taken [20%] for 2 turns when Sparks exceed certain amount [15]"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "27",
+                    "@dc": "27",
+                    "@cost": "28",
+                    "#text": "27 combo powerful Dark attack on all foes [340%] / 50% damage reduction for 1 turn / hugely boosts Def relative to Atk [70%] for 3 turns / & negates critical damage for 2 turns"
+                },
+                "sbb": {
+                    "@hit": "37",
+                    "@dc": "37",
+                    "@cost": "29",
+                    "#text": "37 combo powerful Dark attack on all foes [540%] / 50% damage reduction for 2 turns / Spark damage boosts BB gauge [2-3 BC] for 3 turns / enormously boosts Spark damage [150%] for 3 turns / hugely boosts Atk relative to Def [70%] for 3 turns / & negates critical damage for 2 turns"
+                },
+                "ubb": {
+                    "@hit": "45",
+                    "@dc": "45",
+                    "@cost": "32",
+                    "#text": "45 combo massive Dark attack on all foes [1600%] / 75% damage reduction for 3 turns / enormously boosts Spark damage [350%] for 3 turns / activates Dark barrier [30000 HP] / & enormously boosts Atk, Def [400%] for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "30% boost to Def and max HP / adds status ailment removal effect to BB,SBB when Arondight is equipped / & 100% boost to Spark damage"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_760227.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_760227.png"
+                },                
+                "sp": {
+                    "@list": "25 : 50% boost to all parameters | 10 : Raises Atk parameter limits to 130000 | 20 : Adds probable [30%] Spark critical [50%] for 3 turns effect to BB/SBB | 20 : Adds probable [25%] Spark vulnerability infliction [25%] for 2 turns effect to BB/SBB | 15 : Allows BB's 50% damage reduction for 1 turn effect to last for 2 turns | 30 : <span style='display:none'>(*)</span>Adds Atk, Def, Rec reducing effects negation for 2 turns effect to BB | 10 : Adds Atk, Def, Rec reducing effects negation for 2 turns effect to SBB <span style='display:none'>(Prerequisite: *)</span> | 15 : Enhances BB's huge boost to Def [+10%] relative to Atk effect | 25 : Enhances SBB's huge boost to Atk [+10%] relative to Def effect | 35 : Adds considerable HP restoration during Spark [400-500 HP] for 3 turns effect to BB/SBB"
                 }
             }
         ]
