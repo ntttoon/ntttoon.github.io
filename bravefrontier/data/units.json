@@ -7150,7 +7150,7 @@
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_820158.png"
                 },                
                 "sp": {
-                    "@list": "10 : Enhances LS's parameters boost effect [+10%] | 10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 20 : Considerably reduces BB gauge required for BB [25%] | 20 : Negates all status ailments | 40 : Adds great HP restoration [2500-3500 HP] for 3 turns effect to BB/SBB | 30 : Adds Light and Dark elements to attack for 3 turns effect to SBB | 20 : Adds enormous Spark damage boost [100%] for 3 turns effect to SBB | 40 : Enhances BB/SBB's enormous Spark damage boost effect [+30%] | 20 : Enhances SBB's success rate of Spark critical effect [10%]"
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 20 : Considerably reduces BB gauge required for BB (25% reduction) | 20 : Negates all status ailments | 10 : Enhances LS's parameters boost effect (+10% boost. 60% boost total) | 40 : Adds great HP restoration for 3 turns effect to BB/SBB (Heals 2500-3500 + 10% Rec) | 30 : Adds Light and Dark elements to attack for 3 turns effect to SBB | 20 : <span style='display:none'>(*)</span> Adds enormous Spark damage boost for 3 turns effect to SBB (100% boost) | 40 : Enhances SBB's enormous Spark damage boost effect (+30% boost. 130% boost total) <span style='display:none'>(Prerequisite: *)</span> | 20 : Enhances SBB's success rate of Spark critical effect (+10% chance. 40% chance total)"
                 }
             },
             {
