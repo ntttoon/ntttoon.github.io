@@ -4754,6 +4754,150 @@
                 }
             },
             {
+                "id": "1625",
+                "name": "Agnair",
+                "role": "def,rec,convert_def,convert_rec,hot,cure,spark,bb_regen,od_regen,heal_atked",
+                "rolesp": "miti_spark,add_ele",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "8",
+                    "@dc": "45",
+                    "#text": "+60% DEF,HP / 0-50% ATK,DEF based on HP remaining / +130% Spark damage / 1000-1200 HoT (+10% REC)"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "28",
+                    "#text": "14 hits AoE (420%) / +180% DEF,REC for 3 turns / 30% HP -> DEF,REC for 3 turns / 3500-4000 (+15% REC) HoT for 3 turns / cure ailments"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "28",
+                    "#text": "18 hits AoE (620%) / +130% Spark damage for 3 turns / 7 BC,turn for 3 turns / 400 OD,turn for 3 turns / 20-25% heal when hit (20% chance) for 3 turns"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "32",
+                    "#text": "22 hits AoE (1800%) / +350% Spark damage for 3 turns / 98999-99999 HoT for 3 turns / 50 BC,turn for 3 turns / 800 OD,turn for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "800-1000 HoT / 3-4 BC when hit"
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_11067.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_11067.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> +30% HP/DEF | 15 : +50% HP/DEF​ <span style='display:none'>(Prerequisite: *)</span> | 10 : +50% DEF/REC when HP > 50% | 20 : null ailments | 10 : raise ATK cap to 130k | 20 : +1000 HoT (+10% REC) to BB | 20 : +5% heal when hit (+10% chance) to SBB | 25 : +20% Spark damage to SBB | 35 : Add +25% Spark resist for 1 turn on BB/SBB | 40 : Add Fire/Thunder elements to attack for 3 turns on BB/SBB"
+                }
+            },
+            {
+                "id": "1627",
+                "name": "Daros",
+                "role": "null_crit,null_ewd,miti_spark,atk,convert_atk,convert_def,convert_rec,bb_mod,maxhp",
+                "rolesp": "null_ails,add_ele",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "8",
+                    "@dc": "48",
+                    "#text": "+60% ATK,DEF,HP / +250% BB Mod when HP > 50% / 20% mitigation for 1 turn when HP < 50% / null Ignore DEF"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "10",
+                    "@dc": "10",
+                    "@cost": "30",
+                    "#text": "10 hits AoE (420%) / null Crit,EWD for 2 turns / +25% Spark resist for 2 turns"
+                },
+                "sbb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "32",
+                    "#text": "15 hits AoE (200-900% based on remaining) / +180% ATK for 3 turns / +30% HP->ATK,DEF,REC for 3 turns / +350% BB Mod for 3 turns / +15% max HP"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "32",
+                    "#text": "20 hits AoE (1500-2800% based on HP remaining) / 50% HP->ATK,DEF,REC for 3 turns / +600% BB Mod for 3 turns / +75% mitigation for 3 turns / +35% max HP"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+50% ATK,DEF when BB > 50% / null ailments"
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_30957.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_30957.png"
+                },                
+                "sp": {
+                    "@list": "20 : +40% ATK/DEF/HP | 10 : +50% ATK/DEF when HP > 50% | 15 : +100% Spark damage | 10 : 4 BC/turn | 20 : 20-25% heal when hit (25% chance) | 10 : raise ATK cap to 130k | 35 : +5% HP buff on SBB | 20 : +100% BB Mod on SBB | 35 : Add null ailments for 3 turns on BB/SBB | 30 : Adds Earth/Water elements to attack for 3 turns on BB/SBB"
+                }
+            },
+            {
+                "id": "1629",
+                "name": "Velma",
+                "role": "miti_dot,atk_down,def_down,atk_down_atked,def_down_atked,bb_atked,ewd_res_down,atk_down_add,def_down_add,drain",
+                "rolesp": "ails,dot,spark_debuff",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "+60% DEF,HP / 4-7 BC when hit / counter ailments (10% CPP, 15% IWS) / +25% Reflect (20% chance)"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "29",
+                    "#text": "17 hits AoE (420%) / +10% DoT mitigation for 1 turn / -50% ATK,DEF Down (30% chance) for 1 turn / -20% ATK,DEF Down when hit (10% chance) for 3 turns / 4-7 BC when hit for 3 turns"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "32",
+                    "#text": "20 hits AoE (620%) / -20% EWD null debuff (15% chance) for 1 turn / -50% ATK,DEF Down (30% chance) for 1 turn / -20% ATK,DEF Down buff (10% chance) to attacks for 3 turns / 4-6% HP drain (50% chance) for 3 turns"
+                },
+                "ubb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "30",
+                    "#text": "23 hits AoE (1800%) / -80% ATK,DEF Down for 3 turns / Crit,EWD null debuff (30% chance) for 3 turns / 50 BC when hit for 3 turns / inflicts all ailments"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+25% Spark debuff (10% chance) for 1 turn / -20% BB cost"
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_61137.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_61137.png"
+                },                
+                "sp": {
+                    "@list": "10 : +30% DEF/HP | 20 : 2-3 BC when hit | 20 : 20% mitigation (20% chance) | 20 : null Crits | 10 : raise ATK cap to 130k | 20 : <span style='display:none'>(*)</span> +chance on ATK/DEF Down on BB/SBB | 10 : 2-turn ATK/DEF Down on BB/SBB​ <span style='display:none'>(Prerequisite: *)</span> | 35 : Add +75% all ailments proc on BB/SBB | 35 : Add +500% DoT for 2 turns on BB/SBB | 35 : Add +30% Spark debuff (30% chance) for 1 turn on BB/SBB"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
