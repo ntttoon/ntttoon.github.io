@@ -4005,19 +4005,19 @@
                     "@hit": "13",
                     "@dc": "13",
                     "@cost": "17",
-                    "#text": "420% Earth (AOE) / Drain 25-30% HP (SELF) / 8BC Fill (ALL) 1Turn / Cure Ails / Null Ails 3Turns"
+                    "#text": "420% Earth (AOE) / Drain 25-30% HP (SELF) / 8BC Fill (ALL) 1Turn / Cure Ails / Null Ails 3Turns / Null CRIT (ALL) 2Turns"
                 },
                 "sbb": {
                     "@hit": "18",
                     "@dc": "18",
                     "@cost": "28",
-                    "#text": "620% Earth (AOE) / Drain 30-35% HP (SELF) / 8BC Fill (ALL) 1Turn / 8BC Fill 3Turns / 20% Chance Heal 20-25% DMG when ATKed (ALL) 3Turns "
+                    "#text": "620% Earth (AOE) / Drain 30-35% HP (SELF) / 8BC Fill (ALL) 1Turn / 8BC Fill 3Turns / 20% Chance Heal 20-25% DMG when ATKed (ALL) 3Turns / Null Elemental Weakness (ALL) 2Turns / 25% Spark reduction 1Turn"
                 },
                 "ubb": {
                     "@hit": "21",
                     "@dc": "21",
                     "@cost": "32",
-                    "#text": "1800% Earth (AOE) / Drain 50-55% HP (SELF) / 50BC Fill 3Turns / 100% Chance Heal 100-100% DMG when ATKed (ALL) 3Turns / 35% Max HP+ till Death,Battle End / Null CRIT (AOE) 5Turns / Null Elemental Weakness (AOE) 5Turns "
+                    "#text": "1800% Earth (AOE) / Drain 50-55% HP (SELF) / 50BC Fill 3Turns / 100% Chance Heal 100-100% DMG when ATKed (ALL) 3Turns / 35% Max HP+ till Death,Battle End / Null CRIT (AOE) 5Turns / Null Elemental Weakness (AOE) 5Turns / 50% Spark reduction 5Turns"
                 },
                 "es": {
                     "@condtion": "None",
