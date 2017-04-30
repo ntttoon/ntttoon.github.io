@@ -22,7 +22,7 @@ a {
     <a href="index.html" class="w3-hover-white w3-bar-item"><i class="fa fa-home"></i></a>
     <a href="my_vault_pc.html" class="w3-hover-white w3-bar-item" onClick="addMode();"><i class="fa fa-plus"></i></a>
     <a href="my_vault_pc.html" class="w3-hover-white w3-bar-item" onClick="favMode();"><i class="fa fa-star"></i></a>
-    <a href="my_vault_pc.html" class="w3-hover-white w3-bar-item" onClick="clearVault();"><i class="fa fa-trash-o"></i></a>
+    <a href="my_vault_pc.html" class="w3-hover-white w3-bar-item" onClick="removeMode();"><i class="fa fa-trash-o"></i></a>
     <div id="mode_info" class="w3-bar-item"></div>
   </div>
 </div>
@@ -63,11 +63,19 @@ a {
 		document.getElementById("left_col").style.width = '100%';
 		document.getElementById("right_col").style.width = '0%';
 		document.getElementById("mode_info").innerHTML = 'You are in Add Mode';
+		document.body.style.background = "#FFFFFF";
 	}
 	if(mode == 'fav'){
 		document.getElementById("left_col").style.width = '50%';
 		document.getElementById("right_col").style.width = '50%';
 		document.getElementById("mode_info").innerHTML = 'You are in Fav Mode';
+		document.body.style.background = "#FFECB1";
+	}
+	if(mode == 'remove'){
+		document.getElementById("left_col").style.width = '100%';
+		document.getElementById("right_col").style.width = '0%';
+		document.getElementById("mode_info").innerHTML = 'You are in Remove Mode';
+		document.body.style.background = "#2c3e50";
 	}
 	////////////
 	var xmlhttp = new XMLHttpRequest();
@@ -108,6 +116,14 @@ a {
 					}
 				}
 			}
+			
+			if(mode == 'remove'){
+				for(j = 0; j < vault_len; j++) {
+					if(id == vault_unique[j] && id != ""){
+						out_left+='<img id="' + id + '" src="' + thumb + '" style="width:60px;margin-top:5px;cursor:pointer;" onClick="unitClickRemove(' + id + ')" class="w3-grayscale-min"> ';
+					}
+				}
+			}
 
 		}
 		out_left+="</div>";
@@ -117,12 +133,19 @@ a {
 	/////////////////////
 	function unitClickView(id){
 		var path = 'unitinfo.html?id=' + id;
-		var fullpath = '<iframe src="' + path +' " frameborder="0" width="100%" height="100%"></iframe>';
+		var fullpath = '<iframe src="' + path +' " frameborder="0" width="100%" height="100%" style="background: #FFFFFF;"></iframe>';
 		document.getElementById("right_content").innerHTML = fullpath;
 	}
 	function unitClickAdd(id){
 		myvault+= id + '|';
 		localStorage.myvault = myvault;
+		document.getElementById(id).style.display = 'none';
+	}
+	function unitClickRemove(id){
+		localStorage.myvault = myvault;
+		myvault = myvault.replace(id + '|', "");
+		res = deleteDuplicate(myvault);
+		localStorage.myvault = res;
 		document.getElementById(id).style.display = 'none';
 	}
 	function clearVault(){
@@ -132,17 +155,18 @@ a {
 		}
 	}
 	function favMode(){
-		if(mode == "add"){
-			localStorage.mode = "fav";
-			mode = localStorage.mode;
-		}
+		localStorage.mode = "fav";
+		mode = localStorage.mode;
 	}
 	function addMode(){
-		if(mode == "fav"){
-			localStorage.mode = "add";
-			mode = localStorage.mode;
-		}
+		localStorage.mode = "add";
+		mode = localStorage.mode;
 	}
+	function removeMode(){
+		localStorage.mode = "remove";
+		mode = localStorage.mode;
+	}
+	function deleteDuplicate(a){a=a.toString().replace(/ /g,",");a=a.replace(/[ ]/g,"").split(",");for(var b=[],c=0;c<a.length;c++)-1==b.indexOf(a[c])&&b.push(a[c]);b=b.join(", ");return b=b.replace(/,/g," ")};
 	////////////
 	Array.prototype.remove = function() {
     var what, a = arguments, L = a.length, ax;

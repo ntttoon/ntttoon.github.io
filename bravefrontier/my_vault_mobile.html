@@ -33,7 +33,7 @@ a {
       <a href="index.html" class="w3-bar-item"><i class="fa fa-home"></i> Home</a>
       <a href="my_vault_mobile.html" onClick="addMode();"class="w3-bar-item"><i class="fa fa-plus"></i> Add Mode</a>
       <a href="my_vault_mobile.html" onClick="favMode();"class="w3-bar-item"><i class="fa fa-star"></i> Fav Mode</a>
-      <a href="my_vault_mobile.html" onClick="clearVault();"class="w3-bar-item"><i class="fa fa-trash-o"></i> Delete Vault</a>
+      <a href="my_vault_mobile.html" onClick="removeMode();"class="w3-bar-item"><i class="fa fa-trash-o"></i> Remove Mode</a>
     </div>
   </div>
 </div>
@@ -75,9 +75,15 @@ function openNav() {
 	////////////
 	if(mode == 'add'){
 		document.getElementById("mode_info").innerHTML = 'You are in Add Mode';
+		document.body.style.background = "#FFFFFF";
 	}
 	if(mode == 'fav'){
 		document.getElementById("mode_info").innerHTML = 'You are in Fav Mode';
+		document.body.style.background = "#FFECB1";
+	}
+	if(mode == 'remove'){
+		document.getElementById("mode_info").innerHTML = 'You are in Remove Mode';
+		document.body.style.background = "#2c3e50";
 	}
 	////////////
 	var xmlhttp = new XMLHttpRequest();
@@ -118,6 +124,14 @@ function openNav() {
 					}
 				}
 			}
+			
+			if(mode == 'remove'){
+				for(j = 0; j < vault_len; j++) {
+					if(id == vault_unique[j] && id != ""){
+						out_left+='<img id="' + id + '" src="' + thumb + '" style="width:60px;margin-top:5px;" onClick="unitClickRemove(' + id + ')" class="w3-grayscale-min"> ';
+					}
+				}
+			}
 
 		}
 		out_left+="</div>";
@@ -129,6 +143,13 @@ function openNav() {
 		localStorage.myvault = myvault;
 		document.getElementById(id).style.display = 'none';
 	}
+	function unitClickRemove(id){
+		localStorage.myvault = myvault;
+		myvault = myvault.replace(id + '|', "");
+		res = deleteDuplicate(myvault);
+		localStorage.myvault = res;
+		document.getElementById(id).style.display = 'none';
+	}
 	function clearVault(){
 		if (confirm("Do you want to CLEAR YOUR VAULT?") == true) {
 			localStorage.myvault = "";
@@ -136,17 +157,18 @@ function openNav() {
 		}
 	}
 	function favMode(){
-		if(mode == "add"){
-			localStorage.mode = "fav";
-			mode = localStorage.mode;
-		}
+		localStorage.mode = "fav";
+		mode = localStorage.mode;
 	}
 	function addMode(){
-		if(mode == "fav"){
-			localStorage.mode = "add";
-			mode = localStorage.mode;
-		}
+		localStorage.mode = "add";
+		mode = localStorage.mode;
 	}
+	function removeMode(){
+		localStorage.mode = "remove";
+		mode = localStorage.mode;
+	}
+	function deleteDuplicate(a){a=a.toString().replace(/ /g,",");a=a.replace(/[ ]/g,"").split(",");for(var b=[],c=0;c<a.length;c++)-1==b.indexOf(a[c])&&b.push(a[c]);b=b.join(", ");return b=b.replace(/,/g," ")};
 	////////////
 	Array.prototype.remove = function() {
     var what, a = arguments, L = a.length, ax;
