@@ -4270,7 +4270,7 @@
                     "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_51167.png"
                 },                
                 "sp": {
-                    "@list": ""
+                    "@list": "10 : +30% ATK/HP | 10 : +50% ATK/DEF when BB > 50% | 10 : <span style='display:none'>(*)</span> +100% Spark damage | 15 : +120% Spark damage <span style='display:none'>(Prerequisite: *)</span> | 20 : null Crits | 10 : Raise ATK cap from 99999 to 130000 | 20 : +1000 HoT on BB | 20 : +2 BC/turn on BB | 20 : +20% Spark damage buff on BB/SBB | 35 : Add -50% ATK/DEF Down (30% chance) for 1 turn on BB/SBB | 35 : Add +50% Spark crit (30% chance) for 3 turns on BB/SBB"
                 }
             },
             {
