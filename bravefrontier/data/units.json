@@ -3627,7 +3627,7 @@
                     "@hit": "18",
                     "@dc": "18",
                     "@cost": "31",
-                    "#text": "620% Water (AOE) / 100% Chance 2-3BC Fill on Spark (ALL) 3Turns / 130% Spark DMG+ (ALL) 3Turns / 30% Chance SPARKcrit (60% DMG+) (ALL) 3Turns / 620% Fire (6 Hits,AOE,ATK +200) on Earth Enemies"
+                    "#text": "620% Water (AOE) / 100% Chance 2-3BC Fill on Spark (ALL) 3Turns / 130% Spark DMG+ (ALL) 3Turns / 30% Chance SPARKcrit (60% DMG+) (ALL) 3Turns / 620% Water (6 Hits,AOE,ATK +200) on Fire Enemies"
                 },
                 "ubb": {
                     "@hit": "24",
@@ -4146,20 +4146,20 @@
                     "#text": ""
                 },
                 "bb": {
-                    "@hit": "",
+                    "@hit": "12/3",
                     "@dc": "",
                     "@cost": "28",
                     "#text": "12 hits Water,Light AoE / 3 hits Fire-exclusive AoE (420%) / +125% EWD / +50% BB fill rate for 3 turns"
                 },
                 "sbb": {
-                    "@hit": "",
+                    "@hit": "13/4",
                     "@dc": "",
                     "@cost": "29",
                     "#text": "13 hits Water,Light AoE (620%) / 4 hits Fire-exclusive AoE (620%) / +125% EWD / +20% OD fill rate for 3 turns / null Crits and DoT mitigation for 1 turn"
                 },
                 "ubb": {
-                    "@hit": "",
-                    "@dc": "",
+                    "@hit": "23",
+                    "@dc": "23",
                     "@cost": "32",
                     "#text": "23 hits Water,Light AoE (1800%) / 50 BC when hit / +400% EWD / DoT mitigation for 3 turns / null Crits for 5 turns"
                 },
@@ -4194,20 +4194,20 @@
                     "#text": ""
                 },
                 "bb": {
-                    "@hit": "",
-                    "@dc": "",
+                    "@hit": "12",
+                    "@dc": "12",
                     "@cost": "30",
                     "#text": "12 hits AoE (420%) / +170% ATK,DEF / +70% ATK->DEF / 20-25% heal when hit (25% chance) for 3 turns"
                 },
                 "sbb": {
-                    "@hit": "",
-                    "@dc": "",
+                    "@hit": "16",
+                    "@dc": "16",
                     "@cost": "32",
                     "#text": "16 hits AoE (540%, +200% per use, max 3) / +170% ATK,DEF / 20-25% heal when hit (25% chance) / 4-7 BC when hit buff for 3 turns / refills own BB Gauge to max"
                 },
                 "ubb": {
-                    "@hit": "",
-                    "@dc": "",
+                    "@hit": "20",
+                    "@dc": "20",
                     "@cost": "32",
                     "#text": "20 hits AoE (1800%) / +350% ATK,DEF / 100% heal when hit buff / +120% Spark Crit (50% chance) for 3 turns / 80% AI proc (full HP) for 999 turns"
                 },
@@ -4242,22 +4242,22 @@
                     "#text": ""
                 },
                 "bb": {
-                    "@hit": "",
-                    "@dc": "",
+                    "@hit": "16",
+                    "@dc": "16",
                     "@cost": "28",
                     "#text": "16 hits AoE (420%) / +130% Spark damage / 3500-4000 HoT (+15% REC) / 7 BC,turn / +35% BC,HC drop rate for 3 turns"
                 },
                 "sbb": {
-                    "@hit": "",
-                    "@dc": "",
+                    "@hit": "19",
+                    "@dc": "19",
                     "@cost": "29",
                     "#text": "19 hits AoE (620%) / +130% Spark damage / 400-500 HP on Spark / 2-3 BC on Spark / -20% ATK,DEF buff (10% chance, 1 turn) for 3 turns"
                 },
                 "ubb": {
-                    "@hit": "",
-                    "@dc": "",
+                    "@hit": "23",
+                    "@dc": "23",
                     "@cost": "32",
-                    "#text": "23 hits AoE (1800%) / +350% Spark damage / 800-1000 HP on Spark / 5-8 BC on Spark for 3 turns / -80% ATK/DEF Down for 2 turns"
+                    "#text": "23 hits AoE (1800%) / +350% Spark damage / 800-1000 HP on Spark / 5-8 BC on Spark for 3 turns / -80% ATK,DEF Down for 2 turns"
                 },
                 "es": {
                     "@condtion": "None",
