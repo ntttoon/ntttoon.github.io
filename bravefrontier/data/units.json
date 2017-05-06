@@ -3627,7 +3627,7 @@
                     "@hit": "18",
                     "@dc": "18",
                     "@cost": "31",
-                    "#text": "620% Water (AOE) / 100% Chance 2-3BC Fill on Spark (ALL) 3Turns / 130% Spark DMG+ (ALL) 3Turns / 30% Chance SPARKcrit (60% DMG+) (ALL) 3Turns / 620% Water (6 Hits,AOE,ATK +200) on Fire Enemies"
+                    "#text": "620% Water (AOE) / 620% Water (6 Hits,AOE,ATK +200) on Fire Enemies / 100% Chance 2-3BC Fill on Spark (ALL) 3Turns / 130% Spark DMG+ (ALL) 3Turns / 30% Chance SPARKcrit (60% DMG+) (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "24",
@@ -5614,7 +5614,7 @@
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810418.png"
                 },                
                 "sp": {
-                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 20 : 100% max boost to Atk and Def relative to HP lost | 20 : 80% boost to Spark damage | 50 : Adds Thunder barrier effect to SBB (3000 HP) | 30 : Enhances SBB's Atk relative to Def boost effect (+10% boost, 80% boost total) | 30 : Enhances BB/SBB's BB gauge boost during Spark effect (+1 BC, 3~4 BC fill on Spark total) | 50 : Enhances SBB's Atk and Def boost effect (+20% boost, 180% boost total) | 40 : Allows UBB's boost effects to last for 4 turns"
+                    "@list": "10 : 20% boost to Atk, Rec | 10 : 20% boost to Def, max HP | 20 : 100% max boost to Atk and Def relative to HP lost | 20 : 80% boost to Spark damage | 50 : Adds Thunder barrier effect to SBB (3000 HP) | 30 : Enhances SBB's Atk relative to Def boost effect (+10% boost, 80% boost total) | 30 :  Enhances BB/SBB's BB gauge boost during Spark effect (+1 max BC, 2~4 BC fill on Spark total) | 50 : Enhances SBB's Atk and Def boost effect (+20% boost, 180% boost total) | 40 : Allows UBB's boost effects to last for 4 turns"
                 }
             },
             {
@@ -6820,40 +6820,40 @@
             {
                 "id": "8273",
                 "name": "Benimaru Nikaido",
-                "role": "",
-                "rolesp": "",
+                "role": "hit,ails,bb_atked,od_fill,aoe",
+                "rolesp": "add_ele",
                 "element": "Thunder",
                 "rarity": "8",
                 "cost": "48",
                 "ls": {
-                    "@hit": "",
-                    "@dc": "",
-                    "#text": ""
+                    "@hit": "7",
+                    "@dc": "56",
+                    "#text": "40% boost to all parameters / Adds +1 hit to each hit count with 50% damage penalty / 25% reduces BB gauge required for BB / 30% chance with 50% damage penalty"
                 },
                 "ls_raid": {
                     "#text": ""
                 },
                 "bb": {
-                    "@hit": "",
-                    "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "21",
+                    "#text": "15 combo powerful Thunder attack on all foes / Adds +1 hit to each hit count for 3 turns / hugely boosts own 200% Atk for 3 turns / highly probable 85% chance Injury, Weak, Paralysis effects"
                 },
                 "sbb": {
-                    "@hit": "",
-                    "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@hit": "19",
+                    "@dc": "19",
+                    "@cost": "26",
+                    "#text": "19 combo powerful Thunder attack on all foes / Adds +2 hit to each hit count for 3 turns / damage taken considerably boosts 5-7 BC for 3 turns / 10% OD fill / normal attacks hit all foes for 3 turns"
                 },
                 "ubb": {
-                    "@hit": "",
-                    "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "20",
+                    "#text": "22 combo massive Thunder attack on all foes / Adds +3 hits to each hit count with extra hits dealing 100% damage for 3 turns / 350% Atk for 3 turns / 50% OD fill"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": ""
+                    "#text": "Adds +1 hit to each hit count / adds Thunder element to BB,SBB for 3 turns / & 300% OD fill rate after 5000 damage"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840178.png"
