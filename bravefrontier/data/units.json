@@ -4131,7 +4131,7 @@
             },
             {
                 "id": "1602",
-                "name": "Amu Yunos",
+                "name": "Cosmic Being Amu Yunos",
                 "role": "ewd,od_rate,null_crit,miti_dot",
                 "rolesp": "bb_atked,cure",
                 "element": "Water",
@@ -4179,7 +4179,7 @@
             },
             {
                 "id": "1604",
-                "name": "Beiorg",
+                "name": "Celestial Plate Beiorg",
                 "role": "atk,def,convert_def,heal_atked,bb_atked",
                 "rolesp": "idol,miti_spark",
                 "element": "Thunder",
@@ -4227,9 +4227,9 @@
             },
             {
                 "id": "1606",
-                "name": "Mora",
-                "role": "spark,dot,bb_fill,bc,hc,heal_spark,bb_spark,atk_down_add",
-                "rolesp": "spark_debuff,atk_down,def_down,spark_crit",
+                "name": "Glorious Shine Mora",
+                "role": "spark,hot,bb_fill,bc,hc,heal_spark,bb_spark,atk_down_add",
+                "rolesp": "atk_down,def_down,spark_crit",
                 "element": "Light",
                 "rarity": "8",
                 "cost": "50",
@@ -4275,7 +4275,7 @@
             },
             {
                 "id": "1607",
-                "name": "Griff",
+                "name": "Furious General Griff",
                 "role": "add_ele,crit_dmg,bb_mod,bb_rate,crit_res_down,crit",
                 "rolesp": "ewd,spark_crit",
                 "element": "Fire",
@@ -4323,7 +4323,7 @@
             },
             {
                 "id": "1608",
-                "name": "Iris",
+                "name": "Oceanic Mirror Iris",
                 "role": "add_ele,miti_guard,miti_ele,atk_down_add,def_down_add,ewd",
                 "rolesp": "heal_atked,atk_down,def_down",
                 "element": "Water",
