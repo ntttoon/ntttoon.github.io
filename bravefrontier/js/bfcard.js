@@ -311,6 +311,11 @@ function borderOn(){
 }
 
 function infoOff(){
+	var b = stage.find('#titletxt')[0];
+	b.visible(false);
+	var c = stage.find('#infotxt')[0];
+	c.visible(false);
+	
 	infoImg.visible(false);
 	titleText.visible(false);
 	infoText.visible(false);
@@ -318,6 +323,11 @@ function infoOff(){
 }
 
 function infoOn(){
+	var b = stage.find('#titletxt')[0];
+	b.visible(true);
+	var c = stage.find('#infotxt')[0];
+	c.visible(true);
+	
 	infoImg.visible(true);
 	titleText.visible(true);
 	infoText.visible(true);
