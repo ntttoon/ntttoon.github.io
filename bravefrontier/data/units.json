@@ -4174,7 +4174,7 @@
                     "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_20987.png"
                 },                
                 "sp": {
-                    "@list": "20 : <span style='display:none'>(*)</span> +30% Stats | 15 : +50% Stats​ <span style='display:none'>(Prerequisite: *)</span> | 20 : +100% Spark damage | 20 : null EWD | 10 : Raise ATK cap from 99999 to 130000 | 30 : +25% EWD buff on BB/SBB | 20 : Add null Crit for 1 turn BB | 20 : DoT mitigation? BB | 35 : Add 4-7 BC when hit buff for 3 turns on BB/SBB | 35 : Add cure ailments/debuffs on BB/SBB"
+                    "@list": "20 : <span style='display:none'>(*)</span> 30% boost to all parameters | 15 : Raises all parameter boost from 30% to 50% <span style='display:none'>(Prerequisite: *)</span> | 20 : 100% boost to Spark damage | 20 : Negates elemental damage | 10 : Raises Atk parameter limits to 130000 | 30 : Enhances BB/SBB's hugely boosts all elemental damage effect (+25% boost. 150% boost total) | 20 : Adds negates critical damage for 1 turn effect to BB | 20 : Adds slight damage reduction of additional attacks for 1 turn effect to BB (10% reduction) | 35 : Adds considerable BB gauge boost when attacked for 3 turns effect to BB/SBB (Fills 4-7 BC) | 35 : Adds status ailment removal effect to BB/SBB"
                 }
             },
             {
@@ -4222,7 +4222,7 @@
                     "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_40907.png"
                 },                
                 "sp": {
-                    "@list": "25 : +40% Stats | 10 : +10% ATK/DEF/REC per turn (up to 5 turns) | 20 : null Ignore DEF | 10 : Raise ATK cap from 99999 to 130000 | 30 : <span style='display:none'>(*)</span> Add +70% ATK->DEF buff for 3 turns on SBB | 20 : +10% ATK->DEF buff (up to 80%) <span style='display:none'>(Prerequisite: *)</span>​ | 20 : +10% ATK/DEF buff to BB/SBB (up to ?%) | 30 : +5% heal when hit buff (+10% chance) on BB/SBB | 35 : Add +10% chance to proc AI (revive at 1% HP) for 999 turns on BB/SBB | 35 : Add +25% Spark resist buff for 1 turn on BB/SBB"
+                    "@list": "25 : 40% boost to all parameters | 10 : Boosts Atk, Def, Rec each turn (for up to 5 turns) (10% boost each turn) | 20 : Negates Def ignoring effect | 10 : Raises Atk parameter limits to 130000 | 30 : <span style='display:none'>(*)</span> Adds huge boost to Def relative to Atk for 3 turns effect to SBB (70% Atk to Def) | 20 : Enhances BB/SBB's hugely boosts Def relative to Atk for 3 turns effect (+10% boost. 80% Atk to Def total) <span style='display:none'>(Prerequisite: *)</span>​ | 20 : Enhances BB/SBB's hugely boosts Atk, Def effect (+10% boost. 180% boost total) | 30 : Enhances BB/SBB's damage taken may slightly restore HP effect and its success rate (+10% chance & +5% effect. 30% chance to heal 25-30% damage total) | 35 : Adds probable resistance against 1 KO attack effect to BB/SBB (10% chance to resist KO attacks) | 35 : Adds Spark damage reduction for 1 turn effect to BB/SBB (25% reduction)"
                 }
             },
             {
@@ -4270,7 +4270,7 @@
                     "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_51167.png"
                 },                
                 "sp": {
-                    "@list": "10 : +30% ATK/HP | 10 : +50% ATK/DEF when BB > 50% | 10 : <span style='display:none'>(*)</span> +100% Spark damage | 15 : +120% Spark damage <span style='display:none'>(Prerequisite: *)</span> | 20 : null Crits | 10 : Raise ATK cap from 99999 to 130000 | 20 : +1000 HoT on BB | 20 : +2 BC/turn on BB | 20 : +20% Spark damage buff on BB/SBB | 35 : Add -50% ATK/DEF Down (30% chance) for 1 turn on BB/SBB | 35 : Add +50% Spark crit (30% chance) for 3 turns on BB/SBB"
+                    "@list": "10 : 30% boost to Atk, max HP | 10 : Atk, Def boost when BB gauge is over 50% (50% boost) | 10 : <span style='display:none'>(*)</span> 100% boost to Spark damage | 15 : Raises Spark damage boost from 100% to 120% <span style='display:none'>(Prerequisite: *)</span> | 20 : Negates critical hit damage | 10 : Raises Atk parameter limits to 130000 | 20 : <span style='display:none'>(#)</span> Enhances BB's greatly restores HP each turn effect (+1000 HP & +10% Rec boost. Heals 4500-5000 + 25% Rec total) | 20 : Enhances BB's huge BB gauge boost each turn effect (+2 BC fill. Fills 9 BC total) <span style='display:none'>(Prerequisite: #)</span> | 20 : Enhances BB/SBB's enormous Spark damage boost effect (+20% boost. 150% boost total) | 35 : Adds probable huge 1 turn Atk, Def reduction effect to BB/SBB (30% chance to reduce enemy Atk, Def by 50%) | 35 : Adds probable Spark critical for 3 turns effect to BB/SBB (30% chance Sparks deal 50% extra damage)"
                 }
             },
             {
@@ -4318,7 +4318,7 @@
                     "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_10677.png"
                 },                
                 "sp": {
-                    "@list": "10 : +30% HP/ATK | 15 : +100% Spark damage | 10 : <span style='display:none'>(*)</span> +40% Crit damage | 10 : +75% Crit damage​ <span style='display:none'>(Prerequisite: *)</span> | 20 : Null EWD | 10 : Raise ATK cap from 99k to 130k | 25 : +25% Crit damage buff to BB/SBB | 25 : +100% BB Mod buff to BB/SBB | 30 : Add +125% Fire/Water EWD buff for 3 turns on BB/SBB | 40 : +50% Spark Crit buff (30% chance) for 3 turns on BB/SBB"
+                    "@list": "10 : 30% boost to Atk, max HP | 15 : 100% boost to Spark damage | 10 : <span style='display:none'>(*)</span> Slightly boosts critical hit damage (40% boost) | 10 : Boosts critical hit damage (+35% boost. 75% boost total) <span style='display:none'>(Prerequisite: *)</span> | 20 : Negates elemental damage | 10 : Raises Atk parameter limits to 130000 | 25 : Enhances BB/SBB's critical damage boost effect (+25% boost. 75% boost total) | 25 : Enhances BB/SBB's huge BB Atk boost effect (+100% boost. 400% boost total) | 30 : Adds hugely boosts Fire, Water elemental damage for 3 turns effect to BB/SBB (125% boost) | 40 : Adds probable Spark critical for 3 turns effect to BB/SBB (30% chance Sparks deal 50% extra damage)"
                 }
             },
             {
@@ -4366,7 +4366,7 @@
                     "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_20637.png"
                 },                
                 "sp": {
-                    "@list": "10 : +20% HP/DEF | 10 : +50% ATK/DEF when HP > 50% | 10 : +50% EWD | 20 : 2-3 BC when hit | 20 : Null EWD | 20 : Null Crits | 40 : Add 20-25% heal when hit (25% chance) for 3 turns on BB/SBB | 30 : Add -50% ATK/DEF Down (30% chance) for 1 turn on BB/SBB | 20 : +5% elemental mitigation buff on BB/SBB | 30 : +25% EWD buff on BB/SBB"
+                    "@list": "10 : 20% boost to Def, max HP | 10 : Boost to Atk, Def when HP is above 50% (50% boost) | 10 : Boosts elemental damage (50% boost) | 20 : Damage taken boosts BB Gauge (Fills 2-3 BC) | 20 : Negates elemental damage | 20 : Negates critical hit damage | 40 : Adds probable slight HP restoration when attacked for 3 turns effect to BB/SBB (25% chance to heal 20-25% damage) | 30 : Adds probable huge 1 turn Atk, Def reduction effect to BB/SBB (30% chance to reduce enemy Atk, Def by 50%) | 20 : Enhances BB/SBB's slight damage reduction from Fire, Earth types effect (+5% boost. 15% reduction total) | 30 : Enhances SBB's hugely boosts Fire, Water elemental damage effect (+25% boost. 150% boost total)"
                 }
             },
             {
@@ -5327,6 +5327,54 @@
                 },                
                 "sp": {
                     "@list": "10 : 50% boost to Atk, Def and Rec when BB gauge is full | 40 : 70% boost to Spark damage | 30 : Negates elemental damage | 20 : Enhances LS's max HP parameter boost effect (+10% boost, 60% boost total) | 20 : Enhances LS's Spark damage boost effect (+20% boost, 120% boost total) | 40 : Enhances SBB's BB Atk boost effect (+100% boost, 450% boost total) | 40 : Enhances SBB's Spark damage boost effect (+30% boost, 140% boost total) | 50 : <span style='display:none'>(*)</span> Adds slight BB gauge boost during Spark for 3 turns effect to BB/SBB (1~2 BC fill) | 10 : Enhances BB gauge boost during Spark for 3 turns effect added to BB/SBB (2~3 BC fill instead) <span style='display:none'>(Prerequisite: *)</span> | 50 : Adds powerful attack at turn's end to BB/SBB, massive attack at turn's end to UBB (450% multiplier on BB/SBB, 1500% multiplier on UBB for 2 turns)"
+                }
+            },
+            {
+                "id": "8192",
+                "name": "Dark Path Arthur",
+                "role": "atk,crit,miti_guard,od_rate",
+                "rolesp": "crit_dmg,bb_mod,add_ele",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "16",
+                    "@dc": "48",
+                    "#text": "50% boost to all parameters / critical damage enormously boosts BB gauge for 3 turns (10 BC) / 100% boost to Spark damage / hugely boosts critical damage (150%)"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "22/1",
+                    "@dc": "22/1",
+                    "@cost": "25",
+                    "#text": "22 combo powerful Light attack on all foes / powerful Light attack on single foe / hugely boosts Atk for 3 turns (190%) / enormously boosts critical hit rate for 3 turns (60%) / boosts damage reduction when guarding for 3 turns (10% reduction)"
+                },
+                "sbb": {
+                    "@hit": "30",
+                    "@dc": "30",
+                    "@cost": "29",
+                    "#text": "30 combo powerful Light attack on all foes / hugely boosts Atk for 3 turns (190%) / enormously boosts critical hit rate for 3 turns (60%) / boosts damage reduction when guarding for 3 turns (10%) / low probability of activating BB,SBB,UBB twice for 1 turn (10%) / fills own BB gauge to max"
+                },
+                "ubb": {
+                    "@hit": "35",
+                    "@dc": "35",
+                    "@cost": "32",
+                    "#text": "35 combo massive Light attack on all foes (damage relative to remaining HP) - 2800% x (current HP stat , base HP) / enormously boosts critical damage for 3 turns (300%) / enormously boosts Spark damage for 3 turns (300%) / enormously boosts Atk for 3 turns (300%) / enormously boosts critical hit rate for 3 turns (60%) / high probability of activating BB,SBB,UBB twice for 1 turn (85%)"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Hugely boosts BB Atk (150%) + considerably boosts critical damage (100%) + 100% boost to Spark damage when The Grail is equipped / 20% boost to Atk, Def for all allies + adds great OD gauge fill rate boost for 3 turns effect to BB,SBB when Caliburn is equipped"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_750167.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_750167.png"
+                },                
+                "sp": {
+                    "@list": "10 : 30% boost to max HP, Atk | 10 : Boosts Atk, Def when BB gauge is above 50% (50% boost) | 15 : 100% boost to Spark damage | 10 : Enhances LS's parameters boost effect (+10% boost. 60% boost total) | 10 : Raises Atk parameter limits to 130000 | 20 : Enhances LS's Spark damage boost (+40% boost. 140% boost total) | 30 : Enhances SBB's probability to activate BB/SBB/UBB twice (+5% boost, 15% total) | 45 : Adds considerable critical hit damage boost for 3 turns effect to BB/SBB (75% boost) | 45 : Adds huge BB Atk boost for 3 turns effect to BB/SBB (450% boost) | 60 : Adds all elements to attack for 3 turns effect to SBB/UBB"
                 }
             },
             {
@@ -7439,6 +7487,54 @@
                 },                
                 "sp": {
                     "@list": "10 : 50% boost to Atk | 10 : 50% boost to Def | 15 : <span style='display:none'>(*)</span> 100% boost to Spark damage | 10 : Raises Spark damage boost from 100% to 120% <span style='display:none'>(Prerequisite: *)</span> | 20 : Boosts elemental damage | 10 : Raises Atk parameter limits to 130000 | 10 : Enhances LS's 130% boost to Spark damage effect (+10% boost, 140% boost total) | 20 : Enhances BB's considerable boost to Def relative to Atk effect (+10%, 80% Atk to Def total) | 20 : Enhances SBB's considerable boost to Atk relative to Def effect (+10%, 80% Def to Atk total) | 35 : Adds Spark damage boosts BB gauge for 3 turns effect to BB/SBB (2-3 BC) | 30 : Adds huge boost to BB gauge effect to BB/SBB (8 BC fill)"
+                }
+            },
+            {
+                "id": "8296",
+                "name": "Grandmagos Ceulfan",
+                "role": "atk_ele,def_ele,atk_down_add,hit,ewd,null_crit,null_ewd,idef",
+                "rolesp": "miti_ele,aoe",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "18",
+                    "@dc": "54",
+                    "#text": "200% boost to Atk and 60% boost to max HP of Light types / considerably boosts Atk, Def when BB gauge is over 50% (80%) / raises normal hit amount (+1) / hugely boosts Light elemental damage (150%)"
+                },
+                "ls_raid": {
+                    "#text": "25% boost to all parameters of Light types / 20% damage reduction from Light, Dark types in Guild Raid"
+                },
+                "bb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "20 combo powerful Light attack on all foes (partial HP absorption) (Drains 25-30% damage) / hugely boosts Light types' Atk, Def for 3 turns (120%) / considerably boosts own Atk, Def for 5 turns (150%) / adds probable great 1 turn Atk reduction effect to attack for 3 turns (adds 20% chance to reduce enemy Atk by 30%)"
+                },
+                "sbb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "32",
+                    "#text": "23 combo powerful Light attack on all foes (damage relative to remaining HP) (900% * [current HP over max HP]) / hugely boosts Light types' Atk, Def for 3 turns (120%) / raises normal hit amount for 3 turns (+2) (extra hits have +20% damage, 120% total) / hugely boosts Light elemental damage for 3 turns (150%) / negates critical and elemental damage for 2 turns"
+                },
+                "ubb": {
+                    "@hit": "27",
+                    "@dc": "27",
+                    "@cost": "32",
+                    "#text": "27 combo massive Light attack on all foes (damage relative to remaining HP) (2500% * [current HP , max HP]) / hugely raises normal hit amount for 3 turns (+3) (extra hits have +20% damage, 120% total) / enormously boosts OD gauge fill rate for 3 turns (300%) / hugely boosts Atk relative to max HP for 3 turns (60%) / enormously boosts Light elemental damage for 3 turns (500%) / hugely boosts max HP (40%)"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Adds Def ignoring effect to BB,SBB for 3 turns / adds resistance to 1 KO attack after activating OD / 40% boost to Atk, Def each turn (3 turns max, capping at 120%)"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850278.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850278.png"
+                },                
+                "sp": {
+                    "@list": "10 : 30% boost to Atk, max HP | 20 : 30% boost to all parameters | 5 : Considerably raises own normal hit amount (Adds +2 hits to each hit count) | 20 : Boosts elemental damage (50% boost) | 10 : Raises Atk parameter limit to 130000 | 25 : Enhances hit count and damage of LS's raises normal hit amount effect (+1 hit & -25% damage penalty. Adds +2 hits to each hit count with 25% damage penalty total) | 20 : Enhances hit count and damage of UBB's hugely raises normal hit amount effect (+1 hit & +30% damage. Adds +4 hits to each hit count (extra hits deal 50% damage) total) | 25 : Allows SBB's buff effects to last for additional turn | 25 : Enhances SBB's elemental damage effect (+50% boost. 200% boost total) | 30 : Adds Light, Dark damage reduction for 1 turn effect to BB/SBB (15% reduction) | 35 : Adds normal attack hits all foes for 3 turns effect to BB/SBB"
                 }
             }
         ]
