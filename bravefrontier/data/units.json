@@ -4371,7 +4371,7 @@
             },
             {
                 "id": "1610",
-                "name": "Barion",
+                "name": "Draconic Emperor Barion",
                 "role": "atk,atk_ele,def_ele,bb_mod,bb_regen,convert_atk,od_regen",
                 "rolesp": "spark",
                 "element": "Fire",
@@ -4414,12 +4414,12 @@
                     "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_11057.png"
                 },                
                 "sp": {
-                    "@list": "10 : <span style='display:none'>(*)</span> +30% ATK/HP | 15 : +50% ATK/HP​ <span style='display:none'>(Prerequisite: *)</span> | 15 : +120% Spark damage | 10 : +50% Crit damage | 10 : Raise damage cap from 99k to 130k | 25 : Add +130% ATK/DEF for Fire units for 3 turns on BB/SBB | 25 : +100% BB Mod buff on BB/SBB | 40 : Add +150% Spark damage for 3 turns on BB/SBB | 50 : Fills BB Gauge to max on BB/SBB"
+                    "@list": "10 : <span style='display:none'>(*)</span> 30% boost to Atk, max HP | 15 : Raises Atk, max HP boost from 30% to 50% <span style='display:none'>(Prerequisite: *)</span> | 15 : 120% boost to Spark damage | 10 : Boosts critical hit damage (50% boost) | 10 : Raises Atk parameter limits to 130000 | 25 : Enhances BB/SBB's considerable Atk, Def boost for Fire types effect (+30% boost. 130% boost total) | 25 : Enhances BB/SBB's BB huge Atk boost effect (+100% boost. 450% boost total) | 40 : Adds enormous Spark damage boost for 3 turns effect to BB/SBB (150% boost) | 50 : Adds fills own BB gauge to max effect to BB/SBB"
                 }
             },
             {
                 "id": "1612",
-                "name": "Mordelim",
+                "name": "Sacred Flora Mordlim",
                 "role": "def,ails,miti,miti_spark,miti_guard,atk_ailed,convert_def,atk_down,def_down",
                 "rolesp": "null_ails,bb_guard",
                 "element": "Earth",
@@ -4453,7 +4453,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "2-3 BC when hit, null ailments and Crits"
+                    "#text": "2-3 BC when hit / null ailments and Crits"
                 },
                 "art": {
                     "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_30947.png"
@@ -4462,7 +4462,7 @@
                     "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_30947.png"
                 },                
                 "sp": {
-                    "@list": "10 : +30% DEF/HP | 10 : +0-50% DEF based on HP remaining | 20 : 2-3 BC when hit | 20 : null EWD | 20 : null Ignore DEF | 20 : +10% DEF (converted) buff to SBB | 10 : Spark resist buff up to 2 turns on BB | 20 : 2-turn mitigation | 30 : Add Null ailments for 3 turns on BB/SBB | 30 : Add 8 BC on Guard for 3 turns on BB/SBB"
+                    "@list": "10 : 30% boost to Def, max HP | 10 : Boosts Def relative to how high remaining HP is (0.5% boost per 1% HP remaining, 50% boost total at full HP) | 20 : Damage taken boosts BB gauge (Fills 2-3 BC) | 20 : Negates elemental damage | 20 : Negates Def ignoring damage | 20 : Enhances SBB's huge boost to Def relative to Atk effect (+10% boost. 80% Atk to Def total) | 10 : Allows BB's Spark damage reduction effect to last for 2 turns | 20 : Allows BB/SBB's 50% damage reductions to last for 2 turns | 30 : Adds status ailment negation for 3 turns effect to BB/SBB | 30 : Adds huge BB gauge boost when guarding for 3 turns effect to BB/SBB (Fills 8 BC)"
                 }
             },
             {
@@ -4898,6 +4898,102 @@
                 }
             },
             {
+                "id": "1633",
+                "name": "Philaine",
+                "role": "heal,cure,convert_atk,hot,bb_fill,convert_def,bc,hc,atk_down",
+                "rolesp": "rec,heal_atked,bb_atked,barrier",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "8",
+                    "@dc": "48",
+                    "#text": "+60% DEF,HP,REC / 25% heal when hit (25% chance) / 4-7 BC when hit / 20% mit after taking 5k damage"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "22",
+                    "#text": "14 hits AoE (420%) / 4000-4500 burst heal / cures ails,debuffs / +70% DEF -> ATK for 3 turns / 3500-4000 HoT for 3 turns"
+                },
+                "sbb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "30",
+                    "#text": "17 hits AoE (620%) / 4000-4500 burst heal / 8 BC fill / +70% ATK->DEF for 3 turns / +35% BC,HC drop rate for 3 turns / -50% ATK Down (30% chance) for 1 turn"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "32",
+                    "#text": "22 hits AoE (1800%) / +350% ADR for 3 turns / +250% REC-> ATK,DEF for 3 turns / 99999 HoT for 3 turns / -80% ATK Down (100% chance) for 3 turns / 30k HP Earth barrier"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "2-3 BC when hit / 20-25% heal when hit (25% chance)"
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_30967.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_30967.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> +30% HP/DEF | 15 : +50% HP/DEF/REC​ <span style='display:none'>(Prerequisite: *)</span> | 20 : null ails | 20 : null Crit | 10 : 130k atk cap | 20 : Add +180 REC for 3 turns on BB/SBB | 20 : Add 8 BC fill on BB | 35 : Add 25-30% heal when hit for 3 turns on BB/SBB | 35 : Add 4-7 BC when hit for 3 turns on BB/SBB | 40 : Add 3000 HP Earth barrier on BB/SBB"
+                }
+            },
+            {
+                "id": "1635",
+                "name": "Mizo",
+                "role": "ewd,drain,ewd_res_down",
+                "rolesp": "dot,crit,crit_dmg",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "9",
+                    "@dc": "45",
+                    "#text": "+60% ATK,HP / +125% EWD / 5-10% HP drain / +100% Spark damage after 10k damage dealt"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "10/5",
+                    "@dc": "10/5",
+                    "@cost": "29",
+                    "#text": "10 hits AoE (420%, 25-30% HP drain) / 5 hits Light-exclusive AoE (420%) / +125% EWD for 3 turns / 4-6% HP drain buff for 3 turns"
+                },
+                "sbb": {
+                    "@hit": "14/6",
+                    "@dc": "14/6",
+                    "@cost": "31",
+                    "#text": "14 hits AoE (620%, 30-25% HP drain) / 6 hits Light-exclusive AoE (620%) / +125% EWD for 3 turns / 4-6% HP drain buff for 3 turns / -15% null EWD Down (20% chance) for 1 turn"
+                },
+                "ubb": {
+                    "@hit": "16/8",
+                    "@dc": "16/8",
+                    "@cost": "30",
+                    "#text": "16 hits AoE (1800%) / 8 hits Light-exclusive AoE (1800%) / +400% EWD for 3 turns / 6-10% HP Drain buff for 3 turns / -30% null EWD Down (100% chance) for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": " +80% Dark EWD / +100% Crit damage"
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_61147.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_61147.png"
+                },                
+                "sp": {
+                    "@list": "10 : 30% ATK/HP | 15 : +50% ATK/HP | 10 : +80% ATK when HP > 50% | 15 : +120% Spark damage | 10 : +50% EWD | 10 : 130k ATK cap | 20 : +25% EWD on BB/SBB | 30 : Add +500% DoT for 2 turns on BB/SBB | 35 : Add +60% Crit rate for 3 turns on BB/SBB | 30 : Add +75% Crit damage for 3 turns on BB/SBB"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
@@ -5091,7 +5187,7 @@
             },
             {
                 "id": "1591",
-                "name": "Cardes 8",
+                "name": "Sovereign God Cardes",
                 "role": "miti,heal,cure,def,bb_atked,heal_atked,null_ails,barrier",
                 "rolesp": "null_ewd,null_crit,miti_ele,miti_spark,convert_def",
                 "element": "Dark",
