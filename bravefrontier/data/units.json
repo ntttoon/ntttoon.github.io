@@ -4981,7 +4981,7 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": " +80% Dark EWD / +100% Crit damage"
+                    "#text": "+80% Dark EWD / +100% Crit damage"
                 },
                 "art": {
                     "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_61147.png"
@@ -4991,6 +4991,198 @@
                 },                
                 "sp": {
                     "@list": "10 : 30% ATK/HP | 15 : +50% ATK/HP | 10 : +80% ATK when HP > 50% | 15 : +120% Spark damage | 10 : +50% EWD | 10 : 130k ATK cap | 20 : +25% EWD on BB/SBB | 30 : Add +500% DoT for 2 turns on BB/SBB | 35 : Add +60% Crit rate for 3 turns on BB/SBB | 30 : Add +75% Crit damage for 3 turns on BB/SBB"
+                }
+            },
+            {
+                "id": "1636",
+                "name": "Lilith",
+                "role": "idef,atk,def,rec,od_fill",
+                "rolesp": "bb_fill",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "15",
+                    "@dc": "45",
+                    "#text": "+30% HP / +50% ATK / +100% ATK and +30% HP when 5 or more elements in squad / +100% Spark damage / +200% BB Mod when HP > 50%"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "20",
+                    "@dc": "40",
+                    "@cost": "22",
+                    "#text": "20 hits 500% ST (Attack +200%) / Fill own BB gauge to max / +120% Self ATK DEF REC for 3 turns / 2 turn Ignore DEF buff to all allies"
+                },
+                "sbb": {
+                    "@hit": "20/6",
+                    "@dc": "",
+                    "@cost": "28",
+                    "#text": "20 hits ST 300-1100% Based on HP remaining (Attack +200%) / 6 hits 650% ST (Attack +200%) / +160% ATK DEF REC to all allies for 3 turns / +120% Self ATK DEF REC for 3 turns / Refill BB gauge to max / +8% OD fill"
+                },
+                "ubb": {
+                    "@hit": "22/8",
+                    "@dc": "",
+                    "@cost": "30",
+                    "#text": "22 hits 200-1500% ST Based on HP remaining (Attack +200%) / 8 hits AoE (2000%) / 999 BC insta fill / +300% ATK DEF REC / +70% Spark crits to self for 3 turns / +50% OD fill"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+30% stats when Reeze Armor equipped / Add 8 BC insta fill to BB,SBB"
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_50317.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_50317.png"
+                },                
+                "sp": {
+                    "@list": "15 : +30% HP | 10 : +10% ATK/DEF/REC per turn (max 50%) | 10 : +50% ATK/DEF/REC when BB gauge > 50% | 10 : +80% Spark damage | 15 : Enhance +80% Spark damage -> +100% | 10 : +50% BB Mod | 10 : Raise ATK cap from 99,000 -> 130,000 | 30 : Enhance self ATK/DEF/REC buff on BB/SBB by +20% | 35 : Enhance ES BB fill on BB/SBB +2 BC | 30 : Add +500% Self BB Mod buff to BB/SBB"
+                }
+            },
+            {
+                "id": "1637",
+                "name": "Shida",
+                "role": "bb_fill,add_ele,ewd,ewd_res_down",
+                "rolesp": "bb_spark,atk_down,def_down,ails",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "16",
+                    "@dc": "48",
+                    "#text": "+50% stats / +5% all element mitigation / +125% EWD / 2 turn +120% spark buff after dealing 10,000 damage"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "30",
+                    "@dc": "30",
+                    "@cost": "32",
+                    "#text": "30 Hits  480% AoE (ATK+100) / Fill 12 BC / 3 Turn Self +120% ATK DEF REC Buff / Self +30% HP -> ATK convert / +50% Self Spark buff"
+                },
+                "sbb": {
+                    "@hit": "35",
+                    "@dc": "35",
+                    "@cost": "22",
+                    "#text": "35 Hits 800% AoE (ATK+100) + 30-35% HP Drain / 3 turn Fire Water Earth Thunder Light Dark Buff / 3 turn +100% All Weakness Damage / 15% lower EWD resistance (20% chance)"
+                },
+                "ubb": {
+                    "@hit": "49",
+                    "@dc": "49",
+                    "@cost": "30",
+                    "#text": "49 Hits 1800% AoE (ATK+200) + 50-55% HP Drain / 3 turn Fire Water Earth Thunder Light Dark Buff / 3 turn +400% All Weakness Damage / +30% ignore EWD resist (100% chance) / 2 turn 100% All Element Mitigation"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Inflict Status When Hit (12% Injury Sick Weaken, 10% Poison Curse Paralyze) / 50% OD Gauge Fill Rate / +50% Dark Weakness Damage"
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_60097.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_60097.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> +20% all stats | 20 : Enhance +20% stats -> +40% <span style='display:none'>(Prerequisite: *)</span> | 10 : +80% Spark damage | 15 : 10% BC cost reduction | 10 : Raise ATK Cap from 99,000 -> 130,000 | 10 : Increase LS all element mitigation +5% | 20 : Increase SBB EWD buff +25% | 35 : Add 2-3 BC fill on spark to BB/SBB | 30 : Add 30% chance -50% ATK/DEF down to BB/SBB | 30 : Add 75% chance all ailment infliction to BB/SBB"
+                }
+            },
+            {
+                "id": "1638",
+                "name": "Owen",
+                "role": "atk,def,crit,ails,crit_dmg,atk_down,def_down,convert_atk,bb_mod",
+                "rolesp": "atk_ailed,spark",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "54",
+                "ls": {
+                    "@hit": "17",
+                    "@dc": "51",
+                    "#text": "+60% All Stats / +300% BB Mod / +200% Crit Damage / 8-10 BC On Crit"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "17/1",
+                    "@dc": "",
+                    "@cost": "26",
+                    "#text": "17 Hits 470% AoE (ATK+200) / 600% ST (ATK+200) /3 turn +180% ATK DEF / 3 turn +60% crit rate / 80% Injury Weaken / 3 turn +75% Crit Dmg / -50% ATK DEF {30%} for 1 turn"
+                },
+                "sbb": {
+                    "@hit": "20/1",
+                    "@dc": "",
+                    "@cost": "28",
+                    "#text": "20 Hits 600% AoE (ATK+200) +200% every turn used in a row (Max: 3) / 650% ST (ATK+200) / Fill own BB 100% / 3 turn 80% DEF->ATK buff / 3 Turn +180% ATK DEF / 3 turn +450% BB Mod"
+                },
+                "ubb": {
+                    "@hit": "31",
+                    "@dc": "31",
+                    "@cost": "32",
+                    "#text": "31 Hits 2000% AoE (ATK+200) / 3 turn DoT Debuff (1200% + 200 Flat Atk) / 3 Turn +350% ATK DEF REC / 3 Turn +60% Crit / 3 turn +600% BB Mod / 3 turn +350% Crit Dmg / 30% ignore crit resist (100% chance)"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Raise ATK Cap from 99,000 -> 150,000 / Add Effect To BB,SBB (3 Turn 180% ATK Buff on Statused Targets) / +40% All Stats [Equip Medblare]"
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_11087.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_11087.png"
+                },                
+                "sp": {
+                    "@list": "20 : +30% stats | 15 : +120% spark damage | 10 : <span style='display:none'>(*)</span> LS +10% stats | 15 : Enhance LS +10% stats -> 20% stats <span style='display:none'>(Prerequisite: *)</span> | 30 : Enhance SBB BB mod buff +50% | 20 : Enhance SBB ATK convert +10% | 35 : Add 3 turn +130% spark damage to BB/SBB | 20 : Add -50% ATK/DEF down (30% chance) to SBB | 25 : Add 3 turn +60% crit rate to SBB | 20 : Add 3 turn +75% crit damage to SBB"
+                }
+            },
+            {
+                "id": "1639",
+                "name": "Grah",
+                "role": "add_ele,null_ails,null_stats,miti_dot,barrier,od_rate,od_regen,ewd_res_down",
+                "rolesp": "bb_regen,null_crit,cure,bb_fill,bb_atked,bb_spark",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "54",
+                "ls": {
+                    "@hit": "17",
+                    "@dc": "51",
+                    "#text": "+60% All Stats / Mitigate Light Dark Damage 15% / 4-7 BC when hit / Def Ignore Immunity"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "20 Hits 470% AoE (ATK+200) + Light Dark Elements / 3 turn Light Dark Buff / 3 turn Negate Status Ailments / 2 Turn Negate Stat Down Debuffs / 2 turn 10% DoT mitigation"
+                },
+                "sbb": {
+                    "@hit": "28",
+                    "@dc": "28",
+                    "@cost": "32",
+                    "#text": "28 Hits 700% AoE (ATK+200) + Light Dark Elements / 3 turn Light Dark Buff / 3500 Damage dark Barrier / 3 Turn 20% OD Fill Rate Buff / +500 OD,turn for 3 turns / Element Weakness Resist for 2 turns"
+                },
+                "ubb": {
+                    "@hit": "30",
+                    "@dc": "30",
+                    "@cost": "32",
+                    "#text": "30 Hits  2000% AoE (ATK+200) + Light Dark Elements / 3 turn 100% All Element Mitigation / 3 turn 999 BC,turn / 3 Turn HoT 98999-99999 HP (+10% Target REC) / +1000 OD/turn for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "20-25% DMG to HP when hit (25% Chance) / Raise ATK cap from 99,000 -> 130,000 / Add Effect To BB,SBB (3 turn 9 BC turn) / +30% All Stats [Equip Ishrion]"
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_61157.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_61157.png"
+                },                
+                "sp": {
+                    "@list": "20 : +30% stats | 20 : 2-3 BC on hit | 20 : Null Crits | 10 : <span style='display:none'>(*)</span> LS +10% Stats | 15 : Increase LS +10% stats -> +20% stats <span style='display:none'>(Prerequisite: *)</span> | 30 : Add 1 turn Crit null to BB/SBB | 30 : Add Cure status/Debuffs to BB/SBB | 35 : Add 8 BC insta fill to BB/SBB | 35 : Add 3 turn 4-7 BC on hit to BB/SBB | 35 : Add 2-3 BC on spark buff to BB/SBB"
                 }
             },
             {
@@ -5087,6 +5279,54 @@
                 },                
                 "sp": {
                     "@list": "20 : 20% boost to Def, max HP | 10 : Boosts Def when HP is over 50% (50% boost) | 20 : Damage taken boosts BB gauge (2-3 BC fill) | 20 : Negates Def ignoring damage | 30 : Enhances SBB's probable Spark critical effect and its success rate (+10% chance and Spark crit, 30% chance Sparks deal 60% extra damage total) | 30 : Enhances SBB's probable Spark vulnerability effect and its success rate (+10% chance and Spark vulnerability, 30% chance for 30% Spark vulnerability) | 50 : Adds Spark damage boosts BB gauge for 3 turns effect to BB/SBB (2-3 BC fill)"
+                }
+            },
+            {
+                "id": "1642",
+                "name": "Elphelt",
+                "role": "",
+                "rolesp": "",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "",
+                "ls": {
+                    "@hit": "",
+                    "@dc": "",
+                    "#text": ""
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "sbb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "ubb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_51207.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_51207.png"
+                },                
+                "sp": {
+                    "@list": ""
                 }
             },
             {
