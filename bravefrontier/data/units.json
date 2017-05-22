@@ -3813,13 +3813,13 @@
                     "@hit": "14",
                     "@dc": "14",
                     "@cost": "30",
-                    "#text": "420% Water (AOE) / 100% Chance Heal on Spark 3Turns / 120% ATK+ to Water 3Turns / Reduce DMG (10%) from (Fire,water) Enemy2Turns"
+                    "#text": "420% Water (AOE) / 100% Chance Heal on Spark 3Turns / 120% ATK+ DEF+ to Water 3Turns / Reduce DMG (10%) from (Fire,water) Enemy2Turns"
                 },
                 "sbb": {
                     "@hit": "17",
                     "@dc": "17",
                     "@cost": "31",
-                    "#text": "620% Water (AOE) / 120% ATK+ to Water 3Turns / 170% DEF+ 170% REC+ (ALL) 3Turns / Convert 70% DEF to REC (ALL) 3Turns / 150% Element Weakness DMG+ (fire,water) (ALL) 3Turns"
+                    "#text": "620% Water (AOE) / 120% ATK+ DEF+ to Water 3Turns / 170% DEF+ 170% REC+ (ALL) 3Turns / Convert 70% DEF to REC (ALL) 3Turns / 150% Element Weakness DMG+ (fire,water) (ALL) 3Turns"
                 },
                 "ubb": {
                     "@hit": "20",
