@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Brave Frontier</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/w3.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="../js/ga.js"></script>
+  <script src="js/konva.min.js"></script>
+</head>
+
+<body class="w3-light-grey">
+<!-- Left menu -->
+<div class="w3-sidebar w3-bar-block w3-teal w3-center" style="width:50px">
+  <a href="#" onclick="sizePanelOpen('sizePanel');" class="w3-bar-item w3-button"><i class="fa fa-tv"></i></a> 
+  <a href="#" onclick="addImage();" class="w3-bar-item w3-button"><i class="fa fa-image"></i></a> 
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-i-cursor"></i></a> 
+</div>
+
+<!-- Right menu -->
+<div class="w3-sidebar w3-bar-block w3-green" style="width:64px;right:0">
+	<div id="layers"></div>
+</div>
+
+<!-- Resize panel -->
+<div id="sizePanel" class="w3-container w3-card-2" style="position:absolute;left:50px;width:300px;display:none">
+<span onclick="this.parentElement.style.display='none'" class="w3-button w3-red w3-large w3-display-topright">&times;</span>
+  <p>Kích thước banner</p>
+  <p>      
+  <label>Chiều rộng</label>
+  <input class="w3-input w3-border" type="text" value="300" id="w"></p>
+  <p>      
+  <label>Chiều cao</label>
+  <input class="w3-input w3-border" type="text" value="600" id="h"></p>
+  <p>      
+  <button class="w3-btn w3-teal" onClick="resizeCanvas();">Thay đổi</button></p>
+</div>
+
+<div id="imgPanelHolder"></div>
+<button class="w3-btn w3-red" id="tBtn">Xóa ảnh</button>
+<!-- Image panel
+<div id="imgPanel" class="w3-container w3-card-2" style="position:absolute;right:64px;width:300px;display:none">
+<span onclick="this.parentElement.style.display='none'" class="w3-button w3-red w3-large w3-display-topright">&times;</span>
+  <p id="imgIdLayer">Image Layer</p>
+  <p>      
+  <label>Link ảnh</label>
+  <input id="imgLink" class="w3-input w3-border" type="text" id="w"></p>
+  <p>      
+  <button class="w3-btn w3-teal" onClick="">Thay đổi</button> <button class="w3-btn w3-red" onClick="destroyImg()">Xóa ảnh</button></p>
+</div>
+-->
+
+<div class="w3-display-container w3-display-middle">
+<div id="container" style="background:#FFF"></div>
+</div>
+</body>
+<script>
+function sizePanelOpen(id) {
+    document.getElementById(id).style.display = "block";
+}
+function sizePanelClose() {
+    document.getElementById(id).style.display = "none";
+}
+</script>
+<script src="js/bm.js"></script>
+
+</html>
