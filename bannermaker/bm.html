@@ -9,19 +9,46 @@
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <script src="../js/ga.js"></script>
   <script src="js/konva.min.js"></script>
+  <style>
+  .thumb{
+	  width:30px;
+	  height:23px;	 
+   }
+   .thumb img{
+	  width:30px;
+	  height:23px;
+	  display:block;	 
+   }
+   #thumbGallery img{
+	  width:100px;
+	  height:100px;
+	  display:block;
+	  float:left;
+	}
+   .w3-disabled,.w3-btn:disabled,.w3-button:disabled{cursor:not-allowed;opacity:1}.w3-disabled *,:disabled *{pointer-events:none}
+  </style>
 </head>
 
 <body class="w3-light-grey">
 <!-- Left menu -->
 <div class="w3-sidebar w3-bar-block w3-teal w3-center" style="width:50px">
-  <a href="#" onclick="sizePanelOpen('sizePanel');" class="w3-bar-item w3-button"><i class="fa fa-tv"></i></a> 
-  <a href="#" onclick="addImage();" class="w3-bar-item w3-button"><i class="fa fa-image"></i></a> 
+  <button onclick="panelOpen('sizePanel');" class="w3-bar-item w3-button"><i class="fa fa-tv"></i></button>
+  <a href="#" onclick="" class="w3-bar-item w3-button"><i class="fa fa-image"></i></a> 
   <a href="#" class="w3-bar-item w3-button"><i class="fa fa-i-cursor"></i></a> 
 </div>
-
 <!-- Right menu -->
-<div class="w3-sidebar w3-bar-block w3-green" style="width:64px;right:0">
-	<div id="layers"></div>
+<div class="w3-sidebar w3-green" style="width:112px;right:0">
+	
+	<button id="btnImg3" class="w3-bar-item w3-button"><span id="thumb3" class="thumb"><i class="fa fa-image"></i></span></button> <span id="destroyImgBtnHolder3"></span>
+    <br>
+    <button id="btnImg2" class="w3-bar-item w3-button"><span id="thumb2" class="thumb"><i class="fa fa-image"></i></span></button> <span id="destroyImgBtnHolder2"></span>
+    <br>
+    <button id="btnImg1" class="w3-bar-item w3-button"><span id="thumb1" class="thumb"><i class="fa fa-image"></i></span></button> <span id="destroyImgBtnHolder1"></span>
+    <br>
+    
+    
+	<!-- <button id="btnimg1" onClick="addImage('img1','imgGroup1','imgObj1','destroyImgBtnHolder1','imgDestroyId1',2,'btnimg1','thumb1');" class="w3-bar-item w3-button"><span id="thumb1" class="thumb"><i class="fa fa-image"></i></span></button> <span id="destroyImgBtnHolder1"></span> -->
+
 </div>
 
 <!-- Resize panel -->
@@ -38,29 +65,98 @@
   <button class="w3-btn w3-teal" onClick="resizeCanvas();">Thay đổi</button></p>
 </div>
 
-<div id="imgPanelHolder"></div>
-<button class="w3-btn w3-red" id="tBtn">Xóa ảnh</button>
-<!-- Image panel
-<div id="imgPanel" class="w3-container w3-card-2" style="position:absolute;right:64px;width:300px;display:none">
-<span onclick="this.parentElement.style.display='none'" class="w3-button w3-red w3-large w3-display-topright">&times;</span>
-  <p id="imgIdLayer">Image Layer</p>
-  <p>      
-  <label>Link ảnh</label>
-  <input id="imgLink" class="w3-input w3-border" type="text" id="w"></p>
-  <p>      
-  <button class="w3-btn w3-teal" onClick="">Thay đổi</button> <button class="w3-btn w3-red" onClick="destroyImg()">Xóa ảnh</button></p>
-</div>
--->
+<!-- Model image panel -->
+<div id="imgGallery" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('imgGallery').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h3>Image Gallery</h3>
+      </header>
+      <div class="w3-container">
+		<p id="thumbGallery">
+         
+        </p>
+      </div>
+    </div>
+  </div>
 
+<!-- Canvas display -->
 <div class="w3-display-container w3-display-middle">
-<div id="container" style="background:#FFF"></div>
+	<div id="container" style="background:#FFF"></div>
 </div>
 </body>
 <script>
-function sizePanelOpen(id) {
+	var xmlhttp = new XMLHttpRequest();
+	var url = "json/gallery1.json";
+	
+	xmlhttp.onreadystatechange = function () {
+	  if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+		myFunction(xmlhttp.responseText);
+	  }
+	}
+	xmlhttp.open("GET", url, true);
+	xmlhttp.send();
+	
+	function myFunction(response) {
+	  var arr = JSON.parse(response);
+	  var i;
+	  var out = '';
+	
+	  var json_len = arr.gallery.length;
+	  // btn 1 //
+	  document.getElementById('btnImg1').addEventListener('click', function() {
+		var n = 1;
+		var out = '';
+		document.getElementById('imgGallery').style.display='block';
+		for (i = 0; i < json_len; i++) {
+			var name = arr.gallery[i].name;
+			var thumb = arr.gallery[i].thumb;
+			var full = arr.gallery[i].full;
+			out += '<img src="' + thumb + '" onClick="addImage(' + "'" + full + "'" + ',\'img' + n + '\',\'imgGroup' + n + '\',\'imgObj' + n + '\',\'destroyImgBtnHolder' + n + '\',\'imgDestroyId' + n + '\',' + n + ',\'btnImg' + n + '\',\'thumb' + n + '\');panelClose(\'imgGallery\')">'
+	   }
+	  out += '<div style="clear:both"></div>';
+	  document.getElementById("thumbGallery").innerHTML = out;
+      }, false);
+	  
+	  // btn 2 //
+	  document.getElementById('btnImg2').addEventListener('click', function() {
+		var n = 2;
+		var out = '';
+		document.getElementById('imgGallery').style.display='block';
+		for (i = 0; i < json_len; i++) {
+			var name = arr.gallery[i].name;
+			var thumb = arr.gallery[i].thumb;
+			var full = arr.gallery[i].full;
+			out += '<img src="' + thumb + '" onClick="addImage(' + "'" + full + "'" + ',\'img' + n + '\',\'imgGroup' + n + '\',\'imgObj' + n + '\',\'destroyImgBtnHolder' + n + '\',\'imgDestroyId' + n + '\',' + n + ',\'btnImg' + n + '\',\'thumb' + n + '\');panelClose(\'imgGallery\')">'
+	   }
+	  out += '<div style="clear:both"></div>';
+	  document.getElementById("thumbGallery").innerHTML = out;
+      }, false);
+	  
+	  // btn 3 //
+	  document.getElementById('btnImg3').addEventListener('click', function() {
+		var n = 3;
+		var out = '';
+		document.getElementById('imgGallery').style.display='block';
+		for (i = 0; i < json_len; i++) {
+			var name = arr.gallery[i].name;
+			var thumb = arr.gallery[i].thumb;
+			var full = arr.gallery[i].full;
+			out += '<img src="' + thumb + '" onClick="addImage(' + "'" + full + "'" + ',\'img' + n + '\',\'imgGroup' + n + '\',\'imgObj' + n + '\',\'destroyImgBtnHolder' + n + '\',\'imgDestroyId' + n + '\',' + n + ',\'btnImg' + n + '\',\'thumb' + n + '\');panelClose(\'imgGallery\')">'
+	   }
+	  out += '<div style="clear:both"></div>';
+	  document.getElementById("thumbGallery").innerHTML = out;
+      }, false);
+	  
+	}
+</script>
+
+<script>
+function panelOpen(id) {
     document.getElementById(id).style.display = "block";
 }
-function sizePanelClose() {
+function panelClose(id) {
     document.getElementById(id).style.display = "none";
 }
 </script>

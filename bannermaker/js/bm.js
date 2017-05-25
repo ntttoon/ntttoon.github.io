@@ -19,15 +19,14 @@ function resizeCanvas(){
 }
 
 // Function Rectange
-function addImage(){
-	var d = new Date();
-	var n = d.getTime();
+function addImage(path,img,imgGroup,imgObj,imgDestroyBtn,imgDestroyId,zindex,currBtnId,thumb){
+	//var d = new Date();
+	//var n = d.getTime();
 	// create image layer
 	var img = new Konva.Image({
 		x: 0,
 		y: 0,
 	});
-	layer.add(img);
 	// create group
 	var imgGroup = new Konva.Group({
         x: 0,
@@ -44,25 +43,29 @@ function addImage(){
      });
 	//
 	// add the shape to the layer
-	var imageObj = new Image();
-    imageObj.onload = function() {
-        img.image(imageObj);
+	var imgObj = new Image();
+    imgObj.onload = function() {
+        img.image(imgObj);
         layer.draw();
     };
-    imageObj.src = 'http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10017.png';
+	imgObj.src = path;
 	// add Anchor
 	addAnchor(imgGroup, 0, 0, 'topLeft');
-    addAnchor(imgGroup, imageObj.width, 0, 'topRight');
-    addAnchor(imgGroup, imageObj.height, imageObj.width, 'bottomRight');
-    addAnchor(imgGroup, 0, imageObj.width, 'bottomLeft');
+    addAnchor(imgGroup, imgObj.width, 0, 'topRight');
+    addAnchor(imgGroup, imgObj.height, imgObj.width, 'bottomRight');
+    addAnchor(imgGroup, 0, imgObj.width, 'bottomLeft');
+	imgGroup.setZIndex(zindex - 1);
+	layer.draw();
 	// add layer
-	document.getElementById("layers").innerHTML += '<a href="#" onclick="sizePanelOpen(' + "'" + n + "'" + ' );" class="w3-bar-item w3-button"><i class="fa fa-image"></i></a>';
-	document.getElementById("imgPanelHolder").innerHTML += '<div id="' + n + '" class="w3-container w3-card-2" style="position:absolute;right:64px;width:300px;display:none;background:#FFF"><span onclick="this.parentElement.style.display=' + "'" + "none" + "'" + '"' + ' class="w3-button w3-red w3-large w3-display-topright">&times;</span> <p>'+ 'Layer ' + n + '</p> <p> <label>Link ảnh</label> <input id="imgLink" class="w3-input w3-border" type="text" id="w"></p> <p> <button class="w3-btn w3-teal" onClick="">Thay đổi</button> <button class="w3-btn w3-red" onClick="">Xóa ảnh</button></p> </div>'
-	
-	document.getElementById('tBtn').addEventListener('click', function() {
-      // or var shape = stage.findOne('#myRect');
-	  imgGroup.destroy();
-	  layer.draw();
+	document.getElementById(imgDestroyBtn).innerHTML = '<button id="' + imgDestroyId + '" class="w3-bar-item w3-button"><i class="fa fa-close"></i></button>';
+	document.getElementById(thumb).innerHTML = '<img src="' + imgObj.src + '">';
+	document.getElementById(currBtnId).disabled = true;
+	document.getElementById(imgDestroyId).addEventListener('click', function() {
+		imgGroup.destroy();
+		layer.draw();
+		document.getElementById(currBtnId).disabled = false;
+		document.getElementById(imgDestroyBtn).innerHTML = "";
+		document.getElementById(thumb).innerHTML = '<i class="fa fa-image"></i>';
     }, false);
 }
 

@@ -1,0 +1,19 @@
+{  
+   "gallery":[  
+        {  
+            "name":"brave frontier",
+            "thumb":"http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10017.png",
+            "full":"http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10017.png"
+        },
+        {  
+            "name":"brave frontier",
+            "thumb":"http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20017.png",
+            "full":"http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20017.png"
+        },
+        {  
+            "name":"brave frontier",
+            "thumb":"http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30017.png",
+            "full":"http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30017.png"
+        }
+   ]
+}
