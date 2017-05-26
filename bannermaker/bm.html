@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <script src="../js/ga.js"></script>
   <script src="js/konva.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.3.js"></script>
   <style>
   .thumb{
 	  width:30px;
@@ -33,12 +34,11 @@
 <!-- Left menu -->
 <div class="w3-sidebar w3-bar-block w3-teal w3-center" style="width:50px">
   <button onclick="panelOpen('sizePanel');" class="w3-bar-item w3-button"><i class="fa fa-tv"></i></button>
-  <a href="#" onclick="" class="w3-bar-item w3-button"><i class="fa fa-image"></i></a> 
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-i-cursor"></i></a> 
 </div>
 <!-- Right menu -->
 <div class="w3-sidebar w3-green" style="width:112px;right:0">
-	
+	<button id="btnTxt1" class="w3-bar-item w3-button" onClick="openTxtEditor(1)"><i class="fa fa-edit"></i></button> <span id="destroyTxt1"></span>
+    <br>
 	<button id="btnImg3" class="w3-bar-item w3-button"><span id="thumb3" class="thumb"><i class="fa fa-image"></i></span></button> <span id="destroyImgBtnHolder3"></span>
     <br>
     <button id="btnImg2" class="w3-bar-item w3-button"><span id="thumb2" class="thumb"><i class="fa fa-image"></i></span></button> <span id="destroyImgBtnHolder2"></span>
@@ -79,7 +79,74 @@
         </p>
       </div>
     </div>
-  </div>
+</div>
+
+<!-- Model txt editor panel -->
+<div id="txtEditor" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('txtEditor').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h3>Text Editor</h3>
+      </header>
+      <div class="w3-container">
+		<p>
+        	<label>Nhập nội dung</label>
+         	<textarea class="w3-input w3-border" id="content" type="text"></textarea>
+        </p>
+        <p>
+			<div class="w3-row-padding">
+                <div class="w3-half">
+                	<label>Nhập chiều rộng khung chứa nội dung</label>
+            		<input class="w3-input w3-border" type="text" id="widthContent" value="300">
+            	</div>
+                <div class="w3-half">
+                	<label>Nhập chiều cao khung chứa nội dung</label>
+            		<input class="w3-input w3-border" type="text" id="heightContent" value="100">
+            	</div>
+            </div>
+         </p>
+         <p>
+            <label>Font chữ</label>
+            <select class="w3-select w3-border" name="option" id="font">
+                <option value="arial" selected>Arial</option>
+            </select>
+        </p>
+		<p>
+            <label>Kích thước chữ</label>
+            <input class="w3-input w3-border" type="text" id="size" value="20">
+        </p>
+        <p>
+            <label>Kiểu chữ</label>
+            <select class="w3-select w3-border" name="option" id="style">
+                <option value="normal" selected>Thường</option>
+                <option value="bold">Đậm</option>
+                <option value="italic">Nghiêng</option>
+            </select>
+		</p>
+		<p>
+            <label>Canh lề</label>
+            <select class="w3-select w3-border" name="option" id="align">
+                <option value="left" selected>Left</option>
+                <option value="right">Right</option>
+                <option value="center">Center</option>
+            </select>
+		</p>
+        <p>
+            <label>Đổ bóng</label>
+            <select class="w3-select w3-border" name="option" id="shadow">
+            	<option value="0" selected>Không</option>
+                <option value="10" selected>Ít</option>
+                <option value="20">Vừa</option>
+                <option value="30">Nhiều</option>
+            </select>
+		</p>
+        <p id="execTxt">
+        	
+        </p>
+      </div>
+    </div>
+</div>
 
 <!-- Canvas display -->
 <div class="w3-display-container w3-display-middle">

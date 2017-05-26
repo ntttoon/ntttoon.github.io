@@ -69,6 +69,57 @@ function addImage(path,img,imgGroup,imgObj,imgDestroyBtn,imgDestroyId,zindex,cur
     }, false);
 }
 
+function openTxtEditor(n){
+	document.getElementById("content").value = "";
+	document.getElementById("widthContent").value = 300;
+	document.getElementById("heightContent").value = 100;
+	document.getElementById("font").selectedIndex = 0;
+	document.getElementById("size").value = 20;
+	document.getElementById("style").selectedIndex = 0;
+	document.getElementById("align").selectedIndex = 0;
+	panelOpen('txtEditor');
+	document.getElementById("execTxt").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addText(\'txt' + n + '\',\'btnTxt' + n + '\',\'destroyTxt' + n + '\',\'txtDestroyId' + n + '\');panelClose(\'txtEditor\');">Thực hiện</button>';
+}
+
+function addText(id,currBtnId,destroyBtnId,txtDestroyId){
+	var txt = document.getElementById("content").value;
+	var w = document.getElementById("widthContent").value;
+	var h = document.getElementById("heightContent").value;
+	var font = document.getElementById("font").value;
+	var size = document.getElementById("size").value;
+	var style = document.getElementById("style").value;
+	var alig = document.getElementById("align").value;
+	
+	var newText = new Konva.Text({
+		x: 0,
+		y: 0,
+		width: w,
+		height: h,
+		text: txt,
+		fontSize: size,
+		fontStyle: style,
+		fontFamily: font,
+		align: alig,
+		lineHeight: 1.1,
+		fill: 'black',
+		draggable: true,
+		id: id,
+	});
+	layer.add(newText);
+	resizeCanvas();
+	layer.draw();
+	
+	document.getElementById(destroyBtnId).innerHTML = '<button id="' + txtDestroyId + '" class="w3-bar-item w3-button"><i class="fa fa-close"></i></button>';
+	document.getElementById(currBtnId).disabled = true;
+	document.getElementById(txtDestroyId).addEventListener('click', function() {
+		var a = layer.find('#' + id)[0];
+		a.destroy(); 
+		layer.draw();
+		document.getElementById(currBtnId).disabled = false;
+		document.getElementById(destroyBtnId).innerHTML = "";
+    }, false);
+}
+
 ///// Add anchor function /////
 function update(activeAnchor) {
 	var group = activeAnchor.getParent();
