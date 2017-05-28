@@ -22,10 +22,20 @@ function resizeCanvas(){
 function addImage(path,img,imgGroup,imgObj,imgDestroyBtn,imgDestroyId,zindex,currBtnId,thumb){
 	//var d = new Date();
 	//var n = d.getTime();
+	var options = document.getElementsByName("alpha");
+	if (options) {
+		for (var i = 0; i < options.length; i++) {
+			if (options[i].checked){
+				 var alpha = options[i].value;
+			}
+		}
+	}
+	
 	// create image layer
 	var img = new Konva.Image({
 		x: 0,
 		y: 0,
+		opacity: alpha
 	});
 	// create group
 	var imgGroup = new Konva.Group({
@@ -70,38 +80,39 @@ function addImage(path,img,imgGroup,imgObj,imgDestroyBtn,imgDestroyId,zindex,cur
 }
 
 function openTxtEditor(n){
-	document.getElementById("content").value = "";
-	document.getElementById("widthContent").value = 300;
-	document.getElementById("heightContent").value = 100;
-	document.getElementById("font").selectedIndex = 0;
-	document.getElementById("size").value = 20;
-	document.getElementById("style").selectedIndex = 0;
-	document.getElementById("align").selectedIndex = 0;
+	//document.getElementById("content").value = "";
+	//document.getElementById("widthContent").value = 300;
+	//document.getElementById("heightContent").value = 100;
+	//document.getElementById("font").selectedIndex = 0;
+	//document.getElementById("size").value = 20;
+	//document.getElementById("style").selectedIndex = 0;
+	//document.getElementById("align").selectedIndex = 0;
 	panelOpen('txtEditor');
-	document.getElementById("execTxt").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addText(\'txt' + n + '\',\'btnTxt' + n + '\',\'destroyTxt' + n + '\',\'txtDestroyId' + n + '\');panelClose(\'txtEditor\');">Thực hiện</button>';
+	document.getElementById("execTxt").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addText(\'txt' + n + '\',\'btnTxt' + n + '\',\'destroyTxt' + n + '\',\'txtDestroyId' + n + '\',\'color' + n + '\');panelClose(\'txtEditor\');">Thực hiện</button>';
 }
 
-function addText(id,currBtnId,destroyBtnId,txtDestroyId){
+function addText(id,currBtnId,destroyBtnId,txtDestroyId,color){
 	var txt = document.getElementById("content").value;
 	var w = document.getElementById("widthContent").value;
-	var h = document.getElementById("heightContent").value;
+	//var h = document.getElementById("heightContent").value;
 	var font = document.getElementById("font").value;
 	var size = document.getElementById("size").value;
 	var style = document.getElementById("style").value;
 	var alig = document.getElementById("align").value;
+	var color = document.getElementById("color").value;
 	
 	var newText = new Konva.Text({
 		x: 0,
 		y: 0,
 		width: w,
-		height: h,
+		//height: 'auto',
 		text: txt,
 		fontSize: size,
 		fontStyle: style,
 		fontFamily: font,
 		align: alig,
 		lineHeight: 1.1,
-		fill: 'black',
+		fill: color,
 		draggable: true,
 		id: id,
 	});
@@ -118,6 +129,30 @@ function addText(id,currBtnId,destroyBtnId,txtDestroyId){
 		document.getElementById(currBtnId).disabled = false;
 		document.getElementById(destroyBtnId).innerHTML = "";
     }, false);
+}
+
+function hideAnchor(){
+	var a = layer.find('.topLeft');
+	var b = layer.find('.topRight');
+	var c = layer.find('.bottomRight');
+	var d = layer.find('.bottomLeft');
+	a.hide();
+	b.hide();
+	c.hide();
+	d.hide();
+	layer.draw();
+}
+
+function showAnchor(){
+	var a = layer.find('.topLeft');
+	var b = layer.find('.topRight');
+	var c = layer.find('.bottomRight');
+	var d = layer.find('.bottomLeft');
+	a.show();
+	b.show();
+	c.show();
+	d.show();
+	layer.draw();
 }
 
 ///// Add anchor function /////

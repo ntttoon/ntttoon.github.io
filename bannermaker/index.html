@@ -1,0 +1,429 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Brave Frontier</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/w3.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="../js/ga.js"></script>
+  <script src="js/konva.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.3.js"></script>
+  <style>
+  .thumb{
+	  width:30px;
+	  height:23px;	 
+   }
+   .thumb img{
+	  width:30px;
+	  height:23px;
+	  display:block;	 
+   }
+   .thumbGallery img{
+	  width:100px;
+	  height:100px;
+	  display:block;
+	  float:left;
+	}
+   .w3-disabled,.w3-btn:disabled,.w3-button:disabled{cursor:not-allowed;opacity:1}.w3-disabled *,:disabled *{pointer-events:none}
+  </style>
+</head>
+
+<body class="w3-light-grey">
+<!-- Left menu -->
+<div class="w3-sidebar w3-bar-block w3-teal w3-center" style="width:50px">
+  <button onclick="panelOpen('sizePanel');" class="w3-bar-item w3-button"><i class="fa fa-tv"></i></button>
+  <button onclick="hideAnchor();" class="w3-bar-item w3-button"><i class="fa fa-circle-o"></i></button>
+  <button onclick="showAnchor();" class="w3-bar-item w3-button"><i class="fa fa-dot-circle-o"></i></button>
+</div>
+<!-- Right menu -->
+<div class="w3-sidebar w3-green" style="width:112px;right:0">
+	<button id="btnTxt5" class="w3-bar-item w3-button" onClick="openTxtEditor(5)"><i class="fa fa-edit"></i></button> <span id="destroyTxt5"></span>
+    <br>
+	<button id="btnTxt4" class="w3-bar-item w3-button" onClick="openTxtEditor(4)"><i class="fa fa-edit"></i></button> <span id="destroyTxt4"></span>
+    <br>
+	<button id="btnTxt3" class="w3-bar-item w3-button" onClick="openTxtEditor(3)"><i class="fa fa-edit"></i></button> <span id="destroyTxt3"></span>
+    <br>
+	<button id="btnTxt2" class="w3-bar-item w3-button" onClick="openTxtEditor(2)"><i class="fa fa-edit"></i></button> <span id="destroyTxt2"></span>
+    <br>
+	<button id="btnTxt1" class="w3-bar-item w3-button" onClick="openTxtEditor(1)"><i class="fa fa-edit"></i></button> <span id="destroyTxt1"></span>
+    <br>
+    <button id="btnImg10" class="w3-bar-item w3-button"><span id="thumb10" class="thumb"><i class="fa fa-image"></i></span></button> <span id="destroyImgBtnHolder10"></span>
+    <br>
+    <button id="btnImg9" class="w3-bar-item w3-button"><span id="thumb9" class="thumb"><i class="fa fa-image"></i></span></button> <span id="destroyImgBtnHolder9"></span>
+    <br>
+    <button id="btnImg8" class="w3-bar-item w3-button"><span id="thumb8" class="thumb"><i class="fa fa-image"></i></span></button> <span id="destroyImgBtnHolder8"></span>
+    <br>
+    <button id="btnImg7" class="w3-bar-item w3-button"><span id="thumb7" class="thumb"><i class="fa fa-image"></i></span></button> <span id="destroyImgBtnHolder7"></span>
+    <br>
+    <button id="btnImg6" class="w3-bar-item w3-button"><span id="thumb6" class="thumb"><i class="fa fa-image"></i></span></button> <span id="destroyImgBtnHolder6"></span>
+    <br>
+    <button id="btnImg5" class="w3-bar-item w3-button"><span id="thumb5" class="thumb"><i class="fa fa-image"></i></span></button> <span id="destroyImgBtnHolder5"></span>
+    <br>
+    <button id="btnImg4" class="w3-bar-item w3-button"><span id="thumb4" class="thumb"><i class="fa fa-image"></i></span></button> <span id="destroyImgBtnHolder4"></span>
+    <br>
+	<button id="btnImg3" class="w3-bar-item w3-button"><span id="thumb3" class="thumb"><i class="fa fa-image"></i></span></button> <span id="destroyImgBtnHolder3"></span>
+    <br>
+    <button id="btnImg2" class="w3-bar-item w3-button"><span id="thumb2" class="thumb"><i class="fa fa-image"></i></span></button> <span id="destroyImgBtnHolder2"></span>
+    <br>
+    <button id="btnImg1" class="w3-bar-item w3-button"><span id="thumb1" class="thumb"><i class="fa fa-image"></i></span></button> <span id="destroyImgBtnHolder1"></span>
+    <br>
+    
+    
+	<!-- <button id="btnimg1" onClick="addImage('img1','imgGroup1','imgObj1','destroyImgBtnHolder1','imgDestroyId1',2,'btnimg1','thumb1');" class="w3-bar-item w3-button"><span id="thumb1" class="thumb"><i class="fa fa-image"></i></span></button> <span id="destroyImgBtnHolder1"></span> -->
+
+</div>
+
+<!-- Resize panel -->
+<div id="sizePanel" class="w3-container w3-card-2" style="position:absolute;left:50px;width:300px;display:none">
+<span onclick="this.parentElement.style.display='none'" class="w3-button w3-red w3-large w3-display-topright">&times;</span>
+  <p>Kích thước banner</p>
+  <p>      
+  <label>Chiều rộng</label>
+  <input class="w3-input w3-border" type="text" value="300" id="w"></p>
+  <p>      
+  <label>Chiều cao</label>
+  <input class="w3-input w3-border" type="text" value="600" id="h"></p>
+  <p>      
+  <button class="w3-btn w3-teal" onClick="resizeCanvas();panelClose('sizePanel')">Thay đổi</button></p>
+</div>
+
+<!-- Model image panel -->
+<div id="imgGallery" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('imgGallery').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h3>Image Gallery</h3>
+      </header>
+      <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button tablink w3-red" onclick="openTab(event,'bravefrontier')">BF Arts</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'misc')">Misc</button>
+      </div>
+      
+      <div id="bravefrontier" class="w3-container tab">
+        <p class="thumbGallery" id="gallery1"></p>
+      </div>
+    
+      <div id="misc" class="w3-container tab" style="display:none">
+        <p>Nothing here</p> 
+      </div>
+      
+      <div class="w3-container">
+          <label> hoặc nhập URL của hình ảnh (*.jpg,*.png,*.gif). Ví dụ: <strong>https://www.w3schools.com/w3css/img_lights.jpg</strong></label>
+          <input class="w3-input w3-border" type="text" id="imgPath" value="https://www.w3schools.com/w3css/img_lights.jpg">
+		<form>
+        	<input class="w3-radio" type="radio" name="alpha" value="1" checked>
+			<label>Opacity 100%</label>
+			<input class="w3-radio" type="radio" name="alpha" value="0.75">
+			<label>Opacity 75%</label>
+			<input class="w3-radio" type="radio" name="alpha" value="0.5">
+			<label>Opacity 50%</label>
+            <input class="w3-radio" type="radio" name="alpha" value="0.25">
+			<label>Opacity 25%</label>
+		</form>
+          <p id="execImg">
+          
+          </p>
+      </div>
+    </div>
+</div>
+
+<!-- Model txt editor panel -->
+<div id="txtEditor" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('txtEditor').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h3>Text Editor</h3>
+      </header>
+      <div class="w3-container">
+		<p>
+        	<label>Nhập nội dung</label>
+         	<textarea class="w3-input w3-border" id="content" type="text"></textarea>
+        </p>
+        <p>
+        	<label>Nhập chiều rộng khung chứa nội dung. Chiều rộng này nên bằng chiều rộng kích thước banner</label>
+            <input class="w3-input w3-border" type="text" id="widthContent" value="300">
+         </p>
+         <p>
+            <label>Font chữ</label>
+            <select class="w3-select w3-border" name="option" id="font">
+                <option value="Arial" selected>Arial</option>
+                <option value="Comic Sans MS" >Comic Sans MS</option>
+                <option value="Impact" >Impact</option>
+                <option value="Segoe UI" >Segoe UI</option>
+                <option value="Tahoma" >Tahoma</option>
+                <option value="Verdana" >Verdana</option>
+                <option value="Georgia" >Georgia</option>
+                <option value="Times New Roman" >Times New Roman</option>
+                <option value="Trebuchet MS" >Trebuchet MS</option>
+            </select>
+        </p>
+		<p>
+            <label>Kích thước chữ</label>
+            <input class="w3-input w3-border" type="text" id="size" value="20">
+        </p>
+        <p>
+            <label>Kiểu chữ</label>
+            <select class="w3-select w3-border" name="option" id="style">
+                <option value="normal" selected>Thường</option>
+                <option value="bold">Đậm</option>
+                <option value="italic">Nghiêng</option>
+            </select>
+		</p>
+		<p>
+            <label>Canh lề</label>
+            <select class="w3-select w3-border" name="option" id="align">
+                <option value="left" selected>Left</option>
+                <option value="right">Right</option>
+                <option value="center">Center</option>
+            </select>
+		</p>
+        <p>
+        	<label>Màu chữ</label>
+            <div class="w3-bar">
+            	<button class="w3-bar-item w3-button w3-white" onClick="document.getElementById('color').value = '#FFFFFF'">&nbsp;</button>
+                <button class="w3-bar-item w3-button w3-black" onClick="document.getElementById('color').value = '#000000'">&nbsp;</button>
+                <button class="w3-bar-item w3-button w3-gray" onClick="document.getElementById('color').value = '#bbbbbb'">&nbsp;</button>
+                <button class="w3-bar-item w3-button w3-light-gray" onClick="document.getElementById('color').value = '#f1f1f1'">&nbsp;</button>
+                <button class="w3-bar-item w3-button w3-red" onClick="document.getElementById('color').value = '#f44336'">&nbsp;</button>
+                <button class="w3-bar-item w3-button w3-green" onClick="document.getElementById('color').value = '#f44336'">&nbsp;</button>
+                <button class="w3-bar-item w3-button w3-blue" onClick="document.getElementById('color').value = '#2196f3'">&nbsp;</button>
+                <button class="w3-bar-item w3-button w3-pink" onClick="document.getElementById('color').value = '#e91e63'">&nbsp;</button>
+                <button class="w3-bar-item w3-button w3-teal" onClick="document.getElementById('color').value = '#009688'">&nbsp;</button>
+                <button class="w3-bar-item w3-button w3-indigo" onClick="document.getElementById('color').value = '#3f51b5'">&nbsp;</button>
+                <button class="w3-bar-item w3-button w3-brown" onClick="document.getElementById('color').value = '#795548'">&nbsp;</button>
+                <button class="w3-bar-item w3-button w3-orange" onClick="document.getElementById('color').value = '#ff9800'">&nbsp;</button>
+                <button class="w3-bar-item w3-button w3-cyan" onClick="document.getElementById('color').value = '#00bcd4'">&nbsp;</button>
+                <button class="w3-bar-item w3-button w3-purple" onClick="document.getElementById('color').value = '#9c27b0'">&nbsp;</button>
+                <button class="w3-bar-item w3-button w3-yellow" onClick="document.getElementById('color').value = '#ffeb3b'">&nbsp;</button>
+                <button class="w3-bar-item w3-button w3-lime" onClick="document.getElementById('color').value = '#cddc39'">&nbsp;</button>
+                <button class="w3-bar-item w3-button w3-khaki" onClick="document.getElementById('color').value = '#f0e68c'">&nbsp;</button>
+            </div>
+            <input class="w3-input w3-border" type="text" id="color" value="#FFFFFF">
+        </p>
+        
+        <p id="execTxt">
+        	
+        </p>
+      </div>
+    </div>
+</div>
+
+<!-- Canvas display -->
+<div class="w3-display-container w3-display-middle">
+	<div id="container" style="background:#FFF"></div>
+</div>
+</body>
+<script>
+	var xmlhttp = new XMLHttpRequest();
+	var url = "json/gallery1.json";
+	
+	xmlhttp.onreadystatechange = function () {
+	  if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+		myFunction(xmlhttp.responseText);
+	  }
+	}
+	xmlhttp.open("GET", url, true);
+	xmlhttp.send();
+	
+	function myFunction(response) {
+	  var arr = JSON.parse(response);
+	  var i;
+	  var out = '';
+	
+	  var json_len = arr.gallery.length;
+	  // btn 1 //
+	  document.getElementById('btnImg1').addEventListener('click', function() {
+		var n = 1;
+		var out = '';
+		document.getElementById('imgGallery').style.display='block';
+		for (i = 0; i < json_len; i++) {
+			var name = arr.gallery[i].name;
+			var thumb = arr.gallery[i].thumb;
+			var full = arr.gallery[i].full;
+			out += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
+			//out += '<img src="' + thumb + '" onClick="addImage(' + "'" + full + "'" + ',\'img' + n + '\',\'imgGroup' + n + '\',\'imgObj' + n + '\',\'destroyImgBtnHolder' + n + '\',\'imgDestroyId' + n + '\',' + n + ',\'btnImg' + n + '\',\'thumb' + n + '\');panelClose(\'imgGallery\')">'
+	   }
+	  out += '<div style="clear:both"></div>';
+	  document.getElementById("gallery1").innerHTML = out;
+	  document.getElementById("execImg").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addImage(document.getElementById(\'imgPath\').value,\'img' + n + '\',\'imgGroup' + n + '\',\'imgObj' + n + '\',\'destroyImgBtnHolder' + n + '\',\'imgDestroyId' + n + '\',' + n + ',\'btnImg' + n + '\',\'thumb' + n + '\');panelClose(\'imgGallery\')">Thực hiện</button>';
+      }, false);
+	  
+	  // btn 2 //
+	  document.getElementById('btnImg2').addEventListener('click', function() {
+		var n = 2;
+		var out = '';
+		document.getElementById('imgGallery').style.display='block';
+		for (i = 0; i < json_len; i++) {
+			var name = arr.gallery[i].name;
+			var thumb = arr.gallery[i].thumb;
+			var full = arr.gallery[i].full;
+			out += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
+	   }
+	  out += '<div style="clear:both"></div>';
+	  document.getElementById("gallery1").innerHTML = out;
+	  document.getElementById("execImg").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addImage(document.getElementById(\'imgPath\').value,\'img' + n + '\',\'imgGroup' + n + '\',\'imgObj' + n + '\',\'destroyImgBtnHolder' + n + '\',\'imgDestroyId' + n + '\',' + n + ',\'btnImg' + n + '\',\'thumb' + n + '\');panelClose(\'imgGallery\')">Thực hiện</button>';
+      }, false);
+	  
+	  // btn 3 //
+	  document.getElementById('btnImg3').addEventListener('click', function() {
+		var n = 3;
+		var out = '';
+		document.getElementById('imgGallery').style.display='block';
+		for (i = 0; i < json_len; i++) {
+			var name = arr.gallery[i].name;
+			var thumb = arr.gallery[i].thumb;
+			var full = arr.gallery[i].full;
+			out += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
+	   }
+	  out += '<div style="clear:both"></div>';
+	  document.getElementById("gallery1").innerHTML = out;
+	  document.getElementById("execImg").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addImage(document.getElementById(\'imgPath\').value,\'img' + n + '\',\'imgGroup' + n + '\',\'imgObj' + n + '\',\'destroyImgBtnHolder' + n + '\',\'imgDestroyId' + n + '\',' + n + ',\'btnImg' + n + '\',\'thumb' + n + '\');panelClose(\'imgGallery\')">Thực hiện</button>';
+      }, false);
+	  
+	  // btn 4 //
+	  document.getElementById('btnImg4').addEventListener('click', function() {
+		var n = 4;
+		var out = '';
+		document.getElementById('imgGallery').style.display='block';
+		for (i = 0; i < json_len; i++) {
+			var name = arr.gallery[i].name;
+			var thumb = arr.gallery[i].thumb;
+			var full = arr.gallery[i].full;
+			out += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
+	   }
+	  out += '<div style="clear:both"></div>';
+	  document.getElementById("gallery1").innerHTML = out;
+	  document.getElementById("execImg").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addImage(document.getElementById(\'imgPath\').value,\'img' + n + '\',\'imgGroup' + n + '\',\'imgObj' + n + '\',\'destroyImgBtnHolder' + n + '\',\'imgDestroyId' + n + '\',' + n + ',\'btnImg' + n + '\',\'thumb' + n + '\');panelClose(\'imgGallery\')">Thực hiện</button>';
+      }, false);
+	  
+	  // btn 5 //
+	  document.getElementById('btnImg5').addEventListener('click', function() {
+		var n = 5;
+		var out = '';
+		document.getElementById('imgGallery').style.display='block';
+		for (i = 0; i < json_len; i++) {
+			var name = arr.gallery[i].name;
+			var thumb = arr.gallery[i].thumb;
+			var full = arr.gallery[i].full;
+			out += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
+	   }
+	  out += '<div style="clear:both"></div>';
+	  document.getElementById("gallery1").innerHTML = out;
+	  document.getElementById("execImg").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addImage(document.getElementById(\'imgPath\').value,\'img' + n + '\',\'imgGroup' + n + '\',\'imgObj' + n + '\',\'destroyImgBtnHolder' + n + '\',\'imgDestroyId' + n + '\',' + n + ',\'btnImg' + n + '\',\'thumb' + n + '\');panelClose(\'imgGallery\')">Thực hiện</button>';
+      }, false);
+	  
+	  // btn 6 //
+	  document.getElementById('btnImg6').addEventListener('click', function() {
+		var n = 6;
+		var out = '';
+		document.getElementById('imgGallery').style.display='block';
+		for (i = 0; i < json_len; i++) {
+			var name = arr.gallery[i].name;
+			var thumb = arr.gallery[i].thumb;
+			var full = arr.gallery[i].full;
+			out += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
+	   }
+	  out += '<div style="clear:both"></div>';
+	  document.getElementById("gallery1").innerHTML = out;
+	  document.getElementById("execImg").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addImage(document.getElementById(\'imgPath\').value,\'img' + n + '\',\'imgGroup' + n + '\',\'imgObj' + n + '\',\'destroyImgBtnHolder' + n + '\',\'imgDestroyId' + n + '\',' + n + ',\'btnImg' + n + '\',\'thumb' + n + '\');panelClose(\'imgGallery\')">Thực hiện</button>';
+      }, false);
+	  
+	  // btn 7 //
+	  document.getElementById('btnImg7').addEventListener('click', function() {
+		var n = 7;
+		var out = '';
+		document.getElementById('imgGallery').style.display='block';
+		for (i = 0; i < json_len; i++) {
+			var name = arr.gallery[i].name;
+			var thumb = arr.gallery[i].thumb;
+			var full = arr.gallery[i].full;
+			out += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
+	   }
+	  out += '<div style="clear:both"></div>';
+	  document.getElementById("gallery1").innerHTML = out;
+	  document.getElementById("execImg").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addImage(document.getElementById(\'imgPath\').value,\'img' + n + '\',\'imgGroup' + n + '\',\'imgObj' + n + '\',\'destroyImgBtnHolder' + n + '\',\'imgDestroyId' + n + '\',' + n + ',\'btnImg' + n + '\',\'thumb' + n + '\');panelClose(\'imgGallery\')">Thực hiện</button>';
+      }, false);
+	  
+	  // btn 8 //
+	  document.getElementById('btnImg8').addEventListener('click', function() {
+		var n = 8;
+		var out = '';
+		document.getElementById('imgGallery').style.display='block';
+		for (i = 0; i < json_len; i++) {
+			var name = arr.gallery[i].name;
+			var thumb = arr.gallery[i].thumb;
+			var full = arr.gallery[i].full;
+			out += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
+	   }
+	  out += '<div style="clear:both"></div>';
+	  document.getElementById("gallery1").innerHTML = out;
+	  document.getElementById("execImg").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addImage(document.getElementById(\'imgPath\').value,\'img' + n + '\',\'imgGroup' + n + '\',\'imgObj' + n + '\',\'destroyImgBtnHolder' + n + '\',\'imgDestroyId' + n + '\',' + n + ',\'btnImg' + n + '\',\'thumb' + n + '\');panelClose(\'imgGallery\')">Thực hiện</button>';
+      }, false);
+	  
+	  // btn 9 //
+	  document.getElementById('btnImg9').addEventListener('click', function() {
+		var n = 9;
+		var out = '';
+		document.getElementById('imgGallery').style.display='block';
+		for (i = 0; i < json_len; i++) {
+			var name = arr.gallery[i].name;
+			var thumb = arr.gallery[i].thumb;
+			var full = arr.gallery[i].full;
+			out += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
+	   }
+	  out += '<div style="clear:both"></div>';
+	  document.getElementById("gallery1").innerHTML = out;
+	  document.getElementById("execImg").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addImage(document.getElementById(\'imgPath\').value,\'img' + n + '\',\'imgGroup' + n + '\',\'imgObj' + n + '\',\'destroyImgBtnHolder' + n + '\',\'imgDestroyId' + n + '\',' + n + ',\'btnImg' + n + '\',\'thumb' + n + '\');panelClose(\'imgGallery\')">Thực hiện</button>';
+      }, false);
+	  
+	  // btn 10 //
+	  document.getElementById('btnImg10').addEventListener('click', function() {
+		var n = 10;
+		var out = '';
+		document.getElementById('imgGallery').style.display='block';
+		for (i = 0; i < json_len; i++) {
+			var name = arr.gallery[i].name;
+			var thumb = arr.gallery[i].thumb;
+			var full = arr.gallery[i].full;
+			out += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
+	   }
+	  out += '<div style="clear:both"></div>';
+	  document.getElementById("gallery1").innerHTML = out;
+	  document.getElementById("execImg").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addImage(document.getElementById(\'imgPath\').value,\'img' + n + '\',\'imgGroup' + n + '\',\'imgObj' + n + '\',\'destroyImgBtnHolder' + n + '\',\'imgDestroyId' + n + '\',' + n + ',\'btnImg' + n + '\',\'thumb' + n + '\');panelClose(\'imgGallery\')">Thực hiện</button>';
+      }, false);
+	  
+	}
+</script>
+
+<script>
+function panelOpen(id) {
+    document.getElementById(id).style.display = "block";
+}
+function panelClose(id) {
+    document.getElementById(id).style.display = "none";
+}
+</script>
+
+<script>
+function openTab(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("tab");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+
+<script src="js/bm.js"></script>
+
+</html>
