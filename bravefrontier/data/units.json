@@ -5330,6 +5330,102 @@
                 }
             },
             {
+                "id": "1644",
+                "name": "Jireid",
+                "role": "",
+                "rolesp": "",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "",
+                "ls": {
+                    "@hit": "",
+                    "@dc": "",
+                    "#text": ""
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "sbb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "ubb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_40937.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_40937.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "1646",
+                "name": "Solos",
+                "role": "",
+                "rolesp": "",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "",
+                "ls": {
+                    "@hit": "",
+                    "@dc": "",
+                    "#text": ""
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "sbb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "ubb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_51217.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_51217.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
@@ -5615,6 +5711,54 @@
                 },                
                 "sp": {
                     "@list": "20 : +30% Stats | 10 : +100% Spark damage | 20 : null EWD | 25 : +25% Crit damage buff on BB/SBB | 25 : +25% EWD buff on BB/SBB | 35 : Add 2-3 BC on Spark buff for 3 turns on BB/SBB | 30 : Add 400-500 HP on Spark buff for 3 turns on BB/SBB | 60 : Add +150% Spark damage for 3 turns on BB/SBB | 30 : Add 80% chance to proc AI (revive at full HP) for 999 turns on UBB"
+                }
+            },
+            {
+                "id": "1647",
+                "name": "Lucius",
+                "role": "",
+                "rolesp": "",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "",
+                "ls": {
+                    "@hit": "",
+                    "@dc": "",
+                    "#text": ""
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "sbb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "ubb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_51227.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_51227.png"
+                },                
+                "sp": {
+                    "@list": ""
                 }
             },
             {

@@ -1,19 +1,34 @@
 {  
-   "gallery":[  
+   "gallery":[
         {  
             "name":"brave frontier",
-            "thumb":"http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_10017.png",
-            "full":"http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_10017.png"
+            "thumb":"images/ntttoon_bg.jpg",
+            "full":"images/ntttoon_bg.jpg"
         },
         {  
             "name":"brave frontier",
-            "thumb":"http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_20017.png",
-            "full":"http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_20017.png"
+            "thumb":"images/main_bg.jpg",
+            "full":"images/main_bg.jpg"
         },
         {  
-            "name":"brave frontier",
-            "thumb":"http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_thum_30017.png",
-            "full":"http://cdn.ios.brave.a-lim.jp/unit/img/unit_ills_full_30017.png"
+            "name":"background",
+            "thumb":"images/black.png",
+            "full":"images/black.png"
+        },
+        {  
+            "name":"background",
+            "thumb":"http://www.planwallpaper.com/static/images/blue_background_design-wallpaper-2048x1152.jpg",
+            "full":"http://www.planwallpaper.com/static/images/blue_background_design-wallpaper-2048x1152.jpg"
+        },
+        {  
+            "name":"background",
+            "thumb":"http://www.planwallpaper.com/static/images/background-designs-13-2014-background-and-wallpaper.jpg",
+            "full":"http://www.planwallpaper.com/static/images/background-designs-13-2014-background-and-wallpaper.jpg"
+        },
+        {  
+            "name":"background",
+            "thumb":"http://www.planwallpaper.com/static/images/background-design-orange1024.jpg",
+            "full":"http://www.planwallpaper.com/static/images/background-design-orange1024.jpg"
         }
    ]
 }

@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <script src="../js/ga.js"></script>
   <script src="js/konva.min.js"></script>
-  <script src="https://code.jquery.com/jquery-1.12.3.js"></script>
   <style>
   .thumb{
 	  width:30px;
@@ -31,6 +30,14 @@
 </head>
 
 <body class="w3-light-grey">
+
+
+<div id="textHolder1" style="display:none"></div>
+<div id="textHolder2" style="display:none"></div>
+<div id="textHolder3" style="display:none"></div>
+<div id="textHolder4" style="display:none"></div>
+<div id="textHolder5" style="display:none"></div>
+
 <!-- Left menu -->
 <div class="w3-sidebar w3-bar-block w3-teal w3-center" style="width:50px">
   <button onclick="panelOpen('sizePanel');" class="w3-bar-item w3-button"><i class="fa fa-tv"></i></button>
@@ -39,15 +46,15 @@
 </div>
 <!-- Right menu -->
 <div class="w3-sidebar w3-green" style="width:112px;right:0">
-	<button id="btnTxt5" class="w3-bar-item w3-button" onClick="openTxtEditor(5)"><i class="fa fa-edit"></i></button> <span id="destroyTxt5"></span>
+	<button id="btnTxt5" class="w3-bar-item w3-button" onClick="openTxtEditor(5)"><i class="fa fa-file-o"></i></button> <span id="destroyTxt5"></span>
     <br>
-	<button id="btnTxt4" class="w3-bar-item w3-button" onClick="openTxtEditor(4)"><i class="fa fa-edit"></i></button> <span id="destroyTxt4"></span>
+	<button id="btnTxt4" class="w3-bar-item w3-button" onClick="openTxtEditor(4)"><i class="fa fa-file-o"></i></button> <span id="destroyTxt4"></span>
     <br>
-	<button id="btnTxt3" class="w3-bar-item w3-button" onClick="openTxtEditor(3)"><i class="fa fa-edit"></i></button> <span id="destroyTxt3"></span>
+	<button id="btnTxt3" class="w3-bar-item w3-button" onClick="openTxtEditor(3)"><i class="fa fa-file-o"></i></button> <span id="destroyTxt3"></span>
     <br>
-	<button id="btnTxt2" class="w3-bar-item w3-button" onClick="openTxtEditor(2)"><i class="fa fa-edit"></i></button> <span id="destroyTxt2"></span>
+	<button id="btnTxt2" class="w3-bar-item w3-button" onClick="openTxtEditor(2)"><i class="fa fa-file-o"></i></button> <span id="destroyTxt2"></span>
     <br>
-	<button id="btnTxt1" class="w3-bar-item w3-button" onClick="openTxtEditor(1)"><i class="fa fa-edit"></i></button> <span id="destroyTxt1"></span>
+	<button id="btnTxt1" class="w3-bar-item w3-button" onClick="openTxtEditor(1)"><i class="fa fa-file-o"></i></button> <span id="destroyTxt1"></span>
     <br>
     <button id="btnImg10" class="w3-bar-item w3-button"><span id="thumb10" class="thumb"><i class="fa fa-image"></i></span></button> <span id="destroyImgBtnHolder10"></span>
     <br>
@@ -86,7 +93,8 @@
   <label>Chiều cao</label>
   <input class="w3-input w3-border" type="text" value="600" id="h"></p>
   <p>      
-  <button class="w3-btn w3-teal" onClick="resizeCanvas();panelClose('sizePanel')">Thay đổi</button></p>
+  <button class="w3-btn w3-teal" onClick="resizeCanvas(document.getElementById('w').value,document.getElementById('h').value,);panelClose('sizePanel')">Thay đổi</button></p>
+  <p>500x375, 784x246</p>
 </div>
 
 <!-- Model image panel -->
@@ -148,18 +156,8 @@
             <input class="w3-input w3-border" type="text" id="widthContent" value="300">
          </p>
          <p>
-            <label>Font chữ</label>
-            <select class="w3-select w3-border" name="option" id="font">
-                <option value="Arial" selected>Arial</option>
-                <option value="Comic Sans MS" >Comic Sans MS</option>
-                <option value="Impact" >Impact</option>
-                <option value="Segoe UI" >Segoe UI</option>
-                <option value="Tahoma" >Tahoma</option>
-                <option value="Verdana" >Verdana</option>
-                <option value="Georgia" >Georgia</option>
-                <option value="Times New Roman" >Times New Roman</option>
-                <option value="Trebuchet MS" >Trebuchet MS</option>
-            </select>
+            <label>Font chữ - Nhập tên font chữ trên máy bạn đang có, ví dụ: Arial, Impact, Times New Roman ..v..v..</label>
+            <input class="w3-input w3-border" type="text" id="font" value="Arial">
         </p>
 		<p>
             <label>Kích thước chữ</label>

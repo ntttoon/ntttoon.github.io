@@ -16,6 +16,7 @@ function resizeCanvas(){
 		height: h
 	});
 	stage.add(layer);
+	document.getElementById("widthContent").value = w;
 }
 
 // Function Rectange
@@ -47,10 +48,10 @@ function addImage(path,img,imgGroup,imgObj,imgDestroyBtn,imgDestroyId,zindex,cur
     imgGroup.add(img);
 	resizeCanvas();
 	//
-	imgGroup.on("dblclick dbltap", function() {
-		this.destroy();
-        layer.draw();
-     });
+	//imgGroup.on("dblclick dbltap", function() {
+		//this.destroy();
+        //layer.draw();
+    //});
 	//
 	// add the shape to the layer
 	var imgObj = new Image();
@@ -88,10 +89,12 @@ function openTxtEditor(n){
 	//document.getElementById("style").selectedIndex = 0;
 	//document.getElementById("align").selectedIndex = 0;
 	panelOpen('txtEditor');
-	document.getElementById("execTxt").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addText(\'txt' + n + '\',\'btnTxt' + n + '\',\'destroyTxt' + n + '\',\'txtDestroyId' + n + '\',\'color' + n + '\');panelClose(\'txtEditor\');">Thực hiện</button>';
+	var b = document.getElementById("textHolder" + n).innerHTML;
+	document.getElementById("content").value = b;
+	document.getElementById("execTxt").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addText(\'txt' + n + '\',\'btnTxt' + n + '\',\'destroyTxt' + n + '\',\'txtDestroyId' + n + '\',\'color' + n + '\',\'textHolder' + n + '\');panelClose(\'txtEditor\');">Thực hiện</button>';
 }
 
-function addText(id,currBtnId,destroyBtnId,txtDestroyId,color){
+function addText(id,currBtnId,destroyBtnId,txtDestroyId,color,textHolder){
 	var txt = document.getElementById("content").value;
 	var w = document.getElementById("widthContent").value;
 	//var h = document.getElementById("heightContent").value;
@@ -100,7 +103,7 @@ function addText(id,currBtnId,destroyBtnId,txtDestroyId,color){
 	var style = document.getElementById("style").value;
 	var alig = document.getElementById("align").value;
 	var color = document.getElementById("color").value;
-	
+
 	var newText = new Konva.Text({
 		x: 0,
 		y: 0,
@@ -122,13 +125,16 @@ function addText(id,currBtnId,destroyBtnId,txtDestroyId,color){
 	
 	document.getElementById(destroyBtnId).innerHTML = '<button id="' + txtDestroyId + '" class="w3-bar-item w3-button"><i class="fa fa-close"></i></button>';
 	document.getElementById(currBtnId).disabled = true;
+	document.getElementById(currBtnId).innerHTML = '<i class="fa fa-file-text"></i>';
 	document.getElementById(txtDestroyId).addEventListener('click', function() {
 		var a = layer.find('#' + id)[0];
 		a.destroy(); 
 		layer.draw();
 		document.getElementById(currBtnId).disabled = false;
+		document.getElementById(currBtnId).innerHTML = '<i class="fa fa-file-o"></i>';
 		document.getElementById(destroyBtnId).innerHTML = "";
     }, false);
+	document.getElementById(textHolder).innerHTML = txt ;
 }
 
 function hideAnchor(){
