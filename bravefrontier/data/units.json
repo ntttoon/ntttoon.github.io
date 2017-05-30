@@ -5409,7 +5409,7 @@
                     "@hit": "25",
                     "@dc": "25",
                     "@cost": "32",
-                    "#text": "25 hits 1600% AoE / 2 turn +100% elemental mitigation / 5 turn +350% DEF / 5 turn +250% ATK->DEF / 5 turn 50 BC/turn"
+                    "#text": "25 hits 1600% AoE / 2 turn +100% elemental mitigation / 5 turn +350% DEF / 5 turn +250% ATK->DEF / 5 turn 50 BC|turn"
                 },
                 "es": {
                     "@condtion": "None",
