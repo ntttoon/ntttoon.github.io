@@ -8296,10 +8296,10 @@
                     "#text": "Boosts Atk, Def when BB gauge is over 50% (50% parameter boost) / considerably boosts BB Atk (150% BB Atk)"
                 },
                 "art": {
-                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860378.png"
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850378.png"
                 },
                 "thumb": {
-                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860378.png"
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850378.png"
                 },                
                 "sp": {
                     "@list": "10 : <span style='display:none'>(*)</span> 30% boost to Def, max HP | 15 : Raises max HP and Def boost from 30% to 50% <span style='display:none'>(Prerequisite: *)</span> | 20 : <span style='display:none'>(#)</span> Boosts BB Atk (50% boost) | 15 : Enhances BB Atk boost effect (+50% boost. 100% boost total) <span style='display:none'>(Prerequisite: #)</span> | 10 : Damage taken boosts BB gauge (Fills 2-3 BC) | 20 : Negates Def ignoring damage | 40 : Allows BB/SBB's 50% damage reductions to last for 2 turns | 10 : Enhances BB's huge BB gauge boost each turn effect (+2 BC. Fills 9 BC total) | 20 : Enhances SBB's considerable Def boost relative to Atk (+10% boost. 80% Atk to Def total) | 30 : Enhances SBB/UBB's BB Atk boost effect (+100% boost. 450%/700% boost total)"
@@ -8344,10 +8344,10 @@
                     "#text": "Boosts critical damage (50% Crit) / boost Spark damage for all allies (20% Spark) / raises Atk parameter limits to 130000 / negates all status ailments"
                 },
                 "art": {
-                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850378.png"
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860378.png"
                 },
                 "thumb": {
-                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850378.png"
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860378.png"
                 },                
                 "sp": {
                     "@list": "10 : 30% boost to Atk, max HP | 10 : Boosts Atk when BB gauge is over 50% (50% boost) | 15 : 120% boost to Spark damage | 20 : Boosts critical hit damage (75% boost) | 35 : Adds resistance against 1 KO attack when HP is below 20% | 20 : Enhances LS's Spark damage boost effect (+20% boost. 150% boost total) | 35 : Enhances BB's additional damage reduction (+15% boost. 35% reduction total) | 20 : Enhances SBB's attack against single foe effect (+200% boost. 800% BB multiplier total) | 45 : Adds BB Atk boost for 3 turns effect to BB/SBB (450% boost) | 35 : Adds considerable Atk, Def boost for Dark types for 3 turns effect to BB/SBB (120% boost) | 20 : Adds considerable HP restoration during Spark for 3 turns effect to SBB (Heals 400-500 HP per Spark)"
