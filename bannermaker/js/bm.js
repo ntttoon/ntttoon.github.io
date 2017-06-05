@@ -31,6 +31,7 @@ function addImage(path,img,imgObj,imgDestroyBtn,imgDestroyId,zindex,currBtnId,th
 			}
 		}
 	}*/
+	
 	// create image layer
 	var img = new Konva.Image({
 		x: 0,
@@ -76,6 +77,20 @@ function addImage(path,img,imgObj,imgDestroyBtn,imgDestroyId,zindex,currBtnId,th
 		document.getElementById(currBtnId).disabled = false;
 		document.getElementById(imgDestroyBtn).innerHTML = "";
 		document.getElementById(thumb).innerHTML = '<i class="fa fa-image"></i>';
+    }, false);
+	
+	var showLayer = 1;
+	document.getElementById('layerToggle1').addEventListener('click', function() {
+		if(showLayer == 1){
+			img.hide();
+			layer.draw();
+			showLayer = 2;
+		}else{
+			img.show();
+			layer.draw();
+			showLayer = 1;
+		}
+		
     }, false);
 }
 
