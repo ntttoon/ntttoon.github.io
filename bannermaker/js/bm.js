@@ -20,7 +20,7 @@ function resizeCanvas(){
 }
 
 // Function Rectange
-function addImage(path,img,imgObj,imgDestroyBtn,imgDestroyId,zindex,currBtnId,thumb){
+function addImage(path,img,imgObj,imgDestroyBtn,imgDestroyId,zindex,currBtnId,thumb,eyeBtn){
 	//var d = new Date();
 	//var n = d.getTime();
 	/*var options = document.getElementsByName("alpha");
@@ -54,19 +54,6 @@ function addImage(path,img,imgObj,imgDestroyBtn,imgDestroyId,zindex,currBtnId,th
         layer.draw();
     };
 	imgObj.src = path;
-	//
-	var slider = document.getElementById('slider1_opacity'); 
-      slider.onchange = function() {
-        img.opacity(slider.value);
-        layer.batchDraw();    
-      };
-	
-	var slider2 = document.getElementById('slider1_scale'); 
-      slider2.onchange = function() {
-        img.scaleX(slider2.value);
-		img.scaleY(slider2.value);
-        layer.batchDraw();    
-      };
 	// add layer
 	document.getElementById(imgDestroyBtn).innerHTML = '<button id="' + imgDestroyId + '" class="w3-bar-item w3-button"><i class="fa fa-close"></i></button>';
 	document.getElementById(thumb).innerHTML = '<img src="' + imgObj.src + '">';
@@ -77,21 +64,43 @@ function addImage(path,img,imgObj,imgDestroyBtn,imgDestroyId,zindex,currBtnId,th
 		document.getElementById(currBtnId).disabled = false;
 		document.getElementById(imgDestroyBtn).innerHTML = "";
 		document.getElementById(thumb).innerHTML = '<i class="fa fa-image"></i>';
+		document.getElementById(eyeBtn).innerHTML = '<i class="fa fa-toggle-on"></i>';
     }, false);
 	
+	//eye btn
 	var showLayer = 1;
-	document.getElementById('layerToggle1').addEventListener('click', function() {
+	document.getElementById(eyeBtn).addEventListener('click', function() {
 		if(showLayer == 1){
 			img.hide();
 			layer.draw();
 			showLayer = 2;
+			document.getElementById(eyeBtn).innerHTML = '<i class="fa fa-toggle-off"></i>';
 		}else{
 			img.show();
 			layer.draw();
 			showLayer = 1;
+			document.getElementById(eyeBtn).innerHTML = '<i class="fa fa-toggle-on"></i>';
 		}
 		
     }, false);
+	
+	//config btn
+	document.getElementById("sliderScale").innerHTML = '<input id="slider_scale" type="range" min="0.1" max="2" step="0.05" value="1">';
+	document.getElementById("sliderOpacity").innerHTML = '<input id="slider_opacity' + '" type="range" min="0.1" max="1" step="0.1" value="1">';
+	
+	//
+	var slider_s = document.getElementById('slider_scale'); 
+      slider_s.onchange = function() {
+        img.scaleX(slider_s.value);
+		img.scaleY(slider_s.value);
+        layer.batchDraw();    
+      };
+	  
+	var slider_o = document.getElementById('slider_opacity'); 
+      slider_o.onchange = function() {
+        img.opacity(slider_o.value);
+        layer.batchDraw();    
+      };
 }
 
 function openTxtEditor(n){
