@@ -4467,7 +4467,7 @@
             },
             {
                 "id": "1614",
-                "name": "Pacific Ocean Zelest",
+                "name": "Overflowing Sea Zeleste",
                 "role": "atk,def,convert_atk,atk_down_add,atk_down,crit,crit_dmg,spark,bb_spark,idef",
                 "rolesp": "spark_crit,crit_res_down,add_ele",
                 "element": "Water",
@@ -4515,7 +4515,7 @@
             },
             {
                 "id": "1616",
-                "name": "Rapunzelulu Lagura",
+                "name": "Roaring Skies Ragra",
                 "role": "bb_fill,bb_regen,bc,hc,bb_rate,spark_crit,spark_debuff",
                 "rolesp": "bb_spark,add_ele",
                 "element": "Thunder",
@@ -4563,7 +4563,7 @@
             },
             {
                 "id": "1618",
-                "name": "Genderbent Lucius Rinasella",
+                "name": "Graceful Angel Linasera",
                 "role": "heal,heal_atked,bb_atked,idol,hot,null_ewd,null_crit",
                 "rolesp": "cure,barrier",
                 "element": "Light",
@@ -5667,7 +5667,7 @@
             },
             {
                 "id": "1600",
-                "name": "Maxwell",
+                "name": "Inception God Maxwell",
                 "role": "crit,crit_dmg,ewd,crit_res_down,ewd_res_down",
                 "rolesp": "bb_spark,heal_spark,spark",
                 "element": "Light",

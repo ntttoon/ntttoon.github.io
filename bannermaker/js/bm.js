@@ -20,7 +20,7 @@ function resizeCanvas(){
 }
 
 // Function Rectange
-function addImage(path,img,imgObj,imgDestroyBtn,imgDestroyId,zindex,currBtnId,thumb,eyeBtn){
+function addImage(path,img,imgObj,imgDestroyBtn,imgDestroyId,zindex,currBtnId,thumb,eyeBtn,slider){
 	//var d = new Date();
 	//var n = d.getTime();
 	/*var options = document.getElementsByName("alpha");
@@ -65,6 +65,7 @@ function addImage(path,img,imgObj,imgDestroyBtn,imgDestroyId,zindex,currBtnId,th
 		document.getElementById(imgDestroyBtn).innerHTML = "";
 		document.getElementById(thumb).innerHTML = '<i class="fa fa-image"></i>';
 		document.getElementById(eyeBtn).innerHTML = '<i class="fa fa-toggle-on"></i>';
+		soPanelToggle();
     }, false);
 	
 	//eye btn
@@ -84,23 +85,26 @@ function addImage(path,img,imgObj,imgDestroyBtn,imgDestroyId,zindex,currBtnId,th
 		
     }, false);
 	
-	//config btn
-	document.getElementById("sliderScale").innerHTML = '<input id="slider_scale" type="range" min="0.1" max="2" step="0.05" value="1">';
-	document.getElementById("sliderOpacity").innerHTML = '<input id="slider_opacity' + '" type="range" min="0.1" max="1" step="0.1" value="1">';
-	
 	//
-	var slider_s = document.getElementById('slider_scale'); 
+	var slider_s = document.getElementById(slider + '_scale'); 
       slider_s.onchange = function() {
         img.scaleX(slider_s.value);
 		img.scaleY(slider_s.value);
         layer.batchDraw();    
       };
 	  
-	var slider_o = document.getElementById('slider_opacity'); 
+	var slider_o = document.getElementById(slider + '_opacity'); 
       slider_o.onchange = function() {
         img.opacity(slider_o.value);
         layer.batchDraw();    
       };
+}
+
+function soPanelToggle(n){
+	for (i = 1; i < 11; i++) {
+		document.getElementById('soImagePanel' + i).style.display = 'none';
+	}
+	document.getElementById('soImagePanel' + n).style.display = 'block';
 }
 
 function openTxtEditor(n){

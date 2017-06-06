@@ -2,31 +2,37 @@
    "gallery":[
         {  
             "name":"brave frontier",
+            "cat":"1",
             "thumb":"images/ntttoon_bg.jpg",
             "full":"images/ntttoon_bg.jpg"
         },
         {  
             "name":"brave frontier",
+            "cat":"1",
             "thumb":"images/main_bg.jpg",
             "full":"images/main_bg.jpg"
         },
         {  
             "name":"background",
+            "cat":"2",
             "thumb":"images/black.png",
             "full":"images/black.png"
         },
         {  
             "name":"background",
+            "cat":"2",
             "thumb":"http://www.planwallpaper.com/static/images/blue_background_design-wallpaper-2048x1152.jpg",
             "full":"http://www.planwallpaper.com/static/images/blue_background_design-wallpaper-2048x1152.jpg"
         },
         {  
             "name":"background",
+            "cat":"2",
             "thumb":"http://www.planwallpaper.com/static/images/background-designs-13-2014-background-and-wallpaper.jpg",
             "full":"http://www.planwallpaper.com/static/images/background-designs-13-2014-background-and-wallpaper.jpg"
         },
         {  
             "name":"background",
+            "cat":"2",
             "thumb":"http://www.planwallpaper.com/static/images/background-design-orange1024.jpg",
             "full":"http://www.planwallpaper.com/static/images/background-design-orange1024.jpg"
         }
