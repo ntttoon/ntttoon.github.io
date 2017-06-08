@@ -4611,7 +4611,7 @@
             },
             {
                 "id": "1621",
-                "name": "Libera",
+                "name": "Flourished Bloom Libera",
                 "role": "add_ele,def,rec,bc,hc,bb_spark,convert_atk,convert_def,bb_atked,bb_rate",
                 "rolesp": "miti_dot,ewd,od_rate,bb_fill,bb_mod",
                 "element": "Earth",
@@ -4659,7 +4659,7 @@
             },
             {
                 "id": "1622",
-                "name": "Rhoa",
+                "name": "Inquisitive Soul Rhoa",
                 "role": "add_ele,spark,spark_debuff,dot,idef",
                 "rolesp": "ewd,spark_crit,bb_spark",
                 "element": "Thunder",
@@ -4707,7 +4707,7 @@
             },
             {
                 "id": "1623",
-                "name": "Kafka",
+                "name": "Demon Manipulator Kafka",
                 "role": "add_ele,ails_atked,atk_ailed,convert_atk,convert_def,ails_add,ewd",
                 "rolesp": "bb_atked,LS_bb_atked",
                 "element": "Dark",
@@ -4755,7 +4755,7 @@
             },
             {
                 "id": "1625",
-                "name": "Agnair",
+                "name": "Blazing Admonition Agnia",
                 "role": "def,rec,convert_def,convert_rec,hot,cure,spark,bb_regen,od_regen,heal_atked",
                 "rolesp": "miti_spark,add_ele",
                 "element": "Fire",
@@ -4803,7 +4803,7 @@
             },
             {
                 "id": "1627",
-                "name": "Daros",
+                "name": "Boundless Peaks Daros",
                 "role": "null_crit,null_ewd,miti_spark,atk,convert_atk,convert_def,convert_rec,bb_mod,maxhp",
                 "rolesp": "null_ails,add_ele",
                 "element": "Earth",
@@ -4851,7 +4851,7 @@
             },
             {
                 "id": "1629",
-                "name": "Velma",
+                "name": "Accursed Calamity Velma",
                 "role": "miti_dot,atk_down,def_down,atk_down_atked,def_down_atked,bb_atked,ewd_res_down,atk_down_add,def_down_add,drain",
                 "rolesp": "ails,dot,spark_debuff",
                 "element": "Dark",
@@ -4899,7 +4899,7 @@
             },
             {
                 "id": "1633",
-                "name": "Philaine",
+                "name": "Final Petal Phileine",
                 "role": "heal,cure,convert_atk,hot,bb_fill,convert_def,bc,hc,atk_down",
                 "rolesp": "rec,heal_atked,bb_atked,barrier",
                 "element": "Earth",
@@ -4947,7 +4947,7 @@
             },
             {
                 "id": "1635",
-                "name": "Mizo",
+                "name": "Death Soul Mizo Dorte",
                 "role": "ewd,drain,ewd_res_down",
                 "rolesp": "dot,crit,crit_dmg",
                 "element": "Dark",
@@ -4995,7 +4995,7 @@
             },
             {
                 "id": "1636",
-                "name": "Lilith",
+                "name": "Mechanic Goddess Lilith",
                 "role": "idef,atk,def,rec,od_fill",
                 "rolesp": "bb_fill",
                 "element": "Light",
@@ -5043,7 +5043,7 @@
             },
             {
                 "id": "1637",
-                "name": "Shida",
+                "name": "Deadly Illusion Shida",
                 "role": "bb_fill,add_ele,ewd,ewd_res_down",
                 "rolesp": "bb_spark,atk_down,def_down,ails",
                 "element": "Dark",
@@ -5091,7 +5091,7 @@
             },
             {
                 "id": "1638",
-                "name": "Owen",
+                "name": "Callow Flame Owen",
                 "role": "atk,def,crit,ails,crit_dmg,atk_down,def_down,convert_atk,bb_mod",
                 "rolesp": "atk_ailed,spark",
                 "element": "Fire",
@@ -5139,7 +5139,7 @@
             },
             {
                 "id": "1639",
-                "name": "Grah",
+                "name": "Callow Shadow Grahdens",
                 "role": "add_ele,null_ails,null_stats,miti_dot,barrier,od_rate,od_regen,ewd_res_down",
                 "rolesp": "bb_regen,null_crit,cure,bb_fill,bb_atked,bb_spark",
                 "element": "Dark",

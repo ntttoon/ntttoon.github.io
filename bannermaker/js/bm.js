@@ -10,6 +10,14 @@ var layer = new Konva.Layer();
 function resizeCanvas(){
 	var w = document.getElementById("w").value;
 	var h = document.getElementById("h").value;
+	if(w >= 1920){
+		w = 1920;
+		document.getElementById("w").value = w;
+	}
+	if(h >= 1080){
+		h = 1080;
+		document.getElementById("h").value = h;
+	}
 	var stage = new Konva.Stage({
 		container: 'container',
 		width: w,
@@ -20,7 +28,7 @@ function resizeCanvas(){
 }
 
 // Function Rectange
-function addImage(path,img,imgObj,imgDestroyBtn,imgDestroyId,zindex,currBtnId,thumb,eyeBtn,slider){
+function addImage(path,img,imgObj,imgDestroyBtn,imgDestroyId,zindex,currBtnId,thumb,eyeBtn,slider,x,y,scale_x,scale_y){
 	//var d = new Date();
 	//var n = d.getTime();
 	/*var options = document.getElementsByName("alpha");
@@ -34,8 +42,10 @@ function addImage(path,img,imgObj,imgDestroyBtn,imgDestroyId,zindex,currBtnId,th
 	
 	// create image layer
 	var img = new Konva.Image({
-		x: 0,
-		y: 0,
+		x: x,
+		y: y,
+		scaleX:scale_x,
+		scaleY:scale_y,
 		draggable: true,
 	});
     layer.add(img);

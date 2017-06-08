@@ -21,20 +21,14 @@
         {  
             "name":"background",
             "cat":"2",
-            "thumb":"http://www.planwallpaper.com/static/images/blue_background_design-wallpaper-2048x1152.jpg",
-            "full":"http://www.planwallpaper.com/static/images/blue_background_design-wallpaper-2048x1152.jpg"
+            "thumb":"images/thumb_black_bar.png",
+            "full":"images/black_bar.png"
         },
         {  
             "name":"background",
             "cat":"2",
-            "thumb":"http://www.planwallpaper.com/static/images/background-designs-13-2014-background-and-wallpaper.jpg",
-            "full":"http://www.planwallpaper.com/static/images/background-designs-13-2014-background-and-wallpaper.jpg"
-        },
-        {  
-            "name":"background",
-            "cat":"2",
-            "thumb":"http://www.planwallpaper.com/static/images/background-design-orange1024.jpg",
-            "full":"http://www.planwallpaper.com/static/images/background-design-orange1024.jpg"
+            "thumb":"images/thumb_blue_btn.png",
+            "full":"images/blue_btn.png"
         }
    ]
 }
