@@ -20,16 +20,17 @@
 	  display:block;	 
    }
    .thumbGallery img{
-	  width:100px;
-	  height:100px;
+	  width:60px;
+	  height:60px;
 	  display:block;
+	  margin:3px;
 	  float:left;
 	}
    .w3-disabled,.w3-btn:disabled,.w3-button:disabled{cursor:not-allowed;opacity:1}.w3-disabled *,:disabled *{pointer-events:none}
   </style>
 </head>
 
-<body class="w3-light-grey">
+<body style="background:#282828">
 
 <div id="textHolder1" style="display:none"></div>
 <div id="textHolder2" style="display:none"></div>
@@ -39,10 +40,10 @@
 
 <!-- Left menu -->
 <div style="width:50px;position:absolute">
-  <button onclick="panelOpen('sizePanel');" class="w3-bar-item w3-button"><i class="fa fa-tv"></i></button>
+  <button onclick="panelOpen('sizePanel');" class="w3-bar-item w3-button w3-text-light-gray"><i class="fa fa-tv"></i></button>
 </div>
 <!-- Right menu -->
-<div class="w3-sidebar w3-green" style="width:112px;right:0">
+<div class="w3-sidebar w3-gray" style="width:112px;right:0">
 	<button id="btnTxt5" class="w3-bar-item w3-button" onClick="openTxtEditor(5)"><i class="fa fa-file-o"></i></button> <span id="destroyTxt5"></span>
     <br>
 	<button id="btnTxt4" class="w3-bar-item w3-button" onClick="openTxtEditor(4)"><i class="fa fa-file-o"></i></button> <span id="destroyTxt4"></span>
@@ -84,6 +85,7 @@
 	var out = "";
 	for (i = 1; i < 11; i++) {
 		out += '<div id="soImagePanel' + i + '" style="position:absolute;bottom:0;right:120px;display:none" class="w3-panel w3-gray w3-row w3-animate-opacity">'
+		out += '<span onclick="this.parentElement.style.display=\'none\'" class="w3-button w3-small w3-display-topright">&times;</span>';
 		out += '<div class="w3-half w3-container">';
 		out += '<p>Scale</p>';
 		out += '<input id="slider' + i + '_scale" type="range" min="0.1" max="2" step="0.1" value="1">';
@@ -137,6 +139,7 @@
       <div class="w3-bar w3-black">
         <button class="w3-bar-item w3-button tablink w3-red" onclick="openTab(event,'bravefrontier')">BF Arts</button>
         <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'misc')">Misc</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'temp336280')">Template 336x280</button>
       </div>
       
       <div id="bravefrontier" class="w3-container tab">
@@ -145,6 +148,10 @@
     
       <div id="misc" class="w3-container tab" style="display:none">
         <p class="thumbGallery" id="gallery2"></p>
+      </div>
+      
+      <div id="temp336280" class="w3-container tab" style="display:none">
+        <p class="thumbGallery" id="gallery3"></p>
       </div>
       
       <p style="clear:both"></p>
@@ -227,30 +234,30 @@
 
 <!-- Eye Button -->
 <div class="w3-bar-block w3-display-container w3-display-topright w3-center" style="margin-right:110px;margin-top:192px">
-  <button id="eyeBtn10" class="w3-bar-item w3-button" ><i class="fa fa-toggle-on"></i></button>
-  <button id="eyeBtn9" class="w3-bar-item w3-button" ><i class="fa fa-toggle-on"></i></button>
-  <button id="eyeBtn8" class="w3-bar-item w3-button" ><i class="fa fa-toggle-on"></i></button>
-  <button id="eyeBtn7" class="w3-bar-item w3-button" ><i class="fa fa-toggle-on"></i></button>
-  <button id="eyeBtn6" class="w3-bar-item w3-button" ><i class="fa fa-toggle-on"></i></button>
-  <button id="eyeBtn5" class="w3-bar-item w3-button" ><i class="fa fa-toggle-on"></i></button>
-  <button id="eyeBtn4" class="w3-bar-item w3-button" ><i class="fa fa-toggle-on"></i></button>
-  <button id="eyeBtn3" class="w3-bar-item w3-button" ><i class="fa fa-toggle-on"></i></button>
-  <button id="eyeBtn2" class="w3-bar-item w3-button" ><i class="fa fa-toggle-on"></i></button>
-  <button id="eyeBtn1" class="w3-bar-item w3-button" ><i class="fa fa-toggle-on"></i></button>
+  <button id="eyeBtn10" class="w3-bar-item w3-button w3-text-light-gray" ><i class="fa fa-toggle-on"></i></button>
+  <button id="eyeBtn9" class="w3-bar-item w3-button w3-text-light-gray" ><i class="fa fa-toggle-on"></i></button>
+  <button id="eyeBtn8" class="w3-bar-item w3-button w3-text-light-gray" ><i class="fa fa-toggle-on"></i></button>
+  <button id="eyeBtn7" class="w3-bar-item w3-button w3-text-light-gray" ><i class="fa fa-toggle-on"></i></button>
+  <button id="eyeBtn6" class="w3-bar-item w3-button w3-text-light-gray" ><i class="fa fa-toggle-on"></i></button>
+  <button id="eyeBtn5" class="w3-bar-item w3-button w3-text-light-gray" ><i class="fa fa-toggle-on"></i></button>
+  <button id="eyeBtn4" class="w3-bar-item w3-button w3-text-light-gray" ><i class="fa fa-toggle-on"></i></button>
+  <button id="eyeBtn3" class="w3-bar-item w3-button w3-text-light-gray" ><i class="fa fa-toggle-on"></i></button>
+  <button id="eyeBtn2" class="w3-bar-item w3-button w3-text-light-gray" ><i class="fa fa-toggle-on"></i></button>
+  <button id="eyeBtn1" class="w3-bar-item w3-button w3-text-light-gray" ><i class="fa fa-toggle-on"></i></button>
 </div>
 
 <!-- SOImage Button -->
 <div class="w3-bar-block w3-display-container w3-display-topright w3-center" style="margin-right:160px;margin-top:192px">
-  <button class="w3-bar-item w3-button" onClick="soPanelToggle(10);" ><i class="fa fa-cog"></i></button>
-  <button class="w3-bar-item w3-button" onClick="soPanelToggle(9);" ><i class="fa fa-cog"></i></button>
-  <button class="w3-bar-item w3-button" onClick="soPanelToggle(8);" ><i class="fa fa-cog"></i></button>
-  <button class="w3-bar-item w3-button" onClick="soPanelToggle(7);" ><i class="fa fa-cog"></i></button>
-  <button class="w3-bar-item w3-button" onClick="soPanelToggle(6);" ><i class="fa fa-cog"></i></button>
-  <button class="w3-bar-item w3-button" onClick="soPanelToggle(5);" ><i class="fa fa-cog"></i></button>
-  <button class="w3-bar-item w3-button" onClick="soPanelToggle(4);" ><i class="fa fa-cog"></i></button>
-  <button class="w3-bar-item w3-button" onClick="soPanelToggle(3);" ><i class="fa fa-cog"></i></button>
-  <button class="w3-bar-item w3-button" onClick="soPanelToggle(2);" ><i class="fa fa-cog"></i></button>
-  <button class="w3-bar-item w3-button" onClick="soPanelToggle(1);" ><i class="fa fa-cog"></i></button>
+  <button class="w3-bar-item w3-button w3-text-light-gray" onClick="soPanelToggle(10);" ><i class="fa fa-cog"></i></button>
+  <button class="w3-bar-item w3-button w3-text-light-gray" onClick="soPanelToggle(9);" ><i class="fa fa-cog"></i></button>
+  <button class="w3-bar-item w3-button w3-text-light-gray" onClick="soPanelToggle(8);" ><i class="fa fa-cog"></i></button>
+  <button class="w3-bar-item w3-button w3-text-light-gray" onClick="soPanelToggle(7);" ><i class="fa fa-cog"></i></button>
+  <button class="w3-bar-item w3-button w3-text-light-gray" onClick="soPanelToggle(6);" ><i class="fa fa-cog"></i></button>
+  <button class="w3-bar-item w3-button w3-text-light-gray" onClick="soPanelToggle(5);" ><i class="fa fa-cog"></i></button>
+  <button class="w3-bar-item w3-button w3-text-light-gray" onClick="soPanelToggle(4);" ><i class="fa fa-cog"></i></button>
+  <button class="w3-bar-item w3-button w3-text-light-gray" onClick="soPanelToggle(3);" ><i class="fa fa-cog"></i></button>
+  <button class="w3-bar-item w3-button w3-text-light-gray" onClick="soPanelToggle(2);" ><i class="fa fa-cog"></i></button>
+  <button class="w3-bar-item w3-button w3-text-light-gray" onClick="soPanelToggle(1);" ><i class="fa fa-cog"></i></button>
 </div>
 
 <!-- Canvas display -->
@@ -282,6 +289,7 @@
 		var n = 1;
 		var out = '';
 		var out2 = '';
+		var out3 = '';
 		document.getElementById('imgGallery').style.display='block';
 		for (i = 0; i < json_len; i++) {
 			var name = arr.gallery[i].name;
@@ -297,7 +305,12 @@
 				out2 += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
 			  	document.getElementById("gallery2").innerHTML = out2;
 		  	}
+			if(cat == 3){
+				out3 += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
+			  	document.getElementById("gallery3").innerHTML = out3;
+		  	}
 	   }
+	  
 	  document.getElementById("execImg").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addImage(document.getElementById(\'imgPath\').value,\'img' + n + '\',\'imgObj' + n + '\',\'destroyImgBtnHolder' + n + '\',\'imgDestroyId' + n + '\',' + n + ',\'btnImg' + n + '\',\'thumb' + n + '\',\'eyeBtn' + n + '\',\'slider' + n + '\',0,0,1,1);panelClose(\'imgGallery\')">Thực hiện</button>';
       }, false);
 	  
@@ -306,6 +319,7 @@
 		var n = 2;
 		var out = '';
 		var out2 = '';
+		var out3 = '';
 		document.getElementById('imgGallery').style.display='block';
 		for (i = 0; i < json_len; i++) {
 			var name = arr.gallery[i].name;
@@ -321,9 +335,12 @@
 				out2 += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
 			  	document.getElementById("gallery2").innerHTML = out2;
 		  	}
+			if(cat == 3){
+				out3 += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
+			  	document.getElementById("gallery3").innerHTML = out3;
+		  	}
 	   }
-	  out += '<div style="clear:both"></div>';
-	  document.getElementById("gallery1").innerHTML = out;
+	  
 	  document.getElementById("execImg").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addImage(document.getElementById(\'imgPath\').value,\'img' + n + '\',\'imgObj' + n + '\',\'destroyImgBtnHolder' + n + '\',\'imgDestroyId' + n + '\',' + n + ',\'btnImg' + n + '\',\'thumb' + n + '\',\'eyeBtn' + n + '\',\'slider' + n + '\',0,0,1,1);panelClose(\'imgGallery\')">Thực hiện</button>';
       }, false);
 	  
@@ -332,6 +349,7 @@
 		var n = 3;
 		var out = '';
 		var out2 = '';
+		var out3 = '';
 		document.getElementById('imgGallery').style.display='block';
 		for (i = 0; i < json_len; i++) {
 			var name = arr.gallery[i].name;
@@ -347,9 +365,12 @@
 				out2 += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
 			  	document.getElementById("gallery2").innerHTML = out2;
 		  	}
+			if(cat == 3){
+				out3 += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
+			  	document.getElementById("gallery3").innerHTML = out3;
+		  	}
 	   }
-	  out += '<div style="clear:both"></div>';
-	  document.getElementById("gallery1").innerHTML = out;
+	  
 	  document.getElementById("execImg").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addImage(document.getElementById(\'imgPath\').value,\'img' + n + '\',\'imgObj' + n + '\',\'destroyImgBtnHolder' + n + '\',\'imgDestroyId' + n + '\',' + n + ',\'btnImg' + n + '\',\'thumb' + n + '\',\'eyeBtn' + n + '\',\'slider' + n + '\',0,0,1,1);panelClose(\'imgGallery\')">Thực hiện</button>';
       }, false);
 	  
@@ -358,6 +379,7 @@
 		var n = 4;
 		var out = '';
 		var out2 = '';
+		var out3 = '';
 		document.getElementById('imgGallery').style.display='block';
 		for (i = 0; i < json_len; i++) {
 			var name = arr.gallery[i].name;
@@ -373,9 +395,12 @@
 				out2 += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
 			  	document.getElementById("gallery2").innerHTML = out2;
 		  	}
+			if(cat == 3){
+				out3 += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
+			  	document.getElementById("gallery3").innerHTML = out3;
+		  	}
 	   }
-	  out += '<div style="clear:both"></div>';
-	  document.getElementById("gallery1").innerHTML = out;
+	  
 	  document.getElementById("execImg").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addImage(document.getElementById(\'imgPath\').value,\'img' + n + '\',\'imgObj' + n + '\',\'destroyImgBtnHolder' + n + '\',\'imgDestroyId' + n + '\',' + n + ',\'btnImg' + n + '\',\'thumb' + n + '\',\'eyeBtn' + n + '\',\'slider' + n + '\',0,0,1,1);panelClose(\'imgGallery\')">Thực hiện</button>';
       }, false);
 	  
@@ -384,6 +409,7 @@
 		var n = 5;
 		var out = '';
 		var out2 = '';
+		var out3 = '';
 		document.getElementById('imgGallery').style.display='block';
 		for (i = 0; i < json_len; i++) {
 			var name = arr.gallery[i].name;
@@ -399,9 +425,12 @@
 				out2 += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
 			  	document.getElementById("gallery2").innerHTML = out2;
 		  	}
+			if(cat == 3){
+				out3 += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
+			  	document.getElementById("gallery3").innerHTML = out3;
+		  	}
 	   }
-	  out += '<div style="clear:both"></div>';
-	  document.getElementById("gallery1").innerHTML = out;
+	  
 	  document.getElementById("execImg").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addImage(document.getElementById(\'imgPath\').value,\'img' + n + '\',\'imgObj' + n + '\',\'destroyImgBtnHolder' + n + '\',\'imgDestroyId' + n + '\',' + n + ',\'btnImg' + n + '\',\'thumb' + n + '\',\'eyeBtn' + n + '\',\'slider' + n + '\',0,0,1,1);panelClose(\'imgGallery\')">Thực hiện</button>';
       }, false);
 	  
@@ -410,6 +439,7 @@
 		var n = 6;
 		var out = '';
 		var out2 = '';
+		var out3 = '';
 		document.getElementById('imgGallery').style.display='block';
 		for (i = 0; i < json_len; i++) {
 			var name = arr.gallery[i].name;
@@ -425,9 +455,12 @@
 				out2 += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
 			  	document.getElementById("gallery2").innerHTML = out2;
 		  	}
+			if(cat == 3){
+				out3 += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
+			  	document.getElementById("gallery3").innerHTML = out3;
+		  	}
 	   }
-	  out += '<div style="clear:both"></div>';
-	  document.getElementById("gallery1").innerHTML = out;
+	  
 	  document.getElementById("execImg").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addImage(document.getElementById(\'imgPath\').value,\'img' + n + '\',\'imgObj' + n + '\',\'destroyImgBtnHolder' + n + '\',\'imgDestroyId' + n + '\',' + n + ',\'btnImg' + n + '\',\'thumb' + n + '\',\'eyeBtn' + n + '\',\'slider' + n + '\',0,0,1,1);panelClose(\'imgGallery\')">Thực hiện</button>';
       }, false);
 	  
@@ -436,6 +469,7 @@
 		var n = 7;
 		var out = '';
 		var out2 = '';
+		var out3 = '';
 		document.getElementById('imgGallery').style.display='block';
 		for (i = 0; i < json_len; i++) {
 			var name = arr.gallery[i].name;
@@ -451,9 +485,12 @@
 				out2 += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
 			  	document.getElementById("gallery2").innerHTML = out2;
 		  	}
+			if(cat == 3){
+				out3 += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
+			  	document.getElementById("gallery3").innerHTML = out3;
+		  	}
 	   }
-	  out += '<div style="clear:both"></div>';
-	  document.getElementById("gallery1").innerHTML = out;
+	  
 	  document.getElementById("execImg").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addImage(document.getElementById(\'imgPath\').value,\'img' + n + '\',\'imgObj' + n + '\',\'destroyImgBtnHolder' + n + '\',\'imgDestroyId' + n + '\',' + n + ',\'btnImg' + n + '\',\'thumb' + n + '\',\'eyeBtn' + n + '\',\'slider' + n + '\',0,0,1,1);panelClose(\'imgGallery\')">Thực hiện</button>';
       }, false);
 	  
@@ -462,6 +499,7 @@
 		var n = 8;
 		var out = '';
 		var out2 = '';
+		var out3 = '';
 		document.getElementById('imgGallery').style.display='block';
 		for (i = 0; i < json_len; i++) {
 			var name = arr.gallery[i].name;
@@ -477,9 +515,12 @@
 				out2 += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
 			  	document.getElementById("gallery2").innerHTML = out2;
 		  	}
+			if(cat == 3){
+				out3 += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
+			  	document.getElementById("gallery3").innerHTML = out3;
+		  	}
 	   }
-	  out += '<div style="clear:both"></div>';
-	  document.getElementById("gallery1").innerHTML = out;
+	  
 	  document.getElementById("execImg").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addImage(document.getElementById(\'imgPath\').value,\'img' + n + '\',\'imgObj' + n + '\',\'destroyImgBtnHolder' + n + '\',\'imgDestroyId' + n + '\',' + n + ',\'btnImg' + n + '\',\'thumb' + n + '\',\'eyeBtn' + n + '\',\'slider' + n + '\',0,0,1,1);panelClose(\'imgGallery\')">Thực hiện</button>';
       }, false);
 	  
@@ -488,6 +529,7 @@
 		var n = 9;
 		var out = '';
 		var out2 = '';
+		var out3 = '';
 		document.getElementById('imgGallery').style.display='block';
 		for (i = 0; i < json_len; i++) {
 			var name = arr.gallery[i].name;
@@ -503,9 +545,12 @@
 				out2 += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
 			  	document.getElementById("gallery2").innerHTML = out2;
 		  	}
+			if(cat == 3){
+				out3 += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
+			  	document.getElementById("gallery3").innerHTML = out3;
+		  	}
 	   }
-	  out += '<div style="clear:both"></div>';
-	  document.getElementById("gallery1").innerHTML = out;
+	  
 	  document.getElementById("execImg").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addImage(document.getElementById(\'imgPath\').value,\'img' + n + '\',\'imgObj' + n + '\',\'destroyImgBtnHolder' + n + '\',\'imgDestroyId' + n + '\',' + n + ',\'btnImg' + n + '\',\'thumb' + n + '\',\'eyeBtn' + n + '\',\'slider' + n + '\',0,0,1,1);panelClose(\'imgGallery\')">Thực hiện</button>';
       }, false);
 	  
@@ -514,6 +559,7 @@
 		var n = 10;
 		var out = '';
 		var out2 = '';
+		var out3 = '';
 		document.getElementById('imgGallery').style.display='block';
 		for (i = 0; i < json_len; i++) {
 			var name = arr.gallery[i].name;
@@ -529,9 +575,12 @@
 				out2 += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
 			  	document.getElementById("gallery2").innerHTML = out2;
 		  	}
+			if(cat == 3){
+				out3 += '<img src="' + thumb + '" onClick="document.getElementById(\'imgPath\').value =' + "'" + full + "'" + ';">'
+			  	document.getElementById("gallery3").innerHTML = out3;
+		  	}
 	   }
-	  out += '<div style="clear:both"></div>';
-	  document.getElementById("gallery1").innerHTML = out;
+	  
 	  document.getElementById("execImg").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addImage(document.getElementById(\'imgPath\').value,\'img' + n + '\',\'imgObj' + n + '\',\'destroyImgBtnHolder' + n + '\',\'imgDestroyId' + n + '\',' + n + ',\'btnImg' + n + '\',\'thumb' + n + '\',\'eyeBtn' + n + '\',\'slider' + n + '\',0,0,1,1);panelClose(\'imgGallery\')">Thực hiện</button>';
       }, false);
 	  

@@ -12,23 +12,261 @@
             "thumb":"images/main_bg.jpg",
             "full":"images/main_bg.jpg"
         },
+
+
+
         {  
-            "name":"background",
+            "name":"color",
             "cat":"2",
             "thumb":"images/black.png",
             "full":"images/black.png"
         },
         {  
-            "name":"background",
+            "name":"color",
             "cat":"2",
             "thumb":"images/thumb_black_bar.png",
             "full":"images/black_bar.png"
         },
         {  
-            "name":"background",
+            "name":"color",
+            "cat":"2",
+            "thumb":"images/bg_blue.png",
+            "full":"images/bg_blue.png"
+        },
+        {  
+            "name":"color",
+            "cat":"2",
+            "thumb":"images/bg_brown.png",
+            "full":"images/bg_brown.png"
+        },
+        {  
+            "name":"color",
+            "cat":"2",
+            "thumb":"images/bg_cyan.png",
+            "full":"images/bg_cyan.png"
+        },
+        {  
+            "name":"color",
+            "cat":"2",
+            "thumb":"images/bg_gray.png",
+            "full":"images/bg_gray.png"
+        },
+        {  
+            "name":"color",
+            "cat":"2",
+            "thumb":"images/bg_green.png",
+            "full":"images/bg_green.png"
+        },
+        {  
+            "name":"color",
+            "cat":"2",
+            "thumb":"images/bg_indigo.png",
+            "full":"images/bg_indigo.png"
+        },
+        {  
+            "name":"color",
+            "cat":"2",
+            "thumb":"images/bg_khaki.png",
+            "full":"images/bg_khaki.png"
+        },
+        {  
+            "name":"color",
+            "cat":"2",
+            "thumb":"images/bg_lime.png",
+            "full":"images/bg_lime.png"
+        },
+        {  
+            "name":"color",
+            "cat":"2",
+            "thumb":"images/bg_orange.png",
+            "full":"images/bg_orange.png"
+        },
+        {  
+            "name":"color",
+            "cat":"2",
+            "thumb":"images/bg_pink.png",
+            "full":"images/bg_pink.png"
+        },
+        {  
+            "name":"color",
+            "cat":"2",
+            "thumb":"images/bg_purple.png",
+            "full":"images/bg_purple.png"
+        },
+        {  
+            "name":"color",
+            "cat":"2",
+            "thumb":"images/bg_red.png",
+            "full":"images/bg_red.png"
+        },
+        {  
+            "name":"color",
+            "cat":"2",
+            "thumb":"images/bg_teal.png",
+            "full":"images/bg_teal.png"
+        },
+        {  
+            "name":"color",
+            "cat":"2",
+            "thumb":"images/bg_yellow.png",
+            "full":"images/bg_yellow.png"
+        },
+        {  
+            "name":"button",
+            "cat":"2",
+            "thumb":"images/thumb_black_btn.png",
+            "full":"images/black_btn.png"
+        },
+        {  
+            "name":"button",
             "cat":"2",
             "thumb":"images/thumb_blue_btn.png",
             "full":"images/blue_btn.png"
+        },
+        {  
+            "name":"button",
+            "cat":"2",
+            "thumb":"images/thumb_cyan_btn.png",
+            "full":"images/cyan_btn.png"
+        },
+        {  
+            "name":"button",
+            "cat":"2",
+            "thumb":"images/thumb_gray_btn.png",
+            "full":"images/gray_btn.png"
+        },
+        {  
+            "name":"button",
+            "cat":"2",
+            "thumb":"images/thumb_green_btn.png",
+            "full":"images/green_btn.png"
+        },
+        {  
+            "name":"button",
+            "cat":"2",
+            "thumb":"images/thumb_pink_btn.png",
+            "full":"images/pink_btn.png"
+        },
+        {  
+            "name":"button",
+            "cat":"2",
+            "thumb":"images/thumb_steel_btn.png",
+            "full":"images/steel_btn.png"
+        },
+        {  
+            "name":"button",
+            "cat":"2",
+            "thumb":"images/thumb_violet_btn.png",
+            "full":"images/violet_btn.png"
+        },
+        {  
+            "name":"button",
+            "cat":"2",
+            "thumb":"images/thumb_white_btn.png",
+            "full":"images/white_btn.png"
+        },
+        {  
+            "name":"button",
+            "cat":"2",
+            "thumb":"images/thumb_yellow_btn.png",
+            "full":"images/yellow_btn.png"
+        },
+        {  
+            "name":"office",
+            "cat":"2",
+            "thumb":"images/office01.jpg",
+            "full":"images/office01.jpg"
+        },
+        {  
+            "name":"spa",
+            "cat":"2",
+            "thumb":"http://spago.vn/images/spa-beauty.png",
+            "full":"http://spago.vn/images/spa-beauty.png"
+        },
+        {  
+            "name":"spa",
+            "cat":"2",
+            "thumb":"http://www.renessanssamara.ru/images/staty/piling.png",
+            "full":"http://www.renessanssamara.ru/images/staty/piling.png"
+        },
+        {  
+            "name":"spa",
+            "cat":"2",
+            "thumb":"http://img-fotki.yandex.ru/get/6310/131624064.1a2/0_8625e_86939224_XL",
+            "full":"http://img-fotki.yandex.ru/get/6310/131624064.1a2/0_8625e_86939224_XL"
+        },
+        {  
+            "name":"spa",
+            "cat":"2",
+            "thumb":"http://studiokokona.com/wp-content/uploads/2017/05/woman.png",
+            "full":"http://studiokokona.com/wp-content/uploads/2017/05/woman.png"
+        },
+        {  
+            "name":"spa",
+            "cat":"2",
+            "thumb":"http://www.dermafashion.com/wp-content/uploads/2015/10/800px-Beauty-Spa-Woman-Portrait-Bea-59934149.png",
+            "full":"http://www.dermafashion.com/wp-content/uploads/2015/10/800px-Beauty-Spa-Woman-Portrait-Bea-59934149.png"
+        },
+        {  
+            "name":"spa",
+            "cat":"2",
+            "thumb":"http://sunspa.org.in/wp-content/uploads/2016/12/1dsp-20151222-beauty005-1.png",
+            "full":"http://sunspa.org.in/wp-content/uploads/2016/12/1dsp-20151222-beauty005-1.png"
+        },
+        {  
+            "name":"iphone ipad",
+            "cat":"2",
+            "thumb":"http://static1.squarespace.com/static/50f8adf1e4b0cc140526ef34/t/529eba85e4b03ec9dbc3802c/1386134157915/iphone-ipad-mini-2.png",
+            "full":"http://static1.squarespace.com/static/50f8adf1e4b0cc140526ef34/t/529eba85e4b03ec9dbc3802c/1386134157915/iphone-ipad-mini-2.png"
+        },
+        {  
+            "name":"ipad",
+            "cat":"2",
+            "thumb":"http://www.siconet.it/wp-content/uploads/2013/10/hero_ipadair_ipad_2013.png",
+            "full":"http://www.siconet.it/wp-content/uploads/2013/10/hero_ipadair_ipad_2013.png"
+        },
+
+
+        {  
+            "name":"temp",
+            "cat":"3",
+            "thumb":"images/temp336280_1.png",
+            "full":"images/temp336280_1.png"
+        },
+        {  
+            "name":"temp",
+            "cat":"3",
+            "thumb":"images/temp336280_2.png",
+            "full":"images/temp336280_2.png"
+        },
+        {  
+            "name":"temp",
+            "cat":"3",
+            "thumb":"images/temp336280_3.png",
+            "full":"images/temp336280_3.png"
+        },
+        {  
+            "name":"temp",
+            "cat":"3",
+            "thumb":"images/temp336280_4.png",
+            "full":"images/temp336280_4.png"
+        },{  
+            "name":"temp",
+            "cat":"3",
+            "thumb":"images/temp336280_5.png",
+            "full":"images/temp336280_5.png"
+        },
+        {  
+            "name":"temp",
+            "cat":"3",
+            "thumb":"images/temp336280_6.png",
+            "full":"images/temp336280_6.png"
+        },
+        {  
+            "name":"temp",
+            "cat":"3",
+            "thumb":"images/temp336280_7.png",
+            "full":"images/temp336280_7.png"
         }
    ]
 }
