@@ -5426,6 +5426,150 @@
                 }
             },
             {
+                "id": "1650",
+                "name": "Divine Phoenix Jakura",
+                "role": "ails_atked,ails_add,atk_down_atked,def_down_atked,atk_ailed,atk_ele,def_ele,rec_ele,ails,atk_down,def_down,drain",
+                "rolesp": "dot,bb_regen",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "6",
+                    "@dc": "48",
+                    "#text": "+60% HP|Atk|Rec / +250% BB Atk when HP > 50% / +5-10% HP drain / Null Ailments"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "0",
+                    "@dc": "0",
+                    "@cost": "18",
+                    "#text": "Fills 10 BC / 3 turn +15% IWS reflect / 3 turn +10% CPP reflect / 3 turn +15% IWS buff / 3 turn +10% CPP buff / 3 turn add 1 turn 20% Atk|Def Down reflect (30% chance) / 3 turn +200% Atk vs. status afflicted foes"
+                },
+                "sbb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "29",
+                    "#text": "14 hits 620% AoE (ATK +200) / 3 turn +120% ADR for Fire types / +75% Ailments / 1 turn 50% Atk|Def Down (30% chance) / 3 turn +4-6% HP Drain (50% chance)"
+                },
+                "ubb": {
+                    "@hit": "19",
+                    "@dc": "19",
+                    "@cost": "32",
+                    "#text": "19 hits 1800% AoE (ATK +200) / 3 turn +200% ADR for Fire types / +100% Ailments / 3 turn 80% Atk|Def Down / 3 turn +350% Atk vs. status afflicted foes"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "60% chance AI / Null Ailments / 130k Atk cap"
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_11097.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_11097.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> +30% HP/Atk | 20 : Enhance to +50% HP/Atk <span style='display:none'>(Prerequisite: *)</span> | 10 : +0-50% Atk/Rec relative to remaining HP | 10 : 4 BC/turn | 20 : 25% chance heal 15-20% damage | 20 : <span style='display:none'>(#)</span> Enhances SBB's Atk/Def Down effect | 10 : Enhances Atk/Def Down effect to 2 turns <span style='display:none'>(Prerequisite: #)</span> | 20 : Enhances BB's BC Fill (+2 BC) | 30 : Add Effect to BB/SBB (2 turn +500% DoT) | 40 : Add Effect to BB/SBB (3 turn +9 BC)"
+                }
+            },
+            {
+                "id": "1652",
+                "name": "Divine Wolf Ishnir",
+                "role": "atk,def,rec,atk_ele,def_ele,rec_ele,bb_mod,heal,bb_spark",
+                "rolesp": "spark_crit,crit,crit_dmg",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "+60% HP|Atk / +80% Atk|Def when HP > 50% / 2 turn +150% Spark after 10 Sparks / 2 turn +250% BB Atk after 10 Sparks"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "18",
+                    "@dc": "36",
+                    "@cost": "28",
+                    "#text": "18 hits 650% ST (ATK +200) / 3 turn +170% ADR / 3 turn +120% ADR for Water types / 3 turn +350% BB Atk / Heal 3500-4000 + 32.4% Rec"
+                },
+                "sbb": {
+                    "@hit": "24/16",
+                    "@dc": "24/16",
+                    "@cost": "26",
+                    "#text": "12 combo 800% ST (ATK +200) / 8 combo 800% ST (ATK +200) / 3 turn +170% ADR / 3 turn +120% ADR for Water types / 3 turn +350% BB Atk / 3 turn +2-3 BC on Spark"
+                },
+                "ubb": {
+                    "@hit": "26/18",
+                    "@dc": "26/18",
+                    "@cost": "32",
+                    "#text": "13 hits 2200% ST (ATK +200) / 9 hits 2200% ST (ATK +200) / 3 turn +350% ADR / 3 turn +200% ADR for Water types / 3 turn +600% BB Atk / 3 turn +350% Spark"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+0-60% ADR relative to remaining HP / +80% Spark / 130% Atk cap"
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_21007.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_21007.png"
+                },                
+                "sp": {
+                    "@list": "30 : +50% HP/Atk | 10 : <span style='display:none'>(*)</span> +100% Spark | 10 : Enhance to +120% Spark <span style='display:none'>(Prerequisite: *)</span> | 40 : Add Effect to BB/SBB (100% BC Fill) | 20 : Enhances BB/SBB's BB Atk (+100%) | 20 : Enhances BB/SBB's ADR (+10%) | 30 : <span style='display:none'>(#)</span> Add Effect to BB/SBB (3 turn 50% Spark Crit [30% chance]) | 10 : Enhances BB/SBB's Spark Crit (60% Spark Crit) <span style='display:none'>(Prerequisite: #)</span> | 30 : Add Effect to BB/SBB (3 turn 60% Crit) | 20 : Add Effect to BB/SBB (3 turn 75% Crit DMG)"
+                }
+            },
+            {
+                "id": "1654",
+                "name": "Divine Machine Bexdain",
+                "role": "convert_def,atk_ele,def_ele,rec_ele,bb_rate,bb_regen,convert_atk,bb_atked,spark_crit,bb_fill",
+                "rolesp": "barrier,bb_spark",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "14",
+                    "@dc": "42",
+                    "#text": "+60% HP|Def / 2 turn 50% Spark Crit (15% chance) after 10 BC / +7 BC Fill / Null Def Ignore"
+                },
+                "ls_raid": {
+                    "#text": ""
+                },
+                "bb": {
+                    "@hit": "36",
+                    "@dc": "36",
+                    "@cost": "8",
+                    "#text": "36 hits 420% AoE (ATK +200) / 3 turn +80% Atk -> Def / 3 turn +120% ADR for Thunder types / 3 turn +50% BB fill rate / 3 turn +7 BC Fill"
+                },
+                "sbb": {
+                    "@hit": "42",
+                    "@dc": "42",
+                    "@cost": "20",
+                    "#text": "42 hits 620% AoE (ATK +200) / 3 turn +80% DEF->ATK / 3 turn +120% ADR to Thunder / 3 turn 4-7 BC when hit / 3 turn +60% Spark crit (30% chance) / 8 BC fill"
+                },
+                "ubb": {
+                    "@hit": "46",
+                    "@dc": "46",
+                    "@cost": "32",
+                    "#text": "46 hits AoE (1800%) / 3 turn +250% DEF->ATK / 3 turn +250% ATK->DEF / 3 turn +200% ADR to Thunder / 3 turn +50 BC|turn / 3 turn +120% Spark Crit (50% chance)"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+50% Atk|Def when BB > 50% / +4 BC|turn / 130% Atk cap"
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_40947.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_40947.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> +30% HP/Def | 20 : Enhance to +50% HP/Def <span style='display:none'>(Prerequisite: *)</span> | 10 : +100% Spark | 10 : 25% chance heal 15-20% damage | 20 : Null EWD | 20 : Enhances BB's BB Fill (+2 BC) | 30 : <span style='display:none'>(#)</span> Add Effect to BB (Fill 8 BC) | 20 : Enhances BB/SBB's BB Fill (+2 BC) <span style='display:none'>(Prerequisite: #)</span> | 40 : Add Effect to BB/SBB (3000 HP Thunder Barrier) | 40 : Add Effect to BB/SBB (3 turn +2-3 BC on Spark)"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
