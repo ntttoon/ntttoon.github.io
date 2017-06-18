@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Brave Frontier</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:image" content="http://ntttoon.github.io/bravefrontier/images/fb_tier_a.jpg" />
+<meta property="og:title" content="Brave Frontier Units Tier List for Raid/Trials/GGC..." />
+<meta property="og:description" content="Click here to find out" />
+<link rel="stylesheet" href="../css/w3.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="../js/ga.js"></script>
+<script src="js/libs.js"></script>
+<style>
+a{
+	text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-teal w3-left-align">
+  <a class="w3-hover-white w3-hide-medium w3-hide-large w3-opennav w3-display-topright w3-bar-item" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="index.html" class="w3-hover-white w3-hide-small w3-bar-item"><i class="fa fa-home"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+    <div class="w3-bar-block w3-teal">
+      <a href="index.html" class=" w3-bar-item"><i class="fa fa-home"></i> Home</a>
+    </div>
+  </div>
+</div>
+<!-- end Navbar -->
+<script>
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+<div style="margin-top:40px;"></div>
+<h2 class="w3-center"><strong>Brave Frontier Units Tier List<br>Danh sách xếp hạng unit cho các content khó như: Trial/Raid/GGC..v..v.. </strong></h2>
+<h1 class="w3-center w3-text-red"><strong>SS Tier</strong></h1><div class="w3-medium w3-center">nhiều buff ngon, OP, nuker xịn</div>
+<div class="w3-red"> 
+	<div id="ss_placeholder"> </div>
+</div>
+<h1 class="w3-center w3-text-orange"><strong>S Tier</strong></h1><div class="w3-medium w3-center"> những unit quan trọng không kém SS, rất hữu dụng</div>
+<div class="w3-orange"> 
+	<div id="s_placeholder"> </div>
+</div>
+<h1 class="w3-center w3-text-blue"><strong>A Tier</strong></h1><div class="w3-medium w3-center"> những unit này dùng trong một vài content nhất định. Không ưu tiên up những unit này trừ khi cần. Ví dụ đi FG Light bị thiếu unit Light, Arena/Colosseum..v..v..</div>
+<div class="w3-blue"> 
+	<div id="a_placeholder"> </div>
+</div>
+<h1 class="w3-center w3-text-grey"><strong>B Tier</strong></h1><div class="w3-medium w3-center"> những unit này dễ dàng bị "đá" bởi các unit khác do buffs thấp, animation không ngon, bộ skill bb/sbb/ubb không tốt..v..v. nếu để sưu tầm, trưng kho thì được.</div>
+<div class="w3-grey"> 
+	<div id="b_placeholder"> </div>
+</div>
+
+<script>
+	var xmlhttp = new XMLHttpRequest();
+	var url = "data/units.json";
+	
+	xmlhttp.onreadystatechange=function() {
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			myFunction(xmlhttp.responseText);
+		}
+	}
+	xmlhttp.open("GET", url, true);
+	xmlhttp.send();
+	
+	var tier_ss = [8239,1633,1388,1558,1647,8296,1590,1591,8283];
+	var tier_s = [1494,1556,1625,8268,8280,1408,1492,1584,1652,8259,8288,1420,1443,1550,1566,1586,1612,1621,1627,8264,8255,1512,1574,1604,1654,8254,8270,1386,1398,1490,1588,1618,1636,8187,8234,8241,8284,8303,1518,1562,1639,8190,8237,8278,8290,8298,8306];
+	var tier_a = [1309,1418,1435,1506,1537,1570,1583,1610,1638,1664,1553,8201,8224,8261,1303,1351,1437,1449,1514,1548,1564,1572,1614,8243,8292,1376,1441,1454,1508,1554,8216,8252,8272,8300,1356,1440,1445,1451,1510,1540,1552,1622,1644,8228.8,8266,8245,8302,1306,1367,1381,1394,1439,1453,1455,1516,1522,1606,1646,1600,8199,8230,8192,1368,1399,1400,1498,1560,1623,1629,1637,1665,8250,8257,8281];
+	var tier_b = [1302,1387,1390,1458,1491,1520,1607,1650,8235,8275,1392,1402,1486,1511,1538,1602,1608,8276,1304,1396,1460,1488,1539,8249,1305,1404,1496,1568,1616,8263,8273,1561,8274,1307,1410,1447,1462,1524,1635,8208,8222,8232];
+	function myFunction(response) {
+		var arr = JSON.parse(response);
+		var i;
+		var out = "<ul class='w3-ul'><div class='w3-center'>";
+		var out2 = out;
+		var out3 = out;
+		var out4 = out;
+
+		var json_len = arr.brave.unit.length;
+		for(i = 0; i < tier_ss.length; i++) {
+			for(j = 0; j < json_len; j++) {
+				var id = arr.brave.unit[j].id;
+				var thumb = arr.brave.unit[j].thumb['@path'];
+				if(id == tier_ss[i]){
+					out+='<a href="unitinfo.html?id=' + id + '" target="_blank"> <img src="' + thumb + '" style="width:60px;margin-top:5px;"></a>';
+				}
+			}
+		}
+		out+="</ul></div>";
+		document.getElementById("ss_placeholder").innerHTML = out;
+		////////////////////
+		for(i = 0; i < tier_s.length; i++) {
+			for(j = 0; j < json_len; j++) {
+				var id = arr.brave.unit[j].id;
+				var thumb = arr.brave.unit[j].thumb['@path'];
+				if(id == tier_s[i]){
+					out2+='<a href="unitinfo.html?id=' + id + '" target="_blank"> <img src="' + thumb + '" style="width:60px;margin-top:5px;"></a>';
+				}
+			}
+		}
+		out2+="</ul></div>";
+		document.getElementById("s_placeholder").innerHTML = out2;
+		////////////////////
+		for(i = 0; i < tier_a.length; i++) {
+			for(j = 0; j < json_len; j++) {
+				var id = arr.brave.unit[j].id;
+				var thumb = arr.brave.unit[j].thumb['@path'];
+				if(id == tier_a[i]){
+					out3+='<a href="unitinfo.html?id=' + id + '" target="_blank"> <img src="' + thumb + '" style="width:60px;margin-top:5px;"></a>';
+				}
+			}
+		}
+		out3+="</ul></div>";
+		document.getElementById("a_placeholder").innerHTML = out3;
+		////////////////////
+		for(i = 0; i < tier_b.length; i++) {
+			for(j = 0; j < json_len; j++) {
+				var id = arr.brave.unit[j].id;
+				var thumb = arr.brave.unit[j].thumb['@path'];
+				if(id == tier_b[i]){
+					out4+='<a href="unitinfo.html?id=' + id + '" target="_blank"> <img src="' + thumb + '" style="width:60px;margin-top:5px;"></a>';
+				}
+			}
+		}
+		out4+="</ul></div>";
+		document.getElementById("b_placeholder").innerHTML = out4;
+	}
+
+</script>
+</body>
+</html>
