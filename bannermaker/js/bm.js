@@ -128,10 +128,12 @@ function openTxtEditor(n){
 	panelOpen('txtEditor');
 	var b = document.getElementById("textHolder" + n).innerHTML;
 	document.getElementById("content").value = b;
-	document.getElementById("execTxt").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addText(\'txt' + n + '\',\'btnTxt' + n + '\',\'destroyTxt' + n + '\',\'txtDestroyId' + n + '\',\'color' + n + '\',\'textHolder' + n + '\');panelClose(\'txtEditor\');">Thực hiện</button>';
+	var c = document.getElementById("textSize" + n).innerHTML;
+	document.getElementById("size").value = c;
+	document.getElementById("execTxt").innerHTML = '<button class="w3-btn w3-teal" style="width:100%" onClick="addText(\'txt' + n + '\',\'btnTxt' + n + '\',\'destroyTxt' + n + '\',\'txtDestroyId' + n + '\',\'color' + n + '\',\'textHolder' + n + '\',\'textSize' + n + '\');panelClose(\'txtEditor\');">Thực hiện</button>';
 }
 
-function addText(id,currBtnId,destroyBtnId,txtDestroyId,color,textHolder){
+function addText(id,currBtnId,destroyBtnId,txtDestroyId,color,textHolder,textSize){
 	var txt = document.getElementById("content").value;
 	var w = document.getElementById("widthContent").value;
 	//var h = document.getElementById("heightContent").value;
@@ -171,5 +173,6 @@ function addText(id,currBtnId,destroyBtnId,txtDestroyId,color,textHolder){
 		document.getElementById(currBtnId).innerHTML = '<i class="fa fa-file-o"></i>';
 		document.getElementById(destroyBtnId).innerHTML = "";
     }, false);
-	document.getElementById(textHolder).innerHTML = txt ;
+	document.getElementById(textHolder).innerHTML = txt;
+	document.getElementById(textSize).innerHTML = size;
 }
