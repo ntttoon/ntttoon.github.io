@@ -5612,7 +5612,7 @@
                     "@hit": "18",
                     "@dc": "18",
                     "@cost": "28",
-                    "#text": "18 hits 470% AoE (ATK +200) / 3 turn +120% ATK/DEF/REC to self / +15% HP to self / 3 turn +120% ATK|DEF|REC to Light"
+                    "#text": "18 hits 470% AoE (ATK +200) / 3 turn +120% ATK|DEF|REC to self / +15% HP to self / 3 turn +120% ATK|DEF|REC to Light"
                 },
                 "sbb": {
                     "@hit": "12/10",
