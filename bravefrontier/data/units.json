@@ -5642,6 +5642,147 @@
                 }
             },
             {
+                "id": "1671",
+                "name": "Arsom",
+                "role": "crit_res_down,ewd_res_down,spark_debuff,atk_down",
+                "rolesp": "spark,bb_spark",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "11",
+                    "@dc": "44",
+                    "#text": "+60% HP|ATK / 1 turn +20% mitigation after 15 Sparks / 2 turn +150% Spark after 10 Sparks / +2-3 BC on Spark",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "32/8",
+                    "@dc": "32/8",
+                    "@cost": "28",
+                    "#text": "32 hits 420% AoE (ATK +200) / 8 hits 600% RT (ATK +100) / 1 turn +15% CRIT|EWD Vulnerability (20% chance) / 2 turn +30% Spark Vulnerability (30% chance)"
+                },
+                "sbb": {
+                    "@hit": "35/10",
+                    "@dc": "35/10",
+                    "@cost": "29",
+                    "#text": "35 hits 620% AoE (ATK +200) / 10 hits 800% RT (ATK +100) / 1 turn +15% CRIT|EWD Vulnerability (20% chance) / 2 turn +30% Spark Vulnerability (30% chance) / 1 turn -50% ATK Down (30% chance)"
+                },
+                "ubb": {
+                    "@hit": "38/12",
+                    "@dc": "38/12",
+                    "@cost": "32",
+                    "#text": "38 hits 1800% AoE (ATK +200) / 12 hits 1300% RT (ATK +100) / 3 turn +30% CRIT|EWD Vulnerability / 3 turn +100% Spark Vulnerability (100% chance) / 3 turn +350% Spark"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "1 turn +20% mitigation after 20 Sparks / +80% Spark when HP is above 50%",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_21037.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_21037.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> +30% HP/ATK | 20 : +50% HP/ATK <span style='display:none'>(Prerequisite: *)</span> | 10 : <span style='display:none'>(#)</span> +100% Spark | 15 : +120% Spark <span style='display:none'>(Prerequisite: #)</span> | 20 : +2-3 BC on Spark | 10 : Raise Atk cap to 130,000 | 20 : Enhances BB/SBB's CRIT Vuln proc (+10% chance) | 20 : Enhances BB/SBB's EWD Vuln proc (+10% chance) | 40 : Add Effect to BB/SBB (3 turn +150% Spark) | 40 : Add Effect to BB/SBB (3 turn +2-3 BC on Spark)"
+                }
+            },
+            {
+                "id": "1673",
+                "name": "Receus",
+                "role": "null_ewd,hit,od_rate,od_regen,null_ails,spark_crit",
+                "rolesp": "aoe,atk,convert_atk",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "12",
+                    "@dc": "48",
+                    "#text": "+60% All Stats / +1 hit count (-50% damage) / Null EWD / +20% OD Fill Rate",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "27",
+                    "#text": "18 hits 420% AoE (ATK +200) / 1 turn Null EWD / 3 turn +2 hit count (+20% damage) / 3 turn +20% OD Fill Rate"
+                },
+                "sbb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "26",
+                    "#text": "22 hits 620% AoE (ATK +200) / 1 turn Null EWD / 3 turn +2 hit count (+20% damage) / 3 turn +400 OD at turn end / 3 turn Null Ailments / 3 turn +60% Spark Crit (30% chance)"
+                },
+                "ubb": {
+                    "@hit": "26",
+                    "@dc": "26",
+                    "@cost": "32",
+                    "#text": "26 hits 1800% AoE (ATK +200) / 3 turn +350% ATK / 3 turn +100% Heal when hit (100% chance) / 3 turn 98999-99999 HoT / 3 turn +50 BC Fill / 3 turn +3 hit count (+100% damage)"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+0-60% ADR relative to HP remaining / +1 hit count",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_51257.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_51257.png"
+                },                
+                "sp": {
+                    "@list": "25 : +50% All Stats | 20 : +1 hit count (+20% damage) | 20 : Null ADR Debuff | 20 : Null CRIT | 10 : Raise Atk Cap to 130,000 | 20 : Enhances BB/SBB's +Hit count damage (+20% damage) |30 : <span style='display:none'>(*)</span> Add Effect to BB/SBB (3 turn 100% chance Normal AoE) | 15 : Enhances BB/SBB's Normal AoE (+20% damage) <span style='display:none'>(Prerequisite: *)</span> | 25 : Add Effect to BB/SBB (3 turn +180% ATK) | 25 : Add Effect to BB/SBB (3 turn +80% DEF->ATK)"
+                }
+            },
+            {
+                "id": "1675",
+                "name": "Dick Reso",
+                "role": "bb_mod,ails,dot,atk_down,ails_atked",
+                "rolesp": "",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "+60% HP|ATK / +250% BB Atk / +20% IWS Reflect / +15% CPP reflect / +50% BB Fill Rate",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "4/14",
+                    "@dc": "4/14",
+                    "@cost": "16",
+                    "#text": "4 hits 420% ST (ATK +200) / 14 hits 600% AoE (ATK +200) / 3 turn +350% BB Atk / +75% Weak|Sick|Curse|Paralysis / 3 turn +500% DoT"
+                },
+                "sbb": {
+                    "@hit": "5/16",
+                    "@dc": "5/16",
+                    "@cost": "23",
+                    "#text": "5 hits 620% ST (ATK +200) / 16 hits 650% AoE (ATK +200) / 3 turn +350% BB Atk / 3 turn +500% DoT / 1 turn -50% ATK Down (30% chance) / 3 turn +15% IWS Reflect / 3 turn CPP reflect"
+                },
+                "ubb": {
+                    "@hit": "6/18",
+                    "@dc": "6/18",
+                    "@cost": "32",
+                    "#text": "6 hits 1800% ST (ATK +200) / 18 hits 2200% AoE (ATK +200) / 3 turn +600% BB Atk / 3 turn +1500% DoT / 3 turn -80% ATK Down / 3 turn +100% Reflect Ailments"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+150% BB Atk when HP is above 50% / 2 turn -50% BB Fill Rate to enemies (50% chance)",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_61197.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_61197.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> +30% HP/ATK | 15 : +50% HP/ATK <span style='display:none'>(Prerequisite: *)</span> | 20 : Ignore DEF (50% chance) | 20 : +2-3 BC on Hit | 10 : Raise ATK Cap to 130,000 | 50 : Angel Idol (70% chance) | 20 : Enhances ES's BB Fill Rate Down proc (+20% chance) | 25 : Enhances BB/SBB's BB Atk buff (+100%) | 25 : Enhances BB/SBB's DoT multiplier (+100%)"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
@@ -8593,7 +8734,7 @@
                     "#raid": "50% boost to Atk, Def when HP is over 50% / raises normal hit amount [+1] / boosts Earth elemental damage for all allies [25%]"
                 },
                 "art": {
-                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830288.png"
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830288_2.png"
                 },
                 "thumb": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_830288_2.png"
