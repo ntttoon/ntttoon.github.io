@@ -8789,6 +8789,53 @@
                 "sp": {
                     "@list": "10 : <span style='display:none'>(*)</span> 30% boost to Atk, max HP | 15 : Raises Atk, max HP boost from 30% to 50% <span style='display:none'>(Prerequisite: *)</span> | 15 : Allow BB's boost to Atk and Spark damage effects to last for 2 additional turns | 10 : Adds probable considerable Spark vulnerability for 2 turns effect to SBB (30% chance of 30% Spark debuff) | 20 : Adds fill own BB gauge to max effect to SBB | 20 : Adds huge boost to Atk for 3 turns effect to BB/SBB (180% boost) | 20 : Enhances SBB's enormous Spark damage boost effect (+20% Spark, 160% total) | 25 : Adds probable evasion for 1 turn effect to BB/SBB (12% chance) | 35 : <span style='display:none'>(#)</span> Adds probability of activating BB/SBB/UBB twice for 1 turn effect to SBB (15% chance) | 10 : Enhances success rate of activating BB/SBB/UBB twice for 1 turn effect to SBB (+5% chance, 20% total) <span style='display:none'>(Prerequisite: #)</span> | 30 : Adds massive OD gauge fill rate boost for 3 turns effect to UBB (300% OD gauge fill rate)"
                 }
+            },
+            {
+                "id": "8313",
+                "name": "Divine Rogue Hetepheres",
+                "role": "spark,atk_ele,def_ele,rec_ele,heal_spark,atk,def,rec,convert_atk,barrier",
+                "rolesp": "spark_debuff,spark_crit,convert_def",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "10",
+                    "#text": "100% boost to Atk, Def and 65% boost to max HP of Earth types / 140% boost to Spark damage / Spark damage restores HP (Heals 500~600 HP) / negates all status ailments",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "28",
+                    "#text": "14 combo powerful Earth attack on all foes / enormously boosts Spark damage for 3 turns [150%] / considerably boosts Atk, Def, Rec of Earth types for 3 turns [120%] / Spark damage considerably restores HP for 3 turns [heals 400-500 HP]"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "30",
+                    "#text": "18 combo powerful Earth attack on all foes (damage relative to remaining HP) / enormously boosts Spark damage for 3 turns [150%] / hugely boosts Atk, Def, Rec for 3 turns [170%] / hugely boosts Atk relative to Def [80%] / activates Earth barrier [3000 HP]"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "32",
+                    "#text": "22 combo powerful Earth attack on all foes (damage relative to remaining HP) / enormously boosts Spark damage for 3 turns [350%] / enormously boosts Atk, Def, Rec for 3 turns [350%] / enormous damage reduction for 2 turns [100%] / activates Earth barrier [30000 HP]"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "20% boost to all parameters of Earth types / 50% boost to Spark damage",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830358.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_830358.png"
+                },                
+                "sp": {
+                    "@list": "20 : 50% boost to max HP | 10 : Boosts Atk, Def when HP is over 50% (50% boost) | 20 : 100% boost to Spark damage | 20 : Boosts critical hit damage (75% crit dmg) | 10 : Raises Atk parameter limits to 130000 |10 : Adds probable Spark vulnerability infliction for 2 turns effect to BB/SBB (30% chance for 50% vulnerability) | 10 : Adds probable Spark critical for 3 turns effect to BB/SBB (30% chance Sparks deal 60% extra damage) | 20 : Enhances BB's Atk, Def, Rec boost of Earth types effect (+20% boost, 140% boost total) | 30 : Adds huge boost to Def relative to Atk for 3 turns effect to SBB (80% Atk to Def)"
+                }
             }
         ]
     }
