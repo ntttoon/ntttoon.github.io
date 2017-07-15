@@ -8773,7 +8773,7 @@
                     "@hit": "27",
                     "@dc": "27",
                     "@cost": "32",
-                    "#text": "27 combo massive Fire attack on all foes (500% + 1300% x [current HP / max base HP]) / enormously boosts BB Atk for 3 turns [600%] / enormously boosts Spark damage for 3 turns [350%] / enormously boosts Atk for 3 turns [400%] / enormously boosts critical hit rate for 3 turns [60%] / activates BB|SBB|UBB twice for 1 turn [100% chance of recast]"
+                    "#text": "27 combo massive Fire attack on all foes (500% + 1300% x [current HP | max base HP]) / enormously boosts BB Atk for 3 turns [600%] / enormously boosts Spark damage for 3 turns [350%] / enormously boosts Atk for 3 turns [400%] / enormously boosts critical hit rate for 3 turns [60%] / activates BB|SBB|UBB twice for 1 turn [100% chance of recast]"
                 },
                 "es": {
                     "@condtion": "None",
