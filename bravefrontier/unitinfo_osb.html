@@ -125,7 +125,8 @@
 				var es_raid_array = es_raid.split("/");
 				////////// out omni skill
 				out+='<li><img src="' + thumb + '" class="w3-left w3-margin-right" style="width:60px;"><h3>' + name + '</h3> <div class="w3-clear"></div></li>';
-				out+='<li><span id="sp">120/120 SP </span> <span id="reset_btn"></span> <span id="copy_btn"></span> <span id="copy_status"></span></li> ';
+				out+='<li id="li_sp_plus"><a id="sp_plus1" class="w3-btn w3-red w3-round w3-small">105 SP</a> <a id="sp_plus2" class="w3-btn w3-red w3-round w3-small">110 SP</a> <a id="sp_plus3" class="w3-btn w3-red w3-round w3-small">120 SP</a></li>'
+				out+='<li><span id="sp">100/100 SP </span> <span id="reset_btn"></span> <span id="copy_btn"></span> <span id="copy_status"></span></li> ';
 				for(j=0;j<sp_array.length;j++)
 				{
 					var sp_cost = sp_array[j].substring(0, sp_array[j].search(':'));
@@ -190,8 +191,27 @@
 		document.getElementById("placeholder2").innerHTML = out_side;
 		//////////////////////////////////////////////////////
 		var sLink = "http://ntttoon.github.io/bravefrontier/unitinfo_osb.html";
-		var temp_sp = 120;
-		var base_sp = 120;
+		var temp_sp = 100;
+		var base_sp = 100;
+		$( "#sp_plus1" ).bind( "click", function() {
+  			temp_sp = 105;
+			base_sp = 105;
+			$('#sp').text(temp_sp + '/' + base_sp + ' SP');
+			$('#li_sp_plus').remove();
+		});
+		$( "#sp_plus2" ).bind( "click", function() {
+  			temp_sp = 110;
+			base_sp = 110;
+			$('#sp').text(temp_sp + '/' + base_sp + ' SP');
+			$('#li_sp_plus').remove();
+		});
+		$( "#sp_plus3" ).bind( "click", function() {
+  			temp_sp = 120;
+			base_sp = 120;
+			$('#sp').text(temp_sp + '/' + base_sp + ' SP');
+			$('#li_sp_plus').remove();
+		});
+		
 		function updateCB() {
 			$('.w3-check').each(function() {
 				if($(this).val() > temp_sp){
@@ -214,6 +234,7 @@
 			
 			if(c == true){
 				temp_sp -= Number(v);
+				$('#li_sp_plus').remove();
 				$(this).parent('li').removeClass();
 				$(this).parent('li').addClass('w3-pale-yellow');
 				$(this).css("display", "none");
@@ -255,7 +276,7 @@
 					document.getElementsByClassName("w3-check").item(k).disabled = true;
 					document.getElementsByClassName("w3-check").item(k).parentElement.className += " w3-pale-yellow";
 					document.getElementsByClassName("w3-validate").item(k).className += " w3-text-teal";
-					$('#sp').text( remain_sp + "/120 SP");
+					$('#sp').text( remain_sp + "/100 SP");
 				}else{
 					document.getElementsByClassName("w3-check").item(k).disabled = true;
 				}
