@@ -276,7 +276,8 @@
 					document.getElementsByClassName("w3-check").item(k).disabled = true;
 					document.getElementsByClassName("w3-check").item(k).parentElement.className += " w3-pale-yellow";
 					document.getElementsByClassName("w3-validate").item(k).className += " w3-text-teal";
-					$('#sp').text( remain_sp + "/100 SP");
+					$('#sp').text( remain_sp + " SP");
+					$('#li_sp_plus').remove();
 				}else{
 					document.getElementsByClassName("w3-check").item(k).disabled = true;
 				}
