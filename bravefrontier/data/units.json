@@ -5783,6 +5783,147 @@
                 }
             },
             {
+                "id": "1676",
+                "name": "Claire",
+                "role": "spark,miti_guard,bb_guard,hot,convert_def,bc,hc",
+                "rolesp": "null_ails,cure",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "+80% ATK|DEF / +30% HP / +120% Spark / +10% guard mitigation / +8 BC Fill on Guard",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "25",
+                    "#text": "23 hits 360% AoE (ATK +200) / 3 turn +100% Spark / 3 turn +10% guard mitigation / 3 turn +8 BC Fill on Guard / 3 turn 2700-3200 + 18% REC"
+                },
+                "sbb": {
+                    "@hit": "34",
+                    "@dc": "34",
+                    "@cost": "26",
+                    "#text": "34 hits 560% AoE (ATK +200) / 3 turn +70% ATK->DEF / 3 turn +100% Spark / 3 turn +10% guard mitigation / 3 turn +8 BC Fill on Guard / 3 turn +35% BC|HC Drop Rate"
+                },
+                "ubb": {
+                    "@hit": "42",
+                    "@dc": "42",
+                    "@cost": "30",
+                    "#text": "42 hits 1500% AoE (ATK +200) / 3 turn +250% ATK->DEF / 3 turn +300% Spark / 3 turn +100% Spark Debuff (100% chance) / 3 turn +30% guard mitigation / 3 turn 98999-9999 HoT"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+80% Spark / 2 turn +100% ATK|DEF on Guard",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_10607.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_10607.png"
+                },                
+                "sp": {
+                    "@list": "20 : +30% HP/ATK | 10 : +50% ATK/DEF if BB Gauge >50% | 20 : +100% Spark | 20 : Null Def Ignore | 20 : Null CRIT | 20 : Enhances BB/SBB's Guard miti (+5%) | 20 : Enhances BB/SBB's BC Fill on Guard (+2 BC) | 30 : Enhances BB/SBB's Spark buff (+30%) | 30 : Add Effect to BB/SBB (3 turn Status Null) | 30 : Add Effect to BB/SBB (Status Cleanse)"
+                }
+            },
+            {
+                "id": "1677",
+                "name": "Colt",
+                "role": "crit,crit_dmg,bb_regen,spark_debuff,spark_crit",
+                "rolesp": "crit_res_down,bb_fill",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "+80% ATK|DEF / +30% HP / +175% Crit DMG / +8 BC on CRIT / 3 turn +2-3 BC on Spark after CRIT",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "25",
+                    "#text": "20 hits 360% AoE (ATK +200) / 3 turn +60% Crit / 3 turn +50% Crit DMG / 3 turn +7 BC Fill / 2 turn +30% Spark Debuff (30% chance)"
+                },
+                "sbb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "26",
+                    "#text": "22 hits 560% AoE (ATK +200) / 3 turn +60% Crit / 3 turn +50% Crit DMG / 3 turn +7 BC Fill / 2 turn +30% Spark Debuff (30% chance) / 3 turn +50% Spark Crit (20% chance)"
+                },
+                "ubb": {
+                    "@hit": "24",
+                    "@dc": "24",
+                    "@cost": "30",
+                    "#text": "24 hits 1500% AoE (ATK +200) / 3 turn +60% CRIT / 3 turn +300% CRIT DMG / 3 turn +50 BC Fill / 3 turn +100% BB Fill Rate / 3 turn +30% CRIT Debuff"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+100% Crit DMG / +8-10 BC on CRIT",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_20577.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_20577.png"
+                },                
+                "sp": {
+                    "@list": "20 : +30% HP/ATK | 10 : +50% ATK/DEF when HP >50% | 10 : <span style='display:none'>(*)</span> +40% CRIT DMG | 10 : Upgrade to +75% CRIT DMG <span style='display:none'>(Prerequisite: *)</span> | 20 : Enhances BB/SBB's BC Regen (+2 BC) | 20 : Enhances BB/SBB's Crit DMG (+25%) | 30 : Add Effect to BB/SBB (2 turn +15% CRIT Debuff [20% chance]) | 20 : Enhances SBB's Spark Crit (+10% chance) | 30 : <span style='display:none'>(#)</span> Add Effect to BB/SBB (+8 BC Fill) | 10 : Enhances BB/SBB's BC Fill (+2 BC) <span style='display:none'>(Prerequisite: #)</span>"
+                }
+            },
+            {
+                "id": "1678",
+                "name": "Lilly",
+                "role": "bb_regen,bb_atked,bb_spark,od_regen,od_fill,atk_down,def_down,atk_down_atked,def_down_atked,od_rate",
+                "rolesp": "spark,bb_mod,ewd",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "12",
+                    "@dc": "48",
+                    "#text": "+80% DEF / +40% HP / +5-8 BC on Hit / +2-4 BC on Spark / +20% OD Fill Rate",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "25",
+                    "#text": "+10 BC Fill / 3 turn +8 BC Fill / 3 turn +4-7 BC on Hit / 3 turn +2-3 BC on Spark / 3 turn +400 OD Fill / +8% OD Fill"
+                },
+                "sbb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "25",
+                    "#text": "+10 BC Fill / 2 turn -60% ATK|DEF Down (30% chance) / 3 turn -20% ATK|DEF Down reflect (10% chance) / 3 turn +4-7 BC on Hit / 3 turn +20% OD Fill Rate / +8% OD Fill"
+                },
+                "ubb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "30",
+                    "#text": "+999 BC Fill / 3 turn -80% ATK|DEF Down / 5 turn +50 BC Fill / 5 turn +1000 OD Fill at end of turn / +50% OD Fill"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+30% Stats when BB sphere is equipped / Null Ailments",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_60497.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_60497.png"
+                },                
+                "sp": {
+                    "@list": "20 : <span style='display:none'>(*)</span> +20% HP/DEF | 10 : Upgrade to +40% HP/DEF <span style='display:none'>(Prerequisite: *)</span> | 20 : +2-3 BC on Hit | 20 : +25-30% Heal when Hit (25% chance) | 10 : Null EWD | 20 : Enhances BB/SBB's BC Fill (+2 BC) | 20 : Enhances BB's BB Regen (+2 BC) | 30 : Add Effect to BB/SBB (3 turn +150% Spark) | 30 : Add Effect to BB/SBB (3 turn +450% BB Atk) | 30 : Add Effect to BB/SBB (3 turn +150% EWD)"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
@@ -6066,7 +6207,7 @@
             },
             {
                 "id": "1647",
-                "name": "Lucius",
+                "name": "Sacred God Lucius",
                 "role": "maxhp,bc,hc,bb_atked,bb_spark,null_crit,convert_atk,convert_def,convert_rec,add_ele,bb_rate,null_ewd",
                 "rolesp": "bb_fill,heal,cure,bb_mod,spark,miti_spark",
                 "element": "Light",
@@ -6108,7 +6249,7 @@
                     "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_51227.png"
                 },                
                 "sp": {
-                    "@list": "20 : +30% all stats | 10 : +100% Spark | 20 : Null Ailments | 10 : Raise Atk cap to 150k | 25 : Enhances BB's HP buff (+5%) | 30 : Add Effect to BB/SBB (4000-4500 + 15% Rec) | 30 : Add Effect to BB/SBB (Status Cure) | 35 : Add Effect to BB/SBB (3 turn 450% BB Atk) | 35 : Add Effect to BB/SBB (3 turn 150% Spark) | 30 : Add Effect to BB/SBB (1 turn 25% Spark miti)"
+                    "@list": "20 : 30% boost to all parameters | 10 : 100% boost to Spark damage | 20 : Negates all status ailments | 10 : Raises Atk parameter limit to 150000 | 25 : Enhances BB's HP boost effect (+5% boost. 20% boost total) | 30 : Adds great HP restoration when damage is dealt effect to BB/SBB (Heals 4000-4500 + 15% Rec) | 30 : Adds status ailment removal effect to BB/SBB | 35 : Adds huge BB Atk boost for 3 turns effect to BB/SBB (450% boost) | 35 : Adds enormous Spark damage boost for 3 turns effect to BB/SBB (150% boost) | 30 : Adds Spark damage reduction for 1 turn effect to BB/SBB (25% reduction)"
                 }
             },
             {
@@ -7853,38 +7994,38 @@
             {
                 "id": "8276",
                 "name": "Kula Diamond",
-                "role": "",
-                "rolesp": "",
+                "role": "bb_atked,def,barrier,convert_atk,null_crit,add_ele",
+                "rolesp": "ails_atked,cure",
                 "element": "Water",
                 "rarity": "8",
                 "cost": "48",
                 "ls": {
-                    "@hit": "",
-                    "@dc": "",
-                    "#text": "",
+                    "@hit": "12",
+                    "@dc": "48",
+                    "#text": "50% boost to Def, max HP / greatly boosts Def when damage dealt has exceeded certain amount [140% Def after 20,000 damage] / damage taken considerably boosts BB gauge [fills 4-7 BC] / restores HP each turn [heals 800-1000 + 10% Rec]",
                     "#raid": ""
                 },
                 "bb": {
-                    "@hit": "",
-                    "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "28",
+                    "#text": "15 combo powerful Water attack on all foes / damage taken considerably boosts BB gauge for 3 turns [Fills 5-7 BC] / hugely boosts Def for 3 turns [160% Def] / activates Water barrier [3000 HP barrier]"
                 },
                 "sbb": {
-                    "@hit": "",
-                    "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "23",
+                    "#text": "17 combo powerful Water attack on all foes / damage taken considerably boosts BB gauge for 3 turns [Fills 5-7 BC] / hugely boosts Def for 3 turns [160% Def] / considerably boosts Atk relative to Def for 3 turns [70% Def to Atk] / negates critical damage for 1 turn"
                 },
                 "ubb": {
-                    "@hit": "",
-                    "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "30",
+                    "#text": "21 combo massive Water attack on all foes / damage taken enormously boosts BB gauge for 3 turns [Fills 50 BC] / enormously boosts Atk, Def for 3 turns [300%] / enormously reduces damage taken for 1 turn [100%] / activates Water barrier [20,000 HP barrier]"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "",
+                    "#text": "Reduces damage taken for 2 turns when damage taken has exceeded certain amount [25% reduction after 5,000 damage ] / reduces BB gauge required for BB [20%] / adds Water element to BB|SBB for 3 turns",
                     "#raid": ""
                 },
                 "art": {
@@ -8835,6 +8976,53 @@
                 },                
                 "sp": {
                     "@list": "20 : 50% boost to max HP | 10 : Boosts Atk, Def when HP is over 50% (50% boost) | 20 : 100% boost to Spark damage | 20 : Boosts critical hit damage (75% crit dmg) | 10 : Raises Atk parameter limits to 130000 |10 : Adds probable Spark vulnerability infliction for 2 turns effect to BB/SBB (30% chance for 50% vulnerability) | 10 : Adds probable Spark critical for 3 turns effect to BB/SBB (30% chance Sparks deal 60% extra damage) | 20 : Enhances BB's Atk, Def, Rec boost of Earth types effect (+20% boost, 140% boost total) | 30 : Adds huge boost to Def relative to Atk for 3 turns effect to SBB (80% Atk to Def)"
+                }
+            },
+            {
+                "id": "8315",
+                "name": "Battle Admiral Laresa",
+                "role": "atk_ele,def_ele,rec_ele,crit_ele,heal,null_ails,bc,hc,bb_mod,convert_atk,convert_def,barrier",
+                "rolesp": "cure,bb_atked,miti_ele",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "54",
+                "ls": {
+                    "@hit": "17",
+                    "@dc": "51",
+                    "#text": "60% boost to Atk, max HP / damage taken boosts BB gauge [Fills 5-7 BC] / damage taken may restore HP [50% chance to heal 25% damage] / enormously boosts BB Atk when HP is above 50% [300% BB Atk]",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "30",
+                    "#text": "21 combo powerful Fire attack on all foes / greatly boosts Fire types' Atk, Def, Rec for 3 turns [130%] / enormously boosts Fire types' critical hit rate for 3 turns [60%] / greatly restores HP [heals 3500~4000 + 40% Rec HP] / negates all status ailments for 3 turns"
+                },
+                "sbb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "32",
+                    "#text": "25 combo powerful Fire attack on all foes / greatly boosts Fire types' Atk, Def, Rec for 3 turns [130%] / enormously boosts Fire types' critical hit rate for 3 turns [60%] / hugely boosts BC and HC drop rates for 3 turns [40%] / hugely boosts BB Atk for 3 turns [450%] / hugely boosts Atk, Def relative to Rec for 3 turns [80%] / greatly restores HP [heals 4000~4500 + 40% Rec HP]"
+                },
+                "ubb": {
+                    "@hit": "29",
+                    "@dc": "29",
+                    "@cost": "32",
+                    "#text": "29 combo massive Fire attack on all foes / enormously boosts BB Atk for 3 turns [600%] / enormously boosts Atk, Def relative to Rec for 3 turns [300%] / fully restores HP for 3 turns / hugely boosts max HP [40%]"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% boost to Atk of Fire types / negates all status ailments / adds Fire barrier effect to BB|SBB [3500 HP Barrier] / raises Atk parameter limits to 130000 ",
+                    "#raid": "50% boost to Rec of Fire types / adds 25 combo powerful Fire attack on Earth types effect to SBB [1100% damage modifier] / boosts Fire elemental damage for all allies in Guild Raid [25%]"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810288.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810288.png"
+                },                
+                "sp": {
+                    "@list": "10 : Atk, Def boost when BB gauge is over 50% (50% boost) | 15 : 30% boost to Def, Rec, max HP | 20 : Boosts critical hit damage (75% boost) | 20 : Considerably reduces BB gauge required for BB (25% reduction) | 15 : Boosts elemental damage (75% boost) | 10 : Adds status ailment removal effect to BB | 20 : Enhances BB/SBB's Atk, Def, Rec boost effects (+10% boost, 140% parameter boost total) | 20 : Enhances SBB's Atk, Def boost relative to Rec for 3 turns effect (+20% boost, 100% Rec to Atk/Def total) | 20 : Adds damage taken considerably boosts BB gauge for 3 turns effect to BB (Fills 4-7 BC) | 25 : Adds slight damage reduction from Fire, Earth types for 2 turns effect to BB/SBB (15% damage reduction) | 40 : Enhances SBB/UBB's BB Atk boost effect (+100% boost, 550% BB Atk on SBB total, 700% BB Atk on UBB total)"
                 }
             }
         ]
