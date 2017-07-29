@@ -5924,6 +5924,147 @@
                 }
             },
             {
+                "id": "1680",
+                "name": "Vaisal",
+                "role": "",
+                "rolesp": "idef,spark,bb_mod,add_ele",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "9",
+                    "@dc": "45",
+                    "#text": "+80% HP / +80% ADR based on HP remaining / +20% ADR|turn for 3 turns / +130% Spark damage",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "27",
+                    "#text": "16 hits AoE (470%) / +150% ATK|DEF|REC for self for 3 turns / +60% Crit rate to self for 3 turns / +80% Spark to self for 3 turns / +20% HP to self"
+                },
+                "sbb": {
+                    "@hit": "3",
+                    "@dc": "3",
+                    "@cost": "30",
+                    "#text": "3 hits AoE (200%, +700% based on HP remaining) / +150% ATK|DEF|REC for self for 3 turns / +60% Crit rate to self for 3 turns / +80% Spark to self for 3 turns / +20% HP to self / refills BB Gauge to max"
+                },
+                "ubb": {
+                    "@hit": "3",
+                    "@dc": "3",
+                    "@cost": "32",
+                    "#text": "3 hits AoE (+2200%) / +350% ATK|DEF|REC for 3 turns / +350% Spark damage for 3 turns / +600% BB Mod for 3 turns / 999 BC fill / +35% max HP"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+80% Spark damage and +150% BB Mod when HP > 50% / raise ATK cap to 150k",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_21047.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_21047.png"
+                },                
+                "sp": {
+                    "@list": "20 : <span style='display:none'>(*)</span> +40% Stats | 15 : +60% Stats <span style='display:none'>(Prerequisite: *)</span> | 10 : +20% ADR/turn to self for 3 turns | 20 : <span style='display:none'>(#)</span> +100% Spark damage | 10 : +130% Spark damage <span style='display:none'>(Prerequisite: #)</span> | 10 : +75% Crit damage | 15 : Add Ignore DEF for 2 turns on BB/SBB | 35 : Add +150% Spark damage for 3 turns on BB/SBB | 35 : Add +450% BB Mod for 3 turns on BB/SBB | 20 : Add Water/Earth elements to attack for 3 turns on BB/SBB"
+                }
+            },
+            {
+                "id": "1682",
+                "name": "Eliana",
+                "role": "heal,rec,convert_rec,heal_atked,miti_ele,hot,cure",
+                "rolesp": "convert_atk,convert_def",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "7",
+                    "@dc": "49",
+                    "#text": "+60% DEF|HP / +10% FWET mitigation / null Crits|EWD / 1200-1500 HoT (+10% REC)",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "28",
+                    "#text": "15 hits Water|Earth AoE (420%) / 4000-4500 burst Heal (+40% Healer REC) / +180% REC for 3 turns / +40% HP -> REC for 3 turns / 25-30% heal when hit (30% chance) for 3 turns / +10% FWET mitigation for 1 turn"
+                },
+                "sbb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "27",
+                    "#text": "17 hits Water|Earth AoE (620%) / 4000-4500 burst Heal (+40% Healer REC) / 3500-4000 HoT (+15% target REC) for 3 turns / 25-30% heal when hit (30% chance) for 3 turns / cure ailments|debuffs / +10% FWET mitigation for 1 turn"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "32",
+                    "#text": "22 hits Water|Earth AoE (1800%) / +350% REC for 5 turns / 250% REC -> ATK|DEF for 5 turns / 99999 HoT for 5 turns / null ailments for 5 turns / +100% elemental mitigation for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "-25% BB cost / null ailments / 4 BC|turn",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_30997.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_30997.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> +30% DEF/HP | 15 : 50% DEF/HP <span style='display:none'>(Prerequisite: *)</span> | 20 : 2-3 BC when hit | 20 : null Ignore DEF | 10 : Raise ATK cap to 130k | 20 : +1000-1000 burst Heal (+10% REC) on BB/SBB | 20 : +1000-1000 HoT (+10% REC) on SBB | 20 : Add cure ailments/debuffs to BB | 35 : Add +10% Light/Dark mitigation for 1 turn on BB/SBB | 35 : Add +80% REC -> ATK/DEF for 3 turns on BB/SBB"
+                }
+            },
+            {
+                "id": "1684",
+                "name": "Marlo",
+                "role": "bb_fill,atk,crit,idef,bb_rate",
+                "rolesp": "",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "+60% ATK|DEF|HP / +150% Crit damage / +50% BB fill rate / Ignore DEF (25% chance)",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "15",
+                    "#text": "14 hits AoE (420%) / +8 BC fill / +180% ATK for 3 turns / +60% Crit rate for 3 turns / Ignore Def for 2 turns"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "22",
+                    "#text": "18 hits AoE (620%) / +8 BC fill / +180% ATK for 3 turns / +60% Crit rate for 3 turns / +50% BB fill rate for 3 turns / Ignore Def for 2 turns"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "32",
+                    "#text": "22 hits AoE (1800%) / +350% ATK for 3 turns / +60% Crit rate for 3 turns / +250% DEF -> ATK for 3 turns / +350% Crit Damage for 3 turns / null Crits for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "3-4 BC when hit / null ailments / chance to reduce enemy's BB gauge",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_40977.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_40977.png"
+                },                
+                "sp": {
+                    "@list": "15 : +30% ATK/DEF/HP | 10 : +50% ATK/DEF when BB > 50% | 10 : 2-3 BC on Spark | 40 : 20% chance to AoE normal attack (-50% damage) | 15 : null Crits | 15 : null EWD | 10 : null Ignore DEF | 10 : Raise ATK cap to 130k | 50 : 70% chance to proc AI once | 30 : +2 BC fill on BB/SBB"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
