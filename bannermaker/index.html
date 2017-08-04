@@ -10,6 +10,13 @@
   <script src="../js/ga.js"></script>
   <script src="js/konva.min.js"></script>
   <style>
+  @font-face {
+		font-family: 'HLcomic1_normal';
+		src: url('fonts/HLcomic1_normal.eot');
+		src: local('☺'), url('fonts/HLcomic1_normal.woff') format('woff'), url('fonts/HLcomic1_normal.ttf') format('truetype'), url('fonts/HLcomic1_normal.svg') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
   .thumb{
 	  width:30px;
 	  height:23px;	 
@@ -94,7 +101,7 @@
 		out += '<span onclick="this.parentElement.style.display=\'none\'" class="w3-button w3-small w3-display-topright">&times;</span>';
 		out += '<div class="w3-half w3-container">';
 		out += '<p>Scale</p>';
-		out += '<input id="slider' + i + '_scale" type="range" min="0.1" max="2" step="0.1" value="1">';
+		out += '<input id="slider' + i + '_scale" type="range" min="0.01" max="2" step="0.01" value="1">';
 		out += '</div>';
 		out += '<div class="w3-half w3-container">';
 		out += '<p>Opacity</p>';
@@ -188,7 +195,7 @@
          </p>
          <p>
             <label>Font chữ - Nhập tên font chữ trên máy bạn đang có, ví dụ: Arial, Impact, Times New Roman ..v..v..</label>
-            <input class="w3-input w3-border" type="text" id="font" value="Arial">
+            <input class="w3-input w3-border" type="text" id="font" value="HLcomic1_normal">
         </p>
 		<p>
             <label>Kích thước chữ</label>

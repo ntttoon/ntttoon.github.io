@@ -9259,6 +9259,53 @@
                 "sp": {
                     "@list": "20 : <span style='display:none'>(*)</span> 40% boost to all parameters | 10 : Raises all parameter boost from 40% to 60% <span style='display:none'>(Prerequisite: *)</span> | 20 : Boosts critical hit damage (75% boost) | 15 : Boosts elemental damage (75% boost) | 10 : Damage taken boosts BB gauge (Fills 2-3 BC) | 20 : Adds fill own BB gauge to max to SBB | 20 : Enhances success rate of SBB's probable performance of 1 extra action within the same turn (+5% chance. 20% chance total) | 25 : Adds slight damage reduction from Fire, Water types for 2 turns effect to BB/SBB (15% reduction) | 30 : Enhances SBB's critical damage boost effect (+50% boost. 125% boost total) | 30 : Adds status ailment negation for 3 turns effect to BB/SBB | 35 : Adds huge BB Atk boost for 3 turns effect to BB/SBB (450% boost)"
                 }
+            },
+            {
+                "id": "8320",
+                "name": "Bad Lands Queen Gazolina",
+                "role": "null_crit,bb_atked,bc,hc,miti,bb_rate,bb_fill,cure,barrier",
+                "rolesp": "heal,idol",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "60% boost to Def | Rec | HP / 80% boost to Def and Rec when BB gauge is over 50% / boosts BB gauge by 10 BC each turn / damage taken boosts BB gauge by 4-7 BC",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "28",
+                    "#text": "14 combo 420% Water attack on all foes / negates critical damage for 1 turn / damage taken boosts BB gauge by 5-8 BC for 3 turns / 35% boost to BC | HC drop rate for 3 turns / 50% damage reduction for 2 turns"
+                },
+                "sbb": {
+                    "@hit": "27",
+                    "@dc": "27",
+                    "@cost": "25",
+                    "#text": "27 combo 620% Water attack on all foes / negates elemental damage for 1 turn / damage taken boosts BB gauge by 5-8 BC for 3 turns / 50% boost to BB gauge fill rate for 3 turns / 50% damage reduction for 2 turns / boosts BB gauge by 12 BC for 1 turn"
+                },
+                "ubb": {
+                    "@hit": "31",
+                    "@dc": "31",
+                    "@cost": "32",
+                    "#text": "31 combo 1800% Water attack on all foes / damage taken boosts BB gauge by 50 BC for 3 turns / 75% damage reduction for 3 turns / 400% boost to Rec for 3 turns / 300% boost to Atk and Def relative to Rec for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Adds status ailment removal effect to BB|SBB / adds 4000 HP Water barrier effect to BB|SBB / 25% boost to Def | Rec of Water types",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_720157.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_720157.png"
+                },                
+                "sp": {
+                    "@list": "20 : 30% boost to all parameters | 20 : Negates all status ailments | 10 : Damage taken boosts BB gauge (Fills 3-4 BC) | 10 : <span style='display:none'>(*)</span> Allows SBB's negate elemental damage effect to last 2 turns | 10 : Adds negate elemental damage for 2 turns to BB <span style='display:none'>(Prerequisite: *)</span> | 10 : <span style='display:none'>(#)</span> Allows BB's negate critical damage effect to last 2 turns | 10 : Adds negate critical damage for 2 turns to SBB <span style='display:none'>(Prerequisite: #)</span> | 30 : Adds great HP restoration effect to BB/SBB (Heals 3500-4000 HP) | 30 : Adds 15% chance to resist against 1 KO attack and restore 50% HP effect to BB/SBB | 30 : Adds 80% chance to resist against 1 KO attack and restore 100% HP effect to UBB"
+                }
             }
         ]
     }

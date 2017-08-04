@@ -12,6 +12,18 @@
             "thumb":"images/main_bg.jpg",
             "full":"images/main_bg.jpg"
         },
+        {  
+            "name":"brave frontier",
+            "cat":"1",
+            "thumb":"images/fgo1.jpg",
+            "full":"images/fgo1.jpg"
+        },
+        {  
+            "name":"brave frontier",
+            "cat":"1",
+            "thumb":"images/fgo2.jpg",
+            "full":"images/fgo2.jpg"
+        },
 
 
 
