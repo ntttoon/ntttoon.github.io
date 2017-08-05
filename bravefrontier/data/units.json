@@ -6394,6 +6394,53 @@
                 }
             },
             {
+                "id": "1689",
+                "name": "Alza Masta",
+                "role": "convert_atk,convert_def,bb_regen,miti_ele,atk_down,def_down,ewd,spark_debuff",
+                "rolesp": "atk_ele,def_ele,rec_ele,bb_spark,bb_atked,drain,heal_atked,cure,atk_down_atked,def_down_atked,ails",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "58",
+                "ls": {
+                    "@hit": "14",
+                    "@dc": "56",
+                    "#text": "+80% Stats / +15% elemental miti / 20% mitigation after 5000 damage taken / null ailments",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "28",
+                    "@dc": "28",
+                    "@cost": "12",
+                    "#text": "28 hits AoE (500%) / 90% DEF -> ATK / 90% ATK -> DEF / 8 BC|turn for 3 turns / +10% elemental miti for 1 turn"
+                },
+                "sbb": {
+                    "@hit": "28",
+                    "@dc": "28",
+                    "@cost": "14",
+                    "#text": "28 hits AoE (800%) / 8 hits RT (800%) / -60% ATK|DEF Down (30% chance) for 2 turns / 15% EWD vuln (20% chance) for 2 turns / 30% Spark debuff (30% chance) for 1 turn / +10% elemental miti for 1 turn"
+                },
+                "ubb": {
+                    "@hit": "40",
+                    "@dc": "40",
+                    "@cost": "34",
+                    "#text": "40 hits AoE (2500%) / 10 hits RT (1800%) / 80% AI proc (full HP) for 999 turns / 30% EWD vuln (100% chance) / 30% Crit vuln (100% chance) / +100% elemental miti for 3 turns / +40% max HP"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "3-4 BC when hit / 20-25% heal when hit (25% chance) / null ailments / raise ATK cap to 150k",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_61207.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_61207.png"
+                },                
+                "sp": {
+                    "@list": "20 : +60% Stats | 10 : +80% ADR when BB > 50% | 10 : +120% Spark | 20 : null Crit/EWD | 30 : +10% elemental mit (to self) | 30 : +5% ele mit on BB/SBB | 20 : Add +120% ATK/DEF/REC for Fire/Earth/Light units for 3 turns on BB/SBB | 20 : Add +120% ATK/DEF/REC for Water/Thunder/Dark units for 3 turns on BB/SBB | 30 : Add 2-3 BC on Spark for 3 turns on BB | 30 : Add 4-7 BC when hit for 3 turns on BB | 20 : Add 5-8% HP drain (50% chance) for 3 turns on BB/SBB | 30 : Add 30-35% heal when hit (30% chance) for 3 turns on BB/SBB | 20 : Add cure ailments/debuffs on BB/SBB | 30 : Add -20% ATK/DEF Down (20% chance) when hit for 3 turns on SBB | 30 : Add +75% each ailment proc on SBB"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 GLOBAL EX UNITS \u2605\u2605\u2605",
                 "role": "",
