@@ -9353,6 +9353,53 @@
                 "sp": {
                     "@list": "20 : 30% boost to all parameters | 20 : Negates all status ailments | 10 : Damage taken boosts BB gauge (Fills 3-4 BC) | 10 : <span style='display:none'>(*)</span> Allows SBB's negate elemental damage effect to last 2 turns | 10 : Adds negate elemental damage for 2 turns to BB <span style='display:none'>(Prerequisite: *)</span> | 10 : <span style='display:none'>(#)</span> Allows BB's negate critical damage effect to last 2 turns | 10 : Adds negate critical damage for 2 turns to SBB <span style='display:none'>(Prerequisite: #)</span> | 30 : Adds great HP restoration effect to BB/SBB (Heals 3500-4000 HP) | 30 : Adds 15% chance to resist against 1 KO attack and restore 50% HP effect to BB/SBB | 30 : Adds 80% chance to resist against 1 KO attack and restore 100% HP effect to UBB"
                 }
+            },
+            {
+                "id": "8322",
+                "name": "Dusk Star Khepratum",
+                "role": "miti,atk_down,def_down,dot,bb_spark,heal,miti_dot",
+                "rolesp": "LS_bb_reduce,null_ewd,cure,miti_ele,null_crit",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "15",
+                    "@dc": "45",
+                    "#text": "65% boost to Atk | Def and max HP of Thunder types / Spark damage boosts BB gauge by 2-3 BC / reduces damage taken by 20% for 1 turn when HP is below 50% / reduces BB gauge required by 25% for BB",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "28",
+                    "#text": "18 combo 420% Thunder attack on all foes / 50% damage reduction for 2 turns / 30% chance for 1 turn Atk | Def reduction by 50% / adds 500% attack at turn's end for 3 turns"
+                },
+                "sbb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "30",
+                    "#text": "21 combo 620% Thunder attack on all foes / 50% damage reduction for 2 turns / 30% chance for 1 turn Atk | Def reduction by 50% / Spark damage boosts BB gauge by 2-3 BC for 3 turns / restores 4000-4500 HP / additional damage reduction by 15% for 3 turns [15% DoT mitigation]"
+                },
+                "ubb": {
+                    "@hit": "24",
+                    "@dc": "24",
+                    "@cost": "32",
+                    "#text": "24 combo 1800% Thunder attack on all foes / Spark damage boosts BB gauge by 5-8 BC for 3 turns / fully restores HP for 3 turns / 40% boosts to max HP / additional damage reduction by 50% for 3 turns [50% DoT mitigation]"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "20% boost to all parameters of Thunder types / adds resistance against 1 KO attack when HP is below 20% / negates all status ailments",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840358.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_840358.png"
+                },                
+                "sp": {
+                    "@list": "20 : <span style='display:none'>(*)</span> 30% boost to all parameters | 15 : Raises all parameter boost from 30% to 50% <span style='display:none'>(Prerequisite: *)</span> | 10 : Boost BB gauge by 4 BC each turn | 20 : Negates Def ignoring damage | 5 : Add elemental damage mitigation for 2 turns effect to BB/SBB | 10 : Adds status ailment removal effect to BB/SBB | 20 : <span style='display:none'>(#)</span> Enhances success rate of BB/SBB's Atk and Def reduction effect by 10% (40% chance total) | 10 : Allows BB/SBB's Atk and Def reduction effects to last for 2 turns <span style='display:none'>(Prerequisite: #)</span> | 25 : Adds 15% Water & Thunder damage reduction for 2 turns effect to BB/SBB | 35 : Adds critical damage negation for 2 turns effect to BB/SBB"
+                }
             }
         ]
     }
