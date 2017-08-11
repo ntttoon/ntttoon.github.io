@@ -9400,6 +9400,53 @@
                 "sp": {
                     "@list": "20 : <span style='display:none'>(*)</span> 30% boost to all parameters | 15 : Raises all parameter boost from 30% to 50% <span style='display:none'>(Prerequisite: *)</span> | 10 : Boost BB gauge by 4 BC each turn | 20 : Negates Def ignoring damage | 5 : Add elemental damage mitigation for 2 turns effect to BB/SBB | 10 : Adds status ailment removal effect to BB/SBB | 20 : <span style='display:none'>(#)</span> Enhances success rate of BB/SBB's Atk and Def reduction effect by 10% (40% chance total) | 10 : Allows BB/SBB's Atk and Def reduction effects to last for 2 turns <span style='display:none'>(Prerequisite: #)</span> | 25 : Adds 15% Water & Thunder damage reduction for 2 turns effect to BB/SBB | 35 : Adds critical damage negation for 2 turns effect to BB/SBB"
                 }
+            },
+            {
+                "id": "8323",
+                "name": "Ezra",
+                "role": "idef",
+                "rolesp": "od_regen,bc,hc",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "54",
+                "ls": {
+                    "@hit": "20",
+                    "@dc": "60",
+                    "#text": "100% boost to all parameters when 5 elements or more are present / 30% reduction to BB cost / negates critical and elemental damage / raises Atk parameter limits to 130000",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "35",
+                    "#text": "25 combo 450% Light|Dark|Earth|Fire attack on all foes / 20% boost to own max HP / 150% boost to own Atk|Def|Rec for 5 turns / adds Def ignoring effect to own attack for 5 turns"
+                },
+                "sbb": {
+                    "@hit": "16/13",
+                    "@dc": "16/13",
+                    "@cost": "30",
+                    "#text": "16 combo 300-1000% Light attack on all foes (damage relative to remaining HP) / 13 combo 1000% Light attack on single foe / adds all elements to own attack for 1 turn / negates critical and elemental and Spark damage to self for 1 turn"
+                },
+                "ubb": {
+                    "@hit": "35",
+                    "@dc": "35",
+                    "@cost": "35",
+                    "#text": "35 combo 1500-2800% Light attack on all foes (damage relative to remaining HP) / 50% boost to OD gauge / 250% boost to own Atk|Def|Rec for 5 turns / 50% boost to Atk|Def|Rec relative to max HP for 5 turns / performs 1 extra action within the same turn for 5 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "20% boost to all parameters for all allies when Ortus is equipped / 50% boost to all parameters for self when Ima is equipped / resistance against 1 KO attack when both Ortus and Ima are equipped",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850328.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850328.png"
+                },                
+                "sp": {
+                    "@list": "10 : 150% boost to Spark damage | 10 : 100% boost to critical hit damage | 10 : 60% boost to critical hit rate | 10 : 100% boost to elemental damage | 10 : 100% boost to damage against status afflicted foes | 50 : 300% boost to normal attack hit amount (+3 to each normal hit) | 40 : 50% reduction to BB cost | 20 : 100% boost to BC & HC drop rate | 20 : 25% chance of reducing damage taken to 1 | 20 : 100% boost to OD gauge fill rate | 10 : Raises Atk parameter limits to 150000 | 70 : Adds 2% boost to OD gauge per ally in Squad effect to SBB (10% OD fill max) | 20 : Adds 50% boost to BC, HC drop rate & 10% boost to Items drop rate for 5 turns effect to BB | 40 : Allows UBB self-buff effects to last for 10 turns"
+                }
             }
         ]
     }
