@@ -6065,6 +6065,147 @@
                 }
             },
             {
+                "id": "1691",
+                "name": "Amus",
+                "role": "miti,def,rec,heal,bb_rate,convert_def,convert_rec,cure",
+                "rolesp": "hot,heal_atked",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "+60% DEF|HP / +20% mitigation after taking 5k damage / +20% mitigation (20% chance) / +50% BB fill rate",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "24",
+                    "#text": "14 hits AoE (390%) / +50% mitigation for 1 turn / +180% DEF|REC for 3 turns / 4000-4500 burst Heal (+32.4% healer REC) / cure ailments|debuffs"
+                },
+                "sbb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "22",
+                    "#text": "17 hits AoE (540%) / +50% mitigation for 1 turn / +80% ATK->DEF|REC for 3 turns / 4000-4500 burst Heal (+32.4% healer REC) / cure ailments|debuffs"
+                },
+                "ubb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "32",
+                    "#text": "21 hits AoE (1600%) / +75% mitigation for 3 turns / +250% ATK->DEF|REC for 3 turns / 50 BC when hit for 3 turns / 100% heal when hit (100% chance) for 3 turns / +250% OD fill rate for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+20% mitigation after taking 5k damage / 20-25% heal whe hit (25% chance)",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_11117.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_11117.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> 30% HP/DEF | 10 : 50% HP/DEF​ <span style='display:none'>(Prerequisite: *)</span> | 20 : -10% BB cost | 20 : 2-3 BC when hit | 10 : null ailments | 20 : null Crits | 20 : null EWD | 20 : 2-turn miti | 30 : Add 3500-4000 HoT (+15% target REC) for 3 turns | 30 : Add 25-30% heal when hit (25% chance) for 3 turns"
+                }
+            },
+            {
+                "id": "1693",
+                "name": "Segurd",
+                "role": "null_crit,null_ewd,miti_spark,miti_dot,null_ails",
+                "rolesp": "def,convert_def,miti_guard,bb_guard",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "8",
+                    "@dc": "48",
+                    "#text": "+60% Stats / +0-60% ADR based on HP remaining / +10% Guard miti / null Ignore DEF",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "28",
+                    "#text": "16 hits AoE (420%) / null Crit|EWD for 1 turn / +25% Spark resist for 1 turn / +10% DoT resist for 1 turn"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "30",
+                    "#text": "18 hits AoE (620%) / null Crit|EWD for 1 turn / +25% Spark resist for 1 turn / +10% DoT resist for 1 turn / null ailments for 3 turns"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "32",
+                    "#text": "20 hits AoE (1800%) / null Crit|EWD for 5 turns / +50% Spark resist for 5 turns / +50% DoT resist for 5 turns / +100% ele miti for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+20% DEF|turn for 5 turns (max 100%) / null Ignore DEF",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_51277.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_51277.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> +40% Stats | 20 : +60% Stats​ <span style='display:none'>(Prerequisite: *)</span> | 20 : 2-3 BC when hit | 20 : 20-25% heal when hit (25% chance) | 20 : +25% Spark resist on BB/SBB | 20 : +10% DoT resist on BB/SBB | 30 : Add +180% DEF for 3 turns on BB/SBB | 30 : Add 35% HP->DEF for 3 turns on BB/SBB | 30 : Add +10% Guard mitigation for 3 turns on BB/SBB | 20 : Add 8 BC on Guard for 3 turns on BB/SBB"
+                }
+            },
+            {
+                "id": "1695",
+                "name": "Neville",
+                "role": "atk,convert_atk,spark,atk_down,def_down",
+                "rolesp": "ewd,atk_ailed,ails,spark_debuff",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "12",
+                    "@dc": "48",
+                    "#text": "+60% ATK|HP / +130% Spark damage / +125% EWD / +120% ATK against ailed enemies",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "29",
+                    "#text": "16 hits AoE (470%) / +180% ATK for 3 turns / +80% DEF->ATK for 3 turns / +130% Spark damage for 3 turns / -50% ATK|DEF Down (30% chance) for 1 turn"
+                },
+                "sbb": {
+                    "@hit": "13",
+                    "@dc": "13",
+                    "@cost": "28",
+                    "#text": "13 hits AoE (850%) / 7 hits ST (650%) / +180% ATK for 3 turns / +80% DEF->ATK for 3 turns / +130% Spark damage for 3 turns / -50% ATK|DEF Down (30% chance) for 1 turn"
+                },
+                "ubb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "32",
+                    "#text": "14 hits AoE (2000%) / 10 hits ST (2200%) / +350% ATK for 3 turns / +250% DEF->ATK for 3 turns / +350% Spark damage for 3 turns / -80% ATK|DEF Down (100% chance) for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+100% ATK against ailed enemies / +75% Dark EWD",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_61217.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_61217.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> +30% ATK/HP | 10 : +50% ATK/HP​ <span style='display:none'>(Prerequisite: *)</span> | 20 : +120% Spark damage | 10 : +50% EWD | 10 : Raise ATK cap to 130k | 20 : +20% Spark damage to BB/SBB (up to 150%) | 40 : Add +125% EWD for 3 turns on BB/SBB | 20 : Add +180% ATK against ailed enemies for 3 turns on BB/SBB | 30 : Add +75% each ailment proc on BB/SBB | 30 : Add +30% Spark debuff (30% chance) for 1 turn on BB/SBB"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
