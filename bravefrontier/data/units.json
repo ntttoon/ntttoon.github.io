@@ -5314,7 +5314,7 @@
             },
             {
                 "id": "1650",
-                "name": "Divine Phoenix Jakura",
+                "name": "Sacred Ashes Jakra",
                 "role": "ails_atked,ails_add,atk_down_atked,def_down_atked,atk_ailed,atk_ele,def_ele,rec_ele,ails,atk_down,def_down,drain",
                 "rolesp": "dot,bb_regen",
                 "element": "Fire",
@@ -5361,7 +5361,7 @@
             },
             {
                 "id": "1652",
-                "name": "Divine Wolf Ishnir",
+                "name": "Sacred Judge Isniel",
                 "role": "atk,def,rec,atk_ele,def_ele,rec_ele,bb_mod,heal,bb_spark",
                 "rolesp": "spark_crit,crit,crit_dmg",
                 "element": "Water",
@@ -5408,7 +5408,7 @@
             },
             {
                 "id": "1654",
-                "name": "Divine Machine Bexdain",
+                "name": "Sacred Shift Becstain",
                 "role": "convert_def,atk_ele,def_ele,rec_ele,bb_rate,bb_regen,convert_atk,bb_atked,spark_crit,bb_fill",
                 "rolesp": "barrier,bb_spark",
                 "element": "Thunder",
@@ -5455,7 +5455,7 @@
             },
             {
                 "id": "1664",
-                "name": "Michele",
+                "name": "Vesta Padma Michele",
                 "role": "atk,crit,add_ele,crit_dmg,spark,convert_atk",
                 "rolesp": "spark_crit,bb_spark",
                 "element": "Fire",
@@ -5502,7 +5502,7 @@
             },
             {
                 "id": "1665",
-                "name": "ＤＵＥＬ‐ＦＧＸＶＭ",
+                "name": "DUEL-FGXVM",
                 "role": "crit,add_ele,crit_dmg,bb_mod,bb_fill,crit_res_down,atk_down",
                 "rolesp": "crit_dmg,def,convert_def,null_stats,null_crit",
                 "element": "Dark",
