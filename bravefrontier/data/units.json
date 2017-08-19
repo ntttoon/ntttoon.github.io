@@ -5549,7 +5549,7 @@
             },
             {
                 "id": "1667",
-                "name": "Divine Golem",
+                "name": "Divine Armor",
                 "role": "def,null_crit,null_ewd,atk_ele,def_ele,rec_ele,miti_spark,miti_dot,null_ails",
                 "rolesp": "convert_def,barrier",
                 "element": "Earth",
@@ -5596,7 +5596,7 @@
             },
             {
                 "id": "1669",
-                "name": "Divine Dragon",
+                "name": "Sacred Purpose Lukroar",
                 "role": "atk_ele,def_ele,rec_ele,spark,ewd",
                 "rolesp": "LS_miti_ele,convert_atk,convert_def,spark_debuff",
                 "element": "Light",
@@ -6203,6 +6203,147 @@
                 },                
                 "sp": {
                     "@list": "10 : <span style='display:none'>(*)</span> +30% ATK/HP | 10 : +50% ATK/HP​ <span style='display:none'>(Prerequisite: *)</span> | 20 : +120% Spark damage | 10 : +50% EWD | 10 : Raise ATK cap to 130k | 20 : +20% Spark damage to BB/SBB (up to 150%) | 40 : Add +125% EWD for 3 turns on BB/SBB | 20 : Add +180% ATK against ailed enemies for 3 turns on BB/SBB | 30 : Add +75% each ailment proc on BB/SBB | 30 : Add +30% Spark debuff (30% chance) for 1 turn on BB/SBB"
+                }
+            },
+            {
+                "id": "1696",
+                "name": "Ruby",
+                "role": "convert_atk,hit,atk_down_add,atk_down",
+                "rolesp": "aoe,atk,rec,bc,hc",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "14",
+                    "@dc": "42",
+                    "#text": "+50% HP|ATK|REC / +1 hit count (-50% DMG) / +70% BC Drop Rate on Spark / +30% HC Drop Rate on Spark / +2-3 BC on Spark",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "20/4",
+                    "@dc": "20/4",
+                    "@cost": "26",
+                    "#text": "20 hits 360% AoE (ATK +200) / 4 hits 600% RT (ATK +100) / 3 turn +70% REC->ATK / 3 turn +1 hit count / 3 turn add -20% ATK Down (20% chance) to attack"
+                },
+                "sbb": {
+                    "@hit": "36/6",
+                    "@dc": "36/6",
+                    "@cost": "26",
+                    "#text": "36 hits 560% AoE (ATK +200) / 6 hits 750% RT (ATK +100) / 3 turn +70% REC->ATK / 3 turn +1 hit count / 3 turn add -20% ATK Down (20% chance) to attack / 1 turn -50% ATK Down (30% chance)"
+                },
+                "ubb": {
+                    "@hit": "35/5",
+                    "@dc": "35/5",
+                    "@cost": "32",
+                    "#text": "35 hits 1500% AoE (ATK +200) / 5 hits 1300% RT (ATK +100) / 3 turn +250% REC->ATK / 3 turn +300% Spark / 3 turn +3 hit count (+100% DMG) / 3 turn -80% ATK Down"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+1 hit count / +20% BC/HC Drop Rate",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_10647.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_10647.png"
+                },                
+                "sp": {
+                    "@list": "20 : +30% HP/ATK/REC | 10 : +50% ATK/DEF when HP > 50% | 10 : +80% Spark | 20 : +1 hit count (+20% DMG) | 10 : Raise ATK Cap to 130000 | 20 : Enhances BB/SBB's Hit Count buff (+1 hit & +20% DMG) | 30 : Add Effect to BB/SBB (3 turn AoE Normals) | 10 : Enhances BB/SBB's AoE Normals (+20% DMG) | 30 : Add Effect to BB/SBB (3 turn +170% ATK/REC) | 30 : Add Effect to BB/SBB (3 turn +35% BC/HC Drop Rate)"
+                }
+            },
+            {
+                "id": "1697",
+                "name": "Sefia",
+                "role": "spark,bb_mod,bb_fill,bb_regen",
+                "rolesp": "",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "15",
+                    "@dc": "45",
+                    "#text": "+100% ATK|+30% HP to Light types / +30% HP / +50% ATK / +50% BB Fill Rate / +250% BB ATK",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "16/4",
+                    "@dc": "16/4",
+                    "@cost": "26",
+                    "#text": "16 hits 360% AoE (ATK +200) / 4 hits 360% AoE on Dark types (ATK +200) / 3 turn +130% Spark / 3 turn +350% BB Atk / Fill 8 BC"
+                },
+                "sbb": {
+                    "@hit": "18/5",
+                    "@dc": "18/5",
+                    "@cost": "30",
+                    "#text": "18 hits 200-900% AoE (ATK +200) / 5 hits 560% AoE on Dark types (ATK +200) / 3 turn +130% Spark / 3 turn +350% BB Atk / Fill 8 BC / 3 turn Fill 8 BC"
+                },
+                "ubb": {
+                    "@hit": "20/8",
+                    "@dc": "20/8",
+                    "@cost": "32",
+                    "#text": "20 hits 1500% AoE (ATK +200) / 8 hits 1500% AoE on Dark types (ATK +200) / 3 turn +350% ATK / 3 turn +3 hit count (+100% DMG) / 3 turn -80% ATK|DEF Down / Fill 999 BC"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+50% ATK when HP > 50% / +150% BB ATK / +4 BC|turn",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_50167.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_50167.png"
+                },                
+                "sp": {
+                    "@list": "10 : +30% HP/ATK | 10 : +50% ATK/DEF when HP > 50% | 20 : +100% Spark | 20 : Null CRIT | 20 : Null EWD | 10 : Raise ATK Cap to 130000 | 50 : 70% chance Angel Idol | 10 : +20% chance to activate BB/SBB | 20 : Enhances SBB's BC/turn (+2 BC) | 20 : Enhances BB/SBB's BB Atk (+100%)"
+                }
+            },
+            {
+                "id": "1698",
+                "name": "Kikuri",
+                "role": "ails,dot,bb_atked",
+                "rolesp": "ewd",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "17",
+                    "@dc": "34",
+                    "#text": "+100% ATK|+30% HP to Dark types / +30% HP / +50% ATK / +50% BB Fill Rate / -20% BB Cost",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "14/6",
+                    "@dc": "14/6",
+                    "@cost": "26",
+                    "#text": "14 hits 360% AoE (ATK +200) / 6 hits 360% AoE on Light types (ATK +200) / +75% chance Ailments / 3 turn +500% DoT"
+                },
+                "sbb": {
+                    "@hit": "16/8",
+                    "@dc": "16/8",
+                    "@cost": "30",
+                    "#text": "16 hits 200-900% AoE (ATK +200) / 8 hits 560% AoE on Light types (ATK +200) / +75% chance Ailments / 3 turn +500% DoT / 3 turn +5-8 BC on Hit"
+                },
+                "ubb": {
+                    "@hit": "18/9",
+                    "@dc": "18/9",
+                    "@cost": "32",
+                    "#text": "18 hits 1500% AoE (ATK +200) / 9 hits 1500% AoE on Light types (ATK +200) / 3 turn +350% ATK / 3 turn +250% DEF->ATK / 3 turn +1500% DoT / 3 turn +50 BC on Hit"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+50% ATK when BB Gauge > 50% / +8% CPP / +10% IWS / +25% DMG Reflect (20% chance)",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_60177.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_60177.png"
+                },                
+                "sp": {
+                    "@list": "10 : +30% HP/ATK | 10 : +50% ATK/DEF when BB Gauge > 50% | 20 : +100% Spark | 10 : +10% CPP Reflect, +12% IWS Reflect | 10 : Raise ATK Cap to 130000 | 50 : 70% chance Angel Idol | 10 : 2 turn -50% BB Fill Rate (30% chance) | 10 : Enhances ES's DMG Reflect (+20% chance & +10% effect) | 20 : Enhances BB/SBB's DoT (+100%) | 40 : Add Effect to BB/SBB (3 turn +150% EWD)"
                 }
             },
             {
