@@ -4984,100 +4984,6 @@
                 }
             },
             {
-                "id": "1638",
-                "name": "Callow Flame Owen",
-                "role": "atk,def,crit,ails,crit_dmg,atk_down,def_down,convert_atk,bb_mod",
-                "rolesp": "atk_ailed,spark",
-                "element": "Fire",
-                "rarity": "8",
-                "cost": "54",
-                "ls": {
-                    "@hit": "17",
-                    "@dc": "51",
-                    "#text": "+60% All Stats / +300% BB Mod / +200% Crit Damage / 8-10 BC On Crit",
-                    "#raid": ""
-                },
-                "bb": {
-                    "@hit": "17/1",
-                    "@dc": "",
-                    "@cost": "26",
-                    "#text": "17 Hits 470% AoE (ATK+200) / 600% ST (ATK+200) /3 turn +180% ATK DEF / 3 turn +60% crit rate / 80% Injury Weaken / 3 turn +75% Crit Dmg / -50% ATK DEF {30%} for 1 turn"
-                },
-                "sbb": {
-                    "@hit": "20/1",
-                    "@dc": "",
-                    "@cost": "28",
-                    "#text": "20 Hits 600% AoE (ATK+200) +200% every turn used in a row (Max: 3) / 650% ST (ATK+200) / Fill own BB 100% / 3 turn 80% DEF->ATK buff / 3 Turn +180% ATK DEF / 3 turn +450% BB Mod"
-                },
-                "ubb": {
-                    "@hit": "31",
-                    "@dc": "31",
-                    "@cost": "32",
-                    "#text": "31 Hits 2000% AoE (ATK+200) / 3 turn DoT Debuff (1200% + 200 Flat Atk) / 3 Turn +350% ATK DEF REC / 3 Turn +60% Crit / 3 turn +600% BB Mod / 3 turn +350% Crit Dmg / 30% ignore crit resist (100% chance)"
-                },
-                "es": {
-                    "@condtion": "None",
-                    "#text": "Raise ATK Cap from 99,000 -> 150,000 / Add Effect To BB,SBB (3 Turn 180% ATK Buff on Statused Targets) / +40% All Stats [Equip Medblare]",
-                    "#raid": ""
-                },
-                "art": {
-                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_11087.png"
-                },
-                "thumb": {
-                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_11087.png"
-                },                
-                "sp": {
-                    "@list": "20 : 30% boost to all parameters | 15 : 120% boost to Spark damage | 10 : <span style='display:none'>(*)</span> Enhances LS's all parameters boost from 60% to 70% | 15 : Enhances LS's all parameters boost from 70% to 80% <span style='display:none'>(Prerequisite: *)</span> | 30 : Enhances SBB's hugely boosts BB Atk effect (+50% boost. 500% boost total) | 20 : Enhances SBB's huge boost to Atk relative to Def effect (+10% boost. 90% Def to Atk) | 35 : Adds enormous Spark damage boost for 3 turns effect to BB/SBB (130% boost) | 20 : Adds probable huge 1 turn Atk, Def reduction effect to SBB (30% chance to reduce enemy Atk, Def by 50%) | 25 : Adds enormous critical hit rate boost for 3 turns effect to SBB (60% boost) | 20 : Adds critical damage boost for 3 turns effect to SBB (75% boost)"
-                }
-            },
-            {
-                "id": "1639",
-                "name": "Callow Shadow Grahdens",
-                "role": "add_ele,null_ails,null_stats,miti_dot,barrier,od_rate,od_regen,ewd_res_down",
-                "rolesp": "bb_regen,null_crit,cure,bb_fill,bb_atked,bb_spark",
-                "element": "Dark",
-                "rarity": "8",
-                "cost": "54",
-                "ls": {
-                    "@hit": "17",
-                    "@dc": "51",
-                    "#text": "+60% All Stats / Mitigate Light Dark Damage 15% / 4-7 BC when hit / Def Ignore Immunity",
-                    "#raid": ""
-                },
-                "bb": {
-                    "@hit": "20",
-                    "@dc": "20",
-                    "@cost": "30",
-                    "#text": "20 Hits 470% AoE (ATK+200) + Light Dark Elements / 3 turn Light Dark Buff / 3 turn Negate Status Ailments / 2 Turn Negate Stat Down Debuffs / 2 turn 10% DoT mitigation"
-                },
-                "sbb": {
-                    "@hit": "28",
-                    "@dc": "28",
-                    "@cost": "32",
-                    "#text": "28 Hits 700% AoE (ATK+200) + Light Dark Elements / 3 turn Light Dark Buff / 3500 Damage dark Barrier / 3 Turn 20% OD Fill Rate Buff / +500 OD,turn for 3 turns / Element Weakness Resist for 2 turns"
-                },
-                "ubb": {
-                    "@hit": "30",
-                    "@dc": "30",
-                    "@cost": "32",
-                    "#text": "30 Hits  2000% AoE (ATK+200) + Light Dark Elements / 3 turn 100% All Element Mitigation / 3 turn 999 BC,turn / 3 Turn HoT 98999-99999 HP (+10% Target REC) / +1000 OD/turn for 3 turns"
-                },
-                "es": {
-                    "@condtion": "None",
-                    "#text": "20-25% DMG to HP when hit (25% Chance) / Raise ATK cap from 99,000 -> 130,000 / Add Effect To BB,SBB (3 turn 9 BC turn) / +30% All Stats [Equip Ishrion]",
-                    "#raid": ""
-                },
-                "art": {
-                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_61157.png"
-                },
-                "thumb": {
-                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_61157.png"
-                },                
-                "sp": {
-                    "@list": "20 : 30% boost to all parameters | 20 : Damage taken boosts BB gauge (Fills 2-3 BC) | 20 : Negates critical hit damage | 10 : <span style='display:none'>(*)</span> Enhances LS's all parameters boost from 60% to 70% | 15 : Enhances LS's all parameters boost from 70% to 80% <span style='display:none'>(Prerequisite: *)</span> | 30 : Adds critical damage negation for 1 turn effect to BB/SBB | 30 : Adds status ailment removal effect to BB/SBB | 35 : Adds huge boost to BB gauge effect to BB/SBB (Fills 8 BC) | 35 : Adds considerable BB gauge boost when attacked for 3 turns effect to BB/SBB (Fills 4-7 BC) | 35 : Adds Spark damage boosts BB gauge for 3 turns effect to BB/SBB (Fills 2-3 BC)"
-                }
-            },
-            {
                 "id": "1640",
                 "name": "Sol",
                 "role": "atk,convert_atk,def,rec,od_regen",
@@ -6347,6 +6253,100 @@
                 }
             },
             {
+                "id": "1700",
+                "name": "Nagito",
+                "role": "miti,def,bb_atked,heal_atked,heal,bb_regen,bb_rate",
+                "rolesp": "convert_def,barrier",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "11",
+                    "@dc": "44",
+                    "#text": "+60% HP|DEF / 2 turn +2000-3000 HoT when HP < 50% / +4-7 BC when Hit / +25% Heal when Hit (25% chance)",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "28",
+                    "#text": "15 hits 390% AoE (ATK +200) / 2 turn +50% Mitigation / 3 turn +180% DEF / 3 turn +4-7 BC on Hit / 3 turn +20-25% Heal when Hit (25% chance)"
+                },
+                "sbb": {
+                    "@hit": "19",
+                    "@dc": "19",
+                    "@cost": "30",
+                    "#text": "19 hits 540% AoE (ATK +200) / 2 turn +50% Mitigation / 3 turn +180% DEF / 3 turn +3500-4000 + 15% REC Heal / 3 turn +7 BC / 3 turn +50% BB Fill Rate"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "32",
+                    "#text": "22 hits 1600% AoE (ATK +200) / 3 turn +75% Mitigation / 3 turn +350% DEF / 3 turn 99999 Heal / 3 turn +50 BC fill / +80% chance Angel Idol"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+30% All Stats (Equip DMG Reducing Sphere) / Null Ailments",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_31007.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_31007.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> +30% HP/DEF/REC | 20 : Upgrade to +50% HP/DEF/REC <span style='display:none'>(Prerequisite: *)</span> | 10 : +4 BC/turn | 20 : 1 turn +20% Mitigation after 5000 damage | 10 : BB regen effects occur at start of turn | 20 : Enhances BB's Heal when hit (+5% chance & +10% effect) | 20 : Enhances SBB's BB regen (+3 BC) | 20 : Enhances SBB's HoT (+1000 HP & +10% Rec) | 30 : Adds Effect to BB/SBB (3 turn +80% ATK->DEF) | 40 : Adds Effect to BB/SBB (3500 HP Earth Barrier)"
+                }
+            },
+            {
+                "id": "1702",
+                "name": "Razzak",
+                "role": "bb_mod,od_rate,od_fill,bb_regen",
+                "rolesp": "bb_rate,spark,od_regen",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "12",
+                    "@dc": "48",
+                    "#text": "+60% HP|ATK / +250% BB Atk / 2 turn +100% Spark after 5000 damage dealt / +20% OD Fill Rate",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "29",
+                    "#text": "16 hits 470% AoE (ATK +200) / 3 turn +350% BB Atk / 3 turn +20% OD Fill Rate / +8% OD Fill"
+                },
+                "sbb": {
+                    "@hit": "21/1",
+                    "@dc": "21/1",
+                    "@cost": "28",
+                    "#text": "21 hits 850% AoE (ATK +200) / 1 hit 650% ST (ATK +200) / 3 turn +350% BB Atk / 3 turn +20% OD Fill Rate / +8% OD Fill / 3 turn +8 BC fill"
+                },
+                "ubb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "32",
+                    "#text": "25 hits 2000% AoE (ATK +200) / 3 turn +350% ATK / 3 turn +600% BB Atk / 3 turn +350% Spark / +50% OD Fill / 3 turn +50 BC fill"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+80% Spark / +150% BB Atk",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_40987.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_40987.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> +30% HP/ATK | 20 : Upgrade to +50% HP/ATK <span style='display:none'>(Prerequisite: *)</span> | 20 : +120% Spark | 10 : +150% BB Atk | 10 : Raise ATK Cap to 130000 | 20 : Enhances BB/SBB's BB Atk (+100%) | 20 : Enhances BB/SBB's OD Fill Rate (+10%) | 40 : Add Effect to BB/SBB (+100% BC Fill) | 40 : Add Effect to BB/SBB (3 turn +150% Spark) | 30 : Add Effect to BB/SBB (3 turn +400 OD)"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
@@ -6626,6 +6626,100 @@
                 },                
                 "sp": {
                     "@list": "20 : 30% boost to all parameters | 10 : 100% boost to Spark damage | 20 : Negates elemental damage | 25 : Enhances BB/SBB's critical damage boost effect (+25% boost. 75% boost total) | 25 : Enhances BB/SBB's hugely boosts all elemental damage effect (+25% boost. 150% boost total) | 35 : Adds Spark damage boosts BB gauge for 3 turns effect to BB/SBB (Fills 2-3 BC) | 30 : Adds Spark damage considerably restores HP for 3 turns effect to BB/SBB (Heals 400-500 HP) | 60 : Adds enormous Spark damage boost for 3 turns effect to BB/SBB (150% boost) | 30 : Adds high probability of resistance against 1 KO attack effect to UBB (80% chance to survive KO attack)"
+                }
+            },
+            {
+                "id": "1638",
+                "name": "Callow Flame Owen",
+                "role": "atk,def,crit,ails,crit_dmg,atk_down,def_down,convert_atk,bb_mod",
+                "rolesp": "atk_ailed,spark",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "54",
+                "ls": {
+                    "@hit": "17",
+                    "@dc": "51",
+                    "#text": "+60% All Stats / +300% BB Mod / +200% Crit Damage / 8-10 BC On Crit",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "17/1",
+                    "@dc": "",
+                    "@cost": "26",
+                    "#text": "17 Hits 470% AoE (ATK+200) / 600% ST (ATK+200) /3 turn +180% ATK DEF / 3 turn +60% crit rate / 80% Injury Weaken / 3 turn +75% Crit Dmg / -50% ATK DEF {30%} for 1 turn"
+                },
+                "sbb": {
+                    "@hit": "20/1",
+                    "@dc": "",
+                    "@cost": "28",
+                    "#text": "20 Hits 600% AoE (ATK+200) +200% every turn used in a row (Max: 3) / 650% ST (ATK+200) / Fill own BB 100% / 3 turn 80% DEF->ATK buff / 3 Turn +180% ATK DEF / 3 turn +450% BB Mod"
+                },
+                "ubb": {
+                    "@hit": "31",
+                    "@dc": "31",
+                    "@cost": "32",
+                    "#text": "31 Hits 2000% AoE (ATK+200) / 3 turn DoT Debuff (1200% + 200 Flat Atk) / 3 Turn +350% ATK DEF REC / 3 Turn +60% Crit / 3 turn +600% BB Mod / 3 turn +350% Crit Dmg / 30% ignore crit resist (100% chance)"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Raise ATK Cap from 99,000 -> 150,000 / Add Effect To BB,SBB (3 Turn 180% ATK Buff on Statused Targets) / +40% All Stats [Equip Medblare]",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_11087.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_11087.png"
+                },                
+                "sp": {
+                    "@list": "20 : 30% boost to all parameters | 15 : 120% boost to Spark damage | 10 : <span style='display:none'>(*)</span> Enhances LS's all parameters boost from 60% to 70% | 15 : Enhances LS's all parameters boost from 70% to 80% <span style='display:none'>(Prerequisite: *)</span> | 30 : Enhances SBB's hugely boosts BB Atk effect (+50% boost. 500% boost total) | 20 : Enhances SBB's huge boost to Atk relative to Def effect (+10% boost. 90% Def to Atk) | 35 : Adds enormous Spark damage boost for 3 turns effect to BB/SBB (130% boost) | 20 : Adds probable huge 1 turn Atk, Def reduction effect to SBB (30% chance to reduce enemy Atk, Def by 50%) | 25 : Adds enormous critical hit rate boost for 3 turns effect to SBB (60% boost) | 20 : Adds critical damage boost for 3 turns effect to SBB (75% boost)"
+                }
+            },
+            {
+                "id": "1639",
+                "name": "Callow Shadow Grahdens",
+                "role": "add_ele,null_ails,null_stats,miti_dot,barrier,od_rate,od_regen,ewd_res_down",
+                "rolesp": "bb_regen,null_crit,cure,bb_fill,bb_atked,bb_spark",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "54",
+                "ls": {
+                    "@hit": "17",
+                    "@dc": "51",
+                    "#text": "+60% All Stats / Mitigate Light Dark Damage 15% / 4-7 BC when hit / Def Ignore Immunity",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "20 Hits 470% AoE (ATK+200) + Light Dark Elements / 3 turn Light Dark Buff / 3 turn Negate Status Ailments / 2 Turn Negate Stat Down Debuffs / 2 turn 10% DoT mitigation"
+                },
+                "sbb": {
+                    "@hit": "28",
+                    "@dc": "28",
+                    "@cost": "32",
+                    "#text": "28 Hits 700% AoE (ATK+200) + Light Dark Elements / 3 turn Light Dark Buff / 3500 Damage dark Barrier / 3 Turn 20% OD Fill Rate Buff / +500 OD,turn for 3 turns / Element Weakness Resist for 2 turns"
+                },
+                "ubb": {
+                    "@hit": "30",
+                    "@dc": "30",
+                    "@cost": "32",
+                    "#text": "30 Hits  2000% AoE (ATK+200) + Light Dark Elements / 3 turn 100% All Element Mitigation / 3 turn 999 BC,turn / 3 Turn HoT 98999-99999 HP (+10% Target REC) / +1000 OD/turn for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "20-25% DMG to HP when hit (25% Chance) / Raise ATK cap from 99,000 -> 130,000 / Add Effect To BB,SBB (3 turn 9 BC turn) / +30% All Stats [Equip Ishrion]",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_61157.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_61157.png"
+                },                
+                "sp": {
+                    "@list": "20 : 30% boost to all parameters | 20 : Damage taken boosts BB gauge (Fills 2-3 BC) | 20 : Negates critical hit damage | 10 : <span style='display:none'>(*)</span> Enhances LS's all parameters boost from 60% to 70% | 15 : Enhances LS's all parameters boost from 70% to 80% <span style='display:none'>(Prerequisite: *)</span> | 30 : Adds critical damage negation for 1 turn effect to BB/SBB | 30 : Adds status ailment removal effect to BB/SBB | 35 : Adds huge boost to BB gauge effect to BB/SBB (Fills 8 BC) | 35 : Adds considerable BB gauge boost when attacked for 3 turns effect to BB/SBB (Fills 4-7 BC) | 35 : Adds Spark damage boosts BB gauge for 3 turns effect to BB/SBB (Fills 2-3 BC)"
                 }
             },
             {
@@ -9529,8 +9623,8 @@
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Raises Atk parameter limits to 130000 / adds resistance against 1 KO attack when HP is below 25% / considerably raises normal hit amount [+2]",
-                    "#raid": " adds 23 combo powerful Fire attack against Fire & Earth types to SBB"
+                    "#text": "Raises Atk parameter limits to 130000 / adds resistance against 1 KO attack when HP is below 25% / considerably raises normal hit amount [+2] / adds 23 combo powerful Fire attack against Fire & Earth types to SBB",
+                    "#raid": ""
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810048.png"
@@ -9728,6 +9822,53 @@
                 },                
                 "sp": {
                     "@list": "10 : 150% boost to Spark damage | 10 : 100% boost to critical hit damage | 10 : 60% boost to critical hit rate | 10 : 100% boost to elemental damage | 10 : 100% boost to damage against status afflicted foes | 50 : 300% boost to normal attack hit amount (+3 to each normal hit) | 40 : 50% reduction to BB cost | 20 : 100% boost to BC & HC drop rate | 20 : 25% chance of reducing damage taken to 1 | 20 : 100% boost to OD gauge fill rate | 10 : Raises Atk parameter limits to 150000 | 70 : Adds 2% boost to OD gauge per ally in Squad effect to SBB (10% OD fill max) | 20 : Adds 50% boost to BC, HC drop rate & 10% boost to Items drop rate for 5 turns effect to BB | 40 : Allows UBB self-buff effects to last for 10 turns"
+                }
+            },
+            {
+                "id": "8325",
+                "name": "Great Omniscience Sae",
+                "role": "atk_ailed,ails_add,atk_down_add,def_down_add,crit_dmg,revive,bb_mod,crit",
+                "rolesp": "ails",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "54",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "150% boost to Atk + 80% boost to Def + 80% max HP of Water types / 20% damage reduction from Fire|Water types / considerably boosts ABP and CBP gain (65% ABP, 40% CBP) / probable considerable reduction of BB gauge fill rate for 2 turns (50% chance to reduce enemy efficacy by 50%) / adds probable resistance against 1 KO attack (20% chance to survive 1 KO attack)",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "15/30",
+                    "@dc": "15/30",
+                    "@cost": "26",
+                    "#text": "15 combo powerful Water attack on all foes / 30 combo random Water attack on all foes / hugely boosts damage dealt against status afflicted foes for 3 turns [190%] / adds probable random status ailment infliction to attack for 3 turns [20%] / adds probable great 1 turn Atk|Def reduction effect to attack for 3 turns [10% chance to reduce enemy Atk, Def by 30%]"
+                },
+                "sbb": {
+                    "@hit": "18/6",
+                    "@dc": "18/6",
+                    "@cost": "30",
+                    "#text": "18 combo powerful Water attack on all foes / 6 combo powerful Water attack on single foe / hugely boosts damage dealt against status afflicted foes for 3 turns [190%] / considerably boosts critical damage for 3 turns [75%] / probability of raising allies from KO [15% chance to revive allies with 25% HP] / hugely boosts BB Atk for 3 turns [450%]"
+                },
+                "ubb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "32",
+                    "#text": "21 combo massive Water attack on all foes / adds random status ailment infliction to attack for 3 turns [100% injury weak sick poison paralysis curse infliction] / enormously boosts damage dealt against status afflicted foes for 3 turns [350%] / enormously boosts critical damage for 3 turns [350%] / raises allies from KO [100% chance to revive to 100% HP]"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Raises Atk parameter limits to 130000 / damage taken boosts BB gauge / negates all status ailments for all allies / adds critical hit rate boost effect to BB|SBB for 3 turns / adds 23 combo powerful Water attack against Fire|Water types effect to SBB",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_820048.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_820048.png"
+                },                
+                "sp": {
+                    "@list": "10 : 30% boost to Atk, max HP | 20 : 30% boost to all parameters | 15 : 120% boost to Spark damage | 20 : Boosts critical hit damage (75% boost) | 25 : 50% additional damage reduction DoT mitigation | 20 : Enhances success rate of LS's probable BB gauge fill rate reduction for 2 turns effect (+10% chance. 60% chance total) | 25 : Enhances success rate of LS's probable 1 KO attack resistance effect (+5% boost. 25% chance total) | 50 : Probable resistance against 1 KO attack (70% chance) | 10 : Raises Atk parameter limits to 150000 | 5 : Adds probable random status ailment infliction effect to SBB (75% chance) | 30 : Enhances SBB's critical damage boost (+50% boost. 125% boost total)"
                 }
             }
         ]
