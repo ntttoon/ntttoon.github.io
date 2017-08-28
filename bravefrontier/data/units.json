@@ -8887,38 +8887,38 @@
             {
                 "id": "8288",
                 "name": "Ebil Genius Vikki",
-                "role": "atk,def,rec,bb_mod,bb_rate,add_ele",
-                "rolesp": "atk_down",
+                "role": "dot,atk,def,rec,bb_mod,bb_rate,add_ele",
+                "rolesp": "atk_down,spark",
                 "element": "Water",
                 "rarity": "8",
                 "cost": "50",
                 "ls": {
                     "@hit": "13",
                     "@dc": "52",
-                    "#text": "50% boost to all parameters / greatly boosts BB Atk [250%] / considerably reduces BB gauge required for BB [25%] / & negates element based damage",
+                    "#text": "55% boost to all parameters / greatly boosts BB Atk [300%] / considerably reduces BB gauge required for BB [25%] / & negates element based damage",
                     "#raid": ""
                 },
                 "bb": {
-                    "@hit": "17/4",
-                    "@dc": "17/4",
+                    "@hit": "17",
+                    "@dc": "17",
                     "@cost": "28",
-                    "#text": "17 combo powerful Water attack on all foes [470%] / 4 combo powerful Water attack on single foe [600%] / greatly boosts Atk, Def, Rec [150%] for 3 turns / hugely boosts BB Atk [450%] for 3 turns / & hugely boosts BC efficacy [50%] for 3 turns"
+                    "#text": "17 combo powerful Water attack on all foes [470%] / adds additional powerful attack at turn's end [500%] for 3 turns / hugely boosts Atk|Def|Rec [170%] for 3 turns / hugely boosts BB Atk [450%] for 3 turns / hugely boosts BC efficacy [50%] for 3 turns"
                 },
                 "sbb": {
                     "@hit": "20/4",
                     "@dc": "20/4",
                     "@cost": "30",
-                    "#text": "20 combo powerful Water attack on all foes [850%] / 4 combo powerful Water attack on single foe [650%] / hugely boosts Atk, Def, Rec [160%] for 3 turns / hugely boosts BB Atk [450%] for 3 turns / & adds Fire, Water, Earth, Thunder elements to attack for 3 turns"
+                    "#text": "20 combo powerful Water attack on all foes [850%] / 4 combo powerful Water attack on single foe [650%] / hugely boosts Atk|Def|Rec [170%] for 3 turns / hugely boosts BB Atk [450%] for 3 turns / adds all elements to attack for 3 turns."
                 },
                 "ubb": {
                     "@hit": "24",
                     "@dc": "24",
                     "@cost": "30",
-                    "#text": "24 combo massive Water attack on all foes (damage relative to HP remaining) [1500-2500%] / enormous 3 turn Atk, Def reduction [90%] for 3 turns / enormously boosts Atk, Def, Rec [350%] for 3 turns / & enormously boosts BB Atk [600%] for 3 turns"
+                    "#text": "24 combo massive Water attack on all foes (damage relative to HP remaining) [1500-2500%] / enormous 3 turn Atk|Def reduction [90%] / enormously boosts Atk|Def|Rec [400%] for 3 turns / enormously boosts BB Atk [600%] for 3 turns."
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "10% boost to all parameters of Water types / hugely boosts Atk [0-100%] relative to remaining HP / & absorbs HP [6-10%] while attacking",
+                    "#text": "Raises Atk parameter limits to 130000 / 20% boost to all parameters of all Water type allies / hugely boosts Atk [0-100%] relative to remaining HP / absorbs HP [6-10%] while attacking",
                     "#raid": ""
                 },
                 "art": {
@@ -8928,7 +8928,7 @@
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_820168.png"
                 },                
                 "sp": {
-                    "@list": "10 : Enhances LS's parameters boost effect [+10%] | 15 : Enhances LS's BB Atk boost effect [+75%] | 15 : 30% boost to Atk, max HP | 15 : 100% boost to Spark damage | 10 : Raises Atk parameter limits to 130000 | 40 : Adds resistance against 1 KO attack when HP is below 20% | 30 : Adds Light and Dark elements to attack for 3 turns effect to SBB | 35 : Adds probable [30%] huge 1 turn Atk reduction [50%] effect to BB/SBB | 20 : Enhances SBB's parameters boost effect [+10%] | 40 : Enhances SBB/UBB's BB Atk boost effect [+100%]"
+                    "@list": "10 : 30% boost to Atk, max HP | 20 : 30% boost to all parameters | 15 : 120% boost to Spark damage | 10 : Enhances LS's parameters boost effect (+10% boost. 65% boost total) | 15 : Enhances LS's BB Atk boost effect (+75% boost. 375% boost total) | 10 : Raises Atk parameter limits to 150000 | 40 : Adds resistance against 1 KO attack when HP is below 20% | 35 : Adds probable huge 1 turn Atk reduction effect to BB/SBB (30% chance to reduce enemy Atk by 50%) | 40 : Enhances SBB/UBB's BB Atk boost effect (+100% boost. 550%/700% BB Atk boost total) | 20 : Enhances SBB's parameters boost effect (+10% boost. 180% parameter boost total) | 40 : Adds enormous Spark damage boost for 3 turns effect to BB/SBB (150% boost)"
                 }
             },
             {
