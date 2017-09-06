@@ -5549,7 +5549,7 @@
             },
             {
                 "id": "1671",
-                "name": "Arsom",
+                "name": "Piercing Oath Arsom",
                 "role": "crit_res_down,ewd_res_down,spark_debuff,atk_down",
                 "rolesp": "spark,bb_spark",
                 "element": "Water",
@@ -5596,7 +5596,7 @@
             },
             {
                 "id": "1673",
-                "name": "Receus",
+                "name": "Poised Emperor Reseus",
                 "role": "null_ewd,hit,od_rate,od_regen,null_ails,spark_crit",
                 "rolesp": "aoe,atk,convert_atk",
                 "element": "Light",
@@ -5643,7 +5643,7 @@
             },
             {
                 "id": "1675",
-                "name": "Dick Reso",
+                "name": "Possessed Sea Dirk Rezo",
                 "role": "bb_mod,ails,dot,atk_down,ails_atked",
                 "rolesp": "",
                 "element": "Dark",
