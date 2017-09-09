@@ -9870,6 +9870,53 @@
                 "sp": {
                     "@list": "10 : 30% boost to Atk, max HP | 20 : 30% boost to all parameters | 15 : 120% boost to Spark damage | 20 : Boosts critical hit damage (75% boost) | 25 : 50% additional damage reduction DoT mitigation | 20 : Enhances success rate of LS's probable BB gauge fill rate reduction for 2 turns effect (+10% chance. 60% chance total) | 25 : Enhances success rate of LS's probable 1 KO attack resistance effect (+5% boost. 25% chance total) | 50 : Probable resistance against 1 KO attack (70% chance) | 10 : Raises Atk parameter limits to 150000 | 5 : Adds probable random status ailment infliction effect to SBB (75% chance) | 30 : Enhances SBB's critical damage boost (+50% boost. 125% boost total)"
                 }
+            },
+            {
+                "id": "8327",
+                "name": "Verdant Góēs Nimune",
+                "role": "bb_regen,heal_atked,dot,idol,bb_spark,ewd,revive",
+                "rolesp": "heal,miti_dot",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "16",
+                    "@dc": "54",
+                    "#text": "60% boost to Atk|Rec|max HP / 15% damage reduction from Fire|Earth|Dark types / hugely boosts all elemental damage [150%] / Spark damage boosts BB gauge [fills 2-3 BC] ",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "26",
+                    "#text": "23 combo Earth attack on all foes / hugely boosts BB gauge for 3 turns [7BC] / damage taken may slightly restore HP [20% chance to heal 20-25% damage] / powerful additional damage at turn's end for 3 turns [500%] / adds low probability of resistance against 1 KO attack [10%]"
+                },
+                "sbb": {
+                    "@hit": "26",
+                    "@dc": "26",
+                    "@cost": "28",
+                    "#text": "26 combo powerful Earth|Fire|Dark attack on all foes / Spark damage boosts BB gauge for 3 turns [2-3 BC] / hugely boosts elemental damage for 3 turns [150%] / powerful additional damage at turn's end for 3 turns [500%] / probability of raising allies from KO [10% chance to revive allies with 20% HP]"
+                },
+                "ubb": {
+                    "@hit": "33",
+                    "@dc": "33",
+                    "@cost": "32",
+                    "#text": "33 combo massive Earth attack on all foes (with additional 5% damage of foes' max HP) / enormously boosts all elemental damage for 3 turns [500%] / damage taken enormously restores HP for 3 turns [heals 100% damage taken] / massive additional damage at turn's end for 3 turns [1500%] / high probability of raising allies from KO [80% chance to revive allies with 20% HP]"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Boosts elemental damage [100%] / damage taken may restore HP of all allies [20% chance to heal 20-25% damage]",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830438.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_830438.png"
+                },                
+                "sp": {
+                    "@list": "10 : 50% boost to max HP | 10 : 50% boost to Atk, Def, Rec when BB gauge is over 50% | 10 : <span style='display:none'>(*)</span> Boosts elemental damage (50% boost) | 10 : Greatly boosts elemental damage (+50% boost. 100% boost total) <span style='display:none'>(Prerequisite: *)</span> | 10 : Spark damage considerably boosts BB gauge (Fills 2-4 BC) | 20 : Negates all status ailments | 20 : 10% damage reduction from Fire, Earth, Dark types | 30 : Adds greatly restores HP effect to BB/SBB (Heals 4000-4500 + 40% of healer REC) | 40 : Adds slight additional damage reduction for 3 turns effect to BB/SBB (10% DoT mitigation) | 40 : Enhances SBB's additional damage at turn's end effect but reduces duration to 1 turn (+500% multiplier & -1 turn. 1000% multiplier for 2 turns total)"
+                }
             }
         ]
     }
