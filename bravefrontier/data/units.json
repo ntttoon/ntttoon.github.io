@@ -6347,6 +6347,100 @@
                 }
             },
             {
+                "id": "1716",
+                "name": "神偉の焔纏竜ルデロ",
+                "role": "atk,def,convert_atk,convert_def,miti_dot,hot,bb_regen,bb_spark,heal_atked",
+                "rolesp": "heal_spark",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "8",
+                    "@dc": "48",
+                    "#text": "+60% HP|ATK|DEF / heal +1000-1200 + 10% REC / +7 BC Fill / +250% BB ATK",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "12",
+                    "@dc": "12",
+                    "@cost": "20",
+                    "#text": "12 hits 420% AoE (ATK +200) / 3 turn +180% ATK|DEF / 3 turn +80% ATK->DEF / 3 turn +80% DEF->ATK / 2 turn +10% DoT Mitigation"
+                },
+                "sbb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "24",
+                    "#text": "16 hits 620% AoE (ATK +200) / 3 turn heal +3500-4000 + 15% REC / 3 turn +7 BC Fill / 3 turn +2-3 BC on Spark / 3 turn +20-25% Heal when hit (25% chance)"
+                },
+                "ubb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "32",
+                    "#text": "18 hits 1800% AoE (ATK +200) / 3 turn +350% ATK|DEF / 3 turn +100% Spark Debuff (100% chance) / 3 turn +600% BB ATK / 3 turn 99999 heal / 3 turn +50 BC Fill"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+50% ATK|DEF when BB > 50% / Null DEF Ignore",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_11147.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_11147.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> +30% HP/ATK/DEF | 10 : Upgrade to +50% HP/ATK/DEF <span style='display:none'>(Prerequisite: *)</span> | 10 : +60% DEF when BB > 50% | 20 : +2-3 BC on Hit | 15 : 2 turn +20% Mitigation after 5000 damage taken | 10 : Raise ATK Cap to 130000 | 30 : Enhance BB's ATK->DEF (+10%) | 25 : Enhance SBB's HoT (+1000 HP & +10% REC) | 25 : Enhance SBB's BC/turn (+2 BC) | 30 : Add Effect to BB/SBB (3 turn 300-400 Heal on Spark)"
+                }
+            },
+            {
+                "id": "1718",
+                "name": "極魁の轟神ガンドレイ",
+                "role": "crit,crit_dmg,spark_debuff,spark_crit",
+                "rolesp": "",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "2",
+                    "@dc": "52",
+                    "#text": "+150% ATK / +60% HP / +130% Spark / +150% Crit DMG / 2 turn +80% ATK after Crit",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "1/1",
+                    "@dc": "18/18",
+                    "@cost": "28",
+                    "#text": "1 hit 600% ST (ATK +200) / 1 hit 850% ST (ATK +200) / 3 turn +60% Crit / 3 turn +50% Crit DMG / 2 turn +30% Spark Debuff (30% chance)"
+                },
+                "sbb": {
+                    "@hit": "1/1",
+                    "@dc": "23/23",
+                    "@cost": "30",
+                    "#text": "1 hit 700% ST (ATK +200) / 1 hit 950% ST (ATK +200) / 3 turn +60% Crit / 3 turn +50% Crit DMG / 3 turn +60% Spark Crit (30% chance) / 2 turn +30% Spark Debuff (30% chance)"
+                },
+                "ubb": {
+                    "@hit": "1/1",
+                    "@dc": "28/28",
+                    "@cost": "32",
+                    "#text": "1 hit 2000% ST (ATK +200) / 1 hit 1200-3000% AoE (relative to remaining HP | ATK +200) / 3 turn +60% Crit / 3 turn +350% Crit DMG / 3 turn +120% Spark Crit (50% chance) / 3 turn +100% Spark Debuff (100% chance)"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+100% Crit DMG / +60% Spark / Raise ATK cap to 130000",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_31037.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_31037.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> +30% HP/ATK | 10 : Upgrade to +60% HP/ATK <span style='display:none'>(Prerequisite: *)</span> | 10 : <span style='display:none'>(#)</span> +100% Spark | 15 : Upgrade to +130% Spark <span style='display:none'>(Prerequisite: #)</span> | 30 : +999 BC on Spark | 10 : +80% Crit DMG | 10 : <span style='display:none'>($)</span> Enhance ES's ATK Cap to 150000 | 10 : Further enhance ES's ATK Cap to 180000 <span style='display:none'>(Prerequisite: $)</span> | 35 : Enhance BB/SBB's Crit DMG (+30%) | 35 : Enhance SBB's Spark Crit (+10% chance & +5% effect)"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
