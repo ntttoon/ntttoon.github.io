@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+	4. Blank lines will be removed automatically.
+	5. Remove unnecessary comments before creating your template.
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<title>index</title>
+<!-- write your code here -->
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="index.js?1505571902053"></script>
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+    ResizeCanvas();
+	images = images||{};
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt) {	
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.index();
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);	
+	//Registers the "tick" event listener.
+    fnStartAnimation = function() {
+		window.addEventListener("resize", function(){onResize();});
+		onResize();
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage);
+	}
+	fnStartAnimation();
+}
+</script>
+<!-- write your code here -->
+</head>
+<body onload="init();" style="background:transparent;margin:0px;margin-top:-12%;">
+	<div id="animation_container" style="background:transparent;margin:0px;">
+		<canvas id="canvas" width="375" height="750" style="background:transparent;margin:0px;"></canvas>
+		<div id="dom_overlay_container">
+		</div>
+	</div>
+    <script type="text/javascript">!function(){if(window.console&&console.log){console.log;console.log=function(){}}}();</script>
+	<script type="text/javascript">function gup(name,url){url||(url=location.href),name=name.replace(/[[]/,"[").replace(/[]]/,"]");var regexS="[?&]"+name+"=([^&#]*)",regex=new RegExp(regexS),results=regex.exec(url);return null==results?null:results[1]}var _width=parseInt(gup("wd"));</script>
+	<script type="text/javascript">function ResizeCanvas(){document.body.style.width=_width+"px",document.body.style.height=2*_width+"px",canvas.style.width=_width+"px",canvas.style.height=2*_width+"px"}</script>
+	<script type="text/javascript">function onResize(){var newWidth=_width,newHeight=2*newWidth;page_canvas.style.height=newHeight+"px",page_canvas.style.width=newWidth+"px"}var page_body=document.body;page_body.style.backgroundColor="transparent",page_body.style.overflow="hidden",page_body.style.position="fixed";var page_canvas=document.getElementsByTagName("canvas")[0];</script>
+</body>
+</html>
