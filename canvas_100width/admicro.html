@@ -55,7 +55,8 @@ $SCRIPT_END
 	</div>
     $PRELOADER_DIV
     <script type="text/javascript">!function(){if(window.console&&console.log){console.log;console.log=function(){}}}();</script>
-	<script type="text/javascript">function gup(name,url){url||(url=location.href),name=name.replace(/[[]/,"[").replace(/[]]/,"]");var regexS="[?&]"+name+"=([^&#]*)",regex=new RegExp(regexS),results=regex.exec(url);return null==results?null:results[1]}var _width=parseInt(gup("wd"));</script>
+	<!-- <script type="text/javascript">function gup(name,url){url||(url=location.href),name=name.replace(/[[]/,"[").replace(/[]]/,"]");var regexS="[?&]"+name+"=([^&#]*)",regex=new RegExp(regexS),results=regex.exec(url);return null==results?null:results[1]}var _width=parseInt(gup("wd"));</script> -->
+    <script type="text/javascript">var _width=window.innerWidth;</script>
 	<script type="text/javascript">function ResizeCanvas(){document.body.style.width=_width+"px",document.body.style.height=2*_width+"px",canvas.style.width=_width+"px",canvas.style.height=2*_width+"px"}</script>
 	<script type="text/javascript">function onResize(){var newWidth=_width,newHeight=2*newWidth;page_canvas.style.height=newHeight+"px",page_canvas.style.width=newWidth+"px"}var page_body=document.body;page_body.style.backgroundColor="transparent",page_body.style.overflow="hidden",page_body.style.position="fixed";var page_canvas=document.getElementsByTagName("canvas")[0];</script>
 </body>
