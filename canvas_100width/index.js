@@ -8,8 +8,8 @@ lib.ssMetadata = [];
 
 
 
-(lib._01 = function() {
-	this.initialize(img._01);
+(lib.pic = function() {
+	this.initialize(img.pic);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,375,750);
 
@@ -19,7 +19,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,375,750);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer 1
-	this.instance = new lib._01();
+	this.instance = new lib.pic();
 	this.instance.parent = this;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -34,7 +34,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"01.jpg?1505573041439", id:"_01"}
+		{src:"pic.jpg?1505657948761", id:"pic"}
 	],
 	preloads: []
 };
