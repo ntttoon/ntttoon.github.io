@@ -15,7 +15,7 @@
 <title>index</title>
 <!-- write your code here -->
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="index.js?1505657948806"></script>
+<script src="index.js?1505659471537"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -24,6 +24,7 @@ function init() {
 	dom_overlay_container = document.getElementById("dom_overlay_container");
     ResizeCanvas();
 	images = images||{};
+	ss = ss||{};
 	var loader = new createjs.LoadQueue(false);
 	loader.addEventListener("fileload", handleFileLoad);
 	loader.addEventListener("complete", handleComplete);
@@ -54,7 +55,7 @@ function handleComplete(evt) {
 </script>
 <!-- write your code here -->
 </head>
-<body onload="init();" style="background:transparent;margin:0px;">
+<body onload="init();" style="background:transparent;margin:0px;margin-top:-12%;">
 	<div id="animation_container" style="background:transparent;margin:0px;">
 		<canvas id="canvas" width="375" height="750" style="background:transparent;margin:0px;"></canvas>
 		<div id="dom_overlay_container">
