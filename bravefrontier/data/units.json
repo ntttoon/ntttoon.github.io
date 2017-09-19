@@ -6441,6 +6441,194 @@
                 }
             },
             {
+                "id": "1719",
+                "name": "Behemot",
+                "role": "spark",
+                "rolesp": "",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "1",
+                    "@dc": "42",
+                    "#text": "+150% ATK / +60% HP / +0-50% ATK relative to HP remaining / +150% Spark",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "1",
+                    "@dc": "29",
+                    "@cost": "20",
+                    "#text": "1 hit 1000% AoE (Crit +60%, ATK +200) / 3 turn self +200% ATK / 3 turn self +40% HP->ATK / 3 turn self +120% Spark"
+                },
+                "sbb": {
+                    "@hit": "1",
+                    "@dc": "30",
+                    "@cost": "20",
+                    "#text": "1 hit 1500% AoE (Crit +60%, ATK +200) / 3 turn self +200% ATK / 3 turn self +40% HP->ATK / 3 turn self +120% Spark / 3 turn self +75% Crit DMG / 3 turn +130% Spark"
+                },
+                "ubb": {
+                    "@hit": "1",
+                    "@dc": "32",
+                    "@cost": "40",
+                    "#text": "1 hit 3000% AoE (Crit +60%, ATK +200) / 3 turn self +350% ATK / 3 turn self +60% HP->ATK / 3 turn self +200% Spark / 3 turn +350% Spark"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+80% Spark / +30 BC on Spark / Ignore DEF (50% chance)",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_40117.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_40117.png"
+                },                
+                "sp": {
+                    "@list": "20 : <span style='display:none'>(*)</span> +50% ATK | 10 : Upgrade to +100% ATK <span style='display:none'>(Prerequisite: *) | 20 : <span style='display:none'>($)</span> +100% Spark | 10 : Upgrade to +120% Spark <span style='display:none'>(Prerequisite: $) | 20 : <span style='display:none'>(#)</span> Raise ATK Cap to 150000 | 20 : <span style='display:none'>(^)</span> Further raise ATK Cap to 180000 <span style='display:none'>(Prerequisite: #) | 10 : Further raise ATK Cap to 200000 <span style='display:none'>(Prerequisite: ^)"
+                }
+            },
+            {
+                "id": "1720",
+                "name": "Balgran",
+                "role": "miti_guard,bb_guard,ails,ails_atked,convert_def",
+                "rolesp": "heal_atked,bb_atked,atk_down_atked",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "+50% HP|DEF / +6 BC on Guard / +10% Guard Mitigation / 2 turn -20% ATK Down (15% chance) after dealing 1 DMG",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "25",
+                    "#text": "14 hits 360% AoE (ATK +200) / 3 turn +10% Guard Mitigation / 3 turn +8 BC on Guard / +75% Ailment Inflict / 3 turn +15% IWS Reflect / 3 turn +10% CPP Reflect"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "26",
+                    "#text": "18 hits 560% AoE (ATK +200) / 3 turn +70% ATK->DEF / 3 turn +10% Guard Mitigation / 3 turn +8 BC on Guard / +75% Ailment Inflict"
+                },
+                "ubb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "30",
+                    "#text": "21 hits 1500% AoE (ATK +200) / 3 turn +250% DEF->ATK / 2 turn +100% All Element Mitigation / 3 turn +100% Ailment Reflect / 3 turn +100% Heal when Hit / 3 turn +50 BC on Hit"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "3 turn +50% DEF on Guard / 3 turn +100% BB Atk on Guard / +20% Mitigation (20% chance)",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_40587.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_40587.png"
+                },                
+                "sp": {
+                    "@list": "10 : +30% HP/DEF | 10 : +50% DEF when BB >50% | 10 : +50% DEF when HP >50% | 20 : +4 BC per turn | 20 : +25% DMG Reflect (25% chance) | 20 : Enhances BB/SBB's Guard Mitigation (+5%) | 20 : Enhances BB/SBB's BC on Guard (+2 BC) | 30 : Add Effect to BB/SBB (3 turn +20-25% Heal when Hit (20% chance)) | 30 : Add Effect to BB/SBB (3 turn +4-7 BC on Hit) | 30 : Add Effect to BB/SBB (3 turn -20% ATK Down (10% chance, 2 turns) when Hit)"
+                }
+            },
+            {
+                "id": "1721",
+                "name": "Rinon",
+                "role": "heal,cure,null_ails,null_crit,null_ewd,miti_dot,miti_ele,add_ele,bc,hc",
+                "rolesp": "hot,heal_atked,bb_mod,spark_crit",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "11",
+                    "@dc": "44",
+                    "#text": "+40% HP|DEF|REC / Null Ailments / Heal 1000-1200 + 10% REC / +25% Heal when Hit (25% chance)",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "20",
+                    "#text": "Heal 3500-4000 + 40% Healer REC / Status Cleanse / 3 turn Status Null / 2 turn Crit,EWD Null / 2 turn +10% DoT Mitigation"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "26",
+                    "#text": "20 hits 580% AoE (ATK +200) / Status Cleanse / 3 turn Status Null / 2 turn +10% Light|Dark Mitigation / 3 turn Add Light|Dark elements / 3 turn +35% BC|HC"
+                },
+                "ubb": {
+                    "@hit": "24",
+                    "@dc": "24",
+                    "@cost": "30",
+                    "#text": "24 hits 1500% AoE (ATK +200) / 3 turn +300% REC / 3 turn +99999 Heal / 3 turn +50 BC Fill / +25000 HP Light Barrier / 3 turn +250% OD Fill Rate"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+4 BC per turn / Null Ailments|Debuffs",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_50737.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_50737.png"
+                },                
+                "sp": {
+                    "@list": "10 : +30% HP/DEF/REC | 20 : +2-3 BC on Hit | 10 : Null EWD | 10 : Null Crit | 20 : Enhances BB's DoT Mitigation (+5%) | 20 : Enhances SBB's Light/Dark Mitigation (+5%) | 30 : Add Effect to BB/SBB (3 turn Heal 4000-4500 + 15% REC) | 30 : Add Effect to BB/SBB (3 turn +20-25% Heal when Hit (25% chance)) | 30 : Add Effect to BB/SBB (3 turn +450% BB Atk) | 40 : Add Effect to BB/SBB (3 turn +50% Spark Crit (30% chance))"
+                }
+            },
+            {
+                "id": "1722",
+                "name": "Yuura",
+                "role": "bb_mod,bb_atked,bb_spark,dot",
+                "rolesp": "drain,ewd",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "12",
+                    "@dc": "48",
+                    "#text": "+100% ATK / +40% HP / +5-10% HP Drain / +4-7 BC on Hit / +250% BB Atk",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "25",
+                    "#text": "17 hits 410% AoE (+25-30% HP Drain) / 3 turn +350% BB Atk / 3 turn +4-7 BC on Hit / 3 turn +2-3 BC on Spark / +100% self BC Fill"
+                },
+                "sbb": {
+                    "@hit": "12/10",
+                    "@dc": "24/20",
+                    "@cost": "27",
+                    "#text": "12 hits 710% ST (+35-45% HP Drain) / 10 hits 480% ST (+200% per use up to 3x) /3 turn +350% BB Atk / 3 turn +4-7 BC on Hit / +100% self BC Fill / 3 turn +500% DoT"
+                },
+                "ubb": {
+                    "@hit": "15/12",
+                    "@dc": "30/24",
+                    "@cost": "30",
+                    "#text": "15 hits 1900% ST (+60-65% HP Drain) / 12 hits 2000% ST (ATK +200) / 3 turn +500% BB Atk / 3 turn +50 BC on Hit / 3 turn +1500% DoT / 3 turn +350% Crit DMG"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+100% ATK when BB >100% / +50% Spark",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_60737.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_60737.png"
+                },                
+                "sp": {
+                    "@list": "10 : +30% HP/ATK | 10 : +60% ATK when BB >50% | 10 : +30% ATK per turn (up to 3 turns) | 20 : +100% Spark | 20 : +75% EWD | 10 : Raise ATK Cap to 160000 | 30 : Enhances BB/SBB's BB Atk (+100%) | 30 : Add Effect to BB/SBB (3 turn +3-6% HP Drain (50% chance)) | 30 : Add Effect to SBB (3 turn +2-3 BC on Spark) | 40 : Add Effect to SBB (3 turn +125% EWD)"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
