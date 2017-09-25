@@ -6629,6 +6629,100 @@
                 }
             },
             {
+                "id": "1724",
+                "name": "Lumis",
+                "role": "heal,hot,cure,add_ele,barrier,null_ails,rec,convert_rec,miti_spark",
+                "rolesp": "convert_atk,convert_def,miti_dot",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "7",
+                    "@dc": "49",
+                    "#text": "+60% HP|DEF|REC / +25% Heal when Hit (25% chance) / Null Ailments / Null Crit|EWD",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "25",
+                    "#text": "Heals 4000-4500 + 40% Healer REC / 3 turn Heal 3500-4000 + 18% REC / Cure Ailments|Debuffs / 3 turn Add All Elements / Activate 3500 HP Water barrier / 3 turn Null Ailments"
+                },
+                "sbb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "29",
+                    "#text": "17 hits 620% AoE (ATK +200) / heal 4000-4500 + 40% Healer REC / Cure Ailments|Debuffs / 3 turn +180% REC / 3 turn +80% ATK->REC / 2 turn +25% Spark Mitigation"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "32",
+                    "#text": "20 hits 1800% AoE (ATK +200) / 3 turn +75% Mitigation / 3 turn +350% DEF|REC / 3 turn heal 99999 + 10% REC / 5 turn Null Crit|EWD / 5 turn +50% Spark Mitigation / +50% OD Fill"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "2 turn +20% Mitigation after 5000 damage taken / heals 800-1000 + 10% REC",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_21087.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_21087.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> +30% HP/DEF | 15 : Upgrade to +50% HP/DEF <span style='display:none'>(Prerequisite: *)</span> | 10 : +50% DEF/REC when BB >50% | 20 : Null Ailments | 10 : Raise ATK Cap to 130000 | 20 : Enhances BB/SBB's Heal (+1000 HP & +10% REC) | 20 : Enhances BB's HoT (+1000 HP & +10% REC) | 20 : Adds Effect to SBB (3 turn heal 4500-5000 + 18% REC) | 35 : Add Effect to BB/SBB (3 turn +80% REC->ATK/DEF) | 35 : Add Effect to BB/SBB (1 turn +10% DoT Mitigation)"
+                }
+            },
+            {
+                "id": "1726",
+                "name": "Ordine",
+                "role": "atk,crit,bb_mod,crit_dmg,atk_down,convert_atk",
+                "rolesp": "",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "6",
+                    "@dc": "42",
+                    "#text": "+60% HP|ATK|DEF / +150% Crit DMG / +50% Spark Crit (10% chance) / +280% BB Atk when HP >50%",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "12",
+                    "@dc": "12",
+                    "@cost": "28",
+                    "#text": "12 hits 470% AoE (ATK +200) / 3 turn +180% ATK / 3 turn +60% Crit / 3 turn +400% BB Atk / 3 turn +75% Crit DMG / 1 turn -50% ATK Down (30% chance)"
+                },
+                "sbb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "30",
+                    "#text": "16 hits 200-900% AoE (ATK +200) / 3 turn +180% ATK / 3 turn +60% Crit / +15% HP / 3 turn +40% HP->ATK / 3 turn +400% BB Atk / 3 turn +75% Crit DMG"
+                },
+                "ubb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "32",
+                    "#text": "18 hits 1500-2800% AoE (ATK +200) / 3 turn +350% ATK, 3 turn +60% Crit / +40% HP / 3 turn +650% BB Atk / 3 turn +350% Crit DMG / 3 turn +120% Spark Crit (50% chance)"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+8 BC on Crit / +80% Spark / Raise ATK Cap to 130000",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_41017.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_41017.png"
+                },                
+                "sp": {
+                    "@list": "10 : +60% HP/ATK | 10 : +0-80% ATK relative to HP remaining | 10 : +120% Spark | 10 : +75% Crit DMG | 10 : <span style='display:none'>(*)</span> Raise ATK Cap to 150000 | 20 : Further raise ATK Cap to 180000 <span style='display:none'>(Prerequisite: *)</span> | 25 : Enhances SBB's ATK Convert (+10%) | 25 : Enhances SBB's HP (+10%) | 30 : Enhances BB/SBB's BB Atk (+100%) | 20 : Add Effect to SBB (1 turn -60% ATK Down [30% chance])"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
@@ -7096,6 +7190,53 @@
                 },                
                 "sp": {
                     "@list": "20 : +60% Stats | 10 : +80% ADR when BB > 50% | 10 : +120% Spark | 20 : null Crit/EWD | 30 : +10% elemental mit (to self) | 30 : +5% ele mit on BB/SBB | 20 : Add +120% ATK/DEF/REC for Fire/Earth/Light units for 3 turns on BB/SBB | 20 : Add +120% ATK/DEF/REC for Water/Thunder/Dark units for 3 turns on BB/SBB | 30 : Add 2-3 BC on Spark for 3 turns on BB | 30 : Add 4-7 BC when hit for 3 turns on BB | 20 : Add 5-8% HP drain (50% chance) for 3 turns on BB/SBB | 30 : Add 30-35% heal when hit (30% chance) for 3 turns on BB/SBB | 20 : Add cure ailments/debuffs on BB/SBB | 30 : Add -20% ATK/DEF Down (20% chance) when hit for 3 turns on SBB | 30 : Add +75% each ailment proc on SBB"
+                }
+            },
+            {
+                "id": "1735",
+                "name": "Karna Masta",
+                "role": "maxhp,atk,def,rec,crit,spark,ewd,crit_dmg,bb_mod",
+                "rolesp": "add_ele,od_regen,od_fill,crit_res_down",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "58",
+                "ls": {
+                    "@hit": "15",
+                    "@dc": "60",
+                    "#text": "+100% All Stats / +150% Spark / Raise ATK Cap to 130000 / 200% EWD",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "30",
+                    "#text": "20 hits 100-700% AoE (ATK +200) / +25% HP / 3 turn +200% ATK|DEF|REC / 3 turn +60% Crit / 3 turn +180% Spark / 3 turn +150% EWD / 3 turn +100% Crit DMG"
+                },
+                "sbb": {
+                    "@hit": "20/16",
+                    "@dc": "20/16",
+                    "@cost": "32",
+                    "#text": "20 hits 200-1200% AoE (ATK +200) / 16 hits 200-1200% AoE (ATK +200) / 3 turn +550% BB Atk / 3 turn +180% Spark / 3 turn +150% EWD / 3 turn +100% Crit DMG"
+                },
+                "ubb": {
+                    "@hit": "28/24",
+                    "@dc": "28/24",
+                    "@cost": "32",
+                    "#text": "28 hits 1500-3000% AoE (ATK +200) / 24 hits 1500-3000% AoE (ATK +200) / +40% HP / 3 turn +450% Spark / 3 turn +500% EWD / 3 turn +450% Crit DMG"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+40% All Stats [Equip ATK Boost Sphere] / +100% Spark [Equip ATK Boost Sphere] / Raise ATK Cap to 180000 / +15% All Stats [Party]",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_51317.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_51317.png"
+                },                
+                "sp": {
+                    "@list": "20 : <span style='display:none'>(*)</span> +80% All Stats | 10 : Upgrade to +100% All Stats <span style='display:none'>(Prerequisite: *)</span> | 20 : +150% Spark | 20 : Null Crit/EWD | 10 : Raise ATK Cap to 200000 | 40 : Enhance LS's ATK Cap (150000) | 20 : Add Effect to SBB/UBB (3 turn +60% Crit) | 30 : Add Effect to BB/SBB (3 turn Add All Elements) | 20 : Add Effect to BB/SBB (3 turn +20% OD Fill Rate) | 40 : Add Effect to BB/SBB (+8% OD Fill) | 30 : Add Effect to BB/SBB (2 turn +20% Crit Vuln [20% chance]) | 30 : Add Effect to BB/SBB (+100% Self BC Fill)"
                 }
             },
             {
