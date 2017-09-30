@@ -10481,6 +10481,147 @@
                 "sp": {
                     "@list": "20 : <span style='display:none'>(*)</span> 40% boost to all parameters | 10 : Raises all parameters boost from 40% to 60% <span style='display:none'>(Prerequisite: *)</span> | 15 : 120% boost to Spark damage | 50 : Probable resistance against 1 KO attack (70% chance) | 10 : Raises Atk parameter limits to 150000 | 25 : Enhances LS's success rate of foe's considerable BB gauge reduction effect (+10% chance, 40% chance total) | 20 : Enhances BB/SBB's Atk, Def, Rec reduction effect and its success rate (+5% effect and chance, 25% chance of 30% stat reduction total) | 20 : Adds massive additional damage at turn's end for 1 turn effect to SBB (1000% DoT modifier) | 20 : Enhances BB/SBB's Atk, Def, Rec boost effects (+10% boost, 190% total) | 35 : Adds considerable BB gauge boost when attacked for 3 turns effect to SBB (Fills 4-7 BC) | 40 : Adds enormous Spark damage boost for 3 turns effect to BB/SBB (150% Spark)"
                 }
+            },
+            {
+                "id": "8344",
+                "name": "Natsu Dragneel",
+                "role": "idef,convert_atk,convert_def,convert_rec",
+                "rolesp": "dot,atk_ele,def_ele,rec_ele,bb_spark",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "54",
+                "ls": {
+                    "@hit": "17",
+                    "@dc": "51",
+                    "#text": "200% boost to Atk / 80% boost to max HP / greatly boosts critical hit rate of Fire types [30%]  / Spark damage boosts BB gauge [fills 2-3 BC] / hugely boosts critical damage [150%] / hugely boosts Fire elemental damage [150%] / 15% damage reduction from Fire, Earth, Dark types",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "27",
+                    "@dc": "27",
+                    "@cost": "23",
+                    "#text": "27 combo massive Fire attack on single foe (damage relative to remaining HP) (300% + 800% * [current HP | max HP]) / adds Def ignoring effect to attack for 3 turns / greatly boosts max HP [25%] / adds 1 extra action within the same turn / fills own BB gauge to max"
+                },
+                "sbb": {
+                    "@hit": "37/4",
+                    "@dc": "37/4",
+                    "@cost": "35",
+                    "#text": "37 combo powerful Fire attack on all foes (damage relative to remaining HP) [300% + 600% * [current HP | max HP]] / 4 combo massive Fire attack on single foe (damage relative to remaining HP) (300% + 800% * [current HP | max HP]) / hugely boosts Atk|Def|Rec relative to max HP (40%) for 3 turns / boosts critical damage (50%) of Fire types for 3 turns / considerably boosts own Atk|Def|Rec (120%) for 3 turns / enormously boosts own critical hit rate (60%) / self Spark damage (120%) for 3 turns"
+                },
+                "ubb": {
+                    "@hit": "40/4",
+                    "@dc": "40/4",
+                    "@cost": "33",
+                    "#text": "40 combo massive Fire attack on all foes (damage relative to remaining HP) (1500% + 1500% * [current HP | max HP]) / 4 combo massive Fire attack on single foe (damage relative to remaining HP) (1500% + 1500% * [current HP | max HP]) / enormously boosts critical damage for 3 turns [350%] / hugely boosts max HP [40%] / enormously boosts Atk|Def|Rec relative to max HP for 3 turns [60% HP to ADR] / enormous damage reduction for 2 turns [100%]"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "25% damage reduction from Fire|Earth types / raises Atk parameter limits to 130000 / 10% damage reduction | adds max HP boost effect for self to BB|SBB when Atk Boosting sphere is equipped [15%]",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810548.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810548.png"
+                },                
+                "sp": {
+                    "@list": "20 : <span style='display:none'>(*)</span> 40% boost to all parameters | 10 : Raises all parameter boost from 40% to 60% <span style='display:none'>(Prerequisite: *)</span> | 10 : Boosts Atk, Def, Rec each turn (for up to 3 turns) (75% boost after 3 turns) | 15 : 130% boost to Spark damage | 10 : Negates all status ailments | 25 : Enhances LS's critical damage boost effect (+100% boost. 250% boost total) | 20 : Enhances LS's damage reduction from Fire, Earth, Dark types effect (+5% reduction. 20% reduction total) | 30 : Adds powerful attack at turn's end to BB/SBB, massive attack at turn's end to UBB (500% DoT multiplier on BB/SBB, 1500% DoT multiplier on UBB) | 20 : Enhances BB/UBB's max HP boost effect (+5% boost. 30%/45% boost total) | 30 : Adds considerable Atk, Def, Rec boost for Fire types for 3 turns effect to BB/SBB (130% boost) | 35 : Adds BB gauge boost during Spark for 3 turns effect to BB/SBB​ (Fills 2-4 BC)"
+                }
+            },
+            {
+                "id": "8350",
+                "name": "Lucy Heartfilia",
+                "role": "atk,def,rec,miti_ele,od_fill,crit_dmg_ele,spark_ele,ewd",
+                "rolesp": "add_ele,null_ails,convert_def",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "60% boost to all parameters of Light types / hugely boosts critical damage [150%] / hugely boosts Light elemental damage [150%] / 15% damage reduction from Light|Dark types",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "19/10",
+                    "@dc": "19/10",
+                    "@cost": "35",
+                    "#text": "19 combo powerful Light attack on all foes / 10 combo powerful Light attack on Dark types / hugely boosts Atk|Def|Rec for 3 turns [160%] / slight damage reduction from all elemental types for 1 turn [10%] / slightly boosts OD gauge [8%]"
+                },
+                "sbb": {
+                    "@hit": "25/10",
+                    "@dc": "25/10",
+                    "@cost": "20",
+                    "#text": "25 combo powerful Light attack on all foes / 10 combo powerful Light attack on Dark types / slightly boosts critical damage of Light types for 3 turns [35%] / slightly boosts Spark damage of Light types for 3 turns [35%] / hugely boosts Light elemental damage for 3 turns [175%]"
+                },
+                "ubb": {
+                    "@hit": "28/10",
+                    "@dc": "28/10",
+                    "@cost": "34",
+                    "#text": "28 combo massive Light attack on all foes / 10 combo massive Light attack on Dark types / enormously boosts critical damage for 3 turns [350%] / enormously boosts Light elemental damage for 3 turns [500%] / enormous damage reduction from Dark types for 3 turns [100%]"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Negates elemental damage for all allies / raises normal hit amount / 10% parameters when Silver Key is equipped / 15% parameters when Gold Key is equipped / 20% parameters when Diamond Key is equipped / adds all elements to attack for 3 turns effect to BB|SBB|UBB when Diamond Key is equipped",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850548.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850548.png"
+                },                
+                "sp": {
+                    "@list": "20 : 30% boost to all parameters | 15 : Boosts critical damage (100% boost) | 15 : Boosts elemental damage (75% boost) | 10 : Normal attacks may hit all foes (20% chance with 50% damage penalty) | 30 : Enhances BB's boost to Atk, Def, Rec effect (+10% boost. 170% boost total) | 40 : Enhances LS's critical damage boost effect (+100% boost. 250% boost total) | 15 : Enhances SBB's Spark and critical damage boost for Light types effect (+15% boost. 50% boost total) | 30 : Adds status ailment negation for 3 turns effect to BB/SBB | 30 : Adds huge Def boost relative to Atk for 3 turns effect to BB/SBB (70% Atk to Def) | 30 : Enhances BB's damage reduction from all elemental types effect (+5% reduction. 15% reduction total)"
+                }
+            },
+            {
+                "id": "8352",
+                "name": "Mard Geer",
+                "role": "bb_mod,ails",
+                "rolesp": "recast",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "21",
+                    "@dc": "42",
+                    "#text": "60% boost to all parameters of Dark types / greatly boosts BB Atk when HP is above 25% [300%] / hugely boosts Dark elemental damage [150%] / 10% damage reduction from Light|Dark types",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "26",
+                    "@dc": "26",
+                    "@cost": "26",
+                    "#text": "26 combo Dark attack on all foes / greatly boosts BB Atk for 3 turns [350%] / boosts own max HP [15%] / highly probable Sick|Poison|Paralysis|Curse effects [80%]"
+                },
+                "sbb": {
+                    "@hit": "31",
+                    "@dc": "31",
+                    "@cost": "28",
+                    "#text": "31 combo powerful Dark attack on all foes (consecutive uses boosts damage) / greatly boosts BB Atk for 3 turns [350%] / considerably boosts own Atk|Def for 3 turns [120%] / hugely restores own HP [heals 4000-4500] / highly probable Sick|Poison|Paralysis|Curse effects [80%]"
+                },
+                "ubb": {
+                    "@hit": "34",
+                    "@dc": "34",
+                    "@cost": "30",
+                    "#text": "34 combo massive Dark attack on all foes / enormously boosts BB Atk for 3 turns [600%] / hugely boosts max HP [35%] / damage taken enormously restores own HP for 3 turns [heals 100% damage taken] / all status ailment infliction [100%]"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "10% boost to all parameters of Dark types for all allies / adds resistance against 1 KO attack when HP is below 20% / greatly boosts BB Atk when Book of E.N.D. is equipped [300%]",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860548.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860548.png"
+                },                
+                "sp": {
+                    "@list": "20 : 20% boost to all parameters | 10 : Boosts Atk relative to remaining HP (0.5% boost per 1% HP remaining) | 10 : Boosts Atk when BB gauge is over 50% (50% boost) | 20 : 80% boost to Spark damage | 10 : Boosts critical hit damage (50% boost) | 20 : Negates Atk, Def, Rec reducing effects | 30 : Enhances BB/SBB/UBB's BB Atk boost effect (+100% boost. 450% boost total) | 20 : <span style='display:none'>(*)</span> Adds probability of activating own BB/SBB/UBB twice for 1 turn effect to SBB (20% chance) | 10 : Enhances success rate of activating own BB/SBB/UBB twice for 1 turn effect to SBB (+10% chance. 30% chance total) <span style='display:none'>(Prerequisite: *)</span>"
+                }
             }
         ]
     }
