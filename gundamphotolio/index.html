@@ -113,17 +113,34 @@ img {margin-bottom: -7px}
   function myFunction(response) {
 	var arr = JSON.parse(response);
 	var i;
-	var out = "";
-
+	var f_out = '<div class="w3-third">';
+	var out1 = "";
+	var out2 = "";
+	var out3 = "";
+	var e_out = '</div>';
+	
 	var json_len = arr.photos.length;
-	for (i = 0; i < json_len; i++) {
+	var json_len_divide = Math.round(json_len/3);
+	for (i = 0; i < json_len_divide; i++) {
 	  var tags = arr.photos[i].tags;
 	  var image = arr.photos[i].image;
-		out += '<div class="w3-third">';
-		out += '<img data-frz-src="' + image + '" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload=lzld(this) onerror=lzld(this) alt="' + tags + '" style="width:100%" onclick="openLightbox(this)" />';
-		out += '</div>';
+		out1 += '<img data-frz-src="' + image + '" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload=lzld(this) onerror=lzld(this) alt="' + tags + '" style="width:100%" onclick="openLightbox(this)" />';
 	}
-	document.getElementById("myGrid").innerHTML = out;
+	document.getElementById("myGrid").innerHTML = f_out + out1 + e_out;
+	
+	for (i = json_len_divide; i < json_len_divide*2; i++) {
+	  var tags = arr.photos[i].tags;
+	  var image = arr.photos[i].image;
+		out2 += '<img data-frz-src="' + image + '" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload=lzld(this) onerror=lzld(this) alt="' + tags + '" style="width:100%" onclick="openLightbox(this)" />';
+	}
+	document.getElementById("myGrid").innerHTML += f_out + out2 + e_out;
+	
+	for (i = json_len_divide*2; i < json_len_divide*3; i++) {
+	  var tags = arr.photos[i].tags;
+	  var image = arr.photos[i].image;
+		out3 += '<img data-frz-src="' + image + '" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload=lzld(this) onerror=lzld(this) alt="' + tags + '" style="width:100%" onclick="openLightbox(this)" />';
+	}
+	document.getElementById("myGrid").innerHTML += f_out + out3 + e_out;
   }
 </script>
 
