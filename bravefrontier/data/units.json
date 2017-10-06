@@ -5972,7 +5972,7 @@
             },
             {
                 "id": "1691",
-                "name": "Amus",
+                "name": "Courageous Blade Amus",
                 "role": "miti,def,rec,heal,bb_rate,convert_def,convert_rec,cure",
                 "rolesp": "hot,heal_atked",
                 "element": "Fire",
@@ -6019,7 +6019,7 @@
             },
             {
                 "id": "1693",
-                "name": "Segurd",
+                "name": "Virtuous Paladin Segrud",
                 "role": "null_crit,null_ewd,miti_spark,miti_dot,null_ails",
                 "rolesp": "def,convert_def,miti_guard,bb_guard",
                 "element": "Light",
@@ -6066,7 +6066,7 @@
             },
             {
                 "id": "1695",
-                "name": "Neville",
+                "name": "Ominous Blade Neviro",
                 "role": "atk,convert_atk,spark,atk_down,def_down",
                 "rolesp": "ewd,atk_ailed,ails,spark_debuff",
                 "element": "Dark",
@@ -6113,7 +6113,7 @@
             },
             {
                 "id": "1696",
-                "name": "Ruby",
+                "name": "Inferno Revolution Ruby",
                 "role": "convert_atk,hit,atk_down_add,atk_down",
                 "rolesp": "aoe,atk,rec,bc,hc",
                 "element": "Fire",
@@ -6160,7 +6160,7 @@
             },
             {
                 "id": "1697",
-                "name": "Sefia",
+                "name": "Hallowed Dance Sefia",
                 "role": "spark,bb_mod,bb_fill,bb_regen",
                 "rolesp": "",
                 "element": "Light",
@@ -6207,7 +6207,7 @@
             },
             {
                 "id": "1698",
-                "name": "Kikuri",
+                "name": "Nefarious Dance Kikuri",
                 "role": "ails,dot,bb_atked",
                 "rolesp": "ewd",
                 "element": "Dark",
@@ -6254,7 +6254,7 @@
             },
             {
                 "id": "1700",
-                "name": "Nagito",
+                "name": "Weald Guardian Nagid",
                 "role": "miti,def,bb_atked,heal_atked,heal,bb_regen,bb_rate",
                 "rolesp": "convert_def,barrier",
                 "element": "Earth",
@@ -6301,7 +6301,7 @@
             },
             {
                 "id": "1702",
-                "name": "Razzak",
+                "name": "Storm Guardian Razak",
                 "role": "bb_mod,od_rate,od_fill,bb_regen",
                 "rolesp": "bb_rate,spark,od_regen",
                 "element": "Thunder",
@@ -7081,7 +7081,7 @@
                     "@hit": "30",
                     "@dc": "30",
                     "@cost": "32",
-                    "#text": "30 Hits  2000% AoE (ATK+200) + Light Dark Elements / 3 turn 100% All Element Mitigation / 3 turn 999 BC,turn / 3 Turn HoT 98999-99999 HP (+10% Target REC) / +1000 OD/turn for 3 turns"
+                    "#text": "30 Hits  2000% AoE (ATK+200) + Light Dark Elements / 3 turn 100% All Element Mitigation / 3 turn 999 BC,turn / 3 Turn HoT 98999-99999 HP (+10% Target REC) / +1000 OD|turn for 3 turns"
                 },
                 "es": {
                     "@condtion": "None",
@@ -10483,7 +10483,7 @@
                 }
             },
             {
-                "id": "8344",
+                "id": "8334",
                 "name": "Natsu Dragneel",
                 "role": "idef,convert_atk,convert_def,convert_rec",
                 "rolesp": "dot,atk_ele,def_ele,rec_ele,bb_spark",
@@ -10527,6 +10527,53 @@
                 },                
                 "sp": {
                     "@list": "20 : <span style='display:none'>(*)</span> 40% boost to all parameters | 10 : Raises all parameter boost from 40% to 60% <span style='display:none'>(Prerequisite: *)</span> | 10 : Boosts Atk, Def, Rec each turn (for up to 3 turns) (75% boost after 3 turns) | 15 : 130% boost to Spark damage | 10 : Negates all status ailments | 25 : Enhances LS's critical damage boost effect (+100% boost. 250% boost total) | 20 : Enhances LS's damage reduction from Fire, Earth, Dark types effect (+5% reduction. 20% reduction total) | 30 : Adds powerful attack at turn's end to BB/SBB, massive attack at turn's end to UBB (500% DoT multiplier on BB/SBB, 1500% DoT multiplier on UBB) | 20 : Enhances BB/UBB's max HP boost effect (+5% boost. 30%/45% boost total) | 30 : Adds considerable Atk, Def, Rec boost for Fire types for 3 turns effect to BB/SBB (130% boost) | 35 : Adds BB gauge boost during Spark for 3 turns effect to BB/SBB​ (Fills 2-4 BC)"
+                }
+            },
+            {
+                "id": "8344",
+                "name": "Warp Arcanist Savei",
+                "role": "atk_ele,def_ele,rec_ele,crit_ele,heal_atked,bb_regen,spark_ele,bb_spark,barrier",
+                "rolesp": "spark_crit,spark_debuff,heal_spark,miti_ele",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "54",
+                "ls": {
+                    "@hit": "14",
+                    "@dc": "42",
+                    "#text": "60% boost to Atk|max HP / 130% boost to Spark damage / damage taken may restore HP [50% chance of healing 25% damage taken] / negates Spark damage [25% spark dmg reduction]",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "30",
+                    "#text": "17 combo powerful Dark attack [600%] on all foes / greatly boosts Atk|Def|Rec [130%] of Dark types for 3 turns / enormously boosts critical hit rate [60%] of Dark types for 3 turns / damage taken may slightly restore HP [30% chance to heal 25-30% damage] for 3 turns / enormously boosts BB gauge [12BC] for 3 turns"
+                },
+                "sbb": {
+                    "@hit": "20/3",
+                    "@dc": "20/3",
+                    "@cost": "32",
+                    "#text": "20 combo powerful Dark attack [800%] on all foes / 3 combo powerful Dark attack [300-1200%] on single foe (damage relative to remaining HP) / greatly boosts Atk|Def|Rec [130%] of Dark types for 3 turns / enormously boosts critical hit rate [60%] of Dark types for 3 turns / boosts Spark damage [70%] of Dark types for 3 turns / enormously boosts own Spark damage [120%] for 3 turns / Spark damage slightly boosts BB gauge [2-3BC] for 3 turns"
+                },
+                "ubb": {
+                    "@hit": "23/3",
+                    "@dc": "23/3",
+                    "@cost": "32",
+                    "#text": "23 combo massive Dark attack [2000%] on all foes / 3 combo massive Dark attack [1500-3000%] on single foe (damage relative to remaining HP) / enormously boosts Spark damage [400%] for 3 turns / enormously boosts Dark elemental damage [500%] for 3 turns / damage taken enormously restores HP [heals 100% damage] for 3 turns / enormously boosts BB gauge [100BC] for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% boost to Atk of Dark types / 50% boost to Spark damage / adds Dark barrier [3500HP] effect to BB|SBB / raises Atk parameter limits to 130000",
+                    "#raid": "Boosts Atk|Def [75%] when BB gauge is over 50% / adds 22 combo powerful Dark attack [1100%] on Light types effect to SBB / boosts Dark elemental damage [25%] for all allies in Guild Raid"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860288.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860288.png"
+                },                
+                "sp": {
+                    "@list": "10 : 50% boost to max HP | 15 : 120% boost to Spark damage | 20 : Boosts critical hit damage (75% boost) | 15 : Boosts elemental damage (75% boost) | 10 : Adds probable Spark critical for 3 turns effect to BB/SBB (30% chance of 60% extra Spark damage) | 10 : Adds probable Spark vulnerability infliction for 2 turns effect to BB/SBB (30% chance of 50% Spark vulnerability) | 20 : Adds fill own BB gauge to max effect to SBB | 20 : Enhances BB/SBB's Atk, Def, Rec boost effects (+10% boost, 140% parameter boost total) | 20 : Adds considerable HP restoration during Spark for 3 turns effect to SBB (Fills 400-500 HP recovery on spark) | 25 : Adds slight damage reduction from Light, Dark types for 2 turns effect to BB/SBB (15% reduction) | 30 : Enhances SBB's Spark damage boosts BB gauge effect (+1 BC, fills 3-4 BC on spark total)"
                 }
             },
             {
