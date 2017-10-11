@@ -6723,6 +6723,100 @@
                 }
             },
             {
+                "id": "1737",
+                "name": "Alan",
+                "role": "atk,def,rec,crit,miti_ele,heal,null_crit,null_ewd,bb_fill,crit_res_down",
+                "rolesp": "atk_ele,def_ele,rec_ele",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "+60% All Stats / +10% All Element Mitigation / HP regen +1000-1200 + 10% REC / +4-7 BC on Hit",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "28",
+                    "#text": "16 hits 470% AoE (ATK +200) / 3 turn +170% ATK|DEF|REC / 3 turn +60% Crit / 1 turn +10% All Element Mitigation / Heal 4000-4500 + 32.4% healer REC / 1 turn Null Crit|EWD"
+                },
+                "sbb": {
+                    "@hit": "19",
+                    "@dc": "19",
+                    "@cost": "30",
+                    "#text": "19 hits 200-900% AoE (Relative to HP remaining, ATK +200) / 3 turn +170% ATK|DEF|REC / 3 turn +60% Crit / 3 turn self +150% ATK|DEF|REC / 1 turn +10% All Element Mitigation / 3 turn +9 BC Fill / 1 turn +15% Crit Debuff (20% chance)"
+                },
+                "ubb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "32",
+                    "#text": "23 hits 1500-2800% AoE (Relative to HP remaining, ATK +200) / 3 turn +350% ATK|DEF|REC / 3 turn +60% Crit / 3 turn +100% All Element Mitigation / +80% chance Angel Idol / 3 turn +300% OD Fill Rate / 3 turn +50 BC Fill"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+5% All Element Mitigation / +10% All Stats (Party)",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_51327.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_51327.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span>+40% All Stats | 10 : Upgrade to +60% All Stats <span style='display:none'>(Prerequisite: *)</span> | 10 : Raise ATK Cap to 160000 | 25 : Enhances LS's All Stats (+10%) | 25 : Enhances LS's Element Mitigation (+5%) | 30 : Enhances BB/SBB's Element Mitigation (+5%) | 20 : Enhances SBB's Crit Debuff (+10% chance & +10% effect) | 20 : Enhances BB's Crit/EWD Null (+1 turn) | 30 : Add Effect to BB/SBB (3 turn +120% Fire/Water/Earth/Thunder ATK/DEF/REC) | 30 : Add Effect to BB/SBB (3 turn +120% Light/Dark ATK/DEF/REC)"
+                }
+            },
+            {
+                "id": "1739",
+                "name": "Ragina",
+                "role": "spark,spark_crit,heal_spark,bb_spark,spark_debuff,ewd,ewd_res_down",
+                "rolesp": "bb_fill",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "14",
+                    "@dc": "42",
+                    "#text": "+60% HP|ATK|REC / 2 turn +160% Spark after 5 Sparks / 2 turn +250% BB Atk after 10 Sparks / +2-3 BC on Spark",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "32",
+                    "@dc": "32",
+                    "@cost": "28",
+                    "#text": "32 hits 420% AoE (ATK +200) / 3 turn +130% Spark / 3 turn +60% Spark Crit (30% chance) / 3 turn +400-500 Heal on Spark / 3 turn +2-3 BC on Spark"
+                },
+                "sbb": {
+                    "@hit": "36",
+                    "@dc": "36",
+                    "@cost": "29",
+                    "#text": "36 hits 620% AoE (ATK +200) / 3 turn +130% Spark / 3 turn +60% Spark Crit (30% chance) / 2 turn +30% Spark Debuff (30% chance) / 3 turn +125% EWD / 2 turn +15% EWD Debuff (20% chance)"
+                },
+                "ubb": {
+                    "@hit": "40",
+                    "@dc": "40",
+                    "@cost": "32",
+                    "#text": "40 hits 1800% AoE (ATK +200) / 3 turn +350% Spark / 3 turn +120% Spark Crit (50% chance) / 3 turn +100% Spark Debuff / 3 turn +400% EWD / 3 turn +30% EWD Debuff"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+80% Spark / 2 turn +80% Spark after 10 Sparks",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_61257.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_61257.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span>+30% HP/ATK | 10 : Upgrade to +50% HP/ATK <span style='display:none'>(Prerequisite: *)</span> | 10 : <span style='display:none'>(#)</span> +100% Spark | 10 : <span style='display:none'>(^)</span> Upgrade to +120% Spark <span style='display:none'>(Prerequisite: #)</span> | 15 : Upgrade to +140% Spark <span style='display:none'>(Prerequisite: ^)</span> | 10 : Raise ATK Cap to 160000 | 25 : Enhances BB/SBB's Spark (+30%) | 25 : Enhances BB/SBB's Spark Crit (+10% chance & +5% effect) | 30 : Enhances SBB's EWD (+25%) | 40 : Add Effect to BB/SBB (Fill 8 BC)"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
@@ -10436,7 +10530,7 @@
                 }
             },
             {
-                "id": "8342",
+                "id": "8332",
                 "name": "Dark Soul Dranoel",
                 "role": "dot,atk_down_add,def_down_add,rec_down_add,atk,def,rec,add_ele",
                 "rolesp": "bb_atked,spark",
@@ -10527,6 +10621,100 @@
                 },                
                 "sp": {
                     "@list": "20 : <span style='display:none'>(*)</span> 40% boost to all parameters | 10 : Raises all parameter boost from 40% to 60% <span style='display:none'>(Prerequisite: *)</span> | 10 : Boosts Atk, Def, Rec each turn (for up to 3 turns) (75% boost after 3 turns) | 15 : 130% boost to Spark damage | 10 : Negates all status ailments | 25 : Enhances LS's critical damage boost effect (+100% boost. 250% boost total) | 20 : Enhances LS's damage reduction from Fire, Earth, Dark types effect (+5% reduction. 20% reduction total) | 30 : Adds powerful attack at turn's end to BB/SBB, massive attack at turn's end to UBB (500% DoT multiplier on BB/SBB, 1500% DoT multiplier on UBB) | 20 : Enhances BB/UBB's max HP boost effect (+5% boost. 30%/45% boost total) | 30 : Adds considerable Atk, Def, Rec boost for Fire types for 3 turns effect to BB/SBB (130% boost) | 35 : Adds BB gauge boost during Spark for 3 turns effect to BB/SBB​ (Fills 2-4 BC)"
+                }
+            },
+            {
+                "id": "8340",
+                "name": "Erza Scarlet",
+                "role": "taunt,atk,def,rec,crit,null_crit,null_ewd,convert_def,evade,miti_spark,idef,miti_dot",
+                "rolesp": "miti,atk_down,def_down",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "54",
+                "ls": {
+                    "@hit": "25",
+                    "@dc": "75",
+                    "#text": "85% boost to all parameters of Thunder types / negates critical and elemental damage / 15% additional damage reduction / enormously boosts Thunder elemental damage [250%] / 15% damage reduction from all elements",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "30",
+                    "@dc": "30",
+                    "@cost": "24",
+                    "#text": "30 combo Thunder attack [500%] on all foes / activates Taunt and greatly boosts own Def [150%] for 1 turn / hugely boosts Atk|Def|Rec [180%] for 3 turns / enormously boosts critical hit rate [60%] for 3 turns / negates critical and elemental damage for 2 turns"
+                },
+                "sbb": {
+                    "@hit": "25/25",
+                    "@dc": "25/25",
+                    "@cost": "30",
+                    "#text": " 25 combo powerful Thunder attack [900%] on all foes / 25 combo powerful Thunder attack [620%] on all foes / hugely boosts Atk|Def|Rec [180%] for 3 turns / enormously boosts critical hit rate [60%] for 3 turns / hugely boosts Def [90%] relative to Atk for 3 turns / adds probable [15%] evasion for 2 turns / Spark damage reduction [50%] for 2 turns"
+                },
+                "ubb": {
+                    "@hit": "84",
+                    "@dc": "84",
+                    "@cost": "33",
+                    "#text": "84 combo massive Thunder attack [1500-3000%] on all foes (damage relative to remaining HP) / negates critical and elemental damage for 5 turns / enormously boosts Atk|Def|Rec [400%] for 3 turns / enormously boosts Thunder elemental damage [500%] for 3 turns / enormous damage reduction [100%] from all elemental types for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "20% damage reduction from normal attacks when Damage Reducing Sphere is equipped / negates Def ignoring effect for all allies / 15% additional damage reduction for all allies / 25% damage reduction from Water|Thunder types",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840548.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_840548.png"
+                },                
+                "sp": {
+                    "@list": "10 : 40% boost to all parameters | 10 : 30% boost to Def, max HP | 15 : 130% boost to Spark damage | 10 : Negates all status ailments | 10 : Raises Atk parameter limits to 130000 | 40 : Probable resistance against 2 KO attacks (50% chance) | 15 : 10% damage reduction | 35 : Enhances BB's Taunt duration and Def boost effect (+1 turn & +50% Def. 2 turns & 200% Def boost total) | 20 : Enhances BB/SBB's Atk, Def, Rec boost effect (+10% boost. 190% boost total) | 35 : Adds 50% damage reduction for 2 turns effect to BB/SBB | 20 : Adds probable huge 1 turn Atk, Def reduction effect to SBB (30% chance to reduce enemy Atk, Def by 50%)"
+                }
+            },
+            {
+                "id": "8342",
+                "name": "Gray Fullbuster",
+                "role": "spark_ele,atk_down,def_down,bb_fill,bb_spark,crit_res_down,ewd_res_down",
+                "rolesp": "spark_crit,atk_ele,def_ele,rec_ele,evade",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "50",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "60% boost to all parameters of Water types / 130% boost to Spark damage / hugely boosts Water elemental damage [150%] / 15% damage reduction from Fire|Water types",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "28",
+                    "#text": "25 combo Water attack [420%] on all foes / adds Def ignoring effect to own attack for 3 turns / boosts Spark damage [50%] of Water types for 3 turns / probable [30%] huge 1 turn Atk|Def reduction [-50%] / enormously boosts BB gauge [12BC]"
+                },
+                "sbb": {
+                    "@hit": "33",
+                    "@dc": "33",
+                    "@cost": "30",
+                    "#text": "33 combo powerful Water attack [620%] on all foes / adds Def ignoring effect to own attack for 3 turns / boosts Spark damage [50%] of Water types for 3 turns / probable [30%] huge 1 turn Atk|Def reduction [-50%] / Spark damage boosts BB gauge [2-3BC] for 3 turns / highly probable [50%] critical and elemental vulnerability infliction[15%] for 1 turn"
+                },
+                "ubb": {
+                    "@hit": "35",
+                    "@dc": "35",
+                    "@cost": "31",
+                    "#text": "35 combo massive Water attack [1800%] on all foes / adds Def ignoring effect to own attack for 3 turns / enormously boosts Spark damage [350%] for 3 turns / enormous 3 turn Atk|Def reduction [-90%] / Spark damage boosts BB gauge [5-8BC] for 3 turns / adds evasion [100%] for 1 turn"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "",
+                    "#raid": "10% boost to all parameters for all allies / 25% damage reduction from Water types / raises Atk parameter limits to 130000"
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_820548.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_820548.png"
+                },                
+                "sp": {
+                    "@list": "20 : 30% boost to all parameters | 20 : 120% boost to Spark damage | 10 : Boosts elemental damage (75% boost) | 10 : Damage taken boosts BB gauge (Fills 2-3 BC) | 25 : Enhances success rate of SBB's critical and elemental vulnerability infliction effect (+50% chance. 100% chance total) | 20 : Enhances success rate of BB/SBB's probable huge Atk, Def reduction effect (+10% chance. 40% chance total) | 10 : Allows BB/SBB's 1 turn Atk, Def reduction effects to last 2 turns | 20 : Adds probable Spark critical for 3 turns effect to BB/SBB (30% chance Sparks deal 50% extra damage) | 30 : Adds considerable Atk, Def, Rec boost of Water types for 3 turns effect to BB/SBB (130% boost) | 25 : Adds probable evasion for 1 turn effect to BB/SBB (12% chance)"
                 }
             },
             {
