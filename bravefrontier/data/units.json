@@ -6817,6 +6817,100 @@
                 }
             },
             {
+                "id": "1740",
+                "name": "Medina",
+                "role": "bb_fill,bc,hc,bb_regen,spark,bb_atked,bb_spark",
+                "rolesp": "heal,null_ails",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "11",
+                    "@dc": "44",
+                    "#text": "+40% HP|ATK|DEF / +8 BC Fill after 5000 DMG dealt / +6 BC Fill / +200% BB Atk",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "24",
+                    "#text": "18 hits 360% AoE (ATK +200) / +8 BC Fill / 3 turn +35% BC|HC Drop Rate / 3 turn +7 BC Fill / 3 turn +100% Spark"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "26",
+                    "#text": "20 hits 560% AoE (ATK +200) / +10 BC Fill / 3 turn +7 BC Fill / 3 turn +4-7 BC on Hit / 3 turn +2-3 BC on Spark / 3 turn +100% Spark"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "30",
+                    "#text": "22 hits 1500% AoE (ATK +200) / 3 turn +300% ATK|DEF / 3 turn +500% BB Atk / 3 turn +50 BC Fill / 3 turn +75% Mitigation / +25000 Water Barrier"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+50% ATK|DEF|REC when BB > 50% / +4 BC Fill",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_20617.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_20617.png"
+                },                
+                "sp": {
+                    "@list": "10 : +30% HP/DEF | 10 : +50% ATK/DEF when BB > 50% | 10 : <span style='display:none'>(*)</span>+80% Spark | 15 : Upgrade to +100% Spark <span style='display:none'>(Prerequisite: *)</span> | 20 : +20% DoT Mitigation | 10 : Raise ATK Cap to 130000 | 30 : Enhances BB/SBB's Spark (+30%) | 30 : Enhances BB/SBB's BB Regen (+2 BC) | 35 : Add Effect to BB/SBB (Heal 2500-3500 + 11% Healer REC) | 35 : Add Effect to BB/SBB (3 turn Null Ailments)"
+                }
+            },
+            {
+                "id": "1741",
+                "name": "Dion",
+                "role": "atk,crit,convert_def,add_ele,crit_dmg,def,convert_atk,bb_mod,ewd",
+                "rolesp": "miti_ele,crit_res_down,ewd_res_down",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "14",
+                    "@dc": "42",
+                    "#text": "+100% ATK / +40% HP / +175% Crit DMG / +150% Earth|Thunder EWD / +200% BB Atk",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "25",
+                    "#text": "17 hits 360% AoE (ATK +200) / 3 turn +170% ATK / 3 turn +60% Crit / 3 turn +70% ATK->DEF / 3 turn Add Fire|Water elements / 3 turn +50% Crit DMG"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "25",
+                    "#text": "20 hits 560% AoE (ATK +200) / 3 turn +170% DEF / 3 turn +70% DEF->ATK / 3 turn +350% BB Atk / 3 turn +100% Earth|Thunder EWD / 3 turn Add Earth|Thunder elements"
+                },
+                "ubb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "30",
+                    "#text": "23 hits 1500% AoE (ATK +200) / 3 turn +300% ATK|DEF / 3 turn +60% Crit / 3 turn +300% Crit DMG / 3 turn +500% BB Atk / 3 turn +450% Earth|Thunder EWD / 3 turn Add Fire|Water|Earth|Thunder elements"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+150% BB Atk / +100% Crit DMG",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_30607.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_30607.png"
+                },                
+                "sp": {
+                    "@list": "10 : +30% HP/ATK | 10 : +80% Crit DMG | 10 : Raise ATK Cap to 130000 | 20 : Enhances BB's Crit DMG (+25%) | 20 : Enhances SBB's BB Atk (+100%) | 20 : Enhances SBB's EWD (+25%) | 25 : Add Effect to SBB (3 turn +125% Fire/Water EWD) | 30 : Add Effect to BB/SBB (2 turn +20% Earth/Thunder Mitigation) | 35 : Add Effect to BB/SBB (2 turn +15% Crit Debuff [20% chance]) | 35 : Add Effect to BB/SBB (2 turn +15% EWD Debuff [20% chance])"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
