@@ -8096,31 +8096,31 @@
                 "ls": {
                     "@hit": "13",
                     "@dc": "52",
-                    "#text": "15% Chance Reduce DMG to 1 (ALL) / 20% Chance Angel Idol 1x (ALL) / 40% HP 40% ATK 40% DEF 40% REC (ALL) / 50% ATK 50% DEF (BB >= 50%) (ALL)",
-                    "#raid": ""
+                    "#text": "50% boost to all parameters / boosts Atk and Def [80%] when BB gauge is over 50% / probable [15%] damage reduction to 1 / probable [20%] resistance against 1 KO attack / considerably boosts ABP and CBP gain [60% ABP & 35% CBP]",
+                    "#raid": "25% boost to all parameters of Dark types / 20% damage reduction from Dark|Light types in Guild Raid"
                 },
                 "bb": {
                     "@hit": "18",
                     "@dc": "18",
                     "@cost": "28",
-                    "#text": "400% Dark (AOE) or 5% Chance Reduce 5% Enemy HP Left / 8BC Fill (ALL) 1Turn / 150% ATK+ 150% DEF+ 150% REC+ (SELF) 3Turns / 10% Chance Angel Idol 1% HP (ALL) 999Turns / Convert 70% attack to DEF (ALL) 3Turns"
+                    "#text": "18 combo powerful Dark attack on all foes [420%](or 5% damage of foes' max HP) / enormously boosts BB gauge [10 BC] / hugely boosts Def [70%] relative to Atk for 3 turns / greatly boosts own Atk|Def|Rec [150%] for 3 turns / probable [15%] resistance against 1 KO attack"
                 },
                 "sbb": {
                     "@hit": "21",
                     "@dc": "21",
                     "@cost": "30",
-                    "#text": "600% Dark (AOE) or 5% Chance Reduce 5% Enemy HP Left / 10BC Fill (ALL) 1Turn / 10% OverDrive Fill / 3000HP Barrier (dark) / Convert 70% DEF to ATK (ALL) 3Turns"
+                    "#text": "21 combo powerful Dark attack on all foes [620%](or 5% damage of foes' max HP) / enormously boosts BB gauge [12 BC] / hugely boosts Atk [70%] relative to Def for 3 turns / slightly boosts OD gauge [10%] / activates Dark barrier [3500 HP]"
                 },
                 "ubb": {
                     "@hit": "27",
                     "@dc": "27",
                     "@cost": "30",
-                    "#text": "2000% Dark (AOE) / Reduce DMG (100%) 2Turns / 25000HP Barrier (dark) / 70% Chance Revive Dead Ally 100% HP (ALL) / Convert 250% DEF to ATK (ALL) 3Turns / 100% Chance Reduce 10% Enemy HP Left"
+                    "#text": "27 combo massive Dark attack on all foes [2000%](with additional 5% damage of foes' max HP) / high probability [80%] of raising allies from KO / enormously boosts Atk [300%] relative to Def for 3 turns / enormous damage reduction [100%] for 2 turns / activates Dark barrier [30000 HP]"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "10% Chance Reduce DMG to 1 (SELF) / 6BC Fill Each Turn (SELF)",
-                    "#raid": ""
+                    "#text": "Probable [20%] damage reduction to 1 / hugely boosts BB gauge each turn [6 BC] / boosts Dark elemental damage [25%] for all allies / adds considerable BB gauge boost when attacked [4-7 BC] effect to BB,SBB",
+                    "#raid": "Adds powerful Dark attack [1100%] on Light, Dark types to SBB,UBB in Guild Raid"
                 },
                 "art": {
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860428.png"
@@ -8129,7 +8129,7 @@
                     "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860428.png"
                 },                
                 "sp": {
-                    "@list": "20 : 30% boost to max HP | 10 : 50% boost to Atk | 10 : 50% boost to Def | 20 : Negates elemental damage | 10 : Enhances Leader Skill all parameters boost from 40% to 50% | 30 : 10% damage reduction from Light, Dark types (To self) | 20 : Adds considerable Atk boost for 3 turns effect to BB (160% boost) | 20 : Adds considerable Atk boost for 3 turns effect to SBB (160% boost) | 20 : Adds considerable Def boost for 3 turns effect to BB (160% boost) | 20 : Adds considerable Def boost for 3 turns effect to SBB (160% boost) | 30 : Adds considerable OD gauge fill rate boost for 3 turns effect to BB (20% boost) | 30 : Enhances SBB's huge boost to Atk relative to Def effect (+10% boost, 80% boost total) | 30 : Enhances BB's huge boost to Def relative to Atk effect (+10% boost, 80% boost total)"
+                    "@list": "20 : 30% boost to max HP | 10 : 50% boost to Atk | 10 : 50% boost to Def | 10 : Negates elemental damage | 10 : Enhances Leader Skill all parameters boost from 50% to 60% | 15 : 10% damage reduction from Light, Dark types (To self) | 10 : Adds considerable Atk boost for 3 turns effect to BB (190% boost) | 10 : Adds considerable Atk boost for 3 turns effect to SBB (190% boost) | 10 : Adds considerable Def boost for 3 turns effect to BB (190% boost) | 10 : Adds considerable Def boost for 3 turns effect to SBB (190% boost) | 30 : Adds considerable OD gauge fill rate boost for 3 turns effect to BB (20% boost) | 25 : Enhances SBB's huge boost to Atk relative to Def effect (+10% boost, 80% boost total) | 15 : Enhances BB's huge boost to Def relative to Atk effect (+10% boost, 80% boost total)"
                 }
             },
             {
