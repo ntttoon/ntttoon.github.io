@@ -6911,6 +6911,194 @@
                 }
             },
             {
+                "id": "1742",
+                "name": "Edea",
+                "role": "atk_down,heal,heal_atked,miti,bc,hc,hot,cure",
+                "rolesp": "atk_down_atked,bb_regen,null_ails",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "",
+                    "#text": "+100% ATK & 30% HP to Earth units / +50% ATK & + 30% HP to all / Negate all Crit Dmg,EWD,Ailments",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "25",
+                    "#text": "17 hits Earth ST (540%) / 30% chance to inflict -50% ATK debuff on all enemies / heal party for 3500-4000HP +22.5% REC / 3 turns 20% chance to recover 20-25% of damage taken when hit / 1 turn 50% mitigation"
+                },
+                "sbb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "26",
+                    "#text": "20 hits Earth AOE (500%) / 30% chance to inflict -50% ATK debuff on all enemies / heal party for 3500-4000HP +22.5% REC / 3 turns +35% BC|HC drop rate / 3 turns 3000-3500HP +15% REC regen / 1 turn 50% mitigation"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "30",
+                    "#text": "22 hits Earth AOE (1300%) / 100% chance to inflict -80% ATK debuff on all enemies for 3 turns / 3 turns +100% BC|HC drop rate / 3 turns 98999-99999HP +10% REC regen / 3 turns 75% mitigation"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Negate Crit Dmg,EWD / Add to BB,SBB cure all status ailments",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_30167.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_30167.png"
+                },                
+                "sp": {
+                    "@list": "10 : +30% DEF/HP | 10 : +50% DEF/REC when BB gauge is half or higher | 20 : +2-3 BC when hit | 20 : Negate all status ailments | 20 : 20% mitigation from damage-over-time | 20 : Improve BB/SBB's 50% mitigation to last 2 turns | 30 : Improve BB/SBB's -50% ATK debuff to last 2 turns | 30 : Add to BB/SBB, 3 turns 10% chance to -25% ATK debuff for 2 turns when hit to party | 30 : Add to BB/SBB, 3 turns 8 BC regen per turn | 30 : Add to BB/SBB, 3 turns Negate all status ailments"
+                }
+            },
+            {
+                "id": "1743",
+                "name": "Lochs",
+                "role": "crit_dmg,spark",
+                "rolesp": "crit,spark_crit",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "",
+                    "#text": "+100% ATK & 30% HP to Thunder units / +50% ATK & 30% HP to all / +175% Crit Dmg / +100% Spark Dmg",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "30",
+                    "@dc": "30",
+                    "@cost": "28",
+                    "#text": "30 hits Thunder AOE (410% & self crit +60%) / 3 turns +80% Spark Dmg to self / 3 turns +50% Crit Dmg / +100% Spark Dmg to party"
+                },
+                "sbb": {
+                    "@hit": "3/1",
+                    "@dc": "3/1",
+                    "@cost": "35",
+                    "#text": "3 hits Thunder AOE (870% & self crit +60%) / 1 hit Thunder attack (200-800% based on HP remaining & self crit +60%) / 3 turns +80% Spark Dmg to self / 3 turns +50% Crit Dmg / 3 turns +100% Spark Dmg to party"
+                },
+                "ubb": {
+                    "@hit": "4/1",
+                    "@dc": "4/1",
+                    "@cost": "32",
+                    "#text": "4 hits Thunder AOE (2000% & self crit +60%) / 1 hit Thunder attack (1000-2000% based on HP remaining & self crit +60%) / 3 turns +100% Spark Dmg to self / 3 turns +500% BB ATK / 3 turns +300% Spark Dmg to party"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+100% Crit Dmg / +80% Spark Dmg",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_40167.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_40167.png"
+                },                
+                "sp": {
+                    "@list": "10 : +30% ATK/HP | 10 : <span style='display:none'>(*)</span>+100% Spark Dmg | 15 : +100% to +120% Spark Dmg <span style='display:none'>(Prerequisite: *)</span> | 30 : +10 BC fill when sparking | 10 : +50% Crit Dmg | 10 : Increase ATK limit from 99999 to 130000 | 15 : Increase ATK limit from 130000 to 160000 | 25 : Improve BB/SBB's Spark Dmg buff to party by 30% (total 130%) | 30 : Add to BB/SBB, 3 turns +60% Crit Rate | 35 : Add to BB/SBB, 3 turns 50% chance to do 75% Spark Critical Dmg to self"
+                }
+            },
+            {
+                "id": "1745",
+                "name": "Daltisk",
+                "role": "bb_fill,bb_rate,bb_atked,bb_spark,bc,hc,bb_regen",
+                "rolesp": "bb_mod,ewd,convert_def,convert_atk",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "60",
+                "ls": {
+                    "@hit": "11",
+                    "@dc": "",
+                    "#text": "+80% ATK|DEF|HP / +300% BB ATK / +8 BC regen per turn / +5-8 BC when hit",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "32",
+                    "@dc": "32",
+                    "@cost": "10",
+                    "#text": "32 hits Thunder AOE (450%) / +10 BC fill to party / 3 turns +50% BC fill rate / 3 turns +5-8 BC when hit / 3 turns +3-4 BC when sparking"
+                },
+                "sbb": {
+                    "@hit": "35",
+                    "@dc": "35",
+                    "@cost": "16",
+                    "#text": "35 hits Thunder AOE (650%) / +10 BC fill to party / 3 turns +40% BC|HC drop rate / 3 turns +10 BC regen per turn / 3 turns +5-8 BC when hit / 3 turns +3-4 BC when sparking"
+                },
+                "ubb": {
+                    "@hit": "37",
+                    "@dc": "37",
+                    "@cost": "32",
+                    "#text": "37 hits Thunder AOE (2000%) / 5 turns +600% BB ATK / 5 turns +50 BC regen per turn / 5 turns +50 BC when hit / 3 turns 75% mitigation"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+40% all stats & +8 BC when 5000 dmg is dealt when BB Type sphere is equipped / +60% ATK|DEF|REC when BB gauge is half or higher",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_41037.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_41037.png"
+                },                
+                "sp": {
+                    "@list": "20 : +60% all stats | 10 : +60% ATK/DEF based on HP remaining | 20 : Negate all status ailments | 10 : Increase ATK limit from 99999 to 160000 | 10 : End of turn effects take place at start of turn instead (except for first turn of Arena/Colo) | 20 : Improve SBB's BB regen by 2 BC | 35 : Add to BB/SBB, 3 turns +450% BB ATK | 35 : Add to BB/SBB, 3 turns +125% all element EWD | 30 : Add to BB/SBB, 3 turns +90% ATK to DEF convert | 30 : Add to BB/SBB, 3 turns +90% DEF to ATK convert"
+                }
+            },
+            {
+                "id": "1747",
+                "name": "Amadurim",
+                "role": "atk_down,crit_dmg,idef",
+                "rolesp": "ails,aoe,dot",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "60",
+                "ls": {
+                    "@hit": "14",
+                    "@dc": "",
+                    "#text": "+80% All Stats / +30% BB|SBB activation rate / 30% chance to AOE normal attack at -30% damage / +100% & 50% ABP|CBP",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "10/8",
+                    "@dc": "10/8",
+                    "@cost": "20",
+                    "#text": "10 hits Light AOE (200%-550% based on HP remaining & self crit rate +60%) / 8 hits Light random attacks (650%) / 30% chance to -60% ATK debuff / 3 turns +75% crit dmg to party / 2 turns Ignore DEF to party"
+                },
+                "sbb": {
+                    "@hit": "12/10",
+                    "@dc": "12/10",
+                    "@cost": "24",
+                    "#text": "12 hits Light AOE (200%-950% based on HP remaining & self crit rate +60%) / 10 hits Light random attacks (850%) / 30% chance to -60% ATK debuff / 3 turns +600% BB ATK to self / 3 turns +75% crit dmg to party"
+                },
+                "ubb": {
+                    "@hit": "13/12",
+                    "@dc": "13/12",
+                    "@cost": "32",
+                    "#text": "13 hits Light AOE (1500%-3000% based on HP remaining) / 12 hits Light random attacks (1500%) / 3 turns 100% chance 150% spark vulnerability debuff / 3 turns +400% A|D|R / 3 turns +450% crit dmg / 3 turns +450% spark dmg to party"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+40% all stats & +50% mitigation for the first 2 turns when Status Boosting Type sphere is equipped / 30% chance to reduce enemy BB gauge by 30% / 50% chance to reduce BB fill rate on enemy by 50% for 2 (of enemy's) turns",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_51337.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_51337.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span>+60% all stats | 10 : +60% to +80% all stats <span style='display:none'>(Prerequisite: *)</span> | 20 : 30% chance to AOE normal attack at -30% dmg | 20 : Null all status ailments | 25 : Negate EWD & Crit Dmg | 10 : Increase ATK limit from 99999 to 160000 | 70 : 70% chance to survive fatal dmg once | 25 : 75% chance to inflict all status ailments | 35 : Add to BB/SBB, 3 turns 100% chance to AOE normal attack to party | 10 : Add to BB/SBB, 3 turns 600% damage over time to enemies"
+                }
+            },
+            {
                 "id": "",
                 "name": "\u2605\u2605\u2605 MOCK UNITS \u2605\u2605\u2605",
                 "role": "",
