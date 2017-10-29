@@ -12,55 +12,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
-body,h1 {font-family: "Montserrat", sans-serif; margin:0; padding:0}
-#photos {
-   /* Prevent vertical gaps */
-   line-height: 0;
-   
-   -webkit-column-count: 5;
-   -webkit-column-gap:   0px;
-   -moz-column-count:    5;
-   -moz-column-gap:      0px;
-   column-count:         5;
-   column-gap:           0px;
-}
-
-#photos img {
-  /* Just in case there are inline attributes */
-  width: 100% !important;
-  height: auto !important;
-  display:block;
-  margin-bottom:0;
-}
-
-@media (max-width: 1200px) {
-  #photos {
-  -moz-column-count:    4;
-  -webkit-column-count: 4;
-  column-count:         4;
-  }
-}
-@media (max-width: 1000px) {
-  #photos {
-  -moz-column-count:    3;
-  -webkit-column-count: 3;
-  column-count:         3;
-  }
-}
-@media (max-width: 800px) {
-  #photos {
-  -moz-column-count:    2;
-  -webkit-column-count: 2;
-  column-count:         2;
-  }
-}
-@media (max-width: 400px) {
-  #photos {
-  -moz-column-count:    1;
-  -webkit-column-count: 1;
-  column-count:         1;
-  }
-}
+body,h1 {font-family: "Montserrat", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
 </style>
 <script>
 function getURLParameter(name) {
@@ -85,7 +39,7 @@ function getURLParameter(name) {
 
 <!-- !PAGE CONTENT! -->
 <div style="height:70px;"></div>
-<div style="width:100%">
+<div class="w3-content" style="max-width:1500px">
   <!-- Header -->
   <div class="w3-opacity">
   <span class="w3-button w3-xxlarge w3-white" style="position:fixed;top:0;right:0" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
@@ -93,11 +47,12 @@ function getURLParameter(name) {
   <header class="w3-center w3-margin-bottom">
     <h1><b>GUNDAM PHOTOLIO</b></h1>
     <p><b>Những hình ảnh sưu tầm về đồ chơi mô hình chủ yếu là Gundam</b></p>
+    <p class="w3-padding-16"><button class="w3-button w3-black" onclick="togglePadding()">Toggle Grid Padding</button></p>
   </header>
   </div>
   
   <!-- Photo Grid -->
-  <div id="photos" style="margin-bottom:128px">
+  <div class="w3-row" id="myGrid" style="margin-bottom:128px">
   <!-- <div class="w3-third">
       <img src="https://www.w3schools.com/w3images/mist.jpg" style="width:100%">
       <img src="https://www.w3schools.com/w3images/workbench.jpg" style="width:100%">
@@ -127,6 +82,16 @@ function getURLParameter(name) {
 </div>
 
 <script>
+  // Toggle grid padding
+  function togglePadding() {
+	  var x = document.getElementById("myGrid");
+	  if (x.className === "w3-row") {
+		  x.className = "w3-row-padding";
+	  } else { 
+		  x.className = x.className.replace("w3-row-padding", "w3-row");
+	  }
+  }
+  
   // Open and close sidebar
   function w3_open() {
 	  document.getElementById("mySidebar").style.width = "100%";
@@ -154,23 +119,53 @@ function getURLParameter(name) {
   function myFunction(response) {
 	var arr = JSON.parse(response);
 	var i;
-	var out = "";
+	var f_out = '<div class="w3-third">';
+	var out1 = "";
+	var out2 = "";
+	var out3 = "";
+	var e_out = '</div>';
 	
 	var json_len = arr.photos.length;
+	var json_len_divide = Math.round(json_len/3);
 	var s = getURLParameter('id');
-	for (i = 0; i < json_len; i++) {
+	for (i = 0; i < json_len_divide; i++) {
 	  var tags = arr.photos[i].tags;
 	  var allimages = arr.photos[i].image;
 	  if(tags==s){
 		var image = arr.photos[i].image;
-		out += '<img data-frz-src="' + image + '" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload=lzld(this) onerror=lzld(this) alt="' + tags + '" onclick="openLightbox(this)" />';
+		out1 += f_out + '<img data-frz-src="' + image + '" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload=lzld(this) onerror=lzld(this) alt="' + tags + '" style="width:100%" onclick="openLightbox(this)" />' + e_out;
 	  }
 	  if(!s){
-		out +='<img data-frz-src="' + allimages + '" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload=lzld(this) onerror=lzld(this) alt="' + tags + '" onclick="openLightbox(this)" />';
+		out1 += f_out + '<img data-frz-src="' + allimages + '" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload=lzld(this) onerror=lzld(this) alt="' + tags + '" style="width:100%" onclick="openLightbox(this)" />' + e_out;
 	  }
 	}
-	document.getElementById("photos").innerHTML += out;
+	document.getElementById("myGrid").innerHTML = out1;
 	
+	for (i = json_len_divide; i < json_len_divide*2; i++) {
+	  var tags = arr.photos[i].tags;
+	  var allimages = arr.photos[i].image;
+	  if(tags==s){
+		var image = arr.photos[i].image;
+		out2 += f_out + '<img data-frz-src="' + image + '" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload=lzld(this) onerror=lzld(this) alt="' + tags + '" style="width:100%" onclick="openLightbox(this)" />' + e_out;
+	  }
+	  if(!s){
+		out2 += f_out + '<img data-frz-src="' + allimages + '" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload=lzld(this) onerror=lzld(this) alt="' + tags + '" style="width:100%" onclick="openLightbox(this)" />' + e_out;
+	  }
+	}
+	document.getElementById("myGrid").innerHTML += out2;
+	
+	for (i = json_len_divide*2; i < json_len_divide*3; i++) {
+	  var tags = arr.photos[i].tags;
+	  var allimages = arr.photos[i].image;
+	  if(tags==s){
+		var image = arr.photos[i].image;
+		out3 += f_out + '<img data-frz-src="' + image + '" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload=lzld(this) onerror=lzld(this) alt="' + tags + '" style="width:100%" onclick="openLightbox(this)" />' + e_out;
+	  }
+	  if(!s){
+		out3 += f_out + '<img data-frz-src="' + allimages + '" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload=lzld(this) onerror=lzld(this) alt="' + tags + '" style="width:100%" onclick="openLightbox(this)" />' + e_out;
+	  }
+	}
+	document.getElementById("myGrid").innerHTML += out3;
   }
 </script>
 
