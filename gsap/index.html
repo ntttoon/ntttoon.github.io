@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GSAP Cheat Sheet and sample codes for Animate CC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:image" content="https://greensock.com/wp-content/themes/greensock/images/greensock-logo.svg" />
+<meta property="og:title" content="GSAP Cheat Sheet" />
+<meta property="og:description" content="I Love GSAP" />
+<link rel="stylesheet" href="../css/w3.css">
+<script src="../js/ga.js"></script>
+</head>
+
+<body s>
+<header class="w3-container w3-teal w3-card-2">
+  <h5>GSAP Cheat Sheet and sample codes for Animate CC</h5>
+</header>
+
+<div class="w3-container">
+  <p>
+  <div class="w3-example">
+    <h4>DFP Cached Libs</h4>
+    <div class="w3-code jsHigh notranslate">&lt;script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.19.0_643d6911392a3398cb1607993edabfa7_min.js"&gt;&lt;/script&gt;</div>
+  </div>
+  </p>
+</div>
+
+<div class="w3-container">
+  <p>
+  <div class="w3-example">
+    <h4>Safe EaselJS properties to animate</h4>
+    <div class="w3-code jsHigh notranslate">x, y, alpha, scaleX, scaleY, rotation, skewX, skewY, regX, regY</div>
+  </div>
+  </p>
+</div>
+
+<div class="w3-container">
+  <p>
+  <div class="w3-example">
+    <h4>CTA and mouseover event</h4>
+    <div class="w3-code jsHigh notranslate">
+    	function fl_ClickToGoToWebPage() {<br>
+        <span>&nbsp;&nbsp;&nbsp;</span>window.open(window.clickTag);<br>
+        }<br>
+        function mOver() {<br>
+        <span>&nbsp;&nbsp;&nbsp;</span>exportRoot.mc.gotoAndPlay(1);<br>
+        }<br>
+        this.cta.addEventListener("click", fl_ClickToGoToWebPage);<br>
+        this.cta.addEventListener("mouseover", mOver);<br>
+        window.addEventListener("mouseover", mOver);<br>
+    </div>
+  </div>
+  </p>
+</div>
+
+<div class="w3-container">
+  <p>
+  <div class="w3-example">
+    <h4>GSAP sample code</h4>
+    <div class="w3-code jsHigh notranslate">
+    	var tl = new TimelineMax({repeat:3, repeatDelay:5})<br>
+		tl.from(this.shape, 1, {x:-50, y:750, ease:Power3.easeOut})<br>
+		<span>&nbsp;&nbsp;</span>.staggerFrom([this.xe01, this.xe02, this.xe03, this.xe04], 1, {x:-100, ease: Elastic.easeOut.config(1, 0.8)}, 0.1, "-=0.5")<br>
+		<span>&nbsp;&nbsp;</span>.from(this.chungtoi, 1, {x:-150, ease: Elastic.easeOut.config(1, 0.8)}, "-=0.5")<br>
+		<span>&nbsp;&nbsp;</span>.from(this.giaxe, 1, {x:450, ease: Elastic.easeOut.config(1, 0.8)}, "-=0.5")<br>
+		<span>&nbsp;&nbsp;</span>.from(this.khampha, 1, {y:this.khampha.y+50, alpha:0, ease:Power3.easeOut}, "-=0.5")<br>
+    </div>
+  </div>
+  </p>
+</div>
+
+<div class="pdf" style="text-align:center">
+  <object data="gs_cheatsheet.pdf" type="application/pdf" width="100%" height="1700">
+    alt : <a href="gs_cheatsheet.pdf">GreenSock Cheatsheet</a>
+  </object>
+</div>
+
+<!-- Highlight Code --> 
+<script src="http://www.w3schools.com/lib/w3codecolor.js"></script> 
+<script>
+	w3CodeColor();
+</script>
+</body>
+</html>
