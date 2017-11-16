@@ -12,35 +12,7 @@
   <meta property="og:description" content="Mô hình Gundam hay Gunpla, không phải là loại đồ chơi phục vụ cho nhu cầu cơ bản.">
   <meta property="og:url" content="http://ntttoon.github.io/posts/00004/index.html">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&amp;subset=latin-ext,vietnamese" rel="stylesheet">
-  <script src="hoverontouch.js"></script>
-  <script type="text/javascript">
-    var HoverOnTouch = new HoverOnTouch();
-</script>
-  <style>
-.bord{
-        padding: 0;
-        margin: 0;
-        -webkit-box-sizing: border-box;
-         }
-.crossfd{
-        display: inline-block;
-        font:size: 0;
-        }
-.crossfd img{
-                 -webkit-transition: opacity .5s ease-in-out;
-                 -moz-transition: opacity .5s ease-in-out;
-                 -o-transition: opacity .5s ease-in-out;
-                 transition: opacity .5s ease-in-out;
-                    }
-/*.crossfd img:hover{
-				cursor: pointer;
-                    opacity: 0;
-		}*/
-.hoverontouch--aktiv .crossfd img{
-	cursor: pointer;
-    opacity: 0;
-}		
-</style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -57,11 +29,17 @@
   <div class="mg-center" style="margin-bottom:16px"><img alt="" class="mg-hide-small mg-image" src="CwllmX0UAAAf0LB.jpg"> <img alt="" class="mg-hide-medium mg-hide-large mg-image" src="CwllmX0UAAAf0LB.jpg"></div>
   
   <div style="width:100%;">
-      <div class="bord crossfd hoverontouch" style="position:relative;display:table;margin: 0 auto;">
-        <img src="http://ntttoon.github.io/images/s01.png" class="mg-image" style="position:absolute;top:0">
-        <img src="http://ntttoon.github.io/images/s02.png" class="mg-image">
+      <div class="compare" style="position:relative;display:table;margin: 0 auto;">
+        <img src="s1.jpg" class="mg-image" style="position:absolute;top:0">
+        <img src="s2.jpg" class="mg-image">
       </div>
-  <div style="text-align:center;font-size:12px">Nhấn vào trong hoặc ngoài ảnh để thay đổi</div>
+  <div style="text-align:center;font-size:12px">Nhấn vào ảnh để thay đổi</div>
+  
+  <script>
+  $( ".compare" ).click(function() {
+  	$( ".compare img:first" ).fadeToggle( "slow");
+});
+  </script>
   
  </div>
   
