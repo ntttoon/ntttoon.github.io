@@ -6442,7 +6442,7 @@
             },
             {
                 "id": "1719",
-                "name": "Behemot",
+                "name": "Ultimate Behemoth",
                 "role": "spark",
                 "rolesp": "",
                 "element": "Thunder",
@@ -6489,7 +6489,7 @@
             },
             {
                 "id": "1720",
-                "name": "Balgran",
+                "name": "Rumbling Blade Balgran",
                 "role": "miti_guard,bb_guard,ails,ails_atked,convert_def",
                 "rolesp": "heal_atked,bb_atked,atk_down_atked",
                 "element": "Thunder",
@@ -6536,7 +6536,7 @@
             },
             {
                 "id": "1721",
-                "name": "Rinon",
+                "name": "Sublime Divinity Rinon",
                 "role": "heal,cure,null_ails,null_crit,null_ewd,miti_dot,miti_ele,add_ele,bc,hc",
                 "rolesp": "hot,heal_atked,bb_mod,spark_crit",
                 "element": "Light",
@@ -6583,7 +6583,7 @@
             },
             {
                 "id": "1722",
-                "name": "Yuura",
+                "name": "Wise Necromancer Yuura",
                 "role": "bb_mod,bb_atked,bb_spark,dot",
                 "rolesp": "drain,ewd",
                 "element": "Dark",
@@ -6630,7 +6630,7 @@
             },
             {
                 "id": "1724",
-                "name": "Lumis",
+                "name": "Winged Mercy Lumis",
                 "role": "heal,hot,cure,add_ele,barrier,null_ails,rec,convert_rec,miti_spark",
                 "rolesp": "convert_atk,convert_def,miti_dot",
                 "element": "Water",
@@ -6677,7 +6677,7 @@
             },
             {
                 "id": "1726",
-                "name": "Ordine",
+                "name": "Killer Bolt Ordine",
                 "role": "atk,crit,bb_mod,crit_dmg,atk_down,convert_atk",
                 "rolesp": "",
                 "element": "Thunder",
@@ -7096,6 +7096,288 @@
                 },                
                 "sp": {
                     "@list": "10 : <span style='display:none'>(*)</span>+60% all stats | 10 : +60% to +80% all stats <span style='display:none'>(Prerequisite: *)</span> | 20 : 30% chance to AOE normal attack at -30% dmg | 20 : Null all status ailments | 25 : Negate EWD & Crit Dmg | 10 : Increase ATK limit from 99999 to 160000 | 70 : 70% chance to survive fatal dmg once | 25 : 75% chance to inflict all status ailments | 35 : Add to BB/SBB, 3 turns 100% chance to AOE normal attack to party | 10 : Add to BB/SBB, 3 turns 600% damage over time to enemies"
+                }
+            },
+            {
+                "id": "1771",
+                "name": "Zegustia",
+                "role": "atk,crit,spark,bb_mod,crit_dmg",
+                "rolesp": "spark_crit,hit,atk_ailed,ewd",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "60",
+                "ls": {
+                    "@hit": "12",
+                    "@dc": "48",
+                    "#text": "+120% HP|ATK / +150% Spark / +300% BB Atk / +175% Crit",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "20/10",
+                    "@dc": "20/10",
+                    "@cost": "24",
+                    "#text": "10 hits 600% ST (ATK +200) / 5 hits 700% ST (ATK +200) / 3 turn +200% ATK / 3 turn +60% Crit / 3 turn +160% Spark / 3 turn +500% BB Atk / 3 turn +100% Crit DMG"
+                },
+                "sbb": {
+                    "@hit": "12/6",
+                    "@dc": "12/6",
+                    "@cost": "34",
+                    "#text": "12 hits 850% AoE (ATK +200) / 6 hits 900% AoE (ATK +200) / 3 turn +200% ATK / 3 turn +60% Crit / 3 turn +160% Spark / 3 turn +500% BB Atk / 3 turn +100% Crit DMG"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "40",
+                    "#text": "22 hits 4000% AoE (ATK +200) / 3 turn +400% ATK / 3 turn +60% Crit / 3 turn +400% Spark / 3 turn +450% EWD / 3 turn +150% Spark Crit (50% chance) / 3 turn +450% Crit"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+40% All Stats & +20% ATK per turn (up to 5 turns) [Equip ATK Boosting Sphere] / +80% Spark when HP > 50%",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_11167.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_11167.png"
+                },                
+                "sp": {
+                    "@list": "10 : +80% HP/ATK | 10 : <span style='display:none'>(*)</span> +150% Spark | 10 : Upgrade to +170% Spark <span style='display:none'>(Prerequisite: *)</span> | 20 : +1 Hit Count (+20% DMG) | 10 : <span style='display:none'>(#)</span> Raise ATK Cap to 180000 | 15 : Further raise ATK Cap to 200000 <span style='display:none'>(Prerequisite: #)</span> | 35 : Add Effect to SBB (3 turn +65% Spark Crit [30% chance]) | 35 : Add Effect to SBB (3 turn +2 Hit Count [+30% DMG]) | 20 : Add Effect to SBB (3 turn +200% ATK vs. ailment afflicted foes) | 30 : Add Effect to SBB (3 turn +150% EWD)"
+                }
+            },
+            {
+                "id": "1773",
+                "name": "Wintia",
+                "role": "miti,miti_ele,miti_guard,bb_guard,null_crit,null_ewd,miti_spark,miti_dot",
+                "rolesp": "cure",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "60",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "+120% HP|DEF / +6-10 BC on Hit / 1 turn +50% BB Gauge Fill Rate Down (50% chance) / +100% ABP & +50% CBP",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "16",
+                    "@dc": "16",
+                    "@cost": "26",
+                    "#text": "16 hits 420% AoE (ATK +200) / 2 turn +50% Mitigation / 1 turn +10% All Element Mitigation / 3 turn +10% Guard Mitigation / 3 turn +8 BC on Guard"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "28",
+                    "#text": "18 hits 560% AoE (ATK +200) / 2 turn +50% Mitigation / 1 turn +10% All Element Mitigation / 2 turn Null Crit|EWD / 2 turn +25% Spark Mitigation / 2 turn +15% DoT Mitigation"
+                },
+                "ubb": {
+                    "@hit": "20",
+                    "@dc": "20",
+                    "@cost": "32",
+                    "#text": "20 hits 1800% AoE (ATK +200) / 5 turn +400% DEF / 5 turn +100% All Element Mitigation / 5 turn Null Ailments / 3 turn +100% DoT Mitigation / 3 turn +50 BC Fill"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+40% All Stats & +100% Mitigation (10% chance) [Equip DMG Reducing Sphere] / +30% BB activation rate",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_21107.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_21107.png"
+                },                
+                "sp": {
+                    "@list": "10 : +80% HP/DEF | 10 : +20% DEF/REC per turn (up to 5 turns) | 20 : Null Crit/EWD | 20 : Null DEF Ignore | 10 : +50% Spark Mitigation | 10 : +25% DoT Mitigation | 60 : 70% chance Angel Idol | 20 : Enhances BB/SBB's Element Mitigation (+5%) | 20 : Enhances SBB's Spark and DoT Mitigation (+10%) | 30 : Add Effect to BB/SBB (Status Cleanse)"
+                }
+            },
+            {
+                "id": "1774",
+                "name": "Signas",
+                "role": "atk_ele,def_ele,rec_ele,crit,crit_dmg,ails,ewd,crit_res_down,ewd_res_down",
+                "rolesp": "",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "12",
+                    "@dc": "48",
+                    "#text": "+100% ATK / +40% HP / +15% FWET Mitigation / +150% FWET EWD / +175% Crit",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "15",
+                    "@dc": "15",
+                    "@cost": "26",
+                    "#text": "15 hits 360% AoE (ATK +200) / 3 turn +120% ATK|DEF|REC for Water / 3 turn +60% Crit / 3 turn +50% Crit DMG / +75% chance ailments"
+                },
+                "sbb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "25",
+                    "#text": "18 hits 560% AoE (ATK +200) / 3 turn +60% Crit / 3 turn +50% Crit DMG / 3 turn +100% FWET EWD / 1 turn +20% Crit|EWD Vuln (15% chance)"
+                },
+                "ubb": {
+                    "@hit": "24",
+                    "@dc": "24",
+                    "@cost": "30",
+                    "#text": "24 hits 1500% AoE (ATK +200) / 3 turn +60% Crit / 3 turn +100% FWET Mitigation / 3 turn +350% Crit DMG / 3 turn +30% Crit|EWD Vuln"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+8 BC on Crit / 3 turn Heal 800-1000 after Crit",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_20327.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_20327.png"
+                },                
+                "sp": {
+                    "@list": "10 : +30% HP/ATK | 10 : +75% Crit DMG | 20 : +20-25% Heal when Hit (25% chance) | 10 : +50% Spark Mitigation | 10 : Raise ATK Cap to 150000 | 20 : Enhances BB/SBB's Crit DMG (+25%) | 20 : Enhances SBB's EWD (+25%) | 25 : Enhances SBB's Crit Vuln (+10% chance & +10% effect) | 25 : Enhances SBB's EWD Vuln (+10% chance & +10% effect) | 25 : Add Effect to BB (3 turn +120% Fire/Earth/Thunder ATK/DEF/REC)"
+                }
+            },
+            {
+                "id": "1775",
+                "name": "Zephyr",
+                "role": "atk_ele,def_ele,rec_ele,heal,bb_fill,od_fill,od_rate,atk,def,rec,idef",
+                "rolesp": "spark,hot,bb_regen",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "+40% All Stats / +15% Light|Dark Mitigation / +150% Dark EWD / +20% OD Fill Rate",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "27",
+                    "#text": "18 hits 360% AoE (ATK +200) / 3 turn +120% ATK|DEF|REC for Dark / Heal 3500-4000 + 32.4% Healer REC / +8 BC Fill / +8% OD Fill / 3 turn +20% OD Fill Rate"
+                },
+                "sbb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "27",
+                    "#text": "22 hits 560% AoE (ATK +200) / 3 turn +170% ATK|DEF|REC / 3 turn +120% Self ATK|DEF|REC / Heal 3500-4000 + 32.4% Healer REC / +8 BC Fill / +8% OD Fill"
+                },
+                "ubb": {
+                    "@hit": "26",
+                    "@dc": "26",
+                    "@cost": "30",
+                    "#text": "26 hits 1500% AoE (ATK +200) / 3 turn +300% ATK|DEF|REC / 3 turn +3 Hit Count (+100% DMG) / +30000 HP Dark Barrier / +999 BC Fill / +50% OD Fill"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+0-50% ATK|DEF|REC relative to remaining HP / +1 Hit Count / Add Effect to BB|SBB (2 turn Ignore DEF)",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_60357.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_60357.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> +20% All Stats | 10 : Upgrade to +40% All Stats <span style='display:none'>(Prerequisite: *)</span> | 10 : <span style='display:none'>(#)</span> +80% Spark | 10 : Upgrade to +100% Spark <span style='display:none'>(Prerequisite: #)</span> | 30 : +1 Hit (+20% DMG) | 20 : Raise ATK Cap to 130000 | 35 : Add Effect to BB/SBB (3 turn +130% Spark) | 35 : Add Effect to BB/SBB (3 turn Heal 3500-4000 + 15% REC) | 30 : Add Effect to BB/SBB (3 turn +8 BC Fill) | 20 : Add Effect to BB (3 turn +120% Light ATK/DEF/REC)"
+                }
+            },
+            {
+                "id": "",
+                "name": "",
+                "role": "",
+                "rolesp": "",
+                "element": "",
+                "rarity": "8",
+                "cost": "",
+                "ls": {
+                    "@hit": "",
+                    "@dc": "",
+                    "#text": "",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "sbb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "ubb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_11167.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_11167.png"
+                },                
+                "sp": {
+                    "@list": ""
+                }
+            },
+            {
+                "id": "",
+                "name": "",
+                "role": "",
+                "rolesp": "",
+                "element": "",
+                "rarity": "8",
+                "cost": "",
+                "ls": {
+                    "@hit": "",
+                    "@dc": "",
+                    "#text": "",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "sbb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "ubb": {
+                    "@hit": "",
+                    "@dc": "",
+                    "@cost": "",
+                    "#text": ""
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_11167.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_11167.png"
+                },                
+                "sp": {
+                    "@list": ""
                 }
             },
             {
