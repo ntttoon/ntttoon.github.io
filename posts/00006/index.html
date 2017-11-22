@@ -45,16 +45,22 @@
 		text-shadow: 0 1px 1px #000;
 	}
 	.contrast {
-		background: rgba(0, 0, 0, 0.5);
+		background: rgba(0, 0, 0, 0.3);
 		padding: 1px 10px;
-		/*-webkit-box-shadow: 0 0 23px 5px rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: 0 0 23px 5px rgba(0, 0, 0, 0.4);
 		-moz-box-shadow: 0 0 23px 5px rgba(0, 0, 0, 0.4);
-		box-shadow: 0 0 23px 5px rgba(0, 0, 0, 0.4);*/
+		box-shadow: 0 0 23px 5px rgba(0, 0, 0, 0.4);
 		-webkit-border-radius: 3px;
 		-moz-border-radius: 3px;
 		-ms-border-radius: 3px;
 		-o-border-radius: 3px;
 		border-radius: 3px;
+	}
+	.slider .indicators .indicator-item{
+		height:16px;
+		width:16px;
+		margin:0 6px;
+		background: rgba(255, 255, 255, 0.5);
 	}
 </style>
 </head>
@@ -66,7 +72,7 @@
             <img src="https://eva-img.24hstatic.com/upload/4-2017/images/2017-10-07/goi-buoi-tom-muc-kho-cang-an-cang-ngon-goi-buoi-tom-muc-14-1507358499-width650height488.jpg">
             <div class="caption center-align" style="position:absolute;top:10%;left:10%;width:80%">
                 <h1>Đãi cả nhà gỏi bưởi tôm mực khô siêu ngon cuối tuần</h1>
-                <p class="light grey-text text-lighten-3 contrast flow-text">Thưởng thức gỏi bưởi tôm mực khô vừa ngon lại lạ miệng, đảm bảo cả nhà sẽ rất thích.<br>Link bài viết gốc: <a href="https://eva.vn/bep-eva/dai-ca-nha-goi-buoi-tom-muc-kho-sieu-ngon-cuoi-tuan-c162a326241.html" target="_blank"><strong>ở đây</strong></a><br>Lật để xem tiếp</p>
+                <p class="light grey-text text-lighten-3 contrast flow-text">Thưởng thức gỏi bưởi tôm mực khô vừa ngon lại lạ miệng, đảm bảo cả nhà sẽ rất thích.<br>Link bài viết gốc: <a href="https://eva.vn/bep-eva/dai-ca-nha-goi-buoi-tom-muc-kho-sieu-ngon-cuoi-tuan-c162a326241.html" target="_blank"><strong>ở đây</strong></a><br>Vuốt sang trái để xem tiếp &rarr;</p>
             </div>
     	</li>
     	<li>
@@ -152,7 +158,8 @@
 <script>
 $(document).ready(function(){
 	$('.slider').slider({
-		indicators: false,
+		indicators: true,
+		interval:300000,
 	});
 });
 </script>
