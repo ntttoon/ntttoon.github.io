@@ -7287,50 +7287,97 @@
                 }
             },
             {
-                "id": "",
-                "name": "",
-                "role": "",
-                "rolesp": "",
-                "element": "",
+                "id": "1777",
+                "name": "Dragon Shield",
+                "role": "heal,hot,heal_atked,cure,null_ails,null_stats,barrier,bb_fill,idol,maxhp",
+                "rolesp": "rec,convert_atk",
+                "element": "Earth",
                 "rarity": "8",
-                "cost": "",
+                "cost": "60",
                 "ls": {
-                    "@hit": "",
-                    "@dc": "",
-                    "#text": "",
+                    "@hit": "11",
+                    "@dc": "44",
+                    "#text": "80% boost to all parameters, 25% Chance 25% HP when attacked, +1000-1200 Gradual Heal, Negate Ailments|Debuffs",
                     "#raid": ""
                 },
                 "bb": {
-                    "@hit": "",
-                    "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@hit": "0",
+                    "@dc": "0",
+                    "@cost": "20",
+                    "#text": "Heal 5000-5500 HP (+40% REC) HP, Heal 4000-4500 HP (+20% REC) for 3 turns, 3 turn 30% Chance 30%-35% HP on Hit, Cure Ailments|Debuffs, 3 turn Negate Status Ailments, 1 turn Negate Debuffs"
                 },
                 "sbb": {
-                    "@hit": "",
-                    "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@hit": "0",
+                    "@dc": "0",
+                    "@cost": "60",
+                    "#text": "Heal 98999-99999 HP (+10% REC), +4000 HP Earth barrier, 50 BC fill, 10% Chance Angel Idol (1% HP), Boost Max HP 20%, Cure Ailments|Debuffs"
                 },
                 "ubb": {
-                    "@hit": "",
-                    "@dc": "",
-                    "@cost": "",
-                    "#text": ""
+                    "@hit": "0",
+                    "@dc": "0",
+                    "@cost": "32",
+                    "#text": "3 turn Heal 98999-99999 HP (+10% REC), 3 turn 400% REC buff, 3 turn 60% HP to REC buff, 3 turn 100% Chance 100% HP on Hit, 40% Max HP, 70% Chance to Revive all Dead Allies (50% HP)"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "",
+                    "#text": "40% All Stats & 30% Chance Recyclable AI after 200k DMG [Equip HP Recovery Sphere] & 80% chance AI",
                     "#raid": ""
                 },
                 "art": {
-                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_11167.png"
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_31067.png"
                 },
                 "thumb": {
-                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_11167.png"
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_31067.png"
                 },                
                 "sp": {
-                    "@list": ""
+                    "@list": "10 : 80% HP/DEF/REC | 20 : 2-4 BC fill when attacked | 20 : 30% chance of 40% HP recovery when attacked | 20 : 25% chance to take 1 dmg | 30 : Add 20 bc fill for self to BB/SBB | 20 : Enhances sbb max hp boost by 5% | 10 : Adds 4000 Hp earth element barrier to BB | 30 : Adds 180% rec buff for 3 turns to BB/SBB | 30 : Adds 80% rec to atk for 3 turns to BB/SBB | 50 : Adds 90% chance angel idol (Recovers 100% HP) to UBB"
+                }
+            },
+            {
+                "id": "1779",
+                "name": "Heavens Edge",
+                "role": "atk,def,rec,od_rate,ails,od_regen,convert_atk,convert_def,convert_rec,add_ele,hit,spark_crit",
+                "rolesp": "spark,bb_mod,ewd,bb_spark,def_down,ewd_res_down,crit_res_down",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "60",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "100% boost to all parameters, 130% Spark Damage, -20% BB Cost, 20% EXP boost",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "28",
+                    "@dc": "28",
+                    "@cost": "24",
+                    "#text": "28 Hits, 510% AoE (ATK+200), 3 turns +200% ATK|DEF|REC, 3 turns +30% OD fill rate, +75% chance ailments, 3 turn 500 OD Fill at Turns End"
+                },
+                "sbb": {
+                    "@hit": "32",
+                    "@dc": "32",
+                    "@cost": "33",
+                    "#text": "32 Hits, 800% AoE (ATK+200), 10 Hits, 850% AoE (ATK+200), 3 turn 40% HP to ATK|DEF|REC buff, 3 turn Adds All Elements to attack buff, 3 turn +2 Hit Count buff (+20% Damage), 3 turn 30% Chance 60% Spark Crits"
+                },
+                "ubb": {
+                    "@hit": "35",
+                    "@dc": "35",
+                    "@cost": "34",
+                    "#text": "35 Hits, 2500% AoE (ATK+200), 3 turn 400% ATK|DEF|REC, 3 turn 60% Crit Chance, 3 turn 100% All Elements Mitigation buff, 3 turn 400% Spark Damage buff, 3 turn +3 Hit Counts (100% Damage), 3 turn 250% OD Gauge Fill Rate"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "40% all stats & 15% all stats to party [Equip Stat sphere] & 50% OD Fill Rate",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_61287.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_61287.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> Boosts all stats by 80% | 10 : Enhances 80% all stats to 100% all stats <span style='display:none'>(Prerequisite: *)</span> | 10 : Boosts Spark Damage by 150% | 30 : 10% All Elements Mitigation | 20 : Nulls EWD and Crit DMG | 10 : Raise atk limit from 99999 to 180k | 10 : Enhances LS's EXP boost by 5% (25% total) | 25 : Adds 150% Spark Damage boost for 3 turns to BB/SBB | 25 : Adds 450% BB mod for 3 turns to BB/SBB | 25 : Adds 125% EWD for 3 turns to BB/SBB | 25 : Add 2-3 bc fill on Spark for 3 turns to BB/SBB | 30 : Adds 40% chance def down(60%) for 2 turns to BB/SBB | 30 : Adds 20% Chance 15% EWD resistance down for 2 turns to BB/SBB | 30 : Adds 20% Chance 20% Crit resistance down for 2 turns to BB/SBB"
                 }
             },
             {
