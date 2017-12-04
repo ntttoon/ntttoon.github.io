@@ -1,0 +1,426 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Maga Gen</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script type="text/javascript" src="js/jscall.js"></script>
+<!-- include trumbowyg -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
+<link href="trumbowyg/ui/trumbowyg.min.css" rel="stylesheet">
+<script src="trumbowyg/trumbowyg.min.js"></script>
+<!-- include trumbowyg plugins -->
+<link href="trumbowyg/plugins/colors/ui/trumbowyg.colors.css" rel="stylesheet">
+<script src="trumbowyg/plugins/colors/trumbowyg.colors.min.js"></script>
+<script src="trumbowyg/plugins/noembed/trumbowyg.noembed.min.js"></script>
+</head>
+<body class="w3-light-grey">
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s1','alt_html_s1');openSlot(event)">Slot 1 <span class="w3-right" onclick="alert(html_s1)">☰</span></a>
+  <a href="#" class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s2','alt_html_s2');openSlot(event)">Slot 2 <span class="w3-right" onclick="alert(html_s2)">☰</span></a>
+  <a href="#" class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s3','alt_html_s3');openSlot(event)">Slot 3 <span class="w3-right" onclick="alert(html_s3)">☰</span></a>
+  <a href="#" class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s4','alt_html_s4');openSlot(event)">Slot 4 <span class="w3-right" onclick="alert(html_s4)">☰</span></a>
+  <a href="#" class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s5','alt_html_s5');openSlot(event)">Slot 5 <span class="w3-right" onclick="alert(html_s5)">☰</span></a>
+  <a href="#" class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s6','alt_html_s6');openSlot(event)">Slot 6 <span class="w3-right" onclick="alert(html_s6)">☰</span></a>
+  <a href="#" class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s7','alt_html_s7');openSlot(event)">Slot 7 <span class="w3-right" onclick="alert(html_s7)">☰</span></a>
+  <a href="#" class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s8','alt_html_s8');openSlot(event)">Slot 8 <span class="w3-right" onclick="alert(html_s8)">☰</span></a>
+  <a href="#" class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s9','alt_html_s9');openSlot(event)">Slot 9 <span class="w3-right" onclick="alert(html_s9)">☰</span></a>
+  <a href="#" class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s10','alt_html_s10');openSlot(event)">Slot 10 <span class="w3-right" onclick="alert(html_s10)">☰</span></a>
+  <a href="#" class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s11','alt_html_s11');openSlot(event)">Slot 11 <span class="w3-right" onclick="alert(html_s11)">☰</span></a>
+  <a href="#" class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s12','alt_html_s12');openSlot(event)">Slot 12 <span class="w3-right" onclick="alert(html_s12)">☰</span></a>
+  <a href="#" class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s13','alt_html_s13');openSlot(event)">Slot 13 <span class="w3-right" onclick="alert(html_s13)">☰</span></a>
+  <a href="#" class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s14','alt_html_s14');openSlot(event)">Slot 14 <span class="w3-right" onclick="alert(html_s14)">☰</span></a>
+  <a href="#" class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s15','alt_html_s15');openSlot(event)">Slot 15 <span class="w3-right" onclick="alert(html_s15)">☰</span></a>
+  <a href="#" class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s16','alt_html_s16');openSlot(event)">Slot 16 <span class="w3-right" onclick="alert(html_s16)">☰</span></a>
+  <a href="#" class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s17','alt_html_s17');openSlot(event)">Slot 17 <span class="w3-right" onclick="alert(html_s17)">☰</span></a>
+  <a href="#" class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s18','alt_html_s18');openSlot(event)">Slot 18 <span class="w3-right" onclick="alert(html_s18)">☰</span></a>
+  <a href="#" class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s19','alt_html_s19');openSlot(event)">Slot 19 <span class="w3-right" onclick="alert(html_s19)">☰</span></a>
+  <a href="#" class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s20','alt_html_s20');openSlot(event)">Slot 20 <span class="w3-right" onclick="alert(html_s20)">☰</span></a>
+  
+</div>
+
+<!-- Page Content -->
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-large" onclick="w3_open()">☰</button>
+  <!-- <button class="w3-button w3-teal w3-large w3-right" onclick="update_export()">Cập nhật thay đổi</button>-->
+  <button class="w3-button w3-teal w3-large w3-right" id="zip_button">Save file</button>
+  <span id="currentSlot" class="w3-display-topmiddle">html_s1</span>
+  <span id="currentImgId"></span>
+  <span id="currentImgId_FileName"></span>
+  <span id="alt_currentSlot">alt_html_s1</span>
+</div>
+
+<!-- slot holder -->
+<div id="html_s1" style="display:none;position:absolute"></div>
+<div id="html_s2" style="display:none;position:absolute"></div>
+<div id="html_s3" style="display:none;position:absolute"></div>
+<div id="html_s4" style="display:none;position:absolute"></div>
+<div id="html_s5" style="display:none;position:absolute"></div>
+<div id="html_s6" style="display:none;position:absolute"></div>
+<div id="html_s7" style="display:none;position:absolute"></div>
+<div id="html_s8" style="display:none;position:absolute"></div>
+<div id="html_s9" style="display:none;position:absolute"></div>
+<div id="html_s10" style="display:none;position:absolute"></div>
+<div id="html_s11" style="display:none;position:absolute"></div>
+<div id="html_s12" style="display:none;position:absolute"></div>
+<div id="html_s13" style="display:none;position:absolute"></div>
+<div id="html_s14" style="display:none;position:absolute"></div>
+<div id="html_s15" style="display:none;position:absolute"></div>
+<div id="html_s16" style="display:none;position:absolute"></div>
+<div id="html_s17" style="display:none;position:absolute"></div>
+<div id="html_s18" style="display:none;position:absolute"></div>
+<div id="html_s19" style="display:none;position:absolute"></div>
+<div id="html_s20" style="display:none;position:absolute"></div>
+
+<!-- slot alter_holder -->
+<div id="alt_html_s1" style="display:none;position:absolute"></div>
+<div id="alt_html_s2" style="display:none;position:absolute"></div>
+<div id="alt_html_s3" style="display:none;position:absolute"></div>
+<div id="alt_html_s4" style="display:none;position:absolute"></div>
+<div id="alt_html_s5" style="display:none;position:absolute"></div>
+<div id="alt_html_s6" style="display:none;position:absolute"></div>
+<div id="alt_html_s7" style="display:none;position:absolute"></div>
+<div id="alt_html_s8" style="display:none;position:absolute"></div>
+<div id="alt_html_s9" style="display:none;position:absolute"></div>
+<div id="alt_html_s10" style="display:none;position:absolute"></div>
+<div id="alt_html_s11" style="display:none;position:absolute"></div>
+<div id="alt_html_s12" style="display:none;position:absolute"></div>
+<div id="alt_html_s13" style="display:none;position:absolute"></div>
+<div id="alt_html_s14" style="display:none;position:absolute"></div>
+<div id="alt_html_s15" style="display:none;position:absolute"></div>
+<div id="alt_html_s16" style="display:none;position:absolute"></div>
+<div id="alt_html_s17" style="display:none;position:absolute"></div>
+<div id="alt_html_s18" style="display:none;position:absolute"></div>
+<div id="alt_html_s19" style="display:none;position:absolute"></div>
+<div id="alt_html_s20" style="display:none;position:absolute"></div>
+
+<!-- Magazine holder -->
+<div class="w3-display-topmiddle" style="margin-top:43px">
+	<div id="maga_holder"></div>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4">
+    <span onclick="modal_close()" class="w3-button w3-black w3-display-topright">&times;</span>
+      <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button tablink w3-red" onclick="openTab(event,'module01')">Image</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'module02')">H1 Title</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'module03')">H3 Title</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'module04')">F Para</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'module05')">LI + Para</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'module06')">RI + Para</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'module07')">3 Images</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'module08')">Slideshow</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'module09')">Comparing Image</button>
+      </div>
+      <div id="gallery_holder"></div>
+      <div id="module01" class="w3-container tab">
+        <h2>Image</h2>
+        <p>Up ảnh và chọn ảnh</p>
+        <label class="w3-text-teal"><b>Up ảnh</b></label>
+        <input class="w3-input w3-border" type="file" onchange="onFileSelected(event)">
+        <p><button class="w3-button w3-teal w3-large" onclick="imageGen()">Xuất</button></p>
+      </div>
+    
+      <div id="module02" class="w3-container tab" style="display:none">
+        <h2>Tiêu đề lớn</h2>
+        <input class="w3-input w3-border" type="text" id="h1title">
+        <p><button class="w3-button w3-teal w3-large" onclick="h1TitleGen()">Xuất</button></p>
+      </div>
+      
+      <div id="module03" class="w3-container tab" style="display:none">
+        <h2>Tiêu đề nhỏ</h2>
+        <input class="w3-input w3-border" type="text" id="h3title">
+        <p><button class="w3-button w3-teal w3-large" onclick="h3TitleGen()">Xuất</button></p>
+      </div>
+    
+      <div id="module04" class="w3-container tab" style="display:none">
+        <h2>Full Paragraph</h2>
+        <p>Khối văn bản</p>
+        <div id="paragraph"></div>
+        <p><button class="w3-button w3-teal w3-large" onclick="paragraphGen()">Xuất</button></p>
+      </div>
+      
+      <div id="module05" class="w3-container tab" style="display:none">
+        <h2>Float left image + Paragraph</h2>
+        <p>Ảnh lệch trái + khối văn bản</p>
+        <input class="w3-input w3-border" type="file" onchange="onFileSelected(event)">
+        <div id="paragraph_right"></div>
+        <p><button class="w3-button w3-teal w3-large" onclick="leftImageParaGen()">Xuất</button></p>
+      </div>
+      
+      <div id="module06" class="w3-container tab" style="display:none">
+        <h2>Float right image + Paragraph</h2>
+        <p>Ảnh lệch phải + khối văn bản</p>
+        <input class="w3-input w3-border" type="file" onchange="onFileSelected(event)">
+        <div id="paragraph_left"></div>
+        <p><button class="w3-button w3-teal w3-large" onclick="rightImageParaGen()">Xuất</button></p>
+      </div>
+      
+      <div id="module07" class="w3-container tab" style="display:none">
+        <h2>3 Images</h2>
+        <p>Module tạo 3 ảnh gallery</p>
+        <p><button class="w3-button w3-teal w3-large" onclick="threeImageGen()">Xuất</button></p>
+      </div>
+      
+      <div id="module08" class="w3-container tab" style="display:none">
+        <h2>Slideshow</h2>
+        <p>Module tạo Slideshow. Lưu ý chỉ được tạo 1 module duy nhất trong trang</p>
+        <p><button class="w3-button w3-teal w3-large" onclick="slideShowGen()">Xuất</button></p>
+      </div>
+      
+      <div id="module09" class="w3-container tab" style="display:none">
+        <h2>Comparing Image</h2>
+        <p>Module tạo 2 ảnh so sánh</p>
+        <p><button class="w3-button w3-teal w3-large" onclick="comparingImageGen()">Xuất</button></p>
+      </div>
+  </div>
+</div>
+
+<script>
+	//document.body.addEventListener('click', update_export, true); 
+	function update_export(){
+		loadScript("temp/magazine.js", function(){
+			document.getElementById("maga_holder").innerHTML = "<iframe srcdoc=\'"+ result + "\' width='1600' height='700' frameborder='0' scrolling='yes' style='background:#FFF'></iframe>" ;
+		});
+	}
+	
+	function changeSlot(a,alt){
+		document.getElementById("currentSlot").innerHTML = a;
+		document.getElementById("alt_currentSlot").innerHTML = alt;
+	}
+</script> 
+
+<script>
+function openTab(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("tab");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+
+function openSlot(evt) {
+  var i, slotlinks;
+  slotlinks = document.getElementsByClassName("slotlinks");
+  for (i = 0; i < 20; i++) {
+      slotlinks[i].className = slotlinks[i].className.replace(" w3-red", "");
+  }
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+function modal_open() {
+	document.getElementById('id01').style.display='block';
+}
+function modal_close() {
+	document.getElementById('id01').style.display='none';
+}
+</script>
+
+<script src="js/tidy.js"></script>
+<script>
+  options = {
+	  "indent":"auto",
+	  "indent-spaces":2,
+	  "wrap":0,
+	  "markup":true,
+	  "output-xml":false,
+	  "numeric-entities":true,
+	  "quote-marks":true,
+	  "quote-nbsp":false,
+	  "show-body-only":false,
+	  "quote-ampersand":false,
+	  "break-before-br":true,
+	  "uppercase-tags":false,
+	  "uppercase-attributes":false,
+	  "drop-font-tags":true,
+	  "tidy-mark":false
+}
+</script>
+
+<script>
+function onFileSelected(event) {
+  var d = new Date();
+  var n = d.getTime();
+  $("#gallery_holder").append('<img id="' + n + '" style="width:100px;height:100px" onclick="document.getElementById(\'currentImgId\').innerHTML = this.id;">');
+  
+  var selectedFile = event.target.files[0];
+  var reader = new FileReader();
+
+  var imgtag = document.getElementById(n);
+  imgtag.title = selectedFile.name;
+  document.getElementById('currentImgId_FileName').innerHTML = selectedFile.name;
+
+  reader.onload = function(event) {
+    imgtag.src = event.target.result;
+  };
+
+  reader.readAsDataURL(selectedFile);
+}
+
+</script>
+
+<script>
+function h1TitleGen(){
+	var a = document.getElementById('currentSlot').innerHTML;
+	var aa = document.getElementById('alt_currentSlot').innerHTML;
+	var c = document.getElementById('h1title').value;
+	document.getElementById(a).innerHTML = '<div class="mg-container"><h1 class="mg-center mg-content600 mg-padding-32 mg-h1title">' + c + '</h1></div>';
+	document.getElementById(aa).innerHTML = '<div class="mg-container"><h1 class="mg-center mg-content600 mg-padding-32 mg-h1title">' + c + '</h1></div>';
+	modal_close();
+	update_export()
+}
+
+function h3TitleGen(){
+	var a = document.getElementById('currentSlot').innerHTML;
+	var aa = document.getElementById('alt_currentSlot').innerHTML;
+	var c = document.getElementById('h3title').value;
+	document.getElementById(a).innerHTML = '<div class="mg-container"><h3 class="mg-center mg-content600 mg-padding-16 mg-h3title">' + c + '</h3></div>';
+	document.getElementById(aa).innerHTML = '<div class="mg-container"><h3 class="mg-center mg-content600 mg-padding-16 mg-h3title">' + c + '</h3></div>';
+	modal_close();
+	update_export()
+}
+
+function paragraphGen(){
+	var a = document.getElementById('currentSlot').innerHTML;
+	var aa = document.getElementById('alt_currentSlot').innerHTML;
+	var p = $('#paragraph').trumbowyg('html');
+	document.getElementById(a).innerHTML = '<div class="mg-container mg-content600">' + p + '</div>';
+	document.getElementById(aa).innerHTML = '<div class="mg-container mg-content600">' + p + '</div>';
+	modal_close();
+	update_export()
+}
+
+function imageGen(){
+	var a = document.getElementById('currentSlot').innerHTML;
+	var b = document.getElementById('currentImgId').innerHTML;
+	var c = document.getElementById(b).src;
+	var aa = document.getElementById('alt_currentSlot').innerHTML;
+	var bb = document.getElementById('currentImgId_FileName').innerHTML;
+	document.getElementById(a).innerHTML = '<div class="mg-center" style="margin-bottom:16px"><img alt="" class="mg-hide-small mg-image" src="' + c + '"> <img alt="" class="mg-hide-medium mg-hide-large mg-image" src="' + c + '"></div>';
+	document.getElementById(aa).innerHTML = '<div class="mg-center" style="margin-bottom:16px"><img alt="" class="mg-hide-small mg-image" src="' + bb + '"> <img alt="" class="mg-hide-medium mg-hide-large mg-image" src="' + bb + '"></div>';
+	modal_close();
+	update_export()
+}
+
+function leftImageParaGen(){
+	var a = document.getElementById('currentSlot').innerHTML;
+	var b = document.getElementById('currentImgId').innerHTML;
+	var c = document.getElementById(b).src;
+	var aa = document.getElementById('alt_currentSlot').innerHTML;
+	var bb = document.getElementById('currentImgId_FileName').innerHTML;
+	var p = $('#paragraph_right').trumbowyg('html');
+	document.getElementById(a).innerHTML = '<div class="mg-container mg-content600"><img alt="" class="mg-image mg-left mg-hide-small mg-hide-medium" src="' + c + '" style="width:450px;margin:30px 40px 15px -150px;"> <img alt="" class="mg-image mg-left mg-hide-large mg-hide-small" src="' + c + '" style="width:350px;margin:30px 40px 15px 0;"><div class="mg-center"><img alt="" class="mg-image mg-hide-medium mg-hide-large" src="' + c + '"></div>' + p + '</div>';
+	document.getElementById(aa).innerHTML = '<div class="mg-container mg-content600"><img alt="" class="mg-image mg-left mg-hide-small mg-hide-medium" src="' + bb + '" style="width:450px;margin:30px 40px 15px -150px;"> <img alt="" class="mg-image mg-left mg-hide-large mg-hide-small" src="' + bb + '" style="width:350px;margin:30px 40px 15px 0;"><div class="mg-center"><img alt="" class="mg-image mg-hide-medium mg-hide-large" src="' + bb + '"></div>' + p + '</div>';
+	modal_close();
+	update_export()
+}
+
+function rightImageParaGen(){
+	var a = document.getElementById('currentSlot').innerHTML;
+	var b = document.getElementById('currentImgId').innerHTML;
+	var c = document.getElementById(b).src;
+	var aa = document.getElementById('alt_currentSlot').innerHTML;
+	var bb = document.getElementById('currentImgId_FileName').innerHTML;
+	var p = $('#paragraph_left').trumbowyg('html');
+	document.getElementById(a).innerHTML = '<div class="mg-container mg-content600"><img alt="" class="mg-image mg-right mg-hide-small mg-hide-medium" src="' + c + '" style="width:450px;margin:30px -150px 15px 40px;"> <img alt="" class="mg-image mg-right mg-hide-large mg-hide-small" src="' + c + '" style="width:350px;margin:30px 0 15px 40px;"><div class="mg-center"><img alt="" class="mg-image mg-hide-medium mg-hide-large" src="' + c + '"></div>' + p + '</div>';
+	document.getElementById(aa).innerHTML = '<div class="mg-container mg-content600"><img alt="" class="mg-image mg-right mg-hide-small mg-hide-medium" src="' + bb + '" style="width:450px;margin:30px -150px 15px 40px;"> <img alt="" class="mg-image mg-right mg-hide-large mg-hide-small" src="' + bb + '" style="width:350px;margin:30px 0 15px 40px;"><div class="mg-center"><img alt="" class="mg-image mg-hide-medium mg-hide-large" src="' + bb + '"></div>' + p + '</div>';
+	modal_close();
+	update_export()
+}
+
+function threeImageGen(){
+	var a = document.getElementById('currentSlot').innerHTML;
+	var aa = document.getElementById('alt_currentSlot').innerHTML;
+	document.getElementById(a).innerHTML = '<div class="mg-center"> <div class="mg-padding-small mg-third"> <img src="http://ntttoon.github.io/mg_assets/s01.png" alt="" class="mg-image" style="width:100%;"> </div><div class="mg-padding-small mg-third"> <img src="http://ntttoon.github.io/mg_assets/s02.png" alt="" class="mg-image" style="width:100%;"> </div><div class="mg-padding-small mg-third"> <img src="http://ntttoon.github.io/mg_assets/s03.png" alt="" class="mg-image" style="width:100%;"> </div></div>';
+	document.getElementById(aa).innerHTML = '<div class="mg-center"> <div class="mg-padding-small mg-third"> <img src="http://ntttoon.github.io/mg_assets/s01.png" alt="" class="mg-image" style="width:100%;"> </div><div class="mg-padding-small mg-third"> <img src="http://ntttoon.github.io/mg_assets/s02.png" alt="" class="mg-image" style="width:100%;"> </div><div class="mg-padding-small mg-third"> <img src="http://ntttoon.github.io/mg_assets/s03.png" alt="" class="mg-image" style="width:100%;"> </div></div>';
+	modal_close();
+	update_export()
+}
+
+function slideShowGen(){
+	var a = document.getElementById('currentSlot').innerHTML;
+	var aa = document.getElementById('alt_currentSlot').innerHTML;
+	document.getElementById(a).innerHTML = '<div style="position:relative" class="mg-center mg-content"> <img class="mySlides" src="http://ntttoon.github.io/mg_assets/s01.png" style="width:100%"> <img class="mySlides" src="http://ntttoon.github.io/mg_assets/s02.png" style="width:100%"> <img class="mySlides" src="http://ntttoon.github.io/mg_assets/s03.png" style="width:100%"> <button class="mg-button mg-black mg-display-left" onclick="plusDivs(-1)">&#10094;</button> <button class="mg-button mg-black mg-display-right" onclick="plusDivs(1)">&#10095;</button></div>';
+	document.getElementById(aa).innerHTML = '<div style="position:relative" class="mg-center mg-content"> <img class="mySlides" src="http://ntttoon.github.io/mg_assets/s01.png" style="width:100%"> <img class="mySlides" src="http://ntttoon.github.io/mg_assets/s02.png" style="width:100%"> <img class="mySlides" src="http://ntttoon.github.io/mg_assets/s03.png" style="width:100%"> <button class="mg-button mg-black mg-display-left" onclick="plusDivs(-1)">&#10094;</button> <button class="mg-button mg-black mg-display-right" onclick="plusDivs(1)">&#10095;</button></div>';
+	modal_close();
+	update_export()
+}
+
+function comparingImageGen(){
+	var a = document.getElementById('currentSlot').innerHTML;
+	var aa = document.getElementById('alt_currentSlot').innerHTML;
+	document.getElementById(a).innerHTML = '<div style="width:100%"><div class="image-spliter" style="position:relative;display:table;margin:0 auto"><div class="mover"></div><img class="img-left mg-image" src="http://ntttoon.github.io/mg_assets/s01.png"><img class="img-right mg-image" src="http://ntttoon.github.io/mg_assets/s02.png"></div><div style="text-align:center;font-size:14px">Trước và Sau</div></div>';
+	document.getElementById(aa).innerHTML = '<div style="width:100%"><div class="image-spliter" style="position:relative;display:table;margin:0 auto"><div class="mover"></div><img class="img-left mg-image" src="http://ntttoon.github.io/mg_assets/s01.png"><img class="img-right mg-image" src="http://ntttoon.github.io/mg_assets/s02.png"></div><div style="text-align:center;font-size:14px">Trước và Sau</div></div>';
+	modal_close();
+	update_export()
+}
+</script>
+
+<script>
+$('#paragraph,#paragraph_left,#paragraph_right').trumbowyg({
+	svgPath: 'trumbowyg/ui/icons.svg',
+    autogrow: false,
+	resetCss: false,
+	removeformatPasted: true,
+	btns: [
+        ['viewHTML'],
+        ['undo', 'redo'], // Only supported in Blink browsers
+        ['formatting'],
+        ['strong', 'em', 'del'],
+        ['superscript', 'subscript'],
+		['foreColor', 'backColor'],
+        ['link'],
+        ['insertImage'],
+		['noembed'],
+        ['justifyLeft', 'justifyCenter', 'justifyRight', 'justifyFull'],
+        ['unorderedList', 'orderedList'],
+        ['horizontalRule'],
+        ['removeformat'],
+        ['fullscreen']
+    ]
+});
+</script>
+
+<script async src="js/FileSaver.js"> </script> 
+<script async src="js/jszip.js"> </script> 
+<script>
+document.getElementById("zip_button").addEventListener("click", function(){
+	
+	var file = new File([result2], "index.html", {type: "text/plain;charset=utf-8"});
+	saveAs(file);
+    //var zip = new JSZip();
+	//zip.file("index.html", result2);
+
+	//var filename = prompt("Đặt tên cho file zip.\nLưu ý: Không nên đặt tên Tiếng Việt có dấu, ký tự lạ, không cần thêm .zip", "banner");
+	//if (filename != null) {
+		//zip.generateAsync({type:"blob"})
+		//.then(function(content) {
+			//saveAs(content, filename + ".zip");
+		//});
+	//}
+
+});
+</script>
+
+</body>
+</html>
