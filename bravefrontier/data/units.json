@@ -11844,6 +11844,100 @@
                 "sp": {
                     "@list": "20 : 50% boost to Atk, max HP | 20 : 100% boost to Atk, lowers Def by 50% | 20 : 100% boost to Spark damage | 10 : Boosts critical hit damage (50% boost) | 20 : Breaks Atk parameter limit (Raises Atk parameter limit to 180000) | 10 : Adds Dark element to attack | 10 : Enhances BB's Atk, Def, Rec boost of Earth, Dark types effect (+20% boost. 140% boost total) | 20 : Enhances BB's huge BB Atk boost effect (+100% boost. 450% boost total) | 30 : Enhances SBB's Earth, Dark elemental damage boost effect (+25% boost. 175% boost total) | 30 : Adds considerable Atk, Def, Rec boost of Earth, Dark types for 3 turns effect to UBB (200% boost)"
                 }
+            },
+            {
+                "id": "8365",
+                "name": "Logi (Omni)",
+                "role": "heal,null_stats,def,heal_atked,convert_atk,barrier,atk_ele,def_ele,rec_ele",
+                "rolesp": "atk_down,def_down,idol",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "48",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "50% boost to max HP, considerably boosts Atk [0-100%] relative to how high remaining HP is, considerably boosts Def [0-100%] relative to how low remaining HP is & 20% damage reduction for 2 turns when damage taken has exceeded certain amount [5000]",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "14",
+                    "@dc": "14",
+                    "@cost": "27",
+                    "#text": "14 combo Light attack on all foes [370%], greatly restores HP [3000-3500 HP], negates Atk, Def, Rec reduction effects for 1 turn & hugely boosts Def [180%] for 3 turns"
+                },
+                "sbb": {
+                    "@hit": "19",
+                    "@dc": "19",
+                    "@cost": "28",
+                    "#text": "19 combo powerful Light attack on all foes [580%], damage taken may [25%] restore HP [25%-30% of damage taken] for 3 turns, hugely boosts Atk relative to Def [70%] for 3 turns, activates Light barrier [3000 HP] & considerably boosts Atk, Def, Rec of Light types [100%] for 3 turns"
+                },
+                "ubb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "30",
+                    "#text": "23 combo massive Light attack on all foes [1500%], negates all status ailments for 3 turns, negates Atk, Def, Rec reduction effects for 3 turns, enormously boosts Def [350%] for 3 turns & enormously boosts Atk relative to Def [250%] for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "30% boost to all parameters when Sacred Shield is equipped & negates critical damage and Def ignoring effects",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850978.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850978.png"
+                },                
+                "sp": {
+                    "@list": "20 : 30% boost to all parameters | 10 : Hugely boosts Def relative to how low remaining HP is (1% boost per 1% HP lost) | 10 : Damage taken may slightly restore HP (25% chance to heal 10-15% damage) | 20 : Negates elemental damage | 35 : Adds resistance against 1 KO attack when HP is below 20% | 20 : Enhances SBB's Atk boost relative to Def effect (+10% boost. 80% Def to Atk total) | 25 : Enhances SBB's considerable Atk, Def boost for Light types effect (+20% boost. 120% boost total) | 30 : Adds probable huge 1 turn Atk, Def reduction effect to BB/SBB (30% chance to reduce enemy Atk, Def by 50%) | 25 : Adds probable evasion to self for 1 turn effect to BB (35% chance) | 35 : Adds probable resistance against 1 KO attack effect to BB/SBB (10% chance)"
+                }
+            },
+            {
+                "id": "8367",
+                "name": "Lofia",
+                "role": "miti_ele,bb_atked,hit,od_fill,bb_atked,ewd,crit_ele,spark_ele",
+                "rolesp": "cure,null_ails,heal",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "54",
+                "ls": {
+                    "@hit": "18",
+                    "@dc": "54",
+                    "#text": "85% boost to all parameters of Water types, damage taken hugely boosts BB gauge [5-8 BC], greatly restores HP [3000-3500 HP] for 2 turns when HP is below 50%, 20% damage reduction for 2 turns & adds probable [30%] 1 turn Atk reduction [20%] effect to attack for 2 turns when damage taken has exceeded certain amount [5000]",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "24",
+                    "@dc": "24",
+                    "@cost": "20",
+                    "#text": "24 combo powerful Water attack on all foes [470%], 10% damage reduction from all element types for 1 turn, damage taken hugely boosts BB gauge [5-8 BC] for 3 turns, considerably raises normal hit amount [+2 to each hit, +20% damage] for 3 turns & slightly boosts OD gauge [10%]"
+                },
+                "sbb": {
+                    "@hit": "32",
+                    "@dc": "32",
+                    "@cost": "24",
+                    "#text": "32 combo powerful Fire, Water, Earth, Thunder attack on all foes [650%], 10% damage reduction from all element types for 1 turn, damage taken hugely boosts BB gauge [5-8 BC] for 3 turns, hugely boosts elemental damage [150%] for 3 turns & boosts critical [50%] and Spark [50%] damage of Water types for 3 turns"
+                },
+                "ubb": {
+                    "@hit": "34",
+                    "@dc": "34",
+                    "@cost": "28",
+                    "#text": "34 combo massive Water attack on all foes [2000%], fully restores HP for 5 turns, enormously boosts Def [400%] for 5 turns, fills BB gauge to max & probability [30%] of activating BB|SBB|UBB twice for 5 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Considerably reduces BB gauge required for BB [25%], adds status ailment removal and negation effects for 3 turns to BB|SBB & 20% boost to all parameters of Water types",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_820508.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_820508.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span>40% boost to all parameters | 10 : Raises all parameter boost from 40% to 60% <span style='display:none'>(Prerequisite: *)</span> | 10 : Boosts Atk, Def, Rec each turn (for up to 3 turns) (25% boost each turn - 75% boost total) | 20 : Enormously boosts elemental damage (200% boost) | 15 : Considerably reduces BB gauge required for BB (25% reduction) | 15 : Allow SBB's base effects to last for 1 additional turn | 30 : Enhances BB/SBB's damage reduction from all types effect (+5% boost. 15% boost total) | 30 : Adds great HP restoration effect to BB/SBB (Heals 3500-4000 HP + 40% Rec HP) | 25 : <span style='display:none'>(#)</span>Adds low probability to perform 1 extra action within the same turn effect to SBB (10% chance) | 25 : Adds probability to perform 2 extra actions within the same turn effect to SBB (15% chance) <span style='display:none'>(Prerequisite: #)</span> | 50 : Adds great additional damage reduction for 5 turns effect to UBB (50% DoT Mitigation)"
+                }
             }
         ]
     }
