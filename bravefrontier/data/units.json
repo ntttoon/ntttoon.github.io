@@ -6724,7 +6724,7 @@
             },
             {
                 "id": "1737",
-                "name": "Alan",
+                "name": "Divine Blade Alan",
                 "role": "atk,def,rec,crit,miti_ele,heal,null_crit,null_ewd,bb_fill,crit_res_down",
                 "rolesp": "atk_ele,def_ele,rec_ele",
                 "element": "Light",
@@ -6771,7 +6771,7 @@
             },
             {
                 "id": "1739",
-                "name": "Ragina",
+                "name": "Deadly Edges Ragina",
                 "role": "spark,spark_crit,heal_spark,bb_spark,spark_debuff,ewd,ewd_res_down",
                 "rolesp": "bb_fill",
                 "element": "Dark",
@@ -11937,6 +11937,53 @@
                 },                
                 "sp": {
                     "@list": "10 : <span style='display:none'>(*)</span>40% boost to all parameters | 10 : Raises all parameter boost from 40% to 60% <span style='display:none'>(Prerequisite: *)</span> | 10 : Boosts Atk, Def, Rec each turn (for up to 3 turns) (25% boost each turn - 75% boost total) | 20 : Enormously boosts elemental damage (200% boost) | 15 : Considerably reduces BB gauge required for BB (25% reduction) | 15 : Allow SBB's base effects to last for 1 additional turn | 30 : Enhances BB/SBB's damage reduction from all types effect (+5% boost. 15% boost total) | 30 : Adds great HP restoration effect to BB/SBB (Heals 3500-4000 HP + 40% Rec HP) | 25 : <span style='display:none'>(#)</span>Adds low probability to perform 1 extra action within the same turn effect to SBB (10% chance) | 25 : Adds probability to perform 2 extra actions within the same turn effect to SBB (15% chance) <span style='display:none'>(Prerequisite: #)</span> | 50 : Adds great additional damage reduction for 5 turns effect to UBB (50% DoT Mitigation)"
+                }
+            },
+            {
+                "id": "8369",
+                "name": "Chloe",
+                "role": "taunt,miti,convert_def,crit_dmg,null_crit,null_ewd",
+                "rolesp": "crit_dmg_ele,ewd_ele",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "54",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "200% boost to Atk, 80% boost to max HP and 30% boost to critical hit rate of Light types, negates critical and elemental damage, hugely boosts critical damage [150%], hugely boosts Light elemental damage [150%] & 15% damage reduction from Light, Dark types",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "13/13",
+                    "@dc": "13/13",
+                    "@cost": "24",
+                    "#text": "13 combo powerful Light attack on all foes [420%], 13 combo powerful Light attack on Light, Dark types [420%], activates Taunt and greatly boosts own Def [150%] for 1 turn, adds probable [15%] evasion to self for 1 turn & 50% damage reduction for 1 turn"
+                },
+                "sbb": {
+                    "@hit": "18/18",
+                    "@dc": "18/18",
+                    "@cost": "28",
+                    "#text": "18 combo powerful Light attack on all foes [1000%], 18 combo powerful Light attack on Light, Dark types [1000%], hugely boosts Def [90%] relative to Atk for 3 turns, considerably boosts critical damage [75%] for 3 turns, 50% damage reduction for 1 turn & negates critical and elemental damage for 2 turns"
+                },
+                "ubb": {
+                    "@hit": "22",
+                    "@dc": "22",
+                    "@cost": "32",
+                    "#text": "22 combo massive Light attack on all foes [2500%], enormously boosts critical damage [400%] for 3 turns, enormously boosts Light elemental damage [500%] for 3 turns, 100% damage reduction from Light, Dark types for 3 turns & negates critical and elemental damage for 5 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "20% damage reduction from normal attacks when Damage Reducing Sphere is equipped, adds enormous critical hit rate boost [60%] for 3 turns effect to BB|SBB|UBB for 3 turns, boosts Def each turn for up to 4 turns [100% total] & negates elemental damage for all allies",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850508.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850508.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> 40% boost to all parameters | 10 : 30% boost to Def, max HP <span style='display:none'>(Prerequisite: *)</span> | 10 : Damage taken considerably boosts BB gauge (Fills 3-4 BC) | 40 : Probable resistance against 2 KO attacks (50% chance) | 15 : 10% damage reduction from all types | 35 : Enhances BB's Taunt duration and Def boost effect (+50% Def & +1 turn. 200% boost for 2 turns total) | 20 : Enhances and allows BB's self evasion effect to last for 1 additional turn (+5% boost & +1 turn. 20% chance to evade attacks for 2 turns total) | 30 : Enhances SBB's critical damage boost effect (+50% boost. 125% boost total) | 10 : Allows BB/SBB's 50% damage reductions to last for 2 turns | 20 : Adds critical damage for Light types boost for 3 turns effect to SBB (50% boost) | 30 : Adds enormous Light elemental damage boost for 3 turns effect to SBB​ (200% boost)"
                 }
             }
         ]
