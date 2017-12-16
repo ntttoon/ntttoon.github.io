@@ -7381,6 +7381,100 @@
                 }
             },
             {
+                "id": "1780",
+                "name": "Rickel",
+                "role": "hit,bb_spark,atk_down,def_down,ails,spark_crit",
+                "rolesp": "spark,bc,hc",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "17",
+                    "@dc": "51",
+                    "#text": "+50% HP|ATK / +120% Spark / +70%|+40% BC|HC Drop Rate on Spark / +2-3 BC on Spark",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "18/12",
+                    "@dc": "18/12",
+                    "@cost": "17",
+                    "#text": "18 hits 580% ST (ATK +200) / 12 hits 580% ST (ATK +200) / 3 turn +1 hit count / 3 turn +50 BC Fill (Self) / 3 turn +2-3 BC on Spark"
+                },
+                "sbb": {
+                    "@hit": "10/14/8",
+                    "@dc": "10/14/8",
+                    "@cost": "14",
+                    "#text": "10 hits 720% ST (ATK +200) / 14 hits 720% ST (ATK +200) / 8 hits 750% RT (ATK +200) / 1 turn +50% ATK|DEF Down (30% chance) / +75% Paralysis Poison infliction / 3 turn +50% Spark Crit (30% chance)"
+                },
+                "ubb": {
+                    "@hit": "10/16/8",
+                    "@dc": "10/16/8",
+                    "@cost": "32",
+                    "#text": "10 hits 1500% ST (ATK +200) / 16 hits 1500% ST (ATK +200) / 8 hits 1300% RT (ATK +200) / 3 turn +80% ATK|DEF Down / 3 turn +50 BC Fill / 3 turn +3 Hit Count (+100% DMG)"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "+50% Spark / +1 Hit Count",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_20217.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_20217.png"
+                },                
+                "sp": {
+                    "@list": "10 : +30% HP/ATK | 10 : +50% ATK/DEF when BB > 50% | 10 : +80% Spark | 20 : +1 Hit Count (+20% DMG) | 10 : Raise ATK Cap to 130000 | 30 : Enhances BB's Hit Count (+1 hit & +20% DMG) | 20 : <span style='display:none'>(*)</span> Enhances SBB's ATK/DEF Down effect | 10 : Further enhances SBB's ATK/DEF Down effect (+1 turn) <span style='display:none'>(Prerequisite: *)</span> | 35 : Add Effect to BB/SBB (3 turn +130% Spark) | 35 : Add Effect to BB/SBB (3 turn +35% BC/HC Drop Rate)"
+                }
+            },
+            {
+                "id": "1781",
+                "name": "Lunaris",
+                "role": "heal,cure,null_ails,bb_atked,heal_atked,convert_atk,ewd,bb_mod",
+                "rolesp": "miti_dot,null_ewd,null_crit,hot",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "47",
+                "ls": {
+                    "@hit": "16",
+                    "@dc": "48",
+                    "#text": "+100% ATK|+30% HP to Dark types / +50% ATK / +30% HP / +4-7 BC on Hit / +25% Heal on Hit (30% chance)",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "18",
+                    "@dc": "18",
+                    "@cost": "26",
+                    "#text": "18 hits 360% AoE (ATK +200) / heal 3500-4000 + 22.5% Healer REC / Cure Ailments / 3 turn Null Ailments / 3 turn +4-7 BC on Hit / 3 turn +20-25% Heal on Hit (25% chance)"
+                },
+                "sbb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "22",
+                    "#text": "21 hits 560% AoE (ATK +200) / heal 3500-4000 + 22.5% Healer REC / Cure Ailments / 3 turn +70% DEF->ATK / 3 turn +100% EWD / 3 turn +400% BB ATK"
+                },
+                "ubb": {
+                    "@hit": "24",
+                    "@dc": "24",
+                    "@cost": "32",
+                    "#text": "24 hits 1500% AoE (ATK +200) / 3 turn +400% EWD / 3 turn +500% BB ATK / 3 turn +50 BC on Hit / 3 turn +100% Heal on Hit / +50% OD Fill"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Null Ailments|Debuffs / +4 BC Fill",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_60317.png"
+                },
+                "thumb": {
+                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_60317.png"
+                },                
+                "sp": {
+                    "@list": "10 : +30% HP/ATK/DEF | 10 : +0-50% ATK/DEF relative to remaining HP | 10 : Null Crit | 10 : Null EWD | 10 : Raise ATK Cap to 130000 | 20 : Enhances BB/SBB's Heal (+1000 HP & +10% REC) | 30 : Add Effect to BB/SBB (1 turn +15% DoT Mitigation) | 25 : Add Effect to BB/SBB (1 turn Null EWD) | 25 : Add Effect to BB/SBB (1 turn Null Crit) | 40 : Add Effect to BB/SBB (3 turn heal 3500-4000 + 15% REC)"
+                }
+            },
+            {
                 "id": "",
                 "name": "",
                 "role": "",
@@ -11762,30 +11856,30 @@
                 "ls": {
                     "@hit": "13",
                     "@dc": "52",
-                    "#text": "150% boost to Atk, 80% boost to Def, max HP of Light types, 20% damage reduction from Light, Dark types, adds probable [20%] resistance against 1 KO attack, boosts BB and SBB activation rates [25%] & considerably boosts ABP [65%] and CBP [40%] gain",
+                    "#text": "150% boost to Atk / 80% boost to Def & max HP of Light types / 20% damage reduction from Light Dark types / adds probable [20%] resistance against 1 KO attack / boosts BB and SBB activation rates [25%] / considerably boosts ABP [65%] and CBP [40%] gain",
                     "#raid": ""
                 },
                 "bb": {
                     "@hit": "15",
                     "@dc": "15",
                     "@cost": "26",
-                    "#text": "15 combo powerful Light attack [470%] on all foes, powerful additional attack at turn's end [500%] for 3 turns, hugely boosts Atk relative to max HP [40%] for 3 turns, hugely boosts BB Atk [450%] for 3 turns & removes all status ailments"
+                    "#text": "15 combo powerful Light attack [470%] on all foes / powerful additional attack at turn's end [500%] for 3 turns / hugely boosts Atk relative to max HP [40%] for 3 turns / hugely boosts BB Atk [450%] for 3 turns / removes all status ailments"
                 },
                 "sbb": {
                     "@hit": "16/3",
                     "@dc": "16/3",
                     "@cost": "29",
-                    "#text": "16 combo powerful Light attack [950%] on all foes, 3 combo powerful Light attack [300-1200%] on single foe (damage relative to remaining HP), hugely boosts Atk relative to max HP [40%] for 3 turns, hugely boosts BB Atk [450%] for 3 turns, adds probable [15%] evasion for 2 turns & boosts own Spark damage [100%] for 1 turn"
+                    "#text": "16 combo powerful Light attack [950%] on all foes / 3 combo powerful Light attack [300-1200%] on single foe (damage relative to remaining HP) / hugely boosts Atk relative to max HP [40%] for 3 turns / hugely boosts BB Atk [450%] for 3 turns / adds probable [15%] evasion for 2 turns / boosts own Spark damage [100%] for 1 turn"
                 },
                 "ubb": {
                     "@hit": "20",
                     "@dc": "20",
                     "@cost": "33",
-                    "#text": "20 combo massive Light attack [2000%] on all foes, activates Light barrier [30000 HP], enormously boosts Atk relative to max HP [60%] for 3 turns, adds evasion for 1 turn & adds high probability [80%] of resistance against 1 KO attack"
+                    "#text": "20 combo massive Light attack [2000%] on all foes / activates Light barrier [30000 HP] / enormously boosts Atk relative to max HP [60%] for 3 turns / adds evasion for 1 turn / adds high probability [80%] of resistance against 1 KO attack"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "80% boost to Spark damage, reduces BB gauge required for BB [5%] for all allies, raises Atk parameter limits to 130000 & adds 18 combo powerful Light attack [620%] against Light, Dark types effect to SBB",
+                    "#text": "80% boost to Spark damage / reduces BB gauge required for BB [5%] for all allies / raises Atk parameter limits to 130000 / adds 18 combo powerful Light attack [620%] against Light Dark types effect to SBB",
                     "#raid": ""
                 },
                 "art": {
@@ -11809,30 +11903,30 @@
                 "ls": {
                     "@hit": "6",
                     "@dc": "48",
-                    "#text": "100%  boost to Atk, 50% boost to max HP, greatly boosts Atk [150%] for 2  turns when damage dealt has exceeded certain amount, greatly boosts BB  Atk [300%] & hugely boosts Earth, Dark elemental damage [175%]",
+                    "#text": "100%  boost to Atk / 50% boost to max HP / greatly boosts Atk [150%] for 2  turns when damage dealt has exceeded certain amount / greatly boosts BB  Atk [300%] / hugely boosts Earth Dark elemental damage [175%]",
                     "#raid": ""
                 },
                 "bb": {
                     "@hit": "4",
                     "@dc": "48",
                     "@cost": "26",
-                    "#text": "4 combo massive Earth attack [1000%] on single foe, boosts own max HP  [15%], considerably boosts Atk, Def, Rec [120%] of Earth, Dark types for 3 turns, greatly boosts BB Atk [350%] for 3 turns & powerful  additional damage at turn's end [600%] for 1 turn"
+                    "#text": "4 combo massive Earth attack [1000%] on single foe / boosts own max HP  [15%] / considerably boosts Atk Def Rec [120%] of Earth / Dark types for 3 turns / greatly boosts BB Atk [350%] for 3 turns / powerful additional damage at turn's end [600%] for 1 turn"
                 },
                 "sbb": {
                     "@hit": "1/3",
                     "@dc": "14/42",
                     "@cost": "24",
-                    "#text": "Powerful  Earth attack [800%] on single foe, 3 combo powerful Earth attack  [300-900%] on single foe (damage relative to remaining HP), greatly  boosts own Atk, Def, Rec [150%] for 3 turns, hugely boosts Earth, Dark  elemental damage [150%] for 3 turns, probable [70%] huge 1 turn Atk  reduction [60%] & powerful additional damage at turn's end [600%]  for 1 turn"
+                    "#text": "Powerful Earth attack [800%] on single foe / 3 combo powerful Earth attack [300-900%] on single foe (damage relative to remaining HP) / greatly  boosts own Atk Def Rec [150%] for 3 turns / hugely boosts Earth Dark elemental damage [150%] for 3 turns / probable [70%] huge 1 turn Atk reduction [60%] / powerful additional damage at turn's end [600%] for 1 turn"
                 },
                 "ubb": {
                     "@hit": "1/1",
                     "@dc": "30/30",
                     "@cost": "30",
-                    "#text": "Massive  Earth attack [2000%] on single foe, massive Earth attack [1200-3000%]  on all foes (damage relative to remaining HP), enormously boosts Atk,  Def, Rec [350%] for 3 turns, enormously boosts Earth, Dark elemental  damage [500%] for 3 turns, enormous 3 turns Atk reduction [90%] &  massive additional damage at turn's end [3000%] for 2 turns"
+                    "#text": "Massive Earth attack [2000%] on single foe / massive Earth attack [1200-3000%] on all foes (damage relative to remaining HP) / enormously boosts Atk Def Rec [350%] for 3 turns / enormously boosts Earth Dark elemental damage [500%] for 3 turns / enormous 3 turns Atk reduction [90%] / massive additional damage at turn's end [3000%] for 2 turns"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Boosts Atk [100% max] each turn up to 4 turns &  50% boost to Atk, Def, Rec when BB gauge is full",
+                    "#text": "Boosts Atk [100% max] each turn up to 4 turns / 50% boost to Atk Def Rec when BB gauge is full",
                     "#raid": ""
                 },
                 "art": {
@@ -11856,30 +11950,30 @@
                 "ls": {
                     "@hit": "13",
                     "@dc": "52",
-                    "#text": "50% boost to max HP, considerably boosts Atk [0-100%] relative to how high remaining HP is, considerably boosts Def [0-100%] relative to how low remaining HP is & 20% damage reduction for 2 turns when damage taken has exceeded certain amount [5000]",
+                    "#text": "50% boost to max HP / considerably boosts Atk [0-100%] relative to how high remaining HP is / considerably boosts Def [0-100%] relative to how low remaining HP is / 20% damage reduction for 2 turns when damage taken has exceeded certain amount [5000]",
                     "#raid": ""
                 },
                 "bb": {
                     "@hit": "14",
                     "@dc": "14",
                     "@cost": "27",
-                    "#text": "14 combo Light attack on all foes [370%], greatly restores HP [3000-3500 HP], negates Atk, Def, Rec reduction effects for 1 turn & hugely boosts Def [180%] for 3 turns"
+                    "#text": "14 combo Light attack on all foes [370%] / greatly restores HP [3000-3500 HP] / negates Atk Def Rec reduction effects for 1 turn / hugely boosts Def [180%] for 3 turns"
                 },
                 "sbb": {
                     "@hit": "19",
                     "@dc": "19",
                     "@cost": "28",
-                    "#text": "19 combo powerful Light attack on all foes [580%], damage taken may [25%] restore HP [25%-30% of damage taken] for 3 turns, hugely boosts Atk relative to Def [70%] for 3 turns, activates Light barrier [3000 HP] & considerably boosts Atk, Def, Rec of Light types [100%] for 3 turns"
+                    "#text": "19 combo powerful Light attack on all foes [580%] / damage taken may [25%] restore HP [25%-30% of damage taken] for 3 turns / hugely boosts Atk relative to Def [70%] for 3 turns / activates Light barrier [3000 HP] / considerably boosts Atk Def Rec of Light types [100%] for 3 turns"
                 },
                 "ubb": {
                     "@hit": "23",
                     "@dc": "23",
                     "@cost": "30",
-                    "#text": "23 combo massive Light attack on all foes [1500%], negates all status ailments for 3 turns, negates Atk, Def, Rec reduction effects for 3 turns, enormously boosts Def [350%] for 3 turns & enormously boosts Atk relative to Def [250%] for 3 turns"
+                    "#text": "23 combo massive Light attack on all foes [1500%] / negates all status ailments for 3 turns / negates Atk Def Rec reduction effects for 3 turns / enormously boosts Def [350%] for 3 turns / enormously boosts Atk relative to Def [250%] for 3 turns"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "30% boost to all parameters when Sacred Shield is equipped & negates critical damage and Def ignoring effects",
+                    "#text": "30% boost to all parameters when Sacred Shield is equipped / negates critical damage and Def ignoring effects",
                     "#raid": ""
                 },
                 "art": {
@@ -11903,30 +11997,30 @@
                 "ls": {
                     "@hit": "18",
                     "@dc": "54",
-                    "#text": "85% boost to all parameters of Water types, damage taken hugely boosts BB gauge [5-8 BC], greatly restores HP [3000-3500 HP] for 2 turns when HP is below 50%, 20% damage reduction for 2 turns & adds probable [30%] 1 turn Atk reduction [20%] effect to attack for 2 turns when damage taken has exceeded certain amount [5000]",
+                    "#text": "85% boost to all parameters of Water types / damage taken hugely boosts BB gauge [5-8 BC] / greatly restores HP [3000-3500 HP] for 2 turns when HP is below 50% / 20% damage reduction for 2 turns / adds probable [30%] 1 turn Atk reduction [20%] effect to attack for 2 turns when damage taken has exceeded certain amount [5000]",
                     "#raid": ""
                 },
                 "bb": {
                     "@hit": "24",
                     "@dc": "24",
                     "@cost": "20",
-                    "#text": "24 combo powerful Water attack on all foes [470%], 10% damage reduction from all element types for 1 turn, damage taken hugely boosts BB gauge [5-8 BC] for 3 turns, considerably raises normal hit amount [+2 to each hit, +20% damage] for 3 turns & slightly boosts OD gauge [10%]"
+                    "#text": "24 combo powerful Water attack on all foes [470%] / 10% damage reduction from all element types for 1 turn / damage taken hugely boosts BB gauge [5-8 BC] for 3 turns / considerably raises normal hit amount [+2 to each hit +20% damage] for 3 turns / slightly boosts OD gauge [10%]"
                 },
                 "sbb": {
                     "@hit": "32",
                     "@dc": "32",
                     "@cost": "24",
-                    "#text": "32 combo powerful Fire, Water, Earth, Thunder attack on all foes [650%], 10% damage reduction from all element types for 1 turn, damage taken hugely boosts BB gauge [5-8 BC] for 3 turns, hugely boosts elemental damage [150%] for 3 turns & boosts critical [50%] and Spark [50%] damage of Water types for 3 turns"
+                    "#text": "32 combo powerful Fire Water Earth Thunder attack on all foes [650%] / 10% damage reduction from all element types for 1 turn / damage taken hugely boosts BB gauge [5-8 BC] for 3 turns / hugely boosts elemental damage [150%] for 3 turns / boosts critical [50%] and Spark [50%] damage of Water types for 3 turns"
                 },
                 "ubb": {
                     "@hit": "34",
                     "@dc": "34",
                     "@cost": "28",
-                    "#text": "34 combo massive Water attack on all foes [2000%], fully restores HP for 5 turns, enormously boosts Def [400%] for 5 turns, fills BB gauge to max & probability [30%] of activating BB|SBB|UBB twice for 5 turns"
+                    "#text": "34 combo massive Water attack on all foes [2000%] / fully restores HP for 5 turns / enormously boosts Def [400%] for 5 turns / fills BB gauge to max / probability [30%] of activating BB|SBB|UBB twice for 5 turns"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "Considerably reduces BB gauge required for BB [25%], adds status ailment removal and negation effects for 3 turns to BB|SBB & 20% boost to all parameters of Water types",
+                    "#text": "Considerably reduces BB gauge required for BB [25%] / adds status ailment removal and negation effects for 3 turns to BB|SBB / 20% boost to all parameters of Water types",
                     "#raid": ""
                 },
                 "art": {
@@ -11950,30 +12044,30 @@
                 "ls": {
                     "@hit": "10",
                     "@dc": "50",
-                    "#text": "200% boost to Atk, 80% boost to max HP and 30% boost to critical hit rate of Light types, negates critical and elemental damage, hugely boosts critical damage [150%], hugely boosts Light elemental damage [150%] & 15% damage reduction from Light, Dark types",
+                    "#text": "200% boost to Atk / 80% boost to max HP and 30% boost to critical hit rate of Light types / negates critical and elemental damage / hugely boosts critical damage [150%] / hugely boosts Light elemental damage [150%] / 15% damage reduction from Light Dark types",
                     "#raid": ""
                 },
                 "bb": {
                     "@hit": "13/13",
                     "@dc": "13/13",
                     "@cost": "24",
-                    "#text": "13 combo powerful Light attack on all foes [420%], 13 combo powerful Light attack on Light, Dark types [420%], activates Taunt and greatly boosts own Def [150%] for 1 turn, adds probable [15%] evasion to self for 1 turn & 50% damage reduction for 1 turn"
+                    "#text": "13 combo powerful Light attack on all foes [420%] / 13 combo powerful Light attack on Light Dark types [420%] / activates Taunt and greatly boosts own Def [150%] for 1 turn / adds probable [15%] evasion to self for 1 turn / 50% damage reduction for 1 turn"
                 },
                 "sbb": {
                     "@hit": "18/18",
                     "@dc": "18/18",
                     "@cost": "28",
-                    "#text": "18 combo powerful Light attack on all foes [1000%], 18 combo powerful Light attack on Light, Dark types [1000%], hugely boosts Def [90%] relative to Atk for 3 turns, considerably boosts critical damage [75%] for 3 turns, 50% damage reduction for 1 turn & negates critical and elemental damage for 2 turns"
+                    "#text": "18 combo powerful Light attack on all foes [1000%] / 18 combo powerful Light attack on Light Dark types [1000%] / hugely boosts Def [90%] relative to Atk for 3 turns / considerably boosts critical damage [75%] for 3 turns / 50% damage reduction for 1 turn / negates critical and elemental damage for 2 turns"
                 },
                 "ubb": {
                     "@hit": "22",
                     "@dc": "22",
                     "@cost": "32",
-                    "#text": "22 combo massive Light attack on all foes [2500%], enormously boosts critical damage [400%] for 3 turns, enormously boosts Light elemental damage [500%] for 3 turns, 100% damage reduction from Light, Dark types for 3 turns & negates critical and elemental damage for 5 turns"
+                    "#text": "22 combo massive Light attack on all foes [2500%] / enormously boosts critical damage [400%] for 3 turns / enormously boosts Light elemental damage [500%] for 3 turns / 100% damage reduction from Light Dark types for 3 turns / negates critical and elemental damage for 5 turns"
                 },
                 "es": {
                     "@condtion": "None",
-                    "#text": "20% damage reduction from normal attacks when Damage Reducing Sphere is equipped, adds enormous critical hit rate boost [60%] for 3 turns effect to BB|SBB|UBB for 3 turns, boosts Def each turn for up to 4 turns [100% total] & negates elemental damage for all allies",
+                    "#text": "20% damage reduction from normal attacks when Damage Reducing Sphere is equipped / adds enormous critical hit rate boost [60%] for 3 turns effect to BB|SBB|UBB for 3 turns / boosts Def each turn for up to 4 turns [100% total] / negates elemental damage for all allies",
                     "#raid": ""
                 },
                 "art": {
