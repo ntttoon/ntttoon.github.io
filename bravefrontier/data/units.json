@@ -7512,10 +7512,10 @@
                     "#raid": ""
                 },
                 "art": {
-                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_11167.png"
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_11167.png"
                 },
                 "thumb": {
-                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_11167.png"
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_11167.png"
                 },                
                 "sp": {
                     "@list": ""
@@ -11883,10 +11883,10 @@
                     "#raid": ""
                 },
                 "art": {
-                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_810378.png"
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810378.png"
                 },
                 "thumb": {
-                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_810378.png"
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810378.png"
                 },                
                 "sp": {
                     "@list": "20 : <span style='display:none'>(*)</span> 40% boost to all parameters | 10 : Raises all parameter boost from 40% to 60% <span style='display:none'>(Prerequisite: *)</span> | 15 : 130% boost to Spark damage | 10 : Boosts elemental damage (75% boost) | 10 : Raises Atk parameter limits to 150000 | 25 : Enhances success rate of SBB's critical and elemental vulnerability infliction effect (+50% chance. 100% chance total) | 30 : Adds powerful additional attack on all foes at turn's end for 2 turns effect to BB/SBB (500% DoT multiplier) | 5 : Adds probable random status ailment infliction effect to SBB (75% chance) | 30 : Adds considerable boost to Atk, Def, Rec and critical hit rate of Fire types for 3 turns effect to SBB (130% parameter boost & 60% Crit) | 20 : Enhances success rate of BB/SBB's probable huge Atk, Def reduction effect (+10% chance. 20%/40% chance total)"
@@ -11930,10 +11930,10 @@
                     "#raid": ""
                 },
                 "art": {
-                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_full_820378.png"
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_820378.png"
                 },
                 "thumb": {
-                    "@path": "http://v2.cdn.android.brave.a-lim.jp/unit/img/unit_ills_thum_820378.png"
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_820378.png"
                 },                
                 "sp": {
                     "@list": "10 : 40% boost to all parameters | 10 : 30% boost to Atk, max HP | 10 : 150% boost to Spark damage | 10 : Greatly boosts elemental damage (100% boost) | 10 : Raises Atk parameter limits to 160000 | 10 : Activates at turn's end effects during turn's start instead (Does not work turn 1 in Arena/Colosseum) | 20 : Enhances BB/UBB's max HP boost effect (+5% boost. 30%/45% boost total) | 20 : Enhances SBB's elemental damage boost effect (+50% boost. 200% boost total) | 15 : Enhances SBB Atk, Def, Rec boost effects (+10% boost. 190% boost total) | 25 : Adds slight OD gauge boost effect to SBB (10% OD fill) | 25 : Adds huge Def, Rec boost relative to Atk for 3 turns effect to SBB (90% Atk to Def, Rec)"
