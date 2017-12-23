@@ -6818,7 +6818,7 @@
             },
             {
                 "id": "1740",
-                "name": "Medina",
+                "name": "Aquamarine Knight Medina",
                 "role": "bb_fill,bc,hc,bb_regen,spark,bb_atked,bb_spark",
                 "rolesp": "heal,null_ails",
                 "element": "Water",
@@ -6865,7 +6865,7 @@
             },
             {
                 "id": "1741",
-                "name": "Dion",
+                "name": "Parallel Tempest Dion",
                 "role": "atk,crit,convert_def,add_ele,crit_dmg,def,convert_atk,bb_mod,ewd",
                 "rolesp": "miti_ele,crit_res_down,ewd_res_down",
                 "element": "Earth",
@@ -12172,6 +12172,100 @@
                 },                
                 "sp": {
                     "@list": "10 : <span style='display:none'>(*)</span> 40% boost to all parameters | 10 : 30% boost to Def, max HP <span style='display:none'>(Prerequisite: *)</span> | 10 : Damage taken considerably boosts BB gauge (Fills 3-4 BC) | 40 : Probable resistance against 2 KO attacks (50% chance) | 15 : 10% damage reduction from all types | 35 : Enhances BB's Taunt duration and Def boost effect (+50% Def & +1 turn. 200% boost for 2 turns total) | 20 : Enhances and allows BB's self evasion effect to last for 1 additional turn (+5% boost & +1 turn. 20% chance to evade attacks for 2 turns total) | 30 : Enhances SBB's critical damage boost effect (+50% boost. 125% boost total) | 10 : Allows BB/SBB's 50% damage reductions to last for 2 turns | 20 : Adds critical damage for Light types boost for 3 turns effect to SBB (50% boost) | 30 : Adds enormous Light elemental damage boost for 3 turns effect to SBB​ (200% boost)"
+                }
+            },
+            {
+                "id": "8370",
+                "name": "Foxblade Kitsu",
+                "role": "crit_dmg_ele,aoe,atk_down_add,hit,atk,dot",
+                "rolesp": "idef",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "45",
+                "ls": {
+                    "@hit": "15",
+                    "@dc": "45",
+                    "#text": "45% boost to all parameters / 30% boost to critical hit rate / hugely boosts critical damage [150%] / probable [30%] normal attack [-50% DMG] on all foes /raises normal hit amount [+1 to each hit, -50% DMG]",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "18",
+                    "@dc": "54",
+                    "@cost": "28",
+                    "#text": "18 combo powerful Water attack [700%] on single foe / slightly boosts critical damage [20%] of Water types for 3 turns / normal attacks hit all foes for 3 turns / adds probable [20%] 1 turn Atk reduction [-20% Atk] effect to attack for 3 turns"
+                },
+                "sbb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "30",
+                    "#text": "21 combo powerful Water attack [580%] on all foes / slightly boosts critical damage [35%] of Water types for 3 turns / normal attacks hit all foes for 3 turns / considerably raises normal hit amount [+2 to each hit] for 3 turns / considerably boosts Atk [170%] for 3 turns / additional powerful attack [500%] at turn's end for 3 turns"
+                },
+                "ubb": {
+                    "@hit": "24",
+                    "@dc": "24",
+                    "@cost": "32",
+                    "#text": "24 combo massive Water attack [1500%] on all foes / enormously boosts critical damage [300%] / hugely raises normal hit amount [+3 to each hit] for 3 turns / additional massive attack [1200%] at turn's end for 3 turns / hugely boosts max HP [40%]"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Boosts Atk|Def|Rec [50%] when BB gauge is over 50% / adds resistance against 1 KO attack when HP is below 20%",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_820518.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_820518.png"
+                },                
+                "sp": {
+                    "@list": "20 : 30% boost to all parameters | 10 : 50% boost to Atk | 10 : Boosts critical hit damage (50% boost) | 20 : <span style='display:none'>(*)</span> Raises normal hit amount (+1 hit increase (0% extra dmg)) | 10 : Further raises normal hit amount (+1 to each normal hit) <span style='display:none'>(Prerequisite: *)</span> | 10 : Raises Atk parameter limits to 130000 | 10 : Enhances BB/SBB's critical damage boost for Water types effect (+15% boost, 50% crit damage total to Water types) | 30 : Adds slight additional damage reduction effect to LS (10% DoT mitigation) | 30 : Adds Def ignoring effect to attack for 2 turns effect to BB/SBB | 30 : Enhances LS's damage of normal attacks hit all foes effect (+20% boost, 120% damage total)"
+                }
+            },
+            {
+                "id": "8372",
+                "name": "Cheery Bjørn & Linlin",
+                "role": "bb_rate,heal_atked,null_ails,null_crit,null_ewd,miti_spark,idol,bb_fill,heal,cure,atk_ele,def_ele,rec_ele,od_fill",
+                "rolesp": "null_stats",
+                "element": "Earth",
+                "rarity": "8",
+                "cost": "54",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "80% boost to all parameters / greatly reduces BB gauge required for BB [30%] / negates all status ailments and Atk|Def|Rec reduction effects / probable [20%] resistance against 1 KO attack / 20% boost to EXP gained",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "30",
+                    "#text": "17 combo powerful [470%] Earth attack on all foes / hugely boosts BC efficacy [50%] for 3 turns / damage taken may [30%] restore HP [25-30% of damage taken] for 3 turns / negates all status ailments | critical | elemental | Spark damage for 3 turns / adds low probability [10%] of resistance against 1 KO attack"
+                },
+                "sbb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "30",
+                    "#text": "21 combo powerful [670%] Earth attack on all foes / enormously boosts BB gauge [12 BC] / greatly restores HP [4000-4500] / removes all status ailments / considerably boosts Atk|Def|Rec [120%] of Earth types for 3 turns / slightly boosts OD gauge [10%]"
+                },
+                "ubb": {
+                    "@hit": "26",
+                    "@dc": "26",
+                    "@cost": "32",
+                    "#text": "26 combo massive [2000%] Earth attack on all foes / enormously boosts BB gauge [50 BC] for 3 turns / fully restores HP for 3 turns / adds high probability [80%] of resistance against 1 KO attack / enormously boosts Atk|Def|Rec [400%] for 3 turns / enormously boosts OD gauge [50%]"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "15% boost to all parameters for all allies / hugely boosts Zel [20%] / Karma [10%] and Item [5%] drop rates / 5% boost to EXP gained",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_830538.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_830538.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> 40% boost to all parameters | 10 : Raises all parameters boost from 40% to 60% <span style='display:none'>(Prerequisite: *)</span> | 10 : Boosts Atk, Def, Rec when HP is over 50% (50% boost) | 10 : Raises Atk parameter limits to 130000 | 20 : <span style='display:none'>(#)</span> Enhances LS's boost to EXP gain effect (+5% EXP, 25% EXP total (30% EXP with ES)) | 30 : Further enhances LS's boost to EXP gain effect (+10% EXP, 30% EXP total (35% EXP with ES) - Replaces E option) <span style='display:none'>(Prerequisite: #)</span> | 10 : Enhances BB's BC efficacy boost effect (+20% boost, 70% BB fill rate total) | 10 : Enhances BB's damage taken may slightly restore HP effect and its success rate (10% chance of 5% heal when hit) | 30 : Enhances probability of BB's resistance against 1 KO attack effect (5% chance angel idol) | 20 : Enhances SBB's BB gauge boost effect (+3 BC, fills 15 BC total) | 10 : Adds Atk, Def, Rec reducing effects negation for 3 turns effect to BB/SBB | 50 : Adds considerable Atk, Def, Rec boost for Fire, Water, Thunder, Light, Dark types for 3 turns effect to SBB (120% boost)"
                 }
             }
         ]
