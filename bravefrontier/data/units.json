@@ -12267,6 +12267,53 @@
                 "sp": {
                     "@list": "10 : <span style='display:none'>(*)</span> 40% boost to all parameters | 10 : Raises all parameters boost from 40% to 60% <span style='display:none'>(Prerequisite: *)</span> | 10 : Boosts Atk, Def, Rec when HP is over 50% (50% boost) | 10 : Raises Atk parameter limits to 130000 | 20 : <span style='display:none'>(#)</span> Enhances LS's boost to EXP gain effect (+5% EXP, 25% EXP total (30% EXP with ES)) | 30 : Further enhances LS's boost to EXP gain effect (+10% EXP, 30% EXP total (35% EXP with ES) - Replaces E option) <span style='display:none'>(Prerequisite: #)</span> | 10 : Enhances BB's BC efficacy boost effect (+20% boost, 70% BB fill rate total) | 10 : Enhances BB's damage taken may slightly restore HP effect and its success rate (10% chance of 5% heal when hit) | 30 : Enhances probability of BB's resistance against 1 KO attack effect (5% chance angel idol) | 20 : Enhances SBB's BB gauge boost effect (+3 BC, fills 15 BC total) | 10 : Adds Atk, Def, Rec reducing effects negation for 3 turns effect to BB/SBB | 50 : Adds considerable Atk, Def, Rec boost for Fire, Water, Thunder, Light, Dark types for 3 turns effect to SBB (120% boost)"
                 }
+            },
+            {
+                "id": "8374",
+                "name": "Occult Reaper Ciardha",
+                "role": "",
+                "rolesp": "",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "54",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "150% boost to Atk / 80% boost to Def & max HP of Dark types / 20% damage reduction from Light & Dark types / raises normal hit amount [+1 to each hit | -25% damage] / probable [35%] normal attack [-50% damage] on all foes / considerably boosts ABP [65%] and CBP [40%] gain",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "25",
+                    "#text": "17 combo powerful Dark attack [470%] on all foes / normal attacks hit all foes for 3 turns / casts stealth on self boosting own Atk [200%] and critical hit rate [60%] for 3 turns / considerably raises normal hit amount [+2 to each hit | +20% damage] for 3 turns / powerful additional attack at turn's end [500%] for 3 turns"
+                },
+                "sbb": {
+                    "@hit": "17/4",
+                    "@dc": "17/4",
+                    "@cost": "27",
+                    "#text": "17 combo powerful Dark attack [950%] on all foes / 4 combo powerful Dark attack [300-1200%] on single foe (damage relative to remaining HP) / casts stealth on self boosting own Atk [200%] and critical hit rate [60%] for 3 turns / considerably raises normal hit amount [+2 to each hit | +20% damage] for 3 turns / powerful additional attack at turn's end [500%] for 3 turns / boosts critical damage [50%] of Dark types for 3 turns"
+                },
+                "ubb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "33",
+                    "#text": "21 combo massive Dark attack [2000%] on all foes / normal attacks [+25% damage] hit all foes for 3 turns / enormously boosts critical damage [400%] for 3 turns / considerably raises normal hit amount [+3 to each hit | +120% damage] for 3 turns / enormously boosts Atk Def Rec [400%] for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Slightly boosts critical damage [25%] for all allies / adds resistance against 1 KO attack when HP is below 25% / raises Atk parameter limits to 130000 & adds 20 combo powerful Dark attack [620%] against Light Dark types effect to SBB",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860048.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860048.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> 50% boost to Atk, max HP | 10 : Raises Atk, max HP boost from 50% to 70% <span style='display:none'>(Prerequisite: *)</span> | 15 : 120% boost to Spark damage | 15 : Boosts critical hit damage (100% boost) | 5 : Considerably raises normal hit amount (Adds +2 hits to each hit count) | 50 : Probable resistance against 1 KO attack (70% chance) | 10 : Raises Atk parameter limits to 160000 | 30 : Enhances LS's success rate of normal attacks may hit all foes effect (+10% chance. 45% chance normal attacks hit all foes total) | 40 : Enhances SBB's additional damage at turn's end effect but reduces duration to 1 turn (+500% DoT multiplier. 1000% DoT multiplier for 1 turn total) | 20 : Enhances hit amount and damage of UBB's hugely raises normal hit amount effect (+1 hit & +30% damage. Adds +4 hits to each hit count (+150% extra damage, 250% total) total) | 25 : Adds probable self evasion for 1 turn effect to BB (35% chance to evade attacks)"
+                }
             }
         ]
     }
