@@ -10,13 +10,57 @@
 <link rel="stylesheet" href="../css/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script type='text/javascript' src='unitegallery/js/jquery-11.0.min.js'></script>	
-<script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>	
-<link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' />
-<script type='text/javascript' src='unitegallery/themes/tiles/ug-theme-tiles.js'></script>
 
 <style>
 body,h1 {font-family: "Montserrat", sans-serif; margin:0; padding:0}
+#photos {
+   /* Prevent vertical gaps */
+   line-height: 0;
+   
+   -webkit-column-count: 5;
+   -webkit-column-gap:   0px;
+   -moz-column-count:    5;
+   -moz-column-gap:      0px;
+   column-count:         5;
+   column-gap:           0px;
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+  display:block;
+  margin-bottom:0;
+}
+
+@media (max-width: 1200px) {
+  #photos {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+/*@media (max-width: 400px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}*/
 </style>
 <script>
 function getURLParameter(name) {
@@ -53,9 +97,18 @@ function getURLParameter(name) {
   </div>
   
   <!-- Photo Grid -->
-  <div id="gallery" style="display:none;margin-bottom:128px">
+  <div id="photos" style="margin-bottom:128px">
+  <!-- <div class="w3-third">
+      <img src="https://www.w3schools.com/w3images/mist.jpg" style="width:100%">
+      <img src="https://www.w3schools.com/w3images/workbench.jpg" style="width:100%">
+      <img src="https://www.w3schools.com/w3images/gondol.jpg" style="width:100%">
+      <img src="https://www.w3schools.com/w3images/skies.jpg" style="width:100%">
+      <img src="https://www.w3schools.com/w3images/lights.jpg" style="width:100%">
+      <img src="https://www.w3schools.com/w3images/workshop.jpg" style="width:100%">
+    </div>-->
   </div>
-   <!-- End Page Content -->
+  
+  <!-- End Page Content -->
 </div>
 
 <!-- Footer -->
@@ -63,6 +116,15 @@ function getURLParameter(name) {
   <p class="w3-medium">Template by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
   <p class="w3-medium">Powered by ntttoon</p>
 </footer>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+  <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption"></p>
+  </div>
+</div>
 
 <script>
   // Open and close sidebar
@@ -101,18 +163,25 @@ function getURLParameter(name) {
 	  var allimages = arr.photos[i].image;
 	  if(tags==s){
 		var image = arr.photos[i].image;
-		out +='<a href="#"><img alt="' + tags + '" src="' + image + '" data-image="' + image + '" data-description="ntttoon" style="display:none"></a>';
+		out += '<img data-frz-src="' + image + '" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload=lzld(this) onerror=lzld(this) alt="' + tags + '" onclick="openLightbox(this)" />';
 	  }
 	  if(!s){
-		out +='<a href="#"><img alt="' + tags + '" src="' + allimages + '" data-image="' + allimages + '" data-description="ntttoon" style="display:none"></a>';
+		out +='<img data-frz-src="' + allimages + '" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload=lzld(this) onerror=lzld(this) alt="' + tags + '" onclick="openLightbox(this)" />';
 	  }
 	}
-	document.getElementById("gallery").innerHTML += out;
+	document.getElementById("photos").innerHTML += out;
+	
   }
 </script>
-<script type="text/javascript">
-	jQuery(document).ready(function(){
-		jQuery("#gallery").unitegallery();
-	});
-  </script>
+
+<script src="lazyload.min.js"></script>
+<script>
+// Modal Image Gallery
+function openLightbox(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
 </html>
