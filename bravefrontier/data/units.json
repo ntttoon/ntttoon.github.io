@@ -12314,6 +12314,100 @@
                 "sp": {
                     "@list": "10 : <span style='display:none'>(*)</span> 50% boost to Atk, max HP | 10 : Raises Atk, max HP boost from 50% to 70% <span style='display:none'>(Prerequisite: *)</span> | 15 : 120% boost to Spark damage | 15 : Boosts critical hit damage (100% boost) | 5 : Considerably raises normal hit amount (Adds +2 hits to each hit count) | 50 : Probable resistance against 1 KO attack (70% chance) | 10 : Raises Atk parameter limits to 160000 | 30 : Enhances LS's success rate of normal attacks may hit all foes effect (+10% chance. 45% chance normal attacks hit all foes total) | 40 : Enhances SBB's additional damage at turn's end effect but reduces duration to 1 turn (+500% DoT multiplier. 1000% DoT multiplier for 1 turn total) | 20 : Enhances hit amount and damage of UBB's hugely raises normal hit amount effect (+1 hit & +30% damage. Adds +4 hits to each hit count (+150% extra damage, 250% total) total) | 25 : Adds probable self evasion for 1 turn effect to BB (35% chance to evade attacks)"
                 }
+            },
+            {
+                "id": "8376",
+                "name": "Bright Star Persenet",
+                "role": "heal,hot,dot,revive,null_ails,atk_down,bb_spark",
+                "rolesp": "miti_ele,atk_ele,def_ele,rec_ele,barrier",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "60",
+                "ls": {
+                    "@hit": "20",
+                    "@dc": "30",
+                    "#text": "100% boost to Rec and max HP of Light types / hugely boosts damage against status afflicted foes [175%] / damage taken hugely boosts BB gauge [5-8 BC] / Spark damage considerably boosts BB gauge [2-4 BC] /  adds probable [30%] 1 turn Atk reduction [20%] to attack effect for 2 turns when dealing damage",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "29/30",
+                    "@dc": "29/30",
+                    "@cost": "22",
+                    "#text": "29 combo powerful Light attack on all foes [450%] / 30 combo random Light attack on all foes [4000%] / hugely restores HP [4000-4500 HP] / hugely restores HP for 3 turns [3500-4000 HP] / 20% additional (DoT) damage reduction for 1 turn / probability [15%] of raising allies from KO [35% HP]"
+                },
+                "sbb": {
+                    "@hit": "41/30",
+                    "@dc": "41/30",
+                    "@cost": "26",
+                    "#text": "41 combo powerful Light attack on all foes  [200-950%] (damage relative to remaining HP & enormously boosts own critical hit rate [60%]) / 30 combo random Light attack on all foes [4000%] / hugely restores HP [4000-4500 HP] / negates status ailments for 3 turns / probable [30%] huge 1 turn Atk reduction [60%] / Spark damage considerably boosts BB gauge [3-4 BC] for 3 turns"
+                },
+                "ubb": {
+                    "@hit": "43",
+                    "@dc": "43",
+                    "@cost": "32",
+                    "#text": "43 combo massive Light attack on all foes [1500-3000%] (damage relative to remaining HP & enormously boosts own critical hit rate [60%]) / fully restores HP for 3 turns / enormously boosts Atk Def Rec [400%] of Light types for 3 turns / enormously boosts Atk [350%] relative to Rec for 3 turns / enormous 3 turns Atk reduction [90%] / raises allies from KO [100% HP]"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "Probable [10-12%] random status ailment infliction / adds probable [30%] 1 turn Atk reduction [30%] to attack effect for 2 turns when dealing damage / 5% damage reduction from Light Dark types for all allies / negates status ailments for all allies",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850358.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850358.png"
+                },                
+                "sp": {
+                    "@list": "10 : 80% boost to Def, Rec, max HP | 10 : Hugely boosts damage against status afflicted foes (100% boost) | 10 : 150% boost to Spark damage | 20 : Enormously boosts elemental damage (200% boost) | 20 : Probable damage reduction to 1 (25% chance) | 10 : Raises Atk parameter limits to 150000 | 35 : Enhances BB's additional damage reduction (+15% reduction. 35% reduction total) | 15 : Allows SBB's huge 1 turn Atk reduction effect to last 2 turns and enhances its success rate (+10% chance. 40% chance to reduce enemy Atk for 2 turns total) | 15 : Enhances BB/SBB's greatly restores HP effect (+1000 + 10% Rec. Heals 5000-5500 + 50% Rec HP total) | 25 : Adds slight damage reduction from Light, Dark types for 2 turns effect to SBB (15% reduction) | 30 : Adds considerable Atk, Def, Rec boost of Light types for 3 turns effect to BB/SBB (140% boost) | 30 : Adds Light barrier effect to BB/SBB (4000 HP)"
+                }
+            },
+            {
+                "id": "8378",
+                "name": "Crocodile Lord Kawab",
+                "role": "bb_rate,bb_atked,idef,bb_spark,spark,spark_debuff,convert_atk,convert_def,convert_rec",
+                "rolesp": "spark_crit,atk_down,def_down,bb_mod",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "60",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "100% boost to Atk Def and max HP of Water types / 10% damage reduction from normal attacks / greatly reduces BB gauge [30%] required for BB / damage taken hugely boosts BB gauge [5-9 BC] / 25% Spark damage reduction",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "16/3",
+                    "@dc": "16/3",
+                    "@cost": "28",
+                    "#text": "16 combo powerful Water attack [500%] on all foes / 3 combo powerful Water attack [850%] on single foe / hugely boosts BB gauge fill rate [50%] for 3 turns / damage taken hugely boosts BB gauge [5-8 BC] for 3 turns / enormously boosts own Spark damage [200%] for 3 turns / adds Def ignoring effect to attack for 3 turns"
+                },
+                "sbb": {
+                    "@hit": "18/4",
+                    "@dc": "18/4",
+                    "@cost": "30",
+                    "#text": "18 combo powerful Water attack [850%] on all foes / 4 combo powerful Water attack [900%] on all foes / Spark damage boosts BB gauge [2-4 BC] for 3 turns / hugely boosts Spark damage [160%] for 3 turns / inflicts Spark vulnerability [20%] for 2 turns / hugely boosts Atk Def Rec [40%] relative to max HP for 3 turns"
+                },
+                "ubb": {
+                    "@hit": "23",
+                    "@dc": "23",
+                    "@cost": "32",
+                    "#text": "23 combo massive Water attack [2000%] on all foes / enormously boosts Spark damage [450%] for 3 turns / enormously boosts Atk Def Rec [60%] relative to max HP for 3 turns / enormously boosts BB Atk [650%] for 3 turns / enormously boosts BB gauge [999 BC] for 3 turns / enormously boosts max HP [50%]"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "20% boost to all parameters of Water types / 20% damage reduction from normal attacks / considerably boosts BB Atk [200%] / raises Atk parameter limits to 160000",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_820358.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_820358.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> 80% boost to all parameters | 10 : Raises all parameters boost from 80% to 100% <span style='display:none'>(Prerequisite: *)</span> | 15 : Boosts critical damage (100% boost) | 20 : Enormously boosts elemental damage (200% boost) | 25 : 50% additional damage reduction | 10 : Enhances LS's damage reduction from normal attacks effect (+5% boost, 15% reduction total) | 10 : Adds probable Spark critical for 3 turns effect to BB/SBB (30% chance Sparks deal 60% extra damage) | 25 : Enhances SBB's considerable Atk, Def, Rec boost relative to max HP effect (+10% boost. 50% HP to Atk, Def, Rec boost total) | 25 : Adds critical damage negation effect to LS | 30 : Adds probable huge 2 turn Atk, Def reduction effect to BB/SBB (40% chance to reduce enemy Atk, Def by 60%) | 30 : Adds enormous BB Atk boost for 3 turns effect to BB/SBB (550% BB Atk) | 25 : Adds resistance against 1 KO attack when HP is below 35%"
+                }
             }
         ]
     }

@@ -91,6 +91,12 @@
 				var thumb = arr.brave.unit[i].thumb['@path'];
 				var art = arr.brave.unit[i].art['@path'];
 				var name = arr.brave.unit[i].name;
+				
+				var role = arr.brave.unit[i].role;
+				var rolesp = arr.brave.unit[i].rolesp;
+				var role = role.replace(/,/gi, ", ");
+				var rolesp = rolesp.replace(/,/gi, ", ");
+				
 				var element = arr.brave.unit[i].element;
 				var cost = arr.brave.unit[i].cost;
 				var rarity = arr.brave.unit[i].rarity;
@@ -124,7 +130,7 @@
 				var es_array = eseffect.split("/");
 				var es_raid_array = es_raid.split("/");
 				////////// out omni skill
-				out+='<li><img src="' + thumb + '" class="w3-left w3-margin-right" style="width:60px;"><h3>' + name + '</h3> <div class="w3-clear"></div></li>';
+				out+='<li><div class="w3-row"><div class="w3-half"><img src="' + thumb + '" class="w3-left w3-margin-right" style="width:60px;margin-bottom:5px;"><h3>' + name + '</h3></div><div class="w3-half">' + role + ' ' + rolesp + '</div> <div class="w3-clear"></div></div></li>';
 				out+='<li id="li_sp_plus"><a id="sp_plus1" class="w3-btn w3-red w3-round w3-small">105 SP</a> <a id="sp_plus2" class="w3-btn w3-red w3-round w3-small">110 SP</a> <a id="sp_plus3" class="w3-btn w3-red w3-round w3-small">120 SP</a></li>'
 				out+='<li><span id="sp">100/100 SP </span> <span id="reset_btn"></span> <span id="copy_btn"></span> <span id="copy_status"></span></li> ';
 				for(j=0;j<sp_array.length;j++)
