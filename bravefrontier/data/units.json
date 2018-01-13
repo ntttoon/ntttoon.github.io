@@ -12318,7 +12318,7 @@
             {
                 "id": "8376",
                 "name": "Bright Star Persenet",
-                "role": "heal,hot,dot,revive,null_ails,atk_down,bb_spark",
+                "role": "heal,hot,miti_dot,revive,null_ails,atk_down,bb_spark",
                 "rolesp": "miti_ele,atk_ele,def_ele,rec_ele,barrier",
                 "element": "Light",
                 "rarity": "8",
@@ -12326,7 +12326,7 @@
                 "ls": {
                     "@hit": "20",
                     "@dc": "30",
-                    "#text": "100% boost to Rec and max HP of Light types / hugely boosts damage against status afflicted foes [175%] / damage taken hugely boosts BB gauge [5-8 BC] / Spark damage considerably boosts BB gauge [2-4 BC] /  adds probable [30%] 1 turn Atk reduction [20%] to attack effect for 2 turns when dealing damage",
+                    "#text": "100% boost to Rec and max HP of Light types / hugely boosts damage against status afflicted foes [175%] / damage taken hugely boosts BB gauge [5-8 BC] / Spark damage considerably boosts BB gauge [2-4 BC] / adds probable [30%] 1 turn Atk reduction [20%] to attack effect for 2 turns when dealing damage",
                     "#raid": ""
                 },
                 "bb": {
