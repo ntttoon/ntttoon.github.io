@@ -6912,7 +6912,7 @@
             },
             {
                 "id": "1742",
-                "name": "Edea",
+                "name": "Graceful Ruler Edea",
                 "role": "atk_down,heal,heal_atked,miti,bc,hc,hot,cure",
                 "rolesp": "atk_down_atked,bb_regen,null_ails",
                 "element": "Earth",
@@ -6959,7 +6959,7 @@
             },
             {
                 "id": "1743",
-                "name": "Lochs",
+                "name": "Divine Storm Loch",
                 "role": "crit_dmg,spark",
                 "rolesp": "crit,spark_crit",
                 "element": "Thunder",
@@ -7006,7 +7006,7 @@
             },
             {
                 "id": "1745",
-                "name": "Daltisk",
+                "name": "True Revelation Daltisk",
                 "role": "bb_fill,bb_rate,bb_atked,bb_spark,bc,hc,bb_regen",
                 "rolesp": "bb_mod,ewd,convert_def,convert_atk",
                 "element": "Thunder",
@@ -7053,7 +7053,7 @@
             },
             {
                 "id": "1747",
-                "name": "Amadurim",
+                "name": "Intact Champion Amadream",
                 "role": "atk_down,crit_dmg,idef",
                 "rolesp": "ails,aoe,dot",
                 "element": "Light",
@@ -7100,7 +7100,7 @@
             },
             {
                 "id": "1771",
-                "name": "Zegustia",
+                "name": "Imperial Ruin Zegstia",
                 "role": "atk,crit,spark,bb_mod,crit_dmg",
                 "rolesp": "spark_crit,hit,atk_ailed,ewd",
                 "element": "Fire",
@@ -7147,7 +7147,7 @@
             },
             {
                 "id": "1773",
-                "name": "Wintia",
+                "name": "Loving Bonds Wintia",
                 "role": "miti,miti_ele,miti_guard,bb_guard,null_crit,null_ewd,miti_spark,miti_dot",
                 "rolesp": "cure",
                 "element": "Water",
