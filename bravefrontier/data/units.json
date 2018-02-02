@@ -12408,6 +12408,53 @@
                 "sp": {
                     "@list": "10 : <span style='display:none'>(*)</span> 80% boost to all parameters | 10 : Raises all parameters boost from 80% to 100% <span style='display:none'>(Prerequisite: *)</span> | 15 : Boosts critical damage (100% boost) | 20 : Enormously boosts elemental damage (200% boost) | 25 : 50% additional damage reduction | 10 : Enhances LS's damage reduction from normal attacks effect (+5% boost, 15% reduction total) | 10 : Adds probable Spark critical for 3 turns effect to BB/SBB (30% chance Sparks deal 60% extra damage) | 25 : Enhances SBB's considerable Atk, Def, Rec boost relative to max HP effect (+10% boost. 50% HP to Atk, Def, Rec boost total) | 25 : Adds critical damage negation effect to LS | 30 : Adds probable huge 2 turn Atk, Def reduction effect to BB/SBB (40% chance to reduce enemy Atk, Def by 60%) | 30 : Adds enormous BB Atk boost for 3 turns effect to BB/SBB (550% BB Atk) | 25 : Adds resistance against 1 KO attack when HP is below 35%"
                 }
+            },
+            {
+                "id": "8381",
+                "name": "Calescent Yan & Yuan",
+                "role": "bb_rate_down,bb_atked,hot,atk_ele,def_ele,rec_ele,crit_ele,shield",
+                "rolesp": "bb_rate_down_atked,bb_fill,ewd,convert_atk,convert_def,rec_down_add",
+                "element": "Fire",
+                "rarity": "8",
+                "cost": "60",
+                "ls": {
+                    "@hit": "13",
+                    "@dc": "52",
+                    "#text": "80% boost to Atk & max HP / 120% boost to Def & Rec of Fire types / considerably restores HP each turn [1200-1500 HP] / hugely boosts BB gauge [10BC] when damage dealt has exceeded certain amount / damage taken hugely boosts BB gauge [5-9BC]",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "24",
+                    "#text": "17 combo powerful Fire attack [470%] on all foes / reduce foe's BB gauge fill rate [30%] for 3 turns / damage taken hugely boosts BB gauge [6-9 BC] for 3 turns / hugely restores HP [4000-4500 HP] for 3 turns / considerably boosts Atk Def Rec [140%] and enormously boosts critical hit rate [60%] of Fire types for 3 turns / activates Water shield [3500 HP | 3500 Def] for 2 turns"
+                },
+                "sbb": {
+                    "@hit": "24/4",
+                    "@dc": "24/4",
+                    "@cost": "26",
+                    "#text": "21 combo powerful Fire attack [670%] on all foes / 4 combo powerful Fire attack [850%] on single foe / damage taken hugely boosts BB gauge [6-9 BC] for 3 turns / hugely restores HP [4000-4500 HP] for 3 turns / considerably boosts Atk Def Rec [140%] & enormously boosts critical hit rate [60%] of Fire types for 3 turns / activates Water shield [3500 HP | 3500 Def] for 2 turns"
+                },
+                "ubb": {
+                    "@hit": "25",
+                    "@dc": "25",
+                    "@cost": "33",
+                    "#text": "25 combo massive Fire attack [2000%] on all foes / enormously boosts BB gauge [100BC] for 3 turns / hugely boosts all elemental damage [450%] for 3 turns / fully restores HP for 3 turns / enormously boosts Atk Def Rec [400%] for 3 turns / enormously boosts OD gauge [50%]"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "25% boost to all parameters of Fire types / hugely boosts BB|SBB activation rates [10%] for all allies / damage taken may [20%] slightly reduce foe's BB gauge fill rate [20%] for 1 turn / adds powerful Fire attack [620%] on single foe to BB|SBB",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_810558.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_810558.png"
+                },                
+                "sp": {
+                    "@list": "10 : 80% boost to Def, Rec, max HP | 10 : 150% boost to Spark damage | 10 : Greatly boosts critical hit damage (100% boost) | 10 : Raises Atk parameter limits to 150000 | 30 : Probable resistance against 1 KO attack (70% chance) | 10 : Enhances BB's foe's BB gauge fill rate reduction effect (+10% boost. 40% reduction total) | 20 : Enhances BB/SBB's Water shield effect (+1500 HP, Def. Activates 5000 HP, Def shield total) | 20 : Enhances BB/SBB's considerable Atk, Def, Rec boost for Fire types effect (+15% boost. 155% boost total) | 30 : Adds huge boost to BB gauge effect to BB/SBB (Fills 12 BC) | 30 : Adds enormous Fire elemental damage boost for 3 turns effect to SBB​ (200% boost) | 30 : Adds huge boost to Atk, Def relative to Rec for 3 turns effect to BB/SBB (110% Rec to Atk, Def) | 40 : Adds probable enormous 3 turn Rec reduction effect to BB/SBB (30% chance to reduce enemy Rec by 100%)"
+                }
             }
         ]
     }
