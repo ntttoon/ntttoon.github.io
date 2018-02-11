@@ -12455,6 +12455,53 @@
                 "sp": {
                     "@list": "10 : 80% boost to Def, Rec, max HP | 10 : 150% boost to Spark damage | 10 : Greatly boosts critical hit damage (100% boost) | 10 : Raises Atk parameter limits to 150000 | 30 : Probable resistance against 1 KO attack (70% chance) | 10 : Enhances BB's foe's BB gauge fill rate reduction effect (+10% boost. 40% reduction total) | 20 : Enhances BB/SBB's Water shield effect (+1500 HP, Def. Activates 5000 HP, Def shield total) | 20 : Enhances BB/SBB's considerable Atk, Def, Rec boost for Fire types effect (+15% boost. 155% boost total) | 30 : Adds huge boost to BB gauge effect to BB/SBB (Fills 12 BC) | 30 : Adds enormous Fire elemental damage boost for 3 turns effect to SBB​ (200% boost) | 30 : Adds huge boost to Atk, Def relative to Rec for 3 turns effect to BB/SBB (110% Rec to Atk, Def) | 40 : Adds probable enormous 3 turn Rec reduction effect to BB/SBB (30% chance to reduce enemy Rec by 100%)"
                 }
+            },
+            {
+                "id": "8382",
+                "name": "Priestess Snow Miku",
+                "role": "bb_regen,bb_guard,od_regen,od_fill,maxhp,atk,def,rec,crit,convert_atk,ewd,crit_res_down,ewd_res_down,recast,cure,hot_guard",
+                "rolesp": "crit_dmg,add_ele,miti_ele",
+                "element": "Light",
+                "rarity": "8",
+                "cost": "60",
+                "ls": {
+                    "@hit": "10",
+                    "@dc": "50",
+                    "#text": "80% boost to Atk and max HP / greatly boosts Spark damage [125%] / greatly boosts critical [125%] and elemental damage [125%] / raises Atk parameter limits to 130000",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "0",
+                    "@dc": "0",
+                    "@cost": "15",
+                    "#text": "Enormously boosts BB gauge [12 BC] for 3 turns / enormously boosts BB gauge [12 BC] when guarding for 3 turns / considerably boosts OD gauge fill rate at turn's end [500 OD] for 3 turns / slightly boosts OD gauge [10%] & greatly boosts max HP [25%]"
+                },
+                "sbb": {
+                    "@hit": "17",
+                    "@dc": "17",
+                    "@cost": "30",
+                    "#text": "17 combo powerful Light attack [300-950%] on all foes (damage relative to remaining HP) / hugely boosts Atk Def Rec [190%] for 3 turns / enormously boosts critical hit rate [60%] for 3 turns / hugely boosts Atk relative to Def [90%] for 3 turns / hugely boosts all elemental damage [175%] for 3 turns / critical and elemental vulnerability infliction [15%] for 2 turns / probability [20%] of activating BB|SBB|UBB twice for 2 turns"
+                },
+                "ubb": {
+                    "@hit": "21",
+                    "@dc": "21",
+                    "@cost": "30",
+                    "#text": "21 combo massive Light attack [1500-4000%] on all foes (uses all allies' BB gauge) / enormously boosts Atk Def Rec [400%] for 3 turns / damage taken enormously restores HP [100%] for 3 turns / resistance [100%] against 1 KO attack for 5 turns / enormously boosts OD gauge fill rate at turn's end [1000 OD] for 3 turns / enormously boosts max HP [45%]"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "40% boost to all parameters when Kagura Suzu is equipped / negates status ailments / adds status ailment removal effect to BB|SBB|UBB / hugely restores HP [4000-5000 HP] for 3 turns when guarding for all allies / 15% boost to all parameters for all allies",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_850298.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_850298.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> Raises all parameters boost to 80% | 10 : 30% boost to Def, Rec, max HP <span style='display:none'>(Prerequisite: *)</span> | 10 : 150% boost to Spark damage | 20 : Enormously boosts elemental damage (200% boost) | 10 : Raises Atk parameter limits to 160000 | 15 : <span style='display:none'>(#)</span> Enhances LS's Atk, max HP boost by 40% (+40% boost, 120% boost to Atk, max HP total) | 25 : <span style='display:none'>($)</span> Enhances LS's raises Atk parameter limit break (+10000 boost, 140000 Atk limit total) <span style='display:none'>(Prerequisite: #)</span> | 40 : Enhances LS's critical damage boost effect (+100% boost, 225% crit damage total) <span style='display:none'>(Prerequisite: $)</span> | 20 : Enhances BB/UBB's max HP boost effect (+5% boost, 30% (BB) & 50% (UBB) HP total) | 25 : Adds great critical damage boost for 3 turns effect to SBB (100% crit damage) | 30 : Adds all elements to attack for 3 turns effect to BB/SBB | 35 : Adds all elemental damage reduction for 3 turns effect to BB/SBB (15% elemental mitigation)"
+                }
             }
         ]
     }
