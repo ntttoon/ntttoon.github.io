@@ -11705,6 +11705,53 @@
                 }
             },
             {
+                "id": "8350",
+                "name": "Tridon the Judicious",
+                "role": "barrier,hot,def,rec,null_ails,null_stats,shield,bc,hc,convert_atk,convert_def",
+                "rolesp": "bb_rate,,atk_down_add,miti_guard",
+                "element": "Water",
+                "rarity": "8",
+                "cost": "60",
+                "ls": {
+                    "@hit": "18",
+                    "@dc": "54",
+                    "#text": "100% boost to max HP / considerably boosts Def Rec [120%] relative to remaining HP / enormously boosts BB Atk [500%] for 2 turns when BC collected has exceeded certain amount [100 BC] / 20% damage reduction for 2 turns when HC collected has exceeded certain amount [20 HC] / 10% damage reduction",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "24",
+                    "@dc": "24",
+                    "@cost": "30",
+                    "#text": "24 combo powerful Water attack on all foes [500%] / activates Earth barrier [5000 HP] / hugely restores HP [2000-6000 HP] for 3 turns / hugely boosts Def Rec [190%] for 3 turns / negates all status ailments for 3 turns / negates Atk Def Rec reductions for 3 turns"
+                },
+                "sbb": {
+                    "@hit": "34",
+                    "@dc": "34",
+                    "@cost": "35",
+                    "#text": "34 combo powerful Water attack on all foes [700%] / activates Earth shield [4000 HP 4000 Def] for 2 turns / greatly boosts BC HC drop rate [45%] for 3 turns / hugely boosts Def Rec [190%] for 3 turns / hugely boosts Atk Def [110%] relative to Rec for 3 turns"
+                },
+                "ubb": {
+                    "@hit": "40",
+                    "@dc": "40",
+                    "@cost": "35",
+                    "#text": "40 combo massive Water attack on all foes [1800%] / activates Non-elemental shield [50000 HP 10000 Def] / enormously boosts BC HC drop rate [150%] for 3 turns / 75% damage reduction for 3 turns / enormously boosts Atk Def [350%] relative to Rec for 3 turns / enormously boosts BB Atk [650%] for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "50% boost to Rec max HP / boosts BC, HC drop rates [20%] for all allies when Tridon's Trident is equipped / 100% boost to Def for 2 turns when HP is below 50% / negates Def ignoring effect",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_820148.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_820148.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> 60% boost to all parameters | 10 : 30% boost to Rec, max HP <span style='display:none'>(Prerequisite: *)</span> | 10 : 50% boost to Def, Rec when BB gauge is full | 10 :Boosts BB Atk when HP is over 50% (150% boost) | 10 : Boosts BC, HC drop rate (30% boost) | 10 : 10% damage reduction from Fire, Earth, Light types | 10 : 10% damage reduction from Water, Thunder, Dark types | 30 : Adds huge boost to BC efficacy for 3 turns effect to BB/SBB (60% boost) | 20 : Adds probable 1 turn considerable Atk reduction to attack for 3 turns effect to BB/SBB | Adds : 30% chance to reduce enemy Atk by 30% effect | 30 : Adds damage reduction when guarding for 3 turns effect to BB/SBB (10% guard mitigation) | 20 : Enhances BB/SBB's huge Def, Rec boost effect (+30%. 220% boost total) | 20 : Enhances SBB's Earth shield effect (+1000 HP & +1000 Def. Activates 5,000 HP & 5,000 Def shield total)"
+                }
+            },
+            {
                 "id": "8352",
                 "name": "Fate-Holder al-Akqat",
                 "role": "atk,def,rec,miti_ele,heal_spark,maxhp,miti_dot,convert_atk,convert_def",
@@ -12501,6 +12548,100 @@
                 },                
                 "sp": {
                     "@list": "10 : <span style='display:none'>(*)</span> Raises all parameters boost to 80% | 10 : 30% boost to Def, Rec, max HP <span style='display:none'>(Prerequisite: *)</span> | 10 : 150% boost to Spark damage | 20 : Enormously boosts elemental damage (200% boost) | 10 : Raises Atk parameter limits to 160000 | 15 : <span style='display:none'>(#)</span> Enhances LS's Atk, max HP boost by 40% (+40% boost, 120% boost to Atk, max HP total) | 25 : <span style='display:none'>($)</span> Enhances LS's raises Atk parameter limit break (+10000 boost, 140000 Atk limit total) <span style='display:none'>(Prerequisite: #)</span> | 40 : Enhances LS's critical damage boost effect (+100% boost, 225% crit damage total) <span style='display:none'>(Prerequisite: $)</span> | 20 : Enhances BB/UBB's max HP boost effect (+5% boost, 30% (BB) & 50% (UBB) HP total) | 25 : Adds great critical damage boost for 3 turns effect to SBB (100% crit damage) | 30 : Adds all elements to attack for 3 turns effect to BB/SBB | 35 : Adds all elemental damage reduction for 3 turns effect to BB/SBB (15% elemental mitigation)"
+                }
+            },
+            {
+                "id": "8383",
+                "name": "Randolph and Ravenna",
+                "role": "bb_fill,ails,dot,stealth,crit",
+                "rolesp": "",
+                "element": "Dark",
+                "rarity": "8",
+                "cost": "54",
+                "ls": {
+                    "@hit": "12",
+                    "@dc": "60",
+                    "#text": "85% boost to max HP / 200% boost to Atk and 100% boost to Def Rec when BB gauge is over 50% / greatly boosts BB gauge fill rate [60%] / enormously boosts Fire Thunder Dark elemental damage [200%] / negates critical damage",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "16/1",
+                    "@dc": "16/1",
+                    "@cost": "22",
+                    "#text": "16 combo powerful Dark Fire attack [470%] on all foes / powerful Dark Thunder attack [650%] on single foe / enormously boosts BB gauge [12 BC] / inflicts [100%] Poison Paralysis Injury Curse effects / massive additional attack [1000%] on single foe at turn's end for 1 turn"
+                },
+                "sbb": {
+                    "@hit": "21/1/1",
+                    "@dc": "21/1/1",
+                    "@cost": "29",
+                    "#text": "21 combo powerful Dark Fire Thunder attack [800%] on all foes / massive Dark attack [300-1100%] on single foe (damage relative to remaining HP) / massive Dark attack [1280% | +300% up to 3x] on single foe (consecutive uses boost damage) / casts stealth on self boosting own Atk [300%] and critical hit rate [60%] for 2 turns / fills own BB gauge to max / enormous additional attack [1000%] on single foe at turn's end for 1 turn"
+                },
+                "ubb": {
+                    "@hit": "23/1",
+                    "@dc": "23/1",
+                    "@cost": "32",
+                    "#text": "23 combo massive Dark Fire attack [2000%] on all foes / massive Dark Thunder attack [3500%] on single foe / enormously boosts Atk Rec [400%] for 3 turns / enormously boosts Atk Def [300%] relative to Rec for 3 turns / enormously boosts own Spark damage [400%] for 3 turns / enormous additional attack [1200%] at turn's end for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "40% boost to all parameters / adds critical hit rate boost [60%] for 3 turns effect to BB|SBB / considerably raises normal hit amount [+2 to each hit] / probable [50%] resistance against 2 KO attacks",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_860328.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_860328.png"
+                },                
+                "sp": {
+                    "@list": "20 : 100% boost to Atk, lowers Def by 50% | 10 : Boosts Atk, Def when BB gauge is above 50% (50% boost) | 10 : Hugely boosts damage against status afflicted foes (100% boost) | 20 : 150% boost to Spark damage | 10 : Boosts critical damage (100% boost) | 20 : <span style='display:none'>(*)</span> Raises Atk parameter limits to 150000 | 20 : <span style='display:none'>(#)</span> Raises Atk parameter limits from 150000 to 180000 <span style='display:none'>(Prerequisite: *)</span> | 10 : Raises Atk parameter limits from 180000 to 200000 <span style='display:none'>(Prerequisite: #)</span> | 20 : Enhances LS's max HP parameter boost effect (+15% boost. 100% boost total) | 10 : Considerable boost to BB/SBB's activation rate (20% boost) | 20 : Normal attacks may hit all foes (30% chance with 30% damage penalty)"
+                }
+            },
+            {
+                "id": "8385",
+                "name": "Demon Ulfhednar Zelion",
+                "role": "taunt,atk_down_add,ewd",
+                "rolesp": "ails,spark_debuff,bb_rate_down",
+                "element": "Thunder",
+                "rarity": "8",
+                "cost": "54",
+                "ls": {
+                    "@hit": "11",
+                    "@dc": "55",
+                    "#text": "125% boost to Atk / 50% boost to Def and 80% boost to max HP / negates elemental damage / negates Def ignoring effects / 130% boost to Spark damage / 8% damage reduction",
+                    "#raid": ""
+                },
+                "bb": {
+                    "@hit": "18/21",
+                    "@dc": "18/21",
+                    "@cost": "27",
+                    "#text": "18 combo Thunder attack [400%] on all foes / 21 combo powerful Thunder attack [600%-800%] on single foe (damage relative to remaining HP) / activates Taunt and greatly boosts own Def [150%] for 1 turn / enormously boosts own Atk and Rec relative to HP [80%] for 3 turns / probable [50%] HP absorption [8%-10%] for self when attacking for 3 turns / adds probable [30%] 3 turn considerable Atk reduction [30%] effect to attack for 3 turns"
+                },
+                "sbb": {
+                    "@hit": "20/23",
+                    "@dc": "20/23",
+                    "@cost": "32",
+                    "#text": "20 combo powerful Thunder attack [700%] on all foes / 23 combo massive Thunder attack [1500%-2000%] on single foe (damage relative to remaining HP) / boosts own BB gauge to max / enormously boosts own Atk [300%] and considerably reduces own Def and Rec [-30%] for 2 turns / enormously boosts own Spark damage [120%] for 3 turns / hugely boosts all elemental damage [150%] for 3 turns"
+                },
+                "ubb": {
+                    "@hit": "22/25",
+                    "@dc": "22/25",
+                    "@cost": "35",
+                    "#text": "22 combo massive Thunder attack [1200%] on all foes / 25 combo massive Thunder attack [3000%-4000%] on single foe (damage relative to remaining HP / with enormously boosted critical hit rate[100%]) / enormously boosts Spark damage [400%] for 3 turns / hugely boosts max HP [40%] / enormously boosts own critical damage [600%] for 1 turn / enormously boosts OD gauge [1000] at turn's end for 3 turns"
+                },
+                "es": {
+                    "@condtion": "None",
+                    "#text": "20% boost to all parameters for all allies when Status Boost Sphere is equipped / raises normal hit amount [+2 to each hit] when Atk Boosting Sphere is equipped / 40% boost to all parameters when BB Gauge Sphere is equipped / greatly boosts Spark damage [80%] when HP is over 50% when Spark Sphere is equipped",
+                    "#raid": ""
+                },
+                "art": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_full_840438.png"
+                },
+                "thumb": {
+                    "@path": "http://2.cdn.bravefrontier.gumi.sg/content/unit/img/unit_ills_thum_840438.png"
+                },                
+                "sp": {
+                    "@list": "10 : <span style='display:none'>(*)</span> 40% boost to all parameters | 10 : Raises all parameter boost from 40% to 60% <span style='display:none'>(Prerequisite: *)</span> | 10 : 150% boost to Spark damage | 10 : Greatly boosts elemental damage (100% boost) | 10 : <span style='display:none'>(#)</span> Raises Atk parameter limits to 160000 | 20 : Further raises Atk parameter limits from 160000 to 180000 <span style='display:none'>(Prerequisite: #)</span> | 50 : Probable resistance against 1 KO attack (70% chance) | 20 : Adds high probability of random status ailment infliction effect to BB/SBB (80% chance) | 25 : Enhances LS's damage reduction effect (+7% reduction. 15% reduction total) | 10 : Adds probable Spark vulnerability infliction for 2 turns effect to BB/SBB (30% chance for 50% vulnerability) | 60 : Adds BB gauge fill rate reduction for 2 turns effect to BB/SBB (50% reduction) | 35 : Enhances BB/SBB/UBB's damage effectiveness (+200% BB Atk, +250% SBB Atk, +300% UBB Atk)"
                 }
             }
         ]
