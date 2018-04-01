@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<title>Template Banners</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1 {font-family: "Montserrat", sans-serif; margin:0; padding:0; }
+#photos {
+  -webkit-column-count: 5;
+  -webkit-column-gap:   1em;
+  -moz-column-count:    5;
+  -moz-column-gap:      1em;
+  column-count:         5;
+  column-gap:           1em;
+}
+
+iframe {
+  width: 300px;
+  height: 600px;
+  display: block;
+  margin: auto;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+}
+</style>
+<body class="w3-dark-grey">
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="index.html" target="_self" class="w3-bar-item w3-button w3-text-grey w3-hover-black">300x250</a>
+    <a href="300600.html" target="_self" class="w3-bar-item w3-button w3-text-grey w3-hover-black">300x600</a>
+    <a href="72890.html" target="_self" class="w3-bar-item w3-button w3-text-grey w3-hover-black">728x90</a>
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div style="height:70px;"></div>
+<div style="width:100%">
+  <!-- Header -->
+  <div class="w3-opacity">
+  <span class="w3-button w3-xxlarge w3-white" style="position:fixed;top:0;right:0" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+  <div class="w3-clear"></div>
+  <header class="w3-center w3-margin-bottom">
+    <h1>Template Banners 300x600</h1>
+  </header>
+  </div>
+  
+  <!-- Banners Grid -->
+  <div id="photos" style="margin-bottom:64px"></div>
+  
+  <!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-opacity w3-xlarge"> 
+  <p class="w3-medium">Template by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p class="w3-medium">Powered by ntttoon</p>
+</footer>
+
+<script>
+  // Open and close sidebar
+  function w3_open() {
+	  document.getElementById("mySidebar").style.width = "100%";
+	  document.getElementById("mySidebar").style.display = "block";
+  }
+  
+  function w3_close() {
+	  document.getElementById("mySidebar").style.display = "none";
+  }
+</script>
+
+</body>
+<script>
+var xmlhttp = new XMLHttpRequest();
+var url = "gallery.json";
+
+xmlhttp.onreadystatechange = function () {
+  if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+    myFunction(xmlhttp.responseText);
+  }
+}
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+
+function myFunction(response) {
+  var arr = JSON.parse(response);
+  var i;
+  var out = "";
+    
+  var json_len = arr.banners.length;
+  for (i = 0; i < json_len; i++) {
+    var paths = arr.banners[i].path;
+    out += '<iframe src=about:blank data-src="banners/' + paths + '/300600.html"' +' frameborder="0" scrolling="no" onload=lzld(this)></iframe>';
+  }
+  document.getElementById("photos").innerHTML += out;
+}
+</script>
+
+<script src="lazyload.min.js"></script>
+</html>
