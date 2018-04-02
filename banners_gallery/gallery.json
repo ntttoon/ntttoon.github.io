@@ -1,18 +1,6 @@
 {
     "banners": [
         {
-            "path":"agency_1"
-        },
-        {
-            "path":"agency_2"
-        },
-        {
-            "path":"agency_3"
-        },
-        {
-            "path":"agency_4"
-        },
-        {
             "path":"beauty_1"
         },
         {
@@ -208,6 +196,18 @@
             "path":"sale_10"
         },
         {
+            "path":"service_1"
+        },
+        {
+            "path":"service_2"
+        },
+        {
+            "path":"service_3"
+        },
+        {
+            "path":"service_4"
+        },
+        {
             "path":"tech_1"
         },
         {
@@ -221,6 +221,36 @@
         },
         {
             "path":"travel_3"
+        },
+        {
+            "path":"edu_1"
+        },
+        {
+            "path":"food_1"
+        },
+        {
+            "path":"health_3"
+        },
+        {
+            "path":"health_4"
+        },
+        {
+            "path":"real_5"
+        },
+        {
+            "path":"real_6"
+        },
+        {
+            "path":"real_7"
+        },
+        {
+            "path":"sale_11"
+        },
+        {
+            "path":"service_5"
+        },
+        {
+            "path":"travel_4"
         }
     ]
 }
