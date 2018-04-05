@@ -251,6 +251,66 @@
         },
         {
             "path":"travel_4"
+        },
+        {
+            "path":"app_1"
+        },
+        {
+            "path":"busines_16"
+        },
+        {
+            "path":"busines_17"
+        },
+        {
+            "path":"busines_18"
+        },
+        {
+            "path":"food_2"
+        },
+        {
+            "path":"food_3"
+        },
+        {
+            "path":"multi_24"
+        },
+        {
+            "path":"multi_25"
+        },
+        {
+            "path":"sale_12"
+        },
+        {
+            "path":"sale_13"
+        },
+        {
+            "path":"sale_14"
+        },
+        {
+            "path":"sale_15"
+        },
+        {
+            "path":"sale_16"
+        },
+        {
+            "path":"sale_17"
+        },
+        {
+            "path":"sale_18"
+        },
+        {
+            "path":"sale_19"
+        },
+        {
+            "path":"sale_20"
+        },
+        {
+            "path":"sale_21"
+        },
+        {
+            "path":"sale_22"
+        },
+        {
+            "path":"sale_23"
         }
     ]
 }
