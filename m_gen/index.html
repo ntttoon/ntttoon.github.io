@@ -360,8 +360,8 @@ function threeImageGen(){
 function slideShowGen(){
 	var a = document.getElementById('currentSlot').innerHTML;
 	var aa = document.getElementById('alt_currentSlot').innerHTML;
-	document.getElementById(a).innerHTML = '<div style="position:relative" class="mg-center mg-content"> <img class="mySlides" src="http://ntttoon.github.io/mg_assets/s01.png" style="width:100%"> <img class="mySlides" src="http://ntttoon.github.io/mg_assets/s02.png" style="width:100%"> <img class="mySlides" src="http://ntttoon.github.io/mg_assets/s03.png" style="width:100%"> <button class="mg-button mg-black mg-display-left" onclick="plusDivs(-1)">&#10094;</button> <button class="mg-button mg-black mg-display-right" onclick="plusDivs(1)">&#10095;</button></div>';
-	document.getElementById(aa).innerHTML = '<div style="position:relative" class="mg-center mg-content"> <img class="mySlides" src="http://ntttoon.github.io/mg_assets/s01.png" style="width:100%"> <img class="mySlides" src="http://ntttoon.github.io/mg_assets/s02.png" style="width:100%"> <img class="mySlides" src="http://ntttoon.github.io/mg_assets/s03.png" style="width:100%"> <button class="mg-button mg-black mg-display-left" onclick="plusDivs(-1)">&#10094;</button> <button class="mg-button mg-black mg-display-right" onclick="plusDivs(1)">&#10095;</button></div>';
+	document.getElementById(a).innerHTML = '<div class="slicker" style="width:100%"> <div><img src="https://ntttoon.github.io/mg_assets/s01.png" class=".mg-image" /></div> <div><img src="https://ntttoon.github.io/mg_assets/s02.png" class=".mg-image" /></div> <div><img src="https://ntttoon.github.io/mg_assets/s03.png" class=".mg-image" /></div></div>';
+	document.getElementById(aa).innerHTML = '<div class="slicker" style="width:100%"> <div><img src="https://ntttoon.github.io/mg_assets/s01.png" class=".mg-image" /></div> <div><img src="https://ntttoon.github.io/mg_assets/s02.png" class=".mg-image" /></div> <div><img src="https://ntttoon.github.io/mg_assets/s03.png" class=".mg-image" /></div></div>';
 	modal_close();
 	update_export()
 }
