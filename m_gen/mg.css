@@ -20,6 +20,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .mg-content{max-width:980px;margin:auto}
 .mg-content600{max-width:600px;margin:auto}
 .mg-h1title{font-size:48px!important;line-height:1.2}
+@media (max-width:600px){.mg-h1title{font-size:36px!important;line-height:1.2}}
 .mg-h3title{font-size:24px!important;line-height:1.2}
 @media (max-width:600px){.mg-hide-small{display:none!important}}
 @media (min-width:993px){.mg-hide-large{display:none!important}}
