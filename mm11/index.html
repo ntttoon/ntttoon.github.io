@@ -23,17 +23,20 @@
         }
 
         img {
-            display: block;
             width: 100%;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
         }
 
-        @media (max-width:768px){img{width: 300%; margin-left: -100%;}}
+        @media (max-width:768px){img{width: 300%;}}
 
         .container {
             margin: 0 auto;
             max-width: 100%;
             padding: 10px;
-            position: relative;
+            position: absolute;
         }
     </style>
 </head>
