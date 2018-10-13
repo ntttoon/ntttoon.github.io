@@ -17,9 +17,8 @@
         }
         
         body{
-            width: 100%;
             background: url("images/page-bg.jpg") no-repeat top center;
-            overflow: hidden;
+
         }
 
         img {
@@ -30,7 +29,7 @@
             -webkit-transform: translateX(-50%);
         }
 
-        @media (max-width:768px){img{width: 300%}}
+        @media (max-width:768px){img{width: 300%;}}
 
         .container {
             margin: 0 auto;
@@ -42,7 +41,7 @@
 </head>
 
 <body>
-    <div id="container" class="container">
+    <div id="container" class="container" style="overflow: hidden;">
         <div id="scene" class="scene">
             <div class="layer" data-depth="0.60"><img src="images/mm11_logo.png"></div>
             <div class="layer" data-depth="0.80"><img src="images/mm11_rush.png"></div>
