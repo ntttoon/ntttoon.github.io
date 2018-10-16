@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>banner HTML5</title>
 <link href="css/animate.css" type="text/css" rel="stylesheet">
-<link href="css/magic.css" type="text/css" rel="stylesheet">
+<!--<link href="css/magic.css" type="text/css" rel="stylesheet">-->
 <style>
 body{
 	margin:0;
@@ -56,32 +56,50 @@ body{
 </style>
 </head>
 
-<body>
-<img id="replay" src="images/replay_white.png">
-<a href="#" target="_blank">
+<body onload="responsiveBanner();">
 <div id="banner">
-	<div id="frame1">
-        <img id="bg" src="images/bg.jpg">
-        <img id="thoasuc" src="images/thoasuc.png">
-    </div>
-    <div id="frame2">
-        <img id="pic01" src="images/pic01.png">
-        <img id="text01" src="images/text01.png">
-    </div>
-    <div id="frame3">
-        <img id="pic02" src="images/pic02.png">
-        <img id="text02" src="images/text02.png">
-    </div>
-    <div id="frame4">
-        <img id="pic03" src="images/pic03.png">
-        <img id="text03" src="images/text03.png">
-    </div>
-
+	<img id="replay" src="images/replay_white.png">
+	<a href="#" target="_blank">
+		<div id="frame1">
+			<img id="bg" src="images/bg.jpg">
+			<img id="thoasuc" src="images/thoasuc.png">
+		</div>
+		<div id="frame2">
+			<img id="pic01" src="images/pic01.png">
+			<img id="text01" src="images/text01.png">
+		</div>
+		<div id="frame3">
+			<img id="pic02" src="images/pic02.png">
+			<img id="text02" src="images/text02.png">
+		</div>
+		<div id="frame4">
+			<img id="pic03" src="images/pic03.png">
+			<img id="text03" src="images/text03.png">
+		</div>
+	</a>
 </div>
-</a>
 </body>
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="js/ntttoon.js" language="javascript" type="text/javascript"></script>
+<script>
+	function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]"); var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search); return results === null ? "" :
+		decodeURIComponent(results[1].replace(/\+/g, " ")); 
+	}
+</script>
+<script>
+	var widthbanner = document.getElementById("banner").clientWidth;
+    function responsiveBanner(){
+        var w = getParameterByName("w");
+        console.log(w);
+        var widthbannerclient = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        if(w == ""){    document.body.style.zoom = widthbannerclient/widthbanner *100+"%";   }
+        else {     document.body.style.zoom = w/widthbanner *100+"%";   }  }
+    window.onresize = function(event) {
+        responsiveBanner();
+	};
+</script>
 <script type="text/javascript">
 	function bannerani(){
 		//effect(delay_start,duration,div,effect_in,effect_out,delay_mid,effect_mid,loop_mid)
