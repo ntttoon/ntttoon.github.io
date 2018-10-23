@@ -425,6 +425,52 @@
         },
         {
             "path":"travel_8"
+        },
+        {
+            "path":"busines_22"
+        },
+        {
+            "path":"busines_23"
+        },
+        {
+            "path":"food_5"
+        },
+        {
+            "path":"health_8"
+        },
+        {
+            "path":"health_9"
+        },
+        {
+            "path":"interior_1"
+        },
+        {
+            "path":"multi_41"
+        },
+        {
+            "path":"multi_42"
+        },
+        {
+            "path":"multi_43"
+        },
+        {
+            "path":"multi_44"
+        },
+        {
+            "path":"sale_35"
+        },
+        {
+            "path":"sale_36"
+        },
+        {
+            "path":"sale_37"
+        },
+        {
+            "path":"sale_38"
+        },
+        {
+            "path":"sale_39"
         }
+        
     ]
 }
