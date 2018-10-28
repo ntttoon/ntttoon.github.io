@@ -14,16 +14,8 @@
 <meta name="authoring-tool" content="Adobe_Animate_CC">
 <title>project_1254</title>
 <!-- write your code here -->
-<style>
-  #animation_container {
-	position:absolute;
-	margin:auto;
-	left:0;right:0;
-	top:0;bottom:0;
-  }
-</style>
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="project_1254.js?1540745813093"></script>
+<script src="project_1254.js?1540746179060"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -37,6 +29,7 @@ function init() {
 	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
 	var lib=comp.getLibrary();
 	loader.loadManifest(lib.properties.manifest);
+	responsiveBanner();
 }
 function handleFileLoad(evt, comp) {
 	var images=comp.getImages();	
