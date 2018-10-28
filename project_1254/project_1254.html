@@ -10,6 +10,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
 <title>project_1254</title>
 <!-- write your code here -->
@@ -22,7 +23,7 @@
   }
 </style>
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="project_1254.js?1540745341014"></script>
+<script src="project_1254.js?1540745813093"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -57,7 +58,7 @@ function handleComplete(evt,comp) {
 		stage.addChild(exportRoot);
 		createjs.Ticker.setFPS(lib.properties.fps);
 		createjs.Ticker.addEventListener("tick", stage);
-	}	    
+	}
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
 }
@@ -70,24 +71,24 @@ function handleComplete(evt,comp) {
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:360px; height:640px; position: absolute; left: 0px; top: 0px; display: block;">
 		</div>
 	</div>
-	<script>
-		function getParameterByName(name) {
-			name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]"); var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-			results = regex.exec(location.search); return results === null ? "" :
-			decodeURIComponent(results[1].replace(/\+/g, " ")); 
-		}
-	</script>
-	<script>
-		var widthbanner = document.getElementById("canvas").clientWidth;
-		function responsiveBanner(){
-			var w = getParameterByName("w");
-			console.log(w);
-			var widthbannerclient = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-			if(w == ""){    document.body.style.zoom = widthbannerclient/widthbanner *100+"%";   }
-			else {     document.body.style.zoom = w/widthbanner *100+"%";   }  }
-		window.onresize = function(event) {
-			responsiveBanner();
-		};
-	</script>	
 </body>
+<script>
+	function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]"); var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search); return results === null ? "" :
+		decodeURIComponent(results[1].replace(/\+/g, " ")); 
+	}
+</script>
+<script>
+	var widthbanner = document.getElementById("canvas").clientWidth;
+    function responsiveBanner(){
+        var w = getParameterByName("w");
+        console.log(w);
+        var widthbannerclient = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        if(w == ""){    document.body.style.zoom = widthbannerclient/widthbanner *100+"%";   }
+        else {     document.body.style.zoom = w/widthbanner *100+"%";   }  }
+    window.onresize = function(event) {
+        responsiveBanner();
+	};
+</script>
 </html>
