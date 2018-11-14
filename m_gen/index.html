@@ -119,8 +119,9 @@
         <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'module07')">3 Images</button>
         <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'module08')">Slideshow</button>
         <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'module09')">Comparing Image</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'module10')">Parallax Background</button>
       </div>
-      <div id="gallery_holder"></div>
+      <div class="w3-container">Ảnh đã upload<div id="gallery_holder"></div></div>
       <div id="module01" class="w3-container tab">
         <h2>Image</h2>
         <p>Up ảnh và chọn ảnh</p>
@@ -181,6 +182,14 @@
         <p>Module tạo 2 ảnh so sánh</p>
         <p><button class="w3-button w3-teal w3-large" onclick="comparingImageGen()">Xuất</button></p>
       </div>
+
+      <div id="module10" class="w3-container tab" style="display:none">
+          <h2>Parallax Background</h2>
+          <p>Module tạo ảnh nền paralax</p>
+          <label class="w3-text-teal"><b>Up ảnh</b></label>
+          <input class="w3-input w3-border" type="file" onchange="onFileSelected(event)">
+          <p><button class="w3-button w3-teal w3-large" onclick="parallaxBackgroundGen()">Xuất</button></p>
+        </div>
   </div>
 </div>
 
@@ -375,6 +384,18 @@ function comparingImageGen(){
 	var aa = document.getElementById('alt_currentSlot').innerHTML;
 	document.getElementById(a).innerHTML = '<div style="width:100%"><div class="image-spliter" style="position:relative;display:table;margin:0 auto"><div class="mover"></div><img class="img-left mg-image" src="https://ntttoon.github.io/mg_assets/s01.png"><img class="img-right mg-image" src="https://ntttoon.github.io/mg_assets/s02.png"></div><div style="text-align:center;font-size:14px">Trước và Sau</div></div>';
 	document.getElementById(aa).innerHTML = '<div style="width:100%"><div class="image-spliter" style="position:relative;display:table;margin:0 auto"><div class="mover"></div><img class="img-left mg-image" src="https://ntttoon.github.io/mg_assets/s01.png"><img class="img-right mg-image" src="https://ntttoon.github.io/mg_assets/s02.png"></div><div style="text-align:center;font-size:14px">Trước và Sau</div></div>';
+	modal_close();
+	update_export()
+}
+
+function parallaxBackgroundGen(){
+	var a = document.getElementById('currentSlot').innerHTML;
+	var b = document.getElementById('currentImgId').innerHTML;
+	var c = document.getElementById(b).src;
+	var aa = document.getElementById('alt_currentSlot').innerHTML;
+	var bb = document.getElementById('currentImgId_FileName').innerHTML;
+	document.getElementById(a).innerHTML = '<div class="parallax-section"><div class="parallax-child-section"><section class="frontlash" style="background-attachment: scroll;background-image: url(' + c + ');background-position: center center;background-repeat: no-repeat;background-size: cover;" ></section></div></div>';
+	document.getElementById(aa).innerHTML = '<div class="parallax-section"><div class="parallax-child-section"><section class="frontlash" style="background-attachment: scroll;background-image: url(' + bb + ');background-position: center center;background-repeat: no-repeat;background-size: cover;" ></section></div></div>';
 	modal_close();
 	update_export()
 }
