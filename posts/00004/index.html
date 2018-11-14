@@ -14,6 +14,42 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&amp;subset=latin-ext,vietnamese" rel="stylesheet">
   <link href="http://ntttoon.github.io/mg_assets/image-comparison-slider.css" rel="stylesheet">
   <script src="../../js/ga.js"></script>
+  <style>
+      .parallax-section {
+          position: relative;
+          width: 100%;
+          height: 700px;
+      }
+
+      .parallax-child-section {
+          clip: rect(0, auto, auto, 0);
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 700px;
+      }
+
+      .frontlash {
+          position: fixed;
+          display: block;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transform: translateZ(0);
+          will-change: transform;
+          z-index: 1;
+      }
+
+      .parallax-img1 {
+          background-attachment: scroll;
+          background-image: url(CwllmX0UAAAf0LB.jpg);
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+  </style>
 </head>
 
 <body>
@@ -27,7 +63,11 @@
     <p style="text-align: justify;">Mô hình Gundam hay Gunpla, không phải là loại đồ chơi phục vụ cho nhu cầu cơ bản &quot;chơi đồ chơi&quot; của hầu hết các bé trai hay các cậu trai ở độ tuổi đi học (cấp 1 hoặc cấp 2). Nó được xếp vào loại mô hình, nghĩa là nó có sự mô phỏng gần như 99% so với thiết kế thật. Một chiếc xe mô hình sẽ giống xe thật đến 100% và phục vụ trưng bày hay mô phỏng chứ không như chiếc xe đồ chơi có thể đập phá bẻ ném. Đó là lí do vì sao nó có cái tên là Gundam Plastic Model (mô hình Gundam bằng nhựa) gọi tắt là Gunpla.</p>
   </div>
 
-  <div class="mg-center" style="margin-bottom:16px"><img alt="" class="mg-hide-small mg-image" src="CwllmX0UAAAf0LB.jpg"> <img alt="" class="mg-hide-medium mg-hide-large mg-image" src="CwllmX0UAAAf0LB.jpg"></div>
+  <div class="parallax-section">
+      <div class="parallax-child-section">
+          <section class="parallax-img1 frontlash"></section>
+      </div>
+  </div>
 
   <div class="mg-container mg-content600">
     <h3><strong>A. GUNDAM</strong></h3>
