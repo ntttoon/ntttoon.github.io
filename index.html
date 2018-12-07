@@ -75,10 +75,20 @@
         </div>
         <hr>
 
+        <script>
+            function khiguidi(){
+                //document.getElementById("thanhcong").style.display = "block";
+                alert("Your message has been sent");
+                setTimeout(function(){
+                  document.getElementById("form_name").value = "";
+                  document.getElementById("form_message").value = "";
+                }, 500);
+            }
+        </script>
         <div w3-include-html="widgets/tags.html"></div>
         <div w3-include-html="widgets/projects.html"></div>
+        <div w3-include-html="widgets/contact.html"></div>
         <div w3-include-html="widgets/about.html"></div>
-        
         <!-- END Introduction Menu -->
       </div>
 
