@@ -66,6 +66,18 @@
 		background-repeat: no-repeat; /* Do not repeat the image */
 		background-size: cover; /* Resize the background image to cover the entire container */
 	}
+	.next, .prev{
+  		position: absolute;
+  		top:60%;
+  		color:white;
+  		cursor: pointer;
+  	}
+  	.prev{
+  		left: 0px;
+  	}
+    .next{
+    	right:0px;
+    }
 </style>
 </head>
 
@@ -103,6 +115,10 @@
 				<p class="light grey-text text-lighten-3 flow-text contrast left-align">Bưởi gọt vỏ, tách múi cho vào bát tô.</p>
 			</div>
 		</div>
+
+		<!-- next and prev buttons -->
+		<div class="next" style="background: rgba(0, 0, 0, 0.36);"><i class="material-icons small">navigate_next</i></div>
+		<div class="prev" style="background: rgba(0, 0, 0, 0.36);"><i class="material-icons small">navigate_before</i></div>
 	</div>
 
 	<!--Import jQuery before materialize.js-->
@@ -119,6 +135,15 @@
 				fullWidth: true,
 				indicators: true
 			}).css("height", $(window).height());
+			// for next slide
+			$('.next').click(function(){
+				$('.carousel').carousel('next');
+			});
+			
+			// for prev slide
+			$('.prev').click(function(){
+				$('.carousel').carousel('prev');
+			});
 		});
 	</script>
 
