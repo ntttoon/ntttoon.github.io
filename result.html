@@ -114,7 +114,8 @@
           out += '<img src="' + image + '" alt="" style="width:100%">'
           out += '<div class="w3-container">';
           out += '<h4><b>' + title + '</b></h4>';
-          out += '<p> <span class="w3-tag w3-teal w3-hover-black"><a href="result.html?search=' + tags + '">' + tags + '</a></span> <span class="w3-opacity">' + date + '</span></p>';
+          out += '<div class="w3-small" style="color:#999">' + date + '</div>';
+          out += '<div class="w3-text-teal w3-left-align w3-small"><a href="result.html?search=' + tags + '">' + tags + '</a></div>';
           out += '</div>';
           out += '<div class="w3-container">';
           out += '<p>' + short_des + '</p>';
