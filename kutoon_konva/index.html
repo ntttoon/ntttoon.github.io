@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<title>Kutoon Konva</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<script src="js/konva.min.js"></script>
+<script src="js/jscolor.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif&amp;subset=vietnamese" rel="stylesheet">
+
+<body>
+    <input class="w3-hide" type="text" id="curr_layer" value="1">
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-white w3-card" style="width:200px">
+        <h3 class="w3-bar-item">Layers</h3>
+        <p>
+            <div class="w3-small">Layer 2</div>
+            <button class="w3-button w3-teal" onclick="openGallery(2)" >Chọn ảnh</button>
+            <span id="eyeBtn2"><button class="w3-button w3-teal" onclick="layerOff()" >Ẩn</button></span>
+        </p>
+        <p>
+            <div class="w3-small">Layer 1</div>
+            <button class="w3-button w3-teal" onclick="openGallery(1)" >Chọn ảnh</button>
+            <span id="eyeBtn1"><button class="w3-button w3-teal" onclick="layerOff()" >Ẩn</button></span>
+        </p>
+        <hr>
+        <div class="w3-container">
+            <p>Độ rộng khối text</p><input class="w3-input w3-border" type="text" id="txt_width" value="600">
+            <p>Kích thước font chữ</p><input class="w3-input w3-border" type="text" id="txt_size" value="20">
+            <p>Khoảng cách dòng: từ 1, 1.1 đến 1.9, 2</p><input class="w3-input w3-border" type="text" id="txt_lineheight" value="1.5">
+            <p>Canh lề khối text</p>
+            <select class="w3-select w3-border" name="option" id="txt_align">
+                <option value="left" selected>Trái</option>
+                <option value="right">Phải</option>
+                <option value="center">Giữa</option>
+                <option value="justify">Đều</option>
+            </select>
+            <p>Màu chữ</p><input class="jscolor w3-input w3-border" type="text" id="txt_color" value="000000">
+        </div>
+    </div>
+    <!-- Page Content -->
+    <div style="margin-left:200px">
+        <div class="w3-bar w3-teal">
+            <div class="w3-bar-item">Simple Canvas Editor</div>
+        <!-- Float links to the right. Hide them on small screens -->
+        <div class="w3-right">
+            <a href="#projects" class="w3-bar-item w3-button" id="save">Xuất Ảnh</a>
+        </div>
+
+        </div>
+        <!-- Canvas display -->
+        <div class="w3-display-container w3-display-middle" style="z-index:-1">
+            <div id="container" style="background:#CCC"></div>
+        </div>
+    </div>
+
+    <!-- Modal image panel -->
+    <div id="imgGallery" class="w3-modal">
+        <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-teal"> 
+            <span onclick="document.getElementById('imgGallery').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h3>Image Gallery</h3>
+        </header>
+        <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button tablink w3-red" onclick="openTab(event,'bg')">Background</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'people')">People</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'shape')">Shape</button>
+        </div>
+        
+        <div id="bg" class="w3-container tab">
+            <p class="thumbGallery" id="gallery1"></p>
+        </div>
+        
+        <div id="people" class="w3-container tab" style="display:none">
+            <p class="thumbGallery" id="gallery2"></p>
+        </div>
+        
+        <div id="shape" class="w3-container tab" style="display:none">
+            <p class="thumbGallery" id="gallery3"></p>
+        </div>
+        
+        <p style="clear:both"></p>
+        <div class="w3-container">
+            <p><input style="width:100%" type='file' id="fileUpload"/></p>
+        </div>
+        </div>
+    </div>
+</body>
+<script src="js/kk.js"></script>
+<script>
+    function openTab(evt, tabName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("tab");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " w3-red";
+    }
+</script>
+</html>
