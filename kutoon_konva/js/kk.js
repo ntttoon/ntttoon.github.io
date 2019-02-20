@@ -133,6 +133,8 @@ textNode.on('dblclick', () => {
 	textarea.addEventListener('keydown', function (e) {
 		// hide on tab
 		if (e.keyCode === 9) {
+			//var regex=/[*|\":<>[\]{}`\\()';@&$]/;
+    	//textarea.value=textarea.value.replace(regex ,"");
 			textNode.text(textarea.value);
 			textNode.fontSize(ts);
 			textNode.width(tw);
@@ -196,21 +198,33 @@ function openGallery(i){
 	document.getElementById('curr_layer').value = i;
 }
 
-//
-function layerOn(){
-	var i = document.getElementById('curr_layer').value;
+// Show hide layers/images
+function layerOn(i){
+	//var i = document.getElementById('curr_layer').value;
 	var a = eval('img' + i);
 	var b = 'eyeBtn' + i;
 	a.visible(true);
-	document.getElementById(b).innerHTML = '<button id="eyeBtn' + i + '" class="w3-button w3-teal" onclick="layerOff()" >Ẩn</button>';
+	document.getElementById(b).innerHTML = '<button id="eyeBtn' + i + '" class="w3-button w3-teal" onclick="layerOff(' + i + ')" >Ẩn</button>';
 	layer.draw();
 }
 
-function layerOff(){
-	var i = document.getElementById('curr_layer').value;
+function layerOff(i){
+	//var i = document.getElementById('curr_layer').value;
 	var a = eval('img' + i);
 	var b = 'eyeBtn' + i;
 	a.visible(false);
-	document.getElementById(b).innerHTML = '<button id="eyeBtn' + i + '" class="w3-button w3-black" onclick="layerOn()" >Hiện</button>';
+	document.getElementById(b).innerHTML = '<button id="eyeBtn' + i + '" class="w3-button w3-black" onclick="layerOn(' + i + ')" >Hiện</button>';
 	layer.draw();
+}
+
+// function add image from gallery
+function addImage(path){
+	var i = document.getElementById('curr_layer').value;
+	var a = eval('imageObj' + i);
+	var b = eval('img' + i);
+	a.onload = function() {
+		b.image(a);
+		layer.draw();
+	};
+	a.src = path;
 }

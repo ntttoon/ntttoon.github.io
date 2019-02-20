@@ -1,0 +1,16 @@
+{
+    "gallery": [
+        {
+            "thumb": "images/blank.png",
+            "image": "images/blank.png"
+        },
+        {
+            "thumb": "images/girls.jpg",
+            "image": "images/girls.jpg"
+        },
+        {
+            "thumb": "images/pexels-photo-531880.jpeg",
+            "image": "images/pexels-photo-531880.jpeg"
+        }
+    ]
+}

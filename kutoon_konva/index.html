@@ -7,7 +7,59 @@
 <script src="js/konva.min.js"></script>
 <script src="js/jscolor.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Noto+Serif&amp;subset=vietnamese" rel="stylesheet">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+    var gal1 = 'json/gallery1.json';
+    var gal2 = 'json/gallery2.json';
+    var gal3 = 'json/gallery3.json';
+    $(document).ready(function () {
+        $.getJSON(gal1)
+            .then(function (data) {
+                // alert(data.gallery.length)
+                for (i = 0; i < data.gallery.length; i++) {
+                    var thumb = data.gallery[i].thumb;
+                    var img = data.gallery[i].image;
+                    //console.log(thumb);
+                    $( "#gallery1" ).append('<img class="thumb" src="' + thumb +  '" onclick="addImage(&#39;' + img + '&#39;)">');
+                }
+            })
+            .fail(function () {
+                alert("khong thay json gallery 1");
+            });
 
+        $.getJSON(gal2)
+            .then(function (data) {
+                // alert(data.gallery.length)
+                for (i = 0; i < data.gallery.length; i++) {
+                    var thumb = data.gallery[i].thumb;
+                    //console.log(thumb);
+                }
+            })
+            .fail(function () {
+                alert("khong thay json gallery 2");
+            });
+
+        $.getJSON(gal3)
+            .then(function (data) {
+                // alert(data.gallery.length)
+                for (i = 0; i < data.gallery.length; i++) {
+                    var thumb = data.gallery[i].thumb;
+                    //console.log(thumb);
+                }
+            })
+            .fail(function () {
+                alert("khong thay json gallery 3");
+            });
+    })
+</script>
+<style>
+    .thumb{
+        border: none;
+        margin-bottom: 0;
+        width: 86px;
+        height: 86px;
+    }
+</style>
 <body>
     <input class="w3-hide" type="text" id="curr_layer" value="1">
     <!-- Sidebar -->
@@ -16,12 +68,12 @@
         <p>
             <div class="w3-small">Layer 2</div>
             <button class="w3-button w3-teal" onclick="openGallery(2)" >Chọn ảnh</button>
-            <span id="eyeBtn2"><button class="w3-button w3-teal" onclick="layerOff()" >Ẩn</button></span>
+            <span id="eyeBtn2"><button class="w3-button w3-teal" onclick="layerOff(2)" >Ẩn</button></span>
         </p>
         <p>
             <div class="w3-small">Layer 1</div>
             <button class="w3-button w3-teal" onclick="openGallery(1)" >Chọn ảnh</button>
-            <span id="eyeBtn1"><button class="w3-button w3-teal" onclick="layerOff()" >Ẩn</button></span>
+            <span id="eyeBtn1"><button class="w3-button w3-teal" onclick="layerOff(1)" >Ẩn</button></span>
         </p>
         <hr>
         <div class="w3-container">
@@ -82,7 +134,7 @@
         
         <p style="clear:both"></p>
         <div class="w3-container">
-            <p><input style="width:100%" type='file' id="fileUpload"/></p>
+            <p><span>Up ảnh khác</span><input style="width:100%" type='file' id="fileUpload"/></p>
         </div>
         </div>
     </div>
