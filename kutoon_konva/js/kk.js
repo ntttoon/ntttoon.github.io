@@ -92,7 +92,7 @@ var textNode = new Konva.Text({
 	x: 20,
 	y: 20,
 	fontSize: 20,
-	fontFamily: 'Noto Serif',
+	fontFamily: 'Lora',
 	draggable: true,
 	lineHeight: 1.5,
 	width: '600',
@@ -104,6 +104,7 @@ textNode.on('dblclick', () => {
 	var tw = document.getElementById('txt_width').value;
 	var ts = document.getElementById('txt_size').value;
 	var ta = document.getElementById('txt_align').value;
+	var tf = document.getElementById('txt_fonts').value;
 	var tl = document.getElementById('txt_lineheight').value;
 	var tc = '#' + document.getElementById('txt_color').value;
 	// create textarea over canvas with absolute position
@@ -139,6 +140,7 @@ textNode.on('dblclick', () => {
 			textNode.fontSize(ts);
 			textNode.width(tw);
 			textNode.align(ta);
+			textNode.fontFamily(tf);
 			textNode.lineHeight(tl);
 			textNode.fill(tc);
 			layer.draw();
@@ -162,7 +164,7 @@ function downloadURI(uri, name) {
   document.getElementById('save').addEventListener('click',
 	function() {
 		stage.find('Transformer').destroy();
-	  	var dataURL = stage.toDataURL({ pixelRatio: 1 });
+	  	var dataURL = stage.toDataURL({ pixelRatio: 2 });
 	  	downloadURI(dataURL, 'stage.png');
 	},
 	false
