@@ -64,17 +64,30 @@
 <body>
     <input class="w3-hide" type="text" id="curr_layer" value="1">
     <!-- Sidebar -->
+
+    <div id="slider3_holder" class="w3-card w3-border w3-white" style="position: absolute; left: 200px; top:95px; padding: 5px; display: none"><input type="range" min="0" max="1" step="0.01" value="1" id="slider3"><span onclick="this.parentElement.style.display='none'" class="w3-button w3-small w3-hover-white">&times;</span></div>
+    <div id="slider2_holder" class="w3-card w3-border w3-white" style="position: absolute; left: 200px; top:166px; padding: 5px; display: none"><input type="range" min="0" max="1" step="0.01" value="1" id="slider2"><span onclick="this.parentElement.style.display='none'" class="w3-button w3-small w3-hover-white">&times;</span></div>
+    <div id="slider1_holder" class="w3-card w3-border w3-white" style="position: absolute; left: 200px; top:237px; padding: 5px; display: none"><input type="range" min="0" max="1" step="0.01" value="1" id="slider1"><span onclick="this.parentElement.style.display='none'" class="w3-button w3-small w3-hover-white">&times;</span></div>
+
     <div class="w3-sidebar w3-bar-block w3-white w3-card" style="width:200px">
         <h3 class="w3-bar-item">Layers</h3>
         <p>
+            <div class="w3-small">Layer 3</div>
+            <button class="w3-button w3-teal" onclick="openGallery(3)" >Ảnh 3</button>
+            <span id="eyeBtn2"><button class="w3-button w3-teal" onclick="layerOff(3)" >Ẩn</button></span>
+            <button class="w3-button w3-teal" onclick="document.getElementById('slider3_holder').style.display='block'" >A</button>
+        </p>
+        <p>
             <div class="w3-small">Layer 2</div>
-            <button class="w3-button w3-teal" onclick="openGallery(2)" >Chọn ảnh</button>
+            <button class="w3-button w3-teal" onclick="openGallery(2)" >Ảnh 2</button>
             <span id="eyeBtn2"><button class="w3-button w3-teal" onclick="layerOff(2)" >Ẩn</button></span>
+            <button class="w3-button w3-teal" onclick="document.getElementById('slider2_holder').style.display='block'" >A</button>
         </p>
         <p>
             <div class="w3-small">Layer 1</div>
-            <button class="w3-button w3-teal" onclick="openGallery(1)" >Chọn ảnh</button>
+            <button class="w3-button w3-teal" onclick="openGallery(1)" >Ảnh 1</button>
             <span id="eyeBtn1"><button class="w3-button w3-teal" onclick="layerOff(1)" >Ẩn</button></span>
+            <button class="w3-button w3-teal" onclick="document.getElementById('slider1_holder').style.display='block'" >A</button>
         </p>
         <hr>
         <div class="w3-container">

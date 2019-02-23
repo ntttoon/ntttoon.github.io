@@ -230,3 +230,18 @@ function addImage(path){
 	};
 	a.src = path;
 }
+
+slider1.onchange = function() {
+    img1.opacity(slider1.value);
+		layer.draw();
+};
+
+slider2.onchange = function() {
+	img2.opacity(slider2.value);
+	layer.draw();
+};
+
+slider3.onchange = function() {
+	img3.opacity(slider3.value);
+	layer.draw();
+};
