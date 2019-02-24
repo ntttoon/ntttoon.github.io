@@ -5,12 +5,12 @@
             "image": "images/blank.png"
         },
         {
-            "thumb": "images/girls.jpg",
-            "image": "images/girls.jpg"
+            "thumb": "images/bg01.png",
+            "image": "images/bg01.png"
         },
         {
-            "thumb": "images/pexels-photo-531880.jpeg",
-            "image": "images/pexels-photo-531880.jpeg"
+            "thumb": "images/bg02.png",
+            "image": "images/bg02.png"
         }
     ]
 }
