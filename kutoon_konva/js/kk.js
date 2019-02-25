@@ -127,7 +127,7 @@ textNode.on('dblclick', () => {
 	textarea.style.position = 'absolute';
 	textarea.style.top = areaPosition.y + 'px';
 	textarea.style.left = areaPosition.x + 'px';
-	textarea.style.width = '620px';
+	textarea.style.width = tw + 'px';
 
 	textarea.focus();
 
@@ -143,7 +143,7 @@ textNode.on('dblclick', () => {
 			textNode.fontFamily(tf);
 			textNode.lineHeight(tl);
 			textNode.fill(tc);
-			layer.draw();
+			layer.batchDraw();
 			document.body.removeChild(textarea);
 		}
 	});

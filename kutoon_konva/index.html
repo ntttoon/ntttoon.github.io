@@ -33,7 +33,9 @@
                 // alert(data.gallery.length)
                 for (i = 0; i < data.gallery.length; i++) {
                     var thumb = data.gallery[i].thumb;
+                    var img = data.gallery[i].image;
                     //console.log(thumb);
+                    $( "#gallery2" ).append('<img class="thumb" src="' + thumb +  '" onclick="addImage(&#39;' + img + '&#39;)">');
                 }
             })
             .fail(function () {
@@ -45,7 +47,9 @@
                 // alert(data.gallery.length)
                 for (i = 0; i < data.gallery.length; i++) {
                     var thumb = data.gallery[i].thumb;
+                    var img = data.gallery[i].image;
                     //console.log(thumb);
+                    $( "#gallery3" ).append('<img class="thumb" src="' + thumb +  '" onclick="addImage(&#39;' + img + '&#39;)">');
                 }
             })
             .fail(function () {

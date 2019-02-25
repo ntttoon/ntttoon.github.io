@@ -1,20 +1,8 @@
 {
     "gallery": [
         {
-            "thumb": "https://www.qualcomm.com/sites/ember/files/styles/optimize/public/components/one-column-hdi/top/snapdragon-chip-tiny-1.png",
-            "image": "https://www.qualcomm.com/sites/ember/files/styles/focal_scale_crop_800/public/components/one-column-hdi/background/quickcharge-bg-4_0.png"
-        },
-        {
-            "thumb": "https://www.qualcomm.com/sites/ember/files/styles/optimize/public/components/one-column-hdi/top/snapdragon-chip-tiny-1.png",
-            "image": "https://www.qualcomm.com/sites/ember/files/styles/focal_scale_crop_800/public/components/one-column-hdi/background/quickcharge-bg-4_0.png"
-        },
-        {
-            "thumb": "https://www.qualcomm.com/sites/ember/files/styles/optimize/public/components/one-column-hdi/top/snapdragon-chip-tiny-1.png",
-            "image": "https://www.qualcomm.com/sites/ember/files/styles/focal_scale_crop_800/public/components/one-column-hdi/background/quickcharge-bg-4_0.png"
-        },
-        {
-            "thumb": "https://www.qualcomm.com/sites/ember/files/styles/optimize/public/components/one-column-hdi/top/snapdragon-chip-tiny-1.png",
-            "image": "https://www.qualcomm.com/sites/ember/files/styles/focal_scale_crop_800/public/components/one-column-hdi/background/quickcharge-bg-4_0.png"
+            "thumb": "images/thumb_blank.jpg",
+            "image": "images/blank.png"
         }
     ]
 }
