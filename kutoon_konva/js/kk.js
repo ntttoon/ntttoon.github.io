@@ -7,6 +7,23 @@ var stage = new Konva.Stage({
 var layer = new Konva.Layer();
 stage.add(layer);
 
+/* globalCompositeOperation :
+  normal | multiply | screen | overlay | 
+  darken | lighten | color-dodge | color-burn | hard-light | 
+  soft-light | difference | exclusion | hue | saturation | 
+  color | luminosity
+*/
+var blend2s = document.getElementById('blend2_sel').value;
+var blend3s = document.getElementById('blend3_sel').value;
+
+function execBlend(){
+	var blend2s = document.getElementById('blend2_sel').value;
+	var blend3s = document.getElementById('blend3_sel').value;
+	img2.globalCompositeOperation(blend2s);
+	img3.globalCompositeOperation(blend3s);
+	layer.draw();
+}
+
 // create image 1 layer
 var img1 = new Konva.Image({
 	x: 0,
@@ -22,6 +39,7 @@ var img2 = new Konva.Image({
 	y: 0,
 	draggable: true,
 	name: 'img',
+	globalCompositeOperation: blend2s,
 });
 layer.add(img2);
 
@@ -31,6 +49,7 @@ var img3 = new Konva.Image({
 	y: 0,
 	draggable: true,
 	name: 'img',
+	globalCompositeOperation: blend3s,
 });
 layer.add(img3);
 
