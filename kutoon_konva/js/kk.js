@@ -1,8 +1,8 @@
 // create new Konva object
 var stage = new Konva.Stage({
 	container: 'container',
-	width: 660,
-	height: 660
+	width: 940,
+	height: 788
 });
 var layer = new Konva.Layer();
 stage.add(layer);
@@ -114,7 +114,7 @@ var textNode = new Konva.Text({
 	fontFamily: 'Lora',
 	draggable: true,
 	lineHeight: 1.5,
-	width: '600',
+	width: '900',
 	fill: 'black'
 });
 layer.add(textNode);
@@ -183,7 +183,8 @@ function downloadURI(uri, name) {
   document.getElementById('save').addEventListener('click',
 	function() {
 		stage.find('Transformer').destroy();
-	  	var dataURL = stage.toDataURL({ pixelRatio: 2 });
+			var dataURL = stage.toDataURL({ pixelRatio: 1 });
+			//var dataURL = stage.toDataURL({ pixelRatio: 2 });
 	  	downloadURI(dataURL, 'stage.png');
 	},
 	false

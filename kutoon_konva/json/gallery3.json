@@ -5,6 +5,10 @@
             "image": "images/blank.png"
         },
         {
+            "thumb": "images/heart-shape-white-png-2.png",
+            "image": "images/heart-shape-white-png-2.png"
+        },
+        {
             "thumb": "images/thumb_celebrate-01.jpg",
             "image": "images/celebrate-01.jpg"
         },
@@ -91,6 +95,126 @@
         {
             "thumb": "images/thumb_frame02.jpg",
             "image": "images/frame02.png"
+        },
+        {
+            "thumb": "images/circle01.png",
+            "image": "images/circle01.png"
+        },
+        {
+            "thumb": "images/circle02.png",
+            "image": "images/circle02.png"
+        },
+        {
+            "thumb": "images/circle03.png",
+            "image": "images/circle03.png"
+        },
+        {
+            "thumb": "images/circle04.png",
+            "image": "images/circle04.png"
+        },
+        {
+            "thumb": "images/circle05.png",
+            "image": "images/circle05.png"
+        },
+        {
+            "thumb": "images/circle06.png",
+            "image": "images/circle06.png"
+        },
+        {
+            "thumb": "images/circle07.png",
+            "image": "images/circle07.png"
+        },
+        {
+            "thumb": "images/circle08.png",
+            "image": "images/circle08.png"
+        },
+        {
+            "thumb": "images/circle09.png",
+            "image": "images/circle09.png"
+        },
+        {
+            "thumb": "images/circle10.png",
+            "image": "images/circle10.png"
+        },
+        {
+            "thumb": "images/doc01.png",
+            "image": "images/doc01.png"
+        },
+        {
+            "thumb": "images/doc02.png",
+            "image": "images/doc02.png"
+        },
+        {
+            "thumb": "images/doc03.png",
+            "image": "images/doc03.png"
+        },
+        {
+            "thumb": "images/doc04.png",
+            "image": "images/doc04.png"
+        },
+        {
+            "thumb": "images/doc05.png",
+            "image": "images/doc05.png"
+        },
+        {
+            "thumb": "images/doc06.png",
+            "image": "images/doc06.png"
+        },
+        {
+            "thumb": "images/doc07.png",
+            "image": "images/doc07.png"
+        },
+        {
+            "thumb": "images/doc08.png",
+            "image": "images/doc08.png"
+        },
+        {
+            "thumb": "images/doc09.png",
+            "image": "images/doc09.png"
+        },
+        {
+            "thumb": "images/doc10.png",
+            "image": "images/doc10.png"
+        },
+        {
+            "thumb": "images/double01.png",
+            "image": "images/double01.png"
+        },
+        {
+            "thumb": "images/double02.png",
+            "image": "images/double02.png"
+        },
+        {
+            "thumb": "images/double03.png",
+            "image": "images/double03.png"
+        },
+        {
+            "thumb": "images/double04.png",
+            "image": "images/double04.png"
+        },
+        {
+            "thumb": "images/double05.png",
+            "image": "images/double05.png"
+        },
+        {
+            "thumb": "images/double06.png",
+            "image": "images/double06.png"
+        },
+        {
+            "thumb": "images/double07.png",
+            "image": "images/double07.png"
+        },
+        {
+            "thumb": "images/double08.png",
+            "image": "images/double08.png"
+        },
+        {
+            "thumb": "images/double09.png",
+            "image": "images/double09.png"
+        },
+        {
+            "thumb": "images/double10.png",
+            "image": "images/double10.png"
         }
     ]
 }
