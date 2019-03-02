@@ -59,7 +59,7 @@
 </script>
 <style>
     .thumb{
-        border: none;
+        border: 1px solid #cccccc;
         margin-bottom: 0;
         width: 86px;
         height: 86px;
@@ -186,6 +186,10 @@
             <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'shape')">Khung/Viền/Bokeh/Sticker..v.v..</button>
         </div>
         
+        <div class="w3-container">
+            <p><span>Up ảnh khác</span><input style="width:100%" type='file' id="fileUpload"/></p>
+        </div>
+
         <div id="bg" class="w3-container tab">
             <p class="thumbGallery" id="gallery1"></p>
         </div>
@@ -199,9 +203,6 @@
         </div>
         
         <p style="clear:both"></p>
-        <div class="w3-container">
-            <p><span>Up ảnh khác</span><input style="width:100%" type='file' id="fileUpload"/></p>
-        </div>
         </div>
     </div>
 </body>
