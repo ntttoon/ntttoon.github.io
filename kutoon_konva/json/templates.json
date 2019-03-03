@@ -1,0 +1,33 @@
+{
+    "templates": [
+        {
+            "thumb": "images/thumb_temp01.jpg",
+            "image1_path": "",
+            "image1_x": "0",
+            "image1_y": "0",
+            "image1_scalex": "1",
+            "image1_scaley": "1",
+            "image1_alpha": "1",
+            "image2_path": "images/bg01.jpg",
+            "image2_x": "396",
+            "image2_y": "0",
+            "image2_scalex": "1",
+            "image2_scaley": "1",
+            "image2_alpha": "1",
+            "image3_path": "images/blank.png",
+            "image3_x": "0",
+            "image3_y": "0",
+            "image3_scalex": "1",
+            "image3_scaley": "1",
+            "image3_alpha": "1",
+            "txt_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nisl cursus, hendrerit dui a, posuere nisi. Curabitur consectetur dolor felis, imperdiet fermentum magna faucibus vel.",
+            "txt_x": "410",
+            "txt_y": "40",
+            "txt_size": "20",
+            "txt_lineheight": "1.5",
+            "txt_width": "220",
+            "txt_fill": "FFFFFF",
+            "txt_align": "left"
+        }
+    ]
+}

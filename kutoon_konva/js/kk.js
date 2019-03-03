@@ -1,8 +1,8 @@
 // create new Konva object
 var stage = new Konva.Stage({
 	container: 'container',
-	width: 940,
-	height: 788
+	width: 660,
+	height: 660
 });
 var layer = new Konva.Layer();
 stage.add(layer);
@@ -114,7 +114,7 @@ var textNode = new Konva.Text({
 	fontFamily: 'Lora',
 	draggable: true,
 	lineHeight: 1.5,
-	width: '900',
+	width: '620',
 	fill: 'black'
 });
 layer.add(textNode);
@@ -183,8 +183,8 @@ function downloadURI(uri, name) {
   document.getElementById('save').addEventListener('click',
 	function() {
 		stage.find('Transformer').destroy();
-			var dataURL = stage.toDataURL({ pixelRatio: 1 });
-			//var dataURL = stage.toDataURL({ pixelRatio: 2 });
+			//var dataURL = stage.toDataURL({ pixelRatio: 1 });
+			var dataURL = stage.toDataURL({ pixelRatio: 2 });
 	  	downloadURI(dataURL, 'stage.png');
 	},
 	false
@@ -249,6 +249,48 @@ function addImage(path){
 		layer.draw();
 	};
 	a.src = path;
+}
+
+// function exec template
+function execTemplate(image2_path,image2_x,image2_y,image2_scalex,image2_scaley,image2_alpha,image3_path,image3_x,image3_y,image3_scalex,image3_scaley,image3_alpha,txt_content,txt_x,txt_y,txt_size,txt_lineheight,txt_width,txt_fill,txt_align)
+{
+	// add image2
+	imageObj2.onload = function() {
+		img2.image(imageObj2);
+		img2.x(image2_x);
+		img2.y(image2_y);
+		img2.scaleX(image2_scalex);
+		img2.scaleY(image2_scaley);
+		img2.opacity(image2_alpha);
+		layer.draw();
+	};
+	imageObj2.src = image2_path;
+	// add image3
+	imageObj3.onload = function() {
+		img3.image(imageObj3);
+		img3.x(image3_x);
+		img3.y(image3_y);
+		img3.scaleX(image3_scalex);
+		img3.scaleY(image3_scaley);
+		img3.opacity(image3_alpha);
+		layer.draw();
+	};
+	imageObj3.src = image3_path;
+	// add text
+	textNode.text(txt_content);
+	textNode.x(txt_x);
+	textNode.y(txt_y);
+	textNode.fontSize(txt_size);
+	textNode.width(txt_width);
+	textNode.align(txt_align);
+	textNode.lineHeight(txt_lineheight);
+	textNode.fill('#'+txt_fill);
+	layer.batchDraw();
+	// set value
+	document.getElementById("txt_width").value = txt_width;
+	document.getElementById("txt_size").value = txt_size;
+	document.getElementById("txt_color").value = txt_fill;
+	document.getElementById("txt_color").style.background = '#' + txt_fill;
 }
 
 slider1.onchange = function() {

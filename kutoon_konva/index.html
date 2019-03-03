@@ -12,7 +12,7 @@
 <script>
     var gal1 = 'json/gallery1.json';
     var gal2 = 'json/gallery2.json';
-    var gal3 = 'json/gallery3.json';
+    var gal3 = 'json/templates.json';
     $(document).ready(function () {
         $.getJSON(gal1)
             .then(function (data) {
@@ -44,12 +44,30 @@
 
         $.getJSON(gal3)
             .then(function (data) {
-                // alert(data.gallery.length)
-                for (i = 0; i < data.gallery.length; i++) {
-                    var thumb = data.gallery[i].thumb;
-                    var img = data.gallery[i].image;
-                    //console.log(thumb);
-                    $( "#gallery3" ).append('<img class="thumb" src="' + thumb +  '" onclick="addImage(&#39;' + img + '&#39;)">');
+                // execTemplate(image2_path,image2_x,image2_y,image2_scalex,image2_scaley,image2_alpha,image3_path,image3_x,image3_y,image3_scalex,image3_scaley,image3_alpha,txt_content,txt_x,txt_y,txt_size,txt_lineheight,txt_width,txt_fill,txt_align)
+                for (i = 0; i < data.templates.length; i++) {
+                    var thumb = data.templates[i].thumb;
+                    var image2_path = data.templates[i].image2_path;
+                    var image2_x = data.templates[i].image2_x;
+                    var image2_y = data.templates[i].image2_y;
+                    var image2_scalex = data.templates[i].image2_scalex;
+                    var image2_scaley = data.templates[i].image2_scaley;
+                    var image2_alpha = data.templates[i].image2_alpha;
+                    var image3_path = data.templates[i].image3_path;
+                    var image3_x = data.templates[i].image3_x;
+                    var image3_y = data.templates[i].image3_y;
+                    var image3_scalex = data.templates[i].image3_scalex;
+                    var image3_scaley = data.templates[i].image3_scaley;
+                    var image3_alpha = data.templates[i].image3_alpha;
+                    var txt_content = data.templates[i].txt_content;
+                    var txt_x = data.templates[i].txt_x;
+                    var txt_y = data.templates[i].txt_y;
+                    var txt_size = data.templates[i].txt_size;
+                    var txt_lineheight = data.templates[i].txt_lineheight;
+                    var txt_width = data.templates[i].txt_width;
+                    var txt_fill = data.templates[i].txt_fill;
+                    var txt_align = data.templates[i].txt_align;
+                    $( "#gallery3" ).append('<img class="thumb" src="' + thumb +  '" onclick="execTemplate(&#39;' + image2_path + '&#39;,' + image2_x +',' + image2_y+ ',' + image2_scalex + ',' + image2_scaley + ',' + image2_alpha + ',&#39;' + image3_path + '&#39;,' + image3_x + ',' + image3_y + ',' + image3_scalex + ',' + image3_scaley + ',' + image3_alpha + ',&#39;' + txt_content + '&#39;,' + txt_x + ',' + txt_y + ',' + txt_size + ',' + txt_lineheight + ',' + txt_width + ',&#39;' + txt_fill + '&#39;,&#39;' + txt_align + '&#39;)">');
                 }
             })
             .fail(function () {
@@ -182,8 +200,8 @@
         </header>
         <div class="w3-bar w3-black">
             <button class="w3-bar-item w3-button tablink w3-red" onclick="openTab(event,'bg')">Nền</button>
-            <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'people')">Người/Vật</button>
-            <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'shape')">Khung/Viền/Bokeh/Sticker..v.v..</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'people')">Viền/Bokeh/Sticker</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'shape')">Templates</button>
         </div>
         
         <div class="w3-container">
