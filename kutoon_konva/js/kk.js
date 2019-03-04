@@ -107,7 +107,7 @@ stage.on('click tap', function (e) {
 // create text layer
 
 var textNode = new Konva.Text({
-	text: 'Some text here',
+	text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac molestie ipsum. Curabitur imperdiet faucibus aliquam.',
 	x: 20,
 	y: 20,
 	fontSize: 20,
@@ -252,7 +252,7 @@ function addImage(path){
 }
 
 // function exec template
-function execTemplate(image2_path,image2_x,image2_y,image2_scalex,image2_scaley,image2_alpha,image3_path,image3_x,image3_y,image3_scalex,image3_scaley,image3_alpha,txt_content,txt_x,txt_y,txt_size,txt_lineheight,txt_width,txt_fill,txt_align)
+function execTemplate(image2_path,image2_x,image2_y,image2_scalex,image2_scaley,image2_alpha,image3_path,image3_x,image3_y,image3_scalex,image3_scaley,image3_alpha,txt_x,txt_y,txt_size,txt_lineheight,txt_width,txt_fill,txt_align)
 {
 	// add image2
 	imageObj2.onload = function() {
@@ -277,7 +277,7 @@ function execTemplate(image2_path,image2_x,image2_y,image2_scalex,image2_scaley,
 	};
 	imageObj3.src = image3_path;
 	// add text
-	textNode.text(txt_content);
+	//textNode.text(txt_content);
 	textNode.x(txt_x);
 	textNode.y(txt_y);
 	textNode.fontSize(txt_size);
