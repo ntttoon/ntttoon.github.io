@@ -183,8 +183,8 @@ function downloadURI(uri, name) {
   document.getElementById('save').addEventListener('click',
 	function() {
 		stage.find('Transformer').destroy();
-			//var dataURL = stage.toDataURL({ pixelRatio: 1 });
-			var dataURL = stage.toDataURL({ pixelRatio: 2 });
+			var dataURL = stage.toDataURL({ pixelRatio: 1 });
+			//var dataURL = stage.toDataURL({ pixelRatio: 2 });
 	  	downloadURI(dataURL, 'stage.png');
 	},
 	false
