@@ -186,13 +186,14 @@ var downloadCanvas = function(ratio){
 		var blob = dataURLtoBlob(imgData);
 		var objurl = URL.createObjectURL(blob);
 		
-		var filename = prompt("Đặt tên cho file", "banner");
+		var filename = prompt("Đặt tên cho file", "banner.png");
 	if (filename != null) {
 		link.download = filename;
 		link.href = objurl;
 	}
-		
-		link.click();
+	document.body.appendChild(link);
+	link.click();
+	link.remove();
 } 
 
 document.getElementById('save').addEventListener('click',downloadCanvas)
