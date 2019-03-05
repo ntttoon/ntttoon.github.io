@@ -226,24 +226,23 @@ fileUpload.onchange = readImage;
 function openGallery(i){
 	document.getElementById('imgGallery').style.display='block';
 	document.getElementById('curr_layer').value = i;
+	document.getElementById('tab_upload').innerHTML = '<button class="w3-bar-item w3-button tablink" onclick="openTab(event,&#39;uplo&#39;)">Upload' + ' ảnh cho Layer ' + i + '</button>';
 }
 
 // Show hide layers/images
 function layerOn(i){
-	//var i = document.getElementById('curr_layer').value;
 	var a = eval('img' + i);
 	var b = 'eyeBtn' + i;
 	a.visible(true);
-	document.getElementById(b).innerHTML = '<button id="eyeBtn' + i + '" class="w3-button w3-teal" onclick="layerOff(' + i + ')" >Ẩn</button>';
+	document.getElementById(b).innerHTML = '<button id="eyeBtn' + i + '" class="w3-button w3-teal" onclick="layerOff(' + i + ')" ><i class="material-icons" style="font-size:14px;">visibility</i></button>';
 	layer.draw();
 }
 
 function layerOff(i){
-	//var i = document.getElementById('curr_layer').value;
 	var a = eval('img' + i);
 	var b = 'eyeBtn' + i;
 	a.visible(false);
-	document.getElementById(b).innerHTML = '<button id="eyeBtn' + i + '" class="w3-button w3-black" onclick="layerOn(' + i + ')" >Hiện</button>';
+	document.getElementById(b).innerHTML = '<button id="eyeBtn' + i + '" class="w3-button w3-black" onclick="layerOn(' + i + ')" ><i class="material-icons" style="font-size:14px;">visibility_off</i></button>';
 	layer.draw();
 }
 
@@ -315,3 +314,12 @@ slider3.onchange = function() {
 	img3.opacity(slider3.value);
 	layer.draw();
 };
+
+function resizeImage(i){
+	var a = eval('img' + i);
+	a.scaleX(0.5);
+	a.scaleY(0.5);
+	a.x(0);
+	a.y(0);
+	layer.draw();
+}
