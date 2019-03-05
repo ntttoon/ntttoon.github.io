@@ -168,27 +168,34 @@ textNode.on('dblclick', () => {
 	});
 })
 
+function dataURLtoBlob(dataurl) {
+	var arr = dataurl.split(','), mime = arr[0].match(/:(.*?);/)[1],
+			bstr = atob(arr[1]), n = bstr.length, u8arr = new Uint8Array(n);
+	while(n--){
+			u8arr[n] = bstr.charCodeAt(n);
+	}
+	return new Blob([u8arr], {type:mime});
+}
 
-// function from https://stackoverflow.com/a/15832662/512042
-function downloadURI(uri, name) {
-	var link = document.createElement('a');
-	link.download = name;
-	link.href = uri;
-	document.body.appendChild(link);
-	link.click();
-	document.body.removeChild(link);
-	delete link;
-  }
+var downloadCanvas = function(ratio){
+	var link = document.createElement("a");
+	var quality = document.getElementById("ratioImage").value;
+		var imgData = stage.toDataURL({ pixelRatio: quality });
+		var strDataURI = imgData.substr(22, imgData.length);
+		var blob = dataURLtoBlob(imgData);
+		var objurl = URL.createObjectURL(blob);
+		
+		var filename = prompt("Đặt tên cho file", "banner");
+	if (filename != null) {
+		link.download = filename;
+		link.href = objurl;
+	}
+		
+		link.click();
+} 
 
-  document.getElementById('save').addEventListener('click',
-	function() {
-		stage.find('Transformer').destroy();
-			var dataURL = stage.toDataURL({ pixelRatio: 1 });
-			//var dataURL = stage.toDataURL({ pixelRatio: 2 });
-	  	downloadURI(dataURL, 'stage.png');
-	},
-	false
-  );
+document.getElementById('save').addEventListener('click',downloadCanvas)
+	
 
 // Function upload to Layers
 var fileUpload = document.getElementById('fileUpload');
