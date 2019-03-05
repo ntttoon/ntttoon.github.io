@@ -180,6 +180,7 @@ function dataURLtoBlob(dataurl) {
 var downloadCanvas = function(ratio){
 	var link = document.createElement("a");
 	var quality = document.getElementById("ratioImage").value;
+	stage.find('Transformer').destroy();
 		var imgData = stage.toDataURL({ pixelRatio: quality });
 		var strDataURI = imgData.substr(22, imgData.length);
 		var blob = dataURLtoBlob(imgData);
