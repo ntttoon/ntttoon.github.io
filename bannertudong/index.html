@@ -21,8 +21,34 @@
                 for (i = 0; i < data.gallery.length; i++) {
                     var thumb = data.gallery[i].thumb;
                     var img = data.gallery[i].image;
+                    var cat = data.gallery[i].cat;
                     //console.log(thumb);
                     $( "#gallery1" ).append('<img class="thumb" src="' + thumb +  '" onclick="addImage(&#39;' + img + '&#39;)">');
+                    if(cat==1){
+                        $( "#cat1Style" ).append('<a href="#" class="thumbStyleBtn" onclick="changeStyle(&#39;' + img + '&#39;)">' + '<img class="thumbStyle" src="' + thumb + '"</a>');
+                    }
+                    if(cat==2){
+                        $( "#cat2Style" ).append('<a href="#" class="thumbStyleBtn" onclick="changeStyle(&#39;' + img + '&#39;)">' + '<img class="thumbStyle" src="' + thumb + '"</a>');
+                    }
+                    if(cat==3){
+                        $( "#cat3Style" ).append('<a href="#" class="thumbStyleBtn" onclick="changeStyle(&#39;' + img + '&#39;)">' + '<img class="thumbStyle" src="' + thumb + '"</a>');
+                    }
+                    if(cat==4){
+                        $( "#cat4Style" ).append('<a href="#" class="thumbStyleBtn" onclick="changeStyle(&#39;' + img + '&#39;)">' + '<img class="thumbStyle" src="' + thumb + '"</a>');
+                    }
+                    if(cat==5){
+                        $( "#cat5Style" ).append('<a href="#" class="thumbStyleBtn" onclick="changeStyle(&#39;' + img + '&#39;)">' + '<img class="thumbStyle" src="' + thumb + '"</a>');
+                    }
+                    if(cat==6){
+                        $( "#cat6Style" ).append('<a href="#" class="thumbStyleBtn" onclick="changeStyle(&#39;' + img + '&#39;)">' + '<img class="thumbStyle" src="' + thumb + '"</a>');
+                    }
+                    if(cat==7){
+                        $( "#cat7Style" ).append('<a href="#" class="thumbStyleBtn" onclick="changeStyle(&#39;' + img + '&#39;)">' + '<img class="thumbStyle" src="' + thumb + '"</a>');
+                    }
+                    if(cat==8){
+                        $( "#cat8Style" ).append('<a href="#" class="thumbStyleBtn" onclick="changeStyle(&#39;' + img + '&#39;)">' + '<img class="thumbStyle" src="' + thumb + '"</a>');
+                    }
+                    
                 }
             })
             .fail(function () {
@@ -48,6 +74,7 @@
                 // execTemplate(image2_path,image2_x,image2_y,image2_scalex,image2_scaley,image2_alpha,image3_path,image3_x,image3_y,image3_scalex,image3_scaley,image3_alpha,txt_x,txt_y,txt_size,txt_lineheight,txt_width,txt_fill,txt_align)
                 for (i = 0; i < data.templates.length; i++) {
                     var thumb = data.templates[i].thumb;
+                    var cat = data.templates[i].cat;
                     var image2_path = data.templates[i].image2_path;
                     var image2_x = data.templates[i].image2_x;
                     var image2_y = data.templates[i].image2_y;
@@ -67,7 +94,7 @@
                     var txt_width = data.templates[i].txt_width;
                     var txt_fill = data.templates[i].txt_fill;
                     var txt_align = data.templates[i].txt_align;
-                    $( "#gallery3" ).append('<img class="thumb" src="' + thumb +  '" onclick="execTemplate(&#39;' + image2_path + '&#39;,' + image2_x +',' + image2_y+ ',' + image2_scalex + ',' + image2_scaley + ',' + image2_alpha + ',&#39;' + image3_path + '&#39;,' + image3_x + ',' + image3_y + ',' + image3_scalex + ',' + image3_scaley + ',' + image3_alpha + ',' + txt_x + ',' + txt_y + ',' + txt_size + ',' + txt_lineheight + ',' + txt_width + ',&#39;' + txt_fill + '&#39;,&#39;' + txt_align + '&#39;)">');
+                    $( "#gallery3" ).append('<img class="thumb" src="' + thumb +  '" onclick="execTemplate(&#39;' + image2_path + '&#39;,' + image2_x +',' + image2_y+ ',' + image2_scalex + ',' + image2_scaley + ',' + image2_alpha + ',&#39;' + image3_path + '&#39;,' + image3_x + ',' + image3_y + ',' + image3_scalex + ',' + image3_scaley + ',' + image3_alpha + ',' + txt_x + ',' + txt_y + ',' + txt_size + ',' + txt_lineheight + ',' + txt_width + ',&#39;' + txt_fill + '&#39;,&#39;' + txt_align + '&#39;);offGallery();showCat(' + cat + ')">');
                 }
             })
             .fail(function () {
@@ -81,6 +108,19 @@
         margin-bottom: 0;
         width: 86px;
         height: 86px;
+    }
+    .thumbStyle{
+        border: none;
+        width: 40px;
+        height: 40px;
+    }
+    .thumbStyleBtn{
+        padding: 5px;
+        display:inline-block;
+        vertical-align: middle;
+        overflow: hidden;
+        text-align: center;
+        cursor: pointer;
     }
 </style>
 <body>
@@ -136,21 +176,21 @@
             <div class="w3-small">Layer 3</div>
             <button class="w3-button w3-teal" onclick="openGallery(3)" ><i class="material-icons" style="font-size:14px;">collections</i></button>
             <span id="eyeBtn3"><button class="w3-button w3-teal" onclick="layerOff(3)" ><i class="material-icons" style="font-size:14px;">visibility</i></button></span>
-            <button class="w3-button w3-teal" onclick="resizeImage(3)" ><i class="material-icons" style="font-size:14px;">my_location</i></button>
+            <button class="w3-button w3-teal" onclick="resizeImage(3)" ><i class="material-icons" style="font-size:14px;">photo_size_select_large</i></button>
             <button class="w3-button w3-teal" onclick="document.getElementById('slider3_holder').style.display='block'" ><i class="material-icons" style="font-size:14px;">menu</i></button>
         </p>
         <p>
             <div class="w3-small">Layer 2</div>
             <button class="w3-button w3-teal" onclick="openGallery(2)" ><i class="material-icons" style="font-size:14px;">collections</i></button>
             <span id="eyeBtn2"><button class="w3-button w3-teal" onclick="layerOff(2)" ><i class="material-icons" style="font-size:14px;">visibility</i></button></span>
-            <button class="w3-button w3-teal" onclick="resizeImage(2)" ><i class="material-icons" style="font-size:14px;">my_location</i></button>
+            <button class="w3-button w3-teal" onclick="resizeImage(2)" ><i class="material-icons" style="font-size:14px;">photo_size_select_large</i></button>
             <button class="w3-button w3-teal" onclick="document.getElementById('slider2_holder').style.display='block'" ><i class="material-icons" style="font-size:14px;">menu</i></button>
         </p>
         <p>
             <div class="w3-small">Layer 1</div>
             <button class="w3-button w3-teal" onclick="openGallery(1)" ><i class="material-icons" style="font-size:14px;">collections</i></button>
             <span id="eyeBtn1"><button class="w3-button w3-teal" onclick="layerOff(1)" ><i class="material-icons" style="font-size:14px;">visibility</i></button></span>
-            <button class="w3-button w3-teal" onclick="resizeImage(1)" ><i class="material-icons" style="font-size:14px;">my_location</i></button>
+            <button class="w3-button w3-teal" onclick="resizeImage(1)" ><i class="material-icons" style="font-size:14px;">photo_size_select_large</i></button>
             <button class="w3-button w3-teal" onclick="document.getElementById('slider1_holder').style.display='block'" ><i class="material-icons" style="font-size:14px;">menu</i></button>
         </p>
         <hr>
@@ -195,7 +235,15 @@
         <div class="w3-display-container w3-display-middle" style="z-index:-1">
             <div id="container" style="background:#CCC"></div>
         </div>
-    </div>
+
+        <div class="w3-bar w3-center w3-display-bottommiddle w3-hide" id="cat1Style"></div>
+        <div class="w3-bar w3-center w3-display-bottommiddle w3-hide" id="cat2Style"></div>
+        <div class="w3-bar w3-center w3-display-bottommiddle w3-hide" id="cat3Style"></div>
+        <div class="w3-bar w3-center w3-display-bottommiddle w3-hide" id="cat4Style"></div>
+        <div class="w3-bar w3-center w3-display-bottommiddle w3-hide" id="cat5Style"></div>
+        <div class="w3-bar w3-center w3-display-bottommiddle w3-hide" id="cat6Style"></div>
+        <div class="w3-bar w3-center w3-display-bottommiddle w3-hide" id="cat7Style"></div>
+        <div class="w3-bar w3-center w3-display-bottommiddle w3-hide" id="cat8Style"></div>
 
     <!-- Modal image panel -->
     <div id="imgGallery" class="w3-modal">
@@ -222,12 +270,12 @@
         </div>
         
         <div id="template" class="w3-container tab" style="display:none">
-            <p>Lưu ý: khi chọn template, ảnh 2 và 3 sẽ bị thay thế bằng ảnh của template</p>
+            <p>Lưu ý: khi chọn template, ảnh ở Layer 2 và 3 sẽ bị thay thế bằng ảnh của template</p>
             <p class="thumbGallery" id="gallery3"></p>
         </div>
 
         <div id="uplo" class="w3-container tab" style="display:none">
-            <p><span>Up ảnh khác. Lưu ý tiêu đề của tab up ảnh cho layer mấy</span><input style="width:100%" type='file' id="fileUpload"/></p>
+            <p><span>Up ảnh khác. Lưu ý tiêu đề của tab up ảnh, bạn đang up ảnh cho Layer mấy?</span><input style="width:100%" type='file' id="fileUpload"/></p>
         </div>
         
         <p style="clear:both"></p>

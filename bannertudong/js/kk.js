@@ -259,6 +259,18 @@ function addImage(path){
 	a.src = path;
 }
 
+// function change style layer 2
+function changeStyle(path){
+	var i = 2;
+	var a = eval('imageObj' + i);
+	var b = eval('img' + i);
+	a.onload = function() {
+		b.image(a);
+		layer.draw();
+	};
+	a.src = path;
+}
+
 // function exec template
 function execTemplate(image2_path,image2_x,image2_y,image2_scalex,image2_scaley,image2_alpha,image3_path,image3_x,image3_y,image3_scalex,image3_scaley,image3_alpha,txt_x,txt_y,txt_size,txt_lineheight,txt_width,txt_fill,txt_align)
 {
@@ -323,4 +335,22 @@ function resizeImage(i){
 	a.x(0);
 	a.y(0);
 	layer.draw();
+}
+
+function offGallery(){
+	document.getElementById('imgGallery').style.display='none';
+}
+
+function hideCat(){
+	for(i = 1; i < 9; i++){
+		var a = eval('cat' + i + 'Style');
+		a.classList.add("w3-hide");
+	}
+}
+
+function showCat(i){
+	hideCat();
+	var a = eval('cat' + i + 'Style');
+	a.classList.remove("w3-hide");
+
 }

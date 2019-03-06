@@ -2,6 +2,7 @@
     "templates": [
         {
             "thumb": "images/thumb_temp01.jpg",
+            "cat": "1",
             "image1_path": "",
             "image1_x": "0",
             "image1_y": "0",
@@ -30,6 +31,7 @@
         },
         {
             "thumb": "images/thumb_temp02.jpg",
+            "cat": "1",
             "image1_path": "",
             "image1_x": "0",
             "image1_y": "0",
@@ -58,6 +60,7 @@
         },
         {
             "thumb": "images/thumb_temp03.jpg",
+            "cat": "1",
             "image1_path": "",
             "image1_x": "0",
             "image1_y": "0",
@@ -86,6 +89,7 @@
         },
         {
             "thumb": "images/thumb_temp04.jpg",
+            "cat": "2",
             "image1_path": "",
             "image1_x": "0",
             "image1_y": "0",
@@ -114,6 +118,7 @@
         },
         {
             "thumb": "images/thumb_temp05.jpg",
+            "cat": "3",
             "image1_path": "",
             "image1_x": "0",
             "image1_y": "0",
@@ -142,6 +147,7 @@
         },
         {
             "thumb": "images/thumb_temp06.jpg",
+            "cat": "4",
             "image1_path": "",
             "image1_x": "0",
             "image1_y": "0",
@@ -170,6 +176,7 @@
         },
         {
             "thumb": "images/thumb_temp07.jpg",
+            "cat": "5",
             "image1_path": "",
             "image1_x": "0",
             "image1_y": "0",
@@ -198,6 +205,7 @@
         },
         {
             "thumb": "images/thumb_temp08.jpg",
+            "cat": "6",
             "image1_path": "",
             "image1_x": "0",
             "image1_y": "0",
@@ -226,6 +234,7 @@
         },
         {
             "thumb": "images/thumb_temp09.jpg",
+            "cat": "7",
             "image1_path": "",
             "image1_x": "0",
             "image1_y": "0",
@@ -254,6 +263,7 @@
         },
         {
             "thumb": "images/thumb_temp10.jpg",
+            "cat": "8",
             "image1_path": "",
             "image1_x": "0",
             "image1_y": "0",
