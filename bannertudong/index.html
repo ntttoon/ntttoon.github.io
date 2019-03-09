@@ -17,22 +17,32 @@
     $(document).ready(function () {
         $.getJSON(galtemplate)
             .then(function (data) {
-                // execTemplate(image2_path,image2_x,image2_y,image2_scalex,image2_scaley,image2_alpha,image3_path,image3_x,image3_y,image3_scalex,image3_scaley,image3_alpha,txt_x,txt_y,txt_size,txt_lineheight,txt_width,txt_fill,txt_align)
+                // execTemplate(image1_path,image1_x,image1_y,image1_scalex,image1_scaley,image1_alpha,image2_path,image2_x,image2_y,image2_scalex,image2_scaley,image2_alpha,image3_path,image3_x,image3_y,image3_scalex,image3_scaley,image3_alpha,txt_x,txt_y,txt_size,txt_lineheight,txt_width,txt_fill,txt_align)
                 for (i = 0; i < data.templates.length; i++) {
                     var thumb = data.templates[i].thumb;
                     var cat = data.templates[i].cat;
+                    //image 1
+                    var image1_path = data.templates[i].image1_path;
+                    var image1_x = data.templates[i].image1_x;
+                    var image1_y = data.templates[i].image1_y;
+                    var image1_scalex = data.templates[i].image1_scalex;
+                    var image1_scaley = data.templates[i].image1_scaley;
+                    var image1_alpha = data.templates[i].image1_alpha;
+                    //image 2
                     var image2_path = data.templates[i].image2_path;
                     var image2_x = data.templates[i].image2_x;
                     var image2_y = data.templates[i].image2_y;
                     var image2_scalex = data.templates[i].image2_scalex;
                     var image2_scaley = data.templates[i].image2_scaley;
                     var image2_alpha = data.templates[i].image2_alpha;
+                    //image 3
                     var image3_path = data.templates[i].image3_path;
                     var image3_x = data.templates[i].image3_x;
                     var image3_y = data.templates[i].image3_y;
                     var image3_scalex = data.templates[i].image3_scalex;
                     var image3_scaley = data.templates[i].image3_scaley;
                     var image3_alpha = data.templates[i].image3_alpha;
+                    //txt
                     var txt_x = data.templates[i].txt_x;
                     var txt_y = data.templates[i].txt_y;
                     var txt_size = data.templates[i].txt_size;
@@ -40,7 +50,7 @@
                     var txt_width = data.templates[i].txt_width;
                     var txt_fill = data.templates[i].txt_fill;
                     var txt_align = data.templates[i].txt_align;
-                    $( "#gallerytemplate" ).append('<img class="thumb" src="' + thumb +  '" onclick="execTemplate(&#39;' + image2_path + '&#39;,' + image2_x +',' + image2_y+ ',' + image2_scalex + ',' + image2_scaley + ',' + image2_alpha + ',&#39;' + image3_path + '&#39;,' + image3_x + ',' + image3_y + ',' + image3_scalex + ',' + image3_scaley + ',' + image3_alpha + ',' + txt_x + ',' + txt_y + ',' + txt_size + ',' + txt_lineheight + ',' + txt_width + ',&#39;' + txt_fill + '&#39;,&#39;' + txt_align + '&#39;);offGallery();showCat(' + cat + ')">');
+                    $( "#gallerytemplate" ).append('<img class="thumb" src="' + thumb +  '" onclick="execTemplate(&#39;' + image1_path + '&#39;,' + image1_x +',' + image1_y+ ',' + image1_scalex + ',' + image1_scaley + ',' + image2_alpha + ',&#39;' + image2_path + '&#39;,' + image2_x +',' + image2_y+ ',' + image2_scalex + ',' + image2_scaley + ',' + image2_alpha + ',&#39;' + image3_path + '&#39;,' + image3_x + ',' + image3_y + ',' + image3_scalex + ',' + image3_scaley + ',' + image3_alpha + ',' + txt_x + ',' + txt_y + ',' + txt_size + ',' + txt_lineheight + ',' + txt_width + ',&#39;' + txt_fill + '&#39;,&#39;' + txt_align + '&#39;);offGallery();showCat(' + cat + ')">');
                 }
             })
             .fail(function () {
@@ -175,21 +185,21 @@
         <h3 class="w3-bar-item">Layers</h3>
         <p>
             <div class="w3-small">Layer 3</div>
-            <button class="w3-button w3-teal" onclick="openGallery(3)" ><i class="material-icons" style="font-size:14px;">collections</i></button>
+            <button class="w3-button w3-teal" id="openBtn3" onclick="openGallery(3)" ><i class="material-icons" style="font-size:14px;">collections</i></button>
             <span id="eyeBtn3"><button class="w3-button w3-teal" onclick="layerOff(3)" ><i class="material-icons" style="font-size:14px;">visibility</i></button></span>
             <button class="w3-button w3-teal" onclick="resizeImage(3)" ><i class="material-icons" style="font-size:14px;">photo_size_select_large</i></button>
             <button class="w3-button w3-teal" onclick="document.getElementById('slider3_holder').style.display='block'" ><i class="material-icons" style="font-size:14px;">menu</i></button>
         </p>
         <p>
             <div class="w3-small">Layer 2</div>
-            <button class="w3-button w3-teal" onclick="openGallery(2)" ><i class="material-icons" style="font-size:14px;">collections</i></button>
+            <button class="w3-button w3-teal" id="openBtn2" onclick="openGallery(2)" ><i class="material-icons" style="font-size:14px;">collections</i></button>
             <span id="eyeBtn2"><button class="w3-button w3-teal" onclick="layerOff(2)" ><i class="material-icons" style="font-size:14px;">visibility</i></button></span>
             <button class="w3-button w3-teal" onclick="resizeImage(2)" ><i class="material-icons" style="font-size:14px;">photo_size_select_large</i></button>
             <button class="w3-button w3-teal" onclick="document.getElementById('slider2_holder').style.display='block'" ><i class="material-icons" style="font-size:14px;">menu</i></button>
         </p>
         <p>
             <div class="w3-small">Layer 1</div>
-            <button class="w3-button w3-teal" onclick="openGallery(1)" ><i class="material-icons" style="font-size:14px;">collections</i></button>
+            <button class="w3-button w3-teal" id="openBtn1" onclick="openGallery(1)" ><i class="material-icons" style="font-size:14px;">collections</i></button>
             <span id="eyeBtn1"><button class="w3-button w3-teal" onclick="layerOff(1)" ><i class="material-icons" style="font-size:14px;">visibility</i></button></span>
             <button class="w3-button w3-teal" onclick="resizeImage(1)" ><i class="material-icons" style="font-size:14px;">photo_size_select_large</i></button>
             <button class="w3-button w3-teal" onclick="document.getElementById('slider1_holder').style.display='block'" ><i class="material-icons" style="font-size:14px;">menu</i></button>
@@ -263,7 +273,7 @@
         </div>
         
         <div id="template" class="w3-container tab">
-            <p>Lưu ý: khi chọn template, ảnh ở Layer 2 và 3 sẽ bị thay thế bằng ảnh của template</p>
+            <p>Lưu ý: khi chọn template, ảnh ở các layer sẽ bị thay thế bằng ảnh của template</p>
             <p class="thumbGallery" id="gallerytemplate"></p>
         </div>
         

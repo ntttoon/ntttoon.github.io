@@ -272,30 +272,47 @@ function changeStyle(path){
 }
 
 // function exec template
-function execTemplate(image2_path,image2_x,image2_y,image2_scalex,image2_scaley,image2_alpha,image3_path,image3_x,image3_y,image3_scalex,image3_scaley,image3_alpha,txt_x,txt_y,txt_size,txt_lineheight,txt_width,txt_fill,txt_align)
+function execTemplate(image1_path,image1_x,image1_y,image1_scalex,image1_scaley,image1_alpha,image2_path,image2_x,image2_y,image2_scalex,image2_scaley,image2_alpha,image3_path,image3_x,image3_y,image3_scalex,image3_scaley,image3_alpha,txt_x,txt_y,txt_size,txt_lineheight,txt_width,txt_fill,txt_align)
 {
+	// add image1
+	if(image1_path!==""){
+		imageObj1.onload = function() {
+			img1.image(imageObj1);
+			img1.x(image1_x);
+			img1.y(image1_y);
+			img1.scaleX(image1_scalex);
+			img1.scaleY(image1_scaley);
+			img1.opacity(image1_alpha);
+			layer.draw();
+		};
+		imageObj1.src = image1_path;
+	}
 	// add image2
-	imageObj2.onload = function() {
-		img2.image(imageObj2);
-		img2.x(image2_x);
-		img2.y(image2_y);
-		img2.scaleX(image2_scalex);
-		img2.scaleY(image2_scaley);
-		img2.opacity(image2_alpha);
-		layer.draw();
-	};
-	imageObj2.src = image2_path;
+	if(image2_path!==""){
+		imageObj2.onload = function() {
+			img2.image(imageObj2);
+			img2.x(image2_x);
+			img2.y(image2_y);
+			img2.scaleX(image2_scalex);
+			img2.scaleY(image2_scaley);
+			img2.opacity(image2_alpha);
+			layer.draw();
+		};
+		imageObj2.src = image2_path;
+	}
 	// add image3
-	imageObj3.onload = function() {
-		img3.image(imageObj3);
-		img3.x(image3_x);
-		img3.y(image3_y);
-		img3.scaleX(image3_scalex);
-		img3.scaleY(image3_scaley);
-		img3.opacity(image3_alpha);
-		layer.draw();
-	};
-	imageObj3.src = image3_path;
+	if(image3_path!==""){
+		imageObj3.onload = function() {
+			img3.image(imageObj3);
+			img3.x(image3_x);
+			img3.y(image3_y);
+			img3.scaleX(image3_scalex);
+			img3.scaleY(image3_scaley);
+			img3.opacity(image3_alpha);
+			layer.draw();
+		};
+		imageObj3.src = image3_path;
+	}
 	// add text
 	//textNode.text(txt_content);
 	textNode.x(txt_x);
@@ -352,5 +369,40 @@ function showCat(i){
 	hideCat();
 	var a = eval('cat' + i + 'Style');
 	a.classList.remove("w3-hide");
-
 }
+
+function checkImageLayer(){
+	var a = document.getElementById('openBtn1');
+	var b = document.getElementById('openBtn2');
+	var c = document.getElementById('openBtn3');
+	//alert(n);
+	var src1_str = imageObj1.src;
+	var res1 = src1_str.substring(src1_str.length - 9, src1_str.length);
+	var src2_str = imageObj2.src;
+	var res2 = src2_str.substring(src2_str.length - 9, src2_str.length);
+	var src3_str = imageObj3.src;
+	var res3 = src3_str.substring(src3_str.length - 9, src3_str.length);
+	if(res1==="blank.png"){
+		a.classList.remove("w3-red");
+		a.classList.add("w3-teal");
+	}else{
+		a.classList.remove("w3-teal");
+		a.classList.add("w3-red");
+	}
+	if(res2==="blank.png"){
+		b.classList.remove("w3-red");
+		b.classList.add("w3-teal");
+	}else{
+		b.classList.remove("w3-teal");
+		b.classList.add("w3-red");
+	}
+	if(res3==="blank.png"){
+		c.classList.remove("w3-red");
+		c.classList.add("w3-teal");
+	}else{
+		c.classList.remove("w3-teal");
+		c.classList.add("w3-red");
+	}
+}
+
+var myCIL = setInterval(checkImageLayer, 1000);
