@@ -218,7 +218,8 @@ function readImage() {
 			a.src = e.target.result;
         };       
         FR.readAsDataURL( this.files[0] );
-    }
+		}
+	offGallery()
 }
 
 fileUpload.onchange = readImage;
@@ -366,9 +367,13 @@ function hideCat(){
 }
 
 function showCat(i){
-	hideCat();
-	var a = eval('cat' + i + 'Style');
-	a.classList.remove("w3-hide");
+	if(i==null){
+		hideCat();
+	}else{
+		hideCat();
+		var a = eval('cat' + i + 'Style');
+		a.classList.remove("w3-hide");
+	}
 }
 
 function checkImageLayer(){
