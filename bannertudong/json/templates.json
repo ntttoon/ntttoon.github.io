@@ -347,6 +347,35 @@
             "txt_width": "560",
             "txt_fill": "000000",
             "txt_align": "left"
+        },
+        {
+            "thumb": "images/thumb_temp13.jpg",
+            "cat": "",
+            "image1_path": "images/epic7_frame.jpg",
+            "image1_x": "0",
+            "image1_y": "0",
+            "image1_scalex": "0.687",
+            "image1_scaley": "0.687",
+            "image1_alpha": "1",
+            "image2_path": "",
+            "image2_x": "0",
+            "image2_y": "0",
+            "image2_scalex": "1",
+            "image2_scaley": "1",
+            "image2_alpha": "1",
+            "image3_path": "",
+            "image3_x": "0",
+            "image3_y": "0",
+            "image3_scalex": "1",
+            "image3_scaley": "1",
+            "image3_alpha": "1",
+            "txt_x": "50",
+            "txt_y": "240",
+            "txt_size": "30",
+            "txt_lineheight": "1.5",
+            "txt_width": "560",
+            "txt_fill": "000000",
+            "txt_align": "center"
         }
     ]
 }
