@@ -112,7 +112,7 @@
       <div class="w3-bar w3-black">
         <button class="w3-bar-item w3-button tablink w3-red" onclick="openTab(event,'module01')">Image</button>
         <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'module02')">H1 Title</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'module03')">H3 Title</button>
+        <!-- <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'module03')">H3 Title</button> -->
         <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'module04')">F Para</button>
         <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'module05')">LI + Para</button>
         <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'module06')">RI + Para</button>
@@ -136,12 +136,14 @@
         <p><button class="w3-button w3-teal w3-large" onclick="h1TitleGen()">Xuất</button></p>
       </div>
       
+      <!--
       <div id="module03" class="w3-container tab" style="display:none">
         <h2>Tiêu đề nhỏ</h2>
         <input class="w3-input w3-border" type="text" id="h3title">
         <p><button class="w3-button w3-teal w3-large" onclick="h3TitleGen()">Xuất</button></p>
       </div>
-    
+      -->
+
       <div id="module04" class="w3-container tab" style="display:none">
         <h2>Full Paragraph</h2>
         <p>Khối văn bản</p>
@@ -298,21 +300,23 @@ function h1TitleGen(){
 	var a = document.getElementById('currentSlot').innerHTML;
 	var aa = document.getElementById('alt_currentSlot').innerHTML;
 	var c = document.getElementById('h1title').value;
-	document.getElementById(a).innerHTML = '<div class="mg-container"><h1 class="mg-center mg-content600 mg-padding-32 mg-h1title">' + c + '</h1></div>';
-	document.getElementById(aa).innerHTML = '<div class="mg-container"><h1 class="mg-center mg-content600 mg-padding-32 mg-h1title">' + c + '</h1></div>';
+	document.getElementById(a).innerHTML = '<div class="mg-container"><h1 class="mg-center mg-content600 mg-h1title">' + c + '</h1></div>';
+	document.getElementById(aa).innerHTML = '<div class="mg-container"><h1 class="mg-center mg-content600 mg-h1title">' + c + '</h1></div>';
 	modal_close();
 	update_export()
 }
 
+/*
 function h3TitleGen(){
 	var a = document.getElementById('currentSlot').innerHTML;
 	var aa = document.getElementById('alt_currentSlot').innerHTML;
 	var c = document.getElementById('h3title').value;
-	document.getElementById(a).innerHTML = '<div class="mg-container"><h3 class="mg-center mg-content600 mg-padding-16 mg-h3title">' + c + '</h3></div>';
-	document.getElementById(aa).innerHTML = '<div class="mg-container"><h3 class="mg-center mg-content600 mg-padding-16 mg-h3title">' + c + '</h3></div>';
+	document.getElementById(a).innerHTML = '<div class="mg-container"><h3 class="mg-center mg-content600 mg-h3title">' + c + '</h3></div>';
+	document.getElementById(aa).innerHTML = '<div class="mg-container"><h3 class="mg-center mg-content600 mg-h3title">' + c + '</h3></div>';
 	modal_close();
 	update_export()
 }
+*/
 
 function paragraphGen(){
 	var a = document.getElementById('currentSlot').innerHTML;
