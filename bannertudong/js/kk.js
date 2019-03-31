@@ -104,14 +104,14 @@ stage.on('click tap', function (e) {
 })
 
 
-// create text layer
+// create text layer 1
 
 var textNode = new Konva.Text({
-	text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac molestie ipsum. Curabitur imperdiet faucibus aliquam.',
+	text: 'Lorem ipsum',
 	x: 20,
 	y: 20,
-	fontSize: 20,
-	fontFamily: 'Lora',
+	fontSize: 30,
+	fontFamily: 'Anton',
 	draggable: true,
 	lineHeight: 1.5,
 	width: '620',
@@ -164,6 +164,70 @@ textNode.on('dblclick', () => {
 			textNode.fill(tc);
 			layer.batchDraw();
 			document.body.removeChild(textarea);
+		}
+	});
+})
+
+// create text layer 2
+
+var textNode2 = new Konva.Text({
+	text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac molestie ipsum. Curabitur imperdiet faucibus aliquam.',
+	x: 20,
+	y: 70,
+	fontSize: 20,
+	fontFamily: 'Lora',
+	draggable: true,
+	lineHeight: 1.5,
+	width: '620',
+	fill: 'white'
+});
+layer.add(textNode2);
+
+textNode2.on('dblclick', () => {
+	var tw = document.getElementById('txt2_width').value;
+	var ts = document.getElementById('txt2_size').value;
+	var ta = document.getElementById('txt2_align').value;
+	var tf = document.getElementById('txt2_fonts').value;
+	var tl = document.getElementById('txt2_lineheight').value;
+	var tc = '#' + document.getElementById('txt2_color').value;
+	// create textarea over canvas with absolute position
+
+	// first we need to find its positon
+	var textPosition = textNode2.getAbsolutePosition();
+	var stageBox = stage.getContainer().getBoundingClientRect();
+
+	var areaPosition = {
+		x: textPosition.x + stageBox.left,
+		y: textPosition.y + stageBox.top
+	};
+
+
+	// create textarea and style it
+	var textarea2 = document.createElement('textarea');
+	document.body.appendChild(textarea2);
+
+	textarea2.value = textNode2.text();
+	textarea2.style.position = 'absolute';
+	textarea2.style.top = areaPosition.y + 'px';
+	textarea2.style.left = areaPosition.x + 'px';
+	textarea2.style.width = tw + 'px';
+
+	textarea2.focus();
+
+	textarea2.addEventListener('keydown', function (e) {
+		// hide on tab
+		if (e.keyCode === 9) {
+			//var regex=/[*|\":<>[\]{}`\\()';@&$]/;
+    	//textarea.value=textarea.value.replace(regex ,"");
+			textNode2.text(textarea2.value);
+			textNode2.fontSize(ts);
+			textNode2.width(tw);
+			textNode2.align(ta);
+			textNode2.fontFamily(tf);
+			textNode2.lineHeight(tl);
+			textNode2.fill(tc);
+			layer.batchDraw();
+			document.body.removeChild(textarea2);
 		}
 	});
 })
@@ -273,7 +337,7 @@ function changeStyle(path){
 }
 
 // function exec template
-function execTemplate(image1_path,image1_x,image1_y,image1_scalex,image1_scaley,image1_alpha,image2_path,image2_x,image2_y,image2_scalex,image2_scaley,image2_alpha,image3_path,image3_x,image3_y,image3_scalex,image3_scaley,image3_alpha,txt_x,txt_y,txt_size,txt_lineheight,txt_width,txt_fill,txt_align)
+function execTemplate(image1_path,image1_x,image1_y,image1_scalex,image1_scaley,image1_alpha,image2_path,image2_x,image2_y,image2_scalex,image2_scaley,image2_alpha,image3_path,image3_x,image3_y,image3_scalex,image3_scaley,image3_alpha,txt_x,txt_y,txt_size,txt_lineheight,txt_width,txt_fill,txt_align,txt_font,txt2_x,txt2_y,txt2_size,txt2_lineheight,txt2_width,txt2_fill,txt2_align,txt2_font)
 {
 	// add image1
 	if(image1_path!==""){
@@ -319,6 +383,7 @@ function execTemplate(image1_path,image1_x,image1_y,image1_scalex,image1_scaley,
 	textNode.x(txt_x);
 	textNode.y(txt_y);
 	textNode.fontSize(txt_size);
+	textNode.fontFamily(txt_font);
 	textNode.width(txt_width);
 	textNode.align(txt_align);
 	textNode.lineHeight(txt_lineheight);
@@ -329,6 +394,23 @@ function execTemplate(image1_path,image1_x,image1_y,image1_scalex,image1_scaley,
 	document.getElementById("txt_size").value = txt_size;
 	document.getElementById("txt_color").value = txt_fill;
 	document.getElementById("txt_color").style.background = '#' + txt_fill;
+	document.getElementById("txt_fonts").value = txt_font;
+	// add text 2
+	textNode2.x(txt2_x);
+	textNode2.y(txt2_y);
+	textNode2.fontSize(txt2_size);
+	textNode2.fontFamily(txt2_font);
+	textNode2.width(txt2_width);
+	textNode2.align(txt2_align);
+	textNode2.lineHeight(txt2_lineheight);
+	textNode2.fill('#'+txt2_fill);
+	layer.batchDraw();
+	// set value
+	document.getElementById("txt2_width").value = txt2_width;
+	document.getElementById("txt2_size").value = txt2_size;
+	document.getElementById("txt2_color").value = txt2_fill;
+	document.getElementById("txt2_color").style.background = '#' + txt2_fill;
+	document.getElementById("txt2_fonts").value = txt2_font;
 }
 
 slider1.onchange = function() {
@@ -387,6 +469,9 @@ function checkImageLayer(){
 	var res2 = src2_str.substring(src2_str.length - 9, src2_str.length);
 	var src3_str = imageObj3.src;
 	var res3 = src3_str.substring(src3_str.length - 9, src3_str.length);
+	document.getElementById('thumb01').src = imageObj1.src;
+	document.getElementById('thumb02').src = imageObj2.src;
+	document.getElementById('thumb03').src = imageObj3.src;
 	if(res1==="blank.png"){
 		a.classList.remove("w3-red");
 		a.classList.add("w3-teal");
