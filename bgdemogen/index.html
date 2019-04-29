@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Upload</title>
+    <link rel="stylesheet" href="css/w3.css">
+    <script async src="js/jszip.js"> </script>
+    <script async src="js/FileSaver.js"> </script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="w3-bar w3-teal">
+        <div class="w3-bar-item">Bg premium demo offline gen by ntttoon</div>
+    </div>
+    
+    <div class="w3-container">
+        <p>
+            <div>Chọn Demo</div>
+            <select id="demochoice">
+                <option value="1" selected>Bg premium trang chủ</option>
+                <option value="2" >Bg premium trang trong top cao 100</option>
+                <option value="3" >Bg premium trang trong top cao 250</option>
+            </select>
+        </p>
+        <div class="w3-row">
+            <p>Lưu ý, tool này xuất file khi xem ở laptop màn hình nhỏ vẫn dùng ảnh background lớn.<br>Nếu anh chị muốn thêm ảnh background nhỏ thì chỉnh sửa trong file index.html => sửa đường dẫn ảnh trong 2 div chứa class "bg_area2"</p>
+            <div class="w3-third">
+                <div>Up ảnh background <span style="color:red">trái LỚN</span></div>
+                <input id="left_bg" type="file" />
+            </div>
+            <div class="w3-third">
+                <div>Up ảnh background <span style="color:red">phải LỚN</span></div>
+                <input id="right_bg" type="file" />
+            </div>
+            <div class="w3-third">
+                <div>Chọn kích thước banner còn lại của bộ background</div>
+                <input id="banner" type="file" />
+            </div>
+        </div>
+        <p><button class="w3-button w3-red" id="zip_button">Save file</button></p>
+    </div>
+
+    <div style="display: none" id="banner_holder"></div>
+    <div style="display: none" id="left_holder"></div>
+    <div style="display: none" id="right_holder"></div>
+    <div style="display: none" id="page_holder"></div>
+    <div style="display: none" id="topmenu_holder"></div>
+    <div style="display: none" id="html_holder"></div>
+
+    <script>
+    document.getElementById("demochoice").addEventListener("change", function(){
+        //alert(this.value)
+        document.getElementById("html_holder").innerHTML = "";
+        document.getElementById("page_holder").innerHTML = "";
+        if(this.value == 1){
+            readTemplates("templates/trangchu.html","html_holder");
+            toDataURL('images/trangchu.jpg',function(dataUrl) {
+                document.getElementById("page_holder").innerHTML = dataUrl;
+            })
+        }
+        if(this.value == 2){
+            readTemplates("templates/trangtrong.html","html_holder");
+            toDataURL('images/trangtrong.jpg',function(dataUrl) {
+                document.getElementById("page_holder").innerHTML = dataUrl;
+            })
+        }
+        if(this.value == 3){
+            readTemplates("templates/trangtrong250.html","html_holder");
+            toDataURL('images/trangtrong250.jpg',function(dataUrl) {
+                document.getElementById("page_holder").innerHTML = dataUrl;
+            })
+        }
+    })
+
+    function readTemplates(path,div_holder){
+    var txtFile = new XMLHttpRequest();
+        txtFile.open("GET", path, true);
+        txtFile.onreadystatechange = function() {
+            if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
+                    if (txtFile.status === 200) {  // Makes sure it's found the file.
+                    allText = txtFile.responseText; 
+                    //lines = txtFile.responseText.split("\n"); // Will separate each line into an array
+                    document.getElementById(div_holder).innerHTML = allText;
+                }
+            }
+        }
+        txtFile.send(null);
+    }
+    readTemplates("templates/trangchu.html","html_holder");
+
+    function readURL(input,div_holder) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                document.getElementById(div_holder).innerHTML = e.target.result;
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    document.getElementById("left_bg").addEventListener("change", function(){
+        readURL(this,"left_holder");
+    })
+    document.getElementById("right_bg").addEventListener("change", function(){
+        readURL(this,"right_holder");
+    })
+    document.getElementById("banner").addEventListener("change", function(){
+        readURL(this,"banner_holder");
+    })
+
+    function toDataURL(url, callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.onload = function() {
+            var reader = new FileReader();
+            reader.onloadend = function() {
+            callback(reader.result);
+            }
+            reader.readAsDataURL(xhr.response);
+        };
+        xhr.open('GET', url);
+        xhr.responseType = 'blob';
+        xhr.send();
+    }
+    /////
+    toDataURL('images/top_menu.jpg',function(dataUrl) {
+            document.getElementById("topmenu_holder").innerHTML = dataUrl;
+        }
+    )
+    toDataURL('images/trangchu.jpg',function(dataUrl) {
+            document.getElementById("page_holder").innerHTML = dataUrl;
+        }
+    )
+    /////
+    document.getElementById("zip_button").addEventListener("click", function(){
+
+        var zip = new JSZip();
+
+        var data_html = document.getElementById("html_holder").innerHTML;
+        var data_page = document.getElementById("page_holder").innerHTML;
+        var data_topmenu = document.getElementById("topmenu_holder").innerHTML;
+        var data_leftbg = document.getElementById("left_holder").innerHTML;
+        var data_rightbg = document.getElementById("right_holder").innerHTML;
+        var data_banner = document.getElementById("banner_holder").innerHTML;
+
+        zip.file("index.html", data_html);
+        zip.file("trangchu.jpg", data_page.substr(data_page.indexOf(',')+1), {base64: true});
+        zip.file("top_menu.jpg", data_topmenu.substr(data_page.indexOf(',')+1), {base64: true});
+        zip.file("left.jpg", data_leftbg.substr(data_leftbg.indexOf(',')+1), {base64: true});
+        zip.file("right.jpg", data_rightbg.substr(data_rightbg.indexOf(',')+1), {base64: true});
+        zip.file("banner.jpg", data_banner.substr(data_banner.indexOf(',')+1), {base64: true});
+
+
+        var filename = prompt("Đặt tên cho file zip.\nLưu ý: Không nên đặt tên Tiếng Việt có dấu, ký tự lạ, không cần thêm .zip", "banner");
+        if (filename != null) {
+            zip.generateAsync({type:"blob"})
+            .then(function(content) {
+                saveAs(content, filename + ".zip");
+            });
+        }
+
+    })
+    </script>
+</body>
+</html>
