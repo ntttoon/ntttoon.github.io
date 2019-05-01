@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Upload</title>
+    <title>Background Demo Gen</title>
     <link rel="stylesheet" href="css/w3.css">
     <script async src="js/jszip.js"> </script>
     <script async src="js/FileSaver.js"> </script> 
@@ -48,28 +48,29 @@
     <div style="display: none" id="page_holder"></div>
     <div style="display: none" id="topmenu_holder"></div>
     <div style="display: none" id="html_holder"></div>
+    <div style="display: none" id="html_banner_holder"></div>
 
     <script>
     document.getElementById("demochoice").addEventListener("change", function(){
         //alert(this.value)
-        document.getElementById("html_holder").innerHTML = "";
-        document.getElementById("page_holder").innerHTML = "";
+        document.getElementById("html_holder").textContent = "";
+        document.getElementById("page_holder").textContent = "";
         if(this.value == 1){
             readTemplates("templates/trangchu.html","html_holder");
             toDataURL('images/trangchu.jpg',function(dataUrl) {
-                document.getElementById("page_holder").innerHTML = dataUrl;
+                document.getElementById("page_holder").textContent = dataUrl;
             })
         }
         if(this.value == 2){
             readTemplates("templates/trangtrong.html","html_holder");
             toDataURL('images/trangtrong.jpg',function(dataUrl) {
-                document.getElementById("page_holder").innerHTML = dataUrl;
+                document.getElementById("page_holder").textContent = dataUrl;
             })
         }
         if(this.value == 3){
             readTemplates("templates/trangtrong250.html","html_holder");
             toDataURL('images/trangtrong250.jpg',function(dataUrl) {
-                document.getElementById("page_holder").innerHTML = dataUrl;
+                document.getElementById("page_holder").textContent = dataUrl;
             })
         }
     })
@@ -80,22 +81,24 @@
         txtFile.onreadystatechange = function() {
             if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
                     if (txtFile.status === 200) {  // Makes sure it's found the file.
-                    allText = txtFile.responseText; 
+                    allText = txtFile.responseText;
+                    //console.log(allText);
                     //lines = txtFile.responseText.split("\n"); // Will separate each line into an array
-                    document.getElementById(div_holder).innerHTML = allText;
+                    document.getElementById(div_holder).textContent = allText;
                 }
             }
         }
         txtFile.send(null);
     }
     readTemplates("templates/trangchu.html","html_holder");
+    readTemplates("templates/banner.html","html_banner_holder");
 
     function readURL(input,div_holder) {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
             
             reader.onload = function (e) {
-                document.getElementById(div_holder).innerHTML = e.target.result;
+                document.getElementById(div_holder).textContent = e.target.result;
             }
             reader.readAsDataURL(input.files[0]);
         }
@@ -126,11 +129,11 @@
     }
     /////
     toDataURL('images/top_menu.jpg',function(dataUrl) {
-            document.getElementById("topmenu_holder").innerHTML = dataUrl;
+            document.getElementById("topmenu_holder").textContent = dataUrl;
         }
     )
     toDataURL('images/trangchu.jpg',function(dataUrl) {
-            document.getElementById("page_holder").innerHTML = dataUrl;
+            document.getElementById("page_holder").textContent = dataUrl;
         }
     )
     /////
@@ -138,14 +141,16 @@
 
         var zip = new JSZip();
 
-        var data_html = document.getElementById("html_holder").innerHTML;
-        var data_page = document.getElementById("page_holder").innerHTML;
-        var data_topmenu = document.getElementById("topmenu_holder").innerHTML;
-        var data_leftbg = document.getElementById("left_holder").innerHTML;
-        var data_rightbg = document.getElementById("right_holder").innerHTML;
-        var data_banner = document.getElementById("banner_holder").innerHTML;
+        var data_html = document.getElementById("html_holder").textContent;
+        var data_banner_html = document.getElementById("html_banner_holder").textContent;
+        var data_page = document.getElementById("page_holder").textContent;
+        var data_topmenu = document.getElementById("topmenu_holder").textContent;
+        var data_leftbg = document.getElementById("left_holder").textContent;
+        var data_rightbg = document.getElementById("right_holder").textContent;
+        var data_banner = document.getElementById("banner_holder").textContent;
 
         zip.file("index.html", data_html);
+        zip.file("banner.html", data_banner_html);
         zip.file("trangchu.jpg", data_page.substr(data_page.indexOf(',')+1), {base64: true});
         zip.file("top_menu.jpg", data_topmenu.substr(data_page.indexOf(',')+1), {base64: true});
         zip.file("left.jpg", data_leftbg.substr(data_leftbg.indexOf(',')+1), {base64: true});
