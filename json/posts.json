@@ -1,6 +1,15 @@
 {
     "posts": [
         {
+            "title": "Hướng dẫn lấy full đồ Megaman X, X2, X3",
+            "date": "05-08-2019",
+            "short_des": "Hướng dẫn lấy full đồ Megaman X, X2, X3",
+            "tags":"Megaman",
+            "image": "posts/00008/header.jpg",
+            "thumb": "posts/00008/header.jpg",
+            "link": "posts/00008/index.html"
+        },
+        {
             "title": "27 bí quyết sống khỏe và trường thọ của người xưa",
             "date": "12-09-2018",
             "short_des": "Người xưa lưu truyền bí quyết sống khỏe là ăn no không gội đầu, đói không tắm; dưỡng sinh và dưỡng tâm; nam giới ăn rau hẹ để tráng dương bổ thận, nữ giới ăn ngó sen giúp da đẹp…",
