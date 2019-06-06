@@ -7,6 +7,15 @@ var stage = new Konva.Stage({
 var layer = new Konva.Layer();
 stage.add(layer);
 
+// Function Resize
+function resizeCanvas(){
+	var w = document.getElementById("w").value;
+	var h = document.getElementById("h").value;
+	stage.width(w);
+  stage.height(h);
+  stage.draw();
+}
+
 /* globalCompositeOperation :
   normal | multiply | screen | overlay | 
   darken | lighten | color-dodge | color-burn | hard-light | 
@@ -245,12 +254,12 @@ var downloadCanvas = function(ratio){
 	var link = document.createElement("a");
 	var quality = document.getElementById("ratioImage").value;
 	stage.find('Transformer').destroy();
-		var imgData = stage.toDataURL({ pixelRatio: quality });
-		var strDataURI = imgData.substr(22, imgData.length);
-		var blob = dataURLtoBlob(imgData);
-		var objurl = URL.createObjectURL(blob);
+	var imgData = stage.toDataURL({ pixelRatio: quality });
+	var strDataURI = imgData.substr(22, imgData.length);
+	var blob = dataURLtoBlob(imgData);
+	var objurl = URL.createObjectURL(blob);
 		
-		var filename = prompt("Đặt tên cho file", "banner.png");
+	var filename = prompt("Đặt tên cho file", "banner.png");
 	if (filename != null) {
 		link.download = filename;
 		link.href = objurl;
@@ -337,8 +346,11 @@ function changeStyle(path){
 }
 
 // function exec template
-function execTemplate(image1_path,image1_x,image1_y,image1_scalex,image1_scaley,image1_alpha,image2_path,image2_x,image2_y,image2_scalex,image2_scaley,image2_alpha,image3_path,image3_x,image3_y,image3_scalex,image3_scaley,image3_alpha,txt_x,txt_y,txt_size,txt_lineheight,txt_width,txt_fill,txt_align,txt_font,txt2_x,txt2_y,txt2_size,txt2_lineheight,txt2_width,txt2_fill,txt2_align,txt2_font)
+function execTemplate(width,height,image1_path,image1_x,image1_y,image1_scalex,image1_scaley,image1_alpha,image2_path,image2_x,image2_y,image2_scalex,image2_scaley,image2_alpha,image3_path,image3_x,image3_y,image3_scalex,image3_scaley,image3_alpha,txt_x,txt_y,txt_size,txt_lineheight,txt_width,txt_fill,txt_align,txt_font,txt2_x,txt2_y,txt2_size,txt2_lineheight,txt2_width,txt2_fill,txt2_align,txt2_font)
 {
+	document.getElementById("w").value = width;
+	document.getElementById("h").value = height;
+	resizeCanvas();
 	// add image1
 	if(image1_path!==""){
 		imageObj1.onload = function() {
