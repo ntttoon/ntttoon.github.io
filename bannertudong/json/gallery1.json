@@ -1,11 +1,6 @@
 {
     "gallery": [
         {
-            "thumb": "images/thumb_blank.jpg",
-            "image": "images/blank.png",
-            "cat": "1"
-        },
-        {
             "thumb": "images/bg01.jpg",
             "image": "images/bg01.jpg",
             "cat": "1"

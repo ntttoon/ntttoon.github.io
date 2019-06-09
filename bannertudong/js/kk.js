@@ -333,6 +333,17 @@ function addImage(path){
 	a.src = path;
 }
 
+// function add image blank
+function removeImage(i){
+	var a = eval('imageObj' + i);
+	var b = eval('img' + i);
+	a.onload = function() {
+		b.image(a);
+		layer.draw();
+	};
+	a.src = 'images/blank.png';
+}
+
 // function change style layer 2
 function changeStyle(path){
 	var i = 2;
@@ -505,6 +516,44 @@ function checkImageLayer(){
 		c.classList.remove("w3-teal");
 		c.classList.add("w3-red");
 	}
+}
+
+function openGifmaker(){
+	document.getElementById('gifPanel').style.display='block';
+}
+
+function addGifFrame(){
+	stage.find('Transformer').destroy();
+	document.getElementById('gifFramesHolder').innerHTML +='<img class="gif thumb" src="' + layer.toDataURL() + '" onclick="this.parentElement.removeChild(this);">'
+	alert("Đã thêm thiết kế hiện tại vào frame file gif");
+}
+
+function createGif(){
+	var imgs = document.querySelectorAll('.gif');
+	var w = document.getElementById("w").value;
+	var h = document.getElementById("h").value;
+	var l = document.getElementById("gifLoop").value;
+	var d = document.getElementById("gifDelay").value;
+  var ag = new Animated_GIF();
+	ag.setSize(w, h);
+	ag.setDelay(d);
+	ag.setRepeat(l);
+
+  for(var i = 0; i < imgs.length; i++) {
+    ag.addFrame(imgs[i]);
+  }
+
+	var animatedImage = document.createElement('img');
+	animatedImage.setAttribute("class", "thumbgif" );
+
+  // This is asynchronous, rendered with WebWorkers
+  ag.getBase64GIF(function(image) {
+		animatedImage.src = image;
+		document.getElementById('gifHolder').innerHTML= '';
+		document.getElementById('gifHolder').appendChild(animatedImage);
+		
+    //document.body.appendChild(animatedImage);
+  });
 }
 
 var myCIL = setInterval(checkImageLayer, 1000);

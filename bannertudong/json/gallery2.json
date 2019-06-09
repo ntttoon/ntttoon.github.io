@@ -1,10 +1,6 @@
 {
     "gallery": [
         {
-            "thumb": "images/thumb_blank.jpg",
-            "image": "images/blank.png"
-        },
-        {
             "thumb": "images/thumb_celebrate-01.jpg",
             "image": "images/celebrate-01.jpg"
         },
