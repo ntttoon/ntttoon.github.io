@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>banner HTML5</title>
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_2.1.2_min.js"></script>
+<style>
+body{
+	margin:0;
+	padding:0;
+	background-color:#FFF;
+}
+#banner{
+	width:336px;
+	height:280px;
+	overflow:hidden;
+	position:relative;
+	background-color:#FFF;
+}
+#banner img{
+	position: absolute;
+}
+#bg{
+	top:0;
+	left:0;
+}
+#thoasuc{
+	top:90px;
+	left:15px;
+}
+#pic01, #pic02, #pic03{
+	top:133px;
+	left:0px;
+}
+#text01{
+	top:80px;
+	left:15px;
+}
+#text02{
+	top:80px;
+	left:15px;
+}
+#text03{
+	top:75px;
+	left:7px;
+}
+#replay{
+	top:5px;
+	left:5px;
+	position: absolute;
+	visibility:hidden;
+	z-index:9999;
+}
+</style>
+</head>
+
+<body onload="responsiveBanner();">
+<div id="banner">
+	<img id="replay" src="images/replay_white.png">
+	<img id="bg" src="images/bg.jpg">
+	<img id="thoasuc" src="images/thoasuc.png">
+	<img id="pic01" src="images/pic01.png">
+	<img id="text01" src="images/text01.png">
+	<img id="pic02" src="images/pic02.png">
+	<img id="text02" src="images/text02.png">
+	<img id="pic03" src="images/pic03.png">
+	<img id="text03" src="images/text03.png">
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>
+	function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]"); var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search); return results === null ? "" :
+		decodeURIComponent(results[1].replace(/\+/g, " ")); 
+	}
+</script>
+<script>
+	var widthbanner = document.getElementById("banner").clientWidth;
+    function responsiveBanner(){
+        var w = getParameterByName("w");
+        console.log(w);
+        var widthbannerclient = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        if(w == ""){    document.body.style.zoom = widthbannerclient/widthbanner *100+"%";   }
+        else {     document.body.style.zoom = w/widthbanner *100+"%";   }  }
+    window.onresize = function(event) {
+        responsiveBanner();
+	};
+</script>
+<script type="text/javascript">
+	var $bg = $('#bg');
+	var $thoasuc = $('#thoasuc');
+	var $pic01 = $('#pic01');
+	var $text01 = $('#text01');
+	var $pic02 = $('#pic02');
+	var $text02 = $('#text02');
+	var $pic03 = $('#pic03');
+	var $text03 = $('#text03');
+
+	var tl = new TimelineMax({onComplete: showReplay})
+		tl.from($thoasuc, 1, {y:'+=100px', alpha:0, ease:Power1.easeOut})
+		.to($thoasuc, 1, {alpha:0, ease:Power1.easeOut}, "+=2")
+		//
+		.from($pic01, 1, {alpha:0, ease:Power1.easeOut})
+		.from($text01, 1, {y:'+=100px', alpha:0, ease:Power1.easeOut},"-=1")
+		.to($text01, 1, {alpha:0, scaleX:0.1, scaleY:0.1, ease:Power1.easeOut}, "+=2")
+		.to($pic01, 1, {alpha:0, ease:Power1.easeOut}, "-=1")
+		//
+		.from($pic02, 1, {alpha:0, ease:Power1.easeOut})
+		.from($text02, 1, {y:'+=100px', alpha:0, ease:Power1.easeOut},"-=1")
+		.to($text02, 1, {alpha:0, ease:Power1.easeOut}, "+=2")
+		.to($pic02, 1, {alpha:0, ease:Power1.easeOut}, "-=1")
+		//
+		.from($pic03, 1, {alpha:0, ease:Power1.easeOut})
+		.from($text03, 1, {y:'+=100px', alpha:0, ease:Power1.easeOut},"-=1")
+		//.to($text03, 1, {alpha:0, ease:Power1.easeOut}, "+=5")
+		//.to($pic03, 1, {alpha:0, ease:Power1.easeOut}, "-=1")
+	function showReplay(){
+		$("#replay").css("visibility", "visible");
+	}
+	$("#replay").click(function() {
+		tl.play(0);
+		$("#replay").css("visibility", "hidden");
+	});
+</script>
+</html>
+
