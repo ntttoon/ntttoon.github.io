@@ -15,32 +15,52 @@
 <script src="trumbowyg/plugins/colors/trumbowyg.colors.min.js"></script>
 <script src="trumbowyg/plugins/noembed/trumbowyg.noembed.min.js"></script>
 </head>
+<style>
+.html_thumb {
+   -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+.html_thumb img {
+    max-width: 100px;
+}
+</style>
 <body class="w3-light-grey">
 
 <!-- Sidebar -->
 <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
   <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s1','alt_html_s1');openSlot(event)">Slot 1 <span class="w3-right" onclick="alert(html_s1)">☰</span></div>
-  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s2','alt_html_s2');openSlot(event)">Slot 2 <span class="w3-right" onclick="alert(html_s2)">☰</span></div>
-  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s3','alt_html_s3');openSlot(event)">Slot 3 <span class="w3-right" onclick="alert(html_s3)">☰</span></div>
-  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s4','alt_html_s4');openSlot(event)">Slot 4 <span class="w3-right" onclick="alert(html_s4)">☰</span></div>
-  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s5','alt_html_s5');openSlot(event)">Slot 5 <span class="w3-right" onclick="alert(html_s5)">☰</span></div>
-  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s6','alt_html_s6');openSlot(event)">Slot 6 <span class="w3-right" onclick="alert(html_s6)">☰</span></div>
-  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s7','alt_html_s7');openSlot(event)">Slot 7 <span class="w3-right" onclick="alert(html_s7)">☰</span></div>
-  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s8','alt_html_s8');openSlot(event)">Slot 8 <span class="w3-right" onclick="alert(html_s8)">☰</span></div>
-  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s9','alt_html_s9');openSlot(event)">Slot 9 <span class="w3-right" onclick="alert(html_s9)">☰</span></div>
-  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s10','alt_html_s10');openSlot(event)">Slot 10 <span class="w3-right" onclick="alert(html_s10)">☰</span></div>
-  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s11','alt_html_s11');openSlot(event)">Slot 11 <span class="w3-right" onclick="alert(html_s11)">☰</span></div>
-  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s12','alt_html_s12');openSlot(event)">Slot 12 <span class="w3-right" onclick="alert(html_s12)">☰</span></div>
-  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s13','alt_html_s13');openSlot(event)">Slot 13 <span class="w3-right" onclick="alert(html_s13)">☰</span></div>
-  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s14','alt_html_s14');openSlot(event)">Slot 14 <span class="w3-right" onclick="alert(html_s14)">☰</span></div>
-  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s15','alt_html_s15');openSlot(event)">Slot 15 <span class="w3-right" onclick="alert(html_s15)">☰</span></div>
-  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s16','alt_html_s16');openSlot(event)">Slot 16 <span class="w3-right" onclick="alert(html_s16)">☰</span></div>
-  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s17','alt_html_s17');openSlot(event)">Slot 17 <span class="w3-right" onclick="alert(html_s17)">☰</span></div>
-  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s18','alt_html_s18');openSlot(event)">Slot 18 <span class="w3-right" onclick="alert(html_s18)">☰</span></div>
-  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s19','alt_html_s19');openSlot(event)">Slot 19 <span class="w3-right" onclick="alert(html_s19)">☰</span></div>
-  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s20','alt_html_s20');openSlot(event)">Slot 20 <span class="w3-right" onclick="alert(html_s20)">☰</span></div>
-  
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s1','alt_html_s1');openSlot(event)">Slot 1 <span class="w3-right" onmouseover="showPreviewHtml(html_s1)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s2','alt_html_s2');openSlot(event)">Slot 2 <span class="w3-right" onmouseover="showPreviewHtml(html_s2)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s3','alt_html_s3');openSlot(event)">Slot 3 <span class="w3-right" onmouseover="showPreviewHtml(html_s3)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s4','alt_html_s4');openSlot(event)">Slot 4 <span class="w3-right" onmouseover="showPreviewHtml(html_s4)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s5','alt_html_s5');openSlot(event)">Slot 5 <span class="w3-right" onmouseover="showPreviewHtml(html_s5)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s6','alt_html_s6');openSlot(event)">Slot 6 <span class="w3-right" onmouseover="showPreviewHtml(html_s6)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s7','alt_html_s7');openSlot(event)">Slot 7 <span class="w3-right" onmouseover="showPreviewHtml(html_s7)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s8','alt_html_s8');openSlot(event)">Slot 8 <span class="w3-right" onmouseover="showPreviewHtml(html_s8)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s9','alt_html_s9');openSlot(event)">Slot 9 <span class="w3-right" onmouseover="showPreviewHtml(html_s9)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s10','alt_html_s10');openSlot(event)">Slot 10 <span class="w3-right" onmouseover="showPreviewHtml(html_s10)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s11','alt_html_s11');openSlot(event)">Slot 11 <span class="w3-right" onmouseover="showPreviewHtml(html_s11)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s12','alt_html_s12');openSlot(event)">Slot 12 <span class="w3-right" onmouseover="showPreviewHtml(html_s12)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s13','alt_html_s13');openSlot(event)">Slot 13 <span class="w3-right" onmouseover="showPreviewHtml(html_s13)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s14','alt_html_s14');openSlot(event)">Slot 14 <span class="w3-right" onmouseover="showPreviewHtml(html_s14)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s15','alt_html_s15');openSlot(event)">Slot 15 <span class="w3-right" onmouseover="showPreviewHtml(html_s15)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s16','alt_html_s16');openSlot(event)">Slot 16 <span class="w3-right" onmouseover="showPreviewHtml(html_s16)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s17','alt_html_s17');openSlot(event)">Slot 17 <span class="w3-right" onmouseover="showPreviewHtml(html_s17)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s18','alt_html_s18');openSlot(event)">Slot 18 <span class="w3-right" onmouseover="showPreviewHtml(html_s18)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s19','alt_html_s19');openSlot(event)">Slot 19 <span class="w3-right" onmouseover="showPreviewHtml(html_s19)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s20','alt_html_s20');openSlot(event)">Slot 20 <span class="w3-right" onmouseover="showPreviewHtml(html_s20)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s21','alt_html_s21');openSlot(event)">Slot 21 <span class="w3-right" onmouseover="showPreviewHtml(html_s21)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s22','alt_html_s22');openSlot(event)">Slot 22 <span class="w3-right" onmouseover="showPreviewHtml(html_s22)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s23','alt_html_s23');openSlot(event)">Slot 23 <span class="w3-right" onmouseover="showPreviewHtml(html_s23)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s24','alt_html_s24');openSlot(event)">Slot 24 <span class="w3-right" onmouseover="showPreviewHtml(html_s24)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s25','alt_html_s25');openSlot(event)">Slot 25 <span class="w3-right" onmouseover="showPreviewHtml(html_s25)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s26','alt_html_s26');openSlot(event)">Slot 26 <span class="w3-right" onmouseover="showPreviewHtml(html_s26)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s27','alt_html_s27');openSlot(event)">Slot 27 <span class="w3-right" onmouseover="showPreviewHtml(html_s27)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s28','alt_html_s28');openSlot(event)">Slot 28 <span class="w3-right" onmouseover="showPreviewHtml(html_s28)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s29','alt_html_s29');openSlot(event)">Slot 29 <span class="w3-right" onmouseover="showPreviewHtml(html_s29)" onmouseout="closePreviewHtml()">☰</span></div>
+  <div class="w3-bar-item w3-button slotlinks" onclick="modal_open();changeSlot('html_s30','alt_html_s30');openSlot(event)">Slot 30 <span class="w3-right" onmouseover="showPreviewHtml(html_s30)" onmouseout="closePreviewHtml()">☰</span></div>
 </div>
 
 <!-- Page Content -->
@@ -77,6 +97,16 @@
 <div id="html_s18" style="display:none;position:absolute"></div>
 <div id="html_s19" style="display:none;position:absolute"></div>
 <div id="html_s20" style="display:none;position:absolute"></div>
+<div id="html_s21" style="display:none;position:absolute"></div>
+<div id="html_s22" style="display:none;position:absolute"></div>
+<div id="html_s23" style="display:none;position:absolute"></div>
+<div id="html_s24" style="display:none;position:absolute"></div>
+<div id="html_s25" style="display:none;position:absolute"></div>
+<div id="html_s26" style="display:none;position:absolute"></div>
+<div id="html_s27" style="display:none;position:absolute"></div>
+<div id="html_s28" style="display:none;position:absolute"></div>
+<div id="html_s29" style="display:none;position:absolute"></div>
+<div id="html_s30" style="display:none;position:absolute"></div>
 
 <!-- slot alter_holder -->
 <div id="alt_html_s1" style="display:none;position:absolute"></div>
@@ -99,6 +129,35 @@
 <div id="alt_html_s18" style="display:none;position:absolute"></div>
 <div id="alt_html_s19" style="display:none;position:absolute"></div>
 <div id="alt_html_s20" style="display:none;position:absolute"></div>
+<div id="alt_html_s21" style="display:none;position:absolute"></div>
+<div id="alt_html_s22" style="display:none;position:absolute"></div>
+<div id="alt_html_s23" style="display:none;position:absolute"></div>
+<div id="alt_html_s24" style="display:none;position:absolute"></div>
+<div id="alt_html_s25" style="display:none;position:absolute"></div>
+<div id="alt_html_s26" style="display:none;position:absolute"></div>
+<div id="alt_html_s27" style="display:none;position:absolute"></div>
+<div id="alt_html_s28" style="display:none;position:absolute"></div>
+<div id="alt_html_s29" style="display:none;position:absolute"></div>
+<div id="alt_html_s30" style="display:none;position:absolute"></div>
+
+<!-- Html preview -->
+<div id="html_thumb" class="w3-card-4" style="width:200px;height:200px;position:absolute;left:210px;top:50px;display:none;z-index:10;overflow:hidden;background-color: white;">
+  <div id="html_thumb_content" class="html_thumb"></div>
+</div>
+
+<script>
+  var $el = $("#html_thumb");
+  function anim() {
+    var st = $el.scrollTop();
+    var sb = $el.prop("scrollHeight")-$el.innerHeight();
+    $el.animate({scrollTop: st<sb/2 ? sb : 0}, 2000, anim);
+  }
+  function stop(){
+    $el.stop();
+  }
+  anim();
+  $el.hover(stop, anim);
+</script>
 
 <!-- Magazine holder -->
 <div class="w3-display-topmiddle" style="margin-top:43px">
@@ -229,7 +288,7 @@ function openTab(evt, cityName) {
 function openSlot(evt) {
   var i, slotlinks;
   slotlinks = document.getElementsByClassName("slotlinks");
-  for (i = 0; i < 20; i++) {
+  for (i = 0; i < 30; i++) {
       slotlinks[i].className = slotlinks[i].className.replace(" w3-red", "");
   }
   evt.currentTarget.className += " w3-red";
@@ -451,6 +510,17 @@ document.getElementById("zip_button").addEventListener("click", function(){
 
 });
 </script>
+
+<script>
+  function showPreviewHtml(htmlcode){
+    document.getElementById('html_thumb').style.display = "block";
+    document.getElementById('html_thumb_content').innerHTML = htmlcode;
+  }
+  function closePreviewHtml(){
+    document.getElementById('html_thumb').style.display = "none";
+    document.getElementById('html_thumb_content').innerHTML = "";
+  }
+</script> 
 
 </body>
 </html>
