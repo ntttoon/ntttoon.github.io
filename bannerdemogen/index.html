@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Background Demo Gen</title>
+    <link rel="stylesheet" href="css/w3.css">
+    <script async src="js/jszip.js"> </script>
+    <script async src="js/FileSaver.js"> </script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="w3-bar w3-teal">
+        <div class="w3-bar-item">Banner demo offline gen by ntttoon</div>
+    </div>
+    
+    <div class="w3-container">
+        <p>
+            <div>Chọn Demo</div>
+            <select id="demochoice">
+                <option value="1" selected>Trang chủ</option>
+                <option value="2" >Trang chuyên mục top 100</option>
+                <option value="3" >Trang chuyên mục top 250</option>
+                <option value="4" >Trang bài viết top 100</option>
+                <option value="5" >Trang bài viết top 250</option>
+            </select>
+        </p>
+        <div class="w3-row">
+            <div class="w3-quarter">
+                <div>Up ảnh background trái</div>
+                <input id="left_bg" type="file" />
+                <div style="height: 20px"></div>
+                <div>Up ảnh background phải</div>
+                <input id="right_bg" type="file" />
+            </div>
+            <div class="w3-quarter" style="margin-bottom: 20px">
+                <div>Up ảnh top 1016x100</div>
+                <input id="top100" type="file" />
+                <div style="height: 20px"></div>
+                <div>Up ảnh top 1016x250</div>
+                <input id="top250" type="file" />
+            </div>
+            <div class="w3-quarter" style="margin-bottom: 20px">
+                <div>Up ảnh banner trung tâm trang chủ 696x120</div>
+                <input id="tttc" type="file" />
+                <div style="height: 20px"></div>
+                <div>Up ảnh banner hot 336x280</div>
+                <input id="hot" type="file" />
+            </div>
+            <div class="w3-quarter" style="margin-bottom: 20px">
+                <div>Up ảnh banner phải 1 300x600</div>
+                <input id="phai1" type="file" />
+                <div style="height: 20px"></div>
+                <div>Up ảnh banner trôi ngữ cảnh 300x600</div>
+                <input id="sticky" type="file" />
+                <div style="height: 20px"></div>
+                <div>Up ảnh banner phải 2 300x250</div>
+                <input id="phai2" type="file" />
+            </div>
+        </div>
+        <hr>
+        <p><button class="w3-button w3-red" id="zip_button">Save file</button></p>
+    </div>
+
+    <div style="display: none" id="img_banner_phai1"></div>
+    <div style="display: none" id="img_banner_phai2"></div>
+    <div style="display: none" id="img_banner_tttc"></div>
+    <div style="display: none" id="img_banner_hot"></div>
+    <div style="display: none" id="img_banner_sticky"></div>
+    <div style="display: none" id="img_banner_top100"></div>
+    <div style="display: none" id="img_banner_top250"></div>
+    <div style="display: none" id="img_left_holder"></div>
+    <div style="display: none" id="img_right_holder"></div>
+    <div style="display: none" id="img_page_holder"></div>
+    <div style="display: none" id="img_topmenu_holder"></div>
+    <!-- static html and image -->
+    <div style="display: none" id="html_index_holder"></div>
+    
+    <script>
+    document.getElementById("demochoice").addEventListener("change", function(){
+        //alert(this.value)
+        document.getElementById("html_index_holder").textContent = "";
+        document.getElementById("img_page_holder").textContent = "";
+        if(this.value == 1){
+            readTemplates("templates/trangchu.html","html_index_holder");
+            toDataURL('images/trangchu.jpg',function(dataUrl) {
+                document.getElementById("img_page_holder").textContent = dataUrl;
+            })
+        }
+        if(this.value == 2){
+            readTemplates("templates/trangcm1.html","html_index_holder");
+            toDataURL('images/trangtrong100.jpg',function(dataUrl) {
+                document.getElementById("img_page_holder").textContent = dataUrl;
+            })
+        }
+        if(this.value == 3){
+            readTemplates("templates/trangcm2.html","html_index_holder");
+            toDataURL('images/trangtrong250.jpg',function(dataUrl) {
+                document.getElementById("img_page_holder").textContent = dataUrl;
+            })
+        }
+        if(this.value == 4){
+            readTemplates("templates/trangct1.html","html_index_holder");
+            toDataURL('images/trangtrongct100.jpg',function(dataUrl) {
+                document.getElementById("img_page_holder").textContent = dataUrl;
+            })
+        }
+        if(this.value == 5){
+            readTemplates("templates/trangct2.html","html_index_holder");
+            toDataURL('images/trangtrongct250.jpg',function(dataUrl) {
+                document.getElementById("img_page_holder").textContent = dataUrl;
+            })
+        }
+    })
+
+    function readTemplates(path,div_holder){
+    var txtFile = new XMLHttpRequest();
+        txtFile.open("GET", path, true);
+        txtFile.onreadystatechange = function() {
+            if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
+                    if (txtFile.status === 200) {  // Makes sure it's found the file.
+                    allText = txtFile.responseText;
+                    //console.log(allText);
+                    //lines = txtFile.responseText.split("\n"); // Will separate each line into an array
+                    document.getElementById(div_holder).textContent = allText;
+                }
+            }
+        }
+        txtFile.send(null);
+    }
+    readTemplates("templates/trangchu.html","html_index_holder");
+
+    function readURL(input,div_holder) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                document.getElementById(div_holder).textContent = e.target.result;
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    document.getElementById("left_bg").addEventListener("change", function(){
+        readURL(this,"img_left_holder");
+    })
+    document.getElementById("right_bg").addEventListener("change", function(){
+        readURL(this,"img_right_holder");
+    })
+    document.getElementById("phai1").addEventListener("change", function(){
+        readURL(this,"img_banner_phai1");
+    })
+    document.getElementById("phai2").addEventListener("change", function(){
+        readURL(this,"img_banner_phai2");
+    })
+    document.getElementById("tttc").addEventListener("change", function(){
+        readURL(this,"img_banner_tttc");
+    })
+    document.getElementById("hot").addEventListener("change", function(){
+        readURL(this,"img_banner_hot");
+    })
+    document.getElementById("sticky").addEventListener("change", function(){
+        readURL(this,"img_banner_sticky");
+    })
+    document.getElementById("top100").addEventListener("change", function(){
+        readURL(this,"img_banner_top100");
+    })
+    document.getElementById("top250").addEventListener("change", function(){
+        readURL(this,"img_banner_top250");
+    })
+    /////////////////////////
+    function toDataURL(url, callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.onload = function() {
+            var reader = new FileReader();
+            reader.onloadend = function() {
+            callback(reader.result);
+            }
+            reader.readAsDataURL(xhr.response);
+        };
+        xhr.open('GET', url);
+        xhr.responseType = 'blob';
+        xhr.send();
+    }
+    /////////////////////////
+    toDataURL('images/top_menu.jpg',function(dataUrl) {
+            document.getElementById("img_topmenu_holder").textContent = dataUrl;
+        }
+    )
+    toDataURL('images/trangchu.jpg',function(dataUrl) {
+            document.getElementById("img_page_holder").textContent = dataUrl;
+        }
+    )
+    /////////////////////////
+    document.getElementById("zip_button").addEventListener("click", function(){
+
+        var zip = new JSZip();
+
+        //HTML file index.html
+        var data_html = document.getElementById("html_index_holder").textContent;
+        //Image page
+        var data_page = document.getElementById("img_page_holder").textContent;
+        //Image topmenu
+        var data_topmenu = document.getElementById("img_topmenu_holder").textContent;
+        //Image left bg
+        var data_leftbg = document.getElementById("img_left_holder").textContent;
+        //Image right bg
+        var data_rightbg = document.getElementById("img_right_holder").textContent;
+        //Image banners
+        var data_phai1 = document.getElementById("img_banner_phai1").textContent;
+        var data_phai2 = document.getElementById("img_banner_phai2").textContent;
+        var data_hot = document.getElementById("img_banner_hot").textContent;
+        var data_tttc = document.getElementById("img_banner_tttc").textContent;
+        var data_sticky = document.getElementById("img_banner_sticky").textContent;
+        var data_top100 = document.getElementById("img_banner_top100").textContent;
+        var data_top250 = document.getElementById("img_banner_top250").textContent;
+
+        var assets = zip.folder("images");
+
+        zip.file("index.html", data_html);
+        assets.file("24h.jpg", data_page.substr(data_page.indexOf(',')+1), {base64: true});
+        assets.file("top_menu.jpg", data_topmenu.substr(data_page.indexOf(',')+1), {base64: true});
+        assets.file("bg_left.jpg", data_leftbg.substr(data_leftbg.indexOf(',')+1), {base64: true});
+        assets.file("bg_right.jpg", data_rightbg.substr(data_rightbg.indexOf(',')+1), {base64: true});
+        assets.file("300600.jpg", data_phai1.substr(data_phai1.indexOf(',')+1), {base64: true});
+        assets.file("300250.jpg", data_phai2.substr(data_phai2.indexOf(',')+1), {base64: true});
+        assets.file("336280.jpg", data_hot.substr(data_hot.indexOf(',')+1), {base64: true});
+        assets.file("696120.jpg", data_tttc.substr(data_tttc.indexOf(',')+1), {base64: true});
+        assets.file("sticky.jpg", data_sticky.substr(data_sticky.indexOf(',')+1), {base64: true});
+        assets.file("1016100.jpg", data_top100.substr(data_top100.indexOf(',')+1), {base64: true});
+        assets.file("1016250.jpg", data_top250.substr(data_top250.indexOf(',')+1), {base64: true});
+
+        var filename = prompt("Đặt tên cho file zip.\nLưu ý: Không nên đặt tên Tiếng Việt có dấu, ký tự lạ, không cần thêm .zip", "banner");
+        if (filename != null) {
+            zip.generateAsync({type:"blob"})
+            .then(function(content) {
+                saveAs(content, filename + ".zip");
+            });
+        }
+
+    })
+    </script>
+</body>
+</html>
