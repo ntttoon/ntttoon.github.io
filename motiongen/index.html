@@ -1,0 +1,223 @@
+﻿
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GSAP Template Animation Creator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.noUnderline{
+	text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+<header class="w3-container w3-teal">
+	<h5>GSAP Template Animation Creator</h5>
+</header>
+<div class="w3-container">
+    <p><label><span class="w3-text-red">* </span>Đặt tên cho MC trong Animate CC, nhập tên cho MC vào ô dưới.</label>
+    <input class="w3-input w3-border" id="mc" type="text"></p>
+
+    <label>Tạo Animation In</label>
+        <div class="w3-row">
+            <select class="w3-select w3-border w3-third" id="in">
+                <option value="0" selected>Từ nhỏ phóng to - Power 3</option>
+                <option value="1" selected>Từ nhỏ phóng to - Elastic</option>
+                <option value="2" >Từ to thu nhỏ - Power 3</option>
+                <option value="3" selected>Từ to thu nhỏ - Elastic</option>
+                <option value="4" selected>Xoay từ nhỏ phóng to - Power 3</option>
+                <option value="5" selected>Xoay từ nhỏ phóng to - Elastic</option>
+                <option value="6" >Xoay từ to thu nhỏ - Power 3</option>
+                <option value="7" selected>Xoay từ to thu nhỏ - Elastic</option>
+                <option value="8" selected>Hiện dần - Power 3</option>
+                <option value="9" selected>Di chuyển từ trái/phải - Power 3</option>
+                <option value="10" selected>Di chuyển từ trái/phải - Elastic</option>
+                <option value="11" selected>Di chuyển từ trên/dưới - Power 3</option>
+                <option value="12" selected>Di chuyển từ trên/dưới - Elastic</option>
+            </select>
+            <select class="w3-select w3-border w3-third" id="time_in">
+                <option selected> </option>
+                <option >, "-=0.5"</option>
+                <option >, "-=1"</option>
+                <option >, "+=0.5"</option>
+                <option >, "+=1"</option>
+            </select>
+            <select class="w3-select w3-border w3-third" id="complete_in">
+                <option selected> </option>
+                <option >,onComplete:function(){console.log("Hello world!");}</option>
+            </select>
+        </div>
+        <div id="code_out_effectin" class="w3-yellow"></div>
+        <p><button class="w3-btn w3-teal" id="gen_in" onclick="ani_in()">Tạo</button> <button class="w3-btn w3-teal" id="gen_in" onclick="copyTxt('code_out_effectin')">Copy</button></p>
+
+    <label>Tạo Animation Out</label>
+    <div class="w3-row">
+        <select class="w3-select w3-border w3-third" id="out">
+            <option value="0" selected>Biến mất</option>
+            <option value="1" selected>Phóng to biến mất</option>
+            <option value="2" selected>Thu nhỏ biến mất</option>
+            <option value="3" selected>Di chuyển sang trái/phải - Power 3</option>
+            <option value="4" selected>Di chuyển sang trên/dưới - Power 3</option>
+        </select>
+        <select class="w3-select w3-border w3-third" id="time_out">
+            <option selected> </option>
+            <option >, "-=0.5"</option>
+            <option >, "-=1"</option>
+            <option >, "+=0.5"</option>
+            <option >, "+=1"</option>
+        </select>
+        <select class="w3-select w3-border w3-third" id="complete_out">
+            <option selected> </option>
+            <option >,onComplete:function(){console.log("Hello world!");}</option>
+        </select>
+    </div>
+    <div id="code_out_effectout" class="w3-yellow"></div>
+    <p><button class="w3-btn w3-teal" id="gen_out" onclick="ani_out()">Tạo</button> <button class="w3-btn w3-teal" id="gen_in" onclick="copyTxt('code_out_effectout')">Copy</button></p>
+
+    <p><label><span class="w3-text-red">* </span>Tạo Animation liên hoàn. Nhập tên các MC vào ô dưới, cách nhau dấu phẩy. Ví dụ: xe1,xe2,xe3</label>
+    <input class="w3-input w3-border" id="mcs" type="text"></p>
+
+    <div id="code_out_stagger" class="w3-yellow"></div>
+    <p><button class="w3-btn w3-teal" id="gen_stagger" onclick="ani_stagger()">Tạo</button> <button class="w3-btn w3-teal" id="gen_in" onclick="copyTxt('code_out_stagger')">Copy</button></p>
+</div>
+
+<div class="w3-container">
+<textarea class="w3-input w3-border" rows="4" id="code_out">
+function replay(){
+    myVar = setTimeout(function(){ tl.restart(); }, 5000);
+}
+var tl = new TimelineLite({onComplete:replay})</textarea>
+</div>
+
+  <script>
+    var code_effectin =  document.getElementById("code_out_effectin");
+    var code_effectout =  document.getElementById("code_out_effectout");
+    var selectin = document.getElementById("in");
+    var selectout = document.getElementById("out");
+
+    function ani_in() {
+        var mc = change_alias(document.getElementById("mc").value);
+        var time_in = document.getElementById("time_in");
+        var text_time_in= time_in.options[time_in.selectedIndex].text;
+        var complete_in = document.getElementById("complete_in");
+        var text_complete_in= complete_in.options[complete_in.selectedIndex].text;
+        
+        if(mc==""){
+            alert("Bạn chưa nhập tên MC");
+        }
+        else if(selectin.value == "0"){
+            code_effectin.innerHTML = ".from(this." + mc + ", 1, {<b>scaleX:0.1,scaleY:0.1,alpha:0,ease: Power3.easeOut" + text_complete_in + "</b>}" + text_time_in + ")";
+        }
+        else if(selectin.value == "1"){
+            code_effectin.innerHTML = ".from(this." + mc + ", 1, {<b>scaleX:0.1,scaleY:0.1,alpha:0,ease: Elastic.easeOut.config(1.5, 1)" + text_complete_in + "</b>}" + text_time_in + ")";
+        }
+        else if(selectin.value == "2"){
+            code_effectin.innerHTML = ".from(this." + mc + ", 1, {<b>scaleX:3,scaleY:3,alpha:0,ease: Power3.easeOut" + text_complete_in + "</b>}" + text_time_in + ")";
+        }
+        else if(selectin.value == "3"){
+            code_effectin.innerHTML = ".from(this." + mc + ", 1, {<b>scaleX:3,scaleY:3,alpha:0,ease: Elastic.easeOut.config(1.5, 1)" + text_complete_in + "</b>}" + text_time_in + ")";
+        }
+        else if(selectin.value == "4"){
+            code_effectin.innerHTML = ".from(this." + mc + ", 1, {<b>scaleX:0.1,scaleY:0.1,rotation:-60,alpha:0,ease: Power3.easeOut" + text_complete_in + "</b>}" + text_time_in + ")";
+        }
+        else if(selectin.value == "5"){
+            code_effectin.innerHTML = ".from(this." + mc + ", 2, {<b>scaleX:0.1,scaleY:0.1,rotation:-60,alpha:0,ease: Elastic.easeOut.config(1.5, 1)" + text_complete_in + "</b>}" + text_time_in + ")";
+        }
+        else if(selectin.value == "6"){
+            code_effectin.innerHTML = ".from(this." + mc + ", 1, {<b>scaleX:3,scaleY:3,rotation:-60,alpha:0,ease: Power3.easeOut" + text_complete_in + "</b>}" + text_time_in + ")";
+        }
+        else if(selectin.value == "7"){
+            code_effectin.innerHTML = ".from(this." + mc + ", 2, {<b>scaleX:3,scaleY:3,rotation:-60,alpha:0,ease: Elastic.easeOut.config(1.5, 1)" + text_complete_in + "</b>}" + text_time_in + ")";
+        }
+        else if(selectin.value == "8"){
+            code_effectin.innerHTML = ".from(this." + mc + ", 1, {<b>alpha:0,ease: Power3.easeOut" + text_complete_in + "</b>}" + text_time_in + ")";
+        }
+        else if(selectin.value == "9"){
+            code_effectin.innerHTML = '.from(this.' + mc + ', 1, {<b>x:"+=200",alpha:0,ease: Power3.easeOut' + text_complete_in + '</b>}' + text_time_in + ')';
+        }
+        else if(selectin.value == "10"){
+            code_effectin.innerHTML = '.from(this.' + mc + ', 1, {<b>x:"+=200",alpha:0,ease: Elastic.easeOut.config(1.5, 1)' + text_complete_in + '</b>}' + text_time_in + ')';
+        }
+        else if(selectin.value == "11"){
+            code_effectin.innerHTML = '.from(this.' + mc + ', 1, {<b>y:"+=200",alpha:0,ease: Power3.easeOut' + text_complete_in + '</b>}' + text_time_in + ')';
+        }
+        else if(selectin.value == "12"){
+            code_effectin.innerHTML = '.from(this.' + mc + ', 1, {<b>y:"+=200",alpha:0,ease: Elastic.easeOut.config(1.5, 1)' + text_complete_in + '</b>}' + text_time_in + ')';
+        }
+    }
+
+    function ani_out() {
+        var mc = change_alias(document.getElementById("mc").value);
+        var time_out = document.getElementById("time_out");
+        var text_time_out= time_out.options[time_out.selectedIndex].text;
+        var complete_out = document.getElementById("complete_out");
+        var text_complete_out= complete_out.options[complete_out.selectedIndex].text;
+        
+        if(mc==""){
+            alert("Bạn chưa nhập tên MC");
+        }
+        else if(selectout.value == "0"){
+            code_effectout.innerHTML = ".to(this." + mc + ", 1, {<b>alpha:0,ease: Power3.easeOut" + text_complete_out + "</b>}" + text_time_out + ")";
+        }
+        else if(selectout.value == "1"){
+            code_effectout.innerHTML = ".to(this." + mc + ", 1, {<b>scaleX:3,scaleY:3,alpha:0,ease: Power3.easeOut" + text_complete_out + "</b>}" + text_time_out + ")";
+        }
+        else if(selectout.value == "2"){
+            code_effectout.innerHTML = ".to(this." + mc + ", 1, {<b>scaleX:0.1,scaleY:0.1,alpha:0,ease: Power3.easeOut" + text_complete_out + "</b>}" + text_time_out + ")";
+        }
+        else if(selectout.value == "3"){
+            code_effectout.innerHTML = '.to(this.' + mc + ', 1, {<b>x:"+=200",alpha:0,ease: Power3.easeOut' + text_complete_out + '</b>}' + text_time_out + ')';
+        }
+        else if(selectout.value == "4"){
+            code_effectout.innerHTML = '.to(this.' + mc + ', 1, {<b>y:"+=200",alpha:0,ease: Power3.easeOut' + text_complete_out + '</b>}' + text_time_out + ')';
+        }
+    }
+    
+    function ani_stagger() {
+        var mcs = document.getElementById("mcs").value;
+        var mcs_array = mcs.split(",");
+        var fcode_out_stagger = "";
+        var code_out_stagger = document.getElementById("code_out_stagger");
+        for(i=0;i<mcs_array.length;i++){
+            fcode_out_stagger += "this." + change_alias(mcs_array[i]) + ",";
+        }
+        code_out_stagger.innerHTML = '.staggerFrom([' + fcode_out_stagger.substring(0, fcode_out_stagger.length - 1) + '], 1, {<b>x:"+=200",alpha:0,ease: Power3.easeOut</b>}, 0.2, "-=0,5")';
+    }
+
+    function change_alias(alias) {
+        var str = alias;
+        str = str.toLowerCase();
+        str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g,"a"); 
+        str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g,"e"); 
+        str = str.replace(/ì|í|ị|ỉ|ĩ/g,"i"); 
+        str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g,"o"); 
+        str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g,"u"); 
+        str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g,"y"); 
+        str = str.replace(/đ/g,"d");
+        str = str.replace(/!|@|%|\^|\*|\(|\)|\+|\=|\<|\>|\?|\/|,|\.|\:|\;|\'|\"|\&|\#|\[|\]|~|\$|_|`|-|{|}|\||\\/g," ");
+        str = str.replace(/ + /g," ");
+        str = str.trim();
+        str = str.replace(/\s+/g, '');
+        return str;
+    }
+
+    function copyTxt(myLink) {
+        /* Get the text field */
+        var copyText = document.getElementById(myLink);
+
+        /* Select the text field */
+        //copyText.select();
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+
+        /* Alert the copied text */
+        alert("Đã copy vào bộ nhớ: \n" + copyText.innerText);
+    }
+
+  </script>
+</body>
+</html>
