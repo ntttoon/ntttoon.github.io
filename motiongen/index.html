@@ -146,7 +146,7 @@ var tl = new TimelineLite({onComplete:replay})</textarea>
         for(i=0;i<mcs_array.length;i++){
             fcode_out_stagger += "this." + change_alias(mcs_array[i]) + ",";
         }
-        code_out_stagger.innerHTML = '.staggerFrom([' + fcode_out_stagger.substring(0, fcode_out_stagger.length - 1) + '], 1, {<b>x:"+=200",alpha:0,ease: Power3.easeOut</b>}, 0.2, "-=0,5")';
+        code_out_stagger.innerHTML = '.staggerFrom([' + fcode_out_stagger.substring(0, fcode_out_stagger.length - 1) + '], 1, {<b>alpha:0</b>}, 0.2, "-=0,5")';
     }
 
     function change_alias(alias) {
