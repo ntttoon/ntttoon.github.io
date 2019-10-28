@@ -78,7 +78,7 @@
                     var img = data.gallery[i].image;
                     var cat = data.gallery[i].cat;
                     //console.log(thumb);
-                    $( "#gallery1" ).append('<img class="thumb" src="' + thumb +  '" onclick="addImage(&#39;' + img + '&#39;)">');
+                    //$( "#gallery1" ).append('<img class="thumb" src="' + thumb +  '" onclick="addImage(&#39;' + img + '&#39;)">');
                     if(cat==1){
                         $( "#cat1Style" ).append('<a href="#" class="thumbStyleBtn" onclick="changeStyle(&#39;' + img + '&#39;)">' + '<img class="thumbStyle" src="' + thumb + '"</a>');
                     }
@@ -103,7 +103,6 @@
                     if(cat==8){
                         $( "#cat8Style" ).append('<a href="#" class="thumbStyleBtn" onclick="changeStyle(&#39;' + img + '&#39;)">' + '<img class="thumbStyle" src="' + thumb + '"</a>');
                     }
-                    
                 }
             })
             .fail(function () {
@@ -127,6 +126,9 @@
     })
 </script>
 <style>
+    html{
+        background: #282828;
+    }
     .thumb{
         border: 1px solid #cccccc;
         margin-bottom: 0;
@@ -317,7 +319,6 @@
         <div class="w3-bar w3-center w3-display-bottommiddle w3-hide" id="cat6Style"></div>
         <div class="w3-bar w3-center w3-display-bottommiddle w3-hide" id="cat7Style"></div>
         <div class="w3-bar w3-center w3-display-bottommiddle w3-hide" id="cat8Style"></div>
-
     <!-- Modal image panel -->
     <div id="imgGallery" class="w3-modal">
         <div class="w3-modal-content w3-card-4">

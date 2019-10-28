@@ -180,7 +180,7 @@ textNode.on('dblclick', () => {
 // create text layer 2
 
 var textNode2 = new Konva.Text({
-	text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac molestie ipsum. Curabitur imperdiet faucibus aliquam.',
+	text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 	x: 20,
 	y: 70,
 	fontSize: 20,
@@ -418,6 +418,7 @@ function execTemplate(width,height,image1_path,image1_x,image1_y,image1_scalex,i
 	document.getElementById("txt_color").value = txt_fill;
 	document.getElementById("txt_color").style.background = '#' + txt_fill;
 	document.getElementById("txt_fonts").value = txt_font;
+	document.getElementById("txt_lineheight").value = txt_lineheight;
 	// add text 2
 	textNode2.x(txt2_x);
 	textNode2.y(txt2_y);
@@ -434,6 +435,7 @@ function execTemplate(width,height,image1_path,image1_x,image1_y,image1_scalex,i
 	document.getElementById("txt2_color").value = txt2_fill;
 	document.getElementById("txt2_color").style.background = '#' + txt2_fill;
 	document.getElementById("txt2_fonts").value = txt2_font;
+	document.getElementById("txt2_lineheight").value = txt2_lineheight;
 }
 
 slider1.onchange = function() {
