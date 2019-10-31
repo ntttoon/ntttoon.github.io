@@ -25,7 +25,7 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 ::-webkit-input-placeholder{color:inherit;opacity:0.54}
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 /* End extract */
-html,body{font-family:'Roboto', sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+html,body{font-family:'Noto Serif', serif;font-size:18px;line-height:1.5}html{overflow-x:hidden}
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .mg-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 .mg-container:after,.mg-container:before,.mg-panel:after,.mg-panel:before,.mg-row:after,.mg-row:before,.mg-row-padding:after,.mg-row-padding:before,
