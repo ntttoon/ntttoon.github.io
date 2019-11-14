@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Background Demo Gen</title>
+    <link rel="stylesheet" href="css/w3.css">
+    <script async src="js/jszip.js"> </script>
+    <script async src="js/jszip-utils.js"> </script>
+    <script async src="js/FileSaver.js"> </script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="w3-bar w3-teal">
+        <div class="w3-bar-item">Banner demo offline gen by ntttoon (for mobile)</div>
+        <a href="index.html" class="w3-bar-item w3-button w3-red w3-right">For PC</a>
+    </div>
+    
+    <div class="w3-container">
+        <p></p>
+        <div class="w3-row">
+            <div class="w3-quarter">
+                <div>Up ảnh banner top 320x100</div>
+                <input id="banner_top" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div style="height: 20px"></div>
+                <div>Up ảnh banner ttsp chân bài viết 320x100</div>
+                <input id="banner_ttsp" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            </div>
+            <div class="w3-quarter" style="margin-bottom: 20px">
+                <div>Up ảnh banner center 1</div>
+                <input id="banner_center1" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div style="height: 20px"></div>
+                <div>Up ảnh banner center 2</div>
+                <input id="banner_center2" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            </div>
+            <div class="w3-quarter" style="margin-bottom: 20px">
+                <div>Up ảnh banner inpage</div>
+                <input id="banner_inpage" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            </div>
+        </div>
+        <h4>Các file đi kèm</h4>
+        <form action="#" id="download_form">
+            <p>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/index.html" data-folder="false" checked />
+                    index.html
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/style.css" data-folder="true" checked />
+                    style.css
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/24h-092018-load-sau-mobile.min.js" data-folder="true" checked />
+                    24h-092018-load-sau-mobile.min.js
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/common_092018_mobile.min.js" data-folder="true" checked />
+                    common_092018_mobile.min.js
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/jquery.min.js" data-folder="true" checked />
+                    jquery.min.js
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/anhbai1.jpg" data-folder="true" checked />
+                    anhbai1.jpg
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/anhbai2.jpg" data-folder="true" checked />
+                    anhbai2.jpg
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/icon_24h_2018.png" data-folder="true" checked />
+                    icon_24h_2018.png
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/icon_bongda.png" data-folder="true" checked />
+                    icon_bongda.png
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/icon_fb50_2018.png" data-folder="true" checked />
+                    icon_fb50_2018.png
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/icon_gg50_2018.png" data-folder="true" checked />
+                    icon_gg50_2018.png
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/icon_hinhsu.png" data-folder="true" checked />
+                    icon_hinhsu.png
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/icon_hot.png" data-folder="true" checked />
+                    icon_hot.png
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/icon_tintuc.png" data-folder="true" checked />
+                    icon_tintuc.png
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/logo24h.png" data-folder="true" checked />
+                    logo24h.png
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/thumb01.jpg" data-folder="true" checked />
+                    thumb01.jpg
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/thumb02.jpg" data-folder="true" checked />
+                    thumb02.jpg
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/thumb03.jpg" data-folder="true" checked />
+                    thumb03.jpg
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/thumb04.jpg" data-folder="true" checked />
+                    thumb04.jpg
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/thumb05.jpg" data-folder="true" checked />
+                    thumb05.jpg
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/thumb06.jpg" data-folder="true" checked />
+                    thumb06.jpg
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/thumb07.jpg" data-folder="true" checked />
+                    thumb07.jpg
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/thumb08.jpg" data-folder="true" checked />
+                    thumb08.jpg
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/thumb09.jpg" data-folder="true" checked />
+                    thumb09.jpg
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/thumb10.jpg" data-folder="true" checked />
+                    thumb10.jpg
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/thumb11.jpg" data-folder="true" checked />
+                    thumb11.jpg
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="mobile_template/images/thumb12.jpg" data-folder="true" checked />
+                    thumb12.jpg
+                </label>
+            </p>
+            <button type="submit" class="w3-button w3-red">Save file</button>
+        </form>
+    </div>
+
+    <div style="display: none" id="img_banner_top"></div>
+    <div style="display: none" id="img_banner_ttsp"></div>
+    <div style="display: none" id="img_banner_center1"></div>
+    <div style="display: none" id="img_banner_center2"></div>
+    <div style="display: none" id="img_banner_inpage"></div>
+
+<script>
+    function readURL(input,div_holder) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                document.getElementById(div_holder).textContent = e.target.result;
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    document.getElementById("banner_top").addEventListener("change", function(){
+        readURL(this,"img_banner_top");
+    })
+    document.getElementById("banner_ttsp").addEventListener("change", function(){
+        readURL(this,"img_banner_ttsp");
+    })
+    document.getElementById("banner_center1").addEventListener("change", function(){
+        readURL(this,"img_banner_center1");
+    })
+    document.getElementById("banner_center2").addEventListener("change", function(){
+        readURL(this,"img_banner_center2");
+    })
+    document.getElementById("banner_inpage").addEventListener("change", function(){
+        readURL(this,"img_banner_inpage");
+    })
+    /////////////////////////
+    var Promise = window.Promise;
+    if (!Promise) {
+        Promise = JSZip.external.Promise;
+    }
+
+    /**
+    * Fetch the content and return the associated promise.
+    * @param {String} url the url of the content to fetch.
+    * @return {Promise} the promise containing the data.
+    */
+    function urlToPromise(url) {
+        return new Promise(function(resolve, reject) {
+            JSZipUtils.getBinaryContent(url, function (err, data) {
+                if(err) {
+                    reject(err);
+                } else {
+                    resolve(data);
+                }
+            });
+        });
+    }
+
+    var $form = $("#download_form").on("submit", function () {
+
+        var zip = new JSZip();
+        var assets = zip.folder("images");
+        var data_top = document.getElementById("img_banner_top").textContent;
+        var data_ttsp = document.getElementById("img_banner_ttsp").textContent;
+        var data_center1 = document.getElementById("img_banner_center1").textContent;
+        var data_center2 = document.getElementById("img_banner_center2").textContent;
+        var data_inpage = document.getElementById("img_banner_inpage").textContent;
+        ///////////
+        assets.file("banner_top.jpg", data_top.substr(data_top.indexOf(',')+1), {base64: true});
+        assets.file("banner_ttsp.jpg", data_ttsp.substr(data_ttsp.indexOf(',')+1), {base64: true});
+        assets.file("banner_center1.jpg", data_center1.substr(data_center1.indexOf(',')+1), {base64: true});
+        assets.file("banner_center2.jpg", data_center2.substr(data_center2.indexOf(',')+1), {base64: true});
+        assets.file("banner_inpage.jpg", data_inpage.substr(data_inpage.indexOf(',')+1), {base64: true});
+
+        // find every checked item
+        $(this).find(":checked").each(function () {
+            var $this = $(this);
+            var url = $this.data("url");
+            var filename = url.replace(/.*\//g, "");
+            var checkfolder = $this.data("folder");
+            if(checkfolder == true){
+                zip.file("images/" + filename, urlToPromise(url), {binary:true});
+            }else{
+                zip.file(filename, urlToPromise(url), {binary:true});
+            }
+        });
+
+        // when everything has been downloaded, we can trigger the dl
+        zip.generateAsync({type:"blob"}, function updateCallback(metadata) {
+            var msg = "progression : " + metadata.percent.toFixed(2) + " %";
+            if(metadata.currentFile) {
+                msg += ", current file = " + metadata.currentFile;
+            }
+        })
+        .then(function callback(blob) {
+            var filename = prompt("Đặt tên cho file zip.\nLưu ý: Không nên đặt tên Tiếng Việt có dấu, ký tự lạ, không cần thêm .zip", "banner");
+            if (filename != null) {
+                zip.generateAsync({type:"blob"})
+                .then(function(content) {
+                    saveAs(content, filename + ".zip");
+                });
+            }
+        }, function (e) {
+            alert(e);
+        });
+        return false;
+    });
+
+</script>
+</body>
+</html>
