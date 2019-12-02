@@ -188,6 +188,42 @@
     <div style="display: none" id="img_banner_inpage"></div>
 
 <script>
+    ///////////////////////// Load images and convert to uri data
+    function toDataURL(url, callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.onload = function() {
+            var reader = new FileReader();
+            reader.onloadend = function() {
+            callback(reader.result);
+            }
+            reader.readAsDataURL(xhr.response);
+        };
+        xhr.open('GET', url);
+        xhr.responseType = 'blob';
+        xhr.send();
+    }
+    ///////////////////////// Preload blue banners
+    toDataURL('mobile_template/images/top.jpg',function(dataUrl) {
+            document.getElementById("img_banner_top").textContent = dataUrl;
+        }
+    )
+    toDataURL('mobile_template/images/top.jpg',function(dataUrl) {
+            document.getElementById("img_banner_ttsp").textContent = dataUrl;
+        }
+    )
+    toDataURL('mobile_template/images/center.jpg',function(dataUrl) {
+            document.getElementById("img_banner_center1").textContent = dataUrl;
+        }
+    )
+    toDataURL('mobile_template/images/center.jpg',function(dataUrl) {
+            document.getElementById("img_banner_center2").textContent = dataUrl;
+        }
+    )
+    toDataURL('mobile_template/images/inpage.jpg',function(dataUrl) {
+            document.getElementById("img_banner_inpage").textContent = dataUrl;
+        }
+    )
+    /////////////////////////
     function readURL(input,div_holder) {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
