@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {
     'use strict';
 
     // Adds the language variables
@@ -6,6 +6,15 @@
         langs: {
             en: {
                 template: 'Template'
+            },
+            da: {
+                template: 'Skabelon'
+            },
+            de: {
+                template: 'Vorlage'
+            },
+            fr: {
+                template: 'Patron'
             },
             nl: {
                 template: 'Sjabloon'
@@ -15,7 +24,19 @@
             },
             ja: {
                 template: 'テンプレート'
-            }
+            },
+            tr: {
+                template: 'Şablon'
+            },
+            zh_tw: {
+                template: '模板',
+            },
+            pt_br: {
+                template: 'Modelo'
+            },
+            ko: {
+                template: '서식'
+            },
         }
     });
 
@@ -23,10 +44,10 @@
     $.extend(true, $.trumbowyg, {
         plugins: {
             template: {
-                shouldInit: function(trumbowyg) {
+                shouldInit: function (trumbowyg) {
                     return trumbowyg.o.plugins.hasOwnProperty('templates');
                 },
-                init: function(trumbowyg) {
+                init: function (trumbowyg) {
                     trumbowyg.addBtnDef('template', {
                         dropdown: templateSelector(trumbowyg),
                         hasIcon: false,
@@ -42,9 +63,9 @@
         var available = trumbowyg.o.plugins.templates;
         var templates = [];
 
-        $.each(available, function(index, template) {
+        $.each(available, function (index, template) {
             trumbowyg.addBtnDef('template_' + index, {
-                fn: function(){
+                fn: function () {
                     trumbowyg.html(template.html);
                 },
                 hasIcon: false,

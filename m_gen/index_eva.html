@@ -11,9 +11,7 @@
 <link href="trumbowyg/ui/trumbowyg.min.css" rel="stylesheet">
 <script src="trumbowyg/trumbowyg.min.js"></script>
 <!-- include trumbowyg plugins -->
-<link href="trumbowyg/plugins/colors/ui/trumbowyg.colors.css" rel="stylesheet">
-<script src="trumbowyg/plugins/colors/trumbowyg.colors.min.js"></script>
-<script src="trumbowyg/plugins/noembed/trumbowyg.noembed.min.js"></script>
+<script src="trumbowyg/plugins/template/trumbowyg.template.min.js"></script>
 </head>
 <style>
 .html_thumb {
@@ -484,26 +482,31 @@ function youtubeGen(){
 <script>
 $('#paragraph,#paragraph_left,#paragraph_right').trumbowyg({
 	svgPath: 'trumbowyg/ui/icons.svg',
-    autogrow: false,
+  autogrow: false,
 	resetCss: false,
 	removeformatPasted: true,
 	btns: [
         ['viewHTML'],
-        ['undo', 'redo'], // Only supported in Blink browsers
-        ['formatting'],
-        ['strong', 'em', 'del'],
-        ['superscript', 'subscript'],
-		['foreColor', 'backColor'],
-        ['link'],
-        ['insertImage'],
-		['noembed'],
+        ['strong', 'em'],
         ['justifyLeft', 'justifyCenter', 'justifyRight', 'justifyFull'],
-        ['unorderedList', 'orderedList'],
-        ['horizontalRule'],
-        ['removeformat'],
-        ['fullscreen']
-    ]
+        ['template']
+    ],
+  plugins: {
+      templates: [
+          {
+              name: 'Paragraph mẫu',
+              html: '<p style="text-align: justify;margin-top: 1em;margin-bottom: 1em">enable_html_mode_and_paste</p>'
+          }
+      ]
+  }
 });
+
+$('#paragraph').trumbowyg('toggle');
+$('#paragraph_left').trumbowyg('toggle');
+$('#paragraph_right').trumbowyg('toggle');
+$('#paragraph').trumbowyg('html', '<p style="text-align: justify;margin-top: 1em;margin-bottom: 1em">paste_text_here</p>');
+$('#paragraph_left').trumbowyg('html', '<p style="text-align: justify;margin-top: 1em;margin-bottom: 1em">paste_text_here</p>');
+$('#paragraph_right').trumbowyg('html', '<p style="text-align: justify;margin-top: 1em;margin-bottom: 1em">paste_text_here</p>');
 </script>
 
 <script async src="js/FileSaver.js"> </script> 
