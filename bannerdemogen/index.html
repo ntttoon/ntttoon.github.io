@@ -29,11 +29,17 @@
         </p>
         <div class="w3-row">
             <div class="w3-quarter">
-                <div>Up ảnh background trái</div>
+                <div>Up ảnh background <strong>trái 444</strong></div>
                 <input id="left_bg" type="file" accept="image/x-png,image/gif,image/jpeg" />
                 <div style="height: 20px"></div>
-                <div>Up ảnh background phải</div>
+                <div>Up ảnh background <strong>trái 205</strong></div>
+                <input id="left_bgs" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div style="height: 20px"></div>
+                <div>Up ảnh background <strong>phải 444</strong></div>
                 <input id="right_bg" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div style="height: 20px"></div>
+                <div>Up ảnh background <strong>phải 205</strong></div>
+                <input id="right_bgs" type="file" accept="image/x-png,image/gif,image/jpeg" />
             </div>
             <div class="w3-quarter" style="margin-bottom: 20px">
                 <div>Up ảnh top 1016x100</div>
@@ -73,6 +79,8 @@
     <div style="display: none" id="img_banner_top250"></div>
     <div style="display: none" id="img_left_holder"></div>
     <div style="display: none" id="img_right_holder"></div>
+    <div style="display: none" id="img_lefts_holder"></div>
+    <div style="display: none" id="img_rights_holder"></div>
     <div style="display: none" id="img_page_holder"></div>
     <div style="display: none" id="img_topmenu_holder"></div>
     <!-- static html and image -->
@@ -149,6 +157,12 @@
     document.getElementById("right_bg").addEventListener("change", function(){
         readURL(this,"img_right_holder");
     })
+    document.getElementById("left_bgs").addEventListener("change", function(){
+        readURL(this,"img_lefts_holder");
+    })
+    document.getElementById("right_bgs").addEventListener("change", function(){
+        readURL(this,"img_rights_holder");
+    })
     document.getElementById("phai1").addEventListener("change", function(){
         readURL(this,"img_banner_phai1");
     })
@@ -210,6 +224,10 @@
         var data_leftbg = document.getElementById("img_left_holder").textContent;
         //Image right bg
         var data_rightbg = document.getElementById("img_right_holder").textContent;
+        //Image left bg small
+        var data_leftbgs = document.getElementById("img_lefts_holder").textContent;
+        //Image right bg small
+        var data_rightbgs = document.getElementById("img_rights_holder").textContent;
         //Image banners
         var data_phai1 = document.getElementById("img_banner_phai1").textContent;
         var data_phai2 = document.getElementById("img_banner_phai2").textContent;
@@ -225,15 +243,39 @@
         zip.file("jquery.sticky.js", data_js_sticky);
         assets.file("24h.jpg", data_page.substr(data_page.indexOf(',')+1), {base64: true});
         assets.file("top_menu.jpg", data_topmenu.substr(data_page.indexOf(',')+1), {base64: true});
-        assets.file("bg_left.jpg", data_leftbg.substr(data_leftbg.indexOf(',')+1), {base64: true});
-        assets.file("bg_right.jpg", data_rightbg.substr(data_rightbg.indexOf(',')+1), {base64: true});
-        assets.file("300600.jpg", data_phai1.substr(data_phai1.indexOf(',')+1), {base64: true});
-        assets.file("300250.jpg", data_phai2.substr(data_phai2.indexOf(',')+1), {base64: true});
-        assets.file("336280.jpg", data_hot.substr(data_hot.indexOf(',')+1), {base64: true});
-        assets.file("696120.jpg", data_tttc.substr(data_tttc.indexOf(',')+1), {base64: true});
-        assets.file("sticky.jpg", data_sticky.substr(data_sticky.indexOf(',')+1), {base64: true});
-        assets.file("1016100.jpg", data_top100.substr(data_top100.indexOf(',')+1), {base64: true});
-        assets.file("1016250.jpg", data_top250.substr(data_top250.indexOf(',')+1), {base64: true});
+        if( document.getElementById("left_bg").files.length !== 0 ){
+            assets.file("bg_left.jpg", data_leftbg.substr(data_leftbg.indexOf(',')+1), {base64: true});
+        }
+        if( document.getElementById("right_bg").files.length !== 0 ){
+            assets.file("bg_right.jpg", data_rightbg.substr(data_rightbg.indexOf(',')+1), {base64: true});
+        }
+        if( document.getElementById("left_bgs").files.length !== 0 ){
+            assets.file("bg_lefts.jpg", data_leftbgs.substr(data_leftbgs.indexOf(',')+1), {base64: true});
+        }
+        if( document.getElementById("right_bgs").files.length !== 0 ){
+            assets.file("bg_rights.jpg", data_rightbgs.substr(data_rightbgs.indexOf(',')+1), {base64: true});
+        }
+        if( document.getElementById("phai1").files.length !== 0 ){
+            assets.file("300600.jpg", data_phai1.substr(data_phai1.indexOf(',')+1), {base64: true});
+        }
+        if( document.getElementById("phai2").files.length !== 0 ){
+            assets.file("300250.jpg", data_phai2.substr(data_phai2.indexOf(',')+1), {base64: true});
+        }
+        if( document.getElementById("hot").files.length !== 0 ){
+            assets.file("336280.jpg", data_hot.substr(data_hot.indexOf(',')+1), {base64: true});
+        }
+        if( document.getElementById("tttc").files.length !== 0 ){
+            assets.file("696120.jpg", data_tttc.substr(data_tttc.indexOf(',')+1), {base64: true});
+        }
+        if( document.getElementById("sticky").files.length !== 0 ){
+            assets.file("sticky.jpg", data_sticky.substr(data_sticky.indexOf(',')+1), {base64: true});
+        }
+        if( document.getElementById("top100").files.length !== 0 ){
+            assets.file("1016100.jpg", data_top100.substr(data_top100.indexOf(',')+1), {base64: true});
+        }
+        if( document.getElementById("top250").files.length !== 0 ){
+            assets.file("1016250.jpg", data_top250.substr(data_top250.indexOf(',')+1), {base64: true});
+        }
 
         var filename = prompt("Đặt tên cho file zip.\nLưu ý: Không nên đặt tên Tiếng Việt có dấu, ký tự lạ, không cần thêm .zip", "banner");
         if (filename != null) {

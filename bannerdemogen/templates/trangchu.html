@@ -16,6 +16,18 @@
 #sticky{width:300px;height:600px}
 #top_menu{width:2000px;height:50px;position:fixed;left:50%;top:0%;transform:translate(-50%, 0%);z-index:9999;background: #bbbbbb}
 .bg_area{width:444px;height:1040px;margin-top:50px}
+.bg_area_small{width:205px;margin-top:50px;display:none;}
+@media screen and (max-width: 1366px) {
+    #fullpage_wrapper {
+      width:1426px !important;
+    }
+    .bg_area{
+      display:none !important;
+    }
+    .bg_area_small{
+      display:block !important;
+    }
+}
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script src="jquery.sticky.js"></script>
@@ -26,9 +38,11 @@
 <div id="fullpage_wrapper">
   <div style="float:left">
     <div class="bg_area"><img src="images/bg_left.jpg" width="444px"></div>
+    <div class="bg_area_small"><img src="images/bg_lefts.jpg" width="205px"></div>
   </div>
   <div style="float:right">
     <div class="bg_area"><img src="images/bg_right.jpg" width="444px"></div>
+    <div class="bg_area_small"><img src="images/bg_rights.jpg" width="205px"></div>
   </div>
 </div>
   <div id="bg">
