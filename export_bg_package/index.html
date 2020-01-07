@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Export BG pack</title>
+    <link rel="stylesheet" href="css/w3.css">
+    <script async src="js/jszip.js"> </script>
+    <script async src="js/FileSaver.js"> </script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        .hide{
+            display: none;
+        }
+        .floatleft{
+            float: left;
+            margin: 10px;
+        }
+        .divide_five{
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="w3-bar w3-teal">
+        <div class="w3-bar-item">Export BG package</div>
+    </div>
+    <div class="w3-container">
+        <p>
+            <div>Chọn loại bg để xuất file</div>
+            <select id="demochoice">
+                <option value="1" selected>Trang chủ</option>
+                <option value="2" >Trang trong top 100</option>
+                <option value="3" >Trang trong top 250</option>
+            </select>
+            <input type="file" id="imageLoader" name="imageLoader"/> <button id="zip_btn">Pack it!</button>
+        </p>
+        <p>
+            <label class="w3-text-blue"><b>impression tracking</b></label>
+            <input class="w3-input w3-border" type="text" id="tracking_imp" value="#">
+            <label class="w3-text-blue"><b>click tracking</b></label>
+            <input class="w3-input w3-border" type="text" id="tracking_click" value="http://24h.com.vn?id=1">
+        </p>
+        <canvas id="imageCanvas" style="width: 50%;"></canvas>
+        <br>
+        <canvas id="left_to" class="hide floatleft" width="444" height="1040"></canvas>
+        <canvas id="right_to" class="hide floatleft" width="444" height="1040"></canvas>
+        <canvas id="left_nho" class="hide floatleft" width="205" height="900"></canvas>
+        <canvas id="right_nho" class="hide floatleft" width="205" height="900"></canvas>
+        <canvas id="phai1" class="hide floatleft" width="300" height="600"></canvas>
+        <canvas id="top100" class="hide floatleft" width="1016" height="100"></canvas>
+        <canvas id="top250" class="hide floatleft" width="1016" height="250"></canvas>
+        <div class="w3-row">
+            <div class="w3-col w3-container divide_five">
+                <img id="left_to_jpg" class="w3-image">
+            </div>
+            <div class="w3-col w3-container divide_five">
+                <img id="right_to_jpg" class="w3-image">
+            </div>
+            <div class="w3-col w3-container divide_five">
+                <img id="left_nho_jpg" class="w3-image">
+            </div>
+            <div class="w3-col w3-container divide_five">
+                <img id="right_nho_jpg" class="w3-image">
+            </div>
+            <div class="w3-col w3-container divide_five">
+                <img id="phai1_jpg" class="w3-image">
+            </div>
+        </div>
+        <br>
+        <div class="w3-row">
+            <div class="w3-half w3-container">
+                <img id="top100_jpg" class="w3-image">
+            </div>
+            <div class="w3-half w3-container">
+                <img id="top250_jpg" class="w3-image">
+            </div>
+        </div>
+        <div class="hide" id="html_holder_imp"></div>
+        <div class="hide" id="html_holder"></div>
+        <div class="hide" id="html_top100_holder"></div>
+        <div class="hide" id="html_top250_holder"></div>
+    </div>
+
+    <script>
+        var type_pack = document.getElementById("demochoice").value;
+        var imageLoader = document.getElementById('imageLoader');
+        imageLoader.addEventListener('change', handleImage, false);
+        var canvas = document.getElementById('imageCanvas');
+        var ctx = canvas.getContext('2d');
+        var left_to = document.getElementById('left_to');
+        var left_to_ctx = left_to.getContext('2d');
+        var left_nho = document.getElementById('left_nho');
+        var left_nho_ctx = left_nho.getContext('2d');
+        var right_to = document.getElementById('right_to');
+        var right_to_ctx = right_to.getContext('2d');
+        var right_nho = document.getElementById('right_nho');
+        var right_nho_ctx = right_nho.getContext('2d');
+        var phai1 = document.getElementById('phai1');
+        var phai1_ctx = phai1.getContext('2d');
+        var top100 = document.getElementById('top100');
+        var top100_ctx = top100.getContext('2d');
+        var top250 = document.getElementById('top250');
+        var top250_ctx = top250.getContext('2d');
+        //////////////////////////////
+        function handleImage(e){
+            var reader = new FileReader();
+            reader.onload = function(event){
+                var img = new Image();
+                img.onload = function(){
+                    canvas.width = img.width;
+                    canvas.height = img.height;
+                    ctx.drawImage(img,0,0);
+                    left_to_ctx.drawImage(img,0,0,444,1040,0,0,444,1040);
+                    left_nho_ctx.drawImage(img,239,0,205,900,0,0,205,900);
+                    right_to_ctx.drawImage(img,1460,0,444,1040,0,0,444,1040);
+                    right_nho_ctx.drawImage(img,1460,0,205,900,0,0,205,900);
+                    phai1_ctx.drawImage(img,1154,24,300,600,0,0,300,600);
+                    top100_ctx.drawImage(img,444,0,1016,100,0,0,1016,100);
+                    top250_ctx.drawImage(img,444,0,1016,250,0,0,1016,250);
+                    document.getElementById("left_to_jpg").src = left_to.toDataURL("image/jpeg",0.95);
+                    document.getElementById("right_to_jpg").src = right_to.toDataURL("image/jpeg",0.95);
+                    document.getElementById("left_nho_jpg").src = left_nho.toDataURL("image/jpeg",0.95);
+                    document.getElementById("right_nho_jpg").src = right_nho.toDataURL("image/jpeg",0.95);
+                    document.getElementById("phai1_jpg").src = phai1.toDataURL("image/jpeg",0.95);
+                    document.getElementById("top100_jpg").src = top100.toDataURL("image/jpeg",0.95);
+                    document.getElementById("top250_jpg").src = top250.toDataURL("image/jpeg",0.95);
+                }
+                img.src = event.target.result;
+            }
+            reader.readAsDataURL(e.target.files[0]);     
+        }
+        //////////////////////////////
+        function readTemplates(path,div_holder){
+            var txtFile = new XMLHttpRequest();
+                txtFile.open("GET", path, true);
+                txtFile.onreadystatechange = function() {
+                    if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
+                        if (txtFile.status === 200) {  // Makes sure it's found the file.
+                            allText = txtFile.responseText;
+                            //console.log(allText);
+                            //lines = txtFile.responseText.split("\n"); // Will separate each line into an array
+                            document.getElementById(div_holder).textContent = allText;
+                        }
+                    }
+                }
+            txtFile.send(null);
+        }
+        readTemplates("templates/html5_tinh_jpg.html","html_holder");
+        readTemplates("templates/html5_tinh_jpg.html","html_holder_imp");
+        readTemplates("templates/top_1016x100.html","html_top100_holder");
+        readTemplates("templates/top_1016x250.html","html_top250_holder");
+        //////////////////////////////
+        function replaceClick(div,string) {
+            var str = document.getElementById(div).textContent; 
+            var res = str.replace("%%this_is_click%%", string);
+            document.getElementById(div).textContent = res 
+        }
+        function replaceImp(div,string) {
+            var str = document.getElementById(div).textContent; 
+            var res = str.replace("%%this_is_impression%%", string);
+            document.getElementById(div).textContent = res
+        }
+        //////////////////////////////
+        
+        //////////////////////////////
+        document.getElementById("zip_btn").addEventListener("click", function(){
+
+            var zip = new JSZip();
+            var type_pack = document.getElementById("demochoice").value;
+            //replace click and imp
+            var imp = document.getElementById("tracking_imp").value;
+            var click = document.getElementById("tracking_click").value;
+            replaceClick("html_holder",click);
+            replaceImp("html_holder","#");
+            replaceClick("html_holder_imp",click);
+            replaceImp("html_holder_imp",imp);
+            replaceClick("html_top100_holder",click);
+            replaceClick("html_top250_holder",click);
+           
+            //html no imp
+            var data_html = document.getElementById("html_holder").textContent;
+            //html with imp
+            var data_html_imp = document.getElementById("html_holder_imp").textContent;
+            //html top 100
+            var data_html_top100 = document.getElementById("html_top100_holder").textContent;
+            //html top 250
+            var data_html_top250 = document.getElementById("html_top250_holder").textContent;
+
+            //Image banners
+            var data_left_to = document.getElementById("left_to_jpg").src;
+            var data_left_nho = document.getElementById("left_nho_jpg").src;
+            var data_right_to = document.getElementById("right_to_jpg").src;
+            var data_right_nho = document.getElementById("right_nho_jpg").src;
+
+            zip.file("bg_premium/left/left_html.html", data_html_imp);
+            zip.file("bg_premium/left/left_to.jpg", data_left_to.substr(data_left_to.indexOf(',')+1), {base64: true});
+            zip.file("bg_premium/left/left_nho.jpg", data_left_nho.substr(data_left_nho.indexOf(',')+1), {base64: true});
+            zip.file("bg_premium/right/right_html.html", data_html);
+            zip.file("bg_premium/right/right_to.jpg", data_right_to.substr(data_right_to.indexOf(',')+1), {base64: true});
+            zip.file("bg_premium/right/right_nho.jpg", data_right_nho.substr(data_right_nho.indexOf(',')+1), {base64: true});
+            if(type_pack == 1){
+                var data_phai1 = document.getElementById("phai1_jpg").src;
+                zip.file("bg_premium/300600/300600.html", data_html);
+                zip.file("bg_premium/300600/300600.jpg", data_phai1.substr(data_phai1.indexOf(',')+1), {base64: true});
+            }
+            if(type_pack == 2){
+                var data_top100 = document.getElementById("top100_jpg").src;
+                zip.file("bg_premium/top1016x100/1016x100.html", data_html_top100);
+                zip.file("bg_premium/top1016x100/1016x100.jpg", data_top100.substr(data_top100.indexOf(',')+1), {base64: true});
+            }
+            if(type_pack == 3){
+                var data_top250 = document.getElementById("top250_jpg").src;
+                zip.file("bg_premium/top1016x250/1016x250.html", data_html_top250);
+                zip.file("bg_premium/top1016x250/1016x250.jpg", data_top250.substr(data_top250.indexOf(',')+1), {base64: true});
+            }
+
+            var filename = prompt("Đặt tên cho file zip.\nLưu ý: Không nên đặt tên Tiếng Việt có dấu, ký tự lạ, không cần thêm .zip", "banner");
+            if (filename != null) {
+                zip.generateAsync({type:"blob"})
+                .then(function(content) {
+                    saveAs(content, filename + ".zip");
+                });
+            }
+
+            })
+    </script>
+</body>
+</html>
