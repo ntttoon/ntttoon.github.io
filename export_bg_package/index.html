@@ -34,15 +34,31 @@
                 <option value="2" >Trang trong top 100</option>
                 <option value="3" >Trang trong top 250</option>
             </select>
-            <input type="file" id="imageLoader" name="imageLoader"/> <button id="zip_btn">Pack it!</button>
         </p>
         <p>
-            <label class="w3-text-blue"><b>impression tracking</b></label>
+            <label>Chọn ảnh chứa bg kt lớn</label>
+            <input type="file" id="imageLoader"/>
+            <label>Chọn ảnh chứa bg kt nhỏ</label>
+            <input type="file" id="imageLoader2"/>
+
+            <button id="zip_btn">Pack it!</button>
+        </p>
+        <p>
+            <label class="w3-text-blue"><b>impression tracking (chỉ gắn ở bg trái)</b> - Link chỉ được bắt đầu bằng https://</label>
             <input class="w3-input w3-border" type="text" id="tracking_imp" value="#">
-            <label class="w3-text-blue"><b>click tracking</b></label>
+            <label class="w3-text-blue"><b>click tracking</b> - Link bắt đầu bằng http:// hoặc https://</label>
             <input class="w3-input w3-border" type="text" id="tracking_click" value="http://24h.com.vn?id=1">
         </p>
-        <canvas id="imageCanvas" style="width: 50%;"></canvas>
+        <div class="w3-row">
+            <div class="w3-half w3-container">
+                <div>Ảnh chứa bg kt lớn</div>
+                <canvas id="imageCanvas" style="width: 100%;"></canvas>
+            </div>
+            <div class="w3-half w3-container">
+                <div>Ảnh chứa bg kt nhỏ</div>
+                <canvas id="imageCanvas2" style="width: 100%;"></canvas>
+            </div>
+        </div>
         <br>
         <canvas id="left_to" class="hide floatleft" width="444" height="1040"></canvas>
         <canvas id="right_to" class="hide floatleft" width="444" height="1040"></canvas>
@@ -53,27 +69,34 @@
         <canvas id="top250" class="hide floatleft" width="1016" height="250"></canvas>
         <div class="w3-row">
             <div class="w3-col w3-container divide_five">
+                <div>Bg trái 444x1040</div>
                 <img id="left_to_jpg" class="w3-image">
             </div>
             <div class="w3-col w3-container divide_five">
+                <div>Bg phải 444x1040</div>
                 <img id="right_to_jpg" class="w3-image">
             </div>
             <div class="w3-col w3-container divide_five">
+                <div>Bg trái 205x900</div>
                 <img id="left_nho_jpg" class="w3-image">
             </div>
             <div class="w3-col w3-container divide_five">
+                <div>Bg phải 205x900</div>
                 <img id="right_nho_jpg" class="w3-image">
             </div>
             <div class="w3-col w3-container divide_five">
+                <div>Phải 1 300x600</div>
                 <img id="phai1_jpg" class="w3-image">
             </div>
         </div>
         <br>
         <div class="w3-row">
             <div class="w3-half w3-container">
+                <div>Top 1016x100</div>
                 <img id="top100_jpg" class="w3-image">
             </div>
             <div class="w3-half w3-container">
+                <div>Top 1016x250</div>
                 <img id="top250_jpg" class="w3-image">
             </div>
         </div>
@@ -85,10 +108,19 @@
 
     <script>
         var type_pack = document.getElementById("demochoice").value;
+        //////////
         var imageLoader = document.getElementById('imageLoader');
         imageLoader.addEventListener('change', handleImage, false);
+        //////////
+        var imageLoader2 = document.getElementById('imageLoader2');
+        imageLoader2.addEventListener('change', handleImage2, false);
+        //////////
         var canvas = document.getElementById('imageCanvas');
+        var canvas2 = document.getElementById('imageCanvas2');
+        //////////
         var ctx = canvas.getContext('2d');
+        var ctx2 = canvas2.getContext('2d');
+        //////////
         var left_to = document.getElementById('left_to');
         var left_to_ctx = left_to.getContext('2d');
         var left_nho = document.getElementById('left_nho');
@@ -113,19 +145,37 @@
                     canvas.height = img.height;
                     ctx.drawImage(img,0,0);
                     left_to_ctx.drawImage(img,0,0,444,1040,0,0,444,1040);
-                    left_nho_ctx.drawImage(img,239,0,205,900,0,0,205,900);
+                    //left_nho_ctx.drawImage(img,239,0,205,900,0,0,205,900);
                     right_to_ctx.drawImage(img,1460,0,444,1040,0,0,444,1040);
-                    right_nho_ctx.drawImage(img,1460,0,205,900,0,0,205,900);
+                    //right_nho_ctx.drawImage(img,1460,0,205,900,0,0,205,900);
                     phai1_ctx.drawImage(img,1154,24,300,600,0,0,300,600);
                     top100_ctx.drawImage(img,444,0,1016,100,0,0,1016,100);
                     top250_ctx.drawImage(img,444,0,1016,250,0,0,1016,250);
                     document.getElementById("left_to_jpg").src = left_to.toDataURL("image/jpeg",0.95);
                     document.getElementById("right_to_jpg").src = right_to.toDataURL("image/jpeg",0.95);
-                    document.getElementById("left_nho_jpg").src = left_nho.toDataURL("image/jpeg",0.95);
-                    document.getElementById("right_nho_jpg").src = right_nho.toDataURL("image/jpeg",0.95);
+                    //document.getElementById("left_nho_jpg").src = left_nho.toDataURL("image/jpeg",0.95);
+                    //document.getElementById("right_nho_jpg").src = right_nho.toDataURL("image/jpeg",0.95);
                     document.getElementById("phai1_jpg").src = phai1.toDataURL("image/jpeg",0.95);
                     document.getElementById("top100_jpg").src = top100.toDataURL("image/jpeg",0.95);
                     document.getElementById("top250_jpg").src = top250.toDataURL("image/jpeg",0.95);
+                }
+                img.src = event.target.result;
+            }
+            reader.readAsDataURL(e.target.files[0]);     
+        }
+        //////////////////////////////
+        function handleImage2(e){
+            var reader = new FileReader();
+            reader.onload = function(event){
+                var img = new Image();
+                img.onload = function(){
+                    canvas2.width = img.width;
+                    canvas2.height = img.height;
+                    ctx2.drawImage(img,0,0);
+                    left_nho_ctx.drawImage(img,239,0,205,900,0,0,205,900);
+                    right_nho_ctx.drawImage(img,1460,0,205,900,0,0,205,900);
+                    document.getElementById("left_nho_jpg").src = left_nho.toDataURL("image/jpeg",0.95);
+                    document.getElementById("right_nho_jpg").src = right_nho.toDataURL("image/jpeg",0.95);
                 }
                 img.src = event.target.result;
             }
@@ -161,9 +211,7 @@
             var str = document.getElementById(div).textContent; 
             var res = str.replace("%%this_is_impression%%", string);
             document.getElementById(div).textContent = res
-        }
-        //////////////////////////////
-        
+        }       
         //////////////////////////////
         document.getElementById("zip_btn").addEventListener("click", function(){
 
