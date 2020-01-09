@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <title>Movie Posters using Macy.js by ntttoon</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="css/macy.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body style="background-color: #626262">
+    <main class="main" role="main">
+        <section class="section">
+            <div class="container">
+                <div id="macy-container">
+                    <!-- <div class="demo" macy-complete="1"><img src="http://unsplash.it/557/387/" alt="" class="demo-image"></div> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <div style="margin: 0 auto; text-align: center">
+            <img id="image_lightbox" style="max-width: 100%;">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var xmlhttp = new XMLHttpRequest();
+        var url = "movies.json";
+    
+        xmlhttp.onreadystatechange = function () {
+          if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            myFunction(xmlhttp.responseText);
+          }
+        }
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+    
+        function myFunction(response) {
+          var arr = JSON.parse(response);
+          var i;
+          var out = "";
+    
+          var json_len = arr.movies.length;
+          for (i = 0; i < json_len; i++) {
+            var poster = arr.movies[i].poster;
+
+            out += '<div class="demo"><img src="' + poster + '" class="demo-image" onclick="document.getElementById(\'id01\').style.display=\'block\'; document.getElementById(\'image_lightbox\').src=\' ' +  poster + ' \'" ></div>';
+            
+          }
+          document.getElementById("macy-container").innerHTML = out;
+        }
+    </script>
+
+    <script src="js/macy.js"></script>
+    <script>
+        setTimeout(function(){
+            var masonry = new Macy({
+                container: '#macy-container',
+                trueOrder: false,
+                waitForImages: true,
+                useOwnImageLoader: false,
+                debug: true,
+                mobileFirst: true,
+                columns: 1,
+                margin: {
+                    y: 16,
+                    x: '2%',
+                },
+                breakAt: {
+                    1200: 5,
+                    940: 4,
+                    520: 3,
+                    400: 2
+                },
+            });
+        }, 1000);
+
+        $( document ).ready(function() {
+            
+        });
+
+        
+    </script>
+</body>
+</html>
