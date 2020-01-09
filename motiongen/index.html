@@ -19,7 +19,7 @@
 </header>
 <div class="w3-container">
     <p><label><span class="w3-text-red">* </span>Đặt tên cho MC trong Animate CC, nhập tên cho MC vào ô dưới.</label>
-    <input class="w3-input w3-border" id="mc" type="text"></p>
+    <input class="w3-input w3-border" id="mc" type="text" value="movieClip_1"></p>
 
     <label>Tạo Animation</label>
         <input id="male" class="w3-radio" type="radio" name="type" value="from" checked>
@@ -67,7 +67,7 @@
         <p><button class="w3-btn w3-teal" id="gen_in" onclick="ani_in()">Tạo</button></p>
 
     <p><label><span class="w3-text-red">* </span>Tạo Animation liên hoàn. Nhập tên các MC vào ô dưới, cách nhau dấu phẩy. Ví dụ: xe1,xe2,xe3</label>
-    <input class="w3-input w3-border" id="mcs" type="text"></p>
+    <input class="w3-input w3-border" id="mcs" type="text" value="movieClip_1,movieClip_2,movieClip_3,movieClip_4,movieClip_5"></p>
 
     <div id="code_out_stagger" class="w3-yellow"></div>
     <p><button class="w3-btn w3-teal" id="gen_stagger" onclick="ani_stagger()">Tạo</button></p>
@@ -151,7 +151,7 @@ var tl = new TimelineLite({onComplete:replay})</textarea>
 
     function change_alias(alias) {
         var str = alias;
-        str = str.toLowerCase();
+        //str = str.toLowerCase();
         str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g,"a"); 
         str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g,"e"); 
         str = str.replace(/ì|í|ị|ỉ|ĩ/g,"i"); 
@@ -159,7 +159,8 @@ var tl = new TimelineLite({onComplete:replay})</textarea>
         str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g,"u"); 
         str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g,"y"); 
         str = str.replace(/đ/g,"d");
-        str = str.replace(/!|@|%|\^|\*|\(|\)|\+|\=|\<|\>|\?|\/|,|\.|\:|\;|\'|\"|\&|\#|\[|\]|~|\$|_|`|-|{|}|\||\\/g," ");
+        //str = str.replace(/!|@|%|\^|\*|\(|\)|\+|\=|\<|\>|\?|\/|,|\.|\:|\;|\'|\"|\&|\#|\[|\]|~|\$|_|`|-|{|}|\||\\/g," ");
+        str = str.replace(/!|@|%|\^|\*|\(|\)|\+|\=|\<|\>|\?|\/|,|\.|\:|\;|\'|\"|\&|\#|\[|\]|~|\$|`|-|{|}|\||\\/g," ");
         str = str.replace(/ + /g," ");
         str = str.trim();
         str = str.replace(/\s+/g, '');
