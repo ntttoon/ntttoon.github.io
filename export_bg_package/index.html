@@ -43,12 +43,12 @@
 
             <button id="zip_btn">Pack it!</button>
         </p>
-        <p style="text-align: center;font-weight: bold;font-size: 18px;color: red;">Lưu ý phần gắn Tracking Impression và Click, các anh chị copy đúng và chính xác, không thừa các ký tự lạ như dấu nháy đơn ' hoặc dấu nháy kép ". Nhắc KD kiểm tra số liệu. Không có Tracking nào thì để mặc định đã có sẵn.</p>
+        <p style="text-align: center;font-weight: bold;font-size: 18px;color: red;">Lưu ý phần gắn Tracking Impression và Click, các anh chị copy đúng và chính xác, không thừa các ký tự lạ như dấu nháy đơn ' hoặc dấu nháy kép ". Nhắc KD kiểm tra số liệu. <br>Không có Tracking thì để dấu #</p>
         <p>
-            <label class="w3-text-red"><b>impression tracking (chỉ gắn ở bg trái)</b> - Link chỉ được bắt đầu bằng https://</label>
+            <label class="w3-text-red"><b>impression tracking (chỉ gắn ở bg trái)</b> - Link chỉ bắt đầu bằng <b>https://</b></label>
             <input class="w3-input w3-border" type="text" id="tracking_imp" value="#">
-            <label class="w3-text-red"><b>click tracking</b> - Link bắt đầu bằng http:// hoặc https://</label>
-            <input class="w3-input w3-border" type="text" id="tracking_click" value="http://24h.com.vn?id=1">
+            <label class="w3-text-red"><b>click tracking/landing page</b> - Link bắt đầu bằng <b>http://</b> hoặc <b>https://</b></label>
+            <input class="w3-input w3-border" type="text" id="tracking_click" value="http://24h.com.vn">
         </p>
         <div class="w3-row">
             <div class="w3-half w3-container">
@@ -215,12 +215,32 @@
         }       
         //////////////////////////////
         document.getElementById("zip_btn").addEventListener("click", function(){
-
+            
+            readTemplates("templates/html5_tinh_jpg.html","html_holder");
+            readTemplates("templates/html5_tinh_jpg.html","html_holder_imp");
+            readTemplates("templates/top_1016x100.html","html_top100_holder");
+            readTemplates("templates/top_1016x250.html","html_top250_holder");
+            //
             var zip = new JSZip();
             var type_pack = document.getElementById("demochoice").value;
             //replace click and imp
             var imp = document.getElementById("tracking_imp").value;
+            var check_imp = imp.startsWith("https://");
+            if(imp != "#"){
+                if(check_imp == false){
+                    alert("Link tracking impression có thể đang bị sai, hãy kiểm tra lại!")
+                    return;
+                }
+            }
             var click = document.getElementById("tracking_click").value;
+            var check_click = click.startsWith("http");
+            if(click != "#"){
+                if(check_click == false){
+                    alert("Link tracking click có thể đang bị sai, hãy kiểm tra lại!")
+                    return;
+                }
+            }
+            alert("+ Tracking impression là: " + imp + "\n+ Tracking click là: " + click);
             replaceClick("html_holder",click);
             replaceImp("html_holder","#");
             replaceClick("html_holder_imp",click);
