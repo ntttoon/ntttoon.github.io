@@ -112,7 +112,6 @@ stage.on('click tap', function (e) {
 	layer.draw();
 })
 
-
 // create text layer 1
 
 var textNode = new Konva.Text({
@@ -120,7 +119,8 @@ var textNode = new Konva.Text({
 	x: 20,
 	y: 20,
 	fontSize: 30,
-	fontFamily: 'Anton',
+	fontFamily: 'Alfa Slab One',
+	fontStyle: 'normal',
 	draggable: true,
 	lineHeight: 1.5,
 	width: '620',
@@ -133,6 +133,7 @@ textNode.on('dblclick', () => {
 	var ts = document.getElementById('txt_size').value;
 	var ta = document.getElementById('txt_align').value;
 	var tf = document.getElementById('txt_fonts').value;
+	var tb = document.getElementById('txt_bold').value;
 	var tl = document.getElementById('txt_lineheight').value;
 	var tc = '#' + document.getElementById('txt_color').value;
 	// create textarea over canvas with absolute position
@@ -169,6 +170,7 @@ textNode.on('dblclick', () => {
 			textNode.width(tw);
 			textNode.align(ta);
 			textNode.fontFamily(tf);
+			textNode.fontStyle(tb);
 			textNode.lineHeight(tl);
 			textNode.fill(tc);
 			layer.batchDraw();
@@ -184,7 +186,8 @@ var textNode2 = new Konva.Text({
 	x: 20,
 	y: 70,
 	fontSize: 20,
-	fontFamily: 'Lora',
+	fontFamily: 'Noto Serif',
+	fontStyle: 'normal',
 	draggable: true,
 	lineHeight: 1.5,
 	width: '620',
@@ -197,6 +200,7 @@ textNode2.on('dblclick', () => {
 	var ts = document.getElementById('txt2_size').value;
 	var ta = document.getElementById('txt2_align').value;
 	var tf = document.getElementById('txt2_fonts').value;
+	var tb = document.getElementById('txt2_bold').value;
 	var tl = document.getElementById('txt2_lineheight').value;
 	var tc = '#' + document.getElementById('txt2_color').value;
 	// create textarea over canvas with absolute position
@@ -233,6 +237,7 @@ textNode2.on('dblclick', () => {
 			textNode2.width(tw);
 			textNode2.align(ta);
 			textNode2.fontFamily(tf);
+			textNode2.fontStyle(tb);
 			textNode2.lineHeight(tl);
 			textNode2.fill(tc);
 			layer.batchDraw();
