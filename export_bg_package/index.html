@@ -225,6 +225,7 @@
             var type_pack = document.getElementById("demochoice").value;
             //replace click and imp
             var imp = document.getElementById("tracking_imp").value;
+            imp = change_alias(imp);
             var check_imp = imp.startsWith("https://");
             if(imp != "#"){
                 if(check_imp == false){
@@ -233,6 +234,7 @@
                 }
             }
             var click = document.getElementById("tracking_click").value;
+            click = change_alias(click);
             var check_click = click.startsWith("http");
             if(click != "#"){
                 if(check_click == false){
@@ -294,6 +296,13 @@
             }
 
             })
+    </script>
+    <script>
+        function change_alias(alias) {
+            var str = alias;
+            str = str.replace(/\'|\"|`/g,"");
+            return str;
+        }
     </script>
 </body>
 </html>
