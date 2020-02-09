@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5 add clickTag</title>
+    <link rel="stylesheet" href="../css/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="w3-bar w3-teal">
+        <div class="w3-bar-item">HTML5 add clickTag</div>
+    </div>
+    <div class="w3-container">
+        <p>
+            <input type="file" id="file-input" >
+            <a id="downloadLink" class="w3-btn w3-teal" href="#">Download the inner html</a>
+        </p>
+<div id="ctag_code" class="w3-panel w3-card">&lt;/title&gt;
+&lt;script&gt;
+    var clickTag = "http://www.24h.com.vn/"; 
+&lt;/script&gt;
+&lt;style&gt;
+    a {width:1000px;height:1000px;position:absolute;z-index:99999}
+&lt;/style&gt;
+</div>
+<div id="atag_code" class="w3-panel w3-card">&lt;a href="javascript:void(window.open(window.clickTag))"&gt&lt;/a&gt
+        </div>
+        <div id="file-content" class="w3-pale-yellow"></div>
+    <script>
+        function readSingleFile(e) {
+            var file = e.target.files[0];
+            if (!file) {
+                return;
+            }
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                var contents = e.target.result;
+                // Display file content
+                displayContents(contents);
+                addclickTag();
+            };
+            reader.readAsText(file);
+
+        }
+            
+        function displayContents(contents) {
+            var element = document.getElementById('file-content');
+            element.textContent = contents;
+        }
+        
+        function addclickTag() {
+            var str = document.getElementById('file-content').textContent;
+            var ctag_code = document.getElementById('ctag_code').textContent;
+            var atag_code = document.getElementById('atag_code').textContent;
+            var res = str.replace("</title>", ctag_code);
+            document.getElementById('file-content').textContent = res;
+            var a_index = res.indexOf("<canvas id=");
+            var a_code = res.slice(0, a_index)
+                    + atag_code
+                    + res.slice(a_index); 
+            document.getElementById('file-content').textContent = a_code;
+        }
+
+        document.getElementById('file-input').addEventListener('change', readSingleFile, false);
+        ////////////
+        function downloadInnerHtml(filename, elId, mimeType) {
+            var elHtml = document.getElementById(elId).textContent;
+            var link = document.createElement('a');
+            mimeType = mimeType || 'text/plain';
+
+            link.setAttribute('download', filename);
+            link.setAttribute('href', 'data:' + mimeType  +  ';charset=utf-8,' + encodeURIComponent(elHtml));
+            link.click(); 
+        }
+
+        var fileName =  'index.html'; // You can use the .txt extension if you want
+        $('#downloadLink').click(function(){
+            downloadInnerHtml(fileName, 'file-content','text/html');
+        });
+    </script>
+</body>
+</html>
