@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP Banner Maker</title>
+    <link rel="stylesheet" href="../css/w3.css">
+    <script type="text/javascript" src="js/jscall.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+</head>
+<body class="w3-light-grey">
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+        <div class="w3-bar-item w3-button">Slot 1</div>
+        <div class="w3-bar-item w3-button">Slot 1</div>
+        <div class="w3-bar-item w3-button">Slot 1</div>
+        <div class="w3-bar-item w3-button">Slot 1</div>
+        <div class="w3-bar-item w3-button">Slot 1</div>
+        <div class="w3-bar-item w3-button">Slot 1</div>
+        <div class="w3-bar-item w3-button">Slot 1</div>
+        <div class="w3-bar-item w3-button">Slot 1</div>
+        <div class="w3-bar-item w3-button">Slot 1</div>
+        <div class="w3-bar-item w3-button">Slot 1</div>
+        <div class="w3-bar-item w3-button">Slot 1</div>
+        <div class="w3-bar-item w3-button">Slot 1</div>
+        <div class="w3-bar-item w3-button">Slot 1</div>
+        <div class="w3-bar-item w3-button">Slot 1</div>
+        <div class="w3-bar-item w3-button">Slot 1</div>
+        <div class="w3-bar-item w3-button">Slot 1</div>
+        <div class="w3-bar-item w3-button">Slot 1</div>
+        <div class="w3-bar-item w3-button">Slot 1</div>
+        <div class="w3-bar-item w3-button">Slot 1</div>
+        <div class="w3-bar-item w3-button">Slot 1</div>
+    </div>
+    
+    <!-- Page Content -->
+    <div class="w3-bar w3-blue">
+        <button class="w3-bar-item w3-button" onclick="w3_open()">☰</button>
+        <input type="text" class="w3-bar-item w3-input w3-border" value="300" id="banner_width">
+        <input type="text" class="w3-bar-item w3-input w3-border" value="250" id="banner_height">
+        <input class="w3-bar-item w3-input" type="file" onchange="readURL(this);">
+        <button class="w3-bar-item w3-button w3-right" id="zip_button">Save file</button>
+    </div>
+
+    <!-- Banner holder -->
+    <div class="w3-display-middle" style="background-color: white;">
+        <div id="banner_holder"></div>
+    </div>
+    <img id="sprite_image" style="position:absolute;top:50px;right:10px" src="" />
+
+    <!-- Sprite holder -->
+    <div id="sprite_holder" style="display:none;position:absolute"></div>
+
+    <textarea id="sprite_css" style="position:absolute;top:300px;right:10px;height: 500px;">paste css spritesheet here</textarea>
+    <button class="w3-button w3-teal" style="position:absolute;top:820px;right:10px" onclick="cssimport()">import css</button>
+</body>
+<!-- Main Script -->
+<script>
+    var banner_width = document.getElementById("banner_width").value;
+    var banner_height = document.getElementById("banner_height").value;
+	function update_export(){
+		loadScript("temp/banner.js", function(){
+			document.getElementById("banner_holder").innerHTML = "<iframe srcdoc=\'"+ result + "\' width=\'" + banner_width + "\' height=\'" + banner_height + "\' frameborder='0' scrolling='no' style='background:#FFF'></iframe>" ;
+		});
+    }
+    //setInterval(function(){ update_export(); }, 3000);
+    //////////////////////////////
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+    }
+    function w3_close() {
+         document.getElementById("mySidebar").style.display = "none";
+    }
+    //////////////////////////////
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#sprite_image')
+                    .attr('src', e.target.result)
+                    .width(200);
+                    //.height(200);
+                    document.getElementById('sprite_holder').textContent = e.target.result;
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+        var si = document.getElementById('sprite_image').src;
+        update_export()
+    }
+    //////////////////////////////
+    function cssimport() {
+        var txt = document.getElementById("sprite_css").value;
+        var css = txt.match(/(?:[\.]{1})([a-zA-Z_]+[\w-_]*)(?:[\s\.\,\{\>#\:]{0})/igm);
+        console.log(css);
+    }
+</script>
+<!-- Tidy html -->
+<script src="js/tidy.js"></script>
+<script>
+  options = {
+	  "indent":"auto",
+	  "indent-spaces":2,
+	  "wrap":0,
+	  "markup":true,
+	  "output-xml":false,
+	  "numeric-entities":true,
+	  "quote-marks":true,
+	  "quote-nbsp":false,
+	  "show-body-only":false,
+	  "quote-ampersand":false,
+	  "break-before-br":true,
+	  "uppercase-tags":false,
+	  "uppercase-attributes":false,
+    "drop-font-tags":true,
+    "merge-divs":false,
+	  "tidy-mark":false
+}
+</script>
+
+</html>
