@@ -12,35 +12,17 @@
     <!-- Sidebar -->
     <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
         <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-        <div class="w3-bar-item w3-button">Slot 1</div>
-        <div class="w3-bar-item w3-button">Slot 1</div>
-        <div class="w3-bar-item w3-button">Slot 1</div>
-        <div class="w3-bar-item w3-button">Slot 1</div>
-        <div class="w3-bar-item w3-button">Slot 1</div>
-        <div class="w3-bar-item w3-button">Slot 1</div>
-        <div class="w3-bar-item w3-button">Slot 1</div>
-        <div class="w3-bar-item w3-button">Slot 1</div>
-        <div class="w3-bar-item w3-button">Slot 1</div>
-        <div class="w3-bar-item w3-button">Slot 1</div>
-        <div class="w3-bar-item w3-button">Slot 1</div>
-        <div class="w3-bar-item w3-button">Slot 1</div>
-        <div class="w3-bar-item w3-button">Slot 1</div>
-        <div class="w3-bar-item w3-button">Slot 1</div>
-        <div class="w3-bar-item w3-button">Slot 1</div>
-        <div class="w3-bar-item w3-button">Slot 1</div>
-        <div class="w3-bar-item w3-button">Slot 1</div>
-        <div class="w3-bar-item w3-button">Slot 1</div>
-        <div class="w3-bar-item w3-button">Slot 1</div>
-        <div class="w3-bar-item w3-button">Slot 1</div>
+        <div id="sprite_pos_holder"></div>
     </div>
     
     <!-- Page Content -->
     <div class="w3-bar w3-blue">
         <button class="w3-bar-item w3-button" onclick="w3_open()">☰</button>
-        <input type="text" class="w3-bar-item w3-input w3-border" value="300" id="banner_width">
-        <input type="text" class="w3-bar-item w3-input w3-border" value="250" id="banner_height">
+        <input type="text" class="w3-bar-item w3-input w3-border" value="336" id="banner_width">
+        <input type="text" class="w3-bar-item w3-input w3-border" value="280" id="banner_height">
         <input class="w3-bar-item w3-input" type="file" onchange="readURL(this);">
         <button class="w3-bar-item w3-button w3-right" id="zip_button">Save file</button>
+        <a href="https://ntttoon.github.io/stitches/src/" target="_blank" class="w3-bar-item w3-button w3-right">Stitches</a>
     </div>
 
     <!-- Banner holder -->
@@ -52,8 +34,16 @@
     <!-- Sprite holder -->
     <div id="sprite_holder" style="display:none;position:absolute"></div>
 
-    <textarea id="sprite_css" style="position:absolute;top:300px;right:10px;height: 500px;">paste css spritesheet here</textarea>
+    <!-- Css import -->
+    <textarea id="sprite_css" style="position:absolute;top:300px;right:10px;height: 500px;">Paste css spritesheet from stitches. Don't include first ".sprite" class</textarea>
     <button class="w3-button w3-teal" style="position:absolute;top:820px;right:10px" onclick="cssimport()">import css</button>
+
+    <!-- i tag holder -->
+    <div id="sprite_itag" style="display:none;position:absolute"></div>
+
+    <!-- css pos of sprites -->
+    <div id="sprite_cssposs_holderdiv" style="display:none;position:absolute"></div>
+    <div id="sprite_cssposs" style="display:none;position:absolute"></div>
 </body>
 <!-- Main Script -->
 <script>
@@ -94,7 +84,41 @@
     function cssimport() {
         var txt = document.getElementById("sprite_css").value;
         var css = txt.match(/(?:[\.]{1})([a-zA-Z_]+[\w-_]*)(?:[\s\.\,\{\>#\:]{0})/igm);
-        console.log(css);
+        for(i=0;i<css.length;i++){
+            var s = css[i];
+            var ss = s.substr(1);
+            var sstop = ss + "top";
+            var ssleft = ss + "left";
+            //var ssselect = ss + "select";
+            var sszindex = ss + "zindex";
+            var sscheck = ss + "check";
+            document.getElementById("sprite_pos_holder").innerHTML += '<div class="w3-bar-item w3-button">'+ css[i] + '<br><input id="' + sstop + '" type="text" style="width:50px" value="0"> <input id="' + ssleft + '" type="text" style="width:50px" value="0"> <input id="' + sszindex + '" type="text" style="width:30px" value="0"> <input id="' + sscheck + '" type="checkbox"> <button onclick="write_pos_css(\'' + sstop + '\',\'' + ssleft + '\',\'' + sszindex + '\',\'' + sscheck + '\',\'' + ss + '\')">Apply</button></div>';
+            document.getElementById("sprite_itag").innerHTML += '<i class="sprite ' + ss +'"></i>'
+            document.getElementById("sprite_cssposs_holderdiv").innerHTML += '<div class="cssposs" id="' + ss + '">' + css[i] + '{top:0px;left:0px;z-index:0;display:none}' +'</div>';
+        }
+    }
+    //////////////////////////////
+    function write_pos_css(top,left,zindex,display,id){
+        var t = document.getElementById(top).value;
+        var l = document.getElementById(left).value;
+        var z = document.getElementById(zindex).value;
+        //var d = document.getElementById(display).value;
+        var c = document.getElementById(display).checked;
+        if(c == true){
+            var cft = "block";
+        }
+        if(c == false){
+            var cft = "none";
+        }
+        document.getElementById(id).innerHTML = '.' + id + '{' + 'top:' + t + 'px;left:' + l + 'px;z-index:' + z + ';display:' + cft + '}';
+        //////////////////////////////
+        var c = document.getElementById("sprite_cssposs");
+        c.innerHTML = "";
+        var elms = document.getElementsByClassName('cssposs');
+        for (var i = 0; i < elms.length; i++) {
+            c.innerHTML += elms[i].innerHTML;
+        }
+        update_export();
     }
 </script>
 <!-- Tidy html -->
