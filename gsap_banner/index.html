@@ -129,27 +129,12 @@
         update_export();
     }
 </script>
-<!-- Tidy html -->
-<script src="js/tidy.js"></script>
+<script async src="js/FileSaver.js"> </script> 
+<script async src="js/jszip.js"> </script> 
 <script>
-  options = {
-	  "indent":"auto",
-	  "indent-spaces":2,
-	  "wrap":0,
-	  "markup":true,
-	  "output-xml":false,
-	  "numeric-entities":true,
-	  "quote-marks":true,
-	  "quote-nbsp":false,
-	  "show-body-only":false,
-	  "quote-ampersand":false,
-	  "break-before-br":true,
-	  "uppercase-tags":false,
-	  "uppercase-attributes":false,
-    "drop-font-tags":true,
-    "merge-divs":false,
-	  "tidy-mark":false
-}
+document.getElementById("zip_button").addEventListener("click", function(){
+	var file = new File([result2], "index.html", {type: "text/plain;charset=utf-8"});
+	saveAs(file);
+});
 </script>
-
 </html>
