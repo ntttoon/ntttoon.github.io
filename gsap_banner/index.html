@@ -49,6 +49,23 @@
     <!-- javascript gsap -->
     <div id="gsap_int_holder" style="display:none;position:absolute"></div>
     <textarea id="gsap_script" class="w3-display-bottommiddle" style="width:700px;height:100px;font-size:12px;"></textarea>
+
+<!-- Sample clicktag script -->
+<div id="ctag_code" style="display: none;">
+&lt;script type="text/javascript"&gt;
+    var V_URL= 'http://24h.com.vn/';
+    V_URL   = '%%CLICK_URL_UNESC%%'+V_URL;
+
+    function init(){ 
+        var impDiv = document.getElementById('impressionTrack');
+        if(impDiv){
+            // GẮN IMPRESSION Ở ĐÂY
+            impDiv.innerHTML = '&lt;img src="#" border="0" width="0" height="0" style="display:none;" /&gt;'
+        }
+    }
+&lt;/script&gt;
+</div>
+
 </body>
 <!-- Main Script -->
 <script>
@@ -56,10 +73,9 @@
     var banner_height = document.getElementById("banner_height").value;
 	function update_export(){
 		loadScript("temp/banner.js", function(){
-			document.getElementById("banner_holder").innerHTML = "<iframe srcdoc=\'"+ result + "\' width=\'" + banner_width + "\' height=\'" + banner_height + "\' frameborder='0' scrolling='no' style='background:#FFF'></iframe>" ;
+			document.getElementById("banner_holder").innerHTML = "<iframe srcdoc=\'"+ preview_html + "\' width=\'" + banner_width + "\' height=\'" + banner_height + "\' frameborder='0' scrolling='no' style='background:#FFF'></iframe>" ;
 		});
     }
-    //setInterval(function(){ update_export(); }, 3000);
     //////////////////////////////
     function w3_open() {
         document.getElementById("mySidebar").style.display = "block";
@@ -89,6 +105,12 @@
     function cssimport() {
         var txt = document.getElementById("sprite_css").value;
         var css = txt.match(/(?:[\.]{1})([a-zA-Z_]+[\w-_]*)(?:[\s\.\,\{\>#\:]{0})/igm);
+        document.getElementById("sprite_pos_holder").innerHTML = "";
+        document.getElementById("sprite_itag").innerHTML = "";
+        document.getElementById("sprite_cssposs_holderdiv").innerHTML = "";
+        document.getElementById("gsap_int_holder").innerHTML = "";
+        document.getElementById("gsap_script").value = "";
+
         for(i=0;i<css.length;i++){
             var s = css[i];
             var ss = s.substr(1);
@@ -102,7 +124,7 @@
             document.getElementById("sprite_itag").innerHTML += '<i class="sprite ' + ss +'"></i>'
             document.getElementById("sprite_cssposs_holderdiv").innerHTML += '<div class="cssposs" id="' + ss + '">' + css[i] + '{top:0px;left:0px;z-index:0;display:none}' +'</div>';
             document.getElementById("gsap_int_holder").innerHTML += 'var $' + ss_nodash + ' = $(\"' + css[i] + '\");'
-            document.getElementById("gsap_script").value += '.from($' + ss_nodash + ', 1, {x:"-=500px +", ease:Power1.easeOut})\n';
+            document.getElementById("gsap_script").value += '.from($' + ss_nodash + ', 1, {x:"-=500px", ease:Power1.easeOut})\n';
         }
     }
     //////////////////////////////
@@ -133,7 +155,7 @@
 <script async src="js/jszip.js"> </script> 
 <script>
 document.getElementById("zip_button").addEventListener("click", function(){
-	var file = new File([result2], "index.html", {type: "text/plain;charset=utf-8"});
+	var file = new File([export_html], "index.html", {type: "text/plain;charset=utf-8"});
 	saveAs(file);
 });
 </script>
