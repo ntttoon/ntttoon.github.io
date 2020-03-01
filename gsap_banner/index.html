@@ -166,8 +166,20 @@
 <script async src="js/jszip.js"> </script> 
 <script>
 document.getElementById("zip_button").addEventListener("click", function(){
+    var banner_width = document.getElementById("banner_width").value;
+    var banner_height = document.getElementById("banner_height").value;
+    var css_import = document.getElementById("sprite_css").value;
     var sprite_cssposs = document.getElementById("sprite_cssposs").innerHTML;
+    var sprite_itag = document.getElementById("sprite_itag").innerHTML;
+    var gsap_int = document.getElementById("gsap_int_holder").innerHTML;
+    var gsapscript = document.getElementById("gsap_script").value;
+    replaceTemplate("dfp_custom_holder","/*chieu_rong*/",banner_width);
+    replaceTemplate("dfp_custom_holder","/*chieu_cao*/",banner_height);
+    replaceTemplate("dfp_custom_holder","/*css_import*/",css_import);
     replaceTemplate("dfp_custom_holder","/*sprite_cssposs*/",sprite_cssposs);
+    replaceTemplate("dfp_custom_holder","/*sprite_itag*/",sprite_itag);
+    replaceTemplate("dfp_custom_holder","/*gsap_int*/",gsap_int);
+    replaceTemplate("dfp_custom_holder","/*gsapscript*/",gsapscript);
     var dfp_custom_holder = document.getElementById("dfp_custom_holder").textContent;
     //////////////////////////////
 	var file = new File([dfp_custom_holder], "index.html", {type: "text/plain;charset=utf-8"});

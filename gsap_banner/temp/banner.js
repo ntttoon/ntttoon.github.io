@@ -17,11 +17,4 @@ var html1 = '<!doctype html><html><head><meta charset="utf-8"><title>banner HTML
 
 var html2 = '<script type="text/javascript">' + gsap_int + 'var tl = new TimelineMax({onComplete: showReplay})' + gsapscript + 'function showReplay(){var loop = setTimeout(tlPlay, 5000);}function tlPlay(){tl.play(0);}' + '</script></html>';
 
-replaceTemplate("dfp_custom_holder","/*chieu_rong*/",banner_width);
-replaceTemplate("dfp_custom_holder","/*chieu_cao*/",banner_height);
-replaceTemplate("dfp_custom_holder","/*css_import*/",css_import);
-replaceTemplate("dfp_custom_holder","/*sprite_itag*/",sprite_itag);
-replaceTemplate("dfp_custom_holder","/*gsap_int*/",gsap_int);
-replaceTemplate("dfp_custom_holder","/*gsapscript*/",gsapscript);
-
 var preview_html = html1 + html2;
