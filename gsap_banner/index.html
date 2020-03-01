@@ -50,21 +50,8 @@
     <div id="gsap_int_holder" style="display:none;position:absolute"></div>
     <textarea id="gsap_script" class="w3-display-bottommiddle" style="width:700px;height:100px;font-size:12px;"></textarea>
 
-<!-- Sample clicktag script -->
-<div id="ctag_code" style="display: none;">
-&lt;script type="text/javascript"&gt;
-    var V_URL= 'http://24h.com.vn/';
-    V_URL   = '%%CLICK_URL_UNESC%%'+V_URL;
-
-    function init(){ 
-        var impDiv = document.getElementById('impressionTrack');
-        if(impDiv){
-            // GẮN IMPRESSION Ở ĐÂY
-            impDiv.innerHTML = '&lt;img src="#" border="0" width="0" height="0" style="display:none;" /&gt;'
-        }
-    }
-&lt;/script&gt;
-</div>
+    <!-- dfp_custom_holder -->
+    <div id="dfp_custom_holder" style="display:none;position:absolute"></div>
 
 </body>
 <!-- Main Script -->
@@ -150,12 +137,40 @@
         }
         update_export();
     }
+    //////////////////////////////
+    function readTemplates(path,div_holder){
+        var txtFile = new XMLHttpRequest();
+            txtFile.open("GET", path, true);
+            txtFile.onreadystatechange = function() {
+                if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
+                    if (txtFile.status === 200) {  // Makes sure it's found the file.
+                        allText = txtFile.responseText;
+                        //console.log(allText);
+                        //lines = txtFile.responseText.split("\n"); // Will separate each line into an array
+                        document.getElementById(div_holder).textContent = allText;
+                    }
+                }
+            }
+        txtFile.send(null);
+    }
+    readTemplates("temp/dfp_custom.html","dfp_custom_holder");
+    //////////////////////////////
+    function replaceTemplate(div,sample,string) {
+        var str = document.getElementById(div).textContent; 
+        var res = str.replace(sample, string);
+        document.getElementById(div).textContent = res 
+    }
+
 </script>
 <script async src="js/FileSaver.js"> </script> 
 <script async src="js/jszip.js"> </script> 
 <script>
 document.getElementById("zip_button").addEventListener("click", function(){
-	var file = new File([export_html], "index.html", {type: "text/plain;charset=utf-8"});
+    var sprite_cssposs = document.getElementById("sprite_cssposs").innerHTML;
+    replaceTemplate("dfp_custom_holder","/*sprite_cssposs*/",sprite_cssposs);
+    var dfp_custom_holder = document.getElementById("dfp_custom_holder").textContent;
+    //////////////////////////////
+	var file = new File([dfp_custom_holder], "index.html", {type: "text/plain;charset=utf-8"});
 	saveAs(file);
 });
 </script>

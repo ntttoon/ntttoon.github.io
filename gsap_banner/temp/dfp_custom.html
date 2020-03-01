@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_2.1.2_min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+</head>
+<script type="text/javascript">
+    // Url dích
+    var V_URL= 'http://24h.com.vn/';
+    //////////
+    V_URL   = '%%CLICK_URL_UNESC%%'+V_URL;
+    /////////
+    function init(){ 
+        var impDiv = document.getElementById('impressionTrack');
+		if(impDiv){
+            // GẮN IMPRESSION Ở ĐÂY
+			impDiv.innerHTML = '<img src="#" border="0" width="0" height="0" style="display:none;" />';
+		}
+    }
+</script>
+<style>
+    body{
+        margin:0;
+        padding:0;
+        background-color:#FFF;
+    }
+    #banner{
+        width:/*chieu_rong*/px;
+        height:/*chieu_cao*/px;
+        overflow:hidden;
+        position:relative;
+        background-color:#FFF;
+    }
+    #banner .sprite{
+        position: absolute;
+    }
+    .sprite {
+        background-image: url(spritesheet.png);
+        background-repeat: no-repeat;
+        display: block;
+    }
+    /*css_import*/
+    /*sprite_cssposs*/
+</style>
+<body onload="init();">
+<div id="impressionTrack"></div>
+<a href="javascript:void(window.open(window.V_URL))">
+    <div id="banner">
+        /*sprite_itag*/
+    </div>
+</a>
+<script type="text/javascript">
+	/*gsap_int*/
+
+	var tl = new TimelineMax({onComplete: showReplay})
+	    /*gsapscript*/
+	function showReplay(){
+        var loop = setTimeout(tlPlay, 5000);
+    }
+    function tlPlay(){
+        tl.play(0);
+	}
+</script>
+</body>
+</html>
