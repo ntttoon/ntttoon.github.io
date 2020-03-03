@@ -153,7 +153,6 @@
             }
         txtFile.send(null);
     }
-    readTemplates("temp/dfp_custom.html","dfp_custom_holder");
     //////////////////////////////
     function replaceTemplate(div,sample,string) {
         var str = document.getElementById(div).textContent; 
@@ -166,6 +165,7 @@
 <script async src="js/jszip.js"> </script> 
 <script>
 document.getElementById("zip_button").addEventListener("click", function(){
+    readTemplates("temp/dfp_custom.html","dfp_custom_holder");
     var banner_width = document.getElementById("banner_width").value;
     var banner_height = document.getElementById("banner_height").value;
     var css_import = document.getElementById("sprite_css").value;
