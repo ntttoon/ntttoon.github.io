@@ -21,7 +21,15 @@
         <input type="text" class="w3-bar-item w3-input w3-border" value="336" id="banner_width">
         <input type="text" class="w3-bar-item w3-input w3-border" value="280" id="banner_height">
         <input class="w3-bar-item w3-input" type="file" onchange="readURL(this);">
-        <button class="w3-bar-item w3-button w3-right" id="zip_button">Save file</button>
+        <div class="w3-dropdown-hover w3-right">
+            <button class="w3-button">Save File As</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <button class="w3-bar-item w3-button" id="zip_button">Zip</button>
+                <button class="w3-bar-item w3-button" id="inpage_button">Inpage</button>
+                <button class="w3-bar-item w3-button" id="responsive_button">Responsive</button>
+            </div>
+        </div>
+        
         <a href="https://ntttoon.github.io/stitches/src/" target="_blank" class="w3-bar-item w3-button w3-right">Stitches</a>
         <a href="https://ntttoon.github.io/motiongen/" target="_blank" class="w3-bar-item w3-button w3-right">GSAP gen</a>
     </div>
@@ -50,8 +58,14 @@
     <div id="gsap_int_holder" style="display:none;position:absolute"></div>
     <textarea id="gsap_script" class="w3-display-bottommiddle" style="width:700px;height:100px;font-size:12px;"></textarea>
 
-    <!-- dfp_custom_holder -->
-    <div id="dfp_custom_holder" style="display:none;position:absolute"></div>
+    <!-- dfp_zip_holder -->
+    <div id="dfp_zip_holder" style="display:none;position:absolute"></div>
+
+    <!-- dfp_inpage_holder -->
+    <div id="dfp_inpage_holder" style="display:none;position:absolute"></div>
+
+    <!-- dfp_responsive_holder -->
+    <div id="dfp_responsive_holder" style="display:none;position:absolute"></div>
 
 </body>
 <!-- Main Script -->
@@ -153,6 +167,9 @@
             }
         txtFile.send(null);
     }
+    readTemplates("temp/dfp_zip.html","dfp_zip_holder");
+    readTemplates("temp/dfp_inpage.html","dfp_inpage_holder");
+    readTemplates("temp/dfp_responsive.html","dfp_responsive_holder");
     //////////////////////////////
     function replaceTemplate(div,sample,string) {
         var str = document.getElementById(div).textContent; 
@@ -165,7 +182,7 @@
 <script async src="js/jszip.js"> </script> 
 <script>
 document.getElementById("zip_button").addEventListener("click", function(){
-    readTemplates("temp/dfp_custom.html","dfp_custom_holder");
+    readTemplates("temp/dfp_zip.html","dfp_zip_holder");
     var banner_width = document.getElementById("banner_width").value;
     var banner_height = document.getElementById("banner_height").value;
     var css_import = document.getElementById("sprite_css").value;
@@ -173,17 +190,92 @@ document.getElementById("zip_button").addEventListener("click", function(){
     var sprite_itag = document.getElementById("sprite_itag").innerHTML;
     var gsap_int = document.getElementById("gsap_int_holder").innerHTML;
     var gsapscript = document.getElementById("gsap_script").value;
-    replaceTemplate("dfp_custom_holder","/*chieu_rong*/",banner_width);
-    replaceTemplate("dfp_custom_holder","/*chieu_cao*/",banner_height);
-    replaceTemplate("dfp_custom_holder","/*css_import*/",css_import);
-    replaceTemplate("dfp_custom_holder","/*sprite_cssposs*/",sprite_cssposs);
-    replaceTemplate("dfp_custom_holder","/*sprite_itag*/",sprite_itag);
-    replaceTemplate("dfp_custom_holder","/*gsap_int*/",gsap_int);
-    replaceTemplate("dfp_custom_holder","/*gsapscript*/",gsapscript);
-    var dfp_custom_holder = document.getElementById("dfp_custom_holder").textContent;
+    replaceTemplate("dfp_zip_holder","/*mchieu_rong*/",banner_width);
+    replaceTemplate("dfp_zip_holder","/*mchieu_cao*/",banner_height);
+    replaceTemplate("dfp_zip_holder","/*chieu_rong*/",banner_width);
+    replaceTemplate("dfp_zip_holder","/*chieu_cao*/",banner_height);
+    replaceTemplate("dfp_zip_holder","/*css_import*/",css_import);
+    replaceTemplate("dfp_zip_holder","/*sprite_cssposs*/",sprite_cssposs);
+    replaceTemplate("dfp_zip_holder","/*sprite_itag*/",sprite_itag);
+    replaceTemplate("dfp_zip_holder","/*gsap_int*/",gsap_int);
+    replaceTemplate("dfp_zip_holder","/*gsapscript*/",gsapscript);
+    var dfp_zip_holder = document.getElementById("dfp_zip_holder").textContent;
+    var sprite_holder = document.getElementById("sprite_holder").textContent;
     //////////////////////////////
-	var file = new File([dfp_custom_holder], "index.html", {type: "text/plain;charset=utf-8"});
-	saveAs(file);
+    var zip = new JSZip();
+    zip.file("index.html", dfp_zip_holder);
+    zip.file("spritesheet.png", sprite_holder.substr(sprite_holder.indexOf(',')+1), {base64: true});
+    var filename = prompt("Đây là banner up zip.\nLưu ý: Không nên đặt tên Tiếng Việt có dấu, ký tự lạ, không cần thêm .zip", "banner");
+            if (filename != null) {
+                zip.generateAsync({type:"blob"})
+                .then(function(content) {
+                    saveAs(content, filename + "_upFileZip.zip");
+                });
+            }
+	//var file = new File([dfp_zip_holder], "index.html", {type: "text/plain;charset=utf-8"});
+	//saveAs(file);
+});
+//////////////////////////////
+document.getElementById("inpage_button").addEventListener("click", function(){
+    readTemplates("temp/dfp_inpage.html","dfp_inpage_holder");
+    var banner_width = document.getElementById("banner_width").value;
+    var banner_height = document.getElementById("banner_height").value;
+    var css_import = document.getElementById("sprite_css").value;
+    var sprite_cssposs = document.getElementById("sprite_cssposs").innerHTML;
+    var sprite_itag = document.getElementById("sprite_itag").innerHTML;
+    var gsap_int = document.getElementById("gsap_int_holder").innerHTML;
+    var gsapscript = document.getElementById("gsap_script").value;
+    replaceTemplate("dfp_inpage_holder","/*chieu_rong*/",banner_width);
+    replaceTemplate("dfp_inpage_holder","/*chieu_cao*/",banner_height);
+    replaceTemplate("dfp_inpage_holder","/*css_import*/",css_import);
+    replaceTemplate("dfp_inpage_holder","/*sprite_cssposs*/",sprite_cssposs);
+    replaceTemplate("dfp_inpage_holder","/*sprite_itag*/",sprite_itag);
+    replaceTemplate("dfp_inpage_holder","/*gsap_int*/",gsap_int);
+    replaceTemplate("dfp_inpage_holder","/*gsapscript*/",gsapscript);
+    var dfp_inpage_holder = document.getElementById("dfp_inpage_holder").textContent;
+    var sprite_holder = document.getElementById("sprite_holder").textContent;
+    //////////////////////////////
+    var zip = new JSZip();
+    zip.file("index.html", dfp_inpage_holder);
+    zip.file("spritesheet.png", sprite_holder.substr(sprite_holder.indexOf(',')+1), {base64: true});
+    var filename = prompt("Đây là banner inpage.\nLưu ý: Không nên đặt tên Tiếng Việt có dấu, ký tự lạ, không cần thêm .zip", "banner");
+            if (filename != null) {
+                zip.generateAsync({type:"blob"})
+                .then(function(content) {
+                    saveAs(content, filename + "_upCustom.zip");
+                });
+            }
+});
+//////////////////////////////
+document.getElementById("responsive_button").addEventListener("click", function(){
+    readTemplates("temp/dfp_responsive.html","dfp_responsive_holder");
+    var banner_width = document.getElementById("banner_width").value;
+    var banner_height = document.getElementById("banner_height").value;
+    var css_import = document.getElementById("sprite_css").value;
+    var sprite_cssposs = document.getElementById("sprite_cssposs").innerHTML;
+    var sprite_itag = document.getElementById("sprite_itag").innerHTML;
+    var gsap_int = document.getElementById("gsap_int_holder").innerHTML;
+    var gsapscript = document.getElementById("gsap_script").value;
+    replaceTemplate("dfp_responsive_holder","/*chieu_rong*/",banner_width);
+    replaceTemplate("dfp_responsive_holder","/*chieu_cao*/",banner_height);
+    replaceTemplate("dfp_responsive_holder","/*css_import*/",css_import);
+    replaceTemplate("dfp_responsive_holder","/*sprite_cssposs*/",sprite_cssposs);
+    replaceTemplate("dfp_responsive_holder","/*sprite_itag*/",sprite_itag);
+    replaceTemplate("dfp_responsive_holder","/*gsap_int*/",gsap_int);
+    replaceTemplate("dfp_responsive_holder","/*gsapscript*/",gsapscript);
+    var dfp_responsive_holder = document.getElementById("dfp_responsive_holder").textContent;
+    var sprite_holder = document.getElementById("sprite_holder").textContent;
+    //////////////////////////////
+    var zip = new JSZip();
+    zip.file("index.html", dfp_responsive_holder);
+    zip.file("spritesheet.png", sprite_holder.substr(sprite_holder.indexOf(',')+1), {base64: true});
+    var filename = prompt("Đây là banner responsive, nhớ sửa kích thước responsive cho phù hợp.\nLưu ý: Không nên đặt tên Tiếng Việt có dấu, ký tự lạ, không cần thêm .zip", "banner");
+            if (filename != null) {
+                zip.generateAsync({type:"blob"})
+                .then(function(content) {
+                    saveAs(content, filename + "_upCustom.zip");
+                });
+            }
 });
 </script>
 </html>
