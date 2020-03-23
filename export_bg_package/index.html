@@ -153,13 +153,13 @@
                     phai1_ctx.drawImage(img,1154,24,300,600,0,0,300,600);
                     top100_ctx.drawImage(img,444,0,1016,100,0,0,1016,100);
                     top250_ctx.drawImage(img,444,0,1016,250,0,0,1016,250);
-                    document.getElementById("left_to_jpg").src = left_to.toDataURL("image/jpeg",0.95);
-                    document.getElementById("right_to_jpg").src = right_to.toDataURL("image/jpeg",0.95);
-                    //document.getElementById("left_nho_jpg").src = left_nho.toDataURL("image/jpeg",0.95);
-                    //document.getElementById("right_nho_jpg").src = right_nho.toDataURL("image/jpeg",0.95);
-                    document.getElementById("phai1_jpg").src = phai1.toDataURL("image/jpeg",0.95);
-                    document.getElementById("top100_jpg").src = top100.toDataURL("image/jpeg",0.95);
-                    document.getElementById("top250_jpg").src = top250.toDataURL("image/jpeg",0.95);
+                    document.getElementById("left_to_jpg").src = left_to.toDataURL("image/jpeg",1);
+                    document.getElementById("right_to_jpg").src = right_to.toDataURL("image/jpeg",1);
+                    //document.getElementById("left_nho_jpg").src = left_nho.toDataURL("image/jpeg",1);
+                    //document.getElementById("right_nho_jpg").src = right_nho.toDataURL("image/jpeg",1);
+                    document.getElementById("phai1_jpg").src = phai1.toDataURL("image/jpeg",1);
+                    document.getElementById("top100_jpg").src = top100.toDataURL("image/jpeg",1);
+                    document.getElementById("top250_jpg").src = top250.toDataURL("image/jpeg",1);
                 }
                 img.src = event.target.result;
             }
@@ -176,8 +176,8 @@
                     ctx2.drawImage(img,0,0);
                     left_nho_ctx.drawImage(img,239,0,205,900,0,0,205,900);
                     right_nho_ctx.drawImage(img,1460,0,205,900,0,0,205,900);
-                    document.getElementById("left_nho_jpg").src = left_nho.toDataURL("image/jpeg",0.95);
-                    document.getElementById("right_nho_jpg").src = right_nho.toDataURL("image/jpeg",0.95);
+                    document.getElementById("left_nho_jpg").src = left_nho.toDataURL("image/jpeg",1);
+                    document.getElementById("right_nho_jpg").src = right_nho.toDataURL("image/jpeg",1);
                 }
                 img.src = event.target.result;
             }
