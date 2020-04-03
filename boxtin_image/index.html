@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<title>Native Banner Image Maker</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/w3.css">
+<script src="js/konva.min.js"></script>
+<script src="js/jscolor.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/Animated_GIF.js"></script>
+<script>
+    var galtemplate = 'json/templates.json';
+    var gal1 = 'json/gallery1.json';
+    $(document).ready(function () {
+        $.getJSON(galtemplate)
+            .then(function (data) {
+                // execTemplate(image1_path,image1_x,image1_y,image1_scalex,image1_scaley,image1_alpha,image2_path,image2_x,image2_y,image2_scalex,image2_scaley,image2_alpha,image3_path,image3_x,image3_y,image3_scalex,image3_scaley,image3_alpha,txt_x,txt_y,txt_size,txt_lineheight,txt_width,txt_fill,txt_align)
+                for (i = 0; i < data.templates.length; i++) {
+                    var width = data.templates[i].width;
+                    var height = data.templates[i].height;
+                    var thumb = data.templates[i].thumb;
+                    var cat = data.templates[i].cat;
+                    //image 1
+                    var image1_path = data.templates[i].image1_path;
+                    var image1_x = data.templates[i].image1_x;
+                    var image1_y = data.templates[i].image1_y;
+                    var image1_scalex = data.templates[i].image1_scalex;
+                    var image1_scaley = data.templates[i].image1_scaley;
+                    var image1_alpha = data.templates[i].image1_alpha;
+                    //image 2
+                    var image2_path = data.templates[i].image2_path;
+                    var image2_x = data.templates[i].image2_x;
+                    var image2_y = data.templates[i].image2_y;
+                    var image2_scalex = data.templates[i].image2_scalex;
+                    var image2_scaley = data.templates[i].image2_scaley;
+                    var image2_alpha = data.templates[i].image2_alpha;
+                    //image 3
+                    var image3_path = data.templates[i].image3_path;
+                    var image3_x = data.templates[i].image3_x;
+                    var image3_y = data.templates[i].image3_y;
+                    var image3_scalex = data.templates[i].image3_scalex;
+                    var image3_scaley = data.templates[i].image3_scaley;
+                    var image3_alpha = data.templates[i].image3_alpha;
+                    //txt
+                    var txt_x = data.templates[i].txt_x;
+                    var txt_y = data.templates[i].txt_y;
+                    var txt_size = data.templates[i].txt_size;
+                    var txt_lineheight = data.templates[i].txt_lineheight;
+                    var txt_width = data.templates[i].txt_width;
+                    var txt_fill = data.templates[i].txt_fill;
+                    var txt_align = data.templates[i].txt_align;
+                    var txt_font = data.templates[i].txt_font;
+                    var txt_bold = data.templates[i].txt_bold;
+                    //txt 2
+                    var txt2_x = data.templates[i].txt2_x;
+                    var txt2_y = data.templates[i].txt2_y;
+                    var txt2_size = data.templates[i].txt2_size;
+                    var txt2_lineheight = data.templates[i].txt2_lineheight;
+                    var txt2_width = data.templates[i].txt2_width;
+                    var txt2_fill = data.templates[i].txt2_fill;
+                    var txt2_align = data.templates[i].txt2_align;
+                    var txt2_font = data.templates[i].txt2_font;
+                    var txt2_bold = data.templates[i].txt2_bold;
+                    $( "#gallerytemplate" ).append('<img class="thumb" src="' + thumb +  '" onclick="execTemplate(' + width + ',' + height + ',&#39;' + image1_path + '&#39;,' + image1_x +',' + image1_y+ ',' + image1_scalex + ',' + image1_scaley + ',' + image2_alpha + ',&#39;' + image2_path + '&#39;,' + image2_x +',' + image2_y+ ',' + image2_scalex + ',' + image2_scaley + ',' + image2_alpha + ',&#39;' + image3_path + '&#39;,' + image3_x + ',' + image3_y + ',' + image3_scalex + ',' + image3_scaley + ',' + image3_alpha + ',' + txt_x + ',' + txt_y + ',' + txt_size + ',' + txt_lineheight + ',' + txt_width + ',&#39;' + txt_fill + '&#39;,&#39;' + txt_align + '&#39;,&#39;' + txt_font + '&#39;,&#39;' + txt_bold + '&#39;,' + txt2_x + ',' + txt2_y + ',' + txt2_size + ',' + txt2_lineheight + ',' + txt2_width + ',&#39;' + txt2_fill + '&#39;,&#39;' + txt2_align + '&#39;,&#39;' + txt2_font + '&#39;,&#39;' + txt2_bold + '&#39;);offGallery();showCat(' + cat + ')">');
+                }
+            })
+            .fail(function () {
+                alert("khong thay json gallery template");
+            });
+
+        $.getJSON(gal1)
+            .then(function (data) {
+                // alert(data.gallery.length)
+                for (i = 0; i < data.gallery.length; i++) {
+                    var thumb = data.gallery[i].thumb;
+                    var img = data.gallery[i].image;
+                    $( "#gallery1" ).append('<img class="thumb" src="' + thumb +  '" onclick="addImage(&#39;' + img + '&#39;)">');
+                }
+            })
+            .fail(function () {
+                alert("khong thay json gallery 1");
+            });
+    })
+</script>
+<style>
+    html{
+        background: #282828;
+    }
+    .thumb{
+        border: 1px solid #cccccc;
+        margin-bottom: 0;
+        width: 86px;
+        height: 86px;
+    }
+    .thumbStyle{
+        border: none;
+        width: 40px;
+        height: 40px;
+    }
+    .thumbStyleBtn{
+        padding: 5px;
+        display:inline-block;
+        vertical-align: middle;
+        overflow: hidden;
+        text-align: center;
+        cursor: pointer;
+    }
+    .thumbgif{
+        margin-bottom: 0;
+        width: 300px;
+    }
+</style>
+<body>
+    <input class="w3-hide" type="text" id="curr_layer" value="1">
+    <!-- Sidebar -->
+
+    <div id="slider3_holder" class="w3-card w3-border w3-white" style="position: absolute; left: 220px; top:95px; padding: 5px; display: none"><div style="padding:5px;float:left"><input type="range" min="0" max="1" step="0.01" value="1" id="slider3"></div>
+        <select class="w3-border" id="blend3_sel" onchange="execBlend()">
+            <option value="normal" selected>normal</option>
+            <option value="multiply">multiply</option>
+            <option value="screen">screen</option>
+            <option value="overlay">overlay</option>
+            <option value="darken">darken</option>
+            <option value="lighten">lighten</option>
+            <option value="color-dodge">color-dodge</option>
+            <option value="color-burn">color-burn</option>
+            <option value="hard-light">hard-light</option>
+            <option value="soft-light">soft-light</option>
+            <option value="difference">difference</option>
+            <option value="exclusion">exclusion</option>
+            <option value="hue">hue</option>
+            <option value="saturation">saturation</option>
+            <option value="color">color</option>
+            <option value="luminosity">luminosity</option>
+        </select>
+        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-small w3-hover-white">&times;</span>
+    </div>
+    <div id="slider2_holder" class="w3-card w3-border w3-white" style="position: absolute; left: 220px; top:255px; padding: 5px; display: none"><div style="padding:5px;float:left"><input type="range" min="0" max="1" step="0.01" value="1" id="slider2"></div>
+        <select class="w3-border" id="blend2_sel" onchange="execBlend()">
+            <option value="normal" selected>normal</option>
+            <option value="multiply">multiply</option>
+            <option value="screen">screen</option>
+            <option value="overlay">overlay</option>
+            <option value="darken">darken</option>
+            <option value="lighten">lighten</option>
+            <option value="color-dodge">color-dodge</option>
+            <option value="color-burn">color-burn</option>
+            <option value="hard-light">hard-light</option>
+            <option value="soft-light">soft-light</option>
+            <option value="difference">difference</option>
+            <option value="exclusion">exclusion</option>
+            <option value="hue">hue</option>
+            <option value="saturation">saturation</option>
+            <option value="color">color</option>
+            <option value="luminosity">luminosity</option>
+        </select>
+        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-small w3-hover-white">&times;</span></div>
+    <div id="slider1_holder" class="w3-card w3-border w3-white" style="position: absolute; left: 220px; top:410px; padding: 5px; display: none"><div style="padding:5px;float:left"><input type="range" min="0" max="1" step="0.01" value="1" id="slider1"></div>
+    <span onclick="this.parentElement.style.display='none'" class="w3-button w3-small w3-hover-white">&times;</span></div>
+
+    <div class="w3-sidebar w3-bar-block w3-white w3-card" style="width:220px;margin-top:40px">
+        <div class="w3-container w3-blue-gray" style="margin-bottom:10px">Layers</div>
+        <p>
+            <div class="w3-small">Layer 3</div><span onclick="removeImage(3)"><i class="material-icons" style="font-size:14px;">clear</i></span>
+            <button class="w3-button w3-teal" id="openBtn3" onclick="openGallery(3)" ><i class="material-icons" style="font-size:14px;">collections</i></button>
+            <span id="eyeBtn3"><button class="w3-button w3-teal" onclick="layerOff(3)" ><i class="material-icons" style="font-size:14px;">visibility</i></button></span>
+            <button class="w3-button w3-teal" onclick="resizeImage(3)" ><i class="material-icons" style="font-size:14px;">photo_size_select_large</i></button>
+            <button class="w3-button w3-teal" onclick="document.getElementById('slider3_holder').style.display='block'" ><i class="material-icons" style="font-size:14px;">menu</i></button>
+            <img src="" id="thumb03" class="thumb">
+        </p>
+        <p>
+            <div class="w3-small">Layer 2</div><span onclick="removeImage(2)"><i class="material-icons" style="font-size:14px;">clear</i></span>
+            <button class="w3-button w3-teal" id="openBtn2" onclick="openGallery(2)" ><i class="material-icons" style="font-size:14px;">collections</i></button>
+            <span id="eyeBtn2"><button class="w3-button w3-teal" onclick="layerOff(2)" ><i class="material-icons" style="font-size:14px;">visibility</i></button></span>
+            <button class="w3-button w3-teal" onclick="resizeImage(2)" ><i class="material-icons" style="font-size:14px;">photo_size_select_large</i></button>
+            <button class="w3-button w3-teal" onclick="document.getElementById('slider2_holder').style.display='block'" ><i class="material-icons" style="font-size:14px;">menu</i></button>
+            <img src="" id="thumb02" class="thumb">
+        </p>
+        <p>
+            <div class="w3-small">Layer 1</div><span onclick="removeImage(1)"><i class="material-icons" style="font-size:14px;">clear</i></span>
+            <button class="w3-button w3-teal" id="openBtn1" onclick="openGallery(1)" ><i class="material-icons" style="font-size:14px;">collections</i></button>
+            <span id="eyeBtn1"><button class="w3-button w3-teal" onclick="layerOff(1)" ><i class="material-icons" style="font-size:14px;">visibility</i></button></span>
+            <button class="w3-button w3-teal" onclick="resizeImage(1)" ><i class="material-icons" style="font-size:14px;">photo_size_select_large</i></button>
+            <button class="w3-button w3-teal" onclick="document.getElementById('slider1_holder').style.display='block'" ><i class="material-icons" style="font-size:14px;">menu</i></button>
+            <img src="" id="thumb01" class="thumb">
+        </p>
+        <div class="w3-container w3-blue-gray" style="margin-bottom:10px">Kích thước banner</div>
+        <div class="w3-container">
+            <div class="w3-small">Chiều rộng / Width</div>
+            <input class="w3-input w3-border" type="text" value="600" id="w">
+            <div class="w3-small">Chiều cao / Height</div>
+            <input class="w3-input w3-border" type="text" value="500" id="h">
+            <p><button class="w3-btn w3-teal" onClick="resizeCanvas(document.getElementById('w').value,document.getElementById('h').value,);">Thay đổi</button></p>
+        </div>
+        <div class="w3-container w3-blue-gray" style="margin-bottom:10px">Gif Maker</div>
+        <div class="w3-container">
+            <button class="w3-btn w3-teal" onClick="openGifmaker()">Mở Gif Maker</button>
+            <button class="w3-btn w3-teal" onClick="addGifFrame()">+</button>
+        </div>
+    </div>
+    <!-- txt board 1 -->
+    <div class="w3-sidebar w3-bar-block w3-white w3-card" style="width:220px;right:0;margin-top:40px">
+        <div class="w3-container w3-blue-gray" style="margin-bottom:10px">Text 1</div>
+        <div class="w3-container">
+            <div class="w3-small">Độ rộng khối text</div><input class="w3-input w3-border" type="text" id="txt_width" value="620">
+            <div class="w3-small">Kích thước font chữ</div><input class="w3-input w3-border" type="text" id="txt_size" value="30">
+            <div class="w3-small">Khoảng cách dòng: từ 1, 1.1 đến 1.9, 2</div><input class="w3-input w3-border" type="text" id="txt_lineheight" value="1.5">
+            <div class="w3-small">Canh lề khối text</div>
+            <select class="w3-select w3-border" name="option" id="txt_align">
+                <option value="left" selected>Trái</option>
+                <option value="right">Phải</option>
+                <option value="center">Giữa</option>
+                <option value="justify">Đều</option>
+            </select>
+            <div class="w3-small">Chọn font</div>
+            <select class="w3-select w3-border" name="option" id="txt_fonts">
+                <option value="Arial" selected>Arial</option>
+            </select>
+            <select class="w3-select w3-border" name="option" id="txt_bold">
+                <option value="normal" selected>thường</option>
+                <option value="bold">đậm</option>
+            </select>
+            <div class="w3-small">Màu chữ</div><input class="jscolor w3-input w3-border" type="text" id="txt_color" value="000000">
+        </div>
+        <!-- txt board 2 -->
+        <div class="w3-container w3-blue-gray" style="margin:10px 0">Text 2</div>
+        <div class="w3-container">
+            <div class="w3-small">Độ rộng khối text</div><input class="w3-input w3-border" type="text" id="txt2_width" value="620">
+            <div class="w3-small">Kích thước font chữ</div><input class="w3-input w3-border" type="text" id="txt2_size" value="20">
+            <div class="w3-small">Khoảng cách dòng: từ 1, 1.1 đến 1.9, 2</div><input class="w3-input w3-border" type="text" id="txt2_lineheight" value="1.5">
+            <div class="w3-small">Canh lề khối text</div>
+            <select class="w3-select w3-border" name="option" id="txt2_align">
+                <option value="left" selected>Trái</option>
+                <option value="right">Phải</option>
+                <option value="center">Giữa</option>
+                <option value="justify">Đều</option>
+            </select>
+            <div class="w3-small">Chọn font</div>
+            <select class="w3-select w3-border" name="option" id="txt2_fonts">
+                <option value="Arial" selected>Arial</option>
+            </select>
+            <select class="w3-select w3-border" name="option" id="txt2_bold">
+                <option value="normal" selected>thường</option>
+                <option value="bold">đậm</option>
+            </select>
+            <div class="w3-small">Màu chữ</div><input class="jscolor w3-input w3-border" type="text" id="txt2_color" value="FFFFFF">
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div>
+        <div class="w3-bar w3-teal">
+            <div class="w3-bar-item">Simple Canvas Editor by ntttoon</div>
+        <!-- Float links to the right. Hide them on small screens -->
+        <div class="w3-right">
+            <a  class="w3-bar-item w3-button" id="save">Xuất Ảnh</a>
+            <select style="margin-top: 8px; border: none" id="ratioImage">
+                <option value="1" selected>Đúng kích thước</option>
+                <option value="2" >Gấp 2 lần kích thước</option>
+            </select>
+        </div>
+
+        </div>
+        <!-- Canvas display -->
+        <div class="w3-display-container w3-display-middle" style="z-index:-1">
+            <div id="container" style="background:#CCC"></div>
+        </div>
+
+    <!-- Modal image panel -->
+    <div id="imgGallery" class="w3-modal">
+        <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-teal"> 
+            <span onclick="document.getElementById('imgGallery').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h3>Image Gallery</h3>
+        </header>
+        <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button tablink w3-red" onclick="openTab(event,'template')">Templates</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'style')">Styles</button>
+            <div id="tab_upload"></div>
+            <!-- <button class="w3-bar-item w3-button tablink" onclick="openTab(event,'uplo')">Upload</button> -->
+        </div>
+        
+        <div id="template" class="w3-container tab">
+            <p>Lưu ý: khi chọn templates, ảnh ở các layer sẽ bị thay thế bằng ảnh của template</p>
+            <p class="thumbGallery" id="gallerytemplate"></p>
+        </div>
+        
+        <div id="style" class="w3-container tab" style="display:none">
+            <p class="thumbGallery" id="gallery1"></p>
+        </div>
+        
+        <div id="uplo" class="w3-container tab" style="display:none">
+            <p><span>Up ảnh khác. Lưu ý tiêu đề của tab up ảnh, bạn đang up ảnh cho Layer mấy?</span><input style="width:100%" type='file' id="fileUpload"/></p>
+        </div>
+        
+        <p style="clear:both"></p>
+        </div>
+    </div>
+
+    <!-- Modal gif panel -->
+    <div id="gifPanel" class="w3-modal">
+        <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-teal"> 
+            <span onclick="document.getElementById('gifPanel').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h3>Gif Maker</h3>
+        </header>
+        <p class="w3-container">Lưu ý: click vào thumbnail bên dưới để hủy bỏ frame</p>
+        <p class="w3-container" id="gifFramesHolder">
+            <!--<img class="gif thumb">-->
+        </p>
+        <hr>
+        <div class="w3-row">
+            <div class="w3-container w3-half">
+                <select class="w3-select w3-border" name="option" id="gifLoop">
+                    <option value="0">Lặp vô tận</option>
+                    <option value="1">Lặp 1 lần</option>
+                    <option value="2">Lặp 2 lần</option>
+                    <option value="3" selected>Lặp 3 lần</option>
+                    <option value="4">Lặp 4 lần</option>
+                    <option value="5">Lặp 5 lần</option>
+                </select>
+            </div>
+            <div class="w3-container w3-half">
+                <select class="w3-select w3-border" name="option" id="gifDelay">
+                    <option value="1000">1 giây chuyển</option>
+                    <option value="2000">2 giây chuyển</option>
+                    <option value="3000"selected>3 giây chuyển</option>
+                    <option value="4000">4 giây chuyển</option>
+                    <option value="5000">5 giây chuyển</option>
+                </select>
+            </div>
+        </div>
+        <p></p>
+        <div id="gifHolder" class="w3-container"></div>
+        <div class="w3-container">
+            <p><button class="w3-btn w3-teal" onClick="createGif()">Tạo</button></p>
+        </div>
+        <p style="clear:both"></p>
+        </div>
+    </div>
+</body>
+<script src="js/kk.js"></script>
+<script>
+    function openTab(evt, tabName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("tab");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " w3-red";
+    }
+</script>
+</html>
