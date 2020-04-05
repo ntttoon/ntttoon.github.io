@@ -191,7 +191,7 @@ var textNode2 = new Konva.Text({
 	draggable: true,
 	lineHeight: 1.5,
 	width: '560',
-	fill: 'white'
+	fill: 'black'
 });
 layer.add(textNode2);
 
@@ -274,8 +274,7 @@ var downloadCanvas = function(ratio){
 	link.remove();
 } 
 
-document.getElementById('save').addEventListener('click',downloadCanvas)
-	
+//document.getElementById('save').addEventListener('click',downloadCanvas)
 
 // Function upload to Layers
 var fileUpload = document.getElementById('fileUpload');
@@ -362,11 +361,12 @@ function changeStyle(path){
 }
 
 // function exec template
-function execTemplate(width,height,image1_path,image1_x,image1_y,image1_scalex,image1_scaley,image1_alpha,image2_path,image2_x,image2_y,image2_scalex,image2_scaley,image2_alpha,image3_path,image3_x,image3_y,image3_scalex,image3_scaley,image3_alpha,txt_x,txt_y,txt_size,txt_lineheight,txt_width,txt_fill,txt_align,txt_font,txt_bold,txt2_x,txt2_y,txt2_size,txt2_lineheight,txt2_width,txt2_fill,txt2_align,txt2_font,txt2_bold)
+function execTemplate(width,height,image_wh,image1_path,image1_x,image1_y,image1_scalex,image1_scaley,image1_alpha,image2_path,image2_x,image2_y,image2_scalex,image2_scaley,image2_alpha,image3_path,image3_x,image3_y,image3_scalex,image3_scaley,image3_alpha,txt_x,txt_y,txt_size,txt_lineheight,txt_width,txt_fill,txt_align,txt_font,txt_bold,txt2_x,txt2_y,txt2_size,txt2_lineheight,txt2_width,txt2_fill,txt2_align,txt2_font,txt2_bold)
 {
 	document.getElementById("w").value = width;
 	document.getElementById("h").value = height;
 	resizeCanvas();
+	document.getElementById("image_wh").innerText = image_wh;
 	// add image1
 	if(image1_path!==""){
 		imageObj1.onload = function() {
@@ -568,3 +568,62 @@ function createGif(){
 }
 
 var myCIL = setInterval(checkImageLayer, 1000);
+
+//////////////////////////////
+function readTemplates(path,div_holder){
+	var txtFile = new XMLHttpRequest();
+		txtFile.open("GET", path, true);
+		txtFile.onreadystatechange = function() {
+			if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
+				if (txtFile.status === 200) {  // Makes sure it's found the file.
+					allText = txtFile.responseText;
+					//console.log(allText);
+					//lines = txtFile.responseText.split("\n"); // Will separate each line into an array
+					document.getElementById(div_holder).textContent = allText;
+				}
+			}
+		}
+	txtFile.send(null);
+}
+readTemplates("templates/responsive_300x250.html","html_holder");
+
+//////////////////////////////
+function replaceClick(div,string) {
+	var str = document.getElementById(div).textContent; 
+	var res = str.replace("%%this_is_click%%", string);
+	document.getElementById(div).textContent = res 
+}
+
+//////////////////////////////
+function change_alias(alias) {
+	var str = alias;
+	str = str.replace(/\'|\"|`/g,"");
+	return str;
+}
+
+//////////////////////////////
+document.getElementById("save").addEventListener("click", function(){
+	readTemplates("templates/responsive_300x250.html","html_holder");
+	var zip = new JSZip();
+	//
+	var click = 'http://24h.com.vn';
+	click = change_alias(click);
+	replaceClick("html_holder",click);
+	var data_html = document.getElementById("html_holder").textContent;
+	//
+	stage.find('Transformer').destroy();
+	var imgData = stage.toDataURL({ pixelRatio: 1 });
+	//
+	zip.file("txt.png", imgData.substr(imgData.indexOf(',')+1), {base64: true});
+	zip.file("123.jpg","");
+	zip.file("index.html", data_html);
+
+	var filename = prompt("Đặt tên cho file zip.\nLưu ý: Không nên đặt tên Tiếng Việt có dấu, ký tự lạ, không cần thêm .zip", "banner");
+    if (filename != null) {
+		zip.generateAsync({type:"blob"})
+		.then(function(content) {
+			saveAs(content, filename + ".zip");
+		});
+	}
+	
+})
