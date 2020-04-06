@@ -99,13 +99,14 @@
 				}
             }
         </script>
-        <style>.content{width: 100%; height: auto;text-align: center;}</style>
+        <style>.content{width: 100%; height: auto;text-align: center;position:relative;}</style>
     </head>
     <body onload="init();">
         <div class="content">
             <img id="banner-inpage" 
                 border="0" alt=""
-                src="%%FILE:JPG1%%" style="width: 100%" />
+                src="%%FILE:PNG1%%" style="width: 100%;position: absolute;top: 0;left: 0;z-index: 1;" />
+            <img src="%%FILE:JPG1%%" style="width: 100%;position: absolute;top: 0;left: 0;z-index: 0;" />
         </div>
         <div id="impressionTrack"></div>
         

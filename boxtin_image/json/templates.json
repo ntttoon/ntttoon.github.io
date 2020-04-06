@@ -6,7 +6,7 @@
             "thumb": "images/thumbs/thumb_temp01.jpg",
             "cat": "1",
             "image_wh": "600x300",
-            "image1_path": "",
+            "image1_path": "images/demo_img01.jpg",
             "image1_x": "0",
             "image1_y": "0",
             "image1_scalex": "1",

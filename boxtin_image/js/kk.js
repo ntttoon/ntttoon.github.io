@@ -606,16 +606,16 @@ document.getElementById("save").addEventListener("click", function(){
 	readTemplates("templates/responsive_300x250.html","html_holder");
 	var zip = new JSZip();
 	//
-	var click = 'http://24h.com.vn';
+	var click = document.getElementById("tracking_click").value;
 	click = change_alias(click);
 	replaceClick("html_holder",click);
 	var data_html = document.getElementById("html_holder").textContent;
 	//
 	stage.find('Transformer').destroy();
-	var imgData = stage.toDataURL({ pixelRatio: 1 });
+	//var imgData = stage.toDataURL({ pixelRatio: 1 });
+	var imgData = stage.toDataURL({ mimeType: "image/jpeg", quality: 1 });
 	//
-	zip.file("txt.png", imgData.substr(imgData.indexOf(',')+1), {base64: true});
-	zip.file("123.jpg","");
+	zip.file("123.jpg", imgData.substr(imgData.indexOf(',')+1), {base64: true});
 	zip.file("index.html", data_html);
 
 	var filename = prompt("Đặt tên cho file zip.\nLưu ý: Không nên đặt tên Tiếng Việt có dấu, ký tự lạ, không cần thêm .zip", "banner");
