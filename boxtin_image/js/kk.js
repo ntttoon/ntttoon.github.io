@@ -608,7 +608,18 @@ document.getElementById("save").addEventListener("click", function(){
 	//
 	var click = document.getElementById("tracking_click").value;
 	click = change_alias(click);
-	replaceClick("html_holder",click);
+
+	var encodeclick = document.getElementById("encode_check").checked;
+	if(encodeclick == true){
+		var encodedclick = encodeURIComponent(click);
+		replaceClick("html_holder",encodedclick);
+		
+	}
+	if(encodeclick == false){
+		var encodedclick = encodeURIComponent(click);
+		replaceClick("html_holder",click);
+	}
+
 	var data_html = document.getElementById("html_holder").textContent;
 	//
 	stage.find('Transformer').destroy();
