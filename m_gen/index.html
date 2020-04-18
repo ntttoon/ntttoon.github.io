@@ -67,7 +67,7 @@
 <div class="w3-teal">
   <button class="w3-button w3-teal w3-large" onclick="w3_open()">☰</button>
   <!-- <button class="w3-button w3-teal w3-large w3-right" onclick="update_export()">Cập nhật thay đổi</button>-->
-  <button class="w3-button w3-teal w3-large w3-right" id="zip_button">Save file</button>
+  <button class="w3-button w3-teal w3-large w3-right" id="htmlonly_button">Save only html</button>
   <button class="w3-button w3-teal w3-large w3-right" onclick="w_view = 360;update_export()">360px View</button>
   <button class="w3-button w3-teal w3-large w3-right" onclick="w_view = 1600;update_export()">1600px View</button>
   <span id="currentSlot" class="w3-display-topmiddle">html_s1</span>
@@ -393,8 +393,8 @@ function imageGen(){
 	var c = document.getElementById(b).src;
 	var aa = document.getElementById('alt_currentSlot').innerHTML;
 	var bb = document.getElementById('currentImgId_FileName').innerHTML;
-	document.getElementById(a).innerHTML = '<div class="mg-center" style="margin-bottom:16px"><img alt="" class="mg-hide-small mg-image" src="' + c + '"> <img alt="" class="mg-hide-medium mg-hide-large mg-image" src="' + c + '"></div>';
-	document.getElementById(aa).innerHTML = '<div class="mg-center" style="margin-bottom:16px"><img alt="" class="mg-hide-small mg-image" src="' + bb + '"> <img alt="" class="mg-hide-medium mg-hide-large mg-image" src="' + bb + '"></div>';
+	document.getElementById(a).innerHTML = '<div class="mg-center"><img alt="" class="mg-hide-small mg-image" src="' + c + '"> <img alt="" class="mg-hide-medium mg-hide-large mg-image" src="' + c + '"></div>';
+	document.getElementById(aa).innerHTML = '<div class="mg-center"><img alt="" class="mg-hide-small mg-image" src="' + bb + '"> <img alt="" class="mg-hide-medium mg-hide-large mg-image" src="' + bb + '"></div>';
 	modal_close();
 	update_export()
 }
@@ -477,10 +477,10 @@ $('#paragraph,#paragraph_left,#paragraph_right').trumbowyg({
         ['formatting'],
         ['strong', 'em', 'del'],
         ['superscript', 'subscript'],
-		['foreColor', 'backColor'],
+		    ['foreColor', 'backColor'],
         ['link'],
         ['insertImage'],
-		['noembed'],
+		    ['noembed'],
         ['justifyLeft', 'justifyCenter', 'justifyRight', 'justifyFull'],
         ['unorderedList', 'orderedList'],
         ['horizontalRule'],
@@ -493,7 +493,7 @@ $('#paragraph,#paragraph_left,#paragraph_right').trumbowyg({
 <script async src="js/FileSaver.js"> </script> 
 <script async src="js/jszip.js"> </script> 
 <script>
-document.getElementById("zip_button").addEventListener("click", function(){
+document.getElementById("htmlonly_button").addEventListener("click", function(){
 	
 	var file = new File([result2], "index.html", {type: "text/plain;charset=utf-8"});
 	saveAs(file);
