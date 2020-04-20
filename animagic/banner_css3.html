@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>banner CSS3</title>
+<style>
+body{
+	margin:0;
+	padding:0;
+	background-color:#FFF;
+}
+#banner{
+	width:336px;
+	height:280px;
+	overflow:hidden;
+	position:relative;
+	background-color:#FFF;
+}
+#banner img{
+	position: absolute;
+}
+.bg{
+	top:0;
+	left:0;
+}
+.thoasuc{
+	top:90px;
+	left:15px;
+	opacity: 0;
+}
+.pic01, .pic02, .pic03{
+	top:133px;
+	left:0px;
+	opacity: 0;
+}
+.text01{
+	top:80px;
+	left:15px;
+	opacity: 0;
+}
+.text02{
+	top:80px;
+	left:15px;
+	opacity: 0;
+}
+.text03{
+	top:75px;
+	left:7px;
+	opacity: 0;
+}
+
+/* animate int */
+.animate .thoasuc {
+	-webkit-animation: keys 3s ease 0.5s forwards;
+	animation: keys 3s ease 0.5s forwards;
+}
+.animate .pic01 {
+	-webkit-animation: fadeInUpOut 3s ease 3.5s forwards;
+	animation: fadeInUpOut 3s ease 3.5s forwards;
+}
+.animate .text01 {
+	-webkit-animation: fadeInUpOut 2.5s ease 4s forwards;
+	animation: fadeInUpOut 2.5s ease 4s forwards;
+}
+.animate .pic02 {
+	-webkit-animation: fadeInUpOut 3s ease 6.5s forwards;
+	animation: fadeInUpOut 3s ease 6.5s forwards;
+}
+.animate .text02 {
+	-webkit-animation: fadeInUpOut 2.5s ease 7s forwards;
+	animation: fadeInUpOut 2.5s ease 7s forwards;
+}
+.animate .pic03 {
+	-webkit-animation: fadeInUpStop 0.5s ease 9.5s forwards;
+	animation: fadeInUpStop 0.5s ease 9.5s forwards;
+}
+.animate .text03 {
+	-webkit-animation: fadeInUpStop 0.5s ease 10s forwards;
+	animation: fadeInUpStop 0.5s ease 10s forwards;
+}
+/*@keyframes*/
+@keyframes keys {
+	0% {
+		opacity: 0;
+		transform: scale(2, 2);            
+	}
+	20% {
+		opacity: 1;
+		transform: scale(1, 1);            
+	}
+	80% {
+		opacity: 1;
+		transform: scale(1, 1);            
+	}
+	100% {
+		opacity: 0;
+		transform: scale(2, 2);            
+	}
+}
+
+@keyframes fadeInUpOut {
+	0% {
+		opacity: 0;
+		transform: translate3d(0,100%,0);            
+	}
+	20% {
+		opacity: 1;
+		transform: translate3d(0,0,0);            
+	}
+	80% {
+		opacity: 1;
+		transform: translate3d(0,0,0);            
+	}
+	100% {
+		opacity: 0;
+		transform: translate3d(0,0,0);            
+	}
+}
+
+@keyframes fadeInUpStop {
+	0% {
+		opacity: 0;
+		transform: translate3d(0,100%,0);            
+	}
+	100% {
+		opacity: 1;
+		transform: translate3d(0,0,0);            
+	}
+}
+/*@-webkit-keyframes*/
+@-webkit-keyframes keys {
+	0% {
+		opacity: 0;
+		transform: scale(2, 2);            
+	}
+	20% {
+		opacity: 1;
+		transform: scale(1, 1);            
+	}
+	80% {
+		opacity: 1;
+		transform: scale(1, 1);            
+	}
+	100% {
+		opacity: 0;
+		transform: scale(2, 2);            
+	}
+}
+
+@-webkit-keyframes fadeInUpOut {
+	0% {
+		opacity: 0;
+		transform: translate3d(0,100%,0);            
+	}
+	20% {
+		opacity: 1;
+		transform: translate3d(0,0,0);            
+	}
+	80% {
+		opacity: 1;
+		transform: translate3d(0,0,0);            
+	}
+	100% {
+		opacity: 0;
+		transform: translate3d(0,0,0);            
+	}
+}
+
+@-webkit-keyframes fadeInUpStop {
+	0% {
+		opacity: 0;
+		transform: translate3d(0,100%,0);            
+	}
+	100% {
+		opacity: 1;
+		transform: translate3d(0,0,0);            
+	}
+}
+
+</style>
+</head>
+
+<body onload="responsiveBanner();">
+<div id="banner">
+	<a href="https://24h.com.vn" target="_blank" class="small">
+		<img class="bg" src="images/bg.jpg">
+		<img class="thoasuc" src="images/thoasuc.png">
+		<img class="pic01" src="images/pic01.png">
+		<img class="text01" src="images/text01.png">
+		<img class="pic02" src="images/pic02.png">
+		<img class="text02" src="images/text02.png">
+		<img class="pic03" src="images/pic03.png">
+		<img class="text03" src="images/text03.png">
+	</a>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$("#banner .small").addClass("animate");            
+		});
+	</script>
+<script>
+	function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]"); var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search); return results === null ? "" :
+		decodeURIComponent(results[1].replace(/\+/g, " ")); 
+	}
+</script>
+<script>
+	var widthbanner = document.getElementById("banner").clientWidth;
+    function responsiveBanner(){
+        var w = getParameterByName("w");
+        console.log(w);
+        var widthbannerclient = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        if(w == ""){    document.body.style.zoom = widthbannerclient/widthbanner *100+"%";   }
+        else {     document.body.style.zoom = w/widthbanner *100+"%";   }  }
+    window.onresize = function(event) {
+        responsiveBanner();
+	};
+</script>
+</body>
+</html>
+
