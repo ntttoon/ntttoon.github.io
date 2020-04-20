@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>banner HTML5</title>
+<link href="css/animate352.css" type="text/css" rel="stylesheet">
+<!--<link href="css/magic.css" type="text/css" rel="stylesheet">-->
+<style>
+body{
+	margin:0;
+	padding:0;
+	background-color:#FFF;
+}
+#banner{
+	width:336px;
+	height:280px;
+	overflow:hidden;
+	position:relative;
+	visibility:hidden;
+	background-color:#FFF;
+}
+#banner img{
+	position: absolute;
+}
+#bg{
+	top:0;
+	left:0;
+}
+#thoasuc{
+	top:90px;
+	left:15px;
+}
+#pic01, #pic02, #pic03{
+	top:133px;
+	left:0px;
+}
+#text01{
+	top:80px;
+	left:15px;
+}
+#text02{
+	top:80px;
+	left:15px;
+}
+#text03{
+	top:75px;
+	left:7px;
+}
+#replay{
+	top:5px;
+	left:5px;
+	position: absolute;
+	visibility:hidden;
+	z-index:9999;
+}
+</style>
+</head>
+
+<body onload="responsiveBanner();">
+<div id="banner">
+	<img id="replay" src="images/replay_white.png">
+	<a href="#" target="_blank">
+		<div id="frame1">
+			<img id="bg" src="images/bg.jpg">
+			<img id="thoasuc" src="images/thoasuc.png">
+		</div>
+		<div id="frame2">
+			<img id="pic01" src="images/pic01.png">
+			<img id="text01" src="images/text01.png">
+		</div>
+		<div id="frame3">
+			<img id="pic02" src="images/pic02.png">
+			<img id="text02" src="images/text02.png">
+		</div>
+		<div id="frame4">
+			<img id="pic03" src="images/pic03.png">
+			<img id="text03" src="images/text03.png">
+		</div>
+	</a>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="js/ntttoon.js" language="javascript" type="text/javascript"></script>
+<script>
+	function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]"); var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search); return results === null ? "" :
+		decodeURIComponent(results[1].replace(/\+/g, " ")); 
+	}
+</script>
+<script>
+	var widthbanner = document.getElementById("banner").clientWidth;
+    function responsiveBanner(){
+        var w = getParameterByName("w");
+        console.log(w);
+        var widthbannerclient = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        if(w == ""){    document.body.style.zoom = widthbannerclient/widthbanner *100+"%";   }
+        else {     document.body.style.zoom = w/widthbanner *100+"%";   }  }
+    window.onresize = function(event) {
+        responsiveBanner();
+	};
+</script>
+<script type="text/javascript">
+	function bannerani(){
+		//effect(delay_start,duration,div,effect_in,effect_out,delay_mid,effect_mid,loop_mid)
+		effect(0,5000,'#frame1 #bg','','',1000,'',0);
+		effect(0,3500,'#frame1 #thoasuc','fadeInUp','zoomOut',1000,'',0);
+		//
+		effect(4000,3500,'#frame2 #pic01','fadeIn','fadeOut',1000,'',0);
+		effect(4000,3500,'#frame2 #text01','fadeInUp','fadeOut',1000,'',0);
+		//
+		effect(8000,3500,'#frame3 #pic02','fadeIn','fadeOut',1000,'',0);
+		effect(8000,3500,'#frame3 #text02','fadeInUp','fadeOut',1000,'',0);
+		//
+		effect(12000,5000,'#frame4 #pic03','fadeIn','',1000,'',0);
+		effect(12000,5000,'#frame4 #text03','fadeInUp','',1000,'',0);
+		//
+		effect(14000,5000,'#replay','fadeIn','',1000,'',1);
+	}
+    $(document).ready(function() {
+		bannerani();
+    });
+	$("#replay").click(function() {
+		$("#banner img").removeAttr('style');
+		$(this).removeAttr('style');
+		bannerani();
+	});
+</script>
+</html>
+
