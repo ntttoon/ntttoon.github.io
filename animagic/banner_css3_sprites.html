@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>banner HTML5</title>
+<style>
+body{
+	margin:0;
+	padding:0;
+	background-color:#FFF;
+}
+#banner{
+	width:336px;
+	height:280px;
+	overflow:hidden;
+	position:relative;
+	background-color:#FFF;
+}
+#banner .sprite{
+	position: absolute;
+}
+/* Spritesheet */
+.sprite {
+    background-image: url(images/vna_spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-bg {
+    width: 336px;
+    height: 280px;
+    background-position: -5px -5px;
+}
+
+.sprite-pic01 {
+    width: 336px;
+    height: 147px;
+    background-position: -5px -295px;
+}
+
+.sprite-pic02 {
+    width: 336px;
+    height: 147px;
+    background-position: -351px -5px;
+}
+
+.sprite-pic03 {
+    width: 336px;
+    height: 147px;
+    background-position: -351px -162px;
+}
+
+.sprite-replay_white {
+    width: 16px;
+    height: 16px;
+    background-position: -697px -5px;
+}
+
+.sprite-text01 {
+    width: 309px;
+    height: 50px;
+    background-position: -351px -319px;
+}
+
+.sprite-text02 {
+    width: 307px;
+    height: 50px;
+    background-position: -351px -379px;
+}
+
+.sprite-text03 {
+    width: 319px;
+    height: 53px;
+    background-position: -351px -439px;
+}
+
+.sprite-thoasuc {
+    width: 304px;
+    height: 56px;
+    background-position: -5px -502px;
+}
+/* End of Spritesheet */
+.sprite-bg {
+	top:0;
+	left:0;
+}
+.sprite-thoasuc{
+	top:90px;
+	left:15px;
+	opacity: 0;
+}
+.sprite-pic01, .sprite-pic02, .sprite-pic03{
+	top:133px;
+	left:0px;
+	opacity: 0;
+}
+.sprite-text01{
+	top:80px;
+	left:15px;
+	opacity: 0;
+}
+.sprite-text02{
+	top:80px;
+	left:15px;
+	opacity: 0;
+}
+.sprite-text03{
+	top:75px;
+	left:7px;
+	opacity: 0;
+}
+.sprite-replay_white {
+	top:5px;
+	left:5px;
+	z-index:9999;
+}
+</style>
+
+<style>
+/* animate int */
+.animate .sprite-thoasuc {
+	-webkit-animation: keys 3s ease 0.5s forwards;
+	animation: keys 3s ease 0.5s forwards;
+}
+.animate .sprite-pic01 {
+	-webkit-animation: fadeInUpOut 3s ease 3.5s forwards;
+	animation: fadeInUpOut 3s ease 3.5s forwards;
+}
+.animate .sprite-text01 {
+	-webkit-animation: fadeInUpOut 2.5s ease 4s forwards;
+	animation: fadeInUpOut 2.5s ease 4s forwards;
+}
+.animate .sprite-pic02 {
+	-webkit-animation: fadeInUpOut 3s ease 6.5s forwards;
+	animation: fadeInUpOut 3s ease 6.5s forwards;
+}
+.animate .sprite-text02 {
+	-webkit-animation: fadeInUpOut 2.5s ease 7s forwards;
+	animation: fadeInUpOut 2.5s ease 7s forwards;
+}
+.animate .sprite-pic03 {
+	-webkit-animation: fadeInUpStop 0.5s ease 9.5s forwards;
+	animation: fadeInUpStop 0.5s ease 9.5s forwards;
+}
+.animate .sprite-text03 {
+	-webkit-animation: fadeInUpStop 0.5s ease 10s forwards;
+	animation: fadeInUpStop 0.5s ease 10s forwards;
+}
+/*@keyframes*/
+@keyframes keys {
+	0% {
+		opacity: 0;
+		transform: scale(2, 2);            
+	}
+	20% {
+		opacity: 1;
+		transform: scale(1, 1);            
+	}
+	80% {
+		opacity: 1;
+		transform: scale(1, 1);            
+	}
+	100% {
+		opacity: 0;
+		transform: scale(2, 2);            
+	}
+}
+
+@keyframes fadeInUpOut {
+	0% {
+		opacity: 0;
+		transform: translate3d(0,100%,0);            
+	}
+	20% {
+		opacity: 1;
+		transform: translate3d(0,0,0);            
+	}
+	80% {
+		opacity: 1;
+		transform: translate3d(0,0,0);            
+	}
+	100% {
+		opacity: 0;
+		transform: translate3d(0,0,0);            
+	}
+}
+
+@keyframes fadeInUpStop {
+	0% {
+		opacity: 0;
+		transform: translate3d(0,100%,0);            
+	}
+	100% {
+		opacity: 1;
+		transform: translate3d(0,0,0);            
+	}
+}
+/*@-webkit-keyframes*/
+@-webkit-keyframes keys {
+	0% {
+		opacity: 0;
+		transform: scale(2, 2);            
+	}
+	20% {
+		opacity: 1;
+		transform: scale(1, 1);            
+	}
+	80% {
+		opacity: 1;
+		transform: scale(1, 1);            
+	}
+	100% {
+		opacity: 0;
+		transform: scale(2, 2);            
+	}
+}
+
+@-webkit-keyframes fadeInUpOut {
+	0% {
+		opacity: 0;
+		transform: translate3d(0,100%,0);            
+	}
+	20% {
+		opacity: 1;
+		transform: translate3d(0,0,0);            
+	}
+	80% {
+		opacity: 1;
+		transform: translate3d(0,0,0);            
+	}
+	100% {
+		opacity: 0;
+		transform: translate3d(0,0,0);            
+	}
+}
+
+@-webkit-keyframes fadeInUpStop {
+	0% {
+		opacity: 0;
+		transform: translate3d(0,100%,0);            
+	}
+	100% {
+		opacity: 1;
+		transform: translate3d(0,0,0);            
+	}
+}	
+</style>
+</head>
+
+<body onload="responsiveBanner();">
+<div id="banner">
+	<i class="sprite sprite-replay_white" id=replay></i>
+	<a href="#" target="_blank" id="small">
+		<i class="sprite sprite-bg"></i>
+		<i class="sprite sprite-thoasuc"></i>
+		<i class="sprite sprite-pic01"></i>
+		<i class="sprite sprite-text01"></i>
+		<i class="sprite sprite-pic02"></i>
+		<i class="sprite sprite-text02"></i>
+		<i class="sprite sprite-pic03"></i>
+		<i class="sprite sprite-text03"></i>
+	</a>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#small").addClass("animate");            
+	});
+	element = document.getElementById("small");
+	replay_btn = document.getElementById("replay");
+	replay_btn.addEventListener("click", function(e) {
+  		e.preventDefault;
+ 		element.classList.remove("animate");
+  		void element.offsetWidth;
+  		element.classList.add("animate");
+	}, false);
+</script>
+<script>
+	function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]"); var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search); return results === null ? "" :
+		decodeURIComponent(results[1].replace(/\+/g, " ")); 
+	}
+</script>
+<script>
+	var widthbanner = document.getElementById("banner").clientWidth;
+    function responsiveBanner(){
+        var w = getParameterByName("w");
+        console.log(w);
+        var widthbannerclient = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        if(w == ""){    document.body.style.zoom = widthbannerclient/widthbanner *100+"%";   }
+        else {     document.body.style.zoom = w/widthbanner *100+"%";   }  }
+    window.onresize = function(event) {
+        responsiveBanner();
+	};
+</script>
+
+</html>
+

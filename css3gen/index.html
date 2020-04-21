@@ -1,0 +1,134 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS3 Animation Creator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/w3.css">
+<style>
+.noUnderline{
+	text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+<header class="w3-container w3-teal">
+	<h5>CSS3 Animation Creator</h5>
+</header>
+<div class="w3-half w3-container">
+    <p><label><span class="w3-text-red">* </span>1.Đặt tên cho chuyển động @keyframes (lưu ý không đặt trùng tên)</label>
+    <input class="w3-input w3-border" id="keyframes" type="text" value="motion1"></p>
+    <p><label><span class="w3-text-red">* </span>2.Điền tên class bạn muốn áp chuyển động ở mục 1 trên (lưu ý không đặt trùng tên)</label>
+    <input class="w3-input w3-border" id="classname" type="text" value="classname1"></p>
+</div>
+<div class="w3-half w3-container">
+    <p><label><span class="w3-text-red">* </span>3.Nhập tổng thời gian chuyển động (chỉ nhập số)</label>
+    <input class="w3-input w3-border" id="duration" type="text" value="3"></p>
+    <p><label><span class="w3-text-red">* </span>4.Nhập thời điểm bắt đầu chuyển động (chỉ nhập số)</label>
+    <input class="w3-input w3-border" id="starttime" type="text" value="0"></p>
+</div>
+<div class="w3-container">
+    <p><label><span class="w3-text-red">* </span>5.Chọn loại chuyển động</label>
+    <div class="w3-row">
+        <select class="w3-select w3-border" id="ease_list">
+            <option value="ease" selected>ease</option>
+            <option value="ease-in" >ease-in</option>
+            <option value="ease-out" >ease-out</option>
+            <option value="ease-in-out" >ease-in-out</option>
+        </select>
+    </div>
+    <br>
+    <label>Chọn loại Animation</label>
+    <input class="w3-radio" type="radio" name="type" value="inout" checked>
+    <label>Chuyển động In và Out</label>
+    <input class="w3-radio" type="radio" name="type" value="in">
+    <label>Chỉ có chuyển động In</label>
+    <br><br>
+    <div class="w3-row">
+        <select class="w3-select w3-border" id="effect_list">
+            <option value="0" selected>Alpha</option>
+            <option value="1" >Zoom In</option>
+            <option value="2" >Zoom Out</option>
+            <option value="3" >Fade In Left</option>
+            <option value="4" >Fade In Right</option>
+            <option value="5" >Fade In Up</option>
+            <option value="6" >Fade In Down</option>
+        </select>
+    </div>
+    <p><button class="w3-btn w3-teal" id="gen_css" onclick="ani_gen()">Tạo</button></p>
+</div>
+
+<div class="w3-container">
+    <div id="code_out" class="w3-yellow" ></div>
+</div>
+
+  <script>
+    var code_out =  document.getElementById("code_out");
+
+    function ani_gen() {
+        var keyframes = document.getElementById("keyframes").value;
+        var classname = document.getElementById("classname").value;
+        var effect_type = document.querySelector('input[name="type"]:checked').value;
+        var effect_list = document.getElementById("effect_list").value;
+        var ease_list = document.getElementById("ease_list").value;
+        var duration = document.getElementById("duration").value;
+        var starttime = document.getElementById("starttime").value;
+       
+        if(keyframes==""){
+            alert("Bạn chưa nhập tên chuyển động");
+        }
+        if(classname==""){
+            alert("Bạn chưa nhập tên class");
+        }
+        else if(effect_type == "inout"){
+            if(effect_list == "0"){
+                code_out.innerHTML = ".animate ." + classname + " {" + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>}<br>" + "@keyframes "+keyframes+ " {<br>"+"0%{opacity:0;}<br>25%{opacity:1;}<br>75%{opacity:1;}<br>100%{opacity:0;}<br>}<br>" + "@-webkit-keyframes "+keyframes+ " {<br>"+"0%{opacity:0;}<br>25%{opacity:1;}<br>75%{opacity:1;}<br>100%{opacity:0;}<br>}";
+            }
+            if(effect_list == "1"){
+                code_out.innerHTML = ".animate ." + classname + " {" + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>}<br>" + "@keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:scale(0.5,0.5)}<br>25%{opacity:1;transform:scale(1,1)}<br>75%{opacity:1;transform:scale(1,1)}<br>100%{opacity:0;transform:scale(0.5,0.5)}<br>}<br>" + "@-webkit-keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:scale(0.5,0.5)}<br>25%{opacity:1;transform:scale(1,1)}<br>75%{opacity:1;transform:scale(1,1)}<br>100%{opacity:0;transform:scale(0.5,0.5)}<br>}";
+            }
+            if(effect_list == "2"){
+                code_out.innerHTML = ".animate ." + classname + " {" + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>}<br>" + "@keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:scale(2,2)}<br>25%{opacity:1;transform:scale(1,1)}<br>75%{opacity:1;transform:scale(1,1)}<br>100%{opacity:0;transform:scale(2,2)}<br>}<br>" + "@-webkit-keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:scale(2,2)}<br>25%{opacity:1;transform:scale(1,1)}<br>75%{opacity:1;transform:scale(1,1)}<br>100%{opacity:0;transform:scale(2,2)}<br>}";
+            }
+            if(effect_list == "3"){
+                code_out.innerHTML = ".animate ." + classname + " {" + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>}<br>" + "@keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:translate3d(-100%,0,0)}<br>25%{opacity:1;transform:translate3d(0,0,0)}<br>75%{opacity:1;transform:translate3d(0,0,0)}<br>100%{opacity:0;transform:translate3d(-100%,0,0)}<br>}<br>" + "@-webkit-keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:translate3d(-100%,0,0)}<br>25%{opacity:1;transform:translate3d(0,0,0)}<br>75%{opacity:1;transform:translate3d(0,0,0)}<br>100%{opacity:0;transform:translate3d(-100%,0,0)}<br>}";
+            }
+            if(effect_list == "4"){
+                code_out.innerHTML = ".animate ." + classname + " {" + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>}<br>" + "@keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:translate3d(100%,0,0)}<br>25%{opacity:1;transform:translate3d(0,0,0)}<br>75%{opacity:1;transform:translate3d(0,0,0)}<br>100%{opacity:0;transform:translate3d(100%,0,0)}<br>}<br>" + "@-webkit-keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:translate3d(100%,0,0)}<br>25%{opacity:1;transform:translate3d(0,0,0)}<br>75%{opacity:1;transform:translate3d(0,0,0)}<br>100%{opacity:0;transform:translate3d(100%,0,0)}<br>}";
+            }
+            if(effect_list == "5"){
+                code_out.innerHTML = ".animate ." + classname + " {" + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>}<br>" + "@keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:translate3d(0,100%,0)}<br>25%{opacity:1;transform:translate3d(0,0,0)}<br>75%{opacity:1;transform:translate3d(0,0,0)}<br>100%{opacity:0;transform:translate3d(0,-100%,0)}<br>}<br>" + "@-webkit-keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:translate3d(0,100%,0)}<br>25%{opacity:1;transform:translate3d(0,0,0)}<br>75%{opacity:1;transform:translate3d(0,0,0)}<br>100%{opacity:0;transform:translate3d(0,-100%,0)}<br>}";
+            }
+            if(effect_list == "6"){
+                code_out.innerHTML = ".animate ." + classname + " {" + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>}<br>" + "@keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:translate3d(0,-100%,0)}<br>25%{opacity:1;transform:translate3d(0,0,0)}<br>75%{opacity:1;transform:translate3d(0,0,0)}<br>100%{opacity:0;transform:translate3d(0,100%,0)}<br>}<br>" + "@-webkit-keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:translate3d(0,-100%,0)}<br>25%{opacity:1;transform:translate3d(0,0,0)}<br>75%{opacity:1;transform:translate3d(0,0,0)}<br>100%{opacity:0;transform:translate3d(0,100%,0)}<br>}";
+            }
+        }
+        else if(effect_type == "in"){
+            if(effect_list == "0"){
+                code_out.innerHTML = ".animate ." + classname + " {" + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>}<br>" + "@keyframes "+keyframes+ " {<br>"+"0%{opacity:0;}<br>100%{opacity:1;}<br>}<br>" + "@-webkit-keyframes "+keyframes+ " {<br>"+"0%{opacity:0;}<br>100%{opacity:1;}<br>}";
+            }
+            if(effect_list == "1"){
+                code_out.innerHTML = ".animate ." + classname + " {" + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>}<br>" + "@keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:scale(0.5,0.5)}<br>100%{opacity:1;transform:scale(1,1)}<br>}<br>" + "@-webkit-keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:scale(0.5,0.5)}<br>100%{opacity:1;transform:scale(1,1)}<br>}";
+            }
+            if(effect_list == "2"){
+                code_out.innerHTML = ".animate ." + classname + " {" + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>}<br>" + "@keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:scale(2,2)}<br>100%{opacity:1;transform:scale(1,1)}<br>}<br>" + "@-webkit-keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:scale(2,2)}<br>100%{opacity:1;transform:scale(1,1)}<br>}";
+            }
+            if(effect_list == "3"){
+                code_out.innerHTML = ".animate ." + classname + " {" + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>}<br>" + "@keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:translate3d(-100%,0,0)}<br>100%{opacity:1;transform:translate3d(0,0,0)}<br>}<br>" + "@-webkit-keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:translate3d(-100%,0,0)}<br>100%{opacity:1;transform:translate3d(0,0,0)}<br>}";
+            }
+            if(effect_list == "4"){
+                code_out.innerHTML = ".animate ." + classname + " {" + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>}<br>" + "@keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:translate3d(100%,0,0)}<br>100%{opacity:1;transform:translate3d(0,0,0)}<br>}<br>" + "@-webkit-keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:translate3d(100%,0,0)}<br>100%{opacity:1;transform:translate3d(0,0,0)}<br>}";
+            }
+            if(effect_list == "5"){
+                code_out.innerHTML = ".animate ." + classname + " {" + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>}<br>" + "@keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:translate3d(0,100%,0)}<br>100%{opacity:1;transform:translate3d(0,0,0)}<br>}<br>" + "@-webkit-keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:translate3d(0,100%,0)}<br>100%{opacity:1;transform:translate3d(0,0,0)}<br>}";
+            }
+            if(effect_list == "6"){
+                code_out.innerHTML = ".animate ." + classname + " {" + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>}<br>" + "@keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:translate3d(0,-100%,0)}<br>100%{opacity:1;transform:translate3d(0,0,0)}<br>}<br>" + "@-webkit-keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:translate3d(0,-100%,0)}<br>100%{opacity:1;transform:translate3d(0,0,0)}<br>}";
+            }
+        }
+
+    }
+  </script>
+</body>
+</html>

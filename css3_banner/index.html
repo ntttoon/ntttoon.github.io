@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP Banner Maker</title>
+    <link rel="stylesheet" href="../css/w3.css">
+    <script type="text/javascript" src="js/jscall.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+</head>
+<body class="w3-light-grey">
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-border-right w3-small" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+        <div id="sprite_pos_holder"></div>
+    </div>
+    
+    <!-- Page Content -->
+    <div class="w3-bar w3-orange">
+        <button class="w3-bar-item w3-button" onclick="w3_open()">☰</button>
+        <input type="text" class="w3-bar-item w3-input w3-border" value="336" id="banner_width">
+        <input type="text" class="w3-bar-item w3-input w3-border" value="280" id="banner_height">
+        <input class="w3-bar-item w3-input" type="file" onchange="readURL(this);">
+        <div class="w3-dropdown-hover w3-right">
+            <button class="w3-button">Save File As</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <button class="w3-bar-item w3-button" id="zip_button">Zip</button>
+                <button class="w3-bar-item w3-button" id="inpage_button">Inpage</button>
+                <button class="w3-bar-item w3-button" id="responsive_button">Responsive</button>
+            </div>
+        </div>
+        
+        <a href="https://ntttoon.github.io/stitches/src/" target="_blank" class="w3-bar-item w3-button w3-right">Stitches</a>
+        <a href="https://ntttoon.github.io/css3gen/" target="_blank" class="w3-bar-item w3-button w3-right">CSS3 gen</a>
+    </div>
+
+    <!-- Banner holder -->
+    <div class="w3-display-middle" style="background-color: white;">
+        <div id="banner_holder"></div>
+    </div>
+    <img id="sprite_image" style="position:absolute;top:50px;right:10px" src="" />
+
+    <!-- Sprite holder -->
+    <div id="sprite_holder" style="display:none;position:absolute"></div>
+
+    <!-- Css import -->
+    <textarea id="sprite_css" style="position:absolute;top:300px;right:10px;height:500px;font-size:12px;">Paste css spritesheet from stitches. Don't include first ".sprite" class</textarea>
+    <button class="w3-button w3-teal" style="position:absolute;top:820px;right:10px" onclick="cssimport()">import css</button>
+
+    <!-- i tag holder -->
+    <div id="sprite_itag" style="display:none;position:absolute"></div>
+
+    <!-- css pos of sprites -->
+    <div id="sprite_cssposs_holderdiv" style="display:none;position:absolute"></div>
+    <div id="sprite_cssposs" style="display:none;position:absolute"></div>
+
+    <!-- javascript gsap -->
+    <button class="w3-button w3-teal w3-display-bottommiddle" onclick="document.getElementById('id01').style.display='block'">Open CSS Board</button>
+
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+          <header class="w3-container w3-teal"> 
+            <span onclick="document.getElementById('id01').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <p>CSS3 Animation</p>
+          </header>
+          <textarea id="css3_animation" style="width:100%;height:500px;font-size:12px;border: none;"></textarea>
+        </div>
+      </div>
+
+    <!-- dfp_zip_holder -->
+    <div id="dfp_zip_holder" style="display:none;position:absolute"></div>
+
+    <!-- dfp_inpage_holder -->
+    <div id="dfp_inpage_holder" style="display:none;position:absolute"></div>
+
+    <!-- dfp_responsive_holder -->
+    <div id="dfp_responsive_holder" style="display:none;position:absolute"></div>
+
+</body>
+<!-- Main Script -->
+<script>
+    var banner_width = document.getElementById("banner_width").value;
+    var banner_height = document.getElementById("banner_height").value;
+	function update_export(){
+		loadScript("temp/banner.js", function(){
+			document.getElementById("banner_holder").innerHTML = "<iframe srcdoc=\'"+ preview_html + "\' width=\'" + banner_width + "\' height=\'" + banner_height + "\' frameborder='0' scrolling='no' style='background:#FFF'></iframe>" ;
+		});
+    }
+    //////////////////////////////
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+    }
+    function w3_close() {
+         document.getElementById("mySidebar").style.display = "none";
+    }
+    //////////////////////////////
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#sprite_image')
+                    .attr('src', e.target.result)
+                    .width(200);
+                    //.height(200);
+                    document.getElementById('sprite_holder').textContent = e.target.result;
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+        var si = document.getElementById('sprite_image').src;
+        update_export()
+    }
+    //////////////////////////////
+    function cssimport() {
+        var txt = document.getElementById("sprite_css").value;
+        var css = txt.match(/(?:[\.]{1})([a-zA-Z_]+[\w-_]*)(?:[\s\.\,\{\>#\:]{0})/igm);
+        document.getElementById("sprite_pos_holder").innerHTML = "";
+        document.getElementById("sprite_itag").innerHTML = "";
+        document.getElementById("sprite_cssposs_holderdiv").innerHTML = "";
+        document.getElementById("css3_animation").value = "";
+
+        for(i=0;i<css.length;i++){
+            var s = css[i];
+            var ss = s.substr(1);
+            var ss_nodash = ss.replace(/\-/g,"");
+            var sstop = ss + "top";
+            var ssleft = ss + "left";
+            //var ssselect = ss + "select";
+            var sszindex = ss + "zindex";
+            var sscheck = ss + "check";
+            document.getElementById("sprite_pos_holder").innerHTML += '<div class="w3-bar-item w3-button">'+ css[i] + '<br><input id="' + sstop + '" type="text" maxlength="4" style="width:40px" value="0"> <input id="' + ssleft + '" type="text" maxlength="4" style="width:40px" value="0"> <input id="' + sszindex + '" type="text" maxlength="2" style="width:30px" value="0"> <input id="' + sscheck + '" type="checkbox"> <button onclick="write_pos_css(\'' + sstop + '\',\'' + ssleft + '\',\'' + sszindex + '\',\'' + sscheck + '\',\'' + ss + '\')">Apply</button></div>';
+            document.getElementById("sprite_itag").innerHTML += '<i class="sprite ' + ss +'"></i>'
+            document.getElementById("sprite_cssposs_holderdiv").innerHTML += '<div class="cssposs" id="' + ss + '">' + css[i] + '{top:0px;left:0px;z-index:0;opacity:1}' +'</div>';
+            //document.getElementById("css3_animation").value += '.from($' + ss_nodash + ', 1, {x:"-=500px", ease:Power1.easeOut})\n';
+            document.getElementById("css3_animation").value += ".animate " + s + " {\n-webkit-animation: "+ss+"-ani"+" 1s ease 0s forwards;\nanimation: "+ss+"-ani"+" 1s ease 0s forwards;\n}\n@keyframes "+ss+"-ani"+" {\n0%{opacity:0;}\n100%{opacity:1;}\n}\n@-webkit-keyframes "+ss+"-ani"+" {\n0%{opacity:0;}\n100%{opacity:1;}\n}\n\n";
+        }
+    }
+    //////////////////////////////
+    function write_pos_css(top,left,zindex,display,id){
+        var t = document.getElementById(top).value;
+        var l = document.getElementById(left).value;
+        var z = document.getElementById(zindex).value;
+        //var d = document.getElementById(display).value;
+        var c = document.getElementById(display).checked;
+        if(c == true){
+            var cft = "1";
+        }
+        if(c == false){
+            var cft = "0";
+        }
+        document.getElementById(id).innerHTML = '.' + id + '{' + 'top:' + t + 'px;left:' + l + 'px;z-index:' + z + ';opacity:' + cft + '}';
+        //////////////////////////////
+        var c = document.getElementById("sprite_cssposs");
+        c.innerHTML = "";
+        var elms = document.getElementsByClassName('cssposs');
+        for (var i = 0; i < elms.length; i++) {
+            c.innerHTML += elms[i].innerHTML;
+        }
+        update_export();
+    }
+    //////////////////////////////
+    function readTemplates(path,div_holder){
+        var txtFile = new XMLHttpRequest();
+            txtFile.open("GET", path, true);
+            txtFile.onreadystatechange = function() {
+                if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
+                    if (txtFile.status === 200) {  // Makes sure it's found the file.
+                        allText = txtFile.responseText;
+                        //console.log(allText);
+                        //lines = txtFile.responseText.split("\n"); // Will separate each line into an array
+                        document.getElementById(div_holder).textContent = allText;
+                    }
+                }
+            }
+        txtFile.send(null);
+    }
+    readTemplates("temp/dfp_zip.html","dfp_zip_holder");
+    readTemplates("temp/dfp_inpage.html","dfp_inpage_holder");
+    readTemplates("temp/dfp_responsive.html","dfp_responsive_holder");
+    //////////////////////////////
+    function replaceTemplate(div,sample,string) {
+        var str = document.getElementById(div).textContent; 
+        var res = str.replace(sample, string);
+        document.getElementById(div).textContent = res 
+    }
+
+</script>
+<script async src="js/FileSaver.js"> </script> 
+<script async src="js/jszip.js"> </script> 
+<script>
+document.getElementById("zip_button").addEventListener("click", function(){
+    readTemplates("temp/dfp_zip.html","dfp_zip_holder");
+    var banner_width = document.getElementById("banner_width").value;
+    var banner_height = document.getElementById("banner_height").value;
+    var css_import = document.getElementById("sprite_css").value;
+    var sprite_cssposs = document.getElementById("sprite_cssposs").innerHTML;
+    var sprite_itag = document.getElementById("sprite_itag").innerHTML;
+    var css3_animation = document.getElementById("css3_animation").value;
+    replaceTemplate("dfp_zip_holder","/*mchieu_rong*/",banner_width);
+    replaceTemplate("dfp_zip_holder","/*mchieu_cao*/",banner_height);
+    replaceTemplate("dfp_zip_holder","/*chieu_rong*/",banner_width);
+    replaceTemplate("dfp_zip_holder","/*chieu_cao*/",banner_height);
+    replaceTemplate("dfp_zip_holder","/*css_import*/",css_import);
+    replaceTemplate("dfp_zip_holder","/*sprite_cssposs*/",sprite_cssposs);
+    replaceTemplate("dfp_zip_holder","/*sprite_itag*/",sprite_itag);
+    replaceTemplate("dfp_zip_holder","/*css3_animation*/",css3_animation);
+    var dfp_zip_holder = document.getElementById("dfp_zip_holder").textContent;
+    var sprite_holder = document.getElementById("sprite_holder").textContent;
+    //////////////////////////////
+    var zip = new JSZip();
+    zip.file("index.html", dfp_zip_holder);
+    zip.file("spritesheet.png", sprite_holder.substr(sprite_holder.indexOf(',')+1), {base64: true});
+    var filename = prompt("Đây là banner up zip.\nLưu ý: Không nên đặt tên Tiếng Việt có dấu, ký tự lạ, không cần thêm .zip", "banner");
+            if (filename != null) {
+                zip.generateAsync({type:"blob"})
+                .then(function(content) {
+                    saveAs(content, filename + "_upFileZip.zip");
+                });
+            }
+	//var file = new File([dfp_zip_holder], "index.html", {type: "text/plain;charset=utf-8"});
+	//saveAs(file);
+});
+//////////////////////////////
+document.getElementById("inpage_button").addEventListener("click", function(){
+    readTemplates("temp/dfp_inpage.html","dfp_inpage_holder");
+    var banner_width = document.getElementById("banner_width").value;
+    var banner_height = document.getElementById("banner_height").value;
+    var css_import = document.getElementById("sprite_css").value;
+    var sprite_cssposs = document.getElementById("sprite_cssposs").innerHTML;
+    var sprite_itag = document.getElementById("sprite_itag").innerHTML;
+    var css3_animation = document.getElementById("css3_animation").value;
+    replaceTemplate("dfp_inpage_holder","/*chieu_rong*/",banner_width);
+    replaceTemplate("dfp_inpage_holder","/*chieu_cao*/",banner_height);
+    replaceTemplate("dfp_inpage_holder","/*css_import*/",css_import);
+    replaceTemplate("dfp_inpage_holder","/*sprite_cssposs*/",sprite_cssposs);
+    replaceTemplate("dfp_inpage_holder","/*sprite_itag*/",sprite_itag);
+    replaceTemplate("dfp_inpage_holder","/*css3_animation*/",css3_animation);
+    var dfp_inpage_holder = document.getElementById("dfp_inpage_holder").textContent;
+    var sprite_holder = document.getElementById("sprite_holder").textContent;
+    //////////////////////////////
+    var zip = new JSZip();
+    zip.file("index.html", dfp_inpage_holder);
+    zip.file("spritesheet.png", sprite_holder.substr(sprite_holder.indexOf(',')+1), {base64: true});
+    var filename = prompt("Đây là banner inpage.\nLưu ý: Không nên đặt tên Tiếng Việt có dấu, ký tự lạ, không cần thêm .zip", "banner");
+            if (filename != null) {
+                zip.generateAsync({type:"blob"})
+                .then(function(content) {
+                    saveAs(content, filename + "_upCustom.zip");
+                });
+            }
+});
+//////////////////////////////
+document.getElementById("responsive_button").addEventListener("click", function(){
+    readTemplates("temp/dfp_responsive.html","dfp_responsive_holder");
+    var banner_width = document.getElementById("banner_width").value;
+    var banner_height = document.getElementById("banner_height").value;
+    var css_import = document.getElementById("sprite_css").value;
+    var sprite_cssposs = document.getElementById("sprite_cssposs").innerHTML;
+    var sprite_itag = document.getElementById("sprite_itag").innerHTML;
+    var css3_animation = document.getElementById("css3_animation").value;
+    replaceTemplate("dfp_responsive_holder","/*chieu_rong*/",banner_width);
+    replaceTemplate("dfp_responsive_holder","/*chieu_cao*/",banner_height);
+    replaceTemplate("dfp_responsive_holder","/*css_import*/",css_import);
+    replaceTemplate("dfp_responsive_holder","/*sprite_cssposs*/",sprite_cssposs);
+    replaceTemplate("dfp_responsive_holder","/*sprite_itag*/",sprite_itag);
+    replaceTemplate("dfp_responsive_holder","/*css3_animation*/",css3_animation);
+    var dfp_responsive_holder = document.getElementById("dfp_responsive_holder").textContent;
+    var sprite_holder = document.getElementById("sprite_holder").textContent;
+    //////////////////////////////
+    var zip = new JSZip();
+    zip.file("index.html", dfp_responsive_holder);
+    zip.file("spritesheet.png", sprite_holder.substr(sprite_holder.indexOf(',')+1), {base64: true});
+    var filename = prompt("Đây là banner responsive, nhớ sửa kích thước responsive cho phù hợp.\nLưu ý: Không nên đặt tên Tiếng Việt có dấu, ký tự lạ, không cần thêm .zip", "banner");
+            if (filename != null) {
+                zip.generateAsync({type:"blob"})
+                .then(function(content) {
+                    saveAs(content, filename + "_upCustom.zip");
+                });
+            }
+});
+</script>
+</html>
