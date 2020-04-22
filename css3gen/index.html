@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<header class="w3-container w3-teal">
+<header class="w3-container w3-orange">
 	<h5>CSS3 Animation Creator</h5>
 </header>
 <div class="w3-half w3-container">
@@ -28,17 +28,17 @@
     <p><label><span class="w3-text-red">* </span>4.Nhập thời điểm bắt đầu chuyển động (chỉ nhập số)</label>
     <input class="w3-input w3-border" id="starttime" type="text" value="0"></p>
 </div>
+    <label><span class="w3-text-red">* </span>5.Chọn loại chuyển động</label>
 <div class="w3-container">
-    <p><label><span class="w3-text-red">* </span>5.Chọn loại chuyển động</label>
-    <div class="w3-row">
-        <select class="w3-select w3-border" id="ease_list">
-            <option value="ease" selected>ease</option>
-            <option value="ease-in" >ease-in</option>
-            <option value="ease-out" >ease-out</option>
-            <option value="ease-in-out" >ease-in-out</option>
-        </select>
-    </div>
-    <br>
+    <select class="w3-select w3-border" id="ease_list">
+        <option value="ease" selected>ease</option>
+        <option value="ease-in" >ease-in</option>
+        <option value="ease-out" >ease-out</option>
+        <option value="ease-in-out" >ease-in-out</option>
+    </select>
+</div>
+<br>
+<div class="w3-half w3-container">
     <label>Chọn loại Animation</label>
     <input class="w3-radio" type="radio" name="type" value="inout" checked>
     <label>Chuyển động In và Out</label>
@@ -56,15 +56,27 @@
             <option value="6" >Fade In Down</option>
         </select>
     </div>
-    <p><button class="w3-btn w3-teal" id="gen_css" onclick="ani_gen()">Tạo</button></p>
-</div>
+    <p><button class="w3-btn w3-orange" onclick="ani_gen()">Tạo</button></p>
 
-<div class="w3-container">
     <div id="code_out" class="w3-yellow" ></div>
 </div>
 
-  <script>
+<div class="w3-half w3-container">
+    <label>Animation loop</label>
+    <div style="height: 29px;"></div>
+    <div class="w3-row">
+        <select class="w3-select w3-border" id="effect_loop">
+            <option value="0" selected>Pulse 2 times</option>
+        </select>
+    </div>
+    <p><button class="w3-btn w3-orange" onclick="aniloop_gen()">Tạo</button></p>
+
+    <div id="code_loop_out" class="w3-yellow" ></div>
+</div>
+
+<script>
     var code_out =  document.getElementById("code_out");
+    var code_loop_out =  document.getElementById("code_loop_out");
 
     function ani_gen() {
         var keyframes = document.getElementById("keyframes").value;
@@ -127,8 +139,26 @@
                 code_out.innerHTML = ".animate ." + classname + " {" + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s forwards;<br>}<br>" + "@keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:translate3d(0,-100%,0)}<br>100%{opacity:1;transform:translate3d(0,0,0)}<br>}<br>" + "@-webkit-keyframes "+keyframes+ " {<br>"+"0%{opacity:0;transform:translate3d(0,-100%,0)}<br>100%{opacity:1;transform:translate3d(0,0,0)}<br>}";
             }
         }
-
     }
-  </script>
+
+    function aniloop_gen() {
+        var keyframes = document.getElementById("keyframes").value;
+        var classname = document.getElementById("classname").value;
+        var effect_loop = document.getElementById("effect_loop").value;
+        var ease_list = document.getElementById("ease_list").value;
+        var duration = document.getElementById("duration").value;
+        var starttime = document.getElementById("starttime").value;
+       
+        if(keyframes==""){
+            alert("Bạn chưa nhập tên chuyển động");
+        }
+        if(classname==""){
+            alert("Bạn chưa nhập tên class");
+        }
+        else if(effect_loop == "0"){
+            code_loop_out.innerHTML = ".animate ." + classname + " {" + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s 2 forwards;<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;animation: "+keyframes+" "+duration+"s "+ease_list+" "+starttime+"s 2 forwards;<br>}<br>" + "@keyframes "+keyframes+ " {<br>"+"0%{opacity:1;}<br>50%{opacity:0.5;}<br>100%{opacity:1;}<br>}<br>" + "@-webkit-keyframes "+keyframes+ " {<br>"+"0%{opacity:1;}<br>50%{opacity:0.5;}<br>100%{opacity:1;}<br>}";
+        }
+    }
+</script>
 </body>
 </html>

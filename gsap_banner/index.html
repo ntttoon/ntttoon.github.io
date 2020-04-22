@@ -20,7 +20,7 @@
         <button class="w3-bar-item w3-button" onclick="w3_open()">☰</button>
         <input type="text" class="w3-bar-item w3-input w3-border" value="336" id="banner_width">
         <input type="text" class="w3-bar-item w3-input w3-border" value="280" id="banner_height">
-        <input class="w3-bar-item w3-input" type="file" onchange="readURL(this);">
+        <input class="w3-bar-item w3-input w3-small" type="file" onchange="readURL(this);">
         <div class="w3-dropdown-hover w3-right">
             <button class="w3-button">Save File As</button>
             <div class="w3-dropdown-content w3-bar-block w3-card-4">
@@ -31,7 +31,7 @@
         </div>
         
         <a href="https://ntttoon.github.io/stitches/src/" target="_blank" class="w3-bar-item w3-button w3-right">Stitches</a>
-        <a href="https://ntttoon.github.io/motiongen/" target="_blank" class="w3-bar-item w3-button w3-right">GSAP gen</a>
+        <a href="https://ntttoon.github.io/gsapgen/" target="_blank" class="w3-bar-item w3-button w3-right">GSAP gen</a>
     </div>
 
     <!-- Banner holder -->
@@ -45,7 +45,7 @@
 
     <!-- Css import -->
     <textarea id="sprite_css" style="position:absolute;top:300px;right:10px;height:500px;font-size:12px;">Paste css spritesheet from stitches. Don't include first ".sprite" class</textarea>
-    <button class="w3-button w3-teal" style="position:absolute;top:820px;right:10px" onclick="cssimport()">import css</button>
+    <button class="w3-button w3-blue" style="position:absolute;top:820px;right:10px" onclick="cssimport()">import css</button>
 
     <!-- i tag holder -->
     <div id="sprite_itag" style="display:none;position:absolute"></div>

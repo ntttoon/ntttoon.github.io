@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GSAP Banner Maker</title>
+    <title>CSS3 Banner Maker</title>
     <link rel="stylesheet" href="../css/w3.css">
     <script type="text/javascript" src="js/jscall.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -20,7 +20,7 @@
         <button class="w3-bar-item w3-button" onclick="w3_open()">☰</button>
         <input type="text" class="w3-bar-item w3-input w3-border" value="336" id="banner_width">
         <input type="text" class="w3-bar-item w3-input w3-border" value="280" id="banner_height">
-        <input class="w3-bar-item w3-input" type="file" onchange="readURL(this);">
+        <input class="w3-bar-item w3-input w3-small" type="file" onchange="readURL(this);">
         <div class="w3-dropdown-hover w3-right">
             <button class="w3-button">Save File As</button>
             <div class="w3-dropdown-content w3-bar-block w3-card-4">
@@ -45,7 +45,7 @@
 
     <!-- Css import -->
     <textarea id="sprite_css" style="position:absolute;top:300px;right:10px;height:500px;font-size:12px;">Paste css spritesheet from stitches. Don't include first ".sprite" class</textarea>
-    <button class="w3-button w3-teal" style="position:absolute;top:820px;right:10px" onclick="cssimport()">import css</button>
+    <button class="w3-button w3-orange" style="position:absolute;top:820px;right:10px" onclick="cssimport()">import css</button>
 
     <!-- i tag holder -->
     <div id="sprite_itag" style="display:none;position:absolute"></div>
@@ -55,11 +55,11 @@
     <div id="sprite_cssposs" style="display:none;position:absolute"></div>
 
     <!-- javascript gsap -->
-    <button class="w3-button w3-teal w3-display-bottommiddle" onclick="document.getElementById('id01').style.display='block'">Open CSS Board</button>
+    <button class="w3-button w3-orange w3-display-bottommiddle" onclick="document.getElementById('id01').style.display='block'">Open CSS Board</button>
 
     <div id="id01" class="w3-modal">
         <div class="w3-modal-content w3-animate-top w3-card-4">
-          <header class="w3-container w3-teal"> 
+          <header class="w3-container w3-orange"> 
             <span onclick="document.getElementById('id01').style.display='none'" 
             class="w3-button w3-display-topright">&times;</span>
             <p>CSS3 Animation</p>
