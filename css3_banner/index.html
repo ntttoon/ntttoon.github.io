@@ -64,7 +64,7 @@
             class="w3-button w3-display-topright">&times;</span>
             <p>CSS3 Animation</p>
           </header>
-          <textarea id="css3_animation" style="width:100%;height:500px;font-size:12px;border: none;"></textarea>
+          <textarea id="css3_animation" style="width:100%;height:700px;font-size:12px;border: none;"></textarea>
         </div>
       </div>
 
@@ -132,7 +132,7 @@
             var sscheck = ss + "check";
             document.getElementById("sprite_pos_holder").innerHTML += '<div class="w3-bar-item w3-button">'+ css[i] + '<br><input id="' + sstop + '" type="text" maxlength="4" style="width:40px" value="0"> <input id="' + ssleft + '" type="text" maxlength="4" style="width:40px" value="0"> <input id="' + sszindex + '" type="text" maxlength="2" style="width:30px" value="0"> <input id="' + sscheck + '" type="checkbox"> <button onclick="write_pos_css(\'' + sstop + '\',\'' + ssleft + '\',\'' + sszindex + '\',\'' + sscheck + '\',\'' + ss + '\')">Apply</button></div>';
             document.getElementById("sprite_itag").innerHTML += '<i class="sprite ' + ss +'"></i>'
-            document.getElementById("sprite_cssposs_holderdiv").innerHTML += '<div class="cssposs" id="' + ss + '">' + css[i] + '{top:0px;left:0px;z-index:0;opacity:1}' +'</div>';
+            document.getElementById("sprite_cssposs_holderdiv").innerHTML += '<div class="cssposs" id="' + ss + '">' + css[i] + '{top:0px;left:0px;z-index:0;opacity:0}' +'</div>';
             //document.getElementById("css3_animation").value += '.from($' + ss_nodash + ', 1, {x:"-=500px", ease:Power1.easeOut})\n';
             document.getElementById("css3_animation").value += ".animate " + s + " {\n-webkit-animation: "+ss+"-ani"+" 1s ease 0s forwards;\nanimation: "+ss+"-ani"+" 1s ease 0s forwards;\n}\n@keyframes "+ss+"-ani"+" {\n0%{opacity:0;}\n100%{opacity:1;}\n}\n@-webkit-keyframes "+ss+"-ani"+" {\n0%{opacity:0;}\n100%{opacity:1;}\n}\n\n";
         }
