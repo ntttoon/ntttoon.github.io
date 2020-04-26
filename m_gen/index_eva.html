@@ -398,8 +398,8 @@ function imageGen(){
 	var c = document.getElementById(b).src;
 	var aa = document.getElementById('alt_currentSlot').innerHTML;
 	var bb = document.getElementById('currentImgId_FileName').innerHTML;
-	document.getElementById(a).innerHTML = '<div class="mg-center wow fadeIn" data-wow-duration="3s" style="margin-bottom:16px"><img alt="" class="mg-hide-small mg-image" src="' + c + '"> <img alt="" class="mg-hide-medium mg-hide-large mg-image" src="' + c + '"></div>';
-	document.getElementById(aa).innerHTML = '<div class="mg-center wow fadeIn" data-wow-duration="3s" style="margin-bottom:16px"><img alt="" class="mg-hide-small mg-image" src="' + bb + '"> <img alt="" class="mg-hide-medium mg-hide-large mg-image" src="' + bb + '"></div>';
+	document.getElementById(a).innerHTML = '<div class="mg-center" data-aos="fade-up" data-aos-duration="1500"><img alt="" class="mg-hide-small mg-image" src="' + c + '"> <img alt="" class="mg-hide-medium mg-hide-large mg-image" src="' + c + '"></div>';
+	document.getElementById(aa).innerHTML = '<div class="mg-center" data-aos="fade-up" data-aos-duration="1500"><img alt="" class="mg-hide-small mg-image" src="' + bb + '"> <img alt="" class="mg-hide-medium mg-hide-large mg-image" src="' + bb + '"></div>';
 	modal_close();
 	update_export()
 }
@@ -411,8 +411,8 @@ function leftImageParaGen(){
 	var aa = document.getElementById('alt_currentSlot').innerHTML;
 	var bb = document.getElementById('currentImgId_FileName').innerHTML;
 	var p = $('#paragraph_right').trumbowyg('html');
-	document.getElementById(a).innerHTML = '<div class="mg-container mg-content600"><img alt="" class="mg-image mg-left mg-hide-small mg-hide-medium wow fadeIn" data-wow-duration="3s" src="' + c + '" style="width:450px;margin:30px 40px 15px -150px;"> <img alt="" class="mg-image mg-left mg-hide-large mg-hide-small wow fadeIn" data-wow-duration="3s" src="' + c + '" style="width:350px;margin:30px 40px 15px 0;"><div class="mg-center"><img alt="" class="mg-image mg-hide-medium mg-hide-large wow fadeIn" data-wow-duration="3s" src="' + c + '"></div>' + p + '</div>';
-	document.getElementById(aa).innerHTML = '<div class="mg-container mg-content600"><img alt="" class="mg-image mg-left mg-hide-small mg-hide-medium wow fadeIn" data-wow-duration="3s" src="' + bb + '" style="width:450px;margin:30px 40px 15px -150px;"> <img alt="" class="mg-image mg-left mg-hide-large mg-hide-small wow fadeIn" data-wow-duration="3s" src="' + bb + '" style="width:350px;margin:30px 40px 15px 0;"><div class="mg-center"><img alt="" class="mg-image mg-hide-medium mg-hide-large wow fadeIn" data-wow-duration="3s" src="' + bb + '"></div>' + p + '</div>';
+	document.getElementById(a).innerHTML = '<div class="mg-container mg-content600"><img alt="" class="mg-image mg-left mg-hide-small mg-hide-medium" data-aos="fade-up" data-aos-duration="1500" src="' + c + '" style="width:450px;margin:30px 40px 15px -150px;"> <img alt="" class="mg-image mg-left mg-hide-large mg-hide-small" data-aos="fade-up" data-aos-duration="1500" src="' + c + '" style="width:350px;margin:30px 40px 15px 0;"><div class="mg-center"><img alt="" class="mg-image mg-hide-medium mg-hide-large" data-aos="fade-up" data-aos-duration="1500" src="' + c + '"></div>' + p + '</div>';
+	document.getElementById(aa).innerHTML = '<div class="mg-container mg-content600"><img alt="" class="mg-image mg-left mg-hide-small mg-hide-medium" data-aos="fade-up" data-aos-duration="1500" src="' + bb + '" style="width:450px;margin:30px 40px 15px -150px;"> <img alt="" class="mg-image mg-left mg-hide-large mg-hide-small" data-aos="fade-up" data-aos-duration="1500" src="' + bb + '" style="width:350px;margin:30px 40px 15px 0;"><div class="mg-center"><img alt="" class="mg-image mg-hide-medium mg-hide-large" data-aos="fade-up" data-aos-duration="1500" src="' + bb + '"></div>' + p + '</div>';
 	modal_close();
 	update_export()
 }
@@ -424,8 +424,8 @@ function rightImageParaGen(){
 	var aa = document.getElementById('alt_currentSlot').innerHTML;
 	var bb = document.getElementById('currentImgId_FileName').innerHTML;
 	var p = $('#paragraph_left').trumbowyg('html');
-	document.getElementById(a).innerHTML = '<div class="mg-container mg-content600"><img alt="" class="mg-image mg-right mg-hide-small mg-hide-medium wow fadeIn" data-wow-duration="3s" src="' + c + '" style="width:450px;margin:30px -150px 15px 40px;"> <img alt="" class="mg-image mg-right mg-hide-large mg-hide-small wow fadeIn" data-wow-duration="3s" src="' + c + '" style="width:350px;margin:30px 0 15px 40px;"><div class="mg-center"><img alt="" class="mg-image mg-hide-medium mg-hide-large wow fadeIn" data-wow-duration="3s" src="' + c + '"></div>' + p + '</div>';
-	document.getElementById(aa).innerHTML = '<div class="mg-container mg-content600"><img alt="" class="mg-image mg-right mg-hide-small mg-hide-medium wow fadeIn" data-wow-duration="3s" src="' + bb + '" style="width:450px;margin:30px -150px 15px 40px;"> <img alt="" class="mg-image mg-right mg-hide-large mg-hide-small wow fadeIn" data-wow-duration="3s" src="' + bb + '" style="width:350px;margin:30px 0 15px 40px;"><div class="mg-center"><img alt="" class="mg-image mg-hide-medium mg-hide-large wow fadeIn" data-wow-duration="3s" src="' + bb + '"></div>' + p + '</div>';
+	document.getElementById(a).innerHTML = '<div class="mg-container mg-content600"><img alt="" class="mg-image mg-right mg-hide-small mg-hide-medium" data-aos="fade-up" data-aos-duration="1500" src="' + c + '" style="width:450px;margin:30px -150px 15px 40px;"> <img alt="" class="mg-image mg-right mg-hide-large mg-hide-small" data-aos="fade-up" data-aos-duration="1500" src="' + c + '" style="width:350px;margin:30px 0 15px 40px;"><div class="mg-center"><img alt="" class="mg-image mg-hide-medium mg-hide-large" data-aos="fade-up" data-aos-duration="1500" src="' + c + '"></div>' + p + '</div>';
+	document.getElementById(aa).innerHTML = '<div class="mg-container mg-content600"><img alt="" class="mg-image mg-right mg-hide-small mg-hide-medium" data-aos="fade-up" data-aos-duration="1500" src="' + bb + '" style="width:450px;margin:30px -150px 15px 40px;"> <img alt="" class="mg-image mg-right mg-hide-large mg-hide-small" data-aos="fade-up" data-aos-duration="1500" src="' + bb + '" style="width:350px;margin:30px 0 15px 40px;"><div class="mg-center"><img alt="" class="mg-image mg-hide-medium mg-hide-large" data-aos="fade-up" data-aos-duration="1500" src="' + bb + '"></div>' + p + '</div>';
 	modal_close();
 	update_export()
 }
