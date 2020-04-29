@@ -63,10 +63,10 @@ var alt_html_s30 = document.getElementById("alt_html_s30").innerHTML;
 var html1 = '<!DOCTYPE html><html><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1" name="viewport"><link href="https://ntttoon.github.io/mg_assets/mg.css" rel="stylesheet"><title>NTTTOON</title><meta property="og:image" content="Link file hinh"/><meta property="og:title" content="Dat tieu de" /><meta property="og:description" content="Dat mo ta"/><meta property="og:url" content="Link duong dan chinh xac den file html nay" /><link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700&display=swap&subset=vietnamese" rel="stylesheet"><link href="https://ntttoon.github.io/mg_assets/image-comparison-slider.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="https://ntttoon.github.io/mg_assets/slick/slick.css"/><link rel="stylesheet" type="text/css" href="https://ntttoon.github.io/mg_assets/slick/slick-theme.css"/></head><body>';
 
 var slidescript ='<script src="https://ntttoon.github.io/mg_assets/image-comparison-slider.js"></script><script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script><script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script><script type="text/javascript" src="https://ntttoon.github.io/mg_assets/slick/slick.min.js"></script><script type="text/javascript">$(document).ready(function(){$(".slicker").slick({dots: true,});});</script>';
-var html2 ='<br></body></html>';
+var html2 ='</body></html>';
 
 var html = html1 + html_s1 + html_s2 + html_s3 + html_s4 + html_s5 + html_s6 + html_s7 + html_s8 + html_s9 + html_s10 + html_s11 + html_s12 + html_s13 + html_s14 + html_s15 + html_s16 + html_s17 + html_s18 + html_s19 + html_s20 + html_s21 + html_s22 + html_s23 + html_s24 + html_s25 + html_s26 + html_s27 + html_s28 + html_s29 + html_s30 + slidescript + html2;
 var result = html;
 
 var alt_html = html1 + alt_html_s1 + alt_html_s2 + alt_html_s3 + alt_html_s4 + alt_html_s5 + alt_html_s6 + alt_html_s7 + alt_html_s8 + alt_html_s9 + alt_html_s10 + alt_html_s11 + alt_html_s12 + alt_html_s13 + alt_html_s14 + alt_html_s15 + alt_html_s16 + alt_html_s17 + alt_html_s18 + alt_html_s19 + alt_html_s20 + alt_html_s21 + alt_html_s22 + alt_html_s23 + alt_html_s24 + alt_html_s25 + alt_html_s26 + alt_html_s27 + alt_html_s28 + alt_html_s29 + alt_html_s30 + slidescript + html2;
-var result2 = tidy_html5(alt_html, options);
+var result2 = html_beautify(alt_html);

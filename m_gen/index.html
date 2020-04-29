@@ -14,6 +14,8 @@
 <link href="trumbowyg/plugins/colors/ui/trumbowyg.colors.css" rel="stylesheet">
 <script src="trumbowyg/plugins/colors/trumbowyg.colors.min.js"></script>
 <script src="trumbowyg/plugins/noembed/trumbowyg.noembed.min.js"></script>
+<!-- https://github.com/beautify-web/js-beautify/blob/master/README.md#web-library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.11.0/beautify-html.min.js"></script>
 </head>
 <style>
 .html_thumb {
@@ -307,28 +309,6 @@ function modal_open() {
 }
 function modal_close() {
 	document.getElementById('id01').style.display='none';
-}
-</script>
-
-<script src="js/tidy.js"></script>
-<script>
-  options = {
-	  "indent":"auto",
-	  "indent-spaces":2,
-	  "wrap":0,
-	  "markup":true,
-	  "output-xml":false,
-	  "numeric-entities":true,
-	  "quote-marks":true,
-	  "quote-nbsp":false,
-	  "show-body-only":false,
-	  "quote-ampersand":false,
-	  "break-before-br":true,
-	  "uppercase-tags":false,
-	  "uppercase-attributes":false,
-    "drop-font-tags":true,
-    "merge-divs":false,
-	  "tidy-mark":false
 }
 </script>
 
