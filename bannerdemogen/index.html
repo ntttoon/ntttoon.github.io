@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Background Demo Gen</title>
+    <title>Demo PC 24h</title>
     <link rel="stylesheet" href="../css/w3.css">
     <script async src="js/jszip.js"> </script>
     <script async src="js/FileSaver.js"> </script> 
@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="w3-bar w3-teal">
-        <div class="w3-bar-item">Banner demo offline gen by ntttoon (for PC)</div>
+        <div class="w3-bar-item">Tạo demo tĩnh (for PC)</div>
         <a href="index_mobile.html" class="w3-bar-item w3-button w3-red w3-right">For mobile</a>
     </div>
     
@@ -27,43 +27,36 @@
                 <option value="5" >Trang bài viết top 250</option>
             </select>
         </p>
-        <div class="w3-row">
-            <div class="w3-quarter">
-                <div>Up ảnh background <strong>trái 444</strong></div>
-                <input id="left_bg" type="file" accept="image/x-png,image/gif,image/jpeg" />
-                <div style="height: 20px"></div>
-                <div>Up ảnh background <strong>trái 205</strong></div>
-                <input id="left_bgs" type="file" accept="image/x-png,image/gif,image/jpeg" />
-                <div style="height: 20px"></div>
-                <div>Up ảnh background <strong>phải 444</strong></div>
-                <input id="right_bg" type="file" accept="image/x-png,image/gif,image/jpeg" />
-                <div style="height: 20px"></div>
-                <div>Up ảnh background <strong>phải 205</strong></div>
-                <input id="right_bgs" type="file" accept="image/x-png,image/gif,image/jpeg" />
+        <div class="w3-cell-row">
+            <div class="w3-container w3-cell w3-teal w3-mobile">
+                <div>Up ảnh bg <strong>trái 444x1040</strong></div>
+                <input class="w3-input" id="left_bg" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div>Up ảnh bg <strong>trái 205x900</strong></div>
+                <input class="w3-input" id="left_bgs" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div>Up ảnh bg <strong>phải 444x1040</strong></div>
+                <input class="w3-input" id="right_bg" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div>Up ảnh bg <strong>phải 205x900</strong></div>
+                <input class="w3-input" id="right_bgs" type="file" accept="image/x-png,image/gif,image/jpeg" />
             </div>
-            <div class="w3-quarter" style="margin-bottom: 20px">
-                <div>Up ảnh top 1016x100</div>
-                <input id="top100" type="file" accept="image/x-png,image/gif,image/jpeg" />
-                <div style="height: 20px"></div>
-                <div>Up ảnh top 1016x250</div>
-                <input id="top250" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <div class="w3-container w3-cell w3-green w3-mobile">
+                <div>Up ảnh top <strong>1016x100</strong></div>
+                <input class="w3-input" id="top100" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div>Up ảnh top <strong>1016x250</strong></div>
+                <input class="w3-input" id="top250" type="file" accept="image/x-png,image/gif,image/jpeg" />
             </div>
-            <div class="w3-quarter" style="margin-bottom: 20px">
-                <div>Up ảnh banner trung tâm trang chủ 696x120</div>
-                <input id="tttc" type="file" accept="image/x-png,image/gif,image/jpeg" />
-                <div style="height: 20px"></div>
-                <div>Up ảnh banner hot 336x280</div>
-                <input id="hot" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <div class="w3-container w3-cell w3-light-green w3-mobile">
+                <div>Up ảnh banner trung tâm trang chủ <strong>696x120</strong></div>
+                <input class="w3-input" id="tttc" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div>Up ảnh banner hot <strong>336x280</strong></div>
+                <input class="w3-input" id="hot" type="file" accept="image/x-png,image/gif,image/jpeg" />
             </div>
-            <div class="w3-quarter" style="margin-bottom: 20px">
-                <div>Up ảnh banner phải 1 300x600</div>
-                <input id="phai1" type="file" accept="image/x-png,image/gif,image/jpeg" />
-                <div style="height: 20px"></div>
-                <div>Up ảnh banner trôi ngữ cảnh 300x600</div>
-                <input id="sticky" type="file" accept="image/x-png,image/gif,image/jpeg" />
-                <div style="height: 20px"></div>
-                <div>Up ảnh banner phải 2 300x250</div>
-                <input id="phai2" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <div class="w3-container w3-cell w3-lime w3-mobile">
+                <div>Up ảnh banner phải 1 <strong>300x600</strong></div>
+                <input class="w3-input" id="phai1" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div>Up ảnh banner trôi ngữ cảnh <strong>300x600</strong></div>
+                <input class="w3-input" id="sticky" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div>Up ảnh banner phải 2 <strong>300x250</strong></div>
+                <input class="w3-input" id="phai2" type="file" accept="image/x-png,image/gif,image/jpeg" />
             </div>
         </div>
         <hr>
