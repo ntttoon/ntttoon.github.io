@@ -281,21 +281,11 @@
         var data_center2 = document.getElementById("img_banner_center2").textContent;
         var data_inpage = document.getElementById("img_banner_inpage").textContent;
         ///////////
-        if( document.getElementById("banner_top").files.length !== 0 ){
-            assets.file("banner_top.jpg", data_top.substr(data_top.indexOf(',')+1), {base64: true});
-        }
-        if( document.getElementById("banner_ttsp").files.length !== 0 ){
-            assets.file("banner_ttsp.jpg", data_ttsp.substr(data_ttsp.indexOf(',')+1), {base64: true});
-        }
-        if( document.getElementById("banner_center1").files.length !== 0 ){
-            assets.file("banner_center1.jpg", data_center1.substr(data_center1.indexOf(',')+1), {base64: true});
-        }
-        if( document.getElementById("banner_center2").files.length !== 0 ){
-            assets.file("banner_center2.jpg", data_center2.substr(data_center2.indexOf(',')+1), {base64: true});
-        }
-        if( document.getElementById("banner_inpage").files.length !== 0 ){
-            assets.file("banner_inpage.jpg", data_inpage.substr(data_inpage.indexOf(',')+1), {base64: true});
-        }
+        assets.file("banner_top.jpg", data_top.substr(data_top.indexOf(',')+1), {base64: true});
+        assets.file("banner_ttsp.jpg", data_ttsp.substr(data_ttsp.indexOf(',')+1), {base64: true});
+        assets.file("banner_center1.jpg", data_center1.substr(data_center1.indexOf(',')+1), {base64: true});
+        assets.file("banner_center2.jpg", data_center2.substr(data_center2.indexOf(',')+1), {base64: true});
+        assets.file("banner_inpage.jpg", data_inpage.substr(data_inpage.indexOf(',')+1), {base64: true});
         // find every checked item
         $(this).find(":checked").each(function () {
             var $this = $(this);
