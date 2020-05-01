@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body {
+            margin: 0;
+            /* Reset default margin */
+        }
+
+        iframe {
+            display: block;
+            /* iframes are inline by default */
+            border: none;
+            /* Reset default border */
+            height: 100vh;
+            /* Viewport-relative units */
+            width: 100vw;
+        }
+    </style>
+</head>
+
+<body">
+    <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'London')">320x100</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Paris')">Inpage</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Tokyo')">300x250</button>
+    </div>
+
+    <div id="London" class="city">
+        <iframe src="top/index.html"></iframe>
+    </div>
+
+    <div id="Paris" class="city" style="display:none">
+        <iframe src="inpage/index.html"></iframe>
+    </div>
+
+    <div id="Tokyo" class="city" style="display:none">
+        <iframe src="center/index.html"></iframe>
+    </div>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " w3-red";
+        }
+    </script>
+
+</body>
+
+</html>

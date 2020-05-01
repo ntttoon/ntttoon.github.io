@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo Mobile 24h</title>
+    <link rel="stylesheet" href="../css/w3.css">
+    <script async src="js/jszip.js"> </script>
+    <script async src="js/jszip-utils.js"> </script>
+    <script async src="js/FileSaver.js"> </script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="w3-bar w3-teal">
+        <div class="w3-bar-item">Tạo demo động Animate CC responsive trên mobile</div>
+    </div>
+    
+    <div class="w3-container">
+        <p></p>
+        <div class="w3-cell-row">
+            <div class="w3-container w3-cell w3-teal w3-mobile">
+                <h3>Upload cho banner top mobile</h3>
+                <p>Lưu ý: chỉ áp dụng cho các kích thước sau lúc thiết kế trong Animate CC: 414x129 640x200</p>
+                <div>Up file HTML</div>
+                <input class="w3-input" id="top_html" type="file" accept = ".html" />
+                <div>Up file JPG</div>
+                <input class="w3-input" id="top_jpg" type="file" accept="image/jpeg" />
+                <div>Up file PNG</div>
+                <input class="w3-input" id="top_png" type="file" accept="image/x-png" />
+            </div>
+            <div class="w3-container w3-cell w3-green w3-mobile">
+                <h3>Upload cho banner inpage mobile</h3>
+                <p>Lưu ý: chỉ áp dụng cho các kích thước sau lúc thiết kế trong Animate CC: 375x750 640x1280</p>
+                <div>Up file HTML</div>
+                <input class="w3-input" id="inpage_html" type="file" accept = ".html" />
+                <div>Up file JPG</div>
+                <input class="w3-input" id="inpage_jpg" type="file" accept="image/jpeg" />
+                <div>Up file PNG</div>
+                <input class="w3-input" id="inpage_png" type="file" accept="image/x-png" />
+            </div>
+            <div class="w3-container w3-cell w3-light-green w3-mobile">
+                <h3>Upload cho banner center mobile</h3>
+                <p>Lưu ý: chỉ áp dụng cho các kích thước sau lúc thiết kế trong Animate CC: 414x345 600x500</p>
+                <div>Up file HTML</div>
+                <input class="w3-input" id="center_html" type="file" accept = ".html" />
+                <div>Up file JPG</div>
+                <input class="w3-input" id="center_jpg" type="file" accept="image/jpeg" />
+                <div>Up file PNG</div>
+                <input class="w3-input" id="center_png" type="file" accept="image/x-png" />
+            </div>
+        </div>
+        <p><button class="w3-button w3-red" id="zip_button">Save file</button></p>
+    </div>
+    
+    <div style="display: none" id="demo_html_holder"></div>
+    <div style="display: none" id="top_html_holder"></div>
+    <div style="display: none" id="top_jpg_holder"></div>
+    <div style="display: none" id="top_png_holder"></div>
+    <div style="display: none" id="inpage_html_holder"></div>
+    <div style="display: none" id="inpage_jpg_holder"></div>
+    <div style="display: none" id="inpage_png_holder"></div>
+    <div style="display: none" id="center_html_holder"></div>
+    <div style="display: none" id="center_jpg_holder"></div>
+    <div style="display: none" id="center_png_holder"></div>
+<script>
+    ///////////////////////// Load url file into div holder
+    function readTemplates(path,div_holder){
+    var txtFile = new XMLHttpRequest();
+        txtFile.open("GET", path, true);
+        txtFile.onreadystatechange = function() {
+            if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
+                    if (txtFile.status === 200) {  // Makes sure it's found the file.
+                    allText = txtFile.responseText;
+                    //console.log(allText);
+                    //lines = txtFile.responseText.split("\n"); // Will separate each line into an array
+                    document.getElementById(div_holder).textContent = allText;
+                }
+            }
+        }
+        txtFile.send(null);
+    }
+    readTemplates("template/demo.html","demo_html_holder");
+    ///////////////////////// Load input image file into div holder
+    function read_imageURL(input,div_holder) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                document.getElementById(div_holder).textContent = e.target.result;
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    ///////////////////////// Load html file into div holder
+    function read_textURL(input,div_holder) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                document.getElementById(div_holder).textContent = e.target.result;
+            }
+            reader.readAsText(input.files[0]);
+        }
+    }
+
+    document.getElementById("top_html").addEventListener("change", function(){
+        read_textURL(this,"top_html_holder");
+    })
+    document.getElementById("top_jpg").addEventListener("change", function(){
+        read_imageURL(this,"top_jpg_holder");
+    })
+    document.getElementById("top_png").addEventListener("change", function(){
+        read_imageURL(this,"top_png_holder");
+    })
+    document.getElementById("inpage_html").addEventListener("change", function(){
+        read_textURL(this,"inpage_html_holder");
+    })
+    document.getElementById("inpage_jpg").addEventListener("change", function(){
+        read_imageURL(this,"inpage_jpg_holder");
+    })
+    document.getElementById("inpage_png").addEventListener("change", function(){
+        read_imageURL(this,"inpage_png_holder");
+    })
+    document.getElementById("center_html").addEventListener("change", function(){
+        read_textURL(this,"center_html_holder");
+    })
+    document.getElementById("center_jpg").addEventListener("change", function(){
+        read_imageURL(this,"center_jpg_holder");
+    })
+    document.getElementById("center_png").addEventListener("change", function(){
+        read_imageURL(this,"center_png_holder");
+    })
+    /////////////////////////
+    function changeToResponsive() {
+        // http://jsfiddle.net/L6LB2/35/
+        var top = document.getElementById('top_html_holder').textContent;
+        var inpage = document.getElementById('inpage_html_holder').textContent;
+        var center = document.getElementById('center_html_holder').textContent;
+
+        var mapObj = {
+            "width:640px":"width:100%",
+            "width:600px":"width:100%",
+            "width:414px":"width:100%",
+            "width:375px":"width:100%",
+            "width:320px":"width:100%",
+            "height:200px;":"",
+            "height:1280px;":"",
+            "height:500px;":"",
+            "height:129px;":"",
+            "height:750px;":"",
+            "height:640px;":"",
+            "height:100px;":""
+        };
+        var re = new RegExp(Object.keys(mapObj).join("|"),"gi");
+        top = top.replace(re, function(matched){
+            return mapObj[matched.toLowerCase()];
+        });
+        inpage = inpage.replace(re, function(matched){
+            return mapObj[matched.toLowerCase()];
+        });
+        center = center.replace(re, function(matched){
+            return mapObj[matched.toLowerCase()];
+        });
+
+        document.getElementById('top_html_holder').textContent = top;
+        document.getElementById('inpage_html_holder').textContent = inpage;
+        document.getElementById('center_html_holder').textContent = center;
+    }
+    /////////////////////////
+    document.getElementById("zip_button").addEventListener("click", function(){
+        var top_jpg = document.getElementById("top_jpg").value;
+        var top_png = document.getElementById("top_png").value;
+        var inpage_jpg = document.getElementById("inpage_jpg").value;
+        var inpage_png = document.getElementById("inpage_png").value;
+        var center_jpg = document.getElementById("center_jpg").value;
+        var center_png = document.getElementById("center_png").value;
+
+        var zip = new JSZip();
+
+        var demo_html = document.getElementById("demo_html_holder").textContent;
+        /////
+        changeToResponsive();
+        var top_html = document.getElementById("top_html_holder").textContent;
+        var top_jpg = document.getElementById("top_jpg_holder").textContent;
+        var top_png = document.getElementById("top_png_holder").textContent;
+        if(top_jpg !==""){
+            var name_top_jpg = document.getElementById("top_jpg").files[0].name;
+        }
+        if(top_png !==""){
+            var name_top_png = document.getElementById("top_png").files[0].name;
+        }
+        /////
+        var inpage_html = document.getElementById("inpage_html_holder").textContent;
+        var inpage_jpg = document.getElementById("inpage_jpg_holder").textContent;
+        var inpage_png = document.getElementById("inpage_png_holder").textContent;
+        if(inpage_jpg !==""){
+            var name_inpage_jpg = document.getElementById("inpage_jpg").files[0].name;
+        }
+        if(inpage_png !==""){
+            var name_inpage_png = document.getElementById("inpage_png").files[0].name;
+        }
+        /////
+        var center_html = document.getElementById("center_html_holder").textContent;
+        var center_jpg = document.getElementById("center_jpg_holder").textContent;
+        var center_png = document.getElementById("center_png_holder").textContent;
+        if(center_jpg !==""){
+            var name_center_jpg = document.getElementById("center_jpg").files[0].name;
+        }
+        if(center_png !==""){
+            var name_center_png = document.getElementById("center_png").files[0].name;
+        }
+
+        var top = zip.folder("top");
+        var inpage = zip.folder("inpage");
+        var center = zip.folder("center");
+
+        zip.file("index.html", demo_html);
+        /////
+        top.file("index.html", top_html);
+        top.file(name_top_jpg, top_jpg.substr(top_jpg.indexOf(',')+1), {base64: true});
+        top.file(name_top_png, top_png.substr(top_png.indexOf(',')+1), {base64: true});
+        /////
+        inpage.file("index.html", inpage_html);
+        inpage.file(name_inpage_jpg, inpage_jpg.substr(inpage_jpg.indexOf(',')+1), {base64: true});
+        inpage.file(name_inpage_png, inpage_png.substr(inpage_png.indexOf(',')+1), {base64: true});
+        /////
+        center.file("index.html", center_html);
+        center.file(name_center_jpg, center_jpg.substr(center_jpg.indexOf(',')+1), {base64: true});
+        center.file(name_center_png, center_png.substr(center_png.indexOf(',')+1), {base64: true});
+
+        var filename = prompt("Đặt tên cho file zip.\nLưu ý: Không nên đặt tên Tiếng Việt có dấu, ký tự lạ, không cần thêm .zip", "banner");
+        if (filename != null) {
+            zip.generateAsync({type:"blob"})
+            .then(function(content) {
+                saveAs(content, filename + ".zip");
+            });
+        }
+
+    })
+
+</script>
+</body>
+</html>
