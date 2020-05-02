@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Demo Mobile 24h</title>
     <link rel="stylesheet" href="../css/w3.css">
-    <script async src="js/jszip.js"> </script>
-    <script async src="js/jszip-utils.js"> </script>
-    <script async src="js/FileSaver.js"> </script> 
+    <script async src="../js_libs/jszip.js"> </script>
+    <script async src="../js_libs/jszip-utils.js"> </script>
+    <script async src="../js_libs/FileSaver.js"> </script> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
@@ -66,70 +66,64 @@
 <script>
     ///////////////////////// Load url file into div holder
     function readTemplates(path,div_holder){
-    var txtFile = new XMLHttpRequest();
-        txtFile.open("GET", path, true);
-        txtFile.onreadystatechange = function() {
-            if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
-                    if (txtFile.status === 200) {  // Makes sure it's found the file.
-                    allText = txtFile.responseText;
-                    //console.log(allText);
-                    //lines = txtFile.responseText.split("\n"); // Will separate each line into an array
-                    document.getElementById(div_holder).textContent = allText;
+        var txtFile = new XMLHttpRequest();
+            txtFile.open("GET", path, true);
+            txtFile.onreadystatechange = function() {
+                if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
+                        if (txtFile.status === 200) {  // Makes sure it's found the file.
+                        allText = txtFile.responseText;
+                        //console.log(allText);
+                        //lines = txtFile.responseText.split("\n"); // Will separate each line into an array
+                        document.getElementById(div_holder).textContent = allText;
+                    }
                 }
             }
-        }
         txtFile.send(null);
     }
     readTemplates("template/demo.html","demo_html_holder");
-    ///////////////////////// Load input image file into div holder
-    function read_imageURL(input,div_holder) {
+    ///////////////////////// Load input file into div holder
+    function readInputFile(input,div_holder,mode) {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
             
             reader.onload = function (e) {
                 document.getElementById(div_holder).textContent = e.target.result;
             }
-            reader.readAsDataURL(input.files[0]);
-        }
-    }
-    ///////////////////////// Load html file into div holder
-    function read_textURL(input,div_holder) {
-        if (input.files && input.files[0]) {
-            var reader = new FileReader();
-            
-            reader.onload = function (e) {
-                document.getElementById(div_holder).textContent = e.target.result;
+            if(mode == "image" ){
+                reader.readAsDataURL(input.files[0]);
             }
-            reader.readAsText(input.files[0]);
+            if(mode == "text" ){
+                reader.readAsText(input.files[0]);
+            }
         }
     }
 
     document.getElementById("top_html").addEventListener("change", function(){
-        read_textURL(this,"top_html_holder");
+        readInputFile(this,"top_html_holder","text");
     })
     document.getElementById("top_jpg").addEventListener("change", function(){
-        read_imageURL(this,"top_jpg_holder");
+        readInputFile(this,"top_jpg_holder","image");
     })
     document.getElementById("top_png").addEventListener("change", function(){
-        read_imageURL(this,"top_png_holder");
+        readInputFile(this,"top_png_holder","image");
     })
     document.getElementById("inpage_html").addEventListener("change", function(){
-        read_textURL(this,"inpage_html_holder");
+        readInputFile(this,"inpage_html_holder","text");
     })
     document.getElementById("inpage_jpg").addEventListener("change", function(){
-        read_imageURL(this,"inpage_jpg_holder");
+        readInputFile(this,"inpage_jpg_holder","image");
     })
     document.getElementById("inpage_png").addEventListener("change", function(){
-        read_imageURL(this,"inpage_png_holder");
+        readInputFile(this,"inpage_png_holder","image");
     })
     document.getElementById("center_html").addEventListener("change", function(){
-        read_textURL(this,"center_html_holder");
+        readInputFile(this,"center_html_holder","text");
     })
     document.getElementById("center_jpg").addEventListener("change", function(){
-        read_imageURL(this,"center_jpg_holder");
+        readInputFile(this,"center_jpg_holder","image");
     })
     document.getElementById("center_png").addEventListener("change", function(){
-        read_imageURL(this,"center_png_holder");
+        readInputFile(this,"center_png_holder","image");
     })
     /////////////////////////
     function changeToResponsive() {
