@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<title>Thương Thương</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/w3.css">
+<script src="../js_libs/konva.min.js"></script>
+<script src="../js/ga.js"></script>
+
+<body>
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-light-grey w3-bar-block w3-container" style="width:300px">
+        <p>Chọn mặt</p>
+        <img src="images/thumbs/face1_thumb.png" onclick="changeImage('images/face1.png',1,0,0)" /> <img src="images/thumbs/face2_thumb.png" onclick="changeImage('images/face2.png',1,0,0)" /> <img src="images/thumbs/face3_thumb.png" onclick="changeImage('images/face3.png',1,0,0)" />
+        <p>Chọn tay</p>
+        <img src="images/thumbs/hand1_thumb.png" onclick="changeImage('images/hand1.png','3','5','400')" /> <img src="images/thumbs/hand2_thumb.png" onclick="changeImage('images/hand2.png',3,5,330)" />
+        <p><button onclick="showImage('3')">Hiện tay</button> <button onclick="hideImage('3')">Ẩn tay</button></p>
+        <p class="w3-small">Đôi khi phải "Ẩn tay" vì lớp ảnh "2 tay ôm" đè lên ảnh dưới nên không chọn được ảnh dưới nhé :))</p>
+        <p>Chọn ảnh có sẵn</p>
+        <img src="images/thumbs/heart_thumb.png" onclick="changeImage('images/heart.png',2,85,374)" />
+        <p class="w3-small" >điều chỉnh ảnh bằng cách nhấn vào ảnh trái tim, kéo để di chuyển và thử thay đổi bằng cách kéo 1 trong các nốt vuông bao quanh.</p>
+        <p>hoặc bạn tự up ảnh bạn muốn</p>
+        <input style="width:100%" type='file' id="fileUpload"/>
+        <p class="w3-small w3-red">Lưu ý:<br>- App này không thu thập dữ liệu ảnh bạn upload, không tin thì bạn cứ xem code.<br>- Bạn up ảnh gì bậy bạ thì bạn phải tự chịu trách nhiệm. Mặc định con này mình chỉ cho nó ôm trái tim thôi.<br>- Mình đã dùng file PSD ở trang này và có chỉnh sửa thêm đôi chút: https://gamingph.com/2020/05/psd-download-for-facebook-care-emoji/<br>- Chúc bạn sáng tạo vui vẻ... nhưng đừng bậy bạ nhé :)<br>- Nếu thích thì bạn có thể chia sẻ cho bạn bè xài chung cho vui. Thanks</p>
+    </div>
+
+    <!-- Page Content -->
+    <div style="margin-left:300px">
+
+        <div class="w3-bar w3-blue">
+            <div class="w3-bar-item">Web app đu trend tạo Emoji Thương Thương của Facbook =))</div>
+            <!-- Float links to the right. Hide them on small screens -->
+            <div class="w3-right">
+                <a class="w3-bar-item w3-button" id="save">Xuất Ảnh</a>
+                <select style="margin-top: 8px; border: none" id="ratioImage">
+                    <option value="1" selected>Đúng kích thước</option>
+                    <option value="2">Gấp 2 lần kích thước</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="w3-container">
+            <div class="w3-display-container w3-display-middle" style="z-index:-1">
+                <div id="container" style="background:#CCC"></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="js/tt.js"></script>
+
+</html>
