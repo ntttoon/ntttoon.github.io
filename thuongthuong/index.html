@@ -21,14 +21,33 @@
         <p class="w3-small" >điều chỉnh ảnh bằng cách nhấn vào ảnh trái tim, kéo để di chuyển và thử thay đổi bằng cách kéo 1 trong các nốt vuông bao quanh.</p>
         <p>hoặc bạn tự up ảnh bạn muốn</p>
         <input style="width:100%" type='file' id="fileUpload"/>
-        <p class="w3-small w3-red">Lưu ý:<br>- App này không thu thập dữ liệu ảnh bạn upload, không tin thì bạn cứ xem code.<br>- Bạn up ảnh gì bậy bạ thì bạn phải tự chịu trách nhiệm. Mặc định con này mình chỉ cho nó ôm trái tim thôi.<br>- Mình đã dùng file PSD ở trang này và có chỉnh sửa thêm đôi chút: https://gamingph.com/2020/05/psd-download-for-facebook-care-emoji/<br>- Chúc bạn sáng tạo vui vẻ... nhưng đừng bậy bạ nhé :)<br>- Nếu thích thì bạn có thể chia sẻ cho bạn bè xài chung cho vui. Thanks</p>
+        <p>Chọn chế độ blend ảnh</p>
+        <select class="w3-border w3-input" id="blend2_sel" onchange="execBlend()">
+            <option value="normal" selected>normal</option>
+            <option value="multiply">multiply</option>
+            <option value="screen">screen</option>
+            <option value="overlay">overlay</option>
+            <option value="darken">darken</option>
+            <option value="lighten">lighten</option>
+            <option value="color-dodge">color-dodge</option>
+            <option value="color-burn">color-burn</option>
+            <option value="hard-light">hard-light</option>
+            <option value="soft-light">soft-light</option>
+            <option value="difference">difference</option>
+            <option value="exclusion">exclusion</option>
+            <option value="hue">hue</option>
+            <option value="saturation">saturation</option>
+            <option value="color">color</option>
+            <option value="luminosity">luminosity</option>
+        </select>
+        <p class="w3-small w3-red">Lưu ý:<br>- App này không thu thập dữ liệu ảnh bạn upload.<br>- Bạn up ảnh gì bậy bạ thì bạn phải tự chịu trách nhiệm. Mặc định con này mình chỉ cho nó ôm trái tim thôi.<br>- Mình đã dùng file PSD ở trang này và có chỉnh sửa thêm đôi chút: https://gamingph.com/2020/05/psd-download-for-facebook-care-emoji/</p>
     </div>
 
     <!-- Page Content -->
     <div style="margin-left:300px">
 
         <div class="w3-bar w3-blue">
-            <div class="w3-bar-item">Web app đu trend tạo Emoji Thương Thương của Facbook =))</div>
+            <div class="w3-bar-item">Tạo emoji Thương Thương của Facebook</div>
             <!-- Float links to the right. Hide them on small screens -->
             <div class="w3-right">
                 <a class="w3-bar-item w3-button" id="save">Xuất Ảnh</a>

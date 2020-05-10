@@ -59,6 +59,20 @@ imageObj3.onload = function() {
 };
 imageObj3.src = 'images/hand1.png';
 
+/* globalCompositeOperation :
+  normal | multiply | screen | overlay | 
+  darken | lighten | color-dodge | color-burn | hard-light | 
+  soft-light | difference | exclusion | hue | saturation | 
+  color | luminosity
+*/
+var blend2s = document.getElementById('blend2_sel').value;
+
+function execBlend(){
+	var blend2s = document.getElementById('blend2_sel').value;
+	img2.globalCompositeOperation(blend2s);
+	layer.draw();
+}
+
 //Stage check transform images
 stage.on('click tap', function (e) {
 	// if click on empty area - remove all transformers
