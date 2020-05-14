@@ -31,32 +31,10 @@ var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [];
 // symbols:
-(lib.title = function() {
-	this.initialize(img.title);
+(lib.bg = function() {
+	this.initialize(img.bg);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,380,74);// helper functions:
-function mc_symbol_clone() {
-	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop));
-	clone.gotoAndStop(this.currentFrame);
-	clone.paused = this.paused;
-	clone.framerate = this.framerate;
-	return clone;
-}
-function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
-	var prototype = cjs.extend(symbol, cjs.MovieClip);
-	prototype.clone = mc_symbol_clone;
-	prototype.nominalBounds = nominalBounds;
-	prototype.frameBounds = frameBounds;
-	return prototype;
-	}
-(lib.title_1 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-	// Layer_1
-	this.instance = new lib.title();
-	this.instance.parent = this;
-	this.instance.setTransform(-190,-37);
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-}).prototype = getMCSymbolPrototype(lib.title_1, new cjs.Rectangle(-190,-37,380,74), null);
+p.nominalBounds = new cjs.Rectangle(0,0,414,736);
 (lib.dummy_btn = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 	// Layer_1
@@ -207,11 +185,11 @@ p.nominalBounds = null;
 	// timeline functions:
 	this.frame_0 = function() {
 		var root = this;
-		var txt = new createjs.Text("Chạm để xoay xí ngầu :D", "30px Arial", "#FFFFFF");
+		var txt = new createjs.Text("Chạm để xoay xí ngầu", "30px Arial", "#FFFFFF");
 		txt.textBaseline = "middle";
 		txt.textAlign = "center";
 		txt.x = 207; 
-		txt.y = 220;
+		txt.y = 160;
 		stage.addChild(txt);
 		root.start = function(){
 			createjs.Touch.enable(true);
@@ -231,9 +209,9 @@ p.nominalBounds = null;
 			TweenLite.from(animals, 0.5, {y:"+=200",alpha:0,ease: Elastic.easeOut.config(1, 0.3)});
 			dice.gotoAndStop(a);
 			animals.gotoAndStop(br);
-			root.createText((a+1) + " con " + animals.nam);
+			root.updateText((a+1) + " con " + animals.nam);
 		};
-		root.createText = function(content){
+		root.updateText = function(content){
 			txt.text = content;
 			stage.update();
 		}
@@ -247,33 +225,22 @@ p.nominalBounds = null;
 	this.cta.parent = this;
 	new cjs.ButtonHelper(this.cta, 0, 1, 2, false, new lib.dummy_btn(), 3);
 	this.timeline.addTween(cjs.Tween.get(this.cta).wait(1));
-	// title
-	this.instance = new lib.title_1();
-	this.instance.parent = this;
-	this.instance.setTransform(208,90);
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-	// animals
-	this.animals = new lib.animals();
-	this.animals.name = "animals";
-	this.animals.parent = this;
-	this.animals.setTransform(207,360);
-	this.timeline.addTween(cjs.Tween.get(this.animals).wait(1));
 	// dice
 	this.dice = new lib.dice();
 	this.dice.name = "dice";
 	this.dice.parent = this;
 	this.dice.setTransform(207,568);
 	this.timeline.addTween(cjs.Tween.get(this.dice).wait(1));
-	// decor
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#FF6600").s().p("A4/D6QhTAAg7g7Qg6g6AAhTIAAhjQAAhTA6g6QA7g7BTAAMAx/AAAQBTAAA6A7QA7A6AABTIAABjQAABTg7A6Qg6A7hTAAg");
-	this.shape.setTransform(207,220);
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+	// animals
+	this.animals = new lib.animals();
+	this.animals.name = "animals";
+	this.animals.parent = this;
+	this.animals.setTransform(207,360);
+	this.timeline.addTween(cjs.Tween.get(this.animals).wait(1));
 	// bg
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#FEEFA9").s().p("EggVA5gMAAAhy/MBArAAAMAAABy/g");
-	this.shape_1.setTransform(207,368);
-	this.timeline.addTween(cjs.Tween.get(this.shape_1).wait(1));
+	this.instance = new lib.bg();
+	this.instance.parent = this;
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(207,368,414,736);
 // library properties:
@@ -285,7 +252,7 @@ lib.properties = {
 	color: "#CCCCCC",
 	opacity: 1.00,
 	manifest: [
-		{src:"title.png?1589373051778", id:"title"}
+		{src:"bg.png?1589471074637", id:"bg"}
 	],
 	preloads: []
 };
