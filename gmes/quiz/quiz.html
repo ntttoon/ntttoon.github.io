@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+	4. Blank lines will be removed automatically.
+	5. Remove unnecessary comments before creating your template.
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" >
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<title>quiz</title>
+<!-- write your code here -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/easing/EasePack.min.js"></script>
+<style>
+  #animation_container {
+	position:absolute;
+	margin:auto;
+	left:0;right:0;
+	top:0;bottom:0;
+  }
+</style>
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script>
+(function (cjs, an) {
+var p; // shortcut to reference prototypes
+var lib={};var ss={};var img={};
+lib.ssMetadata = [
+		{name:"quiz_atlas_P_", frames: [[0,0,414,736],[0,738,374,50]]}
+];
+// symbols:
+(lib.ansboard = function() {
+	this.spriteSheet = ss["quiz_atlas_P_"];
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+(lib.btn = function() {
+	this.spriteSheet = ss["quiz_atlas_P_"];
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+(lib.titlescreen = function() {
+	this.initialize(img.titlescreen);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,414,736);// helper functions:
+function mc_symbol_clone() {
+	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop));
+	clone.gotoAndStop(this.currentFrame);
+	clone.paused = this.paused;
+	clone.framerate = this.framerate;
+	return clone;
+}
+function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
+	var prototype = cjs.extend(symbol, cjs.MovieClip);
+	prototype.clone = mc_symbol_clone;
+	prototype.nominalBounds = nominalBounds;
+	prototype.frameBounds = frameBounds;
+	return prototype;
+	}
+(lib.title_screen = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Layer_1
+	this.instance = new lib.titlescreen();
+	this.instance.parent = this;
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+}).prototype = getMCSymbolPrototype(lib.title_screen, new cjs.Rectangle(0,0,414,736), null);
+(lib.btn_wrong = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// timeline functions:
+	this.frame_0 = function() {
+		this.r = "false";
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+	// Layer_1
+	this.instance = new lib.btn();
+	this.instance.parent = this;
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+}).prototype = getMCSymbolPrototype(lib.btn_wrong, new cjs.Rectangle(0,0,374,50), null);
+(lib.btn_right = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// timeline functions:
+	this.frame_0 = function() {
+		this.r = "true";
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+	// Layer_1
+	this.instance = new lib.btn();
+	this.instance.parent = this;
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+}).prototype = getMCSymbolPrototype(lib.btn_right, new cjs.Rectangle(0,0,374,50), null);
+(lib.board_wrong = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// ans
+	this.ans = new cjs.Text("", "18px 'Arial'", "#FFFFFF");
+	this.ans.name = "ans";
+	this.ans.lineHeight = 22;
+	this.ans.lineWidth = 316;
+	this.ans.parent = this;
+	this.ans.setTransform(52,242);
+	this.timeline.addTween(cjs.Tween.get(this.ans).wait(1));
+	// title
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#990000").s().p("AgiBpIAAjRIBFAAIAADRg");
+	this.shape.setTransform(230.6,165.3);
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#990000").s().p("AAvBqIgLgcIhJAAIgKAcIhLAAIBYjTIBFAAIBYDTgAASAcIgSgyIgTAyIAlAAg");
+	this.shape_1.setTransform(213.9,165.2);
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f("#990000").s().p("Ag0BkQgbgIgUgTIAlgsQAQANATAFQASAHAUgBQASABAAgKIAAAAQAAgEgHgEQgIgDgOgDQgVgEgPgGQgPgEgKgHQgNgIgHgLQgHgMAAgOIAAgBQAAgQAGgMQAGgNALgKQAMgJARgFQAQgGAUAAQAeAAAXAIQAYAGASAPIgiAwQgcgWgiAAQgIABgEACQgDACAAAEIAAABQAAAIAbAGQAWAEAQAFQARAGAKAGQAMAIAGALQAGAMAAAOIAAABQAAAggZAUQgZATgrAAQggAAgbgJg");
+	this.shape_2.setTransform(191.4,165.3);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+	// board
+	this.instance = new lib.ansboard();
+	this.instance.parent = this;
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+}).prototype = getMCSymbolPrototype(lib.board_wrong, new cjs.Rectangle(0,0,414,736), null);
+(lib.board_right = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// ans
+	this.ans = new cjs.Text("", "18px 'Arial'", "#FFFFFF");
+	this.ans.name = "ans";
+	this.ans.lineHeight = 22;
+	this.ans.lineWidth = 316;
+	this.ans.parent = this;
+	this.ans.setTransform(52,242);
+	this.timeline.addTween(cjs.Tween.get(this.ans).wait(1));
+	// title
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#006600").s().p("AghBmQgUgIgRgPQgRgPgJgUQgIgTgBgZIAAAAQAAgXAJgTQAIgTAQgRQARgPAUgHQAWgJAXAAQAaAAAWAJQAWAHATARIgoAvQgLgKgMgEQgLgFgNABQgJgBgIAEQgJAEgGAGQgHAHgDAJQgDAKgBAJIAAAAQABALADAKQADAIAIAIQAGAHAKAEQAHADAMAAIANgBQAHgBADgDIAAgVIgkAAIAAgsIBnAAIAABgQgoAgg2gBQgXABgWgIg");
+	this.shape.setTransform(244,165.3);
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#006600").s().p("AAqBpIhMhhIAABhIhGAAIAAjRIBBAAIBLBdIAAhdIBFAAIAADRg");
+	this.shape_1.setTransform(221.1,165.3);
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f("#006600").s().p("AhNByQgagZAAgxIAAhzIBHAAIAAByQAAASAIAKQAJAJAPAAQAQAAAIgJQAIgIAAgTIAAhzIBIAAIAABxQAABkhoAAQgzAAgagYgAgahXIAcgyIBFAPIgvAjg");
+	this.shape_2.setTransform(198,162.4);
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("#006600").s().p("AhZBpIAAhQIgaAAIAAgyIAaAAIAAhPIBQAAQAeAAAXAHQAYAHAQAOQAQAOAHASQAJAUgBAXIAAABQABAXgJATQgHATgRAPQgQAOgYAIQgYAHgeAAgAgWAvIAPAAQAZAAAOgMQANgLgBgYIAAAAQABgXgNgLQgOgMgZAAIgPAAIAAAWIAZAAIAAAwIgZAAg");
+	this.shape_3.setTransform(174.3,165.3);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+	// board
+	this.instance = new lib.ansboard();
+	this.instance.parent = this;
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+}).prototype = getMCSymbolPrototype(lib.board_right, new cjs.Rectangle(0,0,414,736), null);
+(lib.board_end = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// ans
+	this.ans = new cjs.Text("", "18px 'Arial'", "#FFFFFF");
+	this.ans.name = "ans";
+	this.ans.lineHeight = 22;
+	this.ans.lineWidth = 316;
+	this.ans.parent = this;
+	this.ans.setTransform(52,242);
+	this.timeline.addTween(cjs.Tween.get(this.ans).wait(1));
+	// title
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#402D17").s().p("AgkBmQgTgIgPgPQgRgPgIgUQgIgUAAgYIAAAAQAAguAgggQAQgPAUgHQAUgJAWAAQAhAAAYAOQAYAOAPAbIg6AiQgHgMgKgHQgJgGgMgBQgIABgHADQgHAEgGAGQgLANAAATIAAAAQAAAKADAIQADAJAFAHQAGAGAHADQAHADAIAAQAMABAKgHQAKgGAHgOIA6AhQgQAcgZAPQgZANghAAQgWABgTgIg");
+	this.shape.setTransform(276.7,165.3);
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#402D17").s().p("AhNByQgagZAAgxIAAhzIBHAAIAAByQAAASAIAKQAJAJAPAAQAQAAAIgJQAIgIAAgTIAAhzIBIAAIAABxQAABkhoAAQgzAAgagYgAgahXIAcgyIBFAPIgvAjg");
+	this.shape_1.setTransform(254.2,162.4);
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f("#402D17").s().p("AAgBpIAAhMIg/AAIAABMIhGAAIAAjRIBGAAIAABKIA/AAIAAhKIBGAAIAADRg");
+	this.shape_2.setTransform(231.3,165.3);
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("#402D17").s().p("AgiBpIAAiWIg+AAIAAg7IDBAAIAAA7Ig+AAIAACWg");
+	this.shape_3.setTransform(209.9,165.3);
+	this.shape_4 = new cjs.Shape();
+	this.shape_4.graphics.f("#402D17").s().p("AgiBpIAAiWIg+AAIAAg7IDBAAIAAA7Ig+AAIAACWg");
+	this.shape_4.setTransform(182.1,165.3);
+	this.shape_5 = new cjs.Shape();
+	this.shape_5.graphics.f("#402D17").s().p("AhxCkIAAjRICyAAIAAA4IhtAAIAAAWIBlAAIAAAyIhlAAIAAAXIBuAAIAAA6gAADg8IgagRIgbARIglAAIAog0IAwAAIAoA0gAAThpIAcg6IBDARIgyApg");
+	this.shape_5.setTransform(164.7,159.4);
+	this.shape_6 = new cjs.Shape();
+	this.shape_6.graphics.f("#402D17").s().p("AAXBpIgphDIgSAXIAAAsIhGAAIAAjRIBGAAIAABOIA8hOIBRAAIhJBbIBKB2g");
+	this.shape_6.setTransform(142,165.3);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+	// board
+	this.instance = new lib.ansboard();
+	this.instance.parent = this;
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+}).prototype = getMCSymbolPrototype(lib.board_end, new cjs.Rectangle(0,0,414,736), null);
+// stage content:
+(lib.quiz = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// timeline functions:
+	this.frame_0 = function() {
+		var root = this;
+		var currQuestion = 0;
+		var totalQuestion = "";
+		var answer_txt = "";
+		var jsonToparse = "";
+		var rightAnswer = 0;
+		var questiontxt = new createjs.Text("", "20px Arial", "#FFFFFF");
+		questiontxt.x = 20; 
+		questiontxt.y = 240;
+		questiontxt.lineWidth = 374;
+		questiontxt.lineHeight = 24;
+		stage.addChild(questiontxt);
+		var cau1txt = new createjs.Text("", "16px Arial", "#FFFFFF");
+		cau1txt.x = 30; 
+		cau1txt.y = 500+(0*60);
+		stage.addChild(cau1txt);
+		var cau2txt = new createjs.Text("", "16px Arial", "#FFFFFF");
+		cau2txt.x = 30; 
+		cau2txt.y = 500+(1*60);
+		stage.addChild(cau2txt);
+		var cau3txt = new createjs.Text("", "16px Arial", "#FFFFFF");
+		cau3txt.x = 30; 
+		cau3txt.y = 500+(2*60);
+		stage.addChild(cau3txt);
+		var cau4txt = new createjs.Text("", "16px Arial", "#FFFFFF");
+		cau4txt.x = 30; 
+		cau4txt.y = 500+(3*60);
+		stage.addChild(cau4txt);
+		////////////////////
+		createjs.Touch.enable(true);
+		stage.mouseMoveOutside = true;
+		var xmlhttp = new XMLHttpRequest();
+		var url = "quiz.json";
+		xmlhttp.onreadystatechange = function () {
+		  if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			jsonToparse = xmlhttp.responseText;
+			//alert(jsonToparse);
+		  }
+		}
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
+		//////////
+		function show_image(s) {
+		    var source_image = new Image();
+		    source_image.src = s;
+		    source_image.onload = function(event) {
+		        var bmp = new createjs.Bitmap(event.currentTarget);
+				bmp.x = 20;
+				bmp.y = 20;
+		        root.addChild(bmp); 
+		    }
+		}
+		function addSpritesLib(nam,x,y){
+			root.addChild(nam);
+			nam.x = x;
+			nam.y = y;
+		}
+		function removeSpritesLib(nam){
+			root.removeChild(nam);
+		}
+		root.updateText = function(txt,content){
+			txt.text = content;
+			stage.update();
+		}
+		function titleScreen(){
+			root.removeAllChildren();
+			currQuestion = 0;
+			totalQuestion = "";
+			rightAnswer = 0;
+			var titlescreen = new lib.title_screen();
+			addSpritesLib(titlescreen,0,0);
+			titlescreen.on("mousedown", function(){removeSpritesLib(titlescreen);root.start();});
+		}
+		root.endScreen = function(){
+			titleScreen();
+		}
+		root.start = function(){
+			var arr = JSON.parse(jsonToparse);
+			totalQuestion = arr.quiz.length;
+			var question = arr.quiz[currQuestion].question;
+			var img = arr.quiz[currQuestion].img;
+			var cau1_txt = arr.quiz[currQuestion].cau1_txt;
+			var cau1_right = arr.quiz[currQuestion].cau1_right;
+			var cau2_txt = arr.quiz[currQuestion].cau2_txt;
+			var cau2_right = arr.quiz[currQuestion].cau2_right;
+			var cau3_txt = arr.quiz[currQuestion].cau3_txt;
+			var cau3_right = arr.quiz[currQuestion].cau3_right;
+			var cau4_txt = arr.quiz[currQuestion].cau4_txt;
+			var cau4_right = arr.quiz[currQuestion].cau4_right;
+			var answer = arr.quiz[currQuestion].answer;
+			root.answer_txt = answer;
+			//////////Tạo text và nút//////////
+			root.updateText(questiontxt,question);
+			root.updateText(cau1txt,cau1_txt);
+			root.updateText(cau2txt,cau2_txt);
+			root.updateText(cau3txt,cau3_txt);
+			root.updateText(cau4txt,cau4_txt);
+			show_image(img);
+			/////Nút 1/////
+			if(cau1_right == "true"){
+				var slot1 = new lib.btn_right();
+				addSpritesLib(slot1,20,480+(0*60));
+			}
+			if(cau1_right == "false"){
+				var slot1 = new lib.btn_wrong();
+				addSpritesLib(slot1,20,480+(0*60));
+			}
+			/////Nút 2/////
+			if(cau2_right == "true"){
+				var slot2 = new lib.btn_right();
+				addSpritesLib(slot2,20,480+(1*60));
+			}
+			if(cau2_right == "false"){
+				var slot2 = new lib.btn_wrong();
+				addSpritesLib(slot2,20,480+(1*60));
+			}
+			/////Nút 3/////
+			if(cau3_right == "true"){
+				var slot3 = new lib.btn_right();
+				addSpritesLib(slot3,20,480+(2*60));
+			}
+			if(cau3_right == "false"){
+				var slot3 = new lib.btn_wrong();
+				addSpritesLib(slot3,20,480+(2*60));
+			}
+			/////Nút 4/////
+			if(cau4_right == "true"){
+				var slot4 = new lib.btn_right();
+				addSpritesLib(slot4,20,480+(3*60));
+			}
+			if(cau4_right == "false"){
+				var slot4 = new lib.btn_wrong();
+				addSpritesLib(slot4,20,480+(3*60));
+			}
+			slot1.on("mousedown", root.checkValue);
+			slot2.on("mousedown", root.checkValue);
+			slot3.on("mousedown", root.checkValue);
+			slot4.on("mousedown", root.checkValue);
+			//////////end Tạo text và nút//////////
+		}
+		root.checkValue = function(e){
+			//alert(e.currentTarget.r)
+			root.updateText(questiontxt,"");
+			root.updateText(cau1txt,"");
+			root.updateText(cau2txt,"");
+			root.updateText(cau3txt,"");
+			root.updateText(cau4txt,"");
+			if(e.currentTarget.r == "true"){
+				var board = new lib.board_right();
+				addSpritesLib(board,0,0);
+				TweenLite.from(board, 0.5, {alpha:0,ease: Power3.easeOut})
+				board.ans.text = root.answer_txt;
+				rightAnswer += 1;
+			}
+			if(e.currentTarget.r == "false"){
+				var board = new lib.board_wrong();
+				addSpritesLib(board,0,0);
+				TweenLite.from(board, 0.5, {alpha:0,ease: Power3.easeOut})
+				board.ans.text = root.answer_txt
+			}
+			board.on("mousedown", root.nextQuestion);
+		}
+		root.nextQuestion = function(){
+			var a = currQuestion+1;
+			if(a == totalQuestion){
+				root.removeAllChildren();
+				var board = new lib.board_end();
+				addSpritesLib(board,0,0);
+				TweenLite.from(board, 0.5, {alpha:0,ease: Power3.easeOut})
+				board.ans.text = "Số câu trả lời đúng của bạn là " + rightAnswer + "/" + totalQuestion;
+				board.on("mousedown", root.endScreen);
+			}else{
+				currQuestion +=1;
+				root.removeAllChildren();
+				root.start();
+			}
+		}
+		titleScreen();
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = null;
+// library properties:
+lib.properties = {
+	id: '03C1070ABCFB58448642E6D601246348',
+	width: 414,
+	height: 736,
+	fps: 30,
+	color: "#D5AD51",
+	opacity: 1.00,
+	manifest: [
+		{src:"titlescreen.jpg?1590248281358", id:"titlescreen"},
+		{src:"quiz_atlas_P_.png?1590248281347", id:"quiz_atlas_P_"}
+	],
+	preloads: []
+};
+// bootstrap callback support:
+(lib.Stage = function(canvas) {
+	createjs.Stage.call(this, canvas);
+}).prototype = p = new createjs.Stage();
+p.setAutoPlay = function(autoPlay) {
+	this.tickEnabled = autoPlay;
+}
+p.play = function() { this.tickEnabled = true; this.getChildAt(0).gotoAndPlay(this.getTimelinePosition()) }
+p.stop = function(ms) { if(ms) this.seek(ms); this.tickEnabled = false; }
+p.seek = function(ms) { this.tickEnabled = true; this.getChildAt(0).gotoAndStop(lib.properties.fps * ms / 1000); }
+p.getDuration = function() { return this.getChildAt(0).totalFrames / lib.properties.fps * 1000; }
+p.getTimelinePosition = function() { return this.getChildAt(0).currentFrame / lib.properties.fps * 1000; }
+an.bootcompsLoaded = an.bootcompsLoaded || [];
+if(!an.bootstrapListeners) {
+	an.bootstrapListeners=[];
+}
+an.bootstrapCallback=function(fnCallback) {
+	an.bootstrapListeners.push(fnCallback);
+	if(an.bootcompsLoaded.length > 0) {
+		for(var i=0; i<an.bootcompsLoaded.length; ++i) {
+			fnCallback(an.bootcompsLoaded[i]);
+		}
+	}
+};
+an.compositions = an.compositions || {};
+an.compositions['03C1070ABCFB58448642E6D601246348'] = {
+	getStage: function() { return exportRoot.getStage(); },
+	getLibrary: function() { return lib; },
+	getSpriteSheet: function() { return ss; },
+	getImages: function() { return img; }
+};
+an.compositionLoaded = function(id) {
+	an.bootcompsLoaded.push(id);
+	for(var j=0; j<an.bootstrapListeners.length; j++) {
+		an.bootstrapListeners[j](id);
+	}
+}
+an.getComposition = function(id) {
+	return an.compositions[id];
+}
+})(createjs = createjs||{}, AdobeAn = AdobeAn||{});
+var createjs, AdobeAn;
+</script>
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var comp=AdobeAn.getComposition("03C1070ABCFB58448642E6D601246348");
+	var lib=comp.getLibrary();
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+	var lib=comp.getLibrary();
+	loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt,comp) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.quiz();
+	stage = new lib.Stage(canvas);	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	//Code to support hidpi screens and responsive scaling.
+	function makeResponsive(isResp, respDim, isScale, scaleType) {		
+		var lastW, lastH, lastS=1;		
+		window.addEventListener('resize', resizeCanvas);		
+		resizeCanvas();		
+		function resizeCanvas() {			
+			var w = lib.properties.width, h = lib.properties.height;			
+			var iw = window.innerWidth, ih=window.innerHeight;			
+			var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+			if(isResp) {                
+				if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+					sRatio = lastS;                
+				}				
+				else if(!isScale) {					
+					if(iw<w || ih<h)						
+						sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==1) {					
+					sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==2) {					
+					sRatio = Math.max(xRatio, yRatio);				
+				}			
+			}			
+			canvas.width = w*pRatio*sRatio;			
+			canvas.height = h*pRatio*sRatio;
+			canvas.style.width = dom_overlay_container.style.width = anim_container.style.width =  w*sRatio+'px';				
+			canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h*sRatio+'px';
+			stage.scaleX = pRatio*sRatio;			
+			stage.scaleY = pRatio*sRatio;			
+			lastW = iw; lastH = ih; lastS = sRatio;            
+			stage.tickOnUpdate = false;            
+			stage.update();            
+			stage.tickOnUpdate = true;		
+		}
+	}
+	makeResponsive(true,'both',true,1);	
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+</script>
+<!-- write your code here -->
+</head>
+<body onload="init();" style="margin:0px;">
+	<div id="animation_container" style="background-color:rgba(213, 173, 81, 1.00); width:414px; height:736px">
+		<canvas id="canvas" width="414" height="736" style="position: absolute; display: block; background-color:rgba(213, 173, 81, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:414px; height:736px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>
+</body>
+</html>
