@@ -200,9 +200,10 @@ p.nominalBounds = new cjs.Rectangle(-50,-49.9,100,100);
 		txt.x = 207; 
 		txt.y = 160;
 		stage.addChild(txt);
+		createjs.Touch.enable(true);
+		stage.mouseMoveOutside = true;
+		document.body.style.backgroundColor = lib.properties.color;
 		root.start = function(){
-			createjs.Touch.enable(true);
-			stage.mouseMoveOutside = true;
 			keo = root.keo;
 			bua = root.bua;
 			bao = root.bao;
@@ -348,10 +349,10 @@ lib.properties = {
 	width: 414,
 	height: 736,
 	fps: 30,
-	color: "#CCCCCC",
+	color: "#D5AD51",
 	opacity: 1.00,
 	manifest: [
-		{src:"bg.png?1589471537791", id:"bg"}
+		{src:"bg.png?1590418908380", id:"bg"}
 	],
 	preloads: []
 };
@@ -477,8 +478,8 @@ function handleComplete(evt,comp) {
 <!-- write your code here -->
 </head>
 <body onload="init();" style="margin:0px;">
-	<div id="animation_container" style="background-color:rgba(204, 204, 204, 1.00); width:414px; height:736px">
-		<canvas id="canvas" width="414" height="736" style="position: absolute; display: block; background-color:rgba(204, 204, 204, 1.00);"></canvas>
+	<div id="animation_container" style="background-color:rgba(213, 173, 81, 1.00); width:414px; height:736px">
+		<canvas id="canvas" width="414" height="736" style="position: absolute; display: block; background-color:rgba(213, 173, 81, 1.00);"></canvas>
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:414px; height:736px; position: absolute; left: 0px; top: 0px; display: block;">
 		</div>
 	</div>

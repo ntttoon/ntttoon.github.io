@@ -221,11 +221,13 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 		////////////////////
 		createjs.Touch.enable(true);
 		stage.mouseMoveOutside = true;
+		document.body.style.backgroundColor = lib.properties.color;
 		var xmlhttp = new XMLHttpRequest();
 		var url = "quiz.json";
 		xmlhttp.onreadystatechange = function () {
 		  if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 			jsonToparse = xmlhttp.responseText;
+			titleScreen();
 			//alert(jsonToparse);
 		  }
 		}
@@ -239,7 +241,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 		        var bmp = new createjs.Bitmap(event.currentTarget);
 				bmp.x = 20;
 				bmp.y = 20;
-		        root.addChild(bmp); 
+		        root.addChild(bmp);
 		    }
 		}
 		function addSpritesLib(nam,x,y){
@@ -253,6 +255,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 		root.updateText = function(txt,content){
 			txt.text = content;
 			stage.update();
+			TweenLite.from(txt, 0.2, {x:"+=20",alpha:0,ease: Power3.easeOut})
 		}
 		function titleScreen(){
 			root.removeAllChildren();
@@ -340,14 +343,14 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 			if(e.currentTarget.r == "true"){
 				var board = new lib.board_right();
 				addSpritesLib(board,0,0);
-				TweenLite.from(board, 0.5, {alpha:0,ease: Power3.easeOut})
+				TweenLite.from(board, 0.2, {alpha:0,ease: Power3.easeOut});
 				board.ans.text = root.answer_txt;
 				rightAnswer += 1;
 			}
 			if(e.currentTarget.r == "false"){
 				var board = new lib.board_wrong();
 				addSpritesLib(board,0,0);
-				TweenLite.from(board, 0.5, {alpha:0,ease: Power3.easeOut})
+				TweenLite.from(board, 0.2, {alpha:0,ease: Power3.easeOut});
 				board.ans.text = root.answer_txt
 			}
 			board.on("mousedown", root.nextQuestion);
@@ -358,7 +361,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 				root.removeAllChildren();
 				var board = new lib.board_end();
 				addSpritesLib(board,0,0);
-				TweenLite.from(board, 0.5, {alpha:0,ease: Power3.easeOut})
+				TweenLite.from(board, 0.2, {alpha:0,ease: Power3.easeOut});
 				board.ans.text = "Số câu trả lời đúng của bạn là " + rightAnswer + "/" + totalQuestion;
 				board.on("mousedown", root.endScreen);
 			}else{
@@ -367,7 +370,6 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 				root.start();
 			}
 		}
-		titleScreen();
 	}
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
@@ -382,8 +384,8 @@ lib.properties = {
 	color: "#D5AD51",
 	opacity: 1.00,
 	manifest: [
-		{src:"titlescreen.jpg?1590249090611", id:"titlescreen"},
-		{src:"quiz_atlas_P_.png?1590249090600", id:"quiz_atlas_P_"}
+		{src:"titlescreen.jpg?1590418673950", id:"titlescreen"},
+		{src:"quiz_atlas_P_.png?1590418673939", id:"quiz_atlas_P_"}
 	],
 	preloads: []
 };
