@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+	4. Blank lines will be removed automatically.
+	5. Remove unnecessary comments before creating your template.
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" >
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<title>dinorun</title>
+<!-- write your code here -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/easing/EasePack.min.js"></script>
+<style>
+  #animation_container {
+	position:absolute;
+	margin:auto;
+	left:0;right:0;
+	top:0;bottom:0;
+  }
+</style>
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script>
+(function (cjs, an) {
+var p; // shortcut to reference prototypes
+var lib={};var ss={};var img={};
+lib.ssMetadata = [
+		{name:"dinorun_atlas_P_", frames: [[0,0,1242,736],[396,738,48,48],[446,738,48,48],[496,738,48,48],[546,738,48,48],[596,738,48,48],[646,738,48,48],[696,738,48,48],[746,738,48,48],[796,738,48,48],[346,738,48,48],[0,738,344,60]]}
+];
+// symbols:
+(lib.bg = function() {
+	this.spriteSheet = ss["dinorun_atlas_P_"];
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+(lib.dino_r1 = function() {
+	this.spriteSheet = ss["dinorun_atlas_P_"];
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+(lib.dino_r2 = function() {
+	this.spriteSheet = ss["dinorun_atlas_P_"];
+	this.gotoAndStop(2);
+}).prototype = p = new cjs.Sprite();
+(lib.dino_r3 = function() {
+	this.spriteSheet = ss["dinorun_atlas_P_"];
+	this.gotoAndStop(3);
+}).prototype = p = new cjs.Sprite();
+(lib.dino_r4 = function() {
+	this.spriteSheet = ss["dinorun_atlas_P_"];
+	this.gotoAndStop(4);
+}).prototype = p = new cjs.Sprite();
+(lib.dino_r5 = function() {
+	this.spriteSheet = ss["dinorun_atlas_P_"];
+	this.gotoAndStop(5);
+}).prototype = p = new cjs.Sprite();
+(lib.dino_r6 = function() {
+	this.spriteSheet = ss["dinorun_atlas_P_"];
+	this.gotoAndStop(6);
+}).prototype = p = new cjs.Sprite();
+(lib.dino_s1 = function() {
+	this.spriteSheet = ss["dinorun_atlas_P_"];
+	this.gotoAndStop(7);
+}).prototype = p = new cjs.Sprite();
+(lib.dino_s2 = function() {
+	this.spriteSheet = ss["dinorun_atlas_P_"];
+	this.gotoAndStop(8);
+}).prototype = p = new cjs.Sprite();
+(lib.dino_s3 = function() {
+	this.spriteSheet = ss["dinorun_atlas_P_"];
+	this.gotoAndStop(9);
+}).prototype = p = new cjs.Sprite();
+(lib.dino_s4 = function() {
+	this.spriteSheet = ss["dinorun_atlas_P_"];
+	this.gotoAndStop(10);
+}).prototype = p = new cjs.Sprite();
+(lib.title = function() {
+	this.spriteSheet = ss["dinorun_atlas_P_"];
+	this.gotoAndStop(11);
+}).prototype = p = new cjs.Sprite();
+// helper functions:
+function mc_symbol_clone() {
+	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop));
+	clone.gotoAndStop(this.currentFrame);
+	clone.paused = this.paused;
+	clone.framerate = this.framerate;
+	return clone;
+}
+function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
+	var prototype = cjs.extend(symbol, cjs.MovieClip);
+	prototype.clone = mc_symbol_clone;
+	prototype.nominalBounds = nominalBounds;
+	prototype.frameBounds = frameBounds;
+	return prototype;
+	}
+(lib.title_1 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Layer_1
+	this.instance = new lib.title();
+	this.instance.parent = this;
+	this.instance.setTransform(-172,-30);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	// Layer_2
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#333333").s().p("AgQBKIAAgiIAhAAIAAAigAgQAZIAAhiIAhAAIAABig");
+	this.shape.setTransform(74.9,72.6);
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#333333").s().p("AggBKIARgqIgphpIAjAAIAWBAIAVhAIAjAAIg3CTg");
+	this.shape_1.setTransform(65.8,76.3);
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f("#333333").s().p("AgJBRIAAgdIAfAAIAAAdgAgtAUQgPgRAAgYQAAgZAPgRQAQgSAZAAQAJAAAJAFQAIADAFAJIABAAIAAgMIAhAAIAABuIghAAIAAgMIgBAAQgEAIgJAEQgJADgJAAQgZAAgQgRgAgTgpQgHAIgBANQAAALAIAIQAJAIAKAAQAMAAAIgIQAIgIAAgMQAAgNgIgIQgIgHgMAAQgLgBgIAJg");
+	this.shape_2.setTransform(52.8,76.7);
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("#333333").s().p("AASBKIAAg8QAAgLgDgEQgFgIgKAAQgJAAgEAHQgEAEAAALIAAA9IghAAIAAiTIAhAAIAAAvIAAAAQAEgHAJgEQAGgDAJAAQAUAAAKANQAHAIACAKIABAKIAAAGIAABDg");
+	this.shape_3.setTransform(39.7,72.6);
+	this.shape_4 = new cjs.Shape();
+	this.shape_4.graphics.f("#333333").s().p("AgoAqQgSgRAAgZQAAgYARgRQARgRAYAAQAVAAARANQAQANAFAVIgiAAQgHgQgSAAQgKAAgHAIQgHAIAAALQAAAMAHAIQAHAIALAAQAQAAAIgOIAiAAQgFAUgQANQgQAMgVAAQgYAAgRgRg");
+	this.shape_4.setTransform(26.9,74.4);
+	this.shape_5 = new cjs.Shape();
+	this.shape_5.graphics.f("#333333").s().p("AgpBYQgQgRgBgYQABgZAQgSQARgQAYgBQAZABARAQQAQASAAAaIAAAIIhSAAQACAVAWAAQAMAAAJgKIAiAAQgIARgOAKQgPALgSAAQgXAAgSgRgAgYAhIAxAAQgEgSgVgBQgUABgEASgAAKgZIgKgMIgIAMIghAAIAgghIAVAAIAdAhgAAWg1QABgFACgEIADgEIADgDIADgDIADgDQACgEAAgDQAAgFgGAAQgEAAgBACIgBAHIgSAAIAAgBIAAgBQAAgLAHgGQAIgHAKAAQAQAAAGALQACAFAAAEQAAAGgDAEIgDAEIgDADIgDAEIgEADQgCADgBAEg");
+	this.shape_5.setTransform(7.8,69.9);
+	this.shape_6 = new cjs.Shape();
+	this.shape_6.graphics.f("#333333").s().p("AgxA6QgPgQAAgaQAAgXAPgRQAQgSAYAAQATAAANAOIAAgSIgWAAIAAgTIAWAAIAAgKIAhAAIAAAKIAJAAIAAATIgJAAIAAB2IggAAIAAgMIAAAAQgFAJgKADQgIAEgJAAQgZAAgQgSgAgXgDQgIAHAAAMQAAANAIAIQAIAIAMAAQALAAAIgIQAIgIAAgNQAAgMgIgHQgIgIgLAAQgMAAgIAIg");
+	this.shape_6.setTransform(-5.5,72.8);
+	this.shape_7 = new cjs.Shape();
+	this.shape_7.graphics.f("#333333").s().p("AA0A6IAAg7QAAgLgDgGQgEgHgKAAQgKAAgFAGQgEAGAAALIAAA8IggAAIAAg8QAAgKgDgGQgEgHgJAAQgLAAgFAHQgDAGAAALIAAA7IghAAIAAhuIAfAAIAAAMIAAAAQAFgJAIgDQAIgFAKAAQAVABAKATQAMgTAXgBQASAAALAMQAIAJADALIABALIAAAFIAABDg");
+	this.shape_7.setTransform(-28.5,74.3);
+	this.shape_8 = new cjs.Shape();
+	this.shape_8.graphics.f("#333333").s().p("AgJBRIAAgdIAfAAIAAAdgAgsAUQgQgRAAgYQAAgZAQgRQAPgSAZAAQAJAAAIAFQAKADAEAJIABAAIAAgMIAhAAIAABuIghAAIAAgMIgBAAQgEAIgKAEQgIADgJAAQgZAAgPgRgAgTgpQgHAIAAANQgBALAJAIQAIAIAKAAQAMAAAIgIQAIgIAAgMQAAgNgIgIQgIgHgMAAQgLgBgIAJg");
+	this.shape_8.setTransform(-45.5,76.7);
+	this.shape_9 = new cjs.Shape();
+	this.shape_9.graphics.f("#333333").s().p("AASBKIAAg8QAAgLgDgEQgFgIgKAAQgJAAgEAHQgEAEAAALIAAA9IghAAIAAiTIAhAAIAAAvIAAAAQAEgHAJgEQAGgDAJAAQAUAAAKANQAHAIACAKIABAKIAAAGIAABDg");
+	this.shape_9.setTransform(-58.6,72.6);
+	this.shape_10 = new cjs.Shape();
+	this.shape_10.graphics.f("#333333").s().p("AgoAqQgSgRAAgZQAAgYARgRQARgRAYAAQAVAAARANQAQANAFAVIgiAAQgHgQgSAAQgKAAgHAIQgHAIAAALQAAAMAHAIQAHAIALAAQAQAAAIgOIAiAAQgFAUgQANQgQAMgVAAQgYAAgRgRg");
+	this.shape_10.setTransform(-71.4,74.4);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_10},{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+}).prototype = getMCSymbolPrototype(lib.title_1, new cjs.Rectangle(-172,-30,344,117.3), null);
+(lib.dummy_btn = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#FFFFFF").s().p("EggVA5gMAAAhy/MBArAAAMAAABy/g");
+	this.shape.setTransform(207,368);
+	this.shape._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(3).to({_off:false},0).wait(1));
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = null;
+(lib.dinorun_1 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Layer_1
+	this.instance = new lib.dino_r1();
+	this.instance.parent = this;
+	this.instance.setTransform(-24,-24);
+	this.instance_1 = new lib.dino_r2();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(-24,-24);
+	this.instance_2 = new lib.dino_r3();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(-24,-24);
+	this.instance_3 = new lib.dino_r4();
+	this.instance_3.parent = this;
+	this.instance_3.setTransform(-24,-24);
+	this.instance_4 = new lib.dino_r5();
+	this.instance_4.parent = this;
+	this.instance_4.setTransform(-24,-24);
+	this.instance_5 = new lib.dino_r6();
+	this.instance_5.parent = this;
+	this.instance_5.setTransform(-24,-24);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},6).to({state:[{t:this.instance_2}]},6).to({state:[{t:this.instance_3}]},6).to({state:[{t:this.instance_4}]},6).to({state:[{t:this.instance_5}]},6).wait(6));
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-24,-24,48,48);
+(lib.bg_loop = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Layer_1
+	this.instance = new lib.bg();
+	this.instance.parent = this;
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+}).prototype = getMCSymbolPrototype(lib.bg_loop, new cjs.Rectangle(0,0,1242,736), null);
+(lib.dino_all = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{stand:0,run:30});
+	// timeline functions:
+	this.frame_29 = function() {
+		this.gotoAndPlay("stand");
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(29).call(this.frame_29).wait(7));
+	// Layer_3
+	this.instance = new lib.dinorun_1();
+	this.instance.parent = this;
+	this.instance._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(30).to({_off:false},0).wait(6));
+	// Layer_1
+	this.instance_1 = new lib.dino_s1();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(-24,-24);
+	this.instance_2 = new lib.dino_s2();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(-24,-24);
+	this.instance_3 = new lib.dino_s3();
+	this.instance_3.parent = this;
+	this.instance_3.setTransform(-24,-24);
+	this.instance_4 = new lib.dino_s4();
+	this.instance_4.parent = this;
+	this.instance_4.setTransform(-24,-24);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1}]}).to({state:[{t:this.instance_2}]},7).to({state:[{t:this.instance_3}]},8).to({state:[{t:this.instance_4}]},7).to({state:[]},8).wait(6));
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-24,-24,48,48);
+// stage content:
+(lib.dinorun = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// timeline functions:
+	this.frame_0 = function() {
+		var root = this;
+		var bg = root.bg;
+		var title = root.title;
+		var startGame = false;
+		var dinoJump = false;
+		var cta = root.cta;
+		var dino = root.dino;
+		var canJump = true;
+		/////
+		createjs.Touch.enable(true);
+		stage.mouseMoveOutside = true;
+		document.body.style.backgroundColor = lib.properties.color;
+		/////
+		root.movingBg = function(){
+			if(bg.x > -828){
+				bg.x -= 5;
+			}
+			if(bg.x <= -828){
+				bg.x = 0;
+			}
+		}
+		root.dropdown = function(){
+			TweenLite.to(dino, 0.4, {y:"+=70",ease: Power3.easeIn,onComplete:function(){canJump = true;}});
+		}
+		/////
+		root.startGame = function(){
+			startGame = true;
+			title.visible = false;
+			dino.gotoAndStop("run");
+			if(canJump == true){
+				canJump = false;
+				TweenLite.to(dino, 0.2, {y:"-=70",ease: Power3.easeOut,onComplete:function(){root.dropdown()}})
+			}
+		}
+		/////
+		root.start = function(){
+			cta.on("mousedown", root.startGame);
+			createjs.Ticker.on("tick", root.tickHandler);
+		}
+		/////
+		root.tickHandler = function (e){
+			if(startGame == true){
+				root.movingBg();
+			}
+		};
+		/////
+		root.start();
+		root.stop();
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+	// dino
+	this.dino = new lib.dino_all();
+	this.dino.name = "dino";
+	this.dino.parent = this;
+	this.dino.setTransform(62,590);
+	this.timeline.addTween(cjs.Tween.get(this.dino).wait(1));
+	// cta
+	this.cta = new lib.dummy_btn();
+	this.cta.name = "cta";
+	this.cta.parent = this;
+	new cjs.ButtonHelper(this.cta, 0, 1, 2, false, new lib.dummy_btn(), 3);
+	this.timeline.addTween(cjs.Tween.get(this.cta).wait(1));
+	// tite
+	this.title = new lib.title_1();
+	this.title.name = "title";
+	this.title.parent = this;
+	this.title.setTransform(210,130);
+	this.timeline.addTween(cjs.Tween.get(this.title).wait(1));
+	// bgloop
+	this.bg = new lib.bg_loop();
+	this.bg.name = "bg";
+	this.bg.parent = this;
+	this.bg.cache(-2,-2,1246,740);
+	this.timeline.addTween(cjs.Tween.get(this.bg).wait(1));
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(207,368,1242,736);
+// library properties:
+lib.properties = {
+	id: 'FE05242B6B43264D827D06778788AC3E',
+	width: 414,
+	height: 736,
+	fps: 60,
+	color: "#FFFFFF",
+	opacity: 1.00,
+	manifest: [
+		{src:"dinorun_atlas_P_.png?1591640454110", id:"dinorun_atlas_P_"}
+	],
+	preloads: []
+};
+// bootstrap callback support:
+(lib.Stage = function(canvas) {
+	createjs.Stage.call(this, canvas);
+}).prototype = p = new createjs.Stage();
+p.setAutoPlay = function(autoPlay) {
+	this.tickEnabled = autoPlay;
+}
+p.play = function() { this.tickEnabled = true; this.getChildAt(0).gotoAndPlay(this.getTimelinePosition()) }
+p.stop = function(ms) { if(ms) this.seek(ms); this.tickEnabled = false; }
+p.seek = function(ms) { this.tickEnabled = true; this.getChildAt(0).gotoAndStop(lib.properties.fps * ms / 1000); }
+p.getDuration = function() { return this.getChildAt(0).totalFrames / lib.properties.fps * 1000; }
+p.getTimelinePosition = function() { return this.getChildAt(0).currentFrame / lib.properties.fps * 1000; }
+an.bootcompsLoaded = an.bootcompsLoaded || [];
+if(!an.bootstrapListeners) {
+	an.bootstrapListeners=[];
+}
+an.bootstrapCallback=function(fnCallback) {
+	an.bootstrapListeners.push(fnCallback);
+	if(an.bootcompsLoaded.length > 0) {
+		for(var i=0; i<an.bootcompsLoaded.length; ++i) {
+			fnCallback(an.bootcompsLoaded[i]);
+		}
+	}
+};
+an.compositions = an.compositions || {};
+an.compositions['FE05242B6B43264D827D06778788AC3E'] = {
+	getStage: function() { return exportRoot.getStage(); },
+	getLibrary: function() { return lib; },
+	getSpriteSheet: function() { return ss; },
+	getImages: function() { return img; }
+};
+an.compositionLoaded = function(id) {
+	an.bootcompsLoaded.push(id);
+	for(var j=0; j<an.bootstrapListeners.length; j++) {
+		an.bootstrapListeners[j](id);
+	}
+}
+an.getComposition = function(id) {
+	return an.compositions[id];
+}
+})(createjs = createjs||{}, AdobeAn = AdobeAn||{});
+var createjs, AdobeAn;
+</script>
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var comp=AdobeAn.getComposition("FE05242B6B43264D827D06778788AC3E");
+	var lib=comp.getLibrary();
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+	var lib=comp.getLibrary();
+	loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt,comp) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.dinorun();
+	stage = new lib.Stage(canvas);
+	stage.enableMouseOver();	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	//Code to support hidpi screens and responsive scaling.
+	function makeResponsive(isResp, respDim, isScale, scaleType) {		
+		var lastW, lastH, lastS=1;		
+		window.addEventListener('resize', resizeCanvas);		
+		resizeCanvas();		
+		function resizeCanvas() {			
+			var w = lib.properties.width, h = lib.properties.height;			
+			var iw = window.innerWidth, ih=window.innerHeight;			
+			var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+			if(isResp) {                
+				if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+					sRatio = lastS;                
+				}				
+				else if(!isScale) {					
+					if(iw<w || ih<h)						
+						sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==1) {					
+					sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==2) {					
+					sRatio = Math.max(xRatio, yRatio);				
+				}			
+			}			
+			canvas.width = w*pRatio*sRatio;			
+			canvas.height = h*pRatio*sRatio;
+			canvas.style.width = dom_overlay_container.style.width = anim_container.style.width =  w*sRatio+'px';				
+			canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h*sRatio+'px';
+			stage.scaleX = pRatio*sRatio;			
+			stage.scaleY = pRatio*sRatio;			
+			lastW = iw; lastH = ih; lastS = sRatio;            
+			stage.tickOnUpdate = false;            
+			stage.update();            
+			stage.tickOnUpdate = true;		
+		}
+	}
+	makeResponsive(true,'both',true,1);	
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+</script>
+<!-- write your code here -->
+</head>
+<body onload="init();" style="margin:0px;">
+	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:414px; height:736px">
+		<canvas id="canvas" width="414" height="736" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:414px; height:736px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>
+</body>
+</html>
