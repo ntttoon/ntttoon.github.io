@@ -30,56 +30,96 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"dinorun_atlas_P_", frames: [[0,0,1242,736],[396,738,48,48],[446,738,48,48],[496,738,48,48],[546,738,48,48],[596,738,48,48],[646,738,48,48],[696,738,48,48],[746,738,48,48],[796,738,48,48],[346,738,48,48],[0,738,344,60]]}
+		{name:"dinorun_atlas_P_", frames: [[0,0,1242,736],[0,800,48,48],[50,800,48,48],[100,800,48,48],[150,800,48,48],[496,738,48,48],[546,738,48,48],[646,738,48,48],[200,800,48,48],[250,800,48,48],[596,738,48,48],[696,738,48,48],[746,738,48,48],[796,738,48,48],[396,812,30,36],[428,812,30,36],[846,776,46,36],[300,812,46,36],[348,812,46,36],[846,738,46,36],[346,738,148,72],[0,738,344,60]]}
 ];
 // symbols:
 (lib.bg = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
-(lib.dino_r1 = function() {
+(lib.dino_h1 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
-(lib.dino_r2 = function() {
+(lib.dino_h2 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
-(lib.dino_r3 = function() {
+(lib.dino_h3 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
-(lib.dino_r4 = function() {
+(lib.dino_r1 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
-(lib.dino_r5 = function() {
+(lib.dino_r2 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
-(lib.dino_r6 = function() {
+(lib.dino_r3 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
-(lib.dino_s1 = function() {
+(lib.dino_r4 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
-(lib.dino_s2 = function() {
+(lib.dino_r5 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
-(lib.dino_s3 = function() {
+(lib.dino_r6 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
-(lib.dino_s4 = function() {
+(lib.dino_s1 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
-(lib.title = function() {
+(lib.dino_s2 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(11);
+}).prototype = p = new cjs.Sprite();
+(lib.dino_s3 = function() {
+	this.spriteSheet = ss["dinorun_atlas_P_"];
+	this.gotoAndStop(12);
+}).prototype = p = new cjs.Sprite();
+(lib.dino_s4 = function() {
+	this.spriteSheet = ss["dinorun_atlas_P_"];
+	this.gotoAndStop(13);
+}).prototype = p = new cjs.Sprite();
+(lib.e1_1 = function() {
+	this.spriteSheet = ss["dinorun_atlas_P_"];
+	this.gotoAndStop(14);
+}).prototype = p = new cjs.Sprite();
+(lib.e1_2 = function() {
+	this.spriteSheet = ss["dinorun_atlas_P_"];
+	this.gotoAndStop(15);
+}).prototype = p = new cjs.Sprite();
+(lib.e2_1 = function() {
+	this.spriteSheet = ss["dinorun_atlas_P_"];
+	this.gotoAndStop(16);
+}).prototype = p = new cjs.Sprite();
+(lib.e2_2 = function() {
+	this.spriteSheet = ss["dinorun_atlas_P_"];
+	this.gotoAndStop(17);
+}).prototype = p = new cjs.Sprite();
+(lib.e2_3 = function() {
+	this.spriteSheet = ss["dinorun_atlas_P_"];
+	this.gotoAndStop(18);
+}).prototype = p = new cjs.Sprite();
+(lib.e2_4 = function() {
+	this.spriteSheet = ss["dinorun_atlas_P_"];
+	this.gotoAndStop(19);
+}).prototype = p = new cjs.Sprite();
+(lib.star_btn = function() {
+	this.spriteSheet = ss["dinorun_atlas_P_"];
+	this.gotoAndStop(20);
+}).prototype = p = new cjs.Sprite();
+(lib.title = function() {
+	this.spriteSheet = ss["dinorun_atlas_P_"];
+	this.gotoAndStop(21);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 function mc_symbol_clone() {
@@ -103,42 +143,45 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.instance.parent = this;
 	this.instance.setTransform(-172,-30);
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-	// Layer_2
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#333333").s().p("AgQBKIAAgiIAhAAIAAAigAgQAZIAAhiIAhAAIAABig");
-	this.shape.setTransform(74.9,72.6);
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#333333").s().p("AggBKIARgqIgphpIAjAAIAWBAIAVhAIAjAAIg3CTg");
-	this.shape_1.setTransform(65.8,76.3);
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f("#333333").s().p("AgJBRIAAgdIAfAAIAAAdgAgtAUQgPgRAAgYQAAgZAPgRQAQgSAZAAQAJAAAJAFQAIADAFAJIABAAIAAgMIAhAAIAABuIghAAIAAgMIgBAAQgEAIgJAEQgJADgJAAQgZAAgQgRgAgTgpQgHAIgBANQAAALAIAIQAJAIAKAAQAMAAAIgIQAIgIAAgMQAAgNgIgIQgIgHgMAAQgLgBgIAJg");
-	this.shape_2.setTransform(52.8,76.7);
-	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f("#333333").s().p("AASBKIAAg8QAAgLgDgEQgFgIgKAAQgJAAgEAHQgEAEAAALIAAA9IghAAIAAiTIAhAAIAAAvIAAAAQAEgHAJgEQAGgDAJAAQAUAAAKANQAHAIACAKIABAKIAAAGIAABDg");
-	this.shape_3.setTransform(39.7,72.6);
-	this.shape_4 = new cjs.Shape();
-	this.shape_4.graphics.f("#333333").s().p("AgoAqQgSgRAAgZQAAgYARgRQARgRAYAAQAVAAARANQAQANAFAVIgiAAQgHgQgSAAQgKAAgHAIQgHAIAAALQAAAMAHAIQAHAIALAAQAQAAAIgOIAiAAQgFAUgQANQgQAMgVAAQgYAAgRgRg");
-	this.shape_4.setTransform(26.9,74.4);
-	this.shape_5 = new cjs.Shape();
-	this.shape_5.graphics.f("#333333").s().p("AgpBYQgQgRgBgYQABgZAQgSQARgQAYgBQAZABARAQQAQASAAAaIAAAIIhSAAQACAVAWAAQAMAAAJgKIAiAAQgIARgOAKQgPALgSAAQgXAAgSgRgAgYAhIAxAAQgEgSgVgBQgUABgEASgAAKgZIgKgMIgIAMIghAAIAgghIAVAAIAdAhgAAWg1QABgFACgEIADgEIADgDIADgDIADgDQACgEAAgDQAAgFgGAAQgEAAgBACIgBAHIgSAAIAAgBIAAgBQAAgLAHgGQAIgHAKAAQAQAAAGALQACAFAAAEQAAAGgDAEIgDAEIgDADIgDAEIgEADQgCADgBAEg");
-	this.shape_5.setTransform(7.8,69.9);
-	this.shape_6 = new cjs.Shape();
-	this.shape_6.graphics.f("#333333").s().p("AgxA6QgPgQAAgaQAAgXAPgRQAQgSAYAAQATAAANAOIAAgSIgWAAIAAgTIAWAAIAAgKIAhAAIAAAKIAJAAIAAATIgJAAIAAB2IggAAIAAgMIAAAAQgFAJgKADQgIAEgJAAQgZAAgQgSgAgXgDQgIAHAAAMQAAANAIAIQAIAIAMAAQALAAAIgIQAIgIAAgNQAAgMgIgHQgIgIgLAAQgMAAgIAIg");
-	this.shape_6.setTransform(-5.5,72.8);
-	this.shape_7 = new cjs.Shape();
-	this.shape_7.graphics.f("#333333").s().p("AA0A6IAAg7QAAgLgDgGQgEgHgKAAQgKAAgFAGQgEAGAAALIAAA8IggAAIAAg8QAAgKgDgGQgEgHgJAAQgLAAgFAHQgDAGAAALIAAA7IghAAIAAhuIAfAAIAAAMIAAAAQAFgJAIgDQAIgFAKAAQAVABAKATQAMgTAXgBQASAAALAMQAIAJADALIABALIAAAFIAABDg");
-	this.shape_7.setTransform(-28.5,74.3);
-	this.shape_8 = new cjs.Shape();
-	this.shape_8.graphics.f("#333333").s().p("AgJBRIAAgdIAfAAIAAAdgAgsAUQgQgRAAgYQAAgZAQgRQAPgSAZAAQAJAAAIAFQAKADAEAJIABAAIAAgMIAhAAIAABuIghAAIAAgMIgBAAQgEAIgKAEQgIADgJAAQgZAAgPgRgAgTgpQgHAIAAANQgBALAJAIQAIAIAKAAQAMAAAIgIQAIgIAAgMQAAgNgIgIQgIgHgMAAQgLgBgIAJg");
-	this.shape_8.setTransform(-45.5,76.7);
-	this.shape_9 = new cjs.Shape();
-	this.shape_9.graphics.f("#333333").s().p("AASBKIAAg8QAAgLgDgEQgFgIgKAAQgJAAgEAHQgEAEAAALIAAA9IghAAIAAiTIAhAAIAAAvIAAAAQAEgHAJgEQAGgDAJAAQAUAAAKANQAHAIACAKIABAKIAAAGIAABDg");
-	this.shape_9.setTransform(-58.6,72.6);
-	this.shape_10 = new cjs.Shape();
-	this.shape_10.graphics.f("#333333").s().p("AgoAqQgSgRAAgZQAAgYARgRQARgRAYAAQAVAAARANQAQANAFAVIgiAAQgHgQgSAAQgKAAgHAIQgHAIAAALQAAAMAHAIQAHAIALAAQAQAAAIgOIAiAAQgFAUgQANQgQAMgVAAQgYAAgRgRg");
-	this.shape_10.setTransform(-71.4,74.4);
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_10},{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
-}).prototype = getMCSymbolPrototype(lib.title_1, new cjs.Rectangle(-172,-30,344,117.3), null);
+}).prototype = getMCSymbolPrototype(lib.title_1, new cjs.Rectangle(-172,-30,344,60), null);
+(lib.start_btn = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Layer_1
+	this.instance = new lib.star_btn();
+	this.instance.parent = this;
+	this.instance.setTransform(-74,-36);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+}).prototype = getMCSymbolPrototype(lib.start_btn, new cjs.Rectangle(-74,-36,148,72), null);
+(lib.ewalk = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Layer_1
+	this.instance = new lib.e1_1();
+	this.instance.parent = this;
+	this.instance.setTransform(-15,-18);
+	this.instance_1 = new lib.e1_2();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(-15,-18);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},7).wait(7));
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-15,-18,30,36);
+(lib.efly = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Layer_1
+	this.instance = new lib.e2_1();
+	this.instance.parent = this;
+	this.instance.setTransform(23,-18,1,1,0,0,180);
+	this.instance_1 = new lib.e2_2();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(23,-18,1,1,0,0,180);
+	this.instance_2 = new lib.e2_3();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(23,-18,1,1,0,0,180);
+	this.instance_3 = new lib.e2_4();
+	this.instance_3.parent = this;
+	this.instance_3.setTransform(23,-18,1,1,0,0,180);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},5).to({state:[{t:this.instance_2}]},5).to({state:[{t:this.instance_3}]},5).wait(5));
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-23,-18,46,36);
 (lib.dummy_btn = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 	// Layer_1
@@ -149,6 +192,24 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(3).to({_off:false},0).wait(1));
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = null;
+(lib.dinostand = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Layer_1
+	this.instance = new lib.dino_s1();
+	this.instance.parent = this;
+	this.instance.setTransform(-24,-24);
+	this.instance_1 = new lib.dino_s2();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(-24,-24);
+	this.instance_2 = new lib.dino_s3();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(-24,-24);
+	this.instance_3 = new lib.dino_s4();
+	this.instance_3.parent = this;
+	this.instance_3.setTransform(-24,-24);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},7).to({state:[{t:this.instance_2}]},8).to({state:[{t:this.instance_3}]},7).wait(8));
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-24,-24,48,48);
 (lib.dinorun_1 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 	// Layer_1
@@ -173,6 +234,21 @@ p.nominalBounds = null;
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},6).to({state:[{t:this.instance_2}]},6).to({state:[{t:this.instance_3}]},6).to({state:[{t:this.instance_4}]},6).to({state:[{t:this.instance_5}]},6).wait(6));
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-24,-24,48,48);
+(lib.dinohurt = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Layer_1
+	this.instance = new lib.dino_h1();
+	this.instance.parent = this;
+	this.instance.setTransform(-24,-24);
+	this.instance_1 = new lib.dino_h2();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(-24,-24);
+	this.instance_2 = new lib.dino_h3();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(-24,-24);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},2).to({state:[{t:this.instance_2}]},2).to({state:[{t:this.instance_1}]},2).to({state:[{t:this.instance}]},2).wait(52));
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-24,-24,48,48);
 (lib.bg_loop = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 	// Layer_1
@@ -180,33 +256,30 @@ p.nominalBounds = new cjs.Rectangle(-24,-24,48,48);
 	this.instance.parent = this;
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 }).prototype = getMCSymbolPrototype(lib.bg_loop, new cjs.Rectangle(0,0,1242,736), null);
+(lib.dinohurtanimation = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Layer_1
+	this.instance = new lib.dinohurt();
+	this.instance.parent = this;
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({rotation:1080},59).wait(1));
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-24,-24,48,48);
 (lib.dino_all = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{stand:0,run:30});
+	this.initialize(mode,startPosition,loop,{stand:0,run:7,hurt:13});
 	// timeline functions:
-	this.frame_29 = function() {
-		this.gotoAndPlay("stand");
+	this.frame_0 = function() {
+		this.stop();
 	}
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(29).call(this.frame_29).wait(7));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(20));
 	// Layer_3
-	this.instance = new lib.dinorun_1();
+	this.instance = new lib.dinostand();
 	this.instance.parent = this;
-	this.instance._off = true;
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(30).to({_off:false},0).wait(6));
-	// Layer_1
-	this.instance_1 = new lib.dino_s1();
+	this.instance_1 = new lib.dinorun_1();
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(-24,-24);
-	this.instance_2 = new lib.dino_s2();
+	this.instance_2 = new lib.dinohurtanimation();
 	this.instance_2.parent = this;
-	this.instance_2.setTransform(-24,-24);
-	this.instance_3 = new lib.dino_s3();
-	this.instance_3.parent = this;
-	this.instance_3.setTransform(-24,-24);
-	this.instance_4 = new lib.dino_s4();
-	this.instance_4.parent = this;
-	this.instance_4.setTransform(-24,-24);
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1}]}).to({state:[{t:this.instance_2}]},7).to({state:[{t:this.instance_3}]},8).to({state:[{t:this.instance_4}]},7).to({state:[]},8).wait(6));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},7).to({state:[{t:this.instance_2}]},6).wait(7));
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-24,-24,48,48);
 // stage content:
@@ -220,21 +293,23 @@ p.nominalBounds = new cjs.Rectangle(-24,-24,48,48);
 		var startGame = false;
 		var dinoJump = false;
 		var cta = root.cta;
+		var start_btn = root.start_btn;
 		var dino = root.dino;
+		var ewalk = root.ewalk
+		var efly = root.efly;
 		var canJump = true;
+		var eswitch = 0;
 		/////
 		createjs.Touch.enable(true);
 		stage.mouseMoveOutside = true;
 		document.body.style.backgroundColor = lib.properties.color;
 		/////
-		root.movingBg = function(){
-			if(bg.x > -828){
-				bg.x -= 5;
-			}
-			if(bg.x <= -828){
-				bg.x = 0;
+		function movingLoop(obj,duration,xstart,xdes){
+			if(startGame == true){
+				TweenLite.to(obj, duration, {x:xdes,ease: Power0.easeNone,onComplete:function(){obj.x = xstart; movingLoop(obj,duration,xstart,xdes)}});
 			}
 		}
+		/////
 		root.dropdown = function(){
 			TweenLite.to(dino, 0.4, {y:"+=70",ease: Power3.easeIn,onComplete:function(){canJump = true;}});
 		}
@@ -242,47 +317,89 @@ p.nominalBounds = new cjs.Rectangle(-24,-24,48,48);
 		root.startGame = function(){
 			startGame = true;
 			title.visible = false;
+			start_btn.visible = false;
+			cta.visible = true;
+			dino.y = 590;
 			dino.gotoAndStop("run");
+			canJump = true;
+			movingLoop(bg,3,0,-828);
+			movingLoop(ewalk,2,450,-20);
+			movingLoop(efly,3,450,-20);
+			cta.on("mousedown", root.playingGame);
+			createjs.Ticker.on("tick", tick);
+		}
+		function tick(event) {
+			var dino_ewpt = dino.localToLocal(0,0,ewalk);
+			var dino_efpt = dino.localToLocal(0,0,efly);
+			if(startGame == true){
+				if (ewalk.hitTest(dino_ewpt.x, dino_ewpt.y)){
+					startGame = false;
+					root.resetGame();
+				}
+				if (efly.hitTest(dino_efpt.x, dino_efpt.y)){
+					startGame = false;
+					root.resetGame();
+				}
+			}
+		}
+		root.resetGame = function(){
+			dino.gotoAndStop("stand");
+			dino.x = 62;
+			ewalk.x = 450;
+			efly.x = 450;
+			cta.visible = false;
+			dino.gotoAndStop("hurt");
+			TweenLite.to(dino, 0.5, {y:760,ease: Power3.easeIn,onComplete:function(){setTimeout(function(){title.visible = true;start_btn.visible = true;}, 3000);}});
+		}
+		root.playingGame = function(){
 			if(canJump == true){
 				canJump = false;
 				TweenLite.to(dino, 0.2, {y:"-=70",ease: Power3.easeOut,onComplete:function(){root.dropdown()}})
 			}
 		}
 		/////
-		root.start = function(){
-			cta.on("mousedown", root.startGame);
-			createjs.Ticker.on("tick", root.tickHandler);
+		root.initGame= function(){
+			cta.visible = false;
+			start_btn.on("mousedown", root.startGame);
 		}
 		/////
-		root.tickHandler = function (e){
-			if(startGame == true){
-				root.movingBg();
-			}
-		};
-		/////
-		root.start();
+		root.initGame();
 		root.stop();
 	}
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 	// dino
+	this.efly = new lib.efly();
+	this.efly.name = "efly";
+	this.efly.parent = this;
+	this.efly.setTransform(450,548);
+	this.ewalk = new lib.ewalk();
+	this.ewalk.name = "ewalk";
+	this.ewalk.parent = this;
+	this.ewalk.setTransform(450,590);
 	this.dino = new lib.dino_all();
 	this.dino.name = "dino";
 	this.dino.parent = this;
 	this.dino.setTransform(62,590);
-	this.timeline.addTween(cjs.Tween.get(this.dino).wait(1));
-	// cta
-	this.cta = new lib.dummy_btn();
-	this.cta.name = "cta";
-	this.cta.parent = this;
-	new cjs.ButtonHelper(this.cta, 0, 1, 2, false, new lib.dummy_btn(), 3);
-	this.timeline.addTween(cjs.Tween.get(this.cta).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.dino},{t:this.ewalk},{t:this.efly}]}).wait(1));
 	// tite
 	this.title = new lib.title_1();
 	this.title.name = "title";
 	this.title.parent = this;
 	this.title.setTransform(210,130);
 	this.timeline.addTween(cjs.Tween.get(this.title).wait(1));
+	// start_btn
+	this.start_btn = new lib.start_btn();
+	this.start_btn.name = "start_btn";
+	this.start_btn.parent = this;
+	this.start_btn.setTransform(207,368);
+	this.timeline.addTween(cjs.Tween.get(this.start_btn).wait(1));
+	// cta
+	this.cta = new lib.dummy_btn();
+	this.cta.name = "cta";
+	this.cta.parent = this;
+	new cjs.ButtonHelper(this.cta, 0, 1, 2, false, new lib.dummy_btn(), 3);
+	this.timeline.addTween(cjs.Tween.get(this.cta).wait(1));
 	// bgloop
 	this.bg = new lib.bg_loop();
 	this.bg.name = "bg";
@@ -300,7 +417,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"dinorun_atlas_P_.png?1591640454110", id:"dinorun_atlas_P_"}
+		{src:"dinorun_atlas_P_.png?1591730059236", id:"dinorun_atlas_P_"}
 	],
 	preloads: []
 };
