@@ -484,6 +484,7 @@ function handleComplete(evt,comp) {
 	//Registers the "tick" event listener.
 	fnStartAnimation = function() {
 		stage.addChild(exportRoot);
+		createjs.Ticker.timingMode = createjs.Ticker.RAF;
 		createjs.Ticker.setFPS(lib.properties.fps);
 		createjs.Ticker.addEventListener("tick", stage);
 	}	    
