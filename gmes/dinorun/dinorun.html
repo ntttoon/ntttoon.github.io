@@ -30,7 +30,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"dinorun_atlas_P_", frames: [[0,0,1242,736],[0,800,48,48],[50,800,48,48],[100,800,48,48],[150,800,48,48],[496,738,48,48],[546,738,48,48],[646,738,48,48],[200,800,48,48],[250,800,48,48],[596,738,48,48],[696,738,48,48],[746,738,48,48],[796,738,48,48],[396,812,30,36],[428,812,30,36],[846,776,46,36],[300,812,46,36],[348,812,46,36],[846,738,46,36],[346,738,148,72],[0,738,344,60]]}
+		{name:"dinorun_atlas_P_", frames: [[0,0,1242,736],[0,800,48,48],[50,800,48,48],[100,800,48,48],[646,738,48,48],[200,800,48,48],[546,738,48,48],[250,800,48,48],[596,738,48,48],[496,738,48,48],[696,738,48,48],[150,800,48,48],[396,812,30,36],[428,812,30,36],[746,776,46,36],[746,738,46,36],[348,812,46,36],[300,812,46,36],[346,738,148,72],[0,738,344,60]]}
 ];
 // symbols:
 (lib.bg = function() {
@@ -41,85 +41,77 @@ lib.ssMetadata = [
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
-(lib.dino_h2 = function() {
+(lib.dino_r1 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
-(lib.dino_h3 = function() {
+(lib.dino_r2 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
-(lib.dino_r1 = function() {
+(lib.dino_r3 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
-(lib.dino_r2 = function() {
+(lib.dino_r4 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
-(lib.dino_r3 = function() {
+(lib.dino_r5 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
-(lib.dino_r4 = function() {
+(lib.dino_r6 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
-(lib.dino_r5 = function() {
+(lib.dino_s1 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
-(lib.dino_r6 = function() {
+(lib.dino_s2 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
-(lib.dino_s1 = function() {
+(lib.dino_s3 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
-(lib.dino_s2 = function() {
+(lib.dino_s4 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
-(lib.dino_s3 = function() {
+(lib.e1_1 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
-(lib.dino_s4 = function() {
+(lib.e1_2 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
-(lib.e1_1 = function() {
+(lib.e2_1 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
-(lib.e1_2 = function() {
+(lib.e2_2 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
-(lib.e2_1 = function() {
+(lib.e2_3 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
-(lib.e2_2 = function() {
+(lib.e2_4 = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
-(lib.e2_3 = function() {
+(lib.star_btn = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
 	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
-(lib.e2_4 = function() {
-	this.spriteSheet = ss["dinorun_atlas_P_"];
-	this.gotoAndStop(19);
-}).prototype = p = new cjs.Sprite();
-(lib.star_btn = function() {
-	this.spriteSheet = ss["dinorun_atlas_P_"];
-	this.gotoAndStop(20);
-}).prototype = p = new cjs.Sprite();
 (lib.title = function() {
 	this.spriteSheet = ss["dinorun_atlas_P_"];
-	this.gotoAndStop(21);
+	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 function mc_symbol_clone() {
@@ -240,13 +232,7 @@ p.nominalBounds = new cjs.Rectangle(-24,-24,48,48);
 	this.instance = new lib.dino_h1();
 	this.instance.parent = this;
 	this.instance.setTransform(-24,-24);
-	this.instance_1 = new lib.dino_h2();
-	this.instance_1.parent = this;
-	this.instance_1.setTransform(-24,-24);
-	this.instance_2 = new lib.dino_h3();
-	this.instance_2.parent = this;
-	this.instance_2.setTransform(-24,-24);
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},2).to({state:[{t:this.instance_2}]},2).to({state:[{t:this.instance_1}]},2).to({state:[{t:this.instance}]},2).wait(52));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(60));
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-24,-24,48,48);
 (lib.bg_loop = function(mode,startPosition,loop) {
@@ -311,7 +297,7 @@ p.nominalBounds = new cjs.Rectangle(-24,-24,48,48);
 		}
 		/////
 		root.dropdown = function(){
-			TweenLite.to(dino, 0.4, {y:"+=70",ease: Power3.easeIn,onComplete:function(){canJump = true;}});
+			TweenLite.to(dino, 0.4, {y:"+=70",ease: Power3.easeIn,onComplete:function(){canJump = true;cta.visible = true;}});
 		}
 		/////
 		root.startGame = function(){
@@ -354,6 +340,7 @@ p.nominalBounds = new cjs.Rectangle(-24,-24,48,48);
 		root.playingGame = function(){
 			if(canJump == true){
 				canJump = false;
+				cta.visible = false;
 				TweenLite.to(dino, 0.2, {y:"-=70",ease: Power3.easeOut,onComplete:function(){root.dropdown()}})
 			}
 		}
@@ -417,7 +404,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"dinorun_atlas_P_.png?1591730059236", id:"dinorun_atlas_P_"}
+		{src:"dinorun_atlas_P_.png?1592147314968", id:"dinorun_atlas_P_"}
 	],
 	preloads: []
 };
