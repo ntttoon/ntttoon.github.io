@@ -10,6 +10,18 @@
     <script async src="../js_libs/jszip-utils.js"> </script>
     <script async src="../js_libs/FileSaver.js"> </script> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        .hide{
+            display: none;
+        }
+        .floatleft{
+            float: left;
+            margin: 10px;
+        }
+        .divide_five{
+            width: 20%;
+        }
+    </style>
 </head>
 <body>
     <div class="w3-bar w3-teal">
@@ -30,14 +42,14 @@
         </p>
         <div class="w3-cell-row">
             <div class="w3-container w3-cell w3-teal w3-mobile">
-                <div>Up ảnh bg <strong>trái 444x1040</strong></div>
-                <input class="w3-input" id="left_bg" type="file" accept="image/x-png,image/gif,image/jpeg" />
-                <div>Up ảnh bg <strong>trái 205x900</strong></div>
-                <input class="w3-input" id="left_bgs" type="file" accept="image/x-png,image/gif,image/jpeg" />
-                <div>Up ảnh bg <strong>phải 444x1040</strong></div>
-                <input class="w3-input" id="right_bg" type="file" accept="image/x-png,image/gif,image/jpeg" />
-                <div>Up ảnh bg <strong>phải 205x900</strong></div>
-                <input class="w3-input" id="right_bgs" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <p>
+                    <label>Chọn ảnh chứa bg kt lớn</label>
+                    <input type="file" id="imageLoader"/>
+                </p>
+                <p>
+                    <label>Chọn ảnh chứa bg kt nhỏ</label>
+                    <input type="file" id="imageLoader2"/>
+                </p>
             </div>
             <div class="w3-container w3-cell w3-green w3-mobile">
                 <div>Up ảnh top <strong>1016x100</strong></div>
@@ -64,6 +76,40 @@
         <p><button class="w3-button w3-red" id="zip_button">Save file</button></p>
     </div>
 
+    <div class="w3-row">
+        <div class="w3-half w3-container">
+            <div>Ảnh chứa bg kt lớn</div>
+            <canvas id="imageCanvas" style="width: 100%;"></canvas>
+        </div>
+        <div class="w3-half w3-container">
+            <div>Ảnh chứa bg kt nhỏ</div>
+            <canvas id="imageCanvas2" style="width: 100%;"></canvas>
+        </div>
+    </div>
+    <br>
+    <canvas id="left_to" class="hide floatleft" width="444" height="1040"></canvas>
+    <canvas id="right_to" class="hide floatleft" width="444" height="1040"></canvas>
+    <canvas id="left_nho" class="hide floatleft" width="205" height="900"></canvas>
+    <canvas id="right_nho" class="hide floatleft" width="205" height="900"></canvas>
+    <div class="w3-row">
+        <div class="w3-col w3-container divide_five">
+            <div>Bg trái 444x1040</div>
+            <img id="img_left_to_holder" class="w3-image">
+        </div>
+        <div class="w3-col w3-container divide_five">
+            <div>Bg phải 444x1040</div>
+            <img id="img_right_to_holder" class="w3-image">
+        </div>
+        <div class="w3-col w3-container divide_five">
+            <div>Bg trái 205x900</div>
+            <img id="img_left_nho_holder" class="w3-image">
+        </div>
+        <div class="w3-col w3-container divide_five">
+            <div>Bg phải 205x900</div>
+            <img id="img_right_nho_holder" class="w3-image">
+        </div>
+    </div>
+
     <div style="display: none" id="img_banner_phai1"></div>
     <div style="display: none" id="img_banner_phai2"></div>
     <div style="display: none" id="img_banner_tttc"></div>
@@ -71,16 +117,69 @@
     <div style="display: none" id="img_banner_sticky"></div>
     <div style="display: none" id="img_banner_top100"></div>
     <div style="display: none" id="img_banner_top250"></div>
-    <div style="display: none" id="img_left_holder"></div>
-    <div style="display: none" id="img_right_holder"></div>
-    <div style="display: none" id="img_lefts_holder"></div>
-    <div style="display: none" id="img_rights_holder"></div>
     <div style="display: none" id="img_page_holder"></div>
     <div style="display: none" id="img_topmenu_holder"></div>
     <!-- static html and image -->
     <div style="display: none" id="html_index_holder"></div>
     <div style="display: none" id="js_sticky_holder"></div>
     <script>
+        var imageLoader = document.getElementById('imageLoader');
+        imageLoader.addEventListener('change', handleImage, false);
+        //////////
+        var imageLoader2 = document.getElementById('imageLoader2');
+        imageLoader2.addEventListener('change', handleImage2, false);
+        //////////
+        var canvas = document.getElementById('imageCanvas');
+        var canvas2 = document.getElementById('imageCanvas2');
+        //////////
+        var ctx = canvas.getContext('2d');
+        var ctx2 = canvas2.getContext('2d');
+        //////////
+        var left_to = document.getElementById('left_to');
+        var left_to_ctx = left_to.getContext('2d');
+        var left_nho = document.getElementById('left_nho');
+        var left_nho_ctx = left_nho.getContext('2d');
+        var right_to = document.getElementById('right_to');
+        var right_to_ctx = right_to.getContext('2d');
+        var right_nho = document.getElementById('right_nho');
+        var right_nho_ctx = right_nho.getContext('2d');
+        //////////////////////////////
+        function handleImage(e){
+            var reader = new FileReader();
+            reader.onload = function(event){
+                var img = new Image();
+                img.onload = function(){
+                    canvas.width = img.width;
+                    canvas.height = img.height;
+                    ctx.drawImage(img,0,0);
+                    left_to_ctx.drawImage(img,0,0,444,1040,0,0,444,1040);
+                    right_to_ctx.drawImage(img,1460,0,444,1040,0,0,444,1040);
+                    document.getElementById("img_left_to_holder").src = left_to.toDataURL("image/jpeg",1);
+                    document.getElementById("img_right_to_holder").src = right_to.toDataURL("image/jpeg",1);
+                }
+                img.src = event.target.result;
+            }
+            reader.readAsDataURL(e.target.files[0]);     
+        }
+        //////////////////////////////
+        function handleImage2(e){
+            var reader = new FileReader();
+            reader.onload = function(event){
+                var img = new Image();
+                img.onload = function(){
+                    canvas2.width = img.width;
+                    canvas2.height = img.height;
+                    ctx2.drawImage(img,0,0);
+                    left_nho_ctx.drawImage(img,239,0,205,900,0,0,205,900);
+                    right_nho_ctx.drawImage(img,1460,0,205,900,0,0,205,900);
+                    document.getElementById("img_left_nho_holder").src = left_nho.toDataURL("image/jpeg",1);
+                    document.getElementById("img_right_nho_holder").src = right_nho.toDataURL("image/jpeg",1);
+                }
+                img.src = event.target.result;
+            }
+            reader.readAsDataURL(e.target.files[0]);     
+        }
+        //////////////////////////////
     document.getElementById("demochoice").addEventListener("change", function(){
         //alert(this.value)
         document.getElementById("html_index_holder").textContent = "";
@@ -145,18 +244,6 @@
         }
     }
 
-    document.getElementById("left_bg").addEventListener("change", function(){
-        readURL(this,"img_left_holder");
-    })
-    document.getElementById("right_bg").addEventListener("change", function(){
-        readURL(this,"img_right_holder");
-    })
-    document.getElementById("left_bgs").addEventListener("change", function(){
-        readURL(this,"img_lefts_holder");
-    })
-    document.getElementById("right_bgs").addEventListener("change", function(){
-        readURL(this,"img_rights_holder");
-    })
     document.getElementById("phai1").addEventListener("change", function(){
         readURL(this,"img_banner_phai1");
     })
@@ -214,14 +301,11 @@
         var data_page = document.getElementById("img_page_holder").textContent;
         //Image topmenu
         var data_topmenu = document.getElementById("img_topmenu_holder").textContent;
-        //Image left bg
-        var data_leftbg = document.getElementById("img_left_holder").textContent;
-        //Image right bg
-        var data_rightbg = document.getElementById("img_right_holder").textContent;
-        //Image left bg small
-        var data_leftbgs = document.getElementById("img_lefts_holder").textContent;
-        //Image right bg small
-        var data_rightbgs = document.getElementById("img_rights_holder").textContent;
+        //Image banners
+        var data_left_to = document.getElementById("img_left_to_holder").src;
+        var data_left_nho = document.getElementById("img_left_nho_holder").src;
+        var data_right_to = document.getElementById("img_right_to_holder").src;
+        var data_right_nho = document.getElementById("img_right_nho_holder").src;
         //Image banners
         var data_phai1 = document.getElementById("img_banner_phai1").textContent;
         var data_phai2 = document.getElementById("img_banner_phai2").textContent;
@@ -237,17 +321,13 @@
         zip.file("jquery.sticky.js", data_js_sticky);
         assets.file("24h.jpg", data_page.substr(data_page.indexOf(',')+1), {base64: true});
         assets.file("top_menu.jpg", data_topmenu.substr(data_page.indexOf(',')+1), {base64: true});
-        if( document.getElementById("left_bg").files.length !== 0 ){
-            assets.file("bg_left.jpg", data_leftbg.substr(data_leftbg.indexOf(',')+1), {base64: true});
+        if( document.getElementById("imageLoader").files.length !== 0 ){
+            assets.file("left_to.jpg", data_left_to.substr(data_left_to.indexOf(',')+1), {base64: true});
+            assets.file("left_nho.jpg", data_left_nho.substr(data_left_nho.indexOf(',')+1), {base64: true});
         }
-        if( document.getElementById("right_bg").files.length !== 0 ){
-            assets.file("bg_right.jpg", data_rightbg.substr(data_rightbg.indexOf(',')+1), {base64: true});
-        }
-        if( document.getElementById("left_bgs").files.length !== 0 ){
-            assets.file("bg_lefts.jpg", data_leftbgs.substr(data_leftbgs.indexOf(',')+1), {base64: true});
-        }
-        if( document.getElementById("right_bgs").files.length !== 0 ){
-            assets.file("bg_rights.jpg", data_rightbgs.substr(data_rightbgs.indexOf(',')+1), {base64: true});
+        if( document.getElementById("imageLoader2").files.length !== 0 ){
+            assets.file("right_to.jpg", data_right_to.substr(data_right_to.indexOf(',')+1), {base64: true});
+            assets.file("right_nho.jpg", data_right_nho.substr(data_right_nho.indexOf(',')+1), {base64: true});
         }
         if( document.getElementById("phai1").files.length !== 0 ){
             assets.file("300600.jpg", data_phai1.substr(data_phai1.indexOf(',')+1), {base64: true});
