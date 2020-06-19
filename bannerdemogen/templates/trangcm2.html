@@ -14,9 +14,9 @@
 #sticky{width:300px;height:600px}
 #top250{width:1016px;height:250px;position: relative; top:50px}
 #hot{width:336px;height:280px;position: relative; top:819px; left:6px}
-#top_menu{width:2000px;height:50px;position:fixed;left:50%;top:0%;transform:translate(-50%, 0%);z-index:9999;background: #bbbbbb;transition: top 0.3s;}
-.bg_area{width:444px;height:1040px;margin-top:50px;transition: all 0.3s;}
-.bg_area_small{width:205px;margin-top:50px;display:none;}
+#top_menu{width:2000px;height:50px;position:fixed;left:50%;top:0%;transform:translate(-50%, 0%);z-index:9999;background: #bbbbbb;transition: top 0.2s;}
+.bg_area{width:444px;height:1040px;margin-top:50px;transition: all 0.2s;}
+.bg_area_small{width:205px;margin-top:50px;display:none;transition: all 0.2s;}
 @media screen and (max-width: 1366px) {
     #fullpage_wrapper {
       width:1426px !important;
@@ -65,17 +65,17 @@
 <script>
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
+    var currentScrollPos = window.pageYOffset;
     if (currentScrollPos == 0 ) {
       //document.getElementById("top_menu").style.top = "0";
       $("#top_menu").css('top',0);
-      $(".bg_area").css('margin-top',0);
-      $(".bg_area_small").css('margin-top',0);
+      $(".bg_area").css('margin-top',"50px");
+      $(".bg_area_small").css('margin-top',"50px");
     } else {
       //document.getElementById("top_menu").style.top = "-50px";
       $("#top_menu").css('top',"-50px");
-      $(".bg_area").css("margin-top","-50px");
-      $(".bg_area_small").css("margin-top","-50px");
+      $(".bg_area").css("margin-top","0px");
+      $(".bg_area_small").css("margin-top","0px");
     }
     prevScrollpos = currentScrollPos;
   }
