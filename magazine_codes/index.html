@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
     <link rel="stylesheet" href="../css/w3.css">
+    <script src="../js/jquery-1.8.2.min.js"></script>
 </head>
 <body>
 
@@ -18,7 +19,7 @@
     &gt; = >
 -->
 <div class="w3-container">
-    <p>Copy 1 trong các code mẫu bên dưới tương ứng với phần thiết kế. Download file html chính ở đây! <a class="w3-btn w3-teal" href="template_aos.zip">Download Template</a></p>
+    <p>Copy 1 trong các code mẫu bên dưới tương ứng với phần thiết kế. Download file html chính ở đây! <a class="w3-btn w3-teal" href="template_aos2.zip">Download Template</a></p>
     <div class="w3-row">
         <div class="w3-quarter w3-container">
             <p>Hiệu ứng xuất hiện dần (Fade)</p>  
@@ -68,59 +69,96 @@
             </ul>
         </div>
     </div>
-
-    <div class="w3-panel w3-card w3-light-grey"> 
-    <h4>Code cho hình ảnh (2 ảnh cho pc và mobile).</h4>
-    <div class="w3-code htmlHigh notranslate">
-        &lt;div class="mg-center" data-aos="fade-up" data-aos-duration="1500"&gt;&lt;img alt="" class="mg-hide-small mg-image" src="anh_pc.jpg"&gt; &lt;img alt="" class="mg-hide-medium mg-hide-large mg-image" src="anh_mobile.jpg"&gt;&lt;/div>
-    </div>
-    </div>
-
-    <div class="w3-panel w3-card w3-light-grey"> 
-    <h4>Code cho hình ảnh (1 ảnh dùng chung cho pc và mobile).</h4>
-    <div class="w3-code htmlHigh notranslate">
-        &lt;div class="mg-center" data-aos="fade-up" data-aos-duration="1500"&gt;&lt;img alt="" class="mg-image" src="anh.jpg"&gt;&lt;/div>
-    </div>
-    </div>
-
-    <div class="w3-panel w3-card w3-light-grey"> 
-    <h4>Code cho đoạn văn bản thuần.</h4>
-    <div class="w3-code htmlHigh notranslate">
-        &lt;div class="mg-container mg-content600"&gt;<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;p style="text-align: justify;margin-top: 1em;margin-bottom: 1em">paste_text_here&lt;/p&gt;<br>
-        &lt;/div&gt;
-    </div>
-    </div>
-
-    <div class="w3-panel w3-card w3-light-grey"> 
-    <h4>Code cho ảnh lệch trái đoạn văn bản (2 ảnh cho pc và mobile).</h4>
-    <div class="w3-code htmlHigh notranslate">
-        &lt;div class="mg-container mg-content600"&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;img alt="" class="mg-image mg-left mg-hide-small mg-hide-medium" data-aos="fade-up" data-aos-duration="1500" src="anh_pc.jpg" style="width:450px;margin:30px 40px 15px -150px;"&gt; &lt;img alt="" class="mg-image mg-left mg-hide-large mg-hide-small" data-aos="fade-up" data-aos-duration="1500" src="anh_pc.jpg" style="width:350px;margin:30px 40px 15px 0;"&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="mg-center">&lt;img alt="" class="mg-image mg-hide-medium mg-hide-large" data-aos="fade-up" data-aos-duration="1500" src="anh_mobile.jpg"&gt;&lt;/div&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p style="text-align: justify;margin-top: 1em;margin-bottom: 1em">paste_text_here&gt;&lt;/p&gt;<br>
-          &lt;/div&gt;
-    </div>
-    </div>
-
-    <div class="w3-panel w3-card w3-light-grey"> 
-    <h4>Code cho ảnh lệch phải đoạn văn bản (2 ảnh cho pc và mobile).</h4>
-    <div class="w3-code htmlHigh notranslate">
-        &lt;div class="mg-container mg-content600"&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;img alt="" class="mg-image mg-right mg-hide-small mg-hide-medium" data-aos="fade-up" data-aos-duration="1500" src="anh_pc.jpg" style="width:450px;margin:30px -150px 15px 40px;"&gt; &lt;img alt="" class="mg-image mg-right mg-hide-large mg-hide-small" data-aos="fade-up" data-aos-duration="1500" src="anh_pc.jpg" style="width:350px;margin:30px 0 15px 40px;"&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="mg-center">&lt;img alt="" class="mg-image mg-hide-medium mg-hide-large" data-aos="fade-up" data-aos-duration="1500" src="anh_mobile.jpg"&gt;&lt;/div&gt;<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p style="text-align: justify;margin-top: 1em;margin-bottom: 1em">paste_text_here&lt;/p&gt;<br>
-        &lt;/div&gt;
-    </div>
-    </div>
-
+    
+    <textarea id="codeSample" class="w3-input w3-border" rows="10"></textarea>
+    <hr>
+    <button class="w3-button w3-teal" id="btn1">Code cho 2 ảnh pc/mobile</button>
+    <button class="w3-button w3-teal" id="btn2">Code cho 1 ảnh dùng chung pc/mobile</button><br>
+    <button class="w3-button w3-yellow" id="btn3">Code cho đoạn văn bản thuần</button>
+    <button class="w3-button w3-yellow" id="btn4">Code cho đoạn văn bản ảnh lệch trái</button>
+    <button class="w3-button w3-yellow" id="btn5">Code cho đoạn văn bản ảnh lệch phải</button>
+    <button class="w3-button w3-yellow" id="btn6">Code cho đoạn văn bản ảnh chia đôi 50/50</button><br>
+    <button class="w3-button w3-blue" id="btn7">Code cho gallery 2 ảnh 3:4 và 4:3</button>
+    <button class="w3-button w3-blue" id="btn8">Code cho gallery 2 ảnh 3:4 và 16:9</button>
+    <button class="w3-button w3-blue" id="btn9">Code cho gallery 3 ảnh 3:4 và 4:3 và 3:4</button><br>
+    <button class="w3-button w3-red" id="btn10">Code cho module tabs</button>
+    <button class="w3-button w3-red" id="btn11">Code cho module ảnh parallax</button>
 </div>
 
-<script src="w3codecolor.js"></script>
 
-<script>
-    w3CodeColor();
-</script>
 
 </body>
+<script>
+    function readTextFile(file)
+    {
+        var rawFile = new XMLHttpRequest();
+        rawFile.open("GET", file, false);
+        rawFile.onreadystatechange = function ()
+        {
+            if(rawFile.readyState === 4)
+            {
+                if(rawFile.status === 200 || rawFile.status == 0)
+                {
+                    var allText = rawFile.responseText;
+                    //alert(allText);
+                    $( "#codeSample" ).val(allText);
+                    
+                }
+            }
+        }
+        rawFile.send(null);
+    }
+    //readTextFile("modules/cover.txt")
+    function copyCode() {
+        var copyText = document.getElementById("codeSample");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        //alert(copyText.value);
+    }
+    $( "#btn1" ).click(function() {
+        readTextFile("modules/dual_img.txt");
+        copyCode();
+    });
+    $( "#btn2" ).click(function() {
+        readTextFile("modules/single_img.txt");
+        copyCode();
+    });
+    $( "#btn3" ).click(function() {
+        readTextFile("modules/full_para.txt");
+        copyCode();
+    });
+    $( "#btn4" ).click(function() {
+        readTextFile("modules/imgleft_para.txt");
+        copyCode();
+    });
+    $( "#btn5" ).click(function() {
+        readTextFile("modules/imgright_para.txt");
+        copyCode();
+    });
+    $( "#btn6" ).click(function() {
+        readTextFile("modules/half_img_para.txt");
+        copyCode();
+    });
+    $( "#btn7" ).click(function() {
+        readTextFile("modules/gallery3443.txt");
+        copyCode();
+    });
+    $( "#btn8" ).click(function() {
+        readTextFile("modules/gallery34169.txt");
+        copyCode();
+    });
+    $( "#btn9" ).click(function() {
+        readTextFile("modules/gallery344334.txt");
+        copyCode();
+    });
+    $( "#btn10" ).click(function() {
+        readTextFile("modules/tabs.txt");
+        copyCode();
+    });
+    $( "#btn11" ).click(function() {
+        readTextFile("modules/parallax_img.txt");
+        copyCode();
+    });
+</script>
 </html>

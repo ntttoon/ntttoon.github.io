@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Code mẫu cho bài eMagazine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+    <link rel="stylesheet" href="../css/w3.css">
+</head>
+<body>
+
+<header class="w3-container w3-teal">
+	<h5>Code mẫu cho bài eMagazine dùng thư viện AOS</h5>
+</header>
+
+<!--
+    &lt; = <
+    &gt; = >
+-->
+<div class="w3-container">
+    <p>Copy 1 trong các code mẫu bên dưới tương ứng với phần thiết kế. Download file html chính ở đây! <a class="w3-btn w3-teal" href="template_aos.zip">Download Template</a></p>
+    <div class="w3-row">
+        <div class="w3-quarter w3-container">
+            <p>Hiệu ứng xuất hiện dần (Fade)</p>  
+            <ul>
+                <li>fade</li>
+                <li>fade-up</li>
+                <li>fade-down</li>
+                <li>fade-left</li>
+                <li>fade-right</li>
+                <li>fade-up-right</li>
+                <li>fade-up-left</li>
+                <li>fade-down-right</li>
+                <li>fade-down-left</li>
+            </ul>
+        </div>
+        <div class="w3-quarter w3-container">
+            <p>Hiệu ứng lật (Flip)</p>  
+            <ul>
+                <li>flip-up</li>
+                <li>flip-down</li>
+                <li>flip-left</li>
+                <li>flip-right</li>
+            </ul>
+        </div>
+        <div class="w3-quarter w3-container">
+            <p>Hiệu ứng trượt (Slide)</p>
+            <ul>
+                <li>slide-up</li>
+                <li>slide-down</li>
+                <li>slide-left</li>
+                <li>slide-right</li>
+            </ul>
+        </div>
+        <div class="w3-quarter w3-container">
+            <p>Hiệu ứng phóng to thu nhỏ (Zoom)</p>
+            <ul>
+                <li>zoom-in</li>
+                <li>zoom-in-up</li>
+                <li>zoom-in-down</li>
+                <li>zoom-in-left</li>
+                <li>zoom-in-right</li>
+                <li>zoom-out</li>
+                <li>zoom-out-up</li>
+                <li>zoom-out-down</li>
+                <li>zoom-out-left</li>
+                <li>zoom-out-right</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="w3-panel w3-card w3-light-grey"> 
+    <h4>Code cho hình ảnh (2 ảnh cho pc và mobile).</h4>
+    <div class="w3-code htmlHigh notranslate">
+        &lt;div class="mg-center" data-aos="fade-up" data-aos-duration="1500"&gt;&lt;img alt="" class="mg-hide-small mg-image" src="anh_pc.jpg"&gt; &lt;img alt="" class="mg-hide-medium mg-hide-large mg-image" src="anh_mobile.jpg"&gt;&lt;/div>
+    </div>
+    </div>
+
+    <div class="w3-panel w3-card w3-light-grey"> 
+    <h4>Code cho hình ảnh (1 ảnh dùng chung cho pc và mobile).</h4>
+    <div class="w3-code htmlHigh notranslate">
+        &lt;div class="mg-center" data-aos="fade-up" data-aos-duration="1500"&gt;&lt;img alt="" class="mg-image" src="anh.jpg"&gt;&lt;/div>
+    </div>
+    </div>
+
+    <div class="w3-panel w3-card w3-light-grey"> 
+    <h4>Code cho đoạn văn bản thuần.</h4>
+    <div class="w3-code htmlHigh notranslate">
+        &lt;div class="mg-container mg-content600"&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;p style="text-align: justify;margin-top: 1em;margin-bottom: 1em">paste_text_here&lt;/p&gt;<br>
+        &lt;/div&gt;
+    </div>
+    </div>
+
+    <div class="w3-panel w3-card w3-light-grey"> 
+    <h4>Code cho ảnh lệch trái đoạn văn bản (2 ảnh cho pc và mobile).</h4>
+    <div class="w3-code htmlHigh notranslate">
+        &lt;div class="mg-container mg-content600"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;img alt="" class="mg-image mg-left mg-hide-small mg-hide-medium" data-aos="fade-up" data-aos-duration="1500" src="anh_pc.jpg" style="width:450px;margin:30px 40px 15px -150px;"&gt; &lt;img alt="" class="mg-image mg-left mg-hide-large mg-hide-small" data-aos="fade-up" data-aos-duration="1500" src="anh_pc.jpg" style="width:350px;margin:30px 40px 15px 0;"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="mg-center">&lt;img alt="" class="mg-image mg-hide-medium mg-hide-large" data-aos="fade-up" data-aos-duration="1500" src="anh_mobile.jpg"&gt;&lt;/div&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p style="text-align: justify;margin-top: 1em;margin-bottom: 1em">paste_text_here&gt;&lt;/p&gt;<br>
+          &lt;/div&gt;
+    </div>
+    </div>
+
+    <div class="w3-panel w3-card w3-light-grey"> 
+    <h4>Code cho ảnh lệch phải đoạn văn bản (2 ảnh cho pc và mobile).</h4>
+    <div class="w3-code htmlHigh notranslate">
+        &lt;div class="mg-container mg-content600"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;img alt="" class="mg-image mg-right mg-hide-small mg-hide-medium" data-aos="fade-up" data-aos-duration="1500" src="anh_pc.jpg" style="width:450px;margin:30px -150px 15px 40px;"&gt; &lt;img alt="" class="mg-image mg-right mg-hide-large mg-hide-small" data-aos="fade-up" data-aos-duration="1500" src="anh_pc.jpg" style="width:350px;margin:30px 0 15px 40px;"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="mg-center">&lt;img alt="" class="mg-image mg-hide-medium mg-hide-large" data-aos="fade-up" data-aos-duration="1500" src="anh_mobile.jpg"&gt;&lt;/div&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p style="text-align: justify;margin-top: 1em;margin-bottom: 1em">paste_text_here&lt;/p&gt;<br>
+        &lt;/div&gt;
+    </div>
+    </div>
+
+</div>
+
+<script src="w3codecolor.js"></script>
+
+<script>
+    w3CodeColor();
+</script>
+
+</body>
+</html>

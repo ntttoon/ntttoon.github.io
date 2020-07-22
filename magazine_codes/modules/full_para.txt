@@ -1,0 +1,3 @@
+<div class="mg-container mg-content700">
+    <p class="mg-font mg-margin-tb mg-justify">paste_text_here</p>
+</div>

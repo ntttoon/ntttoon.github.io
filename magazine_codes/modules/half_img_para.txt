@@ -1,0 +1,10 @@
+<div class="mg-row" style="background:#f0f0f0;">
+    <div class="mg-half">
+        <div class="mg-bgimage" style="background-image: url(anh.jpg);height:700px"></div>
+    </div>
+    <div class="mg-half">
+        <div class="mg-container-para-half-img">
+            <p class="mg-font mg-margin-tb mg-justify">paste_text_here/p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="mg-image-flex">
+    <div class="mg-image-flex34">
+        <img class="mg-image" src="anh34.jpg">
+    </div>
+    <div class="mg-image-flex43">
+        <img class="mg-image" src="anh43.jpg">
+    </div>
+    <div class="mg-image-flex34">
+        <img class="mg-image" src="anh34.jpg">
+    </div>
+</div>
