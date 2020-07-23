@@ -1,4 +1,4 @@
-<div class="mg-container mg-content700"><img alt="" class="mg-image mg-right mg-hide-small" data-aos="fade-up" data-aos-duration="1500" src="anh_pc.jpg" style="width:400px;margin:18px -34px 36px 36px;">
-    <div class="mg-center"><img alt="" class="mg-image mg-hide-medium mg-hide-large" data-aos="fade-up" data-aos-duration="1500" src="anh_mobile.jpg"></div>
+<div class="mg-container mg-content700"><img alt="" class="mg-image mg-right mg-hide-small" data-aos="fade-up" data-aos-duration="1500" src="anh_pc" style="width:400px;margin:18px -34px 36px 36px;">
+    <div class="mg-center"><img alt="" class="mg-image mg-hide-medium mg-hide-large" data-aos="fade-up" data-aos-duration="1500" src="anh_mobile"></div>
     <p class="mg-font mg-margin-tb mg-justify">paste_text_here</p>
 </div>
