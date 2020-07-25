@@ -21,29 +21,51 @@
       <meta content="width=device-width, initial-scale=1" name="viewport"/>
       <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
       <style>
-        .mg-font{font-family:"Noto Serif",serif;font-size:1.1em;line-height:1.6}
+        body{margin:0}
+        .mg-font{font-family:"Noto Serif",serif!important;font-size:18px!important;line-height:1.6}
         .mg-h1{font-size:36px}.mg-h2{font-size:30px}.mg-h3{font-size:24px}.mg-h4{font-size:20px}.mg-h5{font-size:18px}.mg-h6{font-size:16px}
         .mg-hr{border:0;border-top:1px solid #eee;margin:20px 0}
-        .mg-image{max-width:100%;height:auto}
+        .mg-image{max-width:100%;height:auto;vertical-align: middle;}
         .mg-container{padding:0.01em 16px}
         .mg-content{margin-left:auto;margin-right:auto;max-width:980px}
         .mg-content700{margin-left:auto;margin-right:auto;max-width:700px}
         .mg-left-align{text-align:left!important}.mg-right-align{text-align:right!important}.mg-justify{text-align:justify!important}.mg-center{text-align:center!important}
         .mg-left{float:left!important}.mg-right{float:right!important}
-        .mg-margin-tb{margin-top:1em;margin-bottom:1em}
+        .mg-margin-tb{margin-top:16px!important;margin-bottom:16px!important}
         .mg-padding-tb{padding-top:16px!important;padding-bottom:16px!important}
         .mg-container:after,.mg-container:before,.mg-row:after,.mg-row:before,.mg-row-padding:after,.mg-row-padding:before,.mg-clear:after,.mg-clear:before{content:"";display:table;clear:both}
         .mg-row-padding,.mg-row-padding>.mg-half,.mg-row-padding>.mg-third,.mg-row-padding>.mg-twothird,.mg-row-padding>.mg-threequarter,.mg-row-padding>.mg-quarter,.mg-row-padding>.mg-col{padding:0 8px}
         .mg-col,.mg-half,.mg-third,.mg-twothird,.mg-threequarter,.mg-quarter{float:left;width:100%}
-        .w3-half{width:49.99999%}.w3-third{width:33.33333%}.w3-twothird{width:66.66666%}.w3-threequarter{width:74.99999%}.w3-quarter{width:24.99999%}
+        @media (min-width:601px){.mg-quarter{width:24.99999%}.mg-third{width:33.33333%}.mg-half{width:49.99999%}.mg-twothird{width:66.66666%}.mg-threequarter{width:74.99999%}}
         .mg-video{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}.mg-video iframe,video{position:absolute;top:0;left:0;width:100%;height:100%}
         .mg-parallax{height: 600px;background-position: 50% 50%;background-repeat: no-repeat;background-attachment: fixed;background-size: cover;}
         .mg-parallax.parallax-img1{background-image: url("images/img1920x900para1.png");}
         .mg-parallax.parallax-img2{background-image: url("images/img1920x900para2.png");}
         .mg-parallax.parallax-img3{background-image: url("images/img1920x900para3.png");}
-        @media (max-width:600px){.mg-hide-small{display:none!important}}
-        @media (min-width:993px){.mg-hide-large{display:none!important}}
-        @media (max-width:992px) and (min-width:601px){.mg-hide-medium{display:none!important}}
+        @media (max-width:600px){.mg-hide-small{display:none!important}.mg-container-para-half-img{padding:0.01em 16px}.mg-image-flex{flex-direction: column;}.mg-image-flex > div:not(:last-child) {margin-right: 0;margin-bottom: 3px;}.mg-parallax.parallax-img1{background-image: url("images/img660x1100.png");}.mg-parallax.parallax-img2{background-image: url("images/img660x1100.png");}.mg-parallax.parallax-img3{background-image: url("images/img660x1100.png");}}
+        @media (min-width:993px){.mg-hide-large{display:none!important}.mg-container-para-half-img{padding:12%}.mg-image-flex{flex-direction: row;}.mg-image-flex > div:not(:last-child) {margin-right: 3px;margin-bottom: 0;}}
+        @media (max-width:992px) and (min-width:601px){.mg-hide-medium{display:none!important}.mg-container-para-half-img{padding:0.01em 16px}.mg-image-flex{flex-direction: row;}.mg-image-flex > div:not(:last-child) {margin-right: 3px;margin-bottom: 0;}}
+        .mg-display-container{position:relative}
+        .mg-display-topleft{position:absolute;left:0;top:0}.mg-display-topright{position:absolute;right:0;top:0}
+        .mg-display-bottomleft{position:absolute;left:0;bottom:0}.mg-display-bottomright{position:absolute;right:0;bottom:0}
+        .mg-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+        .mg-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+        .mg-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+        .mg-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+        .mg-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+        .mg-bgimage{background-position: center;background-repeat: no-repeat;background-size: cover;}
+        .mg-image-flex{display: flex;}
+        .mg-image-flex169{flex: 1.7777;}
+        .mg-image-flex916{flex: 0.5625;}
+        .mg-image-flex43{flex: 1.3333;}
+        .mg-image-flex34{flex: 0.75;}
+        .mg-tabs {display: flex;flex-wrap: wrap;font-family:"Noto Serif",serif;font-size:18px;line-height:1.6}
+        .mg-tabs label {order: 1;display: block;padding: 1rem 2rem;margin-right: 0.2rem;cursor: pointer;background:  #3CC0F8;font-weight: bold;transition: background ease 0.2s;}
+        .mg-tabs .tab {order: 99;flex-grow: 1;width: 100%;display: none;padding: 1rem;background: #eee;}
+        .mg-tabs input[type="radio"] {display: none;}
+        .mg-tabs input[type="radio"]:checked + label {background: #eee;}
+        .mg-tabs input[type="radio"]:checked + label + .tab {display: block;}
+        @media (max-width: 45em) {.mg-tabs .tab,.mg-tabs label {order: initial;}.mg-tabs label {width: 100%;margin-right: 0;margin-top: 0.2rem;}}
       </style>
     </div>
 
@@ -56,23 +78,35 @@
         container: '#gjs',
         fromElement: true,
         avoidInlineStyle: 1,
+        assetManager: { embedAsBase64 : false },
         styleManager: { clearProperties: 1 },
-
         plugins: ['gjs-preset-webpage'],
         pluginsOpts: {
           'gjs-preset-webpage': {}
         },
       });
-
+      //gjs-f-b1
+      //gjs-f-b2
+      //gjs-f-b3
+      //gjs-f-b37
+      //gjs-f-hero
+      //gjs-f-h1p
+      //gjs-f-3ba
+      //gjs-f-image
+      //gjs-f-text
+      //gjs-f-quo
+      //gjs-f-button
+      //gjs-f-divider
+      //fa fa-paragraph
       editor.BlockManager.add('imgDual', {
         label: '2 ảnh pc & mobile',
-        attributes: { class:'gjs-fonts gjs-f-image' },
+        attributes: { class:'gjs-fonts gjs-f-b2' },
         category: 'Magazine',
-        content: `<div class="mg-center" data-aos="fade-up" data-aos-duration="1500"><img alt="" class="mg-hide-small mg-image" src="images/img1920x900.png"> <img alt="" class="mg-hide-medium mg-hide-large mg-image" src="images/img768x1200.png"></div>`
+        content: `<div class="mg-center" data-aos="fade-up" data-aos-duration="1500"><img alt="" class="mg-hide-small mg-image" src="images/img1920x900.png"> <img alt="" class="mg-hide-medium mg-hide-large mg-image" src="images/img660x1100.png"></div>`
       });
       editor.BlockManager.add('imgSingle', {
         label: '1 ảnh',
-        attributes: { class:'gjs-fonts gjs-f-image' },
+        attributes: { class:'gjs-fonts gjs-f-b1' },
         category: 'Magazine',
         content: `<div class="mg-center" data-aos="fade-up" data-aos-duration="1500"><img alt="" class="mg-image" src="images/img980x.png"></div>`
       });
@@ -80,19 +114,84 @@
         label: 'Đoạn văn bản thuần',
         attributes: { class:'gjs-fonts gjs-f-text' },
         category: 'Magazine',
-        content: `<div class="mg-container mg-content700"><p class="mg-font mg-margin-tb mg-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sapien erat, tempor eu est vel, tempor gravida justo. Aliquam ut commodo justo. Vivamus consectetur nisl mollis dolor mollis, id scelerisque felis eleifend. Nullam tempor consequat velit, eu vehicula enim maximus sit amet. Nullam posuere posuere eros non sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nunc lacus, aliquam ut nibh at, rutrum aliquam velit. Fusce commodo euismod diam, a rhoncus mi. Pellentesque nec condimentum orci, eget ultrices tortor. Proin fringilla feugiat sem ac iaculis. Suspendisse pretium, lorem at eleifend varius, nulla neque iaculis sem, sit amet congue velit augue id arcu. Etiam feugiat sed ligula eu feugiat. Donec mauris eros, commodo et dui a, egestas lobortis risus.</p></div>`
+        content: `<div class="mg-container mg-content700">
+                    <p class="mg-font mg-margin-tb mg-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus metus nisi, consequat in malesuada eu, semper ut enim. Proin finibus massa sem, a iaculis sem interdum at. Morbi dapibus eros ut sodales egestas. Donec fringilla pulvinar mauris id viverra. Donec vitae erat pretium, molestie arcu non, condimentum felis.</p>
+                  </div>`
+      });
+      editor.BlockManager.add('para50', {
+        label: 'Ảnh/Văn bản 50/50',
+        attributes: { class:'gjs-fonts gjs-f-h1p' },
+        category: 'Magazine',
+        content: `<div class="mg-row" style="background:#f0f0f0;">
+                    <div class="mg-half">
+                      <div class="mg-bgimage" style="background-image: url(images/img960x960.png);height:700px"></div>
+                    </div>
+                    <div class="mg-half">
+                      <div class="mg-container-para-half-img">
+                        <p class="mg-font mg-margin-tb mg-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus metus nisi, consequat in malesuada eu, semper ut enim. Proin finibus massa sem, a iaculis sem interdum at. Morbi dapibus eros ut sodales egestas. Donec fringilla pulvinar mauris id viverra. Donec vitae erat pretium, molestie arcu non, condimentum felis.</p>
+                      </div>
+                    </div>
+                  </div>`
       });
       editor.BlockManager.add('paraLeft', {
-        label: 'Ảnh canh trái văn bản',
+        label: 'Ảnh trái văn bản',
         attributes: { class:'gjs-fonts gjs-f-h1p' },
         category: 'Magazine',
-        content: `<div class="mg-container mg-content700"><img alt="" class="mg-image mg-left mg-hide-small" data-aos="fade-up" data-aos-duration="1500" src="images/img450x600pc.png" style="width:400px;margin:18px 36px 36px -50px;"><div class="mg-center"><img alt="" class="mg-image mg-hide-medium mg-hide-large" data-aos="fade-up" data-aos-duration="1500" src="images/img450x600m.png"></div><p class="mg-font mg-margin-tb mg-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sapien erat, tempor eu est vel, tempor gravida justo. Aliquam ut commodo justo. Vivamus consectetur nisl mollis dolor mollis, id scelerisque felis eleifend. Nullam tempor consequat velit, eu vehicula enim maximus sit amet. Nullam posuere posuere eros non sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nunc lacus, aliquam ut nibh at, rutrum aliquam velit. Fusce commodo euismod diam, a rhoncus mi. Pellentesque nec condimentum orci, eget ultrices tortor. Proin fringilla feugiat sem ac iaculis. Suspendisse pretium, lorem at eleifend varius, nulla neque iaculis sem, sit amet congue velit augue id arcu. Etiam feugiat sed ligula eu feugiat. Donec mauris eros, commodo et dui a, egestas lobortis risus.</p></div>`
+        content: `<div class="mg-container mg-content700"><img alt="" class="mg-image mg-left mg-hide-small" data-aos="fade-up" data-aos-duration="1500" src="images/img450x600pc.png" style="width:400px;margin:18px 36px 36px -34px;">
+                    <div class="mg-center"><img alt="" class="mg-image mg-hide-medium mg-hide-large" data-aos="fade-up" data-aos-duration="1500" src="images/img450x600m.png"></div>
+                    <p class="mg-font mg-margin-tb mg-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus metus nisi, consequat in malesuada eu, semper ut enim. Proin finibus massa sem, a iaculis sem interdum at. Morbi dapibus eros ut sodales egestas. Donec fringilla pulvinar mauris id viverra. Donec vitae erat pretium, molestie arcu non, condimentum felis.</p>
+                  </div>`
       });
       editor.BlockManager.add('paraRight', {
-        label: 'Ảnh canh phải văn bản',
+        label: 'Ảnh phải văn bản',
         attributes: { class:'gjs-fonts gjs-f-h1p' },
         category: 'Magazine',
-        content: `<div class="mg-container mg-content700"><img alt="" class="mg-image mg-right mg-hide-small" data-aos="fade-up" data-aos-duration="1500" src="images/img450x600pc.png" style="width:400px;margin:18px -50px 36px 36px;"><div class="mg-center"><img alt="" class="mg-image mg-hide-medium mg-hide-large" data-aos="fade-up" data-aos-duration="1500" src="images/img450x600m.png"></div><p class="mg-font mg-margin-tb mg-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sapien erat, tempor eu est vel, tempor gravida justo. Aliquam ut commodo justo. Vivamus consectetur nisl mollis dolor mollis, id scelerisque felis eleifend. Nullam tempor consequat velit, eu vehicula enim maximus sit amet. Nullam posuere posuere eros non sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nunc lacus, aliquam ut nibh at, rutrum aliquam velit. Fusce commodo euismod diam, a rhoncus mi. Pellentesque nec condimentum orci, eget ultrices tortor. Proin fringilla feugiat sem ac iaculis. Suspendisse pretium, lorem at eleifend varius, nulla neque iaculis sem, sit amet congue velit augue id arcu. Etiam feugiat sed ligula eu feugiat. Donec mauris eros, commodo et dui a, egestas lobortis risus.</p></div>`
+        content: `<div class="mg-container mg-content700"><img alt="" class="mg-image mg-right mg-hide-small" data-aos="fade-up" data-aos-duration="1500" src="images/img450x600pc.png" style="width:400px;margin:18px -34px 36px 36px;">
+                    <div class="mg-center"><img alt="" class="mg-image mg-hide-medium mg-hide-large" data-aos="fade-up" data-aos-duration="1500" src="images/img450x600m.png"></div>
+                    <p class="mg-font mg-margin-tb mg-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus metus nisi, consequat in malesuada eu, semper ut enim. Proin finibus massa sem, a iaculis sem interdum at. Morbi dapibus eros ut sodales egestas. Donec fringilla pulvinar mauris id viverra. Donec vitae erat pretium, molestie arcu non, condimentum felis.</p>
+                  </div>`
+      });
+      editor.BlockManager.add('gallery3443', {
+        label: 'Gallery 3:4 4:3',
+        attributes: { class:'gjs-fonts gjs-f-b37' },
+        category: 'Magazine',
+        content: `<div class="mg-image-flex">
+                    <div class="mg-image-flex34">
+                      <img class="mg-image" src="images/img34.png">
+                    </div>
+                    <div class="mg-image-flex43">
+                      <img class="mg-image" src="images/img43.png">
+                    </div>
+                  </div>`
+      });
+      editor.BlockManager.add('gallery34169', {
+        label: 'Gallery 3:4 16:9',
+        attributes: { class:'gjs-fonts gjs-f-b37' },
+        category: 'Magazine',
+        content: `<div class="mg-image-flex">
+                    <div class="mg-image-flex34">
+                      <img class="mg-image" src="images/img34.png">
+                    </div>
+                    <div class="mg-image-flex169">
+                      <img class="mg-image" src="images/img169.png">
+                    </div>
+                  </div>`
+      });
+      editor.BlockManager.add('gallery344334', {
+        label: 'Gallery 3:4 4:3 3:4',
+        attributes: { class:'gjs-fonts gjs-f-b3' },
+        category: 'Magazine',
+        content: `<div class="mg-image-flex">
+                    <div class="mg-image-flex34">
+                      <img class="mg-image" src="images/img34.png">
+                    </div>
+                    <div class="mg-image-flex43">
+                      <img class="mg-image" src="images/img43.png">
+                    </div>
+                    <div class="mg-image-flex34">
+                      <img class="mg-image" src="images/img34.png">
+                    </div>
+                  </div>`
       });
       editor.BlockManager.add('imgPara1', {
         label: 'Parallax ảnh 1 (chỉ dùng 1 lần)',
@@ -112,17 +211,46 @@
         category: 'Magazine',
         content: `<div class="mg-parallax parallax-img3"></div>`
       });
+      editor.BlockManager.add('tabs', {
+        label: 'Tabs',
+        attributes: { class:'gjs-fonts gjs-f-3ba' },
+        category: 'Magazine',
+        content: `<div class="mg-tabs" style="margin-left:auto;margin-right:auto;max-width:700px">
+                    <input type="radio" name="tabs" id="tabone" checked="checked">
+                    <label for="tabone">First Tab</label>
+                    <div class="tab">
+                        <p>paste_text1_here</p>
+                    </div>
+
+                    <input type="radio" name="tabs" id="tabtwo">
+                    <label for="tabtwo">Second Tab</label>
+                    <div class="tab">
+                        <p>paste_text2_here</p>
+                    </div>
+
+                    <input type="radio" name="tabs" id="tabthree">
+                    <label for="tabthree">Third Tab</label>
+                    <div class="tab">
+                        <p>paste_text3_here</p>
+                    </div>
+                </div>`
+      });
       const bm = editor.BlockManager;
         editor.on('load', () => {
         editor.BlockManager.render([
           bm.get('imgDual').set('category', 'Magazine'),
           bm.get('imgSingle').set('category', 'Magazine'),
           bm.get('paraOnly').set('category', 'Magazine'),
+          bm.get('para50').set('category', 'Magazine'),
           bm.get('paraLeft').set('category', 'Magazine'),
           bm.get('paraRight').set('category', 'Magazine'),
+          bm.get('gallery3443').set('category', 'Magazine'),
+          bm.get('gallery34169').set('category', 'Magazine'),
+          bm.get('gallery344334').set('category', 'Magazine'),
           bm.get('imgPara1').set('category', 'Magazine'),
           bm.get('imgPara2').set('category', 'Magazine'),
-          bm.get('imgPara3').set('category', 'Magazine')
+          bm.get('imgPara3').set('category', 'Magazine'),
+          bm.get('tabs').set('category', 'Magazine')
        ])
       });
     </script>
