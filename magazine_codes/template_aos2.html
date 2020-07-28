@@ -54,6 +54,11 @@
     .mg-tabs input[type="radio"]:checked + label {background: #eee;}
     .mg-tabs input[type="radio"]:checked + label + .tab {display: block;}
     @media (max-width: 45em) {.mg-tabs .tab,.mg-tabs label {order: initial;}.mg-tabs label {width: 100%;margin-right: 0;margin-top: 0.2rem;}}
+    .hover14 div {position: relative;overflow: hidden;display: inline-block;}
+    .hover14 div::before {position: absolute;top: 0;left: -75%;z-index: 2;display: block;content: '';width: 50%;height: 100%;background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);-webkit-transform: skewX(-25deg);transform: skewX(-25deg);}
+    .hover14 div:hover::before {-webkit-animation: shine .75s;animation: shine .75s;}
+    @-webkit-keyframes shine {100% {left: 125%;}}
+    @keyframes shine {100% {left: 125%;}}
   </style>
 </head>
 

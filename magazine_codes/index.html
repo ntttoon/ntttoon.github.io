@@ -73,7 +73,8 @@
     <textarea id="codeSample" class="w3-input w3-border" rows="10"></textarea>
     <hr>
     <button class="w3-button w3-teal" id="btn1">Code cho 2 ảnh pc/mobile</button>
-    <button class="w3-button w3-teal" id="btn2">Code cho 1 ảnh dùng chung pc/mobile</button><br>
+    <button class="w3-button w3-teal" id="btn2">Code cho 1 ảnh dùng chung pc/mobile</button>
+    <button class="w3-button w3-teal" id="btn2b">Code cho 1 ảnh với hiệu ứng rê chuột quét sáng</button><br>
     <button class="w3-button w3-yellow" id="btn3">Code cho đoạn văn bản thuần</button>
     <button class="w3-button w3-yellow" id="btn4">Code cho đoạn văn bản ảnh lệch trái</button>
     <button class="w3-button w3-yellow" id="btn5">Code cho đoạn văn bản ảnh lệch phải</button>
@@ -122,6 +123,10 @@
     });
     $( "#btn2" ).click(function() {
         readTextFile("modules/single_img.txt");
+        copyCode();
+    });
+    $( "#btn2b" ).click(function() {
+        readTextFile("modules/single_img_hover_shine.txt");
         copyCode();
     });
     $( "#btn3" ).click(function() {

@@ -1,0 +1,5 @@
+<div class="mg-center hover14" data-aos="fade-up" data-aos-duration="1500">
+    <div>
+        <img alt="" class="mg-image" src="anh">
+    </div>
+</div>
