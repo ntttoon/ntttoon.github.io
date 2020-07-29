@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mouse</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        div#coverParallax{
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        div#coverParallax img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            /* height: 100%; */
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <div id="coverParallax" style="height: 1000px;">
+        <img src="bg.jpg" id="bg">
+        <img src="cover01.png" data-speed="2" class="layer">
+        <img src="cover02.png" data-speed="4" class="layer">
+        <img src="cover03.png" data-speed="6" class="layer">
+    </div>
+    <script>
+        document.addEventListener("mousemove", parallaxCover);
+        function parallaxCover(e){
+            var a = document.getElementById("bg").height;
+            document.getElementById("coverParallax").style.height = a +"px";
+
+            this.querySelectorAll('.layer').forEach(layer => {
+                const speed = layer.getAttribute('data-speed')
+
+                const x = (window.innerWidth - e.pageX*speed)/100
+                const y = (window.innerHeight - e.pageY*speed)/100
+
+                layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+            });
+        }
+    </script>
+</body>
+</html>
