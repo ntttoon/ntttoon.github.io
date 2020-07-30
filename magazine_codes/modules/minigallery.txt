@@ -1,0 +1,17 @@
+<div class="mg-content700">
+    <div class="mg-center"><img alt="" class="mg-image" src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" id="slider"></div>
+    <div class="mg-mini-gallery">
+        <div class="thumb4" onclick="miniGallery('slider','https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')">
+            <img alt="" class="mg-image" src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+        </div>
+        <div class="thumb4" onclick="miniGallery('slider','https://images.pexels.com/photos/196643/pexels-photo-196643.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')">
+            <img alt="" class="mg-image" src="https://images.pexels.com/photos/196643/pexels-photo-196643.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+        </div>
+        <div class="thumb4" onclick="miniGallery('slider','https://images.pexels.com/photos/2228559/pexels-photo-2228559.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')">
+            <img alt="" class="mg-image" src="https://images.pexels.com/photos/2228559/pexels-photo-2228559.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+        </div>
+        <div class="thumb4" onclick="miniGallery('slider','https://images.pexels.com/photos/3326533/pexels-photo-3326533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')">
+            <img alt="" class="mg-image" src="https://images.pexels.com/photos/3326533/pexels-photo-3326533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+        </div>
+    </div>
+</div>

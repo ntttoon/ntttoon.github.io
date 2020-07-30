@@ -59,6 +59,12 @@
     .hover14 div:hover::before {-webkit-animation: shine .75s;animation: shine .75s;}
     @-webkit-keyframes shine {100% {left: 125%;}}
     @keyframes shine {100% {left: 125%;}}
+    .mg-mini-gallery{display: flex;background: #262626;}
+    .mg-mini-gallery .thumb3{width:33.33333%}
+    .mg-mini-gallery .thumb4{width:25%}
+    .mg-mini-gallery .thumb5{width:20%}
+    .mg-mini-gallery img{transition:0.2s}
+    .mg-mini-gallery img:hover{transform: scale(0.9);}
   </style>
 </head>
 
@@ -70,6 +76,11 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+  <script>
+    function miniGallery(id,url){
+      document.getElementById(id).src = url;
+    }
   </script>
   <script>
     if(window.screen.availWidth == 768 || window.screen.availWidth == 1366){document.getElementById("cssipad").innerHTML = "<style>#content-mgz{width:100%}.heading-site a{font-size:34px}</style>"}

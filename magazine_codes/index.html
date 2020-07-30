@@ -84,6 +84,7 @@
     <button class="w3-button w3-blue" id="btn9">Code cho gallery 3 ảnh 3:4 và 4:3 và 3:4</button><br>
     <button class="w3-button w3-red" id="btn10">Code cho module tabs</button>
     <button class="w3-button w3-red" id="btn11">Code cho module ảnh parallax</button>
+    <button class="w3-button w3-red" id="btn12">Code cho module mini gallery</button>
 </div>
 
 
@@ -163,6 +164,10 @@
     });
     $( "#btn11" ).click(function() {
         readTextFile("modules/parallax_img.txt");
+        copyCode();
+    });
+    $( "#btn12" ).click(function() {
+        readTextFile("modules/minigallery.txt");
         copyCode();
     });
 </script>
