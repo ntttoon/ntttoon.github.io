@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Demo PC 24h</title>
+    <title>Demo PC Eve</title>
     <link rel="stylesheet" href="../css/w3.css">
     <script async src="../js_libs/jszip.js"> </script>
     <script async src="../js_libs/jszip-utils.js"> </script>
@@ -24,20 +24,18 @@
     </style>
 </head>
 <body>
-    <div class="w3-bar w3-teal">
-        <div class="w3-bar-item">Tạo demo tĩnh (for PC)</div>
-        <a href="index_mobile.html" class="w3-bar-item w3-button w3-red w3-right">For mobile</a>
+    <div class="w3-bar" style="background: #d2577e;color:white">
+        <div class="w3-bar-item">Tạo demo tĩnh Eva (for PC)</div>
+        <!-- <a href="index_mobile.html" class="w3-bar-item w3-button w3-red w3-right">For mobile</a> -->
     </div>
     
     <div class="w3-container">
         <p>
             <div>Chọn Demo</div>
             <select id="demochoice">
-                <option value="1" selected>Trang chủ</option>
-                <option value="2" >Trang chuyên mục top 100</option>
-                <option value="3" >Trang chuyên mục top 250</option>
-                <option value="4" >Trang bài viết top 100</option>
-                <option value="5" >Trang bài viết top 250</option>
+                <option value="1" selected>Mặc định</option>
+                <option value="2" >Có top 100</option>
+                <option value="3" >Có top 250</option>
             </select>
         </p>
         <div class="w3-cell-row">
@@ -46,24 +44,18 @@
                     <label>Chọn ảnh chứa bg kt lớn</label>
                     <input type="file" id="imageLoader"/>
                 </p>
-                <p>
-                    <label>Chọn ảnh chứa bg kt nhỏ</label>
-                    <input type="file" id="imageLoader2"/>
-                </p>
             </div>
             <div class="w3-container w3-cell w3-light-green w3-mobile">
-                <div>Up ảnh banner trung tâm trang chủ <strong>696x120</strong></div>
-                <input class="w3-input" id="tttc" type="file" accept="image/x-png,image/gif,image/jpeg" />
-                <div>Up ảnh banner hot <strong>336x280</strong></div>
-                <input class="w3-input" id="hot" type="file" accept="image/x-png,image/gif,image/jpeg" />
-            </div>
-            <div class="w3-container w3-cell w3-lime w3-mobile">
                 <div>Up ảnh banner phải 1 <strong>300x600</strong></div>
                 <input class="w3-input" id="phai1" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div>Up ảnh banner phải 2 <strong>300x600</strong></div>
+                <input class="w3-input" id="phai2" type="file" accept="image/x-png,image/gif,image/jpeg" />
                 <div>Up ảnh banner trôi ngữ cảnh <strong>300x600</strong></div>
                 <input class="w3-input" id="sticky" type="file" accept="image/x-png,image/gif,image/jpeg" />
-                <div>Up ảnh banner phải 2 <strong>300x250</strong></div>
-                <input class="w3-input" id="phai2" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            </div>
+            <div class="w3-container w3-cell w3-lime w3-mobile">
+                <div>Up ảnh banner chân bv <strong>700x90</strong></div>
+                <input class="w3-input" id="chanbv" type="file" accept="image/x-png,image/gif,image/jpeg" />
             </div>
         </div>
         <hr>
@@ -75,16 +67,10 @@
             <div>Ảnh chứa bg kt lớn</div>
             <canvas id="imageCanvas" style="width: 100%;"></canvas>
         </div>
-        <div class="w3-half w3-container">
-            <div>Ảnh chứa bg kt nhỏ</div>
-            <canvas id="imageCanvas2" style="width: 100%;"></canvas>
-        </div>
     </div>
     <br>
     <canvas id="left_to" class="hide floatleft" width="444" height="1040"></canvas>
     <canvas id="right_to" class="hide floatleft" width="444" height="1040"></canvas>
-    <canvas id="left_nho" class="hide floatleft" width="205" height="900"></canvas>
-    <canvas id="right_nho" class="hide floatleft" width="205" height="900"></canvas>
     <canvas id="top100" class="hide floatleft" width="1016" height="100"></canvas>
     <canvas id="top250" class="hide floatleft" width="1016" height="250"></canvas>
     <div class="w3-row">
@@ -95,14 +81,6 @@
         <div class="w3-col w3-container divide_five">
             <div>Bg phải 444x1040</div>
             <img id="img_right_to_holder" class="w3-image">
-        </div>
-        <div class="w3-col w3-container divide_five">
-            <div>Bg trái 205x900</div>
-            <img id="img_left_nho_holder" class="w3-image">
-        </div>
-        <div class="w3-col w3-container divide_five">
-            <div>Bg phải 205x900</div>
-            <img id="img_right_nho_holder" class="w3-image">
         </div>
     </div>
     <div class="w3-row">
@@ -118,8 +96,7 @@
 
     <div style="display: none" id="img_banner_phai1"></div>
     <div style="display: none" id="img_banner_phai2"></div>
-    <div style="display: none" id="img_banner_tttc"></div>
-    <div style="display: none" id="img_banner_hot"></div>
+    <div style="display: none" id="img_banner_chanbv"></div>
     <div style="display: none" id="img_banner_sticky"></div>
     <div style="display: none" id="img_banner_top100"></div>
     <div style="display: none" id="img_banner_top250"></div>
@@ -132,23 +109,13 @@
         var imageLoader = document.getElementById('imageLoader');
         imageLoader.addEventListener('change', handleImage, false);
         //////////
-        var imageLoader2 = document.getElementById('imageLoader2');
-        imageLoader2.addEventListener('change', handleImage2, false);
-        //////////
         var canvas = document.getElementById('imageCanvas');
-        var canvas2 = document.getElementById('imageCanvas2');
-        //////////
         var ctx = canvas.getContext('2d');
-        var ctx2 = canvas2.getContext('2d');
         //////////
         var left_to = document.getElementById('left_to');
         var left_to_ctx = left_to.getContext('2d');
-        var left_nho = document.getElementById('left_nho');
-        var left_nho_ctx = left_nho.getContext('2d');
         var right_to = document.getElementById('right_to');
         var right_to_ctx = right_to.getContext('2d');
-        var right_nho = document.getElementById('right_nho');
-        var right_nho_ctx = right_nho.getContext('2d');
         var top100 = document.getElementById('top100');
         var top100_ctx = top100.getContext('2d');
         var top250 = document.getElementById('top250');
@@ -176,55 +143,25 @@
             reader.readAsDataURL(e.target.files[0]);     
         }
         //////////////////////////////
-        function handleImage2(e){
-            var reader = new FileReader();
-            reader.onload = function(event){
-                var img = new Image();
-                img.onload = function(){
-                    canvas2.width = img.width;
-                    canvas2.height = img.height;
-                    ctx2.drawImage(img,0,0);
-                    left_nho_ctx.drawImage(img,239,0,205,900,0,0,205,900);
-                    right_nho_ctx.drawImage(img,1460,0,205,900,0,0,205,900);
-                    document.getElementById("img_left_nho_holder").src = left_nho.toDataURL("image/jpeg",1);
-                    document.getElementById("img_right_nho_holder").src = right_nho.toDataURL("image/jpeg",1);
-                }
-                img.src = event.target.result;
-            }
-            reader.readAsDataURL(e.target.files[0]);     
-        }
-        //////////////////////////////
     document.getElementById("demochoice").addEventListener("change", function(){
         //alert(this.value)
         document.getElementById("html_index_holder").textContent = "";
         document.getElementById("img_page_holder").textContent = "";
         if(this.value == 1){
-            readTemplates("templates/trangchu.html","html_index_holder");
-            toDataURL('images/trangchu.jpg',function(dataUrl) {
+            readTemplates("templates/lamdep.html","html_index_holder");
+            toDataURL('images/lamdep.jpg',function(dataUrl) {
                 document.getElementById("img_page_holder").textContent = dataUrl;
             })
         }
         if(this.value == 2){
-            readTemplates("templates/trangcm1.html","html_index_holder");
-            toDataURL('images/trangtrong100.jpg',function(dataUrl) {
+            readTemplates("templates/lamdep_top100.html","html_index_holder");
+            toDataURL('images/lamdep.jpg',function(dataUrl) {
                 document.getElementById("img_page_holder").textContent = dataUrl;
             })
         }
         if(this.value == 3){
-            readTemplates("templates/trangcm2.html","html_index_holder");
-            toDataURL('images/trangtrong250.jpg',function(dataUrl) {
-                document.getElementById("img_page_holder").textContent = dataUrl;
-            })
-        }
-        if(this.value == 4){
-            readTemplates("templates/trangct1.html","html_index_holder");
-            toDataURL('images/trangtrongct100.jpg',function(dataUrl) {
-                document.getElementById("img_page_holder").textContent = dataUrl;
-            })
-        }
-        if(this.value == 5){
-            readTemplates("templates/trangct2.html","html_index_holder");
-            toDataURL('images/trangtrongct250.jpg',function(dataUrl) {
+            readTemplates("templates/lamdep_top250.html","html_index_holder");
+            toDataURL('images/lamdep.jpg',function(dataUrl) {
                 document.getElementById("img_page_holder").textContent = dataUrl;
             })
         }
@@ -245,7 +182,7 @@
         }
         txtFile.send(null);
     }
-    readTemplates("templates/trangchu.html","html_index_holder");
+    readTemplates("templates/lamdep.html","html_index_holder");
     readTemplates("templates/jquery.sticky.js","js_sticky_holder");
     function readURL(input,div_holder) {
         if (input.files && input.files[0]) {
@@ -264,11 +201,8 @@
     document.getElementById("phai2").addEventListener("change", function(){
         readURL(this,"img_banner_phai2");
     })
-    document.getElementById("tttc").addEventListener("change", function(){
-        readURL(this,"img_banner_tttc");
-    })
-    document.getElementById("hot").addEventListener("change", function(){
-        readURL(this,"img_banner_hot");
+    document.getElementById("chanbv").addEventListener("change", function(){
+        readURL(this,"img_banner_chanbv");
     })
     document.getElementById("sticky").addEventListener("change", function(){
         readURL(this,"img_banner_sticky");
@@ -292,7 +226,7 @@
             document.getElementById("img_topmenu_holder").textContent = dataUrl;
         }
     )
-    toDataURL('images/trangchu.jpg',function(dataUrl) {
+    toDataURL('images/lamdep.jpg',function(dataUrl) {
             document.getElementById("img_page_holder").textContent = dataUrl;
         }
     )
@@ -311,23 +245,20 @@
         var data_topmenu = document.getElementById("img_topmenu_holder").textContent;
         //Image banners
         var data_left_to = document.getElementById("img_left_to_holder").src;
-        var data_left_nho = document.getElementById("img_left_nho_holder").src;
         var data_right_to = document.getElementById("img_right_to_holder").src;
-        var data_right_nho = document.getElementById("img_right_nho_holder").src;
         var data_top100 = document.getElementById("img_top100_holder").src;
         var data_top250 = document.getElementById("img_top250_holder").src;
         //Image banners
         var data_phai1 = document.getElementById("img_banner_phai1").textContent;
         var data_phai2 = document.getElementById("img_banner_phai2").textContent;
-        var data_hot = document.getElementById("img_banner_hot").textContent;
-        var data_tttc = document.getElementById("img_banner_tttc").textContent;
+        var data_chanbv = document.getElementById("img_banner_chanbv").textContent;
         var data_sticky = document.getElementById("img_banner_sticky").textContent;
 
         var assets = zip.folder("images");
 
         zip.file("index.html", data_html);
         zip.file("jquery.sticky.js", data_js_sticky);
-        assets.file("24h.jpg", data_page.substr(data_page.indexOf(',')+1), {base64: true});
+        assets.file("lamdep.jpg", data_page.substr(data_page.indexOf(',')+1), {base64: true});
         assets.file("top_menu.jpg", data_topmenu.substr(data_topmenu.indexOf(',')+1), {base64: true});
         if( document.getElementById("imageLoader").files.length !== 0 ){
             assets.file("left_to.jpg", data_left_to.substr(data_left_to.indexOf(',')+1), {base64: true});
@@ -335,21 +266,14 @@
             assets.file("1016100.jpg", data_top100.substr(data_top100.indexOf(',')+1), {base64: true});
             assets.file("1016250.jpg", data_top250.substr(data_top250.indexOf(',')+1), {base64: true});
         }
-        if( document.getElementById("imageLoader2").files.length !== 0 ){
-            assets.file("left_nho.jpg", data_left_nho.substr(data_left_nho.indexOf(',')+1), {base64: true});
-            assets.file("right_nho.jpg", data_right_nho.substr(data_right_nho.indexOf(',')+1), {base64: true});
-        }
         if( document.getElementById("phai1").files.length !== 0 ){
-            assets.file("300600.jpg", data_phai1.substr(data_phai1.indexOf(',')+1), {base64: true});
+            assets.file("300600_1.jpg", data_phai1.substr(data_phai1.indexOf(',')+1), {base64: true});
         }
         if( document.getElementById("phai2").files.length !== 0 ){
-            assets.file("300250.jpg", data_phai2.substr(data_phai2.indexOf(',')+1), {base64: true});
+            assets.file("300600_2.jpg", data_phai2.substr(data_phai2.indexOf(',')+1), {base64: true});
         }
-        if( document.getElementById("hot").files.length !== 0 ){
-            assets.file("336280.jpg", data_hot.substr(data_hot.indexOf(',')+1), {base64: true});
-        }
-        if( document.getElementById("tttc").files.length !== 0 ){
-            assets.file("696120.jpg", data_tttc.substr(data_tttc.indexOf(',')+1), {base64: true});
+        if( document.getElementById("chanbv").files.length !== 0 ){
+            assets.file("70090.jpg", data_chanbv.substr(data_chanbv.indexOf(',')+1), {base64: true});
         }
         if( document.getElementById("sticky").files.length !== 0 ){
             assets.file("sticky.jpg", data_sticky.substr(data_sticky.indexOf(',')+1), {base64: true});
