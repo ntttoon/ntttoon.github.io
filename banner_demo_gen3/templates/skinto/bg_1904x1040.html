@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+	4. Blank lines will be removed automatically.
+	5. Remove unnecessary comments before creating your template.
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<title>bg_1904x1040</title>
+<!-- write your code here -->
+<!-- <script src="https://s0.2mdn.net/ads/studio/cached_libs/createjs_2015.11.26_54e1c3722102182bb133912ad4442e19_min.js"></script> -->
+<script src="https://cdn.24h.com.vn/upload/html/createjs/createjs-2015.11.26.min.js"></script>
+<script>
+	var clickTag = "http://www.24h.com.vn/";
+	clickTag   = '%%CLICK_URL_UNESC%%'+clickTag;
+</script>
+<script>
+(function (cjs, an) {
+var p; // shortcut to reference prototypes
+var lib={};var ss={};var img={};
+lib.ssMetadata = [];
+// symbols:
+(lib.bg_to = function() {
+	this.initialize(img.bg_to);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1904,1040);
+(lib.side_content = function() {
+	this.initialize(img.side_content);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,73,269);// helper functions:
+function mc_symbol_clone() {
+	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop));
+	clone.gotoAndStop(this.currentFrame);
+	clone.paused = this.paused;
+	clone.framerate = this.framerate;
+	return clone;
+}
+function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
+	var prototype = cjs.extend(symbol, cjs.MovieClip);
+	prototype.clone = mc_symbol_clone;
+	prototype.nominalBounds = nominalBounds;
+	prototype.frameBounds = frameBounds;
+	return prototype;
+	}
+(lib.right = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Layer_2
+	this.instance = new lib.side_content();
+	this.instance.parent = this;
+	this.instance.setTransform(20,100);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	// bg trasn
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(255,255,255,0)").s().p("EgJXAu4MAAAhdvISvAAMAAABdvg");
+	this.shape.setTransform(100,300,1.667,1);
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+}).prototype = getMCSymbolPrototype(lib.right, new cjs.Rectangle(-111,0,311,600), null);
+(lib.left = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Layer_2
+	this.instance = new lib.side_content();
+	this.instance.parent = this;
+	this.instance.setTransform(107,100);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	// bg trasn
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("rgba(255,255,255,0)").s().p("EgPnAu4MAAAhdvIfPAAMAAABdvg");
+	this.shape.setTransform(100,300);
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+}).prototype = getMCSymbolPrototype(lib.left, new cjs.Rectangle(-44,0,284,600), null);
+// stage content:
+(lib.bg_1904x1040 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{showAd:1,hideAd:17});
+	// timeline functions:
+	this.frame_0 = function() {
+		root = this;
+		root.stop();
+	}
+	this.frame_16 = function() {
+		this.stop();
+	}
+	this.frame_30 = function() {
+		root.gotoAndStop("showAd");
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(16).call(this.frame_16).wait(14).call(this.frame_30).wait(1));
+	// right
+	this.instance = new lib.right();
+	this.instance.parent = this;
+	this.instance.setTransform(1460,-160);
+	this.instance.alpha = 0;
+	this.instance._off = true;
+	this.instance.cache(-113,-2,315,604);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).to({y:0,alpha:1},15,cjs.Ease.quadOut).to({y:-160,alpha:0},14).wait(1));
+	// left
+	this.instance_1 = new lib.left();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(244,-160);
+	this.instance_1.alpha = 0;
+	this.instance_1._off = true;
+	this.instance_1.cache(-46,-2,288,604);
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({_off:false},0).to({y:0,alpha:1},15,cjs.Ease.quadOut).to({y:-160,alpha:0},14).wait(1));
+	// bg
+	this.instance_2 = new lib.bg_to();
+	this.instance_2.parent = this;
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(31));
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(952,520,1904,1040);
+// library properties:
+lib.properties = {
+	id: '3067B3A41CCEB34190469887140E1459',
+	width: 1904,
+	height: 1040,
+	fps: 30,
+	color: "#CCCCCC",
+	opacity: 1.00,
+	manifest: [
+		{src:"bg_to.jpg?1599461127382", id:"bg_to"},
+		{src:"side_content.png?1599461127382", id:"side_content"}
+	],
+	preloads: []
+};
+// bootstrap callback support:
+(lib.Stage = function(canvas) {
+	createjs.Stage.call(this, canvas);
+}).prototype = p = new createjs.Stage();
+p.setAutoPlay = function(autoPlay) {
+	this.tickEnabled = autoPlay;
+}
+p.play = function() { this.tickEnabled = true; this.getChildAt(0).gotoAndPlay(this.getTimelinePosition()) }
+p.stop = function(ms) { if(ms) this.seek(ms); this.tickEnabled = false; }
+p.seek = function(ms) { this.tickEnabled = true; this.getChildAt(0).gotoAndStop(lib.properties.fps * ms / 1000); }
+p.getDuration = function() { return this.getChildAt(0).totalFrames / lib.properties.fps * 1000; }
+p.getTimelinePosition = function() { return this.getChildAt(0).currentFrame / lib.properties.fps * 1000; }
+an.bootcompsLoaded = an.bootcompsLoaded || [];
+if(!an.bootstrapListeners) {
+	an.bootstrapListeners=[];
+}
+an.bootstrapCallback=function(fnCallback) {
+	an.bootstrapListeners.push(fnCallback);
+	if(an.bootcompsLoaded.length > 0) {
+		for(var i=0; i<an.bootcompsLoaded.length; ++i) {
+			fnCallback(an.bootcompsLoaded[i]);
+		}
+	}
+};
+an.compositions = an.compositions || {};
+an.compositions['3067B3A41CCEB34190469887140E1459'] = {
+	getStage: function() { return exportRoot.getStage(); },
+	getLibrary: function() { return lib; },
+	getSpriteSheet: function() { return ss; },
+	getImages: function() { return img; }
+};
+an.compositionLoaded = function(id) {
+	an.bootcompsLoaded.push(id);
+	for(var j=0; j<an.bootstrapListeners.length; j++) {
+		an.bootstrapListeners[j](id);
+	}
+}
+an.getComposition = function(id) {
+	return an.compositions[id];
+}
+})(createjs = createjs||{}, AdobeAn = AdobeAn||{});
+var createjs, AdobeAn;
+</script>
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	var canvasBg = document.getElementById("canvas");
+  	var ctx = canvasBg.getContext("2d");
+	var backgroundCanvas = new Image();
+	backgroundCanvas.src = '%%FILE:PNG1%%';
+	// Make sure the image is loaded first otherwise nothing will draw.
+	backgroundCanvas.onload = function(){
+	    ctx.drawImage(backgroundCanvas,0,0);   
+	}
+    initAnimate();
+}
+function initAnimate() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var key = Object.keys(AdobeAn.compositions)[0];
+    var comp = AdobeAn.getComposition(key);
+	var lib=comp.getLibrary();
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+	var lib=comp.getLibrary();
+    loader.loadManifest(lib.properties.manifest);
+    var impDiv = document.getElementById('impressionTrack');
+	if(impDiv){
+		// Gắn impression ở đây
+		impDiv.innerHTML = '<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=" border="0" width="0" height="0" style="display:none;" />';
+	}
+}
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt,comp) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.bg_1904x1040();
+	stage = new lib.Stage(canvas);	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+/* ----------Begin Các hàm java script cố định */
+// hàm thực hiện hiển thị quảng cáo
+function show_ads_right_left(){
+	root.gotoAndPlay("showAd");
+}
+// hàm thực hiện ẩn quảng cáo
+function hide_ads_right_left(){
+	root.gotoAndPlay("hideAd");
+}
+// Hàm xử lý dữ liệu gửi từ window parent
+function dfp_process_mesage(event){
+	try {
+		data = JSON.parse(event.data);
+	} catch (error) {
+		return;
+	}
+	// Kiểm tra biến
+	if (data.type == "banner-bg-premium"){
+		if (data.web_type != "24h-banner-dfp") return;
+		// Loại action video quảng cáo
+		var action = data.action;
+		    console.log(action);
+    // Kiểm tra loại action để lấy width, height
+		if(action == 'adsshow'){
+			show_ads_right_left();
+		}
+		if(action == 'hideshow'){
+			hide_ads_right_left();
+		}
+	}
+}
+// Lắng nghe sự kiện message
+if (window.addEventListener){
+	addEventListener("message", dfp_process_mesage, false)
+// Xử lý đối với ie6 trở xuống
+} else {
+	attachEvent("onmessage", dfp_process_mesage)
+}
+/* ----------End Các hàm java script cố định */
+</script>
+<!-- write your code here -->
+</head>
+<body onload="init();" style="margin:0px;">
+	<a href="javascript:void(window.open(window.clickTag))">
+	<div id="animation_container" style="background-color:rgba(204, 204, 204, 1.00); width:1904px; height:1040px">
+		<canvas id="canvas" width="1904" height="1040" style="position: absolute; display: block; background-color:rgba(204, 204, 204, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1904px; height:1040px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>
+	</a>
+	<div id="impressionTrack"></div>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo</title>
+    <link rel="stylesheet" href="../css/w3.css">
+    <script async src="../js_libs/jszip.js"> </script>
+    <script async src="../js_libs/jszip-utils.js"> </script>
+    <script async src="../js_libs/FileSaver.js"> </script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="w3-bar w3-teal">
+        <div class="w3-bar-item">Tạo demo cho skin bg</div>
+    </div>
+    
+    <div class="w3-container">
+        <p></p>
+        <div class="w3-cell-row">
+            <div class="w3-container w3-cell w3-teal w3-mobile">
+                <h3>Upload file cho skinbg lớn</h3>
+                <div>Up file HTML</div>
+                <input class="w3-input" id="skinto_html" type="file" accept = ".html" />
+                <div>Up file JPG</div>
+                <input class="w3-input" id="skinto_jpg" type="file" accept="image/jpeg" />
+                <div>Up file PNG</div>
+                <input class="w3-input" id="skinto_png" type="file" accept="image/x-png" />
+            </div>
+            <div class="w3-container w3-cell w3-green w3-mobile">
+                <h3>Upload file cho skinbg nhỏ</h3>
+                <div>Up file HTML</div>
+                <input class="w3-input" id="skinnho_html" type="file" accept = ".html" />
+                <div>Up file JPG</div>
+                <input class="w3-input" id="skinnho_jpg" type="file" accept="image/jpeg" />
+                <div>Up file PNG</div>
+                <input class="w3-input" id="skinnho_png" type="file" accept="image/x-png" />
+            </div>
+            <div class="w3-container w3-cell w3-light-green w3-mobile">
+                <h3>Upload các banner tĩnh còn lại</h3>
+                <div>Up ảnh banner phải 1 <strong>300x600</strong></div>
+                <input class="w3-input" id="phai1" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div>Up ảnh banner phải 2 <strong>300x250</strong></div>
+                <input class="w3-input" id="phai2" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div>Up ảnh banner trôi ngữ cảnh <strong>300x600</strong></div>
+                <input class="w3-input" id="sticky" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div>Up ảnh banner hot <strong>336x280</strong></div>
+                <input class="w3-input" id="chanbv" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            </div>
+        </div>
+        <p><button class="w3-button w3-red" id="zip_button">Save file</button></p>
+    </div>
+    
+    <div style="display: none" id="demo_html_holder"></div>
+    <div style="display: none" id="demo_img1_holder"></div>
+    <div style="display: none" id="demo_img2_holder"></div>
+    <div style="display: none" id="js_sticky_holder"></div>
+    <div style="display: none" id="skinto_html_holder"></div>
+    <div style="display: none" id="skinto_jpg_holder"></div>
+    <div style="display: none" id="skinto_png_holder"></div>
+    <div style="display: none" id="skinnho_html_holder"></div>
+    <div style="display: none" id="skinnho_jpg_holder"></div>
+    <div style="display: none" id="skinnho_png_holder"></div>
+<script>
+    ///////////////////////// Load url text file into div holder
+    function readTemplates(path,div_holder){
+        var txtFile = new XMLHttpRequest();
+            txtFile.open("GET", path, true);
+            txtFile.onreadystatechange = function() {
+                if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
+                        if (txtFile.status === 200) {  // Makes sure it's found the file.
+                        allText = txtFile.responseText;
+                        //console.log(allText);
+                        //lines = txtFile.responseText.split("\n"); // Will separate each line into an array
+                        document.getElementById(div_holder).textContent = allText;
+                    }
+                }
+            }
+        txtFile.send(null);
+    }
+    readTemplates("templates/index.html","demo_html_holder");
+    readTemplates("templates/jquery.sticky.js","js_sticky_holder");
+    ///////////////////////// Load url image file into div holder
+    function readImages(url, callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.onload = function() {
+            var reader = new FileReader();
+            reader.onloadend = function() {
+            callback(reader.result);
+            }
+            reader.readAsDataURL(xhr.response);
+        };
+        xhr.open('GET', url);
+        xhr.responseType = 'blob';
+        xhr.send();
+    }
+    readImages('templates/images/top_menu.jpg',function(dataUrl) {
+            document.getElementById("demo_img1_holder").textContent = dataUrl;
+        }
+    )
+    readImages('templates/images/content.jpg',function(dataUrl) {
+            document.getElementById("demo_img2_holder").textContent = dataUrl;
+        }
+    )
+
+    ///////////////////////// Load input file into div holder
+    function readInputFile(input,div_holder,mode) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                document.getElementById(div_holder).textContent = e.target.result;
+            }
+            if(mode == "image" ){
+                reader.readAsDataURL(input.files[0]);
+            }
+            if(mode == "text" ){
+                reader.readAsText(input.files[0]);
+            }
+        }
+    }
+
+    document.getElementById("skinto_html").addEventListener("change", function(){
+        readInputFile(this,"skinto_html_holder","text");
+    })
+    document.getElementById("skinto_jpg").addEventListener("change", function(){
+        readInputFile(this,"skinto_jpg_holder","image");
+    })
+    document.getElementById("skinto_png").addEventListener("change", function(){
+        readInputFile(this,"skinto_png_holder","image");
+    })
+    document.getElementById("skinnho_html").addEventListener("change", function(){
+        readInputFile(this,"skinnho_html_holder","text");
+    })
+    document.getElementById("skinnho_jpg").addEventListener("change", function(){
+        readInputFile(this,"skinnho_jpg_holder","image");
+    })
+    document.getElementById("skinnho_png").addEventListener("change", function(){
+        readInputFile(this,"skinnho_png_holder","image");
+    })
+    /////////////////////////
+    document.getElementById("zip_button").addEventListener("click", function(){
+        var skinto_jpg = document.getElementById("skinto_jpg").value;
+        var skinto_png = document.getElementById("skinto_png").value;
+        var skinnho_jpg = document.getElementById("skinnho_jpg").value;
+        var skinnho_png = document.getElementById("skinnho_png").value;
+
+        var zip = new JSZip();
+
+        var demo_html = document.getElementById("demo_html_holder").textContent;
+        var demo_img1 = document.getElementById("demo_img1_holder").textContent;
+        var demo_img2 = document.getElementById("demo_img2_holder").textContent;
+        var demo_js = document.getElementById("js_sticky_holder").textContent;
+        /////
+        var skinto_html = document.getElementById("skinto_html_holder").textContent;
+        var skinto_jpg = document.getElementById("skinto_jpg_holder").textContent;
+        var skinto_png = document.getElementById("skinto_png_holder").textContent;
+        if(skinto_jpg !==""){
+            var name_skinto_jpg = document.getElementById("skinto_jpg").files[0].name;
+        }
+        if(skinto_png !==""){
+            var name_skinto_png = document.getElementById("skinto_png").files[0].name;
+        }
+        /////
+        var skinnho_html = document.getElementById("skinnho_html_holder").textContent;
+        var skinnho_jpg = document.getElementById("skinnho_jpg_holder").textContent;
+        var skinnho_png = document.getElementById("skinnho_png_holder").textContent;
+        if(skinnho_jpg !==""){
+            var name_skinnho_jpg = document.getElementById("skinnho_jpg").files[0].name;
+        }
+        if(skinnho_png !==""){
+            var name_skinnho_png = document.getElementById("skinnho_png").files[0].name;
+        }
+        /////
+
+        var skinto_folder = zip.folder("skinto");
+        var skinnho_folder = zip.folder("skinnho");
+        var images_folder = zip.folder("images");
+
+        zip.file("index.html", demo_html);
+        zip.file("jquery.sticky.js", demo_js);
+        /////
+        images_folder.file("top_menu.jpg", demo_img1.substr(demo_img1.indexOf(',')+1), {base64: true});
+        images_folder.file("content.jpg", demo_img2.substr(demo_img2.indexOf(',')+1), {base64: true});
+        /////
+        skinto_folder.file("bg_1904x1040.html", skinto_html);
+        skinto_folder.file(name_skinto_jpg, skinto_jpg.substr(skinto_jpg.indexOf(',')+1), {base64: true});
+        skinto_folder.file(name_skinto_png, skinto_png.substr(skinto_png.indexOf(',')+1), {base64: true});
+        /////
+        skinnho_folder.file("bg_1426x900.html", skinnho_html);
+        skinnho_folder.file(name_skinnho_jpg, skinnho_jpg.substr(skinnho_jpg.indexOf(',')+1), {base64: true});
+        skinnho_folder.file(name_skinnho_png, skinnho_png.substr(skinnho_png.indexOf(',')+1), {base64: true});
+
+        var filename = prompt("Đặt tên cho file zip.\nLưu ý: Không nên đặt tên Tiếng Việt có dấu, ký tự lạ, không cần thêm .zip", "banner");
+        if (filename != null) {
+            zip.generateAsync({type:"blob"})
+            .then(function(content) {
+                saveAs(content, filename + ".zip");
+            });
+        }
+    })
+
+</script>
+</body>
+</html>
