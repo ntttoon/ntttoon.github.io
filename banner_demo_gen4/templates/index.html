@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        *{margin: 0;}
+        .wrapper{max-width: 375px;margin: 0 auto;}
+        .img_res{display: block;width: 100%;}
+        #inpage_wrap {z-index: -1;position: fixed;top: 0;left: 50%;height: 100%;width: 375px;margin-left: -187.5px;background-size: 100%;background-image: url(images/banner_inpage.jpg);background-repeat: no-repeat;}
+        .qrcode{position: fixed;top: 50%;transform: translateY(-50%);left: 20px;width: 200px;padding: 20px;border: 1px solid #ccc;border-radius: 10px;background: #fff;font-size: 14px;text-align: center;display: block;}
+        /* 
+        ##Device = Desktops
+        ##Screen = 1281px to higher resolution desktops
+        */
+
+        @media (min-width: 1281px) {
+                
+        }
+
+        /* 
+        ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px
+        */
+
+        @media (min-width: 1025px) and (max-width: 1280px) {
+                
+        }
+
+        /* 
+        ##Device = Tablets, Ipads (portrait)
+        ##Screen = B/w 768px to 1024px
+        */
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+               
+        }
+
+        /* 
+        ##Device = Tablets, Ipads (landscape)
+        ##Screen = B/w 768px to 1024px
+        */
+
+        @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+                
+        }
+
+        /* 
+        ##Device = Low Resolution Tablets, Mobiles (Landscape)
+        ##Screen = B/w 481px to 767px
+        */
+
+        @media (min-width: 481px) and (max-width: 767px) {
+                
+        }
+
+        /* 
+        ##Device = Most of the Smartphones Mobiles (Portrait)
+        ##Screen = B/w 320px to 479px
+        */
+
+        @media (min-width: 320px) and (max-width: 480px) {
+            .wrapper{max-width: 100%;}
+            .qrcode{display: none;}
+            #inpage_wrap {width: 100%;left: 0;margin-left: 0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <img class="img_res" src="images/demo01.jpg">
+        <img class="img_res" src="images/banner_top.jpg">
+        <img class="img_res" src="images/demo02.jpg">
+        <img class="img_res" src="images/demo03.jpg">
+        <div style="height: 667px;"></div>
+        <img class="img_res" src="images/demo04.jpg">
+        <img class="img_res" src="images/banner_cbv.jpg">
+        <img class="img_res" src="images/demo05.jpg">
+        <img class="img_res" src="images/banner_center1.jpg">
+        <img class="img_res" src="images/demo06.jpg">
+        <img class="img_res" src="images/banner_center2.jpg">
+        <img class="img_res" src="images/demo07.jpg">
+    </div>
+    <div id="inpage_wrap"></div>
+    <div id="qr-code" class="qrcode">QR CODE</div>
+    <script src="qrcode.min.js"></script>
+    <script>
+        var qrcode=new QRCode('qr-code',{text:window.location.href,width:200,height:200});
+    </script>
+    <script>
+        $(window).scroll(function(){
+		    var fromtop = $(window).scrollTop();
+		    $("inpage_wrap").css({"background-position-y": fromtop+"px"});
+	    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo</title>
+    <link rel="stylesheet" href="../css/w3.css">
+    <script async src="../js_libs/jszip.js"> </script>
+    <script async src="../js_libs/jszip-utils.js"> </script>
+    <script async src="../js_libs/FileSaver.js"> </script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="w3-bar w3-teal">
+        <div class="w3-bar-item">Tạo demo cho mobile</div>
+    </div>
+    
+    <div class="w3-container">
+        <p></p>
+        <div class="w3-cell-row">
+            <div class="w3-container w3-cell w3-teal w3-mobile">
+                <h3>Upload các banner tĩnh</h3>
+                <div>Up ảnh banner top <strong>320x100 (640x200)</strong></div>
+                <input class="w3-input" id="top" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div>Up ảnh banner inpage <strong>320x640 (375x750)</strong></div>
+                <input class="w3-input" id="inpage" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div>Up ảnh banner chân bv <strong>320x100 (640x200)</strong></div>
+                <input class="w3-input" id="cbv" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div>Up ảnh banner center1 <strong>300x250 (600x500)</strong></div>
+                <input class="w3-input" id="center1" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div>Up ảnh banner center2 <strong>300x250 (600x500)</strong></div>
+                <input class="w3-input" id="center2" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            </div>
+        </div>
+        <p><button class="w3-button w3-red" id="zip_button">Save file</button></p>
+    </div>
+    
+    <div style="display: none" id="demo_html_holder"></div>
+    <div style="display: none" id="js_qrcode_holder"></div>
+    <div style="display: none" id="demo_img1_holder"></div>
+    <div style="display: none" id="demo_img2_holder"></div>
+    <div style="display: none" id="demo_img3_holder"></div>
+    <div style="display: none" id="demo_img4_holder"></div>
+    <div style="display: none" id="demo_img5_holder"></div>
+    <div style="display: none" id="demo_img6_holder"></div>
+    <div style="display: none" id="demo_img7_holder"></div>
+    <div style="display: none" id="top_holder"></div>
+    <div style="display: none" id="inpage_holder"></div>
+    <div style="display: none" id="cbv_holder"></div>
+    <div style="display: none" id="center1_holder"></div>
+    <div style="display: none" id="center2_holder"></div>
+<script>
+    ///////////////////////// Load url text file into div holder
+    function readTemplates(path,div_holder){
+        var txtFile = new XMLHttpRequest();
+            txtFile.open("GET", path, true);
+            txtFile.onreadystatechange = function() {
+                if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
+                        if (txtFile.status === 200) {  // Makes sure it's found the file.
+                        allText = txtFile.responseText;
+                        //console.log(allText);
+                        //lines = txtFile.responseText.split("\n"); // Will separate each line into an array
+                        document.getElementById(div_holder).textContent = allText;
+                    }
+                }
+            }
+        txtFile.send(null);
+    }
+    readTemplates("templates/index.html","demo_html_holder");
+    readTemplates("templates/qrcode.min.js","js_qrcode_holder");
+    ///////////////////////// Load url image file into div holder
+    function readImages(url, callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.onload = function() {
+            var reader = new FileReader();
+            reader.onloadend = function() {
+            callback(reader.result);
+            }
+            reader.readAsDataURL(xhr.response);
+        };
+        xhr.open('GET', url);
+        xhr.responseType = 'blob';
+        xhr.send();
+    }
+    readImages('templates/images/demo01.jpg',function(dataUrl) {
+            document.getElementById("demo_img1_holder").textContent = dataUrl;
+        }
+    )
+    readImages('templates/images/demo02.jpg',function(dataUrl) {
+            document.getElementById("demo_img2_holder").textContent = dataUrl;
+        }
+    )
+    readImages('templates/images/demo03.jpg',function(dataUrl) {
+            document.getElementById("demo_img3_holder").textContent = dataUrl;
+        }
+    )
+    readImages('templates/images/demo04.jpg',function(dataUrl) {
+            document.getElementById("demo_img4_holder").textContent = dataUrl;
+        }
+    )
+    readImages('templates/images/demo05.jpg',function(dataUrl) {
+            document.getElementById("demo_img5_holder").textContent = dataUrl;
+        }
+    )
+    readImages('templates/images/demo06.jpg',function(dataUrl) {
+            document.getElementById("demo_img6_holder").textContent = dataUrl;
+        }
+    )
+    readImages('templates/images/demo07.jpg',function(dataUrl) {
+            document.getElementById("demo_img7_holder").textContent = dataUrl;
+        }
+    )
+    /////
+    readImages('templates/images/banner_top.jpg',function(dataUrl) {
+            document.getElementById("top_holder").textContent = dataUrl;
+        }
+    )
+    readImages('templates/images/banner_inpage.jpg',function(dataUrl) {
+            document.getElementById("inpage_holder").textContent = dataUrl;
+        }
+    )
+    readImages('templates/images/banner_cbv.jpg',function(dataUrl) {
+            document.getElementById("cbv_holder").textContent = dataUrl;
+        }
+    )
+    readImages('templates/images/banner_center1.jpg',function(dataUrl) {
+            document.getElementById("center1_holder").textContent = dataUrl;
+        }
+    )
+    readImages('templates/images/banner_center2.jpg',function(dataUrl) {
+            document.getElementById("center2_holder").textContent = dataUrl;
+        }
+    )
+
+    ///////////////////////// Load input file into div holder
+    function readInputFile(input,div_holder,mode) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                document.getElementById(div_holder).textContent = e.target.result;
+            }
+            if(mode == "image" ){
+                reader.readAsDataURL(input.files[0]);
+            }
+            if(mode == "text" ){
+                reader.readAsText(input.files[0]);
+            }
+        }
+    }
+
+    document.getElementById("top").addEventListener("change", function(){
+        readInputFile(this,"top_holder","image");
+    })
+    document.getElementById("inpage").addEventListener("change", function(){
+        readInputFile(this,"inpage_holder","image");
+    })
+    document.getElementById("cbv").addEventListener("change", function(){
+        readInputFile(this,"cbv_holder","image");
+    })
+    document.getElementById("center1").addEventListener("change", function(){
+        readInputFile(this,"center1_holder","image");
+    })
+    document.getElementById("center2").addEventListener("change", function(){
+        readInputFile(this,"center2_holder","image");
+    })
+    /////////////////////////
+    document.getElementById("zip_button").addEventListener("click", function(){
+        var zip = new JSZip();
+
+        var demo_html = document.getElementById("demo_html_holder").textContent;
+        var demo_img1 = document.getElementById("demo_img1_holder").textContent;
+        var demo_img2 = document.getElementById("demo_img2_holder").textContent;
+        var demo_img3 = document.getElementById("demo_img3_holder").textContent;
+        var demo_img4 = document.getElementById("demo_img4_holder").textContent;
+        var demo_img5 = document.getElementById("demo_img5_holder").textContent;
+        var demo_img6 = document.getElementById("demo_img6_holder").textContent;
+        var demo_img7 = document.getElementById("demo_img7_holder").textContent;
+        var demo_js = document.getElementById("js_qrcode_holder").textContent;
+        /////
+        var data_top = document.getElementById("top_holder").textContent;
+        var data_inpage = document.getElementById("inpage_holder").textContent;
+        var data_cbv = document.getElementById("cbv_holder").textContent;
+        var data_center1 = document.getElementById("center1_holder").textContent;
+        var data_center2 = document.getElementById("center2_holder").textContent;
+        /////
+        var images_folder = zip.folder("images");
+
+        zip.file("index.html", demo_html);
+        zip.file("qrcode.min.js", demo_js);
+        /////
+        images_folder.file("demo01.jpg", demo_img1.substr(demo_img1.indexOf(',')+1), {base64: true});
+        images_folder.file("demo02.jpg", demo_img2.substr(demo_img2.indexOf(',')+1), {base64: true});
+        images_folder.file("demo03.jpg", demo_img3.substr(demo_img3.indexOf(',')+1), {base64: true});
+        images_folder.file("demo04.jpg", demo_img4.substr(demo_img4.indexOf(',')+1), {base64: true});
+        images_folder.file("demo05.jpg", demo_img5.substr(demo_img5.indexOf(',')+1), {base64: true});
+        images_folder.file("demo06.jpg", demo_img6.substr(demo_img6.indexOf(',')+1), {base64: true});
+        images_folder.file("demo07.jpg", demo_img7.substr(demo_img7.indexOf(',')+1), {base64: true});
+        if(data_top !==""){
+            images_folder.file("banner_top.jpg", data_top.substr(data_top.indexOf(',')+1), {base64: true});
+        }
+        if(data_inpage !==""){
+            images_folder.file("banner_inpage.jpg", data_inpage.substr(data_inpage.indexOf(',')+1), {base64: true});
+        }
+        if(data_cbv !==""){
+            images_folder.file("banner_cbv.jpg", data_cbv.substr(data_cbv.indexOf(',')+1), {base64: true});
+        }
+        if(data_center1 !==""){
+            images_folder.file("banner_center1.jpg", data_center1.substr(data_center1.indexOf(',')+1), {base64: true});
+        }
+        if(data_center2 !==""){
+            images_folder.file("banner_center2.jpg", data_center2.substr(data_center2.indexOf(',')+1), {base64: true});
+        }
+
+        var filename = prompt("Đặt tên cho file zip.\nLưu ý: Không nên đặt tên Tiếng Việt có dấu, ký tự lạ, không cần thêm .zip", "banner");
+        if (filename != null) {
+            zip.generateAsync({type:"blob"})
+            .then(function(content) {
+                saveAs(content, filename + ".zip");
+            });
+        }
+    })
+
+</script>
+</body>
+</html>
