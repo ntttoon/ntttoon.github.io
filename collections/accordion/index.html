@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #bedfe8;
+        }
+        .accordion{
+            max-width: 800px;
+        }
+        .accordion .contentBx{
+            position: relative;
+            margin: 10px 20px;
+        }
+        .accordion .contentBx .label{
+            position: relative;
+            padding: 10px;
+            background: #2694af;
+            color: #fff;
+            cursor: pointer;
+        }
+        .accordion .contentBx .label::before{
+            content: '+';
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 1.5em;
+        }
+        .accordion .contentBx.active .label::before{
+            content: '-';
+        }
+        .accordion .contentBx .content{
+            position: relative;
+            background: #fff;
+            height: 0;
+            overflow: hidden;
+            transition: 0.5s;
+            overflow-y: auto;
+        }
+        .accordion .contentBx.active .content{
+            height: 150px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="accordion">
+        <div class="contentBx">
+            <div class="label">List One</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde placeat porro, laudantium dicta consequatur praesentium quas. Praesentium libero maxime et aut temporibus? Accusamus architecto culpa amet fugit sit consequatur veritatis.</p>
+            </div>
+        </div>
+        <div class="contentBx">
+            <div class="label">List Two</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde placeat porro, laudantium dicta consequatur praesentium quas. Praesentium libero maxime et aut temporibus? Accusamus architecto culpa amet fugit sit consequatur veritatis.</p>
+            </div>
+        </div>
+        <div class="contentBx">
+            <div class="label">List Three</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde placeat porro, laudantium dicta consequatur praesentium quas. Praesentium libero maxime et aut temporibus? Accusamus architecto culpa amet fugit sit consequatur veritatis.</p>
+            </div>
+        </div>
+        <div class="contentBx">
+            <div class="label">List Four</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde placeat porro, laudantium dicta consequatur praesentium quas. Praesentium libero maxime et aut temporibus? Accusamus architecto culpa amet fugit sit consequatur veritatis.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const accordion = document.getElementsByClassName('contentBx');
+        for (i = 0; i<accordion.length; i++){
+            accordion[i].addEventListener('click', function(){
+                this.classList.toggle('active')
+            })
+        }
+    </script>
+</body>
+</html>
