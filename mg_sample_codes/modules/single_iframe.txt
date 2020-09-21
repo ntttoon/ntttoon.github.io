@@ -1,0 +1,5 @@
+<div style="width:100%; max-width: 700px; margin: 0 auto;">
+    <div class="mg-iframe-responsive" style="padding-top: 56.25%;">
+      <iframe src="https://image.24h.com.vn/upload/tk/2020/09-21/fysoline/banners/b05/index.html" frameborder="0" scrolling="no"></iframe>
+    </div>
+</div>
