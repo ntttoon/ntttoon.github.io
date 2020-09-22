@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed-Background Parallax Scroll</title>
+    <style>
+        body {
+            margin: 0;
+            border: 0;
+            background-color: #000;
+        }
+
+        #content-block {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .parallax-slide {
+            position: relative;
+            height: 100vh;
+        }
+
+        .parallax-clip {
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            top: 0px;
+            /*clip: rect(auto, auto, auto, auto);*/
+        }
+
+        .fixed-parallax {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-size: cover;
+            background-position: center top;
+            background-attachment: fixed;
+            /* -webkit-transform: translateZ(0); /* necessary for iOS! */
+        }
+
+        /* used only as overlay for the images,
+        darkens it a little in this case */
+        .fixed-parallax:before {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: rgba(0, 0, 0, 0.2);
+            content: "";
+        }
+
+        /* CSS specific to iOS devices */ 
+        @supports (-webkit-overflow-scrolling: touch) {
+            .parallax-clip {
+                clip: rect(auto, auto, auto, auto);
+            }
+            .fixed-parallax {
+                position: fixed;
+                background-attachment: unset;
+                -webkit-transform: translateZ(0); /* necessary for iOS! */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="content-block">
+
+        <div class="content-push">
+
+            <div class="parallax-slide">
+                <div class="parallax-clip">
+                    <div class="fixed-parallax" style="background-image: url(https://picsum.photos/1920/1080/?image=967);"></div>
+                </div>
+            </div>
+            <div class="parallax-slide">
+                <div class="parallax-clip">
+                    <div class="fixed-parallax" style="background-image: url(https://picsum.photos/1920/1080/?image=569);"></div>
+                </div>
+            </div>
+
+            <div class="parallax-slide">
+                <div class="parallax-clip">
+                    <div class="fixed-parallax" style="background-image: url(https://picsum.photos/1920/1080/?image=119);"></div>
+                </div>
+            </div>
+
+            <div class="parallax-slide">
+                <div class="parallax-clip">
+                    <div class="fixed-parallax" style="background-image: url(https://picsum.photos/1920/1080/?image=507);"></div>
+                </div>
+            </div>
+
+        </div>
+</div>
+
+</body>
+</html>
