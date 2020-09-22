@@ -37,7 +37,8 @@
         .mg-row-padding,.mg-row-padding>.mg-half,.mg-row-padding>.mg-third,.mg-row-padding>.mg-twothird,.mg-row-padding>.mg-threequarter,.mg-row-padding>.mg-quarter,.mg-row-padding>.mg-col{padding:0 8px}
         .mg-col,.mg-half,.mg-third,.mg-twothird,.mg-threequarter,.mg-quarter{float:left;width:100%}
         @media (min-width:601px){.mg-quarter{width:24.99999%}.mg-third{width:33.33333%}.mg-half{width:49.99999%}.mg-twothird{width:66.66666%}.mg-threequarter{width:74.99999%}}
-        .mg-video{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}.mg-video iframe,video{position:absolute;top:0;left:0;width:100%;height:100%}
+        .mg-iframe-responsive{position: relative;width: 100%;overflow: hidden}
+        .mg-iframe-responsive iframe,video{position: absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;height: 100%;border: none;}
         .mg-parallax{height: 600px;background-position: 50% 50%;background-repeat: no-repeat;background-attachment: fixed;background-size: cover;}
         .mg-parallax.parallax-img1{background-image: url("images/img1920x900para1.png");}
         .mg-parallax.parallax-img2{background-image: url("images/img1920x900para2.png");}
@@ -114,6 +115,29 @@
         attributes: { class:'gjs-fonts gjs-f-b1' },
         category: 'Magazine',
         content: `<div class="mg-center" data-aos="fade-up" data-aos-duration="1500"><img alt="" class="mg-image" src="images/img980x.png"></div>`
+      });
+      editor.BlockManager.add('iframeDual', {
+        label: '2 iframe pc & mobile',
+        attributes: { class:'gjs-fonts gjs-f-b2' },
+        category: 'Magazine',
+        content: `<div style="width:100%; max-width: 700px; margin: 0 auto;">
+                    <div class="mg-iframe-responsive mg-hide-small" style="padding-top: 56.25%;">
+                      <iframe src="https://image.24h.com.vn/upload/tk/2020/09-21/fysoline/banners/b05/index.html" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                  </div>
+                  <div class="mg-iframe-responsive mg-hide-medium mg-hide-large" style="padding-top: 100%;">
+                      <iframe src="https://image.24h.com.vn/upload/tk/2020/09-21/fysoline/banners/b05m/index.html" frameborder="0" scrolling="no"></iframe>
+                  </div>`
+      });
+      editor.BlockManager.add('iframeSingle', {
+        label: '1 iframe',
+        attributes: { class:'gjs-fonts gjs-f-b1' },
+        category: 'Magazine',
+        content: `<div style="width:100%; max-width: 700px; margin: 0 auto;">
+                    <div class="mg-iframe-responsive" style="padding-top: 56.25%;">
+                      <iframe src="https://image.24h.com.vn/upload/tk/2020/09-21/fysoline/banners/b05/index.html" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                  </div>`
       });
       editor.BlockManager.add('imgSingleHover14', {
         label: '1 ảnh quét sáng',
@@ -255,6 +279,8 @@
         editor.BlockManager.render([
           bm.get('imgDual').set('category', 'Magazine'),
           bm.get('imgSingle').set('category', 'Magazine'),
+          bm.get('iframeDual').set('category', 'Magazine'),
+          bm.get('iframeSingle').set('category', 'Magazine'),
           bm.get('imgSingleHover14').set('category', 'Magazine'),
           bm.get('paraOnly').set('category', 'Magazine'),
           bm.get('para50').set('category', 'Magazine'),
