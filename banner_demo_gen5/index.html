@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo Mobile 24h</title>
+    <link rel="stylesheet" href="../css/w3.css">
+    <script async src="../js_libs/jszip.js"> </script>
+    <script async src="../js_libs/jszip-utils.js"> </script>
+    <script async src="../js_libs/FileSaver.js"> </script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        .hide{
+            display: none;
+        }
+        .floatleft{
+            float: left;
+            margin: 10px;
+        }
+        .divide_five{
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="w3-bar w3-teal">
+        <div class="w3-bar-item">Demo Creating</div>
+    </div>
+    
+    <div class="w3-container">
+        <p></p>
+        <form action="#" id="download_form">
+            <p>
+                <label>
+                    <input type="checkbox" data-url="templates/trangchu.html" data-folder="false" checked />
+                    trangchu.html
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="templates/bv100.html" data-folder="false" checked />
+                    bv100.html
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="templates/bv250.html" data-folder="false" checked />
+                    bv250.html
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="templates/cm100.html" data-folder="false" checked />
+                    cm100.html
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="templates/cm250.html" data-folder="false" checked />
+                    cm250.html
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="templates/images/top_menu.jpg" data-folder="true" checked />
+                    top_menu.jpg
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="templates/images/trangchu.jpg" data-folder="true" checked />
+                    trangchu.jpg
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="templates/images/bv100.jpg" data-folder="true" checked />
+                    bv100.jpg
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="templates/images/bv250.jpg" data-folder="true" checked />
+                    bv250.jpg
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="templates/images/cm100.jpg" data-folder="true" checked />
+                    cm100.jpg
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="templates/images/cm250.jpg" data-folder="true" checked />
+                    cm250.jpg
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" data-url="templates/jquery.sticky.js" data-folder="false" checked />
+                    jquery.sticky.js
+                </label>
+            </p>
+            <button type="submit" class="w3-button w3-red">Save file</button>
+        </form>
+        <hr>
+        <div class="w3-cell-row">
+            <div class="w3-container w3-cell w3-teal w3-mobile">
+                <p>
+                    <label>Upload big bg</label>
+                    <input type="file" id="imageLoader"/>
+                </p>
+                <p>
+                    <label>Upload small bg</label>
+                    <input type="file" id="imageLoader2"/>
+                </p>
+            </div>
+            <div class="w3-container w3-cell w3-green w3-mobile">
+                <div>Upload tttc 696x120</div>
+                <input class="w3-input" id="tttc" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div>Upload chanbv 696x120</div>
+                <input class="w3-input" id="chanbv" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div>Upload hot 336x280</div>
+                <input class="w3-input" id="hot" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            </div>
+            <div class="w3-container w3-cell w3-light-green w3-mobile">
+                <div>Upload right1 300x600</div>
+                <input class="w3-input" id="right1" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div>Upload right2 300x250</div>
+                <input class="w3-input" id="right2" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div>Upload sticky 300x600</div>
+                <input class="w3-input" id="sticky" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            </div>
+        </div>
+    </div>
+
+    <div style="display: none" id="tttc_holder"></div>
+    <div style="display: none" id="chanbv_holder"></div>
+    <div style="display: none" id="hot_holder"></div>
+    <div style="display: none" id="right1_holder"></div>
+    <div style="display: none" id="right2_holder"></div>
+    <div style="display: none" id="sticky_holder"></div>
+
+    <div class="w3-row">
+        <div class="w3-half w3-container">
+            <div>Ảnh chứa bg kt lớn</div>
+            <canvas id="imageCanvas" style="width: 100%;"></canvas>
+        </div>
+        <div class="w3-half w3-container">
+            <div>Ảnh chứa bg kt nhỏ</div>
+            <canvas id="imageCanvas2" style="width: 100%;"></canvas>
+        </div>
+    </div>
+    <br>
+    <canvas id="left_to" class="hide floatleft" width="444" height="1040"></canvas>
+    <canvas id="right_to" class="hide floatleft" width="444" height="1040"></canvas>
+    <canvas id="left_nho" class="hide floatleft" width="205" height="900"></canvas>
+    <canvas id="right_nho" class="hide floatleft" width="205" height="900"></canvas>
+    <canvas id="top100" class="hide floatleft" width="1016" height="100"></canvas>
+    <canvas id="top250" class="hide floatleft" width="1016" height="250"></canvas>
+    <div class="w3-row">
+        <div class="w3-col w3-container divide_five">
+            <div>Bg trái 444x1040</div>
+            <img id="img_left_to_holder" class="w3-image">
+        </div>
+        <div class="w3-col w3-container divide_five">
+            <div>Bg phải 444x1040</div>
+            <img id="img_right_to_holder" class="w3-image">
+        </div>
+        <div class="w3-col w3-container divide_five">
+            <div>Bg trái 205x900</div>
+            <img id="img_left_nho_holder" class="w3-image">
+        </div>
+        <div class="w3-col w3-container divide_five">
+            <div>Bg phải 205x900</div>
+            <img id="img_right_nho_holder" class="w3-image">
+        </div>
+    </div>
+    <div class="w3-row">
+        <div class="w3-half w3-container">
+            <div>Top 1016x100</div>
+            <img id="img_top100_holder" class="w3-image">
+        </div>
+        <div class="w3-half w3-container">
+            <div>Top 1016x250</div>
+            <img id="img_top250_holder" class="w3-image">
+        </div>
+    </div>
+
+<script>
+    var imageLoader = document.getElementById('imageLoader');
+    imageLoader.addEventListener('change', handleImage, false);
+    //////////
+    var imageLoader2 = document.getElementById('imageLoader2');
+    imageLoader2.addEventListener('change', handleImage2, false);
+    //////////
+    var canvas = document.getElementById('imageCanvas');
+    var canvas2 = document.getElementById('imageCanvas2');
+    //////////
+    var ctx = canvas.getContext('2d');
+    var ctx2 = canvas2.getContext('2d');
+    //////////
+    var left_to = document.getElementById('left_to');
+    var left_to_ctx = left_to.getContext('2d');
+    var left_nho = document.getElementById('left_nho');
+    var left_nho_ctx = left_nho.getContext('2d');
+    var right_to = document.getElementById('right_to');
+    var right_to_ctx = right_to.getContext('2d');
+    var right_nho = document.getElementById('right_nho');
+    var right_nho_ctx = right_nho.getContext('2d');
+    var top100 = document.getElementById('top100');
+    var top100_ctx = top100.getContext('2d');
+    var top250 = document.getElementById('top250');
+    var top250_ctx = top250.getContext('2d');
+    //////////////////////////////
+    function handleImage(e){
+        var reader = new FileReader();
+        reader.onload = function(event){
+            var img = new Image();
+            img.onload = function(){
+                canvas.width = img.width;
+                canvas.height = img.height;
+                ctx.drawImage(img,0,0);
+                left_to_ctx.drawImage(img,0,0,444,1040,0,0,444,1040);
+                right_to_ctx.drawImage(img,1460,0,444,1040,0,0,444,1040);
+                top100_ctx.drawImage(img,444,0,1016,100,0,0,1016,100);
+                top250_ctx.drawImage(img,444,0,1016,250,0,0,1016,250);
+                document.getElementById("img_left_to_holder").src = left_to.toDataURL("image/jpeg",1);
+                document.getElementById("img_right_to_holder").src = right_to.toDataURL("image/jpeg",1);
+                document.getElementById("img_top100_holder").src = top100.toDataURL("image/jpeg",1);
+                document.getElementById("img_top250_holder").src = top250.toDataURL("image/jpeg",1);
+            }
+            img.src = event.target.result;
+        }
+        reader.readAsDataURL(e.target.files[0]);     
+    }
+    //////////////////////////////
+    function handleImage2(e){
+        var reader = new FileReader();
+        reader.onload = function(event){
+            var img = new Image();
+            img.onload = function(){
+                canvas2.width = img.width;
+                canvas2.height = img.height;
+                ctx2.drawImage(img,0,0);
+                left_nho_ctx.drawImage(img,239,0,205,900,0,0,205,900);
+                right_nho_ctx.drawImage(img,1460,0,205,900,0,0,205,900);
+                document.getElementById("img_left_nho_holder").src = left_nho.toDataURL("image/jpeg",1);
+                document.getElementById("img_right_nho_holder").src = right_nho.toDataURL("image/jpeg",1);
+            }
+            img.src = event.target.result;
+        }
+        reader.readAsDataURL(e.target.files[0]);     
+    }
+</script>
+<script>
+    ///////////////////////// Load input file into div holder
+    function readInputFile(input,div_holder,mode) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                document.getElementById(div_holder).textContent = e.target.result;
+            }
+            if(mode == "image" ){
+                reader.readAsDataURL(input.files[0]);
+            }
+            if(mode == "text" ){
+                reader.readAsText(input.files[0]);
+            }
+        }
+    }
+
+    document.getElementById("tttc").addEventListener("change", function(){
+        readInputFile(this,"tttc_holder","image");
+    })
+    document.getElementById("chanbv").addEventListener("change", function(){
+        readInputFile(this,"chanbv_holder","image");
+    })
+    document.getElementById("hot").addEventListener("change", function(){
+        readInputFile(this,"hot_holder","image");
+    })
+    document.getElementById("right1").addEventListener("change", function(){
+        readInputFile(this,"right1_holder","image");
+    })
+    document.getElementById("right2").addEventListener("change", function(){
+        readInputFile(this,"right2_holder","image");
+    })
+    document.getElementById("sticky").addEventListener("change", function(){
+        readInputFile(this,"sticky_holder","image");
+    })
+    /////////////////////////
+    var Promise = window.Promise;
+    if (!Promise) {
+        Promise = JSZip.external.Promise;
+    }
+
+    /**
+    * Fetch the content and return the associated promise.
+    * @param {String} url the url of the content to fetch.
+    * @return {Promise} the promise containing the data.
+    */
+    function urlToPromise(url) {
+        return new Promise(function(resolve, reject) {
+            JSZipUtils.getBinaryContent(url, function (err, data) {
+                if(err) {
+                    reject(err);
+                } else {
+                    resolve(data);
+                }
+            });
+        });
+    }
+
+    var $form = $("#download_form").on("submit", function () {
+
+        var zip = new JSZip();
+        var assets = zip.folder("images");
+        var data_left_to = document.getElementById("img_left_to_holder").src;
+        var data_left_nho = document.getElementById("img_left_nho_holder").src;
+        var data_right_to = document.getElementById("img_right_to_holder").src;
+        var data_right_nho = document.getElementById("img_right_nho_holder").src;
+        var data_top100 = document.getElementById("img_top100_holder").src;
+        var data_top250 = document.getElementById("img_top250_holder").src;
+        var data_tttc = document.getElementById("tttc_holder").textContent;
+        var data_chanbv = document.getElementById("chanbv_holder").textContent;
+        var data_hot = document.getElementById("hot_holder").textContent;
+        var data_right1 = document.getElementById("right1_holder").textContent;
+        var data_right2 = document.getElementById("right2_holder").textContent;
+        var data_sticky = document.getElementById("sticky_holder").textContent;
+        ///////////
+        if( document.getElementById("tttc").files.length !== 0 ){
+            assets.file("696120.jpg", data_tttc.substr(data_tttc.indexOf(',')+1), {base64: true});
+        }
+        if( document.getElementById("chanbv").files.length !== 0 ){
+            assets.file("chanbv.jpg", data_chanbv.substr(data_chanbv.indexOf(',')+1), {base64: true});
+        }
+
+        if( document.getElementById("hot").files.length !== 0 ){
+            assets.file("336280.jpg", data_hot.substr(data_hot.indexOf(',')+1), {base64: true});
+        }
+
+        if( document.getElementById("right1").files.length !== 0 ){
+            assets.file("300600.jpg", data_right1.substr(data_right1.indexOf(',')+1), {base64: true});
+        }
+
+        if( document.getElementById("right2").files.length !== 0 ){
+            assets.file("300250.jpg", data_right2.substr(data_right2.indexOf(',')+1), {base64: true});
+        }
+
+        if( document.getElementById("sticky").files.length !== 0 ){
+            assets.file("sticky.jpg", data_sticky.substr(data_sticky.indexOf(',')+1), {base64: true});
+        }
+        if( document.getElementById("imageLoader").files.length !== 0 ){
+            assets.file("left_to.jpg", data_left_to.substr(data_left_to.indexOf(',')+1), {base64: true});
+            assets.file("right_to.jpg", data_right_to.substr(data_right_to.indexOf(',')+1), {base64: true});
+            assets.file("1016100.jpg", data_top100.substr(data_top100.indexOf(',')+1), {base64: true});
+            assets.file("1016250.jpg", data_top250.substr(data_top250.indexOf(',')+1), {base64: true});
+        }
+        if( document.getElementById("imageLoader2").files.length !== 0 ){
+            assets.file("left_nho.jpg", data_left_nho.substr(data_left_nho.indexOf(',')+1), {base64: true});
+            assets.file("right_nho.jpg", data_right_nho.substr(data_right_nho.indexOf(',')+1), {base64: true});
+        }
+        // find every checked item
+        $(this).find(":checked").each(function () {
+            var $this = $(this);
+            var url = $this.data("url");
+            var filename = url.replace(/.*\//g, "");
+            var checkfolder = $this.data("folder");
+            if(checkfolder == true){
+                zip.file("images/" + filename, urlToPromise(url), {binary:true});
+            }else{
+                zip.file(filename, urlToPromise(url), {binary:true});
+            }
+        });
+
+        // when everything has been downloaded, we can trigger the dl
+        zip.generateAsync({type:"blob"}, function updateCallback(metadata) {
+            var msg = "progression : " + metadata.percent.toFixed(2) + " %";
+            if(metadata.currentFile) {
+                msg += ", current file = " + metadata.currentFile;
+            }
+        })
+        .then(function callback(blob) {
+            var filename = prompt("Input file's name without .zip", "banner");
+            if (filename != null) {
+                zip.generateAsync({type:"blob"})
+                .then(function(content) {
+                    saveAs(content, filename + ".zip");
+                });
+            }
+        }, function (e) {
+            alert(e);
+        });
+        return false;
+    });
+
+</script>
+</body>
+</html>

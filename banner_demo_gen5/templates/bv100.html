@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Demo</title>
+<style>
+*{margin:0;padding:0}
+#bg{width:1016px;height:5968px;margin:0 auto;background:url(images/bv100.jpg) no-repeat;}
+#fullpage_wrapper{width:1904px;position:fixed;left:50%;top:0%;transform:translate(-50%, 0%);}
+#left_wrapper{width:710px;position:relative;float:left}
+#right_wrapper{width:306px;position:relative;float:right}
+#phaicodinh1{width:300px;height:600px;position: relative; top:164px}
+#phaicodinh2{width:300px;height:250px;position: relative; top:595px}
+#sticky{width:300px;height:600px}
+#top100{width:1016px;height:250px;position: relative; top:50px}
+#chanbv{width:696px;height:120px;position: relative; top:2085px; left:6px}
+#hot{width:336px;height:280px;position: relative; top:2939px; left:6px}
+#top_menu{width:2000px;height:50px;position:fixed;left:50%;top:0%;transform:translate(-50%, 0%);z-index:9999;background: #bbbbbb;transition: top 0.2s;}
+.bg_area{width:444px;height:1040px;margin-top:50px;transition: all 0.2s;}
+.bg_area_small{width:205px;margin-top:50px;display:none;transition: all 0.2s;}
+@media screen and (max-width: 1366px) {
+    #fullpage_wrapper {
+      width:1426px !important;
+    }
+    .bg_area{
+      display:none !important;
+    }
+    .bg_area_small{
+      display:block !important;
+    }
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="jquery.sticky.js"></script>
+</head>
+
+<body>
+<div id="top_menu"><img src="images/top_menu.jpg"></div>
+<div id="fullpage_wrapper">
+  <div style="float:left">
+    <div class="bg_area"><img src="images/left_to.jpg" width="444px"></div>
+    <div class="bg_area_small"><img src="images/left_nho.jpg" width="205px"></div>
+  </div>
+  <div style="float:right">
+    <div class="bg_area"><img src="images/right_to.jpg" width="444px"></div>
+    <div class="bg_area_small"><img src="images/right_nho.jpg" width="205px"></div>
+  </div>
+</div>
+  <div id="bg">
+    <div id="left_wrapper">
+      <div id="top100"><img src="images/1016100.jpg" width="1016px"></div>
+      <div id="chanbv"><img src="images/chanbv.jpg" width="696px"></div>
+      <div id="hot"><img src="images/336280.jpg" width="336px"></div>
+    </div>
+    <div id="right_wrapper">
+      <div id="phaicodinh1"><img src="images/300600.jpg" width="300px"></div>
+      <div id="phaicodinh2"><img src="images/300250.jpg" width="300px"></div>
+      <div style="height:1135px"></div>
+      <div id="sticky"><img src="images/sticky.jpg" width="300px"></div>
+    </div>
+  </div>
+<script>
+  $(document).ready(function(){
+    $("#sticky").sticky({topSpacing:0,bottomSpacing:380});
+  });
+</script>
+<script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (currentScrollPos == 0 ) {
+      //document.getElementById("top_menu").style.top = "0";
+      $("#top_menu").css('top',0);
+      $(".bg_area").css('margin-top',"50px");
+      $(".bg_area_small").css('margin-top',"50px");
+    } else {
+      //document.getElementById("top_menu").style.top = "-50px";
+      $("#top_menu").css('top',"-50px");
+      $(".bg_area").css("margin-top","0px");
+      $(".bg_area_small").css("margin-top","0px");
+    }
+    prevScrollpos = currentScrollPos;
+  }
+</script>
+</body>
+</html>
