@@ -29,66 +29,75 @@
     </div>
     
     <div class="w3-container">
-        <p></p>
+        <p>
+            <div>Chọn Demo</div>
+            <select id="demochoice">
+                <option value="1" selected>Trang chủ</option>
+                <option value="2" >Trang bài viết top 100</option>
+                <option value="3" >Trang bài viết top 250</option>
+                <option value="4" >Trang chuyên mục top 100</option>
+                <option value="5" >Trang chuyên mục top 250</option>
+            </select>
+        </p>
         <form action="#" id="download_form">
             <p>
                 <label>
-                    <input type="checkbox" data-url="templates/trangchu.html" data-folder="false" checked />
+                    <input type="checkbox" id="check_trangchu" data-url="templates/trangchu.html" data-folder="false" checked />
                     trangchu.html
                 </label>
                 <br>
                 <label>
-                    <input type="checkbox" data-url="templates/bv100.html" data-folder="false" checked />
+                    <input type="checkbox" id="check_bv100" data-url="templates/bv100.html" data-folder="false" />
                     bv100.html
                 </label>
                 <br>
                 <label>
-                    <input type="checkbox" data-url="templates/bv250.html" data-folder="false" checked />
+                    <input type="checkbox" id="check_bv250" data-url="templates/bv250.html" data-folder="false" />
                     bv250.html
                 </label>
                 <br>
                 <label>
-                    <input type="checkbox" data-url="templates/cm100.html" data-folder="false" checked />
+                    <input type="checkbox" id="check_cm100" data-url="templates/cm100.html" data-folder="false" />
                     cm100.html
                 </label>
                 <br>
                 <label>
-                    <input type="checkbox" data-url="templates/cm250.html" data-folder="false" checked />
+                    <input type="checkbox" id="check_cm250" data-url="templates/cm250.html" data-folder="false" />
                     cm250.html
                 </label>
                 <br>
                 <label>
-                    <input type="checkbox" data-url="templates/images/top_menu.jpg" data-folder="true" checked />
+                    <input type="checkbox" id="check_top_menu" class="hide" data-url="templates/images/top_menu.jpg" data-folder="true" checked />
                     top_menu.jpg
                 </label>
                 <br>
                 <label>
-                    <input type="checkbox" data-url="templates/images/trangchu.jpg" data-folder="true" checked />
+                    <input type="checkbox" id="check_trangchu_jpg" data-url="templates/images/trangchu.jpg" data-folder="true" checked />
                     trangchu.jpg
                 </label>
                 <br>
                 <label>
-                    <input type="checkbox" data-url="templates/images/bv100.jpg" data-folder="true" checked />
+                    <input type="checkbox" id="check_bv100_jpg" data-url="templates/images/bv100.jpg" data-folder="true" />
                     bv100.jpg
                 </label>
                 <br>
                 <label>
-                    <input type="checkbox" data-url="templates/images/bv250.jpg" data-folder="true" checked />
+                    <input type="checkbox" id="check_bv250_jpg" data-url="templates/images/bv250.jpg" data-folder="true" />
                     bv250.jpg
                 </label>
                 <br>
                 <label>
-                    <input type="checkbox" data-url="templates/images/cm100.jpg" data-folder="true" checked />
+                    <input type="checkbox" id="check_cm100_jpg" data-url="templates/images/cm100.jpg" data-folder="true" />
                     cm100.jpg
                 </label>
                 <br>
                 <label>
-                    <input type="checkbox" data-url="templates/images/cm250.jpg" data-folder="true" checked />
+                    <input type="checkbox" id="check_cm250_jpg" data-url="templates/images/cm250.jpg" data-folder="true" />
                     cm250.jpg
                 </label>
                 <br>
                 <label>
-                    <input type="checkbox" data-url="templates/jquery.sticky.js" data-folder="false" checked />
+                    <input type="checkbox" id="check_sticky" class="hide" data-url="templates/jquery.sticky.js" data-folder="false" checked />
                     jquery.sticky.js
                 </label>
             </p>
@@ -245,6 +254,31 @@
     }
 </script>
 <script>
+    function setUncheck(){
+        $("#check_trangchu, #check_bv100, #check_bv250, #check_cm100, #check_cm250, #check_trangchu_jpg, #check_bv100_jpg, #check_bv250_jpg, #check_cm100_jpg, #check_cm250_jpg").prop( "checked", false );
+    }
+    $( "#demochoice" ).change(function() {
+        if(this.value == 1){
+            setUncheck();
+            $("#check_trangchu, #check_trangchu_jpg").prop( "checked", true );
+        }
+        if(this.value == 2){
+            setUncheck();
+            $("#check_bv100, #check_bv100_jpg").prop( "checked", true );
+        }
+        if(this.value == 3){
+            setUncheck();
+            $("#check_bv250, #check_bv250_jpg").prop( "checked", true );
+        }
+        if(this.value == 4){
+            setUncheck();
+            $("#check_cm100, #check_cm100_jpg").prop( "checked", true );
+        }
+        if(this.value == 5){
+            setUncheck();
+            $("#check_cm250, #check_cm250_jpg").prop( "checked", true );
+        }
+    });
     ///////////////////////// Load input file into div holder
     function readInputFile(input,div_holder,mode) {
         if (input.files && input.files[0]) {
