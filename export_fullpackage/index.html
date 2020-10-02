@@ -41,7 +41,12 @@
             <input type="file" id="imageLoader"/>
             <label>Chọn ảnh chứa bg kt nhỏ</label>
             <input type="file" id="imageLoader2"/>
-
+        </p>
+        <p>
+            <div style="width: 300px; margin-right: 100px;" class="w3-text-white w3-left">
+                <span id="sliderOutput">Chất lượng ảnh: 1</span>
+                <input type="range" min="0.7" max="1" value="1" step="0.01" class="w3-input" id="qualitySlider">
+            </div>
             <button class="w3-button w3-blue" id="zip_btn">Pack it!</button>
         </p>
         <p style="text-align: center;font-weight: bold;font-size: 18px;color: red;">Lưu ý phần gắn Tracking Impression và Click, các anh chị copy đúng và chính xác, không thừa các ký tự lạ như dấu nháy đơn ' hoặc dấu nháy kép ". Nhắc KD kiểm tra số liệu. <br>Không có Tracking thì để dấu #</p>
@@ -137,6 +142,23 @@
         var top100_ctx = top100.getContext('2d');
         var top250 = document.getElementById('top250');
         var top250_ctx = top250.getContext('2d');
+        //////////
+        var imgPerOut = document.getElementById('sliderOutput');
+        var imgSlider = document.getElementById('qualitySlider');
+        var imgQuality = 1;
+        imgSlider.oninput = function() {
+            imgPerOut.innerHTML = 'Chất lượng ảnh: '+ this.value;
+            imgQuality = Number(this.value);
+            document.getElementById("left_to_jpg").src = '';
+            document.getElementById("right_to_jpg").src = '';
+            document.getElementById("left_to_jpg").src = left_to.toDataURL("image/jpeg",imgQuality);
+            document.getElementById("right_to_jpg").src = right_to.toDataURL("image/jpeg",imgQuality);
+            document.getElementById("phai1_jpg").src = phai1.toDataURL("image/jpeg",imgQuality);
+            document.getElementById("top100_jpg").src = top100.toDataURL("image/jpeg",imgQuality);
+            document.getElementById("top250_jpg").src = top250.toDataURL("image/jpeg",imgQuality);
+            document.getElementById("left_nho_jpg").src = left_nho.toDataURL("image/jpeg",imgQuality);
+            document.getElementById("right_nho_jpg").src = right_nho.toDataURL("image/jpeg",imgQuality);
+        }
         //////////////////////////////
         function handleImage(e){
             var reader = new FileReader();
@@ -153,13 +175,13 @@
                     phai1_ctx.drawImage(img,1154,24,300,600,0,0,300,600);
                     top100_ctx.drawImage(img,444,0,1016,100,0,0,1016,100);
                     top250_ctx.drawImage(img,444,0,1016,250,0,0,1016,250);
-                    document.getElementById("left_to_jpg").src = left_to.toDataURL("image/jpeg",1);
-                    document.getElementById("right_to_jpg").src = right_to.toDataURL("image/jpeg",1);
+                    document.getElementById("left_to_jpg").src = left_to.toDataURL("image/jpeg",imgQuality);
+                    document.getElementById("right_to_jpg").src = right_to.toDataURL("image/jpeg",imgQuality);
                     //document.getElementById("left_nho_jpg").src = left_nho.toDataURL("image/jpeg",1);
                     //document.getElementById("right_nho_jpg").src = right_nho.toDataURL("image/jpeg",1);
-                    document.getElementById("phai1_jpg").src = phai1.toDataURL("image/jpeg",1);
-                    document.getElementById("top100_jpg").src = top100.toDataURL("image/jpeg",1);
-                    document.getElementById("top250_jpg").src = top250.toDataURL("image/jpeg",1);
+                    document.getElementById("phai1_jpg").src = phai1.toDataURL("image/jpeg",imgQuality);
+                    document.getElementById("top100_jpg").src = top100.toDataURL("image/jpeg",imgQuality);
+                    document.getElementById("top250_jpg").src = top250.toDataURL("image/jpeg",imgQuality);
                 }
                 img.src = event.target.result;
             }
@@ -176,8 +198,8 @@
                     ctx2.drawImage(img,0,0);
                     left_nho_ctx.drawImage(img,239,0,205,900,0,0,205,900);
                     right_nho_ctx.drawImage(img,1460,0,205,900,0,0,205,900);
-                    document.getElementById("left_nho_jpg").src = left_nho.toDataURL("image/jpeg",1);
-                    document.getElementById("right_nho_jpg").src = right_nho.toDataURL("image/jpeg",1);
+                    document.getElementById("left_nho_jpg").src = left_nho.toDataURL("image/jpeg",imgQuality);
+                    document.getElementById("right_nho_jpg").src = right_nho.toDataURL("image/jpeg",imgQuality);
                 }
                 img.src = event.target.result;
             }
@@ -271,6 +293,7 @@
             zip.file("bg_premium/right/right_html.html", data_html);
             zip.file("bg_premium/right/right_to.jpg", data_right_to.substr(data_right_to.indexOf(',')+1), {base64: true});
             zip.file("bg_premium/right/right_nho.jpg", data_right_nho.substr(data_right_nho.indexOf(',')+1), {base64: true});
+            alert("+ bg trái to: " + Math.round(((data_left_to.length * 0.75)/1000)) + "\n+ bg trái nhỏ: " + Math.round(((data_left_nho.length * 0.75)/1000)) + "\n+ bg phải to: " + Math.round(((data_right_to.length * 0.75)/1000)) + "\n+ bg phải nhỏ: " + Math.round(((data_right_nho.length * 0.75)/1000)));
             if(type_pack == 1){
                 var data_phai1 = document.getElementById("phai1_jpg").src;
                 zip.file("bg_premium/300600/300600.html", data_html);
