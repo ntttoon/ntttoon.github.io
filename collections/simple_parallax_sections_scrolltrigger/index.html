@@ -25,6 +25,7 @@
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
+            -webkit-transform: translateZ(0); /* necessary for iOS! */
         }
         h1 {
             color: white;
@@ -62,7 +63,7 @@
     section.bg = section.querySelector(".bg"); 
 
     // Give the backgrounds some random images
-    section.bg.style.backgroundImage = `url(https://images.pexels.com/photos/787472/pexels-photo-787472.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)`;
+    section.bg.style.backgroundImage = `url(https://picsum.photos/${innerWidth}/${innerHeight}?random=${i})`;
 
     // Do the parallax effect on each section
     if (i) {
