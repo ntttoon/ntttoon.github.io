@@ -167,10 +167,12 @@
         </div>
 </div>
 <script>
-    $(window).scroll(function(){
-        var fromtop = $(window).scrollTop();
-        $("content-block").css({"background-position-y": fromtop+"px"});
-    });
+    function resizeBackground() {
+        $(".fixed-parallax").height(($(window).height() + 60) + "px");
+    }
+
+    $(window).resize(resizeBackground);
+    resizeBackground();
 </script>
 </body>
 </html>
