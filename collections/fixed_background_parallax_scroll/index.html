@@ -171,7 +171,7 @@
     var bg = $(".parallax-clip");
 
     function resizeBackground() {
-        bg.height( $(window).height() + 60);
+        $(".parallax-clip").height(($(window).height() + 60) + "px");
     }
 
     $(window).resize(resizeBackground);
