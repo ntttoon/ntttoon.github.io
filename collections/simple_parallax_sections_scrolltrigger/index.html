@@ -34,6 +34,14 @@
             font-size: 3em;
             font-weight: 400;
         }
+        /* CSS specific to iOS devices */ 
+        @supports (-webkit-overflow-scrolling: touch) {
+            .fixed-bg {
+                position: fixed;
+                background-attachment: unset;
+                -webkit-transform: translateZ(0); /* necessary for iOS! */
+            }
+        }
     </style>
 </head>
 <body>
