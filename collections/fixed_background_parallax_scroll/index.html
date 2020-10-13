@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Fixed-Background Parallax Scroll</title>
     <style>
         *{
@@ -16,8 +17,6 @@
         #content-block {
             position: relative;
             overflow: hidden;
-            overflow-y: scroll;
-            -webkit-overflow-scrolling: touch;
         }
 
         .parallax-slide {
@@ -44,6 +43,7 @@
             background-position: 50%;
             background-attachment: fixed;
             -webkit-transform: translateZ(0); /* necessary for iOS! */
+            transition: height 999999s;
         }
 
         /* used only as overlay for the images,
@@ -167,6 +167,15 @@
 
         </div>
 </div>
+<script>
+    var bg = $(".fixed-parallax");
 
+    function resizeBackground() {
+        bg.height( $(window).height() + 60);
+    }
+
+    $(window).resize(resizeBackground);
+    resizeBackground();
+</script>
 </body>
 </html>
