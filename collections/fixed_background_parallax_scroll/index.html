@@ -167,14 +167,10 @@
         </div>
 </div>
 <script>
-    var bg = $(".parallax-clip");
-
-    function resizeBackground() {
-        $(".parallax-clip").height(($(window).height() + 60) + "px");
-    }
-
-    $(window).resize(resizeBackground);
-    resizeBackground();
+    $(window).scroll(function(){
+        var fromtop = $(window).scrollTop();
+        $("content-block").css({"background-position-y": fromtop+"px"});
+    });
 </script>
 </body>
 </html>
