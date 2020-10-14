@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive HorizontalPage Scrolling</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
         *{
             margin: 0;
@@ -59,9 +60,8 @@
         @supports (-webkit-overflow-scrolling: touch) {
             .container{
                 position: absolute;
-                display: flex;
-                flex-direction: column;
                 height: auto;
+                overflow-x: scroll;
                 -webkit-transform:none!important;
             }
         }
@@ -83,25 +83,28 @@
         </section>
         <section class="bgcolor3">
             <div class="content">
-                <h2>Section 3</h2>
+                <h2 data-aos="fade-up" data-aos-duration="1500" data-aos-offset="800" data-aos-delay="300">Section 3</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aspernatur repellendus aliquid modi voluptatem dolorum, iure itaque praesentium accusamus! Ad quos, enim deserunt fugiat sapiente placeat. Blanditiis veniam eaque a.</p>
             </div>
         </section>
         <section class="bgcolor4">
             <div class="content">
-                <h2>Section 4</h2>
+                <h2 data-aos="fade-down" data-aos-duration="1500" data-aos-offset="1000" data-aos-delay="300">Section 4</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aspernatur repellendus aliquid modi voluptatem dolorum, iure itaque praesentium accusamus! Ad quos, enim deserunt fugiat sapiente placeat. Blanditiis veniam eaque a.</p>
             </div>
         </section>
         <section class="bgcolor5">
             <div class="content">
-                <h2>Section 5</h2>
+                <h2 data-aos="fade-left" data-aos-duration="1500" data-aos-offset="1200" data-aos-delay="300">Section 5</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aspernatur repellendus aliquid modi voluptatem dolorum, iure itaque praesentium accusamus! Ad quos, enim deserunt fugiat sapiente placeat. Blanditiis veniam eaque a.</p>
             </div>
         </section>
 </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script type="text/javascript" src="skrollr.js"></script>
-	<script type="text/javascript">
+    <script type="text/javascript">
+        AOS.init();
 	    skrollr.init();
 	</script>
 </body>
