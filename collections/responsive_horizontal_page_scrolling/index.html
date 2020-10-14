@@ -55,6 +55,16 @@
         .bgcolor5{
             background: #fffee1;
         }
+        /* CSS specific to iOS devices */ 
+        @supports (-webkit-overflow-scrolling: touch) {
+            .container{
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                transform: none !important;
+            }
+        }
     </style>
 </head>
 <body>
