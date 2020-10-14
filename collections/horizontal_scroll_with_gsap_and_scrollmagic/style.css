@@ -20,10 +20,10 @@ html {
 }
 
 .section {
-  height: 100%;
   width: calc( 100% / 5 );
   float: left;
   position: relative;
+  height: 100vh;
 }
 .section:nth-child(1) {
   background: #F64747;
