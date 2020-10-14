@@ -95,7 +95,11 @@
 
     <script type="text/javascript" src="skrollr.js"></script>
 	<script type="text/javascript">
-	    skrollr.init();
+	    if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+skrollr.init({
+forceHeight: false
+});
+}
 	</script>
 </body>
 </html>
