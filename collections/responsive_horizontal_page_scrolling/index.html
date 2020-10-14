@@ -17,7 +17,6 @@
             left: 0;
             width: 100%;
             display: flex;
-            -webkit-overflow-scrolling: touch;
         }
         .container section{
             min-width: 100%;
@@ -26,6 +25,8 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            overflow-x: scroll; /* Must be 'scroll' not 'auto' */
+            -webkit-overflow-scrolling: touch;
         }
         .container section .content{
             max-width: 800px;
