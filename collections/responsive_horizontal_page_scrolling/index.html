@@ -17,6 +17,8 @@
             left: 0;
             width: 100%;
             display: flex;
+            overflow-x: scroll; /* Must be 'scroll' not 'auto' */
+            -webkit-overflow-scrolling: touch;
         }
         .container section{
             min-width: 100%;
@@ -93,7 +95,7 @@
 
     <script type="text/javascript" src="skrollr.js"></script>
 	<script type="text/javascript">
-	    var s = skrollr.init();
+	    skrollr.init();
 	</script>
 </body>
 </html>
