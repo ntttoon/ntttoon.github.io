@@ -127,9 +127,12 @@
             </div>
         </div>
         <div class="bgimg-wrapper mark3">
-            <div class="bgimg"
+            <video id="myvid1" width="100%" muted loop>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            </video>
+            <!-- <div class="bgimg"
                 style="background-image: url(https://images.pexels.com/photos/5408840/pexels-photo-5408840.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);">
-            </div>
+            </div> -->
         </div>
         <div class="bgimg-wrapper mark2">
             <div class="bgimg"
@@ -143,6 +146,17 @@
         </div>
     <!-- bg image end -->    
 </div>
+<script>
+    function playVid1(){
+        $("#myvid1").get(0).play();
+    }
+    function stopAllVid(){
+        $("video").each(function(){
+            $(this).get(0).pause();
+        });
+    }
+</script>
+
 <script>
     // gsap.timeline({
     //     scrollTrigger: {
@@ -172,13 +186,15 @@
     gsap.to(".mark2", {
         scrollTrigger: "#s3 .content", 
         duration: 0.5, 
-        opacity: 0
+        opacity: 0,
+        onStart:playVid1
     });
 
     gsap.to(".mark3", {
         scrollTrigger: "#s4 .content", 
         duration: 0.5, 
-        opacity: 0
+        opacity: 0,
+        onComplete:stopAllVid
     });
 
     gsap.to(".mark4", {
