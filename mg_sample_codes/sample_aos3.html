@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+  <title>template aos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    body{margin:0}
+    .mg-font{font-family:"Noto Serif",serif!important;font-size:18px!important;line-height:1.6}
+    .mg-h1{font-size:36px}.mg-h2{font-size:30px}.mg-h3{font-size:24px}.mg-h4{font-size:20px}.mg-h5{font-size:18px}.mg-h6{font-size:16px}
+    .mg-hr{border:0;border-top:1px solid #ccc;margin:20px 0}
+    .mg-hr5{border:0;border-top:5px solid #ccc;margin:20px 0}
+    .mg-image{max-width:100%;height:auto;vertical-align: middle;}
+    .mg-container{padding:0.01em 16px}
+    .mg-content{margin-left:auto;margin-right:auto;max-width:980px}
+    .mg-content700{margin-left:auto;margin-right:auto;max-width:700px}
+    .mg-left-align{text-align:left!important}.mg-right-align{text-align:right!important}.mg-justify{text-align:justify!important}.mg-center{text-align:center!important}
+    .mg-left{float:left!important}.mg-right{float:right!important}
+    .mg-margin-tb{margin-top:16px!important;margin-bottom:16px!important}
+    .mg-padding-tb{padding-top:16px!important;padding-bottom:16px!important}
+    .mg-container:after,.mg-container:before,.mg-row:after,.mg-row:before,.mg-row-padding:after,.mg-row-padding:before,.mg-clear:after,.mg-clear:before{content:"";display:table;clear:both}
+    .mg-row-padding,.mg-row-padding>.mg-half,.mg-row-padding>.mg-third,.mg-row-padding>.mg-twothird,.mg-row-padding>.mg-threequarter,.mg-row-padding>.mg-quarter,.mg-row-padding>.mg-col{padding:0 8px}
+    .mg-col,.mg-half,.mg-third,.mg-twothird,.mg-threequarter,.mg-quarter{float:left;width:100%}
+    .mg-container-para-half-img{padding:12%}
+    @media (min-width:601px){.mg-quarter{width:24.99999%}.mg-third{width:33.33333%}.mg-half{width:49.99999%}.mg-twothird{width:66.66666%}.mg-threequarter{width:74.99999%}}
+    .mg-iframe-responsive{position: relative;width: 100%;overflow: hidden}
+    .mg-iframe-responsive iframe,video{position: absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;height: 100%;border: none;}
+    @media (max-width:600px){.mg-hide-small{display:none!important}.mg-container-para-half-img{padding:0.01em 16px}.mg-image-flex{flex-direction: column;}.mg-image-flex > div:not(:last-child) {margin-right: 0;margin-bottom: 3px;}}
+    @media (min-width:993px){.mg-hide-large{display:none!important}.mg-image-flex{flex-direction: row;}.mg-image-flex > div:not(:last-child) {margin-right: 3px;margin-bottom: 0;}}
+    @media (max-width:992px) and (min-width:601px){.mg-hide-medium{display:none!important}.mg-image-flex{flex-direction: row;}.mg-image-flex > div:not(:last-child) {margin-right: 3px;margin-bottom: 0;}}
+    .mg-display-container{position:relative}
+    .mg-display-topleft{position:absolute;left:0;top:0}.mg-display-topright{position:absolute;right:0;top:0}
+    .mg-display-bottomleft{position:absolute;left:0;bottom:0}.mg-display-bottomright{position:absolute;right:0;bottom:0}
+    .mg-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+    .mg-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+    .mg-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+    .mg-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+    .mg-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+    .mg-bgimage{background-position: center;background-repeat: no-repeat;background-size: cover;}
+    .mg-image-flex{display: flex;}
+    .mg-image-flex169{flex: 1.7777;}
+    .mg-image-flex916{flex: 0.5625;}
+    .mg-image-flex43{flex: 1.3333;}
+    .mg-image-flex34{flex: 0.75;}
+    .mg-tabs {display: flex;flex-wrap: wrap;font-family:"Noto Serif",serif;font-size:18px;line-height:1.6}
+    .mg-tabs label {order: 1;display: block;padding: 1rem 2rem;margin-right: 0.2rem;cursor: pointer;background:  #3CC0F8;font-weight: bold;transition: background ease 0.2s;}
+    .mg-tabs .tab {order: 99;flex-grow: 1;width: 100%;display: none;padding: 1rem;background: #eee;}
+    .mg-tabs input[type="radio"] {display: none;}
+    .mg-tabs input[type="radio"]:checked + label {background: #eee;}
+    .mg-tabs input[type="radio"]:checked + label + .tab {display: block;}
+    @media (max-width: 45em) {.mg-tabs .tab,.mg-tabs label {order: initial;}.mg-tabs label {width: 100%;margin-right: 0;margin-top: 0.2rem;}}
+    .hover14 div {position: relative;overflow: hidden;display: inline-block;}
+    .hover14 div::before {position: absolute;top: 0;left: -75%;z-index: 2;display: block;content: '';width: 50%;height: 100%;background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);-webkit-transform: skewX(-25deg);transform: skewX(-25deg);}
+    .hover14 div:hover::before {-webkit-animation: shine .75s;animation: shine .75s;}
+    @-webkit-keyframes shine {100% {left: 125%;}}
+    @keyframes shine {100% {left: 125%;}}
+    .mg-mini-gallery{display: flex;background: #262626;}
+    .mg-mini-gallery .thumb3{width:33.33333%}
+    .mg-mini-gallery .thumb4{width:25%}
+    .mg-mini-gallery .thumb5{width:20%}
+    .mg-mini-gallery img{transition:0.2s}
+    .mg-mini-gallery img:hover{transform: scale(0.9);}
+  </style>
+</head>
+
+<body>
+  <div id="cssipad"></div>
+  <!--Bắt đầu chèn code bên dưới dòng này-->
+  <div class="mg-row">
+    <div class="mg-bgimage" style="background-image: url(https://images.pexels.com/photos/207247/pexels-photo-207247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);height:500px"></div>
+    <div class="mg-content">
+      <div class="mg-half" style="background:#f0f0f0;">
+        <div class="mg-container-para-half-img">
+          <h1 class="mg-h1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+          <hr class="mg-hr5">
+          <p class="mg-font mg-margin-tb mg-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatem aut qui, numquam illo nisi sunt repellendus eos quibusdam voluptates autem quae similique, blanditiis debitis rerum necessitatibus ex quidem consequatur.</p>
+        </div>
+      </div>
+      <div class="mg-half">
+        <div class="mg-container-para-half-img">
+          <p class="mg-font mg-margin-tb mg-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatem aut qui, numquam illo nisi sunt repellendus eos quibusdam voluptates autem quae similique, blanditiis debitis rerum necessitatibus ex quidem consequatur.</p>
+          <p class="mg-font mg-margin-tb mg-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatem aut qui, numquam illo nisi sunt repellendus eos quibusdam voluptates autem quae similique, blanditiis debitis rerum necessitatibus ex quidem consequatur.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Kết thúc chèn code-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    function miniGallery(id,url){
+      document.getElementById(id).src = url;
+    }
+  </script>
+  <script>
+    if(window.screen.availWidth == 768 || window.screen.availWidth == 1366){document.getElementById("cssipad").innerHTML = "<style>#content-mgz{width:100%}.heading-site a{font-size:34px}</style>"}
+  </script>
+</body>
+</html>

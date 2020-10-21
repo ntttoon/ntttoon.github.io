@@ -1,0 +1,18 @@
+<div class="mg-row">
+    <div class="mg-bgimage" style="background-image: url(https://images.pexels.com/photos/207247/pexels-photo-207247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);height:500px"></div>
+    <div class="mg-content">
+      <div class="mg-half" style="background:#f0f0f0;">
+        <div class="mg-container-para-half-img">
+          <h1 class="mg-h1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+          <hr class="mg-hr5">
+          <p class="mg-font mg-margin-tb mg-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatem aut qui, numquam illo nisi sunt repellendus eos quibusdam voluptates autem quae similique, blanditiis debitis rerum necessitatibus ex quidem consequatur.</p>
+        </div>
+      </div>
+      <div class="mg-half">
+        <div class="mg-container-para-half-img">
+          <p class="mg-font mg-margin-tb mg-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatem aut qui, numquam illo nisi sunt repellendus eos quibusdam voluptates autem quae similique, blanditiis debitis rerum necessitatibus ex quidem consequatur.</p>
+          <p class="mg-font mg-margin-tb mg-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatem aut qui, numquam illo nisi sunt repellendus eos quibusdam voluptates autem quae similique, blanditiis debitis rerum necessitatibus ex quidem consequatur.</p>
+        </div>
+      </div>
+    </div>
+  </div>
