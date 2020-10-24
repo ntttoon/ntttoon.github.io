@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <style>
     body{margin:0}
+    html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
     .mg-font{font-family:"Noto Serif",serif!important;font-size:18px!important;line-height:1.6}
     .mg-h1{font-size:36px}.mg-h2{font-size:30px}.mg-h3{font-size:24px}.mg-h4{font-size:20px}.mg-h5{font-size:18px}.mg-h6{font-size:16px}
     .mg-hr{border:0;border-top:1px solid #ccc;margin:20px 0}
@@ -25,13 +26,14 @@
     .mg-container:after,.mg-container:before,.mg-row:after,.mg-row:before,.mg-row-padding:after,.mg-row-padding:before,.mg-clear:after,.mg-clear:before{content:"";display:table;clear:both}
     .mg-row-padding,.mg-row-padding>.mg-half,.mg-row-padding>.mg-third,.mg-row-padding>.mg-twothird,.mg-row-padding>.mg-threequarter,.mg-row-padding>.mg-quarter,.mg-row-padding>.mg-col{padding:0 8px}
     .mg-col,.mg-half,.mg-third,.mg-twothird,.mg-threequarter,.mg-quarter{float:left;width:100%}
-    .mg-container-para-half-img{padding:12%}
+    .mg-padding-mag1{padding: 10%;}
+    .mg-width-mag4{float:left;width:100%}
     @media (min-width:601px){.mg-quarter{width:24.99999%}.mg-third{width:33.33333%}.mg-half{width:49.99999%}.mg-twothird{width:66.66666%}.mg-threequarter{width:74.99999%}}
     .mg-iframe-responsive{position: relative;width: 100%;overflow: hidden}
     .mg-iframe-responsive iframe,video{position: absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;height: 100%;border: none;}
-    @media (max-width:600px){.mg-hide-small{display:none!important}.mg-container-para-half-img{padding:0.01em 16px}.mg-image-flex{flex-direction: column;}.mg-image-flex > div:not(:last-child) {margin-right: 0;margin-bottom: 3px;}}
-    @media (min-width:993px){.mg-hide-large{display:none!important}.mg-image-flex{flex-direction: row;}.mg-image-flex > div:not(:last-child) {margin-right: 3px;margin-bottom: 0;}}
-    @media (max-width:992px) and (min-width:601px){.mg-hide-medium{display:none!important}.mg-image-flex{flex-direction: row;}.mg-image-flex > div:not(:last-child) {margin-right: 3px;margin-bottom: 0;}}
+    @media (max-width:600px){.mg-hide-small{display:none!important}.mg-image-flex{flex-direction: column;}.mg-image-flex > div:not(:last-child) {margin-right: 0;margin-bottom: 3px;}.mg-padding-mag1{padding:0.01em 16px}}
+    @media (min-width:993px){.mg-hide-large{display:none!important}.mg-image-flex{flex-direction: row;}.mg-image-flex > div:not(:last-child) {margin-right: 3px;margin-bottom: 0;}.mg-width-mag4{width:33.33333%}}
+    @media (max-width:992px) and (min-width:601px){.mg-hide-medium{display:none!important}.mg-image-flex{flex-direction: row;}.mg-image-flex > div:not(:last-child) {margin-right: 3px;margin-bottom: 0;}.mg-padding-mag1{padding:6%}.mg-padding-mag1>.mg-font{font-size:16px!important;}.mg-padding-mag1>.mg-h1{font-size:32px}.mg-padding-mag1>.mg-h2{font-size:26px}}
     .mg-display-container{position:relative}
     .mg-display-topleft{position:absolute;left:0;top:0}.mg-display-topright{position:absolute;right:0;top:0}
     .mg-display-bottomleft{position:absolute;left:0;bottom:0}.mg-display-bottomright{position:absolute;right:0;bottom:0}
@@ -40,7 +42,8 @@
     .mg-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
     .mg-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
     .mg-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
-    .mg-bgimage{background-position: center;background-repeat: no-repeat;background-size: cover;}
+    .mg-bgimage{background-position: center;background-repeat: no-repeat;background-size:cover;transition:transform 1s ease;}
+    .mg-bgimage:hover{transform: scale(1.02);}
     .mg-image-flex{display: flex;}
     .mg-image-flex169{flex: 1.7777;}
     .mg-image-flex916{flex: 0.5625;}
@@ -70,24 +73,26 @@
 <body>
   <div id="cssipad"></div>
   <!--Bắt đầu chèn code bên dưới dòng này-->
-  <div class="mg-row">
-    <div class="mg-bgimage" style="background-image: url(https://images.pexels.com/photos/207247/pexels-photo-207247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);height:500px"></div>
-    <div class="mg-content">
-      <div class="mg-half" style="background:#f0f0f0;">
-        <div class="mg-container-para-half-img">
-          <h1 class="mg-h1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-          <hr class="mg-hr5">
-          <p class="mg-font mg-margin-tb mg-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatem aut qui, numquam illo nisi sunt repellendus eos quibusdam voluptates autem quae similique, blanditiis debitis rerum necessitatibus ex quidem consequatur.</p>
+  <div class="mg-row" style="background:#f0f0f0;">
+    <div class="mg-width-mag4">
+        <div class="mg-padding-mag1">
+            <h1 class="mg-h1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+            <hr class="mg-hr5">
+            <p class="mg-font mg-margin-tb mg-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatem aut qui, numquam illo nisi sunt repellendus eos quibusdam voluptates autem quae similique, blanditiis debitis rerum necessitatibus ex quidem consequatur.</p>
         </div>
-      </div>
-      <div class="mg-half">
-        <div class="mg-container-para-half-img">
-          <p class="mg-font mg-margin-tb mg-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatem aut qui, numquam illo nisi sunt repellendus eos quibusdam voluptates autem quae similique, blanditiis debitis rerum necessitatibus ex quidem consequatur.</p>
-          <p class="mg-font mg-margin-tb mg-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatem aut qui, numquam illo nisi sunt repellendus eos quibusdam voluptates autem quae similique, blanditiis debitis rerum necessitatibus ex quidem consequatur.</p>
-        </div>
-      </div>
     </div>
-  </div>
+    <div class="mg-width-mag4">
+        <div style="overflow: hidden;">
+            <div class="mg-bgimage" style="background-image: url(https://images.pexels.com/photos/207247/pexels-photo-207247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);height:600px"></div>
+        </div>    
+    </div>
+    <div class="mg-width-mag4">
+        <div class="mg-padding-mag1">
+            <p class="mg-font mg-margin-tb mg-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatem aut qui, numquam illo nisi sunt repellendus eos quibusdam voluptates autem quae similique, blanditiis debitis rerum necessitatibus ex quidem consequatur.</p>
+            <p class="mg-font mg-margin-tb mg-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatem aut qui, numquam illo nisi sunt repellendus eos quibusdam voluptates autem quae similique, blanditiis debitis rerum necessitatibus ex quidem consequatur.</p>
+        </div>
+    </div>
+</div>
   <!--Kết thúc chèn code-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
