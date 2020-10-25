@@ -12,6 +12,7 @@
     body{margin:0}
     html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
     .mg-font{font-family:"Noto Serif",serif!important;font-size:18px!important;line-height:1.6}
+    .mg-parallax-font{font-family:"Noto Serif",serif!important;font-size:30px!important;padding:16px;color:white;background:rgba(0,0,0,.5);text-transform:uppercase;}
     .mg-h1{font-size:36px}.mg-h2{font-size:30px}.mg-h3{font-size:24px}.mg-h4{font-size:20px}.mg-h5{font-size:18px}.mg-h6{font-size:16px}
     .mg-hr{border:0;border-top:1px solid #ccc;margin:20px 0}
     .mg-hr5{border:0;border-top:5px solid #ccc;margin:20px 0}
@@ -22,10 +23,13 @@
     .mg-left-align{text-align:left!important}.mg-right-align{text-align:right!important}.mg-justify{text-align:justify!important}.mg-center{text-align:center!important}
     .mg-left{float:left!important}.mg-right{float:right!important}
     .mg-margin-tb{margin-top:16px!important;margin-bottom:16px!important}
+    .mg-margin-b{margin-bottom:16px!important}
     .mg-padding-tb{padding-top:16px!important;padding-bottom:16px!important}
     .mg-container:after,.mg-container:before,.mg-row:after,.mg-row:before,.mg-row-padding:after,.mg-row-padding:before,.mg-clear:after,.mg-clear:before{content:"";display:table;clear:both}
     .mg-row-padding,.mg-row-padding>.mg-half,.mg-row-padding>.mg-third,.mg-row-padding>.mg-twothird,.mg-row-padding>.mg-threequarter,.mg-row-padding>.mg-quarter,.mg-row-padding>.mg-col{padding:0 8px}
     .mg-col,.mg-half,.mg-third,.mg-twothird,.mg-threequarter,.mg-quarter{float:left;width:100%}
+    .mg-card,.mg-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+    .mg-card-4{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
     .mg-padding-mag1{padding: 10%;}
     .mg-width-mag4{float:left;width:100%}
     @media (min-width:601px){.mg-quarter{width:24.99999%}.mg-third{width:33.33333%}.mg-half{width:49.99999%}.mg-twothird{width:66.66666%}.mg-threequarter{width:74.99999%}}
@@ -44,11 +48,11 @@
     .mg-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
     .mg-bgimage{background-position: center;background-repeat: no-repeat;background-size:cover;transition:transform 1s ease;}
     .mg-bgimage:hover{transform: scale(1.02);}
-    .mg-image-flex{display: flex;}
-    .mg-image-flex169{flex: 1.7777;}
-    .mg-image-flex916{flex: 0.5625;}
-    .mg-image-flex43{flex: 1.3333;}
-    .mg-image-flex34{flex: 0.75;}
+    .mg-parallax-img1,.mg-parallax-img2,.mg-parallax-img3{background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;}
+    .mg-parallax-img1{background-image: url('https://images.pexels.com/photos/207247/pexels-photo-207247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');min-height: 100vh}
+    .mg-parallax-img2{background-image: url('https://images.pexels.com/photos/207247/pexels-photo-207247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');min-height: 500px}
+    .mg-parallax-img3{background-image: url('https://images.pexels.com/photos/207247/pexels-photo-207247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');min-height: 500px}
+    @media only screen and (max-device-width: 1600px){.mg-parallax-img1,.mg-parallax-img2,.mg-parallax-img3{background-attachment: scroll;min-height: 500px;}}
     .mg-tabs {display: flex;flex-wrap: wrap;font-family:"Noto Serif",serif;font-size:18px;line-height:1.6}
     .mg-tabs label {order: 1;display: block;padding: 1rem 2rem;margin-right: 0.2rem;cursor: pointer;background:  #3CC0F8;font-weight: bold;transition: background ease 0.2s;}
     .mg-tabs .tab {order: 99;flex-grow: 1;width: 100%;display: none;padding: 1rem;background: #eee;}
@@ -73,26 +77,7 @@
 <body>
   <div id="cssipad"></div>
   <!--Bắt đầu chèn code bên dưới dòng này-->
-  <div class="mg-row" style="background:#f0f0f0;">
-    <div class="mg-width-mag4">
-        <div class="mg-padding-mag1">
-            <h1 class="mg-h1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-            <hr class="mg-hr5">
-            <p class="mg-font mg-margin-tb mg-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatem aut qui, numquam illo nisi sunt repellendus eos quibusdam voluptates autem quae similique, blanditiis debitis rerum necessitatibus ex quidem consequatur.</p>
-        </div>
-    </div>
-    <div class="mg-width-mag4">
-        <div style="overflow: hidden;">
-            <div class="mg-bgimage" style="background-image: url(https://images.pexels.com/photos/207247/pexels-photo-207247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);height:600px"></div>
-        </div>    
-    </div>
-    <div class="mg-width-mag4">
-        <div class="mg-padding-mag1">
-            <p class="mg-font mg-margin-tb mg-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatem aut qui, numquam illo nisi sunt repellendus eos quibusdam voluptates autem quae similique, blanditiis debitis rerum necessitatibus ex quidem consequatur.</p>
-            <p class="mg-font mg-margin-tb mg-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatem aut qui, numquam illo nisi sunt repellendus eos quibusdam voluptates autem quae similique, blanditiis debitis rerum necessitatibus ex quidem consequatur.</p>
-        </div>
-    </div>
-</div>
+  
   <!--Kết thúc chèn code-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

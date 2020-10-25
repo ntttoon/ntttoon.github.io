@@ -1,0 +1,31 @@
+<div class="mg-row-padding">
+    <div class="mg-third mg-margin-b">
+      <div class="mg-card-2">
+        <img src="https://images.pexels.com/photos/207247/pexels-photo-207247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" style="width:100%">
+        <div class="mg-container">
+          <p class="mg-font"><b>Lorem Ipsum</b></p>
+          <p class="mg-font">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="mg-third mg-margin-b">
+      <div class="mg-card-2">
+        <img src="https://images.pexels.com/photos/207247/pexels-photo-207247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" style="width:100%">
+        <div class="mg-container">
+          <p class="mg-font"><b>Lorem Ipsum</b></p>
+          <p class="mg-font">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mg-third mg-margin-b">
+      <div class="mg-card-2">
+        <img src="https://images.pexels.com/photos/207247/pexels-photo-207247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" style="width:100%">
+        <div class="mg-container">
+          <p class="mg-font"><b>Lorem Ipsum</b></p>
+          <p class="mg-font">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+      </div>
+    </div>
+</div>

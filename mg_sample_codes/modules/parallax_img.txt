@@ -1,1 +1,5 @@
-<div class="mg-parallax parallax-img1"></div>
+<div class="mg-parallax-img1 mg-display-container">
+    <div class="mg-display-middle mg-center">
+      <p class="mg-parallax-font">Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+</div>

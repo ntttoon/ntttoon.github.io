@@ -78,12 +78,12 @@
     <button class="w3-button w3-yellow" id="btn3">Code cho đoạn văn bản thuần</button>
     <button class="w3-button w3-yellow" id="btn4">Code cho đoạn văn bản ảnh lệch trái</button>
     <button class="w3-button w3-yellow" id="btn5">Code cho đoạn văn bản ảnh lệch phải</button><br>
-    <!-- <button class="w3-button w3-yellow" id="btn6">Code cho đoạn văn bản ảnh chia đôi 50/50</button><br> -->
+    <!-- <button class="w3-button w3-yellow" id="btn6">Code cho đoạn văn bản ảnh chia đôi 50/50</button><br>
     <button class="w3-button w3-blue" id="btn7">Code cho gallery 2 ảnh 3:4 và 4:3</button>
     <button class="w3-button w3-blue" id="btn8">Code cho gallery 2 ảnh 3:4 và 16:9</button>
-    <button class="w3-button w3-blue" id="btn9">Code cho gallery 3 ảnh 3:4 và 4:3 và 3:4</button><br>
+    <button class="w3-button w3-blue" id="btn9">Code cho gallery 3 ảnh 3:4 và 4:3 và 3:4</button><br> -->
     <button class="w3-button w3-red" id="btn10">Code cho module tabs</button>
-    <!-- <button class="w3-button w3-red" id="btn11">Code cho module ảnh parallax</button> -->
+    <button class="w3-button w3-red" id="btn11">Code cho module ảnh parallax</button>
     <button class="w3-button w3-red" id="btn12">Code cho module mini gallery</button><br>
     <button class="w3-button w3-teal" id="btn13">Code cho 2 iframe/video pc/mobile</button>
     <button class="w3-button w3-teal" id="btn14">Code cho 1 iframe/video dùng chung pc/mobile</button><br>
@@ -91,6 +91,7 @@
     <button class="w3-button w3-purple" id="btn16">Magazine layout template 2</button>
     <button class="w3-button w3-purple" id="btn17">Magazine layout template 3</button>
     <button class="w3-button w3-purple" id="btn18">Magazine layout template 4</button>
+    <button class="w3-button w3-purple" id="btn19">Magazine layout template 5</button>
 </div>
 
 
@@ -168,10 +169,10 @@
         readTextFile("modules/tabs.txt");
         copyCode();
     });
-    // $( "#btn11" ).click(function() {
-    //     readTextFile("modules/parallax_img.txt");
-    //     copyCode();
-    // });
+    $( "#btn11" ).click(function() {
+        readTextFile("modules/parallax_img.txt");
+        copyCode();
+    });
     $( "#btn12" ).click(function() {
         readTextFile("modules/minigallery.txt");
         copyCode();
@@ -198,6 +199,10 @@
     });
     $( "#btn18" ).click(function() {
         readTextFile("modules/third_img_para.txt");
+        copyCode();
+    });
+    $( "#btn19" ).click(function() {
+        readTextFile("modules/three_blocks.txt");
         copyCode();
     });
 </script>
