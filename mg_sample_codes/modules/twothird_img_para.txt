@@ -6,7 +6,7 @@
     </div>
     <div class="mg-third">
         <div class="mg-padding-mag1">
-            <h2 class="mg-h2">Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
+            <h2 class="mg-h2 mg-font-family">Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
             <hr class="mg-hr">
             <p class="mg-font mg-margin-tb mg-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatem aut qui, numquam illo nisi sunt repellendus eos quibusdam voluptates autem quae similique, blanditiis debitis rerum necessitatibus ex quidem consequatur.</p>
         </div>
