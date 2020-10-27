@@ -1,0 +1,34 @@
+<div class="adaptiveGallery">
+    <ul>
+        <li>
+          <img src="https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" onclick="imgLightbox.open('https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');">
+        </li>
+        <li>
+          <img src="https://images.pexels.com/photos/1559821/pexels-photo-1559821.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" onclick="imgLightbox.open('https://images.pexels.com/photos/1559821/pexels-photo-1559821.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');">
+        </li>
+        <li>
+          <img src="https://images.pexels.com/photos/2082949/pexels-photo-2082949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" onclick="imgLightbox.open('https://images.pexels.com/photos/2082949/pexels-photo-2082949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');">
+        </li>
+        <li>
+          <img src="https://images.pexels.com/photos/2224956/pexels-photo-2224956.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" onclick="imgLightbox.open('https://images.pexels.com/photos/2224956/pexels-photo-2224956.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');">
+        </li>
+        <li>
+          <img src="https://images.pexels.com/photos/2108232/pexels-photo-2108232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" onclick="imgLightbox.open('https://images.pexels.com/photos/2108232/pexels-photo-2108232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');">
+        </li>
+        <li>
+          <img src="https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" onclick="imgLightbox.open('https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');">
+        </li>
+        <li>
+          <img src="https://images.pexels.com/photos/1450082/pexels-photo-1450082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" onclick="imgLightbox.open('https://images.pexels.com/photos/1450082/pexels-photo-1450082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');">
+        </li>
+        <li>
+          <img src="https://images.pexels.com/photos/3828834/pexels-photo-3828834.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" onclick="imgLightbox.open('https://images.pexels.com/photos/3828834/pexels-photo-3828834.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');">
+        </li>
+        <li>
+          <img src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" onclick="imgLightbox.open('https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');">
+        </li>
+        <li>
+          <img src="https://images.pexels.com/photos/1955134/pexels-photo-1955134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" onclick="imgLightbox.open('https://images.pexels.com/photos/1955134/pexels-photo-1955134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');">
+        </li>
+    </ul>
+</div>

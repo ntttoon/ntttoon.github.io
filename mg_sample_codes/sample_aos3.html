@@ -8,6 +8,8 @@
   <title>template aos</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://thietke.24h.com.vn/magazine/imglightbox/imglightbox.css" />
+  <script src="https://thietke.24h.com.vn/magazine/imglightbox/imglightbox.js"></script>
   <style>
     body{margin:0}
     html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
@@ -49,11 +51,13 @@
     .mg-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
     .mg-bgimage{background-position: center;background-repeat: no-repeat;background-size:cover;transition:transform 1s ease;}
     .mg-bgimage:hover{transform: scale(1.02);}
+    /*parallax*/
     .mg-parallax-img1,.mg-parallax-img2,.mg-parallax-img3{background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;}
     .mg-parallax-img1{background-image: url('https://images.pexels.com/photos/207247/pexels-photo-207247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');min-height: 100vh}
     .mg-parallax-img2{background-image: url('https://images.pexels.com/photos/207247/pexels-photo-207247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');min-height: 500px}
     .mg-parallax-img3{background-image: url('https://images.pexels.com/photos/207247/pexels-photo-207247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');min-height: 500px}
     @media only screen and (max-device-width: 1600px){.mg-parallax-img1,.mg-parallax-img2,.mg-parallax-img3{background-attachment: scroll;min-height: 500px;}}
+    /*end parallax*/
     .mg-tabs {display: flex;flex-wrap: wrap;font-family:"Noto Serif",serif;font-size:18px;line-height:1.6}
     .mg-tabs label {order: 1;display: block;padding: 1rem 2rem;margin-right: 0.2rem;cursor: pointer;background:  #3CC0F8;font-weight: bold;transition: background ease 0.2s;}
     .mg-tabs .tab {order: 99;flex-grow: 1;width: 100%;display: none;padding: 1rem;background: #eee;}
@@ -72,11 +76,32 @@
     .mg-mini-gallery .thumb5{width:20%}
     .mg-mini-gallery img{transition:0.2s}
     .mg-mini-gallery img:hover{transform: scale(0.9);}
+    /*adaptive gallery by Tim Van Damme*/
+    .adaptiveGallery ul, .adaptiveGalleryli{list-style-type: none;padding: 0;}
+    .adaptiveGallery ul {display: flex;flex-wrap: wrap;}
+    /*.adaptiveGallery ul:after {content: '';display: block;flex-grow: 10;}*/
+    .adaptiveGallery li {height: 40vh;flex-grow: 1;}
+    .adaptiveGallery img {max-height: 100%;min-width: 100%;object-fit: cover;vertical-align: bottom;}
+    .adaptiveGallery img:hover{opacity: 0.8;}
+    @media (max-aspect-ratio: 1/1) {.adaptiveGallery li {height: 30vh;}}
+    @media (max-height: 480px) {.adaptiveGallery li {height: 80vh;}}
+    @media (max-aspect-ratio: 1/1) and (max-width: 480px) {.adaptiveGallery ul{flex-direction: row;}.adaptiveGallery li{height: auto;width: 100%;}.adaptiveGallery img{width: 100%;max-height: 75vh;min-width: 0;}}
+    /*end adaptive layout*/
   </style>
 </head>
 
 <body>
   <div id="cssipad"></div>
+  <!-- imgLightbox -->
+  <div id="imgLightbox" onclick="imgLightbox.close();">
+    <div id="imgLightbox-button-area">
+      <a title="download and close" id="imgLightbox-button-download">
+        <span class="imgLightbox-button">&DownArrowBar;</span>
+      </a>
+      <span title="close" class="imgLightbox-button" onclick="imgLightbox.close();">&Cross;</span>
+    </div>
+  </div>
+  <!-- end imgLightbox -->
   <!--Bắt đầu chèn code bên dưới dòng này-->
   
   <!--Kết thúc chèn code-->
