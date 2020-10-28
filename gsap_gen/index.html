@@ -15,138 +15,101 @@
 
 <body>
 <header class="w3-container w3-blue">
-	<h5>GSAP Template Animation Creator</h5>
+	<h5>GSAP v3 Template Animation Creator</h5>
 </header>
 <div class="w3-container">
-    <p><label><span class="w3-text-red">* </span>Đặt tên cho MC trong Animate CC, nhập tên cho MC vào ô dưới.</label>
-    <input class="w3-input w3-border" id="mc" type="text" value="movieClip_1"></p>
+    <p>&lt;script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.5.1_min.js">&lt;/script&gt;</p>
+    <p><label><span class="w3-text-red">* </span>MCs</label>
+    <input class="w3-input w3-border" id="mcs" type="text" value=""></p>
+    
+    <div id="mcs_holder_config"></div>
 
-    <label>Tạo Animation</label>
-        <input id="male" class="w3-radio" type="radio" name="type" value="from" checked>
-        <label>From</label>
-        <input id="female" class="w3-radio" type="radio" name="type" value="to">
-        <label>To</label>
-        <br><br>
-        <div class="w3-row">
-            <select class="w3-select w3-border w3-quarter" id="effect_list">
-                <option value="0" selected>Alpha</option>
-                <option value="1" >Zoom In</option>
-                <option value="2" >Zoom Out</option>
-                <option value="3" >X move</option>
-                <option value="4" >Y move</option>
-                <option value="5" >XY move</option>
-                <option value="6" >Rotation + Zoom in</option>
-                <option value="7" >Rotation + Zoom out</option>
-                <option value="8" >Scale X</option>
-                <option value="9" >Scale Y</option>
-                <option value="10" >Skew X</option>
-                <option value="11" >Skew Y</option>
-            </select>
-            <select class="w3-select w3-border w3-quarter" id="ease_list">
-                <option >,ease: Power0.easeOut</option>
-                <option >,ease: Power1.easeOut</option>
-                <option >,ease: Power2.easeOut</option>
-                <option selected>,ease: Power3.easeOut</option>
-                <option >,ease: Power4.easeOut</option>
-                <option >,ease: Elastic.easeOut.config(1.5, 1)</option>
-                <option >,ease: Elastic.easeOut.config(1, 0.3)</option>
-            </select>
-            <select class="w3-select w3-border w3-quarter" id="delay_list">
-                <option ></option>
-                <option selected>, "-=0.5"</option>
-                <option >, "-=1"</option>
-                <option >, "+=0.5"</option>
-                <option >, "+=1"</option>
-            </select>
-            <select class="w3-select w3-border w3-quarter" id="complete_list">
-                <option selected> </option>
-                <option >,onComplete:function(){console.log("Hello world!");}</option>
-            </select>
-        </div>
-        <div id="code_out_effect" class="w3-yellow"></div>
-        <p><button class="w3-btn w3-blue" id="gen_in" onclick="ani_in()">Tạo</button></p>
-
-    <p><label><span class="w3-text-red">* </span>Tạo Animation liên hoàn. Nhập tên các MC vào ô dưới, cách nhau dấu phẩy. Ví dụ: xe1,xe2,xe3</label>
-    <input class="w3-input w3-border" id="mcs" type="text" value="movieClip_1,movieClip_2,movieClip_3,movieClip_4,movieClip_5"></p>
-
+    <div id="code_out_effect" class="w3-yellow"></div>
+    <p><button class="w3-btn w3-blue" onclick="creat_mcs_list()">Tạo list</button>
+    <button class="w3-btn w3-blue" onclick="creat_as_list()">Tạo code</button>
+    <button class="w3-btn w3-blue" onclick="creat_as_stagger()">Tạo code Stagger</button></p>
     <div id="code_out_stagger" class="w3-yellow"></div>
-    <p><button class="w3-btn w3-blue" id="gen_stagger" onclick="ani_stagger()">Tạo</button></p>
-</div>
-
-<div class="w3-container">
-<textarea class="w3-input w3-border" rows="4">
-function replay(){
-    myVar = setTimeout(function(){ tl.restart(); }, 5000);
-}
-var tl = new TimelineLite({onComplete:replay})</textarea>
 </div>
 
   <script>
-    var code_effect =  document.getElementById("code_out_effect");
-    var effect_list = document.getElementById("effect_list");
+    function get_effects(id) {
+        var effect_list = document.getElementById(id);
 
-    function ani_in() {
-        var mc = change_alias(document.getElementById("mc").value);
-        var effect_type = document.querySelector('input[name="type"]:checked').value;
-        var effect_list = document.getElementById("effect_list");
-        var effect_list_out= effect_list.options[effect_list.selectedIndex].text;
-        var ease_list = document.getElementById("ease_list");
-        var ease_list_out= ease_list.options[ease_list.selectedIndex].text;
-        var delay_list = document.getElementById("delay_list");
-        var delay_list_out= delay_list.options[delay_list.selectedIndex].text;
-        var complete_list = document.getElementById("complete_list");
-        var complete_list_out= complete_list.options[complete_list.selectedIndex].text;
-        
-        if(mc==""){
-            alert("Bạn chưa nhập tên MC");
-        }
-        else if(effect_list.value == "0"){
-            code_effect.innerHTML = "." + effect_type + "(this." + mc + ", 1, {<b>alpha:0" + ease_list_out + complete_list_out + "</b>}" + delay_list_out + ")";
+        if(effect_list.value == "0"){
+            return "alpha:0";
         }
         else if(effect_list.value == "1"){
-            code_effect.innerHTML = "." + effect_type + "(this." + mc + ", 1, {<b>scaleX:0.1,scaleY:0.1,alpha:0" + ease_list_out + complete_list_out + "</b>}" + delay_list_out + ")";
+            return "scaleX:0.1,scaleY:0.1,alpha:0";
         }
         else if(effect_list.value == "2"){
-            code_effect.innerHTML = "." + effect_type + "(this." + mc + ", 1, {<b>scaleX:3,scaleY:3,alpha:0" + ease_list_out + complete_list_out + "</b>}" + delay_list_out + ")";
+            return "scaleX:3,scaleY:3,alpha:0";
         }
         else if(effect_list.value == "3"){
-            code_effect.innerHTML = '.' + effect_type + '(this.' + mc + ', 1, {<b>x:"+=200",alpha:0' + ease_list_out + complete_list_out + '</b>}' + delay_list_out + ')';
+            return 'x:"+=200",alpha:0';
         }
         else if(effect_list.value == "4"){
-            code_effect.innerHTML = '.' + effect_type + '(this.' + mc + ', 1, {<b>y:"+=200",alpha:0' + ease_list_out + complete_list_out + '</b>}' + delay_list_out + ')';
+            return 'y:"+=200",alpha:0';
         }
         else if(effect_list.value == "5"){
-            code_effect.innerHTML = '.' + effect_type + '(this.' + mc + ', 1, {<b>x:"+=200",y:"+=200",alpha:0' + ease_list_out + complete_list_out + '</b>}' + delay_list_out + ')';
+            return 'x:"+=200",y:"+=200",alpha:0';
         }
         else if(effect_list.value == "6"){
-            code_effect.innerHTML = "." + effect_type + "(this." + mc + ", 1, {<b>scaleX:0.1,scaleY:0.1,rotation:180,alpha:0" + ease_list_out + complete_list_out + "</b>}" + delay_list_out + ")";
+            return "scaleX:0.1,scaleY:0.1,rotation:180,alpha:0";
         }
         else if(effect_list.value == "7"){
-            code_effect.innerHTML = "." + effect_type + "(this." + mc + ", 1, {<b>scaleX:3,scaleY:3,rotation:180,alpha:0" + ease_list_out + complete_list_out + "</b>}" + delay_list_out + ")";
+            return "scaleX:3,scaleY:3,rotation:180,alpha:0";
         }
         else if(effect_list.value == "8"){
-            code_effect.innerHTML = "." + effect_type + "(this." + mc + ", 1, {<b>scaleX:3,alpha:0" + ease_list_out + complete_list_out + "</b>}" + delay_list_out + ")";
+            return "scaleX:3,alpha:0"
         }
         else if(effect_list.value == "9"){
-            code_effect.innerHTML = "." + effect_type + "(this." + mc + ", 1, {<b>scaleY:3,alpha:0" + ease_list_out + complete_list_out + "</b>}" + delay_list_out + ")";
+            return "scaleY:3,alpha:0";
         }
         else if(effect_list.value == "10"){
-            code_effect.innerHTML = "." + effect_type + "(this." + mc + ", 1, {<b>skewX:120,alpha:0" + ease_list_out + complete_list_out + "</b>}" + delay_list_out + ")";
+            return "skewX:120,alpha:0";
         }
         else if(effect_list.value == "11"){
-            code_effect.innerHTML = "." + effect_type + "(this." + mc + ", 1, {<b>skewY:120,alpha:0" + ease_list_out + complete_list_out + "</b>}" + delay_list_out + ")";
+            return "skewY:120,alpha:0";
         }
     }
 
-    function ani_stagger() {
+    function get_selectedIndex(id){
+        var select_list = document.getElementById(id);
+        var a = select_list.options[select_list.selectedIndex].text
+        return a;
+    }
+
+    function creat_mcs_list() {
         var mcs = document.getElementById("mcs").value;
         var mcs_array = mcs.split(",");
-        var fcode_out_stagger = "";
-        var code_out_stagger = document.getElementById("code_out_stagger");
+        var mcs_holder_config = document.getElementById("mcs_holder_config");
+        mcs_holder_config.innerHTML = "";
         for(i=0;i<mcs_array.length;i++){
-            fcode_out_stagger += "this." + change_alias(mcs_array[i]) + ",";
+            mcs_holder_config.innerHTML += '<p class="w3-left" style="width:100px" id="' + change_alias(mcs_array[i])  +'">'+ change_alias(mcs_array[i]) + '</p>' +
+            '<select class="w3-select w3-border" style="width: 200px;" id="' + change_alias(mcs_array[i]) + '_effectlist"><option value="0" selected>Alpha</option><option value="1" >Zoom In</option><option value="2" >Zoom Out</option><option value="3" >X move</option><option value="4" >Y move</option><option value="5" >XY move</option><option value="6" >Rotation + Zoom in</option><option value="7" >Rotation + Zoom out</option><option value="8" >Scale X</option><option value="9" >Scale Y</option><option value="10" >Skew X</option><option value="11" >Skew Y</option></select> <select class="w3-select w3-border" style="width: 300px;" id="' + change_alias(mcs_array[i]) + '_easelist"><option>,ease: "power1.out"</option><option>,ease: "power2.out"</option><option selected>,ease: "power3.out"</option><option>,ease: "power4.out"</option><option>,ease: "elastic.out(1.5, 1)"</option><option>,ease: "elastic.out(1, 0.3)"</option></select> <select class="w3-select w3-border" style="width: 100px;" id="' + change_alias(mcs_array[i]) + '_delaylist"><option ></option><option>, "-=0.5"</option><option >, "-=1"</option><option >, "+=0.5"</option><option >, "+=1"</option></select><br><p style="float:none"></p>';
         }
-        code_out_stagger.innerHTML = '.staggerFrom([' + fcode_out_stagger.substring(0, fcode_out_stagger.length - 1) + '], 1, {<b>alpha:0</b>}, 0.2, "-=0,5")';
+    }
+    function creat_as_list() {
+        var mcs = document.getElementById("mcs").value;
+        var mcs_array = mcs.split(",");
+        var code_out_effect = document.getElementById("code_out_effect");
+        code_out_effect.innerHTML = "";
+        code_out_effect.innerHTML += "function replay(){myVar = setTimeout(function(){tl.restart();}, 5000)}" + "<br>";
+        code_out_effect.innerHTML += "var tl = gsap.timeline({onComplete:replay})" + "<br>";
+        for(i=0;i<mcs_array.length;i++){
+            code_out_effect.innerHTML += '.from(this.' + change_alias(mcs_array[i]) + ', {duration:1,'+ get_effects(change_alias(mcs_array[i])+"_effectlist") + get_selectedIndex(change_alias(mcs_array[i])+"_easelist") + '}' + get_selectedIndex(change_alias(mcs_array[i])+"_delaylist")  + ') <br>';
+        }
+    }
+    function creat_as_stagger() {
+        var mcs = document.getElementById("mcs").value;
+        var mcs_array = mcs.split(",");
+        var code_out_stagger = document.getElementById("code_out_stagger");
+        var mcs_array_text = "";
+        code_out_stagger.innerHTML = "";
+        for(i=0;i<mcs_array.length;i++){
+            mcs_array_text+= "this."+ change_alias(mcs_array[i]) + ",";
+        }
+        code_out_stagger.innerHTML = '.from([' + mcs_array_text.substring(0, mcs_array_text.length - 1) + '], {duration:1,alpha:0,ease: "power3.out",stagger:0.2})';
     }
 
     function change_alias(alias) {

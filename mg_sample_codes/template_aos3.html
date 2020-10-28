@@ -8,11 +8,17 @@
   <title>template aos</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://thietke.24h.com.vn/magazine/imglightbox/imglightbox.css" />
+  <script src="https://thietke.24h.com.vn/magazine/imglightbox/imglightbox.js"></script>
   <style>
     body{margin:0}
+    html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
     .mg-font{font-family:"Noto Serif",serif!important;font-size:18px!important;line-height:1.6}
+    .mg-font-family{font-family:"Noto Serif",serif!important}
+    .mg-parallax-font{font-family:"Noto Serif",serif!important;font-size:30px!important;padding:16px;color:white;background:rgba(0,0,0,.5);text-transform:uppercase;}
     .mg-h1{font-size:36px}.mg-h2{font-size:30px}.mg-h3{font-size:24px}.mg-h4{font-size:20px}.mg-h5{font-size:18px}.mg-h6{font-size:16px}
-    .mg-hr{border:0;border-top:1px solid #eee;margin:20px 0}
+    .mg-hr{border:0;border-top:1px solid #ccc;margin:20px 0}
+    .mg-hr5{border:0;border-top:5px solid #ccc;margin:20px 0}
     .mg-image{max-width:100%;height:auto;vertical-align: middle;}
     .mg-container{padding:0.01em 16px}
     .mg-content{margin-left:auto;margin-right:auto;max-width:980px}
@@ -20,16 +26,21 @@
     .mg-left-align{text-align:left!important}.mg-right-align{text-align:right!important}.mg-justify{text-align:justify!important}.mg-center{text-align:center!important}
     .mg-left{float:left!important}.mg-right{float:right!important}
     .mg-margin-tb{margin-top:16px!important;margin-bottom:16px!important}
+    .mg-margin-b{margin-bottom:16px!important}
     .mg-padding-tb{padding-top:16px!important;padding-bottom:16px!important}
     .mg-container:after,.mg-container:before,.mg-row:after,.mg-row:before,.mg-row-padding:after,.mg-row-padding:before,.mg-clear:after,.mg-clear:before{content:"";display:table;clear:both}
     .mg-row-padding,.mg-row-padding>.mg-half,.mg-row-padding>.mg-third,.mg-row-padding>.mg-twothird,.mg-row-padding>.mg-threequarter,.mg-row-padding>.mg-quarter,.mg-row-padding>.mg-col{padding:0 8px}
     .mg-col,.mg-half,.mg-third,.mg-twothird,.mg-threequarter,.mg-quarter{float:left;width:100%}
+    .mg-card,.mg-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+    .mg-card-4{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+    .mg-padding-mag1{padding: 10%;}
+    .mg-width-mag4{float:left;width:100%}
     @media (min-width:601px){.mg-quarter{width:24.99999%}.mg-third{width:33.33333%}.mg-half{width:49.99999%}.mg-twothird{width:66.66666%}.mg-threequarter{width:74.99999%}}
     .mg-iframe-responsive{position: relative;width: 100%;overflow: hidden}
     .mg-iframe-responsive iframe,video{position: absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;height: 100%;border: none;}
-    @media (max-width:600px){.mg-hide-small{display:none!important}.mg-container-para-half-img{padding:0.01em 16px}.mg-image-flex{flex-direction: column;}.mg-image-flex > div:not(:last-child) {margin-right: 0;margin-bottom: 3px;}}
-    @media (min-width:993px){.mg-hide-large{display:none!important}.mg-container-para-half-img{padding:12%}.mg-image-flex{flex-direction: row;}.mg-image-flex > div:not(:last-child) {margin-right: 3px;margin-bottom: 0;}}
-    @media (max-width:992px) and (min-width:601px){.mg-hide-medium{display:none!important}.mg-container-para-half-img{padding:0.01em 16px}.mg-image-flex{flex-direction: row;}.mg-image-flex > div:not(:last-child) {margin-right: 3px;margin-bottom: 0;}}
+    @media (max-width:600px){.mg-hide-small{display:none!important}.mg-image-flex{flex-direction: column;}.mg-image-flex > div:not(:last-child) {margin-right: 0;margin-bottom: 3px;}.mg-padding-mag1{padding:0.01em 16px}}
+    @media (min-width:993px){.mg-hide-large{display:none!important}.mg-image-flex{flex-direction: row;}.mg-image-flex > div:not(:last-child) {margin-right: 3px;margin-bottom: 0;}.mg-width-mag4{width:33.33333%}}
+    @media (max-width:992px) and (min-width:601px){.mg-hide-medium{display:none!important}.mg-image-flex{flex-direction: row;}.mg-image-flex > div:not(:last-child) {margin-right: 3px;margin-bottom: 0;}.mg-padding-mag1{padding:6%}.mg-padding-mag1>.mg-font{font-size:16px!important;}.mg-padding-mag1>.mg-h1{font-size:32px}.mg-padding-mag1>.mg-h2{font-size:26px}}
     .mg-display-container{position:relative}
     .mg-display-topleft{position:absolute;left:0;top:0}.mg-display-topright{position:absolute;right:0;top:0}
     .mg-display-bottomleft{position:absolute;left:0;bottom:0}.mg-display-bottomright{position:absolute;right:0;bottom:0}
@@ -38,12 +49,15 @@
     .mg-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
     .mg-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
     .mg-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
-    .mg-bgimage{background-position: center;background-repeat: no-repeat;background-size: cover;}
-    .mg-image-flex{display: flex;}
-    .mg-image-flex169{flex: 1.7777;}
-    .mg-image-flex916{flex: 0.5625;}
-    .mg-image-flex43{flex: 1.3333;}
-    .mg-image-flex34{flex: 0.75;}
+    .mg-bgimage{background-position: center;background-repeat: no-repeat;background-size:cover;transition:transform 1s ease;}
+    .mg-bgimage:hover{transform: scale(1.02);}
+    /*parallax*/
+    .mg-parallax-img1,.mg-parallax-img2,.mg-parallax-img3{background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;}
+    .mg-parallax-img1{background-image: url('https://images.pexels.com/photos/207247/pexels-photo-207247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');min-height: 100vh}
+    .mg-parallax-img2{background-image: url('https://images.pexels.com/photos/207247/pexels-photo-207247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');min-height: 500px}
+    .mg-parallax-img3{background-image: url('https://images.pexels.com/photos/207247/pexels-photo-207247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');min-height: 500px}
+    @media only screen and (max-device-width: 1600px){.mg-parallax-img1,.mg-parallax-img2,.mg-parallax-img3{background-attachment: scroll;min-height: 500px;}}
+    /*end parallax*/
     .mg-tabs {display: flex;flex-wrap: wrap;font-family:"Noto Serif",serif;font-size:18px;line-height:1.6}
     .mg-tabs label {order: 1;display: block;padding: 1rem 2rem;margin-right: 0.2rem;cursor: pointer;background:  #3CC0F8;font-weight: bold;transition: background ease 0.2s;}
     .mg-tabs .tab {order: 99;flex-grow: 1;width: 100%;display: none;padding: 1rem;background: #eee;}
@@ -62,11 +76,32 @@
     .mg-mini-gallery .thumb5{width:20%}
     .mg-mini-gallery img{transition:0.2s}
     .mg-mini-gallery img:hover{transform: scale(0.9);}
+    /*adaptive gallery by Tim Van Damme*/
+    .adaptiveGallery ul, .adaptiveGalleryli{list-style-type: none;padding: 0;}
+    .adaptiveGallery ul {display: flex;flex-wrap: wrap;}
+    /*.adaptiveGallery ul:after {content: '';display: block;flex-grow: 10;}*/
+    .adaptiveGallery li {height: 40vh;flex-grow: 1;}
+    .adaptiveGallery img {max-height: 100%;min-width: 100%;object-fit: cover;vertical-align: bottom;}
+    .adaptiveGallery img:hover{opacity: 0.8;}
+    @media (max-aspect-ratio: 1/1) {.adaptiveGallery li {height: 30vh;}}
+    @media (max-height: 480px) {.adaptiveGallery li {height: 80vh;}}
+    @media (max-aspect-ratio: 1/1) and (max-width: 480px) {.adaptiveGallery ul{flex-direction: row;}.adaptiveGallery li{height: auto;width: 100%;}.adaptiveGallery img{width: 100%;max-height: 75vh;min-width: 0;}}
+    /*end adaptive layout*/
   </style>
 </head>
 
 <body>
   <div id="cssipad"></div>
+  <!-- imgLightbox -->
+  <div id="imgLightbox" onclick="imgLightbox.close();">
+    <div id="imgLightbox-button-area">
+      <a title="download and close" id="imgLightbox-button-download">
+        <span class="imgLightbox-button">&DownArrowBar;</span>
+      </a>
+      <span title="close" class="imgLightbox-button" onclick="imgLightbox.close();">&Cross;</span>
+    </div>
+  </div>
+  <!-- end imgLightbox -->
   <!--Bắt đầu chèn code bên dưới dòng này-->
   
   <!--Kết thúc chèn code-->
