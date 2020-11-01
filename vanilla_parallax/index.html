@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Parallax</title>
+    <script src="js/vanilla-jsuparallax.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+        .element img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span class="element" data-jsuplxdir="bottom"><img src="img/01.png"></span>
+        <!-- <span class="element" data-jsuplxdir="top"><img src="img/01.png"></span> -->
+        <!-- <span class="element"><img src="img/01.png"></span> -->
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam orci turpis, auctor in lacinia a, vulputate et leo. Donec suscipit rutrum nisl at rutrum. In nec vestibulum nunc, ut cursus turpis. Proin sollicitudin porta justo id finibus. Aliquam ut maximus eros, in suscipit nunc. Morbi euismod rutrum felis et tempus. Curabitur magna libero, auctor varius congue bibendum, feugiat vel mi. Sed semper eros quis magna hendrerit, a scelerisque erat imperdiet.</p>
+    <div>
+        <span class="element" data-jsuplxperspective="100"><img src="img/02.png"></span>
+        <span class="element" data-jsuplxperspective="200"><img src="img/03.png"></span>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam orci turpis, auctor in lacinia a, vulputate et leo. Donec suscipit rutrum nisl at rutrum. In nec vestibulum nunc, ut cursus turpis. Proin sollicitudin porta justo id finibus. Aliquam ut maximus eros, in suscipit nunc. Morbi euismod rutrum felis et tempus. Curabitur magna libero, auctor varius congue bibendum, feugiat vel mi. Sed semper eros quis magna hendrerit, a scelerisque erat imperdiet.</p>
+    <div>
+        <span class="element" data-jsuplxperspective="300"><img src="img/04.png"></span>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam orci turpis, auctor in lacinia a, vulputate et leo. Donec suscipit rutrum nisl at rutrum. In nec vestibulum nunc, ut cursus turpis. Proin sollicitudin porta justo id finibus. Aliquam ut maximus eros, in suscipit nunc. Morbi euismod rutrum felis et tempus. Curabitur magna libero, auctor varius congue bibendum, feugiat vel mi. Sed semper eros quis magna hendrerit, a scelerisque erat imperdiet.</p>
+
+    <script>
+        new vanillaJsuParallax({
+            items: document.querySelectorAll('.element')
+        });
+    </script>
+</body>
+</html>
