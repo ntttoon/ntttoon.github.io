@@ -17,6 +17,9 @@
             float: left;
             margin: 10px;
         }
+        .divide_four{
+            width: 25%;
+        }
         .divide_five{
             width: 20%;
         }
@@ -24,94 +27,164 @@
 </head>
 <body style="background-color: #282828;">
     <div class="w3-bar w3-teal">
-        <div class="w3-bar-item">Xuất bộ file BG Premium chuẩn để up thật trên DFP</div>
-        <a href="../bannerdemogen/index.html" class="w3-bar-item w3-button w3-red w3-right">Xuất demo offline</a>
+        <div class="w3-bar-item">Xuất bộ file banner tĩnh để up thật trên DFP</div>
+        <button class="w3-button w3-red w3-bar-item w3-right" id="zip_btn">Pack it!</button>
     </div>
-    <div class="w3-container">
-        <p>
-            <div class="w3-text-white">Chọn loại bg để xuất file</div>
-            <select id="demochoice">
-                <option value="1" selected>Trang chủ</option>
-                <option value="2" >Trang trong top 100</option>
-                <option value="3" >Trang trong top 250</option>
-            </select>
-        </p>
-        <p class="w3-text-white">
-            <label>Chọn ảnh chứa bg kt lớn</label>
-            <input type="file" id="imageLoader"/>
-            <label>Chọn ảnh chứa bg kt nhỏ</label>
-            <input type="file" id="imageLoader2"/>
-        </p>
-        <p>
-            <div style="width: 300px; margin-right: 100px;" class="w3-text-white w3-left">
-                <span id="sliderOutput">Chất lượng ảnh: 1</span>
-                <input type="range" min="0.7" max="1" value="1" step="0.01" class="w3-input" id="qualitySlider">
-            </div>
-            <button class="w3-button w3-blue" id="zip_btn">Pack it!</button>
-        </p>
-        <p style="text-align: center;font-weight: bold;font-size: 18px;color: red;">Lưu ý phần gắn Tracking Impression và Click, các anh chị copy đúng và chính xác, không thừa các ký tự lạ như dấu nháy đơn ' hoặc dấu nháy kép ". Nhắc KD kiểm tra số liệu. <br>Không có Tracking thì để dấu #</p>
-        <p>
-            <label class="w3-text-yellow"><b>impression tracking mặc định bên dưới (chỉ gắn ở bg trái)</b> - Nếu có tracking imp của KH thì link phải bắt đầu bằng <b>https://</b></label>
-            <input class="w3-input w3-border" type="text" id="tracking_imp" value="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=">
-            <label class="w3-text-yellow"><b>click tracking/landing page</b> - Link bắt đầu bằng <b>http://</b> hoặc <b>https://</b></label>
-            <input class="w3-input w3-border" type="text" id="tracking_click" value="http://24h.com.vn">
-        </p>
-        <div class="w3-row w3-text-white">
-            <div class="w3-half w3-container">
-                <div>Ảnh chứa bg kt lớn</div>
-                <canvas id="imageCanvas" style="width: 100%;"></canvas>
-            </div>
-            <div class="w3-half w3-container">
-                <div>Ảnh chứa bg kt nhỏ</div>
-                <canvas id="imageCanvas2" style="width: 100%;"></canvas>
-            </div>
-        </div>
-        <br>
-        <canvas id="left_to" class="hide floatleft" width="444" height="1040"></canvas>
-        <canvas id="right_to" class="hide floatleft" width="444" height="1040"></canvas>
-        <canvas id="left_nho" class="hide floatleft" width="205" height="900"></canvas>
-        <canvas id="right_nho" class="hide floatleft" width="205" height="900"></canvas>
-        <canvas id="phai1" class="hide floatleft" width="300" height="600"></canvas>
-        <canvas id="top100" class="hide floatleft" width="1016" height="100"></canvas>
-        <canvas id="top250" class="hide floatleft" width="1016" height="250"></canvas>
-        <div class="w3-row w3-text-white">
-            <div class="w3-col w3-container divide_five">
-                <div>Bg trái 444x1040</div>
-                <img id="left_to_jpg" class="w3-image">
-            </div>
-            <div class="w3-col w3-container divide_five">
-                <div>Bg phải 444x1040</div>
-                <img id="right_to_jpg" class="w3-image">
-            </div>
-            <div class="w3-col w3-container divide_five">
-                <div>Bg trái 205x900</div>
-                <img id="left_nho_jpg" class="w3-image">
-            </div>
-            <div class="w3-col w3-container divide_five">
-                <div>Bg phải 205x900</div>
-                <img id="right_nho_jpg" class="w3-image">
-            </div>
-            <div class="w3-col w3-container divide_five">
-                <div>Phải 1 300x600</div>
-                <img id="phai1_jpg" class="w3-image">
-            </div>
-        </div>
-        <br>
-        <div class="w3-row w3-text-white">
-            <div class="w3-half w3-container">
-                <div>Top 1016x100</div>
-                <img id="top100_jpg" class="w3-image">
-            </div>
-            <div class="w3-half w3-container">
-                <div>Top 1016x250</div>
-                <img id="top250_jpg" class="w3-image">
-            </div>
-        </div>
-        <div class="hide" id="html_holder_imp"></div>
-        <div class="hide" id="html_holder"></div>
-        <div class="hide" id="html_top100_holder"></div>
-        <div class="hide" id="html_top250_holder"></div>
+
+    <div class="w3-bar w3-blue">
+        <button class="w3-bar-item w3-button" onclick="openCity('tab01')">Bộ background và top 1016 </button>
+        <button class="w3-bar-item w3-button" onclick="openCity('tab02')">Các banner pc</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('tab03')">Các banner mobile</button>
     </div>
+      
+    <div id="tab01" class="city">
+        <div class="w3-container">
+            <p>
+                <div class="w3-text-white">Chọn loại bg để xuất file</div>
+                <select id="demochoice">
+                    <option value="1" selected>Trang chủ</option>
+                    <option value="2" >Trang trong top 100</option>
+                    <option value="3" >Trang trong top 250</option>
+                </select>
+            </p>
+            <p class="w3-text-white">
+                <label>Chọn ảnh chứa bg kt lớn</label>
+                <input type="file" id="imageLoader"/>
+                <label>Chọn ảnh chứa bg kt nhỏ</label>
+                <input type="file" id="imageLoader2"/>
+            </p>
+            <p>
+                <div style="width: 300px; margin-right: 100px;" class="w3-text-white">
+                    <span id="sliderOutput">Chất lượng ảnh background: 1</span>
+                    <input type="range" min="0.7" max="1" value="1" step="0.01" class="w3-input" id="qualitySlider">
+                </div>
+            </p>
+            <p style="text-align: center;font-weight: bold;font-size: 18px;color: red;">Lưu ý phần gắn Tracking Impression và Click, các anh chị copy đúng và chính xác, không thừa các ký tự lạ như dấu nháy đơn ' hoặc dấu nháy kép ". Nhắc KD kiểm tra số liệu.</p>
+            <p>
+                <label class="w3-text-yellow"><b>impression tracking mặc định bên dưới (chỉ gắn ở bg trái)</b> - Nếu có tracking imp của KH thì link phải bắt đầu bằng <b>https://</b></label>
+                <input class="w3-input w3-border" type="text" id="tracking_imp" value="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=">
+                <label class="w3-text-yellow"><b>click tracking/landing page</b> - Link bắt đầu bằng <b>http://</b> hoặc <b>https://</b></label>
+                <input class="w3-input w3-border" type="text" id="tracking_click" value="http://24h.com.vn">
+            </p>
+            <div class="w3-row w3-text-white">
+                <div class="w3-half w3-container">
+                    <div>Ảnh chứa bg kt lớn</div>
+                    <canvas id="imageCanvas" style="width: 100%;"></canvas>
+                </div>
+                <div class="w3-half w3-container">
+                    <div>Ảnh chứa bg kt nhỏ</div>
+                    <canvas id="imageCanvas2" style="width: 100%;"></canvas>
+                </div>
+            </div>
+            <br>
+            <canvas id="left_to" class="hide floatleft" width="444" height="1040"></canvas>
+            <canvas id="right_to" class="hide floatleft" width="444" height="1040"></canvas>
+            <canvas id="left_nho" class="hide floatleft" width="205" height="900"></canvas>
+            <canvas id="right_nho" class="hide floatleft" width="205" height="900"></canvas>
+            <!-- <canvas id="phai1" class="hide floatleft" width="300" height="600"></canvas> -->
+            <canvas id="top100" class="hide floatleft" width="1016" height="100"></canvas>
+            <canvas id="top250" class="hide floatleft" width="1016" height="250"></canvas>
+            <div class="w3-row w3-text-white">
+                <div class="w3-col w3-container divide_four">
+                    <div>Bg trái 444x1040</div>
+                    <img id="left_to_jpg" class="w3-image">
+                </div>
+                <div class="w3-col w3-container divide_four">
+                    <div>Bg phải 444x1040</div>
+                    <img id="right_to_jpg" class="w3-image">
+                </div>
+                <div class="w3-col w3-container divide_four">
+                    <div>Bg trái 205x900</div>
+                    <img id="left_nho_jpg" class="w3-image">
+                </div>
+                <div class="w3-col w3-container divide_four">
+                    <div>Bg phải 205x900</div>
+                    <img id="right_nho_jpg" class="w3-image">
+                </div>
+                <!-- <div class="w3-col w3-container divide_five">
+                    <div>Phải 1 300x600</div>
+                    <img id="phai1_jpg" class="w3-image">
+                </div> -->
+            </div>
+            <br>
+            <div class="w3-row w3-text-white">
+                <div class="w3-half w3-container">
+                    <div>Top 1016x100</div>
+                    <img id="top100_jpg" class="w3-image">
+                </div>
+                <div class="w3-half w3-container">
+                    <div>Top 1016x250</div>
+                    <img id="top250_jpg" class="w3-image">
+                </div>
+            </div>
+            <div class="hide" id="html_holder_imp"></div>
+            <div class="hide" id="html_holder"></div>
+            <div class="hide" id="html_top100_holder"></div>
+            <div class="hide" id="html_top250_holder"></div>
+            <div class="hide" id="html_mb320100imp_holder"></div>
+            <div class="hide" id="html_mb320100_holder"></div>
+            <div class="hide" id="html_inpage_holder"></div>
+            <div class="hide" id="html_mb300250_holder"></div>
+            <!-- holder img -->
+            <div class="hide" id="img_phai1_holder"></div>
+            <div class="hide" id="img_phai2_holder"></div>
+            <div class="hide" id="img_sticky_holder"></div>
+            <div class="hide" id="img_hot_holder"></div>
+            <div class="hide" id="img_top_holder"></div>
+            <div class="hide" id="img_inpage_holder"></div>
+            <div class="hide" id="img_cbv_holder"></div>
+            <div class="hide" id="img_center1_holder"></div>
+            <div class="hide" id="img_center2_holder"></div>
+        </div>
+    </div>
+      
+    <div id="tab02" class="city" style="display:none">
+        <div class="w3-container w3-text-white" class="background:#282828">
+            <h3>Upload ảnh banner pc</h3>
+            <div>Up ảnh banner phải 1 <strong>300x600</strong></div>
+            <input class="w3-input" id="phai1" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <div>Up ảnh banner phải 2 <strong>300x250</strong></div>
+            <input class="w3-input" id="phai2" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <div>Up ảnh banner sticky <strong>300x600</strong></div>
+            <input class="w3-input" id="sticky" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <div>Up ảnh banner hot <strong>336x280</strong></div>
+            <input class="w3-input" id="hot" type="file" accept="image/x-png,image/gif,image/jpeg" />
+        </div>
+    </div>
+
+    <div id="tab03" class="city" style="display:none">
+        <div class="w3-container w3-white">
+            <p style="text-align: center;font-weight: bold;font-size: 18px;color: red;">Lưu ý phần gắn Tracking Impression và Click, các anh chị copy đúng và chính xác, không thừa các ký tự lạ như dấu nháy đơn ' hoặc dấu nháy kép ". Nhắc KD kiểm tra số liệu.</p>
+            <p>
+                <label class="w3-text-red"><b>impression tracking mặc định bên dưới (chỉ gắn ở bg trái)</b> - Nếu có tracking imp của KH thì link phải bắt đầu bằng <b>https://</b></label>
+                <input class="w3-input w3-border" type="text" id="tracking_imp_mb" value="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=">
+                <label class="w3-text-red"><b>click tracking/landing page</b> - Link bắt đầu bằng <b>http://</b> hoặc <b>https://</b></label>
+                <input class="w3-input w3-border" type="text" id="tracking_click_mb" value="http://24h.com.vn">
+            </p>
+            <h3>Upload ảnh banner mobile</h3>
+            <div>Up ảnh banner top <strong>320x100 (640x200)</strong></div>
+            <input class="w3-input" id="top" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <div>Up ảnh banner inpage <strong>320x640 (375x750)</strong></div>
+            <input class="w3-input" id="inpage" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <div>Up ảnh banner chân bv <strong>320x100 (640x200)</strong></div>
+            <input class="w3-input" id="cbv" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <div>Up ảnh banner center1 <strong>300x250 (600x500)</strong></div>
+            <input class="w3-input" id="center1" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <div>Up ảnh banner center2 <strong>300x250 (600x500)</strong></div>
+            <input class="w3-input" id="center2" type="file" accept="image/x-png,image/gif,image/jpeg" />
+        </div>
+    </div>
+    
+    <script>
+        function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+            }
+            document.getElementById(cityName).style.display = "block";  
+        }
+    </script>   
 
     <script>
         var type_pack = document.getElementById("demochoice").value;
@@ -136,8 +209,8 @@
         var right_to_ctx = right_to.getContext('2d');
         var right_nho = document.getElementById('right_nho');
         var right_nho_ctx = right_nho.getContext('2d');
-        var phai1 = document.getElementById('phai1');
-        var phai1_ctx = phai1.getContext('2d');
+        // var phai1 = document.getElementById('phai1');
+        // var phai1_ctx = phai1.getContext('2d');
         var top100 = document.getElementById('top100');
         var top100_ctx = top100.getContext('2d');
         var top250 = document.getElementById('top250');
@@ -153,7 +226,7 @@
             document.getElementById("right_to_jpg").src = '';
             document.getElementById("left_to_jpg").src = left_to.toDataURL("image/jpeg",imgQuality);
             document.getElementById("right_to_jpg").src = right_to.toDataURL("image/jpeg",imgQuality);
-            document.getElementById("phai1_jpg").src = phai1.toDataURL("image/jpeg",imgQuality);
+            // document.getElementById("phai1_jpg").src = phai1.toDataURL("image/jpeg",imgQuality);
             document.getElementById("top100_jpg").src = top100.toDataURL("image/jpeg",imgQuality);
             document.getElementById("top250_jpg").src = top250.toDataURL("image/jpeg",imgQuality);
             document.getElementById("left_nho_jpg").src = left_nho.toDataURL("image/jpeg",imgQuality);
@@ -169,17 +242,13 @@
                     canvas.height = img.height;
                     ctx.drawImage(img,0,0);
                     left_to_ctx.drawImage(img,0,0,444,1040,0,0,444,1040);
-                    //left_nho_ctx.drawImage(img,239,0,205,900,0,0,205,900);
                     right_to_ctx.drawImage(img,1460,0,444,1040,0,0,444,1040);
-                    //right_nho_ctx.drawImage(img,1460,0,205,900,0,0,205,900);
-                    phai1_ctx.drawImage(img,1154,24,300,600,0,0,300,600);
+                    // phai1_ctx.drawImage(img,1154,24,300,600,0,0,300,600);
                     top100_ctx.drawImage(img,444,0,1016,100,0,0,1016,100);
                     top250_ctx.drawImage(img,444,0,1016,250,0,0,1016,250);
                     document.getElementById("left_to_jpg").src = left_to.toDataURL("image/jpeg",imgQuality);
                     document.getElementById("right_to_jpg").src = right_to.toDataURL("image/jpeg",imgQuality);
-                    //document.getElementById("left_nho_jpg").src = left_nho.toDataURL("image/jpeg",1);
-                    //document.getElementById("right_nho_jpg").src = right_nho.toDataURL("image/jpeg",1);
-                    document.getElementById("phai1_jpg").src = phai1.toDataURL("image/jpeg",imgQuality);
+                    // document.getElementById("phai1_jpg").src = phai1.toDataURL("image/jpeg",imgQuality);
                     document.getElementById("top100_jpg").src = top100.toDataURL("image/jpeg",imgQuality);
                     document.getElementById("top250_jpg").src = top250.toDataURL("image/jpeg",imgQuality);
                 }
@@ -225,6 +294,53 @@
         readTemplates("templates/html5_tinh_jpg.html","html_holder_imp");
         readTemplates("templates/top_1016x100.html","html_top100_holder");
         readTemplates("templates/top_1016x250.html","html_top250_holder");
+        readTemplates("templates/responsive_320x100.html","html_mb320100imp_holder");
+        readTemplates("templates/responsive_320x100.html","html_mb320100_holder");
+        readTemplates("templates/inpage_tinh.html","html_inpage_holder");
+        readTemplates("templates/responsive_300x250.html","html_mb300250_holder");
+        ///////////////////////// Load input file into div holder
+        function readInputFile(input,div_holder,mode) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                
+                reader.onload = function (e) {
+                    document.getElementById(div_holder).textContent = e.target.result;
+                }
+                if(mode == "image" ){
+                    reader.readAsDataURL(input.files[0]);
+                }
+                if(mode == "text" ){
+                    reader.readAsText(input.files[0]);
+                }
+            }
+        }
+        document.getElementById("phai1").addEventListener("change", function(){
+            readInputFile(this,"img_phai1_holder","image");
+        })
+        document.getElementById("phai2").addEventListener("change", function(){
+            readInputFile(this,"img_phai2_holder","image");
+        })
+        document.getElementById("sticky").addEventListener("change", function(){
+            readInputFile(this,"img_sticky_holder","image");
+        })
+        document.getElementById("hot").addEventListener("change", function(){
+            readInputFile(this,"img_hot_holder","image");
+        })
+        document.getElementById("top").addEventListener("change", function(){
+            readInputFile(this,"img_top_holder","image");
+        })
+        document.getElementById("inpage").addEventListener("change", function(){
+            readInputFile(this,"img_inpage_holder","image");
+        })
+        document.getElementById("cbv").addEventListener("change", function(){
+            readInputFile(this,"img_cbv_holder","image");
+        })
+        document.getElementById("center1").addEventListener("change", function(){
+            readInputFile(this,"img_center1_holder","image");
+        })
+        document.getElementById("center2").addEventListener("change", function(){
+            readInputFile(this,"img_center2_holder","image");
+        })
         //////////////////////////////
         function replaceClick(div,string) {
             var str = document.getElementById(div).textContent; 
@@ -243,17 +359,21 @@
             readTemplates("templates/html5_tinh_jpg.html","html_holder_imp");
             readTemplates("templates/top_1016x100.html","html_top100_holder");
             readTemplates("templates/top_1016x250.html","html_top250_holder");
+            readTemplates("templates/responsive_320x100.html","html_mb320100imp_holder");
+            readTemplates("templates/responsive_320x100.html","html_mb320100_holder");
+            readTemplates("templates/inpage_tinh.html","html_inpage_holder");
+            readTemplates("templates/responsive_300x250.html","html_mb300250_holder");
             //
             var zip = new JSZip();
             var type_pack = document.getElementById("demochoice").value;
-            //replace click and imp
+            //replace click and imp pc
             var imp = document.getElementById("tracking_imp").value;
             imp = change_alias(imp);
             var check_imp = imp.startsWith("https://");
             var blankGif = "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=";
             if(imp != blankGif){
                 if(check_imp == false){
-                    alert("Link tracking impression có thể đang bị sai, hãy kiểm tra lại!")
+                    alert("Link tracking impression pc có thể đang bị sai, hãy kiểm tra lại!")
                     return;
                 }
             }
@@ -261,16 +381,42 @@
             click = change_alias(click);
             var check_click = click.startsWith("http");
             if(check_click == false){
-                alert("Link tracking click có thể đang bị sai, hãy kiểm tra lại!")
+                alert("Link tracking click pc có thể đang bị sai, hãy kiểm tra lại!")
                 return;
             }
-            alert("+ Tracking impression là: " + imp + "\n+ Tracking click là: " + click);
+            alert("+ Tracking impression pc là: " + imp + "\n+ Tracking click pc là: " + click);
             replaceClick("html_holder",click);
             replaceImp("html_holder",blankGif);
             replaceClick("html_holder_imp",click);
             replaceImp("html_holder_imp",imp);
             replaceClick("html_top100_holder",click);
             replaceClick("html_top250_holder",click);
+
+            //replace click and imp mb
+            var imp_mb = document.getElementById("tracking_imp_mb").value;
+            imp_mb = change_alias(imp_mb);
+            var check_imp_mb = imp_mb.startsWith("https://");
+            if(imp_mb != blankGif){
+                if(check_imp_mb == false){
+                    alert("Link tracking impression mb có thể đang bị sai, hãy kiểm tra lại!")
+                    return;
+                }
+            }
+            var click_mb = document.getElementById("tracking_click_mb").value;
+            click_mb = change_alias(click_mb);
+            var check_click_mb = click_mb.startsWith("http");
+            if(check_click_mb == false){
+                alert("Link tracking click mb có thể đang bị sai, hãy kiểm tra lại!")
+                return;
+            }
+            alert("+ Tracking impression mb là: " + imp_mb + "\n+ Tracking click mb là: " + click_mb);
+            replaceClick("html_mb320100imp_holder",click_mb);
+            replaceImp("html_mb320100imp_holder",imp_mb);
+            replaceClick("html_mb320100_holder",click_mb);
+            replaceImp("html_mb320100_holder",blankGif);
+            replaceClick("html_mb320100_holder",click_mb);
+            replaceClick("html_inpage_holder",click_mb);
+            replaceClick("html_mb300250_holder",click_mb);
            
             //html no imp
             var data_html = document.getElementById("html_holder").textContent;
@@ -280,34 +426,93 @@
             var data_html_top100 = document.getElementById("html_top100_holder").textContent;
             //html top 250
             var data_html_top250 = document.getElementById("html_top250_holder").textContent;
+            //html top
+            var data_html_top = document.getElementById("html_mb320100imp_holder").textContent;
+            //html cbv
+            var data_html_cbv = document.getElementById("html_mb320100_holder").textContent;            
+            //html inpage
+            var data_html_inpage = document.getElementById("html_inpage_holder").textContent;
+            //html center
+            var data_html_center = document.getElementById("html_mb300250_holder").textContent;
 
-            //Image banners
+            //Image bgs
             var data_left_to = document.getElementById("left_to_jpg").src;
             var data_left_nho = document.getElementById("left_nho_jpg").src;
             var data_right_to = document.getElementById("right_to_jpg").src;
             var data_right_nho = document.getElementById("right_nho_jpg").src;
 
-            zip.file("bg_premium/left/left_html.html", data_html_imp);
-            zip.file("bg_premium/left/left_to.jpg", data_left_to.substr(data_left_to.indexOf(',')+1), {base64: true});
-            zip.file("bg_premium/left/left_nho.jpg", data_left_nho.substr(data_left_nho.indexOf(',')+1), {base64: true});
-            zip.file("bg_premium/right/right_html.html", data_html);
-            zip.file("bg_premium/right/right_to.jpg", data_right_to.substr(data_right_to.indexOf(',')+1), {base64: true});
-            zip.file("bg_premium/right/right_nho.jpg", data_right_nho.substr(data_right_nho.indexOf(',')+1), {base64: true});
-            alert("+ bg trái to: " + Math.round(((data_left_to.length * 0.75)/1000)) + "\n+ bg trái nhỏ: " + Math.round(((data_left_nho.length * 0.75)/1000)) + "\n+ bg phải to: " + Math.round(((data_right_to.length * 0.75)/1000)) + "\n+ bg phải nhỏ: " + Math.round(((data_right_nho.length * 0.75)/1000)));
-            if(type_pack == 1){
-                var data_phai1 = document.getElementById("phai1_jpg").src;
-                zip.file("bg_premium/300600/300600.html", data_html);
-                zip.file("bg_premium/300600/300600.jpg", data_phai1.substr(data_phai1.indexOf(',')+1), {base64: true});
+            //Image pc
+            var data_phai1 = document.getElementById("img_phai1_holder").textContent;
+            var data_phai2 = document.getElementById("img_phai2_holder").textContent;
+            var data_hot = document.getElementById("img_hot_holder").textContent;
+            var data_sticky = document.getElementById("img_sticky_holder").textContent;
+
+            //Image mobile
+            var data_top = document.getElementById("img_top_holder").textContent;
+            var data_inpage = document.getElementById("img_inpage_holder").textContent;
+            var data_cbv = document.getElementById("img_cbv_holder").textContent;
+            var data_center1 = document.getElementById("img_center1_holder").textContent;
+            var data_center2 = document.getElementById("img_center2_holder").textContent;
+
+            if(data_left_to!==""){
+                zip.file("pc/bg_left/bg_left.html", data_html_imp);
+                zip.file("pc/bg_left/left_to.jpg", data_left_to.substr(data_left_to.indexOf(',')+1), {base64: true});
+                zip.file("pc/bg_left/left_nho.jpg", data_left_nho.substr(data_left_nho.indexOf(',')+1), {base64: true});
+                zip.file("pc/bg_right/bg_right.html", data_html);
+                zip.file("pc/bg_right/right_to.jpg", data_right_to.substr(data_right_to.indexOf(',')+1), {base64: true});
+                zip.file("pc/bg_right/right_nho.jpg", data_right_nho.substr(data_right_nho.indexOf(',')+1), {base64: true});
+                alert("+ bg trái to: " + Math.round(((data_left_to.length * 0.75)/1000)) + "\n+ bg trái nhỏ: " + Math.round(((data_left_nho.length * 0.75)/1000)) + "\n+ bg phải to: " + Math.round(((data_right_to.length * 0.75)/1000)) + "\n+ bg phải nhỏ: " + Math.round(((data_right_nho.length * 0.75)/1000)));
+                // if(type_pack == 1){
+                //     var data_phai1 = document.getElementById("phai1_jpg").src;
+                //     zip.file("bg_premium/300600/300600.html", data_html);
+                //     zip.file("bg_premium/300600/300600.jpg", data_phai1.substr(data_phai1.indexOf(',')+1), {base64: true});
+                // }
+                if(type_pack == 2){
+                    var data_top100 = document.getElementById("top100_jpg").src;
+                    zip.file("pc/1016x100/1016x100.html", data_html_top100);
+                    zip.file("pc/1016x100/1016x100.jpg", data_top100.substr(data_top100.indexOf(',')+1), {base64: true});
+                }
+                if(type_pack == 3){
+                    var data_top250 = document.getElementById("top250_jpg").src;
+                    zip.file("pc/1016x250/1016x250.html", data_html_top250);
+                    zip.file("pc/1016x250/1016x250.jpg", data_top250.substr(data_top250.indexOf(',')+1), {base64: true});
+                }
             }
-            if(type_pack == 2){
-                var data_top100 = document.getElementById("top100_jpg").src;
-                zip.file("bg_premium/top1016x100/1016x100.html", data_html_top100);
-                zip.file("bg_premium/top1016x100/1016x100.jpg", data_top100.substr(data_top100.indexOf(',')+1), {base64: true});
+            if(data_phai1!==""){
+                zip.file("pc/300x600/300x600.html", data_html);
+                zip.file("pc/300x600/300x600.jpg", data_phai1.substr(data_phai1.indexOf(',')+1), {base64: true});
             }
-            if(type_pack == 3){
-                var data_top250 = document.getElementById("top250_jpg").src;
-                zip.file("bg_premium/top1016x250/1016x250.html", data_html_top250);
-                zip.file("bg_premium/top1016x250/1016x250.jpg", data_top250.substr(data_top250.indexOf(',')+1), {base64: true});
+            if(data_phai2!==""){
+                zip.file("pc/300x250/300x250.html", data_html);
+                zip.file("pc/300x250/300x250.jpg", data_phai2.substr(data_phai2.indexOf(',')+1), {base64: true});
+            }
+            if(data_hot!==""){
+                zip.file("pc/336x280/336x280.html", data_html);
+                zip.file("pc/336x280/336x280.jpg", data_hot.substr(data_hot.indexOf(',')+1), {base64: true});
+            }
+            if(data_sticky!==""){
+                zip.file("pc/sticky/sticky.html", data_html);
+                zip.file("pc/sticky/sticky.jpg", data_sticky.substr(data_sticky.indexOf(',')+1), {base64: true});
+            }
+            if(data_top!==""){
+                zip.file("mb/top_320x100/top_320x100.html", data_html_top);
+                zip.file("mb/top_320x100/top_320x100.jpg", data_top.substr(data_top.indexOf(',')+1), {base64: true});
+            }
+            if(data_inpage!==""){
+                zip.file("mb/inpage/inpage.html", data_html_inpage);
+                zip.file("mb/inpage/inpage.jpg", data_inpage.substr(data_inpage.indexOf(',')+1), {base64: true});
+            }
+            if(data_cbv!==""){
+                zip.file("mb/cbv_320x100/cbv_320x100.html", data_html_cbv);
+                zip.file("mb/cbv_320x100/cbv_320x100.jpg", data_cbv.substr(data_cbv.indexOf(',')+1), {base64: true});
+            }
+            if(data_center1!==""){
+                zip.file("mb/center1_300x250/center1_300x250.html", data_html_center);
+                zip.file("mb/center1_300x250/center1_300x250.jpg", data_center1.substr(data_center1.indexOf(',')+1), {base64: true});
+            }
+            if(data_center2!==""){
+                zip.file("mb/center2_300x250/center2_300x250.html", data_html_center);
+                zip.file("mb/center2_300x250/center2_300x250.jpg", data_center2.substr(data_center2.indexOf(',')+1), {base64: true});
             }
 
             var filename = prompt("Đặt tên cho file zip.\nLưu ý: Không nên đặt tên Tiếng Việt có dấu, ký tự lạ, không cần thêm .zip", "banner");
