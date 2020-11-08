@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>GSAPv3 Animate CC code snippets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+    <link rel="stylesheet" href="../css/w3.css">
+    <script src="../js/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+
+<header class="w3-container w3-blue">
+	<h5>GSAPv3 Animate CC code snippets</h5>
+</header>
+
+<!--
+    &lt; = <
+    &gt; = >
+-->
+<div class="w3-container">
+    <p>&lt;script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.5.1_min.js">&lt;/script&gt;</p>
+    <textarea id="codeSample" class="w3-input w3-border w3-small" rows="20"></textarea>
+    <hr>
+    <button class="w3-button w3-teal" id="btn1">gsap_auto_1frame</button>
+    <button class="w3-button w3-teal" id="btn2">gsap_auto_2frames</button>
+</div>
+
+
+
+</body>
+<script>
+    function readTextFile(file)
+    {
+        var rawFile = new XMLHttpRequest();
+        rawFile.open("GET", file, false);
+        rawFile.onreadystatechange = function ()
+        {
+            if(rawFile.readyState === 4)
+            {
+                if(rawFile.status === 200 || rawFile.status == 0)
+                {
+                    var allText = rawFile.responseText;
+                    //alert(allText);
+                    $( "#codeSample" ).val(allText);
+                    
+                }
+            }
+        }
+        rawFile.send(null);
+    }
+    function copyCode() {
+        var copyText = document.getElementById("codeSample");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+    }
+    $( "#btn1" ).click(function() {
+        readTextFile("modules/gsap_auto_1frame.txt");
+        copyCode();
+    });
+    $( "#btn2" ).click(function() {
+        readTextFile("modules/gsap_auto_2frames.txt");
+        copyCode();
+    });
+</script>
+</html>

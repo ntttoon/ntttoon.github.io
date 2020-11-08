@@ -1,0 +1,31 @@
+this.stop();
+
+var root = this;
+var arrChildren = root.children;
+var mcs1_break = 5;
+var tl = gsap.timeline({onComplete:replay});
+function replay(){myVar = setTimeout(function(){tl.restart();}, 5000)}
+
+function in_eff1(){
+	tl.from(arrChildren[0], {duration:1, x:"+=200",alpha:0,ease: "power3.out"});
+	for(var i=1;i<mcs1_break;i++){
+		tl.from(arrChildren[i], {duration:1,y:"+=200",alpha:0,ease: "elastic.out(1, 0.75)"}, "-=0.7")
+	}
+	loop_eff1(arrChildren[0]);
+	for(var i=0;i<mcs1_break;i++){
+		tl.to(arrChildren[i], {duration:1,y:"-=200",alpha:0,ease: "power3.out"}, "-=0.7")
+	}
+	for(var i=mcs1_break;i<arrChildren.length;i++){
+		tl.from(arrChildren[i], {duration:1,y:"+=200",alpha:0,ease: "elastic.out(1, 0.75)"}, "-=0.7")
+	}
+}
+
+function loop_eff1(a){
+	tl.to(a, {duration: 0.2, scaleX:1.2,scaleY:1.2});
+	tl.to(a, {duration: 0.2, scaleX:1,scaleY:1});
+	tl.to(a, {duration: 0.2, scaleX:1.2,scaleY:1.2});
+	tl.to(a, {duration: 0.2, scaleX:1,scaleY:1});
+	tl.to(a, {duration: 1, scaleX:1,scaleY:1});
+}
+
+stage.on("drawstart", in_eff1, this, true);
