@@ -1,0 +1,22 @@
+var that = this;
+var gb_duration = 1;
+var gb_ease = "power2.inOut";
+var gb_ease2 = "elastic(1, 0.75)";
+var gb_delay = "-=0.4";
+
+function hien(mc){tl.from(mc, {duration:gb_duration,alpha:0},gb_delay);}
+function an(mc){tl.to(mc, {duration:0.5,alpha:0},"-=0.5");}
+function cho(mc,e){tl.to(mc, {duration:e?e:3,alpha:1});}
+function trai(mc,e){tl.from(mc, {duration:gb_duration,x:"+=300",alpha:0,ease: e?e:gb_ease},gb_delay);}
+function phai(mc,e){tl.from(mc, {duration:gb_duration,x:"-=300",alpha:0,ease: e?e:gb_ease},gb_delay);}
+function tren(mc,e){tl.from(mc, {duration:gb_duration,y:"+=300",alpha:0,ease: e?e:gb_ease},gb_delay);}
+function duoi(mc,e){tl.from(mc, {duration:gb_duration,y:"-=300",alpha:0,ease: e?e:gb_ease},gb_delay);}
+function phong(mc,e){tl.from(mc, {duration:gb_duration,scaleX:0.1,scaleY:0.1,alpha:0,ease: e?e:gb_ease},gb_delay);}
+function thu(mc,e){tl.from(mc, {duration:gb_duration,scaleX:2,scaleY:2,alpha:0,ease: e?e:gb_ease},gb_delay);}
+function phongxoay(mc,e){tl.from(mc, {duration:gb_duration,scaleX:0.1,scaleY:0.1,rotation:180,alpha:0,ease: e?e:gb_ease},gb_delay);}
+function thuxoay(mc,e){tl.from(mc, {duration:gb_duration,scaleX:2,scaleY:2,rotation:180,alpha:0,ease: e?e:gb_ease},gb_delay);}
+function phong2lan(mc){tl.to(mc, {duration: 0.2, scaleX:1.2,scaleY:1.2});tl.to(mc, {duration: 0.2, scaleX:1,scaleY:1});tl.to(mc, {duration: 0.2, scaleX:1.2,scaleY:1.2});tl.to(mc, {duration: 0.2, scaleX:1,scaleY:1});}
+////////
+function replay(){myVar = setTimeout(function(){tl.restart();}, 5000)}
+var tl = gsap.timeline({onComplete:replay})
+hien(that.mc)
