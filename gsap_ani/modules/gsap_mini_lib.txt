@@ -1,3 +1,4 @@
+//////// Mini gsap motion lib by ntttoon 11_28_2020
 var that = this;
 var gb_duration = 1;
 var gb_ease = "power2.inOut";
