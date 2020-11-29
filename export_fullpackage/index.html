@@ -9,6 +9,7 @@
     <script async src="../js_libs/jszip.js"> </script>
     <script async src="../js_libs/FileSaver.js"> </script> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .hide{
             display: none;
@@ -26,15 +27,32 @@
     </style>
 </head>
 <body style="background-color: #282828;">
-    <div class="w3-bar w3-teal">
-        <div class="w3-bar-item">Xuất bộ file banner tĩnh để up thật trên DFP</div>
+    <div class="w3-bar w3-blue">
+        <button class="w3-bar-item w3-button" onclick="openCity('tab01')"><i class="fa fa-map-o"></i> Backgrounds </button>
+        <button class="w3-bar-item w3-button" onclick="openCity('tab02')"><i class="fa fa-desktop"></i> Các banner pc</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('tab03')"><i class="fa fa-mobile"></i> Các banner mobile</button>
         <button class="w3-button w3-red w3-bar-item w3-right" id="zip_btn">Pack it!</button>
     </div>
 
-    <div class="w3-bar w3-blue">
-        <button class="w3-bar-item w3-button" onclick="openCity('tab01')">Bộ background và top 1016 </button>
-        <button class="w3-bar-item w3-button" onclick="openCity('tab02')">Các banner pc</button>
-        <button class="w3-bar-item w3-button" onclick="openCity('tab03')">Các banner mobile</button>
+    <div class="w3-row">
+        <div class="w3-container w3-half" class="background:#282828">
+            <p style="text-align: center;font-weight: bold;color: red;">Lưu ý phần gắn Tracking Impression và Click, các anh chị copy đúng và chính xác, không thừa các ký tự lạ như dấu nháy đơn ' hoặc dấu nháy kép ". Nhắc KD kiểm tra số liệu.</p>
+            <p>
+                <label class="w3-text-red"><b>impression tracking mặc định bên dưới (chỉ gắn ở bg trái)</b> - Nếu có tracking imp của KH thì link phải bắt đầu bằng <b>https://</b></label>
+                <input class="w3-input w3-border" type="text" id="tracking_imp" value="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=">
+                <label class="w3-text-red"><b>click tracking/landing page</b> - Link bắt đầu bằng <b>http://</b> hoặc <b>https://</b></label>
+                <input class="w3-input w3-border" type="text" id="tracking_click" value="http://24h.com.vn">
+            </p>
+        </div>
+        <div class="w3-container w3-half w3-pale-yellow">
+            <p style="text-align: center;font-weight: bold;color: red;">Lưu ý phần gắn Tracking Impression và Click, các anh chị copy đúng và chính xác, không thừa các ký tự lạ như dấu nháy đơn ' hoặc dấu nháy kép ". Nhắc KD kiểm tra số liệu.</p>
+            <p>
+                <label class="w3-text-red"><b>impression tracking mặc định bên dưới (chỉ gắn ở banner top)</b> - Nếu có tracking imp của KH thì link phải bắt đầu bằng <b>https://</b></label>
+                <input class="w3-input w3-border" type="text" id="tracking_imp_mb" value="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=">
+                <label class="w3-text-red"><b>click tracking/landing page</b> - Link bắt đầu bằng <b>http://</b> hoặc <b>https://</b></label>
+                <input class="w3-input w3-border" type="text" id="tracking_click_mb" value="http://24h.com.vn">
+            </p>
+        </div>
     </div>
       
     <div id="tab01" class="city">
@@ -47,35 +65,27 @@
                     <option value="3" >Trang trong top 250</option>
                 </select>
             </p>
-            <p class="w3-text-white">
-                <label>Chọn ảnh chứa bg kt lớn</label>
-                <input type="file" id="imageLoader"/>
-                <label>Chọn ảnh chứa bg kt nhỏ</label>
-                <input type="file" id="imageLoader2"/>
-            </p>
             <p>
                 <div style="width: 300px; margin-right: 100px;" class="w3-text-white">
                     <span id="sliderOutput">Chất lượng ảnh background: 1</span>
                     <input type="range" min="0.7" max="1" value="1" step="0.01" class="w3-input" id="qualitySlider">
                 </div>
-            </p>
-            <p style="text-align: center;font-weight: bold;font-size: 18px;color: red;">Lưu ý phần gắn Tracking Impression và Click, các anh chị copy đúng và chính xác, không thừa các ký tự lạ như dấu nháy đơn ' hoặc dấu nháy kép ". Nhắc KD kiểm tra số liệu.</p>
-            <p>
-                <label class="w3-text-yellow"><b>impression tracking mặc định bên dưới (chỉ gắn ở bg trái)</b> - Nếu có tracking imp của KH thì link phải bắt đầu bằng <b>https://</b></label>
-                <input class="w3-input w3-border" type="text" id="tracking_imp" value="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=">
-                <label class="w3-text-yellow"><b>click tracking/landing page</b> - Link bắt đầu bằng <b>http://</b> hoặc <b>https://</b></label>
-                <input class="w3-input w3-border" type="text" id="tracking_click" value="http://24h.com.vn">
-            </p>
+            </p>            
             <div class="w3-row w3-text-white">
                 <div class="w3-half w3-container">
+                    <label>Chọn ảnh chứa bg kt lớn</label>
+                    <input type="file" id="imageLoader"/>
                     <div>Ảnh chứa bg kt lớn</div>
-                    <canvas id="imageCanvas" style="width: 100%;"></canvas>
+                    <canvas id="imageCanvas" style="height: 300px;"></canvas>
                 </div>
                 <div class="w3-half w3-container">
+                    <label>Chọn ảnh chứa bg kt nhỏ</label>
+                    <input type="file" id="imageLoader2"/>
                     <div>Ảnh chứa bg kt nhỏ</div>
-                    <canvas id="imageCanvas2" style="width: 100%;"></canvas>
+                    <canvas id="imageCanvas2" style="height: 300px;"></canvas>
                 </div>
             </div>
+
             <br>
             <canvas id="left_to" class="hide floatleft" width="444" height="1040"></canvas>
             <canvas id="right_to" class="hide floatleft" width="444" height="1040"></canvas>
@@ -122,6 +132,7 @@
             <div class="hide" id="html_top100_holder"></div>
             <div class="hide" id="html_top250_holder"></div>
             <div class="hide" id="html_mb320100imp_holder"></div>
+            <div class="hide" id="html_mb320160imp_holder"></div>
             <div class="hide" id="html_mb320100_holder"></div>
             <div class="hide" id="html_inpage_holder"></div>
             <div class="hide" id="html_mb300250_holder"></div>
@@ -131,6 +142,7 @@
             <div class="hide" id="img_sticky_holder"></div>
             <div class="hide" id="img_hot_holder"></div>
             <div class="hide" id="img_top_holder"></div>
+            <div class="hide" id="img_top2_holder"></div>
             <div class="hide" id="img_inpage_holder"></div>
             <div class="hide" id="img_cbv_holder"></div>
             <div class="hide" id="img_center1_holder"></div>
@@ -153,17 +165,12 @@
     </div>
 
     <div id="tab03" class="city" style="display:none">
-        <div class="w3-container w3-white">
-            <p style="text-align: center;font-weight: bold;font-size: 18px;color: red;">Lưu ý phần gắn Tracking Impression và Click, các anh chị copy đúng và chính xác, không thừa các ký tự lạ như dấu nháy đơn ' hoặc dấu nháy kép ". Nhắc KD kiểm tra số liệu.</p>
-            <p>
-                <label class="w3-text-red"><b>impression tracking mặc định bên dưới (chỉ gắn ở bg trái)</b> - Nếu có tracking imp của KH thì link phải bắt đầu bằng <b>https://</b></label>
-                <input class="w3-input w3-border" type="text" id="tracking_imp_mb" value="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=">
-                <label class="w3-text-red"><b>click tracking/landing page</b> - Link bắt đầu bằng <b>http://</b> hoặc <b>https://</b></label>
-                <input class="w3-input w3-border" type="text" id="tracking_click_mb" value="http://24h.com.vn">
-            </p>
+        <div class="w3-container w3-pale-yellow">
             <h3>Upload ảnh banner mobile</h3>
             <div>Up ảnh banner top <strong>320x100 (640x200)</strong></div>
             <input class="w3-input" id="top" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <div>Up ảnh banner top lớn <strong>320x160 (640x320)</strong></div>
+            <input class="w3-input" id="top2" type="file" accept="image/x-png,image/gif,image/jpeg" />
             <div>Up ảnh banner inpage <strong>320x640 (375x750)</strong></div>
             <input class="w3-input" id="inpage" type="file" accept="image/x-png,image/gif,image/jpeg" />
             <div>Up ảnh banner chân bv <strong>320x100 (640x200)</strong></div>
@@ -295,6 +302,7 @@
         readTemplates("templates/top_1016x100.html","html_top100_holder");
         readTemplates("templates/top_1016x250.html","html_top250_holder");
         readTemplates("templates/responsive_320x100.html","html_mb320100imp_holder");
+        readTemplates("templates/responsive_320x160.html","html_mb320160imp_holder");
         readTemplates("templates/responsive_320x100.html","html_mb320100_holder");
         readTemplates("templates/inpage_tinh.html","html_inpage_holder");
         readTemplates("templates/responsive_300x250.html","html_mb300250_holder");
@@ -329,6 +337,9 @@
         document.getElementById("top").addEventListener("change", function(){
             readInputFile(this,"img_top_holder","image");
         })
+        document.getElementById("top2").addEventListener("change", function(){
+            readInputFile(this,"img_top2_holder","image");
+        })
         document.getElementById("inpage").addEventListener("change", function(){
             readInputFile(this,"img_inpage_holder","image");
         })
@@ -360,6 +371,7 @@
             readTemplates("templates/top_1016x100.html","html_top100_holder");
             readTemplates("templates/top_1016x250.html","html_top250_holder");
             readTemplates("templates/responsive_320x100.html","html_mb320100imp_holder");
+            readTemplates("templates/responsive_320x160.html","html_mb320160imp_holder");
             readTemplates("templates/responsive_320x100.html","html_mb320100_holder");
             readTemplates("templates/inpage_tinh.html","html_inpage_holder");
             readTemplates("templates/responsive_300x250.html","html_mb300250_holder");
@@ -412,6 +424,8 @@
             alert("+ Tracking impression mb là: " + imp_mb + "\n+ Tracking click mb là: " + click_mb);
             replaceClick("html_mb320100imp_holder",click_mb);
             replaceImp("html_mb320100imp_holder",imp_mb);
+            replaceClick("html_mb320160imp_holder",click_mb);
+            replaceImp("html_mb320160imp_holder",imp_mb);
             replaceClick("html_mb320100_holder",click_mb);
             replaceImp("html_mb320100_holder",blankGif);
             replaceClick("html_mb320100_holder",click_mb);
@@ -428,6 +442,8 @@
             var data_html_top250 = document.getElementById("html_top250_holder").textContent;
             //html top
             var data_html_top = document.getElementById("html_mb320100imp_holder").textContent;
+            //html top2
+            var data_html_top2 = document.getElementById("html_mb320160imp_holder").textContent;
             //html cbv
             var data_html_cbv = document.getElementById("html_mb320100_holder").textContent;            
             //html inpage
@@ -449,6 +465,7 @@
 
             //Image mobile
             var data_top = document.getElementById("img_top_holder").textContent;
+            var data_top2 = document.getElementById("img_top2_holder").textContent;
             var data_inpage = document.getElementById("img_inpage_holder").textContent;
             var data_cbv = document.getElementById("img_cbv_holder").textContent;
             var data_center1 = document.getElementById("img_center1_holder").textContent;
@@ -497,6 +514,10 @@
             if(data_top!==""){
                 zip.file("mb/top_320x100/top_320x100.html", data_html_top);
                 zip.file("mb/top_320x100/top_320x100.jpg", data_top.substr(data_top.indexOf(',')+1), {base64: true});
+            }
+            if(data_top2!==""){
+                zip.file("mb/top_320x160/top_320x160.html", data_html_top2);
+                zip.file("mb/top_320x160/top_320x160.jpg", data_top2.substr(data_top2.indexOf(',')+1), {base64: true});
             }
             if(data_inpage!==""){
                 zip.file("mb/inpage/inpage.html", data_html_inpage);

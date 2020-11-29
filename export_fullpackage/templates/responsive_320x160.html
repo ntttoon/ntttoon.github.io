@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>banner center mobile</title>
+        <script>
+            /*=========== [THÔNG TIN CÓ THỂ THANH ĐỔI] KHAI BÁO CÁC BIẾN TÊN/THÔNG SỐ GHI NHẬN TRACKING BẰNG GA */
+            // Url dích
+            var V_URL= '%%this_is_click%%';
+            
+            // Cấu hình chiều rộng banner
+            var V_WIDTH = 320;
+            // Cấu hình chiều cao banner
+            var V_HEIGHT = 160;
+            /*=========== [HẾT PHẦN THÔNG TIN CÓ THỂ THANH ĐỔI] KHAI BÁO CÁC BIẾN TÊN/THÔNG SỐ GHI NHẬN TRACKING BẰNG GA */
+        </script>
+        <script type="text/javascript">
+            /*=========== Khai báo các biến TÊN/THÔNG SỐ ghi nhận tracking bằng GA */
+            // Gắn click tracking
+            V_URL   = '%%CLICK_URL_UNESC%%'+V_URL;
+            
+            // Khai báo các biến sử dụng để xử lý hiển thị banner html5
+            var id_div_parent = '%%PATTERN:id_div%%';
+            // Độ rộng màn hình thiết bị mobile
+            var V_DEVICE_WIDTH  = 0;
+            // Chiều cao màn hình thiết bị mobile
+            var V_DEVICE_HEIGHT = 0;
+            // Tỷ lệ chiều rộng
+            var V_TY_LE_WIDTH   = 0;
+            // Tỷ lệ chiều cao
+            var V_TY_LE_HEIGHT  = 0;
+            
+            // Gửi message tới parent webbrower
+            function sendBack24h(action, width, height) {
+                var data    = {type:"banner-mobile-responsive",id:id_div_parent,id_iframe:'',action: action, width: width, height: height, web_type: '24h-banner-dfp'};
+                data        = JSON.stringify(data);
+                window.parent.postMessage(data, "*");
+            };
+            
+            // Tính chiều rộng, chiều cao banner theo tỷ lệ
+            function tinh_width_height_banner_theo_ty_le(P_DEVICE_WIDTH, P_DEVICE_HEIGHT, P_WIDTH, P_HEIGHT){
+                // Tỷ lệ chiều rộng
+                V_TY_LE_WIDTH   = P_DEVICE_WIDTH/P_WIDTH;
+                // Tỷ lệ chiều cao
+                V_TY_LE_HEIGHT  = P_DEVICE_HEIGHT/P_HEIGHT;
+				
+				// Tính lại chiều rộng banner
+				V_WIDTH = P_DEVICE_WIDTH;
+				// Tính lại chiều cao banner
+				V_HEIGHT = P_HEIGHT * V_TY_LE_WIDTH;
+                
+                // set lại chiều cao, rộng mới của banner
+                var v_el_banner = document.getElementById('banner-inpage');
+                if(typeof v_el_banner != typeof undefined && v_el_banner){
+                    v_el_banner.style.width = V_WIDTH+'px';
+                    v_el_banner.style.height = V_HEIGHT+'px';
+                    // Lấy width, hegiht
+                    sendBack24h('thay-doi-width-height', V_WIDTH+'px', V_HEIGHT+'px');
+                }
+            }
+            
+            // Hàm xử lý dữ liệu gửi từ window parent
+            function dfp_process_mesage(event){
+                try {
+                    data = JSON.parse(event.data);
+                } catch (error) {
+                    return;
+                }
+                // Kiểm tra biến
+                if (data.type != "banner-mobile-responsive") return;
+                if (data.web_type != "24h-banner-dfp") return;
+                //if (data.id != id_div_parent) return;
+                // Loại action video quảng cáo
+                var action = data.action;
+
+                // Kiểm tra loại action để lấy width, height
+                if(action == 'lay-width-height'){
+                    // Độ rộng màn hình thiết bị mobile
+                    V_DEVICE_WIDTH  = parseInt(data.width);
+                    // Chiều cao màn hình thiết bị mobile
+                    V_DEVICE_HEIGHT = parseInt(data.height);
+                    // mobile tru di 14px
+                     V_DEVICE_WIDTH  = V_DEVICE_WIDTH;
+                    // Tính toán width, height
+                    V_DEVICE_HEIGHT_TEMP    = V_DEVICE_HEIGHT;
+                    tinh_width_height_banner_theo_ty_le(V_DEVICE_WIDTH, V_DEVICE_HEIGHT, V_WIDTH, V_HEIGHT);
+                }
+            }
+            
+            // Lấy width, hegiht của thiết bị
+            sendBack24h('lay-width-height', '', '');
+
+            function init(){ 
+            	var impDiv = document.getElementById('impressionTrack');
+				if(impDiv){
+                    // Gắn impression ở đây
+					impDiv.innerHTML = '<img src="%%this_is_impression%%" border="0" width="0" height="0" style="display:none;" />';
+				}
+            }
+        </script>
+        <style>.content{width: 100%; height: auto;text-align: center;}</style>
+    </head>
+    <body onload="init();">
+        <div class="content">
+            <img id="banner-inpage" 
+                border="0" alt=""
+                src="%%FILE:JPG1%%" style="width: 100%" />
+        </div>
+        
+		<div id="impressionTrack"></div>
+        <script type="text/javascript" language="javascript">
+            // Lấy element by id
+            var banner = document.getElementById("banner-inpage");
+            // Sự kiện click vào banner
+            banner.addEventListener("click", function(){
+                // Mở link mới
+                window.open(V_URL,"_blank");
+            });
+            
+            if (window.addEventListener){
+                addEventListener("message", dfp_process_mesage, false)
+
+            // Xử lý đối với ie6 trở xuống
+            } else {
+                attachEvent("onmessage", dfp_process_mesage)
+            }
+        </script>
+    </body>
+</html>
