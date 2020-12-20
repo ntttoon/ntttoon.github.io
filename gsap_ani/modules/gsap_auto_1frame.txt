@@ -1,9 +1,9 @@
 this.stop();
 
-var root = this;
-var arrChildren = root.children;
+var t = this;
+var arrChildren = t.children;
 var tl = gsap.timeline({onComplete:replay});
-function replay(){myVar = setTimeout(function(){tl.restart();}, 5000)}
+function replay(){myVar = setTimeout(function(){tl.restart();}, 7000)}
 
 function in_eff1(){
 	tl.from(arrChildren[0], {duration:1,x:"+=200",alpha:0,ease: "power3.out"});

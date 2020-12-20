@@ -1,5 +1,5 @@
-//////// Mini gsap motion lib by ntttoon 12_04_2020
-var that = this;
+//////// Mini gsap motion lib by ntttoon 12_21_2020
+var t = this;
 var gb_duration = 1;
 var gb_ease = "power2.inOut";
 var gb_ease2 = "elastic(1, 0.75)";
@@ -22,6 +22,6 @@ function thuxoay(m,mc,e){tl.from(mc, {duration:gb_duration,scaleX:2,scaleY:2,rot
 function phong1lan(mc){tl.to(mc, {duration: 0.4, scaleX:1.2,scaleY:1.2});tl.to(mc, {duration: 0.4, scaleX:1,scaleY:1});}
 function phong2lan(mc){tl.to(mc, {duration: 0.2, scaleX:1.2,scaleY:1.2});tl.to(mc, {duration: 0.2, scaleX:1,scaleY:1});tl.to(mc, {duration: 0.2, scaleX:1.2,scaleY:1.2});tl.to(mc, {duration: 0.2, scaleX:1,scaleY:1});}
 /////
-function replay(){myVar = setTimeout(function(){tl.restart();}, 5000)}
+function replay(){myVar = setTimeout(function(){tl.restart();}, 7000)}
 var tl = gsap.timeline({onComplete:replay})
-hien(0,that.mc)
+hien(0,t.mc)
