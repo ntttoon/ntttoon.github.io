@@ -1,4 +1,4 @@
-//////// Mini gsap motion lib by ntttoon 12_21_2020
+//////// Mini gsap motion lib by ntttoon 12_24_2020
 var t = this;
 var gb_duration = 1;
 var gb_ease = "power2.inOut";
@@ -8,9 +8,11 @@ var gb_delay1 = "-=0.5";
 var gb_delay2 = "-=1";
 
 function checkdelay(a){if(a==0){return gb_delay};if(a==1){return gb_delay1};if(a==2){return gb_delay2}}
-function hien(m,mc){tl.from(mc, {duration:gb_duration,alpha:0},checkdelay(m));}
-function an(mc){tl.to(mc, {duration:0.5,alpha:0},"-=0.5");}
 function cho(mc,e){tl.to(mc, {duration:e?e:3,alpha:1});}
+function an(mc){tl.to(mc, {duration:0.5,alpha:0},"-=0.5");}
+function hien(m,mc){tl.from(mc, {duration:gb_duration,alpha:0},checkdelay(m));}
+function doc(m,mc,e){tl.from(mc, {duration:gb_duration,alpha:0,scaleX:0.1,ease: e?e:gb_ease},checkdelay(m));}
+function ngang(m,mc,e){tl.from(mc, {duration:gb_duration,alpha:0,scaleY:0.1,ease: e?e:gb_ease},checkdelay(m));}
 function trai(m,mc,e){tl.from(mc, {duration:gb_duration,x:"+=300",alpha:0,ease: e?e:gb_ease},checkdelay(m));}
 function phai(m,mc,e){tl.from(mc, {duration:gb_duration,x:"-=300",alpha:0,ease: e?e:gb_ease},checkdelay(m));}
 function tren(m,mc,e){tl.from(mc, {duration:gb_duration,y:"+=300",alpha:0,ease: e?e:gb_ease},checkdelay(m));}
@@ -21,6 +23,8 @@ function phongxoay(m,mc,e){tl.from(mc, {duration:gb_duration,scaleX:0.1,scaleY:0
 function thuxoay(m,mc,e){tl.from(mc, {duration:gb_duration,scaleX:2,scaleY:2,rotation:180,alpha:0,ease: e?e:gb_ease},checkdelay(m));}
 function phong1lan(mc){tl.to(mc, {duration: 0.4, scaleX:1.2,scaleY:1.2});tl.to(mc, {duration: 0.4, scaleX:1,scaleY:1});}
 function phong2lan(mc){tl.to(mc, {duration: 0.2, scaleX:1.2,scaleY:1.2});tl.to(mc, {duration: 0.2, scaleX:1,scaleY:1});tl.to(mc, {duration: 0.2, scaleX:1.2,scaleY:1.2});tl.to(mc, {duration: 0.2, scaleX:1,scaleY:1});}
+function nhay2lan(mc){tl.to(mc, {duration: 0.1, alpha:0});tl.to(mc, {duration: 0.1, alpha:1});tl.to(mc, {duration: 0.1, alpha:0});tl.to(mc, {duration: 0.1, alpha:1});}
+function luclac(mc){tl.to(mc, {duration: 0.2, rotation:5});tl.to(mc, {duration: 0.2, rotation:-5});tl.to(mc, {duration: 0.2, rotation:5});tl.to(mc, {duration: 0.2, rotation:-5});tl.to(mc, {duration: 0.2, rotation:0});}
 /////
 function replay(){myVar = setTimeout(function(){tl.restart();}, 7000)}
 var tl = gsap.timeline({onComplete:replay})
