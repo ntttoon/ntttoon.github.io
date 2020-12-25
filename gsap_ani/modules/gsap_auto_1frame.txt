@@ -1,24 +1,38 @@
 this.stop();
 
 var t = this;
-var arrChildren = t.children;
+var ac = t.children;
+var gb_duration = 1;
+//var gb_ease = "power2.inOut";
+var gb_ease = "elastic(1, 0.75)";
+var gb_delay = "-=0.5";
+
 var tl = gsap.timeline({onComplete:replay});
 function replay(){myVar = setTimeout(function(){tl.restart();}, 7000)}
 
-function in_eff1(){
-	tl.from(arrChildren[0], {duration:1,x:"+=200",alpha:0,ease: "power3.out"});
-	for(var i=1;i<arrChildren.length;i++){
-		tl.from(arrChildren[i], {duration:1,y:"+=200",alpha:0,ease: "elastic.out(1, 0.75)"}, "-=0.7")
+function cho(mc,e){tl.to(mc, {duration:e?e:3,alpha:1});}
+function rd_eff(mc,r){
+	if(!r){var re = Math.floor((Math.random() * 7));r = re;}
+	if(r == 0){tl.from(mc, {duration:gb_duration,alpha:0}, gb_delay)}
+	if(r == 1){tl.from(mc, {duration:gb_duration,x:"+=100",alpha:0,ease:gb_ease}, gb_delay)}
+	if(r == 2){tl.from(mc, {duration:gb_duration,x:"-=100",alpha:0,ease:gb_ease}, gb_delay)}
+	if(r == 3){tl.from(mc, {duration:gb_duration,y:"+=100",alpha:0,ease:gb_ease}, gb_delay)}
+	if(r == 4){tl.from(mc, {duration:gb_duration,y:"-=100",alpha:0,ease:gb_ease}, gb_delay)}
+	if(r == 5){tl.from(mc, {duration:gb_duration,scaleX:0.1,scaleY:0.1,alpha:0,ease:gb_ease}, gb_delay)}
+	if(r == 6){tl.from(mc, {duration:gb_duration,scaleX:3,scaleY:3,alpha:0,ease:gb_ease}, gb_delay)}
+	//loop effect
+	if(r == 7){tl.to(mc, {duration: 0.2, scaleX:1.2,scaleY:1.2});tl.to(mc, {duration: 0.2, scaleX:1,scaleY:1});tl.to(mc, {duration: 0.2, scaleX:1.2,scaleY:1.2});tl.to(mc, {duration: 0.2, scaleX:1,scaleY:1});tl.to(mc, {duration: 1, scaleX:1,scaleY:1});}
+	if(r == 8){tl.to(mc, {duration: 0.1, alpha:0});tl.to(mc, {duration: 0.1, alpha:1});tl.to(mc, {duration: 0.1, alpha:0});tl.to(mc, {duration: 0.1, alpha:1});tl.to(mc, {duration: 1, alpha:1});}
+}
+
+function st_eff(){
+	tl.from(ac[0], {duration:1,alpha:1});
+	for(var i=1;i<ac.length;i++){
+		rd_eff(ac[i])
 	}
-	loop_eff1(arrChildren[0]);
+	//loop effect
+	rd_eff(ac[3],7);
+	rd_eff(ac[4],8);
 }
 
-function loop_eff1(a){
-	tl.to(a, {duration: 0.2, scaleX:1.2,scaleY:1.2});
-	tl.to(a, {duration: 0.2, scaleX:1,scaleY:1});
-	tl.to(a, {duration: 0.2, scaleX:1.2,scaleY:1.2});
-	tl.to(a, {duration: 0.2, scaleX:1,scaleY:1});
-	tl.to(a, {duration: 1, scaleX:1,scaleY:1});
-}
-
-stage.on("drawstart", in_eff1, this, true);
+stage.on("drawstart", st_eff, this, true);
