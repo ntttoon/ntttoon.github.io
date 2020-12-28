@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Stikies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header id="header">
+    <nav id="navbar">
+      <ul>
+        <li id="how-it-works-btn">HD SỬ DỤNG</li>
+        <li id="deleteAll" style="display: none;">Delete all</li>
+      </ul>
+    </nav>
+  </header>
+  <div id="how-it-works">
+    <ul>
+      <li>
+        <p>Link code gốc: https://codepen.io/alina-balteanu/pen/BMPxVy</p>
+      </li>
+      <li>
+        <p><strong>LƯU Ý QUAN TRỌNG:</strong> các ghi chú này được lưu ở bộ nhớ cục bộ của trình duyệt. Bạn dùng trình duyệt nào lưu các ghi chú này thì nó chỉ tồn tại ở trình duyệt đó. Xóa lịch sử duyệt web hoặc cài lại máy sẽ mất ghi chú. Tóm lại là chỉ dùng ghi chú tạm thời, không dùng để ghi chú quan trọng :)</p>
+      </li>
+      <li>
+        <p><strong>TẠO :</strong> nhấn dấu <span class="fas fa-plus"></span> để tạo ghi chú mới.</p>
+      </li>
+      <li>
+        <p><strong>NHẬP :</strong> khi bạn nhập thông tin ghi chú, dấu <span class="fas fa-check"></span> sẽ có màu đỏ ~ nghĩa là ghi chú chưa được lưu.</p>
+      </li>
+      <li>
+        <p><strong>LƯU :</strong> nhấn bất kỳ đâu ngoài vùng nhập ghi chú, dấu <span class="fas fa-check"></span> sẽ chuyển thành màu đen ~ nghĩa là ghi chú đã được lưu.</p>
+      </li>
+      <li>
+        <p><strong>ĐỔI MÀU :</strong> nhấn vào icon <span class="fas fa-paint-brush"></span> để đổi màu ghi chú.</p>
+      </li>
+      <li>
+        <p><strong>GHI CHÚ ĐÃ ĐƯỢC LƯU :</strong> những ghi chú nào không có dấu <span class="fas fa-check"></span> ~ nghĩa là được lấy từ bộ nhớ trình duyệt. Bạn có thể sửa xóa.</p>
+      </li>
+      <li>
+        <p><strong>XÓA :</strong> nhấn icon <span class="fas fa-trash-alt"></span> để xóa ghi chú.</p>
+      </li>
+    </ul>
+  </div>
+  <main id="main">
+    <div class="sticky">
+      <div class="sticky-header">
+        <span class="sticky-header-menu add-button fas fa-plus" title='new sticky'></span>
+        <span class="sticky-header-menu notSaved fas fa-check" title='not saved'></span>
+        <span class="sticky-header-menu drop-button fas fa-paint-brush" title='change color'></span>
+        <div class="dropdown-content-hide">
+          <div class="pink-color"></div>
+          <div class="yellow-color"></div>
+          <div class="green-color"></div>
+          <div class="blue-color"></div>
+          <div class="purple-color"></div>
+        </div>
+        <span class="sticky-header-menu remove-button fas fa-trash-alt" title='delete sticky'></span>
+      </div>
+      <textarea class="sticky-content">
+        </textarea>
+    </div>
+    <div id="createStickyBtn">+</div>
+  </main>
+</body>
+
+</html>
