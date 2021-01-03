@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Have a problem to solve",
+    "text": "Synthetic examples won't help, and training projects won't help either. Apply your knowledge directly to your own projects. You should have some idea for an app, or website, or just a problem to solve."
+  },
+  {
+    "title": "Read documentation first",
+    "text": "The most value I got when debugging something was to go and read official documentation first on MDN. It will be the most up to date version of what you can read."
+  },
+  {
+    "title": "Read articles",
+    "text": "Subscribe to The Startup, to JavaScript weekly newsletter and to HackerNews newsletter."
+  },
+  {
+    "title": "Read the code",
+    "text": "Go to GitHub repo of your favorite js library and read it's source code. You will learn a lot from this. You can also go to some very popular libraries with a really small amount of code."
+  },
+  {
+    "title": "Learn other languages",
+    "text": "Haskell  -  for functional programming, function signatures. Python  -  for general scripting."
+  }
+]

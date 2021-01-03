@@ -1,0 +1,14 @@
+{
+  "name": "simple-notes",
+  "version": "0.0.1",
+  "description": "Simple web app to display notes written in vanilla js",
+  "main": "src/script.js",
+  "scripts": {
+    "start": "http-server ."
+  },
+  "author": "Valery Baranov <valery@baranov.xyz> (http://baranov.xyz)",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}
