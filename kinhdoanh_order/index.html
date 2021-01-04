@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phiếu order Thiết kế</title>
+    <link rel="stylesheet" href="dtsel.css" />
+    <script src="dtsel.js"></script>
+    <style>
+        html{font-family: Helvetica,Arial,sans-serif;font-size: 12px;}
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            empty-cells: show;
+            border: 1px dashed #cbcbcb;
+            margin-bottom: 20px;
+        }
+        
+        th, td {
+            padding: .5em 1em;
+            border-left: 1px dashed #cbcbcb;
+            border-bottom: 1px dashed #cbcbcb;
+            border-right-width: 0;
+            border-top-width: 0;
+            margin: 0;
+            overflow: visible;
+        }
+
+        .le{text-align: left;}
+
+        .ri{text-align: right; width: 180px;}
+
+        .ce{text-align: center;}
+        
+        /* tr:nth-child(even){background-color: #f2f2f2} */
+
+        input{padding: 4px 0;display: block;border: none;width: 100%;font-size: 12px;background: transparent;}
+        input::placeholder{color: #cbcbcb;}
+        .cal-time-slider input {height: 50%;}
+        textarea{display: block;border: none;width: 100%;font-family: Helvetica,Arial,sans-serif;font-size: 12px;}
+        textarea::placeholder{color: #cbcbcb;}
+    </style>
+</head>
+<body>
+    <h2 class="ce" style="color: darkred;">Form nhập</h2>
+    <div style="overflow-x:auto; width: 800px;margin-left: auto;margin-right: auto;">
+        <table>
+            <tr>
+                <td class="ri">Ngày chuyển job</td>
+                <td class="le"><input name="ngayChuyenJob" placeholder="chọn ngày" id="infield1"></td>
+            </tr>
+            <tr>
+                <td class="ri">Người yêu cầu / Phòng ban</td>
+                <td class="le"><input type="text" placeholder="nhập tên - phòng ban" id="infield2"></td>
+            </tr>
+            <tr>
+                <td class="ri">Hợp đồng số</td>
+                <td class="le"><input type="text" placeholder="nhập số HĐ nếu có" id="infield3"></td>
+            </tr>
+            <tr>
+                <td class="ri">Deadline mong muốn</td>
+                <td class="le"><input name="deadline" placeholder="chọn ngày" id="infield4"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="ce"><h1><strong>Yêu cầu thiết kế</strong></h1></td>
+            </tr>
+            <tr>
+                <td class="ri">Công việc</td>
+                <td class="le"><input type="text" placeholder="nhập thông tin" id="infield5"></td>
+            </tr>
+            <tr>
+                <td class="ri">Tên Khách hàng</td>
+                <td class="le"><input type="text" placeholder="nhập thông tin" id="infield6"></td>
+            </tr>
+            <tr>
+                <td class="ri">Giới thiệu chung về khách hàng/ sản phẩm cần thiết kế</td>
+                <td class="le"><textarea rows="4" placeholder="nhập thông tin" id="infield7"></textarea></td>
+            </tr>
+            <tr>
+                <td class="ri">Yêu cầu với mẫu thiết kế</td>
+                <td class="le"><textarea rows="4" placeholder="nhập thông tin" id="infield8"></textarea></td>
+            </tr>
+            <tr>
+                <td class="ri">Thông điệp muốn truyền tải</td>
+                <td class="le"><textarea rows="4" placeholder="nhập thông tin" id="infield9"></textarea></td>
+            </tr>
+            <tr>
+                <td class="ri">Loại quảng cáo</td>
+                <td class="le"></td>
+            </tr>
+            <tr>
+                <td class="ri">Các sản phẩm thiết kế quảng cáo đã có</td>
+                <td class="le"><textarea rows="4" placeholder="nhập thông tin" id="infield11"></textarea></td>
+            </tr>
+        </table>
+        <div><button onclick="copyElementToClipboard('phieu_order')">Copy phiếu order</button></div>
+    </div>
+    <hr>
+    <h2 class="ce" style="color: darkcyan;">Form xuất</h2>
+    <div style="overflow-x:auto; width: 800px;margin-left: auto;margin-right: auto;">
+        <table id="phieu_order">
+            <tr>
+                <td class="ri">Ngày chuyển job</td>
+                <td class="le"><div id="field1"></div></td>
+            </tr>
+            <tr>
+                <td class="ri">Người yêu cầu / Phòng ban</td>
+                <td class="le"><div id="field2"></div></td>
+            </tr>
+            <tr>
+                <td class="ri">Hợp đồng số</td>
+                <td class="le"><div id="field3"></div></td>
+            </tr>
+            <tr>
+                <td class="ri">Deadline mong muốn</td>
+                <td class="le"><div id="field4"></div></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="ce"><h1><strong>Yêu cầu thiết kế</strong></h1></td>
+            </tr>
+            <tr>
+                <td class="ri">Công việc</td>
+                <td class="le"><div id="field5"></div></td>
+            </tr>
+            <tr>
+                <td class="ri">Tên Khách hàng</td>
+                <td class="le"><div id="field6"></div></td>
+            </tr>
+            <tr>
+                <td class="ri">Giới thiệu chung về khách hàng/ sản phẩm cần thiết kế</td>
+                <td class="le"><div id="field7"></div></td>
+            </tr>
+            <tr>
+                <td class="ri">Yêu cầu với mẫu thiết kế</td>
+                <td class="le"><div id="field8"></div></td>
+            </tr>
+            <tr>
+                <td class="ri">Thông điệp muốn truyền tải</td>
+                <td class="le"><div id="field9"></div></td>
+            </tr>
+            <tr>
+                <td class="ri">Loại quảng cáo</td>
+                <td class="le"><div id="field10"></div></td>
+            </tr>
+            <tr>
+                <td class="ri">Các sản phẩm thiết kế quảng cáo đã có</td>
+                <td class="le"><div id="field11"></div></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        instance = new dtsel.DTS('input[name="ngayChuyenJob"]', {
+            dateFormat: "dd-mm-yyyy",
+        });
+        instance2 = new dtsel.DTS('input[name="deadline"]',  {
+            dateFormat: "dd-mm-yyyy",
+            showTime: true
+        });
+    </script>
+    <script>
+        function copyElementToClipboard(element) {
+            window.getSelection().removeAllRanges();
+            let range = document.createRange();
+            range.selectNode(typeof element === 'string' ? document.getElementById(element) : element);
+            window.getSelection().addRange(range);
+            document.execCommand('copy');
+            window.getSelection().removeAllRanges();
+        }
+    </script>
+    <script>
+        setInterval(function(){
+            document.getElementById('field1').innerHTML = document.getElementById('infield1').value;
+            document.getElementById('field2').innerHTML = document.getElementById('infield2').value;
+            document.getElementById('field3').innerHTML = document.getElementById('infield3').value;
+            document.getElementById('field4').innerHTML = document.getElementById('infield4').value;
+            document.getElementById('field5').innerHTML = document.getElementById('infield5').value;
+            document.getElementById('field6').innerHTML = document.getElementById('infield6').value;
+            document.getElementById('field7').innerHTML = document.getElementById('infield7').value;
+            document.getElementById('field8').innerHTML = document.getElementById('infield8').value;
+            document.getElementById('field9').innerHTML = document.getElementById('infield9').value;
+            document.getElementById('field11').innerHTML = document.getElementById('infield11').value;
+        }, 1000);
+    </script>
+</body>
+</html>
