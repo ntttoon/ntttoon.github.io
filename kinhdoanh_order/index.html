@@ -6,6 +6,8 @@
     <title>Phiếu order Thiết kế</title>
     <link rel="stylesheet" href="dtsel.css" />
     <script src="dtsel.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>              
+    <script type="text/javascript" src="jquery.googoose.js"></script>
     <style>
         html{font-family: Helvetica,Arial,sans-serif;font-size: 12px;}
         table {
@@ -40,6 +42,8 @@
         .cal-time-slider input {height: 50%;}
         textarea{display: block;border: none;width: 100%;font-family: Helvetica,Arial,sans-serif;font-size: 12px;}
         textarea::placeholder{color: #cbcbcb;}
+        select{border: none;}
+        select option:disabled{background-color: gray; color: #ffffff; font-weight: bold;}
     </style>
 </head>
 <body>
@@ -86,8 +90,62 @@
                 <td class="le"><textarea rows="4" placeholder="nhập thông tin" id="infield9"></textarea></td>
             </tr>
             <tr>
-                <td class="ri">Loại quảng cáo</td>
-                <td class="le"></td>
+                <td class="ri">Loại quảng cáo/ Kích thước</td>
+                <td class="le">
+                    <form>
+                        <select id="mySelect1" style="width: 450px;">
+                          <option value="">chọn quảng cáo</option>
+                          <option disabled>---------- GRAPHIC ADS DESKTOP ----------</option>
+                          <option>PC Masthead: 970x250</option>
+                          <option>PC Masthead: 970x90</option>
+                          <option>PC Trung tâm: 696x120</option>
+                          <option>PC Phải 1/Trôi ngữ cảnh: 300x600</option>
+                          <option>PC Phải 2: 300x250</option>
+                          <option>PC Hot 1: 336x280</option>
+                          <option>PC Background: 444x1040 và 205x900</option>
+                          <option>PC Trôi màn hình: 160x600</option>
+                          <option>PC Chân bài viết: 696x120</option>
+                          <option disabled>---------- GRAPHIC ADS DESKTOP - RICH MEDIA ----------</option>
+                          <option>PC Richmedia Expand Phải 1: 300x600 và 600x600</option>
+                          <option>PC Masthead gắn TVC: 970x250</option>
+                          <option>PC Phải 1/Trôi ngữ cảnh gắn TVC: 300x600</option>
+                          <option>PC Lead form Phải 1/Trôi ngữ cảnh: 300x600</option>
+                          <option>PC Lead form Masthead: 970x250</option>
+                          <option disabled>---------- GRAPHIC ADS MOBILE ----------</option>
+                          <option>MB Top: 320x100/640x200</option>
+                          <option>MB Top lớn: 320x160/640x320</option>
+                          <option>MB Trung tâm 1 và 2: 300x250/600x500</option>
+                          <option>MB Onpage: 300x250</option>
+                          <option>MB Inpage: 320x640/640x1280</option>
+                          <option disabled>---------- GRAPHIC ADS MOBILE - RICH MEDIA ----------</option>
+                          <option>MB Inpage gắn TVC: 320x640/640x1280</option>
+                          <option>MB Onpage gắn TVC: 300x250</option>
+                          <option>MB Lead form Inpage: 320x640/640x1280</option>
+                          <option>MB Lead form Onpage: 300x250</option>
+                          <option>MB Lead form Trung tâm 1: 300x250/600x500</option>
+                          <option>MB Rich Media Expandable: 640x200 và 640x640</option>
+                          <option disabled>---------- GRAPHIC ADS DESKTOP - PREMIUM BANNERS ----------</option>
+                          <option value="Background trái phải (444x1040 và 205x900) + Phải 1 (300x600)">Premium Trang chủ</option>
+                          <option value="Background trái phải (444x1040 và 205x900) + Masthead (1016x100)">Premium trang trong (1)</option>
+                          <option value="Background trái phải (444x1040 và 205x900) + Masthead (1016x250)">Premium trang trong (2)</option>
+                          <option value="970x250 và 696x90">Masthead plus</option>
+                          <option value="Background trái phải (444x1040 và 205x900) + Masthead (1016x100) + Phải 1/Trôi ngữ cảnh (300x600) + Phải 2 (300x250) + Hot (336x280)">Banner PC layout trang trong (1)</option>
+                          <option value="Background trái phải (444x1040 và 205x900) + Masthead (1016x250) + Phải 1/Trôi ngữ cảnh (300x600) + Phải 2 (300x250) + Hot (336x280)">Banner PC layout trang trong (2)</option>
+                          <option value="Background trái phải (444x1040 và 205x900) + Masthead (1016x100) + Phải 1 (300x600)">Super premium background PC (1)</option>
+                          <option value="Background trái phải (444x1040 và 205x900) + Masthead (1016x250) + Phải 1 (300x600)">Super premium background PC (2)</option>
+                          <option disabled>---------- GRAPHIC ADS MOBILE - PREMIUM BANNERS ----------</option>
+                          <option value="Top nhỏ (640x200) + Trung tâm 1/2 (600x500)">Mobile Layout</option>
+                          <option value="Top nhỏ (640x200) + Inpage (375x750/640x1280) + Banner TTSP(640x200)">Premium Mobile Layout</option>
+                          <option value="Top nhỏ (640x200) + Inpage (375x750/640x1280) + Banner TTSP(640x200) + Trung tâm 1/2 (600x500)">Super Premium Mobile Layout</option>
+                          <option disabled>---------- VIDEO ADS ----------</option>
+                          <option>Preroll</option>
+                          <option>In-read basic PC</option>
+                          <option>In-read basic MB</option>
+                          <option>In-read plus</option>
+                        </select>
+                    </form>
+                    <textarea rows="4" placeholder="nhập yêu cầu khác nếu có" id="infield10"></textarea>
+                </td>
             </tr>
             <tr>
                 <td class="ri">Các sản phẩm thiết kế quảng cáo đã có</td>
@@ -95,10 +153,11 @@
             </tr>
         </table>
         <div><button onclick="copyElementToClipboard('phieu_order')">Copy phiếu order</button></div>
+        <div><button id="word_export">Save file Word</button></div>
     </div>
     <hr>
     <h2 class="ce" style="color: darkcyan;">Form xuất</h2>
-    <div style="overflow-x:auto; width: 800px;margin-left: auto;margin-right: auto;">
+    <div style="overflow-x:auto; width: 800px;margin-left: auto;margin-right: auto;" class="googoose-wrapper">
         <table id="phieu_order">
             <tr>
                 <td class="ri">Ngày chuyển job</td>
@@ -140,8 +199,11 @@
                 <td class="le"><div id="field9"></div></td>
             </tr>
             <tr>
-                <td class="ri">Loại quảng cáo</td>
-                <td class="le"><div id="field10"></div></td>
+                <td class="ri">Loại quảng cáo/ Kích thước</td>
+                <td class="le">
+                    <div id="choice1"></div>
+                    <div id="field10"></div>
+                </td>
             </tr>
             <tr>
                 <td class="ri">Các sản phẩm thiết kế quảng cáo đã có</td>
@@ -168,6 +230,16 @@
             window.getSelection().removeAllRanges();
         }
     </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#word_export").click(function(event) {
+                var o = {
+                    filename: 'test.doc'
+                };
+                $(document).googoose(o);
+            });
+        });
+    </script>
     <script>
         setInterval(function(){
             document.getElementById('field1').innerHTML = document.getElementById('infield1').value;
@@ -179,7 +251,10 @@
             document.getElementById('field7').innerHTML = document.getElementById('infield7').value;
             document.getElementById('field8').innerHTML = document.getElementById('infield8').value;
             document.getElementById('field9').innerHTML = document.getElementById('infield9').value;
+            document.getElementById('field10').innerHTML = document.getElementById('infield10').value;
             document.getElementById('field11').innerHTML = document.getElementById('infield11').value;
+            //////////
+            document.getElementById("choice1").innerHTML = document.getElementById("mySelect1").value;
         }, 1000);
     </script>
 </body>
