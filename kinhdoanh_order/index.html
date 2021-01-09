@@ -44,7 +44,6 @@
         .cal-time-slider input {height: 50%;}
         textarea{display: block;border: none;width: 100%;font-family: Helvetica,Arial,sans-serif;font-size: 12px;}
         textarea::placeholder{color: #cbcbcb;}
-        select{border: none;}
         select option:disabled{background-color: gray; color: #ffffff; font-weight: bold;}
         .row:after,.row:before{content:"";display:table;clear:both}
         .half{width:49.99999%;float:left;}
@@ -74,7 +73,7 @@
                     </tr>
                     <tr>
                         <td colspan="2" class="ce">
-                            <h1><strong>Yêu cầu thiết kế</strong></h1>
+                            <p><strong>Yêu cầu thiết kế</strong></p>
                         </td>
                     </tr>
                     <tr>
@@ -100,180 +99,36 @@
                     <tr>
                         <td class="ri">Loại quảng cáo/ Kích thước</td>
                         <td class="le">
-                            <!-- select1 -->
-                            <form>
-                                <select id="mySelect1" style="width: 450px;">
-                                    <option value="">chọn quảng cáo</option>
-                                    <option disabled>---------- GRAPHIC ADS DESKTOP ----------</option>
-                                    <option value="<b>970x250</b>">PC Masthead: 970x250</option>
-                                    <option value="<b>970x90</b>">PC Masthead: 970x90</option>
-                                    <option value="<b>696x120</b>">PC Trung tâm: 696x120</option>
-                                    <option value="<b>300x600</b>">PC Phải 1/Trôi ngữ cảnh: 300x600</option>
-                                    <option value="<b>300x250</b>">PC Phải 2: 300x250</option>
-                                    <option value="<b>336x280</b>">PC Hot 1: 336x280</option>
-                                    <option value="<b>444x1040 và 205x900</b>">PC Background: 444x1040 và 205x900</option>
-                                    <option value="<b>160x600</b>">PC Trôi màn hình: 160x600</option>
-                                    <option value="<b>696x120</b>">PC Chân bài viết: 696x120</option>
-                                    <option disabled>---------- GRAPHIC ADS DESKTOP - RICH MEDIA ----------</option>
-                                    <option value="richmedia expand <b>300x600 và 600x600</b>">PC Richmedia Expand Phải 1: 300x600 và 600x600</option>
-                                    <option value="<b>970x250</b> gắn tvc">PC Masthead gắn TVC: 970x250</option>
-                                    <option value="<b>300x600</b> gắn tvc">PC Phải 1/Trôi ngữ cảnh gắn TVC: 300x600</option>
-                                    <option value="banner form <b>300x600</b>">PC Lead form Phải 1/Trôi ngữ cảnh: 300x600</option>
-                                    <option value="banner form <b>970x250</b>">PC Lead form Masthead: 970x250</option>
-                                    <option disabled>---------- GRAPHIC ADS MOBILE ----------</option>
-                                    <option value="mobile <b>320x100/640x200</b>">MB Top nhỏ: 320x100/640x200</option>
-                                    <option value="mobile <b>320x160/640x320</b>">MB Top lớn: 320x160/640x320</option>
-                                    <option value="mobile <b>300x250/600x500</b>">MB Trung tâm 1 và 2: 300x250/600x500</option>
-                                    <option value="mobile onpage <b>300x250/600x500</b> - riêng banner dạng box tin không được responsive">MB Onpage: 300x250/600x500</option>
-                                    <option value="mobile inpage <b>320x640/640x1280</b>">MB Inpage: 320x640/640x1280</option>
-                                    <option disabled>---------- GRAPHIC ADS MOBILE - RICH MEDIA ----------</option>
-                                    <option value="mobile inpage <b>320x640/640x1280</b> gắn tvc">MB Inpage gắn TVC: 320x640/640x1280</option>
-                                    <option value="mobile onpage <b>300x250 gắn tvc</b> ">MB Onpage gắn TVC: 300x250</option>
-                                    <option value="mobile banner form <b>640x1280</b>">MB Lead form Inpage: 320x640/640x1280</option>
-                                    <option value="mobile banner form <b>600x500</b>">MB Lead form Onpage: 300x250</option>
-                                    <option value="mobile banner form <b>600x500</b>">MB Lead form Trung tâm 1: 300x250/600x500</option>
-                                    <option value="mobile top expand <b>640x200 và 640x640</b>">MB Rich Media Expandable: 640x200 và 640x640</option>
-                                    <option disabled>---------- GRAPHIC ADS DESKTOP - PREMIUM BANNERS ----------</option>
-                                    <option value="<b>444x1040 và 205x900</b> + <b>300x600</b>">Premium Trang chủ</option>
-                                    <option value="<b>444x1040 và 205x900</b> + <b>1016x100</b>">Premium trang trong (1)</option>
-                                    <option value="<b>444x1040 và 205x900</b> + <b>1016x250</b>">Premium trang trong (2)</option>
-                                    <option value="<b>970x250 và 696x90</b>">Masthead plus</option>
-                                    <option value="<b>444x1040 và 205x900</b> + <b>1016x100</b> + <b>300x600</b> + <b>300x250</b> + <b>336x280</b>">Banner PC layout trang trong (1)</option>
-                                    <option value="<b>444x1040 và 205x900</b> + <b>1016x250</b> + <b>300x600</b> + <b>300x250</b> + <b>336x280</b>">Banner PC layout trang trong (2)</option>
-                                    <option value="<b>444x1040 và 205x900</b> + <b>1016x100</b> + <b>300x600</b>">Super premium background PC (1)</option>
-                                    <option value="<b>444x1040 và 205x900</b> + <b>1016x250</b> + <b>300x600</b>">Super premium background PC (2)</option>
-                                    <option disabled>---------- GRAPHIC ADS MOBILE - PREMIUM BANNERS ----------</option>
-                                    <option value="<b>640x200</b> + <b>600x500</b>">Mobile Layout top nhỏ</option>
-                                    <option value="<b>640x320</b> + <b>600x500</b>">Mobile Layout top lớn</option>
-                                    <option value="<b>640x200</b> + <b>375x750/640x1280</b>">Premium Mobile Layout top nhỏ</option>
-                                    <option value="<b>640x320</b> + <b>375x750/640x1280</b> + <b>640x200</b>">Premium Mobile Layout top lớn</option>
-                                    <option value="<b>640x200</b> + <b>375x750/640x1280</b> + <b>600x500</b>">Super Premium Mobile Layout top nhỏ</option>
-                                    <option value="<b>640x320</b> + <b>375x750/640x1280</b> + <b>640x200</b> + <b>600x500</b>">Super Premium Mobile Layout top lớn</option>
-                                    <option disabled>---------- VIDEO ADS ----------</option>
-                                    <option>Preroll</option>
-                                    <option>In-read basic PC</option>
-                                    <option>In-read basic MB</option>
-                                    <option>In-read plus</option>
-                                </select>
-                            </form>
-                            <!-- select2 -->
-                            <form>
-                                <select id="mySelect2" style="width: 450px;">
-                                    <option value="">chọn quảng cáo</option>
-                                    <option disabled>---------- GRAPHIC ADS DESKTOP ----------</option>
-                                    <option value="<b>970x250</b>">PC Masthead: 970x250</option>
-                                    <option value="<b>970x90</b>">PC Masthead: 970x90</option>
-                                    <option value="<b>696x120</b>">PC Trung tâm: 696x120</option>
-                                    <option value="<b>300x600</b>">PC Phải 1/Trôi ngữ cảnh: 300x600</option>
-                                    <option value="<b>300x250</b>">PC Phải 2: 300x250</option>
-                                    <option value="<b>336x280</b>">PC Hot 1: 336x280</option>
-                                    <option value="<b>444x1040 và 205x900</b>">PC Background: 444x1040 và 205x900</option>
-                                    <option value="<b>160x600</b>">PC Trôi màn hình: 160x600</option>
-                                    <option value="<b>696x120</b>">PC Chân bài viết: 696x120</option>
-                                    <option disabled>---------- GRAPHIC ADS DESKTOP - RICH MEDIA ----------</option>
-                                    <option value="richmedia expand <b>300x600 và 600x600</b>">PC Richmedia Expand Phải 1: 300x600 và 600x600</option>
-                                    <option value="<b>970x250</b> gắn tvc">PC Masthead gắn TVC: 970x250</option>
-                                    <option value="<b>300x600</b> gắn tvc">PC Phải 1/Trôi ngữ cảnh gắn TVC: 300x600</option>
-                                    <option value="banner form <b>300x600</b>">PC Lead form Phải 1/Trôi ngữ cảnh: 300x600</option>
-                                    <option value="banner form <b>970x250</b>">PC Lead form Masthead: 970x250</option>
-                                    <option disabled>---------- GRAPHIC ADS MOBILE ----------</option>
-                                    <option value="mobile <b>320x100/640x200</b>">MB Top nhỏ: 320x100/640x200</option>
-                                    <option value="mobile <b>320x160/640x320</b>">MB Top lớn: 320x160/640x320</option>
-                                    <option value="mobile <b>300x250/600x500</b>">MB Trung tâm 1 và 2: 300x250/600x500</option>
-                                    <option value="mobile onpage <b>300x250/600x500</b> - riêng banner dạng box tin không được responsive">MB Onpage: 300x250/600x500</option>
-                                    <option value="mobile inpage <b>320x640/640x1280</b>">MB Inpage: 320x640/640x1280</option>
-                                    <option disabled>---------- GRAPHIC ADS MOBILE - RICH MEDIA ----------</option>
-                                    <option value="mobile inpage <b>320x640/640x1280</b> gắn tvc">MB Inpage gắn TVC: 320x640/640x1280</option>
-                                    <option value="mobile onpage <b>300x250 gắn tvc</b> ">MB Onpage gắn TVC: 300x250</option>
-                                    <option value="mobile banner form <b>640x1280</b>">MB Lead form Inpage: 320x640/640x1280</option>
-                                    <option value="mobile banner form <b>600x500</b>">MB Lead form Onpage: 300x250</option>
-                                    <option value="mobile banner form <b>600x500</b>">MB Lead form Trung tâm 1: 300x250/600x500</option>
-                                    <option value="mobile top expand <b>640x200 và 640x640</b>">MB Rich Media Expandable: 640x200 và 640x640</option>
-                                    <option disabled>---------- GRAPHIC ADS DESKTOP - PREMIUM BANNERS ----------</option>
-                                    <option value="<b>444x1040 và 205x900</b> + <b>300x600</b>">Premium Trang chủ</option>
-                                    <option value="<b>444x1040 và 205x900</b> + <b>1016x100</b>">Premium trang trong (1)</option>
-                                    <option value="<b>444x1040 và 205x900</b> + <b>1016x250</b>">Premium trang trong (2)</option>
-                                    <option value="<b>970x250 và 696x90</b>">Masthead plus</option>
-                                    <option value="<b>444x1040 và 205x900</b> + <b>1016x100</b> + <b>300x600</b> + <b>300x250</b> + <b>336x280</b>">Banner PC layout trang trong (1)</option>
-                                    <option value="<b>444x1040 và 205x900</b> + <b>1016x250</b> + <b>300x600</b> + <b>300x250</b> + <b>336x280</b>">Banner PC layout trang trong (2)</option>
-                                    <option value="<b>444x1040 và 205x900</b> + <b>1016x100</b> + <b>300x600</b>">Super premium background PC (1)</option>
-                                    <option value="<b>444x1040 và 205x900</b> + <b>1016x250</b> + <b>300x600</b>">Super premium background PC (2)</option>
-                                    <option disabled>---------- GRAPHIC ADS MOBILE - PREMIUM BANNERS ----------</option>
-                                    <option value="<b>640x200</b> + <b>600x500</b>">Mobile Layout top nhỏ</option>
-                                    <option value="<b>640x320</b> + <b>600x500</b>">Mobile Layout top lớn</option>
-                                    <option value="<b>640x200</b> + <b>375x750/640x1280</b>">Premium Mobile Layout top nhỏ</option>
-                                    <option value="<b>640x320</b> + <b>375x750/640x1280</b> + <b>640x200</b>">Premium Mobile Layout top lớn</option>
-                                    <option value="<b>640x200</b> + <b>375x750/640x1280</b> + <b>600x500</b>">Super Premium Mobile Layout top nhỏ</option>
-                                    <option value="<b>640x320</b> + <b>375x750/640x1280</b> + <b>640x200</b> + <b>600x500</b>">Super Premium Mobile Layout top lớn</option>
-                                    <option disabled>---------- VIDEO ADS ----------</option>
-                                    <option>Preroll</option>
-                                    <option>In-read basic PC</option>
-                                    <option>In-read basic MB</option>
-                                    <option>In-read plus</option>
-                                </select>
-                            </form>
-                            <!-- select3 -->
-                            <form>
-                                <select id="mySelect3" style="width: 450px;">
-                                    <option value="">chọn quảng cáo</option>
-                                    <option disabled>---------- GRAPHIC ADS DESKTOP ----------</option>
-                                    <option value="<b>970x250</b>">PC Masthead: 970x250</option>
-                                    <option value="<b>970x90</b>">PC Masthead: 970x90</option>
-                                    <option value="<b>696x120</b>">PC Trung tâm: 696x120</option>
-                                    <option value="<b>300x600</b>">PC Phải 1/Trôi ngữ cảnh: 300x600</option>
-                                    <option value="<b>300x250</b>">PC Phải 2: 300x250</option>
-                                    <option value="<b>336x280</b>">PC Hot 1: 336x280</option>
-                                    <option value="<b>444x1040 và 205x900</b>">PC Background: 444x1040 và 205x900</option>
-                                    <option value="<b>160x600</b>">PC Trôi màn hình: 160x600</option>
-                                    <option value="<b>696x120</b>">PC Chân bài viết: 696x120</option>
-                                    <option disabled>---------- GRAPHIC ADS DESKTOP - RICH MEDIA ----------</option>
-                                    <option value="richmedia expand <b>300x600 và 600x600</b>">PC Richmedia Expand Phải 1: 300x600 và 600x600</option>
-                                    <option value="<b>970x250</b> gắn tvc">PC Masthead gắn TVC: 970x250</option>
-                                    <option value="<b>300x600</b> gắn tvc">PC Phải 1/Trôi ngữ cảnh gắn TVC: 300x600</option>
-                                    <option value="banner form <b>300x600</b>">PC Lead form Phải 1/Trôi ngữ cảnh: 300x600</option>
-                                    <option value="banner form <b>970x250</b>">PC Lead form Masthead: 970x250</option>
-                                    <option disabled>---------- GRAPHIC ADS MOBILE ----------</option>
-                                    <option value="mobile <b>320x100/640x200</b>">MB Top nhỏ: 320x100/640x200</option>
-                                    <option value="mobile <b>320x160/640x320</b>">MB Top lớn: 320x160/640x320</option>
-                                    <option value="mobile <b>300x250/600x500</b>">MB Trung tâm 1 và 2: 300x250/600x500</option>
-                                    <option value="mobile onpage <b>300x250/600x500</b> - riêng banner dạng box tin không được responsive">MB Onpage: 300x250/600x500</option>
-                                    <option value="mobile inpage <b>320x640/640x1280</b>">MB Inpage: 320x640/640x1280</option>
-                                    <option disabled>---------- GRAPHIC ADS MOBILE - RICH MEDIA ----------</option>
-                                    <option value="mobile inpage <b>320x640/640x1280</b> gắn tvc">MB Inpage gắn TVC: 320x640/640x1280</option>
-                                    <option value="mobile onpage <b>300x250 gắn tvc</b> ">MB Onpage gắn TVC: 300x250</option>
-                                    <option value="mobile banner form <b>640x1280</b>">MB Lead form Inpage: 320x640/640x1280</option>
-                                    <option value="mobile banner form <b>600x500</b>">MB Lead form Onpage: 300x250</option>
-                                    <option value="mobile banner form <b>600x500</b>">MB Lead form Trung tâm 1: 300x250/600x500</option>
-                                    <option value="mobile top expand <b>640x200 và 640x640</b>">MB Rich Media Expandable: 640x200 và 640x640</option>
-                                    <option disabled>---------- GRAPHIC ADS DESKTOP - PREMIUM BANNERS ----------</option>
-                                    <option value="<b>444x1040 và 205x900</b> + <b>300x600</b>">Premium Trang chủ</option>
-                                    <option value="<b>444x1040 và 205x900</b> + <b>1016x100</b>">Premium trang trong (1)</option>
-                                    <option value="<b>444x1040 và 205x900</b> + <b>1016x250</b>">Premium trang trong (2)</option>
-                                    <option value="<b>970x250 và 696x90</b>">Masthead plus</option>
-                                    <option value="<b>444x1040 và 205x900</b> + <b>1016x100</b> + <b>300x600</b> + <b>300x250</b> + <b>336x280</b>">Banner PC layout trang trong (1)</option>
-                                    <option value="<b>444x1040 và 205x900</b> + <b>1016x250</b> + <b>300x600</b> + <b>300x250</b> + <b>336x280</b>">Banner PC layout trang trong (2)</option>
-                                    <option value="<b>444x1040 và 205x900</b> + <b>1016x100</b> + <b>300x600</b>">Super premium background PC (1)</option>
-                                    <option value="<b>444x1040 và 205x900</b> + <b>1016x250</b> + <b>300x600</b>">Super premium background PC (2)</option>
-                                    <option disabled>---------- GRAPHIC ADS MOBILE - PREMIUM BANNERS ----------</option>
-                                    <option value="<b>640x200</b> + <b>600x500</b>">Mobile Layout top nhỏ</option>
-                                    <option value="<b>640x320</b> + <b>600x500</b>">Mobile Layout top lớn</option>
-                                    <option value="<b>640x200</b> + <b>375x750/640x1280</b>">Premium Mobile Layout top nhỏ</option>
-                                    <option value="<b>640x320</b> + <b>375x750/640x1280</b> + <b>640x200</b>">Premium Mobile Layout top lớn</option>
-                                    <option value="<b>640x200</b> + <b>375x750/640x1280</b> + <b>600x500</b>">Super Premium Mobile Layout top nhỏ</option>
-                                    <option value="<b>640x320</b> + <b>375x750/640x1280</b> + <b>640x200</b> + <b>600x500</b>">Super Premium Mobile Layout top lớn</option>
-                                    <option disabled>---------- VIDEO ADS ----------</option>
-                                    <option>Preroll</option>
-                                    <option>In-read basic PC</option>
-                                    <option>In-read basic MB</option>
-                                    <option>In-read plus</option>
-                                </select>
-                            </form>
+                            <div class="row">
+                                <div class="half">
+                                    <!-- select1 -->
+                                    <form>
+                                        <select id="mySelect1" style="width: 300px;">
+                                            <option value="">chọn quảng cáo</option>
+                                            <option disabled>---------- ADS DESKTOP/PC ----------</option>
+                                            <option value="PC Masthead: <b>970x250</b>">PC Masthead: 970x250</option>
+                                            <option value="PC Masthead: <b>970x90</b>">PC Masthead: 970x90</option>
+                                            <option value="PC Trung tâm:  <b>696x120</b>">PC Trung tâm: 696x120</option>
+                                            <option value="PC Phải 1: <b>300x600</b>">PC Phải 1: 300x600</option>
+                                            <option value="PC Phải 2: <b>300x250</b>">PC Phải 2: 300x250</option>
+                                            <option value="PC Hot 1: <b>336x280</b>">PC Hot 1: 336x280</option>
+                                            <option value="PC Trôi ngữ cảnh: <b>300x600</b>">PC Trôi ngữ cảnh: 300x600</option>
+                                            <option value="PC Background: <b>444x1040 và 205x900</b>">PC Background: 444x1040 và 205x900</option>
+                                            <option value="PC Trôi màn hình: <b>160x600</b>">PC Trôi màn hình: 160x600</option>
+                                            <option value="PC Chân bài viết: <b>696x120</b>">PC Chân bài viết: 696x120</option>
+                                        </select>
+                                    </form>
+                                </div>
+                                <div class="half">
+                                    <button onclick="addQC()">Thêm quảng cáo</button>
+                                </div>
+                            </div>
                             <textarea rows="4" placeholder="nhập yêu cầu khác nếu không có trong list trên" id="infield10"></textarea>
                         </td>
                     </tr>
                     <tr>
                         <td class="ri">Các sản phẩm thiết kế quảng cáo đã có</td>
-                        <td class="le"><textarea rows="4" placeholder="nhập thông tin" id="infield11"></textarea></td>
+                        <td class="le"><input type="text" placeholder="nhập thông tin" id="infield11"></textarea></td>
                     </tr>
                 </table>
             </div>
@@ -346,8 +201,6 @@
                         <td class="ri">Loại quảng cáo/ Kích thước</td>
                         <td class="le">
                             <div id="choice1"></div>
-                            <div id="choice2"></div>
-                            <div id="choice3"></div>
                             <div id="field10"></div>
                         </td>
                     </tr>
@@ -412,11 +265,13 @@
             document.getElementById('field9').innerHTML = document.getElementById('infield9').value;
             document.getElementById('field10').innerHTML = document.getElementById('infield10').value;
             document.getElementById('field11').innerHTML = document.getElementById('infield11').value;
-            //////////
-            document.getElementById("choice1").innerHTML = document.getElementById("mySelect1").value;
-            document.getElementById("choice2").innerHTML = document.getElementById("mySelect2").value;
-            document.getElementById("choice3").innerHTML = document.getElementById("mySelect3").value;
         }, 1000);
+        //////////
+        function addQC(){
+            var qc = $('#mySelect1 :selected').val();
+            document.getElementById("choice1").innerHTML += "<div onclick='this.remove();'>" +  qc + "</div>";
+        }
+        
     </script>
     <script>
         $('#infield8').summernote({
