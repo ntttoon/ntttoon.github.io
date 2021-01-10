@@ -47,9 +47,38 @@
         select option:disabled{background-color: gray; color: #ffffff; font-weight: bold;}
         .row:after,.row:before{content:"";display:table;clear:both}
         .half{width:49.99999%;float:left;}
+
+        ul.na{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .na li{
+            float: left;
+        }
+
+        .na li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .na li a:hover{
+            background-color: #111;
+        }
     </style>
 </head>
 <body>
+    <ul class="na">
+        <li><a href="#">Phiếu order 24h</a></li>
+        <li><a href="#">Phiếu order eva</a></li>
+        <li><a href="#">Hướng dẫn</a></li>
+    </ul>
     <div class="row">
         <div class="half">
             <h2 class="ce" style="color: darkred;">Form nhập</h2>
