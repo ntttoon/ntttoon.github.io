@@ -15,18 +15,11 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            border-spacing: 0;
-            empty-cells: show;
-            border: 1px dashed #cbcbcb;
-            margin-bottom: 20px;
         }
         
         th, td {
             padding: .5em 1em;
-            border-left: 1px dashed #cbcbcb;
-            border-bottom: 1px dashed #cbcbcb;
-            border-right-width: 0;
-            border-top-width: 0;
+            border: 1px dashed #cbcbcb;
             margin: 0;
             overflow: visible;
         }
@@ -44,9 +37,11 @@
         .cal-time-slider input {height: 50%;}
         textarea{display: block;border: none;width: 100%;font-family: Helvetica,Arial,sans-serif;font-size: 12px;}
         textarea::placeholder{color: #cbcbcb;}
+        select{padding: 1px;}
         select option:disabled{background-color: gray; color: #ffffff; font-weight: bold;}
         .row:after,.row:before{content:"";display:table;clear:both}
         .half{width:49.99999%;float:left;}
+        .floatl{float:left;}
 
         ul.na{
             list-style-type: none;
@@ -77,7 +72,7 @@
     <ul class="na">
         <li><a href="index.html">Phiếu order 24h</a></li>
         <li><a href="index_eva.html">Phiếu order eva</a></li>
-        <li><a href="huongdan.png" target="_blank">Hướng dẫn</a></li>
+        <li><a href="hdsd_toolorder.pptx" target="_blank">Hướng dẫn</a></li>
     </ul>
     <div class="row">
         <div class="half">
@@ -129,10 +124,10 @@
                         <td class="ri">Loại quảng cáo/ Kích thước</td>
                         <td class="le">
                             <div class="row">
-                                <div class="half">
+                                <div class="floatl">
                                     <!-- select1 -->
                                     <form>
-                                        <select id="mySelect1" style="width: 300px;">
+                                        <select id="mySelect1">
                                             <option value="">chọn quảng cáo</option>
                                             <option disabled>---------- ADS DESKTOP/PC ----------</option>
                                             <option value="Masthead: <b>980x250</b>">Masthead: 980x250</option>
@@ -169,7 +164,7 @@
                                         </select>
                                     </form>
                                 </div>
-                                <div class="half">
+                                <div class="floatl">
                                     <button onclick="addQC()">Thêm quảng cáo</button>
                                 </div>
                             </div>
@@ -263,7 +258,7 @@
                 </table>
             </div>
             <div class="row">
-                <div class="half">
+                <div class="half ri">
                     <button onclick="copyElementToClipboard('phieu_order')">Copy phiếu order</button>
                 </div>
                 <div class="half">
