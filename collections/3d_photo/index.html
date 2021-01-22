@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D image</title>
+    <style>
+        html,body{margin: 0;}
+    </style>
+</head>
+<body>
+    <!-- https://redstapler.co/3d-photo-from-image-javascript-tutorial/ -->
+    <script src="pixi.min.js"></script>
+    <script>
+        //let app = new PIXI.Application({width: window.innerWidth, height: window.innerHeight});
+        var w = 384;
+        var h = 512;
+        let app = new PIXI.Application({width: w, height: h});
+        document.body.appendChild(app.view);
+
+        let img = new PIXI.Sprite.from("image.jpg");
+        img.width = w;
+        img.height = h;
+        app.stage.addChild(img);
+
+        depthMap = new PIXI.Sprite.from("depth-map.jpg");
+        app.stage.addChild(depthMap);
+        depthMap.width = w;
+        depthMap.height = h;
+
+        displacementFilter = new PIXI.filters.DisplacementFilter(depthMap);
+        app.stage.filters = [displacementFilter];
+
+        window.onmousemove = function(e) {
+            displacementFilter.scale.x = (w / 2 - e.clientX) /20;
+            displacementFilter.scale.y = (h / 2 - e.clientY) /20;
+        };
+    </script>
+</body>
+</html>
