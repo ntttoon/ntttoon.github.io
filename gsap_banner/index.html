@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../css/w3.css">
     <script type="text/javascript" src="../js_libs/jscall.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="../beautify/beautify.js"></script>
+    <script src="../beautify/beautify-css.js"></script>
+    <script src="../beautify/beautify-html.js"></script>
 </head>
 <body class="w3-light-grey">
     <!-- Sidebar -->
@@ -18,8 +21,8 @@
     <!-- Page Content -->
     <div class="w3-bar w3-blue">
         <button class="w3-bar-item w3-button" onclick="w3_open()">☰</button>
-        <input type="text" class="w3-bar-item w3-input w3-border" value="336" id="banner_width">
-        <input type="text" class="w3-bar-item w3-input w3-border" value="280" id="banner_height">
+        <input type="text" class="w3-bar-item w3-input w3-border" value="300" id="banner_width">
+        <input type="text" class="w3-bar-item w3-input w3-border" value="600" id="banner_height">
         <input class="w3-bar-item w3-input w3-small" type="file" onchange="readURL(this);">
         <div class="w3-dropdown-hover w3-right">
             <button class="w3-button">Save File As</button>
@@ -210,7 +213,7 @@ document.getElementById("zip_button").addEventListener("click", function(){
     replaceTemplate("dfp_zip_holder","/*sprite_itag*/",sprite_itag);
     replaceTemplate("dfp_zip_holder","/*gsap_int*/",gsap_int);
     replaceTemplate("dfp_zip_holder","/*gsapscript*/",gsapscript);
-    var dfp_zip_holder = document.getElementById("dfp_zip_holder").textContent;
+    var dfp_zip_holder = html_beautify(document.getElementById("dfp_zip_holder").textContent);
     var sprite_holder = document.getElementById("sprite_holder").textContent;
     //////////////////////////////
     var zip = new JSZip();
@@ -243,7 +246,7 @@ document.getElementById("inpage_button").addEventListener("click", function(){
     replaceTemplate("dfp_inpage_holder","/*sprite_itag*/",sprite_itag);
     replaceTemplate("dfp_inpage_holder","/*gsap_int*/",gsap_int);
     replaceTemplate("dfp_inpage_holder","/*gsapscript*/",gsapscript);
-    var dfp_inpage_holder = document.getElementById("dfp_inpage_holder").textContent;
+    var dfp_inpage_holder = html_beautify(document.getElementById("dfp_inpage_holder").textContent);
     var sprite_holder = document.getElementById("sprite_holder").textContent;
     //////////////////////////////
     var zip = new JSZip();
@@ -274,7 +277,7 @@ document.getElementById("responsive_button").addEventListener("click", function(
     replaceTemplate("dfp_responsive_holder","/*sprite_itag*/",sprite_itag);
     replaceTemplate("dfp_responsive_holder","/*gsap_int*/",gsap_int);
     replaceTemplate("dfp_responsive_holder","/*gsapscript*/",gsapscript);
-    var dfp_responsive_holder = document.getElementById("dfp_responsive_holder").textContent;
+    var dfp_responsive_holder = html_beautify(document.getElementById("dfp_responsive_holder").textContent);
     var sprite_holder = document.getElementById("sprite_holder").textContent;
     //////////////////////////////
     var zip = new JSZip();
