@@ -135,27 +135,29 @@
             //var ssselect = ss + "select";
             var sszindex = ss + "zindex";
             var sscheck = ss + "check";
-            document.getElementById("sprite_pos_holder").innerHTML += '<div class="w3-bar-item w3-button">'+ css[i] + '<br><input id="' + sstop + '" type="text" maxlength="4" style="width:40px" value="0"> <input id="' + ssleft + '" type="text" maxlength="4" style="width:40px" value="0"> <input id="' + sszindex + '" type="text" maxlength="2" style="width:30px" value="0"> <input id="' + sscheck + '" type="checkbox"> <button onclick="write_pos_css(\'' + sstop + '\',\'' + ssleft + '\',\'' + sszindex + '\',\'' + sscheck + '\',\'' + ss + '\')">Apply</button></div>';
+            // document.getElementById("sprite_pos_holder").innerHTML += '<div class="w3-bar-item w3-button">'+ css[i] + '<br><input id="' + sstop + '" type="text" maxlength="4" style="width:40px" value="0"> <input id="' + ssleft + '" type="text" maxlength="4" style="width:40px" value="0"> <input id="' + sszindex + '" type="text" maxlength="2" style="width:30px" value="0"> <input id="' + sscheck + '" type="checkbox"> <button onclick="write_pos_css(\'' + sstop + '\',\'' + ssleft + '\',\'' + sszindex + '\',\'' + sscheck + '\',\'' + ss + '\')">Apply</button></div>';
+            document.getElementById("sprite_pos_holder").innerHTML += '<div class="w3-bar-item w3-button">'+ css[i] + '<br><input id="' + sstop + '" type="text" maxlength="4" style="width:40px" value="0"> <input id="' + ssleft + '" type="text" maxlength="4" style="width:40px" value="0"> <input id="' + sszindex + '" type="text" maxlength="2" style="width:30px" value="0"> <button onclick="write_pos_css(\'' + sstop + '\',\'' + ssleft + '\',\'' + sszindex + '\',\'' + ss + '\')">Apply</button></div>';
             document.getElementById("sprite_itag").innerHTML += '<i class="sprite ' + ss +'"></i>'
-            document.getElementById("sprite_cssposs_holderdiv").innerHTML += '<div class="cssposs" id="' + ss + '">' + css[i] + '{top:0px;left:0px;z-index:0;display:none}' +'</div>';
+            document.getElementById("sprite_cssposs_holderdiv").innerHTML += '<div class="cssposs" id="' + ss + '">' + css[i] + '{top:0px;left:0px;z-index:0}' +'</div>';
             document.getElementById("gsap_int_holder").innerHTML += 'var $' + ss_nodash + ' = $(\"' + css[i] + '\");'
-            document.getElementById("gsap_script").value += '.from($' + ss_nodash + ', {duration: 1, x:"-=300px", alpha:0, ease:"elastic(1, 0.75)"},"-=0.5")\n';
+            //document.getElementById("gsap_script").value += '.from($' + ss_nodash + ', {duration: 1, x:"-=300px", alpha:0, ease:"elastic(1, 0.75)"},"-=0.5")\n';
+            document.getElementById("gsap_script").value += '.from($' + ss_nodash + ', {duration: 1, alpha:0, ease:"power2.inOut"})\n';
         }
     }
     //////////////////////////////
-    function write_pos_css(top,left,zindex,display,id){
+    function write_pos_css(top,left,zindex,id){
         var t = document.getElementById(top).value;
         var l = document.getElementById(left).value;
         var z = document.getElementById(zindex).value;
         //var d = document.getElementById(display).value;
-        var c = document.getElementById(display).checked;
-        if(c == true){
-            var cft = "block";
-        }
-        if(c == false){
-            var cft = "none";
-        }
-        document.getElementById(id).innerHTML = '.' + id + '{' + 'top:' + t + 'px;left:' + l + 'px;z-index:' + z + ';display:' + cft + '}';
+        // var c = document.getElementById(display).checked;
+        // if(c == true){
+        //     var cft = "block";
+        // }
+        // if(c == false){
+        //     var cft = "none";
+        // }
+        document.getElementById(id).innerHTML = '.' + id + '{' + 'top:' + t + 'px;left:' + l + 'px;z-index:' + z + '}';
         //////////////////////////////
         var c = document.getElementById("sprite_cssposs");
         c.innerHTML = "";
