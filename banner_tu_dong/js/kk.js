@@ -123,13 +123,13 @@ var textNode = new Konva.Text({
 	fontStyle: 'normal',
 	draggable: true,
 	lineHeight: 1.5,
-	width: '620',
-	fill: 'black'
+	fill: 'black',
+	name: 'txt'
 });
 layer.add(textNode);
 
 textNode.on('dblclick', () => {
-	var tw = document.getElementById('txt_width').value;
+	//var tw = document.getElementById('txt_width').value;
 	var ts = document.getElementById('txt_size').value;
 	var ta = document.getElementById('txt_align').value;
 	var tf = document.getElementById('txt_fonts').value;
@@ -156,7 +156,7 @@ textNode.on('dblclick', () => {
 	textarea.style.position = 'absolute';
 	textarea.style.top = areaPosition.y + 'px';
 	textarea.style.left = areaPosition.x + 'px';
-	textarea.style.width = tw + 'px';
+	//textarea.style.width = tw + 'px';
 
 	textarea.focus();
 
@@ -164,10 +164,10 @@ textNode.on('dblclick', () => {
 		// hide on tab
 		if (e.keyCode === 9) {
 			//var regex=/[*|\":<>[\]{}`\\()';@&$]/;
-    	//textarea.value=textarea.value.replace(regex ,"");
+    		//textarea.value=textarea.value.replace(regex ,"");
 			textNode.text(textarea.value);
 			textNode.fontSize(ts);
-			textNode.width(tw);
+			//textNode.width(tw);
 			textNode.align(ta);
 			textNode.fontFamily(tf);
 			textNode.fontStyle(tb);
@@ -178,6 +178,32 @@ textNode.on('dblclick', () => {
 		}
 	});
 })
+
+//textNode transformer
+textNode.on('click tap', function (e) {
+
+	stage.find('Transformer').destroy();
+	layer.draw();
+	
+	// create new transformer
+	var tr = new Konva.Transformer({
+		enabledAnchors: ['middle-left', 'middle-right'],
+	});
+	layer.add(tr);
+	tr.attachTo(e.target);
+	layer.draw();
+})
+
+textNode.on('transform', () => {
+	// with enabled anchors we can only change scaleX
+	// so we don't need to reset height
+	// just width
+	textNode.setAttrs({
+	  width: Math.max(textNode.width() * textNode.scaleX(), 20),
+	  scaleX: 1,
+	  scaleY: 1,
+	});
+});
 
 // create text layer 2
 
@@ -190,13 +216,14 @@ var textNode2 = new Konva.Text({
 	fontStyle: 'normal',
 	draggable: true,
 	lineHeight: 1.5,
-	width: '620',
-	fill: 'white'
+	//width: '620',
+	fill: 'white',
+	name: 'txt'
 });
 layer.add(textNode2);
 
 textNode2.on('dblclick', () => {
-	var tw = document.getElementById('txt2_width').value;
+	//var tw = document.getElementById('txt2_width').value;
 	var ts = document.getElementById('txt2_size').value;
 	var ta = document.getElementById('txt2_align').value;
 	var tf = document.getElementById('txt2_fonts').value;
@@ -223,7 +250,7 @@ textNode2.on('dblclick', () => {
 	textarea2.style.position = 'absolute';
 	textarea2.style.top = areaPosition.y + 'px';
 	textarea2.style.left = areaPosition.x + 'px';
-	textarea2.style.width = tw + 'px';
+	//textarea2.style.width = tw + 'px';
 
 	textarea2.focus();
 
@@ -234,7 +261,7 @@ textNode2.on('dblclick', () => {
     	//textarea.value=textarea.value.replace(regex ,"");
 			textNode2.text(textarea2.value);
 			textNode2.fontSize(ts);
-			textNode2.width(tw);
+			//textNode2.width(tw);
 			textNode2.align(ta);
 			textNode2.fontFamily(tf);
 			textNode2.fontStyle(tb);
@@ -245,6 +272,32 @@ textNode2.on('dblclick', () => {
 		}
 	});
 })
+
+//textNode transformer
+textNode2.on('click tap', function (e) {
+
+	stage.find('Transformer').destroy();
+	layer.draw();
+	
+	// create new transformer
+	var tr = new Konva.Transformer({
+		enabledAnchors: ['middle-left', 'middle-right'],
+	});
+	layer.add(tr);
+	tr.attachTo(e.target);
+	layer.draw();
+})
+
+textNode2.on('transform', () => {
+	// with enabled anchors we can only change scaleX
+	// so we don't need to reset height
+	// just width
+	textNode2.setAttrs({
+	  width: Math.max(textNode2.width() * textNode2.scaleX(), 20),
+	  scaleX: 1,
+	  scaleY: 1,
+	});
+});
 
 function dataURLtoBlob(dataurl) {
 	var arr = dataurl.split(','), mime = arr[0].match(/:(.*?);/)[1],
@@ -418,7 +471,7 @@ function execTemplate(width,height,image1_path,image1_x,image1_y,image1_scalex,i
 	textNode.fill('#'+txt_fill);
 	layer.batchDraw();
 	// set value
-	document.getElementById("txt_width").value = txt_width;
+	//document.getElementById("txt_width").value = txt_width;
 	document.getElementById("txt_size").value = txt_size;
 	document.getElementById("txt_color").value = txt_fill;
 	document.getElementById("txt_color").style.background = '#' + txt_fill;
@@ -435,7 +488,7 @@ function execTemplate(width,height,image1_path,image1_x,image1_y,image1_scalex,i
 	textNode2.fill('#'+txt2_fill);
 	layer.batchDraw();
 	// set value
-	document.getElementById("txt2_width").value = txt2_width;
+	// document.getElementById("txt2_width").value = txt2_width;
 	document.getElementById("txt2_size").value = txt2_size;
 	document.getElementById("txt2_color").value = txt2_fill;
 	document.getElementById("txt2_color").style.background = '#' + txt2_fill;
