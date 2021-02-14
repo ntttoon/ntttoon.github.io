@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info mini cards swiper</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Serif', serif;;
+            font-size: 16px;
+            line-height: 160%;
+        }
+        section{
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #161f27;
+            overflow: hidden;
+        }
+        .swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 320px;
+            max-height: 480px;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+            filter: blur(4px);
+            background: #202b38;
+            border-radius: 10px;
+            overflow: scroll;
+        }
+        .swiper-slide-active {
+            filter: blur(0);
+            background: #202b38;
+        }
+        .testimonialBox{
+            position: relative;
+            width: 100%;
+            padding: 40px;
+            color: #dbdbdb;
+        }
+        .testimonialBox h3{
+            font-size: 18px;
+            font-weight: 400;
+            color: #41adff;
+            margin-bottom: 10px;
+        }
+        .testimonialBox hr{
+            border-top: 1px solid #526980;
+            margin: 0.5em 0;
+        }
+        .imgBx{
+            width: 320px;
+            overflow: hidden;
+            border-radius: 10px 10px 0 0;
+        }
+        .imgBx img{
+            width: 100%;
+            object-fit: cover;
+        }
+        hr{
+            border: none;
+        }
+        /* .swiper-container-3d .swiper-slide-shadow-left,
+        .swiper-container-3d .swiper-slide-shadow-right {
+            background-image: none;
+        } */
+    </style>
+</head>
+<body>
+    <!-- https://www.youtube.com/watch?v=E7mGqt7v3Uc -->
+    <section>
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- slide -->
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <img src="01.jpg">
+                    </div>
+                    <div class="testimonialBox">
+                        <h3>Đánh giá máy ảnh trên Galaxy S21 Ultra</h3>
+                        <div class="content">
+                            <p>Cụm camera của S21 Ultra lớn và dày tương tự Galaxy S20 Ultra hay Note20 Ultra, tuy nhiên, không có lớp kính phủ như các thế hệ trước nên này hạn chế bám vân tay. Nhưng khi sử dụng lâu, bụi có thể bám vào viền, ảnh hưởng đến chất lượng ảnh. Người dùng nên có thói quen lau cụm camera này trước mỗi lần chụp. Ngoài ra, do camera góc siêu rộng đặt ở gần viền máy, người dùng nên lưu ý để tránh bị dính ngón tay trong các khung hình góc siêu rộng</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide -->
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <img src="02.jpg">
+                    </div>
+                    <div class="testimonialBox">
+                        <h3>Đánh giá máy ảnh trên Galaxy S21 Ultra</h3>
+                        <div class="content">
+                            <p>Cụm camera của S21 Ultra lớn và dày tương tự Galaxy S20 Ultra hay Note20 Ultra, tuy nhiên, không có lớp kính phủ như các thế hệ trước nên này hạn chế bám vân tay. Nhưng khi sử dụng lâu, bụi có thể bám vào viền, ảnh hưởng đến chất lượng ảnh. Người dùng nên có thói quen lau cụm camera này trước mỗi lần chụp. Ngoài ra, do camera góc siêu rộng đặt ở gần viền máy, người dùng nên lưu ý để tránh bị dính ngón tay trong các khung hình góc siêu rộng</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide -->
+                <div class="swiper-slide">
+                    <div class="imgBx">
+                        <img src="03.jpg">
+                    </div>
+                    <div class="testimonialBox">
+                        <h3>Đánh giá máy ảnh trên Galaxy S21 Ultra</h3>
+                        <div class="content">
+                            <p>Cụm camera của S21 Ultra lớn và dày tương tự Galaxy S20 Ultra hay Note20 Ultra, tuy nhiên, không có lớp kính phủ như các thế hệ trước nên này hạn chế bám vân tay. Nhưng khi sử dụng lâu, bụi có thể bám vào viền, ảnh hưởng đến chất lượng ảnh. Người dùng nên có thói quen lau cụm camera này trước mỗi lần chụp. Ngoài ra, do camera góc siêu rộng đặt ở gần viền máy, người dùng nên lưu ý để tránh bị dính ngón tay trong các khung hình góc siêu rộng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2,
+                slideShadows: true,
+            }
+        });
+      </script>
+</body>
+</html>
