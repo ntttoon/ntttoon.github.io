@@ -15,6 +15,27 @@
             font-size: 16px;
             line-height: 160%;
         }
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #161f27;
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #324759;
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #141414;
+        }
         section{
             position: relative;
             width: 100%;
@@ -27,8 +48,8 @@
         }
         .swiper-container {
             width: 100%;
-            padding-top: 50px;
-            padding-bottom: 50px;
+            /* padding-top: 50px;
+            padding-bottom: 50px; */
         }
         .swiper-slide {
             background-position: center;
@@ -39,7 +60,8 @@
             filter: blur(4px);
             background: #202b38;
             border-radius: 10px;
-            overflow: scroll;
+            overflow-y: scroll;
+            overflow-x: hidden;
         }
         .swiper-slide-active {
             filter: blur(0);
