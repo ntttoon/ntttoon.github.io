@@ -15,6 +15,18 @@
             font-size: 16px;
             line-height: 160%;
         }
+        body {
+            width: 100%;
+            min-height: 100vh;
+            min-height: -webkit-fill-available;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #161f27;
+        }
+        html {
+            height: -webkit-fill-available;
+        }
         /* width */
         ::-webkit-scrollbar {
             width: 10px;
@@ -38,12 +50,7 @@
         }
         section{
             position: relative;
-            width: 100%;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #161f27;
+            
         }
         .swiper-container {
             width: 100%;
@@ -102,7 +109,7 @@
 </head>
 <body>
     <!-- https://www.youtube.com/watch?v=E7mGqt7v3Uc -->
-    <section style="width: 100%; height: calc(100%);">
+    <section>
         <!-- Swiper -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
