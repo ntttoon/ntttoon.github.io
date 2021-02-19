@@ -36,7 +36,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"dinorun_atlas_P_", frames: [[0,0,1242,736],[546,738,48,48],[200,800,48,48],[150,800,48,48],[646,738,48,48],[100,800,48,48],[696,738,48,48],[596,738,48,48],[250,800,48,48],[496,738,48,48],[0,800,48,48],[50,800,48,48],[396,812,30,36],[428,812,30,36],[746,738,46,36],[348,812,46,36],[746,776,46,36],[300,812,46,36],[346,738,148,72],[0,738,344,60]]}
+		{name:"dinorun_atlas_P_", frames: [[0,0,1242,736],[0,800,48,48],[596,738,48,48],[646,738,48,48],[50,800,48,48],[100,800,48,48],[150,800,48,48],[200,800,48,48],[250,800,48,48],[496,738,48,48],[546,738,48,48],[696,738,48,48],[428,812,30,36],[396,812,30,36],[746,738,46,36],[348,812,46,36],[300,812,46,36],[746,776,46,36],[346,738,148,72],[0,738,344,60]]}
 ];
 // symbols:
 (lib.bg = function() {
@@ -348,18 +348,18 @@ p.nominalBounds = new cjs.Rectangle(-24,-24,48,48);
 		/////
 		function movingLoop(obj,dur,xstart,xdes){
 			if(startGame == true){
-				gsap.to(obj, {duration:dur,x:xdes,ease: Power0.easeNone,onComplete:function(){obj.x = xstart; movingLoop(obj,dur,xstart,xdes)}});
+				gsap.to(obj, {duration:dur,x:xdes,ease: "none",onComplete:function(){obj.x = xstart; movingLoop(obj,dur,xstart,xdes)}});
 			}
 		}
 		function movingELoop(obj,xstart,xdes){
 			var dur = randomNum();
 			if(startGame == true){
-				gsap.to(obj, {duration:dur,x:xdes,ease: Power0.easeNone,onComplete:function(){obj.x = xstart; movingELoop(obj,xstart,xdes)}});
+				gsap.to(obj, {duration:dur,x:xdes,ease: "none",onComplete:function(){obj.x = xstart; movingELoop(obj,xstart,xdes)}});
 			}
 		}
 		/////
 		root.dropdown = function(){
-			gsap.to(dino, {duration:0.4,y:"+=70",ease: Power3.easeIn,onComplete:function(){canJump = true;cta.visible = true;}});
+			gsap.to(dino, {duration:0.4,y:"+=70",ease: "power3.in",onComplete:function(){canJump = true;cta.visible = true;}});
 		}
 		function randomNum(){
 			var a = Math.floor(Math.random() * 4) + 1;
@@ -402,13 +402,13 @@ p.nominalBounds = new cjs.Rectangle(-24,-24,48,48);
 			ewalk.x = 450;
 			efly.x = 450;
 			dino.gotoAndStop("hurt");
-			gsap.to(dino, {duration:0.5,y:760,ease: Power3.easeIn,onComplete:function(){setTimeout(function(){title.visible = true;start_btn.visible = true;}, 3000);}});
+			gsap.to(dino, {duration:0.5,y:760,ease: "power3.in",onComplete:function(){setTimeout(function(){title.visible = true;start_btn.visible = true;}, 3000);}});
 		}
 		root.playingGame = function(){
 			if(canJump == true){
 				canJump = false;
 				cta.visible = false;
-				gsap.to(dino, {duration:0.2,y:"-=70",ease: Power3.easeOut,onComplete:function(){root.dropdown()}})
+				gsap.to(dino, {duration:0.2,y:"-=70",ease: "power3.inOut",onComplete:function(){root.dropdown()}})
 			}
 		}
 		/////
@@ -485,7 +485,7 @@ lib.properties = {
 	color: "#CCCCCC",
 	opacity: 1.00,
 	manifest: [
-		{src:"dinorun_atlas_P_.png?1613748986831", id:"dinorun_atlas_P_"}
+		{src:"dinorun_atlas_P_.png?1613749848742", id:"dinorun_atlas_P_"}
 	],
 	preloads: []
 };
