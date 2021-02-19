@@ -14,8 +14,14 @@
 <meta name="authoring-tool" content="Adobe_Animate_CC">
 <title>quiz</title>
 <!-- write your code here -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/easing/EasePack.min.js"></script>
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.5.1_min.js"></script>
+<script>document.ontouchmove = function(e){ e.preventDefault(); }</script>
+<style>
+	* {
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);} 
+</style>
 <style>
   #animation_container {
 	position:absolute;
@@ -104,14 +110,14 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.timeline.addTween(cjs.Tween.get(this.ans).wait(1));
 	// title
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#990000").s().p("AgiBpIAAjRIBFAAIAADRg");
-	this.shape.setTransform(230.6,165.3);
+	this.shape.graphics.f("#990000").s().p("AggBrIAAjVIBBAAIAADVg");
+	this.shape.setTransform(230.8,166.3);
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#990000").s().p("AAvBqIgLgcIhJAAIgKAcIhLAAIBYjTIBFAAIBYDTgAASAcIgSgyIgTAyIAlAAg");
-	this.shape_1.setTransform(213.9,165.2);
+	this.shape_1.graphics.f("#990000").s().p("AAwBrIgLgjIhLAAIgKAjIhEAAIBRjVIBHAAIBRDVgAgXAZIAuAAIgXhMg");
+	this.shape_1.setTransform(213.5,166.3);
 	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f("#990000").s().p("Ag0BkQgbgIgUgTIAlgsQAQANATAFQASAHAUgBQASABAAgKIAAAAQAAgEgHgEQgIgDgOgDQgVgEgPgGQgPgEgKgHQgNgIgHgLQgHgMAAgOIAAgBQAAgQAGgMQAGgNALgKQAMgJARgFQAQgGAUAAQAeAAAXAIQAYAGASAPIgiAwQgcgWgiAAQgIABgEACQgDACAAAEIAAABQAAAIAbAGQAWAEAQAFQARAGAKAGQAMAIAGALQAGAMAAAOIAAABQAAAggZAUQgZATgrAAQggAAgbgJg");
-	this.shape_2.setTransform(191.4,165.3);
+	this.shape_2.graphics.f("#990000").s().p("AhIBaQgWgVgCggIA/gFQACAQAGAIQAKANASAAQAPAAAHgGQAIgIAAgIQAAgIgHgHQgIgHgZgFQgsgLgTgPQgSgQAAgZQAAgQAJgPQAKgPATgJQATgIAhAAQApAAAWAPQAVAQAEAhIg+AEQgDgPgIgGQgIgHgNAAQgLAAgGAFQgGAFAAAHQAAAFAFAEQAFAFARADQArAKATAJQASAKAJANQAIAOAAASQAAAUgLARQgLASgVAJQgUAJggAAQg1AAgVgVg");
+	this.shape_2.setTransform(190.9,166.3);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
 	// board
 	this.instance = new lib.ansboard();
@@ -130,17 +136,17 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.timeline.addTween(cjs.Tween.get(this.ans).wait(1));
 	// title
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#006600").s().p("AghBmQgUgIgRgPQgRgPgJgUQgIgTgBgZIAAAAQAAgXAJgTQAIgTAQgRQARgPAUgHQAWgJAXAAQAaAAAWAJQAWAHATARIgoAvQgLgKgMgEQgLgFgNABQgJgBgIAEQgJAEgGAGQgHAHgDAJQgDAKgBAJIAAAAQABALADAKQADAIAIAIQAGAHAKAEQAHADAMAAIANgBQAHgBADgDIAAgVIgkAAIAAgsIBnAAIAABgQgoAgg2gBQgXABgWgIg");
-	this.shape.setTransform(244,165.3);
+	this.shape.graphics.f("#006600").s().p("Ag6BiQgYgNgNgaQgNgZAAgiQAAgiAOgaQAPgaAcgNQAVgLAkAAQAkAAASAGQARAHAMANQALAOAGAVIhAALQgEgMgJgHQgKgFgOAAQgVAAgNAOQgNAPAAAhQAAAiANAPQANAPAXAAQALAAAKgDQAKgEANgHIAAgVIgsAAIAAgrIBmAAIAABaQgdAVgXAHQgWAHggAAQglAAgYgNg");
+	this.shape.setTransform(244.7,166.3);
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#006600").s().p("AAqBpIhMhhIAABhIhGAAIAAjRIBBAAIBLBdIAAhdIBFAAIAADRg");
-	this.shape_1.setTransform(221.1,165.3);
+	this.shape_1.graphics.f("#006600").s().p("AAoBrIhPh1IAAB1Ig/AAIAAjVIA+AAIBQB1IAAh1IA/AAIAADVg");
+	this.shape_1.setTransform(219.9,166.3);
 	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f("#006600").s().p("AhNByQgagZAAgxIAAhzIBHAAIAAByQAAASAIAKQAJAJAPAAQAQAAAIgJQAIgIAAgTIAAhzIBIAAIAABxQAABkhoAAQgzAAgagYgAgahXIAcgyIBFAPIgvAjg");
-	this.shape_2.setTransform(198,162.4);
+	this.shape_2.graphics.f("#006600").s().p("AgcCHQgSgCgNgGQgMgHgKgMQgLgMgEgMQgGgVAAgQIAAh/IBDAAIAACCQAAASAJAKQAKAJAQAAQARAAAKgJQAJgKAAgSIAAiCIBDAAIAAB/QAAATgGARQgGARgMANQgOAMgNAGQgTAGgbABQgQgBgSgCgAgahdIAagsIAyAAIgwAsg");
+	this.shape_2.setTransform(194.9,163.6);
 	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f("#006600").s().p("AhZBpIAAhQIgaAAIAAgyIAaAAIAAhPIBQAAQAeAAAXAHQAYAHAQAOQAQAOAHASQAJAUgBAXIAAABQABAXgJATQgHATgRAPQgQAOgYAIQgYAHgeAAgAgWAvIAPAAQAZAAAOgMQANgLgBgYIAAAAQABgXgNgLQgOgMgZAAIgPAAIAAAWIAZAAIAAAwIgZAAg");
-	this.shape_3.setTransform(174.3,165.3);
+	this.shape_3.graphics.f("#006600").s().p("AhXBrIAAhbIgWAAIAAgfIAWAAIAAhbIBiAAQAdAAASAHQASAIAMAPQALAPAGATQAFAUAAAWQAAAigIATQgJATgNANQgOAMgQAFQgVAFgSAAgAgUA6IAQAAQAUAAAJgEQAIgFAFgLQAGgMAAgaQAAghgMgMQgLgNgZAAIgQAAIAAArIAfAAIAAAfIgfAAg");
+	this.shape_3.setTransform(170.2,166.3);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
 	// board
 	this.instance = new lib.ansboard();
@@ -159,26 +165,26 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.timeline.addTween(cjs.Tween.get(this.ans).wait(1));
 	// title
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#402D17").s().p("AgkBmQgTgIgPgPQgRgPgIgUQgIgUAAgYIAAAAQAAguAgggQAQgPAUgHQAUgJAWAAQAhAAAYAOQAYAOAPAbIg6AiQgHgMgKgHQgJgGgMgBQgIABgHADQgHAEgGAGQgLANAAATIAAAAQAAAKADAIQADAJAFAHQAGAGAHADQAHADAIAAQAMABAKgHQAKgGAHgOIA6AhQgQAcgZAPQgZANghAAQgWABgTgIg");
-	this.shape.setTransform(276.7,165.3);
+	this.shape.graphics.f("#402D17").s().p("AhBBSQgcgdAAgzQAAg0AcgeQAcgeAsAAQAnAAAZAXQAPAOAHAaIgrAKQgEgRgMgJQgMgKgRAAQgXAAgPASQgPAQAAAnQAAAoAPARQAOARAXAAQARAAANgLQAMgLAFgYIArAOQgKAjgXARQgWARgjAAQgpAAgcgdg");
+	this.shape.setTransform(272.8,164.4);
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#402D17").s().p("AhNByQgagZAAgxIAAhzIBHAAIAAByQAAASAIAKQAJAJAPAAQAQAAAIgJQAIgIAAgTIAAhzIBIAAIAABxQAABkhoAAQgzAAgagYgAgahXIAcgyIBFAPIgvAjg");
-	this.shape_1.setTransform(254.2,162.4);
+	this.shape_1.graphics.f("#402D17").s().p("AgrCCQgQgHgJgLQgKgMgCgMQgFgSAAgkIAAhyIAsAAIAABzQAAAcABAIQADANALAIQAKAIARAAQATAAAJgHQAJgIACgLQACgLAAgZIAAh2IAsAAIAABwQAAAmgEAQQgEAQgJALQgJALgQAHQgQAGgaAAQgdAAgQgHgAgahcIAVgsIAtAAIgoAsg");
+	this.shape_1.setTransform(251.1,161.8);
 	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f("#402D17").s().p("AAgBpIAAhMIg/AAIAABMIhGAAIAAjRIBGAAIAABKIA/AAIAAhKIBGAAIAADRg");
-	this.shape_2.setTransform(231.3,165.3);
+	this.shape_2.graphics.f("#402D17").s().p("AArBrIAAheIhUAAIAABeIgsAAIAAjVIAsAAIAABUIBUAAIAAhUIArAAIAADVg");
+	this.shape_2.setTransform(229.5,164.4);
 	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f("#402D17").s().p("AgiBpIAAiWIg+AAIAAg7IDBAAIAAA7Ig+AAIAACWg");
-	this.shape_3.setTransform(209.9,165.3);
+	this.shape_3.graphics.f("#402D17").s().p("AgVBrIAAixIg/AAIAAgkICpAAIAAAkIg/AAIAACxg");
+	this.shape_3.setTransform(209.6,164.4);
 	this.shape_4 = new cjs.Shape();
-	this.shape_4.graphics.f("#402D17").s().p("AgiBpIAAiWIg+AAIAAg7IDBAAIAAA7Ig+AAIAACWg");
-	this.shape_4.setTransform(182.1,165.3);
+	this.shape_4.graphics.f("#402D17").s().p("AgVBrIAAixIg/AAIAAgkICpAAIAAAkIg/AAIAACxg");
+	this.shape_4.setTransform(182.9,164.4);
 	this.shape_5 = new cjs.Shape();
-	this.shape_5.graphics.f("#402D17").s().p("AhxCkIAAjRICyAAIAAA4IhtAAIAAAWIBlAAIAAAyIhlAAIAAAXIBuAAIAAA6gAADg8IgagRIgbARIglAAIAog0IAwAAIAoA0gAAThpIAcg6IBDARIgyApg");
-	this.shape_5.setTransform(164.7,159.4);
+	this.shape_5.graphics.f("#402D17").s().p("AhRCHIAAjVICfAAIAAAkIh0AAIAAAuIBrAAIAAAkIhrAAIAAA7IB3AAIAAAkgAAShWIgPgLIgPALIgdAAIAfgTIAZAAIAhATgAgOhuIARgYIAuAAIgmAYg");
+	this.shape_5.setTransform(164.1,161.7);
 	this.shape_6 = new cjs.Shape();
-	this.shape_6.graphics.f("#402D17").s().p("AAXBpIgphDIgSAXIAAAsIhGAAIAAjRIBGAAIAABOIA8hOIBRAAIhJBbIBKB2g");
-	this.shape_6.setTransform(142,165.3);
+	this.shape_6.graphics.f("#402D17").s().p("AApBrIg6hlIgjAkIAABBIgsAAIAAjVIAsAAIAABfIBWhfIA6AAIhQBTIBVCCg");
+	this.shape_6.setTransform(144,164.4);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
 	// board
 	this.instance = new lib.ansboard();
@@ -255,7 +261,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 		root.updateText = function(txt,content){
 			txt.text = content;
 			stage.update();
-			TweenLite.from(txt, 0.2, {x:"+=20",alpha:0,ease: Power3.easeOut})
+			gsap.from(txt, {duration:0.2,x:"+=20",alpha:0,ease: "power3.out"})
 		}
 		function titleScreen(){
 			root.removeAllChildren();
@@ -343,14 +349,14 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 			if(e.currentTarget.r == "true"){
 				var board = new lib.board_right();
 				addSpritesLib(board,0,0);
-				TweenLite.from(board, 0.2, {alpha:0,ease: Power3.easeOut});
+				gsap.from(board, {duration:0.2,alpha:0,ease: "power3.out"});
 				board.ans.text = root.answer_txt;
 				rightAnswer += 1;
 			}
 			if(e.currentTarget.r == "false"){
 				var board = new lib.board_wrong();
 				addSpritesLib(board,0,0);
-				TweenLite.from(board, 0.2, {alpha:0,ease: Power3.easeOut});
+				gsap.from(board, {duration:0.2,alpha:0,ease: "power3.out"});
 				board.ans.text = root.answer_txt
 			}
 			board.on("mousedown", root.nextQuestion);
@@ -361,7 +367,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 				root.removeAllChildren();
 				var board = new lib.board_end();
 				addSpritesLib(board,0,0);
-				TweenLite.from(board, 0.2, {alpha:0,ease: Power3.easeOut});
+				gsap.from(board, {duration:0.2,alpha:0,ease: "power3.out"});
 				board.ans.text = "Số câu trả lời đúng của bạn là " + rightAnswer + "/" + totalQuestion;
 				board.on("mousedown", root.endScreen);
 			}else{
@@ -384,8 +390,8 @@ lib.properties = {
 	color: "#D5AD51",
 	opacity: 1.00,
 	manifest: [
-		{src:"titlescreen.jpg?1590418673950", id:"titlescreen"},
-		{src:"quiz_atlas_P_.png?1590418673939", id:"quiz_atlas_P_"}
+		{src:"titlescreen.jpg?1613748138114", id:"titlescreen"},
+		{src:"quiz_atlas_P_.png?1613748138106", id:"quiz_atlas_P_"}
 	],
 	preloads: []
 };
@@ -462,6 +468,7 @@ function handleComplete(evt,comp) {
 	exportRoot = new lib.quiz();
 	stage = new lib.Stage(canvas);	
 	//Registers the "tick" event listener.
+	createjs.Ticker.timingMode = createjs.Ticker.RAF;
 	fnStartAnimation = function() {
 		stage.addChild(exportRoot);
 		createjs.Ticker.setFPS(lib.properties.fps);

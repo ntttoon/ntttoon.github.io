@@ -14,8 +14,14 @@
 <meta name="authoring-tool" content="Adobe_Animate_CC">
 <title>keobuabao</title>
 <!-- write your code here -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/easing/EasePack.min.js"></script>
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.5.1_min.js"></script>
+<script>document.ontouchmove = function(e){ e.preventDefault(); }</script>
+<style>
+	* {
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);} 
+</style>
 <style>
   #animation_container {
 	position:absolute;
@@ -177,10 +183,10 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.instance.setTransform(0,0,0.22,0.22);
 	this.instance_1 = new lib.iconbua();
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(0.1,0.1,0.22,0.22,0,0,0,0.3,0.3);
+	this.instance_1.setTransform(0.1,0.1,0.22,0.22,0,0,0,0.2,0.2);
 	this.instance_2 = new lib.iconbao();
 	this.instance_2.parent = this;
-	this.instance_2.setTransform(0,0.1,0.22,0.22,0,0,0,0,0.3);
+	this.instance_2.setTransform(0,0.1,0.22,0.22,0,0,0,0,0.2);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1}]}).to({state:[{t:this.instance}]},1).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).wait(1));
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-50,-49.9,100,100);
@@ -225,10 +231,10 @@ p.nominalBounds = new cjs.Rectangle(-50,-49.9,100,100);
 		}
 		root.resetState = function(){
 			icons_enemy.gotoAndStop(0);
-			TweenLite.to(icons_enemy, 0.2, {x:"207",y:"240",ease: Power0.easeNone});
-			TweenLite.to(keo, 0.2, {x:"80",y:"640",ease: Power0.easeNone});
-			TweenLite.to(bua, 0.2, {x:"207",y:"640",ease: Power0.easeNone});
-			TweenLite.to(bao, 0.2, {x:"334",y:"640",ease: Power0.easeNone});
+			gsap.to(icons_enemy, {duration:0.2,x:"207",y:"240",ease: "none"});
+			gsap.to(keo, {duration:0.2,x:"80",y:"640",ease: "none"});
+			gsap.to(bua, {duration:0.2,x:"207",y:"640",ease: "none"});
+			gsap.to(bao, {duration:0.2,x:"334",y:"640",ease: "none"});
 			root.updateText("Thắng: " + winFlag + "   Hòa: " + drawFlag + "   Thua: " + loseFlag)
 		}
 		root.startReset = function(){
@@ -240,24 +246,24 @@ p.nominalBounds = new cjs.Rectangle(-50,-49.9,100,100);
 			root.startReset();
 			var kq = root.enemyCheck();
 			if(kq == "keo"){
-				TweenLite.to(icons_enemy, 0.2, {x:"257",y:"440",ease: Power0.easeNone});
-				TweenLite.to(keo, 0.2, {x:"157",y:"440",ease: Power0.easeNone});
-				TweenLite.to(bua, 0.2, {y:"800",ease: Power0.easeNone});
-				TweenLite.to(bao, 0.2, {y:"800",ease: Power0.easeNone});
+				gsap.to(icons_enemy, {duration:0.2,x:"257",y:"440",ease: "none"});
+				gsap.to(keo, {duration:0.2,x:"157",y:"440",ease: "none"});
+				gsap.to(bua, {duration:0.2,y:"800",ease: "none"});
+				gsap.to(bao, {duration:0.2,y:"800",ease: "none"});
 				drawFlag += 1;
 			}
 			if(kq == "bua"){
-				TweenLite.to(icons_enemy, 0.2, {x:"207",y:"440",ease: Power0.easeNone});
-				TweenLite.to(keo, 0.2, {x:"207",y:"440",ease: Power0.easeNone,onComplete:function(){TweenLite.to(keo, 0.2, {x:"-100",y:"440",ease: Power0.easeNone});}});
-				TweenLite.to(bua, 0.2, {y:"800",ease: Power0.easeNone});
-				TweenLite.to(bao, 0.2, {y:"800",ease: Power0.easeNone});
+				gsap.to(icons_enemy, {duration:0.2,x:"207",y:"440",ease: "none"});
+				gsap.to(keo, {duration:0.2,x:"207",y:"440",ease: "none",onComplete:function(){gsap.to(keo, {duration:0.2,x:"-100",y:"440",ease: "none"});}});
+				gsap.to(bua, {duration:0.2,y:"800",ease: "none"});
+				gsap.to(bao, {duration:0.2,y:"800",ease: "none"});
 				loseFlag += 1;
 			}
 			if(kq == "bao"){
-				TweenLite.to(icons_enemy, 0.2, {x:"207",y:"440",ease: Power0.easeNone});
-				TweenLite.to(keo, 0.2, {x:"207",y:"440",ease: Power0.easeNone,onComplete:function(){TweenLite.to(icons_enemy, 0.2, {x:"500",y:"440",ease: Power0.easeNone});}});
-				TweenLite.to(bua, 0.2, {y:"800",ease: Power0.easeNone});
-				TweenLite.to(bao, 0.2, {y:"800",ease: Power0.easeNone});
+				gsap.to(icons_enemy, {duration:0.2,x:"207",y:"440",ease: "none"});
+				gsap.to(keo, {duration:0.2,x:"207",y:"440",ease: "none",onComplete:function(){gsap.to(icons_enemy, {duration:0.2,x:"500",y:"440",ease: "none"});}});
+				gsap.to(bua, {duration:0.2,y:"800",ease: "none"});
+				gsap.to(bao, {duration:0.2,y:"800",ease: "none"});
 				winFlag += 1;
 			}
 		};
@@ -265,24 +271,24 @@ p.nominalBounds = new cjs.Rectangle(-50,-49.9,100,100);
 			root.startReset();
 			var kq = root.enemyCheck();
 			if(kq == "keo"){
-				TweenLite.to(icons_enemy, 0.2, {x:"207",y:"440",ease: Power0.easeNone});
-				TweenLite.to(bua, 0.2, {x:"207",y:"440",ease: Power0.easeNone,onComplete:function(){TweenLite.to(icons_enemy, 0.2, {x:"500",y:"440",ease: Power0.easeNone});}});
-				TweenLite.to(keo, 0.2, {y:"800",ease: Power0.easeNone});
-				TweenLite.to(bao, 0.2, {y:"800",ease: Power0.easeNone});
+				gsap.to(icons_enemy, {duration:0.2,x:"207",y:"440",ease: "none"});
+				gsap.to(bua, {duration:0.2,x:"207",y:"440",ease: "none",onComplete:function(){gsap.to(icons_enemy, {duration:0.2,x:"500",y:"440",ease: "none"});}});
+				gsap.to(keo, {duration:0.2,y:"800",ease: "none"});
+				gsap.to(bao, {duration:0.2,y:"800",ease: "none"});
 				winFlag += 1;
 			}
 			if(kq == "bua"){
-				TweenLite.to(icons_enemy, 0.2, {x:"257",y:"440",ease: Power0.easeNone});
-				TweenLite.to(bua, 0.2, {x:"157",y:"440",ease: Power0.easeNone});
-				TweenLite.to(keo, 0.2, {y:"800",ease: Power0.easeNone});
-				TweenLite.to(bao, 0.2, {y:"800",ease: Power0.easeNone});
+				gsap.to(icons_enemy, {duration:0.2,x:"257",y:"440",ease: "none"});
+				gsap.to(bua, {duration:0.2,x:"157",y:"440",ease: "none"});
+				gsap.to(keo, {duration:0.2,y:"800",ease: "none"});
+				gsap.to(bao, {duration:0.2,y:"800",ease: "none"});
 				drawFlag += 1;
 			}
 			if(kq == "bao"){
-				TweenLite.to(icons_enemy, 0.2, {x:"207",y:"440",ease: Power0.easeNone});
-				TweenLite.to(bua, 0.2, {x:"207",y:"440",ease: Power0.easeNone,onComplete:function(){TweenLite.to(bua, 0.2, {x:"-100",y:"440",ease: Power0.easeNone});}});
-				TweenLite.to(keo, 0.2, {y:"800",ease: Power0.easeNone});
-				TweenLite.to(bao, 0.2, {y:"800",ease: Power0.easeNone});
+				gsap.to(icons_enemy, {duration:0.2,x:"207",y:"440",ease: "none"});
+				gsap.to(bua, {duration:0.2,x:"207",y:"440",ease: "none",onComplete:function(){gsap.to(bua, {duration:0.2,x:"-100",y:"440",ease: "none"});}});
+				gsap.to(keo, {duration:0.2,y:"800",ease: "none"});
+				gsap.to(bao, {duration:0.2,y:"800",ease: "none"});
 				loseFlag += 1;
 			}
 		};
@@ -290,24 +296,24 @@ p.nominalBounds = new cjs.Rectangle(-50,-49.9,100,100);
 			root.startReset();
 			var kq = root.enemyCheck();
 			if(kq == "keo"){
-				TweenLite.to(icons_enemy, 0.2, {x:"207",y:"440",ease: Power0.easeNone});
-				TweenLite.to(bao, 0.2, {x:"207",y:"440",ease: Power0.easeNone,onComplete:function(){TweenLite.to(bao, 0.2, {x:"-100",y:"440",ease: Power0.easeNone});}});
-				TweenLite.to(keo, 0.2, {y:"800",ease: Power0.easeNone});
-				TweenLite.to(bua, 0.2, {y:"800",ease: Power0.easeNone});
+				gsap.to(icons_enemy, {duration:0.2,x:"207",y:"440",ease: "none"});
+				gsap.to(bao, {duration:0.2,x:"207",y:"440",ease: "none",onComplete:function(){gsap.to(bao, {duration:0.2,x:"-100",y:"440",ease: "none"});}});
+				gsap.to(keo, {duration:0.2,y:"800",ease: "none"});
+				gsap.to(bua, {duration:0.2,y:"800",ease: "none"});
 				loseFlag += 1;
 			}
 			if(kq == "bua"){
-				TweenLite.to(icons_enemy, 0.2, {x:"207",y:"440",ease: Power0.easeNone});
-				TweenLite.to(bao, 0.2, {x:"207",y:"440",ease: Power0.easeNone,onComplete:function(){TweenLite.to(icons_enemy, 0.2, {x:"500",y:"440",ease: Power0.easeNone});}});
-				TweenLite.to(keo, 0.2, {y:"800",ease: Power0.easeNone});
-				TweenLite.to(bua, 0.2, {y:"800",ease: Power0.easeNone});
+				gsap.to(icons_enemy, {duration:0.2,x:"207",y:"440",ease: "none"});
+				gsap.to(bao, {duration:0.2,x:"207",y:"440",ease: "none",onComplete:function(){gsap.to(icons_enemy, {duration:0.2,x:"500",y:"440",ease: "none"});}});
+				gsap.to(keo, {duration:0.2,y:"800",ease: "none"});
+				gsap.to(bua, {duration:0.2,y:"800",ease: "none"});
 				winFlag += 1;
 			}
 			if(kq == "bao"){
-				TweenLite.to(icons_enemy, 0.2, {x:"257",y:"440",ease: Power0.easeNone});
-				TweenLite.to(bao, 0.2, {x:"157",y:"440",ease: Power0.easeNone});
-				TweenLite.to(keo, 0.2, {y:"800",ease: Power0.easeNone});
-				TweenLite.to(bua, 0.2, {y:"800",ease: Power0.easeNone});
+				gsap.to(icons_enemy, {duration:0.2,x:"257",y:"440",ease: "none"});
+				gsap.to(bao, {duration:0.2,x:"157",y:"440",ease: "none"});
+				gsap.to(keo, {duration:0.2,y:"800",ease: "none"});
+				gsap.to(bua, {duration:0.2,y:"800",ease: "none"});
 				drawFlag += 1;
 			}
 		};
@@ -323,15 +329,15 @@ p.nominalBounds = new cjs.Rectangle(-50,-49.9,100,100);
 	this.bao = new lib.iconbao();
 	this.bao.name = "bao";
 	this.bao.parent = this;
-	this.bao.setTransform(334,640.1,0.22,0.22,0,0,0,0,0.3);
+	this.bao.setTransform(334,640.1,0.22,0.22,0,0,0,0,0.2);
 	this.bua = new lib.iconbua();
 	this.bua.name = "bua";
 	this.bua.parent = this;
-	this.bua.setTransform(207,640.1,0.22,0.22,0,0,0,0,0.3);
+	this.bua.setTransform(207,640.1,0.22,0.22,0,0,0,0,0.2);
 	this.keo = new lib.iconkeo();
 	this.keo.name = "keo";
 	this.keo.parent = this;
-	this.keo.setTransform(80,640.1,0.22,0.22,0,0,0,0,0.3);
+	this.keo.setTransform(80,640.1,0.22,0.22,0,0,0,0,0.2);
 	this.icons_enemy = new lib.iconsall();
 	this.icons_enemy.name = "icons_enemy";
 	this.icons_enemy.parent = this;
@@ -352,7 +358,7 @@ lib.properties = {
 	color: "#D5AD51",
 	opacity: 1.00,
 	manifest: [
-		{src:"bg.png?1590418908380", id:"bg"}
+		{src:"bg.png?1613748637683", id:"bg"}
 	],
 	preloads: []
 };
@@ -429,6 +435,7 @@ function handleComplete(evt,comp) {
 	exportRoot = new lib.keobuabao();
 	stage = new lib.Stage(canvas);	
 	//Registers the "tick" event listener.
+	createjs.Ticker.timingMode = createjs.Ticker.RAF;
 	fnStartAnimation = function() {
 		stage.addChild(exportRoot);
 		createjs.Ticker.setFPS(lib.properties.fps);
