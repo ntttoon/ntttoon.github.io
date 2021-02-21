@@ -4,9 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../css/w3.css">
-<script async src="../js_libs/jszip.js"> </script>
-<script async src="../js_libs/FileSaver.js"> </script> 
-<script src="js/lib.js"> </script> 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,52 +35,22 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Roboto", sans-serif}
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<!-- div holder -->
-<div style="display: none" id="h5s_html_holder"></div>
-<div style="display: none" id="h5s_img_holder"></div>
-
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:300px;margin-top:43px;">
 
     <!-- Page 1 -->
     <div id="page1" class="w3-container page">
-        <!-- Header -->
-        <header style="padding-top:22px">
-            <h5><b>HTML5 Static Image</b></h5>
-        </header>
-        <p>meta ad.size</p>
-        <div class="w3-row">
-            <div class="w3-half">
-                <label>width</label>
-                <input class="w3-input w3-border" id="h5s_width" type="text" value="300">
-            </div>
-            <div class="w3-half">
-                <label>height</label>
-                <input class="w3-input w3-border" id="h5s_height" type="text" value="600">
-            </div>
-        </div>
-        <p>clickTag</p>
-        <input class="w3-input w3-border" id="h5s_click" type="text" value="https://www.24h.com.vn/">
-        <p>Upload image</p>
-        <input class="w3-input" id="h5s_img_upload" type="file" accept="image/x-png,image/gif,image/jpeg" />
-        <p>Export zip file</p>
-        <a class="w3-button w3-teal" href="#" id="h5s_download">Download<i class="w3-margin-left fa fa-download"></i></a>
+        <iframe src="html5s.html" frameborder="0" scrolling="no" style="width: 100%;height: 50vh;"></iframe>
     </div>
 
     <!-- Page 2 -->
     <div id="page2" class="w3-container page">
-        <!-- Header -->
-        <header style="padding-top:22px">
-            <h5><b>HTML5 Custom PC</b></h5>
-        </header>
+        
     </div>
     
     <!-- Page 3 -->
     <div id="page3" class="w3-container page">
-        <!-- Header -->
-        <header style="padding-top:22px">
-            <h5><b>HTML5 Custom MB</b></h5>
-        </header>
+        
     </div>
 
     <!-- End PAGE CONTENT -->
@@ -132,40 +99,6 @@ function openPage(personName) {
 <script>
     var openTab = document.getElementById("firstTab");
     openTab.click();
-</script>
-
-<script>
-    // script page 1
-    readTemplates("templates/html5_static_image.html","h5s_html_holder");
-    
-    document.getElementById("h5s_img_upload").addEventListener("change", function(){
-        readInputFile(this,"h5s_img_holder","image");
-    })
-    
-    document.getElementById("h5s_download").addEventListener("click", function(){
-        
-        var zip = new JSZip();
-        var h5s_html = document.getElementById("h5s_html_holder").textContent;
-        var h5s_img = document.getElementById("h5s_img_holder").textContent;
-        var h5s_w = document.getElementById("h5s_width").value;
-        var h5s_h = document.getElementById("h5s_height").value;
-        var h5s_c = document.getElementById("h5s_click").value;
-
-        h5s_html = replaceString(h5s_html,"%%rong%%",h5s_w);
-        h5s_html = replaceString(h5s_html,"%%cao%%",h5s_h);
-        h5s_html = replaceString(h5s_html,"%%this_is_click%%",h5s_c);
-
-        zip.file("index.html", h5s_html);
-        zip.file("img.jpg", h5s_img.substr(h5s_img.indexOf(',')+1), {base64: true});
-
-        var filename = prompt("File name?", "banner");
-        if (filename != null) {
-            zip.generateAsync({type:"blob"})
-            .then(function(content) {
-                saveAs(content, filename + ".zip");
-            });
-        }
-    })
 </script>
 
 </body>
