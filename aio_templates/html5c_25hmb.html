@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/w3.css">
+    <script async src="../js_libs/jszip.js"> </script>
+    <script async src="../js_libs/FileSaver.js"> </script> 
+    <script src="js/lib.js"> </script> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    html,body,h1,h2,h3,h4,h5 {font-family: "Roboto", sans-serif}
+    </style>
+    <title>HTML5 Custom MB Static Image</title>
+</head>
+<body>
+    <!-- div holder -->
+    <div style="display: none" id="h5cus_top_html_holder"></div>
+    <div style="display: none" id="h5cus_top2_html_holder"></div>
+    <div style="display: none" id="h5cus_inpage_html_holder"></div>
+    <div style="display: none" id="h5cus_cbv_html_holder"></div>
+    <div style="display: none" id="h5cus_center_html_holder"></div>
+    
+    <div style="display: none" id="h5cus_top_img_holder"></div>
+    <div style="display: none" id="h5cus_top2_img_holder"></div>
+    <div style="display: none" id="h5cus_inpage_img_holder"></div>
+    <div style="display: none" id="h5cus_cbv_img_holder"></div>
+    <div style="display: none" id="h5cus_center_img_holder"></div>
+
+    <!-- Header -->
+    <header style="padding-top:22px">
+        <h5><b>HTML5 Custom MB Static Image</b></h5>
+    </header>
+    <p>impression</p>
+    <input class="w3-input w3-border" id="h5cus_imp" type="text" value="https://imp.24h.com.vn/">
+    <p>clickTag</p>
+    <input class="w3-input w3-border" id="h5cus_click" type="text" value="https://24h.com.vn/">
+    <hr style="border: none;border-top: 1px solid #cecece;">
+    <div class="w3-row-padding">
+        <div class="w3-half">
+            <div class="w3-card">
+                <input class="w3-input" id="h5cus_top_name" type="text" value="top_320x100_mb">
+                <div class="w3-container">
+                    <input class="w3-check" id="h5cus_top_impcheck" type="checkbox" checked>
+                    <label>use impression</label>
+                    <p>Upload image</p>
+                    <input class="w3-input" id="h5cus_top_img_upload" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                </div>
+            </div>
+        </div>
+        <div class="w3-half">
+            <div class="w3-card">
+                <input class="w3-input" id="h5cus_top2_name" type="text" value="top_320x160_mb">
+                <div class="w3-container">
+                    <input class="w3-check" id="h5cus_top2_impcheck" type="checkbox" checked>
+                    <label>use impression</label>
+                    <p>Upload image</p>
+                    <input class="w3-input" id="h5cus_top2_img_upload" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-margin-top">
+        <div class="w3-third">
+            <div class="w3-card">
+                <input class="w3-input" id="h5cus_inpage_name" type="text" value="inpage_mb">
+                <div class="w3-container">
+                    <input class="w3-check" id="h5cus_inpage_impcheck" type="checkbox">
+                    <label>use impression</label>
+                    <p>Upload image</p>
+                    <input class="w3-input" id="h5cus_inpage_img_upload" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                </div>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="w3-card">
+                <input class="w3-input" id="h5cus_cbv_name" type="text" value="cbv_320x100_mb">
+                <div class="w3-container">
+                    <input class="w3-check" id="h5cus_cbv_impcheck" type="checkbox">
+                    <label>use impression</label>
+                    <p>Upload image</p>
+                    <input class="w3-input" id="h5cus_cbv_img_upload" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                </div>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="w3-card">
+                <input class="w3-input" id="h5cus_center_name" type="text" value="center_300x250_mb">
+                <div class="w3-container">
+                    <input class="w3-check" id="h5cus_center_impcheck" type="checkbox">
+                    <label>use impression</label>
+                    <p>Upload image</p>
+                    <input class="w3-input" id="h5cus_center_img_upload" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="border: none;border-top: 1px solid #cecece;">
+    <p>Export</p>
+    <a class="w3-button w3-teal" href="#" id="h5cus_download">Download<i class="w3-margin-left fa fa-download"></i></a>
+
+    <script>
+        var blankgif_data = "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=";
+        
+        readTemplates("templates/responsive_320x100.html","h5cus_top_html_holder");
+        readTemplates("templates/responsive_320x160.html","h5cus_top2_html_holder");
+        readTemplates("templates/responsive_inpage.html","h5cus_inpage_html_holder");
+        readTemplates("templates/responsive_320x100.html","h5cus_cbv_html_holder");
+        readTemplates("templates/responsive_300x250.html","h5cus_center_html_holder");
+        
+        document.getElementById("h5cus_top_img_upload").addEventListener("change", function(){
+            readInputFile(this,"h5cus_top_img_holder","image");
+        })
+        document.getElementById("h5cus_top2_img_upload").addEventListener("change", function(){
+            readInputFile(this,"h5cus_top2_img_holder","image");
+        })
+        document.getElementById("h5cus_inpage_img_upload").addEventListener("change", function(){
+            readInputFile(this,"h5cus_inpage_img_holder","image");
+        })
+        document.getElementById("h5cus_cbv_img_upload").addEventListener("change", function(){
+            readInputFile(this,"h5cus_cbv_img_holder","image");
+        })
+        document.getElementById("h5cus_center_img_upload").addEventListener("change", function(){
+            readInputFile(this,"h5cus_center_img_holder","image");
+        })
+        
+        document.getElementById("h5cus_download").addEventListener("click", function(){
+            
+            var zip = new JSZip();
+            var fol = zip.folder("mb");
+            var h5cus_i = document.getElementById("h5cus_imp").value;
+            var h5cus_c= document.getElementById("h5cus_click").value;
+
+            var h5cus_top_html = document.getElementById("h5cus_top_html_holder").textContent;
+            var h5cus_top2_html = document.getElementById("h5cus_top2_html_holder").textContent;
+            var h5cus_inpage_html = document.getElementById("h5cus_inpage_html_holder").textContent;
+            var h5cus_cbv_html = document.getElementById("h5cus_cbv_html_holder").textContent;
+            var h5cus_center_html = document.getElementById("h5cus_center_html_holder").textContent;
+
+            var h5cus_top_img = document.getElementById("h5cus_top_img_holder").textContent;
+            var h5cus_top2_img = document.getElementById("h5cus_top2_img_holder").textContent;
+            var h5cus_inpage_img = document.getElementById("h5cus_inpage_img_holder").textContent;
+            var h5cus_cbv_img = document.getElementById("h5cus_cbv_img_holder").textContent;
+            var h5cus_center_img = document.getElementById("h5cus_center_img_holder").textContent;
+
+            var h5cus_top_name = document.getElementById("h5cus_top_name").value;
+            var h5cus_top2_name = document.getElementById("h5cus_top2_name").value;
+            var h5cus_inpage_name = document.getElementById("h5cus_inpage_name").value;
+            var h5cus_cbv_name = document.getElementById("h5cus_cbv_name").value;
+            var h5cus_center_name = document.getElementById("h5cus_center_name").value;
+
+            var h5cus_top_icheck = document.getElementById("h5cus_top_impcheck").checked;
+            var h5cus_top2_icheck = document.getElementById("h5cus_top2_impcheck").checked;
+            var h5cus_inpage_icheck = document.getElementById("h5cus_inpage_impcheck").checked;
+            var h5cus_cbv_icheck = document.getElementById("h5cus_cbv_impcheck").checked;
+            var h5cus_center_icheck = document.getElementById("h5cus_center_impcheck").checked;
+
+            h5cus_top_html = replaceString(h5cus_top_html,"%%this_is_click%%",h5cus_c);
+            h5cus_top_html = replaceString(h5cus_top_html,"%%this_is_impression%%",blankgif_data);
+            h5cus_top2_html = replaceString(h5cus_top2_html,"%%this_is_click%%",h5cus_c);
+            h5cus_top2_html = replaceString(h5cus_top2_html,"%%this_is_impression%%",blankgif_data);
+            h5cus_inpage_html = replaceString(h5cus_inpage_html,"%%this_is_click%%",h5cus_c);
+            h5cus_inpage_html = replaceString(h5cus_inpage_html,"%%this_is_impression%%",blankgif_data);
+            h5cus_cbv_html = replaceString(h5cus_cbv_html,"%%this_is_click%%",h5cus_c);
+            h5cus_cbv_html = replaceString(h5cus_cbv_html,"%%this_is_impression%%",blankgif_data);
+            h5cus_center_html = replaceString(h5cus_center_html,"%%this_is_click%%",h5cus_c);
+            h5cus_center_html = replaceString(h5cus_center_html,"%%this_is_impression%%",blankgif_data);
+
+            if(h5cus_top_icheck == true){
+                h5cus_top_html = replaceString(h5cus_top_html,blankgif_data,h5cus_i);
+            }
+            if(h5cus_top2_icheck == true){
+                h5cus_top2_html = replaceString(h5cus_top2_html,blankgif_data,h5cus_i);
+            }
+            if(h5cus_inpage_icheck == true){
+                h5cus_inpage_html = replaceString(h5cus_inpage_html,blankgif_data,h5cus_i);
+            }
+            if(h5cus_cbv_icheck == true){
+                h5cus_cbv_html = replaceString(h5cus_cbv_html,blankgif_data,h5cus_i);
+            }
+            if(h5cus_center_icheck == true){
+                h5cus_center_html = replaceString(h5cus_center_html,blankgif_data,h5cus_i);
+            } 
+
+            if(document.getElementById("h5cus_top_img_upload").files.length !== 0 ){
+                fol.file(h5cus_top_name + "/" + h5cus_top_name + ".html", h5cus_top_html);
+                fol.file(h5cus_top_name + "/" + h5cus_top_name + ".jpg", h5cus_top_img.substr(h5cus_top_img.indexOf(',')+1), {base64: true});
+            }
+            if(document.getElementById("h5cus_top2_img_upload").files.length !== 0 ){
+                fol.file(h5cus_top2_name + "/" + h5cus_top2_name + ".html", h5cus_top2_html);
+                fol.file(h5cus_top2_name + "/" + h5cus_top2_name + ".jpg", h5cus_top2_img.substr(h5cus_top2_img.indexOf(',')+1), {base64: true});
+            }
+            if(document.getElementById("h5cus_inpage_img_upload").files.length !== 0 ){
+                fol.file(h5cus_inpage_name + "/" + h5cus_inpage_name + ".html", h5cus_inpage_html);
+                fol.file(h5cus_inpage_name + "/" + h5cus_inpage_name + ".jpg", h5cus_inpage_img.substr(h5cus_inpage_img.indexOf(',')+1), {base64: true});
+            }
+            if(document.getElementById("h5cus_cbv_img_upload").files.length !== 0 ){
+                fol.file(h5cus_cbv_name + "/" + h5cus_cbv_name + ".html", h5cus_cbv_html);
+                fol.file(h5cus_cbv_name + "/" + h5cus_cbv_name + ".jpg", h5cus_cbv_img.substr(h5cus_cbv_img.indexOf(',')+1), {base64: true});
+            }
+            if(document.getElementById("h5cus_center_img_upload").files.length !== 0 ){
+                fol.file(h5cus_center_name + "/" + h5cus_center_name + ".html", h5cus_center_html);
+                fol.file(h5cus_center_name + "/" + h5cus_center_name + ".jpg", h5cus_center_img.substr(h5cus_center_img.indexOf(',')+1), {base64: true});
+            }
+
+            var filename = prompt("Name the file?", "banner");
+            if (filename != null) {
+                zip.generateAsync({type:"blob"})
+                .then(function(content) {
+                    saveAs(content, filename + ".zip");
+                });
+            }
+        })
+    </script>
+</body>
+</html>
