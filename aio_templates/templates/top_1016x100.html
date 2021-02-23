@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>banner top pc resize</title>
+        <script>
+            /*=========== [THÔNG TIN CÓ THỂ THANH ĐỔI] KHAI BÁO CÁC BIẾN TÊN/THÔNG SỐ GHI NHẬN TRACKING BẰNG GA */
+            // Url dích
+            var V_URL= '%%this_is_click%%';
+            
+            // Cấu hình chiều rộng banner
+            var V_WIDTH = 1016;
+            // Cấu hình chiều cao banner
+            var V_HEIGHT = %%this_is_top_height%%;
+            /*=========== [HẾT PHẦN THÔNG TIN CÓ THỂ THANH ĐỔI] KHAI BÁO CÁC BIẾN TÊN/THÔNG SỐ GHI NHẬN TRACKING BẰNG GA */
+        </script>
+        <style>.content{width: 100%; height: auto;text-align: center;cursor: pointer;}</style>
+    </head>
+    <body onload="init();">
+        <div id="impressionTrack"></div>
+        
+        <div class="content">
+            <img id="banner-top" 
+                border="0" alt=""
+                src="%%FILE:JPG1%%" />
+        </div>
+        <script type="text/javascript" language="javascript">
+            /*=========== Khai báo các biến TÊN/THÔNG SỐ ghi nhận tracking bằng GA */
+            // Gắn click tracking
+            V_URL   = '%%CLICK_URL_UNESC%%'+V_URL;
+            
+            // Khai báo các biến sử dụng để xử lý hiển thị banner html5
+            var id_div_parent = '%%PATTERN:id_div%%';
+            
+            // Gửi message tới parent webbrower
+            function sendBack24h(action, width, height) {
+                var data    = {type:"banner-rich-top",id:id_div_parent,id_iframe:'',action: action, width: width, height: height, web_type: '24h-banner-dfp'};
+                data        = JSON.stringify(data);
+                window.parent.postMessage(data, "*");
+            };
+			// 
+			var v_el_banner = document.getElementById('banner-top');
+			if(typeof v_el_banner != typeof undefined && v_el_banner){
+				v_el_banner.style.width = V_WIDTH+'px';
+				v_el_banner.style.height = V_HEIGHT+'px';
+				// Lấy width, hegiht
+				sendBack24h('width-height-banner-top', V_WIDTH+'px', V_HEIGHT+'px');
+			}
+            // Lấy element by id
+            var banner = document.getElementById("banner-top");
+            // Sự kiện click vào banner
+            banner.addEventListener("click", function(){
+                // Mở link mới
+                window.open(V_URL,"_blank");
+            });
+			/////////
+            function init(){ 
+                var impDiv = document.getElementById('impressionTrack');
+                if(impDiv){
+                    // Gắn impression ở đây
+                    impDiv.innerHTML = '<img src="%%this_is_impression%%" border="0" width="0" height="0" style="display:none;" />';
+                }
+            }
+        </script>
+    </body>
+</html>

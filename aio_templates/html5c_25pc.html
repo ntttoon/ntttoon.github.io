@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/w3.css">
+    <script async src="../js_libs/jszip.js"> </script>
+    <script async src="../js_libs/FileSaver.js"> </script> 
+    <script src="js/lib.js"> </script> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html,body,h1,h2,h3,h4,h5 {font-family: "Roboto", sans-serif}
+    </style>
+    <title>HTML5 Custom PC Static Image</title>
+</head>
+<body>
+    <!-- div holder -->
+    <div style="display: none" id="h5pc_bgleft_html_holder"></div>
+    <div style="display: none" id="h5pc_bgright_html_holder"></div>
+    <div style="display: none" id="h5pc_top_html_holder"></div>
+    <div style="display: none" id="h5pc_300x600_html_holder"></div>
+    <div style="display: none" id="h5pc_300x250_html_holder"></div>
+    <div style="display: none" id="h5pc_336x280_html_holder"></div>
+    
+    <div style="display: none" id="h5pc_bgleft1_img_holder"></div>
+    <div style="display: none" id="h5pc_bgleft2_img_holder"></div>
+    <div style="display: none" id="h5pc_top_img_holder"></div>
+    <div style="display: none" id="h5pc_bgright1_img_holder"></div>
+    <div style="display: none" id="h5pc_bgright2_img_holder"></div>
+    <div style="display: none" id="h5pc_300x600_img_holder"></div>
+    <div style="display: none" id="h5pc_300x250_img_holder"></div>
+    <div style="display: none" id="h5pc_336x280_img_holder"></div>
+
+    <!-- Header -->
+    <header style="padding-top:22px">
+        <h5><b>HTML5 Custom PC Static Image</b></h5>
+    </header>
+    <p>impression</p>
+    <input class="w3-input w3-border" id="h5pc_imp" type="text" value="https://imp.24h.com.vn/">
+    <p>clickTag</p>
+    <input class="w3-input w3-border" id="h5pc_click" type="text" value="https://24h.com.vn/">
+    <hr style="border: none;border-top: 1px solid #cecece;">
+    <div class="w3-row-padding">
+        <div class="w3-quarter">
+            <div class="w3-card">
+                <input class="w3-input" id="h5pc_bgleft_name" type="text" value="bgs_left">
+                <div class="w3-container">
+                    <input class="w3-check" id="h5pc_bgleft_impcheck" type="checkbox" checked>
+                    <label>use impression</label>
+                    <p>Upload image 444x1040</p>
+                    <input class="w3-input" id="h5pc_bgleft1_img_upload" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                    <p>Upload image 205x900</p>
+                    <input class="w3-input" id="h5pc_bgleft2_img_upload" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                </div>
+            </div>
+        </div>
+        <div class="w3-half">
+            <div class="w3-card">
+                <input class="w3-input" id="h5pc_top_name" type="text" value="top_1016">
+                <div class="w3-container">
+                    <input class="w3-check" id="h5pc_top_impcheck" type="checkbox">
+                    <label>use impression</label>
+                    <br><br>
+                    <input type="radio" id="top100_check" name="top_height" value="100" checked>
+                    <label for="top100_check">1016x100</label>
+                    <input type="radio" id="top250_check" name="top_height" value="250">
+                    <label for="top250_check">1016x250</label><br>
+                    <p>Upload image</p>
+                    <input class="w3-input" id="h5pc_top_img_upload" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                </div>
+            </div>
+        </div>
+        <div class="w3-quarter">
+            <div class="w3-card">
+                <input class="w3-input" id="h5pc_bgright_name" type="text" value="bgs_right">
+                <div class="w3-container">
+                    <input class="w3-check" id="h5pc_bgright_impcheck" type="checkbox">
+                    <label>use impression</label>
+                    <p>Upload image 444x1040</p>
+                    <input class="w3-input" id="h5pc_bgright1_img_upload" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                    <p>Upload image 205x900</p>
+                    <input class="w3-input" id="h5pc_bgright2_img_upload" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-margin-top">
+        <div class="w3-third">
+            <div class="w3-card">
+                <input class="w3-input" id="h5pc_300x600_name" type="text" value="300x600">
+                <div class="w3-container">
+                    <input class="w3-check" id="h5pc_300x600_impcheck" type="checkbox">
+                    <label>use impression</label>
+                    <p>Upload image</p>
+                    <input class="w3-input" id="h5pc_300x600_img_upload" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                </div>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="w3-card">
+                <input class="w3-input" id="h5pc_300x250_name" type="text" value="300x250">
+                <div class="w3-container">
+                    <input class="w3-check" id="h5pc_300x250_impcheck" type="checkbox">
+                    <label>use impression</label>
+                    <p>Upload image</p>
+                    <input class="w3-input" id="h5pc_300x250_img_upload" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                </div>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="w3-card">
+                <input class="w3-input" id="h5pc_336x280_name" type="text" value="336x280">
+                <div class="w3-container">
+                    <input class="w3-check" id="h5pc_336x280_impcheck" type="checkbox">
+                    <label>use impression</label>
+                    <p>Upload image</p>
+                    <input class="w3-input" id="h5pc_336x280_img_upload" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="border: none;border-top: 1px solid #cecece;">
+    <p>Export</p>
+    <a class="w3-button w3-teal" href="#" id="h5pc_download">Download<i class="w3-margin-left fa fa-download"></i></a>
+
+    <script>
+        var blankgif_data = "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=";
+        
+        readTemplates("templates/html5custom_static_image.html","h5pc_bgleft_html_holder");
+        readTemplates("templates/html5custom_static_image.html","h5pc_bgright_html_holder");
+        readTemplates("templates/top_1016x100.html","h5pc_top_html_holder");
+        readTemplates("templates/html5custom_static_image.html","h5pc_300x600_html_holder");
+        readTemplates("templates/html5custom_static_image.html","h5pc_300x250_html_holder");
+        readTemplates("templates/html5custom_static_image.html","h5pc_336x280_html_holder");
+        
+        document.getElementById("h5pc_bgleft1_img_upload").addEventListener("change", function(){
+            readInputFile(this,"h5pc_bgleft1_img_holder","image");
+        })
+        document.getElementById("h5pc_bgleft2_img_upload").addEventListener("change", function(){
+            readInputFile(this,"h5pc_bgleft2_img_holder","image");
+        })
+        document.getElementById("h5pc_top_img_upload").addEventListener("change", function(){
+            readInputFile(this,"h5pc_top_img_holder","image");
+        })
+        document.getElementById("h5pc_bgright1_img_upload").addEventListener("change", function(){
+            readInputFile(this,"h5pc_bgright1_img_holder","image");
+        })
+        document.getElementById("h5pc_bgright2_img_upload").addEventListener("change", function(){
+            readInputFile(this,"h5pc_bgright2_img_holder","image");
+        })
+        document.getElementById("h5pc_300x600_img_upload").addEventListener("change", function(){
+            readInputFile(this,"h5pc_300x600_img_holder","image");
+        })
+        document.getElementById("h5pc_300x250_img_upload").addEventListener("change", function(){
+            readInputFile(this,"h5pc_300x250_img_holder","image");
+        })
+        document.getElementById("h5pc_336x280_img_upload").addEventListener("change", function(){
+            readInputFile(this,"h5pc_336x280_img_holder","image");
+        })
+        
+        document.getElementById("h5pc_download").addEventListener("click", function(){
+            
+            var zip = new JSZip();
+            var fol = zip.folder("pc");
+            var h5pc_i = document.getElementById("h5pc_imp").value;
+            var h5pc_c= document.getElementById("h5pc_click").value;
+
+            var h5pc_bgleft_html = document.getElementById("h5pc_bgleft_html_holder").textContent;
+            var h5pc_bgright_html = document.getElementById("h5pc_bgright_html_holder").textContent;
+            var h5pc_top_html = document.getElementById("h5pc_top_html_holder").textContent;
+            var h5pc_300x600_html = document.getElementById("h5pc_300x600_html_holder").textContent;
+            var h5pc_300x250_html = document.getElementById("h5pc_300x250_html_holder").textContent;
+            var h5pc_336x280_html = document.getElementById("h5pc_336x280_html_holder").textContent;
+
+            var h5pc_bgleft1_img = document.getElementById("h5pc_bgleft1_img_holder").textContent;
+            var h5pc_bgleft2_img = document.getElementById("h5pc_bgleft2_img_holder").textContent;
+            var h5pc_top_img = document.getElementById("h5pc_top_img_holder").textContent;
+            var h5pc_bgright1_img = document.getElementById("h5pc_bgright1_img_holder").textContent;
+            var h5pc_bgright2_img = document.getElementById("h5pc_bgright2_img_holder").textContent;
+            var h5pc_300x600_img = document.getElementById("h5pc_300x600_img_holder").textContent;
+            var h5pc_300x250_img = document.getElementById("h5pc_300x250_img_holder").textContent;
+            var h5pc_336x280_img = document.getElementById("h5pc_336x280_img_holder").textContent;
+            
+            var h5pc_bgleft_name = document.getElementById("h5pc_bgleft_name").value;
+            var h5pc_top_name = document.getElementById("h5pc_top_name").value;
+            var h5pc_bgright_name = document.getElementById("h5pc_bgright_name").value;
+            var h5pc_300x600_name = document.getElementById("h5pc_300x600_name").value;
+            var h5pc_300x250_name = document.getElementById("h5pc_300x250_name").value;
+            var h5pc_336x280_name = document.getElementById("h5pc_336x280_name").value;
+
+            var h5pc_bgleft_icheck = document.getElementById("h5pc_bgleft_impcheck").checked;
+            var h5pc_top_icheck = document.getElementById("h5pc_top_impcheck").checked;
+            var h5pc_bgright_icheck = document.getElementById("h5pc_bgright_impcheck").checked;
+            var h5pc_300x600_icheck = document.getElementById("h5pc_300x600_impcheck").checked;
+            var h5pc_300x250_icheck = document.getElementById("h5pc_300x250_impcheck").checked;
+            var h5pc_336x280_icheck = document.getElementById("h5pc_336x280_impcheck").checked;
+
+            var top100_c = document.getElementById("top100_check").checked;
+            var top250_c = document.getElementById("top250_check").checked;
+
+            h5pc_bgleft_html = replaceString(h5pc_bgleft_html,"%%this_is_click%%",h5pc_c);
+            h5pc_bgleft_html = replaceString(h5pc_bgleft_html,"%%this_is_impression%%",blankgif_data);
+            h5pc_bgright_html = replaceString(h5pc_bgright_html,"%%this_is_click%%",h5pc_c);
+            h5pc_bgright_html = replaceString(h5pc_bgright_html,"%%this_is_impression%%",blankgif_data);
+            h5pc_top_html = replaceString(h5pc_top_html,"%%this_is_click%%",h5pc_c);
+            h5pc_top_html = replaceString(h5pc_top_html,"%%this_is_impression%%",blankgif_data);
+            h5pc_300x600_html = replaceString(h5pc_300x600_html,"%%this_is_click%%",h5pc_c);
+            h5pc_300x600_html = replaceString(h5pc_300x600_html,"%%this_is_impression%%",blankgif_data);
+            h5pc_300x250_html = replaceString(h5pc_300x250_html,"%%this_is_click%%",h5pc_c);
+            h5pc_300x250_html = replaceString(h5pc_300x250_html,"%%this_is_impression%%",blankgif_data);
+            h5pc_336x280_html = replaceString(h5pc_336x280_html,"%%this_is_click%%",h5pc_c);
+            h5pc_336x280_html = replaceString(h5pc_336x280_html,"%%this_is_impression%%",blankgif_data);
+
+            if(h5pc_bgleft_icheck == true){
+                h5pc_bgleft_html = replaceString(h5pc_bgleft_html,blankgif_data,h5pc_i);
+            }
+            if(h5pc_top_icheck == true){
+                h5pc_top_html = replaceString(h5pc_top_html,blankgif_data,h5pc_i);
+            }
+            if(h5pc_bgright_icheck == true){
+                h5pc_bgright_html = replaceString(h5pc_bgright_html,blankgif_data,h5pc_i);
+            }
+            if(h5pc_300x600_icheck == true){
+                h5pc_300x600_html = replaceString(h5pc_300x600_html,blankgif_data,h5pc_i);
+            }
+            if(h5pc_300x250_icheck == true){
+                h5pc_300x250_html = replaceString(h5pc_300x250_html,blankgif_data,h5pc_i);
+            }
+            if(h5pc_336x280_icheck == true){
+                h5pc_336x280_html = replaceString(h5pc_336x280_html,blankgif_data,h5pc_i);
+            }
+
+            if(top100_c == true){
+                h5pc_top_html = replaceString(h5pc_top_html,"%%this_is_top_height%%",100);
+            }
+            if(top250_c == true){
+                h5pc_top_html = replaceString(h5pc_top_html,"%%this_is_top_height%%",250);
+            }
+
+            if(document.getElementById("h5pc_bgleft1_img_upload").files.length !== 0 ){
+                fol.file(h5pc_bgleft_name + "/" + h5pc_bgleft_name + ".html", h5pc_bgleft_html);
+                fol.file(h5pc_bgleft_name + "/" + "left_to.jpg", h5pc_bgleft1_img.substr(h5pc_bgleft1_img.indexOf(',')+1), {base64: true});
+                fol.file(h5pc_bgleft_name + "/" + "left_nho.jpg", h5pc_bgleft2_img.substr(h5pc_bgleft2_img.indexOf(',')+1), {base64: true});
+            }
+            if(document.getElementById("h5pc_bgright1_img_upload").files.length !== 0 ){
+                fol.file(h5pc_bgright_name + "/" + h5pc_bgright_name + ".html", h5pc_bgright_html);
+                fol.file(h5pc_bgright_name + "/" + "right_to.jpg", h5pc_bgright1_img.substr(h5pc_bgright1_img.indexOf(',')+1), {base64: true});
+                fol.file(h5pc_bgright_name + "/" + "right_nho.jpg", h5pc_bgright2_img.substr(h5pc_bgright2_img.indexOf(',')+1), {base64: true});
+            }
+            if(document.getElementById("h5pc_top_img_upload").files.length !== 0 ){
+                fol.file(h5pc_top_name + "/" + h5pc_top_name + ".html", h5pc_top_html);
+                fol.file(h5pc_top_name + "/" + h5pc_top_name + ".jpg", h5pc_top_img.substr(h5pc_top_img.indexOf(',')+1), {base64: true});
+            }
+            if(document.getElementById("h5pc_300x600_img_upload").files.length !== 0 ){
+                fol.file(h5pc_300x600_name + "/" + h5pc_300x600_name + ".html", h5pc_300x600_html);
+                fol.file(h5pc_300x600_name + "/" + h5pc_300x600_name + ".jpg", h5pc_300x600_img.substr(h5pc_300x600_img.indexOf(',')+1), {base64: true});
+            }
+            if(document.getElementById("h5pc_300x250_img_upload").files.length !== 0 ){
+                fol.file(h5pc_300x250_name + "/" + h5pc_300x250_name + ".html", h5pc_300x250_html);
+                fol.file(h5pc_300x250_name + "/" + h5pc_300x250_name + ".jpg", h5pc_300x250_img.substr(h5pc_300x250_img.indexOf(',')+1), {base64: true});
+            }
+            if(document.getElementById("h5pc_336x280_img_upload").files.length !== 0 ){
+                fol.file(h5pc_336x280_name + "/" + h5pc_336x280_name + ".html", h5pc_336x280_html);
+                fol.file(h5pc_336x280_name + "/" + h5pc_336x280_name + ".jpg", h5pc_336x280_img.substr(h5pc_336x280_img.indexOf(',')+1), {base64: true});
+            }
+
+            var filename = prompt("Name the file?", "banner");
+            if (filename != null) {
+                zip.generateAsync({type:"blob"})
+                .then(function(content) {
+                    saveAs(content, filename + ".zip");
+                });
+            }
+        })
+    </script>
+</body>
+</html>

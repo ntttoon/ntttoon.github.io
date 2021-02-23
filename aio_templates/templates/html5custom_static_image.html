@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+    // Url dích
+    var V_URL= '%%this_is_click%%';
+    //////////
+    V_URL   = '%%CLICK_URL_UNESC%%'+V_URL;
+    /////////
+    function init(){ 
+        var impDiv = document.getElementById('impressionTrack');
+		if(impDiv){
+            // GẮN IMPRESSION Ở ĐÂY
+			impDiv.innerHTML = '<img src="%%this_is_impression%%" border="0" width="0" height="0" style="display:none;" />';
+		}
+    }
+</script>
+<body style="margin: 0" onload="init();">
+<div id="impressionTrack"></div>
+<a href="javascript:void(window.open(window.V_URL))">
+    <img src="%%FILE:JPG1%%" border=0 width="100%"/>
+</a>
+</body>
+</html>

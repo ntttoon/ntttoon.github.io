@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Demo</title>
+    <title>Demo MB</title>
     <link rel="stylesheet" href="../css/w3.css">
     <script async src="../js_libs/jszip.js"> </script>
-    <script async src="../js_libs/jszip-utils.js"> </script>
     <script async src="../js_libs/FileSaver.js"> </script> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        html,body,h1,h2,h3,h4,h5 {font-family: "Roboto", sans-serif}
+    </style>
 </head>
 <body>
-    <div class="w3-bar w3-teal">
-        <div class="w3-bar-item">Tạo demo cho mobile</div>
-    </div>
+    <header style="padding-top:22px">
+        <h5><b>Demo MB</b></h5>
+    </header>
     
     <div class="w3-container">
         <p>
@@ -22,9 +26,9 @@
         <div class="w3-cell-row">
             <div class="w3-container w3-cell w3-teal w3-mobile">
                 <h3>Upload các banner tĩnh</h3>
-                <div>Up ảnh banner top <strong>320x100 (640x200)</strong></div>
+                <div>Up ảnh banner top <strong>320x100/320x160 (640x200/640x320)</strong></div>
                 <input class="w3-input" id="top" type="file" accept="image/x-png,image/gif,image/jpeg" />
-                <div>Up ảnh banner inpage <strong>320x640 (375x750)</strong></div>
+                <div>Up ảnh banner inpage <strong>320x640 (375x750/640x1280)</strong></div>
                 <input class="w3-input" id="inpage" type="file" accept="image/x-png,image/gif,image/jpeg" />
                 <div>Up ảnh banner chân bv <strong>320x100 (640x200)</strong></div>
                 <input class="w3-input" id="cbv" type="file" accept="image/x-png,image/gif,image/jpeg" />
