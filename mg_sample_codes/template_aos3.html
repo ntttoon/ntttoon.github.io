@@ -6,7 +6,8 @@
   <meta content="width=device-width, initial-scale=1" name="viewport">
 
   <title>template aos</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://thietke.24h.com.vn/magazine/imglightbox/imglightbox.css" />
   <script src="https://thietke.24h.com.vn/magazine/imglightbox/imglightbox.js"></script>
@@ -87,13 +88,11 @@
     @media (max-height: 480px) {.adaptiveGallery li {height: 80vh;}}
     @media (max-aspect-ratio: 1/1) and (max-width: 480px) {.adaptiveGallery ul{flex-direction: row;}.adaptiveGallery li{height: auto;width: 100%;}.adaptiveGallery img{width: 100%;max-height: 75vh;min-width: 0;}}
     /*end adaptive layout*/
-    .mg-top-spacing{height:50px;}
   </style>
 </head>
 
 <body>
   <div id="cssipad"></div>
-  <div class="mg-top-spacing"></div>
   <!-- imgLightbox -->
   <div id="imgLightbox" onclick="imgLightbox.close();">
     <div id="imgLightbox-button-area">

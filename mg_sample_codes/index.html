@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Code mẫu cho bài eMagazine</title>
+    <title>eMagazine templates</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
     <link rel="stylesheet" href="../css/w3.css">
@@ -11,7 +11,7 @@
 <body>
 
 <header class="w3-container w3-teal">
-	<h5>Code mẫu cho bài eMagazine dùng thư viện AOS</h5>
+	<h5>eMagazine templates</h5>
 </header>
 
 <!--
@@ -19,7 +19,6 @@
     &gt; = >
 -->
 <div class="w3-container">
-    <p>Copy 1 trong các code mẫu bên dưới tương ứng với phần thiết kế. Download file html chính ở đây! <a class="w3-btn w3-teal" href="template_aos3.zip">Download Template</a></p>
     <div class="w3-row">
         <div class="w3-quarter w3-container">
             <p>Hiệu ứng xuất hiện dần (Fade)</p>  
@@ -72,6 +71,7 @@
     
     <textarea id="codeSample" class="w3-input w3-border" rows="10"></textarea>
     <hr>
+    <button class="w3-button w3-blue" id="btn0">Copy template</button>
     <button class="w3-button w3-teal" id="btn1">Code cho 2 ảnh pc/mobile</button>
     <button class="w3-button w3-teal" id="btn2">Code cho 1 ảnh dùng chung pc/mobile</button>
     <button class="w3-button w3-teal" id="btn2b">Code cho 1 ảnh với hiệu ứng rê chuột quét sáng</button><br>
@@ -126,6 +126,10 @@
         document.execCommand("copy");
         //alert(copyText.value);
     }
+    $( "#btn0" ).click(function() {
+        readTextFile("template_aos3.html");
+        copyCode();
+    });
     $( "#btn1" ).click(function() {
         readTextFile("modules/dual_img.txt");
         copyCode();
