@@ -1,0 +1,142 @@
+﻿
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mini gsap motion lib creator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/w3.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<style>
+    html,body,h1,h2,h3,h4,h5 {font-family: "Roboto", sans-serif}
+</style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header style="padding-top:22px">
+        <h5><b>Mini gsap motion lib creator</b></h5>
+    </header>
+
+    <div class="w3-container">
+        <p><label><span class="w3-text-red">* </span>MCs</label>
+        <input class="w3-input w3-border" id="mcs" type="text" value=""></p>
+        
+        <div id="mcs_holder_config"></div>
+
+        <div id="code_out_effect" class="w3-yellow"></div>
+        <p><button class="w3-btn w3-blue" onclick="creat_mcs_list()">Tạo list</button>
+        <button class="w3-btn w3-blue" onclick="creat_as_list()">Tạo code</button>
+    </div>
+
+  <script>
+    function get_effects(id) {
+        var effect_list = document.getElementById(id);
+
+        if(effect_list.value == "0"){
+            return ",2";
+        }
+        else if(effect_list.value == "1"){
+            return "";
+        }
+        else if(effect_list.value == "2"){
+            return ",1";
+        }
+        else if(effect_list.value == "3"){
+            return ",1,gb_ease";
+        }
+        else if(effect_list.value == "4"){
+            return ",1,gb_ease";
+        }
+        else if(effect_list.value == "5"){
+            return ",1,gb_ease";
+        }
+        else if(effect_list.value == "6"){
+            return ",1,gb_ease";
+        }
+        else if(effect_list.value == "7"){
+            return ",1,gb_ease";
+        }
+        else if(effect_list.value == "8"){
+            return ",1,gb_ease";
+        }
+        else if(effect_list.value == "9"){
+            return ",1,gb_ease";
+        }
+        else if(effect_list.value == "10"){
+            return ",1,gb_ease";
+        }
+        else if(effect_list.value == "11"){
+            return ",1,gb_ease";
+        }
+        else if(effect_list.value == "12"){
+            return ",1,gb_ease";
+        }
+        else if(effect_list.value == "13"){
+            return "";
+        }
+        else if(effect_list.value == "14"){
+            return "";
+        }
+        else if(effect_list.value == "15"){
+            return "";
+        }
+        else if(effect_list.value == "16"){
+            return "";
+        }
+    }
+
+    function get_selectedIndex(id){
+        var select_list = document.getElementById(id);
+        var a = select_list.options[select_list.selectedIndex].text
+        return a;
+    }
+
+    function get_selectedInnerText(id){
+        var select_list = document.getElementById(id);
+        var a = select_list.options[select_list.selectedIndex].innerHTML
+        return a;
+    }
+
+    function creat_mcs_list() {
+        var mcs = document.getElementById("mcs").value;
+        var mcs_array = mcs.split(",");
+        var mcs_holder_config = document.getElementById("mcs_holder_config");
+        mcs_holder_config.innerHTML = "";
+        for(i=0;i<mcs_array.length;i++){
+            mcs_holder_config.innerHTML += '<p class="w3-left" style="width:100px" id="' + change_alias(mcs_array[i])  +'">'+ change_alias(mcs_array[i]) + '</p>' +
+            '<select class="w3-select w3-border" style="width: 200px;" id="' + change_alias(mcs_array[i]) + '_effectlist"><option value="0" selected>cho</option><option value="1" >an</option><option value="2" >hien</option><option value="3" >doc</option><option value="4" >ngang</option><option value="5" >trai</option><option value="6" >phai</option><option value="7" >tren</option><option value="8" >duoi</option><option value="9" >phong</option><option value="10" >thu</option><option value="11" >phongxoay</option><option value="12" >thuxoay</option><option value="13" >phong1lan</option><option value="14" >phong2lan</option><option value="15" >nhay2lan</option><option value="16" >luclac</option></select> <br><p style="float:none"></p>';
+        }
+    }
+    function creat_as_list() {
+        var mcs = document.getElementById("mcs").value;
+        var mcs_array = mcs.split(",");
+        var code_out_effect = document.getElementById("code_out_effect");
+        code_out_effect.innerHTML = "";
+        for(i=0;i<mcs_array.length;i++){
+            code_out_effect.innerHTML += get_selectedInnerText(change_alias(mcs_array[i])+"_effectlist") + '(t.' + change_alias(mcs_array[i]) + get_effects(change_alias(mcs_array[i])+"_effectlist") + ')' +  '<br>';
+        }
+    }
+
+    function change_alias(alias) {
+        var str = alias;
+        //str = str.toLowerCase();
+        str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g,"a"); 
+        str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g,"e"); 
+        str = str.replace(/ì|í|ị|ỉ|ĩ/g,"i"); 
+        str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g,"o"); 
+        str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g,"u"); 
+        str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g,"y"); 
+        str = str.replace(/đ/g,"d");
+        //str = str.replace(/!|@|%|\^|\*|\(|\)|\+|\=|\<|\>|\?|\/|,|\.|\:|\;|\'|\"|\&|\#|\[|\]|~|\$|_|`|-|{|}|\||\\/g," ");
+        str = str.replace(/!|@|%|\^|\*|\(|\)|\+|\=|\<|\>|\?|\/|,|\.|\:|\;|\'|\"|\&|\#|\[|\]|~|\$|`|-|{|}|\||\\/g," ");
+        str = str.replace(/ + /g," ");
+        str = str.trim();
+        str = str.replace(/\s+/g, '');
+        return str;
+    }
+
+  </script>
+</body>
+</html>
