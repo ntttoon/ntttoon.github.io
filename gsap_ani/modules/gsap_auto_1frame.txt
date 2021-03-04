@@ -5,7 +5,7 @@ var ac = t.children;
 var gb_duration = 1;
 //var gb_ease = "power2.inOut";
 var gb_ease = "elastic(1, 0.75)";
-var gb_delay = "-=0.5";
+var gb_gap = "-=0.5";
 
 var tl = gsap.timeline({onComplete:replay});
 function replay(){myVar = setTimeout(function(){tl.restart();}, 7000)}
@@ -13,13 +13,13 @@ function replay(){myVar = setTimeout(function(){tl.restart();}, 7000)}
 function cho(mc,e){tl.to(mc, {duration:e?e:3,alpha:1});}
 function rd_eff(mc,r){
 	if(!r){var re = Math.floor((Math.random() * 7));r = re;}
-	if(r == 0){tl.from(mc, {duration:gb_duration,alpha:0}, gb_delay)}
-	if(r == 1){tl.from(mc, {duration:gb_duration,x:"+=100",alpha:0,ease:gb_ease}, gb_delay)}
-	if(r == 2){tl.from(mc, {duration:gb_duration,x:"-=100",alpha:0,ease:gb_ease}, gb_delay)}
-	if(r == 3){tl.from(mc, {duration:gb_duration,y:"+=100",alpha:0,ease:gb_ease}, gb_delay)}
-	if(r == 4){tl.from(mc, {duration:gb_duration,y:"-=100",alpha:0,ease:gb_ease}, gb_delay)}
-	if(r == 5){tl.from(mc, {duration:gb_duration,scaleX:0.1,scaleY:0.1,alpha:0,ease:gb_ease}, gb_delay)}
-	if(r == 6){tl.from(mc, {duration:gb_duration,scaleX:3,scaleY:3,alpha:0,ease:gb_ease}, gb_delay)}
+	if(r == 0){tl.from(mc, {duration:gb_duration,alpha:0}, gb_gap)}
+	if(r == 1){tl.from(mc, {duration:gb_duration,x:"+=100",alpha:0,ease:gb_ease}, gb_gap)}
+	if(r == 2){tl.from(mc, {duration:gb_duration,x:"-=100",alpha:0,ease:gb_ease}, gb_gap)}
+	if(r == 3){tl.from(mc, {duration:gb_duration,y:"+=100",alpha:0,ease:gb_ease}, gb_gap)}
+	if(r == 4){tl.from(mc, {duration:gb_duration,y:"-=100",alpha:0,ease:gb_ease}, gb_gap)}
+	if(r == 5){tl.from(mc, {duration:gb_duration,scaleX:0.1,scaleY:0.1,alpha:0,ease:gb_ease}, gb_gap)}
+	if(r == 6){tl.from(mc, {duration:gb_duration,scaleX:3,scaleY:3,alpha:0,ease:gb_ease}, gb_gap)}
 	//loop effect
 	if(r == 7){tl.to(mc, {duration: 0.2, scaleX:1.2,scaleY:1.2});tl.to(mc, {duration: 0.2, scaleX:1,scaleY:1});tl.to(mc, {duration: 0.2, scaleX:1.2,scaleY:1.2});tl.to(mc, {duration: 0.2, scaleX:1,scaleY:1});tl.to(mc, {duration: 1, scaleX:1,scaleY:1});}
 	if(r == 8){tl.to(mc, {duration: 0.1, alpha:0});tl.to(mc, {duration: 0.1, alpha:1});tl.to(mc, {duration: 0.1, alpha:0});tl.to(mc, {duration: 0.1, alpha:1});tl.to(mc, {duration: 1, alpha:1});}

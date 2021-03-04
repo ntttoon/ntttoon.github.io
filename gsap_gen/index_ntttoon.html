@@ -38,43 +38,43 @@
             return ",2";
         }
         else if(effect_list.value == "1"){
-            return "";
+            return ",1,gb_ease,1";
         }
         else if(effect_list.value == "2"){
-            return ",1";
+            return ",1,gb_ease,1";
         }
         else if(effect_list.value == "3"){
-            return ",1,gb_ease";
+            return ",1,gb_ease,1";
         }
         else if(effect_list.value == "4"){
-            return ",1,gb_ease";
+            return ",1,gb_ease,1";
         }
         else if(effect_list.value == "5"){
-            return ",1,gb_ease";
+            return ",1,gb_ease,1";
         }
         else if(effect_list.value == "6"){
-            return ",1,gb_ease";
+            return ",1,gb_ease,1";
         }
         else if(effect_list.value == "7"){
-            return ",1,gb_ease";
+            return ",1,gb_ease,1";
         }
         else if(effect_list.value == "8"){
-            return ",1,gb_ease";
+            return ",1,gb_ease,1";
         }
         else if(effect_list.value == "9"){
-            return ",1,gb_ease";
+            return ",1,gb_ease,1";
         }
         else if(effect_list.value == "10"){
-            return ",1,gb_ease";
+            return ",1,gb_ease,1";
         }
         else if(effect_list.value == "11"){
-            return ",1,gb_ease";
+            return ",1,gb_ease,1";
         }
         else if(effect_list.value == "12"){
-            return ",1,gb_ease";
+            return ",1,gb_ease,1";
         }
         else if(effect_list.value == "13"){
-            return "";
+            return ",1,gb_ease,1";
         }
         else if(effect_list.value == "14"){
             return "";
@@ -83,6 +83,9 @@
             return "";
         }
         else if(effect_list.value == "16"){
+            return "";
+        }
+        else if(effect_list.value == "17"){
             return "";
         }
     }
@@ -106,7 +109,7 @@
         mcs_holder_config.innerHTML = "";
         for(i=0;i<mcs_array.length;i++){
             mcs_holder_config.innerHTML += '<p class="w3-left" style="width:100px" id="' + change_alias(mcs_array[i])  +'">'+ change_alias(mcs_array[i]) + '</p>' +
-            '<select class="w3-select w3-border" style="width: 200px;" id="' + change_alias(mcs_array[i]) + '_effectlist"><option value="0" selected>cho</option><option value="1" >an</option><option value="2" >hien</option><option value="3" >doc</option><option value="4" >ngang</option><option value="5" >trai</option><option value="6" >phai</option><option value="7" >tren</option><option value="8" >duoi</option><option value="9" >phong</option><option value="10" >thu</option><option value="11" >phongxoay</option><option value="12" >thuxoay</option><option value="13" >phong1lan</option><option value="14" >phong2lan</option><option value="15" >nhay2lan</option><option value="16" >luclac</option></select> <br><p style="float:none"></p>';
+            '<select class="w3-select w3-border" style="width: 200px;" id="' + change_alias(mcs_array[i]) + '_effectlist"><option value="0" selected>cho</option><option value="1" >an</option><option value="2" >hien</option><option value="3" >hiendan</option><option value="4" >doc</option><option value="5" >ngang</option><option value="6" >trai</option><option value="7" >phai</option><option value="8" >tren</option><option value="9" >duoi</option><option value="10" >phong</option><option value="11" >thu</option><option value="12" >phongxoay</option><option value="13" >thuxoay</option><option value="14" >phong1lan</option><option value="15" >phong2lan</option><option value="16" >nhay2lan</option><option value="17" >luclac</option></select> <br><p style="float:none"></p>';
         }
     }
     function creat_as_list() {
