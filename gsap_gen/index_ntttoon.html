@@ -23,9 +23,11 @@
         <p><label><span class="w3-text-red">* </span>MCs</label>
         <input class="w3-input w3-border" id="mcs" type="text" value=""></p>
         
-        <div id="mcs_holder_config"></div>
+        <div class="w3-row">
+            <div id="mcs_holder_config" class="w3-half"></div>
 
-        <div id="code_out_effect" class="w3-yellow"></div>
+            <div id="code_out_effect" class="w3-half w3-yellow"></div>
+        </div>
         <p><button class="w3-btn w3-blue" onclick="creat_mcs_list()">Tạo list</button>
         <button class="w3-btn w3-blue" onclick="creat_as_list()">Tạo code</button>
     </div>
@@ -108,8 +110,9 @@
         var mcs_holder_config = document.getElementById("mcs_holder_config");
         mcs_holder_config.innerHTML = "";
         for(i=0;i<mcs_array.length;i++){
-            mcs_holder_config.innerHTML += '<p class="w3-left" style="width:100px" id="' + change_alias(mcs_array[i])  +'">'+ change_alias(mcs_array[i]) + '</p>' +
-            '<select class="w3-select w3-border" style="width: 200px;" id="' + change_alias(mcs_array[i]) + '_effectlist"><option value="0" selected>cho</option><option value="1" >an</option><option value="2" >hien</option><option value="3" >hiendan</option><option value="4" >doc</option><option value="5" >ngang</option><option value="6" >trai</option><option value="7" >phai</option><option value="8" >tren</option><option value="9" >duoi</option><option value="10" >phong</option><option value="11" >thu</option><option value="12" >phongxoay</option><option value="13" >thuxoay</option><option value="14" >phong1lan</option><option value="15" >phong2lan</option><option value="16" >nhay2lan</option><option value="17" >luclac</option></select> <br><p style="float:none"></p>';
+            //var r = randString();
+            mcs_holder_config.innerHTML += '<p class="w3-left" style="width:100px" id="' + change_alias(mcs_array[i] + i)  +'">'+ change_alias(mcs_array[i]) + '</p>' +
+            '<select class="w3-select w3-border" style="width: 200px;" id="' + change_alias(mcs_array[i] + i) + '_effectlist"><option value="0" selected>cho</option><option value="1" >an</option><option value="2" >hien</option><option value="3" >hiendan</option><option value="4" >doc</option><option value="5" >ngang</option><option value="6" >trai</option><option value="7" >phai</option><option value="8" >tren</option><option value="9" >duoi</option><option value="10" >phong</option><option value="11" >thu</option><option value="12" >phongxoay</option><option value="13" >thuxoay</option><option value="14" >phong1lan</option><option value="15" >phong2lan</option><option value="16" >nhay2lan</option><option value="17" >luclac</option></select> <br><p style="float:none"></p>';
         }
     }
     function creat_as_list() {
@@ -118,8 +121,12 @@
         var code_out_effect = document.getElementById("code_out_effect");
         code_out_effect.innerHTML = "";
         for(i=0;i<mcs_array.length;i++){
-            code_out_effect.innerHTML += get_selectedInnerText(change_alias(mcs_array[i])+"_effectlist") + '(t.' + change_alias(mcs_array[i]) + get_effects(change_alias(mcs_array[i])+"_effectlist") + ')' +  '<br>';
+            code_out_effect.innerHTML += get_selectedInnerText(mcs_array[i] + i +"_effectlist") + '(t.' + mcs_array[i] + get_effects(mcs_array[i] + i +"_effectlist") + ')' +  '<br>';
         }
+    }
+    function randString(){
+        var randomString = Math.random().toString(36).substring(2);
+        return randomString
     }
 
     function change_alias(alias) {
