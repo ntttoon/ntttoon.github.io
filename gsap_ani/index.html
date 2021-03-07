@@ -23,8 +23,9 @@
     <p>https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.5.1_min.js</p>
     <textarea id="codeSample" class="w3-input w3-border w3-small" rows="20"></textarea>
     <hr>
-    <button class="w3-button w3-teal" id="btn1">gsap_auto_1frame</button>
+    <button class="w3-button w3-teal" id="btn1">gsap auto 1frame</button>
     <button class="w3-button w3-teal" id="btn2">gsap mini library</button>
+    <button class="w3-button w3-teal" id="btn3">mini interactive lib</button>
 </div>
 
 
@@ -62,6 +63,10 @@
     });
     $( "#btn2" ).click(function() {
         readTextFile("modules/gsap_mini_lib.txt");
+        copyCode();
+    });
+    $( "#btn3" ).click(function() {
+        readTextFile("modules/mini_interactive_lib.txt");
         copyCode();
     });
 </script>

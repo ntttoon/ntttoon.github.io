@@ -1,0 +1,15 @@
+var t = this;
+var root = exportRoot;
+var gb_ease = "power2.inOut";
+var gb_ease2 = "elastic(1, 0.75)";
+t.stop();
+
+function mcHide(mc){mc.visible = false;}
+function mcShow(mc){mc.visible = true;}
+function mcPlay(mc,name){mc.gotoAndPlay(name);}
+function mcStop(mc,name){mc.gotoAndStop(name);}
+function openPage(){window.open(window.clickTag);}
+function consoleLog(){console.log("complete");}
+function moveTo(mc,xpos,ypos,dur,easetype,myFunction){gsap.to(mc, {x: xpos, y: ypos, duration: dur, ease: easetype, onComplete:myFunction});}
+
+//t.cta_btn.on("click", openPage);
