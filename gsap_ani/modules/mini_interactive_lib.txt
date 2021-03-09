@@ -1,8 +1,8 @@
-var t = this;
+var _this = this;
 var root = exportRoot;
 var gb_ease = "power2.inOut";
 var gb_ease2 = "elastic(1, 0.75)";
-t.stop();
+_this.stop();
 
 function mcHide(mc){mc.visible = false;}
 function mcShow(mc){mc.visible = true;}
@@ -12,4 +12,32 @@ function openPage(){window.open(window.clickTag);}
 function consoleLog(){console.log("complete");}
 function moveTo(mc,xpos,ypos,dur,easetype,myFunction){gsap.to(mc, {x: xpos, y: ypos, duration: dur, ease: easetype, onComplete:myFunction});}
 
-//t.cta_btn.on("click", openPage);
+//canvas.addEventListener("mouseover", add_Event_MouseOver);
+//canvas.addEventListener("mouseout", add_Event_MouseOut);
+//canvas.addEventListener("click", add_Event_Click);
+this.cta_btn.addEventListener("rollover", add_Event_MouseOver);
+this.cta_btn.addEventListener("rollout", add_Event_MouseOut);
+this.cta_btn.addEventListener("click", add_Event_Click);
+
+function add_Event_MouseOver(){
+	_this.mc.gotoAndPlay("start");
+}
+
+function add_Event_MouseOut(){
+	_this.mc.gotoAndStop(0);
+}
+
+function add_Event_Click(){
+	window.open(window.clickTag);
+}
+
+// Global Scripts
+document.documentElement.onmouseleave = function ()
+{
+	//alert('mouse left the iframe');
+	exportRoot.expand_banner.cd_num.gotoAndStop(0);
+}
+document.documentElement.onmouseover = function ()
+{
+	exportRoot.expand_banner.cd_num.gotoAndPlay(1);
+}
