@@ -1,0 +1,10 @@
+// Global Scripts
+document.documentElement.onmouseleave = function ()
+{
+	//alert('mouse left the iframe');
+	exportRoot.expand_banner.cd_num.gotoAndStop(0);
+}
+document.documentElement.onmouseover = function ()
+{
+	exportRoot.expand_banner.cd_num.gotoAndPlay(1);
+}

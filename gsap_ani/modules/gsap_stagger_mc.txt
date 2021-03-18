@@ -1,0 +1,11 @@
+//frame1
+this.visible = false;
+//frame2
+this.visible = true;
+this.stop();
+var ac = this.children;
+var ar = [];
+var gb_ease = "power2.inOut";
+var gb_ease2 = "elastic(1, 0.75)";
+for(var i=0;i<ac.length;i++){ar.push(ac[i]);}
+gsap.from(ar,{duration:1,ease:gb_ease2,alpha:0,scaleX:2,scaleY:2,stagger:0.2});

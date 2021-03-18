@@ -26,6 +26,8 @@
     <button class="w3-button w3-teal" id="btn1">gsap auto 1frame</button>
     <button class="w3-button w3-teal" id="btn2">gsap mini library</button>
     <button class="w3-button w3-teal" id="btn3">mini interactive lib</button>
+    <button class="w3-button w3-teal" id="btn4">rollover iframe</button>
+    <button class="w3-button w3-teal" id="btn5">gsap stagger in mc</button>
 </div>
 
 
@@ -67,6 +69,14 @@
     });
     $( "#btn3" ).click(function() {
         readTextFile("modules/mini_interactive_lib.txt");
+        copyCode();
+    });
+    $( "#btn4" ).click(function() {
+        readTextFile("modules/rollover_iframe.txt");
+        copyCode();
+    });
+    $( "#btn5" ).click(function() {
+        readTextFile("modules/gsap_stagger_mc.txt");
         copyCode();
     });
 </script>
