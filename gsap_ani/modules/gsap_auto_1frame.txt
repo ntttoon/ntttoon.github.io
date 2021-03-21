@@ -20,7 +20,6 @@ function rd_eff(mc,r){
 	if(r == 4){tl.from(mc, {duration:gb_duration,y:"-=100",alpha:0,ease:gb_ease}, gb_gap)}
 	if(r == 5){tl.from(mc, {duration:gb_duration,scaleX:0.1,scaleY:0.1,alpha:0,ease:gb_ease}, gb_gap)}
 	if(r == 6){tl.from(mc, {duration:gb_duration,scaleX:3,scaleY:3,alpha:0,ease:gb_ease}, gb_gap)}
-	//loop effect
 	if(r == 7){tl.to(mc, {duration: 0.2, scaleX:1.2,scaleY:1.2});tl.to(mc, {duration: 0.2, scaleX:1,scaleY:1});tl.to(mc, {duration: 0.2, scaleX:1.2,scaleY:1.2});tl.to(mc, {duration: 0.2, scaleX:1,scaleY:1});tl.to(mc, {duration: 1, scaleX:1,scaleY:1});}
 	if(r == 8){tl.to(mc, {duration: 0.1, alpha:0});tl.to(mc, {duration: 0.1, alpha:1});tl.to(mc, {duration: 0.1, alpha:0});tl.to(mc, {duration: 0.1, alpha:1});tl.to(mc, {duration: 1, alpha:1});}
 }
@@ -30,9 +29,7 @@ function st_eff(){
 	for(var i=1;i<ac.length;i++){
 		rd_eff(ac[i])
 	}
-	//loop effect
 	rd_eff(ac[3],7);
-	rd_eff(ac[4],8);
 }
 
 stage.on("drawstart", st_eff, this, true);
