@@ -1,0 +1,2 @@
+if (!this.looped) this.looped = 1;
+if (this.looped++ == 3) this.stop();
