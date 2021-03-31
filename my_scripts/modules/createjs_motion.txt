@@ -1,0 +1,18 @@
+var _this = this;
+var root = exportRoot;
+var target1 = this.mc1;
+
+function motion_On(){
+	var tween = createjs.Tween.get(target1, {override:true}).to({x: 0, y: 0, alpha: 1}, 1000, createjs.Ease.quartOut).call(handleComplete);
+}
+
+function motion_Off(){
+	var tween = createjs.Tween.get(target1, {override:true}).to({x: 300, y: 250, alpha: 0}, 1000, createjs.Ease.quartOut).call(handleComplete);
+}
+
+function handleComplete(){
+	console.log("motion complete");
+}
+
+canvas.addEventListener("mouseover", motion_On);
+canvas.addEventListener("mouseout", motion_Off);
