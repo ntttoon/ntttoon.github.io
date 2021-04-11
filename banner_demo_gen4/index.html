@@ -28,6 +28,8 @@
                 <h3>Upload các banner tĩnh</h3>
                 <div>Up ảnh banner top <strong>320x100/320x160 (640x200/640x320)</strong></div>
                 <input class="w3-input" id="top" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div>Up ảnh banner onpage <strong>300x250 (600x500)</strong></div>
+                <input class="w3-input" id="onpage" type="file" accept="image/x-png,image/gif,image/jpeg" />
                 <div>Up ảnh banner inpage <strong>320x640 (375x750/640x1280)</strong></div>
                 <input class="w3-input" id="inpage" type="file" accept="image/x-png,image/gif,image/jpeg" />
                 <div>Up ảnh banner chân bv <strong>320x100 (640x200)</strong></div>
@@ -51,6 +53,7 @@
     <div style="display: none" id="demo_img6_holder"></div>
     <div style="display: none" id="demo_img7_holder"></div>
     <div style="display: none" id="top_holder"></div>
+    <div style="display: none" id="onpage_holder"></div>
     <div style="display: none" id="inpage_holder"></div>
     <div style="display: none" id="cbv_holder"></div>
     <div style="display: none" id="center1_holder"></div>
@@ -121,6 +124,10 @@
             document.getElementById("top_holder").textContent = dataUrl;
         }
     )
+    readImages('templates/images/banner_onpage.jpg',function(dataUrl) {
+            document.getElementById("onpage_holder").textContent = dataUrl;
+        }
+    )
     readImages('templates/images/banner_inpage.jpg',function(dataUrl) {
             document.getElementById("inpage_holder").textContent = dataUrl;
         }
@@ -158,6 +165,9 @@
     document.getElementById("top").addEventListener("change", function(){
         readInputFile(this,"top_holder","image");
     })
+    document.getElementById("onpage").addEventListener("change", function(){
+        readInputFile(this,"onpage_holder","image");
+    })
     document.getElementById("inpage").addEventListener("change", function(){
         readInputFile(this,"inpage_holder","image");
     })
@@ -185,6 +195,7 @@
         var demo_js = document.getElementById("js_qrcode_holder").textContent;
         /////
         var data_top = document.getElementById("top_holder").textContent;
+        var data_onpage = document.getElementById("onpage_holder").textContent;
         var data_inpage = document.getElementById("inpage_holder").textContent;
         var data_cbv = document.getElementById("cbv_holder").textContent;
         var data_center1 = document.getElementById("center1_holder").textContent;
@@ -204,6 +215,9 @@
         images_folder.file("demo07.jpg", demo_img7.substr(demo_img7.indexOf(',')+1), {base64: true});
         if(data_top !==""){
             images_folder.file("banner_top.jpg", data_top.substr(data_top.indexOf(',')+1), {base64: true});
+        }
+        if(data_onpage !==""){
+            images_folder.file("banner_onpage.jpg", data_onpage.substr(data_onpage.indexOf(',')+1), {base64: true});
         }
         if(data_inpage !==""){
             images_folder.file("banner_inpage.jpg", data_inpage.substr(data_inpage.indexOf(',')+1), {base64: true});

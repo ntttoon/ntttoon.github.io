@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo</title>
+    <link rel="stylesheet" href="../css/w3.css">
+    <script async src="../js_libs/jszip.js"> </script>
+    <script async src="../js_libs/jszip-utils.js"> </script>
+    <script async src="../js_libs/FileSaver.js"> </script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="w3-bar w3-teal">
+        <div class="w3-bar-item">Demo Inimage Takeover</div>
+    </div>
+    
+    <div class="w3-container">
+        <p></p>
+        <div class="w3-cell-row">
+            <div class="w3-container w3-cell w3-teal w3-mobile">
+                <h3>Upload file cho banner inimage takeover</h3>
+                <div>Up file HTML</div>
+                <input class="w3-input" id="inimage_html" type="file" accept = ".html" />
+                <div>Up file JPG</div>
+                <input class="w3-input" id="inimage_jpg" type="file" accept="image/jpeg" />
+                <div>Up file PNG</div>
+                <input class="w3-input" id="inimage_png" type="file" accept="image/x-png" />
+            </div>
+        </div>
+        <p><button class="w3-button w3-red" id="zip_button">Save file</button></p>
+    </div>
+    
+    <div style="display: none" id="demo_html_holder"></div>
+    <div style="display: none" id="demo_img1_holder"></div>
+    <div style="display: none" id="demo_img2_holder"></div>
+    <div style="display: none" id="inimage_html_holder"></div>
+    <div style="display: none" id="inimage_jpg_holder"></div>
+    <div style="display: none" id="inimage_png_holder"></div>
+<script>
+    ///////////////////////// Load url text file into div holder
+    function readTemplates(path,div_holder){
+        var txtFile = new XMLHttpRequest();
+            txtFile.open("GET", path, true);
+            txtFile.onreadystatechange = function() {
+                if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
+                        if (txtFile.status === 200) {  // Makes sure it's found the file.
+                        allText = txtFile.responseText;
+                        //console.log(allText);
+                        //lines = txtFile.responseText.split("\n"); // Will separate each line into an array
+                        document.getElementById(div_holder).textContent = allText;
+                    }
+                }
+            }
+        txtFile.send(null);
+    }
+    readTemplates("templates/index.html","demo_html_holder");
+    ///////////////////////// Load url image file into div holder
+    function readImages(url, callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.onload = function() {
+            var reader = new FileReader();
+            reader.onloadend = function() {
+            callback(reader.result);
+            }
+            reader.readAsDataURL(xhr.response);
+        };
+        xhr.open('GET', url);
+        xhr.responseType = 'blob';
+        xhr.send();
+    }
+    readImages('templates/images/top_menu.jpg',function(dataUrl) {
+            document.getElementById("demo_img1_holder").textContent = dataUrl;
+        }
+    )
+    readImages('templates/images/bv100.jpg',function(dataUrl) {
+            document.getElementById("demo_img2_holder").textContent = dataUrl;
+        }
+    )
+
+    ///////////////////////// Load input file into div holder
+    function readInputFile(input,div_holder,mode) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                document.getElementById(div_holder).textContent = e.target.result;
+            }
+            if(mode == "image" ){
+                reader.readAsDataURL(input.files[0]);
+            }
+            if(mode == "text" ){
+                reader.readAsText(input.files[0]);
+            }
+        }
+    }
+
+    document.getElementById("inimage_html").addEventListener("change", function(){
+        readInputFile(this,"inimage_html_holder","text");
+    })
+    document.getElementById("inimage_jpg").addEventListener("change", function(){
+        readInputFile(this,"inimage_jpg_holder","image");
+    })
+    document.getElementById("inimage_png").addEventListener("change", function(){
+        readInputFile(this,"inimage_png_holder","image");
+    })
+    /////////////////////////
+    document.getElementById("zip_button").addEventListener("click", function(){
+        var zip = new JSZip();
+        var banner_folder = zip.folder("banner");
+        var images_folder = zip.folder("images");
+
+        var demo_html = document.getElementById("demo_html_holder").textContent;
+        var demo_img1 = document.getElementById("demo_img1_holder").textContent;
+        var demo_img2 = document.getElementById("demo_img2_holder").textContent;
+        /////
+        var inimage_html = document.getElementById("inimage_html_holder").textContent;
+        var inimage_jpg = document.getElementById("inimage_jpg_holder").textContent;
+        var inimage_png = document.getElementById("inimage_png_holder").textContent;
+        if(inimage_jpg !==""){
+            var name_inimage_jpg = document.getElementById("inimage_jpg").files[0].name;
+            banner_folder.file(name_inimage_jpg, inimage_jpg.substr(inimage_jpg.indexOf(',')+1), {base64: true});
+        }
+        if(inimage_png !==""){
+            var name_inimage_png = document.getElementById("inimage_png").files[0].name;
+            banner_folder.file(name_inimage_png, inimage_png.substr(inimage_png.indexOf(',')+1), {base64: true});
+        }
+        /////
+        zip.file("index.html", demo_html);
+        images_folder.file("top_menu.jpg", demo_img1.substr(demo_img1.indexOf(',')+1), {base64: true});
+        images_folder.file("bv100.jpg", demo_img2.substr(demo_img2.indexOf(',')+1), {base64: true});
+        /////
+        banner_folder.file("inimage_takeover.html", inimage_html);
+        
+        var filename = prompt("Đặt tên cho file zip.\nLưu ý: Không nên đặt tên Tiếng Việt có dấu, ký tự lạ, không cần thêm .zip", "banner");
+        if (filename != null) {
+            zip.generateAsync({type:"blob"})
+            .then(function(content) {
+                saveAs(content, filename + ".zip");
+            });
+        }
+    })
+
+</script>
+</body>
+</html>
