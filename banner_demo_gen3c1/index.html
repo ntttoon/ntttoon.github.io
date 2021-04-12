@@ -18,13 +18,14 @@
 </head>
 <body>
     <header style="padding-top:22px">
-        <h5><b>Demo Inimage Expand PC</b></h5>
+        <h5><b>Demo Inimage Takeover MB</b></h5>
     </header>
     
     <div class="w3-container">
         <p></p>
         <div class="w3-cell-row">
             <div class="w3-container w3-cell w3-teal w3-mobile">
+                <p>Chỉnh sửa css with 100% ở file html trước khi up</p>
                 <div>Up file HTML</div>
                 <input class="w3-input" id="inimage_html" type="file" accept = ".html" />
                 <div>Up file JPG</div>
@@ -39,6 +40,7 @@
     <div style="display: none" id="demo_html_holder"></div>
     <div style="display: none" id="demo_img1_holder"></div>
     <div style="display: none" id="demo_img2_holder"></div>
+    <div style="display: none" id="demo_qrcode_holder"></div>
     <div style="display: none" id="inimage_html_holder"></div>
     <div style="display: none" id="inimage_jpg_holder"></div>
     <div style="display: none" id="inimage_png_holder"></div>
@@ -60,6 +62,7 @@
         txtFile.send(null);
     }
     readTemplates("templates/index.html","demo_html_holder");
+    readTemplates("templates/qrcode.min.js","demo_qrcode_holder");
     ///////////////////////// Load url image file into div holder
     function readImages(url, callback) {
         var xhr = new XMLHttpRequest();
@@ -74,15 +77,14 @@
         xhr.responseType = 'blob';
         xhr.send();
     }
-    readImages('templates/images/top_menu.jpg',function(dataUrl) {
+    readImages('templates/images/img1.jpg',function(dataUrl) {
             document.getElementById("demo_img1_holder").textContent = dataUrl;
         }
     )
-    readImages('templates/images/bv100b.jpg',function(dataUrl) {
+    readImages('templates/images/img2.jpg',function(dataUrl) {
             document.getElementById("demo_img2_holder").textContent = dataUrl;
         }
     )
-
     ///////////////////////// Load input file into div holder
     function readInputFile(input,div_holder,mode) {
         if (input.files && input.files[0]) {
@@ -118,6 +120,7 @@
         var demo_html = document.getElementById("demo_html_holder").textContent;
         var demo_img1 = document.getElementById("demo_img1_holder").textContent;
         var demo_img2 = document.getElementById("demo_img2_holder").textContent;
+        var demo_qrcode = document.getElementById("demo_qrcode_holder").textContent;
         /////
         var inimage_html = document.getElementById("inimage_html_holder").textContent;
         var inimage_jpg = document.getElementById("inimage_jpg_holder").textContent;
@@ -132,10 +135,11 @@
         }
         /////
         zip.file("index.html", demo_html);
-        images_folder.file("top_menu.jpg", demo_img1.substr(demo_img1.indexOf(',')+1), {base64: true});
-        images_folder.file("bv100b.jpg", demo_img2.substr(demo_img2.indexOf(',')+1), {base64: true});
+        zip.file("qrcode.min.js", demo_qrcode);
+        images_folder.file("img1.jpg", demo_img1.substr(demo_img1.indexOf(',')+1), {base64: true});
+        images_folder.file("img2.jpg", demo_img2.substr(demo_img2.indexOf(',')+1), {base64: true});
         /////
-        banner_folder.file("inimage_expand.html", inimage_html);
+        banner_folder.file("inimage_takeover.html", inimage_html);
         
         var filename = prompt("Đặt tên cho file zip.\nLưu ý: Không nên đặt tên Tiếng Việt có dấu, ký tự lạ, không cần thêm .zip", "banner");
         if (filename != null) {
