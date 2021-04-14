@@ -30,6 +30,7 @@
     <textarea id="codeSample" class="w3-input w3-border w3-small" rows="20"></textarea>
     <hr>
     <button class="w3-button w3-teal" id="btn1">gsap auto 1frame</button>
+    <button class="w3-button w3-teal" id="btn1b">gsap auto 1frame v2</button>
     <button class="w3-button w3-teal" id="btn2">gsap mini library</button>
     <button class="w3-button w3-teal" id="btn3">mini interactive lib</button>
     <button class="w3-button w3-teal" id="btn4">rollover iframe</button>
@@ -69,6 +70,10 @@
     }
     $( "#btn1" ).click(function() {
         readTextFile("modules/gsap_auto_1frame.txt");
+        copyCode();
+    });
+    $( "#btn1b" ).click(function() {
+        readTextFile("modules/gsap_auto_1frame_v2.txt");
         copyCode();
     });
     $( "#btn2" ).click(function() {
