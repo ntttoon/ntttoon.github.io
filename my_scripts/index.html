@@ -37,6 +37,7 @@
     <button class="w3-button w3-teal" id="btn5">gsap stagger in mc</button>
     <button class="w3-button w3-teal" id="btn6">loop script</button>
     <button class="w3-button w3-teal" id="btn7">createJS motion</button>
+    <button class="w3-button w3-teal" id="btn8">createJS auto motion</button>
 </div>
 
 
@@ -98,6 +99,10 @@
     });
     $( "#btn7" ).click(function() {
         readTextFile("modules/createjs_motion.txt");
+        copyCode();
+    });
+    $( "#btn8" ).click(function() {
+        readTextFile("modules/createjs_auto_motion.txt");
         copyCode();
     });
 </script>
