@@ -1,0 +1,27 @@
+var _this = this;
+
+function parallax(mc, resistance, originX, originY) {
+	var bounds = mc.nominalBounds;
+	//gsap.to(mc, {
+		//duration:0.2,
+		//x: -((stage.mouseX - stage.canvas.width / 2) / resistance) + (originX + bounds.width/2),
+		//y: -((stage.mouseY - stage.canvas.height / 2) / resistance) + (originY + bounds.height/2)
+	//});
+	var tween = createjs.Tween.get(mc,{
+			override:true
+		})
+			.to({
+				x: -((stage.mouseX - stage.canvas.width / 2) / resistance) + (originX + bounds.width/2),
+				y: -((stage.mouseY - stage.canvas.height / 2) / resistance) + (originY + bounds.height/2)
+			}, 500, createjs.Ease.quartOut)
+};
+
+function add_Event_MouseMove(){
+	parallax(_this.blackfriday,-30,190,50);
+	parallax(_this.f2a,10,14,281);
+	parallax(_this.f2b,20,44,450);
+	parallax(_this.arrow,30,123,163);
+	parallax(_this.kpn,40,40,522);
+}
+
+canvas.addEventListener("mousemove", add_Event_MouseMove);
