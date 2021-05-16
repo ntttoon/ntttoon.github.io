@@ -1,4 +1,4 @@
-////////////////////////////////////////////////// Frame1
+/////////////////////////////////// Frame1
 var ac = this.children;
 
 function initPropsMcs(){
@@ -7,13 +7,14 @@ function initPropsMcs(){
 		ac[i].scaleX = 2;
 		ac[i].scaleY = 2;
 		//ac[i].x = ac[i].x - 200;
+		//ac[i].y = ac[i].y - 200;
 		//ac[i].rotation = 180;
 	}
 }
 
 stage.on("drawstart", initPropsMcs, this, true);
 
-////////////////////////////////////////////////// Frame10
+/////////////////////////////////// Frame10
 this.stop();
 var ac = this.children;
 
@@ -21,13 +22,14 @@ for(var i=0;i<ac.length;i++){
 	var tween = createjs.Tween.get(ac[i], {
 		loop: 0
 	})
-		.wait(i*500-i*300)
-		//.wait(i*1000)
+		.wait(i*500)
 		.to({
 			alpha: 1,
 			scaleX: 1,
 			scaleY: 1,
 			//x: ac[i].x + 200,
+			//y: ac[i].y + 200,
 			//rotation: 0,
 		}, 1000, createjs.Ease.quartOut)
 }
+//createjs.Ease.getElasticOut(1, 0.5)
