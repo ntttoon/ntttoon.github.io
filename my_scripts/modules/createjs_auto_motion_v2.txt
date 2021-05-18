@@ -1,0 +1,61 @@
+/////////////////////////////////// Frame1
+this.visible = false;
+/////////////////////////////////// Frame10 script by ntttoon 2021
+this.stop();
+this.visible = true;
+var ac = this.children;
+var dur = 2000;
+var emode = createjs.Ease.getElasticOut(1, 0.7);
+//var emode = createjs.Ease.quartOut;
+
+function rde(n,mc,w,d,e){
+	if(n == 0){
+		mc.alpha = 0;
+		var tween = createjs.Tween.get(mc).wait(w).to({alpha: 1}, d, e)
+	}
+	if(n == 1){
+		mc.alpha = 0;
+		mc.x -= 200;
+		var tween = createjs.Tween.get(mc).wait(w).to({alpha: 1,x: mc.x + 200}, d, e)
+	}
+	if(n == 2){
+		mc.alpha = 0;
+		mc.x += 200;
+		var tween = createjs.Tween.get(mc).wait(w).to({alpha: 1,x: mc.x - 200}, d, e)
+	}
+	if(n == 3){
+		mc.alpha = 0;
+		mc.y -= 200;
+		var tween = createjs.Tween.get(mc).wait(w).to({alpha: 1,y: mc.y + 200}, d, e)
+	}
+	if(n == 4){
+		mc.alpha = 0;
+		mc.y += 200;
+		var tween = createjs.Tween.get(mc).wait(w).to({alpha: 1,y: mc.y - 200}, d, e)
+	}
+	if(n == 5){
+		mc.alpha = 0;
+		mc.scaleX = 0.1;
+		mc.scaleY = 0.1;
+		var tween = createjs.Tween.get(mc).wait(w).to({alpha: 1,scaleX: 1,scaleY: 1}, d, e)
+	}
+	if(n == 6){
+		mc.alpha = 0;
+		mc.scaleX = 3;
+		mc.scaleY = 3;
+		var tween = createjs.Tween.get(mc).wait(w).to({alpha: 1,scaleX: 1,scaleY: 1}, d, e)
+	}
+}
+
+function rdn(){
+	var re = Math.floor((Math.random() * 7));
+	return re;
+}
+
+for(var i=0;i<ac.length;i++){
+	var n = rdn();
+	rde(n,ac[i],i*200,dur,emode);
+}
+//rde(0,ac[0],0,dur,emode)
+//rde(1,ac[1],200,dur,emode)
+//rde(2,ac[2],400,dur,emode)
