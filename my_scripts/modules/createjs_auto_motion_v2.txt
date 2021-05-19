@@ -6,7 +6,7 @@ this.visible = true;
 var ac = this.children;
 var dur = 2000;
 var emode = createjs.Ease.getElasticOut(1, 0.7);
-//var emode = createjs.Ease.quartOut;
+var emode2 = createjs.Ease.quartOut;
 
 function rde(n,mc,w,d,e){
 	if(n == 0){
@@ -45,6 +45,11 @@ function rde(n,mc,w,d,e){
 		mc.scaleY = 3;
 		var tween = createjs.Tween.get(mc).wait(w).to({alpha: 1,scaleX: 1,scaleY: 1}, d, e)
 	}
+	if(n == 7){
+		mc.scaleX = 1;
+		mc.scaleY = 1;
+		var tween = createjs.Tween.get(mc).wait(w).to({scaleX: 1.2,scaleY: 1.2}, d, e).to({scaleX: 1,scaleY: 1}, d, e).to({scaleX: 1.2,scaleY: 1.2}, d, e).to({scaleX: 1,scaleY: 1}, d, e)
+	}
 }
 
 function rdn(){
@@ -59,3 +64,4 @@ for(var i=0;i<ac.length;i++){
 //rde(0,ac[0],0,dur,emode)
 //rde(1,ac[1],200,dur,emode)
 //rde(2,ac[2],400,dur,emode)
+//rde(7,ac[3],1000,200,emode2)
