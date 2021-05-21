@@ -7,49 +7,19 @@ var ac = this.children;
 var dur = 2000;
 var emode = createjs.Ease.getElasticOut(1, 0.7);
 var emode2 = createjs.Ease.quartOut;
+var xnum = 200;
+var ynum = 200;
+var znum = 3;
 
 function rde(n,mc,w,d,e){
-	if(n == 0){
-		mc.alpha = 0;
-		var tween = createjs.Tween.get(mc).wait(w).to({alpha: 1}, d, e)
-	}
-	if(n == 1){
-		mc.alpha = 0;
-		mc.x -= 200;
-		var tween = createjs.Tween.get(mc).wait(w).to({alpha: 1,x: mc.x + 200}, d, e)
-	}
-	if(n == 2){
-		mc.alpha = 0;
-		mc.x += 200;
-		var tween = createjs.Tween.get(mc).wait(w).to({alpha: 1,x: mc.x - 200}, d, e)
-	}
-	if(n == 3){
-		mc.alpha = 0;
-		mc.y -= 200;
-		var tween = createjs.Tween.get(mc).wait(w).to({alpha: 1,y: mc.y + 200}, d, e)
-	}
-	if(n == 4){
-		mc.alpha = 0;
-		mc.y += 200;
-		var tween = createjs.Tween.get(mc).wait(w).to({alpha: 1,y: mc.y - 200}, d, e)
-	}
-	if(n == 5){
-		mc.alpha = 0;
-		mc.scaleX = 0.1;
-		mc.scaleY = 0.1;
-		var tween = createjs.Tween.get(mc).wait(w).to({alpha: 1,scaleX: 1,scaleY: 1}, d, e)
-	}
-	if(n == 6){
-		mc.alpha = 0;
-		mc.scaleX = 3;
-		mc.scaleY = 3;
-		var tween = createjs.Tween.get(mc).wait(w).to({alpha: 1,scaleX: 1,scaleY: 1}, d, e)
-	}
-	if(n == 7){
-		mc.scaleX = 1;
-		mc.scaleY = 1;
-		var tween = createjs.Tween.get(mc).wait(w).to({scaleX: 1.2,scaleY: 1.2}, d, e).to({scaleX: 1,scaleY: 1}, d, e).to({scaleX: 1.2,scaleY: 1.2}, d, e).to({scaleX: 1,scaleY: 1}, d, e)
-	}
+	if(n == 0){mc.alpha = 0;var tween = createjs.Tween.get(mc).wait(w).to({alpha: 1}, d, e)}
+	if(n == 1){mc.alpha = 0;mc.x -= xnum;var tween = createjs.Tween.get(mc).wait(w).to({alpha: 1,x: mc.x + xnum}, d, e)}
+	if(n == 2){mc.alpha = 0;mc.x += xnum;var tween = createjs.Tween.get(mc).wait(w).to({alpha: 1,x: mc.x - xnum}, d, e)}
+	if(n == 3){mc.alpha = 0;mc.y -= ynum;var tween = createjs.Tween.get(mc).wait(w).to({alpha: 1,y: mc.y + ynum}, d, e)}
+	if(n == 4){mc.alpha = 0;mc.y += ynum;var tween = createjs.Tween.get(mc).wait(w).to({alpha: 1,y: mc.y - ynum}, d, e)}
+	if(n == 5){mc.alpha = 0;mc.scaleX = 0.1;mc.scaleY = 0.1;var tween = createjs.Tween.get(mc).wait(w).to({alpha: 1,scaleX: 1,scaleY: 1}, d, e)}
+	if(n == 6){mc.alpha = 0;mc.scaleX = znum;mc.scaleY = znum;var tween = createjs.Tween.get(mc).wait(w).to({alpha: 1,scaleX: 1,scaleY: 1}, d, e)}
+	if(n == 7){mc.scaleX = 1;mc.scaleY = 1;var tween = createjs.Tween.get(mc).wait(w).to({scaleX: 1.2,scaleY: 1.2}, d, e).to({scaleX: 1,scaleY: 1}, d, e).to({scaleX: 1.2,scaleY: 1.2}, d, e).to({scaleX: 1,scaleY: 1}, d, e)}
 }
 
 function rdn(){
