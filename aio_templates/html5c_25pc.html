@@ -64,10 +64,12 @@
                     <input class="w3-check" id="h5pc_top_impcheck" type="checkbox">
                     <label>use impression</label>
                     <br><br>
-                    <input type="radio" id="top100_check" name="top_height" value="100" checked>
-                    <label for="top100_check">1016x100</label>
-                    <input type="radio" id="top250_check" name="top_height" value="250">
-                    <label for="top250_check">1016x250</label><br>
+                    <input type="radio" id="top1016x100_check" name="top_height" checked>
+                    <label for="top1016x100_check">1016x100</label><br>
+                    <input type="radio" id="top1016x250_check" name="top_height">
+                    <label for="top1016x250_check">1016x250</label><br>
+                    <input type="radio" id="top1100x250_check" name="top_height">
+                    <label for="top1100x250_check">1100x250</label><br>
                     <p>Upload image</p>
                     <input class="w3-input" id="h5pc_top_img_upload" type="file" accept="image/x-png,image/gif,image/jpeg" />
                 </div>
@@ -198,8 +200,9 @@
             var h5pc_300x250_icheck = document.getElementById("h5pc_300x250_impcheck").checked;
             var h5pc_336x280_icheck = document.getElementById("h5pc_336x280_impcheck").checked;
 
-            var top100_c = document.getElementById("top100_check").checked;
-            var top250_c = document.getElementById("top250_check").checked;
+            var top1016x100_c = document.getElementById("top1016x100_check").checked;
+            var top1016x250_c = document.getElementById("top1016x250_check").checked;
+            var top1100x250_c = document.getElementById("top1100x250_check").checked;
 
             h5pc_bgleft_html = replaceString(h5pc_bgleft_html,"%%this_is_click%%",h5pc_c);
             h5pc_bgleft_html = replaceString(h5pc_bgleft_html,"%%this_is_impression%%",blankgif_data);
@@ -233,10 +236,16 @@
                 h5pc_336x280_html = replaceString(h5pc_336x280_html,blankgif_data,h5pc_i);
             }
 
-            if(top100_c == true){
+            if(top1016x100_c == true){
+                h5pc_top_html = replaceString(h5pc_top_html,"%%this_is_top_width%%",1016);
                 h5pc_top_html = replaceString(h5pc_top_html,"%%this_is_top_height%%",100);
             }
-            if(top250_c == true){
+            if(top1016x250_c == true){
+                h5pc_top_html = replaceString(h5pc_top_html,"%%this_is_top_width%%",1016);
+                h5pc_top_html = replaceString(h5pc_top_html,"%%this_is_top_height%%",250);
+            }
+            if(top1100x250_c == true){
+                h5pc_top_html = replaceString(h5pc_top_html,"%%this_is_top_width%%",1100);
                 h5pc_top_html = replaceString(h5pc_top_html,"%%this_is_top_height%%",250);
             }
 
