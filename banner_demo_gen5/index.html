@@ -24,6 +24,10 @@
         .divide_five{
             width: 20%;
         }
+        .bginput{
+            width: 50px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -40,6 +44,8 @@
                 <option value="3" >Trang bài viết top 250</option>
                 <option value="4" >Trang chuyên mục top 100</option>
                 <option value="5" >Trang chuyên mục top 250</option>
+                <option value="6" >Bóng đá top 1100x100</option>
+                <option value="7" >Bóng đá top 1100x250</option>
             </select>
         </p>
         <form action="#" id="download_form">
@@ -67,6 +73,16 @@
                 <label>
                     <input type="checkbox" id="check_cm250" data-url="templates/cm250.html" data-folder="false" />
                     cm250.html
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" id="check_bd100" data-url="templates/bd100.html" data-folder="false" />
+                    bd100.html
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" id="check_bd250" data-url="templates/bd250.html" data-folder="false" />
+                    bd250.html
                 </label>
                 <br>
                 <label>
@@ -100,6 +116,16 @@
                 </label>
                 <br>
                 <label>
+                    <input type="checkbox" id="check_bd100_jpg" data-url="templates/images/bd100.jpg" data-folder="true" />
+                    bd100.jpg
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" id="check_bd250_jpg" data-url="templates/images/bd250.jpg" data-folder="true" />
+                    bd250.jpg
+                </label>
+                <br>
+                <label>
                     <input type="checkbox" id="check_sticky" class="hide" data-url="templates/jquery.sticky.js" data-folder="false" checked />
                     jquery.sticky.js
                 </label>
@@ -112,10 +138,20 @@
                 <p>
                     <label>Upload big bg</label>
                     <input type="file" id="imageLoader"/>
-                </p>
-                <p>
                     <label>Upload small bg</label>
                     <input type="file" id="imageLoader2"/>
+                </p>
+                <p>
+                    <label>Left start X</label>
+                    <input class="w3-border bginput" type="text" id="lx" value="0">
+                    <label>Left start Y</label>
+                    <input class="w3-border bginput" type="text" id="ly" value="0">
+                </p>
+                <p>
+                    <label>Right start X</label>
+                    <input class="w3-border bginput" type="text" id="rx" value="1460">
+                    <label>Right start Y</label>
+                    <input class="w3-border bginput" type="text" id="ry" value="0">
                 </p>
             </div>
             <div class="w3-container w3-cell w3-green w3-mobile">
@@ -161,6 +197,8 @@
     <canvas id="right_nho" class="hide floatleft" width="205" height="900"></canvas>
     <canvas id="top100" class="hide floatleft" width="1016" height="100"></canvas>
     <canvas id="top250" class="hide floatleft" width="1016" height="250"></canvas>
+    <canvas id="top100n" class="hide floatleft" width="1100" height="100"></canvas>
+    <canvas id="top250n" class="hide floatleft" width="1100" height="250"></canvas>
     <div class="w3-row">
         <div class="w3-col w3-container divide_five">
             <div>Bg trái 444x1040</div>
@@ -189,6 +227,16 @@
             <img id="img_top250_holder" class="w3-image">
         </div>
     </div>
+    <div class="w3-row">
+        <div class="w3-half w3-container">
+            <div>Top 1100x100</div>
+            <img id="img_top100n_holder" class="w3-image">
+        </div>
+        <div class="w3-half w3-container">
+            <div>Top 1100x250</div>
+            <img id="img_top250n_holder" class="w3-image">
+        </div>
+    </div>
 
 <script>
     var imageLoader = document.getElementById('imageLoader');
@@ -215,8 +263,14 @@
     var top100_ctx = top100.getContext('2d');
     var top250 = document.getElementById('top250');
     var top250_ctx = top250.getContext('2d');
+    /////new 1100
+    var top100n = document.getElementById('top100n');
+    var top100n_ctx = top100n.getContext('2d');
+    var top250n = document.getElementById('top250n');
+    var top250n_ctx = top250n.getContext('2d');
     //////////////////////////////
     function handleImage(e){
+        var bg_right_startX = document.getElementById('rx').value;
         var reader = new FileReader();
         reader.onload = function(event){
             var img = new Image();
@@ -225,13 +279,20 @@
                 canvas.height = img.height;
                 ctx.drawImage(img,0,0);
                 left_to_ctx.drawImage(img,0,0,444,1040,0,0,444,1040);
-                right_to_ctx.drawImage(img,1460,0,444,1040,0,0,444,1040);
+                right_to_ctx.drawImage(img,bg_right_startX,0,444,1040,0,0,444,1040);
                 top100_ctx.drawImage(img,444,0,1016,100,0,0,1016,100);
                 top250_ctx.drawImage(img,444,0,1016,250,0,0,1016,250);
+                /////new 1100
+                top100n_ctx.drawImage(img,444,0,1100,100,0,0,1100,100);
+                top250n_ctx.drawImage(img,444,0,1100,250,0,0,1100,250);
+                /////
                 document.getElementById("img_left_to_holder").src = left_to.toDataURL("image/jpeg",1);
                 document.getElementById("img_right_to_holder").src = right_to.toDataURL("image/jpeg",1);
                 document.getElementById("img_top100_holder").src = top100.toDataURL("image/jpeg",1);
                 document.getElementById("img_top250_holder").src = top250.toDataURL("image/jpeg",1);
+                /////new 1100
+                document.getElementById("img_top100n_holder").src = top100n.toDataURL("image/jpeg",1);
+                document.getElementById("img_top250n_holder").src = top250n.toDataURL("image/jpeg",1);
             }
             img.src = event.target.result;
         }
@@ -239,6 +300,7 @@
     }
     //////////////////////////////
     function handleImage2(e){
+        var bg_right_startX = document.getElementById('rx').value;
         var reader = new FileReader();
         reader.onload = function(event){
             var img = new Image();
@@ -247,7 +309,7 @@
                 canvas2.height = img.height;
                 ctx2.drawImage(img,0,0);
                 left_nho_ctx.drawImage(img,239,0,205,900,0,0,205,900);
-                right_nho_ctx.drawImage(img,1460,0,205,900,0,0,205,900);
+                right_nho_ctx.drawImage(img,bg_right_startX,0,205,900,0,0,205,900);
                 document.getElementById("img_left_nho_holder").src = left_nho.toDataURL("image/jpeg",1);
                 document.getElementById("img_right_nho_holder").src = right_nho.toDataURL("image/jpeg",1);
             }
@@ -258,28 +320,43 @@
 </script>
 <script>
     function setUncheck(){
-        $("#check_trangchu, #check_bv100, #check_bv250, #check_cm100, #check_cm250, #check_trangchu_jpg, #check_bv100_jpg, #check_bv250_jpg, #check_cm100_jpg, #check_cm250_jpg").prop( "checked", false );
+        $("#check_trangchu, #check_bv100, #check_bv250, #check_cm100, #check_cm250, #check_bd100, #check_bd250, #check_trangchu_jpg, #check_bv100_jpg, #check_bv250_jpg, #check_cm100_jpg, #check_cm250_jpg, #check_bd100_jpg, #check_bd250_jpg").prop( "checked", false );
     }
     $( "#demochoice" ).change(function() {
         if(this.value == 1){
             setUncheck();
             $("#check_trangchu, #check_trangchu_jpg").prop( "checked", true );
+            $("#rx").val("1460");
         }
         if(this.value == 2){
             setUncheck();
             $("#check_bv100, #check_bv100_jpg").prop( "checked", true );
+            $("#rx").val("1460");
         }
         if(this.value == 3){
             setUncheck();
             $("#check_bv250, #check_bv250_jpg").prop( "checked", true );
+            $("#rx").val("1460");
         }
         if(this.value == 4){
             setUncheck();
             $("#check_cm100, #check_cm100_jpg").prop( "checked", true );
+            $("#rx").val("1460");
         }
         if(this.value == 5){
             setUncheck();
             $("#check_cm250, #check_cm250_jpg").prop( "checked", true );
+            $("#rx").val("1460");
+        }
+        if(this.value == 6){
+            setUncheck();
+            $("#check_bd100, #check_bd100_jpg").prop( "checked", true );
+            $("#rx").val("1544");
+        }
+        if(this.value == 7){
+            setUncheck();
+            $("#check_bd250, #check_bd250_jpg").prop( "checked", true );
+            $("#rx").val("1544");
         }
     });
     ///////////////////////// Load input file into div holder
@@ -350,6 +427,8 @@
         var data_right_nho = document.getElementById("img_right_nho_holder").src;
         var data_top100 = document.getElementById("img_top100_holder").src;
         var data_top250 = document.getElementById("img_top250_holder").src;
+        var data_top100n = document.getElementById("img_top100n_holder").src;
+        var data_top250n = document.getElementById("img_top250n_holder").src;
         var data_tttc = document.getElementById("tttc_holder").textContent;
         var data_chanbv = document.getElementById("chanbv_holder").textContent;
         var data_hot = document.getElementById("hot_holder").textContent;
@@ -384,6 +463,8 @@
             assets.file("right_to.jpg", data_right_to.substr(data_right_to.indexOf(',')+1), {base64: true});
             assets.file("1016100.jpg", data_top100.substr(data_top100.indexOf(',')+1), {base64: true});
             assets.file("1016250.jpg", data_top250.substr(data_top250.indexOf(',')+1), {base64: true});
+            assets.file("1100100.jpg", data_top100n.substr(data_top100n.indexOf(',')+1), {base64: true});
+            assets.file("1100250.jpg", data_top250n.substr(data_top250n.indexOf(',')+1), {base64: true});
         }
         if( document.getElementById("imageLoader2").files.length !== 0 ){
             assets.file("left_nho.jpg", data_left_nho.substr(data_left_nho.indexOf(',')+1), {base64: true});
