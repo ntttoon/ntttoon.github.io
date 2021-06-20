@@ -11,6 +11,11 @@
         .img_res{display: block;width: 100%;}
         #inpage_wrap {z-index: -1;position: fixed;top: 0;left: 50%;height: 100%;width: 375px;margin-left: -187.5px;background-size: 100%;background-image: url(images/banner_inpage.jpg);background-repeat: no-repeat;}
         .qrcode{position: fixed;top: 50%;transform: translateY(-50%);left: 20px;width: 200px;padding: 20px;border: 1px solid #ccc;border-radius: 10px;background: #fff;font-family: Arial, Helvetica, sans-serif;font-size: 11px;text-align: center;display: block;}
+        .mg-iframe-responsive{position: relative;width: 100%;overflow: hidden;}
+        .mg-iframe-responsive iframe,video{position: absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;height: 100%;border: none;}
+        div.sticky {position: -webkit-sticky; position: sticky; bottom: 0;}
+        a.boxclose{margin-top:0x;cursor:pointer;color: #fff;border: 1px solid #AEAEAE;background: #605F61;font-size: 24px;font-weight: bold;line-height: 0px;padding: 11px 4px;position: absolute;right:0;z-index:9999;}
+	    .boxclose:before {content: "×";	}
         /* 
         ##Device = Desktops
         ##Screen = 1281px to higher resolution desktops
@@ -83,6 +88,7 @@
         <img class="img_res" src="images/demo06.jpg">
         <img class="img_res" src="images/banner_center2.jpg">
         <img class="img_res" src="images/demo07.jpg">
+        <div class="mg-iframe-responsive sticky" id="sticky"></div>
     </div>
     <div id="inpage_wrap"></div>
     <div id="qr-code" class="qrcode">Scan QR CODE for viewing on mobile</div>
@@ -91,9 +97,22 @@
         var qrcode=new QRCode('qr-code',{text:window.location.href,width:200,height:200});
     </script>
     <script>
+        var prevScrollpos = window.pageYOffset;
+        var showfirsttime = false;
         $(window).scroll(function(){
 		    var fromtop = $(window).scrollTop();
 		    $("inpage_wrap").css({"background-position-y": fromtop+"px"});
+            var currentScrollPos = window.pageYOffset;
+
+            if (currentScrollPos <= 350 && showfirsttime == true) {
+                showfirsttime = false;
+                document.getElementById('sticky').innerHTML = '';
+            }
+            if (currentScrollPos > 350 && showfirsttime == false) {
+                showfirsttime = true;
+                document.querySelector('#sticky').style.paddingTop = '16%';
+                document.getElementById('sticky').innerHTML = '<a class="boxclose" id="icon-close"></a><img class="img_res" src="images/banner_sticky.jpg">';
+            }
 	    });
     </script>
 </body>

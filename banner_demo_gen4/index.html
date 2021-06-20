@@ -38,6 +38,8 @@
                 <input class="w3-input" id="center1" type="file" accept="image/x-png,image/gif,image/jpeg" />
                 <div>Up ảnh banner center2 <strong>300x250 (600x500)</strong></div>
                 <input class="w3-input" id="center2" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div>Up ảnh banner sticky <strong>320x50 (640x100)</strong></div>
+                <input class="w3-input" id="sticky" type="file" accept="image/x-png,image/gif,image/jpeg" />
             </div>
         </div>
         <p><button class="w3-button w3-red" id="zip_button">Save file</button></p>
@@ -58,6 +60,7 @@
     <div style="display: none" id="cbv_holder"></div>
     <div style="display: none" id="center1_holder"></div>
     <div style="display: none" id="center2_holder"></div>
+    <div style="display: none" id="sticky_holder"></div>
 <script>
     ///////////////////////// Load url text file into div holder
     function readTemplates(path,div_holder){
@@ -144,6 +147,10 @@
             document.getElementById("center2_holder").textContent = dataUrl;
         }
     )
+    readImages('templates/images/sticky.jpg',function(dataUrl) {
+            document.getElementById("sticky_holder").textContent = dataUrl;
+        }
+    )
 
     ///////////////////////// Load input file into div holder
     function readInputFile(input,div_holder,mode) {
@@ -180,6 +187,9 @@
     document.getElementById("center2").addEventListener("change", function(){
         readInputFile(this,"center2_holder","image");
     })
+    document.getElementById("sticky").addEventListener("change", function(){
+        readInputFile(this,"sticky_holder","image");
+    })
     /////////////////////////
     document.getElementById("zip_button").addEventListener("click", function(){
         var zip = new JSZip();
@@ -200,6 +210,7 @@
         var data_cbv = document.getElementById("cbv_holder").textContent;
         var data_center1 = document.getElementById("center1_holder").textContent;
         var data_center2 = document.getElementById("center2_holder").textContent;
+        var data_sticky = document.getElementById("sticky_holder").textContent;
         /////
         var images_folder = zip.folder("images");
 
@@ -230,6 +241,9 @@
         }
         if(data_center2 !==""){
             images_folder.file("banner_center2.jpg", data_center2.substr(data_center2.indexOf(',')+1), {base64: true});
+        }
+        if(data_sticky !==""){
+            images_folder.file("banner_sticky.jpg", data_sticky.substr(data_sticky.indexOf(',')+1), {base64: true});
         }
 
         var filename = prompt("Đặt tên cho file zip.\nLưu ý: Không nên đặt tên Tiếng Việt có dấu, ký tự lạ, không cần thêm .zip", "banner");
