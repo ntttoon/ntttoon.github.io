@@ -40,12 +40,8 @@
             <div>Chọn Demo</div>
             <select id="demochoice">
                 <option value="1" selected>Trang chủ</option>
-                <option value="2" >Trang bài viết top 100</option>
-                <option value="3" >Trang bài viết top 250</option>
-                <option value="4" >Trang chuyên mục top 100</option>
-                <option value="5" >Trang chuyên mục top 250</option>
-                <option value="6" >Bóng đá top 1100x100</option>
-                <option value="7" >Bóng đá top 1100x250</option>
+                <option value="2" >Bài viết masthead 1016x100</option>
+                <option value="3" >Bài viết masthead 1016x250</option>
             </select>
         </p>
         <form action="#" id="download_form">
@@ -63,26 +59,6 @@
                 <label>
                     <input type="checkbox" id="check_bv250" data-url="templates/bv250.html" data-folder="false" />
                     bv250.html
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" id="check_cm100" data-url="templates/cm100.html" data-folder="false" />
-                    cm100.html
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" id="check_cm250" data-url="templates/cm250.html" data-folder="false" />
-                    cm250.html
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" id="check_bd100" data-url="templates/bd100.html" data-folder="false" />
-                    bd100.html
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" id="check_bd250" data-url="templates/bd250.html" data-folder="false" />
-                    bd250.html
                 </label>
                 <br>
                 <label>
@@ -106,26 +82,6 @@
                 </label>
                 <br>
                 <label>
-                    <input type="checkbox" id="check_cm100_jpg" data-url="templates/images/cm100.jpg" data-folder="true" />
-                    cm100.jpg
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" id="check_cm250_jpg" data-url="templates/images/cm250.jpg" data-folder="true" />
-                    cm250.jpg
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" id="check_bd100_jpg" data-url="templates/images/bd100.jpg" data-folder="true" />
-                    bd100.jpg
-                </label>
-                <br>
-                <label>
-                    <input type="checkbox" id="check_bd250_jpg" data-url="templates/images/bd250.jpg" data-folder="true" />
-                    bd250.jpg
-                </label>
-                <br>
-                <label>
                     <input type="checkbox" id="check_sticky" class="hide" data-url="templates/jquery.sticky.js" data-folder="false" checked />
                     jquery.sticky.js
                 </label>
@@ -146,12 +102,30 @@
                     <input class="w3-border bginput" type="text" id="lx" value="0">
                     <label>Left start Y</label>
                     <input class="w3-border bginput" type="text" id="ly" value="0">
-                </p>
-                <p>
                     <label>Right start X</label>
                     <input class="w3-border bginput" type="text" id="rx" value="1460">
                     <label>Right start Y</label>
                     <input class="w3-border bginput" type="text" id="ry" value="0">
+                </p>
+                <p>
+                    <label>Big bg width</label>
+                    <input class="w3-border bginput" type="text" id="bw" value="444">
+                    <label>Big bg height</label>
+                    <input class="w3-border bginput" type="text" id="bh" value="1040">
+                    <label>Small bg width</label>
+                    <input class="w3-border bginput" type="text" id="sw" value="205">
+                    <label>Small bg height</label>
+                    <input class="w3-border bginput" type="text" id="sh" value="900">
+                </p>
+                <p>
+                    <label>Masthead width</label>
+                    <input class="w3-border bginput" type="text" id="mw" value="1016">
+                    <label>Masthead width</label>
+                    <input class="w3-border bginput" type="text" id="mw2" value="1100">
+                    <label>Masthead start X</label>
+                    <input class="w3-border bginput" type="text" id="mx" value="444">
+                    <label>Masthead start Y</label>
+                    <input class="w3-border bginput" type="text" id="my" value="0">
                 </p>
             </div>
             <div class="w3-container w3-cell w3-green w3-mobile">
@@ -161,14 +135,16 @@
                 <input class="w3-input" id="chanbv" type="file" accept="image/x-png,image/gif,image/jpeg" />
                 <div>Upload hot 336x280</div>
                 <input class="w3-input" id="hot" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div>Upload sticky 696x90</div>
+                <input class="w3-input" id="sticky" type="file" accept="image/x-png,image/gif,image/jpeg" />
             </div>
             <div class="w3-container w3-cell w3-light-green w3-mobile">
                 <div>Upload right1 300x600</div>
                 <input class="w3-input" id="right1" type="file" accept="image/x-png,image/gif,image/jpeg" />
                 <div>Upload right2 300x250</div>
                 <input class="w3-input" id="right2" type="file" accept="image/x-png,image/gif,image/jpeg" />
-                <div>Upload sticky 300x600</div>
-                <input class="w3-input" id="sticky" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                <div>Upload right3 300x600</div>
+                <input class="w3-input" id="right3" type="file" accept="image/x-png,image/gif,image/jpeg" />
             </div>
         </div>
     </div>
@@ -176,9 +152,10 @@
     <div style="display: none" id="tttc_holder"></div>
     <div style="display: none" id="chanbv_holder"></div>
     <div style="display: none" id="hot_holder"></div>
+    <div style="display: none" id="sticky_holder"></div>
     <div style="display: none" id="right1_holder"></div>
     <div style="display: none" id="right2_holder"></div>
-    <div style="display: none" id="sticky_holder"></div>
+    <div style="display: none" id="right3_holder"></div>
 
     <div class="w3-row">
         <div class="w3-half w3-container">
@@ -197,8 +174,6 @@
     <canvas id="right_nho" class="hide floatleft" width="205" height="900"></canvas>
     <canvas id="top100" class="hide floatleft" width="1016" height="100"></canvas>
     <canvas id="top250" class="hide floatleft" width="1016" height="250"></canvas>
-    <canvas id="top100n" class="hide floatleft" width="1100" height="100"></canvas>
-    <canvas id="top250n" class="hide floatleft" width="1100" height="250"></canvas>
     <div class="w3-row">
         <div class="w3-col w3-container divide_five">
             <div>Bg trái 444x1040</div>
@@ -227,16 +202,6 @@
             <img id="img_top250_holder" class="w3-image">
         </div>
     </div>
-    <div class="w3-row">
-        <div class="w3-half w3-container">
-            <div>Top 1100x100</div>
-            <img id="img_top100n_holder" class="w3-image">
-        </div>
-        <div class="w3-half w3-container">
-            <div>Top 1100x250</div>
-            <img id="img_top250n_holder" class="w3-image">
-        </div>
-    </div>
 
 <script>
     var imageLoader = document.getElementById('imageLoader');
@@ -263,14 +228,20 @@
     var top100_ctx = top100.getContext('2d');
     var top250 = document.getElementById('top250');
     var top250_ctx = top250.getContext('2d');
-    /////new 1100
-    var top100n = document.getElementById('top100n');
-    var top100n_ctx = top100n.getContext('2d');
-    var top250n = document.getElementById('top250n');
-    var top250n_ctx = top250n.getContext('2d');
     //////////////////////////////
     function handleImage(e){
+        var bg_left_startX = document.getElementById('lx').value;
+        var bg_left_startY = document.getElementById('ly').value;
         var bg_right_startX = document.getElementById('rx').value;
+        var bg_right_startY = document.getElementById('ry').value;
+        var bg_big_width = document.getElementById('bw').value;
+        var bg_big_height = document.getElementById('bh').value;
+        var bg_small_width = document.getElementById('sw').value;
+        var bg_small_height = document.getElementById('sh').value;
+        var masthead_width = document.getElementById('mw').value;
+        var masthead_width2 = document.getElementById('mw2').value;
+        var masthead_startX = document.getElementById('mx').value;
+        var masthead_startY = document.getElementById('my').value;
         var reader = new FileReader();
         reader.onload = function(event){
             var img = new Image();
@@ -278,21 +249,15 @@
                 canvas.width = img.width;
                 canvas.height = img.height;
                 ctx.drawImage(img,0,0);
-                left_to_ctx.drawImage(img,0,0,444,1040,0,0,444,1040);
-                right_to_ctx.drawImage(img,bg_right_startX,0,444,1040,0,0,444,1040);
-                top100_ctx.drawImage(img,444,0,1016,100,0,0,1016,100);
-                top250_ctx.drawImage(img,444,0,1016,250,0,0,1016,250);
-                /////new 1100
-                top100n_ctx.drawImage(img,444,0,1100,100,0,0,1100,100);
-                top250n_ctx.drawImage(img,444,0,1100,250,0,0,1100,250);
+                left_to_ctx.drawImage(img,bg_left_startX,bg_left_startY,bg_big_width,bg_big_height,0,0,bg_big_width,bg_big_height);
+                right_to_ctx.drawImage(img,bg_right_startX,bg_right_startY,bg_big_width,bg_big_height,0,0,bg_big_width,bg_big_height);
+                top100_ctx.drawImage(img,masthead_startX,masthead_startY,masthead_width,100,0,0,masthead_width,100);
+                top250_ctx.drawImage(img,masthead_startX,masthead_startY,masthead_width,250,0,0,masthead_width,250);
                 /////
                 document.getElementById("img_left_to_holder").src = left_to.toDataURL("image/jpeg",1);
                 document.getElementById("img_right_to_holder").src = right_to.toDataURL("image/jpeg",1);
                 document.getElementById("img_top100_holder").src = top100.toDataURL("image/jpeg",1);
                 document.getElementById("img_top250_holder").src = top250.toDataURL("image/jpeg",1);
-                /////new 1100
-                document.getElementById("img_top100n_holder").src = top100n.toDataURL("image/jpeg",1);
-                document.getElementById("img_top250n_holder").src = top250n.toDataURL("image/jpeg",1);
             }
             img.src = event.target.result;
         }
@@ -300,7 +265,18 @@
     }
     //////////////////////////////
     function handleImage2(e){
+        var bg_left_startX = document.getElementById('lx').value;
+        var bg_left_startY = document.getElementById('ly').value;
         var bg_right_startX = document.getElementById('rx').value;
+        var bg_right_startY = document.getElementById('ry').value;
+        var bg_big_width = document.getElementById('bw').value;
+        var bg_big_height = document.getElementById('bh').value;
+        var bg_small_width = document.getElementById('sw').value;
+        var bg_small_height = document.getElementById('sh').value;
+        var masthead_width = document.getElementById('mw').value;
+        var masthead_width2 = document.getElementById('mw2').value;
+        var masthead_startX = document.getElementById('mx').value;
+        var masthead_startY = document.getElementById('my').value;
         var reader = new FileReader();
         reader.onload = function(event){
             var img = new Image();
@@ -308,8 +284,8 @@
                 canvas2.width = img.width;
                 canvas2.height = img.height;
                 ctx2.drawImage(img,0,0);
-                left_nho_ctx.drawImage(img,239,0,205,900,0,0,205,900);
-                right_nho_ctx.drawImage(img,bg_right_startX,0,205,900,0,0,205,900);
+                left_nho_ctx.drawImage(img,masthead_startX-bg_small_width,bg_left_startY,bg_small_width,bg_small_height,0,0,bg_small_width,bg_small_height);
+                right_nho_ctx.drawImage(img,bg_right_startX,bg_right_startY,bg_small_width,bg_small_height,0,0,bg_small_width,bg_small_height);
                 document.getElementById("img_left_nho_holder").src = left_nho.toDataURL("image/jpeg",1);
                 document.getElementById("img_right_nho_holder").src = right_nho.toDataURL("image/jpeg",1);
             }
@@ -320,7 +296,7 @@
 </script>
 <script>
     function setUncheck(){
-        $("#check_trangchu, #check_bv100, #check_bv250, #check_cm100, #check_cm250, #check_bd100, #check_bd250, #check_trangchu_jpg, #check_bv100_jpg, #check_bv250_jpg, #check_cm100_jpg, #check_cm250_jpg, #check_bd100_jpg, #check_bd250_jpg").prop( "checked", false );
+        $("#check_trangchu, #check_bv100, #check_bv250, #check_trangchu_jpg, #check_bv100_jpg, #check_bv250_jpg").prop( "checked", false );
     }
     $( "#demochoice" ).change(function() {
         if(this.value == 1){
@@ -337,26 +313,6 @@
             setUncheck();
             $("#check_bv250, #check_bv250_jpg").prop( "checked", true );
             $("#rx").val("1460");
-        }
-        if(this.value == 4){
-            setUncheck();
-            $("#check_cm100, #check_cm100_jpg").prop( "checked", true );
-            $("#rx").val("1460");
-        }
-        if(this.value == 5){
-            setUncheck();
-            $("#check_cm250, #check_cm250_jpg").prop( "checked", true );
-            $("#rx").val("1460");
-        }
-        if(this.value == 6){
-            setUncheck();
-            $("#check_bd100, #check_bd100_jpg").prop( "checked", true );
-            $("#rx").val("1544");
-        }
-        if(this.value == 7){
-            setUncheck();
-            $("#check_bd250, #check_bd250_jpg").prop( "checked", true );
-            $("#rx").val("1544");
         }
     });
     ///////////////////////// Load input file into div holder
@@ -385,14 +341,17 @@
     document.getElementById("hot").addEventListener("change", function(){
         readInputFile(this,"hot_holder","image");
     })
+    document.getElementById("sticky").addEventListener("change", function(){
+        readInputFile(this,"sticky_holder","image");
+    })
     document.getElementById("right1").addEventListener("change", function(){
         readInputFile(this,"right1_holder","image");
     })
     document.getElementById("right2").addEventListener("change", function(){
         readInputFile(this,"right2_holder","image");
     })
-    document.getElementById("sticky").addEventListener("change", function(){
-        readInputFile(this,"sticky_holder","image");
+    document.getElementById("right3").addEventListener("change", function(){
+        readInputFile(this,"right3_holder","image");
     })
     /////////////////////////
     var Promise = window.Promise;
@@ -427,14 +386,13 @@
         var data_right_nho = document.getElementById("img_right_nho_holder").src;
         var data_top100 = document.getElementById("img_top100_holder").src;
         var data_top250 = document.getElementById("img_top250_holder").src;
-        var data_top100n = document.getElementById("img_top100n_holder").src;
-        var data_top250n = document.getElementById("img_top250n_holder").src;
         var data_tttc = document.getElementById("tttc_holder").textContent;
         var data_chanbv = document.getElementById("chanbv_holder").textContent;
         var data_hot = document.getElementById("hot_holder").textContent;
+        var data_sticky = document.getElementById("sticky_holder").textContent;
         var data_right1 = document.getElementById("right1_holder").textContent;
         var data_right2 = document.getElementById("right2_holder").textContent;
-        var data_sticky = document.getElementById("sticky_holder").textContent;
+        var data_right3 = document.getElementById("right3_holder").textContent;
         ///////////
         if( document.getElementById("tttc").files.length !== 0 ){
             assets.file("696120.jpg", data_tttc.substr(data_tttc.indexOf(',')+1), {base64: true});
@@ -447,6 +405,10 @@
             assets.file("336280.jpg", data_hot.substr(data_hot.indexOf(',')+1), {base64: true});
         }
 
+        if( document.getElementById("sticky").files.length !== 0 ){
+            assets.file("sticky.jpg", data_sticky.substr(data_sticky.indexOf(',')+1), {base64: true});
+        }
+
         if( document.getElementById("right1").files.length !== 0 ){
             assets.file("300600.jpg", data_right1.substr(data_right1.indexOf(',')+1), {base64: true});
         }
@@ -455,16 +417,14 @@
             assets.file("300250.jpg", data_right2.substr(data_right2.indexOf(',')+1), {base64: true});
         }
 
-        if( document.getElementById("sticky").files.length !== 0 ){
-            assets.file("sticky.jpg", data_sticky.substr(data_sticky.indexOf(',')+1), {base64: true});
+        if( document.getElementById("right3").files.length !== 0 ){
+            assets.file("300600b.jpg", data_right3.substr(data_right3.indexOf(',')+1), {base64: true});
         }
         if( document.getElementById("imageLoader").files.length !== 0 ){
             assets.file("left_to.jpg", data_left_to.substr(data_left_to.indexOf(',')+1), {base64: true});
             assets.file("right_to.jpg", data_right_to.substr(data_right_to.indexOf(',')+1), {base64: true});
             assets.file("1016100.jpg", data_top100.substr(data_top100.indexOf(',')+1), {base64: true});
             assets.file("1016250.jpg", data_top250.substr(data_top250.indexOf(',')+1), {base64: true});
-            assets.file("1100100.jpg", data_top100n.substr(data_top100n.indexOf(',')+1), {base64: true});
-            assets.file("1100250.jpg", data_top250n.substr(data_top250n.indexOf(',')+1), {base64: true});
         }
         if( document.getElementById("imageLoader2").files.length !== 0 ){
             assets.file("left_nho.jpg", data_left_nho.substr(data_left_nho.indexOf(',')+1), {base64: true});
