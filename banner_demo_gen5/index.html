@@ -28,6 +28,7 @@
             width: 50px;
             text-align: center;
         }
+        .w3-input{border: none;}
     </style>
 </head>
 <body>
@@ -90,61 +91,78 @@
         </form>
         <hr>
         <div class="w3-cell-row">
-            <div class="w3-container w3-cell w3-teal w3-mobile">
-                <p>
-                    <label>Upload big bg</label>
-                    <input type="file" id="imageLoader"/>
-                    <label>Upload small bg</label>
-                    <input type="file" id="imageLoader2"/>
-                </p>
-                <p>
-                    <label>Left start X</label>
-                    <input class="w3-border bginput" type="text" id="lx" value="0">
-                    <label>Left start Y</label>
-                    <input class="w3-border bginput" type="text" id="ly" value="0">
-                    <label>Right start X</label>
-                    <input class="w3-border bginput" type="text" id="rx" value="1460">
-                    <label>Right start Y</label>
-                    <input class="w3-border bginput" type="text" id="ry" value="0">
-                </p>
-                <p>
-                    <label>Big bg width</label>
-                    <input class="w3-border bginput" type="text" id="bw" value="444">
-                    <label>Big bg height</label>
-                    <input class="w3-border bginput" type="text" id="bh" value="1040">
-                    <label>Small bg width</label>
-                    <input class="w3-border bginput" type="text" id="sw" value="205">
-                    <label>Small bg height</label>
-                    <input class="w3-border bginput" type="text" id="sh" value="900">
-                </p>
-                <p>
-                    <label>Masthead width</label>
-                    <input class="w3-border bginput" type="text" id="mw" value="1016">
-                    <label>Masthead width</label>
-                    <input class="w3-border bginput" type="text" id="mw2" value="1100">
-                    <label>Masthead start X</label>
-                    <input class="w3-border bginput" type="text" id="mx" value="444">
-                    <label>Masthead start Y</label>
-                    <input class="w3-border bginput" type="text" id="my" value="0">
-                </p>
+            <div class="w3-cell w3-mobile">
+                <div class="w3-card w3-container w3-margin-bottom w3-teal">
+                    <p>
+                        <label>Upload big bg</label>
+                        <input type="file" id="imageLoader"/>
+                        <label>Upload small bg</label>
+                        <input type="file" id="imageLoader2"/>
+                    </p>
+                    <hr>
+                    <p>
+                        <label>Left start X</label>
+                        <input class="w3-border bginput" type="text" id="lx" value="0">
+                        <label>Left start Y</label>
+                        <input class="w3-border bginput" type="text" id="ly" value="0">
+                        <label>Right start X</label>
+                        <input class="w3-border bginput" type="text" id="rx" value="1460">
+                        <label>Right start Y</label>
+                        <input class="w3-border bginput" type="text" id="ry" value="0">
+                    </p>
+                    <p>
+                        <label>Big bg width</label>
+                        <input class="w3-border bginput" type="text" id="bw" value="444">
+                        <label>Big bg height</label>
+                        <input class="w3-border bginput" type="text" id="bh" value="1040">
+                        <label>Small bg width</label>
+                        <input class="w3-border bginput" type="text" id="sw" value="205">
+                        <label>Small bg height</label>
+                        <input class="w3-border bginput" type="text" id="sh" value="900">
+                    </p>
+                    <p>
+                        <label>Masthead width</label>
+                        <input class="w3-border bginput" type="text" id="mw" value="1016">
+                        <label>Masthead width</label>
+                        <input class="w3-border bginput" type="text" id="mw2" value="1100">
+                        <label>Masthead start X</label>
+                        <input class="w3-border bginput" type="text" id="mx" value="444">
+                        <label>Masthead start Y</label>
+                        <input class="w3-border bginput" type="text" id="my" value="0">
+                    </p>
+                </div>
             </div>
-            <div class="w3-container w3-cell w3-green w3-mobile">
-                <div>Upload tttc 696x120</div>
-                <input class="w3-input" id="tttc" type="file" accept="image/x-png,image/gif,image/jpeg" />
-                <div>Upload chanbv 696x120</div>
-                <input class="w3-input" id="chanbv" type="file" accept="image/x-png,image/gif,image/jpeg" />
-                <div>Upload hot 336x280</div>
-                <input class="w3-input" id="hot" type="file" accept="image/x-png,image/gif,image/jpeg" />
-                <div>Upload sticky 696x90</div>
-                <input class="w3-input" id="sticky" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <div class="w3-cell w3-mobile w3-container">
+                <div class="w3-card w3-container w3-margin-bottom w3-blue">
+                    <div>Upload tttc 696x120</div>
+                    <input class="w3-input" id="tttc" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                </div>
+                <div class="w3-card w3-container w3-margin-bottom w3-blue">
+                    <div>Upload chanbv 696x120</div>
+                    <input class="w3-input" id="chanbv" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                </div>
+                <div class="w3-card w3-container w3-margin-bottom w3-light-green">
+                    <div>Upload hot 336x280</div>
+                    <input class="w3-input" id="hot" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                </div>
+                <div class="w3-card w3-container w3-margin-bottom w3-indigo">
+                    <div>Upload sticky 696x90</div>
+                    <input class="w3-input" id="sticky" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                </div>
             </div>
-            <div class="w3-container w3-cell w3-light-green w3-mobile">
-                <div>Upload right1 300x600</div>
-                <input class="w3-input" id="right1" type="file" accept="image/x-png,image/gif,image/jpeg" />
-                <div>Upload right2 300x250</div>
-                <input class="w3-input" id="right2" type="file" accept="image/x-png,image/gif,image/jpeg" />
-                <div>Upload right3 300x600</div>
-                <input class="w3-input" id="right3" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <div class="w3-cell w3-mobile ">
+                <div class="w3-card w3-container w3-margin-bottom w3-deep-orange">
+                    <div>Upload right1 300x600</div>
+                    <input class="w3-input" id="right1" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                </div>
+                <div class="w3-card w3-container w3-margin-bottom w3-green">
+                    <div>Upload right2 300x250</div>
+                    <input class="w3-input" id="right2" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                </div>
+                <div class="w3-card w3-container w3-margin-bottom w3-deep-orange">
+                    <div>Upload right3 300x600</div>
+                    <input class="w3-input" id="right3" type="file" accept="image/x-png,image/gif,image/jpeg" />
+                </div>
             </div>
         </div>
     </div>

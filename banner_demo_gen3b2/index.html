@@ -10,6 +10,8 @@
     <script async src="../js_libs/jszip-utils.js"> </script>
     <script async src="../js_libs/FileSaver.js"> </script> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../dropzone/dropzone.min.js"></script>
+    <link href="../dropzone/dropzone.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
@@ -22,17 +24,7 @@
     </header>
     
     <div class="w3-container">
-        <p></p>
-        <div class="w3-cell-row">
-            <div class="w3-container w3-cell w3-teal w3-mobile">
-                <div>Up file HTML</div>
-                <input class="w3-input" id="inimage_html" type="file" accept = ".html" />
-                <div>Up file JPG</div>
-                <input class="w3-input" id="inimage_jpg" type="file" accept="image/jpeg" />
-                <div>Up file PNG</div>
-                <input class="w3-input" id="inimage_png" type="file" accept="image/x-png" />
-            </div>
-        </div>
+        <form action="/file-upload" class="dropzone" id="my-dropzone"></form>
         <p><button class="w3-button w3-red" id="zip_button">Save file</button></p>
     </div>
     
@@ -42,6 +34,55 @@
     <div style="display: none" id="inimage_html_holder"></div>
     <div style="display: none" id="inimage_jpg_holder"></div>
     <div style="display: none" id="inimage_png_holder"></div>
+    <div style="display: none" id="inimage_jpg_name_holder"></div>
+    <div style="display: none" id="inimage_png_name_holder"></div>
+
+    <div id="tpl">
+        <div class="dz-preview dz-file-preview">
+            <div class="dz-image"><img data-dz-thumbnail=""></div>
+            <div class="dz-details">
+                <div class="dz-size" data-dz-size></div>
+                <div class="dz-filename"><span data-dz-name></span></div>
+            </div>
+            <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>
+        </div>
+    </div>
+<script>
+    Dropzone.options.myDropzone = {
+        previewTemplate: document.querySelector('#tpl').innerHTML,
+        init: function() {
+            this.on("addedfile", function(file) {
+                var reader = new FileReader();
+                reader.onload = function(event) {
+                    // event.target.result contains base64 encoded image
+                    //console.log(event.target.result);
+                };
+                var ext = file.name.substr(-3);
+                if(ext == "tml"){
+                    reader.onload = function (e) {
+                        document.getElementById("inimage_html_holder").textContent = e.target.result;
+                    }
+                    reader.readAsText(file);
+                }
+                if(ext == "jpg"){
+                    reader.onload = function (e) {
+                        document.getElementById("inimage_jpg_holder").textContent = e.target.result;
+                    }
+                    document.getElementById("inimage_jpg_name_holder").textContent = file.name;
+                    reader.readAsDataURL(file);
+                }
+                if(ext == "png"){
+                    reader.onload = function (e) {
+                        document.getElementById("inimage_png_holder").textContent = e.target.result;
+                    }
+                    document.getElementById("inimage_png_name_holder").textContent = file.name;
+                    reader.readAsDataURL(file);
+                    
+                }
+            });
+        }
+    };
+</script>
 <script>
     ///////////////////////// Load url text file into div holder
     function readTemplates(path,div_holder){
@@ -84,31 +125,31 @@
     )
 
     ///////////////////////// Load input file into div holder
-    function readInputFile(input,div_holder,mode) {
-        if (input.files && input.files[0]) {
-            var reader = new FileReader();
+    // function readInputFile(input,div_holder,mode) {
+    //     if (input.files && input.files[0]) {
+    //         var reader = new FileReader();
             
-            reader.onload = function (e) {
-                document.getElementById(div_holder).textContent = e.target.result;
-            }
-            if(mode == "image" ){
-                reader.readAsDataURL(input.files[0]);
-            }
-            if(mode == "text" ){
-                reader.readAsText(input.files[0]);
-            }
-        }
-    }
+    //         reader.onload = function (e) {
+    //             document.getElementById(div_holder).textContent = e.target.result;
+    //         }
+    //         if(mode == "image" ){
+    //             reader.readAsDataURL(input.files[0]);
+    //         }
+    //         if(mode == "text" ){
+    //             reader.readAsText(input.files[0]);
+    //         }
+    //     }
+    // }
 
-    document.getElementById("inimage_html").addEventListener("change", function(){
-        readInputFile(this,"inimage_html_holder","text");
-    })
-    document.getElementById("inimage_jpg").addEventListener("change", function(){
-        readInputFile(this,"inimage_jpg_holder","image");
-    })
-    document.getElementById("inimage_png").addEventListener("change", function(){
-        readInputFile(this,"inimage_png_holder","image");
-    })
+    // document.getElementById("inimage_html").addEventListener("change", function(){
+    //     readInputFile(this,"inimage_html_holder","text");
+    // })
+    // document.getElementById("inimage_jpg").addEventListener("change", function(){
+    //     readInputFile(this,"inimage_jpg_holder","image");
+    // })
+    // document.getElementById("inimage_png").addEventListener("change", function(){
+    //     readInputFile(this,"inimage_png_holder","image");
+    // })
     /////////////////////////
     document.getElementById("zip_button").addEventListener("click", function(){
         var zip = new JSZip();
@@ -122,13 +163,14 @@
         var inimage_html = document.getElementById("inimage_html_holder").textContent;
         var inimage_jpg = document.getElementById("inimage_jpg_holder").textContent;
         var inimage_png = document.getElementById("inimage_png_holder").textContent;
-        if(inimage_jpg !==""){
-            var name_inimage_jpg = document.getElementById("inimage_jpg").files[0].name;
-            banner_folder.file(name_inimage_jpg, inimage_jpg.substr(inimage_jpg.indexOf(',')+1), {base64: true});
+        var inimage_jpg_name = document.getElementById("inimage_jpg_name_holder").textContent;
+        var inimage_png_name = document.getElementById("inimage_png_name_holder").textContent;
+        
+        if(inimage_jpg_name !==""){
+            banner_folder.file(inimage_jpg_name, inimage_jpg.substr(inimage_jpg.indexOf(',')+1), {base64: true});
         }
-        if(inimage_png !==""){
-            var name_inimage_png = document.getElementById("inimage_png").files[0].name;
-            banner_folder.file(name_inimage_png, inimage_png.substr(inimage_png.indexOf(',')+1), {base64: true});
+        if(inimage_png_name !==""){
+            banner_folder.file(inimage_png_name, inimage_png.substr(inimage_png.indexOf(',')+1), {base64: true});
         }
         /////
         zip.file("index.html", demo_html);
