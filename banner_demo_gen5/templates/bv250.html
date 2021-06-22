@@ -56,7 +56,7 @@ a.boxclose{cursor:pointer;color: #fff;border: 1px solid #AEAEAE;background: #605
       <div id="chanbv"><img src="images/chanbv.jpg" width="696px"></div>
       <div id="hot"><img src="images/336280.jpg" width="336px"></div>
       <div style="position: fixed;bottom: 0;">
-        <a class="boxclose" id="icon-close"></a>
+        <a class="boxclose" id="icon-close" style="display: none;"></a>
         <div id="sticky"><img src="images/sticky.jpg" width="696px"></div>
       </div>
     </div>
@@ -90,9 +90,11 @@ a.boxclose{cursor:pointer;color: #fff;border: 1px solid #AEAEAE;background: #605
     }
     if (currentScrollPos < 600 ) {
       $("#sticky").css("display","none");
+      $("#icon-close").css("display","none");
     }
     if (currentScrollPos >= 600 ) {
       $("#sticky").css("display","block");
+      $("#icon-close").css("display","block");
     }
     prevScrollpos = currentScrollPos;
   }
