@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Export BG pack</title>
+    <title>Export EVA BG pack</title>
     <link rel="stylesheet" href="../css/w3.css">
     <script async src="../js_libs/jszip.js"> </script>
     <script async src="../js_libs/FileSaver.js"> </script> 
@@ -24,33 +24,47 @@
         .divide_five{
             width: 20%;
         }
+        /* color */
+        .w3-ios-dark-blue{color:#fff;background-color:#5856d6}
+        .w3-ios-deep-blue{color:#fff;background-color:#007AFF}
+        .w3-ios-blue{color:#fff;background-color:#34AADC}
+        .w3-ios-light-blue{color:#fff;background-color:#5AC8FA}
+        .w3-ios-green{color:#000;background-color:#4cd964}
+        .w3-ios-pink{color:#fff;background-color:#ff2d55}
+        .w3-ios-red{color:#fff;background-color:#ff3b30}
+        .w3-ios-orange{color:#fff;background-color:#ff9500}
+        .w3-ios-yellow{color:#000;background-color:#ffcc00}
+        .w3-ios-grey{color:#fff;background-color:#8e8e93}
+        .w3-ios-light-grey{color:#000;background-color:#ceced2}
+        .w3-ios-background{color:#000;background-color:#efeff4}
     </style>
 </head>
-<body style="background-color: #282828;">
-    <div class="w3-bar w3-blue">
-        <button class="w3-bar-item w3-button" onclick="openCity('tab01')"><i class="fa fa-map-o"></i> Backgrounds </button>
-        <button class="w3-bar-item w3-button" onclick="openCity('tab02')"><i class="fa fa-desktop"></i> Các banner pc</button>
-        <button class="w3-bar-item w3-button" onclick="openCity('tab03')"><i class="fa fa-mobile"></i> Các banner mobile</button>
-        <button class="w3-button w3-red w3-bar-item w3-right" id="zip_btn">Pack it!</button>
+<body class="w3-ios-background">
+    <div class="w3-bar" style="background: #d2577e;">
+        <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'tab01');showDiv('pcgroup');hideDiv('mbgroup')"><i class="fa fa-map-o"></i> Backgrounds </button>
+        <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'tab02');showDiv('pcgroup');hideDiv('mbgroup')"><i class="fa fa-desktop"></i> Các banner pc</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'tab03');showDiv('mbgroup');hideDiv('pcgroup')"><i class="fa fa-mobile"></i> Các banner mobile</button>
+        <button class="w3-button w3-ios-yellow w3-bar-item w3-right" id="zip_btn">Pack it!</button>
     </div>
-
-    <div class="w3-row">
-        <div class="w3-container w3-half" class="background:#282828">
-            <p style="text-align: center;font-weight: bold;color: red;">Lưu ý phần gắn Tracking Impression và Click, các anh chị copy đúng và chính xác, không thừa các ký tự lạ như dấu nháy đơn ' hoặc dấu nháy kép ". Nhắc KD kiểm tra số liệu.</p>
+    <div class="w3-container w3-padding-16">
+        <div class="w3-container w3-ios-deep-blue" id="pcgroup">
+            <h3 class="w3-center">Gắn tracking cho PC</h3>
+            <p class="w3-center">Lưu ý phần gắn Tracking Impression và Click, các anh chị copy đúng và chính xác, không thừa các ký tự lạ như dấu nháy đơn ' hoặc dấu nháy kép ". Nhắc KD kiểm tra số liệu.</p>
             <p>
-                <label class="w3-text-red"><b>impression tracking mặc định bên dưới (chỉ gắn ở bg trái)</b> - Nếu có tracking imp của KH thì link phải bắt đầu bằng <b>https://</b></label>
+                <label><b>impression tracking mặc định bên dưới (chỉ gắn ở bg trái)</b> - Nếu có tracking imp của KH thì link phải bắt đầu bằng <b>https://</b></label>
                 <input class="w3-input w3-border" type="text" id="tracking_imp" value="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=">
-                <label class="w3-text-red"><b>click tracking/landing page</b> - Link bắt đầu bằng <b>http://</b> hoặc <b>https://</b></label>
-                <input class="w3-input w3-border" type="text" id="tracking_click" value="http://24h.com.vn">
+                <label><b>click tracking/landing page</b> - Link bắt đầu bằng <b>http://</b> hoặc <b>https://</b></label>
+                <input class="w3-input w3-border" type="text" id="tracking_click" value="https://eva.vn">
             </p>
         </div>
-        <div class="w3-container w3-half w3-pale-yellow">
-            <p style="text-align: center;font-weight: bold;color: red;">Lưu ý phần gắn Tracking Impression và Click, các anh chị copy đúng và chính xác, không thừa các ký tự lạ như dấu nháy đơn ' hoặc dấu nháy kép ". Nhắc KD kiểm tra số liệu.</p>
+        <div class="w3-container w3-ios-green" id="mbgroup" style="display: none;">
+            <h3 class="w3-center">Gắn tracking cho MOBILE</h3>
+            <p class="w3-center">Lưu ý phần gắn Tracking Impression và Click, các anh chị copy đúng và chính xác, không thừa các ký tự lạ như dấu nháy đơn ' hoặc dấu nháy kép ". Nhắc KD kiểm tra số liệu.</p>
             <p>
-                <label class="w3-text-red"><b>impression tracking mặc định bên dưới (chỉ gắn ở banner top)</b> - Nếu có tracking imp của KH thì link phải bắt đầu bằng <b>https://</b></label>
+                <label><b>impression tracking mặc định bên dưới (chỉ gắn ở banner top)</b> - Nếu có tracking imp của KH thì link phải bắt đầu bằng <b>https://</b></label>
                 <input class="w3-input w3-border" type="text" id="tracking_imp_mb" value="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=">
-                <label class="w3-text-red"><b>click tracking/landing page</b> - Link bắt đầu bằng <b>http://</b> hoặc <b>https://</b></label>
-                <input class="w3-input w3-border" type="text" id="tracking_click_mb" value="http://24h.com.vn">
+                <label><b>click tracking/landing page</b> - Link bắt đầu bằng <b>http://</b> hoặc <b>https://</b></label>
+                <input class="w3-input w3-border" type="text" id="tracking_click_mb" value="https://m.eva.vn">
             </p>
         </div>
     </div>
@@ -58,20 +72,20 @@
     <div id="tab01" class="city">
         <div class="w3-container">
             <p>
-                <div class="w3-text-white">Chọn loại bg để xuất file</div>
+                <div>Chọn loại bg để xuất file</div>
                 <select id="demochoice">
-                    <option value="1" selected>Trang chủ</option>
-                    <option value="2" >Trang trong top 100</option>
-                    <option value="3" >Trang trong top 250</option>
+                    <option value="1" selected>Trang chủ (1904x1040)</option>
+                    <option value="2" >Trang trong top 100 (1904x1040)</option>
+                    <option value="3" >Trang trong top 250 (1904x1040)</option>
                 </select>
             </p>
             <p>
-                <div style="width: 300px; margin-right: 100px;" class="w3-text-white">
+                <div style="width: 300px; margin-right: 100px;">
                     <span id="sliderOutput">Chất lượng ảnh background: 1</span>
                     <input type="range" min="0.7" max="1" value="1" step="0.01" class="w3-input" id="qualitySlider">
                 </div>
             </p>            
-            <div class="w3-row w3-text-white">
+            <div class="w3-row">
                 <div class="w3-half w3-container">
                     <label>Chọn ảnh chứa bg kt lớn</label>
                     <input type="file" id="imageLoader"/>
@@ -91,10 +105,9 @@
             <canvas id="right_to" class="hide floatleft" width="444" height="1040"></canvas>
             <canvas id="left_nho" class="hide floatleft" width="205" height="900"></canvas>
             <canvas id="right_nho" class="hide floatleft" width="205" height="900"></canvas>
-            <!-- <canvas id="phai1" class="hide floatleft" width="300" height="600"></canvas> -->
             <canvas id="top100" class="hide floatleft" width="1016" height="100"></canvas>
             <canvas id="top250" class="hide floatleft" width="1016" height="250"></canvas>
-            <div class="w3-row w3-text-white">
+            <div class="w3-row">
                 <div class="w3-col w3-container divide_four">
                     <div>Bg trái 444x1040</div>
                     <img id="left_to_jpg" class="w3-image">
@@ -111,13 +124,9 @@
                     <div>Bg phải 205x900</div>
                     <img id="right_nho_jpg" class="w3-image">
                 </div>
-                <!-- <div class="w3-col w3-container divide_five">
-                    <div>Phải 1 300x600</div>
-                    <img id="phai1_jpg" class="w3-image">
-                </div> -->
             </div>
             <br>
-            <div class="w3-row w3-text-white">
+            <div class="w3-row">
                 <div class="w3-half w3-container">
                     <div>Top 1016x100</div>
                     <img id="top100_jpg" class="w3-image">
@@ -139,57 +148,71 @@
             <!-- holder img -->
             <div class="hide" id="img_phai1_holder"></div>
             <div class="hide" id="img_phai2_holder"></div>
-            <div class="hide" id="img_sticky_holder"></div>
+            <div class="hide" id="img_tnc_holder"></div>
             <div class="hide" id="img_hot_holder"></div>
+            <div class="hide" id="img_cbvpc_holder"></div>
             <div class="hide" id="img_top_holder"></div>
             <div class="hide" id="img_top2_holder"></div>
             <div class="hide" id="img_inpage_holder"></div>
-            <div class="hide" id="img_cbv_holder"></div>
+            <div class="hide" id="img_cbvmb_holder"></div>
             <div class="hide" id="img_center1_holder"></div>
             <div class="hide" id="img_center2_holder"></div>
         </div>
     </div>
       
     <div id="tab02" class="city" style="display:none">
-        <div class="w3-container w3-text-white" class="background:#282828">
+        <div class="w3-container" class="background:#282828">
             <h3>Upload ảnh banner pc</h3>
-            <div>Up ảnh banner phải 1 <strong>300x600</strong></div>
+            <div>banner phải <strong>300x600</strong></div>
             <input class="w3-input" id="phai1" type="file" accept="image/x-png,image/gif,image/jpeg" />
-            <div>Up ảnh banner phải 2 <strong>300x250</strong></div>
+            <div>banner phải <strong>300x250</strong></div>
             <input class="w3-input" id="phai2" type="file" accept="image/x-png,image/gif,image/jpeg" />
-            <div>Up ảnh banner sticky <strong>300x600</strong></div>
-            <input class="w3-input" id="sticky" type="file" accept="image/x-png,image/gif,image/jpeg" />
-            <div>Up ảnh banner hot <strong>336x280</strong></div>
+            <div>banner phải trôi ngữ cảnh <strong>300x600</strong></div>
+            <input class="w3-input" id="tnc" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <div>banner hot <strong>336x280</strong></div>
             <input class="w3-input" id="hot" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <div>banner chân bài viết <strong>700x90</strong></div>
+            <input class="w3-input" id="cbvpc" type="file" accept="image/x-png,image/gif,image/jpeg" />
         </div>
     </div>
 
     <div id="tab03" class="city" style="display:none">
-        <div class="w3-container w3-pale-yellow">
+        <div class="w3-container">
             <h3>Upload ảnh banner mobile</h3>
-            <div>Up ảnh banner top <strong>320x100 (640x200)</strong></div>
+            <div>banner top <strong>320x100 (640x200)</strong></div>
             <input class="w3-input" id="top" type="file" accept="image/x-png,image/gif,image/jpeg" />
-            <div>Up ảnh banner top lớn <strong>320x160 (640x320)</strong></div>
+            <div>banner top lớn <strong>320x160 (640x320)</strong></div>
             <input class="w3-input" id="top2" type="file" accept="image/x-png,image/gif,image/jpeg" />
-            <div>Up ảnh banner inpage <strong>320x640 (375x750)</strong></div>
+            <div>banner inpage <strong>320x640 (600x1200)</strong></div>
             <input class="w3-input" id="inpage" type="file" accept="image/x-png,image/gif,image/jpeg" />
-            <div>Up ảnh banner chân bv <strong>320x100 (640x200)</strong></div>
-            <input class="w3-input" id="cbv" type="file" accept="image/x-png,image/gif,image/jpeg" />
-            <div>Up ảnh banner center1 <strong>300x250 (600x500)</strong></div>
+            <div>banner chân bv <strong>320x100 (640x200)</strong></div>
+            <input class="w3-input" id="cbvmb" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <div>banner center1 <strong>300x250 (600x500)</strong></div>
             <input class="w3-input" id="center1" type="file" accept="image/x-png,image/gif,image/jpeg" />
-            <div>Up ảnh banner center2 <strong>300x250 (600x500)</strong></div>
+            <div>banner center2 <strong>300x250 (600x500)</strong></div>
             <input class="w3-input" id="center2" type="file" accept="image/x-png,image/gif,image/jpeg" />
         </div>
     </div>
     
     <script>
-        function openCity(cityName) {
-            var i;
-            var x = document.getElementsByClassName("city");
+        function openCity(evt, cityName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("city");
             for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
+                x[i].style.display = "none";
             }
-            document.getElementById(cityName).style.display = "block";  
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-ios-background", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " w3-ios-background";
+        }
+        function showDiv(divName) {
+            document.getElementById(divName).style.display = "block";
+        }
+        function hideDiv(divName) {
+            document.getElementById(divName).style.display = "none";
         }
     </script>   
 
@@ -328,11 +351,14 @@
         document.getElementById("phai2").addEventListener("change", function(){
             readInputFile(this,"img_phai2_holder","image");
         })
-        document.getElementById("sticky").addEventListener("change", function(){
-            readInputFile(this,"img_sticky_holder","image");
+        document.getElementById("tnc").addEventListener("change", function(){
+            readInputFile(this,"img_tnc_holder","image");
         })
         document.getElementById("hot").addEventListener("change", function(){
             readInputFile(this,"img_hot_holder","image");
+        })
+        document.getElementById("cbvpc").addEventListener("change", function(){
+            readInputFile(this,"img_cbvpc_holder","image");
         })
         document.getElementById("top").addEventListener("change", function(){
             readInputFile(this,"img_top_holder","image");
@@ -343,8 +369,8 @@
         document.getElementById("inpage").addEventListener("change", function(){
             readInputFile(this,"img_inpage_holder","image");
         })
-        document.getElementById("cbv").addEventListener("change", function(){
-            readInputFile(this,"img_cbv_holder","image");
+        document.getElementById("cbvmb").addEventListener("change", function(){
+            readInputFile(this,"img_cbvmb_holder","image");
         })
         document.getElementById("center1").addEventListener("change", function(){
             readInputFile(this,"img_center1_holder","image");
@@ -440,15 +466,15 @@
             var data_html_top100 = document.getElementById("html_top100_holder").textContent;
             //html top 250
             var data_html_top250 = document.getElementById("html_top250_holder").textContent;
-            //html top
+            //html 320x100 imp
             var data_html_top = document.getElementById("html_mb320100imp_holder").textContent;
-            //html top2
+            //html 320x160 imp
             var data_html_top2 = document.getElementById("html_mb320160imp_holder").textContent;
-            //html cbv
-            var data_html_cbv = document.getElementById("html_mb320100_holder").textContent;            
-            //html inpage
+            //html 320x100
+            var data_html_cbvmb = document.getElementById("html_mb320100_holder").textContent;            
+            //html 320x640
             var data_html_inpage = document.getElementById("html_inpage_holder").textContent;
-            //html center
+            //html 300x250
             var data_html_center = document.getElementById("html_mb300250_holder").textContent;
 
             //Image bgs
@@ -461,29 +487,27 @@
             var data_phai1 = document.getElementById("img_phai1_holder").textContent;
             var data_phai2 = document.getElementById("img_phai2_holder").textContent;
             var data_hot = document.getElementById("img_hot_holder").textContent;
-            var data_sticky = document.getElementById("img_sticky_holder").textContent;
+            var data_tnc = document.getElementById("img_tnc_holder").textContent;
+            var data_cbvpc = document.getElementById("img_cbvpc_holder").textContent;
 
             //Image mobile
             var data_top = document.getElementById("img_top_holder").textContent;
             var data_top2 = document.getElementById("img_top2_holder").textContent;
             var data_inpage = document.getElementById("img_inpage_holder").textContent;
-            var data_cbv = document.getElementById("img_cbv_holder").textContent;
+            var data_cbvmb = document.getElementById("img_cbvmb_holder").textContent;
             var data_center1 = document.getElementById("img_center1_holder").textContent;
             var data_center2 = document.getElementById("img_center2_holder").textContent;
 
-            if(data_left_to!==""){
+            if( document.getElementById("imageLoader").files.length !== 0 ){
                 zip.file("pc/bg_left/bg_left.html", data_html_imp);
                 zip.file("pc/bg_left/left_to.jpg", data_left_to.substr(data_left_to.indexOf(',')+1), {base64: true});
-                zip.file("pc/bg_left/left_nho.jpg", data_left_nho.substr(data_left_nho.indexOf(',')+1), {base64: true});
                 zip.file("pc/bg_right/bg_right.html", data_html);
                 zip.file("pc/bg_right/right_to.jpg", data_right_to.substr(data_right_to.indexOf(',')+1), {base64: true});
-                zip.file("pc/bg_right/right_nho.jpg", data_right_nho.substr(data_right_nho.indexOf(',')+1), {base64: true});
+                if( document.getElementById("imageLoader2").files.length !== 0 ){
+                    zip.file("pc/bg_left/left_nho.jpg", data_left_nho.substr(data_left_nho.indexOf(',')+1), {base64: true});
+                    zip.file("pc/bg_right/right_nho.jpg", data_right_nho.substr(data_right_nho.indexOf(',')+1), {base64: true});
+                }
                 alert("+ bg trái to: " + Math.round(((data_left_to.length * 0.75)/1000)) + "\n+ bg trái nhỏ: " + Math.round(((data_left_nho.length * 0.75)/1000)) + "\n+ bg phải to: " + Math.round(((data_right_to.length * 0.75)/1000)) + "\n+ bg phải nhỏ: " + Math.round(((data_right_nho.length * 0.75)/1000)));
-                // if(type_pack == 1){
-                //     var data_phai1 = document.getElementById("phai1_jpg").src;
-                //     zip.file("bg_premium/300600/300600.html", data_html);
-                //     zip.file("bg_premium/300600/300600.jpg", data_phai1.substr(data_phai1.indexOf(',')+1), {base64: true});
-                // }
                 if(type_pack == 2){
                     var data_top100 = document.getElementById("top100_jpg").src;
                     zip.file("pc/1016x100/1016x100.html", data_html_top100);
@@ -507,9 +531,13 @@
                 zip.file("pc/336x280/336x280.html", data_html);
                 zip.file("pc/336x280/336x280.jpg", data_hot.substr(data_hot.indexOf(',')+1), {base64: true});
             }
-            if(data_sticky!==""){
-                zip.file("pc/sticky/sticky.html", data_html);
-                zip.file("pc/sticky/sticky.jpg", data_sticky.substr(data_sticky.indexOf(',')+1), {base64: true});
+            if(data_tnc!==""){
+                zip.file("pc/300x600_tnc/300x600_tnc.html", data_html);
+                zip.file("pc/300x600_tnc/300x600_tnc.jpg", data_tnc.substr(data_tnc.indexOf(',')+1), {base64: true});
+            }
+            if(data_cbvpc!==""){
+                zip.file("pc/700x90/700x90.html", data_html);
+                zip.file("pc/700x90/700x90.jpg", data_cbvpc.substr(data_cbvpc.indexOf(',')+1), {base64: true});
             }
             if(data_top!==""){
                 zip.file("mb/top_320x100/top_320x100.html", data_html_top);
@@ -523,9 +551,9 @@
                 zip.file("mb/inpage/inpage.html", data_html_inpage);
                 zip.file("mb/inpage/inpage.jpg", data_inpage.substr(data_inpage.indexOf(',')+1), {base64: true});
             }
-            if(data_cbv!==""){
-                zip.file("mb/cbv_320x100/cbv_320x100.html", data_html_cbv);
-                zip.file("mb/cbv_320x100/cbv_320x100.jpg", data_cbv.substr(data_cbv.indexOf(',')+1), {base64: true});
+            if(data_cbvmb!==""){
+                zip.file("mb/cbv_320x100/cbv_320x100.html", data_html_cbvmb);
+                zip.file("mb/cbv_320x100/cbv_320x100.jpg", data_cbvmb.substr(data_cbvmb.indexOf(',')+1), {base64: true});
             }
             if(data_center1!==""){
                 zip.file("mb/center1_300x250/center1_300x250.html", data_html_center);
