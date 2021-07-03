@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Export eve pack</title>
+    <title>Export 1day pack</title>
     <link rel="stylesheet" href="../css/w3.css">
     <script async src="../js_libs/jszip.js"> </script>
     <script async src="../js_libs/FileSaver.js"> </script> 
@@ -40,31 +40,31 @@
     </style>
 </head>
 <body class="w3-ios-background">
-    <div class="w3-bar" style="background: #d2577e;">
+    <div class="w3-bar" style="background: #78b43d;">
         <button class="w3-bar-item w3-button tablink w3-ios-background" onclick="openCity(event,'tab01');showDiv('pcgroup');hideDiv('mbgroup')"><i class="fa fa-map-o"></i> Backgrounds </button>
         <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'tab02');showDiv('pcgroup');hideDiv('mbgroup')"><i class="fa fa-desktop"></i> Các banner pc</button>
         <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'tab03');showDiv('mbgroup');hideDiv('pcgroup')"><i class="fa fa-mobile"></i> Các banner mobile</button>
-        <button class="w3-button w3-ios-yellow w3-bar-item w3-right" id="zip_btn">Pack it!</button>
+        <button class="w3-button w3-red w3-bar-item w3-right" id="zip_btn">Pack it!</button>
     </div>
     <div class="w3-container w3-padding-16">
         <div class="w3-container w3-ios-deep-blue" id="pcgroup">
             <h3 class="w3-center">Gắn tracking cho PC</h3>
             <p class="w3-center">Lưu ý phần gắn Tracking Impression và Click, các anh chị copy đúng và chính xác, không thừa các ký tự lạ như dấu nháy đơn ' hoặc dấu nháy kép ". Nhắc KD kiểm tra số liệu.</p>
             <p>
-                <label><b>impression tracking mặc định bên dưới (chỉ gắn ở bg trái)</b> - Nếu có tracking imp của KH thì link phải bắt đầu bằng <b>https://</b></label>
-                <input class="w3-input w3-border" type="text" id="tracking_imp" value="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=">
+                <label><b>Dán impression tracking vào ô dưới (chỉ gắn ở bg trái)</b> - Tracking imp phải bắt đầu bằng <b>https://</b></label>
+                <input class="w3-input w3-border" type="text" id="tracking_imp" value="">
                 <label><b>click tracking/landing page</b> - Link bắt đầu bằng <b>http://</b> hoặc <b>https://</b></label>
-                <input class="w3-input w3-border" type="text" id="tracking_click" value="https://eva.vn">
+                <input class="w3-input w3-border" type="text" id="tracking_click" value="https://24h.com.vn">
             </p>
         </div>
         <div class="w3-container w3-ios-green" id="mbgroup" style="display: none;">
             <h3 class="w3-center">Gắn tracking cho MOBILE</h3>
             <p class="w3-center">Lưu ý phần gắn Tracking Impression và Click, các anh chị copy đúng và chính xác, không thừa các ký tự lạ như dấu nháy đơn ' hoặc dấu nháy kép ". Nhắc KD kiểm tra số liệu.</p>
             <p>
-                <label><b>impression tracking mặc định bên dưới (chỉ gắn ở banner top)</b> - Nếu có tracking imp của KH thì link phải bắt đầu bằng <b>https://</b></label>
-                <input class="w3-input w3-border" type="text" id="tracking_imp_mb" value="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=">
+                <label><b>Dán impression tracking vào ô dưới (chỉ gắn ở banner top)</b> - Tracking imp phải bắt đầu bằng <b>https://</b></label>
+                <input class="w3-input w3-border" type="text" id="tracking_imp_mb" value="">
                 <label><b>click tracking/landing page</b> - Link bắt đầu bằng <b>http://</b> hoặc <b>https://</b></label>
-                <input class="w3-input w3-border" type="text" id="tracking_click_mb" value="https://m.eva.vn">
+                <input class="w3-input w3-border" type="text" id="tracking_click_mb" value="https://m.24h.com.vn">
             </p>
         </div>
     </div>
@@ -81,10 +81,22 @@
             </p>
             <p>
                 <div style="width: 300px; margin-right: 100px;">
-                    <span id="sliderOutput">Chất lượng ảnh background: 1</span>
+                    <span id="sliderOutput">Chất lượng ảnh bộ background: 100%</span>
                     <input type="range" min="0.7" max="1" value="1" step="0.01" class="w3-input" id="qualitySlider">
                 </div>
-            </p>            
+            </p>
+            <p>
+                <label>Page width</label>
+                <input class="w3-border bginput" type="text" id="pw" value="1016" disabled>
+                <label>Big bg width</label>
+                <input class="w3-border bginput" type="text" id="bw" value="444" disabled>
+                <label>Big bg height</label>
+                <input class="w3-border bginput" type="text" id="bh" value="1040" disabled>
+                <label>Small bg width</label>
+                <input class="w3-border bginput" type="text" id="sw" value="205" disabled>
+                <label>Small bg height</label>
+                <input class="w3-border bginput" type="text" id="sh" value="900" disabled>
+            </p>
             <div class="w3-row">
                 <div class="w3-half w3-container">
                     <label>Chọn ảnh chứa bg kt lớn</label>
@@ -136,23 +148,23 @@
                     <img id="top250_jpg" class="w3-image">
                 </div>
             </div>
-            <div class="hide" id="html_holder_imp"></div>
-            <div class="hide" id="html_holder"></div>
-            <div class="hide" id="html_top100_holder"></div>
-            <div class="hide" id="html_top250_holder"></div>
-            <div class="hide" id="html_mb320100imp_holder"></div>
-            <div class="hide" id="html_mb320160imp_holder"></div>
-            <div class="hide" id="html_mb320100_holder"></div>
-            <div class="hide" id="html_inpage_holder"></div>
-            <div class="hide" id="html_mb300250_holder"></div>
+            <div class="hide" id="html_custom_holder"></div>
+            <div class="hide" id="html_custom_imp_holder"></div>
+            <div class="hide" id="html_leaderboard_holder"></div>
+            <div class="hide" id="html_320100m_imp_holder"></div>
+            <div class="hide" id="html_320160m_imp_holder"></div>
+            <div class="hide" id="html_320640m_holder"></div>
+            <div class="hide" id="html_300250m_holder"></div>
             <!-- holder img -->
-            <div class="hide" id="img_phai1_holder"></div>
-            <div class="hide" id="img_cbvpc_holder"></div>
-            <div class="hide" id="img_top_holder"></div>
-            <div class="hide" id="img_top2_holder"></div>
-            <div class="hide" id="img_inpage_holder"></div>
-            <div class="hide" id="img_cbvmb_holder"></div>
-            <div class="hide" id="img_center_holder"></div>
+            <div class="hide" id="img_learderboard_holder"></div>
+            <div class="hide" id="img_300600_holder"></div>
+            <div class="hide" id="img_300250_holder"></div>
+            <div class="hide" id="img_336280_holder"></div>
+            <div class="hide" id="img_696120_holder"></div>
+            <div class="hide" id="img_320100m_holder"></div>
+            <div class="hide" id="img_320160m_holder"></div>
+            <div class="hide" id="img_320640m_holder"></div>
+            <div class="hide" id="img_300250m_holder"></div>
         </div>
     </div>
       
@@ -160,9 +172,13 @@
         <div class="w3-container" class="background:#282828">
             <h3>Upload ảnh banner pc</h3>
             <div>banner <strong>300x600</strong></div>
-            <input class="w3-input" id="phai1" type="file" accept="image/x-png,image/gif,image/jpeg" />
-            <div>banner chân bài viết <strong>700x90</strong></div>
-            <input class="w3-input" id="cbvpc" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <input class="w3-input" id="b300600" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <div>banner <strong>300x250</strong></div>
+            <input class="w3-input" id="b300250" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <div>banner <strong>336x280</strong></div>
+            <input class="w3-input" id="b336280" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <div>banner <strong>696x120</strong></div>
+            <input class="w3-input" id="b696120" type="file" accept="image/x-png,image/gif,image/jpeg" />
         </div>
     </div>
 
@@ -170,15 +186,13 @@
         <div class="w3-container">
             <h3>Upload ảnh banner mobile</h3>
             <div>banner top <strong>320x100 (640x200)</strong> gắn impression</div>
-            <input class="w3-input" id="top" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <input class="w3-input" id="b320100m" type="file" accept="image/x-png,image/gif,image/jpeg" />
             <div>banner top lớn <strong>320x160 (640x320)</strong> gắn impression</div>
-            <input class="w3-input" id="top2" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <input class="w3-input" id="b320160m" type="file" accept="image/x-png,image/gif,image/jpeg" />
             <div>banner inpage <strong>320x640 (600x1200)</strong></div>
-            <input class="w3-input" id="inpage" type="file" accept="image/x-png,image/gif,image/jpeg" />
-            <div>banner chân bv <strong>320x100 (640x200)</strong></div>
-            <input class="w3-input" id="cbvmb" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <input class="w3-input" id="b320640m" type="file" accept="image/x-png,image/gif,image/jpeg" />
             <div>banner center <strong>300x250 (600x500)</strong></div>
-            <input class="w3-input" id="center" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <input class="w3-input" id="b300250m" type="file" accept="image/x-png,image/gif,image/jpeg" />
         </div>
     </div>
     
@@ -205,8 +219,6 @@
     </script>   
 
     <script>
-        var type_pack = document.getElementById("demochoice").value;
-        //////////
         var imageLoader = document.getElementById('imageLoader');
         imageLoader.addEventListener('change', handleImage, false);
         //////////
@@ -238,13 +250,13 @@
         var imgSlider = document.getElementById('qualitySlider');
         var imgQuality = 1;
         imgSlider.oninput = function() {
-            imgPerOut.innerHTML = 'Chất lượng ảnh: '+ this.value;
+            var percentNumQuality = this.value*100 + "%"
+            imgPerOut.innerHTML = 'Chất lượng ảnh: '+ percentNumQuality;
             imgQuality = Number(this.value);
             document.getElementById("left_to_jpg").src = '';
             document.getElementById("right_to_jpg").src = '';
             document.getElementById("left_to_jpg").src = left_to.toDataURL("image/jpeg",imgQuality);
             document.getElementById("right_to_jpg").src = right_to.toDataURL("image/jpeg",imgQuality);
-            // document.getElementById("phai1_jpg").src = phai1.toDataURL("image/jpeg",imgQuality);
             document.getElementById("top100_jpg").src = top100.toDataURL("image/jpeg",imgQuality);
             document.getElementById("top250_jpg").src = top250.toDataURL("image/jpeg",imgQuality);
             document.getElementById("left_nho_jpg").src = left_nho.toDataURL("image/jpeg",imgQuality);
@@ -252,6 +264,11 @@
         }
         //////////////////////////////
         function handleImage(e){
+            var page_width = Number(document.getElementById('pw').value);
+            var bg_big_width = Number(document.getElementById('bw').value);
+            var bg_big_height = Number(document.getElementById('bh').value);
+            var bg_small_width = Number(document.getElementById('sw').value);
+            var bg_small_height = Number(document.getElementById('sh').value);
             var reader = new FileReader();
             reader.onload = function(event){
                 var img = new Image();
@@ -259,14 +276,12 @@
                     canvas.width = img.width;
                     canvas.height = img.height;
                     ctx.drawImage(img,0,0);
-                    left_to_ctx.drawImage(img,0,0,444,1040,0,0,444,1040);
-                    right_to_ctx.drawImage(img,1460,0,444,1040,0,0,444,1040);
-                    // phai1_ctx.drawImage(img,1154,24,300,600,0,0,300,600);
-                    top100_ctx.drawImage(img,444,0,1016,100,0,0,1016,100);
-                    top250_ctx.drawImage(img,444,0,1016,250,0,0,1016,250);
+                    left_to_ctx.drawImage(img,0,0,bg_big_width,bg_big_height,0,0,bg_big_width,bg_big_height);
+                    right_to_ctx.drawImage(img,page_width+bg_big_width,0,bg_big_width,bg_big_height,0,0,bg_big_width,bg_big_height);
+                    top100_ctx.drawImage(img,bg_big_width,0,page_width,100,0,0,page_width,100);
+                    top250_ctx.drawImage(img,bg_big_width,0,page_width,250,0,0,page_width,250);
                     document.getElementById("left_to_jpg").src = left_to.toDataURL("image/jpeg",imgQuality);
                     document.getElementById("right_to_jpg").src = right_to.toDataURL("image/jpeg",imgQuality);
-                    // document.getElementById("phai1_jpg").src = phai1.toDataURL("image/jpeg",imgQuality);
                     document.getElementById("top100_jpg").src = top100.toDataURL("image/jpeg",imgQuality);
                     document.getElementById("top250_jpg").src = top250.toDataURL("image/jpeg",imgQuality);
                 }
@@ -276,6 +291,11 @@
         }
         //////////////////////////////
         function handleImage2(e){
+            var page_width = Number(document.getElementById('pw').value);
+            var bg_big_width = Number(document.getElementById('bw').value);
+            var bg_big_height = Number(document.getElementById('bh').value);
+            var bg_small_width = Number(document.getElementById('sw').value);
+            var bg_small_height = Number(document.getElementById('sh').value);
             var reader = new FileReader();
             reader.onload = function(event){
                 var img = new Image();
@@ -283,8 +303,8 @@
                     canvas2.width = img.width;
                     canvas2.height = img.height;
                     ctx2.drawImage(img,0,0);
-                    left_nho_ctx.drawImage(img,239,0,205,900,0,0,205,900);
-                    right_nho_ctx.drawImage(img,1460,0,205,900,0,0,205,900);
+                    left_nho_ctx.drawImage(img,bg_big_width-bg_small_width,0,bg_small_width,bg_small_height,0,0,bg_small_width,bg_small_height);
+                    right_nho_ctx.drawImage(img,page_width+bg_big_width,0,bg_small_width,bg_small_height,0,0,bg_small_width,bg_small_height);
                     document.getElementById("left_nho_jpg").src = left_nho.toDataURL("image/jpeg",imgQuality);
                     document.getElementById("right_nho_jpg").src = right_nho.toDataURL("image/jpeg",imgQuality);
                 }
@@ -292,6 +312,31 @@
             }
             reader.readAsDataURL(e.target.files[0]);     
         }
+        //////////////////////////////
+        // $( "#pw" ).change(function() {
+        //     var top1 = document.getElementById("top100");
+        //     var top2 = document.getElementById("top250");
+        //     top1.width = this.value;
+        //     top2.width = this.value;
+        // });
+        $( "#demochoice" ).change(function() {
+            if(this.value == 2){
+                document.getElementById('pw').value = 1016;
+                var page_width = Number(document.getElementById('pw').value);
+                var top1 = document.getElementById("top100");
+                var top2 = document.getElementById("top250");
+                top1.width = page_width;
+                top2.width = page_width;
+            }
+            if(this.value == 3){
+                document.getElementById('pw').value = 1016;
+                var page_width = Number(document.getElementById('pw').value);
+                var top1 = document.getElementById("top100");
+                var top2 = document.getElementById("top250");
+                top1.width = page_width;
+                top2.width = page_width;
+            }
+        });
         //////////////////////////////
         function readTemplates(path,div_holder){
             var txtFile = new XMLHttpRequest();
@@ -308,15 +353,13 @@
                 }
             txtFile.send(null);
         }
-        readTemplates("templates/html5_tinh_jpg.html","html_holder");
-        readTemplates("templates/html5_tinh_jpg.html","html_holder_imp");
-        readTemplates("templates/top_1016x100.html","html_top100_holder");
-        readTemplates("templates/top_1016x250.html","html_top250_holder");
-        readTemplates("templates/responsive_320x100.html","html_mb320100imp_holder");
-        readTemplates("templates/responsive_320x160.html","html_mb320160imp_holder");
-        readTemplates("templates/responsive_320x100.html","html_mb320100_holder");
-        readTemplates("templates/inpage_tinh.html","html_inpage_holder");
-        readTemplates("templates/responsive_300x250.html","html_mb300250_holder");
+        readTemplates("templates/tinh.html","html_custom_holder");
+        readTemplates("templates/tinh.html","html_custom_imp_holder");
+        readTemplates("templates/leaderboard.html","html_leaderboard_holder");
+        readTemplates("templates/320x100.html","html_320100m_imp_holder");
+        readTemplates("templates/320x160.html","html_320160m_imp_holder");
+        readTemplates("templates/inpage.html","html_320640m_holder");
+        readTemplates("templates/300x250.html","html_300250m_holder");
         ///////////////////////// Load input file into div holder
         function readInputFile(input,div_holder,mode) {
             if (input.files && input.files[0]) {
@@ -333,88 +376,105 @@
                 }
             }
         }
-        document.getElementById("phai1").addEventListener("change", function(){
-            readInputFile(this,"img_phai1_holder","image");
+        document.getElementById("b300600").addEventListener("change", function(){
+            readInputFile(this,"img_300600_holder","image");
         })
-        document.getElementById("cbvpc").addEventListener("change", function(){
-            readInputFile(this,"img_cbvpc_holder","image");
+        document.getElementById("b300250").addEventListener("change", function(){
+            readInputFile(this,"img_300250_holder","image");
         })
-        document.getElementById("top").addEventListener("change", function(){
-            readInputFile(this,"img_top_holder","image");
+        document.getElementById("b336280").addEventListener("change", function(){
+            readInputFile(this,"img_336280_holder","image");
         })
-        document.getElementById("top2").addEventListener("change", function(){
-            readInputFile(this,"img_top2_holder","image");
+        document.getElementById("b696120").addEventListener("change", function(){
+            readInputFile(this,"img_696120_holder","image");
         })
-        document.getElementById("inpage").addEventListener("change", function(){
-            readInputFile(this,"img_inpage_holder","image");
+        document.getElementById("b320100m").addEventListener("change", function(){
+            readInputFile(this,"img_320100m_holder","image");
         })
-        document.getElementById("cbvmb").addEventListener("change", function(){
-            readInputFile(this,"img_cbvmb_holder","image");
+        document.getElementById("b320160m").addEventListener("change", function(){
+            readInputFile(this,"img_320160m_holder","image");
         })
-        document.getElementById("center").addEventListener("change", function(){
-            readInputFile(this,"img_center_holder","image");
+        document.getElementById("b320640m").addEventListener("change", function(){
+            readInputFile(this,"img_320640m_holder","image");
+        })
+        document.getElementById("b300250m").addEventListener("change", function(){
+            readInputFile(this,"img_300250m_holder","image");
         })
         //////////////////////////////
         function replaceClick(div,string) {
             var str = document.getElementById(div).textContent; 
-            var res = str.replace("%%this_is_click%%", string);
+            var res = str.replace("{{this_is_click}}", string);
             document.getElementById(div).textContent = res 
         }
         function replaceImp(div,string) {
             var str = document.getElementById(div).textContent; 
-            var res = str.replace("%%this_is_impression%%", string);
+            var res = str.replace("{{this_is_impression}}", string);
             document.getElementById(div).textContent = res
-        }       
+        }
+        function replaceWidthHeight(div,stringw,stringh) {
+            var str = document.getElementById(div).textContent; 
+            var res = str.replace("{{this_is_mwidth}}", stringw);
+            res = res.replace("{{this_is_mheight}}", stringh);
+            document.getElementById(div).textContent = res
+        }
         //////////////////////////////
         document.getElementById("zip_btn").addEventListener("click", function(){
             
-            readTemplates("templates/html5_tinh_jpg.html","html_holder");
-            readTemplates("templates/html5_tinh_jpg.html","html_holder_imp");
-            readTemplates("templates/top_1016x100.html","html_top100_holder");
-            readTemplates("templates/top_1016x250.html","html_top250_holder");
-            readTemplates("templates/responsive_320x100.html","html_mb320100imp_holder");
-            readTemplates("templates/responsive_320x160.html","html_mb320160imp_holder");
-            readTemplates("templates/responsive_320x100.html","html_mb320100_holder");
-            readTemplates("templates/inpage_tinh.html","html_inpage_holder");
-            readTemplates("templates/responsive_300x250.html","html_mb300250_holder");
+            readTemplates("templates/tinh.html","html_custom_holder");
+            readTemplates("templates/tinh.html","html_custom_imp_holder");
+            readTemplates("templates/leaderboard.html","html_leaderboard_holder");
+            readTemplates("templates/320x100.html","html_320100m_imp_holder");
+            readTemplates("templates/320x160.html","html_320160m_imp_holder");
+            readTemplates("templates/inpage.html","html_320640m_holder");
+            readTemplates("templates/300x250.html","html_300250m_holder");
             //
             var zip = new JSZip();
             var type_pack = document.getElementById("demochoice").value;
+            ///////// PC
             //replace click and imp pc
-            var imp = document.getElementById("tracking_imp").value;
-            imp = change_alias(imp);
-            var check_imp = imp.startsWith("https://");
-            var blankGif = "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=";
-            if(imp != blankGif){
-                if(check_imp == false){
+            var imp_pc = document.getElementById("tracking_imp").value;
+            imp_pc = change_alias(imp_pc);
+            var no_imp_string_pc = '//var IMPRESSION_URL = "impression";';
+            var imp_string_pc = no_imp_string_pc;
+            var check_imp_pc = imp_pc.startsWith("https://");
+            if(imp_pc !== ""){
+                if(check_imp_pc == false){
                     alert("Link tracking impression pc có thể đang bị sai, hãy kiểm tra lại!")
                     return;
                 }
+                imp_string_pc = 'var IMPRESSION_URL = "' + imp_pc + '";';
             }
-            var click = document.getElementById("tracking_click").value;
-            click = change_alias(click);
-            var check_click = click.startsWith("http");
-            if(check_click == false){
+            var click_pc = document.getElementById("tracking_click").value;
+            click_pc = change_alias(click_pc);
+            var check_click_pc = click_pc.startsWith("http");
+            if(check_click_pc == false){
                 alert("Link tracking click pc có thể đang bị sai, hãy kiểm tra lại!")
                 return;
             }
-            alert("+ Tracking impression pc là: " + imp + "\n+ Tracking click pc là: " + click);
-            replaceClick("html_holder",click);
-            replaceImp("html_holder",blankGif);
-            replaceClick("html_holder_imp",click);
-            replaceImp("html_holder_imp",imp);
-            replaceClick("html_top100_holder",click);
-            replaceClick("html_top250_holder",click);
+            alert("+ Tracking impression pc là: " + imp_pc + "\n+ Tracking click pc là: " + click_pc);
+            //Custom html
+            replaceImp("html_custom_holder",no_imp_string_pc);
+            replaceClick("html_custom_holder",click_pc);
+            //Custom imp html
+            replaceImp("html_custom_imp_holder",imp_string_pc);
+            replaceClick("html_custom_imp_holder",click_pc);
+            //leaderboard html
+            replaceImp("html_leaderboard_holder",no_imp_string_pc);
+            replaceClick("html_leaderboard_holder",click_pc);
 
+            ///////// MOBILE
             //replace click and imp mb
             var imp_mb = document.getElementById("tracking_imp_mb").value;
             imp_mb = change_alias(imp_mb);
+            var no_imp_string_mb = '//var IMPRESSION_URL = "impression";';
+            var imp_string_mb = no_imp_string_mb;
             var check_imp_mb = imp_mb.startsWith("https://");
-            if(imp_mb != blankGif){
+            if(imp_mb !== ""){
                 if(check_imp_mb == false){
                     alert("Link tracking impression mb có thể đang bị sai, hãy kiểm tra lại!")
                     return;
                 }
+                imp_string_mb = 'var IMPRESSION_URL = "' + imp_mb + '";';
             }
             var click_mb = document.getElementById("tracking_click_mb").value;
             click_mb = change_alias(click_mb);
@@ -424,56 +484,57 @@
                 return;
             }
             alert("+ Tracking impression mb là: " + imp_mb + "\n+ Tracking click mb là: " + click_mb);
-            replaceClick("html_mb320100imp_holder",click_mb);
-            replaceImp("html_mb320100imp_holder",imp_mb);
-            replaceClick("html_mb320160imp_holder",click_mb);
-            replaceImp("html_mb320160imp_holder",imp_mb);
-            replaceClick("html_mb320100_holder",click_mb);
-            replaceImp("html_mb320100_holder",blankGif);
-            replaceClick("html_mb320100_holder",click_mb);
-            replaceClick("html_inpage_holder",click_mb);
-            replaceClick("html_mb300250_holder",click_mb);
-           
+            //top 320x120 imp
+            replaceImp("html_320100m_imp_holder",imp_string_mb);
+            replaceClick("html_320100m_imp_holder",click_mb);
+            //top 320x160 imp
+            replaceImp("html_320160m_imp_holder",imp_string_mb);
+            replaceClick("html_320160m_imp_holder",click_mb);
+            //inpage 320x640
+            replaceImp("html_320640m_holder",no_imp_string_mb);
+            replaceClick("html_320640m_holder",click_mb);
+            //inpage 300x250
+            replaceImp("html_300250m_holder",no_imp_string_mb);
+            replaceClick("html_300250m_holder",click_mb);
+
+
             //html no imp
-            var data_html = document.getElementById("html_holder").textContent;
+            var data_html_custom = document.getElementById("html_custom_holder").textContent;
             //html with imp
-            var data_html_imp = document.getElementById("html_holder_imp").textContent;
-            //html top 100
-            var data_html_top100 = document.getElementById("html_top100_holder").textContent;
-            //html top 250
-            var data_html_top250 = document.getElementById("html_top250_holder").textContent;
+            var data_html_custom_imp = document.getElementById("html_custom_imp_holder").textContent;
             //html 320x100 imp
-            var data_html_top = document.getElementById("html_mb320100imp_holder").textContent;
+            var data_html_320100m_imp = document.getElementById("html_320100m_imp_holder").textContent;
             //html 320x160 imp
-            var data_html_top2 = document.getElementById("html_mb320160imp_holder").textContent;
-            //html 320x100
-            var data_html_cbvmb = document.getElementById("html_mb320100_holder").textContent;            
+            var data_html_320160m_imp = document.getElementById("html_320160m_imp_holder").textContent;
             //html 320x640
-            var data_html_inpage = document.getElementById("html_inpage_holder").textContent;
+            var data_html_320640m = document.getElementById("html_320640m_holder").textContent;            
             //html 300x250
-            var data_html_center = document.getElementById("html_mb300250_holder").textContent;
+            var data_html_300250m = document.getElementById("html_300250m_holder").textContent;
 
             //Image bgs
             var data_left_to = document.getElementById("left_to_jpg").src;
             var data_left_nho = document.getElementById("left_nho_jpg").src;
             var data_right_to = document.getElementById("right_to_jpg").src;
             var data_right_nho = document.getElementById("right_nho_jpg").src;
+            var data_top100 = document.getElementById("top100_jpg").src;
+            var data_top250 = document.getElementById("top250_jpg").src;
 
             //Image pc
-            var data_phai1 = document.getElementById("img_phai1_holder").textContent;
-            var data_cbvpc = document.getElementById("img_cbvpc_holder").textContent;
+            var data_300600 = document.getElementById("img_300600_holder").textContent;
+            var data_300250 = document.getElementById("img_300250_holder").textContent;
+            var data_336280 = document.getElementById("img_336280_holder").textContent;
+            var data_696120 = document.getElementById("img_696120_holder").textContent;
 
             //Image mobile
-            var data_top = document.getElementById("img_top_holder").textContent;
-            var data_top2 = document.getElementById("img_top2_holder").textContent;
-            var data_inpage = document.getElementById("img_inpage_holder").textContent;
-            var data_cbvmb = document.getElementById("img_cbvmb_holder").textContent;
-            var data_center = document.getElementById("img_center_holder").textContent;
+            var data_320100m = document.getElementById("img_320100m_holder").textContent;
+            var data_320160m = document.getElementById("img_320160m_holder").textContent;
+            var data_320640m = document.getElementById("img_320640m_holder").textContent;
+            var data_300250m = document.getElementById("img_300250m_holder").textContent;
 
             if( document.getElementById("imageLoader").files.length !== 0 ){
-                zip.file("pc/bg_left/bg_left.html", data_html_imp);
+                zip.file("pc/bg_left/bg_left.html", data_html_custom_imp);
                 zip.file("pc/bg_left/left_to.jpg", data_left_to.substr(data_left_to.indexOf(',')+1), {base64: true});
-                zip.file("pc/bg_right/bg_right.html", data_html);
+                zip.file("pc/bg_right/bg_right.html", data_html_custom);
                 zip.file("pc/bg_right/right_to.jpg", data_right_to.substr(data_right_to.indexOf(',')+1), {base64: true});
                 if( document.getElementById("imageLoader2").files.length !== 0 ){
                     zip.file("pc/bg_left/left_nho.jpg", data_left_nho.substr(data_left_nho.indexOf(',')+1), {base64: true});
@@ -482,42 +543,54 @@
                 alert("+ bg trái to: " + Math.round(((data_left_to.length * 0.75)/1000)) + "\n+ bg trái nhỏ: " + Math.round(((data_left_nho.length * 0.75)/1000)) + "\n+ bg phải to: " + Math.round(((data_right_to.length * 0.75)/1000)) + "\n+ bg phải nhỏ: " + Math.round(((data_right_nho.length * 0.75)/1000)));
                 if(type_pack == 2){
                     var data_top100 = document.getElementById("top100_jpg").src;
-                    zip.file("pc/1016x100/1016x100.html", data_html_top100);
-                    zip.file("pc/1016x100/1016x100.jpg", data_top100.substr(data_top100.indexOf(',')+1), {base64: true});
+                    var page_width = Number(document.getElementById('pw').value);
+                    replaceWidthHeight("html_leaderboard_holder",page_width,100)
+                    var data_html_leaderboard = document.getElementById("html_leaderboard_holder").textContent;
+                    zip.file("pc/leaderboard_100/leaderboard_100.html", data_html_leaderboard);
+                    zip.file("pc/leaderboard_100/leaderboard_100.jpg", data_top100.substr(data_top100.indexOf(',')+1), {base64: true});
                 }
                 if(type_pack == 3){
                     var data_top250 = document.getElementById("top250_jpg").src;
-                    zip.file("pc/1016x250/1016x250.html", data_html_top250);
-                    zip.file("pc/1016x250/1016x250.jpg", data_top250.substr(data_top250.indexOf(',')+1), {base64: true});
+                    var page_width = Number(document.getElementById('pw').value);
+                    replaceWidthHeight("html_leaderboard_holder",page_width,250)
+                    var data_html_leaderboard = document.getElementById("html_leaderboard_holder").textContent;
+                    zip.file("pc/leaderboard_250/leaderboard_250.html", data_html_leaderboard);
+                    zip.file("pc/leaderboard_250/leaderboard_250.jpg", data_top250.substr(data_top250.indexOf(',')+1), {base64: true});
                 }
             }
-            if(data_phai1!==""){
-                zip.file("pc/300x600/300x600.html", data_html);
-                zip.file("pc/300x600/300x600.jpg", data_phai1.substr(data_phai1.indexOf(',')+1), {base64: true});
+            /////// PC
+            if(data_300600!==""){
+                zip.file("pc/300x600/300x600.html", data_html_custom);
+                zip.file("pc/300x600/300x600.jpg", data_300600.substr(data_300600.indexOf(',')+1), {base64: true});
             }
-            if(data_cbvpc!==""){
-                zip.file("pc/700x90/700x90.html", data_html);
-                zip.file("pc/700x90/700x90.jpg", data_cbvpc.substr(data_cbvpc.indexOf(',')+1), {base64: true});
+            if(data_300250!==""){
+                zip.file("pc/300x250/300x250.html", data_html_custom);
+                zip.file("pc/300x250/300x250.jpg", data_300250.substr(data_300250.indexOf(',')+1), {base64: true});
             }
-            if(data_top!==""){
-                zip.file("mb/320x100/320x100.html", data_html_top);
-                zip.file("mb/320x100/320x100.jpg", data_top.substr(data_top.indexOf(',')+1), {base64: true});
+            if(data_336280!==""){
+                zip.file("pc/336x280/336x280.html", data_html_custom);
+                zip.file("pc/336x280/336x280.jpg", data_336280.substr(data_336280.indexOf(',')+1), {base64: true});
             }
-            if(data_top2!==""){
-                zip.file("mb/320x160/320x160.html", data_html_top2);
-                zip.file("mb/320x160/320x160.jpg", data_top2.substr(data_top2.indexOf(',')+1), {base64: true});
+            if(data_696120!==""){
+                zip.file("pc/696x120/696x120.html", data_html_custom);
+                zip.file("pc/696x120/696x120.jpg", data_696120.substr(data_696120.indexOf(',')+1), {base64: true});
             }
-            if(data_inpage!==""){
-                zip.file("mb/inpage/inpage.html", data_html_inpage);
-                zip.file("mb/inpage/inpage.jpg", data_inpage.substr(data_inpage.indexOf(',')+1), {base64: true});
+            /////// MOBILE
+            if(data_320100m!==""){
+                zip.file("mb/320x100/320x100.html", data_html_320100m_imp);
+                zip.file("mb/320x100/320x100.jpg", data_320100m.substr(data_320100m.indexOf(',')+1), {base64: true});
             }
-            if(data_cbvmb!==""){
-                zip.file("mb/cbv_320x100/cbv_320x100.html", data_html_cbvmb);
-                zip.file("mb/cbv_320x100/cbv_320x100.jpg", data_cbvmb.substr(data_cbvmb.indexOf(',')+1), {base64: true});
+            if(data_320160m!==""){
+                zip.file("mb/320x160/320x160.html", data_html_320160m_imp);
+                zip.file("mb/320x160/320x160.jpg", data_320160m.substr(data_320160m.indexOf(',')+1), {base64: true});
             }
-            if(data_center!==""){
-                zip.file("mb/300x250/300x250.html", data_html_center);
-                zip.file("mb/300x250/300x250.jpg", data_center.substr(data_center.indexOf(',')+1), {base64: true});
+            if(data_320640m!==""){
+                zip.file("mb/inpage/inpage.html", data_html_320640m);
+                zip.file("mb/inpage/inpage.jpg", data_320640m.substr(data_320640m.indexOf(',')+1), {base64: true});
+            }
+            if(data_300250m!==""){
+                zip.file("mb/300x250/300x250.html", data_html_300250m);
+                zip.file("mb/300x250/300x250.jpg", data_300250m.substr(data_300250m.indexOf(',')+1), {base64: true});
             }
 
             var filename = prompt("Đặt tên cho file zip.\nLưu ý: Không nên đặt tên Tiếng Việt có dấu, ký tự lạ, không cần thêm .zip", "banner");

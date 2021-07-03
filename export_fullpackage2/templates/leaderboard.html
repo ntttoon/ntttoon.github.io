@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>leaderboard</title>
+        <script type="text/javascript">
+            {{this_is_impression}}
+            var V_URL= '{{this_is_click}}';
+            V_URL   = '%%CLICK_URL_UNESC%%'+V_URL;
+    
+            var ADS_FROM = '24h';
+            var DEVICE = 'PC';
+            var CREATIVE_TYPE = 'LEADERBOARD';
+        </script>
+
+        <!-- GA4 Lib -->
+        <script async src='https://www.googletagmanager.com/gtag/js?id=G-24EL5B93N8'></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        // gtag('config', 'G-24EL5B93N8', {'send_page_view': false,  'transport_type': 'beacon'});
+        // gtag('config', 'G-0MRSCM1XC6', {'send_page_view': false,  'transport_type': 'beacon'});
+        </script>
+        <!-- GA4 Lib -->
+
+        <!-- Tracking Lib -->
+        <script src="https://cdn.24h.com.vn/upload/creativeGa4Tracking_html5.js" id="creativeGa4Tracking_html5" 
+        data-EVENT_TYPE="EVENT_TYPE"
+        data-EVENT_IMPRESSION="impression"
+        data-EVENT_ADS_CLICK="ads_click"
+        data-LINE_ITEM_ID="%eaid!"
+        data-ADVERTISER_ID="%eadv!"
+        data-ORDER_ID="%ebuy!"
+        data-CREATIVE_ID="%ecid!"
+        data-ADUNIT_ID="%epid!"
+        data-ga4_ids='["G-24EL5B93N8", "G-0MRSCM1XC6"]'></script>
+        <!-- Tracking Lib -->
+        <style>.content{width: 100%; height: auto;text-align: center;cursor: pointer;}</style>
+    </head>
+    <body style="margin: 0" onload="impressionTrack();">
+        <div id="impressionTrack"></div>
+        
+        <div class="content">
+            <img id="banner-top" 
+                border="0" alt=""
+                src="%%FILE:JPG1%%" />
+        </div>
+        <script type="text/javascript" language="javascript">
+            // Cấu hình chiều rộng banner
+            var V_WIDTH = {{this_is_mwidth}};
+            // Cấu hình chiều cao banner
+            var V_HEIGHT = {{this_is_mheight}};
+            /*=========== Khai báo các biến TÊN/THÔNG SỐ ghi nhận tracking bằng GA */           
+            // Khai báo các biến sử dụng để xử lý hiển thị banner html5
+            var id_div_parent = '%%PATTERN:id_div%%';
+            
+            // Gửi message tới parent webbrower
+            function sendBack24h(action, width, height) {
+                var data    = {type:"banner-rich-top",id:id_div_parent,id_iframe:'',action: action, width: width, height: height, web_type: '24h-banner-dfp'};
+                data        = JSON.stringify(data);
+                window.parent.postMessage(data, "*");
+            };
+			// 
+			var v_el_banner = document.getElementById('banner-top');
+			if(typeof v_el_banner != typeof undefined && v_el_banner){
+				v_el_banner.style.width = V_WIDTH+'px';
+				v_el_banner.style.height = V_HEIGHT+'px';
+				// Lấy width, hegiht
+				sendBack24h('width-height-banner-top', V_WIDTH+'px', V_HEIGHT+'px');
+			}
+            // Lấy element by id
+            var banner = document.getElementById("banner-top");
+            // Sự kiện click vào banner
+            banner.addEventListener("click", function(){
+                clickTrack(V_URL);
+            });
+        </script>
+    </body>
+</html>

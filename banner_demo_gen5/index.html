@@ -102,15 +102,15 @@
                     <hr>
                     <p>
                         <label>Page width</label>
-                        <input class="w3-border bginput" type="text" id="pw" value="1016">
+                        <input class="w3-border bginput" type="text" id="pw" value="1016" disabled>
                         <label>Big bg width</label>
-                        <input class="w3-border bginput" type="text" id="bw" value="444">
+                        <input class="w3-border bginput" type="text" id="bw" value="444" disabled>
                         <label>Big bg height</label>
-                        <input class="w3-border bginput" type="text" id="bh" value="1040">
+                        <input class="w3-border bginput" type="text" id="bh" value="1040" disabled>
                         <label>Small bg width</label>
-                        <input class="w3-border bginput" type="text" id="sw" value="205">
+                        <input class="w3-border bginput" type="text" id="sw" value="205" disabled>
                         <label>Small bg height</label>
-                        <input class="w3-border bginput" type="text" id="sh" value="900">
+                        <input class="w3-border bginput" type="text" id="sh" value="900" disabled>
                     </p>
                 </div>
             </div>
@@ -281,12 +281,12 @@
     }
 </script>
 <script>
-    $( "#pw" ).change(function() {
-        var top1 = document.getElementById("top100");
-        var top2 = document.getElementById("top250");
-        top1.width = this.value;
-        top2.width = this.value;
-    });
+    // $( "#pw" ).change(function() {
+    //     var top1 = document.getElementById("top100");
+    //     var top2 = document.getElementById("top250");
+    //     top1.width = this.value;
+    //     top2.width = this.value;
+    // });
 
     function setUncheck(){
         $("#check_trangchu, #check_bv100, #check_bv250, #check_trangchu_jpg, #check_bv100_jpg, #check_bv250_jpg").prop( "checked", false );
@@ -296,6 +296,7 @@
         if(this.value == 1){
             setUncheck();
             $("#check_trangchu, #check_trangchu_jpg").prop( "checked", true );
+            document.getElementById('pw').value = 1016;
             var page_width = Number(document.getElementById('pw').value);
             var top1 = document.getElementById("top100");
             var top2 = document.getElementById("top250");
@@ -305,6 +306,7 @@
         if(this.value == 2){
             setUncheck();
             $("#check_bv100, #check_bv100_jpg").prop( "checked", true );
+            document.getElementById('pw').value = 1016;
             var page_width = Number(document.getElementById('pw').value);
             var top1 = document.getElementById("top100");
             var top2 = document.getElementById("top250");
@@ -314,6 +316,7 @@
         if(this.value == 3){
             setUncheck();
             $("#check_bv250, #check_bv250_jpg").prop( "checked", true );
+            document.getElementById('pw').value = 1016;
             var page_width = Number(document.getElementById('pw').value);
             var top1 = document.getElementById("top100");
             var top2 = document.getElementById("top250");

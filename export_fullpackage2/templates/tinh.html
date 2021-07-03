@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>custom</title>
+    <script type="text/javascript">
+		{{this_is_impression}}
+	    var V_URL= '{{this_is_click}}';
+	    V_URL   = '%%CLICK_URL_UNESC%%'+V_URL;
+
+		var ADS_FROM = '24h';
+		var DEVICE = 'PC';
+		var CREATIVE_TYPE = '';
+	</script>
+		
+	<!-- GA4 Lib -->
+	<script async src='https://www.googletagmanager.com/gtag/js?id=G-24EL5B93N8'></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	// gtag('config', 'G-24EL5B93N8', {'send_page_view': false,  'transport_type': 'beacon'});
+	// gtag('config', 'G-0MRSCM1XC6', {'send_page_view': false,  'transport_type': 'beacon'});
+	</script>
+	<!-- GA4 Lib -->
+
+	<!-- Tracking Lib -->
+	<script src="https://cdn.24h.com.vn/upload/creativeGa4Tracking_html5.js" id="creativeGa4Tracking_html5" 
+	data-EVENT_TYPE="EVENT_TYPE"
+	data-EVENT_IMPRESSION="impression"
+	data-EVENT_ADS_CLICK="ads_click"
+	data-LINE_ITEM_ID="%eaid!"
+	data-ADVERTISER_ID="%eadv!"
+	data-ORDER_ID="%ebuy!"
+	data-CREATIVE_ID="%ecid!"
+	data-ADUNIT_ID="%epid!"
+	data-ga4_ids='["G-24EL5B93N8", "G-0MRSCM1XC6"]'></script>
+	<!-- Tracking Lib -->
+</head>
+<body style="margin: 0" onload="impressionTrack();">
+    <div id="impressionTrack"></div>
+    <a href="javascript:void(0)" onclick="clickTrack(V_URL)"> <!-- Send 24h GA4 CLICK tracking -->
+        <img src="%%FILE:JPG1%%" border=0 width="100%"/>
+    </a>
+</body>
+</html>
