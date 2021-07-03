@@ -101,16 +101,8 @@
                     </p>
                     <hr>
                     <p>
-                        <label>Left start X</label>
-                        <input class="w3-border bginput" type="text" id="lx" value="0">
-                        <label>Left start Y</label>
-                        <input class="w3-border bginput" type="text" id="ly" value="0">
-                        <label>Right start X</label>
-                        <input class="w3-border bginput" type="text" id="rx" value="1460">
-                        <label>Right start Y</label>
-                        <input class="w3-border bginput" type="text" id="ry" value="0">
-                    </p>
-                    <p>
+                        <label>Page width</label>
+                        <input class="w3-border bginput" type="text" id="pw" value="1016">
                         <label>Big bg width</label>
                         <input class="w3-border bginput" type="text" id="bw" value="444">
                         <label>Big bg height</label>
@@ -119,16 +111,6 @@
                         <input class="w3-border bginput" type="text" id="sw" value="205">
                         <label>Small bg height</label>
                         <input class="w3-border bginput" type="text" id="sh" value="900">
-                    </p>
-                    <p>
-                        <label>Masthead width</label>
-                        <input class="w3-border bginput" type="text" id="mw" value="1016">
-                        <label>Masthead width</label>
-                        <input class="w3-border bginput" type="text" id="mw2" value="1100">
-                        <label>Masthead start X</label>
-                        <input class="w3-border bginput" type="text" id="mx" value="444">
-                        <label>Masthead start Y</label>
-                        <input class="w3-border bginput" type="text" id="my" value="0">
                     </p>
                 </div>
             </div>
@@ -212,11 +194,11 @@
     </div>
     <div class="w3-row">
         <div class="w3-half w3-container">
-            <div>Top 1016x100</div>
+            <div>Top 100</div>
             <img id="img_top100_holder" class="w3-image">
         </div>
         <div class="w3-half w3-container">
-            <div>Top 1016x250</div>
+            <div>Top 250</div>
             <img id="img_top250_holder" class="w3-image">
         </div>
     </div>
@@ -248,18 +230,11 @@
     var top250_ctx = top250.getContext('2d');
     //////////////////////////////
     function handleImage(e){
-        var bg_left_startX = document.getElementById('lx').value;
-        var bg_left_startY = document.getElementById('ly').value;
-        var bg_right_startX = document.getElementById('rx').value;
-        var bg_right_startY = document.getElementById('ry').value;
-        var bg_big_width = document.getElementById('bw').value;
-        var bg_big_height = document.getElementById('bh').value;
-        var bg_small_width = document.getElementById('sw').value;
-        var bg_small_height = document.getElementById('sh').value;
-        var masthead_width = document.getElementById('mw').value;
-        var masthead_width2 = document.getElementById('mw2').value;
-        var masthead_startX = document.getElementById('mx').value;
-        var masthead_startY = document.getElementById('my').value;
+        var page_width = Number(document.getElementById('pw').value);
+        var bg_big_width = Number(document.getElementById('bw').value);
+        var bg_big_height = Number(document.getElementById('bh').value);
+        var bg_small_width = Number(document.getElementById('sw').value);
+        var bg_small_height = Number(document.getElementById('sh').value);
         var reader = new FileReader();
         reader.onload = function(event){
             var img = new Image();
@@ -267,10 +242,10 @@
                 canvas.width = img.width;
                 canvas.height = img.height;
                 ctx.drawImage(img,0,0);
-                left_to_ctx.drawImage(img,bg_left_startX,bg_left_startY,bg_big_width,bg_big_height,0,0,bg_big_width,bg_big_height);
-                right_to_ctx.drawImage(img,bg_right_startX,bg_right_startY,bg_big_width,bg_big_height,0,0,bg_big_width,bg_big_height);
-                top100_ctx.drawImage(img,masthead_startX,masthead_startY,masthead_width,100,0,0,masthead_width,100);
-                top250_ctx.drawImage(img,masthead_startX,masthead_startY,masthead_width,250,0,0,masthead_width,250);
+                left_to_ctx.drawImage(img,0,0,bg_big_width,bg_big_height,0,0,bg_big_width,bg_big_height);
+                right_to_ctx.drawImage(img,page_width+bg_big_width,0,bg_big_width,bg_big_height,0,0,bg_big_width,bg_big_height);
+                top100_ctx.drawImage(img,bg_big_width,0,page_width,100,0,0,page_width,100);
+                top250_ctx.drawImage(img,bg_big_width,0,page_width,250,0,0,page_width,250);
                 /////
                 document.getElementById("img_left_to_holder").src = left_to.toDataURL("image/jpeg",1);
                 document.getElementById("img_right_to_holder").src = right_to.toDataURL("image/jpeg",1);
@@ -283,18 +258,11 @@
     }
     //////////////////////////////
     function handleImage2(e){
-        var bg_left_startX = document.getElementById('lx').value;
-        var bg_left_startY = document.getElementById('ly').value;
-        var bg_right_startX = document.getElementById('rx').value;
-        var bg_right_startY = document.getElementById('ry').value;
-        var bg_big_width = document.getElementById('bw').value;
-        var bg_big_height = document.getElementById('bh').value;
-        var bg_small_width = document.getElementById('sw').value;
-        var bg_small_height = document.getElementById('sh').value;
-        var masthead_width = document.getElementById('mw').value;
-        var masthead_width2 = document.getElementById('mw2').value;
-        var masthead_startX = document.getElementById('mx').value;
-        var masthead_startY = document.getElementById('my').value;
+        var page_width = Number(document.getElementById('pw').value);
+        var bg_big_width = Number(document.getElementById('bw').value);
+        var bg_big_height = Number(document.getElementById('bh').value);
+        var bg_small_width = Number(document.getElementById('sw').value);
+        var bg_small_height = Number(document.getElementById('sh').value);
         var reader = new FileReader();
         reader.onload = function(event){
             var img = new Image();
@@ -302,8 +270,8 @@
                 canvas2.width = img.width;
                 canvas2.height = img.height;
                 ctx2.drawImage(img,0,0);
-                left_nho_ctx.drawImage(img,masthead_startX-bg_small_width,bg_left_startY,bg_small_width,bg_small_height,0,0,bg_small_width,bg_small_height);
-                right_nho_ctx.drawImage(img,bg_right_startX,bg_right_startY,bg_small_width,bg_small_height,0,0,bg_small_width,bg_small_height);
+                left_nho_ctx.drawImage(img,bg_big_width-bg_small_width,0,bg_small_width,bg_small_height,0,0,bg_small_width,bg_small_height);
+                right_nho_ctx.drawImage(img,page_width+bg_big_width,0,bg_small_width,bg_small_height,0,0,bg_small_width,bg_small_height);
                 document.getElementById("img_left_nho_holder").src = left_nho.toDataURL("image/jpeg",1);
                 document.getElementById("img_right_nho_holder").src = right_nho.toDataURL("image/jpeg",1);
             }
@@ -313,24 +281,44 @@
     }
 </script>
 <script>
+    $( "#pw" ).change(function() {
+        var top1 = document.getElementById("top100");
+        var top2 = document.getElementById("top250");
+        top1.width = this.value;
+        top2.width = this.value;
+    });
+
     function setUncheck(){
         $("#check_trangchu, #check_bv100, #check_bv250, #check_trangchu_jpg, #check_bv100_jpg, #check_bv250_jpg").prop( "checked", false );
-    }
+    };
+
     $( "#demochoice" ).change(function() {
         if(this.value == 1){
             setUncheck();
             $("#check_trangchu, #check_trangchu_jpg").prop( "checked", true );
-            $("#rx").val("1460");
+            var page_width = Number(document.getElementById('pw').value);
+            var top1 = document.getElementById("top100");
+            var top2 = document.getElementById("top250");
+            top1.width = page_width;
+            top2.width = page_width;
         }
         if(this.value == 2){
             setUncheck();
             $("#check_bv100, #check_bv100_jpg").prop( "checked", true );
-            $("#rx").val("1460");
+            var page_width = Number(document.getElementById('pw').value);
+            var top1 = document.getElementById("top100");
+            var top2 = document.getElementById("top250");
+            top1.width = page_width;
+            top2.width = page_width;
         }
         if(this.value == 3){
             setUncheck();
             $("#check_bv250, #check_bv250_jpg").prop( "checked", true );
-            $("#rx").val("1460");
+            var page_width = Number(document.getElementById('pw').value);
+            var top1 = document.getElementById("top100");
+            var top2 = document.getElementById("top250");
+            top1.width = page_width;
+            top2.width = page_width;
         }
     });
     ///////////////////////// Load input file into div holder

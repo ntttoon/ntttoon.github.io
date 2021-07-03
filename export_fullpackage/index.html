@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Export EVA BG pack</title>
+    <title>Export eve pack</title>
     <link rel="stylesheet" href="../css/w3.css">
     <script async src="../js_libs/jszip.js"> </script>
     <script async src="../js_libs/FileSaver.js"> </script> 
@@ -128,11 +128,11 @@
             <br>
             <div class="w3-row">
                 <div class="w3-half w3-container">
-                    <div>Top 1016x100</div>
+                    <div>Top 100</div>
                     <img id="top100_jpg" class="w3-image">
                 </div>
                 <div class="w3-half w3-container">
-                    <div>Top 1016x250</div>
+                    <div>Top 250</div>
                     <img id="top250_jpg" class="w3-image">
                 </div>
             </div>
@@ -148,29 +148,22 @@
             <!-- holder img -->
             <div class="hide" id="img_phai1_holder"></div>
             <div class="hide" id="img_phai2_holder"></div>
-            <div class="hide" id="img_tnc_holder"></div>
-            <div class="hide" id="img_hot_holder"></div>
             <div class="hide" id="img_cbvpc_holder"></div>
             <div class="hide" id="img_top_holder"></div>
             <div class="hide" id="img_top2_holder"></div>
             <div class="hide" id="img_inpage_holder"></div>
             <div class="hide" id="img_cbvmb_holder"></div>
-            <div class="hide" id="img_center1_holder"></div>
-            <div class="hide" id="img_center2_holder"></div>
+            <div class="hide" id="img_center_holder"></div>
         </div>
     </div>
       
     <div id="tab02" class="city" style="display:none">
         <div class="w3-container" class="background:#282828">
             <h3>Upload ảnh banner pc</h3>
-            <div>banner phải <strong>300x600</strong></div>
+            <div>banner <strong>300x600</strong></div>
             <input class="w3-input" id="phai1" type="file" accept="image/x-png,image/gif,image/jpeg" />
-            <div>banner phải <strong>300x250</strong></div>
+            <div>banner <strong>300x250</strong></div>
             <input class="w3-input" id="phai2" type="file" accept="image/x-png,image/gif,image/jpeg" />
-            <div>banner phải trôi ngữ cảnh <strong>300x600</strong></div>
-            <input class="w3-input" id="tnc" type="file" accept="image/x-png,image/gif,image/jpeg" />
-            <div>banner hot <strong>336x280</strong></div>
-            <input class="w3-input" id="hot" type="file" accept="image/x-png,image/gif,image/jpeg" />
             <div>banner chân bài viết <strong>700x90</strong></div>
             <input class="w3-input" id="cbvpc" type="file" accept="image/x-png,image/gif,image/jpeg" />
         </div>
@@ -179,18 +172,16 @@
     <div id="tab03" class="city" style="display:none">
         <div class="w3-container">
             <h3>Upload ảnh banner mobile</h3>
-            <div>banner top <strong>320x100 (640x200)</strong></div>
+            <div>banner top <strong>320x100 (640x200)</strong> gắn impression</div>
             <input class="w3-input" id="top" type="file" accept="image/x-png,image/gif,image/jpeg" />
-            <div>banner top lớn <strong>320x160 (640x320)</strong></div>
+            <div>banner top lớn <strong>320x160 (640x320)</strong> gắn impression</div>
             <input class="w3-input" id="top2" type="file" accept="image/x-png,image/gif,image/jpeg" />
             <div>banner inpage <strong>320x640 (600x1200)</strong></div>
             <input class="w3-input" id="inpage" type="file" accept="image/x-png,image/gif,image/jpeg" />
             <div>banner chân bv <strong>320x100 (640x200)</strong></div>
             <input class="w3-input" id="cbvmb" type="file" accept="image/x-png,image/gif,image/jpeg" />
-            <div>banner center1 <strong>300x250 (600x500)</strong></div>
-            <input class="w3-input" id="center1" type="file" accept="image/x-png,image/gif,image/jpeg" />
-            <div>banner center2 <strong>300x250 (600x500)</strong></div>
-            <input class="w3-input" id="center2" type="file" accept="image/x-png,image/gif,image/jpeg" />
+            <div>banner center <strong>300x250 (600x500)</strong></div>
+            <input class="w3-input" id="center" type="file" accept="image/x-png,image/gif,image/jpeg" />
         </div>
     </div>
     
@@ -351,12 +342,6 @@
         document.getElementById("phai2").addEventListener("change", function(){
             readInputFile(this,"img_phai2_holder","image");
         })
-        document.getElementById("tnc").addEventListener("change", function(){
-            readInputFile(this,"img_tnc_holder","image");
-        })
-        document.getElementById("hot").addEventListener("change", function(){
-            readInputFile(this,"img_hot_holder","image");
-        })
         document.getElementById("cbvpc").addEventListener("change", function(){
             readInputFile(this,"img_cbvpc_holder","image");
         })
@@ -372,11 +357,8 @@
         document.getElementById("cbvmb").addEventListener("change", function(){
             readInputFile(this,"img_cbvmb_holder","image");
         })
-        document.getElementById("center1").addEventListener("change", function(){
-            readInputFile(this,"img_center1_holder","image");
-        })
-        document.getElementById("center2").addEventListener("change", function(){
-            readInputFile(this,"img_center2_holder","image");
+        document.getElementById("center").addEventListener("change", function(){
+            readInputFile(this,"img_center_holder","image");
         })
         //////////////////////////////
         function replaceClick(div,string) {
@@ -486,8 +468,6 @@
             //Image pc
             var data_phai1 = document.getElementById("img_phai1_holder").textContent;
             var data_phai2 = document.getElementById("img_phai2_holder").textContent;
-            var data_hot = document.getElementById("img_hot_holder").textContent;
-            var data_tnc = document.getElementById("img_tnc_holder").textContent;
             var data_cbvpc = document.getElementById("img_cbvpc_holder").textContent;
 
             //Image mobile
@@ -495,8 +475,7 @@
             var data_top2 = document.getElementById("img_top2_holder").textContent;
             var data_inpage = document.getElementById("img_inpage_holder").textContent;
             var data_cbvmb = document.getElementById("img_cbvmb_holder").textContent;
-            var data_center1 = document.getElementById("img_center1_holder").textContent;
-            var data_center2 = document.getElementById("img_center2_holder").textContent;
+            var data_center = document.getElementById("img_center_holder").textContent;
 
             if( document.getElementById("imageLoader").files.length !== 0 ){
                 zip.file("pc/bg_left/bg_left.html", data_html_imp);
@@ -527,25 +506,17 @@
                 zip.file("pc/300x250/300x250.html", data_html);
                 zip.file("pc/300x250/300x250.jpg", data_phai2.substr(data_phai2.indexOf(',')+1), {base64: true});
             }
-            if(data_hot!==""){
-                zip.file("pc/336x280/336x280.html", data_html);
-                zip.file("pc/336x280/336x280.jpg", data_hot.substr(data_hot.indexOf(',')+1), {base64: true});
-            }
-            if(data_tnc!==""){
-                zip.file("pc/300x600_tnc/300x600_tnc.html", data_html);
-                zip.file("pc/300x600_tnc/300x600_tnc.jpg", data_tnc.substr(data_tnc.indexOf(',')+1), {base64: true});
-            }
             if(data_cbvpc!==""){
                 zip.file("pc/700x90/700x90.html", data_html);
                 zip.file("pc/700x90/700x90.jpg", data_cbvpc.substr(data_cbvpc.indexOf(',')+1), {base64: true});
             }
             if(data_top!==""){
-                zip.file("mb/top_320x100/top_320x100.html", data_html_top);
-                zip.file("mb/top_320x100/top_320x100.jpg", data_top.substr(data_top.indexOf(',')+1), {base64: true});
+                zip.file("mb/320x100/320x100.html", data_html_top);
+                zip.file("mb/320x100/320x100.jpg", data_top.substr(data_top.indexOf(',')+1), {base64: true});
             }
             if(data_top2!==""){
-                zip.file("mb/top_320x160/top_320x160.html", data_html_top2);
-                zip.file("mb/top_320x160/top_320x160.jpg", data_top2.substr(data_top2.indexOf(',')+1), {base64: true});
+                zip.file("mb/320x160/320x160.html", data_html_top2);
+                zip.file("mb/320x160/320x160.jpg", data_top2.substr(data_top2.indexOf(',')+1), {base64: true});
             }
             if(data_inpage!==""){
                 zip.file("mb/inpage/inpage.html", data_html_inpage);
@@ -555,13 +526,9 @@
                 zip.file("mb/cbv_320x100/cbv_320x100.html", data_html_cbvmb);
                 zip.file("mb/cbv_320x100/cbv_320x100.jpg", data_cbvmb.substr(data_cbvmb.indexOf(',')+1), {base64: true});
             }
-            if(data_center1!==""){
-                zip.file("mb/center1_300x250/center1_300x250.html", data_html_center);
-                zip.file("mb/center1_300x250/center1_300x250.jpg", data_center1.substr(data_center1.indexOf(',')+1), {base64: true});
-            }
-            if(data_center2!==""){
-                zip.file("mb/center2_300x250/center2_300x250.html", data_html_center);
-                zip.file("mb/center2_300x250/center2_300x250.jpg", data_center2.substr(data_center2.indexOf(',')+1), {base64: true});
+            if(data_center!==""){
+                zip.file("mb/300x250/300x250.html", data_html_center);
+                zip.file("mb/300x250/300x250.jpg", data_center.substr(data_center.indexOf(',')+1), {base64: true});
             }
 
             var filename = prompt("Đặt tên cho file zip.\nLưu ý: Không nên đặt tên Tiếng Việt có dấu, ký tự lạ, không cần thêm .zip", "banner");
